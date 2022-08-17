@@ -1,0 +1,50 @@
+@function to-number($value) { // Str To Number
+	@if type-of($value) == 'number' {
+	  @return $value;
+	} @else if type-of($value) != 'string' {
+	  @error 'Value for `to-number` should be a number or a string.';
+	}
+  
+	$result: 0;
+	$digits: 0;
+	$minus: str-slice($value, 1, 1) == '-';
+	$numbers: ('0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9);
+  
+	@for $i from if($minus, 2, 1) through str-length($value) {
+	  $character: str-slice($value, $i, $i);
+  
+	  @if (index(map-keys($numbers), $character) or $character == '.') {
+		@if $character == '.' {
+		  $digits: 1; 
+		} @else if $digits == 0 {
+		  $result: $result * 10 + map-get($numbers, $character);  
+		} @else {
+		  $digits: $digits * 10;
+		  $result: $result + map-get($numbers, $character) / $digits;
+		}
+	  }
+	}
+  
+	@return if($minus, -$result, $result);
+}
+  
+@mixin Icon_Arr($size, $color, $w: 12px, $h: 8px){
+	$replace_w: str-replace("#{$w}","px"," ");$replace_h: str-replace("#{$h}","px"," "); //'p,x' 제거
+	$num_w: to-number($replace_w);$num_h: to-number($replace_h); // type string -> type number
+	$m: $num_w - 1;$l: $num_h - 1;
+	$middle_point: $num_w * 0.5;
+	width: $w;
+	height: $h;
+	background-image: url("data:image/svg+xml,%3Csvg width='#{$w}' height='#{$h}' viewBox='0 0 #{$w} #{$h}' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M#{$m} 1L#{$middle_point} #{$middle_point}L1 1' stroke='%23#{$color}' stroke-width='#{$size}' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+	background-repeat: no-repeat;
+}
+@mixin Icon_Arr_Right($size, $color, $w: 7px, $h: 12px) {
+	$replace_w: str-replace("#{$w}","px"," ");$replace_h: str-replace("#{$h}","px"," "); //'p,x' 제거
+	$num_w: to-number($replace_w);$num_h: to-number($replace_h); // type string -> type number
+	$m: $num_w - 1;$l: $num_h - 1;
+	$middle_point: $num_w * 0.5;
+	width: $w;
+	height: $h;
+	background-image: url("data:image/svg+xml,%3Csvg width='#{$w}' height='#{$h}' viewBox='0 0 #{$svg_w} #{$svg_h}' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 #{$l}L#{$middle_point} #{$middle_point}L1 1' stroke='%23#{$color}' stroke-width='#{$size}' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+	background-repeat: no-repeat;
+}
