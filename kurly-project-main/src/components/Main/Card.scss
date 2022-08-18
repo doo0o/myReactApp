@@ -1,0 +1,276 @@
+.Main__card {
+
+  .Card__wrap {
+    width: 1050px;
+    padding: 32px 0px 40px;
+    margin: 0px auto;
+    > a { display: block;}
+    .Card__title {
+      margin-bottom: 27px;
+      display: flex;
+      flex-direction: column;
+      -webkit-box-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      align-items: center;
+  
+      h2 {
+        @mixin title {
+          color: rgb(51, 51, 51);
+          font-size: 28px;
+          line-height: 1.15;
+          letter-spacing: -0.26px;
+          font-weight: 600;
+        }
+        > span {
+          @include title
+        }
+        > a {
+          display: flex;
+          -webkit-box-align: center;
+          align-items: center;
+          padding: 8px;
+          > span {
+            position: relative;
+            > span:first-of-type {
+              @include title;
+            }
+          }
+        }
+        .ico__arr {
+          position: absolute;
+          left: 100%;
+          top: 0px;
+          width: 32px;
+          height: 32px;
+          display: flex;
+          -webkit-box-align: center;
+          align-items: center;
+        }
+        > p {
+          font-size: 16px;
+          font-weight: normal;
+          line-height: 1.45;
+          letter-spacing: -0.2px;
+          text-align: center;
+          color: rgb(153, 153, 153);
+          margin-top: 2px;
+        }
+      }
+    }
+    .Card__swiper {
+      .slick-slider {
+        overflow: hidden;
+      }
+      .Card__slide {
+        padding: 0px 9px;
+        .Thumbnail {
+          position: relative;
+          a {
+            display: block;
+            overflow: hidden;
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              transition: all 0.3s ease-in-out 0s;
+            }
+            &:hover img {
+              transform: scale(1.02);
+            }
+          }
+          .Card__cart {
+            position: absolute;
+            z-index: 300;
+            display: block;
+            right: 16px;
+            bottom: 16px;
+            width: 45px;
+            height: 45px;
+            button {
+              display: block;
+              img {
+                display: block;
+                width: 45px;
+                height: 45px;
+              }
+            }
+          }
+          .Card__sticker {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            display: flex;
+            align-items: flex-start;
+            .Card-sticker__box {
+              display: flex;
+              -webkit-box-align: center;
+              align-items: center;
+              height: 32px;
+              padding: 0px 8px;
+              opacity: 0.9;
+              span {
+                font-size: 14px;
+                color: rgb(255, 255, 255);
+                line-height: 1.43px;
+              }
+            }
+          }
+        }
+        .Description {
+          position: relative;
+          z-index: 140;
+          display: flex;
+          flex-direction: column;
+          padding: 14px 10px 0px 0px;
+
+          h3 {
+            a {
+              font-size: 16px;
+              line-height: 1.45;
+              color: rgb(51, 51, 51);
+              font-weight: 400;
+              margin-bottom: 8px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              -webkit-box-orient: vertical;
+              letter-spacing: normal;
+              word-break: break-all;
+              overflow-wrap: break-word;
+            }
+          }
+          .Price__group {
+            @mixin price {
+              color: rgb(51, 51, 51);
+              font-size: 16px;
+              font-weight: 800;
+              line-height: 1.5;
+              white-space: nowrap;
+            }
+            .Price__wrap {
+              display: flex;
+              -webkit-box-align: center;
+              align-items: center;
+              flex-wrap: wrap;
+              > span {
+                &.Price__percent {
+                  color: rgb(250, 98, 47);
+                  font-size: 16px;
+                  font-weight: 800;
+                  line-height: 1.5;
+                  white-space: nowrap;
+                  margin-right: 7px;
+                }
+                &.Price__discount { @include price; }
+              }
+              & + .Price__origin {
+                color: rgb(153, 153, 153);
+                font-size: 14px;
+                font-weight: 400;
+                line-height: normal;
+                text-decoration: line-through;
+                margin-top: 2px;
+              }
+            }
+            .Price__origin {
+              @include price;
+            }
+          }
+        }
+      }
+      .slick-arrow {
+        position: absolute;
+        top: calc(50% - 82px);
+        z-index: 100;
+        border: 0px;
+        outline: 0px;
+        width: 60px;
+        height: 60px;
+        margin: 0;
+        transform: none;
+        transition: background 0.5s ease 0s;
+        &::before { content: none; }
+        &.slick-disabled { opacity: 0;}
+        &.slick-prev {
+          left: -22px;
+          background: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_list_left_60_60.svg) 50% 50% no-repeat;
+          content: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_list_left_over_60_60.svg);
+          &:hover {
+            background-image: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_list_left_over_60_60.svg);
+          }
+        }
+        &.slick-next {
+          right: -22px;
+          background: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_list_right_60_60.svg) 50% 50% no-repeat;
+          content: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_list_right_over_60_60.svg);
+          &:hover {
+            background-image: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/arrow_list_right_over_60_60.svg);
+          }
+        }
+      }
+
+      // recipe
+      &.recipe {
+        h3 {
+          padding: 14px 10px;
+          text-align: center;
+          a {
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 1.3;
+            letter-spacing: normal;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            overflow-wrap: break-word;
+            white-space: pre-line;
+          }
+        }
+        .slick-arrow {
+          top: 78px;
+        }
+        .ButtonMore {
+          display: flex;
+          flex-direction: column;
+          -webkit-box-pack: center;
+          justify-content: center;
+          -webkit-box-align: center;
+          align-items: center;
+          height: 225px;
+          cursor: pointer;
+          .ButtonMore__box {
+            border: 1px solid transparent;
+            outline: 0px;
+            background: transparent;
+            user-select: none;
+            .ico {
+              display: block;
+              margin-bottom: 16px;
+              width: 64px;
+              height: 64px;
+              background: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/list_all_64_64.svg) 50% center / contain no-repeat;
+
+              & + span {
+                display: block;
+                font-size: 16px;
+                color: rgb(51, 51, 51);
+                font-weight: normal;
+                text-align: center;
+              }
+            }
+      
+          }
+          &:hover .ico {
+            background-image: url(https://s3.ap-northeast-2.amazonaws.com/res.kurly.com/kurly/ico/2021/list_all_pressed_64_64.svg);
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,118 @@
+.Wrapper {
+  display: flex;
+  padding-left: 40px;
+  .Badge {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    &:not(:last-child) { margin-right: 24px;}
+    > button {
+      width: 100%;
+      height: 100%;
+      font-size: 0;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    &.location {
+      z-index: 300;
+      > button {
+        background-image: url(https://res.kurly.com/pc/ico/2008/ico_delivery_setting.svg?ver=1);
+        &:hover {
+          background-image: url(https://res.kurly.com/pc/ico/2010/ico_delivery_setting_on.svg);
+        }
+        &.off {
+          background-image: url(https://res.kurly.com/pc/ico/2008/ico_delivery_off.svg?ver=1);
+          cursor: default;
+        }
+      }
+      .modal {
+        display: none;
+        position: absolute;
+        right: -67px;
+        top: 45px;
+        width: 315px;
+        padding: 18px 18px 19px 20px;
+        border: 1px solid var(--lightgray);
+        background-color: #fff;
+  
+        &::after {
+          content: "";
+          position: absolute;
+          right: 66px;
+          top: -50px;
+          width: 36px;
+          height: 50px;
+          background: url(https://res.kurly.com/pc/ico/2011/ico_point_up_18x12.svg) no-repeat 50% 100%;
+        }
+        * {
+          font-weight: 500;
+          font-size: 16px;
+          color: #333;
+          line-height: 24px;
+          letter-spacing: -0.34px;
+        }
+        em {
+          color: var(--maincolor);
+          font-style: normal
+        }
+        .btns__group {
+          padding-top: 17px;
+          display: flex;
+          justify-content: center;
+          button {
+            display: block;
+            width: 100%;
+            height: 36px;
+            padding-bottom: 2px;
+            border-radius: 3px;
+            font-size: 12px;
+            line-height: 32px;
+            letter-spacing: 0;
+            text-align: center;
+            &:not(:last-child) {
+              margin-right: 5px;
+            }
+            &.login {
+              width: 110px;
+              border: 1px solid var(--maincolor);
+              background-color: #fff;
+              color: var(--maincolor);
+            }
+            &.search__address {
+              width: 159px;
+              border: 1px solid #5f0081;
+              background-color: var(--maincolor);
+              color: #fff;
+              .ico {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin: 6px 0 0 -6px;
+                background: url(https://res.kurly.com/pc/ico/2008/ico_search_40x40.png) no-repeat 50% 50%;
+                background-size: 20px 20px;
+                vertical-align: top;
+              }
+            }
+          }
+        }
+      }
+      &:hover .modal { display: block; }
+    }
+    &.pick button {
+      background-image: url(https://res.kurly.com/pc/service/pick/btn-heart-off.svg);
+      &:hover {
+        background-image: url(https://res.kurly.com/pc/service/pick/btn-heart-hover.svg);
+      }
+    }
+    &.cart button {
+      background-image: url(https://res.kurly.com/pc/service/common/2011/ico_cart.svg?v=1);
+      &:hover {
+        background-image: url(https://res.kurly.com/pc/service/common/2011/ico_cart_on.svg?v=1);
+      }
+    }
+
+  
+    
+  }
+}

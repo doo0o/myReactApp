@@ -1,0 +1,226 @@
+header {
+  z-index: 300;
+  .Header__msg {
+    position: relative;
+    min-width: 1050px;
+    text-align: center;
+    line-height: 42px;
+    font-size: 14px;
+    transition: margin 0.4s linear 0s;
+    background-color: var(--maincolor);
+    &.-close {
+      margin-top: -42px;
+    }
+    a {
+      position: relative;
+      display: block;
+      width: 1050px;
+      height: 42px;
+      margin: 0 auto;
+      font-weight: 500;
+      color: #fff;
+      .ico__arr {
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        vertical-align: top;
+      }
+    }
+    .ico__close {
+      position: absolute;
+      bottom: 0;
+      right: -15px;
+      width: 42px;
+      height: 42px;
+      border: 0;
+      text-indent: -9999px;
+      background-image: url(https://res.kurly.com/pc/ico/1908/ico_close_fff_84x84.png);
+      background-size: 42px 42px;
+      background-color: transparent;
+    }
+  }
+  .Header__logo {
+    position: relative;
+    width: 1050px;
+    height: 63px;
+    margin: 0 auto;
+    .logo {
+      position: relative;
+      top: -23px;
+      width: 100%;
+      height: 79px;
+      text-align: center;
+      img {
+        width: 103px;
+      }
+    }
+  }
+  
+  .Header__gnb {
+    position: relative;
+    &.__scroll {
+      height: 56px;
+    }
+    .Header-fixed__wrap {
+      background-color: #fff;
+      box-shadow: 0 3px 4px 0 rgb(0 0 0 / 7%);
+      &.-fixed {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+      }
+      .Header-gnb__Wrapper {
+        position: relative;
+        width: 1050px;
+        height: 56px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        z-index: 300;
+        > ul {
+          display: flex;
+          align-items: center;
+          height: 100%;
+          > li {
+            position: relative;
+            width: 116px;
+            height: 100%;
+            line-height: 56px;
+            color: var(--darkgray);
+            font-size: 16px;
+            font-weight: 600;
+            text-align: center;
+            &:first-of-type {
+              width: 148px;
+            }
+            > a {
+              display: block;
+              width: 100%;
+              &:hover span {
+                color: var(--maincolor);
+                border-bottom: 1px solid var(--maincolor);
+              }
+  
+              .Header-gnb__ico {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 16px;
+                height: 14px;
+                background: url(https://res.kurly.com/pc/service/common/1908/ico_gnb_all_off_x2.png) no-repeat 0 0;
+                background-size: 16px 14px;
+                transform: translateY(-50%);
+              }
+              &:hover .Header-gnb__ico {
+                background-image: url(https://res.kurly.com/pc/service/common/1908/ico_gnb_all_x2.png);
+              }
+            }
+  
+            .Gnb-sub__menu {
+              position: absolute;
+              top: 55px;
+              z-index: 100;
+              .Gnb-sub__List {
+                width: 220px;
+                height: 100%;
+                background-color: #fff;
+                border: 1px solid var(--lightgray);
+                > ul {
+                  > li {
+                    height: 39px;
+                    color: #333;
+                    font-size: 14px;
+                    font-weight: 400;
+                    &:hover {
+                      background-color: #f7f7f7;
+                      .Gnb-sub__name {
+                        color: var(--maincolor);
+                        font-weight: 700;
+                      }
+                      .Gnb-sub__ico {
+                        img {
+                          &.on { display: none;}
+                          &.off { display: block;}
+                        }
+                      }
+                    }
+                    > a {
+                      display: flex;
+                      align-items: center;
+                      width: 100%;
+                      height: 100%;
+                      padding: 0 14px;
+                      text-align: left;
+    
+                      .Gnb-sub__ico {
+                        flex-shrink: 0;
+                        width: 24px;
+                        height: 24px;
+                        img {
+                          width: 24px;
+                          height: 24px;
+                          vertical-align: top;
+    
+                          &.on {}
+                          &.off {
+                            display: none;
+                          }
+                        }
+                      }
+                  
+                      .Gnb-sub__name {
+                        height: 100%;
+                        line-height: 42px;
+                        padding-left: 10px;
+                      }
+                    }
+                  }
+                }
+  
+              }
+  
+            }
+            .Lbn__menu {
+              position: absolute;
+              top: 0;
+              left: 219px;
+              width: 248px;
+              height: 100%;
+              border: 1px solid var(--lightgray);
+              border-left: none;
+              background: #f7f7f7;
+              opacity: 0;
+              transition: opacity 0.2s;
+              > li {
+                width: 100%;
+                text-align: left;
+                &:first-of-type {
+                  padding-top: 11px;
+                }
+                &:hover span {
+                  color: var(--maincolor);
+                  font-weight: 600;
+                  border-bottom: 1px solid var(--maincolor);
+                }
+                > a {
+                  display: block;
+                  height: 40px;
+                  color: var(--darkgray);
+                  font-size: 14px;
+                  line-height: 18px;
+                  padding-left: 20px;
+                }
+              }
+            }
+            .current .Lbn__menu {
+              z-index:1;
+              opacity:1;
+              transition:opacity 0.5s;
+            }
+          }
+        }
+      }
+    }
+  }
+}

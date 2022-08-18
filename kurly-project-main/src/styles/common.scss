@@ -1,0 +1,39 @@
+:root {
+  --maincolor: #5f0080;
+  --gray: #999;
+  --gray2: #666;
+  --darkgray: #333;
+  --lightgray: #ddd;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 13px;
+}
+header {
+  position: relative;
+}
+body, input, select, textarea, button {
+  font-family: noto sans,malgun gothic,AppleGothic,dotum;
+  line-height: 1;
+  letter-spacing: -.05em;
+  color: #4c4c4c;
+  font-size: 12px;
+  max-width: 100%;
+}
+div, th, td, li, dt, dd, p {
+  word-break: break-all;
+}
+::placeholder { color: #C1C1C1; }
+#main {
+  position: relative;
+}
+/* 접근성에 문제 없음 */
+.blind {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

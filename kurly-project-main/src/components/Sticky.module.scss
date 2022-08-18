@@ -1,0 +1,45 @@
+.wrap {
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  top: 516px;
+  width: 80px;
+  color: #333;
+  font: normal 12px/16px "Noto Sans";
+  letter-spacing: -0.3px;
+  transition: top 0.2s;
+  .box {
+    position: relative;
+    width: 100%; 
+
+    .info {
+      padding-bottom: 7px;
+      img {
+        width: 80px;
+        height: 120px;
+        vertical-align: top;
+      }
+    }
+    .menu {
+      border: 1px solid var(--lightgray);
+      background-color: #fff;
+      a {
+        display: block;
+        height: 29px;
+        padding-top: 5px;
+        text-align: center;
+        &:not(:first-of-type) {
+          border-top: 1px solid var(--lightgray);
+        }
+        &:hover {
+          color: #5f0080;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1250px) {
+  .wrap {
+    display: none;
+  }
+}
