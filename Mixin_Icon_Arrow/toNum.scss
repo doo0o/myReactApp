@@ -48,3 +48,26 @@
 	background-image: url("data:image/svg+xml,%3Csvg width='#{$w}' height='#{$h}' viewBox='0 0 #{$svg_w} #{$svg_h}' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 #{$l}L#{$middle_point} #{$middle_point}L1 1' stroke='%23#{$color}' stroke-width='#{$size}' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 	background-repeat: no-repeat;
 }
+
+
+// $w : $w px , $h : $h px
+@mixin Icon_Arr($size, $color, $w :12px, $h:8px) {
+	$num_w: to-number(str-slice("#{$w}", 0, str-index("#{$w}","px") - 1));
+	$num_h: to-number(str-slice("#{$h}", 0, str-index("#{$h}","px") - 1));
+	$m: $num_w - 1;$l: $num_h - 1;
+	$middle_point: $num_w * 0.5;
+	width: $w;
+	height: $h;
+    background-image: url("data:image/svg+xml,%3Csvg width='#{$w}' height='#{$h}' viewBox='0 0 #{$num_w} #{$num_h}' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M#{$m} 1L#{$middle_point} #{$middle_point}L1 1' stroke='%23#{$color}' stroke-width='#{$size}'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+}
+@mixin Icon_Arr_Right($size, $color ,$w :8px, $h:12px) {
+	$num_w: to-number(str-slice("#{$w}", 0, str-index("#{$w}","px") - 1));
+	$num_h: to-number(str-slice("#{$h}", 0, str-index("#{$h}","px") - 1));
+	$m: $num_w - 1;$l: $num_h - 1;
+	$middle_point: $num_h * 0.5;
+	width: $w;
+	height: $h;
+	background-image: url("data:image/svg+xml,%3Csvg width='#{$w}' height='#{$h}' viewBox='0 0 #{$num_w} #{$num_h}' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 #{$l}L#{$middle_point} #{$middle_point}L1 1' stroke='%23#{$color}' stroke-width='#{$size}'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+}
