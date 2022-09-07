@@ -10,7 +10,7 @@ var programmers = {
     // 2	5	[2,4,6,8,10]
     // 4	3	[4,8,12]
     // -4	2	[-4, -8]
-    solutionA : function (x, n) {
+    SolutionA : (x, n) => {
         var answer = [];
         p = x;
         for(i = 0; i < n; i++){
@@ -33,7 +33,7 @@ var programmers = {
     // *****
     // *****
     // *****
-    solutionB : function (){
+    SolutionB : () => {
         process.stdin.setEncoding('utf8');
         process.stdin.on('data', data => {
             const n = data.split(" ");
@@ -67,7 +67,7 @@ var programmers = {
 
 
     // 문제 설명
-    // 행렬의 덧셈은 행과 열의 크기가 같은 두 행렬의 같은 행, 같은 열의 값을 서로 더한 결과가 됩니다. 2개의 행렬 arr1과 arr2를 입력받아, 행렬 덧셈의 결과를 반환하는 함수, solution을 완성해주세요.
+    // 행렬의 덧셈은 행과 열의 크기가 같은 두 행렬의 같은 행, 같은 열의 값을 서로 더한 결과가 됩니다. 2개의 행렬 arr1과 arr2를 입력받아, 행렬 덧셈의 결과를 반환하는 함수, Solution을 완성해주세요.
 
     // 제한 조건
     // 행렬 arr1, arr2의 행과 열의 길이는 500을 넘지 않습니다.
@@ -77,12 +77,57 @@ var programmers = {
     // [[1],[2]]	[[3],[4]]	[[4],[6]].
 
 
-    solutionC : function(arr1, arr2) {
+    SolutionC : (arr1,arr2) => {
         var answer = [[]];
-
-        
+        var sumArr = [];
+        for(i = 0; i < arr1.length; i++){
+            for(j = 0; j < arr1[i].length; j++){
+                sumArr.map(arr1[i][j] + arr1[i][j]);
+            }
+        }
+        answer = sumArr;
+        console.log(answer)
         return answer;
-    }
-}
+    },
 
-programmers.solutionC([[1,2],[2,3]], [[3,4],[5,6]]);
+    // 평균구하기
+    SolutionD : (arr) => {
+        var average = arr.reduce((prev,curr) => prev + curr)/arr.length;
+        console.log(average);
+    },
+
+    // 핸드폰 번호 가리기
+    SolutionE : (phonenum) => {
+        var answer = "",
+            star = "*".repeat(phonenum.length-4);
+        phonenum = phonenum.substr(phonenum.length-4, phonenum.length);
+        answer = star + phonenum;
+        return answer;
+    },
+
+    // 문제 설명
+    // 양의 정수 x가 하샤드 수이려면 x의 자릿수의 합으로 x가 나누어져야 합니다. 예를 들어 18의 자릿수 합은 1+8=9이고, 18은 9로 나누어 떨어지므로 18은 하샤드 수입니다. 자연수 x를 입력받아 x가 하샤드 수인지 아닌지 검사하는 함수, solution을 완성해주세요.
+
+    // 제한 조건
+    // x는 1 이상, 10000 이하인 정수입니다.
+    // 입출력 예
+    // arr	return
+    // 10	true
+    // 12	true
+    // 11	false
+    // 13	false
+    SolutionF  : (num) => {
+        var numToString = `${num}`;
+        arr = [];
+        for(i = 0; i < numToString.length; i++){
+            arr.push(Number(numToString.slice(i,i+1)));
+        }
+        arr = num / arr.reduce((prev,curr) => prev + curr);
+        answer = (Math.floor(arr) < arr) ? false : true;
+    },
+
+
+}
+programmers.SolutionF();
+
+
