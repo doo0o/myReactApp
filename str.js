@@ -125,9 +125,15 @@ var programmers = {
         arr = num / arr.reduce((prev,curr) => prev + curr);
         answer = (Math.floor(arr) < arr) ? false : true;
     },
-
+    SolutionG : (num) => {
+       var oddNum = 0;
+       var evenNum = 0;
+       
+       (num/2 == 0) ? oddNum = num/2 : evenNum = (num*3)+1;
+       console.log(oddNum)
+    }
 
 }
-programmers.SolutionF();
+programmers.SolutionG(500);
 
 
