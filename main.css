@@ -1,0 +1,93 @@
+.wrap{
+    padding: 80px 40px 60px;
+}
+
+
+.section__wrap{padding:40px;}
+.section__wrap .section__title{
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 55px;
+}
+.section__wrap .section__title span{
+    display: inline-block;
+    position: absolute;
+    padding: 0 40px 0 0;
+    font-size: 50px;
+    background-color: #fff;
+    color: darkblue;
+    left: 0; 
+    
+}
+
+
+.section__wrap .section__title::after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 80%;
+    height: 1px;
+    border-top: 1px solid darkblue;
+    z-index: -1;
+    
+}
+.section__wrap .section__title.ani__on span{
+    animation: LTR 1s;
+}
+.section__wrap .section__title.ani__on::after{
+    animation: borderLTR 1s;
+}
+@keyframes LTR{
+    0%{left: -200px;}
+    10% {left: 40px;}
+    20% {left: -30px;}
+    30% {left: 0;}
+    50%{left: -20px;}
+    100%{left:0;}
+}
+@keyframes borderLTR{
+    0%{width:0;}
+    100%{width: 80%;}
+}
+.section__inner{
+    height: 40vw;
+    font-size: 50px;
+    text-align: center;
+    line-height: 40vw;
+    color: #fff;
+    border:1px solid darkblue;
+}
+
+
+/* nav */
+#header .header__inner .nav{position: fixed; width: 100%;background-color: #fff;z-index: 9999;box-shadow:rgb(6 24 44 / 40%) -1px 2px 5px 0px;padding: 10px 0;}
+#header .header__inner .nav ul{display: flex;position: relative;height: 40px;justify-content: center}
+#header .header__inner .nav ul.active {position: fixed;}
+
+#header .header__inner .nav ul li{text-align: center;position: relative;margin: 0 20px;padding: 10px 0 ;color: darkblue;}
+#header .header__inner .nav ul li a::after, #header .header__inner .nav ul li a::before{content: "";display: block;position: absolute;width: 0;height: 2px;bottom: 0;transition: all 0.5s;opacity: 0;background-color: darkblue;}
+#header .header__inner .nav ul li a::after{left: 0;}
+#header .header__inner .nav ul li a::before{right: 0;}
+#header .header__inner .nav ul li.active a::after{opacity: 1;width: 50%;}
+#header .header__inner .nav ul li.active a::before{opacity: 1;width: 50%;}
+#header .header__inner .nav ul li a{padding: 10px 0;}
+
+
+/* MODE__Select button*/
+
+
+
+
+/* main banner swiper */
+
+.mainBanner{
+    border: 1px solid darkblue;
+    overflow: hidden;
+}
+.mainBanner .swiper-wrapper{
+    height: 34vw;
+}
+
