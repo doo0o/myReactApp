@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <div class="header__inner">
+            <div class="util__wrap" id="header__menu">
+                <ul>
+                    <li><a class="btn__text" href="">App 다운로드</a></li>
+                    <li><a class="btn__text" href="">개인 로그인</a></li>
+                    <li><a class="btn__text" href="">법인 로그인</a></li>
+                    <li><a class="btn__text" href="">회원가입</a></li>
+                    <li><a class="btn__text" href="">월드와이드</a></li>
+                    <li>
+                        <button onclick="depthSlider();" class="btn__text lang__selector">LANGUAGE</button>
+                        <div class="lang__wrap">
+                            <ul>
+                                <li><a href="/kr/ko/e">한국어</a></li>
+                                <li><a href="/kr/en">ENGLISH</a></li>
+                                <li><a href="/kr/zh">中文</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="btn__text" href="">채용</a></li>
+                    <li><a class="btn__text" href="">검색</a></li>
+                </ul>
+            </div>
+            <div class="header__nav">
+                <ul>
+                    <li><a href="javascript:void(0);">모델</a></li>
+                    <li><a href="javascript:void(0);">이벤트</a></li>
+                    <li><a href="javascript:void(0);">브랜드</a></li>
+                    <li><a href="javascript:void(0);">고객센터</a></li>
+                    <li><a href="javascript:void(0);">회사소개</a></li>
+                    <li><a href="javascript:void(0);">SHOP</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="wrap" id="wrap">
+        <div class="main__banner">
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+              </div>
+        </div>
+        <div class="contents">
+            <nav class="con__nav" id="con__nav">
+                <div class="nav__inner" id="nav__inner">
+                    <ul>
+                    </ul>
+                </div>
+                <span class="moveCursor" id="moveCursor"></span>
+            </nav>
+            <div class="wrap__inner" id="wrap__inner"></div>
+        </div>
+    </div>
+    <span><button id="MODE__Select">MODE Select</button></span>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./ui.js"></script>
+    <script>
+        const main__swiper = new Swiper('.mainBanner', {
+            loop : true,
+        })
+    </script>
+</body>
+</html>

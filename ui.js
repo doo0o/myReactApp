@@ -235,63 +235,55 @@ const programmers = {
         answer.toString().replace(/,/g,"");
     }
 }
-
-
-let data = {
-    sectionData : [
-        "HOME",
-        "ABOUT",
-        "STORE",
-        "SERVICE",
-        "ADVICE",
-        "COMPANY"
-    ]
+const data = {
+    brand__Name : [
+        "honda",
+        "yamaha",
+        "suzuki",
+        "daelim",
+        "vespa"
+    ],
 }
 
-var cli = "", wrapper = "";
+function depthSlider(){
+    
+}
 
-let nav = document.getElementById("nav").children[0],
-secWrapper = document.getElementById("wrap__inner");
-let _targetNav = document.querySelectorAll(".nav li");
+class Buw{
+    constructor(){
+        this.index = data.brand__Name.length;
+        this.data = data.brand__Name;
+        this.secWrapper = document.getElementById("wrap__inner");
+        this.nav__inner = document.getElementById("nav__inner").children[0];
+    }
 
+    contentCreate(){ // nav & section Create
+        let cli = "", wrapper = "";
+        for(let i = 0; i < this.index; i++){
+            cli += '<li data-scroll="'+ i + '"><a href="javascript:void(0);">'+ this.data[ i ].toUpperCase() + '</a></li>';
 
-var ui = {
-    settingFunc : () => {
-        for(i = 0; i < data.sectionData.length; i++){
-            cli += '<li data-scroll="'+ i + '"><a href="javascript:void(0);">'+ data.sectionData[i] + '</a></li>';
-            wrapper += '<section class="section__wrap"><p class="section__title"><span>' + data.sectionData[i] + '</span></p><div class="section__inner"></div></section>';
+            wrapper += '<section class="section__wrap"><p class="section__title"><span>' + this.data[ i ].toUpperCase() + '</span></p><div class="section__inner"></div></section>';
         }
-        secWrapper.innerHTML = wrapper;
-        nav.innerHTML = cli;
-        ui.navEvent();
-        ui.scrollMove();
-    },
-    animationOn : () =>{
+        this.secWrapper.innerHTML = wrapper;
+        this.nav__inner.innerHTML = cli;
+    }
 
-    },
-    scrollMove : (index) => {
-        let scroll_target = document.querySelectorAll(".section__wrap");
-        for(i = 0; i < scroll_target.length; i++){
-            (function(){
-                scroll_target
-                console.log(scroll_target[i].scrollTop);
-
-            })()
-            
-        }
-    },
-    navEvent : () => {
-        function resetClass(){
-            for(i = 0;i < _targetNav.length; i++){
-                _targetNav[i].classList.remove('active');
+    navEvent(){
+        let ntg = document.querySelectorAll(".con__nav li");
+        function clicks(){
+            if(this.classList.contains('active') == false){
+                for(let i = 0; i < data.brand__Name.length; i++){
+                    ntg[i].classList.remove('active');
+                }
+                this.classList.add('active');
             }
         }
-        _targetNav.forEach((el) => {
-            el.addEventListener("mouseover", function(){
-                this.classList.contains('active') == false ? resetClass() : void(0);
-                this.classList.add("active");
-            })
+        ntg.forEach(function (el){
+            el.addEventListener("click", clicks)
         });
     }
 }
-ui.settingFunc();
+let BUW = new Buw();
+
+BUW.contentCreate();
+BUW.navEvent();
