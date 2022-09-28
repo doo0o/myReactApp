@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
@@ -39,7 +39,9 @@
             </div>
             <div class="header__nav">
                 <ul>
-                    <li><a href="javascript:void(0);">모델</a></li>
+                    <li><a href="javascript:void(0);">모델</a>
+                        <ul id="model_List"></ul>
+                    </li>
                     <li><a href="javascript:void(0);">이벤트</a></li>
                     <li><a href="javascript:void(0);">브랜드</a></li>
                     <li><a href="javascript:void(0);">고객센터</a></li>
@@ -71,6 +73,7 @@
     </div>
     <span><button id="MODE__Select">MODE Select</button></span>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./data.js"></script>
     <script src="./ui.js"></script>
     <script>
         const main__swiper = new Swiper('.mainBanner', {

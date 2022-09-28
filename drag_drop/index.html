@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="drag_drop" id="drag">
+        <p class="tit">Drag</p>
+        <div class="x-ov">
+            <ul class="dragObjWrap">
+                <li data-drag-index="1">
+                    <div class="dropObj">
+                        <p>Drag box 1</p>
+                        <div calss="cont">cont1</div>
+                    </div>
+                </li>
+                <li data-drag-index="2">
+                    <div class="dropObj">
+                        <p>drag box 2</p>
+                        <div calss="cont">cont2</div>
+                    </div>
+                </li>
+                <li data-drag-index="3">
+                    <div class="dropObj">
+                        <p>drag box 3</p>
+                        <div calss="cont">cont3</div>
+                    </div>
+                </li>
+                <li data-drag-index="4">
+                    <div class="dropObj">
+                        <p>drag box 4</p>
+                        <div calss="cont">cont4</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="drag_drop" id="drag_v2">
+        <p class="tit">GRID</p>
+        <ul class="ul">
+            <li data-drag-index="1"></li>
+            <li data-drag-index="2"></li>
+            <li data-drag-index="3"></li>
+            <li data-drag-index="4"></li>
+            <li data-drag-index="5"></li>
+            <li data-drag-index="6"></li>
+        </ul>
+    </div>
+    <script src="./drag.js"></script>
+</body>
+</html>

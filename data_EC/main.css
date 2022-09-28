@@ -67,17 +67,17 @@
 
 
 /* contents in tab scroll nav */
-#wrap .con__nav.fixed{position: fixed;}
-#wrap .con__nav{width: 100%;background-color: #fff;z-index: 9999;box-shadow:rgb(6 24 44 / 40%) -1px 2px 5px 0px;padding: 10px 0;}
-#wrap .con__nav ul{display: flex;position: relative;height: 40px;justify-content: center}
+.header__nav.fixed{position: fixed;}
+.header__nav{width: 100%;background-color: #fff;z-index: 9999;box-shadow:rgb(6 24 44 / 40%) -1px 2px 5px 0px;padding: 10px 0;}
+.header__nav ul{display: flex;position: relative;height: 40px;justify-content: center}
 
-#wrap .con__nav ul li{text-align: center;position: relative;margin: 0 20px;padding: 10px 0 ;color: darkblue;}
-#wrap .con__nav ul li a::after, #wrap .con__nav ul li a::before{content: "";display: block;position: absolute;width: 0;height: 2px;bottom: 0;transition: all 0.5s;opacity: 0;background-color: darkblue;}
-#wrap .con__nav ul li a::after{left: 0;}
-#wrap .con__nav ul li a::before{right: 0;}
-#wrap .con__nav ul li.active a::after{opacity: 1;width: 50%;}
-#wrap .con__nav ul li.active a::before{opacity: 1;width: 50%;}
-#wrap .con__nav ul li a{padding: 10px 0;font-weight: bold;}
+.header__nav ul li{text-align: center;position: relative;margin: 0 20px;padding: 10px 0 ;color: darkblue;}
+.header__nav ul li a::after, .header__nav ul li a::before{content: "";display: block;position: absolute;width: 0;height: 2px;bottom: 0;transition: all 0.5s;opacity: 0;background-color: darkblue;}
+.header__nav ul li a::after{left: 0;}
+.header__nav ul li a::before{right: 0;}
+.header__nav ul li.active a::after{opacity: 1;width: 50%;}
+.header__nav ul li.active a::before{opacity: 1;width: 50%;}
+.header__nav ul li a{padding: 10px 0;font-weight: bold;}
 
 
 #header .header__inner .header__nav ul{

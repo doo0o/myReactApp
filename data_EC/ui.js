@@ -235,55 +235,59 @@ const programmers = {
         answer.toString().replace(/,/g,"");
     }
 }
-const data = {
-    brand__Name : [
-        "honda",
-        "yamaha",
-        "suzuki",
-        "daelim",
-        "vespa"
-    ],
-}
+
 
 function depthSlider(){
-    
+
 }
 
 class Buw{
     constructor(){
-        this.index = data.brand__Name.length;
-        this.data = data.brand__Name;
-        this.secWrapper = document.getElementById("wrap__inner");
-        this.nav__inner = document.getElementById("nav__inner").children[0];
+        this._menuData = MENU_data;
+        this._section = document.getElementById("wrap__inner");
+        this._nav = document.getElementById("model_List");
     }
+    
+    model_List(){
+        let list__model = "", section__wrap = "";
+        let _objKeys = this._menuData,
+            _objIndex = _objKeys.length;
+        // let test = 
+            // console.log();
 
-    contentCreate(){ // nav & section Create
-        let cli = "", wrapper = "";
-        for(let i = 0; i < this.index; i++){
-            cli += '<li data-scroll="'+ i + '"><a href="javascript:void(0);">'+ this.data[ i ].toUpperCase() + '</a></li>';
-
-            wrapper += '<section class="section__wrap"><p class="section__title"><span>' + this.data[ i ].toUpperCase() + '</span></p><div class="section__inner"></div></section>';
+        for(let i = 0; i < _objIndex; i++){
+            list__model += '<li data-scroll="'+ i + '"><a href="javascript:void(0);">'+ _objKeys[i] + '</a></li>';
+            console.log(_objKeys[i].semi.list__Name)
         }
-        this.secWrapper.innerHTML = wrapper;
-        this.nav__inner.innerHTML = cli;
+        this._nav.innerHTML = list__model;
     }
+    // contentCreate(){ // nav & section Create
+    //     console.log(this.data)
+    //     let cli = "", wrapper = "";
+    //     for(let i = 0; i < this.index; i++){
+    //         cli += '<li data-scroll="'+ i + '"><a href="javascript:void(0);">'+ this.data[ i ].toUpperCase() + '</a></li>';
 
-    navEvent(){
-        let ntg = document.querySelectorAll(".con__nav li");
-        function clicks(){
-            if(this.classList.contains('active') == false){
-                for(let i = 0; i < data.brand__Name.length; i++){
-                    ntg[i].classList.remove('active');
-                }
-                this.classList.add('active');
-            }
-        }
-        ntg.forEach(function (el){
-            el.addEventListener("click", clicks)
-        });
-    }
+    //         wrapper += '<section class="section__wrap"><p class="section__title"><span>' + this.data[ i ].toUpperCase() + '</span></p><div class="section__inner"></div></section>';
+    //     }
+    //     this.secWrapper.innerHTML = wrapper;
+    //     this.nav__inner.innerHTML = cli;
+    // }
+
+    // navEvent(){
+    //     let ntg = document.querySelectorAll(".con__nav li");
+    //     function clicks(){
+    //         if(this.classList.contains('active') == false){
+    //             for(let i = 0; i < data.car__Name.length; i++){
+    //                 ntg[i].classList.remove('active');
+    //             }
+    //             this.classList.add('active');
+    //         }
+    //     }
+    //     ntg.forEach(function (el){
+    //         el.addEventListener("click", clicks)
+    //     });
+    // }
 }
 let BUW = new Buw();
 
-BUW.contentCreate();
-BUW.navEvent();
+BUW.model_List();
