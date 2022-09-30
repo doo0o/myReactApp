@@ -2,6 +2,7 @@ class drag{
     constructor(){
         this.dragObj = document.querySelectorAll(".dragObj")
         this.dropObj = document.querySelectorAll('.dropObj')
+        this.isMoving = false;
     }
     onReady(){
         let dragParent = document.querySelector('.dragParent');
@@ -11,23 +12,26 @@ class drag{
             dragParent.style.width = targetW + 'px';
         }
         //
-        this.dropObj.ondragstart = function() {
-            return false;
-        };
+        
         for(let index = 0; index < this.dragObj.length; index++){
             this.start(index, this.dragObj, this.dropObj);
+            this.dragObj[index].ondragstart = function() {
+                return false;
+            };
         }
     }
 
     start(index, dragObj, dropObj, boolean){
         let _clone = dragObj[index].cloneNode(true);// 드레그 스타트 타겟 클론
+
         dragObj[index].addEventListener('mousedown',(e) => {
             dropObj[index].classList.add("drag__status");
             dropObj[index].appendChild(_clone);
         });
        
-        dragObj[index].addEventListener('mouseup',() => {
+        dragObj[index].addEventListener('mouseup',(e) => {
             let _clone = dragObj[index].cloneNode(true); // 마우스 업 타겟 클론
+            dropObj[index].classList.remove("drag__status");
             dragObj[index].remove();
         })
     }
