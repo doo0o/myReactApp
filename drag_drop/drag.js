@@ -1,79 +1,76 @@
-class drag{
-    constructor(x,y){
-        this._target = document.querySelectorAll("#drag li")
-        this._parent = document.getElementById('drag')
-        this._dragParent = this._parent.querySelector('.x-ov')
-        this._targetW = document.querySelector('#drag li').offsetWidth*this._target.length
-        this.x = x
-        this.y = y
-        this.cloneObj = {}
+
+
+(()=> {
+    const QS = (select) => document.querySelectorAll(select);
+    const dragItem = QS('.dragItem');
+    const dropItem = QS('.dropObj');
+    const dragParent = QS('dragParent');
+    let dragItemW = dragItem[0].offsetWidth * dragItem.length;
+
+    window.onload = function(){
+        dragParent.style.width = targetW + 'px';
     }
-    
-    cloneFactory(){
-        console.log(this.cloneObj)
+
+    dragItem.forEach(el => {
+        el.addEventListener('dragstart', () => {
+            el.classList.add('drag__status')
+        })
+    })
+
+})();
+
+
+class drag{
+    onReady(){
+        let dragParent = document.querySelector('.dragParent');
+        let targetW = document.querySelector('#drag .dragItem').offsetWidth * this._target.length;
+        window.onload = function(){
+            dragParent.style.width = targetW + 'px';
+        }
+        // this._parent.ondragstart = function() {
+        //     return false;
+        // };
+        for(let index = 0; index < this._target.length; index++){
+            this.start(index, this._target, this._parent);
+        }
+    }
+
+    start(index, _target, _parent){
+        _target[index].addEventListener('dargstart',(e) => {
+            console.log(e);
+            let _clone = _target[index].cloneNode(true);  // 드레그 스타트 타겟 클론
+            _parent[index].classList.add("drag__status");
+            _parent[index].appendChild(_clone);
+            this.moveAt(index, _target, _parent ,true);
+        });
+
+        _target[index].addEventListener('drag',() => { 
+            let _clone = _target[index].cloneNode(true); // 마우스 업 타겟 클론
+            _target[index].remove();
+            this.end(index, _target, _parent, _clone);
+            this.moveAt(index, _target, _parent ,false);
+        })
+    }
+
+    moveAt(index, _target,_parent ,boolean){
+        this._parent[index].addEventListener('mousemove', (event) => {
+            let shiftX = event.clientX - _target[index].getBoundingClientRect().left;
+            console.log(shiftX);
+            if(boolean === false){
+                console.log(_parent)
+                this.end(index, _target, _parent, boolean);
+                console.log("end");
+            }
+        });
+    }
+
+    end(index, _target, _parent, _clone, boolean){
+        console.log(_clone)
+        _parent[index].classList.remove("drag__status");
+        _target[index].remove();
+        this._parent[index].removeEventListener('mousemove',this.moveAt)
     }
 }
 
 let Drag = new drag;
-Drag.cloneFactory()
-
-// let _target = document.querySelectorAll("#drag li"),
-//     _parent = document.getElementById('drag')
-// drag_v2 = document.getElementById("drag_v2");
-// let currentItemIndex = null;
-// let currentItem = null;
-
-// let k = _parent.querySelector('.x-ov');
-// let h = document.querySelector('#drag li').offsetWidth*_target.length
-
-// window.onload = function(){
-//     k.style.width = h + 'px';
-// }
-
-
-// for(const [ i, target ] of _target.entries()){  
-//     target.onmousedown = function(event){
-//         target.style.position = 'absolute';
-//         target.style.zIndex = 1000;
-//         let _targetX = event.clientX;
-//         // console.log(_targetX)
-//         for(let i = 0; i < _target.length; i++){
-//             console.log(_target[i].clientX);
-//             _target[i].style.position = 'absolute';
-//             _target[i].style.left = 'absolute';
-//         }
-        
-//     }
-// }
-
-
-
-
-
-// target.addEventListener('dragstart', (e) => {
-//     currentItem = e.target;
-//     const listArr = [...currentItem.parentElement.children];
-//     currentItemIndex = listArr.indexOf(currentItem);
-//     console.log(e);
-//     target.style.position = 'absolute'
-    
-// });
-
-// target.addEventListener('dragover', (e) => {
-//     e.preventDefault();
-//     console.log(target);
-// });
-
-// target.addEventListener('drop', (e) => {
-//     e.preventDefault();
-    
-//     const currentDropItem = e.target;
-//     const listArr = [...currentItem.parentElement.children];
-//     const dropItemIndex = listArr.indexOf(currentDropItem);
-//     currentItem.style.position = 'relative'
-//     if (currentItemIndex < dropItemIndex) {
-//     currentDropItem.after(currentItem);
-//     } else {
-//     currentDropItem.before(currentItem);
-//     }
-// });
+Drag.onReady()
