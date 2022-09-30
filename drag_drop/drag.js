@@ -1,74 +1,51 @@
-
-
-(()=> {
-    const QS = (select) => document.querySelectorAll(select);
-    const dragItem = QS('.dragItem');
-    const dropItem = QS('.dropObj');
-    const dragParent = QS('dragParent');
-    let dragItemW = dragItem[0].offsetWidth * dragItem.length;
-
-    window.onload = function(){
-        dragParent.style.width = targetW + 'px';
-    }
-
-    dragItem.forEach(el => {
-        el.addEventListener('dragstart', () => {
-            el.classList.add('drag__status')
-        })
-    })
-
-})();
-
-
 class drag{
+    constructor(){
+        this.dragObj = document.querySelectorAll(".dragObj")
+        this.dropObj = document.querySelectorAll('.dropObj')
+    }
     onReady(){
         let dragParent = document.querySelector('.dragParent');
-        let targetW = document.querySelector('#drag .dragItem').offsetWidth * this._target.length;
-        window.onload = function(){
+        // drag item을 감싸고 있는 부모 OBJ 너비
+        let targetW = document.querySelector('#drag .dragObj').offsetWidth * this.dragObj.length;
+        window.onload = function(){ 
             dragParent.style.width = targetW + 'px';
         }
-        // this._parent.ondragstart = function() {
-        //     return false;
-        // };
-        for(let index = 0; index < this._target.length; index++){
-            this.start(index, this._target, this._parent);
+        //
+        this.dropObj.ondragstart = function() {
+            return false;
+        };
+        for(let index = 0; index < this.dragObj.length; index++){
+            this.start(index, this.dragObj, this.dropObj);
         }
     }
 
-    start(index, _target, _parent){
-        _target[index].addEventListener('dargstart',(e) => {
-            console.log(e);
-            let _clone = _target[index].cloneNode(true);  // 드레그 스타트 타겟 클론
-            _parent[index].classList.add("drag__status");
-            _parent[index].appendChild(_clone);
-            this.moveAt(index, _target, _parent ,true);
+    start(index, dragObj, dropObj, boolean){
+        let _clone = dragObj[index].cloneNode(true);// 드레그 스타트 타겟 클론
+        dragObj[index].addEventListener('mousedown',(e) => {
+            dropObj[index].classList.add("drag__status");
+            dropObj[index].appendChild(_clone);
         });
-
-        _target[index].addEventListener('drag',() => { 
-            let _clone = _target[index].cloneNode(true); // 마우스 업 타겟 클론
-            _target[index].remove();
-            this.end(index, _target, _parent, _clone);
-            this.moveAt(index, _target, _parent ,false);
+       
+        dragObj[index].addEventListener('mouseup',() => {
+            let _clone = dragObj[index].cloneNode(true); // 마우스 업 타겟 클론
+            dragObj[index].remove();
         })
     }
 
-    moveAt(index, _target,_parent ,boolean){
-        this._parent[index].addEventListener('mousemove', (event) => {
-            let shiftX = event.clientX - _target[index].getBoundingClientRect().left;
+    moveAt(index, dragObj, dropObj, _clone){
+        this.dragObj[index].addEventListener('mousemove', (event) => {
+            let shiftX = event.clientX - dragObj[index].getBoundingClientRect().left;
+            _clone.style.left = shiftX;
             console.log(shiftX);
-            if(boolean === false){
-                console.log(_parent)
-                this.end(index, _target, _parent, boolean);
-                console.log("end");
-            }
+            this.end(index, dragObj, dropObj, _clone);
         });
     }
 
-    end(index, _target, _parent, _clone, boolean){
+    end(index, dragObj, dropObj, _clone){
         console.log(_clone)
-        _parent[index].classList.remove("drag__status");
-        _target[index].remove();
-        this._parent[index].removeEventListener('mousemove',this.moveAt)
+        dropObj[index].classList.remove("drag__status");
+        dragObj[index].remove();
+        this.dropObj[index].removeEventListener('mousemove',this.moveAt)
     }
 }
 
