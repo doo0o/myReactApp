@@ -1,25 +1,92 @@
-let list = document.querySelector(".dragObjWrap");
+function newDrag(){
+    const dragItems = document.querySelectorAll('.dragObj');
+    let _this = null
+    let pick = {
+        target : null
+    }
+    let drop = {
+        target : null
+    }
+    function _return(){
+        return false
+    }
 
-let pick = null;
-// dragstart
-list.addEventListener("dragstart", (e) => {
-    const obj = e.target
-    obj.parentNode.children.indexOf(obj)
-    // console.log(e)
+    function mouseDown(e){
+        _this = e.target;
+        pick.target = _this.closest('.dragObj');
+        console.log(pick.target)
+    }
+
+    function atMove(e){
+        console.log()
+    }
+
+    function mouseUp(e){
+        _this = e.target;
+        drop.target = _this.closest('.dragObj');
+        console.log(drop.target)
+    }
+      
+    dragItems.forEach(el => {
+        el.addEventListener('mousedown', (e) => {mouseDown(e)});
+        // el.addEventListener('mousemove', (e) => {
+        //     e.target == _this ? atMove(e) : _return();
+        // });
+        el.addEventListener('mouseup',(e) => {mouseUp(e)});
+    });
+}
+
+function dragDrop(){
+    const dragItems = document.querySelectorAll('.dragObj');
+    let dragWrap = document.querySelector(".dragObjWrap");  
+    let dragobj = null;
+    let dragIndex = null;
+    let dragclone = null;
+    dragWrap.style.width = dragItems[0].offsetWidth * dragItems.length + "px"; // 리스트 감싸고있는 부모 width 세팅
+
+    function dragStart(e){
+        let _this = e.target;
+        dragobj = _this.closest('.dragObj');
+        dragIndex = [...e.target.parentNode.children].indexOf(dragobj);
+        dragclone = dragobj.cloneNode(true);
+        console.log(e.target.getBoundingClientRect())
+    }
     
-})
-
-
-list.addEventListener("dragover", (e) => {
-    e.preventDefault()
-    // console.log(e)
-})
-
-list.addEventListener("drop", (e) => {
-    e.target.before(pick)
-    console.log(e)
-})
-
+    function dragOver(e){
+        e.preventDefault();
+        // let shiftX = e.clientX - dragobj.getBoundingClientRect().left;
+        // dragobj.style.position = 'absolute';
+        // dragobj.style.left = e.pageX - shiftX + "px";
+        // console.log(e.pageX - shiftX)
+    }
+    
+    function drop(e){
+        let _this = e.target;
+        if(_this !== dragWrap){
+            const dropobj = _this.closest('.dragObj');
+            const dropIndex = [...dropobj.parentNode.children].indexOf(dropobj)
+            const dropclone = dropobj.cloneNode(true);
+            if(dropIndex > dragIndex){
+                dragobj.after(dropclone);
+                dropobj.before(dragclone);
+                dropobj.remove();
+                dragobj.remove(); 
+            }else if(dropIndex == dragIndex){
+                return false
+            }else{
+                dragobj.before(dropclone);
+                dropobj.after(dragclone);
+                dropobj.remove();
+                dragobj.remove();
+            }
+        }else{
+            return false
+        }
+    }
+    dragWrap.addEventListener("dragstart", (e) => {dragStart(e)});
+    dragWrap.addEventListener("dragover", (e) => {dragOver(e)});
+    dragWrap.addEventListener("drop", (e) => {drop(e)});
+}
 
 // let dragParent = document.querySelector('.dragParent');
 //         // drag item을 감싸고 있는 부모 OBJ 너비
