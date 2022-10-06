@@ -1,38 +1,61 @@
 function newDrag(){
     const dragItems = document.querySelectorAll('.dragObj');
+    const dragWrap = document.querySelector('.dragObjWrap');
     let _this = null
-    let pick = {
-        target : null
+    let shiftX = null
+    let _DR = {
+        select : {
+            target : null,
+            clone : null,
+            drop : null
+        },
+        endSelect : {
+            target : null,
+            clone : null,
+            drop : null
+        }
     }
-    let drop = {
-        target : null
-    }
-    function _return(){
-        return false
-    }
-
     function mouseDown(e){
         _this = e.target;
-        pick.target = _this.closest('.dragObj');
-        console.log(pick.target)
-    }
-
-    function atMove(e){
+        _DR.select.target = _this.closest('.dragObj'); // 드래그 타겟
+        // _DR.select.drop = _this.closest('.dropObj'); //  드래그 타겟 부모 드롭 타겟
+        _DR.select.clone = _DR.select.target.cloneNode(true); //드래그 타겟 클론
+         // 드롭타겟 안에 드래그 클론 appendchild 
+        _DR.select.target.before(_DR.select.clone);
         console.log()
+        _DR.select.clone.style.position = "absolute";
+        _DR.select.clone.style.left = _DR.select.target.getBoundingClientRect().left + "px"
+        _DR.select.clone.classList.add('clone');
+        
+        dragWrap.addEventListener('mousemove', (e) => {mouseMove(e)});
+
+        function mouseMove(e){
+            shiftX = e.clientX - _DR.select.target.getBoundingClientRect().left + 'px';
+            _DR.select.clone.style.left = shiftX;
+        }
+
+        function mouseUp(e){
+            _DR.select.target.remove();
+            // _this = e.target;
+            // _DR.endSelect.target = _this.closest('.dragObj');
+            _DR.select.clone.style.left = shiftX;
+            dragWrap.ondragstart = function() {
+                return false;
+            };
+            document.removeEventListener('mousemove', mouseMove(e));
+            e.mouseUp = null;
+            
+        }
+        
+        _DR.select.clone.addEventListener('mouseup',(e) => {mouseUp(e)});
     }
 
-    function mouseUp(e){
-        _this = e.target;
-        drop.target = _this.closest('.dragObj');
-        console.log(drop.target)
-    }
+   
+   
+   
       
     dragItems.forEach(el => {
         el.addEventListener('mousedown', (e) => {mouseDown(e)});
-        // el.addEventListener('mousemove', (e) => {
-        //     e.target == _this ? atMove(e) : _return();
-        // });
-        el.addEventListener('mouseup',(e) => {mouseUp(e)});
     });
 }
 
