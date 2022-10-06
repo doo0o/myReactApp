@@ -15,48 +15,48 @@ function newDrag(){
             drop : null
         }
     }
+    dragItems.forEach(el => {
+        el.addEventListener('mousedown', mouseDown);
+    });
+    
     function mouseDown(e){
         _this = e.target;
         _DR.select.target = _this.closest('.dragObj'); // 드래그 타겟
-        // _DR.select.drop = _this.closest('.dropObj'); //  드래그 타겟 부모 드롭 타겟
-        _DR.select.clone = _DR.select.target.cloneNode(true); //드래그 타겟 클론
-         // 드롭타겟 안에 드래그 클론 appendchild 
-        _DR.select.target.before(_DR.select.clone);
-        console.log()
-        _DR.select.clone.style.position = "absolute";
-        _DR.select.clone.style.left = _DR.select.target.getBoundingClientRect().left + "px"
-        _DR.select.clone.classList.add('clone');
+        _DR.select.drop = _this.closest('.dropObj'); //  드래그 타겟 부모 드롭 타겟
         
-        dragWrap.addEventListener('mousemove', (e) => {mouseMove(e)});
+        shiftX = e.clientX - _DR.select.target.getBoundingClientRect().left;
+        _DR.select.target.style.position = "absolute";
+        _DR.select.target.style.opacity = "0.5"
+        dragWrap.addEventListener('mousemove', mouseMove);
+        moveAt(e.pageX);
+        
+
+
+        function moveAt(pageX) {
+            _DR.select.target.style.left = pageX - shiftX + 'px';
+        }
 
         function mouseMove(e){
-            shiftX = e.clientX - _DR.select.target.getBoundingClientRect().left + 'px';
-            _DR.select.clone.style.left = shiftX;
+            moveAt(e.pageX)
         }
 
         function mouseUp(e){
-            _DR.select.target.remove();
-            // _this = e.target;
-            // _DR.endSelect.target = _this.closest('.dragObj');
-            _DR.select.clone.style.left = shiftX;
+            _DR.select.target.style.opacity = "1"
             dragWrap.ondragstart = function() {
                 return false;
             };
-            document.removeEventListener('mousemove', mouseMove(e));
+            dragWrap.removeEventListener('mousemove', mouseMove);
             e.mouseUp = null;
-            
         }
         
-        _DR.select.clone.addEventListener('mouseup',(e) => {mouseUp(e)});
+        _DR.select.target.addEventListener('mouseup', mouseUp);
     }
 
    
    
    
       
-    dragItems.forEach(el => {
-        el.addEventListener('mousedown', (e) => {mouseDown(e)});
-    });
+   
 }
 
 function dragDrop(){

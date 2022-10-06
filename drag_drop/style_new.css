@@ -31,8 +31,8 @@
 .drag_drop .dropObj{ 
     /* position: absolute; */
     float: left;
-    width: 280px;
     height: 500px;
+    
 }
 
 .drag_drop .dragObj.select {
@@ -43,8 +43,8 @@
 .drag_drop .dragObj {
     display: flex;
     /* position: absolute; */
-    width: 100%;
-    height: 100%;
+    width: 280px;
+    height: 500px;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;

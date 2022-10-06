@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="ball two" style="width: 100px;height: 100px;background-color: black;"></div>
+    <div class="ball one" style="width: 100px;height: 100px;background-color: black;"></div>
+</body>
+<script type="text/javascript">
+    let currentDroppable = null;
+    var ball = document.querySelectorAll('.ball');
+    ball.forEach(ball => {
+        ball.addEventListener('mousedown',(e) => {test(e,ball)})
+    });
+    function test(event,ball) {
+
+        console.log(ball)
+      let shiftX = event.clientX - ball.getBoundingClientRect().left;
+
+      ball.style.position = 'absolute';
+      ball.style.zIndex = 1000;
+    //   document.body.append(ball);
+
+      moveAt(event.pageX, event.pageY);
+
+      function moveAt(pageX, pageY) {
+        ball.style.left = pageX - shiftX + 'px';
+      }
+
+      function onMouseMove(event) {
+        moveAt(event.pageX, event.pageY);
+      }
+
+      document.addEventListener('mousemove', onMouseMove);
+
+      ball.onmouseup = function() {
+        document.removeEventListener('mousemove', onMouseMove);
+        ball.onmouseup = null;
+      };
+
+    };
+
+    function enterDroppable(elem) {
+      elem.style.background = 'pink';
+    }
+
+    function leaveDroppable(elem) {
+      elem.style.background = '';
+    }
+
+    ball.ondragstart = function() {
+      return false;
+    };
+</script>
+</html>
