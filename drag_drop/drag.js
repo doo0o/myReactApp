@@ -1,62 +1,116 @@
 function newDrag(){
     const dragItems = document.querySelectorAll('.dragObj');
     const dragWrap = document.querySelector('.dragObjWrap');
-    let _this = null
-    let shiftX = null
+    const dragParent = document.querySelector('.dragParent');
+    let _this = null;
+    let shiftX = null;
+    let targetPadding = Number(window.getComputedStyle(dragParent).getPropertyValue('padding').replace('px',''));
     let _DR = {
         select : {
             target : null,
             clone : null,
-            drop : null
+            drop : null,
         },
         endSelect : {
             target : null,
             clone : null,
-            drop : null
+            drop : null,
+            currentDroppable : null
         }
     }
-    dragItems.forEach(el => {
-        el.addEventListener('mousedown', mouseDown);
+    dragItems.forEach((el) => {
+        el.addEventListener('mousedown', (e) => {
+            mouseDown(e)
+            el.ondragstart = function() {
+                return false;
+            };
+        });
+        el.addEventListener('touchstart', (e) => {
+            mouseDown(e)
+            el.ondragstart = function() {
+                return false;
+            };
+        }, false);
     });
     
+    
     function mouseDown(e){
+        // 변수 선언
         _this = e.target;
         _DR.select.target = _this.closest('.dragObj'); // 드래그 타겟
         _DR.select.drop = _this.closest('.dropObj'); //  드래그 타겟 부모 드롭 타겟
-        
-        shiftX = e.clientX - _DR.select.target.getBoundingClientRect().left;
+        _DR.select.clone = _DR.select.target.cloneNode(true);
+        _DR.select.clone.classList.add('clone');
+
+        shiftX = e.clientX - _DR.select.target.getBoundingClientRect().left + targetPadding; // 이벤트 발생 좌표, 엘리먼트 좌표 계산
+        _DR.select.target.before(_DR.select.clone);
+
+        // 스타일 정의
         _DR.select.target.style.position = "absolute";
-        _DR.select.target.style.opacity = "0.5"
-        dragWrap.addEventListener('mousemove', mouseMove);
-        moveAt(e.pageX);
+        _DR.select.target.style.opacity = "0.5";
+        _DR.select.target.style.top = '0'
+
+        // moveAt(e.pageX);
         
+        // _DR.select.target.addEventListener('mouseup', mouseUp);
+        _DR.select.target.addEventListener('touchend', mouseUp ,false);
+        // dragWrap.addEventListener('mousemove', mouseMove);
+        dragWrap.addEventListener('touchmove', mouseMove,false);
+    }
+    
+    function moveAt(pageX) {
+        _DR.select.target.style.left = pageX - shiftX + 'px';
 
-
-        function moveAt(pageX) {
-            _DR.select.target.style.left = pageX - shiftX + 'px';
-        }
-
-        function mouseMove(e){
-            moveAt(e.pageX)
-        }
-
-        function mouseUp(e){
-            _DR.select.target.style.opacity = "1"
-            dragWrap.ondragstart = function() {
-                return false;
-            };
-            dragWrap.removeEventListener('mousemove', mouseMove);
-            e.mouseUp = null;
-        }
-        
-        _DR.select.target.addEventListener('mouseup', mouseUp);
     }
 
-   
-   
-   
-      
-   
+    function mouseMove(e){
+        // const { pageX, pageY } = e;
+        _DR.select.target.hidden = true;
+        const element = document.elementFromPoint(e.pageX, e.pageY);
+        _DR.select.target.hidden = false;
+
+        let droppableBelow = element.closest('.dragObj');
+        if (_DR.endSelect.currentDroppable != droppableBelow) {
+          if (_DR.endSelect.currentDroppable) {
+            leaveDroppable(_DR.endSelect.currentDroppable);
+          }
+          _DR.endSelect.currentDroppable = droppableBelow;
+          if (_DR.endSelect.currentDroppable) {
+            enterDroppable(_DR.endSelect.currentDroppable);
+          }
+        }
+        moveAt(e.pageX)
+    }
+
+    
+    function mouseUp(e){
+            let currentParent = _DR.endSelect.currentDroppable.parentNode;
+            _DR.select.target.style.opacity = "1";
+            _DR.select.target.style.position = "relative";
+            _DR.select.target.style.left = "auto";
+            _DR.endSelect.currentDroppable.style.border = '';
+            _DR.select.clone.remove();
+            changeEl(e);
+            dragWrap.removeEventListener('mousemove', mouseMove);
+            dragWrap.removeEventListener('touchmove', mouseMove,false);
+            e.mouseUp = null;
+            return false
+    }
+
+    function enterDroppable(elem) {
+        elem.style.border = '4px solid #00AAD2';
+    }
+    function leaveDroppable(elem) {
+        elem.style.border = '';
+    }
+    function changeEl(e){
+        if(_DR.endSelect.currentDroppable !== _DR.select.target){
+            _DR.select.target.after(_DR.endSelect.currentDroppable);
+            currentParent.appendChild(_DR.select.target)
+        }else if(_DR.endSelect.currentDroppable == _DR.select.target){
+            return false
+        }
+    }
 }
 
 function dragDrop(){
@@ -95,7 +149,7 @@ function dragDrop(){
                 dropobj.remove();
                 dragobj.remove(); 
             }else if(dropIndex == dragIndex){
-                return false
+                return fals
             }else{
                 dragobj.before(dropclone);
                 dropobj.after(dragclone);

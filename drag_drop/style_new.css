@@ -29,28 +29,32 @@
 
 /* 드래그엔 드롭 ITEM  */
 .drag_drop .dropObj{ 
-    /* position: absolute; */
     float: left;
-    height: 500px;
-    
+    height: auto;
+    margin-right: 30px;
 }
 
 .drag_drop .dragObj.select {
     border: 4px solid purple;
-    box-sizing: border-box; 
-
+    
 }
 .drag_drop .dragObj {
-    display: flex;
     /* position: absolute; */
     width: 280px;
     height: 500px;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: column;
+    box-sizing: border-box; 
+    padding: 10px 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
     cursor: pointer;
-    
+}
+
+.drag_drop .dragObj p{
+    font-size: 44px;
+}
+
+.drag_drop .cont{
+    margin: 20px auto;
 }
 
 .drag_drop .dragObjWrap > .dropObj:first-child .dragObj:first-child{
@@ -58,21 +62,3 @@
     box-sizing: border-box;
 }
 
-.drag_drop .dragObj[data-drag-index='1']{
-    background-color: aqua;
-}
-.drag_drop .dragObj[data-drag-index='2']{
-    background-color: red;
-}
-.drag_drop .dragObj[data-drag-index='3']{
-    background-color: yellow;
-}
-.drag_drop .dragObj[data-drag-index='4']{
-    background-color: blue;
-}
-.drag_drop .dragObj[data-drag-index='5']{
-    background-color: green;
-}
-.drag_drop .dragObj[data-drag-index='6']{
-    background-color: purple;
-}

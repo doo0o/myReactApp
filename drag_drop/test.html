@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="ball two" style="width: 100px;height: 100px;background-color: black;"></div>
+    <div class="ball tow" style="width: 100px;height: 100px;background-color: black;"></div>
     <div class="ball one" style="width: 100px;height: 100px;background-color: black;"></div>
 </body>
 <script type="text/javascript">
@@ -23,7 +23,7 @@
 
       ball.style.position = 'absolute';
       ball.style.zIndex = 1000;
-    //   document.body.append(ball);
+      document.body.append(ball);
 
       moveAt(event.pageX, event.pageY);
 
@@ -33,6 +33,24 @@
 
       function onMouseMove(event) {
         moveAt(event.pageX, event.pageY);
+
+        ball.hidden = true;
+        let elemBelow = document.elementFromPoint(event.clientX, event.clientY);
+        ball.hidden = false;
+
+        if (!elemBelow) return;
+
+        let droppableBelow = elemBelow.closest('.droppable');
+        if (currentDroppable != droppableBelow) {
+          if (currentDroppable) { // null when we were not over a droppable before this event
+            leaveDroppable(currentDroppable);
+          }
+          currentDroppable = droppableBelow;
+          if (currentDroppable) { // null if we're not coming over a droppable now
+            // (maybe just left the droppable)
+            enterDroppable(currentDroppable);
+          }
+        }
       }
 
       document.addEventListener('mousemove', onMouseMove);
