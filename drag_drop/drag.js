@@ -37,12 +37,13 @@ function newDrag(){
     function mouseDown(e){
         // 변수 선언
         _this = e.target;
+
         _DR.select.target = _this.closest('.dragObj'); // 드래그 타겟
         _DR.select.drop = _this.closest('.dropObj'); //  드래그 타겟 부모 드롭 타겟
         _DR.select.clone = _DR.select.target.cloneNode(true);
         _DR.select.clone.classList.add('clone');
 
-        shiftX = e.clientX - _DR.select.target.getBoundingClientRect().left + targetPadding; // 이벤트 발생 좌표, 엘리먼트 좌표 계산
+        // shiftX = e.touches[0].clientX - _DR.select.target.getBoundingClientRect().left + targetPadding; // 이벤트 발생 좌표, 엘리먼트 좌표 계산
         _DR.select.target.before(_DR.select.clone);
 
         // 스타일 정의
@@ -52,22 +53,24 @@ function newDrag(){
 
         // moveAt(e.pageX);
         
-        // _DR.select.target.addEventListener('mouseup', mouseUp);
+        _DR.select.target.addEventListener('mouseup', mouseUp);
         _DR.select.target.addEventListener('touchend', mouseUp ,false);
-        // dragWrap.addEventListener('mousemove', mouseMove);
+        dragWrap.addEventListener('mousemove', mouseMove);
         dragWrap.addEventListener('touchmove', mouseMove,false);
     }
     
     function moveAt(pageX) {
         _DR.select.target.style.left = pageX - shiftX + 'px';
-
     }
 
     function mouseMove(e){
-        // const { pageX, pageY } = e;
-        _DR.select.target.hidden = true;
-        const element = document.elementFromPoint(e.pageX, e.pageY);
-        _DR.select.target.hidden = false;
+        console.log(isMobile())
+        // if(){
+            // const { pageX, pageY } = e;
+            _DR.select.target.hidden = true;
+            const element = document.elementFromPoint(e.touches[0].pageX, e.touches[0].pageY);
+            _DR.select.target.hidden = false;
+        // }
 
         let droppableBelow = element.closest('.dragObj');
         if (_DR.endSelect.currentDroppable != droppableBelow) {
@@ -79,12 +82,12 @@ function newDrag(){
             enterDroppable(_DR.endSelect.currentDroppable);
           }
         }
-        moveAt(e.pageX)
+        moveAt(e.touches[0].pageX);
     }
 
     
     function mouseUp(e){
-            let currentParent = _DR.endSelect.currentDroppable.parentNode;
+            currentParent = _DR.endSelect.currentDroppable.parentNode;
             _DR.select.target.style.opacity = "1";
             _DR.select.target.style.position = "relative";
             _DR.select.target.style.left = "auto";
@@ -112,7 +115,16 @@ function newDrag(){
         }
     }
 }
-
+function getConvertedEventType(type) {
+    if (isMobile()) {
+      if (type === 'mousedown') {
+        type = 'touchstart';
+      } else if (type === 'mouseup') {
+        type = 'touchend';
+      }
+    }
+    return type;
+  }
 function dragDrop(){
     const dragItems = document.querySelectorAll('.dragObj');
     let dragWrap = document.querySelector(".dragObjWrap");  
