@@ -9,17 +9,22 @@
 /* drag */
 .drag_drop{
     padding: 100px 0;
-    overflow-x: auto;
 }
 
 .drag_drop .dragParent{
     background-color: #000;
     padding: 30px;
     margin: 30px auto;
+    overflow: hidden;
 }
+
+/* .drag_drop .dragParent.scrollX{
+
+} */
 
 .drag_drop .dragObjWrap{
     position: relative;
+    display: flex;
 }
 .drag_drop .dragObjWrap::after{
     content: "";
@@ -29,9 +34,8 @@
 
 /* 드래그엔 드롭 ITEM  */
 .drag_drop .dropObj{ 
-    float: left;
     height: auto;
-    margin-right: 30px;
+    padding-right: 30px;
 }
 
 .drag_drop .dragObj.select {

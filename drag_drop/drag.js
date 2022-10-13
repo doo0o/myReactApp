@@ -1,10 +1,11 @@
 function newDrag(){
-    const dragItems = document.querySelectorAll('.dragObj');
-    const dragWrap = document.querySelector('.dragObjWrap');
+    const dragItems = document.querySelectorAll('.dragObj'); 
+    const dragWrap = document.querySelector('.dragObjWrap'); 
     const dragParent = document.querySelector('.dragParent');
-    let _this = null;
-    let shiftX = null;
     let targetPadding = Number(window.getComputedStyle(dragParent).getPropertyValue('padding').replace('px',''));
+    let _this = null, shiftX = null, eventObj = null, eventType = null, downType = null, moveType = null, endType = null;
+    let typeArr = [];
+    
     let _DR = {
         select : {
             target : null,
@@ -17,9 +18,13 @@ function newDrag(){
             drop : null,
             currentDroppable : null
         }
-    }
+    };
     dragItems.forEach((el) => {
         el.addEventListener('mousedown', (e) => {
+            window.mouseup_click_debug = true
+            setTimeout(function() {
+                window.mouseup_click_debug = false;
+            }, 200);
             mouseDown(e)
             el.ondragstart = function() {
                 return false;
@@ -33,73 +38,118 @@ function newDrag(){
         }, false);
     });
     
-    
-    function mouseDown(e){
-        // 변수 선언
-        _this = e.target;
+    function evtType(e){
+        if(e.type.indexOf('mouse') !== -1){
+            eventObj = e;
+        }else if(e.type.indexOf('touch') !== -1){
+            eventObj = e.touches[0];
+            e.touches[1].pageX
+        }
+    }
 
-        _DR.select.target = _this.closest('.dragObj'); // 드래그 타겟
-        _DR.select.drop = _this.closest('.dropObj'); //  드래그 타겟 부모 드롭 타겟
+    function mouseDown(e){
+        _this = e.target;
+        typeArr = [downType];
+        console.log(typeArr);
+        
+        // touch mouse event Type
+        _DR.select.target = _this.closest('.dragObj'); 
+        _DR.select.drop = _this.closest('.dropObj');
+
+        evtType(e);
         _DR.select.clone = _DR.select.target.cloneNode(true);
         _DR.select.clone.classList.add('clone');
-
-        // shiftX = e.touches[0].clientX - _DR.select.target.getBoundingClientRect().left + targetPadding; // 이벤트 발생 좌표, 엘리먼트 좌표 계산
+    
+        shiftX = eventObj.clientX - _DR.select.target.getBoundingClientRect().left + targetPadding; // 이벤트 발생 좌표, 엘리먼트 좌표 계산
         _DR.select.target.before(_DR.select.clone);
-
-        // 스타일 정의
+        
+        // target style
         _DR.select.target.style.position = "absolute";
         _DR.select.target.style.opacity = "0.5";
-        _DR.select.target.style.top = '0'
-
-        // moveAt(e.pageX);
+        _DR.select.target.style.top = '0';
         
-        _DR.select.target.addEventListener('mouseup', mouseUp);
-        _DR.select.target.addEventListener('touchend', mouseUp ,false);
         dragWrap.addEventListener('mousemove', mouseMove);
         dragWrap.addEventListener('touchmove', mouseMove,false);
+        window.addEventListener('mouseup', mouseUp, false);
+        window.addEventListener('touchend', mouseUp ,false);
     }
-    
+
     function moveAt(pageX) {
         _DR.select.target.style.left = pageX - shiftX + 'px';
     }
 
     function mouseMove(e){
-        console.log(isMobile())
-        // if(){
-            // const { pageX, pageY } = e;
+        moveType = e.type;
+        typeArr = [downType,moveType];
+        if(typeArr[1] == null){
+            reset();
+        }else{
+            evtType(e);
             _DR.select.target.hidden = true;
-            const element = document.elementFromPoint(e.touches[0].pageX, e.touches[0].pageY);
+            const element = document.elementFromPoint(eventObj.pageX, eventObj.pageY);
             _DR.select.target.hidden = false;
-        // }
+            
+            let droppableBelow = element.closest('.dragObj');
 
-        let droppableBelow = element.closest('.dragObj');
-        if (_DR.endSelect.currentDroppable != droppableBelow) {
-          if (_DR.endSelect.currentDroppable) {
-            leaveDroppable(_DR.endSelect.currentDroppable);
-          }
-          _DR.endSelect.currentDroppable = droppableBelow;
-          if (_DR.endSelect.currentDroppable) {
-            enterDroppable(_DR.endSelect.currentDroppable);
-          }
+            if (_DR.endSelect.currentDroppable != droppableBelow) {
+                if (_DR.endSelect.currentDroppable) {
+                    leaveDroppable(_DR.endSelect.currentDroppable);
+                }
+                _DR.endSelect.currentDroppable = droppableBelow;
+                if (droppableBelow) {
+                    enterDroppable(_DR.endSelect.currentDroppable);
+                }
+            }
+            moveAt(eventObj.pageX);
         }
-        moveAt(e.touches[0].pageX);
     }
 
     
-    function mouseUp(e){
-            currentParent = _DR.endSelect.currentDroppable.parentNode;
-            _DR.select.target.style.opacity = "1";
-            _DR.select.target.style.position = "relative";
-            _DR.select.target.style.left = "auto";
-            _DR.endSelect.currentDroppable.style.border = '';
-            _DR.select.clone.remove();
-            changeEl(e);
-            dragWrap.removeEventListener('mousemove', mouseMove);
-            dragWrap.removeEventListener('touchmove', mouseMove,false);
+    function mouseUp(e){ 
+        endType = e.type
+        typeArr = [downType,moveType,endType];
+        console.log(typeArr)
+        if(typeArr.length == 3){
+            if(_DR.endSelect.currentDroppable !== null){
+                currentParent = _DR.endSelect.currentDroppable.parentNode;
+                _DR.endSelect.currentDroppable.style.border = '';
+                changeEl(e);
+            }
+            reset()
             e.mouseUp = null;
+        }else{
+            console.log('return')
             return false
+        }
     }
 
+    function reset(){
+        _DR.select.target.style.opacity = "1";
+        _DR.select.target.style.position = "relative";
+        _DR.select.target.style.left = "auto";
+
+        _DR.select.clone.remove();
+        
+        _DR = {
+            select : {
+                target : null,
+                clone : null,
+                drop : null,
+            },
+            endSelect : {
+                target : null,
+                clone : null,
+                drop : null,
+                currentDroppable : null
+            }
+        }
+
+        dragWrap.removeEventListener('mousemove', mouseMove);
+        dragWrap.removeEventListener('touchmove', mouseMove,false);
+        window.removeEventListener('mouseup', mouseUp, false);
+        window.removeEventListener('touchend', mouseUp ,false);
+    }
+    
     function enterDroppable(elem) {
         elem.style.border = '4px solid #00AAD2';
     }
@@ -107,136 +157,16 @@ function newDrag(){
         elem.style.border = '';
     }
     function changeEl(e){
-        if(_DR.endSelect.currentDroppable !== _DR.select.target){
+        let dragIndex = _DR.select.target.getAttribute('data-drag-index');
+        let dropIndex = _DR.endSelect.currentDroppable.getAttribute('data-drag-index');
+
+        _DR.select.clone.remove();
+
+        if(dragIndex !== dropIndex){
             _DR.select.target.after(_DR.endSelect.currentDroppable);
-            currentParent.appendChild(_DR.select.target)
-        }else if(_DR.endSelect.currentDroppable == _DR.select.target){
-            return false
-        }
-    }
-}
-function getConvertedEventType(type) {
-    if (isMobile()) {
-      if (type === 'mousedown') {
-        type = 'touchstart';
-      } else if (type === 'mouseup') {
-        type = 'touchend';
-      }
-    }
-    return type;
-  }
-function dragDrop(){
-    const dragItems = document.querySelectorAll('.dragObj');
-    let dragWrap = document.querySelector(".dragObjWrap");  
-    let dragobj = null;
-    let dragIndex = null;
-    let dragclone = null;
-    dragWrap.style.width = dragItems[0].offsetWidth * dragItems.length + "px"; // 리스트 감싸고있는 부모 width 세팅
-
-    function dragStart(e){
-        let _this = e.target;
-        dragobj = _this.closest('.dragObj');
-        dragIndex = [...e.target.parentNode.children].indexOf(dragobj);
-        dragclone = dragobj.cloneNode(true);
-        console.log(e.target.getBoundingClientRect())
-    }
-    
-    function dragOver(e){
-        e.preventDefault();
-        // let shiftX = e.clientX - dragobj.getBoundingClientRect().left;
-        // dragobj.style.position = 'absolute';
-        // dragobj.style.left = e.pageX - shiftX + "px";
-        // console.log(e.pageX - shiftX)
-    }
-    
-    function drop(e){
-        let _this = e.target;
-        if(_this !== dragWrap){
-            const dropobj = _this.closest('.dragObj');
-            const dropIndex = [...dropobj.parentNode.children].indexOf(dropobj)
-            const dropclone = dropobj.cloneNode(true);
-            if(dropIndex > dragIndex){
-                dragobj.after(dropclone);
-                dropobj.before(dragclone);
-                dropobj.remove();
-                dragobj.remove(); 
-            }else if(dropIndex == dragIndex){
-                return fals
-            }else{
-                dragobj.before(dropclone);
-                dropobj.after(dragclone);
-                dropobj.remove();
-                dragobj.remove();
-            }
+            currentParent.appendChild(_DR.select.target);
         }else{
-            return false
+            console.error("드래그 하려는 타겟이 드롭하려는 타겟과 같아 함수 종료")
         }
     }
-    dragWrap.addEventListener("dragstart", (e) => {dragStart(e)});
-    dragWrap.addEventListener("dragover", (e) => {dragOver(e)});
-    dragWrap.addEventListener("drop", (e) => {drop(e)});
 }
-
-// let dragParent = document.querySelector('.dragParent');
-//         // drag item을 감싸고 있는 부모 OBJ 너비
-// let targetW = document.querySelector('#drag .dragObj').offsetWidth * this.dragObj.length;
-// window.onload = function(){ 
-//     dragParent.style.width = targetW + 'px';
-// }
-// class drag{
-//     constructor(){
-//         this.dragObj = document.querySelectorAll(".dragObj")
-//         this.dropObj = document.querySelectorAll('.dropObj')
-//         this.isMoving = false;
-//     }
-//     onReady(){
-//         let dragParent = document.querySelector('.dragParent');
-//         // drag item을 감싸고 있는 부모 OBJ 너비
-//         let targetW = document.querySelector('#drag .dragObj').offsetWidth * this.dragObj.length;
-//         window.onload = function(){ 
-//             dragParent.style.width = targetW + 'px';
-//         }
-//         //
-        
-//         for(let index = 0; index < this.dragObj.length; index++){
-//             this.start(index, this.dragObj, this.dropObj);
-//             this.dragObj[index].ondragstart = function() {
-//                 return false;
-//             };
-//         }
-//     }
-
-//     start(index, dragObj, dropObj, boolean){
-//         let _clone = dragObj[index].cloneNode(true);// 드레그 스타트 타겟 클론
-
-//         dragObj[index].addEventListener('mousedown',(e) => {
-//             dropObj[index].classList.add("drag__status");
-//             dropObj[index].appendChild(_clone);
-//         });
-       
-//         dragObj[index].addEventListener('mouseup',(e) => {
-//             let _clone = dragObj[index].cloneNode(true); // 마우스 업 타겟 클론
-//             dropObj[index].classList.remove("drag__status");
-//             dragObj[index].remove();
-//         })
-//     }
-
-//     moveAt(index, dragObj, dropObj, _clone){
-//         this.dragObj[index].addEventListener('mousemove', (event) => {
-//             let shiftX = event.clientX - dragObj[index].getBoundingClientRect().left;
-//             _clone.style.left = shiftX;
-//             console.log(shiftX);
-//             this.end(index, dragObj, dropObj, _clone);
-//         });
-//     }
-
-//     end(index, dragObj, dropObj, _clone){
-//         console.log(_clone)
-//         dropObj[index].classList.remove("drag__status");
-//         dragObj[index].remove();
-//         this.dropObj[index].removeEventListener('mousemove',this.moveAt)
-//     }
-// }
-
-// let Drag = new drag;
-// Drag.onReady()
