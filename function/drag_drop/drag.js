@@ -1,4 +1,4 @@
-function newDrag() {
+function newDrag(...callBack) {
     // 변수 선언
     const items = document.querySelectorAll(".dragObj");
     const wItem = document.querySelectorAll(".dropObj");
@@ -92,6 +92,11 @@ function newDrag() {
         }
         reset();
         e.mouseUp = null;
+
+		// callBack
+        if(callBack) {
+           callBack();
+        }
     }
   
     
