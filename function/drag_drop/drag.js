@@ -162,3 +162,89 @@ function newDrag(...callBack) {
     }
   }
   
+
+
+
+
+
+
+
+
+
+
+  
+var DEVICE_CHECK = {
+	TYPE_DESKTOP: "desktop",
+	TYPE_TABLET: "tablet",
+	agent: {
+		tablet: (/iPad|tablet/i.test(window.navigator.userAgent))
+	},
+	detect: function () {
+		if (this.type) {
+			return;
+		}
+		if (this.agent.tablet) {
+			this.type = this.TYPE_TABLET;
+			return this.type
+		}
+		if (!this.type) {
+			this.type = this.TYPE_DESKTOP;
+			return this.type
+		}
+	},
+};
+
+
+
+class carCompare {
+	constructor(){
+		this.wrap = document.querySelector(".dragObjWrap")
+		this.items = this.wrap.querySelectorAll(".dragObj")
+		this.itemsCont = this.wrap.querySelectorAll('.dragObj .cont')
+		
+		this.fixedItem = this.wrap.querySelector('.fixed')
+		this.pin = this.wrap.querySelectorAll('.dragObj .pin')
+
+		// default
+		this.currentDragItem = null
+
+		this.dragIsTrued = true;
+		this.isTouchDevice = (navigator.maxTouchPoints || 'ontouchstart' in document.documentElement);
+
+		this.addEventOn()
+	}
+
+
+	eTypeCheck(){
+		if (e.type.indexOf("mouse") !== -1) {
+			eventObj = e;
+		} else if (e.type.indexOf("touch") !== -1) {
+			eventObj = e.touches[0];
+		}
+	}
+
+	addEventOn(){
+		console.log(DEVICE_CHECK.detect())
+		
+		this.itemsCont.forEach(el => {
+			el.addEventListener("mousedown", this.dragMouseDown);
+			// el.addEventListener("touchstart", this.dragMouseDown);
+		});
+		this.pin.forEach(el => {
+			el.addEventListener("click", ()=> {})
+		})
+	}
+
+	dragMouseDown(e){
+		this.currentDragItem = e.target.closest(".dragObj");
+		e.target.ondragstart = () => {return false};
+		if(!this.currentDragItem.classList.contains('fixed')){
+			wrap.addEventListener("mousemove", dragMouseMove, false);
+			// wrap.addEventListener("touchmove", dragMouseMove, false);
+		}
+	}
+
+	dragMouseMove(e){
+
+	}
+}
