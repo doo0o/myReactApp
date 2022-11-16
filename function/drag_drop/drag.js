@@ -1,250 +1,436 @@
-function newDrag(...callBack) {
-    // 변수 선언
-    const items = document.querySelectorAll(".dragObj");
-    const wItem = document.querySelectorAll(".dropObj");
-    const wrap = document.querySelector(".dragObjWrap");
-    const parent = document.querySelector(".dragParent");
-  
-    // 전역변수 선언
-    let _this = null, shiftX = null, eventObj = null, scrollX = null,
-        _isTarget = { this: null, clone: null, drop: null, isDrop: null, };
 
-    // wrap padding 값 계산
-    let targetPadding = Number(
-      window
-        .getComputedStyle(parent)
-        .getPropertyValue("padding")
-        .replace("px", "")
-    );
-    
-
-    // ****** EVENT START *****
-    items.forEach((el) => {
-        el.addEventListener("mousedown", (e) => {
-            mouseDown(e);
-            el.ondragstart = function () {
-            return false;
-            };
-        });
-        el.addEventListener("touchstart", (e) => { 
-            mouseDown(e); 
-            el.ondragstart = () => {return false}
-        }, false);
-    });
-
-
-    // scroll
-    parent.addEventListener("wheel", (e) => {
-      parent.scrollLeft += e.deltaY / 5;
-      scrollX = e.deltaY / 5;
-      console.log()
-    });
-
-    if (items.length >= 5) {
-        parent.classList.add("scrollX");
-        wrap.style.width = wItem[0].offsetWidth * items.length + "px";
-    }
-
-   
-  
-    function mouseDown(e) {
-        _this = e.target;
-        _isTarget.this = _this.closest(".dragObj");
-        // Down,Start Event :  device Event Type
-        eventType(e);
-        setting();
-
-        // 조건 : mouseDown event 발생이므로 mouseDown 함수 내부 실행
-        // move, end event start
-        wrap.addEventListener("mousemove", mouseMove, false);
-        wrap.addEventListener("touchmove", mouseMove, false);
-        window.addEventListener("mouseup", mouseUp, false);
-        window.addEventListener("touchend", mouseUp, false);
-    }
-  
-    function mouseMove(e) {
-        eventType(e);
-
-        // pointer 위치 element
-        _isTarget.this.hidden = true;
-        const element = document.elementFromPoint(eventObj.pageX, eventObj.pageY);
-        _isTarget.this.hidden = false;
-  
-        let droppableBelow = element.closest(".dragObj");
-  
-        if (_isTarget.isDrop != droppableBelow) {
-          if (_isTarget.isDrop) { // 마우스 포인터 위치가 타겟에 겹쳐질때
-            leaveDroppable(_isTarget.isDrop);
-          }
-          _isTarget.isDrop = droppableBelow;
-          if (droppableBelow) { // 마우스 포인터 위치가 타겟에 겹쳐지지 않을 때
-            enterDroppable(_isTarget.isDrop);
-          }
-        }
-        moveAt(eventObj.pageX);
-    }
-  
-    function mouseUp(e) {
-        if (_isTarget.isDrop !== null) {
-          currentParent = _isTarget.isDrop.parentNode;
-          _isTarget.isDrop.style.border = "";
-          changeElement(e);
-        }
-        reset();
-        e.mouseUp = null;
-
-		// callBack
-        if(callBack) {
-           callBack();
-        }
-    }
-  
-    
-    function setting()  {
-        // Create Clone
-        _isTarget.clone = _isTarget.this.cloneNode(true);
-        _isTarget.clone.classList.add("clone");
-        _isTarget.this.before(_isTarget.clone);
-
-        // pointer x,y 계산
-        shiftX = eventObj.clientX - _isTarget.this.getBoundingClientRect().left - parent.scrollLeft + targetPadding; 
-
-        // target style
-        _isTarget.this.style.position = "absolute";
-        _isTarget.this.style.opacity = "0.5";
-        _isTarget.this.style.top = "0";
-    }
-    
-    function moveAt(pageX) {
-        _isTarget.this.style.left = pageX - shiftX - scrollX + "px";
-    }
-
-    function reset() {
-        // remove style, clone
-        _isTarget.this.setAttribute('style','');
-        _isTarget.clone.remove();
-
-        // 전역변수 reset
-        _this = null, shiftX = null, eventObj = null, scrollX = null,
-        _isTarget = { this: null, clone: null, drop: null, isDrop: null, };
-        
-        // remove event 
-        wrap.removeEventListener("mousemove", mouseMove);
-        wrap.removeEventListener("touchmove", mouseMove, false);
-        window.removeEventListener("mouseup", mouseUp, false);
-        window.removeEventListener("touchend", mouseUp, false);
-    }
-  
-    function enterDroppable(elem) {
-      elem.style.border = "4px solid #00AAD2";
-    }
-    function leaveDroppable(elem) {
-      elem.style.border = "";
-    }
-    function changeElement(e) {
-        let dragIndex = _isTarget.this.getAttribute("data-drag-index");
-        let dropIndex = _isTarget.isDrop.getAttribute("data-drag-index");
-    
-        _isTarget.clone.remove();
-    
-        if (dragIndex !== dropIndex) {
-            _isTarget.this.after(_isTarget.isDrop);
-            currentParent.appendChild(_isTarget.this);
-        }
-    }
-
-    function eventType(e) {
-        if (e.type.indexOf("mouse") !== -1) {
-            eventObj = e;
-        } else if (e.type.indexOf("touch") !== -1) {
-            eventObj = e.touches[0];
-        }
-    }
-  }
-  
-
-
-
-
-
-
-
-
-
-
-  
-var DEVICE_CHECK = {
-	TYPE_DESKTOP: "desktop",
-	TYPE_TABLET: "tablet",
-	agent: {
-		tablet: (/iPad|tablet/i.test(window.navigator.userAgent))
-	},
-	detect: function () {
-		if (this.type) {
-			return;
+// 차량 비교하기 Start
+/**
+ * * @param {Function} callBack
+ * * @param {Object} objReturn
+* 	objReturn = {
+		target : this.dragItems,
+		index :  this.dragItems.length,
+		pin : this.pin,
+		fixObjIndex : this.dragItems,
+		fixObj : this.fixedItem,
+		deviceType : this.TYPE_DEVICE
+	}
+ */
+	class carCompare {
+		constructor(callBack){
+			this.drag = document.getElementById("drag")
+			this.wrap = document.querySelector(".dragObjWrap")
+			this.parent = document.querySelector(".dragParent")
+			this.dragItems = this.wrap.querySelectorAll(".dragObj")
+			this.dragItemsCont = this.wrap.querySelectorAll('.dragObj .cont')
+			this.touchItems = this.wrap.querySelectorAll('.dropObj')
+			this.fixedItem = this.wrap.querySelector('.fixed')
+			this.pin = this.wrap.querySelectorAll('.dragObj .pin')
+			
+			this.targetPadding = Number(
+				window
+				.getComputedStyle(this.parent)
+				.getPropertyValue("padding")
+				.replace("px", "")
+			);
+	
+			this.eventState = {
+				clickCompare : false, // mousedown : true / mouseup : false
+				moveCompare : false, // move on: true / move out : false
+				touchCompare : false, // touch on: true / touch out : false
+				navCompare : false, // create nav view :true / none : false
+				scrollCompare : false,
+			}
+	
+			// default
+			this.currentItem = null
+			this.currentclone = null
+			this.droppableBelow = null
+			this.futureItem = null
+			this.shiftX = null
+			this.saveScroll = 0
+			this.scrollX = window.scrollX;
+	
+			// this.longTouch = 0
+			this.result = 0
+			this.touchNav = null
+	
+			// DviceCheck
+			this.TYPE_DEVICE = /iPad|tablet/i.test(window.navigator.userAgent)
+	
+	
+			this.load()
+			this.callBack(callBack)
 		}
-		if (this.agent.tablet) {
-			this.type = this.TYPE_TABLET;
-			return this.type
-		}
-		if (!this.type) {
-			this.type = this.TYPE_DESKTOP;
-			return this.type
-		}
-	},
-};
-
-
-
-class carCompare {
-	constructor(){
-		this.wrap = document.querySelector(".dragObjWrap")
-		this.items = this.wrap.querySelectorAll(".dragObj")
-		this.itemsCont = this.wrap.querySelectorAll('.dragObj .cont')
+	
 		
-		this.fixedItem = this.wrap.querySelector('.fixed')
-		this.pin = this.wrap.querySelectorAll('.dragObj .pin')
-
-		// default
-		this.currentDragItem = null
-
-		this.dragIsTrued = true;
-		this.isTouchDevice = (navigator.maxTouchPoints || 'ontouchstart' in document.documentElement);
-
-		this.addEventOn()
-	}
-
-
-	eTypeCheck(){
-		if (e.type.indexOf("mouse") !== -1) {
-			eventObj = e;
-		} else if (e.type.indexOf("touch") !== -1) {
-			eventObj = e.touches[0];
+		load(){
+			window.onload = () => {
+				let scrollArea = this.dragItems[0].clientWidth * this.dragItems.length;
+				this.wrap.style.width = scrollArea + 'px';
+			}
+	
+	
+	
+			if(!this.TYPE_DEVICE){
+				
+			/*	*	*	*	*
+			*	DEVICE TYPE	*
+			*	> DESKTOP <	*
+			*	*	*	*	*/
+	
+				//scroll Event Listener
+				this.dragItemsCont.forEach(element => {
+					element.addEventListener("scroll", (e) => {
+						this.scrollSticky(e)
+					})
+				});
+	
+				// mouse Down Event Listener
+				this.dragItemsCont.forEach(element => {
+					element.addEventListener("mousedown", (e) => {
+						if(!e.target.closest(".dragObj").classList.contains('fixed')){
+							this.eventState.clickCompare = true;
+							if(this.eventState.clickCompare) this.dragMouseDown(e);
+						}
+					})
+				})
+	
+				// Mouse Move Event
+				this.drag.addEventListener("mousemove", (e) => {
+					this.eventState.moveCompare = true;
+					if(this.eventState.clickCompare && this.eventState.moveCompare) this.dragMouseMove(e);
+				})
+	
+				// PIN CLICK EVENT
+				this.pin.forEach(element => {
+					element.addEventListener("mousedown", (e) => {
+						this.PINSwitch(e)
+					})
+				})
+				
+				// Mouse Up Event Listner
+				window.addEventListener("mouseup", (e) => {
+					if(e.target.closest('.dragObjWrap')){
+						if(!e.target.closest(".dragObj").classList.contains('fixed')){
+							if(this.eventState.clickCompare) this.dragMouseUp(e);
+						}
+					}
+				})
+	
+	
+			}else if(this.TYPE_DEVICE){
+	
+			/*	*	*	*	*
+			*	DEVICE TYPE	*
+			*	> TABLET <	*
+			*	*	*	*	*/
+			
+				//scroll Event Listener
+				this.dragItemsCont.forEach(element => {
+					element.addEventListener("scroll", (e) => {
+						this.scrollLoad(e);
+						if(this.eventState.touchCompare) this.eventState.touchCompare = false;
+					})
+				})
+	
+				this.parent.addEventListener("scroll", (e) => {
+					this.scrollLoad(e);
+					if(this.eventState.touchCompare) this.eventState.touchCompare = false;
+				})
+				// mouse Down Event Listener
+				this.dragItemsCont.forEach(element => {
+					element.addEventListener("touchstart" , (e) => {
+						this.touchStart(e);
+					})
+				});
+	
+				// PIN CLICK EVENT
+				this.pin.forEach(element => {
+					element.addEventListener("touchstart", (e) => {
+						this.PINSwitch(e)
+					})
+				});
+	
+				window.addEventListener("touchend", (e) => {
+					this.touchEnd(e);
+				})
+			}
 		}
-	}
-
-	addEventOn(){
-		console.log(DEVICE_CHECK.detect())
+		scrollLoad(e){
+			this.eventState.scrollCompare = true;
+			this.eventState.touchCompare = false;
+	
+			if(e.target.classList.contains('cont')){
+				this.scrollSticky(e)
+			}
+		}
+	
+		scrollSticky(e){
+			this.saveScroll = e.target.scrollTop;
+			
+			this.eventState.scrollCompare = true;
+			this.eventState.touchCompare = false;
+	
+			if(this.eventState.scrollCompare && !this.eventState.touchCompare){
+				for (let i = 0; i < this.dragItemsCont.length; i++) {
+					this.dragItemsCont[i].scrollTop = e.target.scrollTop;
+				}
+				if(e.target.scrollTop >= 1){
+					this.wrap.classList.add('sticky');
+				}else if(e.target.scrollTop == 0){
+					this.wrap.classList.remove('sticky');
+				}
+			}
+		}
+	
+		dragMouseDown(e){
+			this.currentItem = e.target.closest(".dragObj");
+	
+			e.target.ondragstart = () => {return false};
+	
+			this.dragSetting(e);
+		}
+	
+		dragMouseMove(e){
+			this.currentItem.hidden = true;
+			this.element = document.elementFromPoint(e.pageX - this.scrollX, e.pageY - window.pageYOffset);
+			this.currentItem.hidden = false;
+	
+			this.droppableBelow = this.element.closest('.dragObj');
+	
+			if(this.droppableBelow && !this.droppableBelow.classList.contains('fixed')){
+	
+				if (this.futureItem != this.droppableBelow) {
+					if (this.futureItem) leaveDroppable(this.futureItem);
+					
+					this.futureItem = this.droppableBelow;
+					if (this.droppableBelow) enterDroppable(this.futureItem);
+				}
 		
-		this.itemsCont.forEach(el => {
-			el.addEventListener("mousedown", this.dragMouseDown);
-			// el.addEventListener("touchstart", this.dragMouseDown);
-		});
-		this.pin.forEach(el => {
-			el.addEventListener("click", ()=> {})
-		})
-	}
-
-	dragMouseDown(e){
-		this.currentDragItem = e.target.closest(".dragObj");
-		e.target.ondragstart = () => {return false};
-		if(!this.currentDragItem.classList.contains('fixed')){
-			wrap.addEventListener("mousemove", dragMouseMove, false);
-			// wrap.addEventListener("touchmove", dragMouseMove, false);
+				function enterDroppable(elem) {
+					elem.style.border = "4px solid #00AAD2";
+				}
+	
+				function leaveDroppable(elem) {
+					elem.style.border = "";
+				}
+		
+				this.MoveAt(e.pageX);
+			}else{
+				this.init();
+			}
+	
+		
 		}
-	}
+	
+		dragMouseUp(e){
+			if (this.futureItem !== null) {
+				this.futureItem.style.border = "";
+	
+				this.currentIdx = this.currentItem.dataset.dragIndex;
+				this.futureIdx = this.futureItem.dataset.dragIndex;
+	
+				if (this.currentIdx !== this.futureIdx) {
+					this.changeElement(this.currentItem, this.futureItem);
+				}
+			}
+			e.mouseUp = null;
+			this.init(e);
+		}
+	
+		MoveAt(pageX){
+			this.currentItem.style.left = pageX - this.shiftX - this.scrollX + "px";
+		}
+	
+		dragSetting(e){
+			// Create Clone
+			this.currentclone = this.currentItem.cloneNode(true);
+			this.currentclone.classList.add("clone");
+			this.currentItem.before(this.currentclone);
+			
 
-	dragMouseMove(e){
+			this.currentclone.querySelector('.cont').scrollTop = this.saveScroll
 
+			// // pointer x,y 계산
+			this.shiftX = e.pageX - this.currentItem.getBoundingClientRect().left - this.parent.scrollLeft + this.targetPadding;
+	
+			// target style
+			this.currentItem.style.position = "absolute";
+			this.currentItem.style.top = "0";
+			this.currentItem.style.zIndex = "9999";
+			this.currentItem.style.opacity = "0.5";
+		}
+	
+		// pin click
+		PINSwitch(e){
+			if(e.target.dataset.fix == 'false' || e.target.dataset.fix == ""){
+				const currentItem = e.target.closest('.dragObj');
+				const fixItem = document.querySelector('.fixed');
+				
+				e.target.dataset.fix = true;
+				fixItem.querySelector('.pin').dataset.fix = false;
+	
+				currentItem.classList.add('fixed');
+				fixItem.classList.remove('fixed');
+	
+				this.changeElement(currentItem, fixItem)
+			}
+		}
+	
+		// Tablet
+		touchStart(e){
+			this.init();
+			this.eventState.scrollCompare = false;
+			this.eventState.touchCompare = true;
+		}
+	
+		touchEnd(e){
+			if(this.eventState.touchCompare && !this.eventState.scrollCompare){
+				this.eventState.navCompare = true;
+				this.targetSelect(e);
+			}else{
+				this.init(e);
+			}
+		}
+		
+		targetSelect(e){
+			let item = e.target.closest('.dropObj');
+			if(this.eventState.navCompare && !item.querySelector('.dragObj').classList.contains('fixed')){
+				item.classList.add('select');
+				this.createNavi(e, item);
+			}
+		}
+	
+		touchMove(e){
+			function itemChild(target){
+				if(target == null){
+					return null
+				}else{
+					let output = target.querySelector('.dragObj');
+					return output
+				}
+			}
+	
+			let _this = e.target.closest('.dropObj');
+			let _thisNext = _this.nextSibling.nextSibling;
+			let _thisPrev = _this.previousSibling.previousSibling;
+			let item = itemChild(_this);
+			let nextItem = itemChild(_thisNext);
+			let prevItem = itemChild(_thisPrev);
+	
+			let button = e.target;
+	
+	
+			if(button.classList.contains('touch_prev') && _thisPrev !== null && !prevItem.classList.contains('fixed')){
+				this.changeElement(item, prevItem)
+			}else if(button.classList.contains('touch_next') && _thisNext !== null){
+				this.changeElement(item, nextItem)
+			}
+	
+			this.init();
+		}
+		
+		createNavi(e, item){
+			if(this.eventState.navCompare && e.target.closest('.dragObj')){
+				this.touchNav = document.createElement('div');
+				this.touchNav.classList.add('touchNav');
+				
+				let touchNavPrev = document.createElement('button');
+				let touchNavNext = document.createElement('button');
+				touchNavPrev.classList.add('touch_prev');
+				touchNavNext.classList.add('touch_next');
+		
+				touchNavPrev.innerText = "prev"
+				touchNavNext.innerText = "next"
+				
+				this.touchNav.append(touchNavPrev, touchNavNext)
+				e.target.closest('.dropObj').append(this.touchNav);
+			}
+	
+			// if(this.eventState.navCompare){
+				let touchButton = this.touchNav.querySelectorAll('[class^=touch_]');
+
+				touchButton.forEach(element => {
+					element.addEventListener('touchstart', (e) => {this.touchMove(e)});
+				});
+			// }
+		}
+	
+		changeElement(targetItem, changeItem) {
+			
+			let cgSaveBox = changeItem.closest('.dropObj');
+			let tgSaveBox = targetItem.closest('.dropObj');
+	
+			cgSaveBox.append(targetItem);
+			tgSaveBox.append(changeItem);
+
+			targetItem.querySelector('.cont').scrollTop = this.saveScroll;
+			changeItem.querySelector('.cont').scrollTop = this.saveScroll;
+		}
+
+		
+	
+		init(e){
+			// cloneScroll = itemScroll;
+			if(this.eventState.clickCompare){
+				for (let i = 0; i < this.dragItemsCont.length; i++) {
+					this.dragItemsCont[i].closest('.dragObj').setAttribute("style","");
+				}
+	
+				this.currentclone.remove();
+
+				// default
+				this.currentItem = null
+				this.currentclone = null
+				this.droppableBelow = null
+				this.futureItem = null
+				this.shiftX = null
+	
+				this.eventState.clickCompare = false;
+				this.eventState.moveCompare = false;
+				
+				this.dragItemsCont.forEach(element => {
+					element.removeEventListener("mousedown", this.dragMouseDown)
+				});
+				
+				window.removeEventListener("mouseup", this.dragMouseUp)
+				this.wrap.removeEventListener("mousemove", this.dragMouseMove)
+			}
+	
+			if(this.eventState.touchCompare){
+				this.result = 0;
+				// this.longTouch = 0;
+				this.eventState.touchCompare = false;
+				this.eventState.navCompare = false;
+				this.eventState.scrollCompare = false;
+				this.touchNav.remove();
+				this.dragItemsCont.forEach(element => {
+					element.removeEventListener('touchstart', this.touchStart)
+				})
+				window.removeEventListener('touchend', this.touchEnd);
+	
+				for(let i = 0; i < this.touchItems.length; i++){
+					this.touchItems[i].classList.remove('select');
+				}
+			}
+
+			window.removeEventListener("scroll", this.scrollSticky);
+		}
+	
+		get _return(){
+			let obj = {
+				target : this.dragItems,
+				index :  this.dragItems.length,
+				pin : this.pin,
+				fixObjIndex : this.dragItems,
+				fixObj : this.fixedItem,
+				deviceType : this.TYPE_DEVICE ? 'iPad & tablet' : 'Desktop'
+			}
+			return obj
+		}
+	
+		callBack(callBack){
+			if(callBack){
+				callBack();
+			}
+		}
+	
 	}
-}
+	
