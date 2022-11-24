@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>STEP</title>
+	<link rel="stylesheet" href="./step.css">
+</head>
+<body>
+	<div id="stepTest">
+		<div class="viewBox">
+			<ul class="question">
+				<li class="question__item active">
+					<div>
+						<h4>Question 01</h4>
+						<div class="input__wrap">
+							<label for="yesSelect01">YES</label>
+							<input type="radio" name="q01" id="yesSelect01">
+							<div class="form_area" data-input="false">
+								<div class="inbox_type01" onclick="inputFunc()">
+									<span class="tit">이름</span>
+									<input type="text" class="txt" title="이름 입력" value="">
+								</div>
+							</div>
+						</div>
+						<div class="input__wrap">
+							<label for="noSelect01">NO</label>
+							<input type="radio" name="q01" id="noSelect01">
+						</div>
+					</div>
+				</li>
+				<li class="question__item">
+					<div>
+						<h4>Question 02</h4>
+						<div class="input__wrap">
+							<label for="yesSelect02">YES</label>
+							<input type="radio" name="q02" id="yesSelect02">
+						</div>
+						<div class="input__wrap">
+							<label for="noSelect02">NO</label>
+							<input type="radio" name="q02" id="noSelect02">
+						</div>
+					</div>
+				</li>
+				<li class="question__item">
+					<div>
+						<h4>Question 03</h4>
+						<div class="input__wrap">
+							<label for="yesSelect03">YES</label>
+							<input type="radio" name="q03" id="yesSelect03">
+						</div>
+						<div class="input__wrap">
+							<label for="noSelect03">NO</label>
+							<input type="radio" name="q03" id="noSelect03">
+						</div>
+					</div>
+				</li>
+				<li class="question__item">
+					<div>
+						<h4>Question 04</h4>
+						<div class="input__wrap">
+							<label for="yesSelect04">YES</label>
+							<input type="radio" name="q04" id="yesSelect04">
+						</div>
+						<div class="input__wrap">
+							<label for="noSelect04">NO</label>
+							<input type="radio" name="q04" id="noSelect04">
+						</div>
+					</div>
+				</li>
+				<li class="question__item">
+					<div>
+						<h4>Question 05</h4>
+						<div class="input__wrap">
+							<label for="yesSelect05">YES</label>
+							<input type="radio" name="q05" id="yesSelect05">
+						</div>
+						<div class="input__wrap">
+							<label for="noSelect05">NO</label>
+							<input type="radio" name="q05" id="noSelect05">
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script src="./step.js"></script>
+	<script type="text/javascript">
+		selectStep()
+	</script>
+</body>
+</html>

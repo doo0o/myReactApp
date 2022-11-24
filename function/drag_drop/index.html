@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <p class="tit">Drag</p>
+    <div class="drag_drop" id="drag">
+        <div class="dragParent">
+            <ul class="dragObjWrap" >
+                <li class="dragObj" id="testtarget" draggable="true" data-drag-index="1" >
+                    <div class="contents"> 
+                        <p>비교하기 TYPE 1</p>
+                        <div calss="cont">cont1</div>
+                        
+                    </div>
+                </li>
+                <li class="dragObj" draggable="true" data-drag-index="2" >
+                    <div class="contents">
+                        <p>비교하기 TYPE 2</p>
+                        <div calss="cont">cont2</div>
+
+                    </div>
+                </li>
+                <li class="dragObj" draggable="true" data-drag-index="3" >
+                    <div class="contents">
+                        <p>비교하기 TYPE 3</p>
+                        <div calss="cont">cont3</div>
+
+                    </div>
+                </li>
+                <li class="dragObj" draggable="true" data-drag-index="4" >
+                    <div class="contents">
+                        <p>비교하기 TYPE 1</p>
+                        <div calss="cont">cont4</div>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+  
+    <script src="./drag.js"></script>
+    <script type="text/javascript">
+        dragDrop();
+    </script>
+</body>
+</html>

@@ -9,6 +9,7 @@
 /* drag */
 .drag_drop{
     padding: 100px 0;
+    height: 1000px;
 }
 
 .drag_drop .dragParent{
@@ -18,14 +19,15 @@
     overflow: hidden;
 }
 
-/* .drag_drop .dragParent.scrollX{
-
-} */
+.drag_drop .dragParent.scrollX{
+    overflow-x: scroll;
+}
 
 .drag_drop .dragObjWrap{
     position: relative;
     display: flex;
 }
+
 .drag_drop .dragObjWrap::after{
     content: "";
     display: block;
