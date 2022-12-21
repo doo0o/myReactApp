@@ -8,21 +8,3 @@ betaItem.forEach(el => {
 		e.target.closest('.login__item').classList.remove('active')
 	})
 });
-
-
-var data = 0;
-
-function as(){
-	data = 100;
-}
-
-as();
-
-var test = {
-	a : data == 1 ? 1 : 0,
-	b : data > 1 && true ? 1 : 0,
-}
-
-
-console.log(test.a, test.b)
-
