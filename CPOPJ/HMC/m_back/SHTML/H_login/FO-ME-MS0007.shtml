@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>법인 목록</title>
+	<!--#include file="/HMC/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_login.css">
+</head>
+<body>
+<!--#include file="/HMC/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--#include file="/HMC/SHTML/H_inc/layout_header.shtml"-->
+		<!--  s: title area : SUB  -->
+		<div class="h_sub my_head2">
+			<button type="button" class="ic_back">뒤로가기</button>
+		</div>
+		<!--  e: title area : SUB  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="corp_login">
+			<h4 class="tit"><em>로그인 하실 법인</em>을<br>선택해 주세요.</h4>
+			<ul class="list2">
+				<li>
+					<input type="radio" class="chk_rad01" name="corp_Name" id="corp01">
+					<label for="corp01">
+						<h4>현대자동차(주)</h4>
+						<p>사업자 등록 번호 : 101-81-09147</p>
+					</label>
+				</li>
+				<li>
+					<input type="radio" class="chk_rad01" name="corp_Name" id="corp02">
+					<label for="corp02">
+						<h4>현대자동차(주)</h4>
+						<p>사업자 등록 번호 : 101-81-09147</p>
+					</label>
+				</li>
+				<li>
+					<input type="radio" class="chk_rad01" name="corp_Name" id="corp03">
+					<label for="corp03">
+						<h4>현대자동차(주)</h4>
+						<p>사업자 등록 번호 : 101-81-09147</p>
+					</label>
+				</li>
+			</ul>
+		</div>
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01" title="로그인 하기">로그인 하기</button>
+		</div>
+		<!-- contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HMC/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/HMC/SHTML/H_inc/popup_include_all.shtml"-->
+
+</body>
+</html>

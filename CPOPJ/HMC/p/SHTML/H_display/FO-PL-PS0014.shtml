@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>입고예정차량 : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_display.css"> <!-- 해당 CSS -->
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- 코치마크 -->
+<!--#include file="/HMC/p/SHTML/H_display/include/inc_coach.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+    <!-- CPOcontents -->
+	<div id="CPOcontents">
+        <div id="layoutWrap" class="display">
+			<div class="cont_top"> 
+				<div class="img_box">
+					<img src="../../img/@thumb/@plp_coming_kv.jpg" alt="">
+				</div>
+				<div class="text_box">
+					<h1 class="page_tit">Coming Soon</h1>
+					<p class="txt">입고 예정인 차량들을 미리 확인해 보세요.</p>
+				</div>
+			</div>
+			<!-- container -->
+            <div class="container">
+				<div class="coming">
+					<div class="total_result">
+						<div class="all">전체 <em>2</em>대</div>
+					</div>
+					<div class="coming_list">					
+						<div class="unit">
+							<div class="img_box">
+								<img src="../../img/@thumb/@plp_coming01.jpg" alt="상품명으로 뿌려주세요">
+								<p class="info_txt">※ 예시이미지 입니다.</p>
+							</div>
+							<div class="data">
+								<p class="name">현대 올 뉴 아반떼 하이브리드 CN7 인스퍼레이션</p>
+								<div class="drive">
+									<span>20년 4월(21년형)</span>
+									<span>12,167km</span>
+									<span>크리미 화이트 펄</span>
+								</div>
+								<div class="btn_area full_type">
+									<button type="button" class="btn_big color03 ico_bell">입고 알림 신청</button>
+								</div>
+							</div>
+						</div>
+						<div class="unit">
+							<div class="img_box">
+								<img src="../../img/@thumb/@plp_coming02.jpg" alt="상품명으로 뿌려주세요">
+								<p class="info_txt">※ 예시이미지 입니다.</p>
+							</div>
+							<div class="data">
+								<p class="name">현대 싼타페 TM가솔린 2.0T 2WD 인스퍼레이션</p>
+								<div class="drive">
+									<span>20년 4월(21년형)</span>
+									<span>12,167km</span>
+									<span>크리미 화이트 펄</span>
+								</div>
+								<div class="btn_area full_type">
+									<button type="button" class="btn_big color03 ico_bell" disabled>알림 신청 완료</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 상품목록 20개 이상 일 때 -->
+					<div class="btn_area col_type">
+						<button type="button" class="btn_more">더보기</button>
+					</div>
+					<!-- // 상품목록 20개 이상 일 때 -->
+				</div>
+            </div>            
+            <!-- //container -->
+
+        </div>
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+<script>
+	 
+</script>
+</body>
+</html>

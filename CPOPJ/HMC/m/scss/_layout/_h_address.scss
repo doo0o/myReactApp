@@ -1,0 +1,143 @@
+// 주소검색, 환불계저등록, 이전등록비 감면신청 필요서류
+//	order.css
+//	mypage.css
+//
+
+@import '../_common/h_function';
+@import '../_common/h_mixins';
+
+.srch_address {
+	.addr_head,
+	.address_txt,
+	.no_data {
+		background-color: $COL_White;
+	}
+	.no_data:before {
+		margin-bottom: 10px;
+	}
+}
+
+.addr_head{// 검색하기 1. 상단 검색어 입력
+	position:sticky;
+	top:0; left:0;
+	z-index:5;
+	width:100%;
+	border-top:1px solid $COL_Line_Medium;
+	.inbox_type04{// header 타이틀
+		position:relative;
+		width:100%;
+		height:53px;
+		padding:0 60px 0 15px;
+		border-bottom:1px solid $COL_Secondary;
+		background:$COL_White;
+		.txt {
+			height: 100%;
+			font-size: 16px;
+			z-index: 1;
+		}
+		.btn_delete{
+			position: absolute;
+			top: 50%; right: 15px;
+			transform: translateY(-50%);
+		}
+	}
+}
+
+.address_txt{
+	padding:25px 21px;
+	.tit{
+		color:$COL_Black;
+		@include Mix_Font('Head-M', 26, 33);
+	}
+	.txt{
+		margin-top:12px;
+		color:$COL_Base_03;
+		@include Mix_Font('Txt-R', 15, 23);
+	}
+	.txt2{
+		margin-top:25px;
+		color:$COL_Base_03;
+		@include Mix_Font('Txt-R', 14, 21);
+		li:last-child{
+			margin-top:15px;
+		}
+		em{
+			display:block;
+			margin-top: 2px;
+			color:$COL_Base_01;
+		}
+	}
+}
+
+.address_list{
+	padding:25px 15px 0;
+	background-color:$COL_Light;
+	.total{
+		position:relative;
+		margin-bottom:10px;
+		padding:0 6px;
+		color:$COL_Black;
+		@include Mix_Font('Head-R', 14, 21);
+		.num{
+			float:right;
+			color:$COL_Base_03;
+			@include Mix_Font('Txt-R', 14, 21);
+			i{
+				color:$COL_Secondary;
+				@include Mix_Font('Txt-M', 14, 21);
+			}
+		}
+	}
+	.list{
+		background-color:$COL_White;
+		button{
+			width:100%;
+			padding:20px;
+			border-bottom:1px solid $COL_Line_Medium;
+			font-size:0;
+			text-align: left;
+			>span{
+				display:block;
+				text-align:left;
+				&:last-child{
+					margin-top:5px;
+				}
+			}
+			.num{
+				display: inline-block;
+				position: relative;
+				margin-bottom:7px;
+				color:$COL_Secondary;
+				@include Mix_Font('Head-R', 14, 18);
+				&:before {
+					content: '';
+					display: block;
+					position: absolute;
+					left: 0;
+					bottom: 1px;
+					width: 100%;
+					height: 1px;
+					background-color: $COL_Secondary;
+				}
+			}
+			.addr{
+				display:flex;
+				color:$COL_Base_03;
+				@include Mix_Font('Txt-R', 13, 21);
+				.flag_mid03{
+					width: 43px;
+					margin-right: 5px;
+					padding: 0;
+					text-align: center;
+					flex-shrink: 0;
+				}
+				.txt{
+					flex:1;
+				}
+			}
+		}
+		li:last-child button{
+			border:0;
+		}
+	}
+}

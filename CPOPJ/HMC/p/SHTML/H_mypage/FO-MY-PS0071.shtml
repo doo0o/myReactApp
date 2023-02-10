@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>포인트내역 : 현대 CUV</title>
+	<!--#include file="/HMC/p/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_mypage.css"> <!-- 해당 CSS -->
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+    <div id="CPOcontents">
+        <div id="layoutWrap" class="my">
+            <!-- container -->
+            <div class="container flex">
+                <!--#include file="/HMC/p/SHTML/H_inc/layout_left.shtml"-->
+                <!-- cont_wrap -->
+                <div class="cont_wrap promotion_detail" data-id="myPoint">
+                    <h1 class="page_tit">현대차 가족사랑 할인</h1>
+					<p class="desc">현대자동차 임직원 본인(배우자) 4촌 이내 친인척이 차량을 구매할 때, 3% 특별할인 프로모션</p>
+					<p class="error_msg">증빙서류가 다르게 확인되어 승인이 불가합니다.</p>
+					<div class="bg_box">
+						<ul class="list_data">
+							<li>
+								<span class="tit">등록기간</span>
+								<span class="txt">2022.01.01~2022.01.24</span>
+							</li>
+							<li>
+								<span class="tit">사용기간</span>
+								<span class="txt">2022.01.01~2022.03.11</span>
+							</li>
+							<li>
+								<span class="tit">대상</span>
+								<span class="txt">계열사, 관계사, 협력사 본인(배우자) 및 4촌 이내 친인척</span>
+							</li>
+							<li>
+								<span class="tit">혜택</span>
+								<span class="txt">차량가격의 3% 할인</span>
+							</li>
+							<li>
+								<span class="tit">차종</span>
+								<span class="txt">그랜저 IG</span>
+							</li>
+						</ul>
+					</div>
+					<div class="caution">
+						<div class="tit sec_tit m">증빙서류</div>
+						<ul>
+							<li>최대 3영업일 이내에 심사가 완료됩니다.</li>
+							<li>12MB 미만의 파일로 최대 5개까지 등록이 가능합니다.</li>
+						</ul>
+					</div>
+					<!-- 프로모션 상세 :: 미 등록 -->
+					<div class="bg_box">
+						<dl>
+							<dt>재직증명서</dt>
+							<dd><button type="button" class="btn_xsmall color02">등록하기</button></dd>
+						</dl>
+						<dl>
+							<dt>4대보험 가입증명서</dt>
+							<dd><button type="button" class="btn_xsmall color02">등록하기</button></dd>
+						</dl>						
+					</div>
+					<div class="btn_area col_type">
+						<button type="button" class="btn_big color02">취소하기</button>
+						<button type="button" class="btn_big color01" disabled>등록완료</button>
+					</div>
+					<!-- // 프로모션 상세 :: 미 등록 -->
+					<!-- 프로모션 상세 :: 등록 완료 -->
+					<div class="bg_box">
+						<dl>
+							<dt>재직증명서</dt>
+							<dd><button type="button" class="btn_xsmall color02">추가하기</button></dd>
+						</dl>
+						<ul class="list_file">
+							<li>
+								<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+								<button type="button" class="txt_btn03 s_small c_gs03">삭제</button>
+							</li>
+						</ul>
+						<dl>
+							<dt>4대보험 가입증명서</dt>
+							<dd><button type="button" class="btn_xsmall color02">추가하기</button></dd>
+						</dl>
+						<ul class="list_file">
+							<li>
+								<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+								<button type="button" class="txt_btn03 s_small c_gs03">삭제</button>
+							</li>
+							<li>
+								<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+								<button type="button" class="txt_btn03 s_small c_gs03">삭제</button>
+							</li>
+							<li>
+								<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+								<button type="button" class="txt_btn03 s_small c_gs03">삭제</button>
+							</li>
+							<li>
+								<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+								<button type="button" class="txt_btn03 s_small c_gs03">삭제</button>
+							</li>
+							<li>
+								<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+								<button type="button" class="txt_btn03 s_small c_gs03">삭제</button>
+							</li>
+						</ul>					
+					</div>
+					<div class="btn_area col_type">
+						<button type="button" class="btn_big color02">취소하기</button>
+						<button type="button" class="btn_big color01">등록완료</button>
+					</div>
+					<!-- // 프로모션 상세 :: 등록 완료 -->
+					<!-- 프로모션 상세 :: 승인 요청  -->
+					<div class="bg_box">
+						<dl>
+							<dt>재직증명서</dt>
+							<dd></dd>
+						</dl>
+						<ul class="list_file">
+							<li>
+								<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+							</li>
+						</ul>
+						<dl>
+							<dt>4대보험 가입증명서</dt>
+							<dd></dd>
+						</dl>
+						<ul class="list_file">
+							<li>
+								<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+							</li>
+							<li>
+								<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+							</li>
+							<li>
+								<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+							</li>
+							<li>
+								<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+							</li>
+							<li>
+								<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+							</li>
+						</ul>
+					</div>
+					<div class="btn_area col_type">
+						<button type="button" class="btn_big color02">등록 취소하기</button>
+						<button type="button" class="btn_big color01">수정하기</button>
+					</div>
+					<div class="btn_box">
+						<a href="javascript:void(0)" class="txt_btn01 s_large">목록으로 가기</a>
+					</div>
+					<!-- // 프로모션 상세 :: 승인 요청  -->		
+					<!-- 프로모션 상세 :: 수정하기  -->
+					<div class="bg_box">
+						<div class="document_box">
+							<dl>
+								<dt>재직증명서</dt>
+								<dd><button type="button" class="btn_xsmall color02">추가하기</button></dd>
+							</dl>
+							<ul class="list_file">
+								<li>
+									<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+									<button type="button" class="txt_btn03 s_small c_gs03">삭제</button>
+								</li>
+							</ul>
+							<dl>
+								<dt>4대보험 가입증명서</dt>
+								<dd><button type="button" class="btn_xsmall color02">추가하기</button></dd>
+							</dl>
+							<ul class="list_file">
+								<li>
+									<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+									<button type="button" class="txt_btn03 s_small c_gs03">삭제</button>
+								</li>
+								<li>
+									<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+									<button type="button" class="txt_btn03 s_small c_gs03">삭제</button>
+								</li>
+								<li>
+									<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+									<button type="button" class="txt_btn03 s_small c_gs03">삭제</button>
+								</li>
+								<li>
+									<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+									<button type="button" class="txt_btn03 s_small c_gs03">삭제</button>
+								</li>
+								<li>
+									<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+									<button type="button" class="txt_btn03 s_small c_gs03">삭제</button>
+								</li>
+							</ul>							
+						</div>						
+					</div>
+					<div class="btn_area col_type">
+						<button type="button" class="btn_big color02">취소하기</button>
+						<button type="button" class="btn_big color01">수정완료</button>
+					</div>
+					<!-- // 프로모션 상세 :: 수정하기  -->
+					<!-- 프로모션 상세 :: 승인 불가  -->
+					<div class="bg_box">
+						<dl>
+							<dt>재직증명서</dt>
+							<dd></dd>
+						</dl>
+						<ul class="list_file">
+							<li>
+								<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+							</li>
+						</ul>
+						<dl>
+							<dt>4대보험 가입증명서</dt>
+							<dd></dd>
+						</dl>
+						<ul class="list_file">
+							<li>
+								<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+							</li>
+							<li>
+								<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+							</li>
+							<li>
+								<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+							</li>
+							<li>
+								<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+							</li>
+							<li>
+								<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+							</li>
+						</ul>
+					</div>
+					<div class="btn_area col_type">
+						<button type="button" class="btn_big color02">삭제하기</button>
+						<button type="button" class="btn_big color01">수정하기</button>
+					</div>
+					<div class="btn_box">
+						<a href="javascript:void(0)" class="txt_btn01 s_large">목록으로 가기</a>
+					</div>
+					<!-- // 프로모션 상세 :: 승인 불가  -->					
+					<!-- 프로모션 상세 :: 승인 완료 -->
+					<div class="bg_box">
+						<div class="document_box">
+							<dl>
+								<dt>재직증명서</dt>
+								<dd></dd>
+							</dl>
+							<ul class="list_file">
+								<li>
+									<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+								</li>
+							</ul>
+							<dl>
+								<dt>4대보험 가입증명서</dt>
+								<dd></dd>
+							</dl>
+							<ul class="list_file">
+								<li>
+									<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+								</li>
+								<li>
+									<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+								</li>
+								<li>
+									<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+								</li>
+								<li>
+									<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+								</li>
+								<li>
+									<button type="button" class="btn_file">Hyundai_hyundai_hyundai141514125512234231514125512234231</button>
+								</li>
+							</ul>							
+						</div>
+					</div>
+					<!-- // 프로모션 상세 :: 승인 완료 -->
+					<div class="btn_area col_type">
+						<button type="button" class="btn_big color02">목록으로 가기</button>
+					</div>
+                </div>
+                <!-- //cont_wrap -->
+            </div>
+            <!-- //container -->
+        </div>
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<script>
+	lnb_active();
+</script>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>중고차 판매계약 : 제네시스 CPO</title>
+	<!--#include file="/GHQ/SHTML/G_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/g_order.css">
+</head>
+<body>
+<!--#include file="/GHQ/SHTML/G_inc/common_skip.shtml"-->
+<!--#include file="/GHQ/SHTML/G_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--#include file="/GHQ/SHTML/G_inc/layout_header.shtml"-->
+		<!--  s: title area : SUB  -->
+		<div class="h_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h3 class="tit">중고차 판매계약</h3>
+		</div>
+		<!--  e: title area : SUB  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<!-- 중고차 판매계약 -->
+		<div class="car_trade">
+			<div class="order_info">
+				<div class="top">
+					<h4 class="tit">명의정보</h4>
+					<button type="button" class="btn_2icon02" data-popup="FO-OR-MS0006">변경</button>
+				</div>
+				<div class="entry">
+					<p class="txt">명의정보를 설정해주세요.</p>
+					<button type="button" class="btn_mid02" data-popup="FO-OR-MS0006">설정하기</button>
+				</div>
+				<div class="list">
+					<div class="info_box">
+						<p class="flag">
+							<i class="t01">대표명의자</i><i class="t03">법인</i>
+						</p>
+						<dl class="info">
+							<dt>
+								<span class="tit">현대상사현대상사현대상사현대상사</span>
+							</dt>
+							<dd class="tel">
+								010-1234-5678
+							</dd>
+							<dd class="email">
+								bbangkijeong@gmail.com
+							</dd>
+						</dl>
+					</div>
+					<div class="info_box">
+						<p class="flag">
+							<i class="t02">공동명의자1</i><i class="t03">개인</i>
+						</p>
+						<dl class="info">
+							<dt>
+								<span class="tit">방기정</span>
+							</dt>
+							<dd class="tel">
+								010-1234-5678
+							</dd>
+							<dd class="email">
+								bbangkijeong@gmail.com
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="order_box01 refund">
+				<div class="top">
+					<h4 class="tit">차량대금 입금계좌</h4>
+					<button type="button" class="btn_2icon02" data-popup="FO-OR-MS0032">변경</button>
+				</div>
+				<div class="entry">
+					<p class="txt">입금계좌를 설정해주세요.</p>
+					<button type="button" class="btn_mid02" data-popup="FO-OR-MS0006">설정하기</button>
+				</div>
+				<div class="inner">
+					<p class="bank">
+						<em>우리은행</em>
+						110-1234--*****
+					</p>
+					<span class="name">예금주 : 김현대</span>
+				</div>
+			</div>
+			<!-- S : [CPO-1269 :  0.8.9.10 기획변경] -->
+			<div class="order_info sell">
+				<div class="top">
+					<h4 class="tit">차량인도 방문정보</h4>
+					<button type="button" class="btn_2icon02" data-popup="FO-OR-MS0007">변경</button>
+				</div>
+				<div class="list">
+					<div class="info_box">
+						<dl class="info">
+							<dt>
+								<span class="tit">김현대</span>
+								<span class="no">010-1234-5678</span>
+							</dt>
+							<dd class="add">
+								[06179] 서울시 강남구 테헤란로 510 (서울특별시 강남구 대치동 943)
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!-- E : [CPO-1269 :  0.8.9.10 기획변경] -->
+			<div class="order_box02">
+				<h4 class="tit">계약내용</h4>
+				<ul class="list2">
+					<li>
+						<button type="button" class="btn_ord01">판매 계약 정보<span>필수확인</span></button>
+					</li>
+					<li>
+						<button type="button" class="btn_ord05">이전서류 안내<span class="off">확인완료</span></button> <!--확인완료 시 span class of 추가-->
+					</li>
+				</ul>
+			</div>
+			<div class="order_box01">
+				<div class="top">
+					<input type="checkbox" class="chk_type01" id="tr_chk01" name="" id=""><label for="tr_chk01">명의자정보 확인 및 판매 약관에 동의합니다.</label>
+					<button type="button" class="btn_show01" data-href="닫아보기">펼쳐보기</button>
+				</div>
+				<div class="inner">
+					<ol class="agree_list">
+						<li>
+							<input type="checkbox" class="chk_type01" id="tr_chk02" name="" id=""><label for="tr_chk02">[필수] 약관1</label>
+							<button type="button" class="btn_show02" data-href="FO-ME-MS0002">약관 자세히 보기</button><!-- data-href 약관 layer ID -->
+						</li>
+						<li>
+							<input type="checkbox" class="chk_type01" id="tr_chk03" name="" id=""><label for="tr_chk03">[필수] 약관2</label>
+							<button type="button" class="btn_show02" data-href="FO-ME-MS0002">약관 자세히 보기</button><!-- data-href 약관 layer ID -->
+						</li>
+						<li>
+							<input type="checkbox" class="chk_type01" id="tr_chk04" name="" id=""><label for="tr_chk04">명의자 정보를 확인했습니다.</label>
+							<button type="button" class="btn_show02" data-href="FO-ME-MS0002">약관 자세히 보기</button><!-- data-href 약관 layer ID -->
+						</li>
+					</ol>
+				</div>
+			</div>
+			<div class="order_box01 chk_double">
+				<div class="top">
+					<input type="checkbox" class="chk_type01" id="tr_chk01" name="" id=""><label for="tr_chk01">차량 대금 분할 지급에 동의합니다.</label>
+					<button type="button" class="btn_show01" data-href="닫아보기">펼쳐보기</button>
+				</div>
+				<div class="inner">
+					<ol class="agree_list">
+						<li class="txt">
+							<p>1. 최초 차량 인도 시 <em>66%가 48시간</em> 이내 지급</p>
+							<p>2. 현대자동차센터 입고 점검 후 <em>34%가 48시간</em> 이내에 지급</p>
+						</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+		<button type="button" class="btn_big01" title="계약서 서명하기">계약서 서명하기</button>
+		<!-- //중고차 판매계약 -->
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/GHQ/SHTML/G_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/GHQ/SHTML/G_inc/popup_include_all.shtml"-->
+</body>
+</html>

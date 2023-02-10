@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>검색 : 현대 CUV</title>
+	<!--#include file="/HMC/p/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_display.css"> <!-- 해당 CSS -->
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- 코치마크 -->
+<!--#include file="/HMC/p/SHTML/H_display/include/inc_coach.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+	<div id="CPOcontents">
+		<div id="layoutWrap" class="srch">
+			<!-- container -->
+				<!-- cont_wrap -->
+				<div class="cont_head">
+					<div class="form_area">
+						<div class="inbox_type02 search_type ipt_srch_result" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+							<input type="text" class="txt" title="텍스트" placeholder="모델명 혹은 키워드를 입력하세요." name="" value="">
+							<button type="button" class="btn_delete">삭제</button>
+							<button type="button" class="btn_search">검색</button>
+						</div>
+						<div class="result_select recent">
+							<div class="srch_recent nodata">
+								<div class="no_data car">
+									<p class="tit02">최근 검색 기록이 없습니다.</p>
+								</div>
+							</div>
+							<div class="srch_recent">
+								<div class="group_word">
+									<div class="head">
+										<div class="title">최근 검색어</div>
+										<button type="button" class="txt_btn03 s_small">전체삭제</button>
+									</div>
+									<ul class="list_word">
+										<li>그랜저 IG<button type="button">삭제 버튼</button></li>
+										<li>그랜저 HG<button type="button">삭제 버튼</button></li>
+										<li>그랜저 IG 하이브리드<button type="button">삭제 버튼</button></li>
+										<li>싼타페<button type="button">삭제 버튼</button></li>
+										<li>현대 3000만원대 그랜저<button type="button">삭제 버튼</button></li>
+										<li>그랜저 이벤트<button type="button">삭제 버튼</button></li>
+										<li>그랜저 하이브리드<button type="button">삭제 버튼</button></li>
+										<li>그랜저 IG 하이브리드<button type="button">삭제 버튼</button></li>
+										<li>싼타페<button type="button">삭제 버튼</button></li>
+									</ul>
+								</div>
+								<div class="group_conditions">
+									<div class="head">
+										<div class="title">최근 검색 조건<span>자동으로 최대 10개까지 등록됩니다.</span></div>
+										<button type="button" class="txt_btn03 s_small">전체삭제</button>
+									</div>
+									<ul class="list_conditions">
+										<li class="item">
+											<div class="model">그랜저 IG 2.4 프리미엄</div>
+											<ul class="info">
+												<li>18~21년</li>
+												<li>1,000km~30,000km</li>
+												<li>2,520만원~3,500만원</li>
+											</ul>
+											<button type="button">삭제 버튼</button>
+										</li>
+										<li class="item">
+											<div class="model">그랜저 IG 2.4 프리미엄 스페셜</div>
+											<ul class="info">
+												<li>18~21년</li>
+												<li>1,000km~30,000km</li>
+												<li>2,520만원~3,500만원</li>
+												<li>2WD</li>
+												<li>화이트</li>
+												<li>블랙</li>
+												<li>7인승</li>
+												<li>LED 헤드램프</li>
+												<li>후방모니터</li>
+												<li>내비게이션</li>
+												<li>전동 트렁크</li>
+											</ul>
+											<button type="button">삭제 버튼</button>
+										</li>
+										<li class="item">
+											<div class="model">더 뉴 그랜저 하이브리드 가솔린 2.4 하이브리드 프리미엄</div>
+											<ul class="info">
+												<li>1,000km~30,000km</li>
+											</ul>
+											<button type="button">삭제 버튼</button>
+										</li>
+										<li class="item">
+											<div class="model">차량 전체</div>
+											<ul class="info">
+												<li>18~21년</li>
+												<li>1,000km~30,000km</li>
+												<li>2,520만원~3,500만원</li>
+											</ul>
+											<button type="button">삭제 버튼</button>
+										</li>
+										<li class="item">
+											<div class="model">그랜저 IG 2.4 프리미엄 스페셜</div>
+											<ul class="info">
+												<li>18~21년</li>
+												<li>1,000km~30,000km</li>
+												<li>2,520만원~3,500만원</li>
+												<li>2WD</li>
+												<li>화이트</li>
+												<li>블랙</li>
+												<li>7인승</li>
+												<li>LED 헤드램프</li>
+												<li>후방모니터</li>
+												<li>내비게이션</li>
+												<li>전동 트렁크</li>
+											</ul>
+											<button type="button">삭제 버튼</button>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="result_select auto">
+							<div class="srch_auto">
+								<ul class="list_img">
+									<li>
+										<a href="javascript:;">
+											<div class="img">
+												<img src="/HMC/p/img/@thumb/@srch_120x68.png" alt="상품명으로 뿌려주세요">
+											</div>
+											<div class="text">
+												<div class="model"><span>그랜저 </span>IG</div>
+												<div class="year">16년~</div>
+												<div class="num"><span>40</span>대</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<div class="img">
+												<img src="/HMC/p/img/@thumb/@srch_120x68.png" alt="상품명으로 뿌려주세요">
+											</div>
+											<div class="text">
+												<div class="model"><span>그랜저 </span>IG</div>
+												<div class="year">16년~</div>
+												<div class="num"><span>40</span>대</div>
+											</div>
+										</a>
+									</li>
+									<li>
+										<a href="javascript:;">
+											<div class="img">
+												<img src="/HMC/p/img/@thumb/@srch_120x68.png" alt="상품명으로 뿌려주세요">
+											</div>
+											<div class="text">
+												<div class="model"><span>그랜저 </span>IG</div>
+												<div class="year">16년~</div>
+												<div class="num"><span>40</span>대</div>
+											</div>
+										</a>
+									</li>
+								</ul>
+								<ul class="list_event">
+									<li>
+										<a href="javascript:;">프리미엄 <em>그랜저</em> 차량용품 패키지 할인특가전</a>
+									</li>
+									<li>
+										<a href="javascript:;"><em>GRANDEUR</em> Exclusive Preivew</a>
+									</li>
+								</ul>
+								<ul class="list_text">
+									<li><a href="javascript:;"><em>그랜저</em> 하이브리드</a></li>
+									<li><a href="javascript:;"><em>그랜저</em> 가솔린 2.4 하이브리드</a></li>
+									<li><a href="javascript:;"><em>그랜저</em> 하이브리드 르블랑</a></li>
+									<li><a href="javascript:;"><em>그랜저</em> 하이브리드 익스클루시브</a></li>
+									<li><a href="javascript:;"><em>그랜저</em> 하이브리드 프리미엄</a></li>
+								</ul>
+								<div class="srch_auto_none">검색 결과가 없습니다.</div>
+							</div>
+						</div>
+					</div>
+					<div class="txt_result"><span>'그랜저'</span>에 대한 검색 결과가 <span>32</span>건이 검색되었습니다.</div>
+				</div>
+				<div class="container">
+					<div class="srch_head">
+						<!-- 01상세조건 선택 및 변경 레이어 -->
+						<!--#include file="/HMC/p/SHTML/H_display/include/inc_plp_sort.shtml"-->
+						<div class="group_tag">
+							<div class="model">
+								<span class="name">그랜저</span>
+							</div>
+							<ul class="list_tag">
+								<li>18~21년<button type="button">삭제버튼</button></li>
+								<li>2,500만원~3,500만원<button type="button">삭제버튼</button></li>
+								<li>화이트<button type="button">삭제버튼</button></li>
+								<li>옐로우<button type="button">삭제버튼</button></li>
+								<li>소유변경없음<button type="button">삭제버튼</button></li>
+								<li>7인승<button type="button">삭제버튼</button></li>
+								<li>선루프<button type="button">삭제버튼</button></li>
+								<li>가죽시트<button type="button">삭제버튼</button></li>
+							</ul>
+						</div>
+					</div>
+					<!-- 02상품목록 -->
+					<!--#include file="/HMC/p/SHTML/H_search/include/srch_list.shtml"-->
+				</div>
+				<!-- //cont_wrap -->
+			</div>
+			<!-- //container -->
+			<!-- 03비교담기-->
+			<!--#include file="/HMC/p/SHTML/H_display/include/inc_compare_box.shtml"-->
+		</div>
+		<!-- 04최근본상품/찜상품 플로팅버튼-->
+		<!--#include file="/HMC/p/SHTML/H_display/include/inc_plp_floating.shtml"-->
+	</div>
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_search/include/FO-PL-PS0019.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+<script>
+	compareToggle();
+	// coachMark();
+	tooltip();
+
+	//목록 오감만족 원형 데이터
+	CPODonutChart($('#progress_period'), true, true, 1000);
+	CPODonutChart($('#progress_warranty'), true, true, 1000);
+	CPODonutChart($('#progress_compare'), true, true, 1000);
+	CPODonutChart($('#progress_history'), true, true, 1000);
+	CPODonutChart($('#progress_bluelink'), true, true, 1000);
+
+	//unit_list 오감만족 정보 펼침/닫힘   
+	function experienceSlide() {
+		$('.btn_experience').on('click', function() {
+			if(!$(this).hasClass('on')) {
+				$(this).addClass('on').parent().siblings('.unit_detail').slideDown(300).css('display', 'flex');
+			} else {
+				$(this).removeClass('on').parent().siblings('.unit_detail').slideUp(300);
+			}
+			event.preventDefault();
+		});
+	} 
+	experienceSlide();
+
+	const iptSrchResult = function() {
+		const iptSrchResult = document.querySelector('.ipt_srch_result input');
+		const srchResult = document.querySelectorAll('.result_select');
+		const srchRecent = document.querySelector('.result_select.recent');
+		const srchAuto = document.querySelector('.result_select.auto');
+		const srchDel = document.querySelector('.btn_delete');
+		const srchRelateTxt = document.querySelectorAll('.srch_relate li');
+		function srchChange(e){
+			if(iptSrchResult.value.length >= 1){
+				srchRecent.style.cssText = 'display:none;';
+				srchAuto.style.cssText = 'display:block;';
+			} else {
+				srchRecent.style.cssText = 'display:block;';
+				srchAuto.style.cssText = 'display:none;';
+			}
+		};
+		iptSrchResult.onfocus = iptSrchResult.onclick = function(){
+			srchChange();
+		};
+		iptSrchResult.oncut = iptSrchResult.oncopy = iptSrchResult.onpaste = iptSrchResult.oninput = function(){
+			srchChange();
+		};
+		srchDel.onclick = function(){
+			iptSrchResult.value = '';
+			srchRecent.style.cssText = 'display:block;';
+		};
+		document.body.addEventListener('click', function(){
+			srchResult.forEach((el) => {
+				if(el.style.display == 'block'){
+					if(event.target.closest('.result_select') == null && event.target.closest('.ipt_srch_result') == null) {
+						srchRecent.style.cssText = 'display:none;';
+						srchAuto.style.cssText = 'display:none;';
+					}
+				}
+			});
+		});
+	}
+	iptSrchResult();
+
+	const srchFilterChange = document.querySelector('.btn_filter');
+	const srchPopup = document.querySelector('.srch_pop');
+	const srchPopupClose = srchPopup.querySelector('.pop_close');
+	const srchHtml = document.querySelector('html');
+	srchFilterChange.addEventListener('click', function(){
+		srchHtml.style.cssText = 'overflow:hidden;'
+		srchPopup.classList.add('active');
+	});
+	srchPopupClose.addEventListener('click', function(){
+		srchHtml.style.cssText = 'overflow:visible;'
+		srchPopup.classList.remove('active');
+	});
+</script>
+</body>
+</html>

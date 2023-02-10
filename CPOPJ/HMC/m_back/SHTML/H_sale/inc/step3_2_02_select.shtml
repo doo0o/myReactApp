@@ -1,0 +1,126 @@
+<!-- STEP : 3-2-02 : 교환/판금 부위 선택 -->
+<div class="car_modify">
+	<div class="top">
+		<span class="info">본넷 임시저장완료</span>
+		<button type="button" class="btn_reset01">초기화</button>
+	</div>
+
+	<dl class="car_area">
+		<dt>
+			<span class="tit">외판부위</span>
+			<span class="txt">교환/판금 시, 단순교환 무사고로 분류됩니다.</span>
+		</dt>
+		<dd>
+			<!-- 외판부위 영역 선택 -->
+			<div class="carimg_box up">
+				<div class="carimg"><img src="/HMC/img/sale_car_up.png" alt="" /></div>
+				<!-- 중앙 -->
+				<button type="button" class="btn_area001 icon_w">앞범퍼 또는 라이트</button><!-- 판금 icon_w  / 교환 icon_x -->
+				<button type="button" class="btn_area002">라디에이터 서포트</button>
+				<button type="button" class="btn_area003">본넷</button>
+				<button type="button" class="btn_area004">트렁크도어</button>
+				<button type="button" class="btn_area005">뒷범퍼 또는 라이트</button>
+				<!-- 좌측 -->
+				<button type="button" class="btn_area006">앞휀더</button>
+				<button type="button" class="btn_area007">앞도어</button>
+				<button type="button" class="btn_area008 icon_x">뒷도어</button>
+				<!-- 우측 -->
+				<button type="button" class="btn_area009">앞휀더</button>
+				<button type="button" class="btn_area010">앞도어</button>
+				<button type="button" class="btn_area011">뒷도어</button>
+			</div>
+			<!-- //외판부위 영역 선택 -->
+			<!-- 안내 -->
+			<div class="carimg_info">
+				<span class="icon_w">판금</span>
+				<span class="icon_x">교환</span>
+			</div>
+			<!-- //안내 -->
+		</dd>
+		<dt>
+			<span class="tit">골격부위</span>
+			<span class="txt">교환/판금 시, 단순교환 유사고로 분류됩니다.</span>
+		</dt>
+		<dd>
+			<!-- 골격부위 영역 선택 -->
+			<div class="carimg_box down">
+				<div class="carimg"><img src="/HMC/img/sale_car_down.png" alt="" /></div>
+				<!-- 중앙 -->
+				<button type="button" class="btn_area201">인사이드패널</button>
+				<button type="button" class="btn_area202">휠하우스</button>
+				<button type="button" class="btn_area203 icon_x">사이드멤버</button>
+				<button type="button" class="btn_area204">인사이드패널</button>
+				<button type="button" class="btn_area205">휠하우스</button>
+				<button type="button" class="btn_area206 icon_w">사이드멤버</button>
+				<button type="button" class="btn_area207">크로스 멤버</button>
+				<button type="button" class="btn_area208">루프패널</button>
+				<button type="button" class="btn_area209">트렁크플로어</button>
+				<button type="button" class="btn_area210">리어패널</button>
+				<!-- 하단 -->
+				<button type="button" class="btn_area211">휠하우스</button>
+				<button type="button" class="btn_area212">사이드멤버</button>
+				<button type="button" class="btn_area213">휠하우스</button>
+				<button type="button" class="btn_area214">사이드멤버</button>
+				<!-- 좌측 -->
+				<button type="button" class="btn_area215">사이드실패널</button>
+				<button type="button" class="btn_area216">A필터</button>
+				<button type="button" class="btn_area217">B필터</button>
+				<button type="button" class="btn_area218">C필터</button>
+				<button type="button" class="btn_area219">뒤휀더</button>
+				<!-- 우측 -->
+				<button type="button" class="btn_area220">사이드실패널</button>
+				<button type="button" class="btn_area221">A필터</button>
+				<button type="button" class="btn_area222">B필터</button>
+				<button type="button" class="btn_area223">C필터</button>
+				<button type="button" class="btn_area224">뒤휀더</button>
+			</div>
+			<!-- //골격부위 영역 선택 -->
+			<!-- 안내 -->
+			<div class="carimg_info">
+				<span class="icon_w">판금</span>
+				<span class="icon_x">교환</span>
+			</div>
+			<!-- //안내 -->
+		</dd>
+	</dl>
+
+	<!-- 판금/교환 선택 Layer -->
+	<div class="layer_caredit">
+		<h5 class="tit" id="carEditTit">타이틀</h5>
+		<div class="inner">
+			<input type="checkbox" name="carEdit" id="carEdit_01" class="chk_type08 icon_w" /><label for="carEdit_01">판금</label>
+			<input type="checkbox" name="carEdit" id="carEdit_02" class="chk_type08 icon_x" /><label for="carEdit_02">교환</label>
+		</div>
+	</div>
+	<!-- 판금/교환 선택 Layer -->
+</div>
+
+<script>
+$(document).ready(function(){
+	$('[class^="btn_area"]').on('click',function(){// 클릭
+		$('.layer_caredit').hide();// 번저 열려 있는 레이어 닫고 시작
+		var _thisTit = $(this).text();
+		$('.layer_caredit').show();
+		$('#carEditTit').text(_thisTit);// 버튼 text 를 레이어 title로 텍스트 변경
+	});
+	$('.pop_close').on('click',function(){// 닫기버튼 클릭 시, 판금 선택 레이어 팝업 block 이면 hide 시키는 스크립트
+		var _layerCar = $('.layer_caredit');
+		if(_layerCar.css('display') === 'block'){
+			$('.layer_caredit').hide();
+		}
+	});
+	$('input[name=carEdit]').on('change',function(){// 교환/판금 선택하면 레이어 팝업 닫히기
+		$('.layer_caredit').hide();
+	});
+});
+</script>
+
+<script>
+	$(document).ready(function(){
+		$(".btn_addphoto").on("click",function(){
+			CPO.POPUP_open($(this));
+		});
+		FRM.ImgUpload01();// 필수 등록 사진 file upload
+		FRM.ImgUpload02();// 추가 등록 사진 file upload
+	});
+	</script>

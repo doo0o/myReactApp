@@ -1,0 +1,585 @@
+<div class="stats_detail">
+	<div class="page_title">
+		<div class="title">지역별 중고차 거래량</div>
+		<div class="text">※ 2022년 10월 기준</div>
+		<button type="button" class="icon_share">공유하기</button>
+	</div>
+	<div class="cont_wrap map">
+		<div class="cont_stats">
+			<div class="inner">
+				<div class="map_area">
+					<div class="chart_wrap">
+						<div class="title_area">
+							<span>경기도</span>에서<br>가장 많이 구매했어요
+						</div>
+						<div class="chart_area04">
+							<img src="/HILAB/p/img/@thumb/img_stats_detail_chart04.png" alt="" style="display:block;width:100%;"><!-- 차트 넣을실 때 지워주세요! -->
+						</div>
+					</div>
+					<div class="info_wrap">
+						<ul class="list_info">
+							<li>
+								<div class="rank">1위</div>
+								<div class="text_area">
+									<div class="tit">경기도</div>
+									<div class="txt">
+										<div class="contrast_area">
+											전월대비<span class="contrast down">0.3%▼</span>
+										</div>
+										<div class="info_area"><span><em>124,456</em>건 /</span><span><em>478,000</em>건</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="rank">2위</div>
+								<div class="text_area">
+									<div class="tit">부산</div>
+									<div class="txt">
+										<div class="contrast_area">
+											전월대비<span class="contrast up">0.3%▲</span>
+										</div>
+										<div class="info_area"><span><em>124,456</em>건 /</span><span><em>478,000</em>건</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="rank">3위</div>
+								<div class="text_area">
+									<div class="tit">서울</div>
+									<div class="txt">
+										<div class="contrast_area">
+											전월대비<span class="contrast down">0.3%▼</span>
+										</div>
+										<div class="info_area"><span><em>124,456</em>건 /</span><span><em>478,000</em>건</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="rank">4위</div>
+								<div class="text_area">
+									<div class="tit">대구</div>
+									<div class="txt">
+										<div class="contrast_area">
+											전월대비<span class="contrast up">0.3%▲</span>
+										</div>
+										<div class="info_area"><span><em>124,456</em>건 /</span><span><em>478,000</em>건</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="rank">5위</div>
+								<div class="text_area">
+									<div class="tit">대전</div>
+									<div class="txt">
+										<div class="contrast_area">
+											전월대비<span class="contrast">0.0% -</span>
+										</div>
+										<div class="info_area"><span><em>124,456</em>건 /</span><span><em>478,000</em>건</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="rank">6위</div>
+								<div class="text_area">
+									<div class="tit">세종</div>
+									<div class="txt">
+										<div class="contrast_area">
+											전월대비<span class="contrast up">0.3%▲</span>
+										</div>
+										<div class="info_area"><span><em>124,456</em>건 /</span><span><em>478,000</em>건</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="rank">7위</div>
+								<div class="text_area">
+									<div class="tit">전주</div>
+									<div class="txt">
+										<div class="contrast_area">
+											전월대비<span class="contrast up">0.3%▲</span>
+										</div>
+										<div class="info_area"><span><em>124,456</em>건 /</span><span><em>478,000</em>건</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="rank">8위</div>
+								<div class="text_area">
+									<div class="tit">전주</div>
+									<div class="txt">
+										<div class="contrast_area">
+											전월대비<span class="contrast up">0.3%▲</span>
+										</div>
+										<div class="info_area"><span><em>124,456</em>건 /</span><span><em>478,000</em>건</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="rank">9위</div>
+								<div class="text_area">
+									<div class="tit">전주</div>
+									<div class="txt">
+										<div class="contrast_area">
+											전월대비<span class="contrast up">0.3%▲</span>
+										</div>
+										<div class="info_area"><span><em>124,456</em>건 /</span><span><em>478,000</em>건</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="rank">10위</div>
+								<div class="text_area">
+									<div class="tit">전주</div>
+									<div class="txt">
+										<div class="contrast_area">
+											전월대비<span class="contrast up">0.3%▲</span>
+										</div>
+										<div class="info_area"><span><em>124,456</em>건 /</span><span><em>478,000</em>건</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="rank">11위</div>
+								<div class="text_area">
+									<div class="tit">전주</div>
+									<div class="txt">
+										<div class="contrast_area">
+											전월대비<span class="contrast up">0.3%▲</span>
+										</div>
+										<div class="info_area"><span><em>124,456</em>건 /</span><span><em>478,000</em>건</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="rank">12위</div>
+								<div class="text_area">
+									<div class="tit">전주</div>
+									<div class="txt">
+										<div class="contrast_area">
+											전월대비<span class="contrast up">0.3%▲</span>
+										</div>
+										<div class="info_area"><span><em>124,456</em>건 /</span><span><em>478,000</em>건</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="rank">13위</div>
+								<div class="text_area">
+									<div class="tit">전주</div>
+									<div class="txt">
+										<div class="contrast_area">
+											전월대비<span class="contrast up">0.3%▲</span>
+										</div>
+										<div class="info_area"><span><em>124,456</em>건 /</span><span><em>478,000</em>건</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="rank">14위</div>
+								<div class="text_area">
+									<div class="tit">전주</div>
+									<div class="txt">
+										<div class="contrast_area">
+											전월대비<span class="contrast up">0.3%▲</span>
+										</div>
+										<div class="info_area"><span><em>124,456</em>건 /</span><span><em>478,000</em>건</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="rank">15위</div>
+								<div class="text_area">
+									<div class="tit">전주</div>
+									<div class="txt">
+										<div class="contrast_area">
+											전월대비<span class="contrast up">0.3%▲</span>
+										</div>
+										<div class="info_area"><span><em>124,456</em>건 /</span><span><em>478,000</em>건</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="rank">16위</div>
+								<div class="text_area">
+									<div class="tit">전주</div>
+									<div class="txt">
+										<div class="contrast_area">
+											전월대비<span class="contrast up">0.3%▲</span>
+										</div>
+										<div class="info_area"><span><em>124,456</em>건 /</span><span><em>478,000</em>건</span></div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="rank">17위</div>
+								<div class="text_area">
+									<div class="tit">전주</div>
+									<div class="txt">
+										<div class="contrast_area">
+											전월대비<span class="contrast up">0.3%▲</span>
+										</div>
+										<div class="info_area"><span><em>124,456</em>건 /</span><span><em>478,000</em>건</span></div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cont_stats">
+			<div class="table_excel">
+				<div class="excel_title">
+					<div class="title">최근 12개월 중고차 거래량<span>(단위 : 건)</span></div>
+					<button type="button" class="btn_download">엑셀 다운로드</button>
+				</div>
+				<div class="table_area">
+					<table>
+						<caption>지역별 12개월 중고차 거래량</caption>
+						<thead>
+							<tr>
+								<th colspan="2">지역</th>
+								<th>21.07</th>
+								<th>21.08</th>
+								<th>21.09</th>
+								<th>21.10</th>
+								<th>21.11</th>
+								<th>21.12</th>
+								<th>22.01</th>
+								<th>22.02</th>
+								<th>22.03</th>
+								<th>22.04</th>
+								<th>22.05</th>
+								<th>22.06</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>강원도</td>
+								<td>강릉시</td>
+								<td>2,241</td>
+								<td>4,136</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>강원도</td>
+								<td>동해시</td>
+								<td>2,241</td>
+								<td>4,136</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>강원도</td>
+								<td>삼척시</td>
+								<td>2,241</td>
+								<td>4,136</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>강원도</td>
+								<td>속초시</td>
+								<td>2,241</td>
+								<td>4,136</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>강원도</td>
+								<td>태백시</td>
+								<td>2,241</td>
+								<td>4,136</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>강원도</td>
+								<td>원주시</td>
+								<td>2,241</td>
+								<td>4,136</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>강원도</td>
+								<td>춘천시</td>
+								<td>2,241</td>
+								<td>4,136</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>경기도</td>
+								<td>성남시</td>
+								<td>2,241</td>
+								<td>4,136</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>경기도</td>
+								<td>여주시</td>
+								<td>2,241</td>
+								<td>4,136</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>경기도</td>
+								<td>이천시</td>
+								<td>2,241</td>
+								<td>4,136</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>경기도</td>
+								<td>평택시</td>
+								<td>2,241</td>
+								<td>4,136</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>경기도</td>
+								<td>용인시</td>
+								<td>2,241</td>
+								<td>4,136</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>경기도</td>
+								<td>양주시</td>
+								<td>2,241</td>
+								<td>4,136</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>경기도</td>
+								<td>동두천시</td>
+								<td>2,241</td>
+								<td>4,136</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>경기도</td>
+								<td>포천시</td>
+								<td>2,241</td>
+								<td>4,136</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>경기도</td>
+								<td>파주시</td>
+								<td>2,241</td>
+								<td>4,136</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>경기도</td>
+								<td>고양시</td>
+								<td>2,241</td>
+								<td>4,136</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>경기도</td>
+								<td>김포시</td>
+								<td>2,241</td>
+								<td>4,136</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>경기도</td>
+								<td>오산시</td>
+								<td>2,241</td>
+								<td>4,136</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<th colspan="2">전체건수</th>
+								<th>1,357,362</th>
+								<th>1,396,964</th>
+								<th>11,547,582</th>
+								<th>11,547,582</th>
+								<th>1,357,362</th>
+								<th>1,396,964</th>
+								<th>11,547,582</th>
+								<th>11,547,582</th>
+								<th>1,357,362</th>
+								<th>1,396,964</th>
+								<th>11,547,582</th>
+								<th>11,547,582</th>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btn_area">
+					<button type="button" class="txt_btn02 s_large">더보기</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

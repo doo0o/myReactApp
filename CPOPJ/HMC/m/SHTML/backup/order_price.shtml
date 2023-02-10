@@ -1,0 +1,28 @@
+<div class="order_box01 price">
+	<div class="top">
+		<h4 class="tit">결제 예정금액</h4>
+		<button type="button" class="btn_show01" id="orderBoxPrice01" data-href="닫아보기">펼쳐보기</button>
+	</div>
+	<div class="inner">
+		<dl class="depth01">
+			<dt>차량가격</dt>
+			<dd><em>38,200,000</em>원</dd>
+			<dt>기타 부대비용</dt>
+			<dd><em>2,470,000</em>원</dd>
+		</dl>
+		<dl class="depth02">
+			<dt>배송비</dt>
+			<dd><em>34,000</em>원</dd>
+			<dt>임시자동차보험가입비용</dt>
+			<dd><em>15,000</em>원</dd>
+		</dl>
+		<dl class="depth03">
+			<dt>총 구매금액</dt>
+			<dd><em>41,600,000</em>원</dd>
+		</dl>
+		<dl class="depth02">
+			<dt>명의이전 등록비 (별도)</dt>
+			<dd><em>6,000,000</em>원</dd>
+		</dl>
+	</div>
+</div>

@@ -1,0 +1,1820 @@
+@charset 'utf-8';
+/* 
+	전시
+*/
+
+@import '../_common/g_function';
+@import '../_common/g_mixins';
+@import '../_layout/g_detail_2';
+
+/* 상품상세 : Product Detail Page */
+[class^="pdp"]{
+	h4.tit{
+		color:$COL_Text_Base04;
+		@include Mix_Font('Head-R', 18, 24);
+	}
+	>.top{
+		position:relative;
+		padding:0 6px;
+		[class^="btn_"]{
+			position:absolute;
+			top:5px;
+			right:6px;
+			color:$COL_Text_Base03;
+			@include Mix_Font('Txt-R', 12, 19);
+		}
+		h4.tit a{
+			color:$COL_Text_Base04;
+			&:after{
+				content:'';
+				display:inline-block;
+				width:8px;
+				height:14px;
+				margin:-1px 0 0 7px;
+				@include Mix_PDP_Bg(-62px 0);
+				vertical-align:middle;
+			}
+		}
+		&.lg h4.tit{
+			@include Mix_Font('Head-R', 18, 30);
+		}
+	}
+}
+.car_detail_cont{
+	background-color:$COL_BG_Light01;
+}
+.pdp_button{
+	position:fixed;
+	bottom:0;
+	left:0;
+	z-index:500;
+	width:100%;
+	height:56px;
+	background:$COL_BG_Light03;
+	ul{
+		display:flex;
+		li{
+			width:100%;
+			&.wish{
+				width:56px;
+				background-color: $COL_WHITE;
+				.CPO_Chk_Wish{
+					&+label{
+						width:56px;
+						height:56px;
+						&:before{
+							top:18px;
+							left:17px;
+							//width:22px;height:20px;
+						}
+					}
+				}
+			}
+			&.cart{
+				width:calc(50% - 28px);
+				border-left:1px solid $COL_5959;
+			}
+			&.buy{
+				width:calc(50% - 28px);
+				border-left:1px solid $COL_5959;
+			}
+		}
+		.btn_cart{
+			display:block;
+			width:100%;
+			height:100%;
+			color:$COL_WHITE;
+			@include Mix_Font('Head-R', 16, 56);
+			text-align:center;
+		}
+		.btn_buy{
+			display:block;
+			width:100%;
+			height:100%;
+			color:$COL_WHITE;
+			@include Mix_Font('Head-R', 16, 56);
+			text-align:center;
+		}
+	}
+}
+.pdp_tabs{
+	position:relative;
+	z-index:301;
+	ul{
+		display:flex;
+		justify-content:space-between;
+		padding:0 20px;
+		background:$COL_Gray06;
+		border:1px solid $COL_Line_Light01;
+		border-width:1px 0;
+		li{
+			flex:0 60px;
+			height:49px;
+			text-align:center;
+			button{
+				position:relative;
+				display:inline-block;
+				padding:18px 0  13px;
+				color:$COL_Inactive_Text01;
+				@include Mix_Font('Head-R', 13, 18);
+			}
+		}
+		&.on_1 li:nth-child(1) button{
+			color:$COL_Text_Base04;
+			@include Mix_Font_Head_M;
+			&:after{
+				content:'';
+				display:block;
+				position:absolute;
+				left:0;
+				bottom:-1px;
+				width:100%;
+				height:1px;
+				background:$COL_Secondary01;
+			}
+		}
+		&.on_2 li:nth-child(2) button{
+			color:$COL_Text_Base04;
+			@include Mix_Font_Head_M;
+			&:after{
+				content:'';
+				display:block;
+				position:absolute;
+				left:0;
+				bottom:-1px;
+				width:100%;
+				height:1px;
+				background:$COL_Secondary01;
+			}
+		}
+		&.on_3 li:nth-child(3) button{
+			color:$COL_Text_Base04;
+			@include Mix_Font_Head_M;
+			&:after{
+				content:'';
+				display:block;
+				position:absolute;
+				left:0;
+				bottom:-1px;
+				width:100%;
+				height:1px;
+				background:$COL_Secondary01;
+			}
+		}
+		&.on_4 li:nth-child(4) button{
+			color:$COL_Text_Base04;
+			@include Mix_Font_Head_M;
+			&:after{
+				content:'';
+				display:block;
+				position:absolute;
+				left:0;
+				bottom:-1px;
+				width:100%;
+				height:1px;
+				background:$COL_Secondary01;
+			}
+		}
+		&.on_5 li:nth-child(5) button{
+			color:$COL_Text_Base04;
+			@include Mix_Font_Head_M;
+			&:after{
+				content:'';
+				display:block;
+				position:absolute;
+				left:0;
+				bottom:-1px;
+				width:100%;
+				height:1px;
+				background:$COL_Secondary01;
+			}
+		}	
+	}
+	&.fixed ul{
+		position:fixed;
+		top:50px;
+		left:0;
+		width:100%;
+		height:50px;
+	}
+}
+.pdp_notice01{
+	position:relative;
+	width:100%;
+	margin-bottom:20px;
+	padding:20px;
+	border:solid 1px $COL_Line_Light01;
+	//border-radius:6px;
+	button{
+		display:block;
+		position:absolute;
+		top:38px;
+		right:21px;
+		width:10px;
+		height:5px;
+		@include Mix_PDP_Bg(-188px 0);
+		@include Mix_Size_0;
+		&.on{
+			transform:rotate(180deg);
+		}
+	}
+	.tit{
+		display:block;
+		width:100%;
+		color:$COL_Text_Base03;
+		@include Mix_Font('Txt-R', 14, 22);
+	}
+	.txt{
+		display:block;
+		margin-top:5px;
+		color:$COL_Text_Base01;
+		@include Mix_Font('Txt-R', 12, 19);
+		em{
+			color:$COL_Text_Base03;
+			text-decoration-line:underline;
+			text-underline-position:under;
+		}
+	}
+	&.type02{
+		margin-bottom:0;
+		.txt{
+			display:block;
+			margin:20px 0 5px;
+			border-top:1px solid $COL_BG_Light02;
+			color:$COL_Text_Base01;
+			@include Mix_Font('Txt-R', 12, 19);
+			h3{
+				padding:20px 0 16px;
+				color:$COL_Text_Base04;
+				@include Mix_Font('Txt-R', 15, 24);
+				p{
+					margin-top:5px;
+					color:$COL_Inactive_Text01;
+					@include Mix_Font('Txt-R', 11, 17);
+				}
+			}
+			.table_receipt{
+				td{
+					padding-right:15px;
+					text-align:right;
+				}
+			}
+		}
+	}
+}
+.pdp_notice02{
+	display:flex;
+	align-items:center;
+	column-gap:14px;
+	margin-top:10px;
+	padding:12px;
+	background-color:$COL_BG_Light02;
+	border:solid 1px $COL_Gray05;
+	img{
+		width:56px;
+		height:56px;
+	}
+	dl{
+		flex:1;
+	}
+	dt{
+		margin-bottom:4px;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Head-M', 15, 19);
+	}
+	dd{
+		color:$COL_Text_Base03;
+		font-size:0;
+		a{
+			@include Mix_Font('Head-R', 14, 18);
+			&::after{
+				content:'';
+				display:inline-block;
+				width:8px;
+				height:13px;
+				margin-left:4px;
+				@include Mix_PDP_Bg(-188px -12px);
+				vertical-align:middle;
+			}
+		}
+	}
+}
+.pdp_notice03{
+	width:100%;
+	text-align:center;
+	background:$COL_BG_Light01;
+}
+.btn_arrow01{
+	position:relative;
+	display:inline-block;
+	padding:20px 30px 20px 56px;
+	color:$COL_Text_Base03;
+	@include Mix_Font('Txt-R', 13, 21);
+	text-align:left;
+	word-break:keep-all;
+	&:before{
+		content:'';
+		display:block;
+		position:absolute;
+		top:24px;
+		left:30px;
+		width:18px;
+		height:12px;
+		@include Mix_PDP_Bg(0 0);
+	}
+}
+.btn_alarm01{
+	display:block;
+	top:50% !important;
+	right:29px !important;
+	transform:translateY(-50%);
+}
+.btn_help{
+	display:block;
+	position:absolute;
+	top:50% !important;
+	right:0;
+	width:15px;
+	height:15px;
+	@include Mix_PDP_Bg(-25px 0);
+	@include Mix_Size_0;
+	transform:translateY(-50%);
+}
+
+/* 상품상세 : Product Detail Page : 01. 차량 이미지 */
+.h_detail{
+	position:relative;
+	z-index:500;
+	background:transparent;
+	border-bottom:0;
+}
+.pdp01_car{
+	position:fixed;
+	top:-65px;
+	left:0;
+	z-index:300;
+	width:100%;
+	ol li img{
+		width:100%;
+	}
+	.zoom{
+		position:absolute;
+		top:215px;
+		left:0;
+		z-index:301;
+		width:100%;
+		.btn_view{
+			display:block;
+			width:100%;
+			color:$COL_Text_Base03;
+			@include Mix_Font('Txt-R', 12, 16);
+			text-align:center;
+			&:after{
+				content:'';
+				display:block;
+				width:28px;
+				height:10px;
+				margin:10px auto 0;
+				@include Mix_PDP_Bg(-107px -57px);
+			}
+		}
+	}
+	.zoom2{
+		position:fixed;
+		bottom:0;
+		left:0;
+		z-index:500;
+		width:100%;
+		height:0;
+		background:$COL_WHITE;
+		//border-radius:16px 16px 0 0;
+		transition:.3s ease;
+		.btn_view{
+			display:block;
+			width:100%;
+			height:56px;
+			padding-bottom:15px;
+			color:transparent;
+			@include Mix_Size_0;
+			&:after{
+				content:'';
+				display:block;
+				width:30px;
+				height:10px;
+				margin:10px auto 0;
+				@include Mix_PDP_Bg(-107px -57px);
+				transform:rotate(180deg);
+			}
+		}
+	}
+}
+
+/* 자동차 자세히 보기 zoom */
+.pdpCarZoom{
+	overflow:hidden;
+	.pdp01_car{
+		top:0 !important;
+		height:100% !important;
+		background:$COL_Text_Base04;
+		.zoom{
+			overflow:hidden;
+			height:0;
+			transition:.3s ease;
+		}
+		.zoom2{
+			height:56px;
+		}
+	}
+	.h_detail{
+		overflow:hidden;
+		height:0;
+		transition:.3s ease;
+	}
+	.pdp_button{
+		overflow:hidden;
+		height:0;
+		transition:.3s ease;
+	}
+}
+.visual_img{
+	overflow:hidden;
+	position:relative;
+	height:100%;
+	.swiper-wrapper{
+		.swiper-slide{
+			width:100%;
+			margin-right:0;
+			background:$COL_WHITE;
+			@include Mix_Font('Txt-R', 18, 24);
+			.inner{
+				overflow-x:hidden;
+				overflow-y:auto;
+				width:100%;
+			}
+			.play{
+				position:absolute;
+				top:0;
+				left:0;
+				z-index:2;
+				width:100%;
+				height:100%;
+				button{
+					overflow:hidden;
+					position:absolute;
+					top:50%;
+					left:50%;
+					width:80px;
+					height:80px;
+					margin-top:-56px;
+					@include Mix_PDP_Bg(-5px -192px);
+					@include Mix_Size_0;
+					transform:translate(-50%, -50%);
+				}
+			}
+			.btn_3d{
+				position:absolute;
+				left:50%;
+				bottom:120px;
+				z-index:2;
+				width:48px;
+				height:48px;
+				@include Mix_PDP_Bg(-54px -56px);
+				@include Mix_Size_0;
+				transform:translateX(-50%);
+			}
+			.inner{
+				height:100%;
+				padding-bottom:56px;
+				p{
+					position:relative;
+					border-bottom:solid 1px $COL_WHITE;
+					.txt{
+						position:absolute;
+						bottom:15px;
+						left:15px;
+						color:$COL_Text_Base04;
+						@include Mix_Font('Head-R', 12, 15);
+					}
+				}
+				&.bk{
+					p{
+						border-bottom:solid 1px $COL_Text_Base04;
+						.txt{
+							color:$COL_WHITE;
+						}
+					}
+				}
+			}
+		}
+		&::before{
+			content:'';
+			position:fixed;
+			top:0;
+			left:0;
+			z-index:2;
+			width:1000%;
+			height:150px;
+			background:linear-gradient(180deg, $COL_Text_Base04 0%, rgba($COL_Text_Base04, 0) 100%);
+			opacity:0.7;
+		}
+		&::after{
+			content:'';
+			position:fixed;
+			bottom:0;
+			left:0;
+			z-index:1;
+			width:1000%;
+			height:200px;
+			background:linear-gradient(180deg, rgba($COL_Text_Base04, 0) 0%, $COL_Text_Base04 100%);
+			opacity:0.5;
+		}
+	}
+	.swiper-pagination{
+		bottom:90px !important;
+	}
+	.swiper-pagination-bullet-active{
+		border-color:$COL_WHITE;
+	}
+	.swiper-pagination-bullet{
+		margin-top:0;
+		background-color:rgba($COL_WHITE, 0.25) !important;
+	}
+}
+.btn_photo_detail{
+	position:absolute;
+	top:50px;
+	left:50%;
+	z-index:2;
+	height:43px;
+	padding:0 22px;
+	background-color:rgba($COL_Text_Base03, 0.95);
+	color:$COL_WHITE;
+	@include Mix_Font('Txt-R', 12, 43);
+	white-space:nowrap;
+	transform:translateX(-50%);
+	&:before{
+		content:'';
+		display:inline-block;
+		width:14px;
+		height:14px;
+		margin-right:10px;
+		@include Mix_PDP_Bg(-141px -56px);
+		vertical-align:middle;
+	}
+}
+
+/* 상품상세 : Product Detail Page : 02. 차량 가격정보  */
+.pdp02_price{
+	position:relative;
+	z-index:301;
+	padding:36px 21px 0;
+	background:$COL_WHITE;
+	//border-radius:16px 16px 0px 0px;
+	.flag{
+		margin-bottom:16px;
+		font-size:0;
+		span{
+			display:inline-block;
+			height:22px;
+			margin-right:1px;
+			padding:0 8px;
+			color:$COL_WHITE;
+			@include Mix_Font('Txt-R', 12, 22);
+		}
+		.cod_01{
+			background:$COL_Blue03;
+		}
+		.cod_02{
+			background:$COL_Blue03;
+		}
+		.cod_03{
+			background:$COL_Blue03;
+		}
+		.cod_04{
+			background:$COL_Blue03;
+		}
+	}
+	.name{
+		margin-bottom:3px;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Head-R', 20, 27);
+	}
+	.drive{
+		margin-bottom:15px;
+		color:$COL_Inactive_Text01;
+		@include Mix_Font('Txt-R', 14, 22);
+		span{
+			display:inline-block;
+			&:before{
+				content:'.';
+				display:inline-block;
+				margin:-8px 4px 0 0;
+				vertical-align:middle;
+			}
+			&:first-child:before{
+				display:none;
+			}
+		}
+	}
+	.price{
+		position:relative;
+		margin-bottom:30px;
+		font-size:0;
+		.pay{
+			color:$COL_Text_Base04;
+			@include Mix_Font('Txt-R', 18, 28);
+			em{
+				@include Mix_Font('Txt-M', 24, 38);
+				vertical-align:middle;
+			}
+		}
+		.install{
+			margin-left:5px;
+			color:$COL_Text_Base01;
+			@include Mix_Font('Txt-R', 12, 19);
+		}
+		button{
+			display:inline-block;
+			position:absolute;
+			top:50%;
+			right:0;
+			color:$COL_Text_Base03;
+			@include Mix_Font('Head-R', 14, 16);
+			transform:translateY(-50%);
+			&:after{
+				content:'';
+				display:block;
+				width:100%;
+				height:0.5px;
+				background:$COL_Text_Base03;
+			}
+		}
+	}
+	.chart{
+		margin-bottom:34px;
+		ol{
+			display:flex;
+			justify-content:space-between;
+			li{flex:0 25%;
+				.progressBar01{
+					display:block;
+					position:relative;
+					width:60px;
+					height:60px;
+					margin:0 auto;
+					text-align:center;
+					svg{
+						width:60px;
+						height:60px;
+					}
+					.text_box{
+						color:$COL_Text_Base04;
+						@include Mix_Font('Head-R', 12, 16);
+					}
+				}
+				button{
+					display:block;
+					width:100%;
+					margin-top:8px;
+					color:$COL_Text_Base03;
+					@include Mix_Font('Txt-R', 12, 19);
+					text-align:center;
+					@include Mix_Ellipsis01;
+					&:after{
+						content:'';
+						display:inline-block;
+						width:8px;
+						height:12px;
+						margin:-1px 0 0 2px;
+						@include Mix_PDP_Bg(-75px 0);
+						vertical-align:middle;
+					}
+				}
+			}
+		}
+	}
+	.pdp_notice03{
+		width:calc(100% + 42px);
+		margin-left:-21px;
+	}
+	.pdp_share{
+		position:absolute;
+		top:35px;
+		right:21px;
+		button{
+			width:24px;
+			height:24px;
+			@include Mix_Size_0;
+			@include Mix_PDP_Bg(-161px 0);
+		}	
+	}
+}
+
+/* 상품상세 : Product Detail Page : 03. TABS (기본정보, 옵션정보, 인증정보, 성능/보험, 금융정보 */
+.pdp03_tabs{
+	padding:40px 15px 30px;
+	background-color:$COL_WHITE;
+	&.pd{
+		padding:30px 21px 40px;
+		> .top{
+			padding:0;
+		}
+	}
+	h6.tit{
+		padding:0 0 25px;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Head-R', 16, 20);
+	}
+	.cont_box h6.tit.line{
+		margin-top:10px;
+		padding:25px 0 20px;
+		border-top:1px solid $COL_Line_Light01;
+	}
+	.cont_box.base{
+		margin-top:15px;
+		padding:25px 20px 10px;
+		background:$COL_BG_Light01;
+		//border-radius:6px;
+		&.base_toggle{
+			.base_01{
+				padding-bottom:15px;
+			}
+			.tog_cont{
+				display:none;
+			}
+			&.on{
+				&+.option_03 .btn_more:after{
+					transform:rotate(180deg);
+				}
+			}
+		}
+	}
+	.cont_box.certify{
+		padding:0 6px;
+	}
+}
+.pdp03_tabs.last{
+    margin-bottom:8px;
+	padding-bottom:40px;
+	border-bottom:1px solid $COL_BG_Light02;
+	.cont_box{
+		margin-top:15px;
+		padding:30px 20px;
+		background-color:$COL_BG_Light01;
+		//border-radius:6px;
+		dl:first-child{
+			margin:0;
+			padding:0;
+			border:0;
+		}
+		.calc_total{
+			margin-top:28px;
+			padding-top:28px;
+			border-top:1px solid $COL_Line_Light01;
+		}
+		&.calc .calc_total{
+			margin-bottom:3px;
+		}
+	}
+}
+
+/* 기본 정보 */
+.base_01{
+	padding-bottom:25px;
+	&:after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+	li{
+		float:left;
+		width:50%;
+		margin-top:15px;
+		.tit{
+			display:block;
+			margin-bottom:3px;
+			color:$COL_Text_Base01;
+			@include Mix_Font('Txt-R', 12, 19);
+		}
+		.txt{
+			display:block;
+			color:$COL_Text_Base03;
+			@include Mix_Font('Txt-M', 14, 22);
+		}
+		&:nth-child(-n+2){
+			margin-top:0;
+		}
+	}
+}
+.base_02{
+	background:$COL_BG_Light01;
+	//border-radius:4px;
+	ol li{
+		display:flex;
+		position:relative;
+		padding-bottom:22px;
+		font-size:0;
+		&:after{
+			content:'';
+			display:block;
+			position:absolute;
+			top:24px;
+			left:6.5px;
+			width:1px;
+			height:24px;
+			border-left:1px dashed $COL_Inactive_Text01;
+		}
+		&:last-child{
+			padding-bottom:12px;
+			&:after{
+				display:none;
+			}
+		}
+		.tit{
+			margin-right:6px;
+			color:$COL_Text_Base03;
+			@include Mix_Font('Txt-R', 14, 22);
+			&:before{
+				content:'';
+				display:inline-block;
+				width:8px;
+				height:8px;
+				margin:0 16px 0 3px;
+				border:1px solid $COL_Inactive_Text01;
+				border-radius:100%;
+				vertical-align:middle;
+				box-sizing:border-box;
+			}
+		}
+		.date{
+			@include Mix_Font('Txt-R', 12, 19);
+			color:$COL_Text_Base01;
+		}
+		&.year .date{
+			@include Mix_Font('Head-R', 11, 14);
+		}
+		&.now{
+			.tit{
+				&:before{
+					border:1px solid $COL_Secondary01;
+					background:$COL_Secondary01;
+				}
+			}
+		}
+		>span{
+			line-height:23px !important;
+		}
+	}
+}
+
+/* 옵션정보 */
+.option_01{
+	display:flex;
+	flex-flow:row wrap;
+	margin-top:30px;
+	li{
+		flex:0 25%;
+		margin-bottom:25px;
+		text-align:center;
+		.img{
+			display:block;
+			width:50px;
+			margin:0 auto 6px;
+		}
+		.txt{
+			display:block;
+			height:30px;
+			padding:0 5px;
+			color:$COL_Gray04;
+			@include Mix_Font('Txt-M', 12, 16);
+		}
+		&:nth-last-child(-n+4){
+			margin-bottom:0;
+		}
+	}
+	li.off{
+		opacity:0.25;
+	}
+}
+.option_02{
+	padding:16px 23px;
+	background:$COL_BG_Light01;
+	//border-radius:4px;
+	color:$COL_Gray04;
+	@include Mix_Font('Txt-R', 14, 20);
+	text-align:center;
+	span{
+		@include Mix_Font('Txt-M', 14, 20);
+		i{
+			color:$COL_Secondary01;
+		}
+	}
+}
+.option_03{
+	margin:15px 0 40px;
+	text-align:center;
+	.btn_more{
+		color:$COL_Text_Base01;
+		@include Mix_Font('Txt-R', 14, 18);
+		&:after{
+			content:'';
+			display:inline-block;
+			width:12px;
+			height:8px;
+			margin:-1px 0 0 4px;
+			@include Mix_PDP_Bg(-88px 0);
+			vertical-align:middle;
+		}
+	}
+}
+
+/* 인증정보 */
+.certify_01{
+	position:relative;
+	margin-top:15px;
+	padding:35px 0;
+	background:$COL_Gray08;
+	//border-radius:4px;
+	text-align:center;
+	&:before{
+		content:'';
+		display:block;
+		width:90px;
+		height:70px;
+		margin:0 auto;
+	}
+	&.photo01{
+		width:calc(100% + 12px);
+		margin-left:-6px;
+	}
+	&.photo01:before{
+		@include Mix_PDP_Bg(-6px -116px);
+	}
+	&.photo02:before{
+		@include Mix_PDP_Bg(-106px -116px);
+	}
+	&.photo03:before{
+		@include Mix_PDP_Bg(-207px -116px);
+	}
+	.name{
+		@include Mix_Font_Head_R;
+	}
+	.info{
+		margin:12px 0 20px;
+		color:$COL_Gray03;
+		@include Mix_Font('Txt-R', 12, 16);
+		.name{
+			color:$COL_Gray04;
+			@include Mix_Font_Txt_M;
+		}
+	}
+	.txt{
+		position:relative;
+		display:inline-block;
+		margin-top:15px;
+		color:$COL_Text_Base03;
+		@include Mix_Font('Head-R', 18, 24);
+		em{
+			color:$COL_Secondary01;
+		}
+	}
+	.link{
+		margin-top:20px;
+		text-align:center;
+		a{
+			display:inline-block;
+			color:$COL_Text_Base04;
+			@include Mix_Font('Txt-R', 14, 22);
+			&:after{
+				content:'';
+				display:block;
+				width:100%;
+				height:0.5px;
+				margin-top:-3px;
+				background:$COL_Text_Base04;
+			}
+		}
+	}
+}
+.certify_02{
+	position:relative;
+	.txt01{
+		@include Mix_Font('Txt-R', 12, 16);
+		color:$COL_Gray09;
+	}
+	ol li{    
+		display:flex;
+		flex-flow:column;
+		position:relative;
+		margin-top:30px;
+		color:$COL_Gray04;
+		@include Mix_Font('Txt-R', 14, 18);
+		.bar{
+			display:block;
+			width:100%;
+			height:4px;
+			background:$COL_Line_Light01;
+			em{
+				display:block;
+				overflow:hidden;
+				height:4px;
+				background:$COL_Secondary01;
+				text-indent:-9999px;
+			}
+		}
+		.tit{
+			display:inline-block;
+			width:100%;
+			margin-bottom:12px;
+			color:$COL_Text_Base04;
+			@include Mix_Font('Head-R', 16, 21);
+		}
+		.txt{
+			display:inline-block;
+			width:100%;
+			margin-top:5px;
+			color:$COL_Text_Base04;
+			@include Mix_Font('Txt-R', 14, 22);
+			span{
+				&:first-child{
+					float:left;
+					@include Mix_Font_Txt_M;
+				}
+				&:last-child{
+					float:right;
+					color:$COL_Text_Base01;
+				}
+			}
+		}
+	}
+	&+.txt{
+		margin:20px 0 30px;
+		color:$COL_Inactive_Text01;
+		@include Mix_Font('Txt-R', 12, 19);
+	}
+}
+
+/* 성능/보험 */
+.perfor_01{
+	display:flex;
+	justify-content:space-between;
+	margin-top:30px;
+	li{
+		flex:0 80px;
+		text-align:center;
+		.img{
+			display:block;
+		}
+		.tit{
+			display:block;
+			color:$COL_Text_Base03;
+			@include Mix_Font('Txt-R', 13, 21);
+		}
+		.case{
+			display:block;
+			color:$COL_Text_Base03;
+			@include Mix_Font('Txt-R', 13, 21);
+		}
+		.case.on{
+			@include Mix_Font_Txt_M;
+		}
+	}
+}
+
+/* 금융 정보 */
+.calc_01{
+	li{
+		display:flex;
+		align-items:center;
+		margin-top:5px;
+		span{
+			flex-grow:1;
+			color:$COL_Text_Base03;
+			@include Mix_Font('Txt-R', 13, 21);
+			&:last-child{
+				@include Mix_Font('Txt-R', 16, 25);
+				text-align:right;
+				i{
+					margin-left:1px;
+					@include Mix_Font('Txt-R', 13, 21);
+					vertical-align:2px;
+				}
+			}
+		}
+	}
+}
+.calc_02{
+	margin-top:23px;
+	li{
+		position:relative;
+		.tit{
+			display:flex;
+			@include Mix_Font('Txt-R', 14, 22);
+			span{
+				flex-grow:1;
+				&:last-child{
+					color:$COL_Text_Base01;
+					@include Mix_Font('Txt-R', 11, 17);
+					text-align:right;
+					text-decoration-line:underline;
+				}
+			}
+			em{
+				margin-left:3px;
+				color:$COL_Text_Base01;
+				@include Mix_Font('Txt-R', 12, 19);
+			}
+		}
+		.form_txt{
+			position:relative;
+			margin-top:8px;
+			.btn_delete{
+				display:block;
+				position:absolute;
+				top:50%;
+				right:17px;
+				width:16px;
+				height:16px;
+				@include Mix_PDP_Bg(-269px 0);
+				transform:translateY(-50%);
+			}
+			&.normal input{
+				width:100%;
+				height:56px;
+				padding:0 38px;
+				//border-radius:0;
+				border:solid 1px $COL_WHITE;
+				color:$COL_Text_Base04;
+				@include Mix_Font('Txt-R', 14, 56);
+				text-align:right;
+				&::placeholder{
+					color:$COL_Text_Base04;
+					@include Mix_Font('Txt-R', 14, 56);
+					text-align:right;
+				}
+				&:focus{
+					border:solid 1px $COL_Text_Base04;
+				}
+			}
+			&:before{
+				content:'';
+				position:absolute;
+				top:50%;
+				left:17px;
+				z-index:2;
+				width:16px;
+				height:10px;
+				@include Mix_PDP_Bg(-123px 0);
+				transform:translateY(-50%);
+			}
+		}
+		.form_error_chat{
+			margin-top:6px;
+			color:$COL_Text_Base01;
+			@include Mix_Font('Txt-R', 11, 18);
+		}
+	}
+}
+.inp_txt::placeholder{text-align:right;}
+.calc_03{
+	margin-top:20px;
+	padding:0 6px;
+	li{
+		position:relative;
+		padding:0 0 8px 8px;
+		color:$COL_Inactive_Text01;
+		@include Mix_Font('Txt-R', 12, 19);
+		word-break:keep-all;
+		&:last-child{
+			padding-bottom:0;
+		}
+		&:before{
+			content:'';
+			display:block;
+			position:absolute;
+			top:6px;
+			left:0;
+			width:2px;
+			height:2px;
+			background:$COL_Inactive_Text01;
+		}
+	}
+}
+.calc_total{
+	display:flex;
+	dt{
+		flex-shrink:0;
+		width:45%;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Txt-M', 15, 24);
+	}
+	dd{
+		flex-grow:1;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Txt-M', 24, 38);
+		text-align:right;
+		i{
+			margin-left:1px;
+			@include Mix_Font('Txt-R', 15, 24);
+			vertical-align:middle;
+		}
+	}
+	.txt01{
+		display:block;
+		margin-top:4px;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Txt-M', 15, 24);
+	}
+	.txt02{
+		display:block;
+		margin-top:-8px;
+		color:$COL_Text_Base01;
+		@include Mix_Font('Txt-R', 12, 19);
+	}
+}
+
+/* 상품상세 : Product Detail Page : 08. 동일모델 구매리뷰 */
+.pdp08_review{
+    margin-bottom:8px;
+	padding:40px 0 40px 15px;
+	background-color:$COL_WHITE;
+	border:1px solid $COL_Line_Light01;
+	border-width:1px 0;
+	.top{
+		margin-right:15px;
+	}
+}
+
+/* 상품상세 : Product Detail Page : 09. 유사 인기 차량으로 수정 */
+.pdp09_recomend{
+    margin-bottom:8px;
+	padding:30px 0 20px 20px;
+}
+
+/* 상품상세 : 고객님의 관심차량 */
+.plp_best01.pdp_best{
+    margin-bottom:8px;
+	padding:40px 0;
+	background-color:$COL_WHITE;
+	border:1px solid $COL_BG_Light02;
+	border-width:1px 0;
+}
+
+/* 상품상세 : Product Detail Page : 10. 링크 */
+.pdp10_link{
+	padding:30px 20px 40px;
+	background-color:$COL_WHITE;
+	border-top:1px solid $COL_Line_Light01;
+	ul li{
+		margin-bottom:8px;
+		a{
+			width:100%;
+			padding-left:58px;
+			background-color:$COL_BG_Light01;
+			border:0;
+			color:$COL_Text_Base04;
+			@include Mix_Font('Txt-R', 15, 24);
+			&:before,&:after{
+				content:'';
+				position:absolute;
+			}
+			&:before{
+				top:50%;
+				left:18px;
+				width:30px;
+				height:30px;
+				transform:translateY(-50%);
+			}
+			&:after{
+				top:50%;right:20px;
+				width:7px;
+				height:12px;
+				@include Mix_PDP_Bg(-256px 0);
+				transform:translateY(-50%);
+			}
+		}
+		a.faq:before{
+			@include Mix_PDP_Bg(-110px -22px);
+		}
+		a.info:before{
+			@include Mix_PDP_Bg(-78px -22px);
+		}
+		&:last-child{
+			margin-bottom:0;
+		}
+	}
+}
+
+/* 상품상세 : 배너 공통 */
+.pdp_ban {
+	width:calc(100% + 12px);
+    margin:30px -6px 0;
+	img{
+		width:100%;
+	}
+}
+
+/* 상품상세 : tab01 toast POPUP */
+.pdp_toast{
+	position:fixed;
+    top:-100px;
+	left:20px;
+    z-index:10;
+    width:calc(100% - 40px);
+	height:50px;
+    background:$COL_WHITE;
+    border:1px solid $COL_Line_Dark01;//border-radius:25px;
+	text-align:center;
+    box-shadow:0px 3px 6px rgb(0 0 0 / 12%);
+	span{
+		display:inline-block;
+		width:100%;
+		padding:0 5px;
+		color:$COL_Text_Base03;
+		@include Mix_Font('Txt-R', 13, 50);
+		@include Mix_Ellipsis01;
+		&:before{
+			content:"";
+			display:inline-block;
+			width:18px;
+			height:12px;
+			margin:-1px 8px 0 0;
+			@include Mix_PDP_Bg(0 0);
+			vertical-align:middle;
+		}
+	}
+}
+
+/* 상세 팝업*/
+/* 할부 계산기 팝업*/
+.pdp_pop{
+	display:inline-block;
+	width:100%;
+	padding:0 15px;
+	background-color:$COL_BG_Light01 !important;
+	.pdp_box01{
+		&:first-child{
+			margin-top:20px;
+		}
+	}
+}
+.pdp_pop2{
+	display:inline-block;
+	width:100%;
+	padding:0 15px;
+	background-color:$COL_BG_Light01 !important;
+	.pdp_box01{
+		.pdp_tit{
+			line-height:24px;
+			&.pdp_tog:after{
+				top:8px;
+			}
+		}
+		&:first-child{
+			margin-top:20px;
+		}
+	}
+}
+.pdp_cont_tot{
+	padding:30px 21px 10px;
+	background-color:$COL_BG_Light01 !important;
+	dt{
+		color:$COL_Text_Base03;
+		@include Mix_Font('Head-R', 16, 21);
+		span{
+			display:none;
+		}
+	}
+	dd{
+		margin-top:5px;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Txt-M', 18, 28);
+		em{
+			@include Mix_Font('Txt-M', 32, 43);
+			vertical-align:sub;
+		}
+		span{
+			margin-left:6px;
+			color:$COL_Text_Base01;
+			@include Mix_Font('Txt-R', 12, 19);
+		}
+	}
+	&.fixed{
+		display:flex;
+		position:fixed;
+		z-index:3;
+		width:100%;
+		padding:10px 21px 15px;
+		background-color:$COL_WHITE !important;
+		border-bottom:solid 1px $COL_BG_Light02;
+		dt{
+			flex:1;
+			color:$COL_Text_Base03;
+			@include Mix_Font('Head-R', 14, 19);
+			span{
+				display:block;
+				width:100%;
+				color:$COL_Text_Base01;
+				@include Mix_Font('Txt-R', 11, 17);
+			}
+		}
+		dd{
+			margin-top:0;
+			color:$COL_Text_Base04;
+			@include Mix_Font('Txt-M', 15, 24);
+			span{
+				display:none;
+			}
+			em{
+				padding-right:1px;
+				@include Mix_Font('Txt-M', 24, 38);    
+				vertical-align:-2px;
+			}
+		}
+	}
+}
+.pdp_cont{
+	margin-top:20px;
+	border-top:solid 1px $COL_BG_Light02;
+}
+.pdp_tit2{
+	display:inline-block;
+	width:100%;
+	margin-top:40px;
+	padding:0 6px;
+	span{
+		float:left;
+		@include Mix_Font('Head-R', 18, 24);
+	}
+	.btn_info_more{
+		float:right;
+		color:$COL_Text_Base01;
+		@include Mix_Font('Txt-R', 13, 24);
+		&:after{
+			content:'';
+			display:inline-block;
+			width:12px;
+			height:8px;
+			margin-left:4px;
+			@include Mix_PDP_Bg(-88px 0);
+			transform:rotate(0deg);
+		}
+		&.on:after{
+			transform:rotate(180deg);
+		}
+	}
+}
+.pdp_box01{
+	margin-top:15px;
+	padding:25px 20px;
+	background-color:$COL_WHITE;
+	//border-radius:6px;
+	.pdp_tit{
+		position:relative;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Txt-M', 15, 32);
+		span{
+			float:right;
+			@include Mix_Font('Txt-R', 15, 24);
+			em{
+				display:inline-block;
+				@include Mix_Font('Txt-M', 20, 32);
+				vertical-align:middle;
+			}
+		}
+		p{
+			margin-top:10px;
+			color:$COL_Text_Base03;
+			@include Mix_Font('Txt-R', 13, 21);
+		}
+		&:not(p){
+			margin-bottom:-5px;
+		}
+	}
+	.pdp_tog{
+		display:inline-block;
+		width:100%;
+		padding-right:17px;
+		color:$COL_Text_Base04;
+		&:after{
+			content:'';
+			position:absolute;
+			top:12px;
+			right:0;
+			width:12px;
+			height:7px;
+			margin-left:6px;
+			@include Mix_PDP_Bg(-45px 0);
+			transform:rotate(180deg);
+		}
+		&.on:after{
+			transform:rotate(0deg);
+		}
+	}
+	.pdp_list{
+		padding-top:20px;
+		li{
+			display:flex;
+			align-items:center;
+			margin-bottom:15px;
+			@include Mix_Font('Txt-R', 13, 21);
+			.tit{
+				display:flex;
+				align-items:center;
+				flex:1;
+				color:$COL_Text_Base01;
+				&.step01:before{
+					@include Mix_PDP_Bg(-245px -56px);
+				}
+				&.step02:before{
+					@include Mix_PDP_Bg(-216px -56px);
+				}
+				&.step03:before{
+					@include Mix_PDP_Bg(-187px -56px);
+				}
+				&.step04:before{
+					@include Mix_PDP_Bg(-159px -56px);
+				}
+				&.step05:before{
+					@include Mix_PDP_Bg(-274px -85px);
+				}
+				&.step06:before{
+					@include Mix_PDP_Bg(-274px -56px);
+				}
+			}
+			.txt{
+				color:$COL_Text_Base03;
+				&.on{
+					color:$COL_Secondary01;
+					@include Mix_Font_Txt_M;
+				}
+			}
+			.txt2{
+				color:$COL_Text_Base03;
+				@include Mix_Font('Txt-R', 12, 19);
+				em{
+					@include Mix_Font('Txt-R', 14, 22);
+					vertical-align:middle;
+				}
+			}
+			[class^="tit step0"]:before{
+				content:'';
+				display:inline-block;
+				width:24px;
+				height:24px;
+				margin-right:8px;
+				vertical-align:middle;
+			}
+			&:last-child{
+				margin-bottom:0;
+			}
+		}
+		&+.notice_03{
+			padding-top:30px;
+		}
+	}
+	.pdp_txt{
+		display:flex;
+		flex-wrap: wrap;
+		margin-top:20px;
+		color:$COL_Text_Base03;
+		dt{
+			flex:1;
+			@include Mix_Font('Txt-R', 13, 21);
+		}
+		dd{
+			@include Mix_Font('Txt-R', 12, 19);
+			em{
+				@include Mix_Font('Txt-R', 14, 22);
+				vertical-align:middle;
+			}
+		}
+	}
+	.form_txt{
+		position:relative;
+		width:calc(100% + 4px);
+		margin:8px -2px 0;
+		.btn_delete{
+			display:block;
+			position:absolute;
+			top:50%;
+			right:17px;
+			width:16px;
+			height:16px;
+			@include Mix_PDP_Bg(-269px 0);
+			transform:translateY(-50%);
+		}
+		&.normal input{
+			width:100%;
+			height:56px;
+			padding:0 38px;
+			background-color:$COL_BG_Light01;
+			border:solid 1px $COL_WHITE;
+			//border-radius:0;
+			line-height:56px;
+			text-align:right;
+			&::placeholder{
+				text-align:right;
+			}
+			&:focus{
+				border:solid 1px $COL_Text_Base04;
+			}
+		}
+		&:before{
+			content:'';
+			position:absolute;
+			top:50%;
+			left:17px;
+			z-index:2;
+			width:16px;
+			height:10px;
+			@include Mix_PDP_Bg(-123px 0);
+			transform:translateY(-50%);
+		}
+	}
+}
+
+/*Selectbox 공통*/
+.pdp_sel{
+	position:relative;
+	margin-top:15px;
+	&:before{
+		content:'';
+		position:absolute;
+		top:50%;
+		right:17px;
+		z-index:2;
+		width:12px;
+		height:8px;
+		@include Mix_PDP_Bg(-88px 0);
+		transform:translateY(-50%);
+	}
+	.tit{
+		position:absolute;
+		top:50%;
+		left:17px;
+		color:$COL_Inactive_Text01;
+		@include Mix_Font('Txt-R', 14, 18);
+		transform:translateY(-50%);
+	}
+	select{
+		outline:none;
+		width:100%;
+		height:56px;
+		padding-right:34px;
+		border:0;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Txt-R', 13, 56);
+		text-align:right;
+	}
+}
+.pdp_sel2{
+	position:relative;
+	margin-top:-1px;
+	border-top:solid 1px $COL_WHITE;
+	&:before{
+		content:'';
+		position:absolute;
+		top:50%;
+		right:17px;
+		z-index:2;
+		width:12px;
+		height:8px;
+		@include Mix_PDP_Bg(-88px 0);
+		transform:translateY(-50%);
+	}
+	.tit{
+		position:absolute;
+		top:50%;
+		left:17px;
+		color:$COL_Text_Base01;
+		@include Mix_Font('Txt-R', 13, 21);
+		transform:translateY(-50%);
+		&:before{
+			content:'';
+			display:inline-block;
+			width:15px;
+			height:18px;
+			margin-right:6px;
+			@include Mix_PDP_Bg(-145px 0);
+			vertical-align:middle;
+		}
+	}
+	select{
+		outline:none;
+		width:100%;
+		height:56px;
+		padding-right:34px;
+		background-color:$COL_BG_Light01;
+		border:0;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Txt-R', 14, 56);
+		text-align:right;
+	}
+}
+.pdp_sel_box{
+	display:flex;
+	flex-direction:column;
+	margin-top:20px;
+	color:$COL_Text_Base03;
+	@include Mix_Font('Txt-R', 13, 21);
+	button{
+		float:right;
+		color:$COL_Text_Base01;
+		@include Mix_Font('Txt-R', 11, 17);
+		text-decoration-line:underline;
+		text-underline-position:under;
+	}
+	em{
+		margin-left:3px;
+		color:$COL_Text_Base01;
+		@include Mix_Font('Txt-R', 11, 17);
+	}
+	.txt{
+		margin-top:6px;
+		@include Mix_Font('Txt-R', 12, 18);
+	}
+}
+.pdp_sel_box2{
+	display:flex;
+    width:calc(100% + 4px);
+    margin:20px -2px 0;
+	dl{
+		flex:1;
+		padding:0 5px 0 0;
+		&:last-child{padding:0 0 0 5px;}
+	}
+	.tit2{
+		display:inline-block;
+		padding:0 2px 5px;
+		color:$COL_Text_Base03;
+		@include Mix_Font('Txt-R', 13, 21);
+	}
+	.pdp_sel2 select{
+		padding-left:17px;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Txt-R', 14, 22);
+		text-align:left;
+	}
+}
+
+// 보증 상세
+.pdp_war{
+	padding:40px 15px;
+	background-color:$COL_BG_Light01;
+	> h3.tit{
+		padding:0 6px;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Head-R', 18, 23);
+	}
+	.pdp_box01 .pdp_tit{
+		color:$COL_Text_Base04;
+		@include Mix_Font('Txt-R', 15, 24);
+	}
+	.certify_02{
+		margin-bottom:50px;
+		ol li{
+			margin-top:18px;
+			.txt{
+				color:$COL_Text_Base03;
+				@include Mix_Font('Txt-M', 13, 21);
+				span:last-child{
+					color:$COL_Text_Base01;
+					@include Mix_Font('Txt-R', 13, 21);
+				}
+			}
+			&:first-of-type{
+				margin-top:25px;
+			}
+		}
+		&.last{
+			margin-bottom:5px;
+		}
+	}
+	> p.txt{
+		margin-top:15px;
+		padding:0 6px;
+		color:$COL_Text_Base01;
+		@include Mix_Font('Txt-R', 12, 19);
+	}
+}
+.pdp_war_box{
+	padding:40px 15px 60px;
+	h3.tit{
+		padding:0 6px;
+		@include Mix_Font('Head-R', 18, 24);
+	}
+	.table_receipt{
+		margin-top:15px;
+		th{
+			@include Mix_Font('Txt-R', 13, 21);
+			border-right:1px solid $COL_Line_Light01;
+			&+th{
+				border-right:0;
+			}
+		}
+		td{
+			@include Mix_Font('Txt-R', 13, 21);
+		}
+	}
+}

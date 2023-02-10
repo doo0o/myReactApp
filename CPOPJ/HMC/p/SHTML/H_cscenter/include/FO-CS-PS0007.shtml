@@ -1,0 +1,136 @@
+<div class="popup_modal" id="FO-CS-PS0007">
+	<div class="p_body">
+		<div class="p_inner s_small">
+			<div class="p_head">
+				<h2 class="tit">거래내역</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+				<div class="inner_view pop_trade_list">
+					<div class="cont">
+						<div class="tab mid" data-ref="tabmid">
+							<ul class="list" role="tablist">
+								<li class="on"><button type="button" role="tab" aria-selected="true" aria-controls="buy_list">내차사기 내역</button></li>
+								<li class=""><button type="button" role="tab" aria-selected="false" aria-controls="sell_list">내차팔기 내역</button></li>
+							</ul>
+							
+							<div class="cont active" id="buy_list">
+								<div class="caution">
+									<p>최근 한 달 이내 구매한 차량만 조회 가능합니다.</p>
+								</div>
+								<div class="no_data car">
+									<p class="tit02">최근 구매한 차량이 없습니다.</p>
+								</div>
+								<div class="unit_type type02">
+									<!-- unit -->
+										<div class="form_area">
+											<input type="radio" name="chk_comm" id="chk_radio01_1" class="chk_radio">
+											<label for="chk_radio01_1">
+												<div class="mid_area">
+													<div class="unit_img">
+														<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+													</div>
+													<div class="unit_info">
+														<div class="order_num">
+															<!-- 2023 0202 : 클래스 명 수정 flag_mid~ > flag_big~ -->
+															<span class="flag_big01">결제진행중</span>
+															<!-- <span class="flag_big03">Trade-in</span> -->
+															<span class="num">2021123154561231</span>
+														</div>
+														<div class="name">
+															<span class="model">현대 쏘나타 DN8 2.9</span>
+															<span class="desc">가솔린 인스퍼레이션</span>
+														</div>
+														<div class="price">
+															<span class="num"><em>3,820</em><i>만원</i></span>
+														</div>
+													</div>
+												</div>
+											</label>
+										</div>
+									<!-- //unit -->
+								</div>
+							</div>
+							<div class="cont" id="sell_list">
+								<div class="caution">
+									<p>최근 한 달 이내 판매한 차량만 조회 가능합니다.</p>
+								</div>
+								<div class="no_data car">
+									<p class="tit02">판매한 차량 목록이 없습니다.</p>
+								</div>
+								<div class="unit_type type02">
+									<!-- unit -->
+									<div class="form_area">
+										<input type="radio" name="chk_comm" id="chk_radio01_3" class="chk_radio">
+										<label for="chk_radio01_3">
+											<div class="mid_area">
+												<div class="unit_img">
+													<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+												</div>
+												<div class="unit_info">
+													<div class="order_num">
+														<!-- 2023 0202 : 클래스 명 수정 flag_mid~ > flag_big~ -->
+														<span class="flag_big01">견적요청</span>
+														<span class="flag_big03">Trade-in</span>
+														<span class="num">2021123154561231</span>
+													</div>
+													<div class="car_num">123가1234</div>
+													<div class="name">
+														<span class="model">현대 쏘나타 DN8 2.9</span>
+														<span class="desc">가솔린 인스퍼레이션</span>
+													</div>
+													<div class="price">
+														<span class="num"><em>3,820</em><i>만원</i></span>
+													</div>
+												</div>
+											</div>
+										</label>
+									</div>
+									<!-- //unit -->
+									<!-- unit -->
+									<div class="form_area">
+										<input type="radio" name="chk_comm" id="chk_radio01_4" class="chk_radio">
+										<label for="chk_radio01_4">
+											<div class="mid_area">
+												<div class="unit_img">
+													<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+												</div>
+												<div class="unit_info">
+													<div class="order_num">
+														<!-- 2023 0202 : 클래스 명 수정 flag_mid~ > flag_big~ -->
+														<span class="flag_big01">시세확인</span>
+														<span class="flag_big03">Trade-in 대기</span>
+														<span class="num">2021123154561231</span>
+													</div>
+													<div class="car_num">123가1234</div>
+													<div class="name">
+														<span class="model">현대 쏘나타 DN8 2.9</span>
+														<span class="desc">가솔린 인스퍼레이션</span>
+													</div>
+													<div class="price">
+														<span class="num"><em>3,820</em><i>만원</i></span>
+													</div>
+												</div>
+											</div>
+										</label>
+									</div>
+									<!-- //unit -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //contents -->
+				<!-- sticky -->
+				<div class="btn_area full_type">
+					<button type="button" class="btn_big color01">선택차량 문의하기</button>
+				</div>
+				<!-- // sticky -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>
+<script>
+	 const tab = new TabContents('tabmid');
+</script>

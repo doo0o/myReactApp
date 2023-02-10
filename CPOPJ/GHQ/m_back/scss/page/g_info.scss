@@ -1,0 +1,18 @@
+@charset 'utf-8';
+/* 
+	1. 이용약관
+	
+*/
+
+@import '../_common/g_function';
+@import '../_common/g_mixins';
+
+.term_wrap {
+	padding: 20px 21px;
+	.sel_type01 {
+		border-color: $COL_Line_Light01 !important;
+	}
+	.form_type02 {
+		margin-bottom: 30px;
+	}
+}

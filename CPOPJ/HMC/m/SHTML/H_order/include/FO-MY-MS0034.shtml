@@ -1,0 +1,91 @@
+<!-- FO-MY-MS0034 : 방문평가 신청 - FULL -->
+<div class="CPOpop_full" id="FO-MY-MS0034">
+	<div class="p_head">
+		<h2 class="tit">방문평가 신청</h2>
+	</div>
+	<div class="p_wrap">		
+		<div class="visit_info layer_bg">
+			<div class="sec_tit">방문평가 신청정보</div>
+			<ul class="form_list01">
+				<li>
+					<div class="inbox_type01 on">
+						<span class="tit">이름</span>
+						<input type="text" class="txt" title="이름 입력" value="이현대" disabled="">
+						<button type="button" class="btn_delete">삭제</button>
+					</div>
+				</li>
+				<li>
+					<div class="inbox_type01 on">
+						<span class="tit">휴대폰번호</span>
+						<input type="tel" class="txt type_tel" title="휴대폰번호 입력" placeholder="'-' 없이 숫자만 입력" name="" value="01012345678" disabled="">
+						<button type="button" class="btn_delete">삭제</button>
+					</div>
+				</li>
+				<li>
+					<div class="inbox_type01 address on"><!-- 주소 입력 후 calss on 추가 -->
+						<span class="tit">주소</span>
+						<div class="add">
+							(06179)  서울특별시 강남구 테헤란로 510(대치동)
+						</div>
+						<button type="button" class="btn_icon_mid01">주소검색</button>
+					</div>
+				</li>
+				<li>
+					<div class="inbox_type01"><!-- 주소 입력 후 calss on 추가 -->
+						<span class="tit">상세주소</span>
+						<input type="text" class="txt" title="상세주소 입력" placeholder="상세주소 입력" name="" value="">
+						<button type="button" class="btn_delete">삭제</button>
+					</div>
+				</li>
+			</ul>
+
+			<p class="caution bg">방문평가를 받으실 주소입니다.</p>
+
+			<div class="sec_tit">방문평가 희망일 선택</div>
+			<ul class="form_list01">
+				<li>
+					<div class="inbox_type01">
+						<span class="tit">날짜 선택</span>
+						<input type="text" class="txt date-picker" id="datepic01" title="희망배송일 선택" disabled>
+					</div>
+				</li>
+				<li>
+					<div class="slt_box">
+						<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+						<button type="button" class="sel_value jQ_Select" id="SelectMS0034" data-id="" data-popup="Select-MS0034-Layer">방문평가 희망시간을 선택하세요.</button>
+						<div class="CPOpop_bottom select" id="Select-MS0034-Layer">
+							<div class="p_head">
+								<p class="tit">희망평가시간 선택</p>
+							</div>
+							<div class="p_wrap">
+								<!-- list -->
+								<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+									<!-- 2022.09.13 [CPO-3126] 수정 -->
+									<li><input type="radio" class="chk_select" name="SelectMS0034_Name" id="SelectMS0034_01"><label for="SelectMS0034_01">09:00</label></li>
+									<li><input type="radio" class="chk_select" name="SelectMS0034_Name" id="SelectMS0034_02"><label for="SelectMS0034_02">10:00</label></li>
+									<li><input type="radio" class="chk_select" name="SelectMS0034_Name" id="SelectMS0034_03"><label for="SelectMS0034_03">11:00</label></li>
+									<li><input type="radio" class="chk_select" name="SelectMS0034_Name" id="SelectMS0034_04"><label for="SelectMS0034_04">12:00</label></li>
+									<!-- // 2022.09.13 [CPO-3126] 수정 -->
+								</ol>
+								<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectVer 변경 내용 적용  -->
+									<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectMS0034">선택하기</button>
+								</div>
+								<!-- //list -->
+							</div>
+							<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+						</div>
+					</div>
+				</li>
+			</ul>
+			
+			<p class="caution bg">동일 차량에 대해서 방문평가 진행은 최대 2회까지 가능합니다.</p>
+		</div>
+
+		<!-- 04. sticky button -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01" disabled>방문평가 신청완료</button>
+		</div>
+		<!--// 04. sticky button -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

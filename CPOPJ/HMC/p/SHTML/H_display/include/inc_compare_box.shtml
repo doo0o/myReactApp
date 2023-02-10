@@ -1,0 +1,67 @@
+<div class="compare_box">
+    <div class="cont_area">
+        <p class="tit">비교담기</p>
+        <div class="toggle_btn01 js_compare">
+            <label>
+                <input type="checkbox" >
+            </label>
+        </div>
+        <!-- 비교상품 있을때 -->
+        <div class="compare_list">
+            <div class="unit_type type02">
+                <div class="mid_area">
+                    <div class="unit_img">
+                        <img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+                    </div>
+                    <div class="unit_info">
+                        <div class="name">
+                            <span class="model">현대 뉴 투싼iX</span>
+                            <span class="desc">디젤(E-VGT)2WD 스마트</span>
+                        </div>
+                        <div class="drive">
+                            <span>20년 12월</span>
+                            <span>50,000km</span>
+                        </div>
+                        <div class="price">
+                            4,370<em>만원</em>
+                        </div>
+                    </div>
+                    <button type="button" class="txt_btn03 s_small">삭제</button>
+                </div>
+
+                <div class="mid_area">
+                    <div class="unit_img">
+                        <img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+                    </div>
+                    <div class="unit_info">
+                        <div class="name">
+                            <span class="model">현대 뉴 투싼iX</span>
+                            <span class="desc">디젤(E-VGT)2WD 스마트</span>
+                        </div>
+                        <div class="drive">
+                            <span>20년 12월</span>
+                            <span>50,000km</span>
+                        </div>
+                        <div class="price">
+                            4,370<em>만원</em>
+                        </div>
+                    </div>
+                    <button type="button" class="txt_btn03 s_small">삭제</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 비교상품 없을때 -->
+        <!-- <div class="compare_list">
+            <div class="no_data car">
+                <p class="txt">모델명 혹은 차대번호를<br>다시 입력해 보세요.</p>
+            </div>
+            <p class="desc">
+                최소 2개 부터 최대 5개 선택 가능
+            </p>
+        </div> -->
+    </div>
+    <div class="btn_area full_type">
+        <button type="button" class="btn_mid color01">비교하기</button>
+    </div>
+</div>

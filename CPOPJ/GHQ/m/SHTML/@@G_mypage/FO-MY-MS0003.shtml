@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>앱설정</title>
+	<!--#include file="/GHQ/m/SHTML/G_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/g_mypage.css">
+</head>
+<body>
+<!--#include file="/GHQ/m/SHTML/G_inc/common_skip.shtml"-->
+<!--#include file="/GHQ/m/SHTML/G_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--  s: h_header : default  -->
+		<div class="h_header">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">앱설정</h3>
+		</div>
+		<!--  e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="app_alarm">
+			<!-- 데이터 없을 때 -->
+			<div class="no_data alarm">
+				<p class="tit">알림이 없습니다.</p>
+				<p class="txt">제네시스 인증중고차의 다양한 정보와<br>혜택을 알려드릴게요.</p>
+				<div class="btn_area">
+					<a href="#" class="btn_mid02">홈으로 가기</a>
+				</div>
+			</div>
+			<!-- //데이터 없을 때 -->
+			<ol>
+				<li class="alarm">
+					<div class="item">
+						<div class="text_box">
+							<span class="tit">알림</span>
+							<span class="txt_type_B">배송완료 알림</span>
+							<span class="txt">홍길동님의 차량이 배송완료 되었습니다.</span>
+						</div>
+					</div>
+					<span class="date">오전 8:30</span>
+				</li>
+				<li class="alarm">
+					<div class="item">
+						<div class="text_box">
+							<span class="tit">알림</span>
+							<span class="txt">홍길동님이 신청하신 차량의 가격변동이 있어요.</span>
+						</div>
+					</div>
+					<span class="date">오전 8:30</span>
+				</li>
+				<li class="ad">
+					<div class="item">
+						<p class="thumb"><img src="../../img/@thumb/mypage_alarm01.png" alt="마이현대 X 2021 서울모빌리티쇼 티켓 증정 이벤트"></p>
+						<div class="text_box">
+							<span class="tit">광고</span>
+							<span class="txt">마이제네시스 X 2021 서울모빌리티쇼 티켓 증정 이벤트</span>
+						</div>
+					</div>
+					<span class="date">오전 8:30</span>
+				</li>
+				<li class="ad">
+					<div class="item">
+						<div class="text_box">
+							<span class="tit">광고</span>
+							<span class="txt">GV70, GV80 할인정보!</span>
+						</div>
+					</div>
+					<span class="date">10월 11일 오전 8:30</span>
+				</li>
+				<li class="alarm">
+					<div class="item">
+						<div class="text_box">
+							<span class="tit">알림</span>
+							<span class="txt">상세 견적을 확인하세요.</span>
+						</div>
+					</div>
+					<span class="date">2020년 9월 8일 오전 8:30</span>
+				</li>
+				<li class="alarm">
+					<div class="item">
+						<div class="text_box">
+							<span class="tit">알림</span>
+							<span class="txt">홍길동님이 조건 입고알림을 신청하신 차량이 신규 입고 되었어요.</span>
+						</div>
+					</div>
+					<span class="date">2020년 9월 8일 오전 8:30</span>
+				</li>
+				<li class="ad">
+					<div class="item">
+						<div class="text_box">
+							<span class="tit">광고</span>
+							<span class="txt">GV70, GV80 할인정보!</span>
+						</div>
+					</div>
+					<span class="date">2020년 9월 8일 오전 8:30</span>
+				</li>
+			</ol>
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/GHQ/m/SHTML/G_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/GHQ/m/SHTML/G_inc/popup_include_all.shtml"-->
+</body>
+</html>

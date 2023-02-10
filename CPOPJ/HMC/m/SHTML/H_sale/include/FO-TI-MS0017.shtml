@@ -1,0 +1,150 @@
+<!-- FO-TI-MS0017 : 내차팔기 정보 레이어 - FULL -->
+<div class="CPOpop_full sale_mycar_wrap" id="FO-TI-MS0017">
+	<div class="p_head">
+		<h2 class="tit txt_hidden">내차팔기 정보</h2><!-- 2022-09-16 CPO-3291 -->
+	</div>
+	<div class="p_wrap">
+		<!-- 내차팔기 정보 레이어 -->
+		<div class="no_btn">
+			<div class="user_info">
+				<!--로그인 전-->
+				<a href="#" class="user_name"><strong>로그인</strong></a>
+				<!--로그인 후-->
+				<span class="user_name"><strong>김현대</strong> 고객님</span>
+				<p>내차팔기에 관한 정보를 확인해보세요.</p>
+			</div>
+
+			<!--견적수신 슬라이드 : 2개 이상일시에만 슬라이드됨.-->
+			<div id="myCarSlider" class="sale_mycar_swiper">
+				<!-- 2022-09-16 CPO-3291 슬라이드 영역 전체 수정-->
+				<ul class="swiper-wrapper order_info">
+					<li class="swiper-slide">
+						<a href="#" class="heightIn">
+							<div class="order_no">
+								<span class="flag_mid02">견적수신</span>
+								<span class="no">20211112321564565421</span>
+							</div>
+							<div class="unit_type middle">
+								<div class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/m/img/@thumb/plp_310x310_01.jpg" alt="">
+									</div>
+									<div class="unit_info">
+										<p class="num">123가1234</p>
+										<p class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</p>
+										<p class="drive">
+											<em>20년 12월(21년형)</em>
+											<em>50,000km</em>
+											
+										</p>
+										<p class="price">
+											<em>2,000~3,280</em><i>만원</i>
+										</p>
+									</div>
+								</div>
+							</div>
+							<p class="msg">주행기간/거리별 시세를 확인해보세요.</p><!-- 2023-01-26 CPO-9018 -->
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="#" class="heightIn">
+							<div class="order_no">
+								<span class="flag_mid02">견적수신</span>
+							</div>
+							<div class="unit_type middle">
+								<div class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/m/img/@thumb/plp_310x310_01.jpg" alt="">
+									</div>
+									<div class="unit_info">
+										<p class="num">123가1234</p>
+										<p class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</p>
+										<p class="drive">
+											<em>20년 12월(21년형)</em>
+											<em>50,000km</em>
+											
+										</p>
+										<p class="price">
+											<em>2,000~3,280</em><i>만원</i>
+										</p>
+									</div>
+								</div>
+							</div>
+							<p class="msg">21.11.30 17:30까지 방문평가를 신청해주세요.</p>
+						</a>
+					</li>
+					<li class="swiper-slide">
+						<a href="#" class="heightIn link_mycar">
+							<span>거래중인 차량 전체보기</span> <!-- 2023-01-26 CPO-9018 -->
+						</a>
+					</li>
+				</ul>
+				<!-- //2022-09-16 CPO-3291 영역 전체 수정 -->
+				<div class="swiper-pagination"></div>
+			</div>
+
+
+			<div class="sale_mycar_links">
+				<ul>
+					<li>
+						<a href="#" class="link_mypage">마이페이지</a>
+					</li>
+					<li>
+						<a href="#" class="link_service">서비스 안내 보기</a>
+					</li>
+				</ul>
+			</div>
+
+			<section class="sale_mycar_qna toggle">
+				<div class="sec_tit">자주 묻는 질문 TOP 5</div>
+				<!--#include file="/HMC/m/SHTML/H_order/inc/order_faq.shtml"-->
+			</section>
+			<section class="sale_mycar_notice">
+				<div class="caution">
+					<p class="tit">유의사항</p>
+					<ul>
+						<li>도서산간 소재의 차량일 경우, 방문 서비스 일부 불가능</li>
+						<li>차량 출고 후 10년 이상 또는 20만km 이상 주행한 차량의 경우 판매 불가</li>
+						<li>매입 여부에 영향을 미치는 차량 상태 정보를 숨겼을 경우 매입 의사가 철회될 수 있음</li>
+					</ul>
+				</div>
+			</section>
+			<!-- //내차팔기 정보 레이어 -->
+		</div>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+
+<script>
+	CPO.toggle();
+	var myCarSlider = {
+		slide : null,
+		items : document.querySelectorAll('#myCarSlider .swiper-slide'),
+		heightIn : function() {
+			var items = document.querySelectorAll('#myCarSlider .heightIn');
+			for(var idx = 0 ; idx < items.length; idx++) {
+				items[idx].parentNode.style.height = items[idx].clientHeight + 'px';
+			}
+		},
+		func : function() {
+			if(myCarSlider.items.length > 1) {
+				myCarSlider.heightIn();
+				myCarSlider.slide = new Swiper('#myCarSlider', {
+					slidesPerView:'auto',
+					freeMode:false,
+					autoHeight:true,
+					pagination:{
+						el: '#myCarSlider .swiper-pagination'
+					},
+				})
+			}
+		},
+	}
+	myCarSlider.func();
+</script>

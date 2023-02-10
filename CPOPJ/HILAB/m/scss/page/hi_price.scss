@@ -1,0 +1,493 @@
+@charset 'utf-8';
+/* 
+	HILAB 컨텐츠
+*/
+
+@import '../_common/hi_function';
+@import '../_common/hi_mixins';
+
+.txt_caution{
+	position:relative;
+	padding-left:8px;
+	color:$COL_Base_02;
+	@include Mix_Font('Txt-R', 12, 18);
+	&::before{
+		content:'';
+		position:absolute;left:0;top:8px;
+		display:inline-block;
+		width:2px;height:2px;
+		background:$COL_Base_02;
+	}
+}
+.quot_wrap{
+	background:$COL_Light;
+	&.nodata{
+		background:$COL_White;
+		.quot_head{
+			.chart{
+				.title_area{
+					text-align:left;
+					.title{
+						color:$COL_Black;
+						@include Mix_Font('Head-R', 26, 32);
+					}
+					.title_sub{
+						margin-top:16px;
+						color:$COL_Base_01;
+						@include Mix_Font('Head-R', 14, 18);
+					}
+				}
+				.img{
+					margin-top:40px;
+					width:100%;
+					img{
+						display:block;
+						width:100%;
+					}
+				}
+			}
+		}
+	}
+	.quot_head{
+		position:relative;
+		background:$COL_White;
+		.visual{
+			padding:40px 21px 0;
+			background:linear-gradient(180deg, $COL_Light 61.14%, rgba(246, 243, 242, 0) 100%);
+			.title_area{
+				text-align:center;
+				.brand{
+					display:block;
+					margin-bottom:8px;
+				}
+				.title{
+					@include Mix_Font('Head-M', 26, 32);
+				}
+				.title_sub{
+					margin-top:4px;
+					color:$COL_Base_02;
+					@include Mix_Font('Head-R', 14, 18);
+				}
+			}
+			.btn_area{
+				margin-top:16px;
+				text-align:center;
+			}
+			.img{
+				margin:40px 21px 0;
+				img{
+					display:block;
+					width:100%;
+				}
+			}
+			.txt_caution{
+				margin:16px 0 0 4px;
+			}
+		}
+		.chart{
+			position:relative;
+			margin-top:16px;
+			padding:33px 21px 40px;
+			&::before{
+				content:'';
+				display:block;
+				position:absolute;left:21px;top:0;
+				width:calc(100% - 42px);height:1px;
+				background:$COL_Line_Medium;
+			}
+			.title_area{
+				text-align:center;
+				.title{
+					color:$COL_Primary;
+					@include Mix_Font('Head-M', 30, 38);
+				}
+				.title_sub{
+					margin-top:8px;
+					color:$COL_Base_Dark;
+					@include Mix_Font('Txt-R', 12, 18);
+				}
+			}
+			.tab{
+				margin-top:16px;
+				.tab_list{
+					margin-bottom:8px;
+				}
+			}
+			[class^="quot_chart01_"]{
+				width:100%;height:232px;
+			}
+			.quot_chart01_01{
+				overflow:hidden;
+				overflow-x:auto;
+			}
+		}
+	}
+	.quot_cont{
+		padding:32px 15px;
+		border-top:1px solid $COL_Line_Dark;
+		.text_area{
+			margin:0 0 12px 6px;
+			.tit{
+				@include Mix_Font('Head-M', 18, 22);
+			}
+			.txt{
+				margin-top:4px;
+				color:$COL_Base_01;
+				@include Mix_Font('Txt-R', 12, 18);
+			}
+		}
+		.quot_banner{
+			position:relative;
+			margin-top:8px;
+			padding:25px 20px;
+			color:$COL_White;
+			background:$COL_DeepBlue_01;
+			&::before{
+				content:'';
+				display:inline-block;
+				position:absolute;right:17px;top:14px;
+				width:103px;height:82px;
+				background: {
+					image:url(./../img/icon_quot_banner.png);
+					size:103px auto;
+					repeat:no-repeat;
+				};
+			}
+			.tit{
+				@include Mix_Font('Head-R', 18, 22);
+			}
+			.txt{
+				margin-top:2px;
+			}
+		}
+		.btn_area{
+			margin-top:20px;
+		}
+	}
+	.caution{
+		position:relative;
+		padding:50px 21px;
+		&::before{
+			@include Mix_Space_Bar;
+		}
+	}
+}
+.list_graph{
+	> li{
+		padding:24px 20px 40px;
+		&:not(:first-of-type){margin-top:8px;}
+		.title_area{
+			margin-bottom:40px;
+			opacity:0;
+			transform:translateY(150px);
+			transition:transform .5s linear, opacity 1s linear;
+			&.active{
+				opacity:1;
+				transform:translateY(0);
+			}
+			.tit{
+				margin-bottom:12px;
+				@include Mix_Font('Head-M', 16, 20);
+			}
+			.txt{
+				@include Mix_Font('Head-R', 26, 32);
+				span{
+					@include Mix_Font('Head-M', 26, 32);
+				}
+			}
+			.txt02{
+				margin-top:4px;
+				@include Mix_Font('Txt-R', 12, 18);
+			}
+		}
+		&.model{
+			border:1px solid $COL_Line_Medium;
+			background:$COL_White;
+			.txt{
+				color:$COL_Base_01;
+				span{color:$COL_Primary;}
+			}
+			.chart{
+				ul{
+					li{
+						display:flex;
+						position:relative;
+						&:not(:first-of-type){margin-top:16px;}
+						&.on{
+							.rank{
+								color:$COL_Primary;
+								@include Mix_Font('Head-M', 15, 19);
+							}
+							.stick{
+								.line{
+									.bg{
+										background:$COL_Primary;
+										// &::before{
+										// 	content:'';
+										// 	display:inline-block;
+										// 	position:absolute;right:-2px;top:-1px;
+										// 	width:32px;height:24px;
+										// 	background: {
+										// 		image:url(./../img/icon_line_chart.png);
+										// 		size:32px auto;
+										// 		repeat:no-repeat;
+										// 	};
+										// }
+									}
+								}
+								.txt{
+									color:$COL_Primary;
+								}
+							}
+						}
+						&.out{
+							margin:0;
+							padding-top:58px;
+							&::before{
+								content:'';
+								display:inline-block;
+								position:absolute;left:87px;top:16px;
+								width:5px;height:26px;
+								background: {
+									image:url(./../img/icon_chart_line.png);
+									size:5px auto;
+									repeat:no-repeat;
+								};
+							}
+						}
+						.rank{
+							flex:0 0 35px;width:35px;
+							color:$COL_Base_Dark;
+							@include Mix_Font('Head-R', 15, 19);
+						}
+						.stick{
+							flex:1 auto;
+							.line{
+								position:relative;
+								width:100%;height:20px;
+								.bg{
+									display:block;
+									position:absolute;left:0;top:0;
+									width:100%;height:100%;
+									background:$COL_Secondary;
+								}
+							}
+							.txt{
+								margin-top:4px;
+								color:$COL_Secondary;
+								@include Mix_Font('Head-R', 14, 18);
+							}
+						}
+					}
+				}
+			}
+		}
+		&.map{
+			background:$COL_Primary;
+			.tit{
+				color:$COL_Skyblue;
+			}
+			.txt{
+				color:$COL_Skyblue;
+				span{color:$COL_White;}
+			}
+			.quot_chart02{
+				height:111.1112vw;
+			}
+		}
+		&.age{
+			border:1px solid $COL_Line_Medium;
+			background:$COL_White;
+			.txt{
+				color:$COL_Base_01;
+				span{color:$COL_Primary;}
+			}
+			.quot_chart03{
+				height:84.1667vw;
+			}
+		}
+		&.year{
+			background:$COL_Skyblue;
+			.txt{
+				color:$COL_Primary;
+			}
+			.txt02{
+				color:$COL_Blue;
+			}
+			.quot_chart04{
+				height:76.6667vw;
+			}
+		}
+	}
+}
+
+// 선택 차량 변경
+.srch_ifbox{// 검색하기 5. 모델별 검색 
+	background:$COL_White;
+	margin: 25px 0 0;
+	.CPOpop_bottom & {
+		margin-top: 0;
+		padding-bottom: 0;
+		.top {
+			.tit {
+				min-width: 70px;
+			}
+		}
+	}
+}
+.srch_box{// 검색조건 box
+	border-bottom:1px solid $COL_Line_Medium;
+	&:first-of-type{
+		border-top:1px solid $COL_Line_Medium;
+	}
+	.hidden {
+		display: none !important;
+	}
+	> .tit_btn{// 검색조건 box 1. 타이틀
+		position:relative;
+		padding:25px 21px;
+		height: 70px;
+		h4.tit{
+			display:inline-block;
+			color:$COL_Black;
+			@include Mix_Font('Head-M', 16, 20);
+		}
+		span.check{
+			display:none;
+			width:calc(100% - 105px);
+			margin-left:11px;
+			color:$COL_Base_02;
+			@include Mix_Font('Txt-R', 13, 20);
+			@include Mix_Ellipsis01;
+			vertical-align:middle;
+		}
+		span.check2 {
+			display:none;
+			margin-left:11px;
+			color:$COL_Base_02;
+			@include Mix_Font('Txt-R', 13, 20);
+			vertical-align:middle;
+			& + span.check {
+				margin-left: 0;
+			}
+		}
+		&::after {
+			right: 21px;
+		}
+	}
+	&.on{
+		> .incont{
+			// height:auto;
+			display: block;
+			padding:0 21px 25px;
+			.cpo_range{
+				display:block;
+			}
+		}
+		.range_chart{
+			ol{
+				li{
+					i{
+						height:100%;
+						margin-top:0;
+					}
+				}
+			}
+		}
+	}
+	&.show {
+		> .tit_btn{
+			span.check,
+			span.check2{
+				display:inline-block;
+			}
+		}
+	}
+	&.disabled {
+		.tit_btn {
+			opacity: .3;
+			pointer-events: none;
+		}
+	}
+	> .incont{// 검색조건 box 2. 내용
+		position: relative;
+		padding:0 21px;
+		display: none;
+		overflow:hidden;
+		.group{
+			&:not(:first-of-type){
+				margin-top:24px;
+			}
+			.tit{
+				margin-bottom:12px;
+				@include Mix_Font('Head-R', 14, 18);
+			}
+			li{
+				display:none;
+			}
+			.brand{
+				@for $i from 1 through 44 {
+					&#{$i}{
+						label{
+							&::before{
+								content:'';
+								display:block;
+								width:60px;height:40px;
+								margin:0 auto 4px;
+								background: {
+									image:url(./../img/brand/icon_srch_brand#{$i}.png);
+									size:60px auto;
+									repeat:no-repeat;
+								};
+							}
+						}
+					}
+				}
+			}
+		}
+		.text{
+			display: none;
+		}
+		.btn_more{
+			margin-top: 20px;
+		}
+		.btn_area{
+			padding-top:35px;
+		}
+		.carinfo{// 02. 모델상세
+			li + li {
+				margin-top: 20px;
+			}
+			> li{
+				em {
+					padding-left: 6px;
+					@include Mix_Font('Txt-R', 12, 24);
+					color: $COL_Base_01;
+				}
+				.depth2{
+					display:none;
+					padding:25px 0 5px 29px;
+				}
+				.depth3{
+					display:none;
+					padding:20px 0 20px 80px;
+					margin:20px -21px 0 -50px;
+					background:$COL_Light;
+				}
+				&.on{
+					.depth2{
+						display:block;
+						> li{
+							&.on{
+								.depth3{
+									display:block;
+								}
+
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

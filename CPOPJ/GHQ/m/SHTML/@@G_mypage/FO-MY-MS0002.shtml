@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>앱설정</title>
+	<!--#include file="/GHQ/m/SHTML/G_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/g_mypage.css">
+</head>
+<body>
+<!--#include file="/GHQ/m/SHTML/G_inc/common_skip.shtml"-->
+<!--#include file="/GHQ/m/SHTML/G_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--  s: h_header : default  -->
+		<div class="h_header">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">앱설정</h3>
+		</div>
+		<!--  e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="app_setting">
+			<ul>
+				<li>
+					<div class="item">
+						<h5>구매 및 판매정보 받기</h5>
+						<label class="chk_toggle">
+							<input type="checkbox" checked>
+							<span>구매 및 판매정보 받기 토글</span>
+						</label>
+						<p>현대 인증중고차 구매 및 판매 계약정보를 알려드려요.</p>
+					</div>
+					<div class="item">
+						<h5>혜택정보 받기</h5>
+						<label class="chk_toggle">
+							<input type="checkbox">
+							<span>혜택정보 받기 토글</span>
+						</label>
+						<p>현대 인증중고차 혜택정보를 알림페이지에서 알려드려요.</p>
+					</div>
+				</li>
+				<li>
+					<div class="item">
+						<h5>자동 재생 사용(모바일 데이터)</h5>
+						<label class="chk_toggle">
+							<input type="checkbox">
+							<span>자동 재생 사용 토글</span>
+						</label>
+						<p>설정 시, 모바일 데이터(5G/LTE 등) 환경에서도 동영상이 자동 재생됩니다. 설정하지 않을 경우, WiFi 환경에서만 동영상이 자동 재생됩니다.</p>
+					</div>
+				</li>
+				<li>
+					<div class="item">
+						<h5>앱 접근권한 설정</h5>
+						<button type="button" class="btn_icon_mid01">설정하기</button>
+					</div>
+					<div class="item">
+						<h5>캐시삭제</h5>
+						<button type="button" class="btn_icon_mid01">삭제하기</button>
+						<p>캐시에 저장된 콘텐츠와 데이터를 삭제합니다.</p>
+					</div>
+					<div class="item">
+						<h5>자동 로그인</h5>
+						<label class="chk_toggle">
+							<input type="checkbox">
+							<span>자동 로그인 토글</span>
+						</label>
+					</div>
+				</li>
+				<li>
+					<div class="item ver">
+						<h5>현재 버전</h5>
+						<span class="version">v11.4.6</span>
+						<p>최신 버전입니다.</p>
+					</div>
+					<div class="item">
+						<h5>로그아웃</h5>
+						<a href="#" class="btn_logout">로그아웃 버튼</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/GHQ/m/SHTML/G_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/GHQ/m/SHTML/G_inc/popup_include_all.shtml"-->
+</body>
+</html>

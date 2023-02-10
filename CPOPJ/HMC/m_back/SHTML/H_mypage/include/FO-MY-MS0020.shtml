@@ -1,0 +1,281 @@
+<!-- FO-MY-MS0020 : 입고알림 신청 - FULL -->
+<div class="CPOpop_full" id="FO-MY-MS0020">
+	<div class="p_head">
+		<h4 class="tit">입고알림 신청</h4>
+	</div>
+	<div class="p_wrap">
+		<div class="srch_ifbox">
+            <!-- S: 알림 안내 문구 -->
+            <div class="srch_caution">
+                <div class="incont">
+                    <p>입고알림을 신청하시면 <br/>유사한 조건의 차량 입고 시, 알림을 보내드려요.</p>
+                    <ul class="notice_03">
+                        <li>차량의 트림까지 선택해야 입고알림 신청이 가능합니다.</li>
+                    </ul>
+                </div>
+            </div>
+			<!-- //E: 알림 안내 문구 -->
+            
+			<!--  S: 01. 알림 서비스 기간 설정  -->
+			<div class="srch_box">
+				<div class="top">
+					<h4 class="tit">알림 서비스 기간 설정</h4>
+				</div>
+				<div class="incont02">
+                    <ul class="tab_box">
+						<li><input type="radio" name="dateChk" id="dateChk01" checked><label for="dateChk01">7일</label></li>
+						<li><input type="radio" name="dateChk" id="dateChk02"><label for="dateChk02">14일</label></li>
+						<li><input type="radio" name="dateChk" id="dateChk03"><label for="dateChk03">30일</label></li>
+					</ul>
+				</div>
+			</div>
+			<!--  E: 01. 알림 서비스 기간 설정  -->
+            
+            <!--  S: 02. 모델그룹  -->
+            <div class="srch_box show on" id="schBox-02">
+                <div class="top" data-href="schBox-02">
+                    <h4 class="tit">모델그룹</h4>
+                    <span class="check" id="schChk_Model"></span>
+                    <button type="button" class="btn_open">OPEN / CLOSE</button>
+                </div>
+                <div class="incont">
+                    <ol id="ModelList" class="gear">
+                        <li><input type="radio" class="chk_type05" name="schChk_Model" id="schChk_Model01"><label for="schChk_Model01" class="model_01">그랜저</label></li><!-- 01대신 모델그룹 코드 -->
+                        <li><input type="radio" class="chk_type05" name="schChk_Model" id="schChk_Model02"><label for="schChk_Model02" class="model_023">아반떼</label></li>
+                        <li><input type="radio" class="chk_type05" name="schChk_Model" id="schChk_Model03"><label for="schChk_Model03" class="model_032">쏘나타</label></li>
+                        <li><input type="radio" class="chk_type05" name="schChk_Model" id="schChk_Model04"><label for="schChk_Model04" class="model_033">싼타페</label></li>
+                        <li><input type="radio" class="chk_type05" name="schChk_Model" id="schChk_Model05"><label for="schChk_Model05" class="model_03331">투싼</label></li>
+                        <li><input type="radio" class="chk_type05" name="schChk_Model" id="schChk_Model06"><label for="schChk_Model06" class="model_01">팰리세이드</label></li>
+                        <li><input type="radio" class="chk_type05" name="schChk_Model" id="schChk_Model07"><label for="schChk_Model07" class="model_01">베뉴</label></li>
+                        <li><input type="radio" class="chk_type05" name="schChk_Model" id="schChk_Model08"><label for="schChk_Model08" class="model_01">코나</label></li>
+                        <li><input type="radio" class="chk_type05" name="schChk_Model" id="schChk_Model09"><label for="schChk_Model09" class="model_01">캐스퍼</label></li>
+                        <li><input type="radio" class="chk_type05" name="schChk_Model" id="schChk_Model10"><label for="schChk_Model10" class="model_01">넥쏘</label></li>
+                        <li><input type="radio" class="chk_type05" name="schChk_Model" id="schChk_Model02"><label for="schChk_Model02" class="model_023">아반떼</label></li>
+                        <li><input type="radio" class="chk_type05" name="schChk_Model" id="schChk_Model03"><label for="schChk_Model03" class="model_032">쏘나타</label></li>
+                        <li><input type="radio" class="chk_type05" name="schChk_Model" id="schChk_Model04"><label for="schChk_Model04" class="model_033">싼타페</label></li>
+                        <li><input type="radio" class="chk_type05" name="schChk_Model" id="schChk_Model05"><label for="schChk_Model05" class="model_03331">투싼</label></li>
+                        <li><input type="radio" class="chk_type05" name="schChk_Model" id="schChk_Model06"><label for="schChk_Model06" class="model_01">팰리세이드</label></li>
+                        <li><input type="radio" class="chk_type05" name="schChk_Model" id="schChk_Model07"><label for="schChk_Model07" class="model_01">베뉴</label></li>
+                        <li><input type="radio" class="chk_type05" name="schChk_Model" id="schChk_Model08"><label for="schChk_Model08" class="model_01">코나</label></li>
+                        <li><input type="radio" class="chk_type05" name="schChk_Model" id="schChk_Model09"><label for="schChk_Model09" class="model_01">캐스퍼</label></li>
+                        <li><input type="radio" class="chk_type05" name="schChk_Model" id="schChk_Model10"><label for="schChk_Model10" class="model_01">넥쏘</label></li>
+                    </ol>
+                    <button type="button" class="btn_txt05" data-href="ModelList">전체보기</button>
+                </div>
+            </div>
+            <!--  E: 02. 모델그룹  -->
+
+			<!--  S: 03. 모델  -->
+            <!--[D] 모델그룹 선택전 비활성화 상태 -->
+			<div class="srch_box disabled" id="schBox-03">
+				<div class="top" data-href="schBox-03">
+					<h4 class="tit">모델</h4>
+					<span class="check" id="schChk_Detail"></span>
+					<button type="button" class="btn_open">OPEN / CLOSE</button>
+				</div>
+				<div class="incont">
+					<!-- 상세 모델 선택 -->
+					<ul class="carinfo">
+						<li>
+                            <input type="radio" class="chk_rad01" name="schChk_Detail" id="schChk_Detail11"><label for="schChk_Detail11">더 뉴 그랜저</label>
+                            <ol class="depth2">
+								<li>
+                                    <input type="radio" class="chk_rad01" name="schChk_Detail11_engine1" id="schChk_Detail11_engine11"><label for="schChk_Detail11_engine11">가솔린 2.5</label>
+                                    <ol class="depth3">
+                                        <li>
+                                            <input type="radio" class="chk_rad01" name="schChk_Detail11_trim1" id="schChk_Detail11_trim11"><label for="schChk_Detail11_trim11">프리미엄</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="chk_rad01" name="schChk_Detail11_trim1" id="schChk_Detail11_trim12"><label for="schChk_Detail11_trim12">프리미엄 초이스</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="chk_rad01" name="schChk_Detail11_trim1" id="schChk_Detail11_trim13"><label for="schChk_Detail11_trim13">익스클루시브</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="chk_rad01" name="schChk_Detail11_trim1" id="schChk_Detail11_trim14"><label for="schChk_Detail11_trim14">캘리그래피</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="chk_rad01" name="schChk_Detail11_trim1" id="schChk_Detail11_trim15"><label for="schChk_Detail11_trim15">르블랑</label>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <input type="radio" class="chk_rad01" name="schChk_Detail11_engine1" id="schChk_Detail11_engine12"><label for="schChk_Detail11_engine12">가솔린 3.3</label>
+                                    <ol class="depth3">
+                                        <li>
+                                            <input type="radio" class="chk_rad01" name="schChk_Detail11_trim2" id="schChk_Detail11_trim21"><label for="schChk_Detail11_trim21">프리미엄</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="chk_rad01" name="schChk_Detail11_trim2" id="schChk_Detail11_trim22"><label for="schChk_Detail11_trim22">프리미엄 초이스</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="chk_rad01" name="schChk_Detail11_trim2" id="schChk_Detail11_trim23"><label for="schChk_Detail11_trim23">익스클루시브</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="chk_rad01" name="schChk_Detail11_trim2" id="schChk_Detail11_trim24"><label for="schChk_Detail11_trim24">캘리그래피</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" class="chk_rad01" name="schChk_Detail11_trim2" id="schChk_Detail11_trim25"><label for="schChk_Detail11_trim25">르블랑</label>
+                                        </li>
+                                    </ol>
+                                </li>
+                                <li>
+                                    <input type="radio" class="chk_rad01" name="schChk_Detail11_engine1" id="schChk_Detail11_engine13"><label for="schChk_Detail11_engine13">LPG 3.0</label>
+                                </li>
+							</ol>
+                        </li>
+						<li>
+                            <input type="radio" class="chk_rad01" name="schChk_Detail" id="schChk_Detail12"><label for="schChk_Detail12">더 뉴 그랜저 하이브리드</label>
+                        </li>
+						<li>
+                            <input type="radio" class="chk_rad01" name="schChk_Detail" id="schChk_Detail13"><label for="schChk_Detail13">그랜저 IG 하이브리드</label>
+                        </li>
+						<li>
+                            <input type="radio" class="chk_rad01" name="schChk_Detail" id="schChk_Detail14"><label for="schChk_Detail14">그랜저 IG </label>
+                        </li>
+						<li>
+                            <input type="radio" class="chk_rad01" name="schChk_Detail" id="schChk_Detail15"><label for="schChk_Detail15">그랜저 HG 하이브리드</label>
+                        </li>
+					</ul>
+					<!-- //상세 모델 선택 -->
+				</div>
+			</div>
+			<!--  E: 03. 모델  -->
+			<!--  S: 04. 가격  -->
+			<div class="srch_box show on" id="schBox-06">
+				<div class="top" data-href="schBox-06">
+					<h4 class="tit">가격</h4>
+					<!--<span class="check" id="rangePrice-Chk"><i class="start"></i>만원 ~ <i class="end"></i>만원</span>-->
+                    <span class="check" id="rangePrice-Chk"><i class="start"></i>만원 이상</span>
+					<button type="button" class="btn_open">OPEN / CLOSE</button>
+				</div>
+				<div class="incont">
+					<!-- range (가격) -->
+					<div id="rangePrice"  class="cpo_range">
+						<div class="cpoRange"></div>
+						<p class="amountArea">
+							<input type="number" id="Sprice" title="최저 가격" data-min="1000" data-max="5000" steps="500" value="0">
+							<input type="number" id="Sprice2" title="최대 가격" data-min="1000" data-max="5000" steps="500" value="5000">
+						</p>
+					</div>
+					<!-- //range (가격) -->
+				</div>
+			</div>
+			<!--  E: 04. 가격  -->
+			<!--  S: 05. 색상계열  -->
+			<div class="srch_box show on" id="schBox-09">
+				<div class="top" data-href="schBox-09">
+					<h4 class="tit">색상계열</h4>
+					<span class="check" id="schChk_Color"></span>
+					<button type="button" class="btn_open">OPEN / CLOSE</button>
+				</div>
+				<div class="incont"> <!--HMC 컬러-->
+					<ol class="color">
+						<li><input type="checkbox" class="chk_type06" name="schChk_Color" id="schChk_Color01" ><label for="schChk_Color01"><img src="/HMC/img/color/srch_010.png" alt="화이트 색상이미지" /><span>화이트</span></label></li>
+						<li><input type="checkbox" class="chk_type06" name="schChk_Color" id="schChk_Color02" disabled><label for="schChk_Color02"><img src="/HMC/img/color/srch_004.png" alt="베이지  색상이미지" /><span>베이지</span></label></li><!--비활성화 케이스-->
+						<li><input type="checkbox" class="chk_type06" name="schChk_Color" id="schChk_Color03"><label for="schChk_Color03"><img src="/HMC/img/color/srch_009.png" alt="그레이 색상이미지" /><span>그레이</span></label></li>
+						<li><input type="checkbox" class="chk_type06" name="schChk_Color" id="schChk_Color04"><label for="schChk_Color04"><img src="/HMC/img/color/srch_002.png" alt="블랙 색상이미지" /><span>블랙</span></label></li>
+						<li><input type="checkbox" class="chk_type06" name="schChk_Color" id="schChk_Color05"><label for="schChk_Color05"><img src="/HMC/img/color/srch_001.png" alt="브라운 색상이미지" /><span>브라운</span></label></li>
+						<li><input type="checkbox" class="chk_type06" name="schChk_Color" id="schChk_Color06" disabled><label for="schChk_Color06"><img src="/HMC/img/color/srch_005.png" alt="레드 색상이미지" /><span>레드</span></label></li><!--비활성화 케이스-->
+						<li><input type="checkbox" class="chk_type06" name="schChk_Color" id="schChk_Color07"><label for="schChk_Color07"><img src="/HMC/img/color/srch_003.png" alt="옐로우 색상이미지" /><span>옐로우</span></label></li>
+						<li><input type="checkbox" class="chk_type06" name="schChk_Color" id="schChk_Color08"><label for="schChk_Color08"><img src="/HMC/img/color/srch_007.png" alt="그린 색상이미지" /><span>그린</span></label></li>
+						<li><input type="checkbox" class="chk_type06" name="schChk_Color" id="schChk_Color09"><label for="schChk_Color09"><img src="/HMC/img/color/srch_008.png" alt="블루 색상이미지" /><span>블루</span></label></li>
+						<li><input type="checkbox" class="chk_type06" name="schChk_Color" id="schChk_Color09"><label for="schChk_Color09"><img src="/HMC/img/color/srch_006.png" alt="퍼플 색상이미지" /><span>퍼플</span></label></li>
+					</ol>
+                    <ul class="notice_03">
+                        <li>색상계열을 선택하지 않으시면 색상에 상관없이 알림이 등록됩니다.</li>
+                    </ul>
+				</div>
+				<div class="incont"> <!--GHQ 컬러-->
+					<ol class="color">
+						<li><input type="checkbox" class="chk_type06" name="schChk_Color" id="schChk_Color01_2" ><label for="schChk_Color01_2"><img src="/GHQ/img/color/srch_010.png" alt="화이트 색상이미지" /><span>화이트</span></label></li>
+						<li><input type="checkbox" class="chk_type06" name="schChk_Color" id="schChk_Color02_2"><label for="schChk_Color02_2"><img src="/GHQ/img/color/srch_004.png" alt="베이지  색상이미지" /><span>베이지</span></label></li><!--비활성화 케이스-->
+						<li><input type="checkbox" class="chk_type06" name="schChk_Color" id="schChk_Color03_2"><label for="schChk_Color03_2"><img src="/GHQ/img/color/srch_011.png" alt="실버 색상이미지" /><span>실버</span></label></li>
+						<li><input type="checkbox" class="chk_type06" name="schChk_Color" id="schChk_Color04_2"><label for="schChk_Color04_2"><img src="/GHQ/img/color/srch_012.png" alt="메탈 색상이미지" /><span>메탈</span></label></li>
+						<li><input type="checkbox" class="chk_type06" name="schChk_Color" id="schChk_Color05_2"><label for="schChk_Color05_2"><img src="/GHQ/img/color/srch_009.png" alt="그레이 색상이미지" /><span>그레이</span></label></li>
+						<li><input type="checkbox" class="chk_type06" name="schChk_Color" id="schChk_Color06_2"><label for="schChk_Color06_2"><img src="/GHQ/img/color/srch_002.png" alt="블랙 색상이미지" /><span>블랙</span></label></li><!--비활성화 케이스-->
+						<li><input type="checkbox" class="chk_type06" name="schChk_Color" id="schChk_Color07_2"><label for="schChk_Color07_2"><img src="/GHQ/img/color/srch_005.png" alt="레드 색상이미지" /><span>레드</span></label></li>
+						<li><input type="checkbox" class="chk_type06" name="schChk_Color" id="schChk_Color08_2"><label for="schChk_Color08_2"><img src="/GHQ/img/color/srch_001.png" alt="브라운 색상이미지" /><span>브라운</span></label></li>
+						<li><input type="checkbox" class="chk_type06" name="schChk_Color" id="schChk_Color09_2"><label for="schChk_Color09_2"><img src="/GHQ/img/color/srch_013.png" alt="골드 색상이미지" /><span>골드</span></label></li>
+						<li><input type="checkbox" class="chk_type06" name="schChk_Color" id="schChk_Color10_2"><label for="schChk_Color10_2"><img src="/GHQ/img/color/srch_007.png" alt="그린 색상이미지" /><span>그린</span></label></li>
+						<li><input type="checkbox" class="chk_type06" name="schChk_Color" id="schChk_Color11_2"><label for="schChk_Color11_2"><img src="/GHQ/img/color/srch_008.png" alt="블루 색상이미지" /><span>블루</span></label></li>
+					</ol>
+                    <ul class="notice_03">
+                        <li>색상계열을 선택하지 않으시면 색상에 상관없이 알림이 등록됩니다.</li>
+                    </ul>
+				</div>
+			</div>
+			<!--  E: 05. 색상계열  -->
+		</div>
+		<!-- 06: BUTTON -->
+		<div class="btn_sticky">
+            <button type="button" class="btn_modal04">초기화</button>
+            <button type="button" class="btn_modal01">입고알림 신청</button>
+		</div>
+		<!-- //06: BUTTON -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+<script>
+$(document).ready(function() {
+	SRCH.RecentSwipe();
+	SRCH.FilterPriceRange('Sprice', 'Sprice2', 'rangePrice', 500, '만원'); // 가격 선택
+
+	$('#schBox-02 .btn_txt05').on('click', function(){ // 모델 전체보기
+		SRCH.FilterModelAll($(this));
+	});
+	$('#FO-MY-MS0020 .btn_open').on('click', function(){ // 검색 조건 OPEN/CLOSE
+		SRCH.FilterOpenClose($(this));
+	});
+
+    var modelArray = []; //모델 배열
+
+	// 검색레이어 체크 시, 스크립트
+	$('input[class^="chk_"]').on('change', function(){
+		var _chckName = $(this).attr('name');
+		var _chckID = $(this).attr('id');
+		var _chckLeng = $("[name="+ _chckName +"]").length;
+		var _chckName02 = $("[name="+ _chckName +"]");
+
+		var _labelTxt = $("label[for='"+_chckID+"']").text();
+
+		SRCH.FilterSaveCheck(_chckName, _chckName, $(this) );// 필터 내 > 카테고리, 브랜드, 색상, 옵션 적용하기 버튼
+		
+		//length 체크후, 다음 열림 닫힘
+		if(_chckName == 'schChk_Model' && _chckLeng > 0){
+			//1. 모델그룹 CHECK NAME = schChk_Model -- 모델그룹영역 id schBox-02 -- 하나라도 선택하면 모델 펼치기)
+			SRCH.HeadFixed();
+			$('#schBox-03').removeClass('disabled').addClass('show on');
+		} 
+        
+        //chkChk_detail 라디오케이스 스크립트 
+        if(_chckName.includes('schChk_Detail') ) {
+            var newModel;
+            //하위 뎁스 있는 경우 li에 on 클래스 추가 됨
+            if($(this).siblings('ol').length) {
+                $(this).parent().addClass('on');
+            } 
+
+            // 하위뎁스가 없는 경우 기존에 선택되어있던 하위뎁스의 checked 초기화시킴
+            if($(this).parents('li').siblings().find('ol').length){
+                $(this).parents('li').siblings().find('ol input').prop('checked', false)
+            }
+            
+            if(modelArray.length == 0) {
+                modelArray.push({'name' : _chckName,'txt' : _labelTxt});
+                return false;
+            }
+            modelArray.map((txt, idx) => {
+                if(txt.name == _chckName) {
+                    modelArray.splice(idx)
+                } 
+                newModel = {'name' : _chckName,'txt' : _labelTxt}
+            })
+            modelArray = [...modelArray, newModel];
+            $('#schChk_Detail').text(modelArray.map(txt => txt.txt).join(' '))
+        }
+
+	});
+	
+});
+</script>

@@ -1,0 +1,131 @@
+<div class="pdp_estimate" id="p_scr03">
+	<div class="top">
+		<p class="tit">
+			차량가격 결제 방법을 선택하고 예상 구매비용을 확인해 보세요.
+		</p>
+	</div>
+	
+	<div class="tab" data-ref="tabEstimate">
+		<ul class="list" role="tablist">
+			<li class="on">
+				<button type="button"
+					role="tab"
+					aria-selected="true"
+					onclick="showToggle();"
+				>현금/신용카드</button></li>
+			<li><button type="button"
+				role="tab"
+				aria-selected="false"
+				aria-controls="tabEstimateCont2"
+				onclick="showToggle(1);"
+			>할부 금융</button></li>
+		</ul>
+		<div id="tabEstimateCont2" class="cont">
+			<!--#include file="/HMC/p/SHTML/H_detail/con_estimate_tab2.shtml"-->
+		</div>
+	</div>
+	<script>
+		const tabEstimate = new TabContents('tabEstimate');
+		const showToggle = (param) => {
+			let target = document.querySelector('[data-ref="showToggleTarget"]');
+			if(param === 1) {
+				target.style.display = "";
+			} else {
+				target.style.display = "none";
+			}
+		}
+	</script>
+
+	<div class="price_wrap">
+		<ul class="price_list">
+			<li>
+				<span class="tit">총 차량 구매 예상 비용</span>
+				<span class="price"><em>28,560,000</em>원</span>
+				<div class="depth_list">
+					<ul class="depth_02">
+						<li>
+							<span class="tit">차량가격</span>
+							<span class="price"><em>28,560,000</em>원</span>
+						</li>
+						<li data-ref="showToggleTarget" style="display: none;">
+							<span class="tit">총 할부 이자</span>
+							<span class="price"><em>796,000</em>원</span>
+						</li>
+						<li>
+							<span class="tit" style="padding-top: 8px;">탁송지역</span>
+							<div class="area_select">
+								<span class="com_select" data-ref="select">
+									<button
+										class="com_select_btn"
+										data-ref="dropDownBtn"
+										aria-expanded="false"
+										aria-controls="areaSelect"
+										onclick="dropDown();"
+									>
+										시/군/구
+									</button>
+							
+									<span
+										class="com_select_list"
+										data-ref="dropDownList"
+										id="areaSelect"
+									>
+										<span class="com_select_list_inner">
+										</span>
+									</span>
+								</span>
+							</div>
+							<script>
+								var areaSel = new AreaSelect('#areaSelect');
+								
+								var createAreaSel = data => {
+									areaSel.create(data);
+									
+									for(let idx = 0 ; idx < data.length; idx++) {
+										areaSel.addFunc(idx, function() {areaSel.subCreate(data[idx].sub)})
+									}
+								}
+								sampleJson('/HMC/m/sample/area.json', createAreaSel);
+							</script>
+						</li>
+						<li>
+							<span class="tit">탁송료</span>
+							<span class="price"><em>200,000</em>원</span>
+						</li>
+						<li>
+							<span class="tit">관리비</span>
+							<span class="price"><em>300,000</em>원</span>
+						</li>
+					</ul>
+				</div>
+			</li>
+			<li>
+				<span class="tit">이전등록비용 및 수수료</span>
+				<span class="price"><em>1,530,000</em>원</span>
+				<div class="depth_list">
+					<ul class="depth_02">
+						<li>
+							<span class="tit">이전등록비용 <span>(현금결제)</span></span>
+							<span class="price"><em>1,500,000</em>원</span>
+						</li>
+						<li>
+							<span class="tit">이전등록대행 수수료</span>
+							<span class="price"><em>30,000</em>원</span>
+						</li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<dl class="price_total">
+			<dt>총 견적 합계</dt>
+			<dd><em>45,100,000</em>원</dd>
+		</dl>
+	</div>
+	<div class="caution">
+		<ul>
+			<li>주문 중 탁송지역 설정 시 금액이 일부 변경될 수 있습니다.</li>
+			<li>자동차관리법 시행규칙 제122조 제2항, 제3항에 따라 관리비용(관리에 소요되는 실제비용)이 부과됩니다.</li>
+			<li>이전등록비는 지역에 따라 금액이 달라질 수 있습니다. 차량가가 과세표준금액보다 적을 경우, 과세표준금액을 기준으로 이전등록비가 추가로 부과될 수 있습니다.</li>
+		</ul>
+	</div>
+</div>

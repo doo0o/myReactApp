@@ -1,0 +1,17 @@
+<div class="CPOpop_alert" id="mainAlert">
+    <div class="p_inner today_no_display">
+        <div class="message">
+			원하시는 차량이 있다면 알림 신청하세요!
+			
+        </div>
+        <div class="btn_area">
+            <ul>
+                <li><button type="button" class="btn_alert01">알림 신청하기</button></li>
+            </ul>
+        </div>
+		<div class="btn_area txt_type">
+			<button type="button" class="txt_btn03 s_mid" onclick="popupClose('mainAlert ')">오늘 그만 보기</button>
+			<button type="button" class="txt_btn03 s_mid" onclick="popupClose('mainAlert')">닫기</button>
+		</div>
+    </div>
+</div>

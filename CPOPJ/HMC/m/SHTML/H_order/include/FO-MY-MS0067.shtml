@@ -1,0 +1,239 @@
+<!-- FO-MY-MS0067 : 판매 계약 정보 - FULL -->
+<div class="CPOpop_full" id="FO-MY-MS0067">
+	<div class="p_head">
+		<h2 class="tit">판매 계약 정보</h2>
+	</div>
+	<div class="p_wrap">
+		
+		<div class="tbl_cont no_btn">
+			<section class="tbl_list">
+				<div class="sec_tit">계약내용</div>
+				<table class="table">
+					<caption>계약내용</caption>
+					<colgroup>
+						<col width="120px">
+						<col width="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>견적번호</th>
+							<td>H0000000000001</td>
+						</tr>
+						<tr>
+							<th>견적일시</th>
+							<td>2021.08.19 14:07</td>
+						</tr>
+						<tr>
+							<th>차량번호</th>
+							<td>11현1234</td>
+						</tr>
+						<tr>
+							<th>모델명</th>
+							<td>더 뉴 그랜저 IG</td>
+						</tr>
+						<tr>
+							<th>신차등급명</th>
+							<td>2.5 가솔린 캘리그래피</td>
+						</tr>
+						<tr>
+							<th>차대번호</th>
+							<td>KFJHAUFNJWEC154982</td>
+						</tr>
+						<tr>
+							<th>최초등록일</th>
+							<td>2020.10.13</td>
+						</tr>
+						<tr>
+							<th>연식</th>
+							<td>2020년</td>
+						</tr>
+						<tr>
+							<th>주행거리</th>
+							<td>91,499km</td>
+						</tr>
+						<tr>
+							<th>배기량</th>
+							<td>1995cc</td>
+						</tr>
+						<tr>
+							<th>출고가격</th>
+							<td>50,100,000원</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="sec_tit">차량 기타정보</div>
+				<table class="table">
+					<caption>차량 기타정보</caption>
+					<colgroup>
+						<col width="120px">
+						<col width="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>제조사명</th>
+							<td>현대</td>
+						</tr>
+						<tr>
+							<th>차종</th>
+							<td>준대형</td>
+						</tr>
+						<tr>
+							<th>연료</th>
+							<td>가솔린</td>
+						</tr>
+						<tr>
+							<th>변속기</th>
+							<td>오토</td>
+						</tr>
+						<tr>
+							<th>색상</th>
+							<td>미드나잇 블랙 펄</td>
+						</tr>
+						<!-- <tr> 2023-01-20 [CPO-9017] 삭제
+							<th>구입방식</th>
+							<td>현금</td>
+						</tr>
+						<tr>
+							<th>별도 추가 옵션</th>
+							<td>크롬 휠, 추가 네비게이션, 시야 확장 사이드 미러</td>
+						</tr>
+						-->
+						<tr>
+							<th>출고 당시 옵션</th>
+							<td>
+								<dl class="inner_list">
+									<dt>외장</dt>
+									<dd>썬루프, 전동접이 사이드미러</dd>
+									<dt>내장</dt>
+									<dd>통풍시트(운전석, 동승석), 
+										전동시트(운전석, 동승석, 뒷자리), 가죽시트, 열선(앞, 뒤), 하이패스 내장
+									</dd>
+									<dt>안전</dt>
+									<dd>주차보조(전방감지센서, 후방감지센서), 후방카메라, 가죽시트</dd>
+									<dt>편의</dt>
+									<dd>스마트키, 에어컨(오토에어컨)</dd>
+									<dt>멀티미디어</dt>
+									<dd>네비게이션</dd>
+								</dl>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="sec_tit">견적내역</div>
+				<table class="table">
+					<caption>견적내역</caption>
+					<colgroup>
+						<col width="120px">
+						<col width="*">
+					</colgroup>
+					<tbody>
+						<!-- <tr>  2023-01-17 [CPO-8606] 삭제
+							<th>예상 견적가격</th>
+							<td>43,800,000원</td>
+						</tr> -->
+						<tr>
+							<th>최종 견적가격</th>
+							<td>43,600,000원</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="sec_tit">매수인 정보</div>
+				<table class="table">
+					<caption>매수인 정보</caption>
+					<colgroup>
+						<col width="120px">
+						<col width="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>상호명</th>
+							<td>현대자동차 주식회사</td>
+						</tr>
+						<tr>
+							<th>사업자번호</th>
+							<td>123456-1234567</td>
+						</tr>
+						<tr>
+							<th>주소</th>
+							<td>서울특별시 서초구 헌릉로 12</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="sec_tit">매도인 정보</div>
+				<div class="stit">대표명의자</div>
+				<table class="table">
+					<caption>매도인 정보</caption>
+					<colgroup>
+						<col width="120px">
+						<col width="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>이름</th>
+							<td>김현대</td>
+						</tr>
+						<tr>
+							<th>주민등록번호</th>
+							<td>780000-1******</td>
+						</tr>
+						<tr>
+							<th>주소</th>
+							<td>(06179)  서울특별시 강남구
+								테헤란로 510(대치동) 101호
+							</td>
+						</tr>
+						<tr>
+							<th>휴대폰번호</th>
+							<td>01012345678</td>
+						</tr>
+						<tr>
+							<th>이메일</th>
+							<td>hyundai@hyundai.com</td>
+						</tr>
+						<tr>
+							<th>사업자여부</th>
+							<td>개인</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="stit">공동명의자1</div>
+				<table class="table">
+					<caption>매도인 정보</caption>
+					<colgroup>
+						<col width="120px">
+						<col width="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>이름</th>
+							<td>김현대</td>
+						</tr>
+						<tr>
+							<th>주민등록번호</th>
+							<td>780000-1******</td>
+						</tr>
+						<tr>
+							<th>주소</th>
+							<td>(06179)  서울특별시 강남구
+								테헤란로 510(대치동) 101호
+							</td>
+						</tr>
+						<tr>
+							<th>휴대폰번호</th>
+							<td>01012345678</td>
+						</tr>
+						<tr>
+							<th>이메일</th>
+							<td><a href="mailto:hyundai@hyundai.com">hyundai@hyundai.com</a></td>
+						</tr>
+						<tr>
+							<th>사업자여부</th>
+							<td>개인사업자</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+		</div>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

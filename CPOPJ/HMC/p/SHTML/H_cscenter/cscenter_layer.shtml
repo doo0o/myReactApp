@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>현대차 CUV 고객센터 팝업</title>
+	<!--#include file="/HMC/p/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_cscenter.css">
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+	<div id="CPOcontents">
+		<div id="layoutWrap" class="cscenter">
+            <!-- container -->
+            <div class="container">
+				<div class="btn_area full_type row_type" style="margin-top:50px">
+					<button class="btn_mid color02 test" onclick="popupOpen('FO-CS-PS0007')">FO-CS-PS0007</button>
+				</div>
+            </div>
+            <!-- //container -->
+        </div>
+	</div>	
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+
+<!-- 팝업 -->
+<!--#include file="/HMC/p/SHTML/H_cscenter/include/FO-CS-PS0007.shtml"-->
+
+<script>
+	// $(document).ready(function(){
+	// 	$('.test').trigger('click',function(){});
+	// });
+</script>
+</body>
+</html>

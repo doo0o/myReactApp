@@ -1,0 +1,581 @@
+<!-- FO-OR-MS0002 : 비교하기 - FULL -->
+<div class="CPOpop_full" id="FO-OR-MS0002">
+	<div class="p_head">
+		<h2 class="tit">비교하기</h2>
+	</div>
+	<div class="p_wrap">
+		<div class="cpo_compare">
+			<!-- 비교하기 -->
+			<div class="layer_compare">
+				<ul class="compare_list">
+					<!-- 고정 상품 :: 고정 시 target class 추가 -->
+					<li class="item target">
+						<!-- 상품 정보  -->
+						<div class="unit_compare">
+							<!-- A. fixed -->
+							<div class="top_area">
+								<div class="box_btn">
+									<button type="button" class="btn_pin01">고정시키기</button>
+									<button type="button" class="btn_del03">삭제</button>
+								</div>
+								<!-- 2022.08.23 a 태그 영역 변경 -->
+								<a href="javascript:void(0)">
+									<div class="tit">
+										<span class="model">더 뉴 그랜저</span>
+										<span class="desc">가솔린 프리미엄 밀레니얼</span>
+									</div>
+									<div class="img"><img src="/HMC/m/img/@thumb/car_visual_03.jpg" alt="" /></div>
+								</a>								
+								<!-- // 2022.08.23 a 태그 영역 변경 -->			
+								<a href="#" class="btn_small03">주문하기</a> <!-- 2022.09.13 수정 -->
+							</div>
+							<!-- //A. fixed -->
+							<!-- B. info -->
+							<div class="cont">
+								<ul class="box_info">
+									<li class="price"> 
+										<span class="text"><em>2,850</em><em>~</em><em>3,440</em><i>만원</i></span> <!-- 2022.08.23 <br>제거 -->
+										<span class="desc">할부 월 55~65만원<br>(36개월/5.9%)</span>
+									</li>
+									<li>
+										<span class="text"><em>19</em><i>년형</i></span>
+										<span class="desc">최초등록 : <em>19년 3월</em></span>
+									</li> 
+									<li>
+										<span class="text row"><em>12,167</em><i>km</i></span> <!-- 2022.09.13 수정 -->
+									</li>
+									<li>
+										<span class="text"><em>2,000</em><i>cc</i></span>
+										<span class="desc">가솔린</span>
+									</li>
+									<li>
+										<span class="sub_text row">미드나잇 블랙 펄</span> <!-- 2022.08.23 class 추가 -->
+									</li>
+									<li>
+										<span class="sub_text">2WD</span>										
+									</li>
+								</ul>
+								<!-- 성능 -->
+								<div class="box_option">
+									<p class="tit">성능점검<em>4</em></p>
+									<!-- 2023.01.25 CPO-8585 -->
+									<ul>
+										<li>
+											<p>교환이력</p>
+											<span><em>2</em>건</span>
+										</li>
+										<li>
+											<p>판금이력</p>
+											<span><em>6</em>건</span>
+										</li>
+										<li>
+											<p>부식</p>
+											<span><em>2</em>건</span>
+										</li>
+										<li>
+											<p>흠집</p>
+											<span><em>0</em>건</span>
+										</li>
+									</ul>
+									<!-- // 2023.01.25 CPO-8585 -->
+								</div>
+								<!-- //성능 -->
+								<!-- 보험이력 -->
+								<div class="box_option">
+									<p class="tit">보험이력<em>5</em></p>
+									<ul>
+										<li>
+											<p>내차피해</p>
+											<span><em>2</em>건</span>
+										</li>
+										<li>
+											<p>타차가해</p>
+											<span><em>1</em>건</span>
+										</li>
+										<li>
+											<p>용도변경</p>
+											<span>있음</span> <!-- 2022.08.23 텍스트 수정 -->
+										</li>
+										<li>
+											<p>특수사고</p>
+											<span><em>1</em>건</span>
+										</li>
+									</ul>
+								</div>
+								<!-- //보험이력 -->
+								<!-- 2022.08.23 주요옵션 class 변경 -->
+								<div class="box_option">
+									<p class="tit">주요옵션<em>16</em></p>
+									<ul class="option_list">
+										<li>
+											<span class="option_key001">내비게이션</span>
+										</li>
+										<li>
+											<span class="option_key013">하이패스</span>
+										</li>
+										<!-- 2022.08.23 추가 -->
+										<li>
+											<span class="option_key002">블루투스</span>
+										</li>
+										<!-- // 2022.08.23 추가 -->
+										<li>
+											<span class="option_key031">크루즈<br>컨트롤</span>
+										</li>
+										<li>
+											<span class="option_key014">열선<br>스티어링 휠</span>
+										</li>
+										<li>
+											<span class="option_key015">열선 시트<br>(앞좌석)</span>
+										</li>
+										<li>
+											<span class="option_key016">열선 시트<br>(뒷좌석)</span>
+										</li>
+										<li>
+											<span class="option_key017">전동 시트<br>(앞좌석)</span>
+										</li>
+										<!-- 2022.08.23 추가 -->
+										<li>
+											<span class="option_key018">전동 시트<br>(뒷좌석)</span>
+										</li>
+										<!-- // 2022.08.23 추가 -->
+										<li>
+											<span class="option_key019">통풍 시트<br>(앞좌석)</span>
+										</li>
+										<li>
+											<span class="option_key021">가죽 시트</span>
+										</li>
+										<!-- 2022.08.23 추가 -->
+										<li>
+											<span class="option_key022">인조가죽<br>시트</span>
+										</li>
+										<li>
+											<span class="option_key023">직물 시트</span>
+										</li>
+										<!-- // 2022.08.23 추가 -->									
+										<li>
+											<span class="option_key033">전동식<br>트렁크</span>
+										</li>
+										<li>
+											<span class="option_key012">선루프</span>
+										</li>
+										<!-- 2022.08.23 추가 -->
+										<li>
+											<span class="option_key037">헤드업<br>디스플레이</span>
+										</li>
+										<!-- // 2022.08.23 추가 -->
+										<li>
+											<span class="option_key035">서라운드 뷰<br>모니터</span>
+										</li>
+										<li>
+											<span class="option_key036">후방 모니터</span>
+										</li>
+										<li>
+											<span class="option_key038">후측방 경보<br>시스템</span>
+										</li>
+										<!-- 2022.08.23 추가 -->
+										<li>
+											<span class="option_key039">차선 이탈<br>경보</span>
+										</li>
+										<li>
+											<span class="option_key034">버튼 시동</span>
+										</li>
+										<li>
+											<span class="option_key040">스마트 키</span>
+										</li>
+										<!-- // 2022.08.23 추가 -->
+									</ul>									
+								</div>
+								<!-- // 2022.08.23 주요옵션 class 변경 -->
+							</div>
+							<!-- //B. info -->
+						</div>
+						<!-- //상품 정보  -->
+					</li>
+					<!-- // 고정 상품 -->
+					<li class="item">
+						<!-- 상품 정보  -->
+						<div class="unit_compare">
+							<!-- A. fixed -->
+							<div class="top_area">
+								<div class="box_btn">
+									<button type="button" class="btn_pin01">고정시키기</button>
+									<button type="button" class="btn_del03">삭제</button>
+								</div>
+								<!-- 2022.08.23 a 태그 영역 변경 -->
+								<a href="javascript:void(0)">
+									<div class="tit">
+										<span class="model">그랜저 IG</span>
+										<span class="desc">가솔린 3.3 캘리그래피</span>
+									</div>
+									<div class="img"><img src="/HMC/m/img/@thumb/no_img.png" alt="상품명" /></div> <!--  차량 이미지 없을 때  -->
+								</a>
+								<!-- // 2022.08.23 a 태그 영역 변경 -->
+								<!-- 2023.01.25 CPO-8585 -->
+								<p class="caution">고객님의 보유차량입니다.</p>
+								<!-- 2023.01.25 CPO-8585 -->
+							</div>
+							<!-- //A. fixed -->
+							<!-- B. info -->
+							<div class="cont">
+								<ul class="box_info">
+									<li class="price">
+										<span class="no_price">가격정보없음</span><!-- 가격정보없음 경우 -->
+									</li>
+									<li>
+										<span class="text"><em>19</em><i>년형</i></span>
+										<span class="desc">최초등록 : 19년 3월</span>
+									</li>
+									<li>
+										<span class="text row"><em>50,000</em><em>~</em><br><em>60,000</em><i>km</i></span>	<!-- 2022.09.23 수정 -->
+									</li>
+									<li>
+										<span class="text"><em>2,000</em><i>cc</i></span>
+										<span class="desc">가솔린</span>
+									</li>
+									<li>
+										<span class="sub_text row">미드나잇 블랙 펄</span> <!-- 2022.08.23 class 추가 -->
+									</li>
+									<li>
+										<span class="sub_text">2WD</span>										
+									</li>
+								</ul>
+								<!-- 성능 -->
+								<div class="box_option">
+									<p class="tit">성능점검<em>10</em></p>
+									<!-- 2023.01.25 CPO-8585 -->
+									<ul>
+										<li>
+											<p>교환이력</p>
+											<span><em>2</em>건</span>
+										</li>
+										<li>
+											<p>판금이력</p>
+											<span><em>6</em>건</span>
+										</li>
+										<li>
+											<p>부식</p>
+											<span><em>2</em>건</span>
+										</li>
+										<li>
+											<p>흠집</p>
+											<span><em>0</em>건</span>
+										</li>
+									</ul>
+									<!-- // 2023.01.25 CPO-8585 -->
+								</div>
+								<!-- //성능 -->
+								<!-- 보험이력 -->
+								<div class="box_option">
+									<p class="tit">보험이력<em>4</em></p>
+									<ul>
+										<li>
+											<p>내차피해</p>
+											<span><em>1</em>건</span>
+										</li>
+										<li>
+											<p>타차가해</p>
+											<span><em>1</em>건</span>
+										</li>
+										<li>
+											<p>용도변경</p>
+											<span>없음</span> <!-- 2022.08.23 텍스트 수정 -->
+										</li>
+										<li>
+											<p>특수사고</p>
+											<span><em>2</em>건</span>
+										</li>
+									</ul>
+								</div>
+								<!-- //보험이력 -->
+								<!-- 2022.08.23 주요옵션 class 변경 -->
+								<div class="box_option">
+									<p class="tit">주요옵션<em>16</em></p>
+									<ul class="option_list">
+										<li class="off"> <!-- 2022.08.23 비 활성화 시 class 추가-->
+											<span class="option_key001">내비게이션</span>
+										</li>
+										<li class="off"> <!-- 2022.08.23 비 활성화 시 class 추가-->
+											<span class="option_key013">하이패스</span>
+										</li>
+										<!-- 2022.08.23 추가 -->
+										<li class="off"> <!-- 2022.08.23 비 활성화 시 class 추가-->
+											<span class="option_key002">블루투스</span>
+										</li>
+										<!-- // 2022.08.23 추가 -->
+										<li>
+											<span class="option_key031">크루즈<br>컨트롤</span>
+										</li>
+										<li>
+											<span class="option_key014">열선<br>스티어링 휠</span>
+										</li>
+										<li class="off"> <!-- 2022.08.23 비 활성화 시 class 추가-->
+											<span class="option_key015">열선 시트<br>(앞좌석)</span>
+										</li>
+										<li class="off"> <!-- 2022.08.23 비 활성화 시 class 추가-->
+											<span class="option_key016">열선 시트<br>(뒷좌석)</span>
+										</li>
+										<li class="off"> <!-- 2022.08.23 비 활성화 시 class 추가-->
+											<span class="option_key017">전동 시트<br>(앞좌석)</span>
+										</li>
+										<!-- 2022.08.23 추가 -->
+										<li>
+											<span class="option_key018">전동 시트<br>(뒷좌석)</span>
+										</li>
+										<!-- // 2022.08.23 추가 -->
+										<li class="off"> <!-- 2022.08.23 비 활성화 시 class 추가-->
+											<span class="option_key019">통풍 시트<br>(앞좌석)</span>
+										</li>
+										<li>
+											<span class="option_key021">가죽 시트</span>
+										</li>
+										<!-- 2022.08.23 추가 -->
+										<li>
+											<span class="option_key022">인조가죽<br>시트</span>
+										</li>
+										<li class="off"> <!-- 2022.08.23 비 활성화 시 class 추가-->
+											<span class="option_key023">직물 시트</span>
+										</li>
+										<!-- // 2022.08.23 추가 -->									
+										<li>
+											<span class="option_key033">전동식<br>트렁크</span>
+										</li>
+										<li>
+											<span class="option_key012">선루프</span>
+										</li>
+										<!-- 2022.08.23 추가 -->
+										<li>
+											<span class="option_key037">헤드업<br>디스플레이</span>
+										</li>
+										<!-- // 2022.08.23 추가 -->
+										<li>
+											<span class="option_key035">서라운드 뷰<br>모니터</span>
+										</li>
+										<li>
+											<span class="option_key036">후방 모니터</span>
+										</li>
+										<li>
+											<span class="option_key038">후측방 경보<br>시스템</span>
+										</li>
+										<!-- 2022.08.23 추가 -->
+										<li>
+											<span class="option_key039">차선 이탈<br>경보</span>
+										</li>
+										<li class="off"> <!-- 2022.08.23 비 활성화 시 class 추가-->
+											<span class="option_key034">버튼 시동</span>
+										</li>
+										<li class="off"> <!-- 2022.08.23 비 활성화 시 class 추가-->
+											<span class="option_key040">스마트 키</span>
+										</li>
+										<!-- // 2022.08.23 추가 -->
+									</ul>									
+								</div>
+								<!-- // 2022.08.23 주요옵션 class 변경 -->
+							</div>
+							<!-- //B. info -->
+						</div>
+						<!-- //상품 정보  -->
+					</li>
+					<li class="item">
+						<!-- 상품 정보  -->
+						<div class="unit_compare">
+							<!-- A. fixed -->
+							<div class="top_area">
+								<div class="box_btn">
+									<button type="button" class="btn_pin01">고정시키기</button>
+									<button type="button" class="btn_del03">삭제</button>
+								</div>
+								<!-- 2022.08.23 a 태그 영역 변경 -->
+								<a href="javascript:void(0)">
+									<div class="tit">
+										<span class="model">더 뉴 그랜저</span>
+										<span class="desc">가솔린 프리미엄 밀레니얼</span>
+									</div>
+									<div class="img"><img src="/HMC/m/img/@thumb/plp_500x500_02.jpg" alt="" /></div>
+								</a>								
+								<!-- // 2022.08.23 a 태그 영역 변경 -->
+								<a href="#" class="btn_small03">주문하기</a> <!-- 2022.09.13 수정 -->
+							</div>
+							<!-- //A. fixed -->
+							<!-- B. info -->
+							<div class="cont">
+								<ul class="box_info">
+									<li class="price">
+										<span class="text"><em>2,850</em><i>만원</i></span>
+										<span class="desc">할부 월 84만원<br />(36개월/5.9%)</span>
+									</li>
+									<li>
+										<span class="text"><em>19</em><i>년형</i></span>
+										<span class="desc">최초등록 : 19년 3월</span>
+									</li>
+									<li>
+										<span class="text row"><em>12,450</em><i>km</i></span> <!-- 2022.09.13 수정 -->
+									</li>
+									<li>
+										<span class="text"><em>2,000</em><i>cc</i></span>
+										<span class="desc">가솔린</span>
+									</li>
+									<li>
+										<span class="sub_text row">사이버 그레이 메탈릭(팬텀블랙) 사이버 그레이 메탈릭(팬텀블랙)</span> <!-- 2022.08.23 class 추가 -->
+									</li>
+									<li>
+										<span class="sub_text">2WD</span>										
+									</li>
+								</ul>
+								<!-- 성능 -->
+								<div class="box_option">
+									<p class="tit">성능점검<em>5</em></p>
+									<!-- 2023.01.25 CPO-8585 -->
+									<ul>
+										<li>
+											<p>교환이력</p>
+											<span><em>2</em>건</span>
+										</li>
+										<li>
+											<p>판금이력</p>
+											<span><em>6</em>건</span>
+										</li>
+										<li>
+											<p>부식</p>
+											<span><em>2</em>건</span>
+										</li>
+										<li>
+											<p>흠집</p>
+											<span><em>0</em>건</span>
+										</li>
+									</ul>
+									<!-- // 2023.01.25 CPO-8585 -->
+								</div>
+								<!-- //성능 -->
+								<!-- 보험이력 -->
+								<div class="box_option">
+									<p class="tit">보험이력<em>5</em></p>
+									<ul>
+										<li>
+											<p>내차피해</p>
+											<span><em>0</em>건</span>
+										</li>
+										<li>
+											<p>타차가해</p>
+											<span><em>0</em>건</span>
+										</li>
+										<li>
+											<p>용도변경</p>
+											<span>있음</span> <!-- 2022.08.23 텍스트 수정 -->
+										</li>
+										<li>
+											<p>특수사고</p>
+											<span><em>2</em>건</span>
+										</li>
+									</ul>
+								</div>
+								<!-- //보험이력 -->
+								<!-- 2022.08.23 주요옵션 class 변경 -->
+								<div class="box_option">
+									<p class="tit">주요옵션<em>16</em></p>
+									<ul class="option_list">
+										<li>
+											<span class="option_key001">내비게이션</span>
+										</li>
+										<li>
+											<span class="option_key013">하이패스</span>
+										</li>
+										<!-- 2022.08.23 추가 -->
+										<li>
+											<span class="option_key002">블루투스</span>
+										</li>
+										<!-- // 2022.08.23 추가 -->
+										<li>
+											<span class="option_key031">크루즈<br>컨트롤</span>
+										</li>
+										<li>
+											<span class="option_key014">열선<br>스티어링 휠</span>
+										</li>
+										<li>
+											<span class="option_key015">열선 시트<br>(앞좌석)</span>
+										</li>
+										<li>
+											<span class="option_key016">열선 시트<br>(뒷좌석)</span>
+										</li>
+										<li>
+											<span class="option_key017">전동 시트<br>(앞좌석)</span>
+										</li>
+										<!-- 2022.08.23 추가 -->
+										<li>
+											<span class="option_key018">전동 시트<br>(뒷좌석)</span>
+										</li>
+										<!-- // 2022.08.23 추가 -->
+										<li>
+											<span class="option_key019">통풍 시트<br>(앞좌석)</span>
+										</li>
+										<li>
+											<span class="option_key021">가죽 시트</span>
+										</li>
+										<!-- 2022.08.23 추가 -->
+										<li>
+											<span class="option_key022">인조가죽<br>시트</span>
+										</li>
+										<li>
+											<span class="option_key023">직물 시트</span>
+										</li>
+										<!-- // 2022.08.23 추가 -->									
+										<li>
+											<span class="option_key033">전동식<br>트렁크</span>
+										</li>
+										<li>
+											<span class="option_key012">선루프</span>
+										</li>
+										<!-- 2022.08.23 추가 -->
+										<li>
+											<span class="option_key037">헤드업<br>디스플레이</span>
+										</li>
+										<!-- // 2022.08.23 추가 -->
+										<li>
+											<span class="option_key035">서라운드 뷰<br>모니터</span>
+										</li>
+										<li>
+											<span class="option_key036">후방 모니터</span>
+										</li>
+										<li>
+											<span class="option_key038">후측방 경보<br>시스템</span>
+										</li>
+										<!-- 2022.08.23 추가 -->
+										<li>
+											<span class="option_key039">차선 이탈<br>경보</span>
+										</li>
+										<li>
+											<span class="option_key034">버튼 시동</span>
+										</li>
+										<li>
+											<span class="option_key040">스마트 키</span>
+										</li>
+										<!-- // 2022.08.23 추가 -->
+									</ul>									
+								</div>
+								<!-- // 2022.08.23 주요옵션 class 변경 -->
+							</div>
+							<!-- //B. info -->
+						</div>
+						<!-- //상품 정보  -->
+					</li>
+					<li class="item">
+						<!-- 추가 버튼 :: top_area 내 btn_add 추가 -->
+						<div class="unit_compare">
+							<div class="top_area">
+								<div class="btn_add">
+									<button type="button">비교차량을<br/>등록해 주세요.</button>
+								</div>
+							</div>
+						</div>
+						<!-- // 추가 버튼 -->
+					</li>
+				</ul>
+			</div>
+			<!-- //비교하기 -->
+		</div>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+
+<script>
+
+</script>

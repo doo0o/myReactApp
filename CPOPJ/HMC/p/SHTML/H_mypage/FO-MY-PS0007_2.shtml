@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>보유차량 : 현대 CUV</title>
+	<!--#include file="/HMC/p/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_mypage.css"> <!-- 해당 CSS -->
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+    <div id="CPOcontents">
+        <div id="layoutWrap" class="my">
+            <!-- container -->
+            <div class="container flex">
+                <!--#include file="/HMC/p/SHTML/H_inc/layout_left.shtml"-->
+                <!-- cont_wrap -->
+                <div class="cont_wrap my_car" data-id="myCar">
+                    <h1 class="page_tit">보유차량</h1>
+					<div class="total_result">
+						<div class="all">전체 <em>0</em>개</div>
+					</div>
+					<!-- 노데이터 일 때 -->
+					<div class="no_data car">
+						<p class="tit">아직 등록된 차량이 없습니다.</p>
+						<p class="txt">보유하고 계신 차량을 등록하고 합리적인 내차 가격도 알아보세요.</p>
+						<div class="btn_area">
+							<button type="button" class="btn_small color02">보유차량 등록하기</button>
+						</div>
+					</div>
+					<!-- // 노데이터 일 때 -->					
+                </div>
+                <!-- //cont_wrap -->
+            </div>
+            <!-- //container -->
+        </div>
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<script>
+	lnb_active();
+</script>
+</html>

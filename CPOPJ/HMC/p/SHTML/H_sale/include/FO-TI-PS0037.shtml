@@ -1,0 +1,124 @@
+<div class="popup_full" id="FO-TI-PS0037">
+	<div class="p_body">
+		<div class="p_inner s_small">
+			<div class="p_head">
+				<h2 class="tit">차량정보 추가입력</h2>
+			</div>
+			<div class="p_wrap"> <!-- 버튼이 있을 경우 aspan_btn 추가-->
+				<!-- contents -->
+				<div class="inner_view pop_sale">
+					<div class="title_area">
+						<p class="tit">나만 알고 있는 차량 정보를 입력해 주세요!</p>
+						<span class="txt">고객님께서 이용하셨던 차량의 운행 정보를 기입해 주세요. 다음 차주분께 큰 도움이 됩니다.</span>
+					</div>
+					<div class="caution bg info_caution">
+						<ul>
+							<li>입력하시는 정보는 고객님의 판매 차량을 구매하는 다음 차주를 위해 선호도에 맞게 구매할 수 있도록 제공하는 부가 정보로, 견적 금액 산정에 영향을 미치지 않아요.</li>
+							<li>견적 금액에는 차량의 사고 이력 및 현대 & 제네시스 인증 중고차의 인증 결과만 반영됩니다.</li>
+						</ul>
+					</div>
+					<div class="list_addipt">
+						<ul>
+							<li>
+								<p class="title">1. 차량의 주요 용도는 무엇이었나요?</p>
+								<div class="form_area blank">
+									<span class="com_select hs01 isSelected" data-ref="select">
+										<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownUse" onclick="dropDown({reset: false});">
+											출퇴근
+										</button>
+										<span class="com_select_list" data-ref="dropDownList" id="dropDownUse">
+											<span class="com_select_list_inner">
+												<label class="com_select_item"><input type="radio" name="dropDownUse" checked=""> <span>출퇴근</span></label>
+												<label class="com_select_item"><input type="radio" name="dropDownUse"> <span>장보기</span></label>
+												<label class="com_select_item"><input type="radio" name="dropDownUse"> <span>근거리 통학</span></label>
+												<label class="com_select_item"><input type="radio" name="dropDownUse"> <span>주말 나들이</span></label>
+												<label class="com_select_item"><input type="radio" name="dropDownUse"> <span>업무용</span></label>
+											</span>
+										</span>
+									</span>
+								</div>
+							</li>
+							<li>
+								<p class="title">2. 차량은 주로 어느 지역에서 운행되었나요?</p>
+								<div class="form_area blank">
+									<span class="com_select hs01" data-ref="select">
+										<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample" onclick="dropDown();">
+											시/도
+										</button>
+										<span class="com_select_list" data-ref="dropDownList" id="dropDownExample">
+											<span class="com_select_list_inner">
+												<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>시/도</span></label>
+												<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>서울특별시</span></label>
+												<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>서울특별시</span></label>
+												<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>서울특별시</span></label>
+												<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>서울특별시</span></label>
+											</span>
+										</span>
+									</span>
+									<span class="com_select hs01" data-ref="select">
+										<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample" onclick="dropDown();">
+											시/군/구
+										</button>
+										<span class="com_select_list" data-ref="dropDownList" id="dropDownExample">
+											<span class="com_select_list_inner">
+												<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>시/군/구</span></label>
+												<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>강남구</span></label>
+												<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>강남구</span></label>
+												<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>강남구</span></label>
+												<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>강남구</span></label>
+											</span>
+										</span>
+									</span>
+								</div>
+							</li>
+							<li>
+								<p class="title">3. 평소 차량은 어디에 주차하셨나요?</p>
+								<div class="form_area">
+									<div class="box_chkbox">
+										<input type="radio" name="chk_parking" id="chk_parking01" class="chk_block">
+										<label for="chk_parking01">지상</label>
+									</div>
+									<div class="box_chkbox">
+										<input type="radio" name="chk_parking" id="chk_parking02" class="chk_block">
+										<label for="chk_parking02">지하</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<p class="title">4. 차량에 반려동물이 탑승한 적이 있나요?</p>
+								<div class="form_area">
+									<div class="box_chkbox">
+										<input type="radio" name="chk_pet" id="chk_pet01" class="chk_block">
+										<label for="chk_pet01">있어요</label>
+									</div>
+									<div class="box_chkbox">
+										<input type="radio" name="chk_pet" id="chk_pet02" class="chk_block">
+										<label for="chk_pet02">없어요</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<p class="title">5. 차량에서 흡연한 적이 있나요?</p>
+								<div class="form_area">
+									<div class="box_chkbox">
+										<input type="radio" name="chk_smoke" id="chk_smoke01" class="chk_block">
+										<label for="chk_smoke01">있어요</label>
+									</div>
+									<div class="box_chkbox">
+										<input type="radio" name="chk_smoke" id="chk_smoke02" class="chk_block">
+										<label for="chk_smoke02">없어요</label>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="btn_area col_type">
+						<button type="button" class="btn_big color01">입력완료</button>
+					</div>
+				</div>
+				<!-- //contents -->									
+			</div>
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,96 @@
+<section class="info_box">
+    <div class="sec_tit m">내차사기는 이렇게 진행됩니다.</div>
+	<ol class="mycar_step">
+		<li>
+			<div class="title"><span>1</span>차량대금결제</div>
+			<ol class="cont">
+				<li>
+					<div class="tit">결제수단설정</div>
+					<div class="txt">
+						결제수단을 설정해 주세요.<br>
+						블루멤버스 포인트, 무통장입금, 신용카드, 오토할부 네가지 결제수단을 자유롭게 조합하여 결제할 수 있습니다.​
+					</div>
+				</li>
+				<li>
+					<div class="tit">결제진행</div>
+					<div class="txt">
+						기한 내 결제를 완료해 주세요.
+					</div>
+				</li>
+			</ol>
+		</li>
+		<li>
+			<div class="title"><span>2</span>중고차 매매계약</div>
+			<ol class="cont">
+				<li>
+					<div class="tit">계약진행</div>
+					<div class="txt">
+						계약 및 약관 내용을 확인하고, 기한 내 온라인 서명을 완료해 주세요.
+					</div>
+				</li>
+				<li>
+					<div class="tit">계약완료</div>
+					<div class="txt">
+						계약서 서명이 완료되었습니다.<br>
+						책임보험 가입을 진행하고, 보험증서를 등록해 주세요.​
+					</div>
+				</li>
+				<li>
+					<div class="tit">서류확인</div>
+					<div class="txt">
+						책임보험가입 확인이 완료되었습니다.​<br>
+						명의이전 및 세금감면 서류를 등록하시면 탁송이 진행됩니다. ​
+					</div>
+				</li>
+			</ol>
+		</li>
+		<li>
+			<div class="title"><span>3</span>차량탁송</div>
+			<ol class="cont">
+				<li>
+					<div class="tit">탁송기사배정</div>
+					<div class="txt">
+						계약서 서명이 완료되어 차량 탁송을 준비중입니다.​
+					</div>
+				</li>
+				<li>
+					<div class="tit">탁송대기</div>
+					<div class="txt">
+						2022.03.15(수) 차량이 탁송될 예정입니다.​
+					</div>
+				</li>
+				<li>
+					<div class="tit">탁송진행</div>
+					<div class="txt">
+						오늘 차량이 탁송될 예정입니다.
+					</div>
+				</li>
+				<li>
+					<div class="tit">탁송완료</div>
+					<div class="txt">
+						탁송이 완료되었습니다.<br>
+						차량을 확인하신 뒤 구매확정 버튼을 눌러 주세요.<br>
+						차량 탁송 후 48시간 뒤 자동으로 구매확정 처리됩니다.​
+					</div>
+				</li>
+			</ol>
+		</li>
+		<li>
+			<div class="title"><span>4</span>구매확정</div>
+			<ol class="cont">
+				<li>
+					<div class="tit">구매완료</div>
+					<div class="txt">
+						차량 인수를 위한 모든 절차가 완료되었습니다.
+					</div>
+				</li>
+				<li>
+					<div class="tit">환금완료</div>
+					<div class="txt">
+						환금이 완료되었습니다.
+					</div>
+				</li>
+			</ol>
+		</li>
+	</ol>
+</section>

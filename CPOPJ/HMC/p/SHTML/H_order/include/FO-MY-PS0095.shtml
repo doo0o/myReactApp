@@ -1,0 +1,91 @@
+<div class="popup_full" id="FO-MY-PS0095">
+	<div class="p_body">
+		<div class="p_inner s_small">
+			<div class="p_head">
+				<h2 class="tit">매수자 인적 사항 정보</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+				<div class="inner_view info_layer">
+					<div class="document_guide">
+						<div class="table_img">
+							<img src="/HMC/p/img/order/document_guide_01.png" alt="">
+							<p class="txt">인감증명서는 <em>자동차 매도용 인감증명서</em>를 제출하셔야 합니다.</p>
+						</div>
+						<!-- 개인 -->
+						<table class="table type02">
+							<caption>매도용 인감증명서 작성 시 필요한 정보</caption>
+							<colgroup>
+								<col width="136px">
+								<col width="*">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>법인명</th>
+									<td>현대자동차 양산센터 (상품용)</td>
+								</tr>
+								<tr>
+									<th>법인등록번호</th>
+									<td>110111-0085450</td>
+								</tr>
+								<tr>
+									<th>법인주소</th>
+									<td>서울특별시 서초구 헌릉로 12 (양재동)</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- //개인 -->
+						<!-- 개인사업자/법인 -->
+						<table class="table type02">
+							<caption>매도용 인감증명서 작성 시 필요한 정보</caption>
+							<colgroup>
+								<col width="136px">
+								<col width="*">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>법인명</th>
+									<td>현대자동차 양산센터 (상품용)</td>
+								</tr>
+								<tr>
+									<th>대표자명</th>
+									<td>정의선, 장재훈, 이동석</td>
+								</tr>
+								<tr>
+									<th>법인등록번호</th>
+									<td>110111-0085450</td>
+								</tr>
+								<tr>
+									<th>법인주소</th>
+									<td>서울특별시 서초구 헌릉로 12 (양재동)</td>
+								</tr>
+								<tr>
+									<th>사업 업태</th>
+									<td>000</td>
+								</tr>
+								<tr>
+									<th>사업 종목</th>
+									<td>승용차 및 기타 여객용 자동차 제조업</td>
+								</tr>
+								<tr>
+									<th>매입 담당자 이름</th>
+									<td>홍길동</td>
+								</tr>
+								<tr>
+									<th>담당자 이메일</th>
+									<td>kim@hyundai.com</td>
+								</tr>
+							</tbody>
+						</table>
+						<!-- //개인사업자/법인 -->
+						<div class="caution">
+							<p>매수자 인적사항은 매도용 인감증명서 작성 시 필요한 정보 입니다.</p>
+						</div>
+					</div>
+				</div>
+				<!-- //contents -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

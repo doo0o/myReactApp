@@ -1,0 +1,268 @@
+<div class="popup_full" id="FO-MY-PS0067">
+	<div class="p_body">
+		<div class="p_inner s_mid">
+			<div class="p_head">
+				<h2 class="tit">판매 계약 정보</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+					<div class="inner_view car_info_layer">
+						<section>
+							<div class="sec_tit m">계약내용</div>
+							<table class="table type02">
+								<caption>계약내용</caption>
+								<colgroup>
+									<col width="126px">
+									<col width="*">
+									<col width="126px">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">견적번호</th>
+										<td>2021123154561231</td>
+										<th scope="row">견적일시</th>
+										<td>2022.12.20 14:07</td>
+									</tr>
+									<tr>
+										<th scope="row">차량번호</th>
+										<td>11헌1234</td>
+										<th scope="row">모델명</th>
+										<td>더 뉴 그랜저 IG</td>
+									</tr>
+									<tr>
+										<th scope="row">신차등급명</th>
+										<td>2.5 가솔린 캘리그래피</td>
+										<th scope="row">차대번호</th>
+										<td>KFJHAUFNJWEC154982</td>
+									</tr>
+									<tr>
+										<th scope="row">최초등록일</th>
+										<td>2020.10.13</td>
+										<th scope="row">연식</th>
+										<td>2020년</td>
+									</tr>
+									<tr>
+										<th scope="row">주행거리</th>
+										<td>91,499km</td>
+										<th scope="row">배기량</th>
+										<td>1995cc</td>
+									</tr>
+									<tr>
+										<th scope="row">출고가격</th>
+										<td colspan="3">50,100,000원</td>
+									</tr>
+									
+								</tbody>
+							</table>
+						</section>
+						<section>
+							<div class="sec_tit m">차량 기타정보</div>
+							<table class="table type02">
+								<caption>차량 기타정보</caption>
+								<colgroup>
+									<col width="126px">
+									<col width="*">
+									<col width="126px">
+									<col width="*">
+								</colgroup>
+							<tbody>
+									<tr>
+										<th scope="row">제조사명</th>
+										<td>현대</td>
+										<th scope="row">차종</th>
+										<td>준대형</td>
+									</tr>
+									<tr>
+										<th scope="row">연료</th>
+										<td>가솔린</td>
+										<th scope="row">변속기</th>
+										<td>오토</td>
+									</tr>
+									<tr>
+										<th scope="row">색상</th>
+										<td>미드나잇 블랙 펄</td>
+										<th scope="row">구입방식</th>
+										<td>현금</td>
+									</tr>
+									<tr>
+										<th scope="row">별도 추가 옵션</th>
+										<td colspan="3">크롬 휠, 추가 네비게이션, 시야 확장 사이드 미러</td>
+									</tr>
+									<tr>
+										<th scope="rowgroup" rowspan="5">출고 당시 옵션</th>
+										<td>외장</td>
+										<td colspan="2">썬루프, 전동접이 사이드미러</td>
+									</tr>
+									<tr>
+										<td>내장</td>
+										<td colspan="2">통풍시트(운전석, 동승석), 전동시트(운전석, 동승석, 뒷자석), 가죽시트, 열선시트(앞, 뒤), 룸미러(전자식 룸미러(ECM), 하이패스 내장)</td>
+									</tr>
+									<tr>
+										<td>안전</td>
+										<td colspan="2">주차보조(전방감지센서, 후방감지센서), 후방카메라, 가죽시트</td>
+									</tr>
+									<tr>
+										<td>편의</td>
+										<td colspan="2">스마트키, 에어컨(오토에어컨, 풀오토에어컨)</td>
+									</tr>
+									<tr>
+										<td>멀티미디어</td>
+										<td colspan="2">네비게이션, 에어컨(오토에어컨, 풀오토에어컨)</td>
+									</tr>
+								</tbody>
+							</table>
+						</section>
+
+						<section>
+							<div class="sec_tit m">견적내역</div>
+							<table class="table type02">
+								<caption>견적내역</caption>
+								<colgroup>
+									<col width="126px">
+									<col width="*">
+									<col width="126px">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">최종 견적가격</th>
+										<td>43,600,000원</td>
+									</tr>
+								</tbody>
+							</table>
+						</section>
+						<section>
+							<div class="sec_tit m">매수인 정보</div>
+							<table class="table type02">
+								<caption>매수인 정보</caption>
+								<colgroup>
+									<col width="126px">
+									<col width="*">
+									<col width="126px">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">법인명</th>
+										<td>현대자동차 양산센터 (상품용)</td>
+										<th scope="row">법인등록번호</th>
+										<td>110111 - 0085450</td>
+									</tr>
+									<tr>
+										<th scope="row">법인주소</th>
+										<td colspan="3">서울특별시 서초구 헌릉로12 (양재동)</td>
+									</tr>
+								</tbody>
+							</table>
+						</section>
+						<section>
+							<div class="sec_tit m">매수인 정보</div>
+							<table class="table type02">
+								<caption>매수인 정보</caption>
+								<colgroup>
+									<col width="126px">
+									<col width="*">
+									<col width="126px">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">법인명</th>
+										<td>현대자동차 양산센터 (상품용)</td>
+										<th scope="row">대표자명</th>
+										<td>정의선, 장재훈, 이동석</td>
+									</tr>
+									<tr>
+										<th scope="row">법인등록번호</th>
+										<td>110111-0085450</td>
+										<th scope="row">법인주소</th>
+										<td>서울특별시 서초구 헌릉로12 (양재동)</td>
+									</tr>
+									<tr>
+										<th scope="row">사업 업태</th>
+										<td>000000</td>
+										<th scope="row">사업 종목</th>
+										<td>승용차 및 기타 여객용 자동차 제조업</td>
+									</tr>
+									<tr>
+										<th scope="row">매입 담당자<br>이름</th>
+										<td>홍길동</td>
+										<th scope="row">담당자 이메일</th>
+										<td>kim@hyundai.com</td>
+									</tr>
+								</tbody>
+							</table>
+						</section>
+						<section>
+							<div class="sec_tit m">매도인 정보</div>
+							<div class="sub_tit">대표명의자</div>
+							<table class="table type02">
+								<caption>매도인 정보</caption>
+								<colgroup>
+									<col width="126px">
+									<col width="*">
+									<col width="126px">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">이름</th>
+										<td>김현대</td>
+										<th scope="row">주민등록번호</th>
+										<td>780000-1******</td>
+									</tr>
+									<tr>
+										<th scope="row">주소</th>
+										<td>(06179) 서울특별시 강남구 테헤란로 510(대치동) 101호</td>
+										<th scope="row">휴대폰번호</th>
+										<td>01012341234</td>
+									</tr>
+									<tr>
+										<th scope="row">이메일</th>
+										<td>hyundai@hyundai.com</td>
+										<th scope="row">사업자여부</th>
+										<td>개인</td>
+									</tr>
+								</tbody>
+							</table>
+						</section>
+						<section>
+							<div class="sub_tit">공동명의자1</div>
+							<table class="table type02">
+								<caption>매도인 정보</caption>
+								<colgroup>
+									<col width="126px">
+									<col width="*">
+									<col width="126px">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">이름</th>
+										<td>김현대</td>
+										<th scope="row">주민등록번호</th>
+										<td>780000-1******</td>
+									</tr>
+									<tr>
+										<th scope="row">주소</th>
+										<td>(06179) 서울특별시 강남구 테헤란로 510(대치동) 101호</td>
+										<th scope="row">휴대폰번호</th>
+										<td>01012341234</td>
+									</tr>
+									<tr>
+										<th scope="row">이메일</th>
+										<td>hyundai@hyundai.com</td>
+										<th scope="row">사업자여부</th>
+										<td>개인사업자</td>
+									</tr>
+								</tbody>
+							</table>
+						</section>
+					</div>
+				<!-- //contents -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

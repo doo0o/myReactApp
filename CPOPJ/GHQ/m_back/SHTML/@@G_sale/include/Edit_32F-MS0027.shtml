@@ -1,0 +1,33 @@
+<!-- FO-TI-MS0027 : 교환/판금 수정 - FULL -->
+<div class="CPOpop_full" id="FO-TI-MS0027">
+	<div class="p_head">
+		<h4 class="tit txt_hidden">교환/판금 부위 수정</h4>
+	</div>
+	<div class="p_wrap sale_modify">
+		<!-- 교환/판금 수정 -->
+		<div class="step32_edit">
+			<!--#include file="/GHQ/SHTML/@@G_sale/inc/step3_2_02_edit.shtml"-->
+			<!--#include file="/GHQ/SHTML/@@G_sale/inc/step3_2_02_select.shtml"-->
+		</div>
+		<!-- //교환/판금 수정 -->
+		<!-- (3). STICKY BUTTON -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">수정하기</button>
+		</div>
+		<!-- //(3). STICKY BUTTON -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+
+<script>
+$(document).ready(function(){
+	$('input[name=saleEditChk]').on('change',function(){// 네 선택시에만 , 교환/판금 영역 선택하는 div 보이도록
+		if ($("#saleEditChk01").is(':checked')) {
+			$(".car_modify").show();
+			console.log('네, 있어요');
+		} else {
+			$(".car_modify").hide();
+		}
+	});
+});
+</script>

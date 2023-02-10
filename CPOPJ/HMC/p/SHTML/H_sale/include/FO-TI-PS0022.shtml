@@ -1,0 +1,36 @@
+<div class="popup_modal" id="FO-TI-PS0022">
+	<div class="p_body">
+		<div class="p_inner s_small">
+			<div class="p_head">
+				<h2 class="tit">주행거리 수정</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+				<div class="inner_view pop_sale">
+					<div class="box_input">
+						<p class="title">주행 거리</p>
+						<div class="form_area">
+							<div class="inbox_type02 txt_r hs01" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+								<input type="tel" class="txt type_tel type_nc" title="텍스트" name="" value="">
+								<button type="button" class="btn_delete">삭제</button>
+								<em>km</em>
+							</div>
+						</div>
+					</div>
+					<div class="km_area">
+						<p class="txt">블루링크 서비스를 통해 주행거리를 불러왔습니다.</p>
+						<button type="button" class="txt_btn03 s_mid">현재 주행거리 불러오기</button>
+						<button type="button" class="txt_btn03 s_mid">주행거리 불러오기</button>
+					</div>
+				</div>
+				<!-- //contents -->
+				<!-- sticky -->
+				<div class="btn_area full_type">
+					<button type="button" class="btn_big color01">수정하기</button>
+				</div>
+				<!-- //sticky -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,47 @@
+@charset 'utf-8';
+
+@import '../_common/h_function';
+@import '../_common/h_mixins';
+
+.error_cont{
+	padding: 64px 0;
+	text-align: center;
+	background-color: $COL_white;
+	&::before {
+		content : "";
+		display: block;
+		width: 48px;
+		height: 48px;
+		margin: auto;
+		background: {
+			image : url(../img/icon/icon_error.svg);
+			repeat : no-repeat;
+			size : 100%;
+			position: center;
+		} 
+	}
+	.tit{
+		@include fontHM(24);
+		margin-top: 16px;
+	}
+	.txt{
+		@include fontT(16);
+		color: $COL_gs03;
+		margin-top: 8px;
+	}
+	.btn_area{
+		margin-top: 24px;
+	} 
+	.table_div{
+		width: 380px;
+		margin: 24px auto 0;
+		th,td{
+			text-align: left;
+			color: $COL_gs02;
+		}
+	}
+	.caution{
+		margin-top: 12px;
+		text-align: left;
+	}
+}

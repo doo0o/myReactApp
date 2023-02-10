@@ -1,0 +1,31 @@
+<!-- FO-TI-MS0024 : 구입 방식 수정 - FULL -->
+<div class="CPOpop_bottom" id="FO-TI-MS0024">
+	<div class="p_head">
+		<h2 class="tit txt_hidden">구입 방식 수정</h2><!-- 2022-09-16 CPO-3291 -->
+	</div>
+	<div class="p_wrap">
+		<!-- 구입 방식 수정 -->
+		<div class="sale_modify">
+			<div class="entry_carbase">
+				<div class="top02">
+					<p class="tit">차량을 어떤방식으로<br />구입하셨나요?</p> <!-- 2022-09-16 CPO-3291 --> 
+				</div>
+				<!-- 입력 -->
+				<ul class="entry_carmore_options">
+					<li><input type="radio" name="saleBuyChk2" id="saleBuyChk201" class="chk_type07" /><label for="saleBuyChk201">결제가 모두 완료된 상태</label></li>
+					<li><input type="radio" name="saleBuyChk2" id="saleBuyChk202" class="chk_type07" /><label for="saleBuyChk202">할부 기간이 남은 상태</label></li>
+					<li><input type="radio" name="saleBuyChk2" id="saleBuyChk203" class="chk_type07" /><label for="saleBuyChk203">운용 리스</label></li>
+					<li><input type="radio" name="saleBuyChk2" id="saleBuyChk204" class="chk_type07" /><label for="saleBuyChk204">금융 리스</label></li>
+				</ul>
+				<!-- //입력 -->
+			</div>
+		</div>
+		<!-- //구입 방식 수정 -->
+		<!-- (3). STICKY BUTTON -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">수정하기</button>
+		</div>
+		<!-- //(3). STICKY BUTTON -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

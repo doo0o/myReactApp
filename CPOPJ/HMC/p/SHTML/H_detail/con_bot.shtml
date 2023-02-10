@@ -1,0 +1,133 @@
+
+				<div class="car_detail_box3">
+					<div class="slide_product">
+						<div class="top">
+							<p class="sec_tit l">인기있는 비슷한 차량</p> <!-- 2023.01.19 클래스 수정 및 태그 변경 -->
+						</div>
+						<ul class="unit_deal col_type03">
+							<li>
+								<a href="http://www.naver.com">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>20년 12월</span>
+											<span>50,000km</span>
+											<span>12가1234</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.naver.com">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>20년 12월</span>
+											<span>50,000km</span>
+											<span>12가1234</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.naver.com">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>20년 12월</span>
+											<span>50,000km</span>
+											<span>12가1234</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.naver.com">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>20년 12월</span>
+											<span>50,000km</span>
+											<span>12가1234</span>
+										</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="http://www.naver.com">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>20년 12월</span>
+											<span>50,000km</span>
+											<span>12가1234</span>
+										</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!--  s: 10. 링크  -->
+					<div class="pdp10_link">
+						<ul>
+							<li><a href="#" class="link_item link_item1">
+								<span class="txt1">자주 묻는 질문</span>
+								<span class="txt2">궁금한 점을 확인해 보세요.</span>
+							</a></li>
+							<li><button type="button" class="link_item link_item2" onclick="popupOpen('FO-PD-PS0013')">
+								<span class="txt1">구매 및 환불</span>
+								<span class="txt2">구매/환불 정책을 확인해 보세요.</span>
+							</button></li>
+							<li><a href="#" class="link_item link_item3">
+								<span class="txt1">법인 구매 안내</span>
+								<span class="txt2">현대 인증 중고차에서<br>법인 차량을 구매해 보세요.</span>
+							</a></li>
+						</ul>
+					</div>
+					<!--  e: 10. 링크  -->
+				</div>

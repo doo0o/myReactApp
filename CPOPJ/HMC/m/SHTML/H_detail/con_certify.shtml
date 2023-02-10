@@ -1,0 +1,229 @@
+<div class="pdp03_tabs zero" id="p_scr02">
+	<div class="cont_box certify">
+		<div class="certify_01 photo">
+			<p class="txt">현대자동차 인증차량입니다.</p>
+			<button type="button" class="btn_small01 jQ_POP_open" data-popup="FO-PD-MS0005">왜 현대인증인가요?</button>
+
+			<p class="txt">제네시스 인증차량입니다.</p>
+			<button type="button" class="btn_small01 jQ_POP_open" data-popup="FO-PD-MS0005">왜 제네시스인증인가요?</button>
+
+			<a href="#" class="btn_arrow_mid01">260개 인증항목 보기</a>
+		</div>
+	</div>
+</div>
+
+<div class="pdp03_tabs white">
+
+	<div class="cont_box certify">
+		<div class="certify_graph">
+			<ol>
+				<li>
+					<span class="tit">보증 잔여 기간</span>
+					<span class="bar"><em style="width:50%">50%</em></span>
+					<span class="txt">
+						<span>4년</span>
+						<span>1년 5개월 남음</span>
+					</span>
+				</li>
+				<li>
+					<span class="tit">보증 잔여 주행거리</span>
+					<span class="bar"><em style="width:60%">60%</em></span>
+					<span class="txt">
+						<span>8만km</span>
+						<span>58,842km 남음</span>
+					</span>
+				</li>
+				<li>
+					<span class="tit">보증 잔여 주행거리</span>
+					<span class="bar"><em>0</em></span>
+					<span class="txt">
+						<span>8만km</span>
+						<span class="end">보증기간만료!</span>
+					</span>
+				</li>
+			</ol>
+			<p class="caution">기간 혹은 주행거리 선도래 시 종료</p>
+		</div>
+	</div>
+
+	<div class="btn_center">
+		<button type="button" class="btn_arrow_mid01 jQ_POP_open" data-popup="FO-PD-MS0014">보증상세 보기</button>
+	</div>
+
+	<div class="banner_wrap">
+
+		<div class="pdp_ban01 pdp_ban01_line">
+			<p class="ban_tit">오늘 구매하시면 무료로 잔여보증기간을<br><strong>1년/20,000km</strong>까지 보장해 드립니다.</p>
+			<div class="ban_sub">
+				<p class="ban_txt">
+					<span class="txt_tit">보증 잔여 기간</span>
+					<span class="txt_con">1년 (12개월 무료제공)</span>
+				</p>
+				<p class="ban_txt">
+					<span class="txt_tit">보증 잔여 주행거리</span>
+					<span class="txt_con">20,000km (12,573km 무료제공)</span>
+				</p>
+			</div>
+		</div>
+
+		<!-- hmc -->
+		<div class="pdp_ban02" style="background-image: url('../../img/@thumb/bo_pdp_ban.png')">
+			<a href="#" class="ban_box">
+				<span class="btn_arrow_mid01">현대인증 중고차 보증</span>
+				<span class="ban_txt">안전하게 현대 중고차 보증을 추가 하고 싶으시다면</span>
+			</a>
+		</div>
+
+		<div class="pdp_ban01 ban_blue_link">
+			<div class="ban_tit">
+				블루링크 서비스 무료 사용가능 기간
+				<div class="cpo_tooltip">
+					<button class="open">서비스 설명</button>
+					<div class="cont">
+						<p class="text">블루링크 서비스란?</p>
+						<p class="caution">고객님의 더 편안하고 안전한 드라이빙을 위해 차량 원격제어, 차량진단, 더욱 정확한 길 안내 등의 기능을 제공하는 서비스 입니다.</p>
+						<button class="close">툴팁닫기</button>
+					</div>
+				</div>
+			</div>
+			<div class="ban_sub">
+				<p class="ban_txt">
+					<!-- <span class="cell">
+						시작일
+						<span class="date">2021.03.08</span>
+					</span> 2023-01-16 시작일 삭제 [CPO-8604] -->
+					<span class="cell">
+						만료일
+						<span class="date">2021.03.08</span>
+					</span>
+				</p>
+			</div>
+		</div>
+		<!-- //hmc -->
+
+		<!-- ghq -->
+		<div class="pdp_ban01 ban_ghq" data-ref="toggleBox">
+			<button class="btn_ban" onclick="toggleBox()">해당 상품에 제공되는 제네시스의<br>혜택을 확인해보세요.</button>
+			<div class="ban_sub">
+				<p class="ban_tit2">
+					모빌리티 케어 잔여 횟수 (소모품 교환)<br>
+					<span>유효기간 2024.03.05까지 혹은 보증 주행거리 6만km까지 입니다.</span>
+				</p>
+				<table class="table">
+					<caption>거래내용</caption>
+					<colgroup>
+						<col style="width:120px;">
+						<col style="width:120px;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">엔진오일</th>
+							<td>
+								엔진오일<br>
+								오일필터<br>
+								에어 크리너
+							</td>
+							<td class="align_right">2회</td>
+						</tr>
+						<tr>
+							<th scope="row">에어컨 필터</th>
+							<td colspan="2" class="align_right">1회</td>
+						</tr>
+						<tr>
+							<th scope="row">브레이크패드</th>
+							<td colspan="2" class="align_right">1회</td>
+						</tr>
+						<tr>
+							<th scope="row">와이퍼블레이드</th>
+							<td colspan="2" class="align_right">1회</td>
+						</tr>
+						<tr>
+							<th scope="row">브레이크오일</th>
+							<td colspan="2" class="align_right">1회</td>
+						</tr>
+						<tr>
+							<th scope="row">홈투홈</th>
+							<td colspan="2" class="align_right">1회</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p class="ban_tit2">제네시스 커넥티드 서비스 무료 사용가능 기간</p>
+
+				<table class="table">
+					<caption>거래내용</caption>
+					<colgroup>
+						<col style="width:120px;">
+						<col>
+					</colgroup>
+					<tbody>
+						<tr>
+							<th scope="row">시작일</th>
+							<td class="align_right">2021.03.08</td>
+						</tr>
+						<tr>
+							<th scope="row">만료일</th>
+							<td class="align_right">2026.03.07</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<!-- //ghq -->
+	</div>
+
+</div>
+
+<!--  s: 06. TAB-04 성능/보험  -->
+<div class="pdp03_tabs"> 
+	<div class="cont_box perfor">
+		<ol class="perfor_01">
+			<li class="perfor_icon_07">
+				<span class="tit">판금여부</span>
+				<span class="case on">1건</span>
+			</li>
+			<li class="perfor_icon_08">
+				<span class="tit">부식여부</span>
+				<span class="case">0건</span>
+			</li>
+			<li class="perfor_icon_06">
+				<span class="tit">교환여부</span>
+				<span class="case on">2건</span>
+			</li>
+			<li class="perfor_icon_05">
+				<span class="tit">흠집여부</span>
+				<span class="case on">2건</span>
+			</li>
+		</ol>
+		<div class="btn_center">
+			<button type="button" class="btn_arrow_mid01 jQ_POP_open" data-popup="FO-PD-MS0006">성능점검기록부 모두 보기</button>
+		</div>
+	</div>
+</div>
+<div class="pdp03_tabs white">
+	<div class="cont_box perfor">
+		<ol class="perfor_01">
+			<li class="perfor_icon_04">
+				<span class="tit">내차피해</span>
+				<span class="case">0건</span>
+			</li>
+			<li class="perfor_icon_03">
+				<span class="tit">타차피해</span>
+				<span class="case on">1건</span>
+			</li>
+			<li class="perfor_icon_02">
+				<span class="tit">용도변경</span>
+				<span class="case">없음 </span>
+			</li>
+			<li class="perfor_icon_01">
+				<span class="tit">특수사고</span>
+				<span class="case on">2건</span>
+			</li>
+		</ol>
+		<div class="btn_center">
+			<button type="button" class="btn_arrow_mid01 jQ_POP_open" data-popup="FO-PD-MS0007">모든 보험이력 보기</button>
+		</div>
+	</div>
+</div>
+<!--  e: 06. TAB-04 성능/보험  -->

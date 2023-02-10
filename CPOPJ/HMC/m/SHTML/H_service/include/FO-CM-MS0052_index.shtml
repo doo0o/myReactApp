@@ -1,0 +1,209 @@
+<div class="bc_container">
+	<div class="bc_intro">
+		<div class="bc_intro_bg">
+			<div class="bg01">
+				<div class="bc_car01">
+					<img src="/HMC/m/img/service/bc/img_bc_car01.png" alt="">
+				</div>
+			</div>
+			<div class="bg02">
+				<div class="bc_car02">
+					<img src="/HMC/m/img/service/bc/img_bc_car02.png" alt="">
+				</div>
+				<div class="group_icon">
+					<div class="left"></div>
+					<div class="center">
+						<img src="/HMC/m/img/service/bc/icon_group.png" alt="">
+					</div>
+					<div class="right"></div>
+				</div>
+			</div>
+		</div>
+		<div class="btn_bottom">
+			<button type="button"><img src="/HMC/m/img/service/bc/icon_bottom.png" alt=""></button>
+		</div>
+		<div class="bc_tit">
+			<p>HYUNDAI & GENESIS Certified</p>
+			<span>내차사기 서비스<br>무엇이 특별할까요?</span>
+		</div>
+		<div class="bc_tit02">
+			<p>현대가 책임지고 직접하니까<br>믿고 결정할 수 있는!</p>
+		</div>
+		<div class="bc_tit03">
+			<p>국내 최다 최대 200여개<br>항목 정밀 진단</p><!-- 20230117 220개 -> 200개 텍스트 수정 --><!-- 20230126 220개 -> 200여개 텍스트 수정 -->
+		</div>
+		<div class="group_intro_line">
+			<div class="box_line">
+				<img src="/HMC/m/img/service/bc/img_bc_line.png" alt="">
+				<img src="/HMC/m/img/service/bc/img_bc_line.png" alt="">
+			</div>
+			<div class="box_line">
+				<img src="/HMC/m/img/service/bc/img_bc_line.png" alt="">
+				<img src="/HMC/m/img/service/bc/img_bc_line.png" alt="">
+			</div>
+			<div class="box_line">
+				<img src="/HMC/m/img/service/bc/img_bc_line.png" alt="">
+				<img src="/HMC/m/img/service/bc/img_bc_line.png" alt="">
+			</div>
+			<div class="box_line">
+				<img src="/HMC/m/img/service/bc/img_bc_line.png" alt="">
+				<img src="/HMC/m/img/service/bc/img_bc_line.png" alt="">
+			</div>
+			<div class="box_line">
+				<img src="/HMC/m/img/service/bc/img_bc_line.png" alt="">
+				<img src="/HMC/m/img/service/bc/img_bc_line.png" alt="">
+			</div>
+		</div>
+		<div class="btn_area">
+			<a href="#" class="btn_service">현대 & 제네시스 인증안내</a>
+		</div>
+	</div>
+	<div class="bc_experience">
+		<div class="experience_scan">
+			<p class="txt">차량 외장부터 공기까지<br>오감 컨텐츠로 생생한 경험</p>
+			<div class="experience_scan_video">
+				<video src="/HMC/m/img/pdp/scan.mp4" data-ref="scanVideo" playsinline muted></video>
+			</div>
+		</div>
+		<div class="swiper-container slide_experience">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide"><img src="/HMC/m/img/service/bc/img_bc_slide01.png" alt=""></li>
+				<li class="swiper-slide"><img src="/HMC/m/img/service/bc/img_bc_slide02.png" alt=""></li>
+				<li class="swiper-slide"><img src="/HMC/m/img/service/bc/img_bc_slide03.png" alt=""></li>
+				<li class="swiper-slide"><img src="/HMC/m/img/service/bc/img_bc_slide04.png" alt=""></li>
+				<li class="swiper-slide"><img src="/HMC/m/img/service/bc/img_bc_slide05.png" alt=""></li>
+			</ul>
+			<div class="swiper-pagination"></div>
+		</div>
+		<div class="slide_experience_case">
+			<img src="/HMC/m/img/service/bc/img_bc_slide_phone.png" alt="">
+		</div>
+	</div>
+</div>
+<div class="bc_content">
+	<div class="bc_cont hilab">
+		<div class="img">
+			<img src="/HMC/m/img/service/bc/img_cont01.png" alt="">
+		</div>
+		<div class="box_text">
+			<p class="title">투명한 정보를 제공하고<br>공정하게 가치를 평가하는<br>Hi-LAB</p>
+			<div class="btn_area">
+				<a href="#" class="btn_service white">Hi-LAB 바로가기</a>
+			</div>
+		</div>
+	</div>
+	<div class="bc_cont info">
+		<p class="title">나에게 가장 알맞은<br>구매방식으로 잘 사는 방법</p>
+		<div class="group_info">
+			<div class="box_info">
+				<a href="#" class="btn_service_arr01">카드 할부 안내</a>
+				<p>실시간으로 빠르고 편한 결제를 진행합니다.</p>
+			</div>
+			<div class="box_info">
+				<a href="#" class="btn_service_arr01">카드 할부 안내</a>
+				<p>카드 할부로 부담없는 결제를 진행합니다.</p>
+			</div>
+		</div>
+		<div class="img">
+			<img src="/HMC/m/img/service/bc/img_cont02.png" alt="">
+		</div>
+	</div>
+	<div class="bc_cont center">
+		<div class="img">
+			<img src="/HMC/m/img/service/bc/img_cont03.png" alt="">
+		</div>
+		<div class="box_text">
+			<p class="title">구매 확정 전 실물 확인은<br>현대&제네시스 인증 중고차<br>전시장에서</p>
+			<div class="btn_area">
+				<a href="#" class="btn_service white">전시장 안내 바로가기</a>
+			</div>
+		</div>
+	</div>
+	<div class="bc_cont home">
+		<p class="title">홈서비스로 다음날 바로 배송<br>3일 타보고 결정하자!</p>
+		<div class="img">
+			<img src="/HMC/m/img/service/bc/img_cont04.png" alt="">
+		</div>
+		<div class="btn_area">
+			<a href="#" class="btn_service">홈서비스 바로가기</a>
+		</div>
+	</div>
+	<div class="bc_cont benefit">
+		<p class="title">구매 후에도 신차처럼 누리는<br>현대자동차 혜택 그대로</p>
+		<div class="swiper-container slide_benefit">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide">
+					<img src="/HMC/m/img/service/bc/img_benefit01.png" alt="">
+					<p class="txt">제네시스 멤버십, 블루멤버스 적립<br>포인트로 행복한 자동차 생활</p>
+					<button type="button" class="btn_combi01">멤버십 혜택 안내</button>
+				</li>
+				<li class="swiper-slide">
+					<img src="/HMC/m/img/service/bc/img_benefit02.png" alt="">
+					<p class="txt">블루링크와 함께<br>업그레이드 된 Car Life</p>
+					<button type="button" class="btn_combi01">블루링크 안내</button>
+				</li>
+				<li class="swiper-slide">
+					<img src="/HMC/m/img/service/bc/img_benefit03.png" alt="">
+					<p class="txt">현대자동차 오너의 필수 앱<br>MY HYUNDAI / MY GENESIS</p>
+					<button type="button" class="btn_combi01">차량관리앱 안내</button>
+				</li>
+			</ul>
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+	<div class="bc_cont bluehands">
+		<div class="box_title">
+			<div class="img_logo">
+				<img src="/HMC/m/img/service/bc/img_bluehands.png" alt="">
+			</div>
+			<p class="title">중고차 전 차량 전국 블루핸즈<br>어디서나 A/S 이용 가능</p>
+			<span class="title_sub">최소 1년 / 2만km 보장</span>
+		</div>
+		<div class="img">
+			<img src="/HMC/m/img/service/bc/img_cont05.png" alt="">
+		</div>
+		<div class="btn_area">
+			<a href="#" class="btn_service">보증 상세 안내 바로가기</a>
+		</div>
+	</div>
+	<div class="bc_cont review">
+		<p class="title">구매 후기로 믿고 살 수 있는<br>현대 & 제네시스 인증 중고차</p>
+		<div class="swiper-container slide_bcReview">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide">
+					<div class="img">
+						<img src="/HMC/m/img/service/bc/img_cont_review01.png" alt="">
+					</div>
+				</li>
+				<li class="swiper-slide">
+					<div class="img">
+						<img src="/HMC/m/img/service/bc/img_cont_review01.png" alt="">
+					</div>
+				</li>
+				<li class="swiper-slide">
+					<div class="img">
+						<img src="/HMC/m/img/service/bc/img_cont_review01.png" alt="">
+					</div>
+				</li>
+			</ul>
+			<div class="swiper-pagination"></div> <!-- 20230130 추가 -->
+		</div>
+	</div>
+	<div class="bc_cont brand">
+		<p class="title">새로운 중고차 매매경험<br>HYUNDAI & GENESIS<br>Certified</p>
+		<div class="img_wrap">
+			<div class="img">
+				<img src="/HMC/m/img/service/bc/img_cont07.png" alt="">
+				<div class="btn_area">
+					<a href="#" class="btn_mid01">현대 브랜드관 바로가기</a>
+				</div>
+			</div>
+			<div class="img">
+				<img src="/HMC/m/img/service/bc/img_cont08.png" alt="">
+				<div class="btn_area">
+					<a href="#" class="btn_mid01 black">제네시스 브랜드관 바로가기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

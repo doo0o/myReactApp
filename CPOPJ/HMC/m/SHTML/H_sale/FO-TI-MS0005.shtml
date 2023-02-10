@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>STEP3-3.차량 사진 등록 : 현대차 CPO</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_sale.css">
+</head>
+<body class="bg_color">
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header  -->		
+		<div class="h_header">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit align_c">차량 사진 등록</h1>
+		</div>
+		<!-- e: h_header  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<!-- [COMMON] 내차팔기 입력 진행 상황 progress -->
+			<!--#include file="/HMC/m/SHTML/H_sale/include/sale_progress.shtml"-->
+		<!-- //[COMMON] 내차팔기 입력 진행 상황 progress -->
+
+		<!-- STEP : 3-3-01 : 차량사진 등록 -->
+		<!-- STEP3-3.차량 사진 등록 -->
+		<div class="sale_photo">
+			<div class="top">
+				<strong class="tit">외관과 계기판 사진은<br />꼭 등록해 주세요!</strong>
+				<button type="button" class="btn_combi01_01 jQ_POP_open" data-popup="FO-TI-MS0034">사진 등록 시 주의사항</button>
+			</div>
+			<!-- (1). 필수 등록 사진 -->
+			<!--#include file="/HMC/m/SHTML/H_sale/inc/step3_3_01_photo.shtml"-->
+			<!-- //(1). 필수 등록 사진 -->
+			<!-- (2). 추가 등록 사진 -->
+			<div class="innerbox_02">
+				<strong class="tit">추가로 등록하고 싶은 사진이 있나요?</strong>
+				<p class="txt">
+					이미지는 최대 5개까지 등록 가능합니다. <br>
+					12MB 미만의 JPG 혹은 PNG만 등록 가능합니다.
+				</p>
+				<div class="addphoto_list">
+					<dl class="on">
+						<dt>
+							<input type="file" id="CarPhotoMore" class="file_morephoto" data-file="imgList01" data-item="5" accept="image/*" /><!-- data-item 에 최대 등록 수량 -->
+							<label for="CarPhotoMore">
+								<span class="t01">사진 추가하기</span>
+								<span class="t02"><em id="imgList01no">0</em>/5</span>
+							</label>
+						</dt>
+						<dd>
+							<ol class="list" id="imgList01"></ol>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<!-- //(2). 추가 등록 사진 -->
+		</div>
+		<!-- //STEP3-3.차량 사진 등록 -->
+
+		<!-- (3). STICKY BUTTON -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">사진등록 완료하기</button>
+		</div>
+		<!-- //(3). STICKY BUTTON -->
+
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+</div>
+<!-- //cpo wrap -->
+
+<script>
+$(document).ready(function(){
+	var inputWrap = document.querySelector('.sale_photo');
+	var photoInput = inputWrap.querySelectorAll('*:required');
+	var state = false;
+	photoInput.forEach(function(_this){
+		$(_this).on('change', function(){
+			_this.closest('div').classList.add('isChanged');
+			for(var idx = 0; idx < photoInput.length ; idx++) {
+				if(photoInput[idx].value.length <= 0) {
+					state = false;
+					break;
+				} else {
+					state = true;
+				}
+			}
+			if(state == true) {
+				inputWrap.classList.add('state_reg_com');
+			} else {
+				inputWrap.classList.remove('state_reg_com');
+			}
+		})
+	})
+	saleProgress(15);
+	FRM.ImgUpload02();// 추가 등록 사진 file upload
+});
+</script>
+
+</body>
+</html>
+

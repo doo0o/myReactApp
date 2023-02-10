@@ -1,0 +1,739 @@
+
+@import '../_common/g_function';
+@import '../_common/g_mixins';
+
+.detail_head{
+	padding:30px 21px;
+	background:$COL_White;
+	.text{
+		display:block;
+		&:nth-child(1){
+			@include Mix_Font('Head-R', 18, 24);
+		}
+		&:nth-child(2){
+			margin-top:8px;
+			@include Mix_Font('Head-R', 26, 34);
+			i{
+				position:relative;
+				padding-bottom:1px;
+				@include Mix_Font_Head_M;
+				&.under::after{
+					content:'';
+					display:inline-block;
+					position:absolute;
+					left:0;
+					bottom:0;
+					width:100%;
+					height:3px;
+					background:map-get($COL_Highlight, "bg_light");
+				}
+			}
+		}
+	}
+	.date{
+		display:block;
+		color:map-get($COL_Base_01 , "bg_light");
+		@include Mix_Font('Txt-R', 13, 17);
+	}
+}
+// FO-PD-MS0013 구매 및 환불안내
+.detail_claim{
+	.head{
+		padding:30px 21px 28px;
+		p{
+			color:map-get($COL_Base_04 , "bg_light");
+			@include Mix_Font('Head-L', 24, 32);
+		}
+	}
+	.list_step{
+		padding:0 21px 40px 31px;
+		li{
+			position:relative;
+			margin-bottom:33px;
+			padding-left:41px;
+			&:last-of-type{
+				margin:0;
+				&::after{
+					content:none;
+				}
+			}
+			&::before{
+				content:'';
+				position:absolute;
+				top:5px;
+				left:0;
+				width:26px;
+				height:26px;
+				background:$COL_Black;
+				border-radius:50%;
+				color:$COL_White;
+				@include Mix_Font('Txt-M', 16, 26);
+				text-align:center;
+			}
+			@for $i from 1 through 6 {
+				&:nth-child(#{$i})::before{
+					content:'#{$i}';
+				}
+			}
+			&::after{
+				content:'';
+				display:block;
+				position:absolute;
+				left:12.5px;
+				bottom:-32.5px;
+				width:1px;
+				height:40px;
+				background:map-get($COL_Line_01, "bg_light");
+			}
+		}
+		.title{
+			display:block;
+			margin-bottom:3px;
+			color:map-get($COL_Base_04 , "bg_light");
+			@include Mix_Font('Head-R', 15, 20);
+		}
+		.text{
+			color:map-get($COL_Base_02 , "bg_light");
+			@include Mix_Font('Txt-R', 12, 19);
+		}
+	}
+}
+// FO-PD-MS0010 공유하기
+.detail_share{
+	padding:0 34px 40px;
+	ul{
+		@include Mix_Clear;
+		li{
+			float:left;
+			width:33.33%;
+			margin-top:19px;
+			[class^="ic_"]{
+				display:block;
+				width:56px;
+				height:56px;
+				margin:0 auto;
+				@include Mix_Layout_Bg;
+				@include Mix_Size_0;
+			}
+			.ic_kakao{
+				background-position:0 -152px;
+			}
+			.ic_facebook{
+				background-position:-61px -152px;
+			}
+			.ic_message{
+				background-position:-122px -152px;
+			}
+			.ic_chat{
+				background-position:-183px -152px;
+			}
+			.ic_link{
+				background-position:-244px -152px;
+			}
+		}
+	}
+}
+// FO-PD-MS0009 옵션상세설명
+.detail_optionPOP{
+	.thumb{
+		img{
+			width:100%;
+		}
+	}
+	.text_box{
+		padding:20px 25px 40px;
+		.text{
+			margin-bottom:8px;
+			color:map-get($COL_Base_04 , "bg_light");
+			@include Mix_Font('Txt-R', 13, 21);
+		}
+		.info{
+			color:map-get($COL_Base_01 , "bg_light");
+			@include Mix_Font('Txt-R', 11, 18);
+		}
+	}
+}
+// FO-PD-MS0008 옵션상세
+.detail_option{
+	padding:0 15px;
+	background:map-get($COL_Box_01, "bg_light");
+	h4{
+		padding:20px 0 14px 6px;
+		@include Mix_Font('Head-M', 18, 24);
+	}
+	.notice_03{
+		padding:20px 6px 61px;
+	}
+}
+.list_option{
+	margin-bottom:20px;
+	background:$COL_White;
+	&:last-of-type{
+		margin:0;
+	}
+	li{
+		position:relative;
+		border-bottom:1px solid map-get($COL_Box_01, "bg_light");
+		&.on{
+			button{
+				color:map-get($COL_Base_04 , "bg_light");
+				@include Mix_Font_Txt_M;
+			}
+			button::before{
+				content:'';
+				display:inline-block;
+				position:absolute;
+				left:18px;
+				top:21px;
+				width:14px;
+				height:12px;
+				@include Mix_Layout_Bg;
+				background-position:-142px 0;
+			}
+		}
+		button{
+			display:block;
+			width:100%;
+			height:51px;
+			padding:0 40px 0 38px;
+			color:map-get($COL_Base_02 , "bg_light");
+			@include Mix_Font('Txt-R', 13, 51);
+			text-align:left;
+			&:disabled{
+				background:transparent !important;
+				&::after{
+					content:none;
+				}
+			}
+			&::after{
+				content:'';
+				display:inline-block;
+				position:absolute;
+				top:20px;
+				right:20px;
+				width:8px;
+				height:13px;
+				@include Mix_Library_Bg;
+				background-position:-105px 0;
+			}
+		}
+	}
+}
+// FO-PD-MS0007 보험이력 보고서
+.detail_insure{
+	.detail_cont{
+		padding-top:20px;
+		background:map-get($COL_Box_01, "bg_light");
+	}
+	.pdp_box01.last{
+		background:transparent;
+		margin-bottom:15px;
+		padding:25px 6px;
+		.pdp_cont{
+			padding-bottom:20px;
+			border-bottom:solid 1px map-get($COL_Line_01, "bg_light");
+		}
+	}
+	.notice_02{
+		padding-top:20px;
+	}
+	.notice_03{
+		padding-top:20px;
+		li{
+			color:map-get($COL_Base_01 , "bg_light");
+			@include Mix_Font('Txt-R', 11, 18);
+		}
+		&.ft{
+			li{
+				margin-top:15px;
+				color:map-get($COL_Base_02 , "bg_light");
+				@include Mix_Font('Txt-R', 12, 19);
+				&:first-of-type{
+					margin-top:0;
+				}
+			}
+		}
+		&.no{
+			li{
+				margin-top:15px;
+				padding-left:0;
+				color:map-get($COL_Base_02 , "bg_light");
+				@include Mix_Font('Txt-R', 12, 19);
+				&::before{
+					display:none;
+				}
+				&:first-of-type{
+					margin-top:0;
+				}
+			}
+			> p{
+				margin-bottom:20px;
+				color:map-get($COL_Base_04 , "bg_light");
+				@include Mix_Font('Txt-R', 13, 21);
+			}
+		}
+	}
+	.notice_04{
+		padding-top:20px;
+		li{
+			margin-top:15px;
+			@include Mix_Font('Txt-R', 13, 20);
+			&:first-of-type{
+				margin-top:0;
+			}
+		}
+	} 
+	.pdp_cont.ft{
+		.txt{
+			margin-top:20px;
+			color:map-get($COL_Base_04 , "bg_light");
+			@include Mix_Font('Txt-R', 14, 21);
+		}
+		.notice_04 li{
+			padding-left:0;
+			&::before{
+				display:none;
+			}
+		}
+	}
+	.cont_history{
+		dl{
+			display:flex;
+			justify-content:space-between;
+			align-items:center;
+			height:58px;
+			margin-top:-1px;
+			padding:0 17px;
+			background:map-get($COL_Box_01, "bg_light");
+			@include Mix_Font('Head-R', 13, 18);
+			dt{
+				color:map-get($COL_Base_04 , "bg_light");
+			}
+			dd{
+				color:map-get($COL_Highlight, "bg_light");
+			}
+		}
+		p{
+			margin-top:10px;
+			padding:0 8px;
+			color:map-get($COL_Base_02 , "bg_light");
+			@include Mix_Font('Txt-R', 11, 18);
+		}
+	}
+	.list_history{
+		padding-bottom:20px;
+		.title{
+			margin-top:25px;
+			padding-top:25px;
+			border-top:1px solid map-get($COL_Box_02 , "bg_light");
+			color:map-get($COL_Base_04 , "bg_light");
+			@include Mix_Font('Txt-M', 15, 24);
+		}
+		.head{
+			margin-top:15px;
+			@include Mix_Clear;
+			color:map-get($COL_Base_04 , "bg_light");
+			@include Mix_Font('Txt-R', 13, 21);
+			li{
+				display:flex;
+				justify-content:space-between;
+				margin-top:15px;
+				&:first-of-type{
+					margin:0;
+				}
+			}
+			em{
+				color:map-get($COL_Highlight, "bg_light");
+			}
+		}
+		.cont{
+			margin-top:10px;
+			padding:20px 17px;
+			background:map-get($COL_Box_01, "bg_light");
+			li{
+				display:flex;
+				justify-content:space-between;
+				margin-top:12px;
+				&:first-of-type{
+					margin:0;
+				}
+				&:last-of-type{
+					margin-top:15px;
+					padding-top:17px;
+					border-top:1px dashed map-get($COL_Line_01, "bg_light");
+					span{
+						color:map-get($COL_Base_04 , "bg_light");
+					}
+				}
+				span{
+					color:map-get($COL_Base_02 , "bg_light");
+					@include Mix_Font('Txt-R', 12, 19);
+					em{
+						@include Mix_Font('Txt-R', 14, 22);
+						vertical-align:middle;
+					}
+				}
+			}
+			.info{
+				margin-top:15px;
+				color:map-get($COL_Base_02 , "bg_light");
+				@include Mix_Font('Txt-R', 11, 18);
+			}
+		}
+		&+.notice_03{
+			border-top:solid 1px map-get($COL_Line_01, "bg_light");
+		}
+	}
+	.mileage_info{
+		margin:20px 0;
+		dt{
+			color:map-get($COL_Base_04 , "bg_light");
+			@include Mix_Font('Txt-M', 15, 24);
+			&:not(:first-of-type){
+				margin-top:25px;
+			}
+		}
+		dd{
+			display:flex;
+			justify-content:space-between;
+			margin-top:10px;
+			color:map-get($COL_Base_02 , "bg_light");
+			@include Mix_Font('Txt-R', 13, 21);
+			span:last-of-type{
+				color:map-get($COL_Base_04 , "bg_light");
+			}
+		}
+		&+.notice_03{
+			border-top:solid 1px map-get($COL_Box_02 , "bg_light");
+		}
+	}
+	.cont_institute{
+		margin-top:20px;
+		p{
+			color:map-get($COL_Base_02 , "bg_light");
+			@include Mix_Font('Txt-R', 12, 19);
+			&.desc{
+				color:map-get($COL_Base_04 , "bg_light");
+				@include Mix_Font('Txt-R', 13, 21);
+			}
+			&:not(:first-of-type){
+				margin-top:25px;
+			}
+		}
+		span{
+			display:block;
+			margin-top:25px;
+			color:map-get($COL_Base_02 , "bg_light");
+			@include Mix_Font('Txt-M', 12, 19);
+			text-align:center;
+		}
+	}
+}
+// FO-PD-MS0004 신차가격대비
+.detail_contrast{
+	.pdp_head{
+		padding-bottom:35px;
+	}
+	.detail_cont{
+		background:$COL_White;
+		.progressBar02{
+			display:block;
+			width:160px;
+			height:160px;
+			margin:0 auto;
+		}
+	}
+	.detail_card{
+		margin:45px 15px 0;
+		padding:25px 20px 27px;
+		//border-radius:6px;
+		background:map-get($COL_Box_01, "bg_light");
+		dt{
+			padding-bottom:15px;
+			border-bottom:1px solid map-get($COL_Line_01, "bg_light");
+			color:map-get($COL_Base_04 , "bg_light");
+			@include Mix_Font('Head-R', 15, 20);
+		}
+		ul{
+			padding-top:23px;
+			li{
+				display:flex;
+				justify-content:space-between;
+				margin-top:18px;
+				&:first-of-type{
+					margin:0;
+				}
+				.title{
+					color:map-get($COL_Base_04 , "bg_light");
+					@include Mix_Font('Txt-R', 14, 22);
+				}
+				.text{
+					@include Mix_Font('Txt-R', 14, 22);
+					text-align:right;
+					i{
+						@include Mix_Font('Txt-R', 16, 25);
+						vertical-align:middle;
+					}
+					.percent{
+						display:block;
+						color:map-get($COL_Base_02 , "bg_light");
+					}
+				}
+			}
+		}
+	}
+	.notice_03{
+		padding:20px 21px 60px;
+	}
+}
+
+/*PDP 팝업 공통 */
+/*팝업 헤더*/
+.pdp_head{
+	padding:30px 21px;
+	.txt{
+		display:block;
+		&:first-child{
+			@include Mix_Font('Head-R', 16, 21);
+		}
+		&:nth-child(2){
+			margin-top:10px;
+			color:map-get($COL_Base_04 , "bg_light");
+			@include Mix_Font('Head-L', 24, 32);
+		}
+		em{
+			position:relative;
+			@include Mix_Font_Head_R;
+			&.under{
+				display:inline-block;
+				margin-bottom:10px;
+				&::after{
+					content:'';
+					display:inline-block;
+					position:absolute;
+					left:0;
+					bottom:0;
+					width:100%;
+					height:3px;
+					background:map-get($COL_Highlight, "bg_light");
+				}
+			}
+		}
+	}
+	.date{
+		display:block;
+		margin-top:20px;
+		color:map-get($COL_Base_01 , "bg_light");
+		@include Mix_Font('Txt-R', 12, 19);
+	}
+}
+.pdp_head2{
+	padding:20px 15px 30px;
+	text-align:center;
+	.txt{
+		color:$COL_Black;
+		@include Mix_Font('Head-R', 16, 21);
+	}
+	.txt2{
+		margin-top:10px;
+		color:map-get($COL_Base_04 , "bg_light");
+		@include Mix_Font('Txt-M', 18, 28);
+	}
+	.date{
+		margin-top:5px;
+		color:map-get($COL_Base_01 , "bg_light");
+		@include Mix_Font('Txt-R', 12, 19);
+	}
+}
+.head_box{
+	width:calc(100% + 12px);
+	margin:15px -6px 0;
+	padding:25px 22px 25px 20px;
+	//border-radius:6px;
+	background:map-get($COL_Box_02 , "bg_light");
+	@include Mix_Clear;
+	ul{ 
+		float:left;
+		width:50%;
+		border-left:1px solid map-get($COL_Line_01, "bg_light");
+		&:first-child{
+			padding-right:34px;
+			border:none;
+		}
+		&:last-of-type{
+			padding-left:34px;
+		}
+		li{
+			display:flex;
+			justify-content:space-between;
+			align-items:center;
+			margin-top:15px;
+			color:map-get($COL_Base_04 , "bg_light");
+			@include Mix_Font('Head-R', 13, 18);
+			&:first-of-type{
+				margin:0;
+			}
+			> span:last-of-type{
+				@include Mix_Font('Txt-R', 14, 22);
+			}
+			.num{
+				color:$COL_Black;
+				@include Mix_Font_Head_M;
+			}
+		}
+	}
+}
+.head_box2{
+	display:flex;
+	position:relative;
+	margin-top:20px;
+	padding:0 6px;
+	background-color:map-get($COL_Box_01, "bg_light");
+	&:before{
+		content:'';
+		position:absolute;
+		top:50%;
+		left:50%;
+		width:1px;
+		height:18px;
+		background-color:map-get($COL_Line_01, "bg_light");
+		transform:translateY(-50%);
+	}
+	li{
+		flex:1;
+		@include Mix_Font('Txt-R', 14, 56);
+	}
+	em{
+		margin-left:2px;
+		color:map-get($COL_Highlight, "bg_light");
+		@include Mix_Font_Txt_M;
+	}
+}
+.pdp_car_info{
+	position:relative;
+	margin-top:20px;
+	.info_img{
+		overflow:visible;
+		position:relative;
+		height:100%;
+		.swiper-wrapper{
+			.swiper-slide{
+				background:$COL_White;
+				@include Mix_Font('Txt-R', 18, 24);
+				img{
+					width:100%;
+				}
+				.btn_car{
+					position:absolute;
+					top:0;
+					left:0;
+					[class^="car_info"]{
+						margin:0;
+					}
+				}
+				.car_detail{
+					position:absolute;
+					top:30px;
+					left:50%;
+					padding:6px 12px;
+					background-color:rgba(map-get($COL_Line_02 , "bg_dark"), 0.95);
+					box-shadow:0px 3px 6px rgba($COL_Black, 0.12);
+					//border-radius:32px;
+					color:$COL_White;
+					@include Mix_Font('Txt-R', 12, 19);
+					white-space:nowrap;
+					transform:translateX(-50%);
+				}
+			}
+		}
+		.swiper-pagination{
+			bottom:-20px !important;
+		}
+	}
+	.info_mark{
+		display:inline-block;
+		width:100%;
+		padding:56px 20px 0;
+		li{
+			float:left;
+			width:33.333%;
+			margin-bottom:15px;
+			color:map-get($COL_Base_04 , "bg_light");
+			@include Mix_Font('Head-R', 13, 21);
+			text-align:center;
+			em{
+				margin-left:2px;
+			}
+			>span{
+				display:inline-block;
+				width:80px;
+				text-align:left;
+			}
+		}
+	}
+	.info_txt{
+		margin-top:5px;
+		color:map-get($COL_Base_01 , "bg_light");
+		@include Mix_Font('Txt-R', 11, 17);
+		text-align:center;
+	}
+}
+/*성능상태 점검기록부 사고이력 단순수리 정보*/
+[class^="car_info"]{
+	content:'';
+	display:inline-block;
+	width:18px;
+	height:18px;
+	margin-right:4px;
+	border-radius:50%;
+	@include Mix_Size_0;
+	vertical-align:middle;
+}
+.car_info01{
+	@include Mix_PDP_Bg(-105.5px -85px);
+	background-color:#C57D59;
+}
+.car_info02{
+	@include Mix_PDP_Bg(-128.5px -85px);
+	background-color:#8E7F8B;
+}
+.car_info03{
+	@include Mix_PDP_Bg(-151.5px -85px);
+	background-color:#CE2D2D;
+}
+.car_info04{
+	@include Mix_PDP_Bg(-174.5px -85px);
+	background-color:#30A878;
+}
+.car_info05{
+	@include Mix_PDP_Bg(-197.5px -85px);
+	background-color:#CAA648;
+}
+.car_info06{
+	@include Mix_PDP_Bg(-220.5px -85px);
+	background-color:#1D8ABC;
+}
+.notice_tit{
+	margin-bottom:25px;
+	padding-bottom:25px;
+	border-bottom:solid 1px map-get($COL_Line_01, "bg_light");
+	span{
+		display:inline-block;
+		width:100%;
+	}
+	.info_txt{
+		color:map-get($COL_Base_04 , "bg_light");
+		@include Mix_Font('Txt-M', 13, 21);
+		span{
+			margin-top:6px;
+			&:first-of-type{
+				margin-top:0;
+			}
+		}
+	}
+	.info_txt2{
+		margin-top:10px;
+		color:map-get($COL_Base_02 , "bg_light");
+		@include Mix_Font('Txt-R', 12, 19);
+	}
+}

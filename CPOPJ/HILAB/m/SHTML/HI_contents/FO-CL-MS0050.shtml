@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>중고차 거래 꿀팁</title>
+	<!--#include file="/HILAB/m/SHTML/HI_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/hi_contents.css">
+</head>
+<body>
+<!--#include file="/HILAB/m/SHTML/HI_inc/common_skip.shtml"-->
+<!--#include file="/HILAB/m/SHTML/HI_inc/layout_loading.shtml"-->
+<!-- HI wrap -->
+<div id="HIwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="HIheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">꿀팁 시리즈</h1>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="HIcontents">
+		<!-- contents -->
+		<div class="hilab_tip series">
+			<div class="series_wrap">
+				<!--#include file="/HILAB/m/SHTML/HI_contents/include/list_series.shtml"-->
+			</div>
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HILAB/m/SHTML/HI_inc/layout_actionbar.shtml"-->
+	<!--#include file="/HILAB/m/SHTML/HI_inc/layout_footer.shtml"-->
+</div>
+<!-- //HI wrap -->s
+<script>
+	// 2023 0210 TOP / CHATBOT 추가
+	HI.top();
+</script>
+</body>
+</html>

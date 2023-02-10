@@ -1,0 +1,76 @@
+<div class="unit_detail">
+    <div class="experience_tit">
+        <button onclick="popupOpen('')">
+            <span class="txt_btn01">오감만족</span>
+            <span class="sub_txt">해당 차량을 오감으로 경험해보세요</span>
+        </button>
+    </div>
+    <div class="chart">
+        <ol>
+            <li>
+                <div id="progress_period" class="progressBar01" data-progress="0">
+                    <svg preserveAspectRatio="none" viewBox="0 0 68 68" class="progressCircle">
+                        <circle class="progressBg" />
+                        <circle class="progressLine" />
+                    </svg>
+                    <div class="text_box">
+                        <p class="text">2년  6개월</p>
+                    </div>
+                </div>
+                <span>운행기간</span>
+            </li>
+            <li>
+                <div id="progress_warranty" class="progressBar01" data-progress="60">
+                    <svg preserveAspectRatio="none" viewBox="0 0 68 68" class="progressCircle">
+                        <circle class="progressBg" />
+                        <circle class="progressLine" />
+                    </svg>
+                    <div class="text_box">
+                        <p class="text">1년 3개월</p>
+                    </div>
+                </div>
+                <span>제조사보증</span>
+            </li>
+            <li>
+                <div id="progress_compare" class="progressBar01" data-progress="23">
+                    <svg preserveAspectRatio="none" viewBox="0 0 68 68" class="progressCircle">
+                        <circle class="progressBg" />
+                        <circle class="progressLine" />
+                    </svg>
+                    <div class="text_box img01">
+                        <span class="progressCount"></span>
+                    </div>
+                </div>
+                <span>신차가격대비</span>
+            </li>
+            <li>
+                <div id="progress_history" class="progressBar01" data-progress="0">
+                    <svg preserveAspectRatio="none" viewBox="0 0 68 68" class="progressCircle">
+                        <circle class="progressBg" />
+                        <circle class="progressLine" />
+                    </svg>
+                    <div class="text_box img02"> <!-- 무사고시 img02 class 추가 -->
+                        <p class="text">무사고</p>
+                    </div>
+                </div>
+                <span>보험이력</span>
+            </li>
+            <li>
+                <div id="progress_bluelink" class="progressBar01" data-progress="80">
+                    <svg preserveAspectRatio="none" viewBox="0 0 68 68" class="progressCircle">
+                        <circle class="progressBg" />
+                        <circle class="progressLine" />
+                    </svg>
+                    <div class="text_box">
+                        <p class="text">3년 5개월</p>
+                    </div>
+                </div>
+                <span>블루링크</span>
+            </li>
+        </ol>
+    </div>
+    <div class="btn_area full_type">
+        <button type="button" class="btn_small color02">자세히보기</button>
+    </div>
+</div>
+<!-- //unit_detail -->

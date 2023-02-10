@@ -1,0 +1,46 @@
+<!-- FO-OR-Mpassguide - 오토웨이 비밀번호 재설정 방법 - Full -->
+<div class="CPOpop_full" id="FO-OR-MS-passguide">
+	<div class="p_head">
+		<h2 class="tit">오토웨이 비밀번호 재설정 방법</h2>
+	</div>
+	<div class="p_wrap p_staff">
+		<div class="password_guid no_btn">
+			<section>
+				<p class="sec_tit">임직원 차량구매 비밀번호 안내</p>
+				<div class="caution">
+					<ul>
+						<li>현대자동차 임직원 차량구매 계정은 오토웨이의 아이디와 비밀번호를 사용하고 있습니다.</li>
+						<li>오토웨이 비밀번호를 분실하셨거나, 3개월 이상 장기 미사용으로 계정이 잠긴 경우 임직원 차량구매에 로그인하실 수 없습니다.</li>
+						<li>이 경우 아래 방법을 통해 오토웨이 계정 문제를 해결하신 후 로그인하실 수 있습니다.</li>
+					</ul>
+				</div>
+			</section>
+			<section>
+				<p class="sec_tit">오토웨이 비밀번호 재설정 방법</p>
+				<div class="bg_box">
+					<ol class="number_step">
+						<li><span class="txt">사번과 오토웨이 비밀번호를 입력해 임직원 차량구매 로그인</span></li>
+						<li><span class="txt">임직원 차량구매 약관 확인 후 동의 여부 선택</span></li>
+						<li><span class="txt">본인 명의 휴대폰 또는 아이핀을 이용해 본인 인증</span></li>
+					</ol>
+				</div>
+			</section>
+			<section>
+				<p class="sec_tit">임직원 차량구매 최초 로그인 안내</p>
+				<p class="sec_sub_txt">
+					임직원 차량구매 최초 로그인 시, 약관 동의와 본인 인증 완료 후 임직원 차량구매를 이용하실 수 있습니다.
+				</p>
+				<div class="bg_box">
+					<ol class="number_step">
+						<li><span class="txt">타 부서원을 통해 오토웨이 접속</span></li>
+						<li><span class="txt">[전산사용권한] 메뉴 선택</span></li>
+						<li><span class="txt">비밀번호 분실신고서 작성</span></li>
+						<li><span class="txt">결재 진행</span></li>
+						<li><span class="txt">이메일 통보</span></li>
+					</ol>
+				</div>
+			</section>
+		</div>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

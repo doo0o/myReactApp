@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>주문 : 제네시스 CPO</title>
+	<!--#include file="/GHQ/SHTML/G_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/g_order.css">
+</head>
+<body>
+<!--#include file="/GHQ/SHTML/G_inc/common_skip.shtml"-->
+<!--#include file="/GHQ/SHTML/G_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--#include file="/GHQ/SHTML/G_inc/layout_header.shtml"-->
+		<!--  s: title area : SUB  -->
+		<!-- S : [CPO-1202 : 디자인검수2차] -->
+		<div class="h_sub">
+			<h3 class="tit">주문</h3>
+			<ul class="util">
+				<li><button type="button" class="ic_del">뒤로가기</button></li>
+			</ul>
+		</div>
+		<!-- E  : [CPO-1202 : 디자인검수2차] -->
+		<!--  e: title area : SUB  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<!-- [cpo_order] WRAP 결제하기 -->
+		<div class="cpo_order">
+			<!-- 01. 차량 정보 -->
+			<div class="unit_order">
+				<div class="unit_img"><img src="/GHQ/img/@thumb/plp_310x310_01.jpg" alt="상품명으로 뿌려주세요"></div>
+				<div class="unit_info">
+					<p class="name">
+						<span class="model">쏘나타 DN8 2.0 </span>
+						<span class="desc">가솔린 프리미엄 밀레니얼</span>
+					</p>
+					<span class="drive">
+						<em>21년형</em>
+						<em>50,000km</em>
+						<em>가솔린</em>
+					</span>
+					<span class="price"><em>3,820</em><i>만원</i></span>
+				</div>
+			</div>
+			<!-- //01. 차량 정보 -->
+			<!-- 02. 명의 정보 -->
+			<div class="order_info owner">
+				<div class="top">
+					<h4 class="tit">명의정보</h4>
+					<button type="button" class="btn_2icon02" data-popup="FO-OR-MS0006">변경</button><!-- 등록 후에 노출 -->
+				</div>
+				<!-- 등록 전 -->
+				<div class="entry">
+					<p class="txt">명의정보를 설정해주세요.</p>
+					<button type="button" class="btn_mid02" data-popup="FO-OR-MS0006">설정하기 </button>
+				</div>
+				<!-- //등록 전 -->
+				<!-- 등록 후 -->
+				<div class="list">
+					<!-- 명의자 정보 box (개인) -->
+					<div class="info_box">
+						<p class="flag">
+							<i class="t01">대표명의자</i><i class="t03">개인</i>
+							<span class="share">명의지분<em>50</em>%</span>
+						</p>
+						<dl class="info">
+							<dt>
+								<span class="tit">방기정</span>
+								<span class="no">010-3891-0001</span>
+							</dt>
+							<dd class="add">
+								[06179] 서울시 강남구 테헤란로 510
+							</dd>
+							<dd class="email">
+								bbangkijeong@gmail.com
+							</dd>
+							<dd class="benefit">
+								국가유공자, 다자녀 감면혜택 선택
+							</dd>
+						</dl>
+					</div>
+					<!-- //명의자 정보 box (개인) -->
+					<!-- 명의자 정보 box (개인사업자) -->
+					<div class="info_box">
+						<p class="flag">
+							<i class="t02">공동명의자1</i><i class="t03">개인사업자</i>
+							<span class="share">명의지분<em>30</em>%</span>
+						</p>
+						<dl class="info">
+							<dt>
+								<span class="tit">한은미</span>
+								<span class="no">010-3891-0001</span>
+							</dt>
+							<dd class="add">
+								[06179] 서울시 강남구 테헤란로 510
+							</dd>
+							<dd class="email">
+								youjeen@thejye.onmicrosoft.com
+							</dd>
+							<dd class="benefit">
+								국가유공자, 다자녀 감면혜택 선택
+							</dd>
+							<dd class="more"><!-- more 개인 사업자인 경우에만 -->
+								<button type="button" class="btn_txt05 pdp_tog" data-href="상세닫기">상세보기</button><!-- pdp_tog 개인 사업자인 경우에만 -->
+								<!-- 개인사업자 정보 -->
+								<dl class="company pdp_cont"><!-- pdp_cont 개인 사업자인 경우에만 -->
+									<dt>
+										<p class="tit">
+											<span>사업자등록번호</span>
+											<em>123-45-12345</em>
+										</p>
+									</dt>
+									<dd>
+										<!-- S : [CPO-1202 : 디자인검수2차] -->
+										<span class="tit">현대사업장</span>
+										<!-- E : [CPO-1202 : 디자인검수2차] -->
+									</dd>
+									<dd class="add">
+										[06179] 서울시 서초구 서초중앙로8길 129
+									</dd>
+									<dd class="email">
+										세금계산서 담당 전화번호: <em>02-123-4567</em>
+									</dd>
+									<dd class="email">
+										세금계산서 담당 이메일 : <em>email@hyundai-autoever.com</em>
+									</dd>
+								</dl>
+								<!-- //개인사업자 정보 -->
+							</dd>
+						</dl>
+					</div>
+					<!-- //명의자 정보 box (개인사업자) -->
+					<!-- 명의자 정보 box (법인) -->
+					<div class="info_box">
+						<p class="flag">
+							<i class="t02">공동명의자2</i><i class="t03">법인</i>
+							<span class="share">명의지분<em>30</em>%</span>
+						</p>
+						<dl class="info">
+							<dt>
+								<span class="tit">㈜현대상사</span>
+								<span class="no">010-3891-0001</span>
+							</dt>
+							<dd class="add">
+								[06179] 서울시 강남구 테헤란로 510
+							</dd>
+							<dd class="email">
+								youjeen@thejye.onmicrosoft.com
+							</dd>
+							<dd>
+								<!-- 법인 정보 -->
+								<dl class="company">
+									<dt>
+										<p class="tit">
+											<span>법인등록번호</span>
+											<em>110111-1234567</em>
+										</p>
+										<p class="tit">
+											<span>사업자등록번호</span>
+											<em>123-45-12345</em>
+										</p>
+									</dt>
+									<dd class="email">
+										세금계산서 담당 전화번호: <em>02-123-4567</em>
+									</dd>
+									<dd class="email">
+										세금계산서 담당 이메일 : <em>email@hyundai-autoever.com</em>
+									</dd>
+								</dl>
+								<!-- //법인 정보 -->
+							</dd>
+						</dl>
+					</div>
+					<!-- //명의자 정보 box (법인) -->
+				</div>
+				<!-- //등록 후 -->
+			</div>
+			<!-- //02. 명의 정보 -->
+			<!-- 03. 배송 정보 -->
+			<div class="order_info delivery">
+				<div class="top">
+					<h4 class="tit">배송정보</h4>
+					<button type="button" class="btn_2icon02" data-popup="FO-OR-MS0007">변경</button><!-- 등록 후에 노출 -->
+				</div>
+				<!-- 등록 전 -->
+				<div class="entry">
+					<p class="txt">배송정보를 설정해주세요.</p>
+					<button type="button" class="btn_mid02" data-popup="FO-OR-MS0007">설정하기</button>
+				</div>
+				<!-- //등록 전 -->
+				<!-- 등록 후 -->
+				<div class="list">
+					<!-- 배송정보 box (홈서비스) 
+					<div class="info_box">
+						<p class="flag">
+							<i class="t03">홈서비스</i>
+						</p>
+						<dl class="info">
+							<dt>
+								<span class="tit">김현대</span>
+								<span class="no">010-3891-0001</span>
+							</dt>
+							<dd class="add">
+								[06179] 서울시 강남구 테헤란로 510 패스트파이브1호점 주차장
+							</dd>
+							<dd class="message">
+								<span class="share">희망배송일 : 2021.10.15</span>
+								배송메시지 : 도착하기 30분 전에 전화 주셔야 주차 할 수 있습니다.
+							</dd>
+						</dl>
+					</div>
+					<!-- //배송정보 box (홈서비스) -->
+					<!-- 배송정보 box (픽업서비스) -->
+					<div class="info_box">
+						<p class="flag">
+							<i class="t03">픽업서비스</i>
+						</p>
+						<dl class="info">
+							<dt>
+								<span class="tit">수원도이치센터</span>
+								<span class="no">02-1234-5678</span>
+							</dt>
+							<dd class="add">
+								[06179] 경기도 수원시 510
+							</dd>
+							<dd class="message">
+								<span class="share">방문희망일 : 2021.10.15</span>
+								방문메시지 : 차량입고 시 연락 부탁드립니다.
+							</dd>
+						</dl>
+					</div>
+					<!-- //배송정보 box (픽업서비스) -->
+				</div>
+				<!-- //등록 후 -->
+			</div>
+			<!-- //03. 배송 정보 -->
+			
+			<!-- S : [CPO-1202 : 디자인검수2차] -->
+			<div class="order_box01 promotion">
+				<div class="top">
+					<h4 class="tit">제네시스 인증중고차 프로모션</h4>
+				</div>
+				<div class="inner">
+					<ul class="form_type02">
+						<li>
+							<!-- [수정-SELECT] 2022-03-25 --><!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+							<button type="button" class="btn_sel05 jQ_Select" id="SelectPromotion" data-id="SelectPromotion03" data-popup="Select-Promotion-Layer">현대차 가족사랑 할인  /  11% (1,500,000원)</button>
+							<!-- Layer -->
+							<div class="CPOpop_bottom select" id="Select-Promotion-Layer">
+								<div class="p_head">
+									<h5 class="tit">선택</h5>
+								</div>
+								<div class="p_wrap">
+									<!-- list -->
+									<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+										<li><input type="radio" class="chk_type09" name="SelectPromotion_Name" id="SelectPromotion01"><label for="SelectPromotion01">현대차 가족사랑 할인  /  5% (500,000원)</label></li>
+										<li><input type="radio" class="chk_type09" name="SelectPromotion_Name" id="SelectPromotion02"><label for="SelectPromotion02">현대차 가족사랑 할인  /  10% (1,000,000원)</label></li>
+										<li><input type="radio" class="chk_type09" name="SelectPromotion_Name" id="SelectPromotion03"><label for="SelectPromotion03">현대차 가족사랑 할인  /  11% (1,500,000원)</label></li>
+									</ol>
+									<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectPromotion 변경 내용 적용  -->
+										<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectPromotion">적용하기</button>
+									</div>
+									<!-- //list -->
+								</div>
+								<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+							</div>
+							<!-- [수정-SELECT] 2022-03-25 -->
+						</li>
+					</ul>
+
+					<div class="promotion_swiper swiperType01" data-swiper-space="15">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<img src="/GHQ/img//@thumb/my_slide.png" alt="" />
+							</li>
+							<li class="swiper-slide">     
+								<img src="/GHQ/img//@thumb/my_slide.png" alt="" />
+							</li>
+							<li class="swiper-slide">
+								<img src="/GHQ/img//@thumb/my_slide.png" alt="" />
+							</li>
+						</ul>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 04. 결제예정금액 -->
+			<div class="order_box01 price">
+				<div class="top">
+					<h4 class="tit">결제 예정금액</h4>
+					<button type="button" class="btn_show01 on" id="orderBoxPrice01" data-href="닫아보기">펼쳐보기</button>
+				</div>
+				<div class="inner">
+					<dl class="depth01">
+						<dt>차량가격</dt>
+						<dd><em>38,200,000</em>원</dd>
+						<dt>이전등록비용</dt>
+						<dd><em>38,200,000</em>원</dd>
+					</dl>
+					<dl class="depth02">
+						<dt>등록세</dt>
+						<dd><em>34,000</em>원</dd>
+						<dt>취득세</dt>
+						<dd><em>15,000</em>원</dd>
+						<dt>공채매입비</dt>
+						<dd><em>34,000</em>원</dd>
+						<dt>증지대</dt>
+						<dd><em>15,000</em>원</dd>
+						<dt>인지대</dt>
+						<dd><em>15,000</em>원</dd>
+						<dt>이전대행수수료</dt>
+						<dd><em>15,000</em>원</dd>
+					</dl>
+					<dl class="depth01">
+						<dt>기타 부대비용</dt>
+						<dd><em>38,200,000</em>원</dd>
+					</dl>
+					<dl class="depth02">
+						<dt>배송비</dt>
+						<dd><em>34,000</em>원</dd>
+						<dt>임시자동차보험가입비용</dt>
+						<dd><em>15,000</em>원</dd>
+						<dt>기타 관리비용</dt>
+						<dd><em>34,000</em>원</dd>
+					</dl>
+					<dl class="depth01">
+						<dt>할인 프로모션</dt>
+						<dd class="sale_price"><em>-38,200,000</em>원</dd><!--[P] 할인금액인경우(파란글씨) sale_price 클래스 추가-->
+					</dl>
+					<dl class="depth03">
+						<dt>총 결제금액</dt>
+						<dd><em>41,600,000</em>원</dd>
+					</dl>
+				</div>
+			</div>
+			<!-- //04. 결제예정금액 -->
+			<!-- E : [CPO-1202 : 디자인검수2차] -->
+			<!-- 05. 주문약관 -->
+			<div class="order_box01 agree">
+				<div class="top">
+					<input type="checkbox" class="chk_type01" name="" id=""><label>주문약관 전체 내용에 동의합니다.</label>
+					<button type="button" class="btn_show01 on" data-href="닫아보기">펼쳐보기</button><!-- [CPO-1202 : 디자인검수2차] -->
+				</div>
+				<div class="inner">
+					<ol class="agree_list">
+						<li>
+							<input type="checkbox" class="chk_type01" name="" id=""><label>[필수] 약관1</label>
+							<button type="button" class="btn_show02" data-href="FO-ME-MS0002">약관 자세히 보기</button><!-- data-href 약관 layer ID -->
+						</li>
+						<li>
+							<input type="checkbox" class="chk_type01" name="" id=""><label>[필수] 약관2</label>
+							<button type="button" class="btn_show02" data-href="FO-ME-MS0002">약관 자세히 보기</button><!-- data-href 약관 layer ID -->
+						</li>
+						<li>
+							<input type="checkbox" class="chk_type01" name="" id=""><label>[필수] 약관3</label>
+							<button type="button" class="btn_show02" data-href="FO-ME-MS0002">약관 자세히 보기</button><!-- data-href 약관 layer ID -->
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!-- //05. 주문약관 -->
+			<!-- 06. fixed button -->
+			<div class="btn_sticky">
+				<button type="button" class="btn_big01" disabled>주문완료</button>
+			</div>
+			<!-- //06. fixed button -->
+		</div>
+		<!-- //[cpo_order] WRAP 결제하기 -->
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/GHQ/SHTML/G_inc/layout_footer.shtml"-->
+	<!--#include file="/GHQ/SHTML/@@G_order/include/FO-OR-MS0006.shtml"--><!-- 1.명의_명의정보 설정 -->
+	<!--#include file="/GHQ/SHTML/@@G_order/include/FO-OR-MS0033.shtml"--><!-- 1.이전등록비 감면신청 필요서류 -->
+	<!--#include file="/GHQ/SHTML/@@G_order/include/FO-OR-MS0007.shtml"--><!-- 2.배송정보_홈서비스 -->
+	<!--#include file="/GHQ/SHTML/@@G_order/include/FO-OR-MS0009.shtml"--><!-- 3.주소 조회 -->
+	<!--#include file="/GHQ/SHTML/@@G_order/include/FO-OR-MS0032.shtml"--><!-- 3.환불계좌 -->
+	<!--#include file="/GHQ/SHTML/G_login/include/FO-ME-MS0002.shtml"--><!-- 약관 -->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/GHQ/SHTML/G_inc/popup_include_all.shtml"-->
+<script>
+	//명의정보 설정하기, 변경 / 배송지정보 설정하기, 변경
+	$(".order_info .btn_mid02, .order_info .btn_2icon02").on("click",function(){
+		CPO.POPUP_open($(this));
+	});
+
+	// 1. 기타 부대비용 show, 2. 약관 내역 show, 
+	
+</script>
+</body>
+</html>

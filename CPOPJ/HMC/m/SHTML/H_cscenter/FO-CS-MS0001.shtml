@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>고객센터</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_cscenter.css">
+</head>
+<body>
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap" class="CPOcscenter">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_detail">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit align_c">고객센터</h1>
+			<div class="util">
+				<ul>
+					<li><a href="#" class="ic_cart">장바구니</a></li>
+				</ul>	
+			</div>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="cpo_cscenter">
+			<div class="kv_box">
+				<div class="text_box">
+					<p>현대CPO 고객센터 입니다.</p>
+					<p>무엇을 도와드릴까요?</p>
+				</div>
+				<img src="../../img/@thumb/kv_cscenter.jpg" alt="고객센터 키비쥬얼">
+			</div>
+			<div class="cont_box toggle">
+				<div class="top_area">
+					<p class="sec_tit">자주 묻는 질문 TOP5</p>
+					<span>2023.03.15 기준</span>
+				</div>
+				<div class="qa_list">
+					<ul>
+						<li class="qa_name">
+							<input type="radio" id="cs_qa01" name="qa" checked>
+							<label for="cs_qa01">
+								<p>내차사기</p>
+							</label>
+						</li>
+						<li class="qa_name">
+							<input type="radio" id="cs_qa02" name="qa">
+							<label for="cs_qa02">
+								<p>내차팔기</p>
+							</label>
+						</li>
+						<li class="qa_name">
+							<input type="radio" id="cs_qa03" name="qa">
+							<label for="cs_qa03">
+								<p>앱 오류문의</p>
+							</label>
+						</li>
+						<li class="qa_name">
+							<input type="radio" id="cs_qa04" name="qa">
+							<label for="cs_qa04">
+								<p>회원 & 멤버십</p>
+							</label>
+						</li>
+						<li class="qa_name">
+							<input type="radio" id="cs_qa05" name="qa">
+							<label for="cs_qa05">
+								<p>결제문의</p>
+							</label>
+						</li>
+						<li class="qa_name">
+							<input type="radio" id="cs_qa06" name="qa">
+							<label for="cs_qa06">
+								<p>경 공매</p>
+							</label>
+						</li>
+					</ul>											
+				</div>
+				<!-- 자주 묻는 질문 -->
+				<!--#include file="/HMC/m/SHTML/H_order/inc/order_faq.shtml"-->
+				<!-- // 자주 묻는 질문 -->
+				<div class="swiperType01 qa_banner" data-swiper-space="15"> <!--data-swiper-space 간격-->
+					<ul class="swiper-wrapper">
+						<li class="swiper-slide">
+							<a href="#a">
+								<img src="/HMC/m/img//@thumb/cs_banner01.jpg" alt="">
+								<div class="text_box">
+									<p>내차사기 구매가이드</p>
+									<p>1분만에 습득하기</p>
+								</div>
+							</a>
+						</li>
+						<li class="swiper-slide">     
+							<a href="#a">
+								<img src="/HMC/m/img//@thumb/cs_banner01.jpg" alt="">
+								<div class="text_box">
+									<p>내차사기 구매가이드</p>
+									<p>1분만에 습득하기</p>
+								</div>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#a">
+								<img src="/HMC/m/img//@thumb/cs_banner01.jpg" alt="">
+								<div class="text_box">
+									<p>내차사기 구매가이드</p>
+									<p>1분만에 습득하기</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div class="qa_my">
+				<p class="sec_tit">현대 CUV 전문 상담사에게 자세한<br>
+					문의를 하고 싶다면?</p>
+				<div class="btn_area">
+					<button type="button" class="btn_mid05 icon_write">1:1 문의 등록 하기</button>
+					<button type="button" class="btn_mid02 icon_read">나의 문의 내역 보기</button>
+				</div>
+			</div>				
+		</div>		               
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+
+	<!-- 2023 02 06 푸터 탭바 추가 -->
+	<!-- 푸터 -->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_footer.shtml"-->
+	<!-- 탭바 -->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_actionbar.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<script>
+	// $(document).ready(function(){
+	// 	var winH = $(window).innerHeight();
+	// 	var $user = $('.user_info');
+	// 	var $gif = $('.box_gif');
+	// 	var $chatbot = $('.chatbot_list');
+	// 	var $userOffset = $user.offset().top;
+	// 	var $height = $chatbot.find('.chat_item').eq(0).height();
+
+	// 	//팝업 호출 ------ 호출시 해당 탭에 해당하는 부분 trigger
+	// 	$(".btn_history, .btn_all").on("click",function(){
+	// 		var tab = $(this).data('tab');
+	// 		var layerTarget = $(`#${$(this).data('popup')}`);
+	// 		CPO.POPUP_open($(this));
+	// 		layerTarget.find('.product_history .cpo_tab01 li').eq(tab).find('a').trigger('click');
+	// 	});
+	// 	/* 구매내역 탭이동 */
+	// 	$('.box_tab button').on('click',function(e){
+	// 		var _this = $(this);
+	// 		var idx = _this.index();
+	// 		var tabConts = _this.parents('.box_tab').siblings('.tab_container');
+	// 		_this.addClass('active').siblings().removeClass('active')
+	// 		tabConts.find('.tab_conts').eq(idx).addClass('active').siblings().removeClass('active')
+	// 	})
+		
+
+	// 	//상단 화면 액션용 스크립트		
+	// 	//상단 gif 위치 설정용 디바이스 높이 설정.
+	// 	$('.search_wrap').css('height', `${winH - 50}px`);
+
+	// 	//처음 시작후 화면 높이가 잡혀있지 않아 셋타임으로 노출
+	// 	setTimeout(function(){$gif.css('opacity', 1)}, 10);
+
+	// 	function startEvent() {	
+	// 		$('.CPOcscenter').addClass('active');
+	// 		$chatbot.css('margin-top' , `-${$height + 10}px`)
+	// 		$('body').removeAttr('style');
+	// 	}
+
+	// 	setTimeout(startEvent, 1000);
+
+	// 	// chatlist 정지위치 계산
+	// 	//chatList offset.top값 - .user_info 높이값 - .user_info css top값
+	// 	// var chatListTop = Math.round( $chatbot.offset().top) - ($height + 15) - $user.outerHeight() - 110;
+		
+	// 	// $(window).on('scroll', function(e){
+	// 	// 	var scrTop = $(this).scrollTop();
+	// 	// 	if($userOffset < scrTop) {
+	// 	// 		$('.search_wrap').addClass('active')
+	// 	// 	} 
+	// 	// 	if(chatListTop < scrTop) {
+	// 	// 		$('.search_wrap').addClass('static')
+	// 	// 		$('.user_info').css('top', `${chatListTop + 60}px` )
+	// 	// 	} else {
+	// 	// 		$('.search_wrap').removeClass('static')
+	// 	// 		$('.user_info').css('top', `110px` )
+	// 	// 	}
+	// 	// })
+
+	// });
+	CPO.top();
+	CPO.toggle();
+</script>
+</body>
+</html>

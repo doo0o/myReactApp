@@ -1,0 +1,61 @@
+
+@import '../_common/g_function';
+@import '../_common/g_mixins';
+
+[class^="progressBar"]{
+	display:inline-block;
+	// position:relative;
+	// .text_box{
+	// 	display:flex;
+	// 	justify-content:center;
+	// 	align-items:center;
+	// 	flex-direction:column;
+	// 	position:absolute;
+	// 	top:50%;
+	// 	left:50%;
+	// 	width:100%;
+	// 	height:100%;
+	// 	color:$COL_gs03;
+	// 	@include fontH(14);
+	// 	text-align:center;
+	// 	transform:translate(-50%, -50%);
+	// }
+	//여기말고 개별적으로 가져가서 커스텀
+	&.progressBar02{
+		.text_box{
+			margin-top:1px;
+			.progressCount{
+				padding-left:10px;
+				// @include fontH(14);
+				em{
+					margin-left:1px;
+					// @include fontH(14);
+					vertical-align:2px;
+				}
+			}
+		}
+		.progressLine, .progressBg{
+			//border-radius:3px;
+			stroke-width:6;
+		}
+	}
+}
+.progressLine, .progressBg{
+	position:relative;
+	z-index:10;
+	fill:none;
+	stroke:color('COL_secondary2');
+	stroke-linecap:round;
+	stroke-dasharray:0;
+	stroke-dashoffset:0;
+}
+.progressBg{
+	z-index:0;
+	stroke:color('COL_gs06');
+	stroke-width:3;
+}
+.progressLine{
+	//border-radius:1px;
+	stroke-width:3;
+	stroke-linecap:round;
+}

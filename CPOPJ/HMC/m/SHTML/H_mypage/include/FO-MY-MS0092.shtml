@@ -1,0 +1,23 @@
+<!-- FO-MY-MS0092 : 마케팅 활용  및 광고 수신 동의(공통) - FULL -->
+<div class="CPOpop_modal" id="FO-MY-MS0092">
+	<div class="p_inner">
+		<div class="p_head"></div>
+		<div class="p_wrap">
+			<!-- member -->
+			<div class="join_list no_btn">
+				<div class="tit">
+					<h1>마케팅 활용 및 광고 수신 동의</h1>
+					<p class="txt">서비스와 관련된 신제품 소식, 이벤트 안내, 고객혜택 등 다양한 정보를 제공합니다.</p>
+				</div>				
+				<div class="agree">
+					<div class="join_agree">
+						<h2 class="tit">현대 & 제네시스 인증 중고차</h2>
+						<!--#include file="/HMC/m/SHTML/agree/agree_03.shtml"--><!-- bo등록되는 html -->
+					</div>
+				</div>
+			</div>
+			<!-- //member -->
+		</div>	
+		<button type="button" class="pop_close">닫기</button>
+	</div>
+</div>

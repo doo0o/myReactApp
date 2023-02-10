@@ -1,0 +1,49 @@
+<div class="popup_full" id="FO-PD-PS0005">
+	<div class="p_body">
+		<div class="p_inner s_mid">
+			<div class="p_head">
+				<h2 class="tit">인증 항목</h2>
+			</div>
+			<div class="p_wrap">
+				<div class="inner_view detail_insure">
+
+					<div class="pdp_head_wrap">
+						<p class="car_num">24더 3215는</p>
+						<p class="txt">
+							<em class="under">총 260개</em>의 항목에 대한 정밀 검사를 통과했습니다
+						</p>
+						<p class="date">진단일 : 2021. 08. 21</p>
+					</div>
+
+					<div class="tab" data-ref="detailInsure">
+						<ul class="list" role="tablist">
+							<li class="on">
+								<button type="button"
+									role="tab"
+									aria-selected="true"
+									aria-controls="detailInsureCont1"
+								>기본정보 및 점검항목</button></li>
+							<li><button type="button"
+									role="tab"
+									aria-selected="false"
+									aria-controls="detailInsureCont2"
+									onclick="detailInsureSlider()"
+								>상품화 미 진행 항목</button></li>
+						</ul>
+						<div id="detailInsureCont1" class="cont active">
+							<!--#include file="/HMC/p/SHTML/H_detail/include/FO-PD-PS0005_tab1.shtml"-->
+						</div>
+						<div id="detailInsureCont2" class="cont">
+							<!--#include file="/HMC/p/SHTML/H_detail/include/FO-PD-PS0005_tab2.shtml"-->
+						</div>
+					</div>
+					<script>
+						const detailInsure = new TabContents('detailInsure');
+					</script>
+
+				</div>
+			</div>
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

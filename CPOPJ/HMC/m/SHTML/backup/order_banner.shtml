@@ -1,0 +1,8 @@
+<!-- 09. 배너 -->
+<!-- <div class="order_banner">
+    <img src="/HMC/m/img/@thumb/mypage_alarm01.png" alt=""/>
+    <img src="/HMC/m/img/@thumb/mypage_alarm01.png" alt=""/>
+</div> -->
+<!-- 임시 통이미지 -->
+<img src="/HMC/m/img/@thumb/mypage_alarm02.png" alt="" style="max-width:100%;" />
+<!-- //09. 배너 -->

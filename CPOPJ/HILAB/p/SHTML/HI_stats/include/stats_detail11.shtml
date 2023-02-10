@@ -1,0 +1,433 @@
+<div class="stats_detail">
+	<div class="page_title noline">
+		<div class="title">인승별 거래량 많은 모델</div>
+		<div class="text">※ 2022년 10월 기준</div>
+		<button type="button" class="icon_share">공유하기</button>
+	</div>
+	<div class="cont_wrap modelType">
+		<div class="cont_stats">
+			<div class="inner">
+				<div class="chart_area06">
+					<img src="/HILAB/p/img/@thumb/img_stats_detail_chart08.png" alt="" style="display:block;width:100%;"><!-- 차트 넣을실 때 지워주세요! -->
+				</div>
+			</div>
+		</div>
+		<div class="cont_stats person">
+			<div class="select_area">
+				<span class="com_select hs02" data-ref="select"><!-- 20230202 h02 -> hs02 -->
+					<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownPerson" onclick="dropDown();">
+						3인승 이하
+					</button>
+					<span class="com_select_list" data-ref="dropDownList" id="dropDownPerson">
+						<span class="com_select_list_inner">
+							<label class="com_select_item"><input type="radio" name="dropDownPerson" checked=""><span>3인승 이하</span></label>
+							<label class="com_select_item"><input type="radio" name="dropDownPerson"><span>4~6인승</span></label>
+							<label class="com_select_item"><input type="radio" name="dropDownPerson"><span>5~8인승</span></label>
+							<label class="com_select_item"><input type="radio" name="dropDownPerson"><span>9인승 이상</span></label>
+						</span>
+					</span>
+				</span>
+			</div>
+			<div class="inner">
+				<div class="head_model_type">
+					<div class="cont_title">
+						<div class="tit02">
+							<em class="brand">현대</em>
+							<em class="model">아이오닉 하이브리드</em>
+							<em class="year">(20년~현재)</em>
+						</div>
+					</div>
+					<ul class="list">
+						<li>
+							<p class="tit">Ranking</p>
+							<div class="txt">
+								<span>1<em>위</em></span>
+							</div>
+						</li>
+						<li>
+							<p class="tit">Volume</p>
+							<div class="txt">
+								<span>23,456<em>건</em></span>
+							</div>
+						</li>
+						<li>
+							<p class="tit">Market price</p>
+							<div class="txt">
+								<span><a href="#">8,000~9,000</a><em>만원</em></span>
+							</div>
+						</li>
+					</ul>
+					<div class="img_area">
+						<div class="img">
+							<img src="/HILAB/p/img/@thumb/img_stats_detail04.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cont_list">
+			<ul class="list_model_type">
+				<li class="item">
+					<div class="text_area">
+						<p class="brand">현대</p>
+						<p class="model">그랜저 IG 그랜저 IG 그랜저 IG</p>
+						<p class="year">(20년~현재)</p>
+					</div>
+					<div class="list_img">
+						<ul class="list_ranking">
+							<li>
+								<p class="tit">Ranking</p>
+								<div class="txt"><span>2</span>위</div>
+							</li>
+							<li>
+								<p class="tit">Volume</p>
+								<div class="txt"><span>99,999</span>건</div>
+							</li>
+							<li>
+								<p class="tit">Market Price</p>
+								<div class="txt"><span><a href="#">99,000~99,000</a></span>만원</div>
+							</li>
+						</ul>
+						<div class="img">
+							<img src="/HILAB/p/img/@thumb/img_stats_detail05.png" alt="">
+						</div>
+					</div>
+				</li>
+				<li class="item">
+					<div class="text_area">
+						<p class="brand">현대</p>
+						<p class="model">싼타페 2.2 디젤</p>
+						<p class="year">(20년~현재)</p>
+					</div>
+					<div class="list_img">
+						<ul class="list_ranking">
+							<li>
+								<p class="tit">Ranking</p>
+								<div class="txt"><span>3</span>위</div>
+							</li>
+							<li>
+								<p class="tit">Volume</p>
+								<div class="txt"><span>9,559</span>건</div>
+							</li>
+							<li>
+								<p class="tit">Market Price</p>
+								<div class="txt"><span><a href="#">12,000~13,000</a></span>만원</div>
+							</li>
+						</ul>
+						<div class="img">
+							<img src="/HILAB/p/img/@thumb/img_stats_detail05.png" alt="">
+						</div>
+					</div>
+				</li>
+				<li class="item">
+					<div class="text_area">
+						<p class="brand">현대</p>
+						<p class="model">싼타페 2.2 디젤</p>
+						<p class="year">(20년~현재)</p>
+					</div>
+					<div class="list_img">
+						<ul class="list_ranking">
+							<li>
+								<p class="tit">Ranking</p>
+								<div class="txt"><span>4</span>위</div>
+							</li>
+							<li>
+								<p class="tit">Volume</p>
+								<div class="txt"><span>1,999</span>건</div>
+							</li>
+							<li>
+								<p class="tit">Market Price</p>
+								<div class="txt"><span><a href="#">12,000~13,000</a></span>만원</div>
+							</li>
+						</ul>
+						<div class="img">
+							<img src="/HILAB/p/img/@thumb/img_stats_detail05.png" alt="">
+						</div>
+					</div>
+				</li>
+				<li class="item">
+					<div class="text_area">
+						<p class="brand">현대</p>
+						<p class="model">아반떼</p>
+						<p class="year">(20년~현재)</p>
+					</div>
+					<div class="list_img">
+						<ul class="list_ranking">
+							<li>
+								<p class="tit">Ranking</p>
+								<div class="txt"><span>5</span>위</div>
+							</li>
+							<li>
+								<p class="tit">Volume</p>
+								<div class="txt"><span>1,999</span>건</div>
+							</li>
+							<li>
+								<p class="tit">Market Price</p>
+								<div class="txt"><span><a href="#">12,000~13,000</a></span>만원</div>
+							</li>
+						</ul>
+						<div class="img">
+							<img src="/HILAB/p/img/@thumb/img_stats_detail05.png" alt="">
+						</div>
+					</div>
+				</li>
+				<li class="item">
+					<div class="text_area">
+						<p class="brand">현대</p>
+						<p class="model">그랜저 IG</p>
+						<p class="year">(20년~현재)</p>
+					</div>
+					<div class="list_img">
+						<ul class="list_ranking">
+							<li>
+								<p class="tit">Ranking</p>
+								<div class="txt"><span>6</span>위</div>
+							</li>
+							<li>
+								<p class="tit">Volume</p>
+								<div class="txt"><span>1,999</span>건</div>
+							</li>
+							<li>
+								<p class="tit">Market Price</p>
+								<div class="txt"><span><a href="#">12,000~13,000</a></span>만원</div>
+							</li>
+						</ul>
+						<div class="img">
+							<img src="/HILAB/p/img/@thumb/img_stats_detail05.png" alt="">
+						</div>
+					</div>
+				</li>
+				<li class="item">
+					<div class="text_area">
+						<p class="brand">현대</p>
+						<p class="model">싼타페 2.2 디젤</p>
+						<p class="year">(20년~현재)</p>
+					</div>
+					<div class="list_img">
+						<ul class="list_ranking">
+							<li>
+								<p class="tit">Ranking</p>
+								<div class="txt"><span>7</span>위</div>
+							</li>
+							<li>
+								<p class="tit">Volume</p>
+								<div class="txt"><span>1,999</span>건</div>
+							</li>
+							<li>
+								<p class="tit">Market Price</p>
+								<div class="txt"><span><a href="#">12,000~13,000</a></span>만원</div>
+							</li>
+						</ul>
+						<div class="img">
+							<img src="/HILAB/p/img/@thumb/img_stats_detail05.png" alt="">
+						</div>
+					</div>
+				</li>
+				<li class="item">
+					<div class="text_area">
+						<p class="brand">현대</p>
+						<p class="model">싼타페 2.2 디젤</p>
+						<p class="year">(20년~현재)</p>
+					</div>
+					<div class="list_img">
+						<ul class="list_ranking">
+							<li>
+								<p class="tit">Ranking</p>
+								<div class="txt"><span>8</span>위</div>
+							</li>
+							<li>
+								<p class="tit">Volume</p>
+								<div class="txt"><span>1,999</span>건</div>
+							</li>
+							<li>
+								<p class="tit">Market Price</p>
+								<div class="txt"><span><a href="#">12,000~13,000</a></span>만원</div>
+							</li>
+						</ul>
+						<div class="img">
+							<img src="/HILAB/p/img/@thumb/img_stats_detail05.png" alt="">
+						</div>
+					</div>
+				</li>
+				<li class="item">
+					<div class="text_area">
+						<p class="brand">현대</p>
+						<p class="model">아반떼</p>
+						<p class="year">(20년~현재)</p>
+					</div>
+					<div class="list_img">
+						<ul class="list_ranking">
+							<li>
+								<p class="tit">Ranking</p>
+								<div class="txt"><span>9</span>위</div>
+							</li>
+							<li>
+								<p class="tit">Volume</p>
+								<div class="txt"><span>1,999</span>건</div>
+							</li>
+							<li>
+								<p class="tit">Market Price</p>
+								<div class="txt"><span><a href="#">12,000~13,000</a></span>만원</div>
+							</li>
+						</ul>
+						<div class="img">
+							<img src="/HILAB/p/img/@thumb/img_stats_detail05.png" alt="">
+						</div>
+					</div>
+				</li>
+				<li class="item">
+					<div class="text_area">
+						<p class="brand">현대</p>
+						<p class="model">그랜저 IG</p>
+						<p class="year">(20년~현재)</p>
+					</div>
+					<div class="list_img">
+						<ul class="list_ranking">
+							<li>
+								<p class="tit">Ranking</p>
+								<div class="txt"><span>10</span>위</div>
+							</li>
+							<li>
+								<p class="tit">Volume</p>
+								<div class="txt"><span>1,999</span>건</div>
+							</li>
+							<li>
+								<p class="tit">Market Price</p>
+								<div class="txt"><span><a href="#">12,000~13,000</a></span>만원</div>
+							</li>
+						</ul>
+						<div class="img">
+							<img src="/HILAB/p/img/@thumb/img_stats_detail05.png" alt="">
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="cont_stats">
+			<div class="table_excel">
+				<div class="excel_title">
+					<div class="title">최근 12개월 중고차 거래량<span>(단위 : 건)</span></div>
+					<button type="button" class="btn_download">엑셀 다운로드</button>
+				</div>
+				<div class="table_area">
+					<table>
+						<caption>바디타입별 거래량 많은 모델 12개월 중고차 거래량</caption>
+						<thead>
+							<tr>
+								<th>기간(년/월)</th>
+								<th>3인승 이하</th>
+								<th>4~5인승</th>
+								<th>6~8인승</th>
+								<th>9인승이상</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>22.08</td>
+								<td>3,910</td>
+								<td>3,910</td>
+								<td>4,136</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>22.07</td>
+								<td>3,910</td>
+								<td>3,910</td>
+								<td>4,136</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>22.06</td>
+								<td>3,910</td>
+								<td>3,910</td>
+								<td>4,136</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>22.05</td>
+								<td>3,910</td>
+								<td>3,910</td>
+								<td>4,136</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>22.04</td>
+								<td>3,910</td>
+								<td>3,910</td>
+								<td>4,136</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>22.03</td>
+								<td>3,910</td>
+								<td>3,910</td>
+								<td>4,136</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>22.02</td>
+								<td>3,910</td>
+								<td>3,910</td>
+								<td>4,136</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>22.01</td>
+								<td>3,910</td>
+								<td>3,910</td>
+								<td>4,136</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>21.12</td>
+								<td>3,910</td>
+								<td>3,910</td>
+								<td>4,136</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>21.11</td>
+								<td>3,910</td>
+								<td>3,910</td>
+								<td>4,136</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>21.10</td>
+								<td>3,910</td>
+								<td>3,910</td>
+								<td>4,136</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<td>21.09</td>
+								<td>3,910</td>
+								<td>3,910</td>
+								<td>4,136</td>
+								<td>23,357</td>
+							</tr>
+							<tr>
+								<th>전체건수</th>
+								<th>1,754,457</th>
+								<th>1,357,362</th>
+								<th>1,396,964</th>
+								<th>1,547,582</th>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="cont_stats">
+			<div class="stats_banner type02">
+				<div class="title_area">
+					<p class="tit">내가 관심있는 모델에 대한</p>
+					<p class="txt">시세와 트렌드를 확인하고 싶다면?</p>
+				</div>
+				<div class="btn_area">
+					<a href="#" type="button" class="btn_small color03">관심 모델 시세 조회 하기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

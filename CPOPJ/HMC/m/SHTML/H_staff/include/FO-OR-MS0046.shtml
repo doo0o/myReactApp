@@ -1,0 +1,156 @@
+<!-- FO-OR-MS0046 - 본인인증 - Full -->
+<div class="CPOpop_full" id="FO-OR-MS0046">
+	<div class="p_head">
+		<h2 class="tit">본인인증</h2>
+	</div>
+	<div class="p_wrap p_staff citation">
+		<div class="inner">
+			<p class="sec_sub_txt">
+				약관 동의 및 본인인증을 진행해 주세요.<br>
+				고객님의 본인 명의로 된 휴대전화번호를 입력하신 후, 인증번호 요청을 누르시면 문자메시지로 인증번호가 전송됩니다.
+			</p>
+			<section class="input_section">
+				<p class="sec_tit">본인인증</p>
+				<ul class="form_list01">
+					<li>
+						<div class="inbox_type01 disabled on">
+							<span class="tit">이름</span>
+							<input type="text" class="txt" title="이름 입력" value="김현대" disabled>
+							<button type="button" class="btn_delete">삭제</button>
+						</div>
+					</li>
+					<!-- 주민번호 인증 전 -->
+					<li>
+						<div class="inbox_type01 identity">
+							<span class="tit">주민등록번호</span>
+							<input type="tel" class="txt type_id01" maxlength="6" title="주민등록번호 앞자리 입력" placeholder="앞자리" name="" value=""><button class="btn_delete">삭제</button>
+							<input type="tel" class="txt type_id02" maxlength="7" title="주민등록번호 뒷자리 입력" placeholder="뒷자리" name="" value=""><button class="btn_delete">삭제</button>
+						</div>
+					</li>
+
+					<!-- 주민번호 인증 후 -->
+					<li>
+						<div class="inbox_type01 identity on">
+							<span class="tit">주민등록번호</span>
+							<input type="tel" class="txt type_id01" maxlength="6" title="주민등록번호 앞자리 입력" placeholder="앞자리" name="" value="111111" disabled><button class="btn_delete">삭제</button>
+							<input type="tel" class="txt type_id02" maxlength="7" title="주민등록번호 뒷자리 입력" placeholder="뒷자리" name="" value="1111111" disabled><button class="btn_delete">삭제</button>
+							<span class="validation ok">본인인증이 완료되었습니다.</span>
+						</div>
+					</li>
+
+					<!-- 주민번호 인증 에러 -->
+					<!-- <li>
+						<div class="inbox_type01 identity on">
+							<span class="tit">주민등록번호</span>
+							<input type="tel" class="txt type_id01" maxlength="6" title="주민등록번호 앞자리 입력" placeholder="앞자리" name="" value="111111" ><button class="btn_delete">삭제</button>
+							<input type="tel" class="txt type_id02" maxlength="7" title="주민등록번호 뒷자리 입력" placeholder="뒷자리" name="" value="1111111" ><button class="btn_delete">삭제</button>
+							<span class="validation error">주민번호 틀림(샘플 문구)</span>
+						</div>
+					</li> -->
+					<li>
+						<div class="slt_box">
+							<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+							<button type="button" class="sel_value jQ_Select" id="mCarrier" data-id="mCarrier_01" data-popup="M-Carrier01">통신사 선택</button>
+							<!-- Layer -->
+							<div class="CPOpop_bottom select" id="M-Carrier01">
+								<div class="p_head">
+									<p class="tit">통신사 선택</p>
+								</div>
+								<div class="p_wrap">
+									<!-- list -->
+									<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+										<li><input type="radio" class="chk_select" name="mCarrier_Name" id="mCarrier_01"><label for="mCarrier_01">LGU+</label></li>
+										<li><input type="radio" class="chk_select" name="mCarrier_Name" id="mCarrier_02"><label for="mCarrier_02">KT</label></li>
+										<li><input type="radio" class="chk_select" name="mCarrier_Name" id="mCarrier_03"><label for="mCarrier_03">SKT</label></li>
+										<li><input type="radio" class="chk_select" name="mCarrier_Name" id="mCarrier_04"><label for="mCarrier_04">LGU+ 알뜰폰</label></li>
+										<li><input type="radio" class="chk_select" name="mCarrier_Name" id="mCarrier_05"><label for="mCarrier_05">SKT 알뜰폰</label></li>
+										<li><input type="radio" class="chk_select" name="mCarrier_Name" id="mCarrier_06"><label for="mCarrier_06">KT 알뜰폰</label></li>
+									</ol>
+									<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectVer 변경 내용 적용  -->
+										<button type="button" class="btn_big01 jQ_Select_Save" data-id="mCarrier">적용하기</button>
+									</div>
+									<!-- //list -->
+								</div>
+								<button type="button" class="pop_close">닫기</button>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="inbox_type01 cert_input">
+							<span class="tit">휴대폰번호</span>
+							<input type="tel" class="txt type_number" title="휴대폰번호 입력" placeholder="'-'없이 숫자만 입력" name="" value="">
+							<button type="button" class="btn_delete">삭제</button>
+							<button class="btn_icon_mid01">인증번호 요청</button>
+						</div>
+					</li>
+					<li>
+						<div class="inbox_type01 cert">
+							<span class="tit">인증번호 6자리</span>
+							<input type="tel" class="txt type_number" title="인증번호 6자리 입력" placeholder="인증번호 6자리" name="" value="">
+							<button type="button" class="btn_delete">삭제</button>
+							<span class="timer">03:00</span>
+						</div>
+					</li>
+
+					<!-- 인증번호 틀림 -->
+					<li>
+						<div class="inbox_type01 cert on">
+							<span class="tit">인증번호 6자리</span>
+							<input type="tel" class="txt type_number" title="인증번호 6자리 입력" placeholder="인증번호 6자리" name="" value="124124">
+							<button type="button" class="btn_delete">삭제</button>
+							<span class="timer">03:00</span>
+						</div>
+					</li>
+				</ul>
+				<!-- 활성화 -->
+				<div class="btn_area">
+					<button type="button" class="btn_mid01">인증번호 확인</button>
+				</div>
+				<!-- 비활성화 -->
+				<div class="btn_area">
+					<button type="button" class="btn_mid01 disabled" disabled>인증번호 확인</button>
+				</div>
+				<div class="caution">
+					<ul>
+						<li>타인 명의 휴대전화는 본인 인증이 불가합니다.</li>
+						<li>화면을 닫지 마시고 문자메시지의 인증번호를 확인 후, 인증번호란에 입력해 주세요.</li>
+					</ul>
+				</div>
+			</section>
+			<section class="terms_section">
+				<div class="agree_wrap toggle">
+					<div class="on">
+						<div class="top">
+							<input type="checkbox" class="chk_type01 large" id="staffChk_all"><label for="staffChk_all">전체 약관에 동의합니다.</label>
+						</div>
+						<div class="inner">
+							<ul>
+								<li>
+									<input type="checkbox" name="staffChk" id="staffChk_01" class="chk_type01"><label for="staffChk_01">[필수] 약관1</label>
+									<button type="button" class="btn_show02" data-popup="FO-ME-MS0020">약관 자세히 보기</button>
+								</li>
+								<li>
+									<input type="checkbox" name="staffChk" id="staffChk_02" class="chk_type01"><label for="staffChk_02">[필수] 약관2</label>
+									<button type="button" class="btn_show02" data-popup="FO-ME-MS0020">약관 자세히 보기</button>
+								</li>
+								<li>
+									<input type="checkbox" name="staffChk" id="staffChk_03" class="chk_type01"><label for="staffChk_03">[필수] 약관3</label>
+									<button type="button" class="btn_show02" data-popup="FO-ME-MS0020">약관 자세히 보기</button>
+								</li>
+							</ul>
+						</div>
+						<button type="button" class="btn_show01 btnToggle" data-href="닫아보기">펼쳐보기</button>
+					</div>
+		
+				</div>
+			</section>
+		</div>
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">동의하고 이용하기</button>
+		</div>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+<script>
+	CPO.toggle();
+</script>

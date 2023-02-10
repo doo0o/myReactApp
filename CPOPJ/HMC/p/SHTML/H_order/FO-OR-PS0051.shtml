@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>계약 : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="/HMC/p/css/h_order.css">
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+	<!-- CPOcontents -->
+	<!-- CPOcontents -->
+	<div id="CPOcontents">
+		<div id="layoutWrap" class="order type_bg">
+			<div class="cont_top">
+				<ol class="list_step">
+					<li class="now"><h1>01. 계약</h1></li>
+					<li>02. 주문서 작성</li>
+					<li>03. 잔여금액결제</li>
+				</ol>
+			</div>
+			<!-- //cont_top -->
+
+			<!-- cont_wrap -->
+			<div class="container flex">
+				<div class="cont_wrap">
+					<section>
+						<div class="sec_tit m">기본정보</div>
+						<ul class="info_list">
+							<li>
+								<div class="tit">이름</div>
+								<div class="txt">김현대</div>
+							</li>
+							<li>
+								<div class="tit">이메일</div>
+								<div class="txt">abc@hyundai.com</div>
+							</li>
+							<li>
+								<div class="tit">휴대폰번호</div>
+								<div class="txt">01012345678</div>
+							</li>
+						</ul>
+						<!-- 법인계약 -->
+						<!-- <ul class="info_list">
+							<li>
+								<div class="tit">법인명</div>
+								<div class="txt">㈜현대자동차</div>
+							</li>
+							<li>
+								<div class="tit">사업자등록번호</div>
+								<div class="txt">123-45-67890</div>
+							</li>
+							<li>
+								<div class="tit">이름</div>
+								<div class="txt">김현대</div>
+							</li>
+							<li>
+								<div class="tit">이메일</div>
+								<div class="txt">abc@hyundai.com</div>
+							</li>
+							<li>
+								<div class="tit">휴대폰번호</div>
+								<div class="txt">01012345678</div>
+							</li>
+						</ul> -->
+						<!-- //법인계약 -->
+					</section>
+
+					<section>
+						<div class="sec_tit m">
+							계약금액
+							<span class="price">300,000<i>원</i></span>
+						</div>
+					</section>
+					
+					<section class="payment_sel">
+						<div class="sec_tit m">결제방법</div>
+						<ul class="form_area box_type">
+							<li><input type="radio" name="RadioChkPayment" id="RadioChkPayment_01" class="chk_type01 bold" checked onclick="radioChkPayment()"><label for="RadioChkPayment_01"><span class="txt icon_card">신용카드</span></label></li>
+							<li><input type="radio" name="RadioChkPayment" id="RadioChkPayment_02" class="chk_type01 bold" onclick="radioChkPayment()"><label for="RadioChkPayment_02"><span class="txt icon_bank">무통장 입금</span></label></li>
+						</ul>
+						<div class="bg_box" data-ref="RadioChkPayment">
+							<dl>
+								<dt>입금은행</dt>
+								<dd>
+									<div class="form_area">
+										<span class="com_select hs02" data-ref="select">
+											<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample" onclick="dropDown();">
+												입금은행을 선택해 주세요.
+											</button>
+											<!--#include file="/HMC/p/SHTML/H_inc/include/comp_bankSel.shtml"-->
+										</span>
+									</div>
+								</dd>
+							</dl>
+							<div class="caution">
+								<p>계약금액은 분할 입금이 불가능하며, 입금 금액이 다를 경우 정상 입금 처리가 불가능합니다.</p>
+							</div>
+						</div>
+					</section>
+
+					<section class="toggle terms">
+						<div class="cont">
+							<div class="head item">
+								<input type="checkbox" name="chk_comm" id="chk_terms01" class="chk_type01 bold">
+								<label for="chk_terms01">
+									<span class="txt">전체 약관에 동의합니다.</span><button type="button" class="btn_arr js_toggle">토글 버튼</button>
+								</label>
+							</div>
+							<div class="group">
+								<ul class="list">
+									<li>
+										<div class="item">
+											<input type="checkbox" name="chk_comm" id="chk_terms01_1" class="chk_type01">
+											<label for="chk_terms01_1">
+												<span class="txt">[필수] 약관1</span><button type="button" class="btn_arr">팝업 버튼</button>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="item">
+											<input type="checkbox" name="chk_comm" id="chk_terms01_1" class="chk_type01">
+											<label for="chk_terms01_1">
+												<span class="txt">[필수] 약관2</span><button type="button" class="btn_arr">팝업 버튼</button>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="item">
+											<input type="checkbox" name="chk_comm" id="chk_terms01_1" class="chk_type01">
+											<label for="chk_terms01_1">
+												<span class="txt">[필수] 약관3</span><button type="button" class="btn_arr">팝업 버튼</button>
+											</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="cont_right sticky">
+					<section>
+						<div class="sec_tit m">주문차량</div>
+						<div class="unit_type type02">
+							<div class="mid_area">
+								<div class="unit_img">
+									<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+								</div>
+								<div class="unit_info">
+									<div class="name">
+										<span class="model">그랜저 IG </span>
+										<span class="desc">가솔린 3.3 캘리그래피</span>
+									</div>
+									<div class="drive">
+										<span>20년 12월</span>
+										<span>50,000km</span>
+										<span>12가1234</span>
+									</div>
+									<div class="price">
+										<span class="num"><em>4,370</em><i>만원</i></span>
+									</div>
+								</div>
+							</div>
+							<div class="caution">
+								<p>부대비용이 포함되어 있지 않은 차량 가격입니다.</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="sec_tit m">
+							<span>계약금액</span>
+							<span class="price">300,000<i>원</i></span>
+						</div>
+					</section>
+					
+					<section>
+						<div class="btn_area full_type">
+							<button type="button" class="btn_big color01" disabled>계약금 계약하기</button>
+						</div>
+					</section>
+				</div>
+			</div>
+			<!-- //cont_wrap -->
+		</div>
+	</div>
+	<!-- //CPOcontents -->
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<script>
+	$(document).ready(function() {
+		toggle();
+	});
+	// 결제방법
+	function radioChkPayment() {
+		var chkRadio = event.target;
+		var inputWrap = document.querySelector("[data-ref='RadioChkPayment']");
+		var targetId = chkRadio.getAttribute("id");
+		if(targetId == "RadioChkPayment_02") {
+			inputWrap.style.display = "block";
+		} else {
+			inputWrap.style.display = null;
+		}
+	}
+</script>
+</html>

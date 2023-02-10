@@ -1,0 +1,42 @@
+<!-- FO-PL-MS0022 : 기본옵션 - Simple -->
+<div class="CPOpop_modal" id="FO-PL-MS0022">
+	<div class="p_head">
+		<h4 class="tit">기본 옵션</h4>
+	</div>
+	<div class="p_wrap">
+		<ol class="main_option">
+			<li>
+				<span class="tit">외관</span>
+				<span class="txt">
+					Full LED 헤드램프<br>
+					LED 방향지시등<br>
+					LED 주간전조등<br>
+					Full LED 리어 콤비 램프<br>
+					235/60R18 브리지스톤 타이어 & 휠<br>
+					이중 접합 차음 유리(앞면, 전체 도어)<br>
+					자외선 차단 유리(앞면, 뒷면, 전체 도어)<br>
+					아웃사이드 미러<br>
+					(로고 패턴 퍼들램프, 열선, 오토 언폴딩)<br>
+					루프랙<br>
+					듀얼 머플러
+				</span>
+			</li>
+			<li>
+				<span class="tit">내장</span>
+				<span class="txt">
+					8인치 TFT LCD 클러스터<br>
+					전자식 변속 다이얼(SBW)<br>
+					제네시스 통합 컨트롤러<br>
+					패들쉬프트<br>
+					하이패스 시스템<br>
+					프레임리스 룸미러(ECM)<br>
+					블랙 하이그로시 내장재<br>
+					터치타입 공조 패널<br>
+					앰비언트 무드램프<br>
+					앞좌석 LED 풋램프
+				</span>
+			</li>
+		</ol>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

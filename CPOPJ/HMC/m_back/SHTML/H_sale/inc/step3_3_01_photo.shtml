@@ -1,0 +1,73 @@
+<!-- STEP : 3-3-01 : 차량사진 등록 -->
+<!-- STEP3-3.차량 사진 등록 -->
+<div class="sale_photo">
+	<div class="top">
+		<h5 class="tit">외관과 계기판 사진은<br />꼭 등록해주세요!</h5>
+		<p class="btn">
+			<button type="button" class="btn_txt06 jQ_POP_open" data-popup="FO-TI-MS0034">사진 등록 시 주의사항</button><!-- jQ_POP_open 팝업 호출 class / data-popup 팝업 id 값 -->
+		</p>
+	</div>
+	<!-- (1). 필수 등록 사진 -->
+	<div class="innerbox_01">
+		<ol class="list">
+			<li>
+				<div class="addphoto_1"><!-- 파일이 있는 경우 calss on -->
+					<button type="button" class="btn_addphoto" data-popup="FO-TI-MS0033-01"><em>앞면</em></button><!-- data-popup 팝업 id 값 -->
+					<input type="file" id="CarPhotoNeed01" class="file_addphoto" data-file="CarePhoto01" />
+					<span id="CarePhoto01"></span>
+				</div>
+			</li>
+			<li>
+				<div class="addphoto_2 on"><!-- 파일이 있는 경우 calss on -->
+					<button type="button" class="btn_addphoto" data-popup="FO-TI-MS0033-02"><em>뒷면</em></button><!-- data-popup 팝업 id 값 -->
+					<input type="file" id="CarPhotoNeed02" class="file_addphoto" data-file="CarePhoto02" />
+					<span id="CarePhoto02"><img src="/HMC/img/@thumb/sample_car_01.jpg"><button class="btn_filedel">삭제버튼</button></span>
+				</div>
+			</li>
+			<li>
+				<div class="addphoto_3 on"><!-- 파일이 있는 경우 calss on -->
+					<button type="button" class="btn_addphoto" data-popup="FO-TI-MS0033-03"><em>좌측면</em></button><!-- data-popup 팝업 id 값 -->
+					<input type="file" id="CarPhotoNeed03" class="file_addphoto" data-file="CarePhoto03" />
+					<span id="CarePhoto03"><img src="/HMC/img/@thumb/sample_car_02.jpg" ><button class="btn_filedel">삭제버튼</button></span>
+				</div>
+			</li>
+			<li>
+				<div class="addphoto_4"><!-- 파일이 있는 경우 calss on -->
+					<button type="button" class="btn_addphoto" data-popup="FO-TI-MS0033-04"><em>우측면</em></button><!-- data-popup 팝업 id 값 -->
+					<input type="file" id="CarPhotoNeed04" class="file_addphoto" data-file="CarePhoto04" />
+					<span id="CarePhoto04"></span>
+				</div>
+			</li>
+			<li>
+				<div class="addphoto_5"><!-- 파일이 있는 경우 calss on -->
+					<button type="button" class="btn_addphoto" data-popup="FO-TI-MS0033-05"><em>시동 켜진 계기판</em></button><!-- data-popup 팝업 id 값 -->
+					<input type="file" id="CarPhotoNeed05" class="file_addphoto" data-file="CarePhoto05" />
+					<span id="CarePhoto05"></span>
+				</div>
+			</li>
+		</ol>
+	</div>
+	<!-- //(1). 필수 등록 사진 -->
+	<!-- (2). 추가 등록 사진 -->
+	<div class="innerbox_02">
+		<h6 class="tit">추가로 등록하고 싶은 사진이 있나요?</h6>
+		<p class="txt">최대 5장 등록 가능해요.</p>
+		<div class="addphoto_list">
+			<dl class="on">
+				<dt>
+					<input type="file" id="CarPhotoMore" class="file_morephoto" data-file="imgList01" data-item="5" accept="image/*" multiple /><!-- data-item 에 최대 등록 수량 -->
+					<label for="CarPhotoMore">
+						<span class="t01">사진 추가하기</span>
+						<span class="t02"><em id="imgList01no">0</em>/5</span>
+					</label>
+				</dt>
+				<dd>
+					<ol class="list" id="imgList01"></ol>
+				</dd>
+			</dl>
+		</div>
+	</div>
+	<!-- //(2). 추가 등록 사진 -->
+</div>
+<!-- //STEP3-3.차량 사진 등록 -->
+

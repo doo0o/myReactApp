@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>주문취소 : 제네시스 CUV</title>
+	<!--#include file="/GHQ/m/SHTML/G_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/g_order.css">
+</head>
+<body>
+<!--#include file="/GHQ/m/SHTML/G_inc/common_skip.shtml"-->
+<!--#include file="/GHQ/m/SHTML/G_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--  s: h_header : default  -->
+		<div class="h_header">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">주문취소</h3>
+		</div>
+		<!--  e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<!-- 주문취소 -->
+		<div class="order_cancel">
+			<!-- 00. 주문번호 -->
+			<div class="order_no">
+				<span class="tit">주문번호</span>
+				<span class="no02">20211112321564565421</span>
+			</div>
+			<!-- //00. 주문번호 -->
+			<!-- 01. 차량 정보 -->
+			<div class="unit_order">
+				<div class="unit_img"><img src="/HMC/img/@thumb/plp_310x310_01.jpg" alt="상품명으로 뿌려주세요"></div>
+				<div class="unit_info">
+					<p class="name">
+						<span class="model">쏘나타 DN8 2.0 </span>
+						<span class="desc">가솔린 프리미엄 밀레니얼</span>
+					</p>
+					<span class="drive">
+						<em>21년형</em>
+						<em>50,000km</em>
+						<em>가솔린</em>
+					</span>
+					<span class="price"><em>3,820</em><i>만원</i></span>
+				</div>
+			</div>
+			<!-- //01. 차량 정보 -->
+			<!-- 02. 취소사유 -->
+			<ol class="form_type02">
+				<li>
+					<!-- [수정-SELECT] 2022-03-25 --><!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+					<button type="button" class="btn_sel01 jQ_Select" id="SelectCancel" data-id="" data-popup="Select-Cancel-Layer">취소 사유</button>
+					<!-- Layer -->
+					<div class="CPOpop_bottom select" id="Select-Cancel-Layer">
+						<div class="p_head">
+							<h5 class="tit">취소 사유를 선택해주세요.</h5>
+						</div>
+						<div class="p_wrap">
+							<!-- list -->
+							<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+								<li><input type="radio" class="chk_type09" name="SelectCancel_Name" id="SelectCancel01"><label for="SelectCancel01">차량의 가격이 타사 대비 높아요.</label></li>
+								<li><input type="radio" class="chk_type09" name="SelectCancel_Name" id="SelectCancel02"><label for="SelectCancel02">차량의 가격이 타사 대비 높아요.</label></li>
+								<li><input type="radio" class="chk_type09" name="SelectCancel_Name" id="SelectCancel03"><label for="SelectCancel03">차량의 가격이 타사 대비 높아요.</label></li>
+								<li><input type="radio" class="chk_type09" name="SelectCancel_Name" id="SelectCancel04"><label for="SelectCancel04">차량의 가격이 타사 대비 높아요.</label></li>
+								<li><input type="radio" class="chk_type09" name="SelectCancel_Name" id="SelectCancel05"><label for="SelectCancel05">차량의 가격이 타사 대비 높아요.</label></li>
+							</ol>
+							<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectCancel 변경 내용 적용  -->
+								<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectCancel">적용하기</button>
+							</div>
+							<!-- //list -->
+						</div>
+						<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+					</div>
+					<!-- [수정-SELECT] 2022-03-25 -->
+				</li>
+				<li>
+					<div class="review_textarea">
+						<span class="tit">상세 사유 입력</span>
+						<textarea class="area" placeholder="상세 사유 입력" rows="4" cols="21" role="textbox"></textarea>
+						<span class="txt_check"><em class="first">0</em> / <em class="last">1000</em>자</span>
+					</div>
+				</li>
+			</ol>
+			<!-- //02. 취소사유 -->
+			<!-- 03. fixed button -->
+			<div class="btn_sticky">
+				<button type="button" class="btn_big03">돌아가기</button>
+				<button type="button" class="btn_big01">주문 취소</button>
+			</div>
+			<!-- //03. fixed button -->
+		</div>
+		<!-- //주문취소 -->
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/GHQ/m/SHTML/G_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/GHQ/m/SHTML/G_inc/popup_include_all.shtml"-->
+</body>
+</html>

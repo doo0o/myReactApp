@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>한 눈에 확인하는 중고차 트렌드</title>
+	<!--#include file="/HILAB/m/SHTML/HI_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/hi_stats.css">
+</head>
+<body>
+<!--#include file="/HILAB/m/SHTML/HI_inc/common_skip.shtml"-->
+<!--#include file="/HILAB/m/SHTML/HI_inc/layout_loading.shtml"-->
+<!-- HI wrap -->
+<div id="HIwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="HIheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">타인의 선택</h1>
+			<div class="util">
+				<ul>
+					<li><button type="button" class="ic_download">공유하기</button></li>
+					<li><button type="button" class="ic_share">공유하기</button></li>
+				</ul>
+			</div>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="HIcontents">
+		<!-- contents -->
+		<div class="stats_detail trend">
+			<div class="stats_top">
+				<div class="title_area">
+					<p class="tit">가장 많이 거래된 모델</p>
+					<p class="txt">※ 2022년 10월 기준</p>
+				</div>
+			</div>
+			<div class="stats_cont">
+				<div class="group_cont">
+					<div class="box_content tab">
+						<div class="cont">
+							<div class="tab type02">
+								<ul class="tab_list">
+									<li class="on"><a href="javascript:void(0)">국산</a></li>
+									<li><a href="javascript:void(0)">수입</a></li>
+								</ul>
+								<div class="tab_cont">
+									<div class="tab_item on 1">
+										<div class="cont_tit">대세는 <span class="brand">현대</span>의<br><span class="model">디 올 뉴 스포티지 하이브리드</span><em class="year">(20년~현재)</em></div>
+										<div class="group_trend">
+											<div class="img">
+												<img src="/HILAB/m/img/@thumb/img_stats_other.png" alt="">
+											</div>
+											<div class="trend_bg">
+												<ul class="list_trend">
+													<li>
+														<div class="tit">Ranking</div>
+														<div class="txt"><span>1</span>위</div>
+													</li>
+													<li>
+														<div class="tit">Volume</div>
+														<div class="txt"><span>99,999</span>건</div>
+													</li>
+													<li>
+														<div class="tit">Market Price</div>
+														<div class="txt"><a href="javascript:;"><span><em class="start">10,000</em>~<em class="end">99,000</em></span></a>만원</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="visual_area">
+											<ul class="list_model">
+												<li>
+													<div class="tit"><em class="brand">현대</em><span>싼타페 2.2 디젤</span><em class="year">(20년~현재)</em></div>
+													<div class="img">
+														<img src="/HILAB/m/img/@thumb/img_stats_model02.png" alt="">
+													</div>
+													<ul class="list_info">
+														<li>
+															<div class="tit">Ranking</div>
+															<div class="txt"><span>2</span>위</div>
+														</li>
+														<li>
+															<div class="tit">Volume</div>
+															<div class="txt"><span>123,567</span>건</div>
+														</li>
+														<li>
+															<div class="tit">Maket Price</div>
+															<div class="txt"><a href="javascript:;"><span><em class="start">8,000</em>~<em class="end">9,000</em></span></a>만원</div>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<div class="tit"><em class="brand">현대</em><span>디 올 뉴 스포티지<br>하이브리드</span><em class="year">(20년~현재)</em></div>
+													<div class="img">
+														<img src="/HILAB/m/img/@thumb/img_stats_model02.png" alt="">
+													</div>
+													<ul class="list_info">
+														<li>
+															<div class="tit">Ranking</div>
+															<div class="txt"><span>3</span>위</div>
+														</li>
+														<li>
+															<div class="tit">Volume</div>
+															<div class="txt"><span>123,567</span>건</div>
+														</li>
+														<li>
+															<div class="tit">Maket Price</div>
+															<div class="txt"><a href="javascript:;"><span><em class="start">8,000</em>~<em class="end">9,000</em></span></a>만원</div>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<div class="tit"><em class="brand">현대</em><span>싼타페 2.2 디젤</span><em class="year">(20년~현재)</em></div>
+													<div class="img">
+														<img src="/HILAB/m/img/@thumb/img_stats_model02.png" alt="">
+													</div>
+													<ul class="list_info">
+														<li>
+															<div class="tit">Ranking</div>
+															<div class="txt"><span>4</span>위</div>
+														</li>
+														<li>
+															<div class="tit">Volume</div>
+															<div class="txt"><span>123,567</span>건</div>
+														</li>
+														<li>
+															<div class="tit">Maket Price</div>
+															<div class="txt"><a href="javascript:;"><span><em class="start">8,000</em>~<em class="end">9,000</em></span></a>만원</div>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<div class="tit"><em class="brand">현대</em><span>싼타페 2.2 디젤</span><em class="year">(20년~현재)</em></div>
+													<div class="img">
+														<img src="/HILAB/m/img/@thumb/img_stats_model02.png" alt="">
+													</div>
+													<ul class="list_info">
+														<li>
+															<div class="tit">Ranking</div>
+															<div class="txt"><span>5</span>위</div>
+														</li>
+														<li>
+															<div class="tit">Volume</div>
+															<div class="txt"><span>123,567</span>건</div>
+														</li>
+														<li>
+															<div class="tit">Maket Price</div>
+															<div class="txt"><a href="javascript:;"><span><em class="start">8,000</em>~<em class="end">9,000</em></span></a>만원</div>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<div class="tit"><em class="brand">현대</em><span>싼타페 2.2 디젤</span><em class="year">(20년~현재)</em></div>
+													<div class="img">
+														<img src="/HILAB/m/img/@thumb/img_stats_model02.png" alt="">
+													</div>
+													<ul class="list_info">
+														<li>
+															<div class="tit">Ranking</div>
+															<div class="txt"><span>6</span>위</div>
+														</li>
+														<li>
+															<div class="tit">Volume</div>
+															<div class="txt"><span>123,567</span>건</div>
+														</li>
+														<li>
+															<div class="tit">Maket Price</div>
+															<div class="txt"><a href="javascript:;"><span><em class="start">8,000</em>~<em class="end">9,000</em></span></a>만원</div>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<div class="tit"><em class="brand">현대</em><span>싼타페 2.2 디젤</span><em class="year">(20년~현재)</em></div>
+													<div class="img">
+														<img src="/HILAB/m/img/@thumb/img_stats_model02.png" alt="">
+													</div>
+													<ul class="list_info">
+														<li>
+															<div class="tit">Ranking</div>
+															<div class="txt"><span>7</span>위</div>
+														</li>
+														<li>
+															<div class="tit">Volume</div>
+															<div class="txt"><span>123,567</span>건</div>
+														</li>
+														<li>
+															<div class="tit">Maket Price</div>
+															<div class="txt"><a href="javascript:;"><span><em class="start">8,000</em>~<em class="end">9,000</em></span></a>만원</div>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<div class="tit"><em class="brand">현대</em><span>싼타페 2.2 디젤</span><em class="year">(20년~현재)</em></div>
+													<div class="img">
+														<img src="/HILAB/m/img/@thumb/img_stats_model02.png" alt="">
+													</div>
+													<ul class="list_info">
+														<li>
+															<div class="tit">Ranking</div>
+															<div class="txt"><span>8</span>위</div>
+														</li>
+														<li>
+															<div class="tit">Volume</div>
+															<div class="txt"><span>123,567</span>건</div>
+														</li>
+														<li>
+															<div class="tit">Maket Price</div>
+															<div class="txt"><a href="javascript:;"><span><em class="start">8,000</em>~<em class="end">9,000</em></span></a>만원</div>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<div class="tit"><em class="brand">현대</em><span>싼타페 2.2 디젤</span><em class="year">(20년~현재)</em></div>
+													<div class="img">
+														<img src="/HILAB/m/img/@thumb/img_stats_model02.png" alt="">
+													</div>
+													<ul class="list_info">
+														<li>
+															<div class="tit">Ranking</div>
+															<div class="txt"><span>9</span>위</div>
+														</li>
+														<li>
+															<div class="tit">Volume</div>
+															<div class="txt"><span>123,567</span>건</div>
+														</li>
+														<li>
+															<div class="tit">Maket Price</div>
+															<div class="txt"><a href="javascript:;"><span><em class="start">8,000</em>~<em class="end">9,000</em></span></a>만원</div>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<div class="tit"><em class="brand">현대</em><span>싼타페 2.2 디젤</span><em class="year">(20년~현재)</em></div>
+													<div class="img">
+														<img src="/HILAB/m/img/@thumb/img_stats_model02.png" alt="">
+													</div>
+													<ul class="list_info">
+														<li>
+															<div class="tit">Ranking</div>
+															<div class="txt"><span>10</span>위</div>
+														</li>
+														<li>
+															<div class="tit">Volume</div>
+															<div class="txt"><span>123,567</span>건</div>
+														</li>
+														<li>
+															<div class="tit">Maket Price</div>
+															<div class="txt"><a href="javascript:;"><span><em class="start">8,000</em>~<em class="end">9,000</em></span></a>만원</div>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="tab_item 2">
+										<div class="cont_tit">대세는 <span class="brand">포르쉐</span>의 <span class="model">카이엔</span><em class="year">(20년~현재)</em></div>
+										<div class="group_trend">
+											<div class="img">
+												<img src="/HILAB/m/img/@thumb/img_stats_other.png" alt="">
+											</div>
+											<ul class="list_trend">
+												<li>
+													<div class="tit">Ranking</div>
+													<div class="txt"><span>1</span>위</div>
+												</li>
+												<li>
+													<div class="tit">Volume</div>
+													<div class="txt"><span>3,567</span>건</div>
+												</li>
+												<li>
+													<div class="tit">Rate</div>
+													<div class="txt"><a href="javascript:;"></a><span><em class="start">2,076</em>~<em class="end">2,549</em></span>만원</div>
+												</li>
+											</ul>
+										</div>
+										<div class="visual_area">
+											<ul class="list_model">
+												<li>
+													<div class="tit"><em class="brand">현대</em><span>싼타페 2.2 디젤</span><em class="year">(20년~현재)</em></div>
+													<div class="img">
+														<img src="/HILAB/m/img/@thumb/img_stats_model02.png" alt="">
+													</div>
+													<ul class="list_info">
+														<li>
+															<div class="tit">Ranking</div>
+															<div class="txt"><span>2</span>위</div>
+														</li>
+														<li>
+															<div class="tit">Volume</div>
+															<div class="txt"><span>123,567</span>건</div>
+														</li>
+														<li>
+															<div class="tit">Maket Price</div>
+															<div class="txt"><a href="javascript:;"><span><em class="start">8,000</em>~<em class="end">9,000</em></span></a>만원</div>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<div class="tit"><em class="brand">현대</em><span>싼타페 2.2 디젤</span><em class="year">(20년~현재)</em></div>
+													<div class="img">
+														<img src="/HILAB/m/img/@thumb/img_stats_model02.png" alt="">
+													</div>
+													<ul class="list_info">
+														<li>
+															<div class="tit">Ranking</div>
+															<div class="txt"><span>3</span>위</div>
+														</li>
+														<li>
+															<div class="tit">Volume</div>
+															<div class="txt"><span>123,567</span>건</div>
+														</li>
+														<li>
+															<div class="tit">Maket Price</div>
+															<div class="txt"><a href="javascript:;"><span><em class="start">8,000</em>~<em class="end">9,000</em></span></a>만원</div>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<div class="tit"><em class="brand">현대</em><span>싼타페 2.2 디젤</span><em class="year">(20년~현재)</em></div>
+													<div class="img">
+														<img src="/HILAB/m/img/@thumb/img_stats_model02.png" alt="">
+													</div>
+													<ul class="list_info">
+														<li>
+															<div class="tit">Ranking</div>
+															<div class="txt"><span>4</span>위</div>
+														</li>
+														<li>
+															<div class="tit">Volume</div>
+															<div class="txt"><span>123,567</span>건</div>
+														</li>
+														<li>
+															<div class="tit">Maket Price</div>
+															<div class="txt"><a href="javascript:;"><span><em class="start">8,000</em>~<em class="end">9,000</em></span></a>만원</div>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<div class="tit"><em class="brand">현대</em><span>싼타페 2.2 디젤</span><em class="year">(20년~현재)</em></div>
+													<div class="img">
+														<img src="/HILAB/m/img/@thumb/img_stats_model02.png" alt="">
+													</div>
+													<ul class="list_info">
+														<li>
+															<div class="tit">Ranking</div>
+															<div class="txt"><span>5</span>위</div>
+														</li>
+														<li>
+															<div class="tit">Volume</div>
+															<div class="txt"><span>123,567</span>건</div>
+														</li>
+														<li>
+															<div class="tit">Maket Price</div>
+															<div class="txt"><a href="javascript:;"><span><em class="start">8,000</em>~<em class="end">9,000</em></span></a>만원</div>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<div class="tit"><em class="brand">현대</em><span>싼타페 2.2 디젤</span><em class="year">(20년~현재)</em></div>
+													<div class="img">
+														<img src="/HILAB/m/img/@thumb/img_stats_model02.png" alt="">
+													</div>
+													<ul class="list_info">
+														<li>
+															<div class="tit">Ranking</div>
+															<div class="txt"><span>6</span>위</div>
+														</li>
+														<li>
+															<div class="tit">Volume</div>
+															<div class="txt"><span>123,567</span>건</div>
+														</li>
+														<li>
+															<div class="tit">Maket Price</div>
+															<div class="txt"><a href="javascript:;"><span><em class="start">8,000</em>~<em class="end">9,000</em></span></a>만원</div>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<div class="tit"><em class="brand">현대</em><span>싼타페 2.2 디젤</span><em class="year">(20년~현재)</em></div>
+													<div class="img">
+														<img src="/HILAB/m/img/@thumb/img_stats_model02.png" alt="">
+													</div>
+													<ul class="list_info">
+														<li>
+															<div class="tit">Ranking</div>
+															<div class="txt"><span>7</span>위</div>
+														</li>
+														<li>
+															<div class="tit">Volume</div>
+															<div class="txt"><span>123,567</span>건</div>
+														</li>
+														<li>
+															<div class="tit">Maket Price</div>
+															<div class="txt"><a href="javascript:;"><span><em class="start">8,000</em>~<em class="end">9,000</em></span></a>만원</div>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<div class="tit"><em class="brand">현대</em><span>싼타페 2.2 디젤</span><em class="year">(20년~현재)</em></div>
+													<div class="img">
+														<img src="/HILAB/m/img/@thumb/img_stats_model02.png" alt="">
+													</div>
+													<ul class="list_info">
+														<li>
+															<div class="tit">Ranking</div>
+															<div class="txt"><span>8</span>위</div>
+														</li>
+														<li>
+															<div class="tit">Volume</div>
+															<div class="txt"><span>123,567</span>건</div>
+														</li>
+														<li>
+															<div class="tit">Maket Price</div>
+															<div class="txt"><a href="javascript:;"><span><em class="start">8,000</em>~<em class="end">9,000</em></span></a>만원</div>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<div class="tit"><em class="brand">현대</em><span>싼타페 2.2 디젤</span><em class="year">(20년~현재)</em></div>
+													<div class="img">
+														<img src="/HILAB/m/img/@thumb/img_stats_model02.png" alt="">
+													</div>
+													<ul class="list_info">
+														<li>
+															<div class="tit">Ranking</div>
+															<div class="txt"><span>9</span>위</div>
+														</li>
+														<li>
+															<div class="tit">Volume</div>
+															<div class="txt"><span>123,567</span>건</div>
+														</li>
+														<li>
+															<div class="tit">Maket Price</div>
+															<div class="txt"><a href="javascript:;"><span><em class="start">8,000</em>~<em class="end">9,000</em></span></a>만원</div>
+														</li>
+													</ul>
+												</li>
+												<li>
+													<div class="tit"><em class="brand">현대</em><span>싼타페 2.2 디젤</span><em class="year">(20년~현재)</em></div>
+													<div class="img">
+														<img src="/HILAB/m/img/@thumb/img_stats_model02.png" alt="">
+													</div>
+													<ul class="list_info">
+														<li>
+															<div class="tit">Ranking</div>
+															<div class="txt"><span>10</span>위</div>
+														</li>
+														<li>
+															<div class="tit">Volume</div>
+															<div class="txt"><span>123,567</span>건</div>
+														</li>
+														<li>
+															<div class="tit">Maket Price</div>
+															<div class="txt"><a href="javascript:;"><span><em class="start">8,000</em>~<em class="end">9,000</em></span></a>만원</div>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="stats_bottom">
+				<div class="stats_banner">
+					<div class="tit">내가 관심있는 모델에 대한</div>
+					<div class="txt">시세와 트렌드를 확인하고 싶다면?</div>
+					<div class="btn_area">
+						<button type="button" class="btn_small01">관심 모델 시세 조회 하기</button>
+					</div>
+				</div>
+				<div class="stats_file">
+					<div class="tit">최근 12개월간<span><em>가장 많이 거래된</em></span>모델 순위를 확인하고 싶다면?</div>
+					<div class="txt">PC로 접속해 거래추이 표를 확인하거나<br>엑셀 파일을 다운로드해보세요.</div>
+					<div class="btn_area">
+						<button type="button" class="btn_icon_mid01 download">파일 다운로드</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HILAB/m/SHTML/HI_inc/layout_footer.shtml"-->
+	
+	<!-- 2023 0210 탭바 추가 -->
+	<!--#include file="/HILAB/m/SHTML/HI_inc/layout_actionbar.shtml"-->
+</div>
+
+<!-- //HI wrap -->
+<script>
+	// 2023 0210 TOP / CHATBOT 추가
+	HI.top();
+	window.addEventListener('load', function(){
+		const startCar = document.querySelectorAll('.group_trend');
+		startCar.forEach((car) => {
+			car.classList.add('on');
+		});
+	});
+	const btnTab = document.querySelectorAll('.tab_list li');
+	const tabItem = document.querySelectorAll('.tab_item');
+	btnTab.forEach((tab, idx) => {
+		tab.addEventListener('click', function(){
+			btnTab.forEach((btn) => {
+				btn.classList.remove('on');
+			});
+			tabItem.forEach((item) => {
+				item.classList.remove('on');
+			});
+			btnTab[idx].classList.add('on');
+			tabItem[idx].classList.add('on');
+		});
+	});
+	const slideTrend = new Swiper(".slide_trend", {
+		slidesPerView:"auto",
+		spaceBetween:10,
+	});
+</script>
+</body>
+</html>

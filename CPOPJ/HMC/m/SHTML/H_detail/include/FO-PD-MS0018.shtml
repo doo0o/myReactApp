@@ -1,0 +1,51 @@
+<div class="CPOpop_bottom layer_pdp_buy" id="FO-PD-MS0018">
+	<div class="p_wrap">
+		<div class="pdp_buy">
+			<ul class="price_list">
+				<li>
+					<span class="tit">총 차량 구매 금액</span>
+					<span class="price"><em>29,060,000</em>원</span>
+					<div class="depth_list">
+						<ul class="depth_02">
+							<li>
+								<span class="tit">차량가격</span>
+								<span class="price"><em>28,560,000</em>원</span>
+							</li>
+							<li>
+								<span class="tit">탁송료</span>
+								<span class="price"><em>200,000</em>원</span>
+							</li>
+							<li>
+								<span class="tit">관리비</span>
+								<span class="price"><em>300,000</em>원</span>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<span class="tit">이전등록비용 <span>(현금 결제)</span></span>
+					<span class="price"><em>1,500,000</em>원</span>
+				</li>
+				<li>
+					<span class="tit">이전등록대행 수수료</span>
+					<span class="price"><em>30,000</em>원</span>
+				</li>
+			</ul>
+			<dl class="price_total">
+				<dt>총 견적 합계</dt>
+				<dd><em>30,560,000</em>원</dd>
+			</dl>
+			<div class="caution">
+				<ul>
+					<li>탁송료는 서울기준 입니다. 주문 시 차량 탁송정보 변경에 따라 금액이 일부 변경될 수 있습니다.</li>
+					<li>이전등록비용은 현금 결제만 가능하고, 지역별 상이할 수 있으며, 추후 일부 금액이 환급될 수 있습니다.</li>
+				</ul>
+			</div>
+		</div>
+		<div class="btn_sticky">
+			<a href="CPO_OR_M0001.shtml" class="btn_big02">장바구니 담기</a>
+			<a href="/HMC/m/SHTML/H_order/FO-OR-MS0005.shtml" class="btn_big01">바로 구매</a>
+		</div>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

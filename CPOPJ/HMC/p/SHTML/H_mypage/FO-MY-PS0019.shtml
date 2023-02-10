@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>입고알림 : 현대 CUV</title>
+	<!--#include file="/HMC/p/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_mypage.css"> <!-- 해당 CSS -->
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+    <div id="CPOcontents">
+        <div id="layoutWrap" class="my">
+            <!-- container -->
+            <div class="container flex">
+                <!--#include file="/HMC/p/SHTML/H_inc/layout_left.shtml"-->
+                <!-- cont_wrap --> 
+                <div class="cont_wrap alram" data-id="myAlram">
+                    <h1 class="page_tit">입고알림 신청내역</h1>
+					<div class="total_result">
+						<div class="all">전체 <em>10</em>개</div>
+						<div class="caution">
+							<p>기간이 만료된 알림은 1개월 후 목록에서 자동으로 삭제됩니다</p>
+						</div>
+					</div>
+					<!-- 노데이터 -->
+					<div class="no_data bell">
+						<p class="tit">입고알림신청 내역이 없습니다.</p>
+						<p class="txt">입고알림을 신청하고 원하시는 조건의 차량을 알아보세요.</p>
+						<div class="btn_area col_type">
+							<a href="#" class="btn_small color02">내차사기 홈으로 가기</a>
+							<a href="#" class="btn_small color01">입고알림 신청</a>
+						</div>
+					</div>
+					<!-- // 노데이터 -->
+					<ul class="my_list">
+						<li>
+							<div class="top_area">
+								<p class="date">2022.05.11까지 알림</p>
+								<button type="button" class="txt_btn03 s_mid c_point01">알림연장</button>								
+							</div>
+							<!-- item -->
+							<div class="unit_type type01">
+								<!-- unit -->
+								<div class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/nobg_300x180.png" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="name">
+											<span class="flag_big03">조건선택</span>
+											<span class="model">쏘나타 DN8 2.0</span>
+											<span class="desc"> 가솔린 2.0 가솔린 프리미엄 패밀리</span>
+										</div>
+										<div class="drive">
+											<span class="color">블랙, 크리미 화이트 펄</span>
+										</div>
+										<div class="price">
+											<span class="num"><em>3,280~4,370</em><i>만원</i></span>
+										</div>
+									</div>
+								</div>
+								<!-- //unit -->
+								<div class="btn_box">
+									<div class="tooltip on"> <!-- display: none 할 때 class on 제거 -->
+										<div class="cont">
+											<span class="text">조건에 맞는 차량이 새로 입고되었어요.</span>
+											<button class="close">상세보기삭제하기</button>
+										</div>
+									</div>
+									<button type="button" class="btn_small color02">입고차량 보러가기</button>
+								</div>								
+								<button type="button" class="btn_close s_16">삭제하기</button>
+							</div>
+							<!-- // item -->
+							<!-- item -->
+							<div class="unit_type type01">
+								<!-- unit -->
+								<div class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/nobg_300x180.png" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="name">
+											<span class="flag_big03">판매준비중</span>
+											<span class="model">쏘나타 DN8 2.0 </span>
+											<span class="desc">가솔린 2.0 가솔린 프리미엄 패밀리</span>
+										</div>
+										<div class="drive">
+											<span>20년 12월</span>
+											<span>50,000km</span>
+											<span class="color">블랙, 크리미 화이트 펄</span>
+										</div>
+										<div class="price">
+											<span class="num"><em>3,000</em><i>만원</i></span>
+										</div>
+									</div>
+								</div>
+								<!-- //unit -->
+								<div class="btn_box">
+									<div class="tooltip on"> <!-- display: none 할 때 class on 제거 -->
+										<div class="cont">
+											<span class="text">조건에 맞는 차량이 새로 입고되었어요.</span>
+											<button class="close">상세보기삭제하기</button>
+										</div>
+									</div>
+									<button type="button" class="btn_small color02">입고차량 보러가기</button>
+								</div>
+								<button type="button" class="btn_close s_16">삭제하기</button>
+							</div>
+							<!-- // item -->
+						</li>
+						<li>
+							<div class="top_area">
+								<p class="date">2022.05.11까지 알림</p>
+								<button type="button" class="txt_btn03 s_mid c_point01">알림연장</button>
+							</div>
+							<!-- item -->
+							<div class="unit_type type01">
+								<!-- unit -->
+								<div class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/nobg_300x180.png" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="name">
+											<span class="flag_big03">유사차량</span>
+											<span class="model">쏘나타 DN8 2.0 </span>
+											<span class="desc">가솔린 2.0 가솔린 프리미엄 패밀리</span>
+										</div>
+										<div class="drive">
+											<span class="color">블랙</span>
+										</div>										
+									</div>
+								</div>
+								<!-- //unit -->
+								<div class="btn_box">
+									<div class="tooltip on"> <!-- display: none 할 때 class on 제거 -->
+										<div class="cont">
+											<span class="text">조건에 맞는 차량이 새로 입고되었어요.</span>
+											<button class="close">상세보기삭제하기</button>
+										</div>
+									</div>
+									<button type="button" class="btn_small color02">입고차량 보러가기</button>
+								</div>
+								<button type="button" class="btn_close s_16">삭제하기</button>
+							</div>
+							<!-- // item -->
+						</li>
+						<li>
+							<div class="top_area">
+								<p class="date">2022.05.11까지 알림</p>
+								<button type="button" class="txt_btn03 s_mid c_point01">알림연장</button>								
+							</div>
+							<!-- item -->
+							<div class="unit_type type01">
+								<!-- unit -->
+								<div class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/nobg_300x180.png" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="name">
+											<span class="flag_big03">조건선택</span>
+											<span class="model">쏘나타 DN8 2.0 </span>
+											<span class="desc">가솔린 2.0 가솔린 프리미엄 패밀리</span>
+										</div>
+										<div class="drive">
+											<span class="color">블랙</span>
+										</div>
+										<div class="price">
+											<span class="num"><em>3,000~3,280</em><i>만원</i></span>
+										</div>
+									</div>
+								</div>
+								<!-- //unit -->
+								<div class="btn_box">
+									<button type="button" class="btn_small color02" disabled>입고된 차량이 없습니다</button>
+								</div>
+								<button type="button" class="btn_close s_16">삭제하기</button>
+							</div>
+							<!-- // item -->
+							<!-- item -->
+							<div class="unit_type type01">
+								<!-- unit -->
+								<div class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/nobg_300x180.png" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="name">
+											<span class="flag_big03">판매준비중</span>
+											<span class="model">쏘나타 DN8 2.0 </span>
+											<span class="desc">가솔린 2.0 가솔린 프리미엄 패밀리</span>
+										</div>
+										<div class="drive">
+											<span>20년 12월</span>
+											<span>50,000km</span>
+											<span class="color">블랙, 크리미 화이트 펄</span>
+										</div>
+										<div class="price">
+											<span class="num"><em>3,000</em><i>만원</i></span>
+										</div>
+									</div>
+								</div>
+								<!-- //unit -->
+								<div class="btn_box">
+									<button type="button" class="btn_small color02" disabled>입고된 차량이 없습니다</button>
+								</div>
+								<button type="button" class="btn_close s_16">삭제하기</button>
+							</div>
+							<!-- // item -->
+						</li>
+						<li>
+							<div class="top_area">
+								<p class="date">2022.05.11까지 알림</p>
+								<button type="button" class="txt_btn03 s_mid c_point01">알림연장</button>								
+							</div>
+							<!-- item -->
+							<div class="unit_type type01">
+								<!-- unit -->
+								<div class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/nobg_300x180.png" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="name">
+											<span class="flag_big03">유사차량</span>
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span class="color">블랙</span>
+										</div>
+									</div>
+								</div>
+								<!-- //unit -->
+								<div class="btn_box">
+									<button type="button" class="btn_small color02" disabled>입고된 차량이 없습니다</button>
+								</div>
+								<button type="button" class="btn_close s_16">삭제하기</button>								
+							</div>
+							<!-- // item -->
+						</li>
+						<li class="end"> <!-- 알림기간 만료시 end class 추가 -->
+							<div class="top_area">
+								<p class="date">2022.05.11까지 알림</p>								
+							</div>
+							<!-- item -->
+							<div class="unit_type type01">
+								<!-- unit -->
+								<div class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/nobg_300x180.png" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="name">
+											<span class="flag_big03">조건선택</span>
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span class="color">블랙, 크리미 화이트 펄</span>
+										</div>
+										<div class="price">
+											<span class="num"><em>3,000~3,280</em><i>만원</i></span>
+										</div>
+									</div>
+								</div>
+								<!-- //unit -->
+								<div class="btn_box">
+									<button type="button" class="btn_small color02" disabled>알림 기간이 만료되었습니다</button>
+								</div>	
+								<button type="button" class="btn_close s_16">삭제하기</button>							
+							</div>
+							<!-- // item -->
+							<!-- item -->
+							<div class="unit_type type01">
+								<!-- unit -->
+								<div class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/nobg_300x180.png" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="name">
+											<span class="flag_big03">판매준비중</span>
+											<span class="model">쏘나타 DN8 2.0 </span>
+											<span class="desc">가솔린 2.0 가솔린 프리미엄 패밀리</span>
+										</div>
+										<div class="drive">
+											<span>21년 12월</span>
+											<span>12,167km</span>
+											<span class="color">블랙</span>
+										</div>
+										<div class="price">
+											<span class="num"><em>3,000</em><i>만원</i></span>
+										</div>
+									</div>
+								</div>
+								<!-- //unit -->
+								<div class="btn_box">
+									<button type="button" class="btn_small color02" disabled>알림 기간이 만료되었습니다</button>
+								</div>
+								<button type="button" class="btn_close s_16">삭제하기</button>								
+							</div>
+							<!-- // item -->
+						</li>
+						<li class="end"> <!-- 알림기간 만료시 end class 추가 -->
+							<div class="top_area">
+								<p class="date">2022.05.11까지 알림</p>								
+							</div>
+							<!-- item -->
+							<div class="unit_type type01">
+								<!-- unit -->
+								<div class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/nobg_300x180.png" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="name">
+											<span class="flag_big03">유사차량</span>
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span class="color">블랙</span>
+										</div>
+									</div>
+								</div>
+								<!-- //unit -->
+								<div class="btn_box">
+									<button type="button" class="btn_small color02" disabled>알림 기간이 만료되었습니다</button>
+								</div>
+								<button type="button" class="btn_close s_16">삭제하기</button>								
+							</div>
+							<!-- // item -->							
+						</li>
+						<li class="end"> <!-- 알림기간 만료시 end class 추가 -->
+							<div class="top_area">
+								<p class="date">2022.05.11까지 알림</p>								
+							</div>
+							<!-- item -->
+							<div class="unit_type type01">
+								<!-- unit -->
+								<div class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/nobg_300x180.png" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="name">
+											<span class="flag_big03">유사차량</span>
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span class="color">블랙</span>
+										</div>									
+									</div>
+								</div>
+								<!-- //unit -->
+								<div class="btn_box">
+									<button type="button" class="btn_small color02" disabled>알림 기간이 만료되었습니다</button>
+								</div>
+								<button type="button" class="btn_close s_16">삭제하기</button>
+							</div>
+							<!-- // item -->
+						</li>
+					</ul>
+					<div class="btn_area col_type">
+						<button type="button" class="btn_big color01">입고알림 신청</button>
+					</div>
+                </div>
+                <!-- //cont_wrap -->
+            </div>
+            <!-- //container -->
+        </div>
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<script>
+	lnb_active();
+	tooltip(); //툴팁
+	const editBtn = document.querySelectorAll('.btn_edit');
+	editBtn.forEach((btn) => {
+		btn.addEventListener('click' , function() {
+			if(this.closest('.box_acc').classList.contains('on')) {
+				this.closest('.box_acc').classList.remove('on');
+			} else {
+				this.closest('.box_acc').classList.add('on');
+			}
+		});
+	});	
+</script>
+</html>

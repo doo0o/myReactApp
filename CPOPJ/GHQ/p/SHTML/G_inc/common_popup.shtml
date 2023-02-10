@@ -1,0 +1,25 @@
+<!--#include file="/GHQ/m/SHTML/G_order/include/FO-OR-MS0009.shtml"--><!-- 주소 조회(Full) -->
+<!--#include file="/GHQ/m/SHTML/G_detail/include/FO-PD-MS0010.shtml"--><!-- 공유하기 -->
+<!--#include file="/GHQ/m/SHTML/G_detail/include/FO-PD-MS0012.shtml"--><!-- 리뷰상세(Full) -->
+<!--#include file="/GHQ/m/SHTML/G_order/inc/layerBankSel-Layer01.shtml"--><!-- 은행선택 -->
+
+<!-- Footer 관련 -->
+<!--#include file="/GHQ/m/SHTML/G_login/include/FO-ME-MS0002.shtml"--><!-- 이용약관 (Full) 동의 버튼 -->
+<!--#include file="/GHQ/m/SHTML/G_login/include/FO-ME-MS0003.shtml"--><!-- 이용약관 및 개인정보처리방침 -->
+<!--#include file="/GHQ/m/SHTML/G_login/include/FO-ME-MS0004.shtml"--><!-- 마케팅 활용  및 광고 수신 동의 -->
+
+<script>
+    $(function(){        
+        $(".jQ_Select").on("click",function(){//셀렉트박스 레이어 스크립트
+            CPO.POPUP_open($(this));// 레이어팝업 open
+            CPO_SelectLayer($(this));// 레이어팝업에 data 값 넘기기
+        });
+        $(".jQ_Select_Save").on("click",function(){//셀렉트박스 레이어 스크립트
+            CPO.POPUP_close($(this));// 레이어팝업 close
+            CPO_SelectSave($(this));// 레이어팝업에 data 값 넘기기
+        });
+        $(".jQ_Pop_Open").on("click",function(){//레이어 팝업 스크립트
+            CPO.POPUP_open($(this));// 레이어팝업 open
+        });        
+    });
+</script>

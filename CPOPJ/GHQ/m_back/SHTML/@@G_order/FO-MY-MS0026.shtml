@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>책임환불신청 : 제네시스 CPO</title>
+	<!--#include file="/GHQ/SHTML/G_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/g_order.css">
+</head>
+<body>
+<!--#include file="/GHQ/SHTML/G_inc/common_skip.shtml"-->
+<!--#include file="/GHQ/SHTML/G_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--#include file="/GHQ/SHTML/G_inc/layout_header.shtml"-->
+		<!--  s: title area : SUB  -->
+		<div class="h_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h3 class="tit">책임환불신청</h3>
+		</div>
+		<!--  e: title area : SUB  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<!-- 책임환불신청 -->
+		<div class="refund_request">
+			<!-- 00. 주문번호 -->
+			<div class="order_no">
+				<span class="tit">주문번호</span>
+				<span class="no02">20211112321564565421</span>
+			</div>
+			<!-- //00. 주문번호 -->
+			<!-- 01. 차량 정보 -->
+			<div class="unit_order">
+				<div class="unit_img"><img src="/HMC/img/@thumb/plp_310x310_01.jpg" alt="상품명으로 뿌려주세요"></div>
+				<div class="unit_info">
+					<p class="name">
+						<span class="model">쏘나타 DN8 2.0 </span>
+						<span class="desc">가솔린 프리미엄 밀레니얼</span>
+					</p>
+					<span class="drive">
+						<em>21년형</em>
+						<em>50,000km</em>
+						<em>가솔린</em>
+					</span>
+					<span class="price"><em>3,820</em><i>만원</i></span>
+				</div>
+			</div>
+			<!-- //01. 차량 정보 -->
+			<!-- 02. 반품사유 -->
+			<ol class="form_type02">
+				<li>
+					<!-- [수정-SELECT] 2022-03-25 --><!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+					<button type="button" class="btn_sel01 jQ_Select" id="SelectReturn" data-id="" data-popup="Select-Return-Layer">반품 사유</button>
+					<!-- Layer -->
+					<div class="CPOpop_bottom select" id="Select-Return-Layer">
+						<div class="p_head">
+							<h5 class="tit">반품 사유를 선택해주세요.</h5>
+						</div>
+						<div class="p_wrap">
+							<!-- list -->
+							<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+								<li><input type="radio" class="chk_type09" name="SelectReturn_Name" id="SelectReturn01"><label for="SelectReturn01">차량의 가격이 타사 대비 높아요.</label></li>
+								<li><input type="radio" class="chk_type09" name="SelectReturn_Name" id="SelectReturn02"><label for="SelectReturn02">차량의 가격이 타사 대비 높아요.</label></li>
+								<li><input type="radio" class="chk_type09" name="SelectReturn_Name" id="SelectReturn03"><label for="SelectReturn03">차량의 가격이 타사 대비 높아요.</label></li>
+								<li><input type="radio" class="chk_type09" name="SelectReturn_Name" id="SelectReturn04"><label for="SelectReturn04">차량의 가격이 타사 대비 높아요.</label></li>
+								<li><input type="radio" class="chk_type09" name="SelectReturn_Name" id="SelectReturn05"><label for="SelectReturn05">차량의 가격이 타사 대비 높아요.</label></li>
+							</ol>
+							<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectReturn 변경 내용 적용  -->
+								<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectReturn">적용하기</button>
+							</div>
+							<!-- //list -->
+						</div>
+						<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+					</div>
+					<!-- [수정-SELECT] 2022-03-25 -->
+				</li>
+				<li>
+					<div class="review_textarea">
+						<span class="tit">상세 사유 입력</span>
+						<textarea class="area" placeholder="상세 사유 입력" rows="4" cols="21" role="textbox"></textarea>
+						<span class="txt_check"><em class="first">0</em> / <em class="last">1000</em>자</span>
+					</div>
+				</li>
+			</ol>
+			<!-- //02. 반품사유 -->
+			<!-- 03. 차량 회수 일자 -->
+			<div class="order_box01">
+				<div class="top">
+					<h4 class="tit">차량 회수 일자</h4>
+				</div>
+				<div class="inner">
+					<dl class="depth01">
+						<dt>날짜</dt>
+						<dd><em>2021.10.15 (내일)</em></dd>
+					</dl>
+				</div>
+			</div>
+			<!-- //03. 차량 회수 일자 -->
+			<!-- 04. 차량 회수주소 -->
+			<div class="order_info">
+				<div class="top">
+					<h4 class="tit">차량 회수주소</h4>
+					<button type="button" class="btn_2icon02" data-popup="FO-OR-MS0006">변경</button><!-- 등록 후에 노출 -->
+				</div>
+				<!-- 반품차량 인도지 등록 -->
+				<div class="entry">
+					<p class="txt">책임환불 차량인도 주소를 등록해주세요.</p>
+					<button type="button" class="btn_mid02" data-popup="FO-OR-MS0006">반품차량 인도지 등록</button>
+				</div>
+				<!-- //반품차량 인도지 등록 -->
+				<!-- 회수주소 -->
+				<div class="info_box">
+					<dl class="info">
+						<dt>
+							<span class="tit">방기정</span>
+							<span class="no">010-3891-0001</span>
+						</dt>
+						<dd class="add">
+							[06179] 서울시 강남구 테헤란로 510 (서울특별시 강남구 대치동 943)
+						</dd>
+					</dl>
+					<p class="msg">배송메시지 : <em>배송 전 연락해 주세요.</em></p>
+				</div>
+				<!-- //회수주소 -->
+			</div>
+			<!-- //04. 차량 회수주소 -->
+			<!-- 05. 환불 계좌정보 -->
+			<div class="order_box01 refund">
+				<div class="top">
+					<h4 class="tit">환불 계좌정보</h4>
+					<button type="button" class="btn_2icon02" data-popup="FO-OR-MS0032">변경</button>
+				</div>
+				<div class="inner">
+					<p class="bank">
+						<em>우리은행</em>
+						110-1234-56789
+					</p>
+					<span class="name">예금주 : 김현대</span>
+				</div>
+			</div>
+			<!-- //05. 환불 계좌정보 -->
+			<!-- 07.신청 전 꼭 확인하세요. -->
+			<div class="notice_02">
+				<h6>신청 전 꼭 확인하세요.</h6>
+				<ol>
+					<li>
+						신용카드 및 대출, 현금결제 등 차량 구매에 발생한 결제 수수료등 금융거래로 인해 발생한 각종 비용을 공제한 뒤 환불이 진행됩니다.
+					</li>
+					<li>
+						환불기간(차량 인수 후 2일)내 할부대출 및 자동차 보험계약 해지접수를 진행하지 않으면 책임환불이 진행되지 않습니다.
+					</li>
+					<li>
+						차량 인수 후 발생한 주행거리, 결함등에 의해 환불금이 다소 공제될 수 있습니다.
+					</li>
+					<li>
+						고객에 의해 발생하였으나 아직 납부되지 않은 법적/행정적 각종 미납비용을 공제한 뒤 환불이 진행됩니다.
+					</li>
+				</ol>
+			</div>
+		</div>
+		<!-- //07.신청 전 꼭 확인하세요. -->
+		<!-- 03. fixed button -->
+		<div class="btn_sticky">
+			<ul>
+				<li><button type="button" class="btn_big03">돌아가기</button></li>
+				<li><button type="button" class="btn_big01">반품 신청</button></li>
+			</ul>
+		</div>
+		<!-- //03. fixed button -->
+		<!-- //책임환불신청 -->
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/GHQ/SHTML/G_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/GHQ/SHTML/G_inc/popup_include_all.shtml"-->
+</body>
+</html>

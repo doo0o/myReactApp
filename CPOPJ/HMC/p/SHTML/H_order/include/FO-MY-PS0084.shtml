@@ -1,0 +1,48 @@
+<div class="popup_full" id="FO-MY-PS0084">
+	<div class="p_body">
+		<div class="p_inner s_mid">
+			<div class="p_head">
+				<h2 class="tit">개인정보 제3자 제공동의</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+					<div class="inner_view agreement_layer">
+						<ul class="depth1">
+							<li>
+								<div class="tit"><strong>보험사 가입 또는 가입 확인을 위해 동의가 필요합니다.</strong></div>
+								<p class="txt">아래 약관을 확인해 주십시오.</p>
+							</li>
+							<li>
+								<div class="tit">현대자동차 개인정보 제3자 제공동의</div>
+								<div class="depth2">
+									<div class="tit">1. 개인정보의 수집/이용 목적</div>
+									<div class="depth3">
+										<div class="tit">1) 고객관리</div>
+										<p class="txt">회원제 서비스의 본인 확인, 구매상담 신청 및 상담, 시승서비스 예약 및 이용, 서비스 네트워크 예약 및 이용, 카탈로그 신청 및 탁송, 이벤트 참여 및 경품/DM 탁송, 서비스에 대한 만족도 조사</p>
+									</div>
+									<div class="depth3">
+										<div class="tit">2) 마케팅 및 광고에 활용</div>
+										<p class="txt">신규 서비스(제품포 함) 및 이벤트 정보 안내, 웹진 및 최신기업정보 안내, DM, SPS, 우편, 경품 탁송 및 행사 안내, 이벤트 당첨자 선별, 당첨 여부 개별 통지 및 경품 탁송, 고객별 통계분석자료 활용, 시장조사</p>
+									</div>
+								</div>
+								<div class="depth2">
+									<div class="tit">2. 수집하는 개인정보 항목</div>
+									<div class="depth3">
+										<div class="tit">1) 필수 항목</div>
+										<p class="txt">e-mail(ID로 사용), 이름, 휴대전화 번호,</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+
+						<div class="btn_area col_type">
+							<button type="button" class="btn_big color01">확인</button>
+							<!-- <button type="button" class="btn_big color01" disabled>확인</button> --><!-- disable 버튼 -->
+						</div>
+					</div>
+				<!-- //contents -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

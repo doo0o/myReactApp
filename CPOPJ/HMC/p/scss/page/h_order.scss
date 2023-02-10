@@ -1,0 +1,3327 @@
+@charset 'utf-8';
+
+@import '../_common/h_function';
+@import '../_common/h_mixins';
+
+// price 정렬 [공통]
+.price {
+	display: flex;
+	align-items: center;
+}
+// 토글용
+.cont {
+	.js_toggle &:not(.terms),.group_toggle{
+		position: relative;
+		padding-right: 24px;
+		&::after {
+			content:'';
+			position: absolute;
+			right: 0;
+			top: 50%;
+			@include Icon_arrow($COL_gs03);
+			transform: translateY(-50%) rotate(180deg);
+			transition: transform 0.3s linear;
+		}
+	}
+	&:not(.price_box) .group {
+		display: none;
+	}
+	&.on {
+		.js_toggle,.group_toggle{
+			&::after{
+				transform: translateY(-50%) rotate(0deg);
+			}
+			&.check_box {
+				border-color: $COL_secondary1 !important;
+			}
+		}
+				// &:not(.price_box) .group {
+		//     display: block !important;
+		// }
+	}
+	.group, .group_target{
+		display: none;
+		&.on{
+			display: block;
+		}
+	}
+}
+.total_amount, .price_box {
+	.order_detail {
+		padding-top: 20px;
+		border-top: 1px solid $COL_gs06;
+		.price_list {
+			li {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
+			> li {
+				&.line {
+					margin-top: 24px;
+					padding-top: 24px;
+					border-top: 1px solid $COL_gs06;
+				}
+				~ li {
+					margin-top: 24px;
+				}
+				> .tit {
+					@include fontHM(18);
+				}
+				> .price {
+					@include fontHM(16);
+					em {
+						@include fontHM(20);
+					}
+				}
+				.cont_box { //2뎁스
+					width: 100%;
+					margin-top: 8px;
+					background-color: $COL_gs08;
+					color: $COL_gs03;
+					> li {
+						~ li {
+							padding-top: 12px;
+						}
+						> .tit {
+							@include fontT(15);
+						}
+						> .price {
+							@include fontT(13, 23px);
+							em {
+								@include fontT(15);
+							}
+						}
+					}
+					&.depth_list {
+						> li:not(:last-child) {
+							padding-bottom: 12px;
+							border-bottom: 1px solid $COL_gs06;
+						}
+					}
+				}
+				.depth_02 { //3뎁스
+					width: 100%;
+					margin-top: 12px;
+					color: $COL_gs03;
+					li ~ li {
+						margin-top: 8px;
+					}
+					li {
+						position: relative;
+						padding-left: 20px;
+						@include fontT(13);
+						.price {
+							em {
+								@include fontT(14);
+							}
+						}
+						&::before {
+							content: "";
+							position: absolute;
+							top: 5px;
+							left: 5px;
+							width: 8px; height: 8px;
+							border-left: 1px solid $COL_gs04;
+							border-bottom: 1px solid $COL_gs04;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// **********************************************************
+// 주문결제
+// **********************************************************
+.order {
+	.cont_top {
+		.list_step {
+			padding: 40px 0;
+		}
+	}
+	.cont_wrap {
+		padding: 32px;
+	}
+	.cont_right {
+		padding: 32px 24px;
+		.unit_type .caution {
+			margin-top: 8px;
+		}
+		.swiper-slide {
+			width:100% ; height: 165px;
+		}
+		.swiper-pagination01 {
+			margin-top: 16px;
+		}
+		.price_list { // 남은 결제금액
+			border-top: 1px solid $COL_gs06;
+			li {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				align-items: center;
+				padding-top: 16px;
+				.tit {
+					color: $COL_gs03;
+				}
+				.price {
+					font-size: 13px;
+					em {
+						@include fontTM(15);
+					}
+				}
+				.inner {
+					width: 100%;
+					margin-top: 8px;
+					padding: 0 16px 16px;
+					background-color: $COL_gs08;
+					color: $COL_gs03;
+					.tit {
+						@include fontT(15);
+					}
+					.price {
+						em {
+							font-weight: 400;
+						}
+					}
+				}
+			}
+		}
+		.sec_tit {
+			.complete { // 결제완료
+				display: flex;
+				align-items: center;
+				color: $COL_hyundaiblue;
+				&:before {
+					content: "";
+					display: inline-block;
+					width: 24px; height: 24px;
+					margin-right: 4px;
+					background-color: $COL_hyundaiblue;
+					-webkit-mask: url('../img/icon/icon_ui_check02.svg') no-repeat;
+					mask: url('../img/icon/icon_ui_check02.svg') no-repeat;
+				}
+			}
+		}
+	}
+	section ~ section {
+		margin-top: 32px;
+	}
+	.sec_tit {
+		margin-bottom: 16px;
+	}
+	.form_area.box_type {
+		li {
+			height: 108px;
+			.chk_type01 {
+				+ label {
+					flex-direction: column;
+				}
+			}	
+		}
+	}
+	.payment_head {// 상단 결제기한(공통)
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 18px 20px;
+		background: $COL_sand;
+		> .txt {
+			display: flex; 
+			align-items: center;
+			font-weight: 500;
+			&:before {
+				content: "";
+				width: 24px; height: 24px;
+				margin-right: 5px;
+				background: url(../img/icon/icon_ui_time02.svg) no-repeat;
+			}
+		}
+		.state {
+			position: relative;
+			padding-left: 17px;
+			color: $COL_secondary2;
+			font-weight: 500;
+			&::before {
+				content:'';
+				@include Pos($p: absolute, $t: 50%, $l: 8px);
+				transform: translateY(-50%);
+				width: 1px;
+				height: 14px;
+				background-color: $COL_secondary2;
+				opacity: 0.2;
+			}
+		}
+	}
+	/* 계약[FO-OR-PS0051] */	
+	.info_list { //구매고객 정보
+		li {
+			display: flex;
+			justify-content: space-between;
+			& ~ li {
+				margin-top: 12px;
+			}
+			.tit {
+				color: $COL_gs03;
+			}
+			.txt {
+				@include fontHM(16);
+			} 
+		}
+	}
+	.payment_sel { //결제방법
+		.bg_box {
+			display: none;
+			margin-top: 8px;
+			padding: 20px;
+			background-color: $COL_gs08;
+			dl {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				dt {
+					@include fontH(16);
+				}
+				dd {
+					width: 50%;
+				}
+			}
+			.caution {
+				margin-top: 8px;
+			}
+		}
+	}
+	/* 무통장 입금[OR-PS0052] */
+	.contract_payment {
+		.txt {
+			@include fontT(20,30px);
+			strong {
+				position: relative;
+				&:after {
+					content:'';
+					@include Pos($p: absolute, $r: 0, $b: -4px, $l: 0);
+					border-bottom: 2px solid $COL_secondary1;
+				}
+			}
+		}
+		.txt2 {
+			margin-top: 6px;
+			@include fontT(14);
+		}
+		.bg_box {
+			margin: 32px 0;
+			padding: 20px;
+			background-color: $COL_lightsand;
+			li {
+				display: flex;
+				.tit {
+					width: 60px;
+					margin-right: 40px;
+					color: $COL_gs03;
+					@include fontT(14);
+				}
+				.txt {
+					@include fontTM(15);
+					color: $COL_gs02;
+				}
+				.bank {
+					line-height: 24px;
+					.logo {
+						width: 24px;
+						height: 24px;
+						margin-right: 8px;
+					}
+					span ~ span {
+						margin-left: 4px;
+					}
+					.txt_btn03 {
+						position: relative;
+						padding-left: 22px;
+						line-height: 24px;
+						&::before {
+							content:'';
+							@include Pos($p: absolute, $t: 5px, $l: 9px);
+							width: 1px;
+							height: 12px;
+							background-color: $COL_gs05;
+						}
+					}
+				}
+				.payment {
+					@include fontH(15);
+					em {
+						font-weight: 500;
+					}
+				}
+				& ~ li {
+					margin-top: 16px;
+				}
+			}
+		}
+		.caution + .txt_btn03 {
+			margin-top: 32px;
+		}
+	}
+	/* 결제확인[OR-PS0050] */
+	.payment_com {
+		padding: 80px 0;
+		.no_data {
+			padding: 32px 0 0;
+		}
+	}
+	/* 인증항목[OR-PS0057] */
+	.check_items {
+		padding: 80px 100px;
+		background-color: $COL_white;
+		> .txt {
+			margin: 16px 0 32px;
+			color: $COL_gs03;
+			text-align: center;
+		}
+		.box_chk_point {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 16px 20px;
+			margin: 16px 0;
+			.swiperType01 {
+				flex: 1;
+				overflow: hidden;
+			}
+		}
+		.swiperType01 {
+			position: relative;
+			.txt {
+				margin-bottom: 8px;
+				font-weight: 500;
+			}
+			.swiper-wrapper {height: auto;}
+			.swiper-button-next,
+			.swiper-button-prev {
+				width: 32px; height: 32px;
+				background-position: 50% 50%;
+			}
+			.swiper-pagination-bullet {margin-top: 16px;}
+		}
+		.caution + .btn_area {
+			margin-top: 32px;
+		}
+	}
+	/* 주문서 작성[OR-PS0005] */
+	.order_sheet {
+		section ~ section {
+			padding-bottom: 32px;
+			border-bottom: 1px solid $COL_gs06;
+		}
+		.form_area + .sec_tit, .caution + .sec_tit {
+			margin-top: 32px;
+		}
+		.btn_area.col_type + .caution {
+			margin-top: 24px;
+		}
+		.form_list + .caution {
+			margin-top: 16px;
+		}
+		.setting {//지분율 설정
+			margin-bottom: 16px;
+			li {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 8px;
+				.snippet {
+					width: 50%;
+					.position {
+						@include fontH(16);
+					}
+					.name {
+						margin-left: 4px;
+						@include fontHM(16);
+					}
+				}
+				.form_list {
+					flex: 1;
+				}
+			}
+		}
+		.bg_box {
+			padding: 20px;
+			background-color: $COL_gs08;
+			dl.list_type01 { //블루멤버스 포인트
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				color: $COL_gs02;
+				dt {
+					@include fontT(14);
+				}
+				dd.price {
+					@include fontH(13);
+					em {
+						font-size: 15px;
+						font-weight: 500;
+					}
+				}
+			}
+			+ .txt_btn03 {
+				margin-top: 32px;
+			}
+		}
+		.entry { //전시장 방문 예약정보(선택)
+			.txt {
+				@include fontT(14);
+				color: $COL_gs03;
+				text-align: center;
+				+ .btn_area {
+					margin-top: 24px;
+				}
+			}
+		}
+		.showroom { //전시장 방문 예약정보(선택)
+			.bg_box {
+				li {
+					display: flex;
+					position: relative;
+					~ li {
+						margin-top: 16px;
+					}
+					.tit {
+						width: 100px;
+						color: $COL_gs03;
+						@include fontT(14);
+					}
+					.txt {
+						color: $COL_gs02;
+						@include fontT(15);
+						dl.info {
+							dt{
+								display: flex;
+								em {
+								font-weight: 500;
+								}
+								.num {
+									position: relative;
+									padding-left: 17px;
+									&::before {
+										content:'';
+										@include Pos($p: absolute, $t: 50%, $l: 8px);
+										transform: translateY(-50%);
+										width: 1px;
+										height: 12px;
+										background-color: $COL_gs05;
+									}
+								}
+							}
+							dd {
+								margin-top: 8px;
+							}
+						}
+					}
+					.btn_area {
+						position: absolute;
+						right: 0;
+						bottom: 0;
+					}
+				}
+			}
+		}
+	}
+	/* 잔여금액결제[OR-PS0031] */
+	.payment_cotents {
+		.total_amount{//총 구매금액
+			&:not(.on) {
+				border-bottom: 1px solid $COL_gs06;
+			}
+		}
+		.price_list {
+			+ .caution {
+				margin-top: 24px;
+			}
+			.cont_box { //2뎁스
+				padding: 20px;
+			}
+		}
+
+		.nav_benefit {//할인혜택
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			padding: 20px;
+			background: $COL_secondary1;
+			color: $COL_white;
+			.txt {
+				display: flex;
+				align-items: center;
+				font-weight: 500;
+				&:before {
+					content: "";
+					display: inline-block;
+					width: 24px; height: 24px;
+					margin-right: 4px;
+					background-color: $COL_white;
+					-webkit-mask: url('../img/icon/icon_ui_discount02.svg') no-repeat;
+					mask: url('../img/icon/icon_ui_discount02.svg') no-repeat;
+				}
+			}
+		}
+		.method { //결제방법
+			.result_cont {
+				> li {
+					margin-bottom: 12px;
+				}
+				.check_box {
+					position: relative;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					padding: 20px 56px 20px 20px;
+					border: 1px solid $COL_gs06;
+					// &.on {
+					// 	border-color: $COL_secondary1;
+					// }
+					&::before{
+						content:'';
+						display:inline-block;
+						width:24px;height:24px;
+						margin-right: 8px;
+						background-size: no-repeat;
+					}
+					&.on::before{
+						background-image: url(./../img/icon/icon_chk01_check.svg);
+					}
+					&::before{
+						background-image: url(./../img/icon/icon_chk01.svg);
+					}
+					&::after {
+						right: 20px;
+					}
+					.txt {
+						flex: 1;
+					}
+					.msg {
+						@include fontH(13);
+						color: $COL_gs03;
+					}
+					.result {
+						display: flex;
+						align-items: center;
+						gap: 8px;
+						.logo {
+							width: 24px; height: 24px;
+							overflow: hidden;
+							img {
+								display: block;
+								width: 100%; height: 100%;
+								margin: auto;
+								// border-radius: 50%;
+							}
+							&_card img {
+								width: 16px; height: 24px;
+								// border-radius: 2px;
+							}
+						}
+						.txt {
+							@include fontT(15);
+							em {
+								color: $COL_secondary1;
+							}
+						}
+						.price {
+							@include fontT(13,23px);
+							em {
+								@include fontTM(15);
+							}
+						}
+					}
+				}
+				.result_detail {
+					// display: none;
+					padding: 20px;
+					background-color: $COL_gs08;
+					.no_data {
+						padding: 20px;
+					}
+					.stit {
+						display: flex;
+						align-items: center;
+						@include fontH(16);
+						.tooltip {
+							margin-left: 4px;
+						}
+					}
+					.top {
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						& + .stit {
+							margin-top: 12px;
+						}
+						.stxt {
+							margin-left: 4px;
+							color: $COL_gs03;
+							@include fontT(13);
+						}
+						.price {
+							em {
+								@include fontHM(20);
+							}
+						}
+					}
+					> .btn_area {
+						padding: 24px 0;
+					}
+					.form_cont {
+						display: flex;
+						flex-wrap: wrap;
+						align-items: center;
+						gap: 10px;
+						margin-top: 12px;
+						> div {
+							flex: 0 calc((100% - 10px) / 2);
+							@include fontH(16);
+						}
+					}
+					.sort_list {
+						margin-top: 24px;
+						padding-top: 24px;
+						border-top: 1px solid $COL_gs06;
+						.total_result {
+							line-height: 22px;
+							.all {
+								@include fontTM(14, 22px);
+							}
+						}
+					}
+					.info_box {
+						display: flex;
+						align-items: center;
+						margin-top: 8px;
+						padding: 20px;
+						background-color: $COL_white;
+						span {
+							~ * {
+								position: relative;
+								padding-left: 25px;
+								&::before {
+									content:'';
+									@include Pos($p: absolute, $t: 50%, $l: 12px);
+									transform: translateY(-50%);
+									width: 1px;
+									height: 12px;
+									background-color: $COL_gs05;
+								}
+							}
+							&.bank {
+								display: flex;
+								align-items: center;
+								@include fontTM(15);
+								em {
+									margin-left: 4px;
+								}
+								.logo {
+									margin-right: 16px;
+									width: 30px; height: 30px;
+								}
+							}
+							&.bank_name {
+								@include fontTM(15);
+							}
+						}
+						.installment {
+							display: flex;
+							align-items: center;
+							color: $COL_gs03;
+							@include fontT(14);
+							em {
+								margin-left: 4px;
+								color: $COL_gs02;
+								@include fontTM(15);
+							}
+						}
+					}
+					.result_list {
+						.price_total {
+							display: flex;
+							align-items: center;
+							justify-content: space-between;
+							margin: 12px 0;
+							dt {
+								@include fontTM(14);
+							}
+							dd {
+								font-size: 13px;
+								em {
+									@include fontTM(15);
+								}
+							}
+						}
+						.list {
+							li {
+								margin-top: 12px;
+								padding: 16px;
+								background-color: $COL_white;
+								display: flex;
+								.logo {
+									flex-shrink: 0;
+									width: 30px; height: 30px;
+									margin: 6px 12px 0 0;
+									overflow: hidden;
+									img {
+										display: block;
+										width: 100%; height: 100%;
+										margin: auto;
+										// border-radius: 50%;
+									}
+									&_card img {
+										width: 20px; height: 30px;
+										// border-radius: 2px;
+									}
+								}
+								.cont {
+									flex: 1;
+								}
+								.info {
+									display: flex;
+									justify-content: space-between;
+									color: $COL_gs02;
+									dt {
+										.name {
+											@include fontTM(15);
+										}
+										.num {
+											margin-top: 4px;
+											@include fontT(14);
+										}
+									}
+									dd {
+										text-align: right;
+										.price {
+											@include fontT(13);
+											em{
+												@include fontT(15);
+											}
+										}
+										.name {
+											margin-top: 4px;
+											@include fontT(14);
+										}
+									}
+								}
+								.state {
+									display: flex;
+									align-items: center;
+									justify-content: space-between;
+									margin-top: 8px;
+									padding-top: 8px;
+									border-top: 1px solid $COL_gs06;
+									color: $COL_gs03;
+									@include fontT(14);
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/* 주문결제 레이어 */
+.layer_account { //환불계좌등록 [FO-OR-PS0032]
+	.form_list.type03 + .caution {
+		margin-top: 16px;
+	}
+}
+.layer_promotion, .layer_chklist { //프로모션 선택 [FO-OR-PS0035], 명의자 선택 [FO-OR-PS0093]  추후 layer_chklist로 정리~
+	.form_area {
+		// margin-top: 20px;
+		li ~ li {
+			margin-top: 16px;
+		}
+	}
+}
+.layer_installment { //오토할부
+	.top_wrap {
+		margin-bottom: 32px;
+		.txt1 {
+			color: $COL_gs02;
+			@include fontTM(18);
+			word-break: keep-all;
+		}
+		.txt2 {
+			margin-top: 4px;
+			color: $COL_gs03;
+			@include fontT(14);
+			word-break: keep-all;
+		}
+		.info_box {
+			display: flex;
+			align-items: center;
+			margin: 12px 0 32px;
+			padding: 20px;
+			line-height: 63px;
+			background-color: $COL_gs08;
+			span {
+				display: flex;
+				align-items: center;
+				color: $COL_gs03;
+				@include fontT(14);
+				em {
+					margin-left: 4px;
+					color: $COL_gs02;
+					@include fontTM(15);
+				}
+				~ span {
+					position: relative;
+					padding-left: 25px;
+					&::before {
+						content:'';
+						@include Pos($p: absolute, $t: 50%, $l: 12px);
+						transform: translateY(-50%);
+						width: 1px;
+						height: 12px;
+						background-color: $COL_gs05;
+					}
+				}
+			}
+		}
+	}
+	.form_list {
+		.price {
+			display: flex;
+			align-items: center;
+			@include fontH(16);
+			em {
+				margin-left: 4px;
+				@include fontHM(20);
+			}
+		}
+		+ .caution {
+			margin-top: 16px;
+			+ .terms {
+				margin-top: 32px;
+			}
+		}
+	}
+	.sec_tit + .form_list {
+		margin-top: 16px;
+	}
+	.table_area {
+		word-break: keep-all;
+		.sec_tit {
+			margin-bottom: 16px;
+			+ .txt1 {
+				margin-top: 20px;
+			}
+		}
+		.sec_tit + .table {
+			margin-bottom: 20px;
+		}
+		.table {
+			margin-top: 16px;
+		}
+		.txt1 {
+			color: $COL_gs02;
+			@include fontT(14);
+		}
+		+ .btn_area { 
+			margin-top: 32px;
+		}
+	}
+	.table.line {
+		td {
+			padding: 16px;
+			vertical-align: middle;
+		}
+		ul.list01 {
+			li ~ li {
+				margin-top: 8px;
+			}
+			+ .caution {
+				margin-top: 8px;
+			}
+		}
+	}
+	.terms + .btn_area {
+		margin-top:32px;
+	}
+}
+.layer_info  { //현대 모빌리티 카드 안내 [FO-OR-PS0042]
+	.sec_tit.m {
+		margin: 32px 0 16px;
+	}
+	.sec_tit.s {
+		margin: 32px 0 12px;
+	}
+	[class*="txt"] {
+		color: $COL_gs02;
+		word-break: keep-all;
+		+.caution {
+			margin-top: 8px;
+		}
+	}
+	.txt1 {
+		@include fontT(14);
+		&.line {
+			padding-bottom: 32px;
+			border-bottom: 1px solid $COL_gs06;
+		}
+	}
+	.txt2 {
+		@include fontT(13);
+	}
+	.btn_area {
+		margin-top: 32px;
+	}
+	.terms {
+		margin-top: 32px;
+	}
+	.table.type01 {
+		.caution {
+			margin:8px -16px;
+		}
+	}
+}
+.layer_showroom { //전시장 방문 [FO-OR-PS0064]
+	.box_showroom {
+		display: flex;
+		padding-top: 20px;
+		section {
+			width: 50%;
+		}
+		.sec_tit.m {
+			margin-bottom: 12px;
+		}
+		.sec_tit.s {
+			margin-bottom: 8px;
+		}
+		.showroom_info {
+			padding-right: 40px;
+			border-right: 1px solid $COL_gs06;
+			.txt_box {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 28px;
+				background: rgba(0, 0, 0, 0.7);
+				text-align: center;
+				color: $COL_white;
+				@include fontT(13, 28px);
+			}
+			.swiperParent {
+				margin-bottom: 32px;
+				.swiper-slide img {
+					height: 280px;
+				}
+			}
+			.swiper-pagination01 {
+				margin-top: 16px;
+			}
+			.info {
+				li {
+					position: relative;
+					margin-top: 4px;
+					padding-left: 21px;
+					word-break: keep-all;
+					color: $COL_gs04;
+					@include fontT(14);
+					&::before {
+						content: "";
+						position: absolute;
+						left: 0;
+						top: 3px;
+						width: 16px;
+						height: 16px;
+						background-color: $COL_gs04;
+					}
+					&.adress {
+						&::before {
+							-webkit-mask: url('../img/icon/icon_ui_location03.svg') no-repeat;
+							mask: url('../img/icon/icon_ui_check02.svg') no-repeat;
+						}
+					}
+					&.tel {
+						&::before {
+							-webkit-mask: url('../img/icon/icon_ui_phone03.svg') no-repeat;
+							mask: url('../img/icon/icon_ui_phone03.svg') no-repeat;
+						}
+					}
+				}
+			}
+		}
+		.visit_time {
+			padding-left: 40px;
+			> .txt {
+				margin-bottom: 24px;
+				color: $COL_gs04;
+				@include fontT(14);
+			}
+			.date {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				dt {
+					@include fontHM(16);
+				}
+				dd {
+					color: $COL_gs04;
+					@include fontT(13);
+					span {
+						margin-left: 15px;
+						&::before {
+							content: '';
+							display: inline-block;
+							width: 16px;
+							height: 16px;
+							margin-right: 5px;
+							border:1px solid $COL_gs05;
+							vertical-align: middle;
+						}
+						&:last-of-type::before {
+							background-color: $COL_gs08;
+						}
+					}
+				}
+			}
+			.form_list {
+				margin: 8px 0 24px;
+			}
+			.info {
+				li {
+					display: flex;
+					margin-top: 4px;
+					@include fontT(14);
+				}
+				.tit {
+					width:60px;
+					margin-right: 16px;
+				}
+				.txt {
+					color: $COL_gs04;
+				}
+			}
+		}
+	}
+	.msg {
+		margin: 32px 0 12px;
+		color: $COL_gs04;
+		text-align: center;
+	}
+}
+
+// **********************************************************
+// 구매관리
+// **********************************************************
+.order_detail {
+	> section {
+		&[class*="_box"] {
+			margin-top: 24px;
+			padding: 40px;
+			border: 1px solid $COL_gs06;
+		}
+		&.banner { //이미지배너코너
+			margin-top: 40px;
+		}
+		&.faq_list { // 자주묻는질문
+			margin-top: 40px;
+		}
+	}
+	> .btn_area.cancel { //하단취소버튼
+		margin-top: 24px;
+		text-align: right;
+	}
+	.bg_box {
+		width: 100%;
+		padding: 24px;
+		background-color: $COL_gs08;
+	}
+	.order_info { // 주문상태,주문번호,주문일
+		.order_no {
+			display: flex;
+			align-items: center;
+			margin: -40px -40px 0;
+			padding: 20px 40px;
+			
+			background-color: $COL_gs08;
+			.no {
+				margin-left: 8px;
+				color: $COL_gs03;
+				@include fontH(15);
+			}
+			.date {
+				margin-left: auto;
+				color: $COL_gs03;
+				@include fontT(15);
+			}
+			.tit {
+				position: relative;
+				padding-right: 17px;
+				@include fontHM(18);
+				&::after {
+					content:'';
+					@include Pos($p: absolute, $t: 50%, $r: 4px);
+					transform: translateY(-50%);
+					width: 1px;
+					height: 14px;
+					background-color: $COL_black;
+					opacity: 0.2;
+				}
+			}
+		}
+		.unit_list.detail {
+			margin-top: 40px;
+		}
+	}
+	.product_box {  // 주문상태
+		.order_step:not(.no_line) {
+			margin-top: 32px;
+			padding-top: 32px;
+			border-top:1px solid $COL_gs06;
+		}
+		.order_step {
+			text-align: center;
+			.list_step {
+				margin-bottom: 32px;
+			}
+			.delivery { // 탁송조회 [OR-PS0025]
+				width: 560px;
+				li {
+					position: relative;
+					display: flex;
+					padding-left: 26px;
+					color: $COL_gs03;
+					@include fontH(15);
+					.addr {
+						max-width: 294px;
+						color: $COL_gs02;
+						text-align: left;
+					}
+					.date {
+						font-size: 13px;
+						margin-left: 12px;
+					}
+					em {
+						margin-left: auto;
+					}
+					&:first-child {
+						em {
+							color: $COL_secondary1;
+							font-weight: 500;
+						}
+					}
+					&::after {
+						content:'';
+						z-index: 1;
+						@include Pos($p: absolute, $t:0, $l:0);
+						display: block;
+						width: 18px; height: 18px;
+						border:4px solid $COL_secondary1;
+						border-radius:18px;
+						background-color: $COL_white;
+					}
+					&:not(:last-child) {
+						padding-bottom: 24px;
+						&::before {
+							content:'';
+							z-index: 0;
+							@include Pos($p: absolute, $t:19px, $l:8px);
+							display: block;
+							width: 2px;
+							height: calc(100% - 18px);
+							border-left: 2px dotted $COL_secondary1;
+						}
+					}
+				}
+			}
+			> .txt {
+				em {
+					display: block;
+					@include fontHM(30);
+					+ p {
+						margin-top: 12px;
+					}
+				}
+				p {
+					color: $COL_gs02;
+				}
+			}
+			.due_date{
+				margin-top: 32px;
+				.time {
+					// display: flex;
+
+					color: $COL_secondary1;
+					@include fontHM(36);
+					i {
+						margin-left: 4px;
+						@include fontHM(18);
+					}
+				}
+				.date {
+					color: $COL_gs03;
+					@include fontT(18);
+				}
+			}
+			.btn_area {
+				margin-top: 24px;
+				+ .txt_btn03.s_small, + .txt_btn.icon_link {
+					margin-top: 12px;
+				}
+			}
+			> .caution {
+				margin-top: 24px;
+				color: $COL_gs03;
+				@include fontT(15);
+			}
+			.bg_box{
+				min-width: min-content;
+				margin: 24px auto 0;
+				.list_type01 { //환불금
+					display: flex;
+					justify-content: space-between;
+					width: 312px;
+					dt {
+						@include fontHM(16);
+					}
+					dd {
+						font-size: 15px;
+						color:$COL_gs03;
+					}
+					&.disabled {
+						color: $COL_gs03;
+						justify-content: center;
+					}
+				}
+				.list_type02 { //Trade In
+					li {
+						display: flex;
+						justify-content: space-between;
+						color:$COL_gs03;
+						.price {
+							@include fontT(15);
+							em {
+								font-weight: 500;
+							}
+						}
+						~ li {
+							margin-top: 20px;
+						}
+						&.total {
+							padding-top: 20px;
+							color: $COL_hyundaiblue;
+							border-top: 1px solid $COL_gs06;
+							.tit {
+								@include fontHM(18);
+							}
+							.price {
+								@include fontHM(20);
+								em {
+									@include fontH(16);
+								}
+							}
+						}
+					}
+				}
+				&.txt_type {
+					width: 560px;
+					.tit {
+						@include fontHM(16);
+					}
+					.txt {
+						max-width: 350px;
+						margin: 8px auto 0; 
+						color: $COL_gs03;
+					}
+					+ .down {
+						margin-top: 16px;
+					}
+				}
+				+ .txt_btn03.s_small {
+					margin-top: 16px;
+				}
+			}
+			.down {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				&:after {
+					content: "";
+					display: inline-block;
+					width: 16px; height: 16px;
+					background: {
+						image: url('./../img/icon/icon_ui_download03.svg')
+					}
+				}
+			}
+			> .txt_btn03.s_small {
+				display: block;
+				margin: auto;
+			}
+			.txt_btn03.s_small.btn_r {
+				margin: 16px 0 0 auto;
+			}
+			.digital_sign { //전자서명
+				width: 100%;
+				margin-top: 16px;
+				> li {
+					
+					~ li {
+						margin-top: 12px;
+					}
+					&.on {
+						.info {
+							border: 1px solid $COL_secondary1;
+						}
+						dd.again {
+							color: $COL_secondary1;
+						}
+					}
+					.info {
+						display: flex;
+						align-items: center;
+						padding: 20px;
+						border: 1px solid $COL_gs06;
+						em {
+							font-weight: 500;
+						}
+						dt {
+							flex-shrink: 0;
+							padding-right: 16px;
+							@include fontH(16);
+							em {
+								display: inline-block;
+								width: 81px;
+							}
+							i {
+								color: $COL_gs03;
+							}
+						}
+						&.js_toggle{
+							&::after {
+								right: 20px;
+							}
+							dt i { // 수정버전
+								color: $COL_secondary1;
+							}
+						}
+						dd {
+							&.txt {
+								display: flex;
+								flex-wrap: wrap;
+								padding-right: 20px;
+								text-align: left;
+								em {
+									position: relative;
+									margin-right: 8px;
+									padding-right: 9px;
+									&::after {
+										content:'';
+										@include Pos($p: absolute, $t: 50%, $r: 0);
+										transform: translateY(-50%);
+										width: 1px;
+										height: 14px;
+										background-color: $COL_gs05;
+									}
+								}
+								i {
+									color: $COL_gs02;
+									word-break: break-all;
+								}
+							}
+							&.again {
+								margin-left: auto;
+								padding-right: 24px;
+								flex-shrink: 0;
+								@include fontH(16);
+							}
+						}
+					}
+					.method {
+						padding: 40px;
+						background-color: $COL_gs08;
+						> .txt {
+							@include fontH(20);
+						}
+						.form_list {
+							margin: 24px 100px;
+							li {
+								align-items: center;
+							}
+						}
+					}
+				}
+				+ .caution {
+					margin-top: 16px;
+				}
+			}
+			.insurance { //보험가입
+				margin-top: 16px;
+				> .txt {
+					margin-bottom: 32px;
+				}
+				.cont {
+					margin-top: 12px;
+					&.on {
+						.radio {
+							border-color: $COL_secondary1;
+						}
+						.item {
+							display: block;
+						}
+					}
+				}
+				.radio {
+					display: flex;
+					align-items: center;
+					height: 64px;
+					padding: 20px;
+					text-align: left;
+					border: 1px solid $COL_gs06;
+					.txt_btn03 {
+						margin-left: auto;
+					}
+				}
+				.item {
+					display: none;
+					padding: 40px;
+					text-align: left;
+					background-color: $COL_gs08;
+					> .tit1 {
+						@include fontH(20);
+					}
+					> .tit2 {
+						@include fontHM(20);
+					}
+					> .txt {
+						margin-top: 4px;
+						color: $COL_gs03;
+						@include fontT(15);
+					}
+					.list {
+						margin: 24px 0 16px;
+						li {
+							margin-top: 12px;
+							border: 1px solid $COL_gs05;
+							background-color: $COL_white;
+							a {
+								position: relative;
+								display: flex;
+								flex-direction: column;
+								justify-content: center;
+								padding: 19px 24px;
+								min-height: 80px;
+								img { 
+									position: absolute;
+									top: 50%;
+									left: 24px;
+									width: 42px;
+									height: 42px;
+									transform:translateY(-50%);
+								}
+								.text {
+									margin-left: 57px;
+								}
+								.tit {
+									@include fontHM(18);
+								}
+								.txt {
+									margin-top: 3px;
+									color: $COL_gs03;
+									@include fontT(15);
+								}
+								&::after {
+									content:'';
+									position: absolute;
+									top: 50%;
+									right: 24px;
+									@include Icon_arrow($COL_gs03);
+									transform: translateY(-50%) rotate(90deg);
+								}
+							}
+						}
+						&.half {
+							display: flex;
+							flex-wrap: wrap;
+							gap: 8px;
+							li {
+								flex: 0 calc(50% - 4px);
+								margin-top: 0;
+							}
+						}
+						+ .tit2 {
+							margin-top: 40px;
+						}
+					}
+					.end {
+						margin-top: 24px;
+						padding-top: 24px;
+						border-top: 1px solid $COL_gs06;
+						display: flex;
+						align-items: center;
+						justify-content: space-between;
+						.text {
+							.txt1 {
+								@include fontH(20);
+								em {
+									color: $COL_secondary1;
+								}
+							}
+							.txt2 {
+								margin-top: 8px;
+								color: $COL_gs03;
+								@include fontT(15);
+								em {
+									color: $COL_gs02;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.info_box {
+		.sec_tit.s {
+			margin: 20px 0 12px;
+			margin-top: 20px;
+			+ .list_type01 {
+				padding-top: 0;
+			}
+		}
+		.sec_tit.m {
+			margin-bottom: 20px;
+			.btn_area {
+				display: flex;
+				.txt_btn03:nth-child(2) {
+					position: relative;
+					padding-left: 17px;
+					&::before {
+						content:'';
+						@include Pos($p: absolute, $t: 50%, $l: 8px);
+						transform: translateY(-50%);
+						width: 1px;
+						height: 12px;
+						background-color: $COL_gs05;
+					}
+				}
+			}
+		}
+		:not(:first-child).sec_tit.m {
+			margin-top: 40px;
+		}
+		> :only-of-type {
+			&.sec_tit.m {
+				margin-bottom: 0;
+			}
+		}
+		.bg_box {
+			.sec_tit {
+				margin: 20px 0 16px;
+				padding-top: 20px;
+				border-top: 1px solid $COL_gs06;
+				@include fontTM(16);
+			}
+			.list_type01 {
+				li {
+					position: relative;
+					display: flex;
+					~ li {
+						margin-top: 12px;
+					}
+					.tit {
+						width: 156px;
+						margin-right: 20px;
+						color: $COL_gs03;
+					}
+					.txt {
+						flex: 1;
+						color: $COL_gs02;
+						em {
+							font-weight: 500;
+						}
+						strong {
+							color: $COL_black;
+						}
+						dl.info { // 이름,전화번호,주소
+							flex-direction: column;					
+							dt{
+								display: flex;
+								em {
+								font-weight: 500;
+								}
+								span {
+									position: relative;
+									padding-left: 17px;
+									&::before {
+										content:'';
+										@include Pos($p: absolute, $t: 50%, $l: 8px);
+										transform: translateY(-50%);
+										width: 1px;
+										height: 12px;
+										background-color: $COL_gs05;
+									}
+								}
+							}
+							dd {
+								margin-top: 4px;
+							}
+						}
+						.info {
+							display: flex;
+							.name {
+								color: $COL_black; 
+								font-weight: 500;
+							}
+							.num {
+								position: relative;
+								padding-left: 17px;
+								&::before {
+									content:'';
+									@include Pos($p: absolute, $t: 50%, $l: 8px);
+									transform: translateY(-50%);
+									width: 1px;
+									height: 12px;
+									background-color: $COL_gs05;
+								}
+							}
+						}
+					}
+					div:nth-child(3){
+						padding-left: 20px;
+						&::before {
+							content:'';
+							@include Pos($p: absolute, $t: 50%, $l: 50%);
+							transform: translate(-50%, -50%);
+							width: 1px;
+							height: 14px;
+							background-color: $COL_gs05;
+						}
+					}
+				}
+			}
+			.list_type02 {
+				display: flex;
+				align-items: center;
+				color: $COL_gs02;
+				.bank {
+					display: flex;
+					align-items: center;
+					@include fontTM(15);
+					em {
+						margin-left: 4px;
+					}
+					.logo {
+						margin-right: 12px;
+						width: 30px; height: 30px;
+					}
+				}
+				.bank_name {
+					@include fontTM(15);
+					position: relative;
+					padding-left: 25px;
+					&::before {
+						content:'';
+						@include Pos($p: absolute, $t: 50%, $l: 12px);
+						transform: translateY(-50%);
+						width: 1px;
+						height: 12px;
+						background-color: $COL_gs05;
+					}
+				}
+				.btn_xsmall {
+					margin-left: auto;
+				}
+				.date {
+					margin-left: auto;
+					color: $COL_gs03;
+					@include fontT(15);
+				}
+			}
+		}
+		.mycar_step {//내차사기
+			margin-top: 40px;
+			> li {
+				display: flex;
+				align-items: flex-start;
+				~ li {
+					margin-top: 32px;
+				}
+				.title {
+					display: flex;
+					width: 200px;
+					color: $COL_gs02;
+					@include fontHM(18);
+					span {
+						display: inline-block;
+						width: 22px;
+						height: 22px;
+						margin-right: 8px;
+						color: $COL_white;
+						@include fontHM(13, 22px);
+						background-color: $COL_hyundaiblue;
+						border-radius: 100%;
+						text-align: center;
+					}
+				}
+				.cont {
+					flex: 1;
+					li {
+						position: relative;
+						padding-left: 32px;
+						&:not(:last-child)::before {
+							content: '';
+							position: absolute;
+							left: 8px;
+							top: 18px;
+							width: 1px;
+							height: 100%;
+							border: 1px dashed $COL_gs10;
+						}
+						&::after{
+							content: '';
+							position: absolute;
+							left: 0;
+							top: 0;
+							width: 18px;
+							height: 18px;
+							border: 4px solid $COL_gs10;
+							border-radius: 100%;
+						}
+						~ li {
+							margin-top: 20px;
+						}
+						.tit {
+							display: block;
+							color: $COL_gs02;
+							@include fontHM(16);
+						}
+						.txt {
+							margin-top: 4px;
+							color: $COL_gs03;
+							@include fontT(15);
+						}
+					}
+				}
+			}
+		}
+	}
+	.price_box {// 주문금액
+		.sec_tit.m {
+			margin-bottom: 20px;
+			.date {
+				color: $COL_gs03;
+				@include fontT(13);
+			}
+		}
+		.price_list {
+			.point02 .cont_box:not(.depth_list) {
+				display: none;
+			}
+			.cont_box { //2뎁스
+				padding: 24px;
+								// &.depth_list .group_target {
+				//     display: none;
+				// }
+			}
+		}
+		// .payment_detail {
+		//     .cont_box {
+		//         display: none;
+		//     }
+		// }
+		// &.on {
+		//     .point02 .cont_box{
+		//         display: block;
+		//     }
+		//     .cont_box.depth_list .depth_02 {
+		//         display: block;
+		//     }
+		//     .payment_detail {
+		//         .cont_box {
+		//             display: block;
+		//         }
+		//     }
+		// }
+		
+		.payment_detail {
+			.cont_box {
+				display: none;
+			}
+		}
+		&.on {
+			.point02 .cont_box{
+				display: block;
+			}
+			.cont_box.depth_list .depth_02 {
+				display: block;
+			}
+			.payment_detail {
+				.cont_box {
+					display: block;
+				}
+			}
+		}
+	}
+	.payment_detail { // 가격목록
+		.price_list {
+			li {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
+			> li {
+				color: $COL_gs02;
+				~ li {
+					margin-top: 20px;
+				}
+				> .price {
+					@include fontT(15,24px);
+					em {
+						@include fontTM(16);
+					}
+				}
+				&.total {
+					color: $COL_hyundaiblue;
+					&:not(:first-child) {
+						margin-top: 20px;
+						padding-top: 20px;
+						border-top: 1px solid $COL_gs06;
+					}
+					.tit {
+						@include fontHM(18);
+					}
+					.price {
+						@include fontH(16);
+						em {
+							@include fontHM(20);
+						}
+					}
+				}
+				.cont_box { //2뎁스
+					width: 100%;
+					margin-top: 8px;
+					background-color: $COL_gs08;
+					color: $COL_gs03;
+					li {
+						~ li {
+							margin-top: 16px;
+							padding-top: 16px;
+							border-top: 1px solid $COL_gs06;
+						}
+						.logo {
+							flex-shrink: 0;
+							width: 30px; height: 30px;
+							margin: 6px 12px 0 0;
+							overflow: hidden;
+							img {
+								display: block;
+								width: 100%; height: 100%;
+								margin: auto;
+								// border-radius: 50%;
+							}
+							&_card img {
+								width: 20px; height: 30px;
+								// border-radius: 2px;
+							}
+						}
+						.cont {
+							flex: 1;
+						}
+						[class*="info"] {
+							display: flex;
+							justify-content: space-between;
+							@include fontT(14);
+							dt {
+								.state {
+									em {
+										font-weight: 500;
+									}
+									.date {
+										margin-left: 4px;
+									}
+								}
+								.txt {
+									@include fontT(14);
+									span {
+										~ * {
+											position: relative;
+											padding-left: 17px;
+											&::before {
+												content:'';
+												@include Pos($p: absolute, $t: 50%, $l: 8px);
+												transform: translateY(-50%);
+												width: 1px;
+												height: 14px;
+												background-color: $COL_gs02;
+												opacity: 0.2;
+											}
+										}
+									}
+								}
+							}
+							dd {
+								text-align: right;
+								em {
+									@include fontT(15);
+								}
+								.price2 {
+									color: $COL_gs04;
+								}
+							}
+						}
+						.info01 {
+							color: $COL_gs03;
+						}
+						.info02 {
+							margin-top: 8px;
+							color: $COL_gs04;
+							dt {
+								position: relative;
+								padding-left: 20px;
+								&::before {
+									content: "";
+									position: absolute;
+									top: 6px;
+									left: 5px;
+									width: 8px; height: 8px;
+									border-left: 1px solid $COL_gs04;
+									border-bottom: 1px solid $COL_gs04;
+								}
+							}
+						}
+					}
+				}
+			}
+			+ .price_list {
+				margin-top: 20px;
+				padding-top: 20px;
+				border-top: 1px solid $COL_gs06;
+			}
+			&.total {
+				.tit {
+					@include fontHM(16);
+				}
+				.price {
+					@include fontH(15, 24px);
+					em {
+						@include fontHM(16);
+					}
+				}
+			}
+		}
+		+ .caution {
+			margin-top: 16px;
+		}
+	}
+
+	/* 주문취소 [FO-MY-PS0023], 책임환불신청 [FO-MY-PS0026] */
+	.single_box {
+		.sec_tit.m {
+			margin: 40px 0 16px;
+		}
+		:not(.caution) > .sec_tit.s {
+			margin: 16px 0 8px;
+		}
+		.order_no .no {
+			@include fontH(18);
+		}
+		+ .btn_area {
+			margin-top: 32px;
+		}
+		.return_info { // 차량 회수정보
+			.date {
+				padding: 16px 20px;
+				color: $COL_gs03;
+				background-color: $COL_gs08;
+			}
+		}
+		.info_box + .sale_photo {//차량정보(주행거리)
+			margin-top: 40px;
+			border-top: 1px solid $COL_gs06;
+		}
+	}
+	.sale_photo {
+		.sec_tit.m {
+			margin: 40px 0 16px;
+		}
+		> .sec_tit.s {
+			margin: 16px 0 8px;
+		}
+		.order_no .no {
+			@include fontH(18);
+		}
+		+ .btn_area {
+			margin-top: 32px;
+		}
+		.addphoto_list {
+			margin-bottom: 32px;
+			.txt_btn03 {
+				display: block;
+				margin-left: auto;
+				margin-top: 16px;
+			}
+			.caution {
+				margin-top: 8px;
+			}
+			+ .sec_tit.m {
+				margin-top: 16px;
+			}
+		}
+		.caution.bg {
+			.sec_tit.s {
+				margin-bottom: 12px;
+			}
+		}
+		.caution + .form_list {
+			margin-top: 16px;
+		}
+	}
+	.terms {
+		margin-top:40px;
+	}
+}
+[class^=popup]{
+	.sale_photo{
+		.sec_tit:first-child{
+			margin-top: 0;
+		}
+		.addphoto_list{
+			.txt_btn03{
+				display: none;
+			}
+		}
+	}
+}
+/* 내차사기 목록 [FO-MY-PS0021] */
+.buy_list {
+	.date_result {
+		margin-top: 24px;
+	}
+	.no_data.car.bg {
+		margin-top: 40px;
+		padding: 80px;
+		background-color: $COL_gs08;
+	}
+	.product_list {
+		margin-top: 32px;
+		padding-top: 40px;
+		border-top: 1px solid $COL_gs06;
+		.total_result {
+			margin-bottom: 16px;
+		}
+		.unit_type {
+			a {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 32px 0;
+				border-bottom: 1px solid $COL_gs06;
+				&:first-child {
+					padding-top: 0;
+				}
+				.box_stat {
+					flex-shrink: 0;
+					width: 257px;
+					text-align: center;
+					.list_step {
+						margin-bottom:16px;
+					}
+					.info_txt {
+						color:$COL_gs03;
+						@include fontT(14);
+					}
+					.time {
+						font-weight: 500;
+						&#dueDate {
+							color: $COL_hyundaiblue;
+						}
+						i {
+							
+						}
+					}
+				}
+			}
+		}
+		.btn_area.col_type {
+			margin-top: 32px;
+		}
+	}
+}
+/* 자주 묻는 질문 */
+.faq_list {
+	.sec_tit {
+		margin-bottom: 20px;
+	}
+	.qa_wrap {
+		.js_toggle{
+			position: relative;
+			display: flex;
+			align-items: center;
+			width: 100%;
+			text-align: left;
+			padding: 20px 64px 20px 0;
+			box-shadow: 0px 1px 0px $COL_gs06; 
+			span{
+				margin-right: 4px;
+				color: $COL_secondary1;
+				@include fontHM(20);
+			}
+			&::after {
+				@include Icon_arrow($COL_gs02);
+			}
+		}
+		.group{
+			.gray_box {
+				padding: 32px 48px;
+				background-color: $COL_gs08;
+				box-shadow: 0px 1px 0px $COL_gs06; 
+				a {
+					color: $COL_secondary1;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
+// **********************************************************
+// 판매관리
+// **********************************************************
+.sell_list {
+	.tab:not(.date) > .list {
+	margin-top:24px;
+	}
+	.no_data {
+	margin-top:40px;
+	}	
+	.product_list {
+	margin-top:40px;
+	.unit_type {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding:32px 0;
+		border-bottom:1px solid $COL_gs06;
+		&:first-child {
+			padding-top:0;
+		}
+	}
+	.mid_area {
+		flex:500px 0;
+		width: 500px;
+	}
+	.box_stat {
+		flex-shrink: 0;
+		width: 256px;
+		text-align: center;
+		.list_step {
+			margin-bottom:16px;
+		}
+		.info_txt {
+			color:$COL_gs03;
+			@include fontT(14);
+		}
+		.date_txt {
+			@include fontTM(16);
+		}
+	}
+	+ .btn_area {
+		margin-top:32px ;
+	}
+	}
+	/* S ::시세확인/정보입력 */
+	.quote {
+	.caution {
+		margin-top:16px;
+	}		
+	}
+/* E ::시세확인/정보입력 */
+
+	/* S ::견적/계약 */
+	.contract {
+	.top_area {
+		display: flex; 
+		align-items: flex-start; 
+		padding:20px 0 32px;
+		border-bottom:1px solid $COL_gs06;
+		.toggle_btn01 {
+			flex-shrink: 0;
+			width: 108px;
+			line-height: 32px;
+		}
+		.date_result { 
+			display:none;
+			margin-left:32px;
+			width: calc(100% - 140px);
+			&.on {
+				display:flex;
+			}
+		}
+		}
+		.total_result + .unit_type {
+		padding-top:16px;
+		}
+	}
+	/* E ::견적/계약 */
+}
+
+/* S:: 중고차 판매계약 */
+.car_trade {
+.cont_box {
+	margin-top:24px;
+	padding:40px;
+	border:1px solid $COL_gs06;
+	& + .btn_area {
+		margin-top:32px;
+	}
+}
+section {
+	&:not(:first-child) {
+		margin-top:40px;	
+		padding-top:40px;
+		border-top:1px solid $COL_gs06;
+	}
+	.sec_tit {
+		&.m {
+			margin-bottom:20px;
+			.name {
+				position:relative;
+				padding-left:17px;
+				margin-right:auto;
+				color:$COL_gs03;
+				@include fontT(16);
+				&::before {
+					content: '';
+					@include Pos($p:absolute, $l:8px,$t:50%);
+					margin-top:-7px;
+					width: 1px; height: 14px;
+					background:$COL_gs05;						
+				}
+			}
+			.sub_txt {
+				color:$COL_secondary1;
+				@include fontTM(18);
+			}
+			& + .s {
+				margin-top:0;
+			}
+		}
+		&.s {
+			margin:40px 0 12px;
+		}
+		+ .item {
+			margin-top:0;
+		}
+	}
+	&.bank_box {
+		.list_type01 {
+			display: flex;
+			align-items: center;
+			.bank {
+				display: flex;
+				align-items: center;
+				@include fontTM(15);
+				em {
+					margin-left: 4px;
+				}
+				.logo {
+					margin-right: 12px;
+					width: 30px; height: 30px;
+				}
+			}
+			.bank_name {
+				@include fontTM(15);
+				position: relative;
+				padding-left: 25px;
+				&::before {
+					content:'';
+					@include Pos($p: absolute, $t: 50%, $l: 12px);
+					transform: translateY(-50%);
+					width: 1px;
+					height: 12px;
+					background-color: $COL_gs05;
+				}
+			}
+			.btn_xsmall {
+				margin-left: auto;
+			}
+		}
+	}
+	.bg_box {
+		padding:20px;
+		background:$COL_gs08;
+	}
+	.form_list.type01 {
+		.bg_box {
+			width: 100%;
+			display:flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+	}
+	.terms {
+		margin-top:40px;
+		.cont.on {
+			margin-bottom: 40px;
+		}
+	}
+	.end_terms {
+		margin-top:16px;
+		padding-top:16px;
+		border-top:1px solid $COL_gs06;
+		.sub_txt {
+			margin-top:4px;
+			padding-left:32px;
+			color:$COL_gs03;
+			@include fontT(14);
+		}
+	}
+	.caution {
+		margin-top: 24px;
+		& + .form_list {
+			margin-top:16px;
+		}
+	}
+	.setting {
+		li {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top:8px;
+			.snippet {
+				flex:1 1;
+				width: 50%;
+				line-height: 56px;
+				.position {
+					@include fontH(16);
+				}
+				.name {
+					margin-left:4px;
+					@include fontHM(16);
+				}
+			}
+			.form_area {
+				flex:1 1;
+			}
+		}
+	}
+}
+}
+/* E:: 중고차 판매계약 */
+
+/* S:: 차량평가결과 */
+.car_result {
+.cont_box {
+	margin-top:24px;
+	padding:40px;
+	border:1px solid $COL_gs06;
+	.sec_tit {
+		&.s {
+			margin:20px 0 12px;
+		}
+	}
+	.caution {
+		margin-top:16px;
+	}
+}
+.bg_box {
+	padding:20px;
+	background:$COL_gs08;
+}
+.top_txt {
+	display: flex;
+	align-items: center;
+	span {
+		@include fontH(20);
+	}
+	em {
+		margin:0 4px;
+		position:relative;
+		@include fontHM(24);
+		&::after {
+			content:'';
+			@include Pos($p:absolute, $b:0, $l:0);
+			width: 100%;
+			height:2px;	
+			background:$COL_secondary1;
+		}
+	}
+}
+.info_txt {
+	margin-top:32px;
+	padding:40px;
+	background:$COL_lightsand;
+	text-align: center;
+	.text {			
+		@include fontTM(20);
+		&::before {
+			content:'';
+			display:block;
+			margin:0 auto 12px;
+			width:60px ; height: 60px;
+			background:url('./../img/my/img_car_result.png') no-repeat;
+		}			
+	}
+	.date {
+		margin-top:8px;
+		color:$COL_secondary1;
+		@include fontTM(18);
+	}
+	.list {
+		margin-top:24px;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		gap:8px;
+		li {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding:0 20px;
+			width: calc(50% - 4px); height: 64px;
+			background:$COL_white;
+			@include fontT(15);
+			&::after {
+				content: '';
+				width: 24px; height: 24px;
+				background-color:$COL_secondary1;
+				background-position: center;
+				-webkit-mask: url('./../img/icon/icon_ui_check02.svg') no-repeat 0 0;
+				mask: url('./../img/icon/icon_ui_check02.svg') no-repeat 0 0;
+			}
+		}
+	}
+}
+.price_list {		
+	li {
+		display:flex;
+		justify-content: space-between;
+		color:$COL_gs02;
+		&.total {				
+			.tit {
+				color:$COL_hyundaiblue;
+				@include fontHM(18);
+			}
+			.price {
+				em {
+					color:$COL_hyundaiblue;
+					@include fontHM(20);
+				}
+			}
+		}
+		.price {
+			text-align: right;
+			@include fontT(15, 24px);
+			em {
+				@include fontTM(16);
+			}
+		}
+		& + li {
+			margin-top:12px;
+		}
+	}		
+}
+.data_list {
+	li {
+		display:flex;
+		.tit {
+			flex: 176px 0;
+			width: 176px;
+			color:$COL_gs03;
+		}
+		.data {
+			flex:1 1;
+			color:$COL_gs02;
+			.name {
+				position:relative;
+				padding-right:17px;
+				color: $COL_black;
+				@include fontTM(16);
+				&::after {
+					content:'';
+					@include Pos($p:absolute, $r:8px, $t:50%);
+					margin-top:-7px;
+					width: 1px; height:14px ;
+					background: $COL_gs05;
+				}
+			}
+			&.point {
+				color:$COL_hyundaiblue;
+				@include fontTM(16);
+			}
+			&.end {
+				@include fontTM(16);
+			}
+		}
+		& + li {
+			margin-top:12px;
+		}
+	}
+}
+}
+/* E:: 차량평가결과 */
+
+/* S:: 내차팔기 상세 */ 
+.order_detail {
+.order_info {
+	.order_no {
+		[class^="flag_"] {
+			& + [class^="flag_"] {
+				margin-left:4px;
+			}
+		}
+	}
+	.unit_type {
+		margin-top:32px;
+	}	
+}
+.product_box {
+	.order_step {
+		> .txt {
+			p .point02 {
+				@include fontTM(16);
+			}
+		}
+		.bg_box.list_type {
+			width: 560px;
+			text-align: left;
+			.list_tit {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				flex-flow:row wrap;
+				@include fontHM(16);
+				.desc {
+					width: 100%;
+					margin-top: 8px;
+					color:$COL_gs03;
+					@include fontT(16);
+				}
+			}
+			.caution {
+				margin-top: 16px;
+				padding-top: 16px;
+				border-top: 1px solid $COL_gs06;
+				.tit {
+					position: relative;
+					margin-bottom: 8px;
+					padding-left: 20px;
+					color: $COL_gs03;
+					@include fontT(14);
+					&::before {
+						content:'';
+						@include Pos($p:absolute,$l:0,$t:3px);
+						width: 16px; height: 16px;
+						background:url('./../img/icon/icon_ui_info03.svg') center no-repeat;
+					}
+				}		
+			}
+			.list {
+				margin-top:16px;
+				li {
+					display:flex;
+					align-items: flex-start;
+					@include fontT(14);
+					& +li {
+						margin-top:8px;
+					}
+					> .tit {
+						flex-shrink: 0;
+						margin-right:20px;
+						width: 156px;
+						color:$COL_gs03;
+					}
+					> .txt {
+						align-self: flex-start;
+						flex:1 1;
+						color:$COL_gs02;
+						em {
+							font-weight: 500;
+						}
+					}
+					.profile {//방문평가사
+						display: flex;
+						align-items: center;
+						.img {
+							position: relative;
+							width: 48px;
+							height: 48px;
+							margin-right: 12px;
+							background: url('../img/order/bg_profile.png') no-repeat 0 0;
+							img {
+								width: 100%;
+								height: 100%;
+								border-radius: 100%;
+							}
+						}
+						.txt {
+							font-weight: 500;
+						}
+					}
+				}
+			}
+		}
+		.bg_box.txt_type { // 이전버전 백업용~
+			[class^="txt_btn"].icon_dowm {
+				margin-top:16px;
+			}
+		}
+		strong.txt_date {
+			display: block;
+			margin-top:24px;
+			color:$COL_hyundaiblue;
+			@include fontHM(18);
+		}
+	}
+}
+.info_box {
+	.sec_tit {
+		&.m {
+			.info {
+				display: flex;
+				@include fontT(16);
+				align-items: center;
+				color:$COL_gs02;
+				.discount {
+					padding:0 4px;
+					color:$COL_hyundaiblue;
+					@include fontH(16);
+					em {
+						@include fontHM(20);
+						vertical-align: middle;
+					}
+				}
+			}
+		}
+	}
+	.trade_in {  // 트레이드인
+			margin-top: 20px;
+		border-top:1px solid $COL_gs06;
+		.info_txt {
+			margin-top:20px;
+			color:$COL_gs02;
+		}
+		.bg_box {
+			margin-top:12px;
+			.list_tit {
+				color:$COL_gs02;
+				@include fontHM(18);
+				padding-bottom:20px;
+				margin-bottom:20px;
+				border-bottom:1px solid $COL_gs06;
+			}
+			.list_type01 {
+				.txt {
+					.info {
+						display:flex;
+						.price {
+								color: $COL_black;
+								@include fontT(15);
+								em {
+									@include fontTM(16);
+									vertical-align: middle;
+							}							
+						}
+						.sub_txt {
+							position: relative;
+							padding-left: 17px;
+							&::before {
+								content:'';
+								@include Pos($p: absolute, $t: 50%, $l: 8px);
+								transform: translateY(-50%);
+								width: 1px;
+								height: 12px;
+								background-color: $COL_gs05;
+							}
+							.txt_discount {
+								padding:0 4px;
+								color:$COL_hyundaiblue;
+								@include fontH(16);
+								em {
+									@include fontHM(20);
+									vertical-align: middle;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}	
+}	
+.bank_box {
+	.sec_tit {
+		&.m {
+			&:not(:first-child) {
+				margin-top:40px;
+			}
+		}
+	}
+}
+}
+/* E:: 내차팔기 상세 */ 
+
+// 방문평가 팝업 : s
+.visit_layer{
+	div.date-picker{
+		font-size: 0;
+	}
+	.ui-datepicker{
+		position: relative !important;
+		border: none;
+		width: 325.5px;
+		padding: 0 16px 16px;
+		thead{
+			th{
+				padding-bottom: 20px;
+			}
+		}
+		// tbody{
+		// 	.ui-state-default{
+		// 		width: 35px;
+		// 		height: 35px;
+		// 		line-height: 35px;
+		// 	}
+		// }
+		.ui-datepicker-calendar{
+			margin-top: 24px;
+		}
+	}
+	.sec_tit{
+		margin-bottom: 16px;
+	}
+	.caution{
+		margin-top: 16px;
+	}
+	& > section:not(:first-child){
+		margin-top: 32px;
+		padding-top: 32px;
+		border-top:1px solid $COL_gs06;
+	}
+	.visit_selected{
+		.flex_box{
+			display: flex;
+		}
+		.calendar_wrap{
+			padding-right: 32px;
+		}
+		&.on{
+			.selected_time{
+				.form_area.box_type{
+					display: flex;
+				}
+			}
+			.bg_box{
+				color: $COL_hyundaiblue;
+			}
+		}
+		.selected_time{
+			width: 100%;
+			padding-left: 32px;
+			border-left: 1px solid $COL_gs06;
+			& > .no_sel_txt{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				@include fontT(14);
+				color: $COL_gs04;
+				height: 291px;
+			}
+			.form_area.box_type{
+				display: none;
+				li{
+					position: relative;
+					flex: initial;
+					width: calc(50% - 4px);
+					height: 48px;
+				}
+				.chk_block{
+					&:disabled{
+						& + label{
+							background-color: $COL_gs08;
+						}
+					}
+					& + label{
+						.txt{
+							@include fontH(15);
+						}
+						&::before{
+							display: none;
+						}
+					}
+				}
+				.chk_block:checked{
+					&:not(:disabled){
+						& + label .txt{
+							color: $COL_secondary1;
+						}
+					}
+				}
+			}
+			.no_select{
+				height: 100%;
+			}
+		}
+		.bg_box{
+			margin-top: 16px;
+			padding: 20px 0;
+			text-align: center;
+			@include fontHM(20);
+			color: $COL_gs04;
+			background-color: $COL_gs08;
+		}
+	}
+	.btn_area.col_type{
+		margin-top: 32px;
+	}
+}
+
+// 방문평가 팝업 : e
+
+// 명의이전완료 서류 정보 : s
+.change_info_layer_v{
+	.sec_tit{
+		.txt{
+			@include fontT(15);
+			
+		}
+	}
+	& > section:not(:first-child){
+		margin-top: 32px;
+	}
+
+	.box_type2{
+		margin-top: 16px;
+		& > li{
+			box-shadow: 0px 0px 5px rgba($COL_black, 0.02);
+			&:not(:first-child){
+				margin-top: 16px;
+			}
+		}
+		.chk_radio{
+			&:checked{
+				+ label{
+					border-color: $COL_secondary1;
+					.name{
+						color: $COL_black;
+					}
+					
+				}
+			}
+			+ label{
+				display: block;
+				padding: 24px 24px 24px 58px;
+				width: 100%;
+				height: 100%;
+				border: 1px solid $COL_gs05;
+				&::before{
+					top: 24px;
+					left: 24px;
+				}
+			}	
+		}
+	}
+	.name_info{
+		display: flex;
+		align-items: center;
+		padding-left: 8px;
+		&> span:last-child{
+			padding-left: 8px;
+		}
+		&> span:first-child{
+			position: relative;
+			padding-right: 9px;
+			&::before{
+				content: "";
+				position: absolute;
+				top: 50%;
+				right: 0;
+				display: block;
+				width: 1px;
+				height: 14px;
+				background-color: $COL_gs05;
+				transform: translateY(-50%);
+			}
+		}
+	}
+	.name{
+		@include fontTM(16);
+		color: $COL_gs03;
+		
+	}
+	.owner_name{
+		display: inline-block;
+		@include fontT(15);
+		color: $COL_gs03;
+	}
+	.address_txt{
+		margin-top: 4px;
+		@include fontT(15);
+	}
+
+	.send_adr{
+		.name_info{
+			margin-top: 16px;
+			padding: 0;
+			.name{
+				@include fontTM(16);
+				color: $COL_black;
+			}
+			.phone_num{
+				@include fontT(16);
+				color: $COL_gs02;
+			}
+		}
+		.caution{
+			margin-top: 8px;
+		}
+		.form_list{
+			margin-top: 8px;
+		}
+	}
+	.btn_area.col_type{
+		margin-top: 32px;
+	}
+}
+.change_info_layer{
+	.sec_tit{
+		margin-bottom: 16px;
+		.tit{
+			width: 166px;
+		}
+		.form_area{
+			flex:1;
+		}
+		.com_select_item{
+			@include fontT(16);
+		}
+		&.name_info{
+			justify-content: initial;
+			.tit{
+				width: auto;
+				position: relative;
+				padding-right: 9px;
+				&::before{
+					content: "";
+					position: absolute;
+					top: 50%;
+					right: 0;
+					display: block;
+					width: 1px;
+					height: 14px;
+					background-color: $COL_gs05;
+					transform: translateY(-50%);
+				}
+			}
+			.owner_name{
+				padding-left: 8px;
+				@include fontH(16);
+				em{
+					display: inline-block;
+					margin-left: 4px;
+					@include fontHM(16);
+				}
+			}
+		}
+	}
+	.inbox_type01 ~ .inbox_type01{
+		margin-top: 8px;
+	}
+	.caution{
+		margin-top: 16px;
+	}
+}
+// 명의이전완료 서류 정보 : e
+
+// 개인정보 제3자 제공동의 : s
+.agreement_layer{ 
+	& > section:not(:first-child){
+		margin-top: 24px;
+	}
+	
+	.txt{
+		@include fontT(13)
+	}
+	.depth1{
+		& > li {
+			&:not(:first-child){
+				margin-top: 24px;
+			}
+			& > .tit{
+				@include fontTM(16);
+				strong{
+					@include fontHM(16);
+				}
+			}
+		}
+	}
+	.depth2{
+		&:not(:first-child){
+			margin-top: 24px;
+		}
+		& > .tit{
+			margin-top: 4px;
+			@include fontT(16);
+		}
+		& > .depth3{
+			margin-top: 8px;
+			.tit{
+				@include fontT(16);
+				color: $COL_gs02;
+			}
+			.txt{
+				@include fontT(16);
+				color: $COL_gs03;
+			}
+		}
+	}
+	.btn_area.col_type{
+		margin-top: 32px;
+	}
+}
+// 개인정보 제3자 제공동의 : e
+
+
+// 전자서명방법, 서류등록 : e
+.info_layer{
+	.sub_text{
+		@include fontT(16);
+		color: $COL_gs03;
+	}
+	.select{
+		margin-top: 20px;
+	}
+	.name_info{
+		display: flex;
+		align-items: center;
+		&> span:last-child{
+			padding-left: 8px;
+		}
+		&> span:first-child{
+			position: relative;
+			padding-right: 9px;
+			&::before{
+				content: "";
+				position: absolute;
+				top: 50%;
+				right: 0;
+				display: block;
+				width: 1px;
+				height: 14px;
+				background-color: $COL_gs05;
+				transform: translateY(-50%);
+			}
+		}
+	}
+	.name{
+		@include fontTM(18);
+		color: $COL_hyundaiblue;
+		
+	}
+	.owner_name{
+		display: inline-block;
+		@include fontT(16);
+		color: $COL_gs03;
+	}
+
+	.radio_list{
+		display: flex;
+		& > li:first-child{
+			margin-right: 48px;
+		}
+	}
+	.info_tit{
+		@include fontTM(18);
+	}
+	.info_list{
+		margin: 20px 0;
+		padding-top: 20px;
+		border-top: 1px solid $COL_gs06;
+		& > li:not(:first-child){
+			margin-top: 20px;
+		}
+	}
+	.radio_cont{
+		margin-top: 16px;
+		& > .form_area{
+			display: none;
+		}
+	}
+	.btn_area.col_type{
+		margin-top: 32px;
+	}
+	
+	.gray_box{
+		margin-top: 20px;
+		padding: 0 20px;
+		background-color: $COL_gs08;
+	}
+	.add_list{
+		padding: 16px 0;
+		&:not(:first-child){
+			border-top: 1px solid $COL_gs06;
+		}
+		dl{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			dt{
+				@include fontTM(16);
+				color: $COL_gs02;
+			}
+		}
+		.file_list{
+			margin-top: 16px;
+			& > li{
+				position: relative;
+				display:flex;
+				align-items: center;
+				justify-content: space-between;
+				padding-left: 20px;
+				&:not(:first-child){
+					margin-top: 4px;
+				}
+				&::before{
+					content: "";
+					position: absolute;
+					left: 0;
+					top:50%;
+					transform: translateY(-50%);
+					display: block;
+					width: 16px;
+					height: 16px;
+					background: {
+						image : url(../img/icon/icon_ui_file03.svg);
+						repeat: no-repeat;
+					}
+				}
+				.file_name{
+					display: inline-block;
+					width: 90%;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					color: $COL_gs02;
+				}
+				.btn_delete{
+					color: $COL_gs03;
+				}
+			}
+		}
+	}
+	.caution {
+		margin-top: 16px;
+	}
+	.btn_area.full_type{
+		margin-top: 32px;
+	}
+	.document_guide{
+		.sub_text{
+			margin-bottom: 24px;
+		}
+		.gray_box{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 16px;
+			margin-top: 32px;
+			.right{
+				.tit{
+					@include fontTM(15);
+				}
+				.txt{
+					@include fontT(14);
+					color: $COL_gs03 ;
+				}
+			}
+		}
+		.table_sec{
+			&:not(:first-child){
+				margin-top: 32px;
+			}
+			.caution{
+				margin-top: 16px;
+			}
+		}
+		.table_tit{
+			@include fontHM(18);
+			margin-bottom: 16px;
+		}
+		.table_img{
+			text-align: center;
+			img{
+				width: 358px;
+				height: 200px;
+			}
+			.txt{
+				margin-top: 8px;
+				color: $COL_gs02;
+				@include fontT(16);
+				em{
+					@include fontTM(16);	 
+				}
+			}
+			+ .table.type02 {
+				margin-top: 20px;
+			}
+		}
+	}
+}
+
+// 전자서명방법, 서류등록 : s 
+
+
+// ** 
+// * 판매 관리 팝업
+// ** 
+
+// 차량정보, 판매 계약 정보 : S
+.car_info_layer {
+	.sub_text{
+		@include fontT(16);
+		color: $COL_gs03; 
+		margin-bottom: 24px;
+	}
+	section{
+		&:not(:first-of-type){
+			margin-top: 32px; 
+		}
+		.sec_tit{
+			margin-bottom: 16px;	
+		}
+	}
+	.car_photo_list{
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px 8px;
+		& > li{
+			flex: 0 136px;
+			// flex: 0 calc((100% - 32px) / 5);
+			// width : calc(20% - 8px);
+			// &:not(:nth-child(5n+1)){
+			// 	margin-left: 8px;
+			// }
+			img{
+				width: 136px;
+				height: 136px;
+				object-fit: cover;
+			}
+			.txt{
+				margin-top: 4px;
+				color: $COL_gs03;
+				@include fontT(13);
+			}
+		}
+	}
+	.sub_tit {
+		color: $COL_gs03;
+		margin-bottom: 24px;
+	}
+	.table{
+		td + td{
+			border-left: 1px solid $COL_gs06;
+		}
+	}
+}
+
+// 차량정보, 판매 계약 정보 : E

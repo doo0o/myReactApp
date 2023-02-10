@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>법인 이용약관동의(공통)</title>
+	<!--#include file="/HMC/p/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_login.css">
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+    <div id="CPOcontents">
+        <div id="layoutWrap" class="members">
+            <!-- container -->
+            <div class="container">
+				<div class="title_box">
+					<h1 class="page_tit">
+						현대 & 제네시스 인증 중고차 서비스<br>가입에 동의해 주세요.
+					</h1>
+				</div>
+				<div class="cont_box">
+					<div class="terms">
+						<div class="cont on">
+							<div class="head item">
+								<input type="checkbox" name="chk_comm" id="chk_terms01" class="chk_type01 bold">
+								<label for="chk_terms01">
+									<span class="txt">전체 약관에 동의합니다.</span>
+								</label>
+							</div>
+							<div class="group">
+								<ul class="list">
+									<li>
+										<div class="item">
+											<input type="checkbox" name="chk_comm" id="chk_terms01_1" class="chk_type01">
+											<label for="chk_terms01_1">
+												<span class="txt">[필수] 이용 약관 동의</span><button type="button" class="btn_arr">팝업 버튼</button>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="item">
+											<input type="checkbox" name="chk_comm" id="chk_terms01_2" class="chk_type01">
+											<label for="chk_terms01_2">
+												<span class="txt">[필수] 개인정보 수집 및 이용 동의</span><button type="button" class="btn_arr">팝업 버튼</button>
+											</label>
+										</div>
+									</li> 																
+								</ul>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="btn_area full_type">
+					<button type="button" class="btn_big color01" disabled>동의하고 이용하기</button>
+				</div>
+            </div>
+            <!-- //container -->
+        </div>
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<script>
+	$(document).ready(function() {
+		toggle();
+	});
+</script>
+</html>

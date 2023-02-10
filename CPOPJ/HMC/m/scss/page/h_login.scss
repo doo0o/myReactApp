@@ -1,0 +1,559 @@
+@charset 'utf-8';
+//
+//	로그인, 서비스 가입
+//
+
+@import '../_common/h_function';
+@import '../_common/h_mixins';
+
+.h_header_navi01 {
+	background-color: $COL_Light;
+}
+
+// 서비스 가입 
+#CPOcontents{
+	.join_list{
+		padding:40px 21px 60px;
+	}
+}
+.p_wrap{
+	.join_list{
+		padding:5px 25px 0;
+		/* 서비스 가입 - 마케팅 활용 동의 bo html 영역 */
+		.tit{
+			margin-top: 5px;
+			color:$COL_Black;
+			h1{
+				@include Mix_Font('Head-M', 18, 23);
+			}
+		}
+		.agree{// 팝업 약관영역
+			border-top:1px solid $COL_Line_Medium;
+			padding:25px 0 0 0;
+			.join_agree{
+				// overflow-x:hidden;
+				// overflow-y:auto;
+				// max-height: 143px;
+				.tit{
+					padding: 0;
+					margin-top: 0;
+					@include Mix_Font('Head-R', 15, 19);
+				}
+				.txt{
+					color:$COL_Base_01;
+					@include Mix_Font('Txt-R', 13, 21);
+					margin:8px 0 0;
+				}
+			}
+		}
+		.join_sns{ /* 수신동의 영역*/
+			display:flex;
+			flex-flow:row wrap;
+			row-gap:15px;
+			color:$COL_Base_03;
+			margin-top: 0;
+			& > li{
+				flex: 50%;
+				margin-top: 0;
+				 
+			}
+			label{
+				@include Mix_Font('Txt-R', 13, 20);
+			}
+		}
+	}
+}
+.join_list{// 서비스 가입
+	overflow-y:auto;
+	height:calc(100% - 106px);
+	.tit{
+		padding-bottom:20px;
+		@include Mix_Font('Head-R', 24, 30);
+		h3{
+			@include Mix_Font('Head-M', 18, 23);
+		}
+		.txt{
+			margin-top:5px;
+			color:$COL_Base_03;
+			@include Mix_Font('Txt-R', 14, 21);
+		}
+	}
+	
+	.inner{
+		.btn_show01{
+			&::before{
+				@include Icon_Arr(1.5,'8f8f8f')
+			}
+		}
+	}
+	.agree_wrap {
+		margin: 20px 0 0;
+		.sub_depth{
+			&.on{
+				.btn_show01::before{
+					transform: rotate(180deg);
+				}
+				> .inner{
+					display: block;
+				}
+			}
+			.btn_show01::before{
+				transform: rotate(0);
+			}
+			& > .inner{
+				display: none;
+				border-top: none;
+				padding: 0 0 0 36px;
+				margin-top: 8px;
+			}
+		}
+		.join_sns{ /* 수신동의 영역*/
+			display:flex;
+			flex-flow:row wrap;
+			row-gap:15px;
+			color:$COL_Base_03;
+			margin-top: 20px;
+			& > li{
+				flex: 50%;
+				margin-top: 0;
+				 
+			}
+			label{
+				@include Mix_Font('Txt-R', 13, 20);
+			}
+		}
+	}
+	/* 서비스 가입 - 마케팅 활용 동의 bo html 영역 */
+	.join_agree{
+		.txt{
+			color:$COL_Base_01;
+			@include Mix_Font('Txt-R', 14, 21);
+		}
+	}
+}
+
+
+
+/***** 로그인 페이지 *****/
+// .login_form{
+// 	padding:40px 21px 100px;
+// 	> .tit{
+// 		margin-bottom:30px;
+// 		h2{
+// 			color:$COL_Black;
+// 			@include Mix_Font('Head-M', 26, 32.5);
+// 		}
+// 	}
+// 	.form_type01{
+// 		box-shadow:none;
+// 		.ico_delete{
+// 			display:none;
+// 		}
+// 		.inbox_type03{
+// 			z-index:1;
+// 			&:nth-child(2){
+// 				margin-top:-1px;
+// 			}
+// 			&:not(.focus){
+// 				&:first-of-type{
+// 					border:1px solid $COL_Line_Dark;
+// 				}
+// 				.ico_delete{
+// 					display:none !important;
+// 				}
+// 			}
+// 			border:1px solid $COL_Line_Dark;
+// 			border-top:1px solid $COL_Line_Medium;
+// 			&.focus{
+// 				border:1px solid $COL_Blue;
+// 				z-index:2;
+// 			}
+// 		}
+// 	}
+// 	.auto{
+// 		margin-top:15px;		
+// 	}
+// 	.btn_login{
+// 		outline:none;
+// 		width:100%;height:56px;
+// 		margin-top:30px;padding:18px 0;
+// 		background:$COL_Primary;
+// 		border:0;//border-radius:4px;
+// 		color:$COL_White;
+// 		@include Mix_Font('Txt-R', 16, 20);
+// 	}
+// 	.link{
+// 		height:20px;
+// 		margin-top:20px;
+// 		font-size:0;
+// 		text-align:center;
+// 		li{
+// 			display:inline-block;
+// 			position:relative;
+// 			a{
+// 				display:block;
+// 				padding:0 15px;
+// 				color:$COL_Base_03;
+// 				@include Mix_Font('Txt-R', 15, 18);
+// 			}
+// 			&:before{
+// 				content:'';
+// 				display:block;
+// 				position:absolute;
+// 				top:3px;
+// 				left:0;
+// 				width:1px;
+// 				height:12px;
+// 				background:$COL_Line_Dark;
+// 			}
+// 			&:first-child:before{
+// 				display:none;
+// 			}
+// 		}
+// 	}
+// }
+ 
+/* S :: 개인/법인 로그인 */
+.corp_login{
+	&.no_footer{ // footer는 없고, 하단 탭바만 있을 경우
+		padding-bottom: 112px !important;
+	}
+	padding:0 15px;
+	background-color: $COL_Light;
+	min-height: calc(100vh - 106px);
+	.tit{		
+		color:$COL_Black;
+		@include Mix_Font('Head-R', 26, 33);
+	}
+	.top{
+		padding: 30px 6px;
+		.tit{
+			& + .txt{
+				margin: 12px 0 0;
+				word-break: keep-all;
+				@include Mix_Font('Txt-R', 15, 23);
+				color: $COL_Base_03;
+			}
+			& + .btn_arrow_mid01{
+				margin-top: 20px;
+			}
+		}
+		
+	}
+	.select_brand{// 현대 & 제네시스 선택 로그인
+		display: flex;
+		gap: 0 10px;
+		margin: 0 0 20px;
+		> li{
+			width: calc(50% - 5px);
+			a {
+				display: block;
+				padding: 20px;
+				@include Mix_Box_Bg02;
+				border: 1px solid $COL_Line_Dark;
+				font-size: 0;
+				line-height: 0;
+			}
+			.log_logo{
+				display: inline-block;
+				height: 20px;
+				@include Mix_Size_0;
+				& + p {
+					position: relative;
+					margin-top: 50px;
+					@include Mix_Font('Head-R', 15, 19);
+					&::after{
+						content: "";
+						display: block;
+						@include Pos($p:absolute, $b:5px, $r:0);
+						@include Icon_Arr_Right(1.5, '8F8F8F');
+					}
+				}
+				&::after{
+					content: '';
+					display: block;
+					@include Mix_Library_Bg;
+					background-position: 0 -133px ;
+					width: 99px;
+					height: 20px;
+				}
+			}
+			&:last-of-type{ // GHQ LOGO
+				.log_logo{
+					&::after{
+						width:80px;
+						height:20px;
+						background-position: -104px -133px ;
+					}
+				}
+			}
+		}
+	}
+	.btn_area{
+		margin-top:30px;
+		text-align: center;
+		.btn_arrow_mid01{
+			margin: 20px 0 0;
+		}
+	}
+	.caution{
+		margin: 6px 0 0;
+	}
+	.corp_inner{ // 개인 법인 로그인 => 법인로그인
+		position:relative;
+		@include Mix_Box(50px 30px);
+		text-align: center;
+		strong {
+			@include Mix_Font('Head-M', 20, 25);
+		}
+		.txt{
+			margin-top:6px;
+			color:$COL_Base_03;
+			@include Mix_Font('Txt-R', 15, 23);
+		}
+		.caution{
+			margin: 0;
+		}		
+		.corp_text{
+			margin: 0 0 20px;
+		}
+		&::before{
+			content:'';
+			display:block;
+			width:60px;
+			height:60px;
+			@include Mix_Library_Bg;
+			background-position:-190px -130px;
+			margin:0 auto 20px;
+		}
+		& + .btn_txt_small01 {
+			margin:15px 0 0 auto;
+			display: block;
+		}
+	}
+	.corp_guide_btn{
+		margin: 20px 0 0 ;
+		text-align: right;
+	}
+	.corp_list{ // 법인 목록
+		li{
+			margin-bottom:10px;			
+			&:last-of-type{
+				margin-bottom:0;
+			}
+			label {
+				display: block;
+				@include Mix_Box(25px 20px 25px 54px) ;
+				width: 100%;
+				border:1px solid $COL_White;
+				&::before {
+					top:25px;
+					left:20px;
+				}
+			}
+			strong {
+				@include Mix_Font('Head-M', 18, 23);
+			}
+			p{
+				margin-top:4px;
+				color:$COL_Base_02;
+				@include Mix_Font('Txt-R', 15, 23);
+			}
+		}		
+		.chk_radio:checked + label {
+			border:solid 1px $COL_Secondary;
+		}
+	}
+}
+// 개인/법인 로그인//
+
+
+
+// 임직원 로그인
+
+.staff_login{
+	padding: 0 15px;
+	background-color: $COL_Light;
+	min-height: calc(100vh - 106px);
+	& > section{
+		&:not(:first-child){
+			margin-top: 30px;
+		}
+	}
+	.title_box{
+		padding-top: 30px;
+		.page_tit{
+			@include Mix_Font('Head-R',26,33);
+		}
+		.page_tit_sub{
+			@include Mix_Font('Txt-R',15,23);
+			margin-top: 12px;
+		}
+	}
+	.login_section{
+		& > .form_list01{
+			&:not(:first-child){
+				margin-top: 10px;
+			}
+		}
+		.save_id{
+			margin-top: 15px;
+		}
+	}
+	.pw_guide_btn{
+		text-align: right;
+		margin-top: 15px;
+	}
+}
+.p_staff{
+	%sub_txt{
+		color: $COL_Base_03;
+		@include Mix_Font('Txt-M',15,23);
+	}
+	.password_guid{
+		.sec_tit{
+			color: $COL_Base_03;
+		}
+		.sec_sub_txt{
+			@include Mix_Font('Txt-R',13,20);
+			color: $COL_Base_01;
+			margin-top: 12px;
+		}
+		& > section{
+			position: relative;
+			&:first-child{
+				padding: 25px 21px 30px;
+			}
+			&:not(:first-child){
+				padding: 40px 15px 30px;
+				&::before{
+					@include Mix_Space_Bar;
+				}
+			}
+			&:last-child{
+				padding-bottom: 0;
+			}
+		}
+		.caution{
+			margin-top: 12px;
+		}
+	}
+
+	
+	&.citation{
+		padding: 25px 0;
+		.sec_tit{
+			padding: 0 6px;
+		}
+
+		.sec_sub_txt{
+			@extend %sub_txt;
+			padding: 0 21px;
+		}
+		
+		.terms_section{
+			padding: 40px 21px 0;
+			position: relative;
+			&::before{
+				@include Mix_Space_Bar;
+			}
+		}
+		.input_section{
+			padding: 30px 15px;
+			.btn_area{
+				margin-top: 20px;
+			}
+		}
+		.form_list01{
+			margin-top: 15px;
+		}
+		.identity{
+			.txt{
+				color: $COL_Base_01;
+				&:disabled{
+					& ~ .validation.ok{
+						color: $COL_Secondary;
+					}
+				}
+			}
+		}
+		.caution{
+			margin-top: 20px;
+		}
+	}
+	&.signup{
+		padding: 25px 21px 0;
+		.sec_sub_txt{
+			@extend %sub_txt;
+		}
+		.terms_section{
+			margin-top: 30px;
+		}
+	}
+	
+	.bg_box{
+		background-color: $COL_Light;
+		padding: 20px;
+		margin-top: 10px;
+	}
+	.number_step{ 
+		counter-reset: step;
+		li{
+			display: flex;
+			position: relative;
+			padding-bottom: 20px;
+			border-left:2px dotted $COL_Secondary;
+			color: $COL_Base_03;
+			&::before{
+				counter-increment: step;
+				content:counter(step);
+				display: block;
+				position: absolute;
+				top: 3px;
+				left: -8px;
+				z-index: 2;
+				width: 14px;
+				height: 14px;
+				@include Mix_Font('Head-M',11,14);
+				background-color: $COL_Secondary;
+				border-radius: 100%;
+				color: $COL_White;
+				text-align: center;
+			}
+			&::after{
+				content: '';
+				display: block;
+				position: absolute;
+				top: 3px;
+				left: -8px;
+				width: 14px;
+				height: 15px;
+				background-color: $COL_Light;
+			}
+			.txt {
+				flex:1;
+				padding:0 10px 0 15px;
+				@include Mix_Font('Txt-M', 14, 21);
+				word-break: keep-all;
+			}
+			&:first-child{
+				&::after{
+					top: -3px;
+					height: 22px;
+				}
+			}
+			&:last-child{
+				padding-bottom:0;
+				border-left: 0;
+				&::after{
+					height: 33px;
+					left: -6px;
+				}
+				&::before{
+					left: -6px;
+				}
+			}
+		}
+	}
+
+}

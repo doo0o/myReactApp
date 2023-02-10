@@ -1,0 +1,201 @@
+<div class="popup_full" id="FO-MY-PS0033">
+	<div class="p_body">
+		<div class="p_inner s_mid">
+			<div class="p_head">
+				<h2 class="tit">차량정보</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+					<div class="inner_view car_info_layer">
+						<p class="sub_tit">챠량에 대한 상세정보를 확인하세요.</p>
+
+						<section>
+							<div class="sec_tit m">기본정보</div>
+							<table class="table type02">
+								<caption>기본정보</caption>
+								<colgroup>
+									<col width="126px">
+									<col width="*">
+									<col width="126px">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="col">차량번호</th>
+										<td>123차1234</td>
+										<th scope="col">제조사명</th>
+										<td>현대</td>
+									</tr>
+									<tr>
+										<th scope="col">모델명</th>
+										<td>쏘나타 DN8</td>
+										<th scope="col">신차등급명</th>
+										<td>2.0 가솔린 인스퍼레이션</td>
+									</tr>
+									<tr>
+										<th scope="col">최종등록일</th>
+										<td>2021. 12. 12</td>
+										<th scope="col">연식</th>
+										<td>2022년</td>
+									</tr>
+									<tr>
+										<th scope="col">차종</th>
+										<td>중형</td>
+										<th scope="col">연료</th>
+										<td>가솔린</td>
+									</tr>
+									<tr>
+										<th scope="col">배기량</th>
+										<td>9,099cc</td>
+										<th scope="col">출고가격</th>
+										<td>33,180,000원</td>
+									</tr>
+									
+								</tbody>
+							</table>
+						</section>
+						<section>
+							<div class="sec_tit m">구매/옵션 정보</div>
+							<table class="table type02">
+								<caption>구매/옵션 정보</caption>
+								<colgroup>
+									<col width="126px">
+									<col width="*">
+									<col width="126px">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="col">주행거리</th>
+										<td>12,345km</td>
+										<th scope="col">별도 추가 옵션</th>
+										<td>크롬 휠, 추가 네비게이션, 시야 확장 사이드 미러</td>
+									</tr>
+									<tr>
+										<th scope="col">구입방식</th>
+										<td>결제가 모두 완료된 상태</td>
+										<th scope="col">변속기</th>
+										<td>오토</td>
+									</tr>
+									<tr>
+										<th scope="col">색상</th>
+										<td>회색</td>
+									</tr>
+									<tr>
+										<th scope="col" rowspan="5">출고 당시 옵션</th>
+										<td>외장</td>
+										<td colspan="2">썬루프, 전동접이 사이드미러</td>
+									</tr>
+									<tr>
+										<td>내장</td>
+										<td colspan="2">통풍시트(운전석, 동승석), 전동시트(운전석, 동승석, 뒷자석), 가죽시트, 열선시트(앞, 뒤), 룸미러(전자식 룸미러(ECM), 하이패스 내장)</td>
+									</tr>
+									<tr>
+										<td>안전</td>
+										<td colspan="2">주차보조(전방감지센서, 후방감지센서), 후방카메라, 가죽시트</td>
+									</tr>
+									<tr>
+										<td>편의</td>
+										<td colspan="2">스마트키, 에어컨(오토에어컨, 풀오토에어컨)</td>
+									</tr>
+									<tr>
+										<td>멀티미디어</td>
+										<td colspan="2">네비게이션, 에어컨(오토에어컨, 풀오토에어컨)</td>
+									</tr>
+								</tbody>
+							</table>
+						</section>
+
+						<section>
+							<div class="sec_tit m">수리/손상정보</div>
+							<table class="table type02">
+								<caption>수리/손상정보</caption>
+								<colgroup>
+									<col width="126px">
+									<col width="*">
+									<col width="126px">
+									<col width="*">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="col">사고여부</th>
+										<td>주차하다가 살짝 긁혀서 판금을 했어요.</td>
+										<th scope="col">외판도색</th>
+										<td>2판 필요해요</td>
+									</tr>
+									<tr>
+										<th scope="col">휠 스크레치</th>
+										<td>2개 있어요</td>
+										<th scope="col">교체 필요 타이어</th>
+										<td>2개 있어요</td>
+									</tr>
+									<tr>
+										<th scope="col">장비/수리</th>
+										<td>엔진오일 교체 필요해요</td>
+										<th scope="col">보조키</th>
+										<td>네, 있어요</td>
+									</tr>
+									<tr>
+										<th scope="col" rowspan="2">교환/판금 이력</th>
+										<td>외장부위</td>
+										<td colspan="2">[교환] 본넷</td>
+									</tr>
+									<tr>
+										<td>골격부위</td>
+										<td colspan="2">[판금] 조주석A필러<br>[판금]크로스멤버</td>
+									</tr>
+								</tbody>
+							</table>
+						</section>
+						<section>
+							<div class="sec_tit m">차량 사진</div>
+							<ul class="car_photo_list">
+								<li>
+									<img src="/HMC/p/img/@thumb/@visual_car_sample01.png" alt="">
+									<p class="txt">앞면</p>
+								</li>
+								<li>
+									<img src="/HMC/p/img/@thumb/@visual_car_sample02.png" alt="">
+									<p class="txt">뒷면</p>
+								</li>
+								<li>
+									<img src="/HMC/p/img/@thumb/@visual_car_sample03.png" alt="">
+									<p class="txt">좌측면</p>
+								</li>
+								<li>
+									<img src="/HMC/p/img/@thumb/@visual_car_sample04.png" alt="">
+									<p class="txt">우측면</p>
+								</li>
+								<li>
+									<img src="/HMC/p/img/@thumb/@visual_car_sample05.png" alt="">
+									<p class="txt">시동켜진 계기판</p>
+								</li>
+								<li>
+									<img src="/HMC/p/img/@thumb/@visual_car_sample06.png" alt="">
+									<p class="txt">추가사진</p>
+								</li>
+								<li>
+									<img src="/HMC/p/img/@thumb/@visual_car_sample07.png" alt="">
+									<p class="txt">추가사진</p>
+								</li>
+								<li>
+									<img src="/HMC/p/img/@thumb/@visual_car_sample08.png" alt="">
+									<p class="txt">추가사진</p>
+								</li>
+								<li>
+									<img src="/HMC/p/img/@thumb/@visual_car_sample09.png" alt="">
+									<p class="txt">추가사진</p>
+								</li>
+								<li>
+									<img src="/HMC/p/img/@thumb/@visual_car_sample10.png" alt="">
+									<p class="txt">추가사진</p>
+								</li>
+							</ul>
+						</section>
+					</div>
+				<!-- //contents -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

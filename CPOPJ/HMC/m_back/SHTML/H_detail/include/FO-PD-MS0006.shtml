@@ -1,0 +1,429 @@
+<!-- FO-PD-MS0006 : 성능상태 점검기록부(공통) - FULL -->
+<div class="CPOpop_full" id="FO-PD-MS0006">
+	<div class="p_head">
+		<h4 class="tit">성능상태 점검기록부</h4>
+	</div>
+	<div class="p_wrap">
+		<!-- 성능상태 점검기록부 -->
+
+        <div class="pdp_head2">
+            <p class="txt">24더 3215</p>
+            <p class="txt2">더 뉴 그랜저 IG 2.5 캘리그래피</p>
+            <p class="date">20년형 &middot; 제시번호 2021073068</p>
+            <ul class="head_box2">
+                <li>
+                    <span>사고이력<em>양호</em></span>
+                </li>
+                <li>
+                    <span>단순수리<em>있음</em></span>
+                </li>
+            </ul>
+            <div class="pdp_car_info">
+                <div class="info_img swiperType01">
+                    <ol class="swiper-wrapper">
+                        <li class="swiper-slide">
+                            <img src="/HMC/img/@thumb/pdp_car_img2.png" alt="" />
+                            <div class="btn_car" style="top:11%;left:47.5%;">
+                                <button type="button" class="car_info02">T</button>
+                                <div class="car_detail">미션변속장치(A/T)</div>
+                            </div>
+                            <div class="btn_car" style="top:58%;left:73%;">
+                                <button type="button" class="car_info02">T</button>
+                                <div class="car_detail">미션변속장치(A/T)</div>
+                            </div>
+                        </li>
+                        <li class="swiper-slide">
+                            <img src="/HMC/img/@thumb/pdp_car_img2_2.png" alt="" />
+                        </li>
+                    </ol>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <ul class="info_mark">
+                    <li><span><span class="car_info01">W</span>판금<em>양호</em></span></li>
+                    <li><span><span class="car_info06">X</span>교환<em>2건</em></span></li>
+                    <li><span><span class="car_info05">C</span>부식<em>0건</em></span></li>
+                    <li><span><span class="car_info04">A</span>흠집<em>0건</em></span></li>
+                    <li><span><span class="car_info03">U</span>요철<em>0건</em></span></li>
+                    <li><span><span class="car_info02">T</span>손상<em>0건</em></span></li>
+                </ul>
+                <p class="info_txt">* 승용차 외에는 승용차에 준하여 표시</p>
+            </div>
+        </div>
+            
+        <div class="pdp_pop">
+            <!--01.자동차 기본정보-->
+            <div class="pdp_box01">
+                <h4 class="pdp_tit">자동차 기본정보</h4>
+                <div class="pdp_cont">
+                    <ol class="pdp_list">
+                        <li>
+                            <span class="tit">최초등록</span>
+                            <span class="txt">2019.12.26</span>
+                        </li>
+                        <li>
+                            <span class="tit">변속기</span>
+                            <span class="txt">오토</span>
+                        </li>
+                        <li>
+                            <span class="tit">연료</span>
+                            <span class="txt">휘발유</span>
+                        </li>
+                        <li>
+                            <span class="tit">원동기 형식</span>
+                            <span class="txt">G6DP</span>
+                        </li>
+                        <li>
+                            <span class="tit">차대번호</span>
+                            <span class="txt">KMHF441CBJA064298</span>
+                        </li>
+                        <li>
+                            <span class="tit">보증유형</span>
+                            <span class="txt">보험사보증</span>
+                        </li>
+                        <li>
+                            <span class="tit">보험사</span>
+                            <span class="txt">DB손해보험</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!--//01.자동차 기본정보-->
+
+            <!--02.자동차 종합상태-->
+            <div class="pdp_box01">
+                <h4 class="pdp_tit">자동차 종합상태</h4>
+                <div class="pdp_cont">
+                    <ol class="pdp_list">
+                        <li>
+                            <span class="tit">주행거리 계기상태</span>
+                            <span class="txt">양호</span>
+                        </li>
+                        <li>
+                            <span class="tit">주행거리</span>
+                            <span class="txt">21,713km</span>
+                        </li>
+                        <li>
+                            <span class="tit">차량번호표기</span>
+                            <span class="txt">양호</span>
+                        </li>
+                        <li>
+                            <span class="tit">튜닝</span>
+                            <span class="txt">없음</span>
+                        </li>
+                        <li>
+                            <span class="tit">특별이력</span>
+                            <span class="txt">없음</span>
+                        </li>
+                        <li>
+                            <span class="tit">용도변경</span>
+                            <span class="txt">있음/렌트</span>
+                        </li>
+                        <li>
+                            <span class="tit">배출가스</span>
+                            <span class="txt">일산화탄소:0.45%<br>탄화수소: 16ppm</span>
+                        </li>
+                        <li>
+                            <span class="tit">색상 및 색상상태</span>
+                            <span class="txt">-</span>
+                        </li>
+                        <li>
+                            <span class="tit">옵션</span>
+                            <span class="txt">있음</span>
+                        </li>
+                        <li>
+                            <span class="tit">리콜대상</span>
+                            <span class="txt">해당없음</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!--//02.자동차 종합상태-->
+
+            <!--자동차 세부상태 모두 펼쳐보기-->
+            <div class="pdp_tit2">
+                <span>자동차 세부상태</span>
+                <button type="button" class="btn_info_more" data-href="모두 닫기">모두 펼쳐보기</button>
+            </div>
+            <!--//자동차 세부상태 모두 펼쳐보기-->
+
+            <!--03.자기진단-->
+            <div class="pdp_box01">
+                <h4 class="pdp_tit pdp_tog on">자기진단<p>이슈 0건</p></h4> <!--toggle 모드일시 class pdp_tog 추가 / toggle open시 class on 추가-->
+                <div class="pdp_cont">
+                    <ol class="pdp_list">
+                        <li>
+                            <span class="tit">작동상태(공회전)</span>
+                            <span class="txt">양호</span>
+                        </li>
+                        <li>
+                            <span class="tit">오일누유 – 실린더 커버 (로커암 커버)</span>
+                            <span class="txt">없음</span>
+                        </li>
+                        <li>
+                            <span class="tit">오일누유 – 실린더 헤드 / 개스킷</span>
+                            <span class="txt">없음</span>
+                        </li>
+                        <li>
+                            <span class="tit">오일누유 – 실린더 블록 / 오일팬</span>
+                            <span class="txt">없음</span>
+                        </li>
+                        <li>
+                            <span class="tit">오일 유량</span>
+                            <span class="txt">적정</span>
+                        </li>
+                        <li>
+                            <span class="tit">냉각수누수 – 실린더 헤드 / 개스킷</span>
+                            <span class="txt">없음</span>
+                        </li>
+                        <li>
+                            <span class="tit">냉각수누수 – 워터 펌프</span>
+                            <span class="txt">없음</span>
+                        </li>
+                        <li>
+                            <span class="tit">냉각수누수 - 라디에이터</span>
+                            <span class="txt">없음</span>
+                        </li>
+                        <li>
+                            <span class="tit">냉각수누수 – 냉각수 수량</span>
+                            <span class="txt">적정</span>
+                        </li>
+                        <li>
+                            <span class="tit">커먼레일</span>
+                            <span class="txt">양호</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!--//03.자기진단-->
+
+            <!--04.변속기-->
+            <div class="pdp_box01">
+                <h4 class="pdp_tit pdp_tog on">변속기<p>이슈 0건</p></h4> <!--toggle 모드일시 class pdp_tog 추가 / toggle open시 class on 추가-->
+                <div class="pdp_cont">
+                    <ol class="pdp_list">
+                        <li>
+                            <span class="tit">자동변속기(A/T) - 오일누유</span>
+                            <span class="txt">없음</span>
+                        </li>
+                        <li>
+                            <span class="tit">자동변속기(A/T) - 오일누유 및 상태</span>
+                            <span class="txt">-</span>
+                        </li>
+                        <li>
+                            <span class="tit">자동변속기(A/T) - 작동상태(공회전)</span>
+                            <span class="txt">양호</span>
+                        </li>
+                        <li>
+                            <span class="tit">수동변속기(A/T) – 오일누유</span>
+                            <span class="txt">없음</span>
+                        </li>
+                        <li>
+                            <span class="tit">수동변속기(A/T) – 기어변속장치</span>
+                            <span class="txt">양호</span>
+                        </li>
+                        <li>
+                            <span class="tit">수동변속기(A/T) - 오일누유 및 상태</span>
+                            <span class="txt">적정</span>
+                        </li>
+                        <li>
+                            <span class="tit">수동변속기(A/T) - 작동상태(공회전)</span>
+                            <span class="txt">양호</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!--//04.변속기-->
+
+            <!--05.동력전달-->
+            <div class="pdp_box01">
+                <h4 class="pdp_tit pdp_tog on">동력전달<p>이슈 0건</p></h4> <!--toggle 모드일시 class pdp_tog 추가 / toggle open시 class on 추가-->
+                <div class="pdp_cont">
+                    <ol class="pdp_list">
+                        <li>
+                            <span class="tit">클러치 어샘블러</span>
+                            <span class="txt">양호</span>
+                        </li>
+                        <li>
+                            <span class="tit">동속조인트</span>
+                            <span class="txt">양호</span>
+                        </li>
+                        <li>
+                            <span class="tit">추진축 및 베어링</span>
+                            <span class="txt">양호</span>
+                        </li>
+                        <li>
+                            <span class="tit">디퍼렌셜 기어</span>
+                            <span class="txt">양호</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!--//05.동력전달-->
+
+            <!--06.조항-->
+            <div class="pdp_box01">
+                <h4 class="pdp_tit pdp_tog on">조항<p>이슈 0건</p></h4> <!--toggle 모드일시 class pdp_tog 추가 / toggle open시 class on 추가-->
+                <div class="pdp_cont">
+                    <ol class="pdp_list">
+                        <li>
+                            <span class="tit">동력조향 작동 오일 누유</span>
+                            <span class="txt">없음</span>
+                        </li>
+                        <li>
+                            <span class="tit">작동상태 – 스티어링 펌프</span>
+                            <span class="txt">양호</span>
+                        </li>
+                        <li>
+                            <span class="tit">작동상태 – 스티어링 기어(MDPS 포함)</span>
+                            <span class="txt">양호</span>
+                        </li>
+                        <li>
+                            <span class="tit">작동상태 – 스티어링조인트</span>
+                            <span class="txt">양호</span>
+                        </li>
+                        <li>
+                            <span class="tit">작동상태 – 파워고압호스</span>
+                            <span class="txt">양호</span>
+                        </li>
+                        <li>
+                            <span class="tit">작동상태 – 타이로드엔드 및 볼 조인트</span>
+                            <span class="txt">양호</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!--//06.조항-->
+
+            <!--07.제동-->
+            <div class="pdp_box01">
+                <h4 class="pdp_tit pdp_tog on">제동<p>이슈 0건</p></h4> <!--toggle 모드일시 class pdp_tog 추가 / toggle open시 class on 추가-->
+                <div class="pdp_cont">
+                    <ol class="pdp_list">
+                        <li>
+                            <span class="tit">브레이크 마스터 실린더오일 누유</span>
+                            <span class="txt">없음</span>
+                        </li>
+                        <li>
+                            <span class="tit">브레이크 오일 누유</span>
+                            <span class="txt">없음</span>
+                        </li>
+                        <li>
+                            <span class="tit">배력장치 상태</span>
+                            <span class="txt">양호</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!--//07.제동-->
+
+            <!--08.전기-->
+            <div class="pdp_box01">
+                <h4 class="pdp_tit pdp_tog on">전기<p>이슈 0건</p></h4> <!--toggle 모드일시 class pdp_tog 추가 / toggle open시 class on 추가-->
+                <div class="pdp_cont">
+                    <ol class="pdp_list">
+                        <li>
+                            <span class="tit">발전기 출력</span>
+                            <span class="txt">양호</span>
+                        </li>
+                        <li>
+                            <span class="tit">시동 모터</span>
+                            <span class="txt">양호</span>
+                        </li>
+                        <li>
+                            <span class="tit">와이퍼 모터</span>
+                            <span class="txt">양호</span>
+                        </li>
+                        <li>
+                            <span class="tit">실내송풍 모터</span>
+                            <span class="txt">양호</span>
+                        </li>
+                        <li>
+                            <span class="tit">라디에이터 팬 모터</span>
+                            <span class="txt">양호</span>
+                        </li>
+                        <li>
+                            <span class="tit">윈도우 모터</span>
+                            <span class="txt">양호</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!--//08.전기-->
+
+            <!--09.고전원전기장치-->
+            <div class="pdp_box01">
+                <h4 class="pdp_tit pdp_tog on">고전원전기장치<p>이슈 0건</p></h4> <!--toggle 모드일시 class pdp_tog 추가 / toggle open시 class on 추가-->
+                <div class="pdp_cont">
+                    <ol class="pdp_list">
+                        <li>
+                            <span class="tit">충전구 절연 상태</span>
+                            <span class="txt">양호</span>
+                        </li>
+                        <li>
+                            <span class="tit">구동축전지 격리 상태</span>
+                            <span class="txt">양호</span>
+                        </li>
+                        <li>
+                            <span class="tit">고전원전기배전상태</span>
+                            <span class="txt">양호</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!--//09.고전원전기장치-->
+
+            <!--10.연료-->
+            <div class="pdp_box01">
+                <h4 class="pdp_tit pdp_tog on">연료<p>이슈 0건</p></h4> <!--toggle 모드일시 class pdp_tog 추가 / toggle open시 class on 추가-->
+                <div class="pdp_cont">
+                    <ol class="pdp_list">
+                        <li>
+                            <span class="tit">연료누출(LP가스포함)</span>
+                            <span class="txt">없음</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!--//10.연료-->
+
+            <!--11.특기사항 및 점검자의 의견-->
+            <div class="pdp_box01">
+                <h4 class="pdp_tit pdp_tog on">특기사항 및 점검자의 의견<p>이슈 0건</p></h4> <!--toggle 모드일시 class pdp_tog 추가 / toggle open시 class on 추가-->
+                <div class="pdp_cont">
+                    <ol class="pdp_list">
+                        <li>
+                            <span class="tit">차량 상테 우수, 별도 수리 필요 없음.</span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!--//11.특기사항 및 점검자의 의견-->
+        </div>
+
+        <div class="notice_02">
+			<h6>2022년 04월 20일</h6>
+			<p class="notice_tit">
+                <span class="info_txt">
+                    중고자동차 성능상태 점검자 : 홍길동 (인)<br>
+                    자동차가격조사 산정자: 홍길동 (인)<br>
+                    중고자동차 성능 상태 고지자: (주) 현대인증 중고차
+                </span>
+                <span class="info_txt2">본 페이지는 중고자동차 성능, 상태점검 기록부의 모든 항목을 동일하게 적용하고 있으며, 항목 위치는 일부 변경되었습니다.</span>
+            </p>
+            <ol>
+                <li>
+                    자동차 관리법령에 의해 차량상태와 구매보증까지 약속받은 중요한 문서입니다. 점검내용사항이 실제와 다를경우 30일, 2,000킬로미터 이내에서 무상보증수리 및 보상을 요구할 수 있습니다.
+                </li>
+                <li>
+                    기록부의 유효기간은 점검일로부터 120일이내만 유효하므로 날짜가 지난문서는 반드시 재점검 후 교부요정을 하셔야 합니다. 최종 계약시 반드시 점검자와 고지자의 서명이 있는지 확인하십시오.
+                </li>
+                <li>
+                    본 화면은 성능점검기록부의 내용을 서비스상에 표현하기 위해 제작된 것으로 차량 상담시 판매자에게 꼭 원본을 요청하시어 확인하시기 바랍니다.
+                </li>
+            </ol>
+		</div>
+
+		<!-- //성능상태 점검기록부 -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

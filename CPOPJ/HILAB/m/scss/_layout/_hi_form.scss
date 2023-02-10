@@ -1,0 +1,194 @@
+@import '../_common/hi_function';
+@import '../_common/hi_mixins';
+
+[class^="chk_"]{
+	width:1px;height:1px;opacity:0;
+	position:absolute;
+	&+label {
+		color: $COL_Base_03;
+	}
+	&:disabled+label {
+		color: $COL_Base_01;
+	}
+}
+
+.chk_type01 {
+	&+label{
+		position:relative;
+		display:inline-block;
+		padding-left:34px;
+		@include Mix_Font ('Txt-R', 15, 24);
+		&::before{
+			content:'';
+			display:block;
+			position:absolute;
+			top:0;
+			left:0;
+			width: 24px;
+			height: 24px;
+			border:1px solid $COL_Inactive;
+			border-radius: 50%;
+			@include Mix_Form_Bg;
+			background-color: $COL_White; 
+			background-position:0 0;
+		}
+	}
+	&:disabled+label::before{
+		background-color: $COL_Line_Medium; 
+	}
+	&:checked+label::before{
+		border-color: $COL_Secondary;
+		background-color: $COL_Secondary; 
+		background-position:-54px 0;
+	}
+	&:checked:disabled+label::before{
+		border-color: $COL_Inactive;
+		background-color: $COL_Inactive;
+	}
+	&.large{
+		&+label {
+			@include Mix_Font('Txt-B',16, 24);
+			color:$COL_Black;
+		}
+		&:disabled+label {
+			color: $COL_Base_01;
+			pointer-events: none;
+		}
+		&:checked+label {
+			color: $COL_Black;
+		}
+	}
+	&.small{
+		&+label {
+			@include Mix_Font('Txt-R',14, 24);
+		}
+	}
+	&.acc:checked+label {
+		color: $COL_Secondary;
+	} 
+}
+
+// radio
+.chk_radio {
+	&+label{
+		position:relative;
+		display:inline-block;
+		padding-left:34px;
+		@include Mix_Font ('Txt-R', 15, 24);
+		&::before{
+			content:'';
+			display:block;
+			position:absolute;
+			top:0;
+			left:0;
+			width: 24px;
+			height: 24px;
+			border:1px solid $COL_Inactive;
+			border-radius: 50%;
+			background-color: $COL_White;
+		}
+	}
+	&:disabled+label::before{
+		background-color: $COL_Line_Medium; 
+	}
+	&:checked+label::before{
+		border-color: $COL_Secondary;
+		border-width: 8px;
+		background-color: transparent;
+	}
+	&:checked:disabled+label::before{
+		border-color: $COL_Inactive;
+	}
+	&.large{
+		&+label {
+			@include Mix_Font('Txt-B',16, 24);
+			color:$COL_Black;
+		}
+		&:disabled+label {
+			color: $COL_Base_01;
+		}
+		&:checked+label {
+			color: $COL_Black;
+		}
+	}
+	&.small{
+		&+label {
+			padding-left: 26px;
+			@include Mix_Font('Txt-R', 13, 18);
+			&::before {
+				width: 18px;
+				height: 18px;
+			}
+		}
+		&:checked+label::before {
+			border-width: 6px;
+		}
+	}
+}
+
+// 삭제버튼
+[class^="btn_delete"]{
+	display: none;
+	width: 18px;
+	height: 18px;
+	@include Mix_Form_Bg;
+	@include Mix_Size_0;
+	background-position: -81px 0;
+}
+
+//찜하기
+.chk_wish{
+	&+label{
+		position:relative;
+		display:inline-block;
+		@include Mix_Size_0;
+		&:before{
+			content:'';
+			display:block;
+			width:24px;
+			height:24px;
+			background: {
+				image:url(./../img/icon_like.png);
+				size:24px auto;
+				repeat:no-repeat;
+			}
+		}
+	}
+	&:checked+label:before{
+		background-image:url(./../img/icon_like_on.png);
+	}
+}
+
+.chk_block {
+	&+label{
+		display: block;
+		padding:11px 0;
+		border:1px solid $COL_Line_Dark;
+		background:$COL_White;
+		color:$COL_Base_01;
+		@include Mix_Font('Head-R', 15, 24);
+		text-align:center;
+	}
+	&:checked+label{
+		color:$COL_Secondary;
+		border:1px solid $COL_Secondary;
+	}
+	&:disabled+label{
+		background-color: $COL_Light;
+	}
+}
+//chk_block 겉에 싸는 용도로 같이 사용
+.select_info {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px 0px;
+	li {
+		width: 100%;
+	}
+	&.col2 {
+		gap: 8px;
+		li {
+			width: calc(50% - 4px);
+		}
+	}
+}

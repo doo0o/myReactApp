@@ -1,0 +1,16 @@
+<!-- 02. 상품 필터 -->
+<div class="plp_filter">
+	<div class="scroll">
+		<span class="link_tag02">그랜저 IG<button type="button" class="del">삭제</button></span>
+		<span class="link_tag02">소나타<button type="button" class="del">삭제</button></span>
+		<span class="link_tag02">그랜저 IG<button type="button" class="del">삭제</button></span>
+		<span class="link_tag02">그랜저 IG 2.4 프리미엄 2019년<button type="button" class="del">삭제</button></span>
+		<span class="link_tag02">그랜저 IG<button type="button" class="del">삭제</button></span>
+		<span class="link_tag02">그랜저IG 하이브리드 익스클루시브 스페셜<button type="button" class="del">삭제</button></span>
+		<span class="link_tag02">현대 그랜저IG하이브리드 프리미엄<button type="button" class="del">삭제</button></span>
+		<span class="link_tag02">더뉴그랜더 2.5프리미엄 2020년<button type="button" class="del">삭제</button></span>
+		<span class="link_tag02">현대 그랜저HG HG330 셀러브리티<button type="button" class="del">삭제</button></span>
+		<span class="link_tag02">그랜저IG<button type="button" class="del">삭제</button></span>
+	</div>
+</div>
+<!-- // 02. 상품 필터 -->

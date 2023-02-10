@@ -1,0 +1,2467 @@
+@charset "UTF-8";
+/* 
+	내차팔기
+*/
+/* 공통 Font 합수 (폰트명 끝부분, font-size, line-height) 
+ex) @include Mix_Font('Head-M', 18, 23); */
+body {
+  background: #F6F3F2;
+}
+
+#CPOheader .h_navi {
+  background: #F6F3F2;
+}
+#CPOheader .h_sub {
+  background: #F6F3F2;
+}
+#CPOheader .h_sub.visual h3.tit {
+  color: #FFF;
+}
+#CPOheader .h_sub.visual.fixed h3.tit {
+  color: #000;
+}
+#CPOheader .h_sub.visual.fixed .ic_del::before {
+  background-position: -226px -27px;
+}
+
+[class^=sale_head] #CPOheader [class^=h_],
+[class^=sale_head] #CPOheader [class^=h_].fixed {
+  background: #00AAD2 !important;
+  border-bottom: none !important;
+}
+[class^=sale_head] #CPOheader .ic_mycar::before {
+  background-position: -241px 0;
+}
+[class^=sale_head] #CPOheader .ic_logo::before {
+  background-position: -51px -105px;
+}
+[class^=sale_head] #CPOheader .ic_menu::before {
+  background-position: -270px 0;
+}
+[class^=sale_head] .sale_progress {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.sale_head02 #CPOheader [class^=h_],
+.sale_head02 #CPOheader [class^=h_].fixed {
+  background: #002C5F !important;
+}
+
+.sale_head03 #CPOheader [class^=h_] {
+  background: transparent !important;
+}
+.sale_head03 #CPOheader [class^=h_].fixed {
+  background: #FFF !important;
+}
+.sale_head03 #CPOheader [class^=h_].fixed .ic_mycar::before {
+  background-position: -212px 0;
+}
+.sale_head03 #CPOheader [class^=h_].fixed .ic_logo::before {
+  background-position: 0 0;
+}
+.sale_head03 #CPOheader [class^=h_].fixed .ic_menu::before {
+  background-position: -115px 0;
+}
+.sale_head03 #CPOcontents {
+  padding-top: 0;
+}
+
+.CPOpop_full2 {
+  background: #F6F3F2 !important;
+}
+
+.p_wrap.sale_modify .entry_carbase {
+  padding: 0 21px 30px;
+}
+.p_wrap.sale_modify .entry_carbase .top02 h5.tit {
+  font-family: "HynSans_Txt-R";
+  font-size: 22px;
+  line-height: 28px;
+}
+.p_wrap.sale_modify .entry_carbase .top02 .txt {
+  display: none;
+}
+
+/* 공통 Font 합수 (폰트명 끝부분, font-size, line-height) 
+ex) @include Mix_Font('Head-M', 18, 23); */
+.file_addphoto[type=file] {
+  opacity: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* 공통 Font 합수 (폰트명 끝부분, font-size, line-height) 
+ex) @include Mix_Font('Head-M', 18, 23); */
+.sale_progress {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 49px;
+  background: #DDDDDD;
+  z-index: 601;
+}
+.sale_progress span {
+  display: block;
+  height: 2px;
+  background: #00AAD2;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+.sale_head .sale_progress span {
+  background: #002C5F;
+}
+
+.sale_car01 {
+  margin: 0 0 30px;
+}
+.sale_car01 .mycar_infobox > li {
+  border-bottom: 1px solid #E4DCD3;
+}
+.sale_car01 .mycar_infobox > li > .tit {
+  padding: 8px 0;
+  color: #333333;
+}
+.sale_car01 .mycar_infobox > li > .txt {
+  padding: 8px 0;
+  color: #000000;
+}
+
+.sale_carinfo {
+  width: 100%;
+  padding: 20px 21px 100px;
+}
+.sale_carinfo > .top {
+  margin: 21px 0 40px;
+}
+.sale_carinfo > .top::before {
+  content: "";
+  display: block;
+  width: 49px;
+  height: 49px;
+  margin: 0 auto 10px;
+  background: url("../img/bg_form.png") no-repeat;
+  background-size: 200px auto;
+  background-position: -136px -90px;
+}
+.sale_carinfo > .top > .tit {
+  color: #000000;
+  font-family: "HynSans_Head-M";
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+}
+.sale_carinfo > .top > .txt {
+  margin-top: 10px;
+  color: #333333;
+  font-family: "HynSans_Txt-R";
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+}
+.sale_carinfo .mycar_infobox > li {
+  border-bottom: 1px solid #E4DCD3;
+}
+.step3_box.off .sale_carinfo .mycar_infobox > li {
+  border-bottom: 0;
+}
+.step3_box.off .sale_carinfo .mycar_infobox > li > .tit {
+  padding: 8px 0;
+  color: #666666;
+}
+.step3_box.off .sale_carinfo .mycar_infobox > li > .txt {
+  padding: 8px 0;
+  color: #000000;
+}
+.sale_carinfo .mycar_infobox > li > .tit {
+  padding: 16px 0;
+  color: #666666;
+}
+.sale_carinfo .mycar_infobox > li > .txt {
+  padding: 16px 0;
+  color: #000000;
+}
+
+.mycar_infobox > li {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+.mycar_infobox > li.off {
+  display: none;
+}
+.mycar_infobox > li > .tit {
+  flex: 0 0 120px;
+  color: #333333;
+  font-family: "HynSans_Txt-R";
+  font-size: 14px;
+  line-height: 18px;
+}
+.mycar_infobox > li > .txt {
+  flex: 0 0 calc(100% - 120px);
+  width: calc(100% - 120px);
+  font-family: "HynSans_Txt-M";
+  font-size: 14px;
+  line-height: 18px;
+  text-align: right;
+}
+.mycar_infobox > li > .txt [class^=btn_] {
+  font-family: HynSans_Txt-R;
+}
+
+.main_hello {
+  padding: 134px 30px;
+}
+
+.sale_modify .step32_edit {
+  min-height: calc(100% - 60px);
+}
+
+.entry_carbase {
+  padding: 0 30px 30px;
+}
+.entry_carbase.yes > .top02 h5.tit {
+  font-family: "HynSans_Txt-R";
+  font-size: 22px;
+  line-height: 28px;
+}
+.entry_carbase.yes .review_textarea {
+  display: block !important;
+  padding: 15px 20px 40px 20px !important;
+}
+.entry_carbase.yes .review_textarea textarea {
+  background: transparent;
+  height: 85px !important;
+}
+.entry_carbase.yes .review_textarea.focus {
+  background: transparent;
+  border-color: #002C5F;
+}
+.sale_modify .step32_edit .entry_carbase {
+  padding: 0 21px;
+  height: auto;
+}
+.sale_modify .step32_edit .entry_carbase .top02 {
+  margin-bottom: 35px;
+}
+.sale_modify .step32_edit .entry_carbase > .entry {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  margin: 0 0 10px;
+}
+.sale_modify .step32_edit .entry_carbase > .entry > ol {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 9px;
+  align-items: center;
+}
+.sale_modify .step32_edit .entry_carbase > .entry > ol li {
+  width: calc(33.3333333333% - 6px);
+  text-align: center;
+}
+.sale_modify .step32_edit .entry_carbase > .entry > ol li .chk_type07 + label {
+  padding: 34px 0 0;
+}
+.sale_modify .step32_edit .entry_carbase > .entry > ol li .chk_type07 + label::before {
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.sale_modify .step32_edit .entry_carbase > .entry > ol li .chk_type07 + label::after {
+  bottom: -10px;
+}
+.entry_carbase > .top02 h5.tit {
+  display: block;
+  color: #000000;
+  font-family: "HynSans_Head-M";
+  font-size: 30px;
+  line-height: 38px;
+}
+.entry_carbase > .top02 > .txt {
+  margin-top: 10px;
+  color: #767676;
+  font-family: "HynSans_Head-R";
+  font-size: 14px;
+  line-height: 18px;
+}
+.entry_carbase > .top > .txt {
+  color: #333333;
+  font-family: "HynSans_Head-R";
+  font-size: 16px;
+  line-height: 20px;
+}
+.entry_carbase > .top h5.tit {
+  display: inline-block;
+  color: #333333;
+  font-family: "HynSans_Head-M";
+  font-size: 22px;
+  line-height: 28px;
+}
+.entry_carbase > ul.navi li {
+  margin-bottom: 12px;
+}
+.entry_carbase > .entry {
+  position: relative;
+  margin: 35px 0 20px;
+}
+.entry_carbase > .entry .inp_txt {
+  width: 100%;
+  padding: 3px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  border-bottom: 3px solid #002C5F;
+  margin-top: 5px;
+  caret-color: #002C5F;
+  color: #002C5F;
+  font-family: "HynSans_Head-M";
+  font-size: 48px;
+  line-height: 60px;
+}
+.entry_carbase > .entry .inp_txt::placeholder {
+  color: #E4DCD3;
+  line-height: inherit;
+}
+.entry_carbase > .entry .inp_txt02 {
+  width: 100%;
+  padding: 3px 3px 8px 3px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  border-bottom: 3px solid #002C5F;
+  margin-top: 0;
+  caret-color: #002C5F;
+  color: #002C5F;
+  font-family: "HynSans_Head-M";
+  font-size: 30px;
+  line-height: 40px;
+}
+.entry_carbase > .entry .inp_txt02::placeholder {
+  color: #E4DCD3;
+  line-height: inherit;
+}
+.entry_carbase > .entry .btn_area {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  color: #002C5F;
+  font-family: "HynSans_Head-M";
+  font-size: 20px;
+  line-height: 40px;
+}
+.entry_carbase > .entry .btn_area .btn_ok01 {
+  margin: -4px 0 0 7px;
+  vertical-align: middle;
+}
+.entry_carbase > .entry .btn_area .btn_ok01.off {
+  display: none;
+}
+.entry_carbase > .entry > ol li .review_textarea {
+  display: none;
+}
+
+.sale_car_info.on .sale_step01 .head {
+  margin-top: 0;
+  transition: all 0.5s linear;
+}
+.sale_car_info.on .sale_step01 .head .txt {
+  padding-top: 90px;
+  opacity: 1;
+  transition: all 0.1s linear;
+  transition-delay: 0.45s;
+}
+.sale_car_info.on .sale_step01 .head .imgs {
+  top: 180px;
+  opacity: 1;
+  transition: all 0.2s linear;
+  transition-delay: 0.8s;
+}
+.sale_car_info.on .sale_step01 .list ol {
+  margin-top: 0;
+  opacity: 1;
+  transition: all 0.2s linear;
+  transition-delay: 0.8s;
+}
+.sale_car_info.on .sale_step01.on .txt2 {
+  opacity: 1;
+  transition: all 0.2s linear;
+  transition-delay: 0.8s;
+}
+.sale_car_info.on .sale_step02 {
+  opacity: 1;
+  transition: all 0.2s linear;
+  transition-delay: 0.8s;
+}
+.sale_car_info.on .sale_step02.on .txt span::after {
+  width: 100%;
+  transition: all 0.4s linear;
+}
+.sale_car_info.on .sale_step03.on {
+  padding-top: 60px;
+  transition: all 0.2s linear;
+}
+.sale_car_info.on .sale_step04.on {
+  padding-top: 60px;
+  transition: all 0.2s linear;
+}
+
+.sale_car_info {
+  background-color: #FFF;
+}
+
+.sale_step01 {
+  position: relative;
+  z-index: 3;
+  background-color: #FFF;
+  padding-top: 230px;
+}
+.sale_step01 .head {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 280px;
+  margin-top: -400px;
+  background: linear-gradient(10.84deg, #002C5F 26.81%, #002C5F 26.82%, #1E3C72 100%);
+  text-align: center;
+}
+.sale_step01 .head .txt {
+  display: block;
+  padding-top: 70px;
+  color: #FFF;
+  font-family: "HynSans_Head-M";
+  font-size: 26px;
+  line-height: 34px;
+  opacity: 0;
+}
+.sale_step01 .head .txt.off {
+  padding-top: 70px !important;
+  opacity: 0 !important;
+}
+.sale_step01 .head .txt2 {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 21px;
+  margin-top: 25px;
+  text-align: left;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+.sale_step01 .head .txt2 > span {
+  display: block;
+  color: #FFF;
+}
+.sale_step01 .head .txt2 > span.num {
+  font-family: "HynSans_Head-M";
+  font-size: 16px;
+  line-height: 20px;
+}
+.sale_step01 .head .txt2 > span.name {
+  margin-top: 3px;
+  font-family: "HynSans_Txt-R";
+  font-size: 13px;
+  line-height: 17px;
+}
+.sale_step01 .head .txt2 > span.name em {
+  padding: 0 6px;
+}
+.sale_step01 .head .imgs {
+  position: absolute;
+  transition: all 0.2s linear;
+  top: 200px;
+  right: 0;
+  width: 100%;
+  opacity: 0;
+}
+.sale_step01 .head .imgs img {
+  width: 270px;
+  margin: 0 auto;
+}
+.sale_step01 .list {
+  overflow: hidden;
+}
+.sale_step01 .list ol {
+  margin-top: 20px;
+  padding: 60px 21px;
+  opacity: 0;
+}
+.sale_step01 .list ol li {
+  display: flex;
+  padding: 9px 0;
+  border-bottom: solid 1px rgba(0, 0, 0, 0.04);
+  font-family: "HynSans_Txt-R";
+  font-size: 13px;
+  line-height: 17px;
+}
+.sale_step01 .list ol li .tit {
+  color: #666666;
+  font-family: HynSans_Txt-R;
+}
+.sale_step01 .list ol li .txt {
+  flex: 1;
+  color: #000000;
+  font-family: HynSans_Txt-M;
+  text-align: right;
+}
+
+.sale_step02 {
+  padding: 60px 21px;
+  background: #FFF url("../img/@thumb/sale_car_bg01.png") no-repeat 0 0;
+  background-size: cover;
+  opacity: 0;
+  transition: all 0.2s linear;
+  transition-delay: 0.8s;
+}
+.sale_step02 .txt {
+  display: block;
+  color: #FFF;
+  font-family: "HynSans_Head-M";
+  font-size: 17px;
+  line-height: 20px;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7);
+}
+.sale_step02 .txt span {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 10px;
+  color: #F7F7F7;
+  font-family: "HynSans_Txt-M";
+  font-size: 14px;
+  line-height: 18px;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7);
+}
+.sale_step02 .txt span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #00AAD2;
+}
+.sale_step02 .txt span em {
+  margin-right: 4px;
+  font-family: "HynSans_Txt-M";
+  font-size: 36px;
+  line-height: 45px;
+}
+.sale_step02 .txt2 {
+  margin-top: 20px;
+  color: #DDDDDD;
+  font-family: "HynSans_Txt-R";
+  font-size: 13px;
+  line-height: 17px;
+  text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7);
+}
+.sale_step02 .graph {
+  margin-top: 40px;
+}
+.sale_step02 .graph img {
+  width: 100%;
+}
+
+.sale_step03 {
+  padding: 120px 15px 60px;
+  background-color: #FFF;
+  transition: all 0.2s linear;
+}
+.sale_step03 h4.tit {
+  margin-bottom: 16px;
+  padding: 0 6px;
+  color: #000000;
+  font-family: "HynSans_Head-M";
+  font-size: 18px;
+  line-height: 24px;
+}
+.sale_step03 .review_list01 > ol > li {
+  width: 100% !important;
+  margin-right: 8px;
+}
+
+.sale_step04 {
+  width: 100%;
+  height: 600px;
+  padding-top: 120px;
+  background: url("../img/@thumb/car_sale_bg02.png") no-repeat 0 0;
+  background-size: cover;
+  color: #FFF;
+  font-family: "HynSans_Head-M";
+  font-size: 30px;
+  line-height: 38px;
+  text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  transition: all 0.2s linear;
+}
+
+.btn_sale {
+  height: 56px;
+  background-color: #FFF;
+  opacity: 0;
+}
+.btn_sale button {
+  position: absolute;
+  top: 56px;
+}
+.btn_sale.on {
+  opacity: 1;
+  transition: all 0.1s linear;
+}
+.btn_sale.on button {
+  top: 0px;
+  transition: all 0.4s linear;
+  transition-delay: 0.4s;
+}
+
+.sale_step02_01 {
+  padding: 111px 21px;
+  background: #FFF url("../img/@thumb/sale_car_bg01.png") no-repeat 0 0;
+  background-size: cover;
+}
+.sale_step02_01 h3.tit {
+  color: #FFF;
+  font-family: "HynSans_Head-M";
+  font-size: 30px;
+  line-height: 38px;
+}
+.sale_step02_01 p.txt {
+  margin-top: 10px;
+  color: #FFF;
+  font-family: "HynSans_Txt-R";
+  font-size: 15px;
+  line-height: 18px;
+}
+.sale_step02_01 .graph {
+  margin-top: 40px;
+  opacity: 0.4;
+}
+.sale_step02_01 .graph img {
+  width: 100%;
+}
+
+.sale_step02_02 {
+  padding: 40px 21px;
+}
+.sale_step02_02 .tit {
+  margin-bottom: 20px;
+  color: #000000;
+  font-family: "HynSans_Head-M";
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.entry_carmore .sale_prcir01 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  padding: 80px 21px 30px;
+  background: #00AAD2 !important;
+}
+.entry_carmore .sale_prcir01 h4 {
+  color: #FFF;
+  font-family: "HynSans_Head-M";
+  font-size: 18px;
+  line-height: 24px;
+}
+.entry_carmore .sale_prcir01 h4 > span {
+  display: block;
+}
+.entry_carmore .sale_prcir01 h4 > span.price {
+  position: relative;
+  display: inline-block;
+  margin: 8px 0 13px;
+  font-family: "HynSans_Head-M";
+  font-size: 16px;
+  line-height: 45px;
+}
+.entry_carmore .sale_prcir01 h4 > span.price > em {
+  font-size: 36px;
+}
+.entry_carmore .sale_prcir01 h4 > span.price::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin-top: -9px;
+  background: #FFF;
+}
+.entry_carmore .sale_prcir01 .btn {
+  margin-top: 40px;
+}
+.entry_carmore .sale_prcir01.type_detail {
+  position: relative;
+  background: none !important;
+}
+.entry_carmore .sale_detail_header {
+  position: relative;
+  height: 302px;
+  margin-top: -50px;
+  padding: 70px 20px;
+  overflow: hidden;
+  transition: height 1s;
+}
+.entry_carmore .sale_detail_header:before, .entry_carmore .sale_detail_header:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #002C5F;
+  z-index: -1;
+  opacity: 1;
+  transition: opacity 1s;
+}
+.entry_carmore .sale_detail_header:after {
+  background: url("../img/@thumb/sale_car_bg02.png") no-repeat 0 0/cover;
+  opacity: 0;
+}
+.entry_carmore .sale_detail_header h4 {
+  color: #FFF;
+  font-family: "HynSans_Head-M";
+  font-size: 18px;
+  line-height: 24px;
+}
+.entry_carmore .sale_detail_header h4 > span {
+  display: block;
+}
+.entry_carmore .sale_detail_header h4 > span.price {
+  position: relative;
+  display: inline-block;
+  margin: 8px 0 13px;
+  font-family: "HynSans_Head-M";
+  font-size: 16px;
+  line-height: 45px;
+}
+.entry_carmore .sale_detail_header h4 > span.price > em {
+  font-size: 36px;
+}
+.entry_carmore .sale_detail_header h4 > span.price::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  margin-top: -8px;
+  background: #00AAD2;
+}
+.entry_carmore .sale_detail_header .txt {
+  margin-top: 15px;
+  font-family: "HynSans_Txt-R";
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.025em;
+  color: #fff;
+}
+.entry_carmore .sale_detail_header .graph {
+  position: absolute;
+  bottom: 88px;
+  left: 0;
+  width: 100%;
+  height: 232px;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.entry_carmore .sale_detail_header .graph img {
+  height: 100%;
+}
+.entry_carmore .sale_detail_header .btn {
+  position: absolute;
+  bottom: 15px;
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+.entry_carmore .sale_detail_header .btn button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  height: 33px;
+  color: #fff;
+  font-family: "HynSans_Txt-R";
+  font-size: 11px;
+  line-height: 17px;
+  letter-spacing: -0.025em;
+}
+.entry_carmore .sale_detail_header .btn button .str {
+  display: block;
+  position: relative;
+  transition: transform 1s;
+}
+.entry_carmore .sale_detail_header .btn button .str span {
+  transition: opacity 1s;
+}
+.entry_carmore .sale_detail_header .btn button .str_close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+}
+.entry_carmore .sale_detail_header .btn button:after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 10px;
+  background: url("../img/bg_sale.png") no-repeat;
+  background-size: 300px 200px;
+  margin: 0 auto;
+  background-position: -202px -27px;
+  transform: translate(0, 23px);
+  transition: transform 1s;
+}
+.entry_carmore .sale_detail_header.open {
+  height: 569px;
+}
+.entry_carmore .sale_detail_header.open:before {
+  opacity: 0;
+}
+.entry_carmore .sale_detail_header.open:after {
+  opacity: 1;
+}
+.entry_carmore .sale_detail_header.open .graph {
+  opacity: 1;
+}
+.entry_carmore .sale_detail_header.open .btn button .str {
+  transform: translateY(16px);
+}
+.entry_carmore .sale_detail_header.open .btn button .str_open {
+  opacity: 0;
+}
+.entry_carmore .sale_detail_header.open .btn button .str_close {
+  opacity: 1;
+}
+.entry_carmore .sale_detail_header.open .btn button:after {
+  transform: translate(0, 0) rotate(-180deg);
+}
+.entry_carmore .sale_detail_header ~ .sale_car02 {
+  padding-top: 13px;
+}
+.entry_carmore .sale_car02 {
+  width: 100%;
+  padding: 280px 21px 0;
+}
+.entry_carmore .sale_car02 .car_info {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+.entry_carmore .sale_car02 .car_info > dt {
+  flex: 0 0 100px;
+  padding: 16px 0;
+  border-bottom: 1px solid #EDEDED;
+  color: #000000;
+  font-family: "HynSans_Txt-B";
+  font-size: 14px;
+  line-height: 21px;
+}
+.entry_carmore .sale_car02 .car_info > dd {
+  flex: 0 0 calc(100% - 100px);
+  width: calc(100% - 100px);
+  padding: 16px 0;
+  border-bottom: 1px solid #EDEDED;
+  color: #333333;
+  font-family: "HynSans_Txt-R";
+  font-size: 14px;
+  line-height: 21px;
+}
+.entry_carmore .sale_car02 .car_info > dd .list li:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+.entry_carmore .sale_car02 .car_info > dd .tit {
+  margin-bottom: 4px;
+  color: #333333;
+  font-family: "HynSans_Txt-B";
+  font-size: 14px;
+  line-height: 21px;
+}
+.entry_carmore .sale_car02 .car_info > dd .bull {
+  display: block;
+  position: relative;
+  z-index: 1;
+  padding: 0 0 0 8px;
+}
+.entry_carmore .sale_car02 .car_info > dd .bull::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  background: #333333;
+}
+.entry_carmore .entry_more > ul > li {
+  border-bottom: 1px solid #E4DCD3;
+}
+.entry_carmore .entry_more > ul > li.off > a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 21px;
+  transform: translateY(-50%);
+  display: block;
+  width: 11px;
+  height: 18px;
+  background: url("../img/bg_sale.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -159px 0;
+}
+.entry_carmore .entry_more > ul > li [class^=link_] {
+  position: relative;
+  display: block;
+  padding: 37px 50px 37px 80px;
+}
+.entry_carmore .entry_more > ul > li [class^=link_]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 21px;
+  transform: translateY(-50%);
+  display: block;
+  width: 48px;
+  height: 48px;
+  background: url("../img/bg_sale.png") no-repeat;
+  background-size: 300px 200px;
+}
+.entry_carmore .entry_more > ul > li [class^=link_] > span {
+  display: block;
+  margin-bottom: 3px;
+  color: #333333;
+  font-family: "HynSans_Head-M";
+  font-size: 20px;
+  line-height: 26px;
+}
+.entry_carmore .entry_more > ul > li [class^=link_] > em {
+  display: block;
+  color: #666666;
+  font-family: "HynSans_Txt-R";
+  font-size: 13px;
+  line-height: 17px;
+}
+.entry_carmore .entry_more > ul > li [class^=link_] > i {
+  position: absolute;
+  top: 50%;
+  right: 21px;
+  transform: translateY(-50%);
+  display: block;
+  font-family: "HynSans_Txt-M";
+  font-size: 13px;
+  line-height: 17px;
+}
+.entry_carmore .entry_more > ul > li [class^=link_] > i::before {
+  content: "";
+  display: block;
+  margin: 0 auto 10px;
+  background: url("../img/bg_sale.png") no-repeat;
+  background-size: 300px 200px;
+}
+.entry_carmore .entry_more > ul > li [class^=link_] > i.ing {
+  color: #002C5F;
+}
+.entry_carmore .entry_more > ul > li [class^=link_] > i.ing::before {
+  width: 22px;
+  height: 22px;
+  background-position: -202px 0;
+}
+.entry_carmore .entry_more > ul > li [class^=link_] > i.end {
+  color: #00AAD2;
+}
+.entry_carmore .entry_more > ul > li [class^=link_] > i.end::before {
+  width: 22px;
+  height: 17px;
+  background-position: -175px 0;
+}
+.entry_carmore .entry_more > ul > li [class^=link_] > i.yet {
+  color: #9C9C9C;
+}
+.entry_carmore .entry_more > ul > li [class^=link_] > i.yet::before {
+  width: 22px;
+  height: 17px;
+  background-position: -175px -22px;
+}
+.entry_carmore .entry_more > ul > li .link_option::before {
+  background-position: 0 0;
+}
+.entry_carmore .entry_more > ul > li .link_repair::before {
+  background-position: -53px 0;
+}
+.entry_carmore .entry_more > ul > li .link_photo::before {
+  background-position: -106px 0;
+}
+.entry_carmore .entry_more > .btn {
+  padding: 22px 0;
+  text-align: center;
+}
+.entry_carmore .entry_more > .btn .btn_txt01 {
+  display: inline-block;
+}
+
+.entry_carinfo {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.sale_photo > .top {
+  padding: 60px 21px 30px;
+}
+.sale_photo > .top h5.tit {
+  color: #000000;
+  font-family: "HynSans_Head-B";
+  font-size: 30px;
+  line-height: 38px;
+}
+.sale_photo > .top .btn {
+  margin-top: 10px;
+}
+.sale_photo > .innerbox_01 {
+  padding: 0 21px 50px;
+}
+.sale_photo > .innerbox_01 > ol {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 9px;
+  column-gap: 10px;
+  align-items: center;
+}
+.sale_photo > .innerbox_01 > ol li {
+  width: calc(33.3333333333% - 6.6666666667px);
+}
+.sale_photo > .innerbox_01 [class^=addphoto_] {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  background-size: 101% auto !important;
+  border: 1px dashed #E4DCD3;
+}
+.sale_photo > .innerbox_01 [class^=addphoto_] > .btn_addphoto {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+  height: 0;
+  padding-bottom: 100%;
+}
+.sale_photo > .innerbox_01 [class^=addphoto_] > .btn_addphoto > em {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  display: block;
+  width: 100%;
+  transform: translateY(50%);
+  color: #767676;
+  font-family: "HynSans_Head-R";
+  font-size: 13px;
+  line-height: 17px;
+}
+.sale_photo > .innerbox_01 [class^=addphoto_] > .btn_addphoto > em::before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  margin: 0 auto 4px;
+  background: url("../img/bg_form.png") no-repeat;
+  background-size: 200px auto;
+  background-position: -179px -38px;
+}
+.sale_photo > .innerbox_01 [class^=addphoto_].on {
+  border-color: transparent;
+}
+.sale_photo > .innerbox_01 [class^=addphoto_].on > .btn_addphoto > em {
+  left: 0;
+  width: auto;
+  bottom: -1px;
+  background: rgba(0, 0, 0, 0.7);
+  transform: translateY(0);
+  padding: 6px 7px;
+  color: #FFF;
+  font-size: 11px;
+}
+.sale_photo > .innerbox_01 [class^=addphoto_].on > .btn_addphoto > em::before {
+  display: none;
+}
+.sale_photo > .innerbox_01 [class^=addphoto_].on > span {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.sale_photo > .innerbox_01 [class^=addphoto_].on > span > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sale_photo > .innerbox_01 .addphoto_1 {
+  background: url("../img/sale_car_01.png") no-repeat;
+}
+.sale_photo > .innerbox_01 .addphoto_2 {
+  background: url("../img/sale_car_02.png") no-repeat;
+}
+.sale_photo > .innerbox_01 .addphoto_3 {
+  background: url("../img/sale_car_03.png") no-repeat;
+}
+.sale_photo > .innerbox_01 .addphoto_4 {
+  background: url("../img/sale_car_04.png") no-repeat;
+}
+.sale_photo > .innerbox_01 .addphoto_5 {
+  background: url("../img/sale_car_05.png") no-repeat;
+}
+.sale_photo > .innerbox_02 {
+  padding: 0 0 30px 21px;
+}
+.sale_photo > .innerbox_02 h6.tit {
+  color: #000000;
+  font-family: "HynSans_Head-M";
+  font-size: 15px;
+  line-height: 18px;
+}
+.sale_photo > .innerbox_02 p.txt {
+  margin: 0 0 15px;
+  color: #767676;
+  font-family: "HynSans_Head-R";
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.car_sample {
+  margin: 0 21px;
+  position: relative;
+}
+.car_sample ol li {
+  width: 100%;
+  display: block !important;
+}
+.car_sample ol li .img img {
+  width: 100%;
+}
+.car_sample ol li .tit {
+  margin-top: 10px;
+  display: block;
+  color: #000000;
+  font-family: "HynSans_Head-R";
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+.car_sample ol li .txt {
+  min-height: 55px;
+  padding: 6px 10px;
+  color: #333333;
+  font-family: "HynSans_Txt-R";
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  word-break: keep-all;
+}
+
+.car_sample2 {
+  margin: 0 21px 20px;
+  padding: 18px;
+  background: #F7F7F7;
+}
+.car_sample2 .tit {
+  color: #333333;
+  font-family: "HynSans_Head-M";
+  font-size: 14px;
+  line-height: 18px;
+}
+.car_sample2 .txt {
+  color: #666666;
+  font-family: "HynSans_Txt-R";
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.sale_confirm2 {
+  padding: 40px 35px 30px;
+  margin-bottom: 40px;
+  background: #FFF;
+}
+.sale_confirm2 > h5.tit {
+  margin-bottom: 10px;
+  color: #000000;
+  font-family: "HynSans_Head-M";
+  font-size: 24px;
+  line-height: 30px;
+}
+.sale_confirm2 > .txt {
+  margin-bottom: 40px;
+  color: #333333;
+  font-family: "HynSans_Txt-R";
+  font-size: 14px;
+  line-height: 21px;
+}
+.sale_confirm2 > dl {
+  margin-bottom: 10px;
+  position: relative;
+  border-bottom: 2px solid #002C5F;
+}
+.sale_confirm2 > dl dt {
+  width: 100px;
+  position: absolute;
+  top: 8px;
+  right: 0;
+}
+.sale_confirm2 > dl dt img {
+  width: 100%;
+}
+.sale_confirm2 > dl dd > span {
+  display: block;
+}
+.sale_confirm2 > dl dd > span.name {
+  margin-bottom: 2px;
+  color: #000000;
+  font-family: "HynSans_Txt-M";
+  font-size: 15px;
+  line-height: 22px;
+}
+.sale_confirm2 > dl dd > span.number {
+  margin-bottom: 10px;
+  color: #00AAD2;
+  font-family: "HynSans_Head-M";
+  font-size: 30px;
+  line-height: 37px;
+}
+.sale_confirm2 > .list li {
+  display: flex;
+  padding: 9px 0;
+}
+.sale_confirm2 > .list li:not(:last-of-type) {
+  border-bottom: solid 1px rgba(0, 0, 0, 0.04);
+}
+.sale_confirm2 > .list li .tit {
+  color: #666666;
+  font-family: "HynSans_Txt-R";
+  font-size: 14px;
+  line-height: 21px;
+}
+.sale_confirm2 > .list li .txt {
+  flex: 1;
+  color: #000000;
+  font-family: "HynSans_Txt-M";
+  font-size: 14px;
+  line-height: 21px;
+  text-align: right;
+}
+
+.sale_confirm > .top {
+  position: relative;
+  padding: 0 21px 15px;
+}
+.sale_confirm > .top h4.tit {
+  color: #000000;
+  font-family: "HynSans_Head-M";
+  font-size: 18px;
+  line-height: 24px;
+}
+.sale_confirm > .top > .btn_txt07 {
+  position: absolute;
+  top: 0;
+  right: 35px;
+}
+.sale_confirm > .inner {
+  margin: 0 15px 40px;
+  padding: 25px 20px;
+  background: #FFF;
+}
+.sale_confirm .car_info > dt {
+  position: relative;
+  color: #333333;
+  font-family: "HynSans_Head-M";
+  font-size: 16px;
+  line-height: 20px;
+}
+.sale_confirm .car_info > dt:not(:first-of-type) {
+  margin-top: 25px;
+}
+.sale_confirm .car_info > dt > .btn_txt07 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.sale_confirm .car_info > dd {
+  margin-top: 8px;
+  color: #333333;
+  font-family: "HynSans_Txt-R";
+  font-size: 14px;
+  line-height: 21px;
+}
+.sale_confirm .car_info > dd:not(:last-of-type) {
+  padding: 0 0 25px;
+  border-bottom: 1px solid #EDEDED;
+}
+.sale_confirm .car_info > dd .list li:not(:last-of-type) {
+  margin-bottom: 8px;
+}
+.sale_confirm .car_info > dd .tit {
+  margin-bottom: 4px;
+  color: #333333;
+  font-family: "HynSans_Txt-B";
+  font-size: 14px;
+  line-height: 21px;
+}
+.sale_confirm .car_info > dd .bull {
+  display: block;
+  position: relative;
+  z-index: 1;
+  padding: 0 0 0 8px;
+}
+.sale_confirm .car_info > dd .bull::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  background: #333333;
+}
+.sale_confirm .car_photo {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 9px;
+  column-gap: 10px;
+  align-items: center;
+}
+.sale_confirm .car_photo li {
+  position: relative;
+  overflow: hidden;
+  width: calc(50% - 5px);
+}
+.sale_confirm .car_photo li .img {
+  display: block;
+  width: 100%;
+  height: calc(50vw - 40px);
+  overflow: hidden;
+}
+.sale_confirm .car_photo li .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sale_confirm .car_photo li .txt {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.7);
+  transform: translateY(0);
+  padding: 6px 7px;
+  color: #FFF;
+  font-family: "HynSans_Txt-R";
+  font-size: 11px;
+  line-height: 14px;
+}
+
+.sale_confirm3 > .inner01 {
+  margin: 41px 0 40px;
+  word-break: keep-all;
+}
+.sale_confirm3 > .inner01::before {
+  content: "";
+  display: block;
+  width: 49px;
+  height: 49px;
+  margin: 0 auto 10px;
+  background: url("../img/bg_form.png") no-repeat;
+  background-size: 200px auto;
+  background-position: -136px -90px;
+}
+.sale_confirm3 > .inner01 > .tit {
+  color: #000000;
+  font-family: "HynSans_Head-R";
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+}
+.sale_confirm3 > .inner01 > .txt {
+  margin-top: 10px;
+  color: #333333;
+  font-family: "HynSans_Txt-R";
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+}
+.sale_confirm3 > .inner02 {
+  margin: 0 15px 20px;
+  padding: 15px 20px;
+  background: #FFF;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.015);
+}
+.sale_confirm3 > .inner03 {
+  margin: 0 15px 20px;
+  padding: 25px 20px;
+  background: #FFF;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.015);
+}
+.sale_confirm3 > .inner03 > .txt01 {
+  margin-bottom: 6px;
+  color: #000000;
+  font-family: "HynSans_Head-M";
+  font-size: 16px;
+  line-height: 20px;
+}
+.sale_confirm3 > .inner03 > .txt01 > span {
+  color: #00AAD2;
+}
+.sale_confirm3 > .inner03 > .txt02 {
+  margin-bottom: 18px;
+  color: #666666;
+  font-family: "HynSans_Txt-R";
+  font-size: 13px;
+  line-height: 20px;
+  word-break: keep-all;
+}
+.sale_confirm3 > .inner03 > .txt03 > .btn_txt06 {
+  color: #333333;
+}
+.sale_confirm3 > .inner03 > .txt03 > .btn_txt06::before {
+  display: none;
+}
+.sale_confirm3 > .inner03 > .txt03 > .btn_txt06::after {
+  background-position: -47px 0;
+}
+.sale_confirm3 > .inner03 .list {
+  padding-top: 14px;
+}
+.sale_confirm3 > .inner03 .list li {
+  position: relative;
+  border-left: 1px dashed #8F8F8F;
+  padding: 0 0 20px 15px;
+}
+.sale_confirm3 > .inner03 .list li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 5px;
+  left: -4px;
+  z-index: 2;
+  width: 8px;
+  height: 8px;
+  border: 1px solid #8F8F8F;
+  background: #FFF;
+  border-radius: 100%;
+}
+.sale_confirm3 > .inner03 .list li::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -4px;
+  width: 8px;
+  height: 17px;
+  background: #FFF;
+}
+.sale_confirm3 > .inner03 .list li.on::before {
+  border: 1px solid #00AAD2;
+  background: #00AAD2;
+}
+.sale_confirm3 > .inner03 .list li.on .tit {
+  color: #333333;
+}
+.sale_confirm3 > .inner03 .list li .tit {
+  margin-bottom: 2px;
+  color: #666666;
+  font-family: "HynSans_Txt-M";
+  font-size: 14px;
+  line-height: 21px;
+}
+.sale_confirm3 > .inner03 .list li .txt {
+  color: #666666;
+  font-family: "HynSans_Txt-R";
+  font-size: 13px;
+  line-height: 19px;
+}
+.sale_confirm3 > .inner03 .list li:last-child {
+  padding-bottom: 0;
+  border-left: 0;
+}
+
+.step1_box,
+.step2_box {
+  padding-top: 30px;
+  min-height: calc(100% - 50px);
+  position: relative;
+}
+
+.step3_box {
+  padding-top: 60px;
+  min-height: calc(100% - 50px);
+  position: relative;
+}
+
+.step3_box.off .sale_carinfo {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  padding: 20px 21px;
+}
+.step3_box.off .sale_carinfo > .top {
+  display: none;
+}
+.step3_box.off .btn_sticky {
+  display: none;
+}
+
+.car_area {
+  display: block;
+  padding: 0 21px;
+}
+.car_area > dt {
+  padding: 20px 0 0;
+  color: #333333;
+}
+.car_area > dt > span {
+  display: block;
+}
+.car_area > dt .tit {
+  font-family: "HynSans_Head-M";
+  font-size: 18px;
+  line-height: 24px;
+}
+.car_area > dt .txt {
+  font-family: "HynSans_Txt-R";
+  font-size: 14px;
+  line-height: 18px;
+}
+.car_area > dd {
+  padding: 20px 0;
+  border-bottom: 1px solid #EDEDED;
+}
+.car_area > dd .carimg_box {
+  position: relative;
+  z-index: 2;
+}
+.car_area > dd .carimg_box.up [class^=btn_area] {
+  width: 10.5%;
+  height: 8.5%;
+}
+.car_area > dd .carimg_box.down [class^=btn_area] {
+  width: 5.5%;
+  height: 5.5%;
+}
+.car_area > dd .carimg_box .carimg {
+  width: 100%;
+}
+.car_area > dd .carimg_box .carimg img {
+  width: 100%;
+}
+.car_area > dd .carimg_info {
+  padding: 20px 0 0;
+  text-align: center;
+}
+.car_area > dd .carimg_info span {
+  display: inline-block;
+  margin: 0 20px;
+}
+.car_area > dd .carimg_info span::before {
+  display: inline-block;
+  margin: 0 auto;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background: url("../img/bg_form.png") no-repeat;
+  background-size: 200px auto;
+  vertical-align: middle;
+  margin: 0 5px 0 0;
+}
+.car_area > dd .carimg_info span.icon_w::before {
+  content: "";
+  background-position: 0 -125px;
+}
+.car_area > dd .carimg_info span.icon_x::before {
+  content: "";
+  background-position: 0 -148px;
+}
+.car_area > dd [class^=btn_area] {
+  position: absolute;
+  border-radius: 100%;
+  width: 10%;
+  height: 8%;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+.car_area > dd [class^=btn_area]::before {
+  display: block;
+  margin: 0 auto;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background: url("../img/bg_form.png") no-repeat;
+  background-size: 200px auto;
+}
+.car_area > dd [class^=btn_area].icon_w {
+  background: #C57D59;
+}
+.car_area > dd [class^=btn_area].icon_w::before {
+  content: "";
+  background-position: 0 -125px;
+}
+.car_area > dd [class^=btn_area].icon_x {
+  background: #3EA0C0;
+}
+.car_area > dd [class^=btn_area].icon_x::before {
+  content: "";
+  background-position: 0 -148px;
+}
+.car_area > dd .btn_area001 {
+  top: 0;
+  left: 44.9%;
+}
+.car_area > dd .btn_area002 {
+  top: 8.9%;
+  left: 44.9%;
+}
+.car_area > dd .btn_area003 {
+  top: 19.2%;
+  left: 44.9%;
+}
+.car_area > dd .btn_area004 {
+  top: 81%;
+  left: 45.1%;
+}
+.car_area > dd .btn_area005 {
+  top: 91.8%;
+  left: 44.8%;
+}
+.car_area > dd .btn_area006 {
+  top: 14.7%;
+  left: 11%;
+}
+.car_area > dd .btn_area007 {
+  top: 39.3%;
+  left: 8.9%;
+}
+.car_area > dd .btn_area008 {
+  top: 56.3%;
+  left: 8.9%;
+}
+.car_area > dd .btn_area009 {
+  top: 14.7%;
+  left: 78.8%;
+}
+.car_area > dd .btn_area010 {
+  top: 39.3%;
+  left: 80.8%;
+}
+.car_area > dd .btn_area011 {
+  top: 56.3%;
+  left: 80.8%;
+}
+.car_area > dd .btn_area201 {
+  top: 14%;
+  left: 35%;
+}
+.car_area > dd .btn_area202 {
+  top: 25.6%;
+  left: 34.8%;
+}
+.car_area > dd .btn_area203 {
+  top: 20%;
+  left: 41%;
+}
+.car_area > dd .btn_area204 {
+  top: 14%;
+  left: 59%;
+}
+.car_area > dd .btn_area205 {
+  top: 25.5%;
+  left: 59%;
+}
+.car_area > dd .btn_area206 {
+  top: 20%;
+  left: 53%;
+}
+.car_area > dd .btn_area207 {
+  top: 33.6%;
+  left: 47.3%;
+}
+.car_area > dd .btn_area208 {
+  top: 52.9%;
+  left: 47.3%;
+}
+.car_area > dd .btn_area209 {
+  top: 78.8%;
+  left: 47.2%;
+}
+.car_area > dd .btn_area210 {
+  top: 89.1%;
+  left: 47.3%;
+}
+.car_area > dd .btn_area211 {
+  top: 72%;
+  left: 33.1%;
+}
+.car_area > dd .btn_area212 {
+  top: 81.5%;
+  left: 34.5%;
+}
+.car_area > dd .btn_area213 {
+  top: 72%;
+  left: 61.4%;
+}
+.car_area > dd .btn_area214 {
+  top: 81%;
+  left: 60%;
+}
+.car_area > dd .btn_area215 {
+  top: 46%;
+  left: 4%;
+}
+.car_area > dd .btn_area216 {
+  top: 38%;
+  left: 25%;
+}
+.car_area > dd .btn_area217 {
+  top: 51.9%;
+  left: 23.4%;
+}
+.car_area > dd .btn_area218 {
+  top: 63.3%;
+  left: 26.9%;
+}
+.car_area > dd .btn_area219 {
+  top: 84.3%;
+  left: 16.3%;
+}
+.car_area > dd .btn_area220 {
+  top: 46%;
+  left: 90.5%;
+}
+.car_area > dd .btn_area221 {
+  top: 38%;
+  left: 69%;
+}
+.car_area > dd .btn_area222 {
+  top: 51.9%;
+  left: 71.4%;
+}
+.car_area > dd .btn_area223 {
+  top: 63.3%;
+  left: 67.6%;
+}
+.car_area > dd .btn_area224 {
+  top: 84.3%;
+  left: 78.3%;
+}
+
+.layer_caredit {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+  transform: translate(-50%, -70%);
+  width: 230px;
+  padding: 18px;
+  background: #FFF;
+  border: 1px solid #DDDDDD;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.12);
+  display: none;
+}
+.layer_caredit > .tit {
+  margin-bottom: 10px;
+  color: #000000;
+  font-family: "HynSans_Head-M";
+  font-size: 13px;
+  line-height: 17px;
+  text-align: center;
+}
+.layer_caredit .inner {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 9px;
+  align-items: center;
+  justify-content: space-between;
+}
+.layer_caredit .inner label {
+  width: calc(50% - 2.5px);
+}
+
+/* popup_이전차주 정보등록 */
+.lyer_prevowner {
+  padding-bottom: 60px;
+}
+.lyer_prevowner .chk_type05 + label {
+  font-size: 15px;
+}
+.lyer_prevowner .chk_type05:checked + label {
+  color: #00AAD2;
+  border-color: #00AAD2;
+}
+.lyer_prevowner .box_car_info {
+  padding: 25px 21px;
+  border-bottom: 1px solid #EDEDED;
+}
+.lyer_prevowner .box_car_info .title {
+  display: block;
+  padding-bottom: 20px;
+  color: #000000;
+  font-family: "HynSans_Head-B";
+  font-size: 16px;
+  line-height: 20px;
+}
+.lyer_prevowner .box_car_info:last-child {
+  border-bottom: 0;
+}
+.lyer_prevowner .select_info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 0px;
+}
+.lyer_prevowner .select_info li {
+  width: 100%;
+}
+.lyer_prevowner .select_info.col2 {
+  gap: 7px 10px;
+}
+.lyer_prevowner .select_info.col2 li {
+  width: calc(50% - 5px);
+}
+
+.car_modify > .top {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 62px;
+  background: #FFF;
+  padding: 30px 21px 0;
+  text-align: right;
+}
+.car_modify > .top .info {
+  float: left;
+  padding: 3px 0 0 0;
+  color: #767676;
+  font-family: "HynSans_Head-R";
+  font-size: 13px;
+  line-height: 17px;
+}
+.car_modify > .top .info::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 11px;
+  background: url("../img/bg_form.png") no-repeat;
+  background-size: 200px auto;
+  background-position: -21px -131px;
+  vertical-align: middle;
+  margin: 0 5px 0 0;
+}
+
+/* 공통 슬라이드 */
+.sale_mycar_swiper01 {
+  padding: 30px 15px 0;
+}
+.sale_mycar_swiper01 .swiper-slide {
+  width: 100%;
+  margin-right: 15px;
+}
+.sale_mycar_swiper01 .swiper-slide:last-child {
+  margin-right: 0;
+}
+.sale_mycar_swiper01 .swiper-pagination-bullets {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+}
+.sale_mycar_swiper01 .sale_slide_item {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: 20px 18px;
+  background-color: #FFF;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.015);
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_info {
+  position: relative;
+  width: 100%;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_info .drive {
+  margin-top: 4px;
+  color: #666666;
+  font-family: "HynSans_Txt-R";
+  font-size: 13px;
+  line-height: 19px;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_info .drive em::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  margin: 0 1px 0 4px;
+  background-color: #767676;
+  vertical-align: middle;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_info .drive em:last-of-type::after {
+  display: none;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_info .price {
+  margin-top: 8px;
+  color: #000000;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_info .price .price_tit {
+  font-family: "HynSans_Txt-M";
+  font-size: 13px;
+  line-height: 17px;
+  vertical-align: 1px;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_info .price em {
+  font-family: "HynSans_Head-M";
+  font-size: 17px;
+  line-height: 20px;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_info .price i {
+  font-family: "HynSans_Head-R";
+  font-size: 15px;
+  line-height: 18px;
+  vertical-align: 1px;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_info .price i.txt::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 13px;
+  background: url("../img/bg_library.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -60px 0;
+  vertical-align: middle;
+  margin: 0 0 2px 5px;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_info .name .num {
+  display: block;
+  color: #00AAD2;
+  font-family: "HynSans_Head-M";
+  font-size: 12px;
+  line-height: 16px;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_info .name .model {
+  color: #333333;
+  font-family: "HynSans_Head-R";
+  font-size: 15px;
+  line-height: 18px;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  word-break: break-word;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_info .drive {
+  overflow: hidden;
+  display: block;
+  height: 16px;
+  margin-top: 3px;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_info .price {
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 100%;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_img img {
+  width: 100px;
+  height: 100px;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_top {
+  padding: 0 2px;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_top .tit {
+  color: #000000;
+  font-family: "HynSans_Head-M";
+  font-size: 16px;
+  line-height: 20px;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_top .num {
+  position: relative;
+  margin-left: 10px;
+  padding-left: 10px;
+  color: #333333;
+  font-family: "HynSans_Head-R";
+  font-size: 13px;
+  line-height: 17px;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_top .num::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1px;
+  height: 12px;
+  background-color: #DDDDDD;
+  transform: translateY(-50%);
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_mid {
+  display: flex;
+  gap: 0 16px;
+  padding: 18px 0;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_bot .tit {
+  display: flex;
+  padding: 16px 0;
+  border-top: solid 1px #EDEDED;
+  color: #333333;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_bot .tit .txt {
+  flex: 1;
+  font-family: "HynSans_Head-M";
+  font-size: 14px;
+  line-height: 18px;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_bot .tit .date {
+  font-family: "HynSans_Txt-R";
+  font-size: 13px;
+  line-height: 17px;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_bot .money {
+  display: block;
+  position: relative;
+  padding: 10px 0 10px 12px;
+  background-color: #F7F7F7;
+  color: #00AAD2;
+  font-family: "HynSans_Txt-M";
+  font-size: 12px;
+  line-height: 18px;
+}
+.sale_mycar_swiper01 .sale_slide_item .unit_bot .money::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  width: 7px;
+  height: 12px;
+  background: url("../img/bg_sale.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -258px 0px;
+  transform: translateY(-50%);
+}
+.sale_mycar_swiper01 .sale_slide_item .btn_del01 {
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+.sale_mycar_swiper01 .sale_slide_item02 {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: 0 20px;
+  background-color: #FFF;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.015);
+}
+.sale_mycar_swiper01 .sale_slide_item02 .unit_info {
+  position: relative;
+  width: 100%;
+}
+.sale_mycar_swiper01 .sale_slide_item02 .unit_info .name .model {
+  margin-bottom: 4px;
+  color: #000000;
+  font-family: "HynSans_Head-R";
+  font-size: 15px;
+  line-height: 18px;
+}
+.sale_mycar_swiper01 .sale_slide_item02 .unit_info .name .desc {
+  color: #333333;
+  font-family: "HynSans_Txt-R";
+  font-size: 13px;
+  line-height: 17px;
+}
+.sale_mycar_swiper01 .sale_slide_item02 .unit_info .price {
+  margin-top: 8px;
+  color: #000000;
+}
+.sale_mycar_swiper01 .sale_slide_item02 .unit_info .price .price_tit {
+  font-family: "HynSans_Txt-M";
+  font-size: 13px;
+  line-height: 17px;
+  vertical-align: 1px;
+}
+.sale_mycar_swiper01 .sale_slide_item02 .unit_info .price em {
+  font-family: "HynSans_Head-M";
+  font-size: 17px;
+  line-height: 20px;
+}
+.sale_mycar_swiper01 .sale_slide_item02 .unit_info .price i {
+  font-family: "HynSans_Head-R";
+  font-size: 15px;
+  line-height: 18px;
+  vertical-align: 1px;
+}
+.sale_mycar_swiper01 .sale_slide_item02 .unit_info .price i.txt::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 13px;
+  background: url("../img/bg_library.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -60px 0;
+  vertical-align: middle;
+  margin: 0 0 2px 5px;
+}
+.sale_mycar_swiper01 .sale_slide_item02 .unit_info .name .num {
+  display: block;
+  color: #00AAD2;
+  font-family: "HynSans_Head-M";
+  font-size: 15px;
+  line-height: 19px;
+}
+.sale_mycar_swiper01 .sale_slide_item02 .unit_info .name .model {
+  display: block;
+  margin: 6px 0 0;
+}
+.sale_mycar_swiper01 .sale_slide_item02 .unit_info .price {
+  display: block;
+  width: 100%;
+}
+.sale_mycar_swiper01 .sale_slide_item02 .unit_img img {
+  width: 120px;
+  height: 120px;
+}
+.sale_mycar_swiper01 .sale_slide_item02 .unit_mid {
+  display: flex;
+  align-items: center;
+  gap: 0 16px;
+  padding: 10px 0;
+}
+
+/* popup_내차팔기 정보 팝업 */
+.p_wrap.sale_mycar_wrap {
+  height: 100%;
+  padding: 60px 0 0;
+  background-color: #F1F4F5;
+}
+.p_wrap.sale_mycar_wrap .user_info {
+  padding: 0 21px;
+}
+.p_wrap.sale_mycar_wrap .user_info .user_name {
+  color: #000000;
+  font-family: "HynSans_Head-R";
+  font-size: 26px;
+  line-height: 34px;
+}
+.p_wrap.sale_mycar_wrap .user_info .user_name strong {
+  font-family: HynSans_Head-B;
+}
+.p_wrap.sale_mycar_wrap .user_info a.user_name::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  margin-left: 8px;
+  background: url("../img/bg_sale.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -229px 0px;
+  vertical-align: middle;
+}
+.p_wrap.sale_mycar_wrap .user_info p {
+  margin-top: 5px;
+  font-family: "HynSans_Txt-R";
+  font-size: 15px;
+  line-height: 18px;
+  color: #666666;
+}
+.p_wrap.sale_mycar_wrap .sale_mycar_links {
+  padding-top: 30px;
+  border-bottom: 1px solid #EDEDED;
+}
+.p_wrap.sale_mycar_wrap .sale_mycar_links ul {
+  padding: 10px 21px;
+  background-color: #FFF;
+}
+.p_wrap.sale_mycar_wrap .sale_mycar_links li {
+  border-bottom: solid 1px #F7F7F7;
+}
+.p_wrap.sale_mycar_wrap .sale_mycar_links li a {
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 78px;
+  padding: 0 0 0 62px;
+  color: #000000;
+  font-family: "HynSans_Head-R";
+  font-size: 16px;
+  line-height: 20px;
+}
+.p_wrap.sale_mycar_wrap .sale_mycar_links li a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  background: url("../img/bg_sale.png") no-repeat;
+  background-size: 300px 200px;
+  transform: translateY(-50%);
+}
+.p_wrap.sale_mycar_wrap .sale_mycar_links li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 7px;
+  height: 12px;
+  background: url("../img/bg_sale.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -270px 0;
+  transform: translateY(-50%);
+}
+.p_wrap.sale_mycar_wrap .sale_mycar_links li a.link_mypage:before {
+  background-position: 0px -53px;
+}
+.p_wrap.sale_mycar_wrap .sale_mycar_links li a.link_service:before {
+  background-position: -53px -53px;
+}
+.p_wrap.sale_mycar_wrap .sale_mycar_links li a.link_chatbot:before {
+  background-position: -106px -53px;
+}
+.p_wrap.sale_mycar_wrap .sale_mycar_links li:last-child {
+  border-bottom: 0;
+}
+.p_wrap.sale_mycar_wrap .sale_mycar_qna {
+  margin-top: 10px;
+  padding: 40px 21px;
+  background: #FFF;
+  border-top: 1px solid #EDEDED;
+}
+.p_wrap.sale_mycar_wrap .sale_mycar_qna strong {
+  display: block;
+  font-family: "HynSans_Txt-B";
+  font-size: 16px;
+  line-height: 24px;
+}
+.p_wrap.sale_mycar_wrap .sale_mycar_qna ul {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #DDDDDD;
+}
+.p_wrap.sale_mycar_wrap .sale_mycar_qna li {
+  margin-top: 19px;
+}
+.p_wrap.sale_mycar_wrap .sale_mycar_qna li a {
+  display: block;
+  position: relative;
+  padding-right: 20px;
+  color: #333333;
+  font-family: "HynSans_Txt-R";
+  font-size: 15px;
+  line-height: 18px;
+}
+.p_wrap.sale_mycar_wrap .sale_mycar_qna li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 7px;
+  height: 12px;
+  background: url("../img/bg_sale.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -270px 0;
+  transform: translateY(-50%);
+}
+.p_wrap.sale_mycar_wrap .sale_mycar_qna li:first-child {
+  margin-top: 0;
+}
+.p_wrap.sale_mycar_wrap .sale_mycar_qna .btn_mid02 {
+  margin-top: 30px;
+}
+.p_wrap.sale_mycar_wrap .sale_mycar_notice {
+  padding: 30px 21px;
+  background-color: #F7F7F7;
+}
+.p_wrap.sale_mycar_wrap .sale_mycar_notice strong {
+  display: block;
+  font-family: "HynSans_Txt-B";
+  font-size: 16px;
+  line-height: 20px;
+}
+.p_wrap.sale_mycar_wrap .sale_mycar_notice .notice_04 {
+  margin-top: 16px;
+}
+
+/* 내차팔기 진행중 팝업 */
+.sale_macar_proceeding {
+  padding: 52px 0 30px;
+  background-color: #F7F7F7;
+}
+.sale_macar_proceeding .title {
+  padding: 0 21px;
+}
+.sale_macar_proceeding .title strong {
+  font-family: "HynSans_Head-M";
+  font-size: 18px;
+  line-height: 23px;
+}
+.sale_macar_proceeding .title p {
+  margin-top: 10px;
+  color: #333333;
+}
+.sale_macar_proceeding .sale_slide_item {
+  padding-bottom: 0;
+}
+
+/* 내차팔기 불가 차량안내 팝업 */
+.CPOpop_full .sale_mycar_impossible {
+  padding-bottom: 96px;
+}
+
+.sale_mycar_impossible {
+  padding: 0 15px 40px;
+}
+.sale_mycar_impossible .noData {
+  padding: 20px 6px 0;
+}
+.sale_mycar_impossible .noData + .box_info {
+  margin-top: 40px;
+}
+.sale_mycar_impossible .box_info {
+  padding: 18px 20px 0;
+  background-color: #F7F7F7;
+}
+.sale_mycar_impossible .box_info .title {
+  display: block;
+  margin-bottom: 15px;
+  padding: 7px 0 15px;
+  border-bottom: 1px solid #EDEDED;
+  font-family: "HynSans_Head-M";
+  font-size: 16px;
+  line-height: 20px;
+}
+.sale_mycar_impossible .box_info .title + .info_cont {
+  padding: 0 0 30px;
+}
+.sale_mycar_impossible .box_info .sub_title {
+  display: block;
+  margin-bottom: 6px;
+  font-family: "HynSans_Head-M";
+  font-size: 14px;
+  line-height: 18px;
+}
+.sale_mycar_impossible .box_info .info_cont {
+  padding-bottom: 18px;
+}
+.sale_mycar_impossible .box_info .info_cont p {
+  font-family: "HynSans_Txt_R";
+  font-size: 13px;
+  line-height: 20px;
+  color: #666666;
+  word-break: keep-all;
+}
+.sale_mycar_impossible .box_info + .box_info {
+  margin-top: 15px;
+}
+
+/* 출고 당시 옵션 팝업 */
+.shipping_option_wrap {
+  padding: 20px 25px 0;
+}
+.shipping_option_wrap .option_list {
+  color: #333333;
+  font-family: "HynSans_Txt-R";
+  font-size: 13px;
+  line-height: 20px;
+}
+.shipping_option_wrap dt {
+  margin-top: 14px;
+  font-family: "HynSans_Txt-B";
+  font-size: 14px;
+  line-height: 21px;
+}
+.shipping_option_wrap dt:first-child {
+  margin-top: 0;
+}
+.shipping_option_wrap dd {
+  margin-top: 4px;
+}
+
+/* 보험 이력 안내 팝업 */
+.insurance_history_wrap {
+  padding: 52px 15px 30px;
+  background-color: #F7F7F7;
+  color: #333333;
+}
+.insurance_history_wrap .insurance_summary {
+  padding: 0 6px;
+}
+.insurance_history_wrap .insurance_summary strong {
+  display: block;
+  font-family: "HynSans_Head-M";
+  font-size: 18px;
+  line-height: 22px;
+  color: #000000;
+}
+.insurance_history_wrap .insurance_summary strong i {
+  position: relative;
+}
+.insurance_history_wrap .insurance_summary strong i:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #00AAD2;
+}
+.insurance_history_wrap .insurance_summary p {
+  margin-top: 10px;
+}
+.insurance_history_wrap .insurance_history_list {
+  margin-top: 30px;
+  padding: 0 20px;
+  background-color: #FFF;
+}
+.insurance_history_wrap .insurance_history_list strong {
+  display: block;
+  padding: 20px 0 16px;
+  font-family: "HynSans_Head-M";
+  font-size: 16px;
+  line-height: 20px;
+  border-bottom: 1px solid #EDEDED;
+}
+.insurance_history_wrap .insurance_history_list ul {
+  padding: 16px 0 20px;
+}
+.insurance_history_wrap .insurance_history_list li {
+  overflow: hidden;
+  margin-top: 8px;
+  color: #333333;
+}
+.insurance_history_wrap .insurance_history_list li .date {
+  float: left;
+  font-family: "HynSans_Head-M";
+  font-size: 14px;
+  line-height: 21px;
+}
+.insurance_history_wrap .insurance_history_list li .price {
+  float: right;
+  font-family: "HynSans_Txt-R";
+  font-size: 13px;
+  line-height: 20px;
+}
+.insurance_history_wrap .insurance_history_list li:first-child {
+  margin-top: 0;
+}
+/*# sourceMappingURL=maps/h_sale.css.map */

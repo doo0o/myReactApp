@@ -1,0 +1,44 @@
+<!-- STEP : 3-2-04 : 휠 스크래치 -->
+<div class="entry_carbase">
+	<div class="top02">
+		<p class="tit">교체가 필요한<br>타이어가 있나요?</p> <!-- 2022-09-16 CPO-3291 --> 
+		<div class="txt">타이어 안내
+			<!-- tooltip -->
+			<span class="cpo_tooltip">
+				<button type="button" class="open">타이어 안내 확인</button>
+				<div class="cont">
+					<div class="caution">
+						<ul>
+							<li>일반적인 교체 주기는 30,000~40,000km 입니다.</li>
+							<li>제조일자로부터 5년이 경과한 타이어는 고무에 변성이 올 수 있으므로 교체 대상입니다.</li>
+							<li>타이어 마모한계선이 홈과 비슷하면 교체 대상입니다.</li>
+						</ul>
+					</div>
+					<button class="close">툴팁닫기</button>
+				</div>
+			</span>
+			<!-- //tooltip -->
+		</div>
+	</div>
+	<!-- 입력 -->
+	<ul class="entry_carmore_options">
+		<!-- 2022-09-16 CPO-3291 -->
+		<li>
+			<input type="radio" name="saleTyresChk" id="saleTyresChk01" class="chk_type07" />
+			<label for="saleTyresChk01">네, 있어요</label>
+			<div class="box_input">
+				<div class="inbox_type01">
+					<input type="tel" id="saleTyresTxt" placeholder="1 ~ 4개까지 입력 가능해요." class="txt type_number">
+					<button type="button" class="btn_delete">삭제</button>
+				</div>
+				<button class="btn_next" onclick="selectStep.step('next');">다음</button>
+			</div>
+		</li>
+		<li>
+			<input type="radio" name="saleTyresChk" id="saleTyresChk02" class="chk_type07" />
+			<label for="saleTyresChk02">아니요, 없어요</label>
+		</li>
+		<!-- //2022-09-16 CPO-3291 -->
+	</ul>
+	<!-- //입력 -->
+</div>

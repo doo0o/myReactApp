@@ -1,0 +1,8 @@
+<div class="address_txt">
+    <P class="tit">Tip</P>
+    <p class="txt">아래와 같은 조합으로 검색을 하시면 더욱 정확한 결과가 검색됩니다.</p>
+    <ul class="txt2">
+        <li>도로명 + 건물번호<em>예) 헌흥로 12</em></li>
+        <li>지역명(동/리) + 번지<em>예) 양재동 231</em></li>
+    </ul>
+</div>

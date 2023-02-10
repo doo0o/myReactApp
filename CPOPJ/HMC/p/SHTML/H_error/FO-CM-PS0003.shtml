@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>에러페이지 : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_error.css">
+</head>
+<body>
+	<div id="CPOwrap">
+		<!--#include file="/HMC/p/SHTML/H_inc/error_header.shtml"-->
+
+		<div id="CPOcontents">
+			<div id="layoutWrap" class="error type_bg">
+				<!-- container -->
+				<div class="container"> 
+					<div class="error_cont">
+						<h1 class="tit">페이지를 찾을 수 없습니다.</h1>
+						<p class="txt">요청하신 페이지가 삭제되었거나<br> 일시적으로 사용이 중단되었습니다.</p>
+						<div class="btn_area">
+							<button type="button" class="btn_small color02">홈으로 가기</button>
+						</div>
+					</div>
+				</div>
+				<!-- //container -->
+			</div>
+		</div>
+
+	<!--#include file="/HMC/p/SHTML/H_inc/error_footer.shtml"-->
+	</div>
+	<!--HMC_KR_FO-CM-MS0002_에러페이지_서버오류-->
+</body>
+</html> 

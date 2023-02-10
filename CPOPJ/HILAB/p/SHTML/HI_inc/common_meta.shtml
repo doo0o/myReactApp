@@ -1,0 +1,25 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes, viewport-fit=cover">
+<meta name="mobile-web-app-capable" content="yes"> 
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"> 
+<meta name="keywords" content="현대 제네시스">
+<meta name="format-detection" content="telephone=no">
+
+<script>
+	if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+		window.location = 'microsoft-edge:' + window.location;
+		setTimeout(function() {
+			window.location = 'https://go.microsoft.com/fwlink/?linkid=2135547';
+		}, 1);
+	}
+</script>
+
+<link rel="stylesheet" type="text/css" href="../../css/hi_common.css">
+
+<script type="text/javascript" src="../../js/library/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="../../js/library/swiper-6.8.1.min.js"></script>
+<script type="text/javascript" src="../../js/library/jquery-ui-1.12.1.js"></script><!-- range & -->
+<script type="text/javascript" src="../../js/library/jquery.ui.touch-punch.min.js"></script><!-- mobile touch -->
+
+<script src="../../js/ui/hi_uiux.js"></script>
+<script src="../../js/ui/msg.js"></script><!-- 퍼블리싱 관련 스크립트 ?site=GHQ / 페이지별 문구 MSG.text('현대 CPO', '제네시스 CPO'); 개발은 사용안하니 제외 -->

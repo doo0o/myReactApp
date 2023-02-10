@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>STEP2. 소유주명 입력 : 제네시스 CPO</title>
+	<!--#include file="/GHQ/SHTML/G_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/g_sale.css">
+</head>
+<body class="bg_black"><!--GHQ bg 컬러 설정용 class-->
+<!--#include file="/GHQ/SHTML/G_inc/common_skip.shtml"-->
+<!--#include file="/GHQ/SHTML/G_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--#include file="/GHQ/SHTML/G_inc/layout_header.shtml"-->
+		<!--  s: title area : MAIN  -->
+		<div class="h_navi">
+			<div class="menu">
+				<h1 class="logo"><a href="#" class="ic_logo">제네시스 CPO</a></h1>
+				<button type="button" class="ic_menu" data-ref="menuLayer">내차사기</button>
+				<div class="menu_layer" id="menuLayer">
+					<ul>
+						<li class="on"><a href="#">내차사기</a></li>
+						<li><a href="#">내차팔기</a></li>
+					</ul>
+				</div>
+			</div>
+			<ul class="util">
+				<li><button type="button" class="ic_mycar jQ_POP_open" data-popup="FO-TI-MS0017">내차팔기 정보</button></li><!-- jQ_POP_open 팝업 호출 class / data-popup 팝업 id 값 -->
+			</ul>
+		</div>
+		<!--  e: title area : MAIN  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<!-- [COMMON] 내차팔기 입력 진행 상황 progress -->
+		<div class="sale_progress">
+			<span style="width:14%">총 28개 필수 입력값 중 1개 입력하셨습니다. (5/28)*100</span>
+		</div>
+		<!-- //[COMMON] 내차팔기 입력 진행 상황 progress -->
+		<!-- STEP2. 소유주명 입력 -->
+		<div class="step2_box">
+			<div class="entry_carbase">
+				<div class="top">
+					<p class="txt">더 자세한 정보를 불러올게요.</p>
+					<h5 class="tit">소유자명을 입력해주세요.</h5>
+					<!-- tooltip -->
+					<span class="cpo_tooltip">
+						<button type="button" class="open">입력안내 확인</button>
+						<div class="cont">
+							<ol class="notice01">
+								<li>정확한 소유자명을 입력해주세요. (단어가 정확하게 일치해야 해요.)</li>
+								<li>공동명의 차량은 자동차등록증 상 앞에 있는 대표명의자 명을 입력해주세요.</li>
+								<li>판매하는 차량의 소유자 명과 로그인한 계정의 이름이 동일해야 판매가 가능합니다.</li>
+							</ol>
+							<button class="close">툴팁닫기</button>
+						</div>
+					</span>
+					<!-- //tooltip -->
+				</div>
+
+				<!-- 입력 -->
+				<div class="entry">
+					<input type="text" name="" placeholder="홍길동" class="inp_txt" />
+					<span class="btn_area"><button type="button" class="btn_ok01">확인</button></span>
+				</div>
+				<!-- //입력 -->
+				<!-- sale_car01 : 차량 기본 정보 -->
+				<div class="sale_car01">
+					<ol class="mycar_infobox">
+						<li>
+							<span class="tit">차량번호</span>
+							<span class="txt">
+								23나2345
+								<a href="FO-TI-01MS0001.shtml" class="btn_txt07">수정</a>
+							</span>
+						</li>
+						<li>
+							<span class="tit">제조사명</span>
+							<span class="txt">현대</span>
+						</li>
+						<li>
+							<span class="tit">모델명</span>
+							<span class="txt">더 뉴 그랜저</span>
+						</li>
+						<li>
+							<span class="tit">신차등급명</span>
+							<span class="txt">.5 가솔린 캘리그래피</span>
+						</li>
+						<li>
+							<span class="tit">신차등급명</span>
+							<span class="txt">2.5 가솔린 캘리그래피</span>
+						</li>
+						<li>
+							<span class="tit">최초등록일</span>
+							<span class="txt">2019.12.28</span>
+						</li>
+						<li>
+							<span class="tit">연식</span>
+							<span class="txt">2020년형</span>
+						</li>
+					</ol>
+				</div>
+				<!-- //sale_car01 : 차량 기본 정보 -->
+
+				<ul class="navi">
+					<li><button type="button" class="btn_txt06 jQ_POP_open" data-popup="FO-TI-MS0012">내차팔기 불가 차량 안내</button></li>
+					<li><button type="button" class="btn_txt06 jQ_POP_open" data-popup="FO-TI-MS0014">법인명의 차량 팔기 안내</button></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //STEP2. 소유주명 입력 -->
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/GHQ/SHTML/G_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/GHQ/SHTML/G_inc/popup_include_all.shtml"-->
+</body>
+</html>

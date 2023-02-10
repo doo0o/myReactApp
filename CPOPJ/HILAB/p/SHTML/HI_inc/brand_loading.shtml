@@ -1,0 +1,10 @@
+<!-- brand_loading -->
+
+<!-- //brand_loading -->
+
+<script>
+	// CPO.brandLoading_open();
+	// setTimeout(function () {
+	// 	CPO.brandLoading_close()
+	// }, 3000);
+</script>

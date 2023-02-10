@@ -1,0 +1,600 @@
+@charset 'utf-8';
+/* 레이아웃
+	Z-INDEX 범위
+		- CPOhdaer : 501 ~ 600
+		- CPOcontents : 401 ~ 500
+		- CPOaction : 600
+		- CPOfooter : 601 ~ 700
+		- CPOtop : 800
+		- dim : 1000
+		- layer : 1001
+
+*/
+.txt_hidden{display:none;}
+/* skip */
+#CPOskip{
+	position:relative;
+	top:0;
+	left:0;
+	z-index:500;
+	width:100%;
+	a{
+		position:absolute;
+		top:-100px;
+		left:0;
+		width:100%;
+		height:0;
+		color:transparent;
+		@include Mix_Font_Txt_B;
+		text-align:center;
+		&:focus{
+			top:0;
+			height:30px;
+			background:$COL_BLACK;
+			color:$COL_WHITE;
+			line-height:30px;
+			text-decoration:none;
+		}
+	}
+}
+
+/* loading */
+#CPOloading{
+	display:none;
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:1000;
+	width:100%;
+	height:100%;
+	//background:rgba($COL_Text_Base04,.4);
+	.loading_01{
+		@include Mix_Size_0;
+		position:absolute;
+		top:50%;
+		left:50%;
+		width:140px;
+		height:120px;
+		margin:-60px 0 0 -70px;
+		background:url('../img/loading_01.gif?V=1') no-repeat;
+		background-size:140px auto;
+	}
+}
+
+/* CPO WRAP */
+#CPOwrap{
+	position:relative;
+	width:100%;
+	height:100%;
+}
+
+/* CPO HEADER */
+#CPOheader{
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:600;
+	width:100%;
+	height:50px;
+	[class^="h_"]{// header 타이틀 영역
+		position:relative;
+		height:50px;
+		padding:0 40px;
+		//border-bottom:1px solid $COL_Line_Light01;
+		//background-color:$COL_WHITE;
+		&.fixed{
+			border-bottom:1px solid $COL_Line_Light01 !important;
+			background:$COL_WHITE !important;
+			h3.tit {
+				color: #000;
+			}
+		}
+		.util{// header 장바구니, 홈으로 등
+			position:absolute;
+			top:12px;
+			right:17px;
+			li{
+				float:left;
+				margin-left:16px;
+				&:first-of-type{
+					margin-left:0;
+				}
+			}
+		}
+		h3.tit{// 페이지 타이틀
+			display:block;
+			width:100%;
+			height:50px;
+			padding:15px 0;
+			color:$COL_Text_Base04;
+			@include Mix_Font('Head-R', 16, 20);
+			@include Mix_Ellipsis01;
+			text-align:center;
+		}
+	}
+	.h_navi{// header type 1 : 메인 
+		position:fixed;
+		z-index:600;
+		width:100%;
+		height:50px;
+		top:0;
+		left:0;
+		.menu{
+			position:absolute;
+			top:15px;
+			left:14px;
+			.logo{// 현대 (옆에 내차팔기)
+				display:inline-block;
+				vertical-align:middle;
+			}
+		}
+		.ic_logo{
+			width:auto;
+			display:inline-block;
+			vertical-align:middle;
+		}
+	}
+	.menu_layer{// header type 1 :  메인 '내차팔기/내차사기 레이어 
+		display:none;
+		width:135px;
+		position:absolute;
+		top:35px;
+		left:50px;
+		padding:12px 20px 12px 24px;
+		border:1px solid $COL_Line_Dark01;
+		//border-radius:6px;
+		background-color:$COL_WHITE;
+		box-shadow:0px 3px 6px rgba($COL_Text_Base04, 0.12);
+		&.on{
+			display:block;
+		}
+		ul{
+			li{
+				a{
+					display:block;
+					padding:8px 0;
+					color:$COL_Text_Base04;
+					@include Mix_Font('Txt-R', 14, 18);
+				}
+				&.on{
+					a{
+						color:$COL_Secondary01;
+						&::after{
+							content:'';
+							display:inline-block;
+							width:16px;
+							height:13px;
+							margin:0 0 0 9px;
+							@include Mix_Layout_Bg;
+							background-position:-141px 0;
+						}
+					}
+					
+				}
+			}
+		}
+	}
+	.h_search{// header type 2 : 검색결과
+		padding:0 44px;
+		border-bottom:1px solid $COL_Secondary01;
+		background:$COL_WHITE;
+		box-shadow:0px 3px 6px rgba($COL_Text_Base04, 0.12);
+		border-top:0;
+		border-right:0;
+		border-left:0;
+		.inp_sch{
+			width:100%;
+			height:51px;
+			border:0;
+			background:transparent;
+			color:$COL_Text_Base04;
+			@include Mix_Font('Head-R', 16, 20);
+		}
+		&.fixed{
+			border-bottom:1px solid $COL_Secondary01 !important;
+		}
+		&.h_deal{
+			padding-left:15px;
+		}
+	}
+	[class^="ic_"]{// header 아티콘 공통 
+		display:block;
+		width:24px;
+		height:24px;
+		padding-top:2px;
+		@include Mix_Size_0;
+		&::before{
+			content:'';
+			display:block;
+			height:20px;
+			margin:0 auto;
+			@include Mix_Layout_Bg;
+		}
+	}
+	.ic_menu{// header 아이콘 - 내차사기 
+		display:inline-block;
+		position:relative;
+		vertical-align:middle;
+		&::before{
+			width:22px;
+			height:22px;
+			background-position:-115px 0;
+		}
+	}
+	.ic_logo{// header - 로고
+		&::before{
+			width:110px;
+			height:18px;
+			background-position:0 0;
+		}
+	}
+	.ic_model,
+	.ic_back{// header - 이전버튼 - 검은색
+		position:absolute;
+		top:13px;
+		left:15px;
+		width:24px;
+		height:24px;
+		&::before{
+			width:14px;
+			margin:0 auto;
+			background-position:-178px 0;
+		}
+	}
+	.ic_cart{// header - 장바구니 - 검은색
+		&::before{
+			width:20px;
+			background-position:-25px -27px;
+		}
+	}
+	.ic_alarm{// header - 알림 - 검은색
+		&::before{
+			width:20px;
+			background-position:0 -27px;
+		}
+	}
+	.ic_mic{// header - 음성 - 검은색
+		&::before{
+			width:18px;
+			background-position:-76px -27px;
+		}
+	}
+	.ic_filter{// header - 검색 필터 - 검은색
+		&::before{
+			width:20px;
+			background-position:-99px -27px;
+		}
+	}
+	.ic_set{// header - 설정 - 검은색
+		&::before{
+			width:20px;
+			background-position:-124px -27px;
+		}
+	}
+	.ic_home{// header - 홈 - 검은색
+		&::before{
+			width:20px;
+			background-position:-200px -27px;
+		}
+	}
+	.ic_search{// header - 검색 - 검은색
+		&::before{
+			width:20px;
+			background-position:-51px -27px;
+		}
+	}
+	.ic_mycar{// header - 내차팔기 
+		&::before{
+			width:24px;
+			height:24px;
+			background-position:-212px 0;
+		}
+	}
+	.ic_del {
+		padding: 0;
+		&::before{
+			width:24px;
+			height:24px;
+			background-position:-226px -27px;
+		}
+
+	}
+	.h_sub{// header type 3 : 서브 - 전시템플릿 상단 타이틀 fixed
+		background-color:$COL_WHITE;
+		border-bottom:1px solid $COL_Line_Light01;
+		&.visual{// 전시템플릿 header 아이콘 흰색
+			border-bottom:0;
+			background-color:transparent;
+			h3.tit{
+				color:transparent;
+			}
+			.ic_back:before{// header - 이전버튼 - 흰색
+				background-position:-162px 0;
+			}
+			.ic_cart:before{// header - 장바구니 -  흰색
+				background-position:-174px -27px;
+			}
+			.ic_del:before{// header - 장바구니 -  흰색
+				background-position:-226px -51px;
+			}
+		}
+		&.my_head{
+			border-bottom:0;
+		}
+		&.my_head2{
+			background-color:$COL_BG_Light01 !important;
+			border-bottom:0;
+		}
+	}
+	.h_detail{// header type 4 : 상품상세
+		border-bottom:0;
+		h3.tit{
+			width:calc(100% - 122px) !important;
+			color:$COL_WHITE !important;
+			text-align:left !important;
+		}
+		.icon_sns2{
+			margin-right:14px;
+		}
+		.ic_back{
+			&::before{
+				background-position:-162px 0;
+			}
+		}
+		.ic_cart{
+			&::before{
+				background-position:-174px -27px;
+			}
+		}
+		.ic_home{
+			&::before{
+				background-position:-149px -27px;
+			}
+		}
+		&.fixed{
+			border-bottom:1px solid $COL_Line_Dark01;
+			h3.tit{
+				color:$COL_BLACK !important;
+			}
+			.ic_home::before{
+				background-position:-200px -27px;
+			}
+			.ic_cart::before{
+				background-position:-25px -27px;
+			}
+			.ic_back::before{
+				background-position:-178px 0;
+			}
+		}
+	}
+}
+
+/* contents */
+#CPOcontents{
+	position:relative;
+	min-height:calc(100% - 200px);
+	padding-top:50px;
+}
+
+
+/* actionbar */
+#CPOactionbar{
+	position:fixed;
+	bottom:0;
+	left:0;
+	z-index:600;
+	width:100%;
+	height:52px;
+	border-top:1px solid $COL_Line_Light01;
+	background:$COL_WHITE;
+	ul{
+		@include Mix_Clear;
+		li{
+			float:left;
+			width:20%;
+			height:51px;
+			[class^="ac_"]{
+				display:block;
+				overflow:hidden;
+				width:100%;
+				height:100%;
+				@include Mix_Size_0;
+				line-height:50px;
+				&::before{
+					content:'';
+					display:block;
+					width:22px;
+					height:22px;
+					margin:15px auto 0;
+					@include Mix_Layout_Bg;
+				}
+			}
+			.ac_home{
+				&::before{
+					background-position:0 -52px;
+				}
+			}
+			.ac_saerch{
+				&::before{
+					background-position:-27px -52px;
+				}
+			}
+			.ac_lab{
+				&::before{
+					background-position:-54px -52px;
+				}
+			}
+			.ac_mypage{
+				&::before{
+					width:18px;
+					background-position:-81px -52px;
+				}
+			}
+			.ac_wish{
+				&::before{
+					background-position:-104px -52px;
+				}
+			}
+		}
+	}
+}
+
+/* footer */
+#CPOfooter{
+	padding:40px 0 92px;
+	background:$COL_Line_Light01;
+	text-align:center;
+	.foot_logo a{
+		@include Mix_Size_0;
+		&::before{
+			content:'';
+			display:inline-block;
+			width:110px;
+			height:17px;
+			margin:0 auto;
+			@include Mix_Layout_Bg;
+			background-position:-51px -128px;
+		}
+	}
+	.foot_copy{
+		margin-top:15px;
+		color:$COL_Text_Base02;
+		@include Mix_Font('Head-R', 13, 17);
+	}
+	.foot_menu{
+		height:18px;
+		margin-top:30px;
+		font-size:0;
+		text-align:center;
+		li{
+			display:inline-block;
+			position:relative;
+			height:100%;
+			padding:0 10px;
+			color:$COL_Text_Base01;
+			@include Mix_Font('Head-R', 14, 18);
+			a {
+				color: $COL_Text_Base02;
+			}
+			em{
+				color:$COL_Text_Base03;
+			}
+			&:before{
+				content:'';
+				position:absolute;
+				top:2px;
+				left:0;
+				width:1px;
+				height:14px;
+				background:$COL_Text_Base02;
+				opacity: 0.3;
+			}
+			&:first-child:before{
+				display:none;
+			}
+		}
+	}
+	.foot_info{
+		margin-top:20px;
+		button{
+			display:inline-block;
+			color:$COL_Text_Base03;
+			@include Mix_Font('Head-R', 14, 18);
+			&:after{
+				content:'';
+				display:inline-block;
+				width:12px;
+				height:8px;
+				margin-left:5px;
+				background:url('../img/bg_layout.png') no-repeat center;
+				background-size:300px auto;
+				background-position:-195px -13px;
+				font-size:0;
+				transform:rotate(0deg);
+			}
+			&.on:after{
+				transform:rotate(180deg);
+			}
+		}
+		> div{
+			display:none;
+			margin-top:10px;
+			color:$COL_Text_Base02;
+			@include Mix_Font('Txt-R', 12, 21);
+			span{
+				position:relative;
+				margin-right:7px;
+				padding-right:7px;
+				&:before{
+					content:'';
+					position:absolute;
+					top:50%;
+					right:0;
+					width:1px;
+					height:8px;
+					background:$COL_Text_Base02;
+					transform:translateY(-50%);
+					opacity: 0.3;
+				}
+			}
+			a{
+				margin-left:4px;
+				color:$COL_Text_Base03;
+				@include Mix_Font_Head_R;
+				text-decoration:underline;
+			}
+		}
+	}
+}
+
+/* top button */
+#CPOtop{
+	display:none;
+	position:fixed;
+	right:15px;
+	bottom:75px;
+	z-index:800;
+	a{
+		display:block;
+		width:48px;
+		height:48px;
+		@include Mix_Library_Bg;
+		background-position:-93px -28px;
+		@include Mix_Size_0;
+		//border:1px solid $COL_Line_Dark01;
+		//border-radius:50%;
+		/*background-color:$COL_WHITE;
+		@include Mix_Size_0;
+		&::before{
+			content:'';
+			display:block;
+			margin:10px auto;
+			width:24px;
+			height:24px;
+			@include Mix_Library_Bg;
+			background-position:-150px 0;
+		}*/
+		&[title=chatbot]{
+			display:none;
+			margin-bottom:10px;
+			background-position:-41px -28px;
+			border:0;
+		}
+		&[title=write]{
+			display:none;
+			margin-bottom:10px;
+			background-position:-145px -28px;
+			border:0;
+		}
+	}
+	&.type01{
+		a[title=chatbot]{
+			display:block;
+		}
+	}
+	&.type02{
+		a[title=write]{
+			display:block;
+		}
+	}
+}

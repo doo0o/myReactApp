@@ -1,0 +1,301 @@
+<!-- FO-PD-MS0008 : 기본옵션 전체 - FULL -->
+<div class="CPOpop_full" id="FO-PD-MS0008">
+	<div class="p_head">
+		<h4 class="tit">옵션상세</h4>
+	</div>
+	<div class="p_wrap">
+		<div class="detail_option">
+			<h4 class="tit">외관</h4>
+			<ul class="list_option">
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">루프랙</button>
+				</li>
+				<li>
+					<button type="button" disabled>방향지시등 일체형 사이드 미러</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">수동 사이드 미러</button>
+				</li>
+				<li>
+					<button type="button" disabled>열선 사이드 미러</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">후진각도조절 사이드 미러</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">전동접이 사이드 미러</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">선루프</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">듀얼 선루프</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">파노라마선루프</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">와이퍼 결빙장치</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">자외선 차단</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">우적감지 와이퍼</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">스틸휠</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">알루미늄휠</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">크롬휠</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">광폭타이어</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">HID 헤드램프</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">LED 헤드램프</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">레이져 라이트</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">어탭티브 헤드램프</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">하이빔 어시스트</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">할로겐</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">프로젝션 타입 헤드램프</button>
+				</li>
+			</ul>
+			<h4 class="tit">내장</h4>
+			<ul class="list_option">
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">하이패스</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">후방룸미러</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">가죽시트</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">직물시트</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">인조가죽시트</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">전동시트(운전석)</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">전동시트(동승석)</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">전동시트(뒷좌석)</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">열선시트(앞좌석)</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">열선시트(뒷좌석)</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">안마시트</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">메모리시트(운전석)</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">메모리시트(동승석)</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">통풍시트(운전석)</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">통풍시트(동승석)</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">가죽스티어링휠</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">속도감응식 스티어링휠</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">우드스티어링휠</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">열선내장</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">텔레스코픽 스티어링</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">사이드 브레이크</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">전자식 파킹</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">풋파킹</button>
+				</li>
+			</ul>
+			<h4 class="tit">안전</h4>
+			<ul class="list_option">
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">무릎보호 에어백</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">동승석 에어백</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">운전석 에어백</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">커튼 에어백 에어백</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">구동력 제어장치(TCS)</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">긴급제동경보시스템(ESS)</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">미끄럼 방지장치(ABS)</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">샤시 통합 제어 시스템(VSM)</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">제동력 분배 장치(EBD)</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">후측방경보시스템(BSD)</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">차선이탈경보(LDWS)</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">차체자세제어장치(VDC,ESC,ESP)</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">전방감지센서</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">후방감지센서</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">전방카메라</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">후방카메라</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">어라운드뷰(AVM)</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">경사로밀림방지(HAS)</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">세이프티윈도우</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">액티브 헤드레스트</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">유아시트 고정(Isofix)</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">타이어공기압경고(TPMS)</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">헤드업 디스플레이</button>
+				</li>
+			</ul>
+			<h4 class="tit">편의/멀티미디어</h4>
+			<ul class="list_option">
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">수동에어컨</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">오토에어컨</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">풀오토에어컨</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">공기청정기</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">버튼시동</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">스마트키</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">스티어링휠 리모컨</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">전동식 파워 트렁크</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">자동주차보조시스템(ASPAS)</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">크루즈컨트롤</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">핸즈프리</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">CD</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">CD체인저</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">DVD</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">MP3</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">내비게이션</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">블루투스</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">AUX</button>
+				</li>
+				<li>
+					<button type="button" data-popup="FO-PD-MS0009">USB</button>
+				</li>
+				<li class="on">
+					<button type="button" data-popup="FO-PD-MS0009">스피커</button>
+				</li>
+			</ul>
+			<div class="notice_03">
+				<ol>
+					<li>옵션의 유무와 작동여부는 육안으로 확인하여 진단합니다.(단, 주행 또는 사고발생시에만 작동하는 옵션항목에 대해서는 장착유무만 진단합니다)</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+<script>
+	//팝업 호출 ------ Sample
+	$(".list_option button").on("click",function(){
+		CPO.POPUP_open($(this));
+	});
+</script>

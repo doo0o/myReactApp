@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>회원정보</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_mypage.css">
+</head>
+<body>
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">회원정보</h3>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="my_member">
+			<div class="tit_box">
+				<p class="tit">회원정보 조회 및 변경은<br><script>MSG.text('현대닷컴', '제네시스닷컴');</script>에서 가능합니다.</p>
+				<p class="txt">아래 버튼을 누르면 <script>MSG.text('현대닷컴', '제네시스닷컴');</script>으로 이동합니다.</p> <!-- [CPO-4664] 2022.10.12 -->
+			</div>
+			<ul class="bg_box">
+				<li>
+					<span class="tit">이름</span>
+					<span class="txt">홍길동</span>
+				</li>
+				<li>
+					<span class="tit">이메일</span>
+					<span class="txt">abc123@hyundai.com</span>
+				</li>
+				<li>
+					<span class="tit">휴대폰번호</span>
+					<span class="txt">01012345678</span>
+				</li>
+			</ul>
+			<div class="btn_area">
+				<a href="https://www.hyundai.com/kr/ko/e" target="_blank" class="btn_mid05"><script>MSG.text('회원정보 변경', '회원 휴대폰번호 변경');</script></a>
+			</div>
+			<div class="terms_list">
+				<p class="tit">현대 & 제네시스 인증 중고차</p><!-- [CPO-4664] 2022.10.12 --> 
+				<ul>
+					<li><button type="button" data-popup="FO-ME-MS0002">이용 약관</button></li>
+					<li><button type="button" data-popup="FO-ME-MS0002">개인정보 수집 및 이용</button></li>
+					<!-- [CPO-5377] 2022.11.11 --> 
+					<li class="switch_type">
+						마케팅 활용 및 광고 수신 동의
+						<div class="switch">
+							<input type="checkbox" name="" value="">
+							<div class="circle"></div>
+							<div class="background"></div>
+						</div>
+						<div class="btn_area">
+							<button type="button" class="btn_txt_small01">약관보기</button>
+						</div>	
+					</li>
+					<!-- // [CPO-5377] 2022.11.11 --> 
+				</ul>
+				<div class="btn_area">
+					<button type="button" class="btn_txt_big01">서비스 해지</button>
+				</div>
+			</div>
+		</div>
+		<!-- contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!-- 2023 0207 푸터 삭제-->
+</div>
+<!-- //cpo wrap -->
+</body>
+</html>

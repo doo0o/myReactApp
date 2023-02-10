@@ -1,0 +1,496 @@
+<div class="stats_detail">
+	<div class="page_title">
+		<div class="title">가장 많이 거래된 수입 모델</div>
+		<div class="text">※ 2022년 10월 기준</div>
+		<button type="button" class="icon_share">공유하기</button>
+	</div>
+	<div class="cont_wrap">
+		<div class="cont_stats">
+			<div class="inner">
+				<div class="head_rank">
+					<div class="cont_title">
+						<div class="tit02">
+							대세는 <span>현대</span>의<br><span>그랜저 IG</span>
+						</div>
+						<div class="year">(20년~현재)</div>
+					</div>
+					<ul class="list_head_rank">
+						<li>
+							<p class="tit">Ranking</p>
+							<div class="txt">
+								<span>1<em>위</em></span>
+							</div>
+						</li>
+						<li>
+							<p class="tit">Volume</p>
+							<div class="txt">
+								<span>123,567<em>건</em></span>
+								<!-- 20230206 전월대비 삭제 -->
+								<!-- <span class="contrast_area">
+									전월대비<span class="contrast up">4.2% ▲</span>
+								</span> -->
+							</div>
+						</li>
+						<li>
+							<p class="tit">Market price</p>
+							<div class="txt">
+								<span><a href="#">2,076~2,549</a><em>만원</em></span>
+							</div>
+						</li>
+					</ul>
+					<div class="img_area">
+						<div class="bg_line">
+							<div class="line01">배경 라인1</div>
+							<div class="line02">배경 라인2</div>
+							<div class="line03">배경 라인3</div>
+							<div class="line04">배경 라인4</div>
+							<div class="line05">배경 라인5</div>
+						</div>
+						<div class="img">
+							<img src="/HILAB/p/img/@thumb/img_stats_detail03.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cont_list">
+			<ul class="list_model_box">
+				<li>
+					<div class="img">
+						<img src="/HILAB/p/img/@thumb/img_stats_detail02.png" alt="">
+					</div>
+					<div class="info_area">
+						<div class="title">
+							<span class="brand">아우디</span><span class="name">A5 스포트백</span><span class="year">(20년~현재)</span>
+						</div>
+						<ul class="list_model_rank">
+							<li>
+								<p class="tit">Ranking</p>
+								<div class="txt">
+									<span>2<em>위</em></span>
+								</div>
+							</li>
+							<li>
+								<p class="tit">Volume</p>
+								<div class="txt">
+									<span>13,456<em>건</em></span>
+									<!-- 20230206 전월대비 삭제 -->
+									<!-- <span class="contrast_area">
+										( 전월대비<span class="contrast down">1.5%▼</span> )
+									</span> -->
+								</div>
+							</li>
+							<li>
+								<p class="tit">Market price</p>
+								<div class="txt">
+									<span><a href="#">12,000~13,000</a><em>만원</em></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="img">
+						<img src="/HILAB/p/img/@thumb/img_stats_detail02.png" alt="">
+					</div>
+					<div class="info_area">
+						<div class="title">
+							<span class="brand">아우디</span><span class="name">Q8</span><span class="year">(20년~현재)</span>
+						</div>
+						<ul class="list_model_rank">
+							<li>
+								<p class="tit">Ranking</p>
+								<div class="txt">
+									<span>3<em>위</em></span>
+								</div>
+							</li>
+							<li>
+								<p class="tit">Volume</p>
+								<div class="txt">
+									<span>11,456<em>건</em></span>
+									<!-- 20230206 전월대비 삭제 -->
+									<!-- <span class="contrast_area">
+										( 전월대비<span class="contrast">0.0% -</span> )
+									</span> -->
+								</div>
+							</li>
+							<li>
+								<p class="tit">Market price</p>
+								<div class="txt">
+									<span><a href="#">18,000~19,000</a><em>만원</em></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="img">
+						<img src="/HILAB/p/img/@thumb/img_stats_detail02.png" alt="">
+					</div>
+					<div class="info_area">
+						<div class="title">
+							<span class="brand">메르세데스 벤츠</span><span class="name">S 클래스</span><span class="year">(20년~현재)</span>
+						</div>
+						<ul class="list_model_rank">
+							<li>
+								<p class="tit">Ranking</p>
+								<div class="txt">
+									<span>4<em>위</em></span>
+								</div>
+							</li>
+							<li>
+								<p class="tit">Volume</p>
+								<div class="txt">
+									<span>9,456<em>건</em></span>
+									<!-- 20230206 전월대비 삭제 -->
+									<!-- <span class="contrast_area">
+										( 전월대비<span class="contrast up">4.2%▲</span> )
+									</span> -->
+								</div>
+							</li>
+							<li>
+								<p class="tit">Market price</p>
+								<div class="txt">
+									<span><a href="#">14,000~15,000</a><em>만원</em></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="img">
+						<img src="/HILAB/p/img/@thumb/img_stats_detail02.png" alt="">
+					</div>
+					<div class="info_area">
+						<div class="title">
+							<span class="brand">폭스바겐</span><span class="name">제타</span><span class="year">(20년~현재)</span>
+						</div>
+						<ul class="list_model_rank">
+							<li>
+								<p class="tit">Ranking</p>
+								<div class="txt">
+									<span>5<em>위</em></span>
+								</div>
+							</li>
+							<li>
+								<p class="tit">Volume</p>
+								<div class="txt">
+									<span>8,456<em>건</em></span>
+									<!-- 20230206 전월대비 삭제 -->
+									<!-- <span class="contrast_area">
+										( 전월대비<span class="contrast up">4.2%▲</span> )
+									</span> -->
+								</div>
+							</li>
+							<li>
+								<p class="tit">Market price</p>
+								<div class="txt">
+									<span><a href="#">18,000~19,000</a><em>만원</em></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="img">
+						<img src="/HILAB/p/img/@thumb/img_stats_detail02.png" alt="">
+					</div>
+					<div class="info_area">
+						<div class="title">
+							<span class="brand">렉서스</span><span class="name">NX 플러그인 하이브리드</span><span class="year">(20년~현재)</span>
+						</div>
+						<ul class="list_model_rank">
+							<li>
+								<p class="tit">Ranking</p>
+								<div class="txt">
+									<span>6<em>위</em></span>
+								</div>
+							</li>
+							<li>
+								<p class="tit">Volume</p>
+								<div class="txt">
+									<span>13,456<em>건</em></span>
+									<!-- 20230206 전월대비 삭제 -->
+									<!-- <span class="contrast_area">
+										( 전월대비<span class="contrast down">1.5%▼</span> )
+									</span> -->
+								</div>
+							</li>
+							<li>
+								<p class="tit">Market price</p>
+								<div class="txt">
+									<span><a href="#">12,000~13,000</a><em>만원</em></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="img">
+						<img src="/HILAB/p/img/@thumb/img_stats_detail02.png" alt="">
+					</div>
+					<div class="info_area">
+						<div class="title">
+							<span class="brand">아우디</span><span class="name">A3 세단</span><span class="year">(20년~현재)</span>
+						</div>
+						<ul class="list_model_rank">
+							<li>
+								<p class="tit">Ranking</p>
+								<div class="txt">
+									<span>7<em>위</em></span>
+								</div>
+							</li>
+							<li>
+								<p class="tit">Volume</p>
+								<div class="txt">
+									<span>11,456<em>건</em></span>
+									<!-- 20230206 전월대비 삭제 -->
+									<!-- <span class="contrast_area">
+										( 전월대비<span class="contrast">0.0% -</span> )
+									</span> -->
+								</div>
+							</li>
+							<li>
+								<p class="tit">Market price</p>
+								<div class="txt">
+									<span><a href="#">8,000~9,000</a><em>만원</em></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="img">
+						<img src="/HILAB/p/img/@thumb/img_stats_detail02.png" alt="">
+					</div>
+					<div class="info_area">
+						<div class="title">
+							<span class="brand">BMW</span><span class="name">iX3</span><span class="year">(20년~현재)</span>
+						</div>
+						<ul class="list_model_rank">
+							<li>
+								<p class="tit">Ranking</p>
+								<div class="txt">
+									<span>8<em>위</em></span>
+								</div>
+							</li>
+							<li>
+								<p class="tit">Volume</p>
+								<div class="txt">
+									<span>9,456<em>건</em></span>
+									<!-- 20230206 전월대비 삭제 -->
+									<!-- <span class="contrast_area">
+										( 전월대비<span class="contrast up">4.2%▲</span> )
+									</span> -->
+								</div>
+							</li>
+							<li>
+								<p class="tit">Market price</p>
+								<div class="txt">
+									<span><a href="#">8,000~9,000</a><em>만원</em></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="img">
+						<img src="/HILAB/p/img/@thumb/img_stats_detail02.png" alt="">
+					</div>
+					<div class="info_area">
+						<div class="title">
+							<span class="brand">BMW</span><span class="name">X4</span><span class="year">(20년~현재)</span>
+						</div>
+						<ul class="list_model_rank">
+							<li>
+								<p class="tit">Ranking</p>
+								<div class="txt">
+									<span>9<em>위</em></span>
+								</div>
+							</li>
+							<li>
+								<p class="tit">Volume</p>
+								<div class="txt">
+									<span>8,456<em>건</em></span>
+									<!-- 20230206 전월대비 삭제 -->
+									<!-- <span class="contrast_area">
+										( 전월대비<span class="contrast up">4.2%▲</span> )
+									</span> -->
+								</div>
+							</li>
+							<li>
+								<p class="tit">Market price</p>
+								<div class="txt">
+									<span><a href="#">18,000~19,000</a><em>만원</em></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<div class="img">
+						<img src="/HILAB/p/img/@thumb/img_stats_detail02.png" alt="">
+					</div>
+					<div class="info_area">
+						<div class="title">
+							<span class="brand">BMW</span><span class="name">X5 플러그인 하이브리드</span><span class="year">(20년~현재)</span>
+						</div>
+						<ul class="list_model_rank">
+							<li>
+								<p class="tit">Ranking</p>
+								<div class="txt">
+									<span>10<em>위</em></span>
+								</div>
+							</li>
+							<li>
+								<p class="tit">Volume</p>
+								<div class="txt">
+									<span>9,456<em>건</em></span>
+									<!-- 20230206 전월대비 삭제 -->
+									<!-- <span class="contrast_area">
+										( 전월대비<span class="contrast up">4.2%▲</span> )
+									</span> -->
+								</div>
+							</li>
+							<li>
+								<p class="tit">Market price</p>
+								<div class="txt">
+									<span><a href="#">8,000~9,000</a><em>만원</em></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="cont_stats">
+			<div class="table_excel">
+				<div class="excel_title">
+					<div class="title">최근 12개월 중고차 거래량<span>(단위 : 건)</span></div>
+					<div class="select_area">
+						<span class="com_select hs02" data-ref="select">
+							<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample" onclick="dropDown();">
+								21년 7월
+							</button>
+							<span class="com_select_list" data-ref="dropDownList" id="dropDownExample" style="">
+								<span class="com_select_list_inner">
+									<label class="com_select_item"><input type="radio" name="dropDownExample" checked=""> <span>21년 7월</span></label>
+									<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>21년 8월</span></label>
+									<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>21년 9월</span></label>
+									<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>21년 10월</span></label>
+									<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>21년 11월</span></label>
+									<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>21년 12월</span></label>
+									<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>22년 1월</span></label>
+									<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>22년 2월</span></label>
+									<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>22년 3월</span></label>
+									<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>22년 4월</span></label>
+									<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>22년 5월</span></label>
+									<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>22년 6월</span></label>
+								</span>
+							</span>
+						</span>
+						<button type="button" class="btn_download">엑셀 다운로드</button>
+					</div>
+				</div>
+				<div class="table_area">
+					<table>
+						<caption>가장 많이 거래된 수입 모델 12개월 중고차 거래량</caption>
+						<colgroup>
+							<col width="100px">
+							<col width="160px">
+							<col width="397px">
+							<col width="160px">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>순위</th>
+								<th>브랜드명</th>
+								<th>모델명</th>
+								<th>거래건수</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1위</td>
+								<td>아우디</td>
+								<td>Q8 (00년~현재)</td>
+								<td>4,136</td>
+							</tr>
+							<tr>
+								<td>2위</td>
+								<td>아우디</td>
+								<td>Q8 (00년~현재)</td>
+								<td>4,136</td>
+							</tr>
+							<tr>
+								<td>3위</td>
+								<td>아우디</td>
+								<td>Q8 (00년~현재)</td>
+								<td>4,136</td>
+							</tr>
+							<tr>
+								<td>4위</td>
+								<td>아우디</td>
+								<td>Q8 (00년~현재)</td>
+								<td>4,136</td>
+							</tr>
+							<tr>
+								<td>5위</td>
+								<td>아우디</td>
+								<td>Q8 (00년~현재)</td>
+								<td>4,136</td>
+							</tr>
+							<tr>
+								<td>6위</td>
+								<td>아우디</td>
+								<td>Q8 (00년~현재)</td>
+								<td>4,136</td>
+							</tr>
+							<tr>
+								<td>7위</td>
+								<td>아우디</td>
+								<td>Q8 (00년~현재)</td>
+								<td>4,136</td>
+							</tr>
+							<tr>
+								<td>8위</td>
+								<td>아우디</td>
+								<td>Q8 (00년~현재)</td>
+								<td>4,136</td>
+							</tr>
+							<tr>
+								<td>9위</td>
+								<td>아우디</td>
+								<td>Q8 (00년~현재)</td>
+								<td>4,136</td>
+							</tr>
+							<tr>
+								<td>10위</td>
+								<td>아우디</td>
+								<td>Q8 (00년~현재)</td>
+								<td>4,136</td>
+							</tr>
+							<tr>
+								<th>
+									<th colspan="2">전체건수</th>
+									<th>1,396,964</th>
+								</th>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div class="cont_stats">
+			<div class="stats_banner">
+				<div class="title_area">
+					<p class="tit">내가 관심있는 모델에 대한</p>
+					<p class="txt">시세와 트렌드를 확인하고 싶다면?</p>
+				</div>
+				<div class="btn_area">
+					<a href="#" type="button" class="btn_small color01">관심 모델 시세 조회 하기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

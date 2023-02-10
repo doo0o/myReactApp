@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>계약 : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="/HMC/p/css/h_order.css">
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+	<!-- CPOcontents -->
+	<!-- CPOcontents -->
+	<div id="CPOcontents">
+		<div id="layoutWrap" class="order type_bg">
+			<div class="cont_top">
+				<ol class="list_step">
+					<li class="end"><h1>01. 계약</h1></li>
+					<li class="end">02. 주문서 작성</li>
+					<li class="now">03. 잔여금액결제</li>
+				</ol>
+			</div>
+			<!-- //cont_top -->
+
+			<!-- cont_wrap -->
+			<div class="container flex">
+				<div class="cont_wrap payment_cotents">
+					<!-- 결제기한 -->
+					<section class="payment_head">
+						<div class="txt">
+							결제기한 
+							<div class="state">21.11.11 17:32까지</div>
+							<!-- <div class="state">기한만료-상담예정</div>
+							<div class="state">추가결제 진행중</div> -->
+						</div>
+						<button class="txt_btn01 s_small c_gs02">주문정보 수정</button> 
+					</section>
+					<!-- //결제기한 -->
+
+					<!-- 디자인 확인용 -->
+					<section class="payment_head">
+						<div class="txt">
+							결제기한 
+							<div class="state">기한만료-상담예정</div>
+						</div>
+						<button class="txt_btn01 s_small c_gs02">주문정보 수정</button> 
+					</section>
+					<section class="payment_head">
+						<div class="txt">
+							결제기한
+							<div class="state">
+								추가결제 진행중
+								<!-- tooltip -->
+								<div class="tooltip">
+									<button type="button" class="open size01">상세보기</button>
+									<div class="cont">
+										<span class="text">추가금액 결제는 카드결제 및 무통장입금 처리만 가능합니다.</span>
+										<button class="close">상세보기닫기</button>
+									</div>
+								</div>
+								<!-- //tooltip -->
+							</div>
+						</div>
+					</section>
+					<!-- //디자인 확인용 -->
+					
+
+					<!-- 총 구매금액 -->
+					<section class="total_amount cont">
+						<div class="sec_tit m js_toggle">
+							총 구매금액
+							<span class="price">46,800,000<i>원</i></span>
+						</div>
+						<div class="order_detail group">
+							<ul class="price_list">
+								<li>
+									<div class="tit">총 주문금액</div>
+									<div class="price"><em>40,076,000</em>원</div>
+									<ul class="cont_box depth_list">
+										<li>
+											<div class="tit">차량가격</div>
+											<div class="price"><em>38,200,000</em>원</div>
+										</li>
+										<li>
+											<div class="tit">기타부대비용</div>
+											<div class="price"><em>3,876,000</em>원</div>
+											<ul class="depth_02">
+												<li>
+													<div class="tit">관리비</div>
+													<div class="price"><em>50,000</em>원</div>
+												</li>
+												<li>
+													<div class="tit">이전등록비용</div>
+													<div class="price"><em>3,056,000</em>원</div>
+												</li>
+												<li>
+													<div class="tit">이전등록대행수수료</div>
+													<div class="price"><em>50,000</em>원</div>
+												</li>
+												<li>
+													<div class="tit">탁송료</div>
+													<div class="price"><em>180,000</em>원</div>
+												</li>
+												<li>
+													<div class="tit">추가 탁송료</div>
+													<div class="price"><em>180,000</em>원</div>
+												</li>
+												<li>
+													<div class="tit">회수 탁송료</div>
+													<div class="price"><em>180,000</em>원</div>
+												</li>
+												<li>
+													<div class="tit">추가 회수 탁송료</div>
+													<div class="price"><em>180,000</em>원</div>
+												</li>
+												<li>
+													<div class="tit">철회 탁송료</div>
+													<div class="price"><em>180,000</em>원</div>
+												</li>
+												<li>
+													<div class="tit">추가 철회 탁송료</div>
+													<div class="price"><em>180,000</em>원</div>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="tit">할인 프로모션</div>
+											<div class="price point03"><em>-1,800,000</em>원</div>
+											<ul class="depth_02">
+												<li>
+													<div class="tit">프로모션명</div>
+													<div class="price"><em>-1,800,000</em>원</div>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="tit">환급금</div>
+											<div class="price point03"><em>-200,000</em>원</div>
+										</li>
+									</ul>
+								</li>
+								<li class="point02">
+									<div class="tit">총 구매금액</div>
+									<div class="price"><em>40,076,000</em>원</div>
+								</li>
+								<li class="point02">
+									<div class="tit">환불 차감금액</div>
+									<div class="price point02"><em>1,020,000</em>원</div>
+									<ul class="cont_box">
+										<li>
+											<div class="tit">페널티 (클레임 비용)</div>
+											<div class="price"><em>50,000</em>원</div>
+										</li>
+										<li>
+											<div class="tit">탁송료</div>
+											<div class="price"><em>180,000</em>원</div>
+										</li>
+										<li>
+											<div class="tit">추가 탁송료</div>
+											<div class="price"><em>180,000</em>원</div>
+										</li>
+										<li>
+											<div class="tit">회수 탁송료</div>
+											<div class="price"><em>180,000</em>원</div>
+										</li>
+										<li>
+											<div class="tit">추가 회수 탁송료</div>
+											<div class="price"><em>180,000</em>원</div>
+										</li>
+									</ul>
+								</li>
+								<li class="point02">
+									<div class="tit">취소/환불 예정금액</div>
+									<div class="price point02"><em>39,256,000</em>원</div>
+								</li>
+							</ul>
+							<div class="caution bg">
+								<ul>
+									<li>탁송정보 변경 시 탁송비가 변경될 수 있습니다.</li>
+									<li>이전등록비용은 현금 결제만 가능합니다.</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					<!-- //총 구매금액 -->
+
+					<!-- 할인혜택 -->
+					<section>
+						<div class="sec_tit m">할인혜택</div>
+						<button class="nav_benefit">
+							<span class="txt">적용 가능한 할인 혜택이 있어요.</span>
+							<span class="txt_btn01 s_small c_wht">할인혜택 보기</span>
+						</button>
+
+						<br><!-- 확인용 br -->
+
+						<button class="nav_benefit">
+							<span class="txt">김현대님 총 1,800,000원 할인 받았어요.</span>
+						</button>
+					</section>
+					<!-- //할인혜택 -->
+					
+					<!-- 결제방법 -->
+					<section class="method">
+						<div class="sec_tit m">결제방법</div>
+						<ul class="result_cont">
+							<!-- 오토할부 -->
+							<li class="cont">
+								<div class="check_box js_toggle">
+									<div class="txt">오토할부</div>
+									<div class="msg">현대 인증중고차만의 쉽고 빠른 할부 서비스입니다.</div>
+								</div>
+								<div class="result_detail group">
+									<div class="no_data">
+										<p class="txt">최저 금리, 저렴한 월 납입금으로 부담을 줄이는 온라인 대출 신청</p>
+										<div class="btn_area">
+											<a href="#" class="btn_mid color01">한도조회하기</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="cont">
+								<div class="check_box on js_toggle">
+									<div class="txt">오토할부</div>
+									<div class="result">
+										<span class="logo"><img src="/HMC/p/img/icon/icon_payment.svg" alt=""></span>
+										<span class="txt"><em>승인완료</em></span>
+										<span class="price"><em>10,000,000</em>원</span>
+									</div>
+								</div>
+								<div class="result_detail group">
+									<div class="top">
+										<div class="stit">할부신청정보</div>
+										<button class="txt_btn01 s_small c_gs03">승인내역보기</button>
+									</div>
+									<div class="info_box">
+										<span class="installment">금리<em>연 5.9%</em></span>
+										<span class="installment">상환기간<em>60개월</em></span>
+										<span class="installment">월 납입금<em>178,356</em><i>원</i></span>
+									</div>
+								</div>
+							</li>
+							<!-- //오토할부 -->
+							<!-- 카드결제 -->
+							<li class="cont">
+								<div class="check_box js_toggle">
+									<span class="txt">카드결제</span>
+								</div>
+								<div class="result_detail group">
+									<div class="top">
+										<div class="stit">
+											결제 가능금액
+											<span class="stxt">(이전등록비용 제외)</span>
+											<!-- tooltip -->
+											<div class="tooltip bottom">
+												<button type="button" class="open size01">상세보기</button>
+												<div class="cont">
+													<span class="text">
+														결제 가능금액은 현금 결제만 가능한 <br>
+														금액(이전등록비용)을 제외한 금액입니다.
+													</span>
+													<button class="close">상세보기닫기</button>
+												</div>
+											</div>
+											<!-- //tooltip -->
+										</div>
+										<div class="price"><em>36,500,000</em>원</div>
+									</div>
+									<!-- 공동명의 -->
+									<div class="form_cont">
+										<div class="stit">결제 명의자</div>
+										<div class="com_select hs02 isSelected" data-ref="select">
+											<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample02" onclick="dropDown({reset: false});">
+												김현대(대표명의자)
+											</button>
+											<span class="com_select_list" data-ref="dropDownList" id="dropDownExample02">
+												<span class="com_select_list_inner">
+													<label class="com_select_item"><input type="radio" name="dropDownExample02" checked=""><span>김현대(대표명의자)</span></label>
+													<label class="com_select_item"><input type="radio" name="dropDownExample02"><span>김현대(공동명의자 1)</span></label>
+												</span>
+											</span>
+										</div>
+									</div>
+									<!-- //공동명의 -->
+									<div class="btn_area col_type">
+										<a href="#" class="btn_mid color01">결제하기</a>
+									</div>
+									<div class="sort_list">
+										<div class="total_result">
+											<div class="all">총 <em>0</em>건</div>
+											<div class="tab_sort">
+												<ul class="list">
+													<li class="on"><button type="button">전체내역</button></li>
+													<li><button type="button">결제완료</button></li>
+													<li><button type="button">취소/환불</button></li>
+												</ul>
+											</div>
+										</div>
+										<div class="no_data payment">
+											<p class="tit02">거래내역이 없습니다.</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="cont">
+								<div class="check_box on js_toggle">
+									<span class="txt">카드결제</span>
+									<div class="result">
+										<span class="logo logo_card"><img src="/HMC/p/img/finance/card_001.png" alt=""></span>
+										<span class="txt">국민카드 외 <em>2건</em></span>
+										<span class="price"><em>10,000,000</em>원</span>
+									</div>
+								</div>
+								<div class="result_detail group">
+									<div class="top">
+										<div class="stit">
+											결제 가능금액
+											<span class="stxt">(이전등록비용 제외)</span>
+											<!-- tooltip -->
+											<div class="tooltip bottom">
+												<button type="button" class="open size01">상세보기</button>
+												<div class="cont">
+													<span class="text">
+														결제 가능금액은 현금 결제만 가능한 <br>
+														금액(이전등록비용)을 제외한 금액입니다.
+													</span>
+													<button class="close">상세보기닫기</button>
+												</div>
+											</div>
+											<!-- //tooltip -->
+										</div>
+										<div class="price"><em>36,500,000</em>원</div>
+									</div>
+									<div class="btn_area col_type">
+										<a href="#" class="btn_mid color01">결제하기</a>
+									</div>
+									<div class="sort_list">
+										<div class="total_result">
+											<div class="all">총 <em>32</em>건</div>
+											<div class="tab_sort">
+												<ul class="list">
+													<li class="on"><button type="button">전체내역</button></li>
+													<li><button type="button">결제완료</button></li>
+													<li><button type="button">취소/환불</button></li>
+												</ul>
+											</div>
+										</div>
+										<div class="result_list">
+											<dl class="price_total">
+												<dt>총 구매금액</dt>
+												<dd class="price"><em>38,445,000</em>원</dd>
+											</dl>
+											<ul class="list">
+												<li>
+													<div class="logo logo_card"><img src="/HMC/m/img/finance/card_001.png" alt=""></div>
+													<div class="cont">
+														<dl class="info">
+															<dt>
+																<div class="name">국민카드(일시불)</div>
+																<div class="num">1111-11**-****-1111</div>
+															</dt>
+															<dd>
+																<div class="payment"><em>500,000</em>원</div>
+																<div class="name">김현대</div>
+															</dd>
+														</dl>
+														<div class="state">
+															결제완료 (2021.11.12 12:12:12) 
+															<button class="btn_xsmall color02">취소요청</button>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="logo logo_card"><img src="/HMC/m/img/finance/card_001.png" alt=""></div>
+													<div class="cont">
+														<dl class="info">
+															<dt>
+																<div class="name">국민카드</div>
+																<div class="num">1111-11**-****-1111</div>
+															</dt>
+															<dd>
+																<div class="payment"><em>-500,000</em>원</div>
+																<div class="name">김현대</div>
+															</dd>
+														</dl>
+														<div class="state">
+															결제취소 (2022.04.11 12:00:12 )
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="logo logo_card"><img src="/HMC/m/img/finance/card_001.png" alt=""></div>
+													<div class="cont">
+														<dl class="info">
+															<dt>
+																<div class="name">국민카드</div>
+																<div class="num">1111-11**-****-1111</div>
+															</dt>
+															<dd>
+																<div class="payment"><em>-500,000</em>원</div>
+																<div class="name">김현대</div>
+															</dd>
+														</dl>
+														<div class="state">
+															결제취소 (2022.04.11 12:00:12 )
+														</div>
+													</div>
+												</li>
+												<!-- 환불계좌 -->
+												<li>
+													<div class="logo"><img src="/HMC/m/img/finance/bank_004.png" alt=""></div>
+													<div class="cont">
+														<dl class="info">
+															<dt>
+																<div class="name">국민은행</div>
+																<div class="num">0000000000</div>
+															</dt>
+															<dd>
+																<div class="payment"><em>-5,000,000</em>원</div>
+																<div class="name">김현대</div>
+															</dd>
+														</dl>
+														<div class="state">
+															환불완료(2022.04.09 08:00:00)
+														</div>
+													</div>
+												</li>
+												<!-- //환불계좌 -->
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<!-- //카드결제 -->
+							<!-- 무통장입금 -->
+							<!-- 가상계좌미발급:단일명의 -->
+							<li class="cont">
+								<div class="check_box js_toggle">
+									<span class="txt">무통장입금</span>
+								</div>
+								<div class="result_detail group">
+									<div class="top">
+										<div class="stit">
+											결제 가능금액
+											<span class="stxt">(이전등록비용 500,000원 포함)</span>
+											<!-- tooltip -->
+											<div class="tooltip bottom">
+												<button type="button" class="open size01">상세보기</button>
+												<div class="cont">
+													<span class="text">
+														결제 가능금액은 이전등록비용이 포함된 금액이며,<br>
+														이전등록비용은 반드시 현금결제만 가능합니다.
+													</span>
+													<button class="close">상세보기닫기</button>
+												</div>
+											</div>
+											<!-- //tooltip -->											
+										</div>
+										<div class="price"><em>36,500,000</em>원</div>
+									</div>
+									<div class="form_cont">
+										<div class="stit">은행선택</div>
+										<div class="form_area">
+											<span class="com_select hs02" data-ref="select">
+												<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample" onclick="dropDown();">
+													은행선택
+												</button>
+												<!--#include file="/HMC/p/SHTML/H_inc/include/comp_bankSel.shtml"-->
+											</span>
+										</div>
+									</div>
+									<div class="form_cont">
+										<div class="stit">결제금액</div>
+										<div class="form_area">
+											<div class="inbox_type02 txt_r hs02" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+												<input type="tel" class="txt type_nc" title="원" placeholder="" name="" value="">
+												<button type="button" class="btn_delete">삭제</button>
+												<em>원</em>
+											</div>
+											<!-- <p class="validation error">에러 메세지</p> -->
+										</div>
+									</div>
+									<div class="btn_area col_type">
+										<a href="#" class="btn_mid color01">가상계좌 발급받기</a>
+									</div>
+									<div class="caution">
+										<ul>
+											<li>발급받은 가상계좌는 변경, 삭제가 불가능합니다.</li>
+											<li>가상계좌로 입금 완료 후 5분 이내에 입금여부가 확인됩니다.</li>
+											<li>설정하신 결제금액은 분할 입금이 불가능하며, 무통장입금으로 설정된 결제금액과 입금하시는 금액이 
+												반드시 동일해야 정상처리 됩니다.</li>
+											<li>무통장 입금 전 이체 한도를 확인해 주세요. 결제 금액이 이체 한도를 초과할 경우, 이체 한도 증액 후 
+												결제를 진행해 주세요.</li>
+										</ul>
+									</div>
+									<div class="sort_list">
+										<div class="total_result">
+											<div class="all">총 <em>0</em>건</div>
+											<div class="tab_sort">
+												<ul class="list">
+													<li class="on"><button type="button">전체내역</button></li>
+													<li><button type="button">입금대기</button></li>
+													<li><button type="button">입금완료</button></li>
+													<li><button type="button">취소/환불</button></li>
+												</ul>
+											</div>
+										</div>
+										<div class="no_data payment">
+											<p class="tit02">거래내역이 없습니다.</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<!-- //가상계좌미발급:단일명의 -->
+							<!-- 가상계좌발급완료:단일명의 -->
+							<li class="cont">
+								<div class="check_box on js_toggle">
+									<span class="txt">무통장입금</span>
+									<div class="result">
+										<span class="logo"><img src="/HMC/p/img/finance/bank_020.png" alt=""></span>
+										<span class="txt">우리은행 외 <em>2건</em></span>
+										<span class="price"><em>10,000,000</em>원</span>
+									</div>
+								</div>
+								<div class="result_detail group">
+									<div class="top">
+										<div class="stit">
+											결제 가능금액
+											<span class="stxt">(이전등록비용 500,000원 포함)</span>
+											<!-- tooltip -->
+											<div class="tooltip bottom">
+												<button type="button" class="open size01">상세보기</button>
+												<div class="cont">
+													<span class="text">
+														결제 가능금액은 이전등록비용이 포함된 금액이며,<br>
+														이전등록비용은 반드시 현금결제만 가능합니다.
+													</span>
+													<button class="close">상세보기닫기</button>
+												</div>
+											</div>
+											<!-- //tooltip -->
+										</div>
+										<div class="price"><em>0</em>원</div>
+									</div>
+									<div class="stit">가상계좌</div>
+									<div class="info_box">
+										<span class="bank">
+											<img src="/HMC/m/img/finance/bank_004.png" alt="" class="logo">
+											국민은행<em>12345671234567</em>
+										</span>
+										<span class="bank_name">현대자동차_김현대</span>
+										<button type="button" class="txt_btn03 s_mid">계좌번호 복사</button>
+									</div>
+									<div class="form_cont">
+										<div class="stit">결제금액</div>
+										<div class="form_area">
+											<div class="inbox_type02 txt_r hs02" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+												<input type="tel" class="txt type_nc" title="원" placeholder="" name="" value="">
+												<button type="button" class="btn_delete">삭제</button>
+												<em>원</em>
+											</div>
+											<!-- <p class="validation error">에러 메세지</p> -->
+										</div>
+									</div>
+									<div class="btn_area col_type">
+										<a href="#" class="btn_mid color01">결제금액 설정하기</a>
+									</div>
+									<div class="caution">
+										<ul>
+											<li>가상계좌로 입금 완료 후 5분 이내에 입금여부가 확인됩니다.</li>
+											<li>설정하신 결제금액은 분할 입금이 불가능하며, 무통장입금으로 설정된 결제금액과 입금하시는 금액이 
+												반드시 동일해야 정상처리 됩니다.</li>
+											<li>무통장 입금 전 이체 한도를 확인해 주세요. 결제 금액이 이체 한도를 초과할 경우, 이체 한도 증액 후 
+												결제를 진행해 주세요.</li>
+										</ul>
+									</div>
+									<div class="sort_list">
+										<div class="total_result">
+											<div class="all">총 <em>32</em>건</div>
+											<div class="tab_sort">
+												<ul class="list">
+													<li class="on"><button type="button">전체내역</button></li>
+													<li><button type="button">입금대기</button></li>
+													<li><button type="button">입금완료</button></li>
+													<li><button type="button">취소/환불</button></li>
+												</ul>
+											</div>
+										</div>
+										<div class="result_list">
+											<dl class="price_total">
+												<dt>총 구매금액</dt>
+												<dd><em>38,445,000</em>원</dd>
+											</dl>
+											<ul class="list">
+												<li>
+													<div class="logo"><img src="/HMC/m/img/finance/bank_004.png" alt=""></div>
+													<div class="cont">
+														<dl class="info">
+															<dt>
+																<div class="name">국민은행</div>
+																<div class="num">123111234</div>
+															</dt>
+															<dd>
+																<div class="payment"><em>500,000</em>원</div>
+																<div class="name">김현대</div>
+															</dd>
+														</dl>
+														<div class="state point01"><!-- 입금대기일 경우 point01 class 추가-->
+															입금대기 (2022.04.10 까지)
+															<button class="btn_xsmall color02">취소요청</button>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="logo"><img src="/HMC/m/img/finance/bank_004.png" alt=""></div>
+													<div class="cont">
+														<dl class="info">
+															<dt>
+																<div class="name">국민은행</div>
+																<div class="num">123111234</div>
+															</dt>
+															<dd>
+																<div class="payment"><em>500,000</em>원</div>
+																<div class="name">김현대</div>
+															</dd>
+														</dl>
+														<div class="state">
+															입금완료 (2022.04.10 까지)
+															<button class="btn_xsmall color02">환불요청</button>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="logo"><img src="/HMC/m/img/finance/bank_004.png" alt=""></div>
+													<div class="cont">
+														<dl class="info">
+															<dt>
+																<div class="name">국민은행</div>
+																<div class="num">123111234</div>
+															</dt>
+															<dd>
+																<div class="payment"><em>500,000</em>원</div>
+																<div class="name">김현대</div>
+															</dd>
+														</dl>
+														<div class="state">
+															환불완료
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<!-- //가상계좌발급완료:단일명의 -->
+							<!-- 가상계좌미발급:공동명의 -->
+							<li class="cont">
+								<div class="check_box on js_toggle">
+									<span class="txt">무통장입금</span>
+									<div class="result">
+										<span class="logo"><img src="/HMC/p/img/finance/bank_020.png" alt=""></span>
+										<span class="txt">우리은행 외 <em>2건</em></span>
+										<span class="price"><em>10,000,000</em>원</span>
+									</div>
+								</div>
+								<div class="result_detail group">
+									<div class="top">
+										<div class="stit">
+											결제 가능금액
+											<span class="stxt">(이전등록비용 500,000원 포함)</span>
+											<!-- tooltip -->
+											<div class="tooltip bottom">
+												<button type="button" class="open size01">상세보기</button>
+												<div class="cont">
+													<span class="text">
+														결제 가능금액은 이전등록비용이 포함된 금액이며,<br>
+														이전등록비용은 반드시 현금결제만 가능합니다.
+													</span>
+													<button class="close">상세보기닫기</button>
+												</div>
+											</div>
+											<!-- //tooltip -->
+										</div>
+										<div class="price"><em>0</em>원</div>
+									</div>
+									<div class="form_cont">
+										<div class="stit">은행선택</div>
+										<div class="form_area">
+											<span class="com_select hs02" data-ref="select">
+												<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample" onclick="dropDown();">
+													은행선택
+												</button>
+												<!--#include file="/HMC/p/SHTML/H_inc/include/comp_bankSel.shtml"-->
+											</span>
+										</div>
+									</div>
+									<div class="form_cont">
+										<div class="stit">입금자 선택</div>
+										<div class="com_select hs02 isSelected" data-ref="select">
+											<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample02" onclick="dropDown({reset: false});">
+												김현대(대표명의자)
+											</button>
+											<span class="com_select_list" data-ref="dropDownList" id="dropDownExample02">
+												<span class="com_select_list_inner">
+													<label class="com_select_item"><input type="radio" name="dropDownExample02" checked=""><span>김현대(대표명의자)</span></label>
+													<label class="com_select_item"><input type="radio" name="dropDownExample02"><span>김현대(공동명의자 1)</span></label>
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="form_cont">
+										<div class="stit">결제금액</div>
+										<div class="form_area">
+											<div class="inbox_type02 txt_r hs02" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+												<input type="tel" class="txt type_nc" title="원" placeholder="" name="" value="">
+												<button type="button" class="btn_delete">삭제</button>
+												<em>원</em>
+											</div>
+											<!-- <p class="validation error">에러 메세지</p> -->
+										</div>
+									</div>
+									<div class="btn_area col_type">
+										<a href="#" class="btn_mid color01">가상계좌 발급받기</a>
+									</div>
+									<div class="caution">
+										<ul>
+											<li class="point01">명의등록에서 등록 하신 공동명의자는 모두 상기 가상계좌로 분할 입금이 가능합니다.</li>
+											<li>발급받은 가상계좌는 변경, 삭제가 불가능합니다.</li>
+											<li>가상계좌로 입금 완료 후 5분 이내에 입금여부가 확인됩니다.</li>
+											<li>설정하신 결제금액은 분할 입금이 불가능하며, 무통장입금으로 설정된 결제금액과 입금하시는 금액이 
+												반드시 동일해야 정상처리 됩니다.</li>
+											<li>무통장 입금 전 이체 한도를 확인해 주세요. 결제 금액이 이체 한도를 초과할 경우, 이체 한도 증액 후 
+												결제를 진행해 주세요.</li>
+										</ul>
+									</div>
+									<div class="sort_list">
+										<div class="total_result">
+											<div class="all">총 <em>0</em>건</div>
+											<div class="tab_sort">
+												<ul class="list">
+													<li class="on"><button type="button">전체내역</button></li>
+													<li><button type="button">입금대기</button></li>
+													<li><button type="button">입금완료</button></li>
+													<li><button type="button">취소/환불</button></li>
+												</ul>
+											</div>
+										</div>
+										<div class="no_data payment">
+											<p class="tit02">거래내역이 없습니다.</p>
+										</div>
+									</div>
+								</div>
+							</li>
+							<!-- //가상계좌미발급:공동명의 -->
+							<!-- 가상계좌발급완료:공동명의 -->
+							<li class="cont">
+								<div class="check_box on js_toggle">
+									<span class="txt">무통장입금</span>
+									<div class="result">
+										<span class="logo"><img src="/HMC/p/img/finance/bank_020.png" alt=""></span>
+										<span class="txt">우리은행 외 <em>2건</em></span>
+										<span class="price"><em>10,000,000</em>원</span>
+									</div>
+								</div>
+								<div class="result_detail group">
+									<div class="top"> 
+										<div class="stit">
+											결제 가능금액
+											<span class="stxt">(이전등록비용 500,000원 포함)</span>
+											<!-- tooltip -->
+											<div class="tooltip bottom">
+												<button type="button" class="open size01">상세보기</button>
+												<div class="cont">
+													<span class="text">
+														결제 가능금액은 이전등록비용이 포함된 금액이며,<br>
+														이전등록비용은 반드시 현금결제만 가능합니다.
+													</span>
+													<button class="close">상세보기닫기</button>
+												</div>
+											</div>
+											<!-- //tooltip -->
+										</div>
+										<div class="price"><em>0</em>원</div>
+									</div>
+									<div class="stit">가상계좌</div>
+									<div class="info_box">
+										<span class="bank">
+											<img src="/HMC/m/img/finance/bank_004.png" alt="" class="logo">
+											국민은행<em>12345671234567</em>
+										</span>
+										<span class="bank_name">현대자동차_김현대</span>
+										<button type="button" class="txt_btn03 s_mid">계좌번호 복사</button>
+									</div>
+									<div class="form_cont">
+										<div class="stit">입금자 선택</div>
+										<div class="com_select hs02 isSelected" data-ref="select">
+											<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample02" onclick="dropDown({reset: false});">
+												김현대(대표명의자)
+											</button>
+											<span class="com_select_list" data-ref="dropDownList" id="dropDownExample02">
+												<span class="com_select_list_inner">
+													<label class="com_select_item"><input type="radio" name="dropDownExample02" checked=""><span>김현대(대표명의자)</span></label>
+													<label class="com_select_item"><input type="radio" name="dropDownExample02"><span>김현대(공동명의자 1)</span></label>
+												</span>
+											</span>
+										</div>
+									</div>
+									<div class="form_cont">
+										<div class="stit">결제금액</div>
+										<div class="form_area">
+											<div class="inbox_type02 txt_r hs02" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+												<input type="tel" class="txt type_nc" title="원" placeholder="" name="" value="">
+												<button type="button" class="btn_delete">삭제</button>
+												<em>원</em>
+											</div>
+											<!-- <p class="validation error">에러 메세지</p> -->
+										</div>
+									</div>
+									<div class="btn_area col_type">
+										<a href="#" class="btn_mid color01">결제금액 설정하기</a>
+									</div>
+									<div class="caution">
+										<ul>
+											<li>가상계좌로 입금 완료 후 5분 이내에 입금여부가 확인됩니다.</li>
+											<li>설정하신 결제금액은 분할 입금이 불가능하며, 무통장입금으로 설정된 결제금액과 입금하시는 금액이 
+												반드시 동일해야 정상처리 됩니다.</li>
+											<li>무통장 입금 전 이체 한도를 확인해 주세요. 결제 금액이 이체 한도를 초과할 경우, 이체 한도 증액 후 
+												결제를 진행해 주세요.</li>
+										</ul>
+									</div>
+									<div class="sort_list">
+										<div class="total_result">
+											<div class="all">총 <em>32</em>건</div>
+											<div class="tab_sort">
+												<ul class="list">
+													<li class="on"><button type="button">전체내역</button></li>
+													<li><button type="button">입금대기</button></li>
+													<li><button type="button">입금완료</button></li>
+													<li><button type="button">취소/환불</button></li>
+												</ul>
+											</div>
+										</div>
+										<div class="result_list">
+											<dl class="price_total">
+												<dt>총 구매금액</dt>
+												<dd><em>38,445,000</em>원</dd>
+											</dl>
+											<ul class="list">
+												<li>
+													<div class="logo"><img src="/HMC/m/img/finance/bank_004.png" alt=""></div>
+													<div class="cont">
+														<dl class="info">
+															<dt>
+																<div class="name">국민은행</div>
+																<div class="num">123111234</div>
+															</dt>
+															<dd>
+																<div class="payment"><em>500,000</em>원</div>
+																<div class="name">김현대</div>
+															</dd>
+														</dl>
+														<div class="state point01"><!-- 입금대기일 경우 point01 class 추가-->
+															입금대기 (2022.04.10 까지)
+															<button class="btn_xsmall color02">취소요청</button>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="logo"><img src="/HMC/m/img/finance/bank_004.png" alt=""></div>
+													<div class="cont">
+														<dl class="info">
+															<dt>
+																<div class="name">국민은행</div>
+																<div class="num">123111234</div>
+															</dt>
+															<dd>
+																<div class="payment"><em>500,000</em>원</div>
+																<div class="name">김현대</div>
+															</dd>
+														</dl>
+														<div class="state">
+															입금완료 (2022.04.10 까지)
+															<button class="btn_xsmall color02">환불요청</button>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="logo"><img src="/HMC/m/img/finance/bank_004.png" alt=""></div>
+													<div class="cont">
+														<dl class="info">
+															<dt>
+																<div class="name">국민은행</div>
+																<div class="num">123111234</div>
+															</dt>
+															<dd>
+																<div class="payment"><em>500,000</em>원</div>
+																<div class="name">김현대</div>
+															</dd>
+														</dl>
+														<div class="state">
+															환불대기
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<!-- //가상계좌발급완료:공동명의 -->
+							<!-- 입금완료(입금대기X) -->
+							<li class="cont">
+								<div class="check_box on js_toggle">
+									<span class="txt">무통장입금</span>
+									<div class="result">
+										<span class="logo"><img src="/HMC/p/img/finance/bank_020.png" alt=""></span>
+										<span class="txt">우리은행 외 <em>2건</em></span>
+										<span class="price"><em>10,000,000</em>원</span>
+									</div>
+								</div>
+								<div class="result_detail group">
+									<div class="top"> 
+										<div class="stit">
+											결제 가능금액
+											<span class="stxt">(이전등록비용 500,000원 포함)</span>
+											<!-- tooltip -->
+											<div class="tooltip bottom">
+												<button type="button" class="open size01">상세보기</button>
+												<div class="cont">
+													<span class="text">
+														결제 가능금액은 이전등록비용이 포함된 금액이며,<br>
+														이전등록비용은 반드시 현금결제만 가능합니다.
+													</span>
+													<button class="close">상세보기닫기</button>
+												</div>
+											</div>
+											<!-- //tooltip -->
+										</div>
+										<div class="price"><em>0</em>원</div>
+									</div>
+									<div class="stit">가상계좌</div>
+									<div class="info_box">
+										<span class="bank">
+											<img src="/HMC/m/img/finance/bank_004.png" alt="" class="logo">
+											국민은행<em>12345671234567</em>
+										</span>
+										<span class="bank_name">현대자동차_김현대</span>
+										<button type="button" class="txt_btn03 s_mid">계좌번호 복사</button>
+									</div>
+									<div class="form_cont">
+										<div class="stit">결제금액</div>
+										<div class="form_area">
+											<div class="inbox_type02 txt_r hs02" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+												<input type="tel" class="txt type_nc" title="원" placeholder="" name="" value="">
+												<button type="button" class="btn_delete">삭제</button>
+												<em>원</em>
+											</div>
+											<!-- <p class="validation error">에러 메세지</p> -->
+										</div>
+									</div>
+									<div class="btn_area col_type">
+										<a href="#" class="btn_mid color01">결제금액 설정하기</a>
+									</div>
+									<div class="caution">
+										<ul>
+											<li>가상계좌로 입금 완료 후 5분 이내에 입금여부가 확인됩니다.</li>
+											<li>설정하신 결제금액은 분할 입금이 불가능하며, 무통장입금으로 설정된 결제금액과 입금하시는 금액이 
+												반드시 동일해야 정상처리 됩니다.</li>
+											<li>무통장 입금 전 이체 한도를 확인해 주세요. 결제 금액이 이체 한도를 초과할 경우, 이체 한도 증액 후 
+												결제를 진행해 주세요.</li>
+										</ul>
+									</div>
+									<div class="sort_list">
+										<div class="total_result">
+											<div class="all">총 <em>32</em>건</div>
+											<div class="tab_sort">
+												<ul class="list">
+													<li class="on"><button type="button">전체내역</button></li>
+													<li><button type="button">입금대기</button></li>
+													<li><button type="button">입금완료</button></li>
+													<li><button type="button">취소/환불</button></li>
+												</ul>
+											</div>
+										</div>
+										<div class="result_list">
+											<dl class="price_total">
+												<dt>총 구매금액</dt>
+												<dd><em>38,445,000</em>원</dd>
+											</dl>
+											<ul class="list">
+												<li>
+													<div class="logo logo_card"><img src="/HMC/m/img/finance/card_001.png" alt=""></div>
+													<div class="cont">
+														<dl class="info">
+															<dt>
+																<div class="name">국민은행</div>
+																<div class="num">123111234</div>
+															</dt>
+															<dd>
+																<div class="payment"><em>500,000</em>원</div>
+																<div class="name">김현대</div>
+															</dd>
+														</dl>
+														<div class="state">
+															입금완료 (2022.04.10 까지)
+															<button class="btn_xsmall color02">환불요청</button>
+														</div>
+													</div>
+												</li>
+												<li>
+													<div class="logo logo_card"><img src="/HMC/m/img/finance/card_001.png" alt=""></div>
+													<div class="cont">
+														<dl class="info">
+															<dt>
+																<div class="name">국민은행</div>
+																<div class="num">123111234</div>
+															</dt>
+															<dd>
+																<div class="payment"><em>500,000</em>원</div>
+																<div class="name">김현대</div>
+															</dd>
+														</dl>
+														<div class="state">
+															환불대기
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<!-- //입금완료(입금대기X) -->
+							<!-- //무통장입금 -->
+						</ul>
+						<div class="caution">
+							<ul>
+								<li>금액을 여러 결제수단으로 나누어 결제 하실 수 있습니다.</li>
+							</ul>
+						</div>
+					</section>
+					<!-- //결제방법 -->
+
+					<!-- 주문취소 -->
+					<section>
+						<button class="txt_btn03 s_small c_gs03">주문취소</button>
+					</section>
+					<!-- //주문취소 -->
+				</div>
+
+				<div class="cont_right sticky">
+					<section>
+						<div class="sec_tit m">주문차량</div>
+						<div class="unit_type type02">
+							<div class="mid_area">
+								<div class="unit_img">
+									<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+								</div>
+								<div class="unit_info">
+									<div class="name">
+										<span class="model">그랜저 IG </span>
+										<span class="desc">가솔린 3.3 캘리그래피</span>
+									</div>
+									<div class="drive">
+										<span>20년 12월</span>
+										<span>50,000km</span>
+										<span>12가1234</span>
+									</div>
+									<div class="price">
+										<span class="num"><em>4,370</em><i>만원</i></span>
+									</div>
+								</div>
+							</div>
+							<div class="caution">
+								<p>부대비용이 포함되어 있지 않은 차량 가격입니다.</p>
+							</div>
+						</div>
+					</section>
+					<section>
+						<div class="sec_tit m">
+							<span class="complete">결제완료</span>
+						</div>
+						<div class="sec_tit m">
+							<span>남은 결제금액</span>
+							<span class="price">36,500,000<i>원</i></span>
+						</div>
+						<ul class="price_list">
+							<li>
+								<span class="tit">총 구매금액</span>
+								<span class="price"><em>46,800,000</em>원</span>
+							</li>
+							<li>
+								<span class="tit">결제 진행금액</span>
+								<span class="price point01"><em>10,300,000</em>원</span>
+								<ul class="inner">
+									<li>
+										<span class="tit">오토할부</span>
+										<span class="price"><em>300,000</em>원</span>
+									</li>
+									<li>
+										<span class="tit">카드결제</span>
+										<span class="price"><em>300,000</em>원</span>
+									</li>
+									<li>
+										<span class="tit">무통장입금</span>
+										<span class="price"><em>10,000,000</em>원</span>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<!-- 배너 -->
+					<section>
+						<div class="swiperBanner">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide"><img src="/HMC/m/img/@thumb/order_banner.jpg" alt=""></li>
+								<li class="swiper-slide"><img src="/HMC/m/img/@thumb/order_banner.jpg" alt=""></li>
+								<li class="swiper-slide"><img src="/HMC/m/img/@thumb/order_banner.jpg" alt=""></li>
+							</ul>
+						</div>
+					</section>
+					<!-- //배너 -->
+					<section>
+						<div class="btn_area full_type">
+							<button type="button" class="btn_big color01" disabled>계약하기</button>
+						</div>
+					</section>
+				</div>
+			</div>
+			<!-- //cont_wrap -->
+		</div>
+	</div>
+	<!-- //CPOcontents -->
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<script>
+	$(document).ready(function() {
+		toggle();
+		tooltip();
+	});
+	//우측전시배너
+	// 2022 - 02- 02 해당 스와이퍼 타겟 수정
+	const swiper1 =  new Swiper('.cont_right .swiperBanner',
+	getSwiperOption({
+		target : '.cont_right .swiperBanner',
+		slidesPerView : 1,
+		// 20230202 쉐브론 추가 및 LOOP 추가
+		loop : true,
+		navigation : true,
+		navigation_cls : 'type01',
+		pagination : true,
+		pagination_cls : '01',
+		addOption : {},
+	}));
+</script>
+</html>

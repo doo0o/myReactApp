@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>현대차 CPO 메인</title>
+	<!--#include file="/GHQ/m/SHTML/G_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/g_main.css">
+</head>
+<style>
+	button[class^="btn_pop"]{display:block;width:100%;margin:10px 0 0;padding:5px;background:#002C5F;color:#fff;}
+	i{font-size:11px;}
+</style>
+<body>
+<!--#include file="/GHQ/m/SHTML/G_inc/common_skip.shtml"-->
+<!--#include file="/GHQ/m/SHTML/G_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">기본옵션 & 추가옵션 상세 팝업</h1>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="sample_wrap">
+			<div class="btn_pop_sample">
+				<button class="btn_mid02 jQ_Pop_Open" data-popup="FO-PL-MS0008">예산설정 (Full)</button>
+				<button class="btn_mid02 jQ_Pop_Open" data-popup="FO-PL-MS0009">색상 선택 (Full)</button>
+				<button class="btn_mid02 jQ_Pop_Open" data-popup="FO-PL-MS0010">옵션선택 (Full)</button>
+				<br><br>
+				<button class="btn_mid02 jQ_Pop_Open" data-popup="FO-PL-MS0022-G70">G70 기본옵션</button>
+				<button class="btn_mid02 jQ_Pop_Open" data-popup="FO-PL-MS0022-G80">G80 기본옵션</button>
+				<button class="btn_mid02 jQ_Pop_Open" data-popup="FO-PL-MS0022-G90">G90 기본옵션</button>
+				<button class="btn_mid02 jQ_Pop_Open" data-popup="FO-PL-MS0022-GV70">GV70 기본옵션</button>
+				<button class="btn_mid02 jQ_Pop_Open" data-popup="FO-PL-MS0022-GV80">GV80 기본옵션</button>
+				<br><br>
+				<button class="btn_mid02 jQ_Pop_Open" data-popup="FO-PL-MS0023-G70">G70 추가옵션</button>
+				<button class="btn_mid02 jQ_Pop_Open" data-popup="FO-PL-MS0023-G80">G80 추가옵션</button>
+				<button class="btn_mid02 jQ_Pop_Open" data-popup="FO-PL-MS0023-G90">G90 추가옵션</button>
+				<button class="btn_mid02 jQ_Pop_Open" data-popup="FO-PL-MS0023-GV70">GV70 추가옵션</button>
+				<button class="btn_mid02 jQ_Pop_Open" data-popup="FO-PL-MS0023-GV80">GV80 추가옵션</button>
+
+			</div>
+		</div>
+		<!-- contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/GHQ/m/SHTML/G_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+
+<!-- 팝업 -->
+<!--#include file="/GHQ/m/SHTML/G_main/include/FO-PL-MS0022-G70.shtml"--><!-- G70 기본옵션 --> 
+<!--#include file="/GHQ/m/SHTML/G_main/include/FO-PL-MS0022-G80.shtml"--><!-- G80 기본옵션 --> 
+<!--#include file="/GHQ/m/SHTML/G_main/include/FO-PL-MS0022-G90.shtml"--><!-- G90 기본옵션 --> 
+<!--#include file="/GHQ/m/SHTML/G_main/include/FO-PL-MS0022-GV70.shtml"--><!-- GV70 기본옵션 --> 
+<!--#include file="/GHQ/m/SHTML/G_main/include/FO-PL-MS0022-GV80.shtml"--><!-- GV80 기본옵션 --> 
+
+<!--#include file="/GHQ/m/SHTML/G_main/include/FO-PL-MS0023-G70.shtml"--><!-- G70 추가옵션 --> 
+<!--#include file="/GHQ/m/SHTML/G_main/include/FO-PL-MS0023-G80.shtml"--><!-- G80 추가옵션 --> 
+<!--#include file="/GHQ/m/SHTML/G_main/include/FO-PL-MS0023-G90.shtml"--><!-- G90 추가옵션 --> 
+<!--#include file="/GHQ/m/SHTML/G_main/include/FO-PL-MS0023-GV70.shtml"--><!-- GV70 추가옵션 --> 
+<!--#include file="/GHQ/m/SHTML/G_main/include/FO-PL-MS0023-GV80.shtml"--><!-- GV80 추가옵션 --> 
+
+<!--#include file="/GHQ/m/SHTML/G_main/include/FO-PL-MS0008.shtml"--><!-- 예산설정 -->
+<!--#include file="/GHQ/m/SHTML/G_main/include/FO-PL-MS0009.shtml"--><!-- 색상 선택 -->
+<!--#include file="/GHQ/m/SHTML/G_main/include/FO-PL-MS0010.shtml"--><!-- 옵션선택 -->
+
+<script>
+	//팝업 호출 ------ Sample
+	// $(".btn").on("click",function(){
+	// 	CPO.POPUP_toast($('#popup_toast01'));
+	// });
+	
+	//팝업 호출 ------ Sample
+	$(function(){        
+        $(".jQ_Pop_Open").on("click",function(){//레이어 팝업 스크립트
+            CPO.POPUP_open($(this));// 레이어팝업 open
+        });
+    });
+</script>
+</body>
+</html>

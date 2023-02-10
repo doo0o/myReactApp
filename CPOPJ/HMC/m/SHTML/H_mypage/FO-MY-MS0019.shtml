@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>알림 신청내역</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_mypage.css">
+</head>
+<body>
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">입고알림 신청내역</h3>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+
+		<!-- 2022-08-22 전체 구조변경 -->
+		<!-- 데이터 없을 때 -->
+		<div class="alarm_list">
+			<div class="caution_wrap"><!-- 2022-08-22 추가 -->
+				<p class="caution bg small">기간이 만료된 알림은 1개월 후 목록에서 자동으로 삭제됩니다.</p>
+			</div>
+			<div class="no_data alarm">
+				<p class="tit">입고알림신청 내역이 없습니다.</p>
+				<p class="txt">입고알림을 신청하고<br />원하시는 조건의 차량을 알아보세요.</p>
+				<p class="btn_area">
+					<a href="javascript:void(0);" class="btn_mid01 ">입고알림 신청</a>
+					<a href="javascript:void(0);" class="btn_mid02">내차사기 홈으로 가기</a>
+				</p>
+			</div>
+		</div>
+		<!-- //데이터 없을 때 -->
+		<!-- //2022-08-22 전체 구조변경 -->
+
+		<div class="alarm_list">
+			<div class="top_total">
+				<span class="all">전체 <em>20</em>개</span>
+			</div>
+			<div class="caution_wrap">
+				<p class="caution bg small">기간이 만료된 알림은 1개월 후 목록에서 자동으로 삭제됩니다.</p>
+			</div>
+			<div>
+				<div class="unit_type">
+					<div class="top_area">
+						<p class="tit"><span class="flag_mid03">조건선택</span>현대 쏘나타 DN8 2.0 가솔린 인스퍼레이션</p>
+						<button type="button" class="btn_del01">삭제</button>
+					</div>
+					<div class="mid_area ">
+						<div class="unit_img">
+							<img src="/HMC/m/img/@thumb/plp_310x310_01.jpg" alt="">
+						</div>
+						<div class="unit_info">
+							<p class="drive">
+								<em>화이트 베이지</em>
+							</p>
+							<p class="price"><em>1,000~5,000</em><i>만원</i></p>
+							
+							<div class="unit_btm">
+								<span class="alarm_term">2022.05.11까지 알림</span>
+								<button type="button" class="btn_txt_mid02 ">알림연장</button>
+							</div>
+						</div>
+					</div>
+					<div class="btn_area">
+						<button type="button" class="btn_mid05">입고차량 보러가기</button>
+					</div>
+				</div>
+				<!-- 입고차량 없는경우 -->
+				<div class="unit_type">
+					<div class="top_area">
+						<p class="tit"><span class="flag_mid03">조건선택</span>현대 쏘나타 DN8 2.0 가솔린 인스퍼레이션</p>
+						<button type="button" class="btn_del01">삭제</button>
+					</div>
+					<div class="mid_area ">
+						<div class="unit_img">
+							<img src="/HMC/m/img/@thumb/plp_310x310_01.jpg" alt="">
+							<span class="end">일시품절</span>
+						</div>
+						<div class="unit_info">
+							<p class="drive">
+								<em>화이트 베이지</em>
+							</p>
+							<p class="price"><em>3,440</em><i>만원</i></p>
+							
+							<div class="unit_btm">
+								<span class="alarm_term">2022.05.11까지 알림</span>
+								<button type="button" class="btn_txt_mid02 ">알림연장</button>
+							</div>
+						</div>
+					</div>
+					<p class="msg disabled">입고된 차량이 없습니다.</p>
+				</div>
+				<div class="unit_type">
+					<div class="top_area">
+						<p class="tit"><span class="flag_mid03">판매준비중</span>현대 쏘나타 DN8 2.0 가솔린 인스퍼레이션</p>
+						<button type="button" class="btn_del01">삭제</button>
+					</div>
+					<div class="mid_area ">
+						<div class="unit_img">
+							<img src="/HMC/m/img/@thumb/online_img02.png" alt="">
+						</div>
+						<div class="unit_info">
+							<p class="drive">
+								<em>20년 12월(21년형)</em>
+								<em>50,000km</em>
+								
+								<em>크리미 화이트 펄</em>
+							</p>
+							<p class="price"><em>3,440</em><i>만원</i></p>
+							
+							<div class="unit_btm">
+								<span class="alarm_term">2022.05.11까지 알림</span>
+								<button type="button" class="btn_txt_mid02 ">알림연장</button>
+							</div>
+						</div>
+					</div>
+					<div class="btn_area">
+						<button type="button" class="btn_mid05">입고차량 보러가기</button>
+					</div>
+				</div>
+				<div class="unit_type">
+					<div class="top_area">
+						<p class="tit"><span class="flag_mid03">유사차량</span>현대 쏘나타 DN8 2.0 가솔린 인스퍼레이션</p>
+						<button type="button" class="btn_del01">삭제</button>
+					</div>
+					<div class="mid_area ">
+						<div class="unit_img">
+							<img src="/HMC/m/img/@thumb/online_img02.png" alt="">
+						</div>
+						<div class="unit_info">
+							<p class="drive">
+								<em>크리미 화이트 펄</em><!-- 2022-09-02 수정 -->
+							</p>
+							
+							<div class="unit_btm">
+								<span class="alarm_term">2022.05.11까지 알림</span>
+								<button type="button" class="btn_txt_mid02 ">알림연장</button>
+							</div>
+						</div>
+					</div>
+					<div class="btn_area">
+						<button type="button" class="btn_mid05">입고차량 보러가기</button>
+					</div>
+				</div>
+				<div class="unit_type soldout last">
+					<div class="top_area">
+						<p class="tit"><span class="flag_mid03">조건선택</span>현대 쏘나타 DN8 2.0 가솔린 인스퍼레이션</p>
+						<button type="button" class="btn_del01">삭제</button>
+					</div>
+					<div class="mid_area">
+						<div class="unit_img">
+							<img src="/HMC/m/img/@thumb/online_img02.png" alt="">
+						</div>
+						<div class="unit_info">
+							<p class="drive">
+								<em>20년 12월(21년형)</em>
+								<em>50,000km</em>
+								
+							</p>
+							<p class="price"><em>3,440</em><i>만원</i></p>
+							
+							<div class="unit_btm">
+								<span class="alarm_term">2022.05.11까지 알림</span>
+							</div>
+						</div>
+					</div>
+					<p class="msg disabled">알림 기간이 만료되었습니다.</p>
+				</div>
+			</div>
+
+		</div>
+		
+		<div class="btn_sticky">
+			<button type="button"  class="btn_big01 " title="입고알림 신청">입고알림 신청</button>
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!-- 2023 0207 푸터 삭제 -->
+</div>
+
+
+<!-- //cpo wrap -->
+<script>
+	// $(".jQ_Pop_Open").on("click",function(event){
+	// 	event.stopPropagation();
+	// 	CPO.POPUP_open($(this));
+	// });
+</script>
+</body>
+</html>

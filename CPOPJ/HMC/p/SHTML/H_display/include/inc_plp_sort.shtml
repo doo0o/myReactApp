@@ -1,0 +1,56 @@
+<div class="total_result">
+    <div class="all">전체 <em>32</em>대</div>
+    <ul class="box_sort">
+        <li>
+            <div class="toggle_btn01 js_compare">
+                <label>
+                    <input type="checkbox">
+                </label>
+            </div>
+            <span class="txt">비교하기</span>
+            <!-- tooltip -->
+            <div class="tooltip bottom">
+                <button type="button" class="open size01">상세보기</button>
+                <div class="cont">
+                    <span class="text">비교하기란?<br>
+                        선택한 차량을 비교해 볼 수 있어요. <br>
+                        최소2대-최소5대까지 비교 가능해요.
+                    </span>
+                    <button class="close">상세보기닫기</button>
+                </div>
+            </div>
+            <!-- //tooltip -->
+        </li>
+        <!-- //비교하기 -->
+        <li class="com_select hs_none isSelected" data-ref="select">
+            <button type="button" class="btn_sort com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample" onclick="dropDown({reset: false});">인기순</span></button>
+            <div class="com_select_list" data-ref="dropDownList" id="dropDownExample">
+                <span class="com_select_list_inner">
+                    <label class="com_select_item"><input type="radio" name="dropDownExample" checked=""> <span>인기순</span></label>
+                    <label class="com_select_item"><input type="radio" name="dropDownExample"> <span>최근 연식순</span></label>
+                    <label class="com_select_item"><input type="radio" name="dropDownExample"> <span>낮은 가격순</span></label>
+                    <label class="com_select_item"><input type="radio" name="dropDownExample"> <span>높은 가격순</span></label>
+                    <label class="com_select_item"><input type="radio" name="dropDownExample"> <span>최근 등록순</span></label>
+                    <label class="com_select_item"><input type="radio" name="dropDownExample"> <span>짧은 주행거리순</span></label>
+                </span>
+            </div>
+            <!-- tooltip -->
+            <div class="tooltip bottom">
+                <button type="button" class="open size01">상세보기</button>
+                <div class="cont">
+                    <span class="text">인기순은 고객의 장바구니에 담긴 수, <br>고객이 찜한 수를 집계한 기준<br>높은 순으로 전시됩니다.
+                    </span>
+                    <button class="close">상세보기닫기</button>
+                </div>
+            </div>
+            <!-- //tooltip -->
+        </li>
+        <!-- //차량 정보 정렬 방식 선택 -->
+        <li>
+            <button type="button" class="btn_thumb" id="plpViewType" data-ref="plpViewList" onclick="changeList()">보기방식 변경</button>
+            <!-- <button type="button" class="btn_deal">보기방식 변경</button> -->
+        </li>
+        <li><button type="button" class="btn_filter">상세조건 변경</button></li>
+    </ul>
+</div>
+<!-- //total_result -->

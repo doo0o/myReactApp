@@ -1,0 +1,1714 @@
+@charset 'utf-8';
+/* 
+	마이페이지
+*/
+@import '../_common/g_function';
+@import '../_common/g_mixins';
+@import '../_layout/g_address';
+@import '../_layout/g_search';
+@import '../_layout/g_mycar'; // 차량등록
+@import '../_layout/g_document'; //서류등록, 서류안내, 프로모션상세
+
+/* 배경 : 흰색 */
+// @include Mix_Body_White;
+
+// FO-MY-MS0001 마이페이지 메인
+body {
+	&.bg_color {
+		background-color: map-get($COL_Box_02, "bg_light");
+		[class^=h_header] {
+			background-color: map-get($COL_Box_02, "bg_light");
+		}
+	}
+}
+.my_main{
+	padding-bottom: 0 !important;
+	.user {
+		margin: 10px 21px 30px;
+		@include Mix_Font('Head-L', 24, 32);
+		em{
+			@include Mix_Font_Head_R;
+		}
+		a::after{
+			content:'';
+			display:inline-block;
+			width:26px;
+			height:26px;
+			margin-left:6px;
+			@include Mix_Mypage_Bg;
+			background-position:-143px 0;
+			vertical-align:middle;
+		}
+	}
+	> .alarm {
+		margin: 0 15px;
+		> div {
+			position: relative;
+			display: block;
+			width: 100%;
+			height: 43px;
+			padding-left: 46px;
+			color: $COL_White;
+			text-align: left;
+			@include Mix_Font('Txt-M', 12, 43);
+			> a::before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 20px;
+				transform: translateY(-50%);
+				font-size: 0;
+			}
+			&.type01 {
+				background-color: map-get($COL_Base_01, "bg_light");
+				// @include Textshadow (0, 1px , 0.6);
+				::before {
+					width: 18px;
+					height: 18px;
+					@include Mix_Mypage_Bg;
+					background-position:-206px -118px;
+					// background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='8' cy='8' r='7.4' stroke='white' stroke-width='1.2'/%3E%3Cpath d='M8 3.42871V8.22871H12.5714' stroke='white' stroke-width='1.2' stroke-miterlimit='10'/%3E%3C/svg%3E%0A");
+				}
+			}
+			&.type02 {
+				background-color: map-get($COL_Base_05, "bg_light");
+				::before {
+					width: 16px;
+					height: 16px;
+					background-image: url("data:image/svg+xml,%0A%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.9996 14.9977L10.4102 10.4082L14.9996 14.9977Z' fill='white'/%3E%3Cpath d='M14.9996 14.9977L10.4102 10.4082' stroke='white' stroke-width='1.2'/%3E%3Cpath d='M11.9233 6.76358C11.9233 9.61427 9.61231 11.9252 6.76163 11.9252C3.91094 11.9252 1.6 9.61427 1.6 6.76358C1.6 3.91289 3.91094 1.60195 6.76163 1.60195C9.61231 1.60195 11.9233 3.91289 11.9233 6.76358Z' stroke='white' stroke-width='1.2'/%3E%3C/svg%3E%0A");
+				}
+			}
+			.del {
+				position: absolute;
+				top: 50%;
+				right: 20px;
+				width: 10px;
+				height: 10px;
+				transform: translateY(-50%);
+				@include Mix_Mypage_Bg;
+				background-position:-229px -118px;
+				// background-image: url("data:image/svg+xml,%0A%3Csvg width='8' height='8' viewBox='0 0 8 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 7.5L7.5 0.5' stroke='white' stroke-width='1.2'/%3E%3Cpath d='M7.5 7.5L0.5 0.5' stroke='white' stroke-width='1.2'/%3E%3C/svg%3E%0A");
+				@include Mix_Size_0;
+			}
+			&~ div {
+				margin-top: 5px;
+			}
+		}
+	}
+	.swiper-pagination-bullet-active {
+		// background: map-get($COL_Base_02, "bg_light");
+	}
+	.my_car {
+		margin: 10px 15px 0;
+		background-color: $COL_White;
+		@include Boxshadow(0, 5px, 0.02);
+		&:not(.add) {
+			padding: 20px 0 25px;
+		}
+		&.add a {
+			position: relative;
+			display: block;
+			padding: 30px 71px 30px 20px;
+			word-break: keep-all;
+			.tit {
+				@include Mix_Font('Head-R', 16, 22);
+			}
+			.txt {
+				margin-top: 5px;
+				color: map-get($COL_Base_01, "bg_light");
+			}
+			&::after {
+				position: absolute;
+				content: '';
+				width: 30px;
+				height: 30px;
+				top: 50%;
+				right: 15px;
+				transform:translateY(-50%);
+				@include Mix_Order_Bg(0 -58px);
+				font-size: 0;
+			}
+		}
+		&.list{
+			.my_car_swiper {
+				overflow: hidden;
+				height: auto;
+				.swiper-wrapper {
+					align-items: flex-start;
+					transition-property: transform, height;
+					transform: translate3d(0px, 0, 0);
+					height: auto;
+					li {
+						padding: 0 20px;
+						height: auto;
+					}
+				}
+				.swiper-pagination.swiper-pagination-bullets {
+					margin-top: 20px;
+				}
+			}
+			.tit {
+				position: relative;
+				display: flex;
+				justify-content: space-between;
+				margin: 0 20px;
+				padding-bottom: 20px;
+				border-bottom: 1px solid map-get($COL_Box_02, "bg_light");
+				.txt {
+					position: relative;
+					padding-right: 13px;
+					@include Mix_Font('Head-R', 16, 22);
+					&::after {
+						content: "";
+						transform: translateY(-50%);
+						@include Pos($p: absolute, $t: 50%, $r: 0);
+						@include Icon_Arr_Right(1.5,"000000");
+					}
+				}
+				.btn_add {
+					display: block;
+					position: absolute;
+					width: 30px;
+					height: 30px;
+					top: -5px;
+					right: 0;
+					@include Mix_Mypage_Bg;
+					background-position:-242px -83px;
+					font-size: 0;
+				}
+			}
+			.unit_type {
+				padding: 5px 0 10px;
+			}
+			.price {
+				margin: 0 -2px;
+				.tit_btn {
+					height: 42px;
+					padding-left: 17px;
+					color: map-get($COL_Base_04, "bg_light");
+					@include Mix_Font('Txt-R', 11, 40);
+					border: 1px solid map-get($COL_Box_02, "bg_light");
+					background-color: map-get($COL_Box_01, "bg_light");
+					&::after {
+						margin-right: 17px;
+						width: 10px;
+						height: 6px;
+						background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6' fill='none'%3E%3Cpath d='M9.16699 0.75L5.00032 4.5L0.833658 0.75' stroke='%238F8F8F' stroke-width='1.2'/%3E%3C/svg%3E");
+					}
+				}
+				.cont {
+					display: none;
+					padding: 0 17px 20px;
+					border: 1px solid map-get($COL_Box_02, "bg_light");
+					border-top-width:0;
+					img {
+						width: 100%;
+					}
+				}
+				&.on {
+					.cont {
+						display: block;
+					}
+				}
+				&.none {
+					.tit_btn {
+						color: map-get($COL_Base_02, "bg_light");
+					}
+				}
+			}
+		}
+	}
+	.wish_list {
+		margin: 10px 15px 0;
+		background-color: $COL_White;
+		@include Boxshadow(0, 5px, 0.02);
+		ul { 
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			position: relative;
+			li{
+				flex:1;
+				text-align:center;
+				.msg {
+					z-index: 1;
+					position: absolute;
+					left: 18px;
+					top: -19px;
+					padding: 0 8px;
+					color: $COL_White;
+					@include Mix_Font('Txt-R', 11, 28);
+					background-color: map-get($COL_Base_05, "bg_light"); 
+					&::after{
+						content: '';
+						position: absolute;
+						top: 28px;
+						left: 33px;
+						width: 8px;
+						height: 6px;
+						@include Mix_Mypage_Bg;
+						background-position:-223px -65px;
+					}
+				}
+				a{
+					display: block;
+					position: relative;
+					height: 100%;
+					padding: 20px 0;
+					text-align: center;
+					span{
+						display:block;
+						&.num{
+							color: map-get($COL_Highlight, "bg_light");
+							@include Mix_Font('Txt-M', 22, 35);
+						}
+						&.txt{
+							// margin-top: 2px;
+							color:map-get($COL_Base_04, "bg_light");
+							@include Mix_Font('Txt-R', 12, 19);
+						}
+					}
+					&::before{
+						content: '';
+						position: absolute;
+						top: 50%;
+						left: 0;
+						width: 1px;
+						height: calc(100% - 40px);
+						background-color: map-get($COL_Box_02, "bg_light");
+						transform: translateY(-50%);
+					}
+				}
+				&:first-child a::before{
+					display:none;
+				}
+			}
+		}
+		.m_point {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin: 0 20px;
+			padding: 25px 0;
+			border-top: 1px solid map-get($COL_Box_02, "bg_light");
+			.tit {
+				color:map-get($COL_Base_04, "bg_light");
+				@include Mix_Font('Txt-R', 12, 16);
+			}
+			.point {
+				position: relative;
+				padding-right: 12px;
+				// color: $COL_Primary;
+				@include Mix_Font('Txt-R', 16, 26);
+				&::after {
+					content: "";
+					display: block;
+					position: absolute;
+					top: 50%;
+					right: 0;
+					transform: translateY(-50%);
+					@include Icon_Arr_Right(1.5,"000000");
+				}
+				em{
+					@include Mix_Font_Txt_M;
+				}
+			}
+		}
+	}
+	.menu_list {
+		margin-top: 30px;
+		padding: 5px 21px;
+		background-color: $COL_White;
+		> ul > li {
+			position: relative;
+			
+			> a {
+				position: relative;
+				display: block;
+				padding: 25px 0 25px 28px;
+				@include Mix_Font('Head-R', 16, 22);
+				.btn_txt_small01 {
+					display: none;
+				}
+				&::before {
+					content: "";
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: 0;
+					width: 20px;
+					height: 20px;
+					@include Mix_Mypage_Bg;
+					background-position-y: -113px;
+					transform: translateY(-50%);
+				}
+				&.purchase::before {
+					background-position-x: -75px;
+				}
+				&.sell::before {
+					background-position-x: -100px;
+				}
+				&.promotion::before {
+					background-position-x: -125px;
+				}
+				&.review::before {
+					background-position-x: -150px;
+				}
+				&.alarm::before {
+					background-position-x: -175px;
+				}
+				&::after {
+					content: "";
+					display: block;
+					position: absolute;
+					top: 50%;
+					right: 0;
+					transform: translateY(-50%);
+					@include Icon_Arr_Right(1.5,"8F8F8F");
+				}
+			}
+			&:not(:last-child){
+				border-bottom: 1px solid map-get($COL_Box_02, "bg_light");
+			}
+			&.order_info {
+				border-bottom: none;
+				> a {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					.btn_txt_small01 {
+						display: block;
+					}
+					&::after {
+						display: none;
+					}
+				}
+				.btn_txt_small01 {
+					position: absolute;
+					right: 0;
+				}
+				.cont {
+					margin: -10px -6px 5px;
+					@include Mix_Box(0);
+					border: 1px solid map-get($COL_Box_02, "bg_light");
+					.order_no {
+						margin-bottom: 18px;
+						display: flex;
+						align-items: center;
+						[class^="flag"] {
+							margin-right: 2px
+						}
+						.no {
+							color: map-get($COL_Base_02, "bg_light");
+							padding-left: 8px;
+							@include Mix_Font_Head_R;
+						}
+					}
+					li {
+						a {
+							position: relative;
+							display: block;
+							padding: 20px 20px 25px;
+							&::after {
+								content:'';
+								position:absolute;
+								right:20px;
+								top:25px;
+								@include Icon_Arr_Right(1.5,'8f8f8f');
+							}
+						}
+						.msg {
+							margin-top: 20px;
+							text-align: center;
+							@include Mix_Font('Txt-R', 12, 38);
+							background-color: map-get($COL_Box_01, "bg_light");
+						}
+						
+					}
+					.swiper-pagination.swiper-pagination-bullets {
+						margin: -5px 0 25px;
+					}
+				}
+				&.purchase {
+					.msg {
+						// color: $COL_Primary;
+					}
+				}
+				&.sell {
+					// margin-top: 5px;
+					.msg {
+						// color: $COL_Blue;
+					}
+					.my_sell_swiper {
+						overflow:hidden;
+					}
+				}
+				// & + li:not(.order_info) {
+				// 	margin-top: 30px;
+				// 	padding-top: 15px;
+				// 	&::before {
+				// 		@include Mix_Space_Bar;
+				// 		width: calc(100% + 42px);
+				// 		margin: 0 -21px;
+				// 	}
+				// }
+			}
+		}
+	}
+	.service_list {
+		position: relative;
+		padding-top: 10px;
+		background-color: $COL_White;
+		&::before {
+			@include Mix_Space_Bar;
+		}
+		ul {
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			li {
+				flex:1;
+				text-align:center;
+				a{
+					display: block;
+					position: relative;
+					height: 100%;
+					text-align: center;
+					padding: 30px 0 60px;
+					@include Mix_Font('Head-R', 14, 19);
+					&::before {
+						content: "";
+						display: block;
+						width: 36px;
+						height: 36px;
+						margin: 0 auto 10px;
+						background-size: 36px;
+						@include Mix_Mypage_Bg;
+						background-position-y: -138px;
+					}
+					&.cs::before {
+						background-position-x: -75px;
+					}
+					&.service::before {
+						background-position-x: -116px;
+					}
+					&.notice::before {
+						background-position-x: -157px;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+// FO-MY-MS0002 앱 설정
+.app_setting{
+	background:map-get($COL_Box_01, "bg_light");
+	padding:20px 15px 0;
+	section{
+		padding:0 20px;
+		//border-radius:6px;
+		background:$COL_White;
+		@include Boxshadow(3px,6px,0.02);
+		.item{
+			position:relative;
+			padding:25px 0;
+			&.in_link{
+				padding: 0;
+				a{
+					display: block;
+					width: 100%;
+					height: 100%;
+					padding: 25px 0;
+				}
+			}
+			.top_area{
+				display: flex;
+				position: relative;
+				justify-content: space-between;
+				align-content: center;
+				align-items: center;
+				& + *{
+					margin-top: 4px;
+				}
+				&.new_ver{
+					.version{
+						position: relative;
+						padding-right: 17px;
+						&::before{
+							content:'';
+							display:block;
+							@include Pos($p:absolute,$t:50%,$r:0);
+							@include Icon_Arr_Right(1.5,8F8F8F);
+							transform: translateY(-50%);
+						}
+					}
+				}
+			}
+			&:not(:last-of-type){
+				border-bottom:1px solid map-get($COL_Box_02, "bg_light");
+			}
+			.tit{ //타이틀
+				color:$COL_Black;
+				@include Mix_Font('Head-R', 15, 20);
+			}
+			.txt{ // 텍스트
+				padding-right:60px;
+				color:map-get($COL_Base_01, "bg_light");
+				@include Mix_Font('Txt-R', 12, 19);
+				word-break:keep-all;
+			}
+			.version{
+				color:map-get($COL_Base_01, "bg_light");
+				@include Mix_Font('Txt-M', 14, 22);
+			}
+			.btn_logout{ //로그아웃 화살표 아이콘
+				display:block;
+				position: absolute;
+				width:100%;
+				height:100%;
+				@include Mix_Size_0;
+				&::before{
+					content:'';
+					display:block;
+					@include Pos($p:absolute,$t:50%,$r:0);
+					@include Icon_Arr_Right(1.5,8f8f8f);
+					transform: translateY(-50%);
+				}
+			}
+		}
+		&:not(:last-of-type){
+			margin-bottom:15px;
+		}
+	}
+}
+// //FO-MY-MS0002 앱 설정
+
+// FO-MY-MS0003 앱 알림
+.app_alarm{
+	min-height: calc(100vh - 250px);
+	background:map-get($COL_Box_01, "bg_light");
+	ol{
+		width:100%;
+		padding:40px 21px 0;
+		li{
+			display: block;
+			overflow:hidden;
+			position:relative;
+			padding-left:42px;
+			//border-radius:6px;
+			&::before{ //리스트 왼쪽 아이콘
+				content:'';
+				display:inline-block;
+				position:absolute;
+				top:0;
+				left:0;
+				width:32px;
+				height:32px;
+				@include Mix_Mypage_Bg;
+			}
+			&:not(:last-of-type){
+				margin-bottom:25px;
+			}
+			&.alarm{ //알림일 때
+				&::before{
+					background-position:-1px -1px;
+				}
+			}
+			&.ad{ //광고일 때
+				&::before{
+					background-position:-40px -1px;
+				}
+			}
+			.item{
+				display: block;
+				overflow:hidden;
+				margin-bottom:8px;
+				//border-radius:6px;
+				background:$COL_White;
+				@include Boxshadow(3px,6px,0.02);
+				.img {
+					img {
+						width:100%;
+					}
+				}
+				.text_box{
+					padding:14px 20px 20px;
+				}
+				.tit{
+					display:block;
+					margin-bottom:4px;
+					color:map-get($COL_Base_02, "bg_light");
+					@include Mix_Font('Txt-M', 10, 16);
+				}
+				.txt{
+					color:$COL_Black;
+					@include Mix_Font('Txt-M', 14, 22);
+					word-break:keep-all;
+					em {
+						display: block;
+						@include Mix_Font_Txt_B;
+					}
+				}
+			}
+			.date{
+				display:block;
+				color:map-get($COL_Base_02, "bg_light");
+				@include Mix_Font('Txt-R', 12, 19);
+				text-align:right;
+			}
+		}
+	}
+}
+// //FO-MY-MS0003 앱 알림
+
+// 회원정보
+.my_member {
+	padding: 0 21px;
+	.tit_box {
+		padding-top:40px;
+		.tit {
+			@include Mix_Font('Head-L', 24, 32);
+		}
+		.txt {
+			margin-top: 12px;
+			color: map-get($COL_Base_04, "bg_light");
+			@include Mix_Font('Txt-R', 14, 22);
+		}
+		+ .caution02 {
+			margin-top: 30px;
+			+ .agree {
+				margin-top: 20px;
+			}
+		}
+	}
+	.bg_box {
+		margin: 30px -6px 0;
+		padding: 25px 20px;
+		background-color: map-get($COL_Box_01, "bg_light");
+		li{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			&:not(:first-child) {
+				margin-top: 15px;
+			}
+			.tit{
+				color: map-get($COL_Base_02, "bg_light");
+			}
+			.txt{
+				color: map-get($COL_Base_04, "bg_light");
+			}
+		}
+		&+.btn_area {
+			margin: 20px -6px 0;
+		}
+	}
+	.terms_list{
+		margin-top: 40px;
+		.tit {
+			padding-bottom: 20px;
+			border-bottom: 1px solid map-get($COL_Box_02, "bg_light");
+			@include Mix_Font('Txt-M', 15, 24);
+		}
+		ul {
+			@include Mix_Font('Txt-R', 14, 22);
+			li:not(.switch_type) {
+				position: relative;
+				margin-top: 20px;
+				button {
+					display: block;
+					width: 100%;
+					text-align: left;
+					&::after {
+						content: '';
+						position: absolute;
+						right: 0;
+						top: 50%;
+						transform: translateY(-50%);
+						@include Icon_Arr_Right(1.5,'8f8f8f');
+					}
+				}
+			}
+			.switch_type {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 20px;
+				.btn_area {
+					flex-flow: column;
+					flex-basis: 100%;
+					line-height: 15px;
+				}
+			}
+		}
+		> .btn_area {
+			margin-top: 40px;
+			text-align: right;
+		}
+	}
+}
+// // 회원정보
+
+// F0-MY-MS0070 프로모션
+.my_promotion {
+	background-color: map-get($COL_Box_01, "bg_light");
+	.caution {
+		margin: 15px 21px 0;
+	}
+	.item_list {
+		margin-top: 30px;
+		padding: 0 15px;
+		li {
+			margin-top: 15px;
+			padding: 20px;
+			background-color: $COL_White;
+			@include Boxshadow(0, 5px, 0.02);
+			&.disabled > div:not(.flag), &.disabled .num {
+				color: map-get($COL_Base_01, "bg_light") !important; 
+			}
+			.flag {
+				margin-bottom: 10px;
+				color: map-get($COL_Base_02, "bg_light");
+				@include Mix_Font('Head-R', 12, 16);
+			}
+			.title {
+				display: flex;
+				flex-direction: column;
+				min-height: 28px;
+				.tit {
+					@include Mix_Font('Head-R', 18, 24);
+					@include Mix_Ellipsis(2);
+				}
+				.num {
+					margin-top: 4px;
+					color: map-get($COL_Highlight, "bg_light");
+					@include Mix_Font('Txt-M', 20, 32);
+					em {
+						@include Mix_Font('Txt-R', 18, 29);
+					}
+				}
+			}
+			.date {
+				margin-top: 4px;
+				color: map-get($COL_Base_02, "bg_light");
+				@include Mix_Font('Txt-R', 12, 19);
+			}
+			.time {
+				margin-top: 2px;
+				color: map-get($COL_Base_04 , "bg_light");
+				@include Mix_Font('Txt-R', 12, 19);
+			}
+			.btn_mid02{
+				margin-top: 25px;
+			}
+		}
+	}
+}
+// FO-MY-MS0006 포인트내역
+.mypage_point{
+	> .tit_box{ //포인트 타이틀 영역
+		padding: 40px 21px;
+		.tit{
+			margin-bottom: 20px;
+			color:map-get($COL_Base_04, "bg_light");
+			@include Mix_Font('Head-L', 24, 32);
+			em {
+				position: relative;
+				color:$COL_Black;
+				@include Mix_Font_Head_M;
+				&::after{
+					content:"";
+					@include Pos($p: absolute, $r: 0, $b: -1px, $l: 0);
+					border-bottom: 2px solid map-get($COL_Highlight, "bg_light");
+				}
+			}
+		}
+		.txt{
+			color:map-get($COL_Base_04, "bg_light");
+			@include Mix_Font('Txt-R', 14, 22);
+		}
+	}
+	.cont_point{
+		position: relative;
+		padding:0 21px;
+		&::before {
+			@include Mix_Space_Bar;
+		}
+		.sorting_point{ //기간 soring 영역
+			width:100%;
+			padding: 35px 0 16px;
+			border-bottom:1px solid map-get($COL_Box_02, "bg_light");
+			display: flex;
+			justify-content:space-between;
+			align-items: center;
+			flex-wrap: wrap;
+			.date{
+				color :map-get($COL_Base_04, "bg_light");
+				@include Mix_Font('Txt-M', 12, 19);
+			}
+			ul{
+				display: flex;
+				li{
+					~ li {
+						margin-left: 6px;
+					}
+					button{
+						height: 32px;
+						padding: 0 16px;
+						background: map-get($COL_Box_01, "bg_light");
+						color: map-get($COL_Base_02, "bg_light");
+						@include Mix_Font('Txt-R', 11, 32);
+						&.on{
+							color:$COL_Black;
+							@include Mix_Font('Txt-M', 11, 32);
+						}
+					}
+				}
+			}
+		}
+		.point_history{ //포인트 히스토리 list 내역
+			margin-top: 30px;
+			li{
+				display:flex;
+				justify-content:space-between;
+				&:not(:last-of-type){
+					margin-bottom: 25px;
+				}
+				span{
+					display:block;
+				}
+				.tit_box{
+					.tit{
+						@include Mix_Font('Head-R', 15, 26);
+						margin-bottom:2px;
+					}
+					.txt{
+						color:map-get($COL_Base_02, "bg_light");
+						@include Mix_Font('Txt-R', 12, 19);
+					}
+				}
+				.txt_box{
+					text-align:right;
+					.tit{
+						margin-bottom:2px;
+						@include Mix_Font('Txt-R', 15, 26); 
+						em{
+							font-size: 16px;
+							@include Mix_Font_Txt_M;
+						}
+					}
+					.txt{
+						@include Mix_Font('Txt-R', 12, 19);
+						color: map-get($COL_Base_04, "bg_light");
+					}
+				}
+				&.plus{
+					.txt_box{
+						color:map-get($COL_Highlight , "bg_light");
+						.txt{
+							color:map-get($COL_Highlight , "bg_light");
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// //FO-MY-MS0006 포인트내역
+
+// FO-MY-MS0011 찜한상품
+.wish_list {
+	.info_box {
+		display:flex;
+		align-items: center;
+		justify-content: space-between;
+		padding:0 21px;
+		height:52px;
+		border-bottom:1px solid map-get($COL_Box_02,'bg_light');
+		.txt {
+			color:map-get($COL_Base_02,'bg_light');
+			@include Mix_Font('Txt-M', 12, 19);
+		}
+	}
+	.unit_list {
+		li {
+			position: relative;
+			padding: 34px 21px 24px;
+			&::before {
+				@include Mix_Space_Bar;
+			}
+			&:last-child {
+				padding-bottom: 0;
+			}
+		}
+	}
+	.slide_product {
+		position:relative;
+		margin-top: 40px;
+		&::before {
+			@include Mix_Space_Bar;
+		}
+	}
+}
+// // FO-MY-MS0011 찜한상품
+
+// FO-MY-MS0010 최근본상품
+.recently_list {
+	background-color: map-get($COL_Box_01 , "bg_light");
+	.info_box {
+		display:flex;
+		align-items: center;
+		justify-content: space-between;
+		padding:0 21px;
+		height:52px;
+		background-color: $COL_White;
+		border-bottom:1px solid map-get($COL_Box_02,'bg_light');
+		.txt {
+			color:map-get($COL_Base_02,'bg_light');
+			@include Mix_Font('Txt-M', 12, 19);
+		}
+	}
+	.top_total {
+		background-color: $COL_White;
+		border-bottom: 1px solid map-get($COL_Box_02 , "bg_light");
+	}
+	.caution {
+		margin: 15px 21px 0;
+	}
+	.unit_list {
+		margin: 30px 15px 0;
+		> li:not(:first-child) {
+			margin-top: 40px;
+		}
+		.date {
+			margin: 0 0 12px 6px;
+			color: map-get($COL_Base_04 , "bg_light");
+			@include Mix_Font('Txt-M', 15, 21);
+			span {
+				margin-right: 10px;
+			}
+		}
+		ul {
+			li {
+				padding: 24px 20px;
+				background-color: $COL_White;
+				@include Boxshadow(3px,6px,0.02);
+				&:not(:last-child) {
+					border-bottom: 1px solid map-get($COL_Box_02 , "bg_light");
+				}
+			}
+		}
+	}
+	.slide_product {
+		margin-top: 40px;
+		padding-top: 30px;
+		background-color: $COL_White;
+	}
+}
+// // FO-MY-MS0010 최근본상품
+
+// FO-MY-MS0007 보유차량목록
+.my_mycar {
+	.unit_list {
+		> li {
+			position: relative;
+			padding: 34px 21px 24px;
+			&::after {
+				@include Mix_Space_Bar;
+			}
+			.car_logo {
+				width: 30px;
+				height: 20px;
+				margin-right: 10px;
+			}
+			.mid_area + .info {
+				margin-top: 20px;
+			}
+			.info {
+				padding: 15px 0 20px;
+				border-top: 1px solid map-get($COL_Box_02 , "bg_light");
+				@include Mix_Font('Txt-R', 12, 19);
+				li {
+					display: flex;
+					justify-content:space-between;
+					.tit {
+						color: map-get($COL_Base_01 , "bg_light");
+					}
+					.txt {
+						color: map-get($COL_Base_02 , "bg_light");
+					}
+				}
+				li ~ li {
+					margin-top: 6px;
+				}
+			}
+			.msg {
+				height: 48px;
+				line-height: 48px;
+				text-align: center;
+				color: map-get($COL_Base_02 , "bg_light");
+				background-color: map-get($COL_Box_01 , "bg_light");
+			}
+		}
+	}
+}
+// //FO-MY-MS0007 보유차량목록
+
+// FO-MY-MS0050 보유차량
+.my_car {
+	> .car_info {
+		.model_img {
+			height: 220px;
+			padding: 30px 25px;
+			text-align: center;
+			background-color: map-get($COL_Box_01, "bg_light");
+			img {
+				width: 275px;
+				height: 165px;
+			}
+		}
+		.tit_box {
+			padding: 35px 21px 0;
+			.number {
+				@include Mix_Font('Head-R', 16, 22);
+			}
+			.name {
+				margin-top: 12px;
+				@include Mix_Font('Head-R', 20, 27);				
+			}
+			.year {
+				margin-top: 5px;
+				color: map-get($COL_Base_02, "bg_light");
+			}
+		}
+		.drive {
+			margin: 30px 15px 0;
+			padding: 25px 20px;
+			background: map-get($COL_Box_01, "bg_light");
+			.mile_ipt {
+				margin: 5px 0;
+				.inbox_type02 {
+					width: calc(100% + 4px);
+					margin: 8px -2px 0;
+				}
+				.caution {
+					margin: 6px 0 5px;
+				}
+			}
+		}
+		.detail{
+			padding:0 15px 30px;
+			ul {
+				display: none;
+				padding: 30px 20px;
+				border-bottom: 1px solid map-get($COL_Box_02, "bg_light");
+				li{
+					display:flex;
+					justify-content:space-between;
+					align-items: center;
+					line-height: 22px;
+					&:not(:last-of-type){
+						margin-bottom: 15px;
+					}
+					.tit{
+						color: map-get($COL_Base_02, "bg_light");
+					}
+					.txt{
+						color: map-get($COL_Base_04, "bg_light");
+						font-size: 14px;
+					}
+				}
+			}
+			&.toggle.on ul{
+				display: block;
+			}
+			.btn_more {
+				margin-top: 15px;
+			}
+		}
+	}
+	> .car_price {
+		position: relative;
+		padding: 50px 21px 0;
+		&::after {
+			@include Mix_Space_Bar;
+		}
+		.tit_box {
+			.tit {
+				color: map-get($COL_Base_04, "bg_light");
+				@include Mix_Font('Head-L', 24, 32);
+				em {
+					position: relative;
+					@include Mix_Font_Head_R;
+					color: $COL_Black;
+					&::after{
+						content:"";
+						@include Pos($p: absolute, $r: 0, $b: -1px, $l: 0);
+						border-bottom: 2px solid map-get($COL_Highlight, "bg_light");
+					}
+				}
+			}
+			.txt {
+				margin-top: 15px;
+				color: map-get($COL_Base_01, "bg_light");
+				@include Mix_Font('Txt-R', 12, 19);
+			}
+		}
+		.bg_box {
+			margin: 30px -6px 0;
+			padding: 25px 20px;
+			background: map-get($COL_Box_01, "bg_light");
+		}
+		.chart {
+			margin-top: 20px;
+			img {
+				width: 100%;
+			}
+		}
+	}
+	.bg_box {
+		li {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.tit{
+				color: map-get($COL_Base_04, "bg_light");
+				@include Mix_Font('Txt-R', 14, 22);
+				em {
+					display: block;
+					color: map-get($COL_Highlight, "bg_light");
+					@include Mix_Font('Txt-M', 12, 19);
+				}
+			}
+			.txt {
+				@include Mix_Font('Txt-R', 16, 26);
+				em{
+					@include Mix_Font('Txt-M', 16, 26);
+				}
+				&.price {
+					font-size: 14px;
+				} 
+			}
+			& ~ li {
+				margin-top: 15px;
+			}
+		}
+	}
+}
+// //FO-MY-MS0050 보유차량
+
+// FO-MY-MS0014 나의리뷰
+.my_review{
+	.before_list {
+		margin: 30px 15px 0;
+		li {
+			padding: 20px;
+			background-color: $COL_White;
+			&:not(:first-child) {
+				margin-top: 15px;
+			}
+		}		
+	}
+	.unit_list {
+		> li {
+			position: relative;
+			padding: 40px 21px 30px;
+			&::after {
+				@include Mix_Space_Bar;
+			}
+			&:last-child {
+				padding-bottom: 0;
+			}
+			.btn_mid02 {
+				margin-top: 20px;
+			}
+		}
+		.review_box {
+			padding-top:30px;
+			.review_bot {
+				margin-top: 20px;
+			}
+		}
+		&+.after {
+			margin-top: 30px;
+		}
+	}
+}
+// //FO-MY-MS0014 나의리뷰
+
+//FO-MY-MS0019 알림 신청내역
+.alarm_list{
+	overflow-x:hidden;
+	// background-color:map-get($COL_Box_01, "bg_light");
+	.no_data {
+		border-top: 1px solid map-get($COL_Box_02, 'bg_light');
+	}
+	.top_total{
+		background-color: $COL_White;
+		border-bottom: 1px solid map-get($COL_Box_02, 'bg_light');
+	}
+	.unit_info{
+		.txt{
+			@include Mix_Font('Txt-M', 13, 22);
+		}
+	}
+	.caution_wrap{
+		padding: 15px 21px;
+		background-color:map-get($COL_Box_01, "bg_light");
+	}
+	.btn_area{
+		margin-top: 20px;
+	}
+	.msg{
+		margin-top: 20px;
+		padding: 13px 0;
+		text-align: center;
+		@include Mix_Font('Txt-R', 14, 22);
+		&.disabled{
+			@include Mix_Box_Bg01(map-get($COL_Box_02, "bg_light"));
+			color:map-get($COL_Base_02,"bg_light");
+			border: none;
+			@include Mix_Font('Txt-R', 13, 21);
+		}
+		
+	}
+	.soldout{
+		.btn_area{
+			button{
+				background-color: map-get($COL_Box_01, "bg_light" );
+				color: map-get($COL_Base_02, "bg_light" );
+			}
+		}
+		.msg{
+			&.disabled{
+				background-color: map-get($COL_Box_01,'bg_light');
+			}
+		}
+		[class^="flag_"]{
+			opacity: 0.5;
+		}
+	}
+	div > .unit_type{
+		position: relative;
+		padding:24px 21px;
+		background:$COL_White;
+		&:first-child{
+			border-top: 1px solid map-get($COL_Box_02, 'bg_light');
+		}
+		&:last-child {
+			padding-bottom: 0;
+		}
+		&:not(:first-child){
+			padding-top: 35px;
+			&::after{
+				@include Mix_Space_Bar;
+			}
+		}
+	}
+	.swiper-slide.more{
+		width:120px;
+		height:auto;
+		border:1px solid map-get($COL_Box_02, "bg_light");
+		font-size:0;
+		//border-radius:4px;
+		text-align:center;
+		.a_unit{
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			width:100%;
+			height:100%;
+		}
+		div{
+			&::before{
+				content:'';
+				display:inline-block;
+				width:30px;
+				height:30px;
+				margin-bottom:15px;
+				@include Mix_Mypage_Bg;
+				background-position:-257px 1px;
+				vertical-align:bottom;
+			}
+			span{
+				display:block;
+				@include Mix_Font('Txt-M', 13, 21);
+				color:map-get($COL_Base_03 , "bg_light");
+			}
+		}
+	}
+	.unit_img img{
+		width:100%;
+		height:auto;
+	}
+}
+// //FO-MY-MS0019 알림 신청내역
+
+//FO-MY-MS0020 입고알림 신청
+.CPOpop_bottom{
+	.srch_ifbox{
+		.incont {
+			padding: 10px 21px 25px;
+		}
+	}
+}
+.srch_ifbox {
+	background-color: $COL_White;
+	.incont02 {
+		padding: 0 21px 25px; 
+	}
+	.incont {
+		padding: 25px 21px;
+		@include Mix_Font('Txt-R', 14, 22);
+		color: map-get($COL_Base_04 , "bg_light");
+		.caution{
+			margin-top: 10px;
+		}
+		.color + .caution{
+			margin-top: 30px;
+		}
+	}
+	.srch_box {
+		border-color: map-get($COL_Box_02, "bg_light");
+		&.only_view{
+			.tit_btn{
+				.check{
+					line-height: 22px;
+					margin-left: 0;
+				}
+				.tit{
+					width: 70px;
+				}
+			}
+		}
+		.tit_btn{
+			padding: 25px 21px;
+			height: auto;
+			.check{
+				margin-left: 13px;
+			}
+		}
+		.top{
+			position: relative;
+			padding: 35px 21px 15px;
+			&::after{
+				@include Mix_Space_Bar;
+			}
+			.tit{
+				@include Mix_Font('Head-R', 16, 22);
+				color: $COL_Black;
+			}
+		}
+	}
+	.tab_box {
+		display: flex;
+		border:1px solid map-get($COL_Line_01, "bg_light");
+		li {
+			width: 100%;
+			&:last-child {
+				label:after {
+					display: none;
+				}
+			}
+		}
+		input {
+			position:absolute;
+			width:1px;
+			height:1px;
+			opacity:0;
+			&+label{
+				display: block;
+				position: relative;
+				width: 100%;
+				padding: 11px 0;
+				background-color: $COL_White;
+				@include Mix_Font('Head-R', 13, 18);
+				color: map-get($COL_Base_01 , "bg_light");
+				text-align:center;
+				&:after {
+					content: '';
+					display: block;
+					position: absolute;
+					right: -1px;
+					top: 50%;
+					width: 1px;
+					height: 18px;
+					transform: translateY(-50%);
+					background-color: map-get($COL_Line_01, "bg_light");
+					z-index: 1;
+				}
+			}
+			&:checked+label{
+				color:$COL_White;
+				background-color:map-get($COL_Box_02 , "bg_dark");
+				z-index: 2;
+				&:after {
+					display: none;
+				}
+			}
+		}
+
+		.tab_anchor {
+			display: block;
+			position: relative;
+			width: 100%;
+			height: 42px;
+			background-color: map-get($COL_Box_01, "bg_light");
+			@include Mix_Font('Head-R', 14, 42);
+			color: map-get($COL_Base_03 , "bg_light");
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				width: 1px;
+				height: 18px;
+				transform: translateY(-50%);
+				background-color: #959595;
+			}
+			&:first-child {
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+	#rangePrice {
+		height: 52px;
+		margin-top: 0;
+		.cpoRange {
+			background-color: map-get($COL_Box_02, "bg_light");
+			&::after{
+				content:'';
+				display:block;
+				position:absolute;
+				top:0;
+				left:-11px;
+				width:calc(100% + 22px);
+				height:2px;
+				background-color:map-get($COL_Box_02, "bg_light");
+			}
+		}
+		.max_no:after {
+			content: ' 이상';
+		}
+	}
+	
+	.srch_box {
+		border-color: map-get($COL_Box_02, "bg_light");
+		.carinfo{
+			& > li {
+				input:checked{
+					& ~ .depth2{
+						display: block;
+						input:checked{
+							& ~ .depth3{
+								display: block;
+							}
+						}
+					}
+				}
+			}
+		}
+		&.disabled {
+			.tit {
+				opacity: 0.3;
+			}
+			.btn_open {
+				pointer-events:none;
+				opacity:0.3;
+			}
+		}
+		[class^=depth] label {
+			pointer-events: none;
+		}
+
+		.depth3 {
+			background-color: map-get($COL_Box_01, "bg_light") !important;
+		}
+		.chk_radio {
+			& + label {
+				color: map-get($COL_Base_04, "bg_light") !important;
+			}
+			&:checked ~ [class^=depth] > li > label {
+				pointer-events: auto;
+			}
+		}
+		.chk_type05 + label {
+			background-color: transparent;
+			color: map-get($COL_Base_02, "bg_light");
+		}
+		.chk_type06 {
+			& + label span {
+				color: map-get($COL_Base_02, "bg_light");
+			}
+			&:checked + label span {
+				padding-right:0;
+				color: map-get($COL_Base_04, "bg_light");
+			}
+		}
+	}
+}
+
+/* 공지사항 */
+.write_list {
+	.slt_box{
+		height: auto;
+		line-height: initial ;
+		.sel_value{
+			padding-right: 18px;
+			background-position:calc(100% - 0px) 50%;
+		}
+	}
+	> ul {
+		border-bottom: 1px solid map-get($COL_Box_02, "bg_light" );
+		li {
+			border-top: 1px solid map-get($COL_Box_02, "bg_light" );
+			&.notice {
+				background-color: map-get($COL_Box_01, "bg_light" );
+				&:not(:first-child) {
+					border-top: 1px solid map-get($COL_Line_01, "bg_light" );
+				}
+			}
+		}
+	}
+	.write_anchor {
+		display: block;
+		width: 100%;
+		padding: 25px 21px;
+		text-align: left;
+		.title {
+			display: flex;
+			align-items: center;
+			i[class^="icon_"] {
+				display: block;
+			}
+			.icon_emergency {
+				min-width: 15px;
+				height: 20px;
+				margin-right: 10px;
+				@include Mix_Cscenter_Bg;
+				background-position: 0 0;
+			}
+			.flag_small01{
+				margin-left: 8px;
+			}
+			.text_flag {
+				margin-left: 8px;
+			}
+			.txt {
+				display: block;
+				@include Mix_Font('Head-R', 15, 20);
+				@include Mix_Ellipsis01;
+				color: $COL_Black;
+				
+			}
+		}
+		.date {
+			display: block;
+			margin-top: 4px;
+			@include Mix_Font('Txt-R', 13, 20); 
+			color: map-get($COL_Base_02, "bg_light");
+		}
+	}
+}
+
+.CPOpop_full {
+	/* 공지사항 상세 */
+	&.active {
+		.post_list{
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			background-color: $COL_White;
+		}
+	}
+	.write_detail {
+		// height: calc(100% - 60px);
+		.box_scroll {
+			overflow-y: auto;
+			-webkit-overflow-scrolling:touch;
+			// padding-bottom: 128px;
+		}
+		.detail_top {
+			position: relative;
+			padding: 25px 21px 15px;
+			&:after {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 21px;
+				right: 21px;
+				bottom: 0;
+				height: 1px;
+				background-color: map-get( $COL_Line_01, "bg_light" );
+			}
+			.title {
+				display: block;
+				@include Mix_Font('Txt-M', 15, 24); 
+				word-break: keep-all;
+			}
+			.date {
+				margin-top: 5px;
+				@include Mix_Font('Txt-R', 12, 20);
+				color: map-get($COL_Base_02, "bg_light");; 
+			}
+		}
+		.detail_cont {
+			// overflow-y: auto;
+			margin: 30px 0 0;
+			padding: 0 21px 40px;
+			@include Mix_Font('Txt-R', 13, 21);
+			color: $COL_Black;
+		}
+		.post_list {
+			margin-top: auto;
+			padding-top: 10px;
+			background-color: $COL_White;
+			li {
+				display: flex;
+				align-items: center;
+				width: 100%;
+				padding: 20px 21px;
+				border-top: 1px solid map-get($COL_Line_01, "bg_light" );
+				&:last-child{
+					padding-bottom:30px;
+				}
+			}
+			span {
+				display:inline-block;
+				flex-shrink: 0;
+				padding-right: 15PX;
+				@include Mix_Font('Txt-R', 12, 20); 
+				color: map-get( $COL_Base_01, "bg_light");
+			}
+			.btn_post {
+				display: block;
+				text-align: left;
+				@include Mix_Font('Txt-R', 13, 21);
+				@include Mix_Ellipsis01;
+				&:disabled {
+					color: map-get($COL_Base_01, "bg_light") ;
+					pointer-events: none;
+				}
+			}
+		}
+	}
+}
+
+// 차량등록[Layer]
+.layer_mycar {
+	padding: 25px 21px 0;
+	.cont {
+		margin-top: 30px;
+		p.txt {
+			margin-bottom: 20px;
+			color: map-get($COL_Base_04, "bg_light");
+			@include Mix_Font('Txt-M', 15, 24);
+		}
+	}
+}

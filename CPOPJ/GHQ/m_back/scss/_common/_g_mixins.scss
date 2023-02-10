@@ -1,0 +1,529 @@
+
+@mixin Mix_Cart_Line($borderColor : $COL_Line_Light01 ){
+	background-color:$COL_WHITE;
+	border-bottom:1px solid $borderColor;
+	margin-bottom:8px;
+}
+@mixin Mix_Sort_Line{
+	margin-bottom:8px;
+	background-color:$COL_WHITE;
+	border:1px solid $COL_BG_Light02;
+	border-width:1px 0;
+	border-top:solid 1px $COL_Line_Light01;
+}
+
+// **********************************************************
+// Sprite 이미지 (이미지 사이즈 용량 고려해서 600x600 내 권장
+// **********************************************************
+@mixin Mix_Icon_Layout($position) {// header/footer 레이아웃 아이콘
+	background: url('') no-repeat;
+	background-size: 200px 200px;
+	background-position: $position;
+}
+@mixin Mix_Icon_Form($position) {// FORM 태그
+	background: url('') no-repeat;
+	background-size: 200px 200px;
+	background-position: $position;
+}
+@mixin Mix_Icon_Option($position) {// 옵션아이콘
+	background: url('') no-repeat;
+	background-size: 200px 200px;
+	background-position: $position;
+}
+
+
+// **********************************************************
+// font family
+// **********************************************************
+@mixin Mix_Font_Txt_R{font-family:GeneSans_Txt-R;}
+@mixin Mix_Font_Txt_M{font-family:GeneSans_Txt-M;}
+@mixin Mix_Font_Txt_B{font-family:GeneSans_Txt-M;}//B - M
+@mixin Mix_Font_Head_R{font-family:GeneSans_Head-R;}//R - L
+@mixin Mix_Font_Head_M{font-family:GeneSans_Head-R;}/* 제네시스 제외 */
+@mixin Mix_Font_Head_B{font-family:GeneSans_Head-B;}/* 제네시스 제외 */
+@mixin Mix_Font_Head_L{font-family:GeneSans_Head-L;}
+
+@mixin Mix_Size_0{font-size:0;line-height:0;text-indent:-9999px;}
+
+/* 공통 Font 합수 (폰트명 끝부분, font-size, line-height) 
+ex) @include Mix_Font('Head-M', 18, 23); */
+@mixin Mix_Font($name, $size, $size2) { 
+	font-family:'GeneSans_' + $name;
+	font-size:$size + px;
+	line-height:$size2 + px;
+}
+
+@mixin Mix_Clear{
+	zoom:1;
+	&:after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+}
+
+// **********************************************************
+// overflow 속성
+// **********************************************************
+@mixin Mix_Overflow_X {
+	overflow:hidden;
+	overflow-x:auto;
+	-webkit-overflow-scrolling:touch;
+}
+@mixin Mix_Overflow_Y {
+	overflow:hidden;
+	overflow-y:auto;
+	-webkit-overflow-scrolling:touch;
+}
+
+
+// **********************************************************
+// 말줄임
+// **********************************************************
+@mixin Mix_Ellipsis01{
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+@mixin Mix_Ellipsis($line){
+	display:-webkit-box;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:$line;
+	word-break:break-word;
+}
+
+// **********************************************************
+// background 모음
+// **********************************************************
+@mixin Mix_Form_Bg{
+	background:url('../img/bg_form.png') no-repeat;
+	background-size:200px auto;
+}
+
+@mixin Mix_Layout_Bg {
+	background:url('../img/bg_layout.png') no-repeat;
+	background-size:300px auto;
+}
+@mixin Mix_Display_Bg {
+	background:url('../img/bg_display.png') no-repeat;
+	background-size:300px 200px;
+}
+
+@mixin Mix_Library_Bg {
+	background:url('../img/bg_library.png') no-repeat;
+	background-size:300px 200px;
+}
+@mixin Mix_Model_Bg {
+	background:url('../img/bg_model.png') no-repeat;
+	background-size:300px 200px;
+}
+@mixin Mix_Genesis_Bg {
+	background:url('../img/bg_genesis.png') no-repeat;
+	background-size:500px auto;
+}
+@mixin Mix_Mypage_Bg {
+	background:url('../img/bg_mypage.png') no-repeat;
+	background-size:300px 200px;
+}
+@mixin Mix_Sale_Bg {
+	background:url('../img/bg_sale.png') no-repeat;
+	background-size:300px 200px;
+}
+@mixin Mix_Cscenter_Bg {
+	background:url('../img/bg_cscenter.png') no-repeat;
+	background-size:300px 300px;
+}
+
+@mixin Mix_PDP_Option($position) {// 옵션아이콘
+	&::before{
+		background-position:$position !important;
+	}
+}
+@mixin Mix_PDP_Icon($position) {// 성능점검, 보험이력 아이콘
+	&::before{
+		background-position:$position;
+	}
+}
+@mixin Mix_PDP_Bg($position) {// 상품상세
+	background:url('../img/bg_pdp.png') no-repeat;
+	background-position:$position;
+	background-size:auto 284px;
+}
+@mixin Mix_Order_Bg($position) {// 주문
+	background:url('../img/bg_order.png') no-repeat;
+	background-position:$position;
+	background-size:auto 200px;
+}
+@mixin Mix_Select_Bg01{
+	background:$COL_WHITE url('../img/bg_select01.png') no-repeat;
+	background-position:calc(100% - 15px) 50%;
+	background-size:12px 8px;
+}
+@mixin Mix_Error_Bg($position) {// 상품상세
+	background:url('../img/bg_error.png') no-repeat;
+	background-position:$position;
+	background-size:auto 200px;
+}
+
+/* 상품유닛 */
+@mixin Mix_Unit_Name($model, $desc){
+	.name{
+		.model{
+			margin-bottom:4px;
+			color:$model;
+			@include Mix_Font('Head-R', 14, 19); 
+		}
+		.desc{
+			color:$desc;
+			@include Mix_Font('Txt-R', 12, 20); 
+		}
+	}
+}
+@mixin Mix_Unit_Drive($drive, $bgcolor, $mrgTop){
+	.drive{
+		margin-top:$mrgTop;
+		color:$drive;
+		@include Mix_Font('Txt-R', 11, 17);
+		em{
+			display: inline-block;
+			position: relative;
+			margin-right: 4px;
+			padding-right: 7px;
+			&::after{
+				content:'';
+				display:block;
+				position: absolute;
+				right: 0;
+				top: 50%;
+				width:1px;
+				height:10px;
+				transform: translateY(-50%);
+				background-color:$bgcolor;
+			}
+			&:last-of-type{
+				margin-right: 0;
+				padding-right: 0;
+				&::after{
+					display:none;
+				}
+			}
+		}
+	}
+}
+@mixin Mix_Unit_Price($price){
+	.price{
+		margin-top:8px;
+		color:$price;
+		.price_tit {
+			@include Mix_Font('Txt-M', 12, 20);
+			vertical-align: 1px;
+		}
+		em{
+			@include Mix_Font('Txt-M', 16, 26);
+		}
+		i{
+			@include Mix_Font('Txt-R', 14, 23);
+			vertical-align:1px;
+			&.txt{
+				&::after{
+					content:'';
+					display:inline-block;
+					width:9px;
+					height:13px;
+					@include Mix_Library_Bg;
+					background-position:-60px 0;
+					vertical-align:middle;
+					margin:0 0 2px 5px;
+				}
+			}
+		}
+	}
+}
+@mixin Mix_Unit_Soldout($endWidth){
+	.unit_link{
+		.end{
+			position:absolute;
+			z-index:5;
+			@if $endWidth == cart {
+				bottom:0;
+				left:0;
+				z-index:6;
+				width:100px;
+				height:20px;
+			} @else if $endWidth == swiper {
+				top:135px;
+				left:0;
+				width:100%;
+				height:20px;
+			}
+			background:rgba($COL_Text_Base04,  0.5);
+			//border-radius:0 0 4px 4px;
+			color:$COL_WHITE;
+			@include Mix_Font('Txt-M', 10, 20);
+			text-align:center;
+		}
+		.unit_img{
+			z-index:2;
+			img{opacity:0.3;}
+		}
+		.unit_info{
+			.name .model,
+			.name .desc,
+			.drive{
+				color:$COL_Inactive_Text01;
+			}
+		}
+	}
+}
+@mixin Mix_Unit_Soldout2($endWidth){	
+	.end{
+		position:absolute;
+		z-index:5;
+		@if $endWidth == cart {
+			bottom:0;left:0;
+			z-index:6;
+			width:100px;
+			height:20px;
+		} @else if $endWidth == swiper {
+			top:135px;left:0;
+			width:100%;
+			height:20px;
+		}
+		background: rgba($COL_Text_Base04, 0.5);
+		//border-radius:0 0 4px 4px;
+		color:$COL_WHITE;
+		@include Mix_Font('Txt-R', 11, 20);
+		text-align:center;
+	}
+	.unit_img{
+		z-index:2;
+		img{opacity:0.3;}
+	}
+	.unit_info{
+		//opacity:0.3;
+		.name .model,
+		.name .desc,
+		.drive{
+			color:$COL_Inactive_Text01;
+		}
+	} 
+}
+@mixin Mix_Unit_Status($pageName){// 결제하기 > 주문번호, 마이페이지 진행상태 & 주문번호, 마이페이지 구매상세
+	.tit{
+		@if $pageName == 'order' {
+			color:$COL_Text_Base01;
+			@include Mix_Font('Txt-R', 14, 23);
+		}
+		@else if $pageName == 'mypage' {
+			color:$COL_Text_Base04;
+			@include Mix_Font('Txt-M', 15, 24);
+		}
+	}
+	.no{
+		&::before{
+			content:'';
+			display:inline-block;
+			width:1px;
+			height:12px;
+			margin:0 10px 1px 6px;
+			background:$COL_Line_Dark01; 
+			vertical-align:middle;
+		}
+		@if $pageName == 'order' {
+			color:$COL_Text_Base03;
+		}
+		@else if $pageName == 'mypage' {
+			color:$COL_Text_Base03;
+		}
+		@include Mix_Font('Head-R', 13, 17);
+	}
+}
+@mixin Mix_Unit_Duedate($pageName){// 결제하기 > 결제가능기한, 마이페이지 결제가능기한
+	> .tit{// '결제가능기한
+		flex: 0 0 40%;
+		color:$COL_Text_Base03;
+		@include Mix_Font_Txt_M;
+		@if $pageName == 'order' {// 주문 > 결제하기
+			@include Mix_Font('Head-R', 13, 18);
+		}
+		@else if $pageName == 'mypage' {// 마이페이지 > 메인, 구매목록, 
+			@include Mix_Font('Txt-R', 13, 17);
+		}
+	}
+	> .txt{// '날짜
+		flex: 0 0 60%;
+		@if $pageName == 'order' {
+			color:$COL_Text_Base03;
+			@include Mix_Font('Head-R', 13, 18);
+		}
+		@else if $pageName == 'mypage' {
+			color:$COL_Text_Base03;
+			@include Mix_Font('Txt-R', 12, 16);
+		}
+		text-align:right;
+		&.icon_c{
+			&::before{
+				content:'';
+				display:inline-block;
+				width:12px;
+				height:10px;
+				margin-right:5px;
+				@include Mix_Order_Bg(-98px -35px);
+			}
+		}
+	}
+}
+
+@mixin Mix_Count_Like ($posT, $posR, $color, $bgL, $bgT, $type){ // 찜개수
+	.count_like {
+		position: absolute;
+		top: $posT;
+		right: $posR;
+		// z-index: 6;
+		color: $color;
+		@if $type == 'block' {
+			@include Mix_Font ('Txt-R', 12, 18);
+		}
+		@else if $type == 'list' {
+			@include Mix_Font ('Txt-R', 13, 20);
+		}
+		
+		&::before {
+			content: '';
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			margin-right: 2px;
+			@include Mix_Display_Bg;
+			background-position:$bgL $bgT;
+			vertical-align: middle;
+		}
+	}
+}
+
+/* button */
+@mixin Mix_Btn_Bg01{// $COL_1A1A #1a1a1a;
+	background-color:$COL_1A1A;
+	border-color:$COL_1A1A;
+	color:$COL_WHITE;
+	text-align:center;
+}
+@mixin Mix_Btn_Bg02{// $COL_WHITE #fff;
+	background-color:$COL_WHITE;
+	color:$COL_Text_Base04;
+	text-align:center;
+}
+@mixin Mix_Btn_Bg03{// $COL_1A1A #1a1a1a;
+	background-color:$COL_1A1A;
+	color:$COL_WHITE;
+	text-align:center;
+}
+@mixin Mix_Btn_Bg04{
+	background-color:$COL_Inactive_Text01;
+	color:$COL_WHITE;
+	text-align:center;
+}
+@mixin Mix_Btn_Bg05{
+	background-color:$COL_Inactive_Text01;
+	color:$COL_WHITE;
+	text-align:center;
+}
+@mixin Mix_Btn_Bg06{
+	background-color:$COL_WHITE;
+	color:$COL_Text_Base04;
+	text-align:center;
+}
+@mixin Mix_Btn_Icon_Height30{
+	display:inline-block;
+	height:30px;
+	padding:0 10px;
+	@include Mix_Font('Head-R', 12, 30);
+}
+@mixin Mix_Btn_Only_Icon($position, $width, $height){
+	display:inline-block;
+	@include Mix_Size_0;
+	&::before{
+		content:'';
+		display:block;
+		width:$width;height:$height;margin:0 auto;
+		@include Mix_Display_Bg;
+		background-position: $position;
+	}
+}
+
+@mixin Mix_Icon_Car_Edit($display){// 내차팔기, 교환/판금 
+	&::before{
+		display:$display;
+		margin:0 auto;
+		width:18px;
+		height:18px;
+		border-radius:100%;
+		@include Mix_Form_Bg;
+		@if($display == inline-block){
+			vertical-align:middle;
+			margin:0 5px 0 0;
+		}
+	}
+	&.icon_w{
+		@if($display == block){
+			background:$COL_info01;
+		}
+		&::before{
+			content:'';
+			background-position:0 -125px;
+		}
+	}
+	&.icon_x{
+		@if($display == block){
+			background:$COL_info02;
+		}
+		
+		&::before{
+			content:'';
+			background-position:0 -148px;
+		}
+	}
+}
+
+
+/* 제네시스 body 배경색 */
+@mixin Mix_Body_Black{
+	body{
+		background:$COL_Text_Base04;
+	}
+	#CPOheader{
+		[class^="h_"]{
+			background:$COL_Text_Base04;
+			&.fixed{
+				
+				background:$COL_Text_Base04;
+				//border-bottom:1px solid $COL_Line_Light01;
+			}
+			h3.tit{
+				color:$COL_WHITE;
+			}
+			.ic_back:before{// header - 이전버튼 - 흰색
+				background-position:-172px 2px;
+			}
+			.ic_cart:before{// header - 장바구니 -  흰색
+				background-position:-25px -27px;
+			}
+		}
+	}
+
+}
+
+/* 제네시스 body 배경색 */
+@mixin Mix_Body_White{
+	#CPOheader{
+		[class^="h_"]{
+			border-bottom:1px solid $COL_BG_Light02;
+			&.fixed{
+				background:$COL_WHITE;
+				border-bottom:1px solid $COL_BG_Light02;
+			}
+		}
+	}
+}

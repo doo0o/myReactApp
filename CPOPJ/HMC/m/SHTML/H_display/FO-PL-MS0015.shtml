@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>기획전 목록 : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_display.css">
+</head>
+<body class="bg_dark">
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">기획전</h1>
+			<div class="util">
+				<ul>
+					<!-- <li><a href="#" class="ic_search">검색하기</a></li>
+					<li><a href="#" class="ic_home">홈으로 가기</a></li> -->
+					<li><a href="#" class="ic_cart on">장바구니</a></li>
+					<!-- <li><a href="#" class="ic_alarm">알림</a></li>
+					<li><a href="#" class="ic_set">설정하기</a></li> -->
+				</ul>	
+			</div>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="cpo_plp">
+			<!-- 01. 기획전 목록 -->
+			<ul class="plan_list">
+				<li>
+					<a href="#a">
+						<div class="unit_plan">
+							<div class="unit_img"><img src="/HMC/m/img/@thumb/visual_660x824_03.jpg" alt="캠핑에 알맞은 패밀리카 기획전" /></div>
+							<div class="unit_info">
+								<p class="name">캠핑에 알맞은<br />패밀리카 기획전</p>
+								<p class="date">2021.08.15 – 2021.10.06</p>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#a">						
+						<div class="unit_plan">
+							<div class="unit_img"><img src="/HMC/m/img/@thumb/visual_660x824_04.jpg" alt="프리미엄 차량 기획전" /></div>
+							<div class="unit_info">
+								<p class="name">프리미엄 차량 기획전</p>
+								<p class="date">2021.08.15 – 2021.10.06</p>
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="#a">
+						<div class="unit_plan">
+							<div class="unit_img"><img data-src="/HMC/m/img/@thumb/visual_660x824_05.jpg" class="cpo_lazy_v" alt="CASPER 커스터마이징 기획전" /></div>
+							<div class="unit_info">
+								<p class="name">CASPER<br/>커스터마이징 기획전</p>
+								<p class="date">2021.08.15 – 2021.10.06</p>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<!-- //01. 기획전 목록 -->
+		</div>
+
+		
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_actionbar.shtml"-->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<script>
+	// 2023 0209 TOP / CHATBOT 추가
+	CPO.top();
+</script>
+</body>
+</html>

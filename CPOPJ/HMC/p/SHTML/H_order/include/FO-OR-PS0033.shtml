@@ -1,0 +1,88 @@
+<div class="popup_modal" id="FO-OR-PS0033">
+	<div class="p_body">
+		<div class="p_inner s_small">
+			<div class="p_head">
+				<h2 class="tit">이전등록비 감면신청 필요서류</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+				<div class="inner_view layer_installment">
+					<table class="table line">
+						<caption>대출한도 및 금리안내</caption>
+						<colgroup>
+							<col width="180px">
+							<col width="*">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">구분</th>
+								<th scope="col">필요서류</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>공동명의</td>
+								<td>
+									<ul class="list01">
+										<li>신분증 사본</li>
+										<li>보험가입증명서</li>
+										<li>주민등록등본</li>
+										<li>인감도장</li>
+										<li>인감증명서(또는 본인서명사실확인서)</li>
+									</ul>
+									<div class="caution">
+										<ul>
+											<li>모든 서류는 공동명의자 1인당 1부씩 각각 준비하셔야 합니다. 단, 공동명의자 전원의 주민등록주소지가 같을 때 주민등록등본은 1부만 필요합니다.</li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>장애인</td>
+								<td>
+									<ul class="list01">
+										<li>신분증 사본</li>
+										<li>보험가입증명서</li>
+										<li>복지카드 사본</li>
+										<li>주민등록등본(공동명의의 경우)</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>국가유공자</td>
+								<td>
+									<ul class="list01">
+										<li>신분증 사본</li>
+										<li>보험가입증명서</li>
+										<li>국가유공자증 사본</li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>다자녀</td>
+								<td>
+									<ul class="list01">
+										<li>신분증 사본</li>
+										<li>보험가입증명서</li>
+										<li>주민등록등본</li>
+										<li>가족관계증명서</li>
+									</ul>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<!-- //contents -->
+				<!-- sticky -->
+				<div class="btn_area full_type">
+					<button type="button" class="btn_big color01">오토할부 진행하기</button>
+				</div>
+				<!-- <div class="btn_area full_type">
+					<button type="button" class="btn_big color01">할부 계산기에 적용</button>
+				</div> -->
+				<!-- //sticky -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

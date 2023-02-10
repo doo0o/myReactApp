@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>내차팔기 차량모델등급선택 : 현대 CUV</title>
+	<!--#include file="/HMC/p/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_sale.css"> <!-- 해당 CSS -->
+</head>
+<body>
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+	<div id="CPOcontents">
+		<div id="layoutWrap" class="sale">
+			<!-- container -->
+			<div class="container top">
+				<!-- cont_wrap -->
+                <div class="cont_wrap">
+					<section class="sale_info">
+						<div class="info_box">							
+							<p class="sale_question">
+								<strong>펠리세이드 캘리그래피</strong><br />
+								차량의 모델 등급을 선택해 주세요.
+							</p>
+						</div>
+					</section>
+					<section class="sale_form">
+						<div class="form_box single_item" >
+							<div class="form_item motionStep1">
+								<strong class="label">내 차의 모델 등급은</strong>
+								<div class="form_area">
+									<span class="com_select" data-ref="select">
+										<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="gradeSelecte" onclick="dropDown();">
+											선택하세요.
+										</button>
+										<span class="com_select_list" data-ref="dropDownList" id="gradeSelecte">
+											<span class="com_select_list_inner">
+												<label class="com_select_item"><input type="radio" name="dropDownExample" checked=""> <span>선택하세요.</span></label>
+												<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>옵션1</span></label>
+												<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>옵션2</span></label>
+												<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>옵션3</span></label>
+												<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>옵션4</span></label>
+											</span>
+										</span>
+									</span>
+								</div>입니다.
+							</div>
+						</div>
+						<div class="caution motionStep2"> 
+							<ul>
+								<li>실제 차량과 다른 모델 등급 선택 시, 방문평가 과정에서 감가가 발생할 수 있습니다.</li>
+							</ul>
+						</div>
+					</section>
+					<div class="btn_next" id="btnSaleNext">
+						<a href="#" class="link_next">다음</a>
+					</div>
+                </div>
+				<!-- //cont_wrap -->
+			</div>
+			<!-- //container -->
+		</div>
+	</div>
+</div>
+<!-- //CPOwrap -->
+</body>
+<script>
+	//script 정리예정
+	window.addEventListener('DOMContentLoaded', ((e) => {
+		tooltip();
+		setTimeout(function(){ //animation start
+			document.getElementById('layoutWrap').classList.add('on');
+			document.getElementById('btnSaleNext').classList.add('active');
+		},300)
+	}))
+
+	let isStepNext = false; //페이지 내에서 모든 과정이 끝나면 개발에서 변수 값 변경
+	const nextBtn = document.getElementById('btnSaleNext');// 다음스텝 버튼입니다. 
+	if(isStepNext){
+		nextBtn.classList.add('active');
+		isStepNext = false;
+	}else{
+		nextBtn.classList.remove('active');
+		isStepNext = true;
+	}
+
+	
+
+</script>
+</html>

@@ -1,0 +1,183 @@
+<div class="CPOpop_full layer_bg_wrap" id="FO-CM-MS0061">
+	<div class="p_head">
+		<h2 class="tit">정밀진단 항목</h2>
+	</div>
+	<div class="p_wrap">
+		<!-- 정밀진단 항목 -->
+		<div class="detail_items">
+			<div class="service_pop" data-ref="toggleBoxWrap">
+			
+				<!--진당항목 모두 펼쳐보기-->
+				<div class="detail_tit">
+					<span>진단항목</span>
+					<button type="button" class="btn_info_more" data-ref="btnToggleAll" data-str="모두 닫기" onclick="toggleBox('all')">모두 펼쳐보기</button>
+				</div>
+				<!--//진당항목 모두 펼쳐보기-->
+			
+				<!--02.차량외관-->
+				<div class="service_box" data-ref="toggleBox">
+					<div class="tit" onclick="toggleBox()">차량외관<p>정밀검사 40건</p></div>
+					<div class="cont">
+						<ol class="list">
+							<li><span class="txt">1. 차대번호,승인번호,연식</span></li>
+							<li><span class="txt">2. 엔진,엔진부조/소음</span></li>
+							<li><span class="txt">3 [누유]로커암커버</span></li>
+						</ol>
+					</div>
+				</div>
+				<!--//02.차량외관-->
+			
+				<!--03.엔진룸-->
+				<div class="service_box" data-ref="toggleBox">
+					<div class="tit" onclick="toggleBox()">엔진룸<p>정밀검사 28건</p></div>
+					<div class="cont">
+						<ol class="list">
+							<li><span class="txt">1. 차대번호,승인번호,연식</span></li>
+							<li><span class="txt">2. 엔진,엔진부조/소음</span></li>
+							<li><span class="txt">3 [누유]로커암커버</span></li>
+							<li><span class="txt">4 [누유]실린더 헤드/가스켓</span></li>
+							<li><span class="txt">5 [누유]엔진오일팬 누유</span></li>
+							<li><span class="txt">6 엔진오일량/상태</span></li>
+							<li><span class="txt">7 [누수]실린더 헤드/가스켓</span></li>
+							<li><span class="txt">8 [누수]워터펌프</span></li>
+							<li><span class="txt">9 [누수]냉각수 수량</span></li>
+							<li><span class="txt">10 고압펌프(커먼레일)-디젤</span></li>
+							<li><span class="txt">11 미션오일누유</span></li>
+							<li><span class="txt">12 미션오일 유량,상태</span></li>
+							<li><span class="txt">13 미션작동상태(공회전)</span></li>
+							<li><span class="txt">14 미션변속장치(A/T)</span></li>
+							<li><span class="txt">15 발전기(알터네이터) 출력</span></li>
+							<li><span class="txt">16 시동(스타트) 모터</span></li>
+							<li><span class="txt">17 와이퍼 모터 기능</span></li>
+							<li><span class="txt">18 실내송풍 모터</span></li>
+							<li><span class="txt">19 라디에이터 팬 모터</span></li>
+						</ol>
+					</div>
+				</div>
+				<!--//03.엔진룸-->
+			
+				<!--04.차량하체 (Lift)-->
+				<div class="service_box" data-ref="toggleBox">
+					<div class="tit" onclick="toggleBox()">차량하체 (Lift)<p>정밀검사 19건</p></div>
+					<div class="cont">
+						<ol class="list">
+							<li><span class="txt">1. 차대번호,승인번호,연식</span></li>
+							<li><span class="txt">2. 엔진,엔진부조/소음</span></li>
+							<li><span class="txt">3 [누유]로커암커버</span></li>
+						</ol>
+					</div>
+				</div>
+				<!--//04.차량하체 (Lift)-->
+			
+				<!--05.사고 점검-->
+				<div class="service_box" data-ref="toggleBox">
+					<div class="tit" onclick="toggleBox()">사고 점검<p>정밀검사 15건</p></div>
+					<div class="cont">
+						<ol class="list">
+							<li><span class="txt">1. 차대번호,승인번호,연식</span></li>
+							<li><span class="txt">2. 엔진,엔진부조/소음</span></li>
+							<li><span class="txt">3 [누유]로커암커버</span></li>
+						</ol>
+					</div>
+				</div>
+				<!--//05.사고 점검-->
+			
+				<!--06.침수 점검-->
+				<div class="service_box" data-ref="toggleBox">
+					<div class="tit" onclick="toggleBox()">침수 점검<p>정밀검사 3건</p></div>
+					<div class="cont">
+						<ol class="list">
+							<li><span class="txt">1. 차대번호,승인번호,연식</span></li>
+							<li><span class="txt">2. 엔진,엔진부조/소음</span></li>
+							<li><span class="txt">3 [누유]로커암커버</span></li>
+						</ol>
+					</div>
+				</div>
+				<!--//06.침수 점검-->
+			
+				<!--07.D-PDI(강제구동)-->
+				<div class="service_box" data-ref="toggleBox">
+					<div class="tit" onclick="toggleBox()">D-PDI(강제구동)<p>정밀검사 39건</p></div>
+					<div class="cont">
+						<ol class="list">
+							<li><span class="txt">test</span></li>
+							<li><span class="txt">test</span></li>
+							<li><span class="txt">test</span></li>
+						</ol>
+					</div>
+				</div>
+				<!--//07.D-PDI(강제구동)-->
+			
+				<!--08.자가진단 (DTC)-->
+				<div class="service_box" data-ref="toggleBox">
+					<div class="tit" onclick="toggleBox()">자가진단 (DTC)<p>정밀검사 35건</p></div>
+					<div class="cont">
+						<ol class="list">
+							<li><span class="txt">test</span></li>
+							<li><span class="txt">test</span></li>
+							<li><span class="txt">test</span></li>
+						</ol>
+					</div>
+				</div>
+				<!--//08.자가진단 (DTC)-->
+			
+				<!--09.차량실내-->
+				<div class="service_box" data-ref="toggleBox">
+					<div class="tit" onclick="toggleBox()">차량실내<p>정밀검사 35건</p></div>
+					<div class="cont">
+						<ol class="list">
+							<li><span class="txt">1. 차대번호,승인번호,연식</span></li>
+							<li><span class="txt">2. 엔진,엔진부조/소음</span></li>
+							<li><span class="txt">3 [누유]로커암커버</span></li>
+						</ol>
+					</div>
+				</div>
+				<!--//09.차량실내-->
+			
+				<!--10.냄새/악취-->
+				<div class="service_box" data-ref="toggleBox">
+					<div class="tit" onclick="toggleBox()">냄새/악취<p>정밀검사 1건</p></div>
+					<div class="cont">
+						<ol class="list">
+							<li><span class="txt">1. 차대번호,승인번호,연식</span></li>
+							<li><span class="txt">2. 엔진,엔진부조/소음</span></li>
+							<li><span class="txt">3 [누유]로커암커버</span></li>
+						</ol>
+					</div>
+				</div>
+				<!--//10.냄새/악취-->
+			
+				<!--11.주행성능-->
+				<div class="service_box" data-ref="toggleBox">
+					<div class="tit" onclick="toggleBox()">주행성능<p>정밀검사 7건</p></div>
+					<div class="cont">
+						<ol class="list">
+							<li><span class="txt">test</span></li>
+							<li><span class="txt">test</span></li>
+							<li><span class="txt">test</span></li>
+						</ol>
+					</div>
+				</div>
+				<!--//11.주행성능-->
+			
+				<!--12.제네시스 추가 진단항목-->
+				<div class="service_box" data-ref="toggleBox">
+					<div class="tit" onclick="toggleBox()">제네시스 추가 진단항목<p>정밀검사 20건</p></div>
+					<div class="cont">
+						<ol class="list">
+							<li><span class="txt">test</span></li>
+							<li><span class="txt">test</span></li>
+							<li><span class="txt">test</span></li>
+						</ol>
+					</div>
+				</div>
+				<!--//12.제네시스 추가 진단항목-->
+			</div>
+		</div>
+		<!-- //정밀진단 항목 -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01" title="확인">확인</button>
+		</div>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

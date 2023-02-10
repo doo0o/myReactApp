@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>내차팔기 차량번호입력 : 현대 CUV</title>
+	<!--#include file="/HMC/p/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_sale.css"> <!-- 해당 CSS -->
+</head>
+<body>
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+	<div id="CPOcontents">
+		<div id="layoutWrap" class="sale">
+			<!-- container -->
+			<div class="container top">
+				<!-- cont_wrap -->
+                <div class="cont_wrap">
+					<section class="sale_info">
+						<div class="info_box">							
+							<p class="greeting">이렇게 새로운 중고차 매매 경험</p>
+							<h1 class="sale_title">현대 &amp; 제네시스 인증 중고차</h1>
+							<ul class="sale_benefit">
+								<li>
+									현대자동차 본사 직영 <span>가격 관리 체계</span>
+								</li>
+								<li>
+									수수료 없이 한번에 <span>간편한 내차팔기</span>
+								</li>
+								<li>
+									타 사 차량도 동일하게 <span>신차 구매 할인 혜택</span>
+								</li>
+							</ul>
+							<!-- 개발 : 법인의 경우만 노출 -->
+							<button type="button" class="btn_sale_corp_info">
+								법인 차량 대량 매각을 원하시나요?
+							</button>
+							<!-- //개발 : 법인의 경우만 노출 -->
+						</div>	
+
+						<ul class="guide_list">
+							<li>
+								<button type="button">내차팔기 불가 차량 안내</button>
+							</li>
+							<!-- 개발 : 개인의 경우만 노출 -->
+							<li>
+								<button type="button">법인 명의 차량 팔기 안내</button>
+							</li>
+							<!-- //개발 : 개인의 경우만 노출 -->
+							<li>
+								<button type="button">내차팔기 가이드</button>
+							</li>
+						</ul>
+					</section>
+					<section class="sale_form">
+						<span class="hello motionStep1">Hello<span>.</span></span>
+						<p class="form_notice motionStep2">
+							스마트한 내차팔기, 차량번호 입력으로 시작해 볼까요?
+							투명하고 합리적인 AI 견적을 경험해 보세요.
+						</p>
+						<div class="form_box">
+							 <div class="form_item motionStep3">차량번호는<input type="text" placeholder="12가1234" class="form_input" />이며,
+							 </div>
+							 <div class="form_item motionStep4">소유자는<input type="text" placeholder="김현대" class="form_input" />입니다.
+							 </div>
+						</div>
+						<div class="caution motionStep5">
+							<ul>
+								<li>판매하는 차량의 소유자명과 로그인한 계정의 이름이 동일해야 판매가 가능해요.</li>
+								<li>단어가 일치하도록 정확한 소유자명이  입력되어 있는지 확인 해주세요.</li>
+								<li>공동 명의 차량은 자동차등록증 상단에 있는 대표 명의자명을 입력해주세요.</li>
+							</ul>
+						</div>
+					</section>
+					<div class="btn_next" id="btnSaleNext">
+						<a href="#" class="link_next">다음 →</a>
+					</div>
+                </div>
+				<!-- //cont_wrap -->
+			</div>
+			<!-- //container -->
+		</div>
+	</div>
+</div>
+<!-- //CPOwrap -->
+</body>
+<script>
+	//script 정리예정
+	window.addEventListener('DOMContentLoaded', ((e) => {
+		setTimeout(function(){ //animation start
+			document.getElementById('layoutWrap').classList.add('on');
+		},300)
+	}))
+
+	let isStepNext = false; //페이지 내에서 모든 과정이 끝나면 개발에서 변수 값 변경
+	const nextBtn = document.getElementById('btnSaleNext'); // 다음스텝 버튼입니다. 
+	if(isStepNext){
+		nextBtn.classList.add('active');
+		isStepNext = false;
+	}else{
+		nextBtn.classList.remove('active');
+		isStepNext = true;
+	}
+
+	
+
+</script>
+</html>

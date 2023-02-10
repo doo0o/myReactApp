@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>에러페이지 : <script>MSG.text('현대 CUV', '제네시스 CPO');</script></title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_error.css">
+</head>
+<body>
+	<!--에러페이지-->
+	<div class="error_wrap">
+		<h1 class="tit"><script>MSG.text('현대 CUV', '제네시스 CPO');</script></h1>
+		<div class="e_cont">
+			<p class="tit">고객님 이용에 불편을 드려 죄송합니다.</p>
+			<p class="txt">서비스 이용량이 많아 현재 접속이 원활하지않습니다.<br>잠시 후 다시 시도해 주세요.</p>
+		</div>
+	</div>
+	<!--//에러페이지-->
+</body>
+</html>

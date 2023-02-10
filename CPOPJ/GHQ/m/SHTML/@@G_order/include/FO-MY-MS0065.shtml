@@ -1,0 +1,12 @@
+<!-- FO-MY-MS0065 : PDF 상세보기 - FULL -->
+<div class="CPOpop_full" id="FO-MY-MS0065">
+	<div class="p_head">
+		<h4 class="tit">PDF 상세보기</h4>
+	</div>
+	<div class="p_wrap">
+		<!-- PDF 상세보기 -->
+		<embed src="/HMC/img/@thumb/ISMS-P.pdf" class="cpo_pdfobject" type="application/pdf" title="Embedded PDF">
+		<!-- //PDF 상세보기 -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

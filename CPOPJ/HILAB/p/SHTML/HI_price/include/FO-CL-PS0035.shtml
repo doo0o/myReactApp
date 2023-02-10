@@ -1,0 +1,989 @@
+<div class="popup_full" id="FO-CL-PS0035">
+	<div class="p_body">
+		<div class="p_inner s_xlarge">
+			<div class="p_head">
+				<h2 class="tit">타이틀</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+				<div class="inner_view">
+					<div class="accordion" data-ref="accordion">
+						<div id="srch_box01" class="item" role="accordionList" data-ref="changeTextWrap">
+							<div class="head" data-target="accordionBtn">
+								<span class="tit">브랜드(제조사)</span>
+								<span class="check" data-ref="changeTextTarget"></span>
+							</div>
+							<div class="cont_acc">
+								<div class="inner">
+									<div class="tab type02" data-ref="brandTab">
+										<ul class="list" role="tablist">
+											<li class="on"><button type="button" role="tab" aria-selected="true" aria-controls="tabBrand01">국산</button></li>
+											<li><button type="button" role="tab" aria-selected="false" aria-controls="tabBrand02">수입</button></li>
+										</ul>
+										<div class="cont" id="tabBrand01">
+											<div class="select_brand">
+												<div class="group_brand">
+													<ul class="list_brand">
+														<!-- brand 뒤에 숫자로 브랜드 구분 -->
+														<!-- 1번 현대 -->
+														<li class="brand1">
+															<input type="radio" name="chk_brand" id="chk_block01" class="chk_block">
+															<label for="chk_block01">현대</label>
+														</li>
+														<!-- 2번 기아 -->
+														<li class="brand2">
+															<input type="radio" name="chk_brand" id="chk_block02" class="chk_block">
+															<label for="chk_block02">기아</label>
+														</li>
+														<!-- 3번 쉐보레(대우) -->
+														<li class="brand3">
+															<input type="radio" name="chk_brand" id="chk_block03" class="chk_block">
+															<label for="chk_block03">쉐보레(대우)</label>
+														</li>
+														<!-- 4번 쌍용 -->
+														<li class="brand4">
+															<input type="radio" name="chk_brand" id="chk_block04" class="chk_block">
+															<label for="chk_block04">쌍용</label>
+														</li>
+														<!-- 5번 르노(삼성) -->
+														<li class="brand5">
+															<input type="radio" name="chk_brand" id="chk_block05" class="chk_block">
+															<label for="chk_block05">르노(삼성)</label>
+														</li>
+														<!-- 6번 제네시스 -->
+														<li class="brand6">
+															<input type="radio" name="chk_brand" id="chk_block06" class="chk_block">
+															<label for="chk_block06">제네시스</label>
+														</li>
+													</ul>
+												</div>
+												<div class="btn_area">
+													<button type="button" class="btn_more">전체보기</button>
+												</div>
+											</div>
+										</div>
+										<div class="cont" id="tabBrand02">
+											<div class="select_brand">
+												<div class="group_brand">
+													<ul class="list_brand">
+														<!-- brand 뒤에 숫자로 브랜드 구분 -->
+														<!-- 7번 벤츠 -->
+														<li class="brand7">
+															<input type="radio" name="chk_brand" id="chk_block07" class="chk_block">
+															<label for="chk_block07">벤츠</label>
+														</li>
+														<!-- 8번 BMW -->
+														<li class="brand8">
+															<input type="radio" name="chk_brand" id="chk_block08" class="chk_block">
+															<label for="chk_block08">BMW</label>
+														</li>
+														<!-- 9번 아우디 -->
+														<li class="brand9">
+															<input type="radio" name="chk_brand" id="chk_block09" class="chk_block">
+															<label for="chk_block09">아우디</label>
+														</li>
+														<!-- 10번 폭스바겐 -->
+														<li class="brand10">
+															<input type="radio" name="chk_brand" id="chk_block10" class="chk_block">
+															<label for="chk_block10">폭스바겐</label>
+														</li>
+														<!-- 11번 Mini Cooper -->
+														<li class="brand11">
+															<input type="radio" name="chk_brand" id="chk_brand11" class="chk_block">
+															<label for="chk_brand11">Mini Cooper</label>
+														</li>
+														<!-- 12번 Land Rover -->
+														<li class="brand12">
+															<input type="radio" name="chk_brand" id="chk_brand12" class="chk_block">
+															<label for="chk_brand12">Land Rover</label>
+														</li>
+														<!-- 13번 지프 -->
+														<li class="brand13">
+															<input type="radio" name="chk_brand" id="chk_brand13" class="chk_block">
+															<label for="chk_brand13">지프</label>
+														</li>
+														<!-- 14번 포드 -->
+														<li class="brand14">
+															<input type="radio" name="chk_brand" id="chk_brand14" class="chk_block">
+															<label for="chk_brand14">포드</label>
+														</li>
+														<!-- 15번 렉서스 -->
+														<li class="brand15">
+															<input type="radio" name="chk_brand" id="chk_brand15" class="chk_block">
+															<label for="chk_brand15">렉서스</label>
+														</li>
+														<!-- 16번 재규어 -->
+														<li class="brand16">
+															<input type="radio" name="chk_brand" id="chk_brand16" class="chk_block">
+															<label for="chk_brand16">재규어</label>
+														</li>
+														<!-- 17번 볼보 -->
+														<li class="brand17">
+															<input type="radio" name="chk_brand" id="chk_brand17" class="chk_block">
+															<label for="chk_brand17">볼보</label>
+														</li>
+														<!-- 18번 포르쉐 -->
+														<li class="brand18">
+															<input type="radio" name="chk_brand" id="chk_brand18" class="chk_block">
+															<label for="chk_brand18">포르쉐</label>
+														</li>
+														<!-- 19번 도요타 -->
+														<li class="brand19">
+															<input type="radio" name="chk_brand" id="chk_brand19" class="chk_block">
+															<label for="chk_brand19">도요타</label>
+														</li>
+														<!-- 20번 푸조 -->
+														<li class="brand20">
+															<input type="radio" name="chk_brand" id="chk_brand20" class="chk_block">
+															<label for="chk_brand20">푸조</label>
+														</li>
+														<!-- 21번 인피니티 -->
+														<li class="brand21">
+															<input type="radio" name="chk_brand" id="chk_brand21" class="chk_block">
+															<label for="chk_brand21">인피니티</label>
+														</li>
+														<!-- 22번 닛산 -->
+														<li class="brand22">
+															<input type="radio" name="chk_brand" id="chk_brand22" class="chk_block">
+															<label for="chk_brand22">닛산</label>
+														</li>
+														<!-- 23번 혼다 -->
+														<li class="brand23">
+															<input type="radio" name="chk_brand" id="chk_brand23" class="chk_block">
+															<label for="chk_brand23">혼다</label>
+														</li>
+														<!-- 24번 마세라티 -->
+														<li class="brand24">
+															<input type="radio" name="chk_brand" id="chk_brand24" class="chk_block">
+															<label for="chk_brand24">마세라티</label>
+														</li>
+														<!-- 25번 링컨 -->
+														<li class="brand25">
+															<input type="radio" name="chk_brand" id="chk_brand25" class="chk_block">
+															<label for="chk_brand25">링컨</label>
+														</li>
+														<!-- 26번 캐딜락 -->
+														<li class="brand26">
+															<input type="radio" name="chk_brand" id="chk_brand26" class="chk_block">
+															<label for="chk_brand26">캐딜락</label>
+														</li>
+														<!-- 27번 크라이슬러 -->
+														<li class="brand27">
+															<input type="radio" name="chk_brand" id="chk_brand27" class="chk_block">
+															<label for="chk_brand27">크라이슬러</label>
+														</li>
+														<!-- 28번 시트로앵 -->
+														<li class="brand28">
+															<input type="radio" name="chk_brand" id="chk_brand28" class="chk_block">
+															<label for="chk_brand28">시트로앵</label>
+														</li>
+														<!-- 29번 테슬라 -->
+														<li class="brand29">
+															<input type="radio" name="chk_brand" id="chk_brand29" class="chk_block">
+															<label for="chk_brand29">테슬라</label>
+														</li>
+														<!-- 30번 벤틀리 -->
+														<li class="brand30">
+															<input type="radio" name="chk_brand" id="chk_brand30" class="chk_block">
+															<label for="chk_brand30">벤틀리</label>
+														</li>
+														<!-- 31번 페라리 -->
+														<li class="brand31">
+															<input type="radio" name="chk_brand" id="chk_brand31" class="chk_block">
+															<label for="chk_brand31">페라리</label>
+														</li>
+														<!-- 32번 피아트 -->
+														<li class="brand32">
+															<input type="radio" name="chk_brand" id="chk_brand32" class="chk_block">
+															<label for="chk_brand32">피아트</label>
+														</li>
+														<!-- 33번 롤스로이스 -->
+														<li class="brand33">
+															<input type="radio" name="chk_brand" id="chk_brand33" class="chk_block">
+															<label for="chk_brand33">롤스로이스</label>
+														</li>
+														<!-- 34번 람보르기니 -->
+														<li class="brand34">
+															<input type="radio" name="chk_brand" id="chk_brand34" class="chk_block">
+															<label for="chk_brand34">람보르기니</label>
+														</li>
+														<!-- 35번 맥라렌 -->
+														<li class="brand35">
+															<input type="radio" name="chk_brand" id="chk_brand35" class="chk_block">
+															<label for="chk_brand35">맥라렌</label>
+														</li>
+														<!-- 36번 스마트 -->
+														<li class="brand36">
+															<input type="radio" name="chk_brand" id="chk_brand36" class="chk_block">
+															<label for="chk_brand36">스마트</label>
+														</li>
+														<!-- 37번 닷지 -->
+														<li class="brand37">
+															<input type="radio" name="chk_brand" id="chk_brand37" class="chk_block">
+															<label for="chk_brand37">닷지</label>
+														</li>
+														<!-- 38번 애스턴마틴 -->
+														<li class="brand38">
+															<input type="radio" name="chk_brand" id="chk_brand38" class="chk_block">
+															<label for="chk_brand38">애스턴마틴</label>
+														</li>
+														<!-- 39번 다이하쯔 -->
+														<li class="brand39">
+															<input type="radio" name="chk_brand" id="chk_brand39" class="chk_block">
+															<label for="chk_brand39">다이하쯔</label>
+														</li>
+														<!-- 40번 DFSK 동풍자동차 -->
+														<li class="brand40">
+															<input type="radio" name="chk_brand" id="chk_brand40" class="chk_block">
+															<label for="chk_brand40">DFSK 동풍자동차</label>
+														</li>
+														<!-- 41번 DS -->
+														<li class="brand41">
+															<input type="radio" name="chk_brand" id="chk_brand41" class="chk_block">
+															<label for="chk_brand41">DS</label>
+														</li>
+														<!-- 42번 허머 -->
+														<li class="brand42">
+															<input type="radio" name="chk_brand" id="chk_brand42" class="chk_block">
+															<label for="chk_brand42">허머</label>
+														</li>
+														<!-- 43번 미쯔비시 -->
+														<li class="brand43">
+															<input type="radio" name="chk_brand" id="chk_brand43" class="chk_block">
+															<label for="chk_brand43">미쯔비시</label>
+														</li>
+														<!-- 44번 사브 -->
+														<li class="brand44">
+															<input type="radio" name="chk_brand" id="chk_brand44" class="chk_block">
+															<label for="chk_brand44">사브</label>
+														</li>
+													</ul>
+												</div>
+												<div class="btn_area">
+													<button type="button" class="btn_more">전체보기</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="srch_box02" class="item" role="accordionList" data-ref="changeTextWrap">
+							<div class="head" data-target="accordionBtn">
+								<span class="tit">모델</span>
+								<span class="check" data-ref="changeTextTarget"></span>
+							</div>
+							<div class="cont_acc">
+								<div class="inner">
+									<div class="tab_model" data-ref="modelTab01">
+										<div class="list_2depth">
+											<ul class="list" role="tablist">
+												<li>
+													<input type="radio" name="chk_model" id="chk_model01" class="chk_block" role="tab" aria-selected="false" aria-controls="tabModel01">
+													<label for="chk_model01">그랜저</label>
+												</li>
+												<li>
+													<input type="radio" name="chk_model" id="chk_model02" class="chk_block" role="tab" aria-selected="false" aria-controls="tabModel02">
+													<label for="chk_model02">C클래스 6세대(W206)</label>
+												</li>
+												<li>
+													<input type="radio" name="chk_model" id="chk_model03" class="chk_block" role="tab" aria-selected="false" aria-controls="tabModel03">
+													<label for="chk_model03">올 뉴 레인지로버 스포츠(L461)</label>
+												</li>
+												<li>
+													<input type="radio" name="chk_model" id="chk_model04" class="chk_block" role="tab" aria-selected="false" aria-controls="tabModel04">
+													<label for="chk_model04">컨티넨탈 GT 3세대</label>
+												</li>
+											</ul>
+										</div>
+										<div class="cont_2depth">
+											<div class="cont" id="tabModel01">
+												<div class="select_model">
+													<div class="title">모델선택</div>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model01" id="chk_model01_01" class="chk_radio"><label for="chk_model01_01"><span class="txt">더 뉴 그랜저 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model01" id="chk_model01_02" class="chk_radio"><label for="chk_model01_02"><span class="txt">그랜저 IG 하이브리드 (18~20년)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model01" id="chk_model01_03" class="chk_radio"><label for="chk_model01_03"><span class="txt">그랜저 HG 하이브리드 (16~19년)</span></label>
+														</li>
+													</ul>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model01" id="chk_model01_04" class="chk_radio"><label for="chk_model01_04"><span class="txt">더 뉴 그랜저 하이브리드 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model01" id="chk_model01_05" class="chk_radio"><label for="chk_model01_05"><span class="txt">그랜저 IG (18~20년) </span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model01" id="chk_model01_06" class="chk_radio"><label for="chk_model01_06"><span class="txt">그랜저 HG (11~16년)</span></label>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="cont" id="tabModel02">
+												<div class="select_model">
+													<div class="title">모델선택</div>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model02" id="chk_model02_01" class="chk_radio"><label for="chk_model02_01"><span class="txt">C클래스 6세대(W206) (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model02" id="chk_model02_02" class="chk_radio"><label for="chk_model02_02"><span class="txt">C클래스 6세대(W206) (18~20년)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model02" id="chk_model02_03" class="chk_radio"><label for="chk_model02_03"><span class="txt">C클래스 6세대(W206) (16~19년)</span></label>
+														</li>
+													</ul>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model02" id="chk_model02_04" class="chk_radio"><label for="chk_model02_04"><span class="txt">C클래스 6세대(W206) (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model02" id="chk_model02_05" class="chk_radio"><label for="chk_model02_05"><span class="txt">C클래스 6세대(W206) (18~20년) </span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model02" id="chk_model02_06" class="chk_radio"><label for="chk_model02_06"><span class="txt">C클래스 6세대(W206) (11~16년)</span></label>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="cont" id="tabModel03">
+												<div class="select_model">
+													<div class="title">모델선택</div>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model03" id="chk_model03_01" class="chk_radio"><label for="chk_model03_01"><span class="txt">올 뉴 레인지로버 스포츠(L461) (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model03" id="chk_model03_02" class="chk_radio"><label for="chk_model03_02"><span class="txt">올 뉴 레인지로버 스포츠(L461) (18~20년)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model03" id="chk_model03_03" class="chk_radio"><label for="chk_model03_03"><span class="txt">올 뉴 레인지로버 스포츠(L461) (16~19년)</span></label>
+														</li>
+													</ul>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model03" id="chk_model03_04" class="chk_radio"><label for="chk_model03_04"><span class="txt">올 뉴 레인지로버 스포츠(L461) (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model03" id="chk_model03_05" class="chk_radio"><label for="chk_model03_05"><span class="txt">올 뉴 레인지로버 스포츠(L461) (18~20년) </span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model03" id="chk_model03_06" class="chk_radio"><label for="chk_model03_06"><span class="txt">올 뉴 레인지로버 스포츠(L461) (11~16년)</span></label>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="cont" id="tabModel04">
+												<div class="select_model">
+													<div class="title">모델선택</div>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model04" id="chk_model04_01" class="chk_radio"><label for="chk_model04_01"><span class="txt">컨티넨탈 GT 3세대 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model04" id="chk_model04_02" class="chk_radio"><label for="chk_model04_02"><span class="txt">컨티넨탈 GT 3세대 (18~20년)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model04" id="chk_model04_03" class="chk_radio"><label for="chk_model04_03"><span class="txt">컨티넨탈 GT 3세대 (16~19년)</span></label>
+														</li>
+													</ul>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model04" id="chk_model04_04" class="chk_radio"><label for="chk_model04_04"><span class="txt">컨티넨탈 GT 3세대 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model04" id="chk_model04_05" class="chk_radio"><label for="chk_model04_05"><span class="txt">컨티넨탈 GT 3세대 (18~20년) </span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model04" id="chk_model04_06" class="chk_radio"><label for="chk_model04_06"><span class="txt">컨티넨탈 GT 3세대 (11~16년)</span></label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab_model" data-ref="modelTab02">
+										<div class="list_2depth">
+											<ul class="list" role="tablist">
+												<li>
+													<input type="radio" name="chk_model" id="chk_model05" class="chk_block" role="tab" aria-selected="false" aria-controls="tabModel05">
+													<label for="chk_model05">뉴 제너레이션 ES</label>
+												</li>
+												<li>
+													<input type="radio" name="chk_model" id="chk_model06" class="chk_block" role="tab" aria-selected="false" aria-controls="tabModel06">
+													<label for="chk_model06">그랜드 체로키(WL)</label>
+												</li>
+												<li>
+													<input type="radio" name="chk_model" id="chk_model07" class="chk_block" role="tab" aria-selected="false" aria-controls="tabModel07">
+													<label for="chk_model07">다이너스티</label>
+												</li>
+												<li>
+													<input type="radio" name="chk_model" id="chk_model08" class="chk_block" role="tab" aria-selected="false" aria-controls="tabModel08">
+													<label for="chk_model08">캐스퍼</label>
+												</li>
+											</ul>
+										</div>
+										<div class="cont_2depth">
+											<div class="cont" id="tabModel05">
+												<div class="select_model">
+													<div class="title">모델선택</div>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model05" id="chk_model05_01" class="chk_radio"><label for="chk_model05_01"><span class="txt">뉴 제너레이션 ES (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model05" id="chk_model05_02" class="chk_radio"><label for="chk_model05_02"><span class="txt">뉴 제너레이션 ES (18~20년)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model05" id="chk_model05_03" class="chk_radio"><label for="chk_model05_03"><span class="txt">뉴 제너레이션 ES (16~19년)</span></label>
+														</li>
+													</ul>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model05" id="chk_model05_04" class="chk_radio"><label for="chk_model05_04"><span class="txt">뉴 제너레이션 ES (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model05" id="chk_model05_05" class="chk_radio"><label for="chk_model05_05"><span class="txt">뉴 제너레이션 ES (18~20년) </span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model05" id="chk_model05_06" class="chk_radio"><label for="chk_model05_06"><span class="txt">뉴 제너레이션 ES (11~16년)</span></label>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="cont" id="tabModel06">
+												<div class="select_model">
+													<div class="title">모델선택</div>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model06" id="chk_model06_01" class="chk_radio"><label for="chk_model06_01"><span class="txt">그랜드 체로키(WL) (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model06" id="chk_model06_02" class="chk_radio"><label for="chk_model06_02"><span class="txt">그랜드 체로키(WL) (18~20년)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model06" id="chk_model06_03" class="chk_radio"><label for="chk_model06_03"><span class="txt">그랜드 체로키(WL) (16~19년)</span></label>
+														</li>
+													</ul>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model06" id="chk_model06_04" class="chk_radio"><label for="chk_model06_04"><span class="txt">그랜드 체로키(WL) (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model06" id="chk_model06_05" class="chk_radio"><label for="chk_model06_05"><span class="txt">그랜드 체로키(WL) (18~20년) </span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model06" id="chk_model06_06" class="chk_radio"><label for="chk_model06_06"><span class="txt">그랜드 체로키(WL) (11~16년)</span></label>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="cont" id="tabModel07">
+												<div class="select_model">
+													<div class="title">모델선택</div>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model07" id="chk_model07_01" class="chk_radio"><label for="chk_model07_01"><span class="txt">다이너스티 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model07" id="chk_model07_02" class="chk_radio"><label for="chk_model07_02"><span class="txt">다이너스티 (18~20년)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model07" id="chk_model07_03" class="chk_radio"><label for="chk_model07_03"><span class="txt">다이너스티 (16~19년)</span></label>
+														</li>
+													</ul>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model07" id="chk_model07_04" class="chk_radio"><label for="chk_model07_04"><span class="txt">다이너스티 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model07" id="chk_model07_05" class="chk_radio"><label for="chk_model07_05"><span class="txt">다이너스티 (18~20년) </span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model07" id="chk_model07_06" class="chk_radio"><label for="chk_model07_06"><span class="txt">다이너스티 (11~16년)</span></label>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="cont" id="tabModel08">
+												<div class="select_model">
+													<div class="title">모델선택</div>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model08" id="chk_model08_01" class="chk_radio"><label for="chk_model08_01"><span class="txt">캐스퍼 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model08" id="chk_model08_02" class="chk_radio"><label for="chk_model08_02"><span class="txt">캐스퍼 (18~20년)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model08" id="chk_model08_03" class="chk_radio"><label for="chk_model08_03"><span class="txt">캐스퍼 (16~19년)</span></label>
+														</li>
+													</ul>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model08" id="chk_model08_04" class="chk_radio"><label for="chk_model08_04"><span class="txt">캐스퍼 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model08" id="chk_model08_05" class="chk_radio"><label for="chk_model08_05"><span class="txt">캐스퍼 (18~20년) </span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model08" id="chk_model08_06" class="chk_radio"><label for="chk_model08_06"><span class="txt">캐스퍼 (11~16년)</span></label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab_model" data-ref="modelTab03">
+										<div class="list_2depth">
+											<ul class="list" role="tablist">
+												<li>
+													<input type="radio" name="chk_model" id="chk_model09" class="chk_block" role="tab" aria-selected="false" aria-controls="tabModel09">
+													<label for="chk_model09">그라나다</label>
+												</li>
+												<li>
+													<input type="radio" name="chk_model" id="chk_model10" class="chk_block" role="tab" aria-selected="false" aria-controls="tabModel10">
+													<label for="chk_model10">그레이스</label>
+												</li>
+												<li>
+													<input type="radio" name="chk_model" id="chk_model11" class="chk_block" role="tab" aria-selected="false" aria-controls="tabModel11">
+													<label for="chk_model11">라비타</label>
+												</li>
+												<li>
+													<input type="radio" name="chk_model" id="chk_model12" class="chk_block" role="tab" aria-selected="false" aria-controls="tabModel12">
+													<label for="chk_model12">리베로</label>
+												</li>
+											</ul>
+										</div>
+										<div class="cont_2depth">
+											<div class="cont" id="tabModel09">
+												<div class="select_model">
+													<div class="title">모델선택</div>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model09" id="chk_model09_01" class="chk_radio"><label for="chk_model09_01"><span class="txt">그라나다 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model09" id="chk_model09_02" class="chk_radio"><label for="chk_model09_02"><span class="txt">그라나다 (18~20년)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model09" id="chk_model09_03" class="chk_radio"><label for="chk_model09_03"><span class="txt">그라나다 (16~19년)</span></label>
+														</li>
+													</ul>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model09" id="chk_model09_04" class="chk_radio"><label for="chk_model09_04"><span class="txt">그라나다 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model09" id="chk_model09_05" class="chk_radio"><label for="chk_model09_05"><span class="txt">그라나다 (18~20년) </span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model09" id="chk_model09_06" class="chk_radio"><label for="chk_model09_06"><span class="txt">그라나다 (11~16년)</span></label>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="cont" id="tabModel10">
+												<div class="select_model">
+													<div class="title">모델선택</div>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model10" id="chk_model10_01" class="chk_radio"><label for="chk_model10_01"><span class="txt">그레이스 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model10" id="chk_model10_02" class="chk_radio"><label for="chk_model10_02"><span class="txt">그레이스 (18~20년)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model10" id="chk_model10_03" class="chk_radio"><label for="chk_model10_03"><span class="txt">그레이스 (16~19년)</span></label>
+														</li>
+													</ul>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model10" id="chk_model10_04" class="chk_radio"><label for="chk_model10_04"><span class="txt">그레이스 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model10" id="chk_model10_05" class="chk_radio"><label for="chk_model10_05"><span class="txt">그레이스 (18~20년) </span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model10" id="chk_model10_06" class="chk_radio"><label for="chk_model10_06"><span class="txt">그레이스 (11~16년)</span></label>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="cont" id="tabModel11">
+												<div class="select_model">
+													<div class="title">모델선택</div>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model11" id="chk_model11_01" class="chk_radio"><label for="chk_model11_01"><span class="txt">라비타 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model11" id="chk_model11_02" class="chk_radio"><label for="chk_model11_02"><span class="txt">라비타 (18~20년)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model11" id="chk_model11_03" class="chk_radio"><label for="chk_model11_03"><span class="txt">라비타 (16~19년)</span></label>
+														</li>
+													</ul>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model11" id="chk_model11_04" class="chk_radio"><label for="chk_model11_04"><span class="txt">라비타 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model11" id="chk_model11_05" class="chk_radio"><label for="chk_model11_05"><span class="txt">라비타 (18~20년) </span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model11" id="chk_model11_06" class="chk_radio"><label for="chk_model11_06"><span class="txt">라비타 (11~16년)</span></label>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="cont" id="tabModel12">
+												<div class="select_model">
+													<div class="title">모델선택</div>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model12" id="chk_model12_01" class="chk_radio"><label for="chk_model12_01"><span class="txt">리베로 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model12" id="chk_model12_02" class="chk_radio"><label for="chk_model12_02"><span class="txt">리베로 (18~20년)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model12" id="chk_model12_03" class="chk_radio"><label for="chk_model12_03"><span class="txt">리베로 (16~19년)</span></label>
+														</li>
+													</ul>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model12" id="chk_model12_04" class="chk_radio"><label for="chk_model12_04"><span class="txt">리베로 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model12" id="chk_model12_05" class="chk_radio"><label for="chk_model12_05"><span class="txt">리베로 (18~20년) </span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model12" id="chk_model12_06" class="chk_radio"><label for="chk_model12_06"><span class="txt">리베로 (11~16년)</span></label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab_model" data-ref="modelTab04">
+										<div class="list_2depth">
+											<ul class="list" role="tablist">
+												<li>
+													<input type="radio" name="chk_model" id="chk_model13" class="chk_block" role="tab" aria-selected="false" aria-controls="tabModel13">
+													<label for="chk_model13">벨로스터</label>
+												</li>
+												<li>
+													<input type="radio" name="chk_model" id="chk_model14" class="chk_block" role="tab" aria-selected="false" aria-controls="tabModel14">
+													<label for="chk_model14">싼타모</label>
+												</li>
+												<li>
+													<input type="radio" name="chk_model" id="chk_model15" class="chk_block" role="tab" aria-selected="false" aria-controls="tabModel15">
+													<label for="chk_model15">스쿠프</label>
+												</li>
+												<li>
+													<input type="radio" name="chk_model" id="chk_model16" class="chk_block" role="tab" aria-selected="false" aria-controls="tabModel16">
+													<label for="chk_model16">스타렉스</label>
+												</li>
+											</ul>
+										</div>
+										<div class="cont_2depth">
+											<div class="cont" id="tabModel13">
+												<div class="select_model">
+													<div class="title">모델선택</div>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model13" id="chk_model13_01" class="chk_radio"><label for="chk_model13_01"><span class="txt">벨로스터 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model13" id="chk_model13_02" class="chk_radio"><label for="chk_model13_02"><span class="txt">벨로스터 (18~20년)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model13" id="chk_model13_03" class="chk_radio"><label for="chk_model13_03"><span class="txt">벨로스터 (16~19년)</span></label>
+														</li>
+													</ul>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model13" id="chk_model13_04" class="chk_radio"><label for="chk_model13_04"><span class="txt">벨로스터 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model13" id="chk_model13_05" class="chk_radio"><label for="chk_model13_05"><span class="txt">벨로스터 (18~20년) </span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model13" id="chk_model13_06" class="chk_radio"><label for="chk_model13_06"><span class="txt">벨로스터 (11~16년)</span></label>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="cont" id="tabModel14">
+												<div class="select_model">
+													<div class="title">모델선택</div>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model14" id="chk_model14_01" class="chk_radio"><label for="chk_model14_01"><span class="txt">싼타모 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model14" id="chk_model14_02" class="chk_radio"><label for="chk_model14_02"><span class="txt">싼타모 (18~20년)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model14" id="chk_model14_03" class="chk_radio"><label for="chk_model14_03"><span class="txt">싼타모 (16~19년)</span></label>
+														</li>
+													</ul>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model14" id="chk_model14_04" class="chk_radio"><label for="chk_model14_04"><span class="txt">싼타모 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model14" id="chk_model14_05" class="chk_radio"><label for="chk_model14_05"><span class="txt">싼타모 (18~20년) </span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model14" id="chk_model14_06" class="chk_radio"><label for="chk_model14_06"><span class="txt">싼타모 (11~16년)</span></label>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="cont" id="tabModel15">
+												<div class="select_model">
+													<div class="title">모델선택</div>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model15" id="chk_model15_01" class="chk_radio"><label for="chk_model15_01"><span class="txt">스쿠프 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model15" id="chk_model15_02" class="chk_radio"><label for="chk_model15_02"><span class="txt">스쿠프 (18~20년)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model15" id="chk_model15_03" class="chk_radio"><label for="chk_model15_03"><span class="txt">스쿠프 (16~19년)</span></label>
+														</li>
+													</ul>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model15" id="chk_model15_04" class="chk_radio"><label for="chk_model15_04"><span class="txt">스쿠프 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model15" id="chk_model15_05" class="chk_radio"><label for="chk_model15_05"><span class="txt">스쿠프 (18~20년) </span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model15" id="chk_model15_06" class="chk_radio"><label for="chk_model15_06"><span class="txt">스쿠프 (11~16년)</span></label>
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="cont" id="tabModel16">
+												<div class="select_model">
+													<div class="title">모델선택</div>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model16" id="chk_model16_01" class="chk_radio"><label for="chk_model16_01"><span class="txt">스타렉스 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model16" id="chk_model16_02" class="chk_radio"><label for="chk_model16_02"><span class="txt">스타렉스 (18~20년)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model16" id="chk_model16_03" class="chk_radio"><label for="chk_model16_03"><span class="txt">스타렉스 (16~19년)</span></label>
+														</li>
+													</ul>
+													<ul class="group_radio">
+														<li>
+															<input type="radio" name="chk_model16" id="chk_model16_04" class="chk_radio"><label for="chk_model16_04"><span class="txt">스타렉스 (19년~현재)</span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model16" id="chk_model16_05" class="chk_radio"><label for="chk_model16_05"><span class="txt">스타렉스 (18~20년) </span></label>
+														</li>
+														<li>
+															<input type="radio" name="chk_model16" id="chk_model16_06" class="chk_radio"><label for="chk_model16_06"><span class="txt">스타렉스 (11~16년)</span></label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="srch_box03" class="item" role="accordionList" data-ref="changeTextWrap">
+							<div class="head" data-target="accordionBtn">
+								<span class="tit">등급</span>
+								<span class="check" data-ref="changeTextTarget">찾으시는 차량의 등급을 선택하여 조회할 수 있어요</span>
+							</div>
+							<div class="cont_acc">
+								<div class="inner">
+									<div class="select_class">
+										<ul class="group_radio">
+											<li>
+												<input type="radio" name="chk_class" id="chk_class01" class="chk_radio"><label for="chk_class01"><span class="txt">전체 등급</span></label>
+											</li>
+											<li>
+												<input type="radio" name="chk_class" id="chk_class02" class="chk_radio"><label for="chk_class02"><span class="txt">6.75 V12</span></label>
+											</li>
+											<li>
+												<input type="radio" name="chk_class" id="chk_class03" class="chk_radio"><label for="chk_class03"><span class="txt">3.0 P380 CHEQUERED FALG 컨버터블</span></label>
+											</li>
+											<li>
+												<input type="radio" name="chk_class" id="chk_class04" class="chk_radio"><label for="chk_class04"><span class="txt">프레스티지 파퓰러 패키지</span></label>
+											</li>
+										</ul>
+										<ul class="group_radio">
+											<li>
+												<input type="radio" name="chk_class" id="chk_class05" class="chk_radio"><label for="chk_class05"><span class="txt">5.0 P575 R Convertible AWD</span></label>
+											</li>
+											<li>
+												<input type="radio" name="chk_class" id="chk_class06" class="chk_radio"><label for="chk_class06"><span class="txt">2.5 하이브리드 XLE</span></label>
+											</li>
+											<li>
+												<input type="radio" name="chk_class" id="chk_class07" class="chk_radio"><label for="chk_class07"><span class="txt">S LP740-4 ROadster</span></label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="srch_box04" class="item" role="accordionList" data-ref="changeTextWrap">
+							<div class="head" data-target="accordionBtn">
+								<span class="tit">트림</span>
+								<span class="check" data-ref="changeTextTarget">찾으시는 차량의 트림을 선택하여 조회할 수 있어요.</span>
+							</div>
+							<div class="cont_acc">
+								<div class="inner">
+									<div class="select_trim">
+										<ul class="group_radio">
+											<li>
+												<input type="radio" name="chk_trim" id="chk_trim01" class="chk_radio"><label for="chk_trim01"><span class="txt">전체 트림</span></label>
+											</li>
+											<li>
+												<input type="radio" name="chk_trim" id="chk_trim02" class="chk_radio"><label for="chk_trim02"><span class="txt">이그제큐티브</span></label>
+											</li>
+											<li>
+												<input type="radio" name="chk_trim" id="chk_trim03" class="chk_radio"><label for="chk_trim03"><span class="txt">프리미엄</span></label>
+											</li>
+											<li>
+												<input type="radio" name="chk_trim" id="chk_trim04" class="chk_radio"><label for="chk_trim04"><span class="txt">장애인용</span></label>
+											</li>
+										</ul>
+										<ul class="group_radio">
+											<li>
+												<input type="radio" name="chk_trim" id="chk_trim05" class="chk_radio"><label for="chk_trim05"><span class="txt">프라임</span></label>
+											</li>
+											<li>
+												<input type="radio" name="chk_trim" id="chk_trim06" class="chk_radio"><label for="chk_trim06"><span class="txt">모던</span></label>
+											</li>
+											<li>
+												<input type="radio" name="chk_trim" id="chk_trim07" class="chk_radio"><label for="chk_trim07"><span class="txt">익스클루시브</span></label>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="btn_area">
+							<button type="button" class="btn_big color01 btn_select" disabled>선택하기</button>
+						</div>
+					</div>
+				</div>
+				<!-- //contents -->
+			</div>
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>
+<script>
+	// checkbox, radio 체크 텍스트 이벤트
+	function changeTxt(){
+		const acc = document.querySelector('.accordion');
+		const chkTarget = document.querySelectorAll('[class^="chk_"]');
+		const chkTxtBox = Array();
+		chkTarget.forEach((chk, idx) => {
+			chk.addEventListener('click', function(){
+				const chkText = chkTarget.innerText;
+				const chkId = chk.id;
+				const chkName = chk.name;
+				const chkChangeWrap = chk.closest('[data-ref="changeTextWrap"]');
+				const chkChange = chkChangeWrap.querySelector('[data-ref="changeTextTarget"]');
+				const chkTxt = chkChangeWrap.querySelector('label[for="'+ chkId +'"]').innerText;
+				chkTxtBox[idx] = chkTxt;
+				chkChange.innerText = chkTxt;
+				if(chkChangeWrap.getAttribute('id') == 'srch_box01'){
+					chkChangeWrap.classList.remove('on');
+					chkChangeWrap.nextElementSibling.classList.add('on');
+					chkChangeWrap.nextElementSibling.querySelectorAll('.cont_2depth').forEach((cont) => {
+						cont.classList.remove('on');
+					});
+					chkChangeWrap.nextElementSibling.querySelector('[data-ref="changeTextTarget"]').innerText = '';
+				} else if (chkChangeWrap.getAttribute('id') == 'srch_box02' && this.closest('.cont_2depth')){
+					chkChangeWrap.classList.remove('on');
+					acc.querySelector('.btn_area .btn_select').removeAttribute('disabled');
+				}
+			});
+		});
+	}
+	changeTxt();
+
+	// 아코디언
+	function accordion(){
+		const accordion = document.querySelector('[data-ref="accordion"]');
+		const accItem = accordion.querySelectorAll('[role="accordionList"]');
+		const btnAcc = accordion.querySelectorAll('[data-target="accordionBtn"]');
+		const accChk = accordion.querySelectorAll('[class^="chk_"]');
+		const accList02 = document.querySelectorAll('.list_2depth');
+		const accCont02 = document.querySelectorAll('.cont_2depth');
+		btnAcc.forEach((btn) => {
+			btn.addEventListener('click', function(){
+				accItem.forEach((item) => {
+					item.classList.remove('on');
+				});
+				accChk.forEach((chk) => {
+					chk.checked = false;
+				});
+				accCont02.forEach((chk02) => {
+					chk02.classList.remove('on');
+					chk02.querySelectorAll('.cont').forEach((cont) => {
+						cont.classList.remove('active');
+					});
+				});
+				btn.parentNode.classList.add('on');
+				this.querySelector('[data-ref="changeTextTarget"]').innerText = '';
+			});
+		});
+		// 2뎁스 아코디언
+		accList02.forEach((btn) => {
+			btn.addEventListener('click', function(){
+				accCont02.forEach((chk) => {
+					chk.classList.remove('on');
+				});
+				btn.nextElementSibling.classList.add('on');
+			});
+		});
+	}
+	accordion();
+
+	const brandTab = new TabContents('brandTab');
+	const modelTab01 = new TabContents('modelTab01');
+	const modelTab02 = new TabContents('modelTab02');
+	const modelTab03 = new TabContents('modelTab03');
+	const modelTab04 = new TabContents('modelTab04');
+
+	function brandAllView(){
+		// 모델 탭 전체보기 6개 기준 show hide
+		const tabItem = document.querySelectorAll('.accordion .item');
+		tabItem.forEach((item) => {
+			const brandCont = item.querySelectorAll('.cont');
+			brandCont.forEach((select) => {
+				const brandList = select.querySelectorAll('.list_brand li');
+				const brandAllView = select.querySelector('.btn_area');
+				if(brandList.length <= 6){
+					brandAllView.style.cssText = 'display:none;';
+				}
+				brandAllView.addEventListener('click', function(){
+					this.classList.toggle('on');
+					this.previousElementSibling.classList.toggle('on');
+				});
+			});
+		});
+	}
+	brandAllView();
+</script>

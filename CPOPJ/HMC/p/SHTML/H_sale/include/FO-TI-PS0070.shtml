@@ -1,0 +1,31 @@
+<div class="popup_modal" id="FO-TI-PS0070">
+	<div class="p_body">
+		<div class="p_inner s_small">
+			<div class="p_head">
+				<h2 class="tit">Trade-In 서비스 안내</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+				<div class="inner_view">
+					<div class="sale_caution">
+						<p class="title">중고차 매각과 함께 신차를 구매할 의향이 있거나 이미 계약한 신차가 있다면 내차팔기 이후 신차 잔금 결제 시 추가 할인 혜택을 받을 수 있는 합리적인 서비스입니다.</p>
+						<p class="title">현대 & 제네시스 인증 중고차 Trade-In 프로그램은 현대/제네시스 뿐 아니라 매입 조건에 부합하는 모든 브랜드를 대상으로 신차 구매 혜택을 제공합니다.</p>
+						<div class="caution bg">
+							<ul>
+								<li>매각하실 차량 브랜드/모델 및 차량 상태에 따라 할인 금액이 상이할 수 있습니다.</li>
+								<li>계약하신 신차 대표명의자/공동명의자와 매각할 중고차의 대표명의자가 동일해야 합니다.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- //contents -->
+				<!-- sticky -->
+				<div class="btn_area full_type">
+					<button type="button" class="btn_big color01">확인</button>
+				</div>
+				<!-- //sticky -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

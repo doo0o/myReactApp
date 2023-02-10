@@ -1,0 +1,16 @@
+<!-- STEP : 3-1-03 : 구매 방식 -->
+<div class="entry_carbase">
+	<div class="top02">
+		<h5 class="tit">차량을 어떤방식으로<br />구입하셨나요?</h5>
+	</div>
+	<!-- 입력 -->
+	<div class="entry">
+		<ol>
+			<li><input type="radio" name="saleBuyChk" id="saleBuyChk01" class="chk_type07" /><label for="saleBuyChk01">결제가 모두 완료된 상태</label></li>
+			<li><input type="radio" name="saleBuyChk" id="saleBuyChk02" class="chk_type07" /><label for="saleBuyChk02">할부 기간이 남은 상태</label></li>
+			<li><input type="radio" name="saleBuyChk" id="saleBuyChk03" class="chk_type07" /><label for="saleBuyChk03">운용 리스</label></li>
+			<li><input type="radio" name="saleBuyChk" id="saleBuyChk04" class="chk_type07" /><label for="saleBuyChk04">금융 리스</label></li>
+		</ol>
+	</div>
+	<!-- //입력 -->
+</div>

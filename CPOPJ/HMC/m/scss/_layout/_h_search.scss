@@ -1,0 +1,1019 @@
+
+@import '../_common/h_function';
+@import '../_common/h_mixins';
+
+body.fixed{
+	//background-color:#000;
+	#CPOcontents{
+		overflow:hidden;
+		height:100%;
+		padding-top:0;
+	}
+	#CPOfooter{
+		display:none;
+	}
+}
+form.search_form {
+	height: 100%;	
+	overflow-x: hidden;
+	background:$COL_Light;
+}
+.h_header_search {
+	@include Mix_Icon_Black;
+	display: flex;
+	background-color: $COL_White;
+	height: 53px;
+	border-bottom: 1px solid $COL_Secondary;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	transition: all .6s;
+	z-index: 600;
+	.ic_back {
+		position: fixed;
+		top: 13px;
+		left: 15px;
+		margin-top: 0;
+	}
+	.inp_search {
+		padding: 0 10px 0 45px;
+		flex: 1 1;
+		border: none;
+		&.focus + .util .ic_search {
+			display: none;
+		}
+	}
+	.util {
+		position: relative;
+	}
+}
+
+.cpo_search{// 검색하기 전체 wrap
+	overflow-y:auto;// 메인 스크롤
+	height:100%;
+	padding-top: 53px;
+	.btn_sticky{
+		// bottom:-200px !important;
+		// transition:bottom 1.0s ease;
+		// &.load{
+		// 	bottom:0 !important;
+		// 	position: sticky;
+		// }
+		bottom:0 !important;
+		position: sticky;
+	}	
+	&.isAnimate {
+		overflow: hidden;
+	}
+	&.fixed{// 상단 스크롤 UP - cpo_search/fixed
+		display: block !important;
+		.srch_keyword{// 2. 인기검색어
+			position: relative;
+			top:0;
+			left:unset;
+			width:100%;
+			// margin-bottom: 25px;
+			border-bottom: 1px solid $COL_Line_Dark;
+			.list{
+				padding-left:21px;
+			}
+			.btn_open{
+				right:11px;
+			}
+			&.on {
+				border-bottom-color: $COL_Line_Medium;
+				#srchBest{
+					display:none;
+				}
+				#srchBest2{
+					display:block;
+				}
+			}
+		}
+		.srch_model{
+			top: 25px;
+		}
+		.srch_recent,
+		.srch_auto,
+		.srch_promotion_swiper {
+			margin-top:0;
+		}
+	}
+	&:not(.fixed) {
+		.h_header_search {
+			background-color: transparent;
+			top: 110px;
+			left: 30px;
+			right: 30px;
+			z-index: 600;
+			border-bottom: 2px solid $COL_Primary;
+			.inp_search {
+				padding-left: 2px;
+				.txt {
+					background-color: transparent;
+				}
+			}
+			.util {
+				padding-right: 0;
+			}
+		}
+		.srch_ifbox {
+			@include Boxshadow(0px, 5px, 0.02);
+		}
+	}
+}
+
+// .p_wrap{
+// 	.srch_ifbox{
+// 		margin-top:0;
+// 	}
+// }
+
+.h_header_search .inp_search::after {
+	display: none;
+}
+.srch_keyword{// 검색하기 2. 인기검색어
+	position:fixed;
+	top:162px;
+	left:30px;
+	z-index:599;
+	width:calc(100% - 60px);
+	height:58px;
+	margin:0 auto;
+	background:$COL_Light;
+	opacity:0;
+	transition:top .6s;
+	.tit{//인기 검색어 타이틀
+		display:none;
+	}
+	#srchBest2{
+		display:none;
+	}
+	.list{
+		overflow:hidden;
+		width:100%;
+		height:100%;
+		padding-left:2px;
+		li{
+			position:relative;
+			a{
+				display:block;
+				width:100%;
+				padding:20px 0 19px;
+				@include Mix_Font('Head-R', 14, 18);
+				color: $COL_Black;
+				em{
+					display:inline-block;
+					width:20px;
+					padding-right: 4px;
+					color:$COL_Secondary;
+					@include Mix_Font('Head-M', 13, 18);
+				}
+			}
+		}
+		
+	}
+	.btn_open{
+		display:block;
+		position:absolute;
+		top:0;
+		right:-5px;
+		z-index:402;
+		width:32px;
+		height:58px;
+		@include Mix_Size_0;
+		&::before{
+			content:'';
+			display:block;
+			position:absolute;
+			top:50%;
+			right:10px;
+			width:12px;
+			height:8px;			
+			transition:all .2s ease;
+			transform: translateY(-50%);
+			@include Icon_Arr(1.5, '000000');
+		}
+	}
+	&.load{
+		opacity:1;
+	}
+	&.on{
+		top:56px;
+		left:0;
+		width:100%;
+		height:auto;		
+		.tit{//인기 검색어 타이틀
+			display:block;
+			padding:21px 21px 18px;
+			border-bottom:1px solid $COL_Line_Dark;
+			color:$COL_Black;
+			@include Mix_Font('Head-R', 14, 18);
+			span{
+				margin-left:10px;
+				color:$COL_Base_02;
+				@include Mix_Font('Head-R', 12, 16);
+			}
+		}
+		.list{
+			height:auto;
+			padding:10px 25px 15px;
+			li {
+				a {
+					padding: 10px 0;
+					font-size: 15px;
+					em {
+						font-size: 14px;
+					}
+				}
+				&+li {
+					margin-top: 3px;
+				}
+			}
+		}
+		.btn_open{
+			&::before{
+				transform: rotate(-180deg) translateY(50%);
+			}
+		}
+	}
+}
+.srch_model{
+	position:relative;
+	top: calc(100% - 56px);
+	opacity: 0;
+	transition:top 0.8s ease;
+	&.load {
+		top: calc(100% - 319px);
+		opacity: 1;
+	}
+}
+
+//기획전 배너
+.srch_promotion_swiper {
+	padding: 0 15px;
+	position: relative;
+	// transition:all .8s ease;
+	// margin-top: 100%;
+	opacity: 0;
+	overflow: hidden;
+	.swiper-slide {
+		width: 100%;
+		.unit_img {
+			padding-bottom: 0;
+		}
+	}
+	//2개이하
+	&.under {
+		opacity: 1;
+		padding-top: 7px;
+		.unit_event {
+			position: relative;
+			.unit_img {
+				margin-bottom: 0;
+				height: 140px;
+			}
+			.unit_info {
+				position: absolute;
+				top: 20px;
+				left: 20px;
+				z-index: 3;
+				width: 90%;
+				.name {
+					@include Mix_Font ('Head-R', 17, 21);
+					color: $COL_White;
+					@include Textshadow(0, 1px, 0.6)
+				}
+			}
+		}
+	}	
+	//3개이상
+	&.more {
+		opacity: 1;
+		padding: 0 21px 6px;
+		.swiper-slide {
+			width: 96px;
+		}
+		.unit_event {
+			.unit_img {
+				margin-bottom: 10px;
+				height: 120px;
+				img {
+					opacity: 1;
+				}
+			}
+			.unit_info {
+				.name {
+					@include Mix_Font ('Head-R', 13, 16);
+					color: $COL_Base_03;
+					padding-right: 10px;
+				}
+			}
+		}
+	}
+	.swiper-pagination {
+		margin-top: 15px;
+	}
+}
+.srch_ifbox{// 검색하기 5. 모델별 검색 
+	background:$COL_White;
+	margin: 25px 0 0;
+	.CPOpop_bottom & {
+		margin-top: 0;
+		padding-bottom: 0;
+		.top {
+			.tit {
+				min-width: 70px;
+			}
+		}
+	}
+	/* 검색 레이어 :버튼 */
+	// .sch_btn{
+	// 	position:fixed;
+	// 	bottom:0;
+	// 	left:0;
+	// 	width:100%;
+	// 	height:56px;
+	// 	background-color:$COL_Primary;
+	// 	color:$COL_White;
+	// 	@include Mix_Font('Head-R', 16, 20);
+	// 	ul{
+	// 		display:flex;
+	// 		li{
+	// 			float:left;
+	// 			height:56px;
+	// 			[class^="btn_"]{
+	// 				display:block;
+	// 			}
+	// 			.btn_reset:before{
+	// 				content:'';
+	// 				display:inline-block;
+	// 				overflow:hidden;
+	// 				margin:18px 0 0 18px;
+	// 				width:20px;
+	// 				height:20px;
+	// 				background:url('../img/search_reset.svg') no-repeat;
+	// 			}
+	// 			.btn_reset{
+	// 				color:transparent;
+	// 				font-size:0;
+	// 			}
+	// 			.btn_go{
+	// 				color:$COL_White;
+	// 				@include Mix_Font('Head-R', 16, 56);
+	// 				text-align:center;
+	// 			}
+	// 			&:nth-child(1){
+	// 				width:56px;
+	// 				border-right:1px solid $COL_Line_Dark;
+	// 			}
+	// 			&:nth-child(2){
+	// 				width:calc(100% - 56px);
+	// 			}
+	// 		}
+	// 	}
+	// }
+}
+
+.srch_recent{// 검색하기 3. 최근검색어
+	display:none;
+	// height:calc(100% + 56px);
+	height:100%;
+	overflow-y:auto;
+	margin-top:300px;
+	background:$COL_White;
+	transition:margin 1s ease;
+	//최근검색 기록 없음
+	&_blank {
+		padding-top: 50px;
+		color: $COL_Base_02;
+		text-align:center;
+	}
+	> .inner{
+		padding:20px 21px 25px;
+		&.sec_condition {
+			padding-top: 25px;
+			padding-bottom: 45px;
+			background-color: $COL_Light;
+			.top{
+				padding-bottom: 10px;
+			}
+		}
+	}
+	.top{
+		position:relative;
+		padding-bottom:20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		h4.tit{
+			// color:$COL_Black;
+			@include Mix_Font('Head-R', 14, 18);
+		}
+		.txt{
+			color:$COL_Base_01;
+			@include Mix_Font('Head-R', 12, 18);
+		}
+	}
+	.recent_list{// 최근 검색조건
+		li{
+			border-bottom: 1px solid $COL_Line_Medium;
+			a {
+				display: block;
+				padding: 15px 40px 15px 0;
+				position: relative;
+				.tit {
+					@include Mix_Font('head-R', 13, 16);
+					color: $COL_Base_03;
+				}
+				.txt {
+					margin-top: 3px;
+					@include Mix_Font('Txt-R', 13, 20);
+					color: $COL_Base_02;
+					@include Mix_Ellipsis01;
+				}
+				.del {
+					@include Mix_Del_Icon(11, 1.2, '8F8F8F', $W:20);
+					@include Pos($p:absolute,$t:50%,$r:-4px);
+					margin-top: -10px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+		}
+		&.toggle{
+			li:nth-child(n+6){
+				display: none;
+			}
+			&.on{
+				li {
+					display: block;
+				}
+			}
+			.btn_more{
+				margin: 15px 0;
+			}
+		}
+	}
+	
+}
+
+.srch_chkbox{
+	position:sticky;
+	left:0;
+	top:0;
+	z-index:9;
+	padding:0 21px 25px 21px;
+	background:$COL_White;
+	border-bottom: 1px solid $COL_Line_Dark
+}
+
+.recent_swiper{// 최근검색어 
+	position:relative;
+	overflow:hidden;
+	height:auto;
+	margin: -5px -3px 0;
+	.list{
+		align-items:flex-start;
+		// transition-property:transform,height;
+		// transform:translate3d(0px,0,0);
+		li{
+			flex-shrink:0;
+			display:flex;
+			flex-flow:wrap;
+			height:auto;
+			a, span {
+				margin: 5px 3px;
+			}
+		}
+		.btn_txt01{// 최근검색어 '전체삭제' 텍스트 버튼
+			position:absolute;
+			top:2px;
+			right:0;
+		}
+		.txt{
+			position:absolute;
+			top:2px;
+			right:0;
+			color:$COL_Base_01;
+			@include Mix_Font('Head-R', 12, 16);
+		}
+	}
+	.swiper-pagination {
+		margin-top:10px;
+	}
+
+}
+.srch_auto{// 검색하기 4. 자동완성
+	display:none;
+	height: 100%;
+	overflow-y:auto;
+	background:$COL_White;
+	ol{
+		li{
+			a{
+				display:flex;
+				align-items:center;
+				justify-content:space-between;
+				> span {
+					color:$COL_Base_03;
+				}
+				.thumb {
+					display: inline-block;
+					width: 60px;
+					height: 60px;
+					margin-right: 10px;
+					position: relative;
+					img {
+						width: 100%;
+						height: auto;
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+					}
+				}
+				.tit{
+					color:$COL_Primary;
+					@include Mix_Font('Head-M', 14, 18);
+					flex: 1 1;
+					word-break: break-word;
+					em {
+						display:block;
+						color:$COL_Base_02;
+						@include Mix_Font('Txt-R', 12, 18);
+					}
+				}
+				.txt{
+					@include Mix_Font('Head-R', 14, 18);
+					word-break: break-word;
+					i{
+						color:$COL_Primary;
+					}
+				}
+				.no {
+					@include Mix_Font('Head-R', 13, 16);
+				}
+				.more{
+					margin-left:3px;
+					@include Mix_Size_0;
+					@include Icon_Arr_Right(1.2, '666666');
+				}
+			}
+		} 
+	}
+	.list_01{// 모델 추천 목록
+		padding:0 21px;
+		background:$COL_Light;
+		li {
+			a {padding: 5px 0;}
+			&+li {
+				border-top:1px solid $COL_Line_Medium;
+			}
+		}
+		&.event li a {
+			padding: 16px 0;
+		}
+		&+.list_01 li {
+			border-top:1px solid $COL_Line_Medium;
+		}
+		&:not(.event) {
+			padding-top: 5px;
+		}
+	}
+	.list_02{// 키워드별 자동완성
+		padding:0 21px;
+		li{
+			border-bottom:1px solid $COL_Line_Light;
+			a {
+				padding:16px 0;
+			}
+		}
+	}
+}
+// 자동완성 모델 대표 이미지
+[class^="ic_model_"]{
+	&::before{
+		content:'';
+		display:flex;
+		margin-right:10px;
+		width:60px;
+		height:60px;
+		@include Mix_Model_Bg;
+	}
+}
+.ic_model_01{// 모델 대표이미지 
+	&::before{
+		background-position:0 0;
+	}
+}
+.ic_model_02{// 모델 대표이미지 
+	&::before{
+		background-position:-65px 0;
+	}
+}
+.ic_model_03{// 모델 대표이미지 
+	&::before{
+		background-position:-130px 0;
+	}
+}
+.ic_model_0001{// 모델 대표이미지 
+	&::before{
+		background-position:0 0;
+	}
+}
+.ic_model_00010001{// 모델 대표이미지 
+	&::before{
+		background-position:-65px 0;
+	}
+}
+.ic_model_0002{// 모델 대표이미지 
+	&::before{
+		background-position:-130px 0;
+	}
+}
+.ic_model_00020001{// 모델 대표이미지 
+	&::before{
+		background-position:-130px 0;
+	}
+}
+// 모델검색부터 조건 검색 영역 
+/* 검색 레이어 :검색 조건 :상단 */
+.srch_box{// 검색조건 box
+	// border-top:1px solid #F2F2F2;
+	border-bottom:1px solid $COL_Line_Medium;
+	// &#schBox-03,
+	// &#schBox-10{//03. 모델상세, 10 차량정보
+	// 	.incont{
+	// 		padding:0;
+	// 	}
+	// }
+	.hidden {
+		display: none !important;
+	}
+	> .tit_btn{// 검색조건 box 1. 타이틀
+		position:relative;
+		padding:25px 21px;
+		height: 70px;
+		h4.tit{
+			display:inline-block;
+			color:$COL_Black;
+			@include Mix_Font('Head-M', 16, 20);
+		}
+		span.check{
+			display:none;
+			width:calc(100% - 90px);
+			margin-left:11px;
+			color:$COL_Base_02;
+			@include Mix_Font('Txt-R', 13, 20);
+			@include Mix_Ellipsis01;
+			vertical-align:middle;
+		}
+		span.check2 {
+			display:none;
+			margin-left:11px;
+			color:$COL_Base_02;
+			@include Mix_Font('Txt-R', 13, 20);
+			vertical-align:middle;
+			& + span.check {
+				margin-left: 0;
+			}
+		}
+		&::after {
+			right: 21px;
+		}
+	}
+	&.on{
+		> .incont{
+			// height:auto;
+			display: block;
+			padding:0 21px 25px;
+			.cpo_range{
+				display:block;
+			}
+		}
+		.range_chart{
+			ol{
+				li{
+					i{
+						height:100%;
+						margin-top:0;
+					}
+				}
+			}
+		}
+	}
+	&.show {
+		> .tit_btn{
+			span.check,
+			span.check2{
+				display:inline-block;
+			}
+		}
+	}
+	&.disabled {
+		.tit_btn {
+			opacity: .3;
+			pointer-events: none;
+		}
+	}
+	> .incont{// 검색조건 box 2. 내용
+		position: relative;
+		padding:0 21px;
+		// height:0;
+		display: none;
+		overflow:hidden;
+		// transition:height .3s ease;
+		.text{
+			display: none;
+		}
+		.btn_more{
+			margin-top: 20px;
+		}
+		.btn_area{
+			padding-top:35px;
+		}
+		.carinfo{// 03. 모델상세, 10. 차량선택
+			// .chk_rad01 + label {
+			// 	color: $COL_Base_03;
+			// 	@include Mix_Font('Txt-R', 15, 23);
+			// }
+			li + li {
+				margin-top: 20px;
+			}
+			> li{
+				em {
+					padding-left: 6px;
+					@include Mix_Font('Txt-R', 12, 24);
+					color: $COL_Base_01;
+				}
+				.depth2{
+					display:none;
+					padding:25px 0 5px 29px;
+				}
+				.depth3{
+					display:none;
+					padding:20px 0 20px 80px;
+					margin:20px -21px 0 -50px;
+					background:$COL_Light;
+				}
+				&.on{
+					.depth2{
+						display:block;
+						> li{
+							&.on{
+								.depth3{
+									display:block;
+								}
+
+							}
+						}
+					}
+				}
+			}
+		}
+		.color{// 09. 색상계열
+			display: flex;
+			gap: 30px 0;
+			flex-wrap: wrap;
+			li{
+				width:70px;
+				text-align:center;
+				&:nth-child(3n-1) {
+					width: calc(100% - 140px);
+				}
+			}
+			.chk_color:disabled + label {
+				opacity: 0.3;
+			}
+			& + .notice_03 {
+				padding-bottom: 25px;
+			}
+
+		}
+		.option{// 11. 옵션
+			dt{
+				@include Mix_Font('Head_R', 14, 18);
+			}
+			dd{
+				margin-top:15px;
+				ol{// 목록
+					li + li {
+						margin-top: 20px;
+					}
+					label {
+						min-height: 24px;
+						@include Mix_Ellipsis(1);
+					}
+				}
+				& + dt {
+					margin-top: 35px;
+				}
+			}
+		}
+		&.no-condition{
+			.text{
+				display: block;
+				margin: 42px 0;
+				text-align: center;
+				color:$COL_Base_02;
+				@include Mix_Font('text-R', 14, 21);
+			}
+			.range_chart{
+				display: none;
+			}
+			.ui-slider-range:first-child{
+				width: 100% !important;
+				left: 0% !important;
+			}
+			.ui-slider-handle:nth-child(2){
+				left: 0 !important;
+			}
+			.ui-slider-handle:nth-child(3) {
+				left: 100% !important;
+			}
+			.cpo_range::before{
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 10;
+			}
+		}
+	}
+}
+
+#schBox-02 .incont, 
+#schBoxLayer-02 .incont {
+	li:nth-child(n+7){
+		display: none;
+	}
+	&.on li {
+		display: block;
+	}
+}
+
+// .gear{// 07.연료 GEAR
+// 	display:flex;
+// 	flex-flow:row;
+// 	flex-wrap:wrap;
+// 	gap:7px 10px;
+// 	li{
+// 		width:calc(50% - 5px)
+// 	}
+// }
+
+
+.srch_result{// 검색결과 리스트 화면
+	padding-top:17px;
+	margin-top:3px;
+	.slide_product {
+		position:relative;
+		margin-top:40px;
+		padding-top:40px;
+		&::before {
+			@include Mix_Space_Bar;
+		}
+	}
+	.plp_template01 {
+		margin-top: 13px;
+	}
+}
+
+/*가격 슬라이더*/
+.cpo_range{
+	display:none;
+	padding:12px 0;
+	.amountArea{
+		visibility:hidden;
+	}
+	.cpoRange{
+		position:relative;
+		width:calc(100% - 24px);
+		height:2px;
+		margin-left:12px;
+		background:$COL_Line_Medium;
+		.ui-slider-range{
+			position:absolute;
+			top:0;
+			z-index:1;
+			display:block;
+			height:100%;
+			background:$COL_Secondary;
+			border:0;
+		}
+		.ui-slider-handle{
+			z-index:2;cursor:default;-ms-touch-action:none;touch-action:none;outline:none;
+			width:24px;
+			height:24px;
+			background:$COL_White;
+			border:2px solid $COL_Secondary;
+			border-radius:100%;
+			position:absolute;
+			top:-11px;
+			&:nth-child(2){
+				left: 0;
+				margin-left:-12px;
+			}
+			&:nth-child(3){
+				left: 100%;
+				margin-left:-12px;
+			}
+		}
+		.amountArea{
+			visibility:hidden;
+		}
+		.min_no,
+		.max_no{
+			display:block;
+			width:100px;
+			position:absolute;
+			top:21px;
+			color:$COL_Base_01;
+			@include Mix_Font('Txt-R', 12, 18);
+		}
+		.min_no{
+			left:-11px;
+			text-align:left;
+		}
+		.max_no{
+			right:-11px;
+			text-align:right;
+		}
+	}
+}
+
+/* 가격 차트 */
+// #rangePrice{
+// 	margin-top:-10px;
+// }
+.range_chart{
+	width:100%;
+	height:120px;
+	position:relative;
+	overflow:hidden;
+	margin-bottom: -8px;
+	> ol{
+		width:100%;
+		@include Mix_Clear;
+		li{
+			display:flex;
+			width:5%;
+			height:120px;
+			margin:0 auto;
+			text-indent: -99999px;
+			transition: height 1s;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-end;
+			&.on{
+				.bar{
+					i{
+						background:$COL_Secondary;
+					}
+				}
+			}
+			float:left;
+			.bar{
+				width:2px;
+				i{
+					display:block;
+					width:2px;
+					height:1%;
+					transition: margin 1s;
+					background: $COL_Line_Dark;
+					margin-top:120px;
+				}
+			}
+
+		}
+	}
+}
+
+@keyframes Ani_Price_Chart{
+	from {
+		max-height:0;
+	}
+	to {
+		max-height:100%;
+	}
+}
+
+.inp_search{
+	.txt {
+		&::placeholder{
+			color:$COL_Base_01;
+		}
+	}
+	.ico_delete{
+		position:absolute;
+		top:50%;
+		right:85px;
+		transform:translateY(-54%);
+		display:none;
+	}
+}

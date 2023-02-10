@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>탁송조회 : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_order.css">
+</head>
+<body>
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">탁송조회</h3><!-- 2022-08-30 [CPO-3244] 문구변경 -->
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<!-- 배송조회 -->
+		<div class="order_delivery sec_line toggle">
+			<!-- 01. 주문정보 -->
+			<section class="order_info">
+				<div class="order_no">
+					<span class="flag_mid01">탁송완료</span><!-- 2022-08-30 [CPO-3244] 문구변경 -->
+					<span class="no">20211112321564565421</span>
+				</div>
+				<div class="unit_type order">
+					<a href="javascript:void(0);" class="mid_area">
+						<div class="unit_img">
+							<img src="/HMC/m/img/@thumb/plp_310x310_01.jpg" alt="">
+						</div>
+						<div class="unit_info">
+							<p class="name">
+								<span class="model">그랜저 IG </span>
+								<span class="desc">가솔린 3.3 캘리그래피</span>
+							</p>
+							<p class="drive">
+								<em>20년 12월(21년형)</em>
+								<em>50,000km</em>
+								
+							</p>
+							<p class="price">
+								<em>2,000</em><i>만원</i>
+							</p>
+						</div>
+					</a>
+				</div>
+			</section>
+			<!-- //01. 주문정보 -->
+
+			<!--02. 배송진행 정보 -->
+			<!-- 2022-08-30 [CPO-3244] 문구변경 및 시간삭제 -->
+			<section class="box_type status">
+				<div class="top_txt">
+					<em>2022.09.03(금)</em>
+					탁송이 완료되었습니다.
+				</div>
+				<ul class="list">
+					<li>
+						<span class="txt">
+							<em>서울시 강남구 삼성타운로 337-4 49층 4985호</em>
+							2021.09.03(금)
+						</span>
+						<span class="txt2">탁송완료</span>
+					</li>
+					<li>
+						<span class="txt">
+							<em>일죽U센터</em>
+							2021.09.03(금)
+						</span> 
+						<span class="txt2">탁송출발</span>
+					</li>
+					<li>
+						<span class="txt">
+							<em>일죽U센터</em>
+							2021.09.03(금)
+						</span>
+						<span class="txt2">탁송준비중</span>
+					</li>
+				</ul>
+			</section>
+			<!-- //2022-08-30 [CPO-3244] 문구변경 및 시간삭제 -->
+			<!--//02. 배송진행 정보 -->
+			<!-- 03. 배송정보 -->
+			<section class="info">
+				<div class="sec_tit">차량 탁송정보</div><!-- 2022-08-30 [CPO-3244] 문구변경 -->
+				<dl>
+					<dt>탁송지</dt><!-- 2022-08-30 [CPO-3244] 문구변경 -->
+					<dd>서울시 강남구 삼성타운로 337-4  49층 4985호</dd>
+
+					<dt>탁송회사</dt>
+					<dd>글로비스</dd><!-- 2022-08-30 [CPO-3244] 문구변경 -->
+
+					<dt>탁송기사</dt>
+					<dd>김안전</dd>
+
+					<dt>연락처</dt>
+					<dd>01012341234</dd>
+				</dl>
+				<a href='tel:01012341234' class="btn_mid02">전화하기</a>
+			</section>
+			<!-- //03. 배송정보 -->
+
+			<!-- 04. 자주 묻는 질문 -->
+			<section class="box_type">
+				<div class="sec_tit">자주 묻는 질문 TOP 5</div>
+				<!--#include file="/HMC/m/SHTML/H_order/inc/order_faq.shtml"-->
+			</section>
+			<!-- //04. 자주 묻는 질문 -->
+
+		</div>
+		<!-- //배송조회 -->
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!-- 2023 0207 푸터 삭제 -->
+</div>
+<!-- //cpo wrap -->
+
+<script>
+	CPO.toggle();
+</script>
+
+</body>
+</html>

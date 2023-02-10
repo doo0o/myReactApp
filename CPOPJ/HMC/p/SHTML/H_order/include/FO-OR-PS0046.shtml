@@ -1,0 +1,165 @@
+<div class="popup_full" id="FO-OR-PS0046">
+	<div class="p_body">
+		<div class="p_inner s_small">
+			<div class="p_head">
+				<h2 class="tit">고객확인 및 본인인증</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+				<div class="inner_view layer_installment">
+					<div class="top_wrap">
+						<p class="txt1">현대 인증중고차 내차사기를 위한 오토할부 한도 조회를 시작합니다.</p>
+						<P class="txt2">
+							신용조회 동의 및 본인인증을 진행해 주세요. <br>
+							고객님의 본인 명의로 된 휴대전화번호를 입력하신 후, 인증번호 요청을 클릭하시면 
+							문자메시지로 인증번호가 전송됩니다.
+						</P>
+					</div>
+					<div class="sec_tit s">본인인증</div>
+					<ul class="form_list type03">
+						<li>
+							<label class="tit">이름</label>
+							<div class="form_area">
+								<div class="inbox_type02 hs02 disabled" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+									<input type="text" class="txt" title="이름 입력" placeholder="" name="" value="김현대" disabled>
+									<button type="button" class="btn_delete">삭제</button>
+								</div>
+							</div>
+						</li>
+						<li>
+							<label class="tit">주민등록번호</label>
+							<div class="form_area">
+								<div class="inbox_type02 hs02 identity" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()"><!-- 주민등록번호 : 'identity' class추가 -->
+									<input type="tel" class="txt type_id01" maxlength="6" title="주민등록번호 앞자리 입력" placeholder="앞자리" name="" value="">
+									<button type="button" class="btn_delete">삭제</button>
+									<input type="tel" class="txt type_id02" maxlength="7" title="주민등록번호 뒷자리 입력" placeholder="뒷자리" name="" value="">
+									<button type="button" class="btn_delete">삭제</button>
+								</div>
+							</div>
+						</li>
+						<li class="full">
+							<div class="tit">휴대폰번호</div>
+							<div class="form_area">
+								<span class="com_select hs02" data-ref="select">
+									<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample" onclick="dropDown();">
+										통신사선택
+									</button>
+									<span class="com_select_list" data-ref="dropDownList" id="dropDownExample">
+										<span class="com_select_list_inner">
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>통신사선택</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>SKT</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>KT</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>LGT</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>SKT 알뜰폰</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>KT 알뜰폰</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>LGT 알뜰폰</span></label>
+										</span>
+									</span>
+								</span>
+								<div class="inbox_type02 hs02" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+									<input type="tel" class="txt type_tel" placeholder="'-' 없이 숫자만 입력" value="">
+									<button type="button" class="btn_delete">삭제</button>
+								</div>
+								<div class="btn_area">
+									<button type="button" class="btn_small color02">인증번호 요청</button>
+								</div>
+							</div>
+						</li>
+						<!-- 인증번호 재요청 -->
+						<li class="full">
+							<div class="tit">휴대폰번호</div>
+							<div class="form_area">
+								<span class="com_select hs02" data-ref="select">
+									<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample" onclick="dropDown();">
+										통신사선택
+									</button>
+									<span class="com_select_list" data-ref="dropDownList" id="dropDownExample">
+										<span class="com_select_list_inner">
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>통신사선택</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>SKT</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>KT</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>LG U+</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>SKT 알뜰폰</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>KT 알뜰폰</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>LG U+ 알뜰폰</span></label>
+										</span>
+									</span>
+								</span>
+								<div class="inbox_type02 hs02" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+									<input type="tel" class="txt type_tel" placeholder="'-' 없이 숫자만 입력" value="">
+									<button type="button" class="btn_delete">삭제</button>
+								</div>
+								<div class="btn_area">
+									<button type="button" class="btn_small color02">인증번호 재요청</button>
+								</div>
+							</div>
+						</li>
+						<li class="full">
+							<div class="form_area">
+								<div class="inbox_type02 hs02 cert" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+									<input type="tel" class="txt type_tel" placeholder="인증번호 6자리" value="" maxlength="6">
+									<button type="button" class="btn_delete">삭제</button>
+									<span class="timer">03:00</span>
+								</div>
+								<div class="btn_area">
+									<button type="button" class="btn_small color03">인증번호 확인</button>
+								</div>
+								<p class="validation error">인증번호가 일치하지 않습니다.</p>
+							</div>
+						</li>
+						<!-- //인증번호 재요청 -->
+					</ul>
+					<div class="caution bg">
+						<ul>
+							<li>타인 명의 휴대전화는 본인 인증이 불가합니다.</li>
+							<li>화면을 닫지 마시고 문자메시지의 인증번호를 확인 후, 인증번호란에 입력해 주세요.</li>
+						</ul>
+					</div>
+					<div class="toggle terms">
+						<div class="cont on">
+							<div class="head item">
+								<input type="checkbox" name="chk_comm" id="chk_terms01" class="chk_type01 bold">
+								<label for="chk_terms01">
+									<span class="txt">전체 약관에 동의합니다.</span><button type="button" class="btn_arr js_toggle">토글 버튼</button>
+								</label>
+							</div>
+							<div class="group on">
+								<ul class="list">
+									<li>
+										<div class="item">
+											<input type="checkbox" name="chk_comm" id="chk_terms01_1" class="chk_type01">
+											<label for="chk_terms01_1">
+												<span class="txt">[필수] 약관1</span><button type="button" class="btn_arr">팝업 버튼</button>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="item">
+											<input type="checkbox" name="chk_comm" id="chk_terms01_2" class="chk_type01">
+											<label for="chk_terms01_2">
+												<span class="txt">[필수] 약관2</span><button type="button" class="btn_arr">팝업 버튼</button>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="item">
+											<input type="checkbox" name="chk_comm" id="chk_terms01_3" class="chk_type01">
+											<label for="chk_terms01_3">
+												<span class="txt">[필수] 약관3</span><button type="button" class="btn_arr">팝업 버튼</button>
+											</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="btn_area col_type">
+						<button type="button" class="btn_big color01">한도조회</button>
+					</div>
+				</div>
+				<!-- //contents -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

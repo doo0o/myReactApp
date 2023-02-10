@@ -1,0 +1,85 @@
+<div class="pdp02_price">
+	<!--  차량 정보  -->
+	<div class="flag">
+		<span class="flag_big02">50만km이하</span>
+		<span class="flag_big01">소유변경없음</span>
+		<span class="flag_big02">스포츠모델</span>
+	</div>
+	<div class="name">스마트스트림 가솔린 1.6 터보 하이브리드</div>
+	<div class="drive">
+		<span>20년 12월(21년형 페이스리프트)</span>
+		<span>21,713km</span>
+	</div>
+	<div class="price">
+		<span class="pay"><em>2,856</em>만원</span>
+		<button type="button" class="txt_btn01 s_large" onclick="anchorScroll('#p_scr03')">할부 조회하기</button>
+		<button type="button" class="btn_big color01">구매하기</button>
+	</div>
+	<!-- <div class="price">
+		<button type="button" class="btn_mid color01" disabled>일시품절 된 상품입니다.</button>
+		<button type="button" class="btn_mid color01" disabled>판매종료 된 상품입니다.</button>
+	</div> -->
+	<!--  //차량 정보  -->
+	<!--  성능 그래프  -->
+	<div class="chart">
+		<ol>
+			<li onclick="anchorScroll('#p_scr01')">
+				<div id="progress_period01" class="progressBar01" data-progress="0">
+					<svg preserveAspectRatio="none" viewBox="0 0 69 69" class="progressCircle">
+						<circle class="progressBg" />
+						<circle class="progressLine" />
+					</svg>
+					<div class="text_box">
+						<p class="text">2년<br>1개월</p>
+					</div>
+				</div>
+				<button type="button" class="txt_btn01 s_mid">운행기간</button>
+			</li>
+			<li onclick="anchorScroll('#p_scr02')">
+				<div id="progress_period02" class="progressBar01" data-progress="60">
+					<svg preserveAspectRatio="none" viewBox="0 0 69 69" class="progressCircle">
+						<circle class="progressBg" />
+						<circle class="progressLine" />
+					</svg>
+					<div class="text_box">
+						<p class="text">1년<br>3개월</p>
+					</div>
+				</div>
+				<button type="button" class="txt_btn01 s_mid">제조사 보증</button>
+			</li>
+			<li onclick="setTimeout(graphAnimate, 1000); popupOpen('FO-PD-PS0004');">
+				<div id="progress_compare" class="progressBar01" data-progress="23">
+					<svg preserveAspectRatio="none" viewBox="0 0 69 69" class="progressCircle">
+						<circle class="progressBg" />
+						<circle class="progressLine" />
+					</svg>
+					<div class="text_box img01">
+						<span class="progressCount"></span>
+					</div>
+				</div>
+				<button type="button" class="txt_btn01 s_mid">신차가격대비</button>
+			</li>
+			<li onclick="popupOpen('FO-PD-PS0007')">
+				<div id="progress_history" class="progressBar01" data-progress="0">
+					<svg preserveAspectRatio="none" viewBox="0 0 69 69" class="progressCircle">
+						<circle class="progressBg" />
+						<circle class="progressLine" />
+					</svg>
+					<div class="text_box img02"> <!-- 무사고시 img02 class 추가 -->
+						<p class="text">무사고</p>
+					</div>
+				</div>
+				<button type="button" class="txt_btn01 s_mid">보험이력</button>
+			</li>
+		</ol>
+	</div>
+	<!--  //성능 그래프  -->
+
+</div>
+
+<script>
+CPODonutChart($('#progress_period01'), true, true, 1000);
+CPODonutChart($('#progress_period02'), true, true, 1000);
+CPODonutChart($('#progress_compare'), true, true, 1000);
+CPODonutChart($('#progress_history'), true, true, 1000);
+</script>

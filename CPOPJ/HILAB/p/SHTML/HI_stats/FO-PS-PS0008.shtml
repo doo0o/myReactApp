@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>타인의 선택(브랜드&모델)</title>
+	<!--#include file="/HILAB/m/SHTML/HI_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="/HILAB/p/css/hi_stats.css">
+</head>
+<body>
+<!--#include file="/HILAB/p/SHTML/HI_inc/common_skip.shtml"-->
+<!--#include file="/HILAB/p/SHTML/HI_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="HIwrap">
+	<!--#include file="/HILAB/p/SHTML/HI_inc/layout_header.shtml"-->
+	<div id="HIcontents">
+		<div id="layoutWrap" class="stats">
+			<!-- container -->
+			<div class="container tab_stats_datail" data-ref="statsDetailTab">
+				<div class="lnb_area">
+					<div class="sticky_wrap">
+						<div class="head">
+							중고차 트렌드 통계
+						</div>
+						<div class="lnb" role="tablist">
+							<div class="box_list">
+								<div class="tit">거래 트렌드</div>
+								<ul class="list">
+									<li><button type="button" role="tab" aria-selected="false" aria-controls="tabStatsDetail01">거래유형별</button></li>
+									<li><button type="button" role="tab" aria-selected="false" aria-controls="tabStatsDetail02">연령 + 성별</button></li>
+									<li><button type="button" role="tab" aria-selected="false" aria-controls="tabStatsDetail03">지역별</button></li>
+								</ul>
+							</div>
+							<div class="box_list">
+								<div class="tit">타인의 선택</div>
+								<ul class="list">
+									<li><button type="button" role="tab" aria-selected="false" aria-controls="tabStatsDetail04">국산 모델</button></li>
+									<li><button type="button" role="tab" aria-selected="false" aria-controls="tabStatsDetail05">수입 모델</button></li>
+									<li class="on"><button type="button" role="tab" aria-selected="true" aria-controls="tabStatsDetail06">브랜드&모델</button></li>
+								</ul>
+							</div>
+							<div class="box_list">
+								<div class="tit">차종별 선호</div>
+								<ul class="list">
+									<li><button type="button" role="tab" aria-selected="false" aria-controls="tabStatsDetail07">연료타입별</button></li>
+									<li><button type="button" role="tab" aria-selected="false" aria-controls="tabStatsDetail08">연료타입별 연비</button></li>
+									<li><button type="button" role="tab" aria-selected="false" aria-controls="tabStatsDetail09">차급별</button></li>
+									<li><button type="button" role="tab" aria-selected="false" aria-controls="tabStatsDetail10">바디타입별</button></li>
+									<li><button type="button" role="tab" aria-selected="false" aria-controls="tabStatsDetail11">인승별</button></li>
+								</ul>
+							</div>
+							<div class="box_list">
+								<div class="tit">예산별 선호</div>
+								<ul class="list">
+									<li><button type="button" role="tab" aria-selected="false" aria-controls="tabStatsDetail12">예산별</button></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="content">
+					<div class="cont" id="tabStatsDetail01">
+						<!--#include file="/HILAB/p/SHTML/HI_stats/include/stats_detail01.shtml"-->
+					</div>
+					<div class="cont" id="tabStatsDetail02">
+						<!--#include file="/HILAB/p/SHTML/HI_stats/include/stats_detail02.shtml"-->
+					</div>
+					<div class="cont" id="tabStatsDetail03">
+						<!--#include file="/HILAB/p/SHTML/HI_stats/include/stats_detail03.shtml"-->
+					</div>
+					<div class="cont" id="tabStatsDetail04">
+						<!--#include file="/HILAB/p/SHTML/HI_stats/include/stats_detail04.shtml"-->
+					</div>
+					<div class="cont" id="tabStatsDetail05">
+						<!--#include file="/HILAB/p/SHTML/HI_stats/include/stats_detail05.shtml"-->
+					</div>
+					<div class="cont" id="tabStatsDetail06">
+						<!--#include file="/HILAB/p/SHTML/HI_stats/include/stats_detail06.shtml"-->
+					</div>
+					<div class="cont" id="tabStatsDetail07">
+						<!--#include file="/HILAB/p/SHTML/HI_stats/include/stats_detail07.shtml"-->
+					</div>
+					<div class="cont" id="tabStatsDetail08">
+						<!--#include file="/HILAB/p/SHTML/HI_stats/include/stats_detail08.shtml"-->
+					</div>
+					<div class="cont" id="tabStatsDetail09">
+						<!--#include file="/HILAB/p/SHTML/HI_stats/include/stats_detail09.shtml"-->
+					</div>
+					<div class="cont" id="tabStatsDetail10">
+						<!--#include file="/HILAB/p/SHTML/HI_stats/include/stats_detail10.shtml"-->
+					</div>
+					<div class="cont" id="tabStatsDetail11">
+						<!--#include file="/HILAB/p/SHTML/HI_stats/include/stats_detail11.shtml"-->
+					</div>
+					<div class="cont" id="tabStatsDetail12">
+						<!--#include file="/HILAB/p/SHTML/HI_stats/include/stats_detail12.shtml"-->
+					</div>
+				</div>
+			</div>
+			<!-- //container -->
+		</div>
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HILAB/p/SHTML/HI_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HILAB/p/SHTML/HI_inc/brand_loading.shtml"-->
+</body>
+<script>
+	const statsDetailTab = new TabContents('statsDetailTab');
+</script>
+</html>

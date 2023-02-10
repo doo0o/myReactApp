@@ -1,0 +1,56 @@
+<!-- 04: 자동완성 -->
+<div class="srch_auto">
+	<ol class="list_01">
+		<li>
+			<a href="#">
+				<span class="thumb"><img src="/GHQ/m/img/model/model_2515.png" alt="G80이미지" /></span>
+				<span class="tit">GV80<em>19~22년</em></span>
+				<span class="no"><em>2,850</em>대</span>
+				<span class="more">보러가기</span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="thumb"><img src="/GHQ/m/img/model/model_2852.png" alt="더 올뉴G80이미지" /></span>
+				<span class="tit">더 올뉴G80<em>19~22년</em></span>
+				<span class="no"><em>2,850</em>대</span>
+				<span class="more">보러가기</span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="thumb"><img src="/GHQ/m/img/model/model_3120.png" alt="eG80이미지" /></span>
+				<span class="tit">eG80<em>19~22년</em></span>
+				<span class="no"><em>2,850</em>대</span>
+				<span class="more">보러가기</span>
+			</a>
+		</li>
+	</ol>
+	<ol class="list_01 event">
+		<li>
+			<a href="#">
+				<span class="tit">프리미엄 GV80 기획전</span>
+				<span class="more">보러가기</span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="tit">GV70 기획전</span>
+				<span class="more">보러가기</span>
+			</a>
+		</li>
+	</ol>
+	<ol class="list_02">
+		<li>
+			<a href="#">
+				<span class="txt"><i>GV</i>70 가솔린 3.3</span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<span class="txt"><i>GV</i>80 가솔린</span>
+			</a>
+		</li>
+	</ol>
+</div>
+<!-- //04: 자동완성 -->

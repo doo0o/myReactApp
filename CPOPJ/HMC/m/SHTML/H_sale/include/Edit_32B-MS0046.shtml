@@ -1,0 +1,41 @@
+<!-- FO-TI-MS0030 : 타이어 수정 - BOTTOM -->
+<div class="CPOpop_full" id="FO-TI-MS0046"><!-- 2022-09-16 CPO-3291 -->
+	<div class="p_head">
+		<h2 class="tit txt_hidden">타이어 수정</h2><!-- 2022-09-16 CPO-3291 -->
+	</div>
+	<div class="p_wrap">
+		<!-- 타이어 수정 -->
+		<div class="sale_modify">
+			<div class="entry_carbase">
+				<div class="top02">
+					<p class="tit">교체가 필요한<br>타이어가 있나요?</p> <!-- 2022-09-16 CPO-3291 --> 
+				</div>
+				<ul class="entry_carmore_options">
+					<!-- 2022-09-16 CPO-3291 -->
+					<li>
+						<input type="radio" name="saleTyresChk2" id="saleTyresChk201" class="chk_type07" onchange="inputFunc(this)" />
+						<label for="saleTyresChk201">네, 있어요</label>
+						<div class="box_input">
+							<div class="inbox_type01">
+								<input type="tel" id="saleTyresTxt2" placeholder="1 ~ 4개까지 입력 가능해요." class="txt type_number">
+								<button type="button" class="btn_delete">삭제</button>
+							</div>
+						</div>
+					</li>
+					<li>
+						<input type="radio" name="saleTyresChk2" id="saleTyresChk202" class="chk_type07" />
+						<label for="saleTyresChk202">아니요, 없어요</label>
+					</li>
+					<!-- //2022-09-16 CPO-3291 -->
+				</ul>
+			</div>
+		</div>
+		<!-- //타이어 수정 -->
+		<!-- (3). STICKY BUTTON -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">수정하기</button>
+		</div>
+		<!-- //(3). STICKY BUTTON -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

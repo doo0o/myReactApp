@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>모델별 목록 : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_display.css">
+</head>
+<body class="bg_dark">
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_detail">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit align_c hidden">그랜저 IG</h1>
+			<div class="util">
+				<ul>
+					<li><a href="#" class="ic_cart on">장바구니</a></li> <!--장바구니-->
+				</ul>
+			</div>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="cpo_plp">
+			<!-- 01. 비쥬얼 이미지 -->
+			<div class="display_corner main">
+				<!-- BO 코너 영역 -->
+				<div class="bo_img">
+					<img src="/HMC/m/img/@thumb/bo_720x900_01.jpg" alt="그랜저 IG 성공을 새롭게 정의하다" />
+				</div>
+				<!-- //BO 코너 영역 -->
+				<div class="title">
+					<strong class="tit">그랜저 IG</strong>
+					<p class="copy">성공을 새롭게 정의하다</p>
+				</div>
+				<ul class="navi">
+					<li><a href="#" class="link_01">시세추이</a></li>
+					<li><a href="#" class="link_02">잔존율</a></li>
+					<li><a href="#" class="link_03">실거래차트</a></li>
+				</ul>
+			</div>
+			<!-- //01. 비쥬얼 이미지 -->
+			<!-- 02. 상세조건 선택 및 변경 레이어 -->
+			<!--#include file="/HMC/m/SHTML/H_display/include/inc_plp_sort.shtml"-->	
+			<!--#include file="/HMC/m/SHTML/H_display/include/inc_plp_filter.shtml"-->	
+			<!-- 03. 상품 목록 -->
+			<!--#include file="/HMC/m/SHTML/H_display/include/inc_plp_list_01.shtml"-->
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_actionbar.shtml"-->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_footer.shtml"-->
+	<!--#include file="/HMC/m/SHTML/H_search/include/FO-PL-MS0019.shtml"--><!-- FO-PL-MS0019 : 상세조건 변경 - FULL -->
+</div> 
+<!-- //cpo wrap -->
+
+<script>
+	$(function(){
+		$(".jQ_Select").on("click",function(){//셀렉트박스 레이어 스크립트
+			CPO.POPUP_open($(this));// 레이어팝업 open
+			CPO_SelectLayer($(this));// 레이어팝업에 data 값 넘기기
+		});
+		$(".jQ_Select_Save").on("click",function(){//셀렉트박스 레이어 스크립트
+			CPO.POPUP_close($(this));// 레이어팝업 close
+			CPO_SelectSave($(this));// 레이어팝업에 data 값 넘기기
+		});
+	});
+	// 2023 0209 TOP / CHATBOT 추가
+	CPO.top();
+</script>
+</body>
+</html>

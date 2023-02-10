@@ -1,0 +1,66 @@
+<div class="main_con4_1">
+    <div class="step1">
+      <div class="step2_graph">
+        <div class="price">
+          <strong>2,296</strong>~ <strong>2,449</strong> 만원
+        </div>
+        <div class="step2_graph_refer">
+          <p>
+            <em>※ 주행거리 30,000km 기준</em>
+            등급/트림을 선택하면 시세가 더 정확해져요
+          </p>
+        </div>
+        <div class="graph_wrap">
+          <img src="/HILAB/m/img/main/img_howmuch_Diagram.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="step3_refer scroll-spy">
+      <p>모델 기준 가장 많이 팔린 연식</p>
+      <em>※ 2022년 12월 ~ 2023년 5월 기준</em>
+    </div>
+    <div class="step3_graph scroll-spy">
+      <div class="graph_wrap">
+        <img src="/HILAB/m/img/main/img_mini_Diagram.png" alt="" />
+      </div>
+      <ol class="year_percent">
+        <li>
+          <span class="year_dot1">22년</span>
+          <em>45%</em>
+        </li>
+        <li>
+          <span class="year_dot2">21년</span>
+          <em>25%</em>
+        </li>
+        <li>
+          <span class="year_dot3">20년</span>
+          <em>30%</em>
+        </li>
+        <li>
+          <span class="year_dot4">19년</span>
+          <em>30%</em>
+        </li>
+      </ol>
+      <div class="info_list">
+        <p class="info_list_refer">
+          직접 조회하시면 더욱 다양한 정보를 알 수 있어요
+        </p>
+        <ul>
+          <li>
+            <i class="icon01 icon_sale_volum"></i>지난달/<br />거래량
+          </li>
+          <li>
+            <i class="icon01 icon_mileage"></i>조건별<br />시세
+          </li>
+          <li>
+            <i class="icon01 icon_preference"></i>선호<br />연령/성별
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="btn_area">
+      <a href="#none" class="btn_mid07">
+        더 많은 분석 결과 확인하기
+      </a>
+    </div>
+</div>

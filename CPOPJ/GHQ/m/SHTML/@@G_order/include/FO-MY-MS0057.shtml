@@ -1,0 +1,141 @@
+<!-- FO-MY-MS0057 : 거래명세표 - FULL -->
+<div class="CPOpop_full" id="FO-MY-MS0057">
+	<div class="p_head">
+		<h4 class="tit">거래명세표</h4>
+	</div>
+	<div class="p_wrap">
+		<!-- 거래명세표 -->
+		<div class="order_receipt">
+			<ol class="list_receipt">
+				<li>
+					<h1 class="tit">공급자</h3>
+					<table class="table_receipt">
+						<caption>공급자</caption>
+						<colgroup>
+							<col width="120px">
+							<col width="*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>사업자등록번호</th>
+								<td>101-81-09147</td>
+							</tr>
+							<tr>
+								<th>상호(법인명)</th>
+								<td>현대자동차 주식회사</td>
+							</tr>
+							<tr>
+								<th>성명</th>
+								<td>장재훈</td>
+							</tr>
+							<tr>
+								<th>사업장주소</th>
+								<td>서울특별시 서초구 헌릉로 12</td>
+							</tr>
+							<tr>
+								<th>업태</th>
+								<td>각종 차량과 동부분품의 제조 판매업</td>
+							</tr>
+							<tr>
+								<th>종목</th>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</li>
+				<li>
+					<h1 class="tit">공급받는자</h3>
+					<table class="table_receipt">
+						<caption>공급받는자</caption>
+						<colgroup>
+							<col width="120px">
+							<col width="*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>사업자등록번호</th>
+								<td>101-81-09147</td>
+							</tr>
+							<tr>
+								<th>상호(법인명)</th>
+								<td>현대자동차 주식회사</td>
+							</tr>
+							<tr>
+								<th>성명</th>
+								<td>장재훈</td>
+							</tr>
+							<tr>
+								<th>사업장주소</th>
+								<td>서울특별시 서초구 헌릉로 12</td>
+							</tr>
+							<tr>
+								<th>업태</th>
+								<td>각종 차량과 동부분품의 제조 판매업</td>
+							</tr>
+							<tr>
+								<th>종목</th>
+								<td></td>
+							</tr>
+						</tbody>
+					</table>
+				</li>
+				<li>
+					<h1 class="tit">거래내용</h3>
+					<table class="table_receipt">
+						<caption>거래내용</caption>
+						<colgroup>
+							<col width="120px">
+							<col width="*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>상품명</th>
+								<td>그랜저 IG 익스클루시브</td>
+							</tr>
+							<tr>
+								<th>거래일시</th>
+								<td>2021/10/23</td>
+							</tr>
+							<tr>
+								<th>수량</th>
+								<td>1</td>
+							</tr>
+							<tr>
+								<th>거래액<br>(VAT 포함 원화)</th>
+								<td>42,460,000원</td>
+							</tr>
+							<tr>
+								<th>비고</th>
+								<td></td>
+							</tr>
+							<tr>
+								<th>총 거래액 합계</th>
+								<td>42,460,000원</td>
+							</tr>
+							<tr>
+								<th>배송비 합계</th>
+								<td>0원</td>
+							</tr>
+							<tr>
+								<th>할인금액</th>
+								<td>0원</td>
+							</tr>
+							<tr>
+								<th>실제 총 결제 금액</th>
+								<td>42,460,000원</td>
+							</tr>
+						</tbody>
+					</table>
+				</li>
+			</ol>
+			<div class="notice_02">
+				<ol>
+					<li>거래명세표는 현대자동차 CPO 서비스와의 거래내역을 보여주며 세금계산서와 같은 법적 효력은 없습니다.</li>
+					<li>부가세 신고용 현금영수증이나 신용카드전표를 활용하시기 바랍니다.</li>
+				</ol>
+			</div>
+		</div>
+		<!-- //거래명세표 -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

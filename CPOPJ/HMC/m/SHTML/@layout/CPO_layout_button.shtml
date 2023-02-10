@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>현대차 CPO : 공통 레이아웃</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+
+	<style type="text/css">
+		.icon_area ul{display:flex;flex-flow:row wrap}
+		.icon_area ul li{flex:0 25%}
+		.icon_area ul li > span{margin:0 auto;}
+	</style>
+</head>
+<body class="layout"><!-- CPOheader 영역의 타이틀때문에 분기처리 함     -->
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		
+		<!-- s: h_header : default  -->
+		<div class="h_header">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">Default</h1>
+			<div class="util">
+				<ul>
+					<li><a href="#" class="ic_search">검색하기</a></li>
+					<li><a href="#" class="ic_home">홈으로 가기</a></li>
+				</ul>	
+			</div>
+		</div>
+		<!-- e: h_header : default  -->
+		
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+
+		<div class="sample_wrap">
+			<button type="button" class="btn_big01">btn_big01(56픽셀)</button>
+			<button type="button" class="btn_big02">btn_big02</button>
+		</div>
+		
+		<div class="sample_wrap">
+			<button type="button" class="btn_mid01">btn_mid01(48픽셀)</button>
+			<button type="button" class="btn_mid02">btn_mid02</button>
+			<button type="button" class="btn_mid03">btn_mid03</button>
+			<button type="button" class="btn_mid04">btn_mid04</button>
+			<button type="button" class="btn_mid05">btn_mid05</button>
+			<button type="button" class="btn_mid01" disabled>disabled</button>
+		</div>
+		
+		<div class="sample_wrap">
+			<button type="button" class="btn_small01">btn_small01(42픽셀)</button>
+			<button type="button" class="btn_small02">btn_small02</button>
+		</div>
+		
+		<div class="sample_wrap">
+			<!-- <button type="button" class="btn xsmall">btn_xsmall01(36픽셀)</button>
+			<button type="button" class="btn xsmall color02">btn_xsmall02</button> -->
+		</div>
+
+
+		<!-- PDP 옵션 아이콘 -->
+		<!-- key2 -->
+		<div class="PDP_option_key02">
+			<p>key2</p>
+			<div class="icon_area">
+				<p>key1_02 : 외장</p>
+				<ul>
+					<li><span class="option_key02_02">헤드램프</span></li>
+					<li><span class="option_key02_03">사이드미러</span></li>
+					<li><span class="option_key02_04">썬루프</span></li>
+					<li><span class="option_key02_05">윈드실드(앞유리)</span></li>
+					<li><span class="option_key02_06">휠타이어</span></li>
+					<li><span class="option_key02_07">루프랙</span></li>
+					<li><span class="option_key02_39">우적감지<br>와이퍼</span></li>
+				</ul>
+			</div>
+			<div class="icon_area">
+				<p>key1_03 : 내장</p>
+				<ul>
+					<li><span class="option_key02_08">시트</span></li>
+					<li><span class="option_key02_09">룸미러</span></li>
+					<li><span class="option_key02_10">스티어링휠</span></li>
+					<li><span class="option_key02_11">파킹</span></li>
+				</ul>
+			</div>
+			<div class="icon_area">
+				<p>key1_04 : 안전</p>
+				<ul>
+					<li><span class="option_key02_12">에어백</span></li>
+					<li><span class="option_key02_13">주행안전</span></li>
+					<li><span class="option_key02_14">주차보조</span></li>
+					<li><span class="option_key02_15">경사로밀림방지(HAS)</span></li>
+					<li><span class="option_key02_16">타이어공기압경고(TPMS)</span></li>
+					<li><span class="option_key02_17">액티브헤드레스트</span></li>
+					<li><span class="option_key02_18">세이프티윈도우</span></li>
+					<li><span class="option_key02_19">유아시트고정(Isofix)</span></li>
+					<li><span class="option_key02_37">스마트키</span></li>
+					<li><span class="option_key02_43">헤드업디스플레이</span></li>
+				</ul>
+			</div>
+			<div class="icon_area">
+				<p>key1_05 : 편의</p>
+				<ul>
+					<li><span class="option_key02_20">에어컨</span></li>
+					<li><span class="option_key02_23">핸즈프리</span></li>
+					<li><span class="option_key02_24">크루즈컨트롤</span></li>
+					<li><span class="option_key02_25">전동식 파워 트렁크</span></li>
+					<li><span class="option_key02_26">자동주차보조시스템(ASPAS)</span></li>
+					<li><span class="option_key02_27">스티어링휠 리모컨</span></li>
+					<li><span class="option_key02_35">버튼시동</span></li>
+				</ul>
+			</div>
+			<div class="icon_area">
+				<p>key1_06 : 멀티미디어</p>
+				<ul>
+					<li><span class="option_key02_28">CD</span></li>
+					<li><span class="option_key02_29">CD 체인지</span></li>
+					<li><span class="option_key02_30">DVD</span></li>
+					<li><span class="option_key02_31">MP3</span></li>
+					<li><span class="option_key02_32">네비게이션</span></li>
+					<li><span class="option_key02_33">유무선단자</span></li>
+					<li><span class="option_key02_34">스피커</span></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //key2 -->
+		<!-- key3 -->
+		<div class="PDP_option_key03">
+			<p>key3</p>
+			<div class="icon_area">
+				<p>key1_02 : 외장</p>
+				<ul>
+					<li><span class="option_key03_04">할로겐</span></li>
+					<li><span class="option_key03_05">HID</span></li>
+					<li><span class="option_key03_06">LED</span></li>
+					<li><span class="option_key03_07">어탭티브</span></li>
+					<li><span class="option_key03_08">하이빔 어시스트</span></li>
+					<li><span class="option_key03_09">수동</span></li>
+					<li><span class="option_key03_10">전동접이</span></li>
+					<li><span class="option_key03_11">열선</span></li>
+					<li><span class="option_key03_12">방향지시등 일체형</span></li>
+					<li><span class="option_key03_13">후진각도조절</span></li>
+					<li><span class="option_key03_15">와이퍼 결빙장치</span></li>
+					<li><span class="option_key03_16">자외선 차단</span></li>
+					<li><span class="option_key03_65">썬루프</span></li>
+					<li><span class="option_key03_66">듀얼썬루프</span></li>
+					<li><span class="option_key03_67">파노라마썬루프</span></li>
+					<li><span class="option_key03_68">알루미늄휠</span></li>
+					<li><span class="option_key03_69">크롬휠</span></li>
+					<li><span class="option_key03_70">광폭타이어</span></li>
+					<li><span class="option_key03_71">레이져 라이트</span></li>
+					<li><span class="option_key03_72">프로젝션 타입</span></li>
+					<li><span class="option_key03_75">스틸휠</span></li>
+				</ul>
+			</div>
+			<div class="icon_area">
+				<p>key1_03 : 내장</p>
+				<ul>
+					<li><span class="option_key03_17">직물시트</span></li>
+					<li><span class="option_key03_18">가죽시트</span></li>
+					<li><span class="option_key03_19">전동시트(동승석)</span></li>
+					<li><span class="option_key03_20">전동시트(운전석)</span></li>
+					<li><span class="option_key03_21">전동시트(뒷좌석)</span></li>
+					<li><span class="option_key03_22">열선시트(앞)</span></li>
+					<li><span class="option_key03_23">열선시트(뒤)</span></li>
+					<li><span class="option_key03_24">메모리시트(운전석)</span></li>
+					<li><span class="option_key03_25">메모리시트(동승석)</span></li>
+					<li><span class="option_key03_26">통풍시트(운전석)</span></li>
+					<li><span class="option_key03_27">통풍시트(동승석)</span></li>
+					<li><span class="option_key03_28">안마시트</span></li>
+					<li><span class="option_key03_30">전자식 룸미러(ECM)</span></li>
+					<li><span class="option_key03_31">하이패스 내장</span></li>
+					<li><span class="option_key03_32">후방룸미러</span></li>
+					<li><span class="option_key03_33">가죽스티어링휠</span></li>
+					<li><span class="option_key03_34">우드스티어링휠</span></li>
+					<li><span class="option_key03_35">열선내장</span></li>
+					<li><span class="option_key03_36">속도감응식 스티어링휠</span></li>
+					<li><span class="option_key03_37">텔레스코픽 스티어링</span></li>
+					<li><span class="option_key03_38">사이드 브레이크</span></li>
+					<li><span class="option_key03_39">풋파킹</span></li>
+					<li><span class="option_key03_40">전자식 파킹</span></li>
+					<li><span class="option_key03_74">인조가죽시트</span></li>
+				</ul>
+			</div>
+			<div class="icon_area">
+				<p>key1_04 : 안전</p>
+				<ul>
+					<li><span class="option_key03_41">운전석</span></li>
+					<li><span class="option_key03_42">동승석</span></li>
+					<li><span class="option_key03_43">사이드</span></li>
+					<li><span class="option_key03_44">커튼</span></li>
+					<li><span class="option_key03_45">무릎보호</span></li>
+					<li><span class="option_key03_46">미끄럼 방지장치(ABS)</span></li>
+					<li><span class="option_key03_47">구동력 제어장치(TCS)</span></li>
+					<li><span class="option_key03_48">차체자세제어창지(VDS,ESC,ESP)</span></li>
+					<li><span class="option_key03_49">제동력 분배 장치(EBD)</span></li>
+					<li><span class="option_key03_50">긴급제동경보시스템(ESS)</span></li>
+					<li><span class="option_key03_51">후측방경보시스템(BSD)</span></li>
+					<li><span class="option_key03_52">차선이탈경보(LDWS)</span></li>
+					<li><span class="option_key03_53">전방감지센서</span></li>
+					<li><span class="option_key03_54">후방감지센서</span></li>
+					<li><span class="option_key03_55">전방카메라</span></li>
+					<li><span class="option_key03_56">후방카메라</span></li>
+					<li><span class="option_key03_57">어라운드뷰(AVM)</span></li>
+					<li><span class="option_key03_73">샤시 통합 제어 시스템(VSM)</span></li>
+				</ul>
+			</div>
+			<div class="icon_area">
+				<p>key1_05 : 편의</p>
+				<ul>
+					<li><span class="option_key03_58">수동에어컨</span></li>
+					<li><span class="option_key03_59">오토에어컨</span></li>
+					<li><span class="option_key03_60">풀오토에어컨</span></li>
+					<li><span class="option_key03_61">공기청정기</span></li>
+				</ul>
+			</div>
+			<div class="icon_area">
+				<p>key1_06 : 멀티미디어</p>
+				<ul>
+					<li><span class="option_key03_62">블루투스</span></li>
+					<li><span class="option_key03_63">AUX</span></li>
+					<li><span class="option_key03_64">USB</span></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //key3 -->
+		<!-- //PDP 옵션 아이콘 -->
+
+		<script>
+			$('.btn_text01').on('click', function(){
+				$(this).toggleClass('on');
+			});
+		</script>
+
+		<!-- 박스 버튼 -->
+
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/HMC/m/SHTML/H_inc/popup_include_all.shtml"-->
+</body>
+</html>

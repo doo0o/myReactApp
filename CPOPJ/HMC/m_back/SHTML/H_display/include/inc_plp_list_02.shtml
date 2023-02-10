@@ -1,0 +1,152 @@
+<!-- 상품목록 type 1 -->
+<div class="plp_template01">
+	<!-- 전체수량 -->
+	<div class="plp_sorting">
+		<h5 class="tit"><span class="hidden">그랜저 IG </span>전체 <em>12,180</em><i>대</i></h5>
+		<ul>
+			<li>
+				<button type="button" class="btn_sort jQ_Select" id="PlpSort01" data-id="PlpSort0101" data-popup="PlpSort01-Layer">인기순</button>
+				<!-- sorting Layer -->
+				<!--#include file="inc_plp_sorting_layer.shtml"-->
+				<!-- sorting Layer -->
+			</li>
+			<li><button type="button" class="btn_thumb" id="plpViewType" data-ref="plpViewList">1단으로 보기</button></li>
+		</ul>
+	</div>
+	<!-- 상품목록 -->
+	<div class="plp_list">
+		<ol class="thumb" id="plpViewList">
+			<li>
+				<!-- unit -->
+				<a href="#" class="unit_link">
+					<div class="unit_img">
+						<img src="/HMC/img/@thumb/plp_310x310_01.jpg" alt="상품명으로 뿌려주세요">
+					</div>
+					<div class="unit_info">
+						<div class="count_like">245</div><!-- 2022-06-14 수정 -->
+						<p class="name">
+							<span class="model">그랜저 IG </span>
+							<span class="desc">가솔린 3.3 캘리그래피</span>
+						</p>
+						<!-- 2022-06-14 수정 -->
+						<div class="drive">
+							<span>20년 12월</span>
+							<em>(21년형)</em>
+							<em>50,000km</em>
+							<em>가솔린</em>
+						</div>
+						<span class="price"><em>3,820</em><i>만원</i></span>
+					</div>
+				</a>
+				<!-- //unit -->
+			</li>
+			<li>
+				<!-- unit -->
+				<a href="#" class="unit_link">
+					<div class="unit_img">
+						<img src="/HMC/img/@thumb/plp_500x500_01.jpg" alt="상품명으로 뿌려주세요">
+					</div>
+					<div class="unit_info">
+						<div class="count_like">245</div><!-- 2022-06-14 수정 -->
+						<p class="name">
+							<span class="model">그랜저 IG </span>
+							<span class="desc">가솔린 3.3 캘리그래피</span>
+						</p>
+						<!-- 2022-06-14 수정 -->
+						<div class="drive">
+							<span>20년 12월</span>
+							<em>(21년형)</em>
+							<em>50,000km</em>
+							<em>가솔린</em>
+						</div>
+						<span class="price"><em>3,820</em><i>만원</i></span>
+					</div>
+				</a>
+				<!-- //unit -->
+			</li>
+			<li>
+				<!-- unit -->
+				<a href="#" class="unit_link">
+					<div class="unit_img">
+						<img data-src="/HMC/img/@thumb/plp_500x500_02.jpg" class="cpo_lazy_v" alt="상품명으로 뿌려주세요">
+					</div>
+					<div class="unit_info">
+						<div class="count_like">245</div>
+						<p class="name">
+							<span class="model">그랜저 IG </span>
+							<span class="desc">가솔린 3.3 캘리그래피</span>
+						</p>
+						<div class="drive">
+							<span>20년 12월</span>
+							<em>(21년형)</em>
+							<em>50,000km</em>
+							<em>가솔린</em>
+						</div>
+						<span class="price"><em>3,820</em><i>만원</i></span>
+					</div>
+				</a>
+				<!-- --unit -->
+			</li>
+			<li>
+				<!-- unit -->
+				<a href="#" class="unit_link">
+					<div class="unit_img">
+						<img data-src="/HMC/img/@thumb/plp_500x500_03.jpg" class="cpo_lazy_v" alt="상품명으로 뿌려주세요">
+						<div class="unit_like"><input type="checkbox" class="CPO_Chk_Wish" name="ck_ProductWish" id="ck_wish04"><label for="ck_wish04">찜하기</label></div>
+					</div>
+					<div class="unit_info">
+						<div class="count_like">245</div>
+						<p class="name">
+							<span class="model">그랜저 IG </span>
+							<span class="desc">가솔린 3.3 캘리그래피</span>
+						</p>
+						<div class="drive">
+							<span>20년 12월</span>
+							<em>(21년형)</em>
+							<em>50,000km</em>
+							<em>가솔린</em>
+						</div>
+						<span class="price"><em>3,820</em><i>만원</i></span>
+					</div>
+				</a>
+				<!-- //unit -->
+			</li>
+			<li>
+				<!-- unit -->
+				<a href="#" class="unit_link">
+					<div class="unit_img">
+						<img data-src="/HMC/img/@thumb/plp_500x500_04.jpg" class="cpo_lazy_v" alt="상품명으로 뿌려주세요">
+						<div class="unit_like"><input type="checkbox" class="CPO_Chk_Wish" name="ck_ProductWish" id="ck_wish01"><label for="ck_wish01">찜하기</label></div>
+					</div>
+					<div class="unit_info">
+						<div class="count_like">245</div>
+						<p class="name">
+							<span class="model">그랜저 IG </span>
+							<span class="desc">가솔린 3.3 캘리그래피</span>
+						</p>
+						<div class="drive">
+							<span>20년 12월</span>
+							<em>(21년형)</em>
+							<em>50,000km</em>
+							<em>가솔린</em>
+						</div>
+						<span class="price"><em>3,820</em><i>만원</i></span>
+					</div>
+				</a>
+				<!-- //unit -->
+			</li>
+			<li>				
+				<a href="#" class="unit_link">
+					<!-- banner :: 2열 보기방식 -->
+					<img src="/HMC/img/@thumb/serach_banner_01.jpg" class="banner_type01" alt="기획전 중고차 체크하는 방법부터 안전한 구매까지">
+					<!-- //banner :: 2열 보기방식 -->
+					<!-- banner :: 1열 보기방식 -->
+					<img src="/HMC/img/@thumb/serach_banner_03.jpg" class="banner_type02" alt="기획전 중고차 체크하는 방법부터 안전한 구매까지">
+					<!-- // banner :: 1열 보기방식 -->				
+				</a>								
+			</li>
+		</ol>
+	</div>
+	<!-- //상품목록 -->
+</div>
+<!-- //상품목록 type 1 -->

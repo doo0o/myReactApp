@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>계약 : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_order.css">
+</head>
+<body>
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<!-- S : [CPO-1204 : 디자인검수2차] -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">계약</h1>
+		</div>
+		<!-- E : [CPO-1204 : 디자인검수2차] -->
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="sec_line"><!-- 2022-09-02 [CPO-3239] class삭제 -->
+
+			<div class="unit_type order">
+				<div class="mid_area">
+					<div class="unit_img">
+						<img src="/HMC/m/img/@thumb/plp_310x310_01.jpg" alt="">
+					</div>
+					<div class="unit_info">
+						<p class="name">
+							<span class="model">그랜저 IG </span>
+							<span class="desc">가솔린 3.3 캘리그래피</span>
+						</p>
+						<p class="drive">
+							<em>20년 12월(21년형)</em>
+							<em>50,000km</em>
+							
+						</p>
+						<p class="price">
+							<em>3,820</em><i>만원</i>
+						</p>
+					</div>
+				</div>
+				<p class="caution">부대비용이 포함되어 있지 않은 차량 가격입니다.</p><!-- 2022-10-20 CPO-4721 -->
+			</div>
+			
+			<section>
+				<div class="sec_tit">기본정보</div>
+				<ul class="list_type01">
+					<li>
+						<span class="tit">이름</span>
+						<span>김현대</span>
+					</li>
+					<li>
+						<span class="tit">이메일</span>
+						<span>abc@hyundai.com</span>
+					</li>
+					<li>
+						<span class="tit">휴대폰번호</span><!-- 2022-09-02 [CPO-3239] 문구수정 ---->
+						<span>01012345678</span>
+					</li>
+				</ul>
+			</section>
+
+			<section>
+				<div class="sec_tit">
+					계약금액
+				</div>
+				<p class="contract_amount"><script>MSG.text('300,000', '500,000');</script><span>원</span></p>
+			</section>
+
+			<section>
+				<div class="sec_tit">결제방법</div>
+				<div class="payment_sel">
+					<input type="radio" name="payChk" id="payChk1" class="chk_radio" checked>
+					<label for="payChk1">신용카드</label>
+					<input type="radio" name="payChk" id="payChk2" class="chk_radio chk_account">
+					<label for="payChk2">무통장입금</label>
+
+					<div class="payment_account">
+						<div class="slt_box line">
+							<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+							<button type="button" class="sel_value jQ_Select" id="layerBankSel01" data-id="layerBankSel01_01" data-popup="layerBankSel-Layer01">은행선택</button><!-- 2022-09-02 [CPO-3239] 띄어쓰기수정 -->
+							<!-- Layer -->
+							<!--#include file="/HMC/m/SHTML/H_order/inc/layerBankSel-Layer01.shtml"--><!-- 은행선택 -->
+						</div>
+						<p class="caution">계약금액은 분할 입금이 불가능하며, 입금 금액이 다를 경우 정상 입금 처리가 불가능합니다.</p>
+					</div>
+				</div>
+			</section>
+			
+			<section class="agree_wrap toggle">
+				<div class="on"><!-- 2022-09-02 [CPO-3239] 추가 -->
+					<div class="top">
+						<input type="checkbox" class="chk_type01 large" id="chk_list01"><label for="chk_list01">전체 약관에 동의합니다.</label><!-- 2022-09-02 [CPO-3239] 수정 -->
+					</div>
+					<div class="inner">
+						<ol>
+							<li>
+								<input type="checkbox" name="chk_comm" id="chk_list02" class="chk_type01"><label for="chk_list02">[필수] 약관1</label><!-- 2022-09-02 [CPO-3239] 수정 -->
+								<button type="button" class="btn_show02">약관 자세히 보기</button>
+							</li>
+							<li>
+								<input type="checkbox" name="chk_comm" id="chk_list03" class="chk_type01"><label for="chk_list03">[필수] 약관2</label><!-- 2022-09-02 [CPO-3239] 수정 -->
+								<button type="button" class="btn_show02">약관 자세히 보기</button>
+							</li>
+							<li>
+								<input type="checkbox" name="chk_comm" id="chk_list04" class="chk_type01"><label for="chk_list04">[필수] 약관3</label><!-- 2022-09-02 [CPO-3239] 수정 -->
+								<button type="button" class="btn_show02">약관 자세히 보기</button>
+							</li>
+						</ol>
+					</div>
+					<button type="button" class="btn_show01 btnToggle" data-href="닫아보기">펼쳐보기</button><!-- 2022-09-02 [CPO-3239] 수정 -->
+				</div>
+			</section>
+
+			<div class="btn_sticky">
+				<button type="button" class="btn_big01" disabled>계약금 결제하기</button>
+			</div>
+
+		</div>
+
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<script>
+	CPO.toggle();
+	$(".jQ_Select").on("click",function(){//셀렉트박스 레이어 스크립트
+		CPO.POPUP_open($(this));// 레이어팝업 open
+		CPO_SelectLayer($(this));// 레이어팝업에 data 값 넘기기
+	});
+	$(".jQ_Select_Save").on("click",function(){//셀렉트박스 레이어 스크립트
+		CPO.POPUP_close($(this));// 레이어팝업 close
+		CPO_SelectSave($(this));// 레이어팝업에 data 값 넘기기
+	});
+</script>
+</body>
+</html>

@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!--#include file="guide_inc/guide_top.shtml"-->
+</head>
+<body>
+<!-- WRAP -->
+<div id="wrap">
+	<!--#include file="guide_inc/guide_head.shtml"-->
+	<!-- container -->
+	<div id="container">
+		<!-- left -->
+		<div id="sideMenu">
+			<ul class="navigation">
+				<li><button id="item1">Full Popup</button>
+					<ul class="sub">
+						<li><button id="item1_1">정적 DOM</button></li>
+						<li><button id="item1_2">동적 DOM(API)</button></li>
+					</ul>
+				</li>
+				<li><button id="item2">Modal Popup</button>
+					<ul class="sub">
+						<li><button id="item2_1">정적 DOM</button></li>
+						<li><button id="item2_2">동적 DOM(API)</button></li>
+					</ul>
+				</li>
+				<li><button id="item3">Bottom Popup</button>
+					<ul class="sub">
+						<li><button id="item3_1">정적 DOM</button></li>
+						<li><button id="item3_2">동적 DOM(API)</button></li>
+					</ul>
+				</li>
+				<li><button id="item4">공통 Popup</button>
+					<ul class="sub">
+						<li><button id="item4_1">alert</button></li>
+						<li><button id="item4_2">confirm</button></li>
+						<li><button id="item4_2">toast</button></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- left -->
+		<!-- contents -->
+		<div id="contents">
+			<div id="uio_item1_1" class="component">
+				<h4>Full Popup</h4>
+				<pre class="brush: html;">
+					<div class="popup_full" id="popup_full">
+						<div class="pop_head">
+							<h4 class="tit">타이틀</h4>
+						</div>
+						<div class="wrap">
+							<div class="cont">
+								popup_full 레이어 컨텐츠
+							</div>
+						</div>
+						<div class="btn_area">
+							<button type="button" class="btn_common01">텍스트</button>
+						</div>
+						<button type="button" class="pop_close">닫기</button>
+					</div>
+				</pre>
+				<h5>script</h5>
+				<pre class="brush:js">
+					CPO.popup_open($(this));
+				</pre>
+				<h5>버튼 없는 full popup</h5>
+				<button class="btn_full_pop" data-popup="popup_full">팝업 오픈</button>
+				<h5>버튼 있는 full popup</h5>
+				<button class="btn_full_pop" data-popup="popup_full02">팝업 오픈</button>
+			</div>
+			<div id="uio_item2_1" class="component">
+				<h4>Modal Popup</h4>
+				<pre class="brush: html;">
+					<div class="popup_modal" id="popup_modal">
+						<div class="pop_head">
+							<h4 class="tit">popup_modal 레이어 헤드</h4>
+						</div>
+						<div class="wrap">
+							<div class="cont">
+								popup_modal 레이어 컨텐츠
+							</div>
+						</div>
+						<div class="btn_area">
+							<button type="button" class="btn_common01">텍스트</button>
+						</div>
+						<button type="button" class="pop_close">닫기</button>
+					</div>
+				</pre>
+				<h5>script</h5>
+				<pre class="brush:js">
+					CPO.popup_open($(this));
+				</pre>
+				<h5>버튼 없는 모달</h5>
+				<button class="btn_modal_pop" data-popup="popup_modal">팝업 오픈</button>
+				<h5>버튼 있는 모달</h5>
+				<button class="btn_modal_pop" data-popup="popup_modal02">팝업 오픈</button>
+			</div>
+			<div id="uio_item3_1" class="component">
+				<h4>Bottom Popup</h4>
+				<pre class="brush: html;">
+					<div class="popup_bottom" id="popup_bottom">
+						<div class="pop_head">
+							<h4 class="tit">popup_bottom 레이어 헤드</h4>
+						</div>
+						<div class="wrap">
+							<div class="cont">
+								popup_bottom 레이어 컨텐츠<br>
+							</div>
+						</div>
+						<div class="btn_area">
+							<button type="button" class="btn_common03">텍스트</button>
+						</div>
+						<button type="button" class="pop_close">닫기</button>
+					</div>
+				</pre>
+				<h5>script</h5>
+				<pre class="brush:js">
+					CPO.popup_open($(this));
+				</pre>
+				<h5>실행</h5>
+				<button class="btn_bottom_pop" data-popup="popup_bottom">팝업 오픈</button>
+			</div>
+			<div id="uio_item4_1" class="component">
+				<h4>Alert Popup (공통) </h4>
+				<pre class="brush: html;">
+					<div class="popup_alert" id="popup_alert">
+						<div class="wrap">
+							<div class="cont">
+								alert 내용
+							</div>
+						</div>
+						<div class="btn_area">
+							<button type="button" class="btn_common04">텍스트</button>
+						</div>
+						<button type="button" class="pop_close">닫기</button>
+					</div>
+				</pre>
+				<h5>script</h5>
+				<pre class="brush:js">
+					CPO.popup_open($(this));
+				</pre>
+				<h5>실행</h5>
+				<button class="btn_alert_pop" data-popup="popup_alert">팝업 오픈</button>
+			</div>
+			<div id="uio_item4_2" class="component">
+				<h4>Confirm Popup (공통) </h4>
+				<pre class="brush: html;">
+					<div class="popup_confirm" id="popup_confirm">
+						<div class="wrap">
+							<div class="cont">
+								confirm 내용
+							</div>
+						</div>
+						<div class="btn_area">
+							<button type="button" class="btn_common04">텍스트</button>
+						</div>
+						<button type="button" class="pop_close">닫기</button>
+					</div>
+				</pre>
+				<h5>script</h5>
+				<pre class="brush:js">
+					CPO.popup_open($(this));
+				</pre>
+				<h5>실행</h5>
+				<button class="btn_confirm_pop" data-popup="popup_confirm">레이어 오픈</button>
+			</div>
+			<div id="uio_item4_3" class="component">
+				<h4>Toast Popup (공통) </h4>
+				<pre class="brush: html;">
+					<div class="popup_toast" id="popup_toast">
+						<div class="wrap">
+							<div class="cont">
+								toast 내용
+							</div>
+						</div>
+					</div>
+				</pre>
+				<h5>script</h5>
+				<pre class="brush:js">
+					CPO.popup_toast($('#popup_toast'));
+				</pre>
+				<h5>실행</h5>
+				<button class="btn_toast_pop">팝업 오픈</button>
+			</div>
+
+		</div>
+		<!-- contents -->
+	</div>
+	<!-- //container -->
+	<!--#include file="guide_inc/guide_footer.shtml"-->
+</div>
+<!-- //WRAP -->
+
+<!-- s : 레이어 템플릿 -->
+
+<!-- full popup -->
+<div class="popup_full" id="popup_full">
+	<div class="head">
+		<h4 class="tit">타이틀</h4>
+	</div>
+	<div class="wrap">
+		<div class="cont">
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠
+		</div>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+
+<div class="popup_full" id="popup_full02">
+	<div class="head">
+		<h4 class="tit">타이틀</h4>
+	</div>
+	<div class="wrap">
+		<div class="cont">
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠<br>
+			popup_full 레이어 컨텐츠
+		</div>
+	</div>
+	<div class="btn_area">
+		<!-- 파란색 100%짜리 버튼 -->
+		<button type="button" class="btn_common">텍스트</button>
+		<!-- //파란색 100%짜리 버튼 -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+<!-- //full popup -->
+<!-- modal popup -->
+<div class="popup_modal" id="popup_modal">
+	<div class="head">
+		<h4 class="tit">popup_modal 레이어 헤드</h4>
+	</div>
+	<div class="wrap">
+		<div class="cont">
+			<button class="btn_modal_pop03" data-popup="popup_modal03">레이어 여러 개 테스트용</button>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+		</div>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+
+<div class="popup_modal" id="popup_modal02">
+	<div class="head">
+		<h4 class="tit">popup_modal 레이어 헤드</h4>
+	</div>
+	<div class="wrap">
+		<div class="cont">
+			<button class="btn_modal_pop03" data-popup="popup_modal03">레이어 여러 개 테스트용</button>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+			popup_modal 레이어 컨텐츠<br>
+		</div>
+	</div>
+	<div class="btn_area">
+		<!-- 파란색 100%짜리 버튼 -->
+		<button type="button" class="btn_common">텍스트</button>
+		<!-- //파란색 100%짜리 버튼 -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+
+<div class="popup_modal" id="popup_modal03">
+	<div class="head">
+		<h4 class="tit">popup_modal 레이어 헤드</h4>
+	</div>
+	<div class="wrap">
+		<div class="cont">
+			popup_modal 레이어 컨텐츠<br>test
+		</div>
+	</div>
+	<div class="btn_area">
+		<!-- 파란색 100%짜리 버튼 -->
+		<button type="button" class="btn_common">텍스트</button>
+		<!-- //파란색 100%짜리 버튼 -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+<!-- //modal popup -->
+<!-- bottom popup -->
+<div class="popup_bottom" id="popup_bottom">
+	<div class="head">
+		<h4 class="tit">popup_bottom 레이어 헤드</h4>
+	</div>
+	<div class="wrap">
+		<div class="cont">
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+		</div>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+
+<div class="popup_bottom" id="popup_bottom02">
+	<div class="head">
+		<h4 class="tit">popup_bottom 레이어 헤드</h4>
+	</div>
+	<div class="wrap">
+		<div class="cont">
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠<br>
+			popup_bottom 레이어 컨텐츠
+		</div>
+	</div>
+	<div class="btn_area">
+		<button type="button" class="btn_common03">텍스트</button>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+<!-- //bottom popup -->
+<!-- alert popup -->
+<div class="popup_alert" id="popup_alert">
+	<div class="wrap">
+		<div class="cont">
+			alert 내용
+		</div>
+	</div>
+	<div class="btn_area">
+		<!-- 하얀색 50%짜리 버튼 -->
+		<button type="button" class="btn_common04">텍스트</button>
+		<!-- 하얀색 50%짜리 버튼 -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+<!-- //alert popup -->
+<!-- confirm popup -->
+<div class="popup_confirm" id="popup_confirm">
+	<div class="wrap">
+		<div class="cont">
+			confirm 내용
+		</div>
+	</div>
+	<div class="btn_area">
+		<!-- 하얀색 50%짜리 버튼 type02 -->
+		<button type="button" class="btn_common04">텍스트</button>
+		<!-- 하얀색 50%짜리 버튼 type02 -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+<!-- //confirm popup -->
+<!-- //toast popup -->
+<div class="popup_toast" id="popup_toast">
+	<div class="wrap">
+		<div class="cont">
+			toast 내용
+		</div>
+	</div>
+</div>
+<!-- //toast popup -->
+
+<!-- e : 레이어 템플릿 -->
+<script>
+	//풀 팝업
+	$(".btn_full_pop").on("click",function(){
+		fullPOP01 = CPO.popup_open($(this));
+	});
+
+	$(".btn_full_pop02").on("click",function(){
+		fullPOP02 = CPO.popup_open($(this));
+	});
+
+	//모달 팝업
+	$(".btn_modal_pop").on("click",function(){
+		modal_pop = CPO.popup_open($(this));
+	});
+	
+	$(".btn_modal_pop02").on("click",function(){
+		modal_pop02 = CPO.popup_open($(this));
+	});
+
+	$(".btn_modal_pop03").on("click",function(){
+		modal_pop03 = CPO.popup_open($(this));
+	});
+
+	//하단 팝업
+	$(".btn_bottom_pop").on("click",function(){
+		btm_pop = CPO.popup_open($(this));
+	});
+	
+	$(".btn_bottom_pop02").on("click",function(){
+		btm_pop02 = CPO.popup_open($(this));
+	});
+
+	$(".btn_bottom_pop03").on("click",function(){
+		btm_pop03 = CPO.popup_open($(this));
+	});
+
+	//alert 창
+	$(".btn_alert_pop").on("click",function(){
+		alert_pop = CPO.popup_open($(this));
+	});
+
+	//confirm 창
+	$(".btn_confirm_pop").on("click",function(){
+		confirm_pop = CPO.popup_open($(this));
+	});
+
+	//toast 창
+	$(".btn_toast_pop").on("click",function(){
+		testToastPop = CPO.popup_toast($('#popup_toast'));
+	});
+
+	// 팝업 닫기
+	CPO.popup_close();
+</script>
+</body>
+</html>

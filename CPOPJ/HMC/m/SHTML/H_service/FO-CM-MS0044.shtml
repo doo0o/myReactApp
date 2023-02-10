@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>법인 내차사기</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_service.css">
+	<link rel="stylesheet" type="text/css" href="../../css/h_sale.css">
+</head>
+<body>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+	<!-- cpo wrap -->
+	<div id="CPOwrap">
+		<!-- ////////////////////     header   시작     ////////////////////-->
+		<div id="CPOheader">
+			<!-- s: h_header : default  -->
+			<div class="h_header_sub">
+				<button type="button" class="ic_back">뒤로가기</button>
+				<h1 class="tit">법인 내차사기</h1>		
+			</div>
+			<!-- e: h_header : default  -->
+		</div>
+		<!-- ////////////////////     header   끝     ////////////////////-->
+		<!-- ////////////////////     contents 시작     ////////////////////-->
+		<div id="CPOcontents">
+			<!-- contents -->
+			<div class="service_visual">
+				<img src="/HMC/m/img/service/img_bc_corp.png" alt="">
+				<div class="visual_title">신차 수준의 법인 차량을<br>빠르게 만나보세요</div>
+				<div class="visual_dim"></div>
+			</div>
+			<div class="service_content">
+				<div class="service_list half white">
+					<p class="service_title">신뢰가 중요한 법인 차량,<br>중고차도 현대자동차에서<br>시작하세요.</p>
+					<ul class="list_icon">
+						<li>
+							<div class="img">
+								<img src="/HMC/m/img/service/icon_corp01.png" alt="">
+							</div>
+							<div class="info">
+								<span class="tit02">전문 상담사의<br>당일 답변</span>
+							</div>
+						</li>
+						<li>
+							<div class="img">
+								<img src="/HMC/m/img/service/icon_corp02.png" alt="">
+							</div>
+							<div class="info">
+								<span class="tit02">편리한 직접방문<br>서비스</span>
+							</div>
+						</li>
+						<li>
+							<div class="img">
+								<img src="/HMC/m/img/service/icon_corp03.png" alt="">
+							</div>
+							<div class="info">
+								<span class="tit02">Trade-In 진행 시<br>신차 할인 헤택</span>
+							</div>
+						</li>
+						<li>
+							<div class="img">
+								<img src="/HMC/m/img/service/icon_corp04.png" alt="">
+							</div>
+							<div class="info">
+								<span class="tit02">신속한 세금계산서<br>처리</span>
+							</div>
+						</li>
+					</ul>
+					<p class="txt_caution">법인 명의 차량 구매는 법인 아이디로 로그인 하신 후 일반 차량구매와 동일하게 진행하실 수 있어요.</p>
+				</div>
+				<div class="service_banner">
+					<div class="inner">
+						<span class="tit">법인 중고차 대량 구매를<br>전문 상담사가 도와드립니다.</span>
+						<a href="#" class="btn_arrow_mid01">법인 차량 대량 구매 문의</a>
+					</div>
+				</div>
+				<div class="service_table">
+					<p class="title">필요서류</p>
+					<div class="table_area">
+						<table class="table line">
+							<caption>거래내용</caption>
+							<colgroup>
+								<col style="width:140px">
+								<col style="width:94px">
+								<col style="width:94px">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>내차사기 법인</th>
+									<th>법인</th>
+									<th>비영리단체</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<th colspan="3">오프라인 수집</th>
+								</tr>
+								<tr>
+									<th>보험가입증명서</th>
+									<td class="dot"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>법인인감증명서</th>
+									<td class="dot"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>법인등기부등록 사본</th>
+									<td class="dot"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>사업자등록증 사본</th>
+									<td class="dot"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>법인 인감 (양도 증명서 날인 필요)</th>
+									<td class="dot"></td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>단체설립인가서 사본</th>
+									<td></td>
+									<td class="dot"></td>
+								</tr>
+								<tr>
+									<th>작인증명서(도장 날인)</th>
+									<td></td>
+									<td class="dot"></td>
+								</tr>
+								<tr>
+									<th>소속증명서</th>
+									<td></td>
+									<td class="dot"></td>
+								</tr>
+								<tr>
+									<th>회의록</th>
+									<td></td>
+									<td class="dot"></td>
+								</tr>
+								<tr>
+									<th>사업자등록 or 고유번호증</th>
+									<td></td>
+									<td class="dot"></td>
+								</tr>
+								<tr>
+									<th>명의이전 위임장</th>
+									<td></td>
+									<td class="dot"></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="service_table">
+					<p class="title">발급 기관</p>
+					<table class="table line">
+						<caption>거래내용</caption>
+						<colgroup>
+							<col width="50%">
+							<col width="50%">
+						</colgroup>
+						<thead>
+							<tr>
+								<th>서류명</th>
+								<th>발급기관</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<th>법인인감증명서</th>
+								<td>등기소</td>
+							</tr>
+							<tr>
+								<th>법인등기부등록 사본</th>
+								<td>등기소</td>
+							</tr>
+							<tr>
+								<th>사업자등록증 사본</th>
+								<td>세무서</td>
+							</tr>
+							<tr>
+								<th>법인 인감(양도증명서<br>날인 필요)</th>
+								<td>등기소</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="service_step">
+					<div class="service_title">
+						<p class="service_title">법인 차량 구매 전 법인 회원<br>가입을 먼저 진행해 주세요.</p>
+					</div>
+					<ul class="list_step">
+						<li>
+							<span class="num">1</span>
+							<span class="tit">현대닷컴 개인 회원 가입</span>
+							<span class="txt">개인 계정 회원가입을 진행합니다.</span>
+						</li>
+						<li>
+							<span class="num">2</span>
+							<span class="tit">블루멤버스 법인 계정 등록</span>
+							<span class="txt">사업자번호 인증을 통해 법인 계정을 등록합니다.</span>
+						</li>
+						<li>
+							<span class="num">3</span>
+							<span class="tit">법인 정보 확인 후 등록 완료</span>
+							<span class="txt">현대닷컴 법인 계정 관리자가 계정 등록 승인 후 가입이 완료됩니다.</span>
+						</li>
+					</ul>
+					<p class="txt_caution">대량구매는 법인 계정 로그인 후 문의 가능합니다.</p>
+				</div>
+				<div class="caution">
+					<p class="tit">법인 회원 등록 안내</p>
+					<ul>
+						<li>지점/대리점에서 블루멤버스 법인 회원에 가입한 경우, 차량 구매 담당자 정보 확인 후 계정 관리자 최초 등록이 가능합니다.</li>
+						<li>지점/대리점에서 블루멤버스 법인 회원에 가입하지 않은 법인의 경우에도 법인 공동인증서 인증을 통해 블루멤버스 법인 회원 및 홈페이지 법인 계정 등록이 가능합니다.※ 법인 인증은 '범용 법인 공동인증서'로만 가능합니다.</li>
+						<li>법인 회원 계정 등록을 위해서는 개인 회원 가입 후 법인 계정 등록을 완료해야 합니다.</li>
+						<li>개인 회원 아이디는 개인 이메일을 사용합니다.</li>
+						<li>계정관리자는 법인 페이지에서 담당자를 추가/삭제할 수 있습니다.</li>
+					</ul>
+				</div>
+			</div>
+			<!-- //contents -->
+		</div>
+		<!-- ////////////////////     contents 끝     ////////////////////-->
+		<!--#include file="/HMC/m/SHTML/H_inc/layout_footer.shtml"-->
+		
+		<!-- 2023 0207 탭바 추가 -->
+		<!--#include file="/HMC/m/SHTML/H_inc/layout_actionbar.shtml"-->
+	</div>
+	<!-- //cpo wrap -->
+
+	<!-- 법인 차량 대량 구매 문의 -->
+	<!--#include file="/HMC/m/SHTML/H_service/include/FO-CM-MS0053.shtml"-->
+	<script>
+		CPO.toggle();
+		document.addEventListener('DOMContentLoaded', function(){
+			//팝업 샘플
+			switch(MSG.getParam('pop')) {
+				case '1' : 
+					CPO.POPUP_layer_open('FO-CM-MS0053');
+					break;
+				default : break;
+			}
+		});
+		service.scrollDim();
+		
+		// 2023 0207 TOP / CHATBOT 추가
+		CPO.top();
+	</script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<div class="popup_full" id="FO-MY-PS0020">
+	<div class="p_body">
+		<div class="p_inner s_small">
+			<div class="p_head">
+				<h2 class="tit">입고알림신청</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+				<div class="inner_view alram">
+					<div class="top_area">
+						<p class=tit>입고알림을 신청하시면 유사한 조건의 차량 입고 시, 알림을 보내드려요.</p>
+						<div class="caution">
+							<p>차량의 트림까지 선택해야 입고알림 신청이 가능합니다.</p>
+						</div>
+					</div>
+					<ul class="alram_list">
+						<li>
+							<span class=tit>알림 서비스 기간 설정</span>
+							<div class="item">
+								<ul class="form_area row_type">
+									<li>
+										<input type="radio" name="chk_comm2" id="chk_block_2" class="chk_block hs02" checked="">
+										<label for="chk_block_2">7일</label>
+									</li>
+									<li>
+										<input type="radio" name="chk_comm2" id="chk_block02_2" class="chk_block hs02">
+										<label for="chk_block02_2">14일</label>
+									</li>
+									<li>
+										<input type="radio" name="chk_comm2" id="chk_block03_2" class="chk_block hs02">
+										<label for="chk_block03_2">30일</label>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<span class="tit">모델그룹</span>
+							<div class="form_area item">
+								<span class="com_select hs01" data-ref="select">
+									<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample" onclick="dropDown();">
+										모델그룹을 선택해 주세요 *
+									</button>
+									<span class="com_select_list" data-ref="dropDownList" id="dropDownExample">
+										<span class="com_select_list_inner">
+											<label class="com_select_item"><input type="radio" name="dropDownExample" checked=""> <span>모델그룹을 선택해 주세요 *</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>아반떼</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>쏘나타</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>그랜저</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>베뉴</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>싼타페</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>코나</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>투싼</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>펠리세이드</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>스타리아</span></label>
+										</span>
+									</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<span class="tit">모델</span>
+							<div class="form_area item">
+								<span class="com_select hs01" data-ref="select">
+									<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample" onclick="dropDown();" disabled>
+										모델을 선택해 주세요 *
+									</button>
+									<span class="com_select_list" data-ref="dropDownList" id="dropDownExample">
+										<span class="com_select_list_inner">
+											<label class="com_select_item"><input type="radio" name="dropDownExample" checked=""> <span>모델을 선택해 주세요 *</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>그랜저(86~92년)</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>뉴그랜저(92~98년)</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>그랜저 XG(98~02년)</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>뉴 그랜저 XG(02~05년)</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>뉴 그랜저 TG(05~08년)</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>그랜저 뉴 럭셔리(08~09년)</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>그랜저 HG(11~16년)</span></label>
+										</span>
+									</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<span class="tit">등급</span>
+							<div class="form_area item">
+								<span class="com_select hs01" data-ref="select">
+									<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample" onclick="dropDown();" disabled>
+										등급을 선택해 주세요 *
+									</button>
+									<span class="com_select_list" data-ref="dropDownList" id="dropDownExample">
+										<span class="com_select_list_inner">
+											<label class="com_select_item"><input type="radio" name="dropDownExample" checked=""> <span>등급을 선택해 주세요 *</span></label>										
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>가솔린 2.5</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>가솔린 3.3</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>LPG 3.0</span></label>
+										</span>
+									</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<span class="tit">트림</span>
+							<div class="form_area item">
+								<span class="com_select hs01" data-ref="select">
+									<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample" onclick="dropDown();" disabled>
+										트림을 선택해 주세요 *
+									</button>
+									<span class="com_select_list" data-ref="dropDownList" id="dropDownExample">
+										<span class="com_select_list_inner">
+											<label class="com_select_item"><input type="radio" name="dropDownExample" checked=""> <span>트림을 선택해 주세요 *</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>프리미엄</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>프리미엄 초이스</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>익스클루시브</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>캘리그래피</span></label>
+										</span>
+									</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<span class="tit a_top">가격</span>
+							<div class="box_range item">
+								<span class="txt_range" id="rangePrice-Chk"><i class="start"></i>만원 ~ <i class="end"></i></i>만원</span>
+								<div id="rangePrice"  class="cpo_range">
+									<div class="cpoRange"></div>
+									<p class="amountArea">
+										<input type="number" id="Sprice" title="최저 가격" data-min="1000" data-max="5000" steps="500" value="1000">
+										<input type="number" id="Sprice2" title="최대 가격" data-min="1000" data-max="5000" steps="500" value="5000">
+									</p>
+								</div>
+							</div>
+						</li>
+						<li>
+							<span class="tit a_top">색상</span>
+							<div class="item">
+								<ul class="color_list">
+									<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color01"><label for="schChk_Color01"><img src="/HMC/p/img/color/srch_010.png" alt="화이트 색상이미지"><p class="txt">화이트</p></label></li>
+									<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color02"><label for="schChk_Color02"><img src="/HMC/p/img/color/srch_004.png" alt="베이지 색상이미지"><p class="txt">베이지</p></label></li>
+									<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color03"><label for="schChk_Color03"><img src="/HMC/p/img/color/srch_009.png" alt="그레이 색상이미지"><p class="txt">그레이</p></label></li>
+									<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color04"><label for="schChk_Color04"><img src="/HMC/p/img/color/srch_002.png" alt="블랙 색상이미지"><p class="txt">블랙</p></label></li>
+									<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color05"><label for="schChk_Color05"><img src="/HMC/p/img/color/srch_001.png" alt="브라운 색상이미지"><p class="txt">브라운</p></label></li>
+									<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color06"><label for="schChk_Color06"><img src="/HMC/p/img/color/srch_005.png" alt="레드 색상이미지"><p class="txt">레드</p></label></li>
+									<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color07"><label for="schChk_Color07"><img src="/HMC/p/img/color/srch_003.png" alt="옐로우 색상이미지"><p class="txt">옐로우</p></label></li>
+									<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color08"><label for="schChk_Color08"><img src="/HMC/p/img/color/srch_007.png" alt="그린 색상이미지"><p class="txt">그린</p></label></li>
+									<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color09"><label for="schChk_Color09"><img src="/HMC/p/img/color/srch_008.png" alt="블루 색상이미지"><p class="txt">블루</p></label></li>
+									<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color10"><label for="schChk_Color10"><img src="/HMC/p/img/color/srch_006.png" alt="퍼플 색상이미지"><p class="txt">퍼플</p></label></li>
+								</ul>
+								<!-- GHQ COLOR LIST -->
+								<!-- <ul class="color_list">
+									<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color01"><label for="schChk_Color01"><img src="/GHQ/p/img/color/srch_010.png" alt="화이트 색상이미지"><p class="txt">화이트</p></label></li>
+									<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color02"><label for="schChk_Color02"><img src="/GHQ/p/img/color/srch_004.png" alt="베이지 색상이미지"><p class="txt">베이지</p></label></li>
+									<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color03"><label for="schChk_Color03"><img src="/GHQ/p/img/color/srch_011.png" alt="실버 색상이미지"><p class="txt">실버</p></label></li>
+									<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color04"><label for="schChk_Color04"><img src="/GHQ/p/img/color/srch_012.png" alt="메탈 색상이미지"><p class="txt">메탈</p></label></li>
+									<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color05"><label for="schChk_Color05"><img src="/GHQ/p/img/color/srch_009.png" alt="그레이 색상이미지"><p class="txt">그레이</p></label></li>
+									<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color06"><label for="schChk_Color06"><img src="/GHQ/p/img/color/srch_002.png" alt="블랙 색상이미지"><p class="txt">블랙</p></label></li>
+									<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color07"><label for="schChk_Color07"><img src="/GHQ/p/img/color/srch_005.png" alt="레드 색상이미지"><p class="txt">레드</p></label></li>
+									<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color08"><label for="schChk_Color08"><img src="/GHQ/p/img/color/srch_001.png" alt="브라운 색상이미지"><p class="txt">브라운</p></label></li>
+									<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color09"><label for="schChk_Color09"><img src="/GHQ/p/img/color/srch_013.png" alt="골드 색상이미지"><p class="txt">골드</p></label></li>
+									<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color10"><label for="schChk_Color10"><img src="/GHQ/p/img/color/srch_007.png" alt="그린 색상이미지"><p class="txt">그린</p></label></li>
+									<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color10"><label for="schChk_Color10"><img src="/GHQ/p/img/color/srch_008.png" alt="블루 색상이미지"><p class="txt">블루</p></label></li>
+								</ul> -->
+								<!-- // GHQ COLOR LIST -->
+								<div class="caution">
+									<p>색상계열을 선택하지 않으시면 색상에 상관없이 알림이 등록됩니다.</p>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="btn_area col_type">
+						<button type="button" class="btn_reset">새로고침</button>
+						<button type="button" class="btn_big color01">입고알림 신청</button>
+					</div>
+				</div>
+				<!-- //contents -->				
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>
+
+<script>
+	$(document).ready(function() {
+		SRCH.FilterPriceRange('Sprice', 'Sprice2', 'rangePrice', 500, '만원'); // 가격 선택
+	})
+</script>

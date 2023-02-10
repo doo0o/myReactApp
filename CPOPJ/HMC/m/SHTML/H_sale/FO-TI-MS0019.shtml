@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>차량정보 및 시세확인 불가 : 현대차 CPO</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_sale.css">
+</head>
+<body class="sale_head01">
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--  s: h_header  -->
+		<div class="h_header_navi02">
+			<h1 class="tit"><a href="#" class="ic_logo">현대CPO</a></h1>
+			<div class="util">
+				<button type="button" class="menu" data-ref="menuLayer">내차사기</button>
+				<div class="menu_layer" id="menuLayer">
+					<ul>
+						<li class="on"><a href="#">내차사기</a></li>
+						<li><a href="#">내차팔기</a></li>
+					</ul>
+				</div>
+				<ul>
+					<li><button type="button" class="ic_mycar jQ_POP_open" data-popup="FO-TI-MS0017">내차팔기 정보</button></li><!-- jQ_POP_open 팝업 호출 class / data-popup 팝업 id 값 -->
+				</ul>
+			</div>
+		</div>
+		<!--  e: h_header  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<!-- 차량정보 및 시세확인 불가 -->
+		<div class="sale_car_info sale_car_info02">
+
+			<div class="sale_step02">
+				<p class="tit">
+					시세 계산을 위한 <br> 차량 정보가 부족해요.
+				</p>
+				<p class="txt3">조회하신 차량은 시세 계산을 위한 데이터가 부족하여<br>내차팔기 서비스 이용이 어렵습니다.<br>불편을 드려 죄송합니다.</p>
+				<div class="graph">
+					<img src="/HMC/m/img/result_failed_graph.png" alt=""/>
+				</div>
+			</div>
+			<div class="sale_step02_02">
+				<section class="caution">
+					<p class="tit">왜 내 차의 시세는 나오지 않나요?</p> <!-- 2022-09-16 CPO-3291 --> 
+					<ul>
+						<li>시세는 차량 정보를 기반으로 제공하고 있기 때문에 차량 정보가 등록되어 있지 않은 경우 시세를 제공해 드릴 수 없어요.</li>
+						<li>신차 혹은 오래된 연식 차량의 경우 수집된 차량 정보가 적어 시세가 나오지 않을 수 있어요.</li>
+					</ul>
+				</section>
+				<section class="caution">
+					<p class="tit">서비스 개선을 위해 차종 정보를 입력해 주세요.<br> 현대 &amp; 제네시스 인증 중고차 서비스 개선에 도움이 됩니다.</p> <!-- 2022-09-16 CPO-3291 --> 
+					<ul>
+						<li>고객님이 보유하신 차량의 모델정보만 알려주셔도 보다 빠른 서비스 개선이 가능합니다.</li>
+						<li>모든 정보 입력에 약 30초 가량 소요됩니다.</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+		<!-- //차량정보 및 시세확인 불가 -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big04 jQ_POP_open" data-popup="FO-TI-MS0059">서비스 개선에 동참하기</button>  <!-- 2022-09-16 CPO-3291 -->
+		</div>
+		<!-- //03. BUTTON -->
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+</div>
+<!-- //cpo wrap -->
+<!-- 차량등록 -->
+<!--#include file="/HMC/m/SHTML/H_sale/include/FO-TI-MS0059.shtml"-->
+<script>
+	document.addEventListener('DOMContentLoaded', function(){
+		//팝업 샘플
+		switch(MSG.getParam('pop')) {
+			case '1' : 
+				CPO.POPUP_layer_open('FO-TI-MS0059');
+				break;
+			case '2' : 
+				CPO.POPUP_layer_open('FO-TI-MS0060');
+				break;
+			default : break;
+		}
+	});
+</script>
+</body>
+</html>
+

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Layout Cart Type : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_cart.css">
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+    <!-- CPOcontents -->
+	<div id="CPOcontents">
+        <div id="layoutWrap" class="cart">
+            <!-- container -->
+            <div class="container" style="width:580px;">
+				<div class="btn_area full_type row_type">
+					<button class="btn_mid color02 test" onclick="popupOpen('FO-SM0002')">FO-SM0002 (confirm - 선택차량을 삭제하시겠습니까?)</button>
+					<button class="btn_mid color02 test" onclick="popupOpen('FO-SP0060')">FO-SP0060 (alert - 비교가능한 차량이 없습니다.)</button>
+					<button class="btn_mid color02 test" onclick="popupOpen('FO-SM0006')">FO-SM0006 (alert - 비교하기 차량은 최대 5대까지 선택)</button>
+					<button class="btn_big color01" onclick="popupToast('toast_wrap', '미성년자는 차량 주문이 불가능합니다.')">toast (미성년자는 차량 주문이 불가능합니다.)</button>
+				</div>
+			</div>
+            <!-- //sc_container -->
+        </div>
+	</div>
+
+	<!-- start: 토스트팝업을 위한 컨테이너 엘리먼트 -->
+	<div class="pop_toast" id="toast_wrap"><div class="txt"></div></div>
+	<!-- end: 토스트팝업을 위한 컨테이너 엘리먼트 -->
+
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->선택차량을 삭제하시겠습니까?
+
+<!-- 팝업 -->
+<!--#include file="/HMC/p/SHTML/H_order/include/FO-SM0002.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_order/include/FO-SP0060.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_order/include/FO-SM0006.shtml"-->
+</body>
+<script>
+
+</script>
+</html>

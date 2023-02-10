@@ -1,0 +1,94 @@
+<!-- FO-MY-MS0079 : 전자서명 재요청 - FULL -->
+<div class="CPOpop_full" id="FO-MY-MS0079">
+	<div class="p_head">
+		<h2 class="tit">전자서명 재요청</h2>
+	</div>
+	<div class="p_wrap">
+		
+		<div class="digital_sign layer_bg">
+			<div class="form">
+				<dl class="name">
+					<dt class="flag">
+						<span class="flag_mid01">대표명의자</span>
+						<span class="flag_mid03">개인</span>
+					</dt>
+					<dd>김현대 고객님</dd>
+				</dl>
+				<div class="select">
+					<p class="tit">전자서명 방법</p>
+					<ul class="radio_list">
+						<li>
+							<input type="radio" name="select_chk02" id="select_chk03_1" class="chk_radio" checked="">
+							<label for="select_chk03_1">문자메시지</label>
+						</li>
+						<li>
+							<input type="radio" name="select_chk02" id="select_chk03_2" class="chk_radio email">
+							<label for="select_chk03_2">이메일</label>
+						</li>
+					</ul>
+					<div class="radio_cont">
+						<div class="inbox_type01" style="display: block;">
+							<span class="tit">휴대폰번호</span>
+							<input type="tel" class="txt type_tel" title="휴대폰번호 입력" placeholder="'-' 없이 숫자만 입력" name="" value="">
+							<button type="button" class="btn_delete">삭제</button>
+							<!-- <span class="validation error">입력하신 휴대폰번호 형식이 유효하지 않습니다.</span> -->  
+						</div>
+						<div class="inbox_type01 email">
+							<span class="tit">이메일</span>
+							<input type="email" class="txt type_email" title="이메일 입력" placeholder="" name="" value="">
+							<button type="button" class="btn_delete">삭제</button>
+							<div class="slt_box">
+								<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+								<button type="button" class="sel_value jQ_Select" id="MS0079_Select01" data-id="MS0079_Select0101" data-popup="MS0079_Select-Layer">직접입력</button>
+
+								<!-- Layer -->
+								<div class="CPOpop_bottom select" id="MS0079_Select-Layer">
+									<div class="p_head">
+										<p class="tit">이메일 주소 선택</p>
+									</div>
+									<div class="p_wrap">
+										<!-- list -->
+										<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+											<li><input type="radio" class="chk_select" name="MS0079_Select01_Name" id="MS0079_Select0101"><label for="MS0079_Select0101">직접입력</label></li>
+											<li><input type="radio" class="chk_select" name="MS0079_Select01_Name" id="MS0079_Select0102"><label for="MS0079_Select0102">@hyundai.com</label></li>
+											<li><input type="radio" class="chk_select" name="MS0079_Select01_Name" id="MS0079_Select0103"><label for="MS0079_Select0103">@naver.com</label></li>
+											<li><input type="radio" class="chk_select" name="MS0079_Select01_Name" id="MS0079_Select0104"><label for="MS0079_Select0104">@daum.net</label></li>
+											<li><input type="radio" class="chk_select" name="MS0079_Select01_Name" id="MS0079_Select0105"><label for="MS0079_Select0105">@hanmail.net</label></li>
+											<li><input type="radio" class="chk_select" name="MS0079_Select01_Name" id="MS0079_Select0106"><label for="MS0079_Select0106">@nate.com</label></li>
+											<li><input type="radio" class="chk_select" name="MS0079_Select01_Name" id="MS0079_Select0107"><label for="MS0079_Select0107">@gmail.com</label></li>
+										</ol>
+										<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // MS0079_Select01 변경 내용 적용  -->
+											<button type="button" class="btn_big01 jQ_Select_Save" data-id="MS0079_Select01">선택하기</button>
+										</div>
+										<!-- //list -->
+									</div>
+									<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 04. sticky button -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01" disabled>서명 요청하기</button>
+		</div>
+		<!--// 04. sticky button -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+
+<script>
+	$('#FO-MY-MS0079 .digital_sign .select .chk_radio').on('click', function(){
+		var emailCheck = $('.email:checked').val();
+		var radioCont = $(this).parent().parent().next().children();
+		radioCont.css('display','none');
+		if (!emailCheck) {
+			radioCont.eq($(this).parent().index()).css('display','block');
+		} else {
+			radioCont.eq($(this).parent().index()).css('display','flex');
+		}
+	});
+</script>

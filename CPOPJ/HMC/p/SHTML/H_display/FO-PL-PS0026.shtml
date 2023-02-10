@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>오프라인전시장 : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_display.css"> <!-- 해당 CSS -->
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- 코치마크 -->
+<!--#include file="/HMC/p/SHTML/H_display/include/inc_coach.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+    <!-- CPOcontents -->
+	<div id="CPOcontents">
+        <div id="layoutWrap" class="display">			
+			<!-- container -->
+            <div class="container">
+				<div class="showroom_detail">
+					<h1 class="page_tit align_c">현대 & 제네시스 인증 중고차<br>스튜디오 & 센터 준비차량 목록</h1>
+					<div class="sec_tit l">
+						<p>스튜디오 수원 (현대차 전시장)</p>					
+						<div class="form_area">
+							<span class="com_select hs02 isSelected" data-ref="select">
+								<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample" onclick="dropDown({reset: false});">
+									스튜디오 수원 (현대차 전시장) 
+								</button>
+								<span class="com_select_list" data-ref="dropDownList" id="dropDownExample">
+									<span class="com_select_list_inner">
+										<label class="com_select_item"><input type="radio" name="dropDownExample" checked=""> <span>스튜디오 수원 (현대차 전시장) </span></label>
+										<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>스튜디오 수원(제네시스 전시장)</span></label>
+										<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>스튜디오 일산(현대차)</span></label>
+										<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>안성 센터</span></label>
+										<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>양산 센터</span></label>
+									</span>
+								</span>
+							</span>
+						</div>								
+					</div>
+					<div class="cont_info">
+						<div class="img_box">
+							<div class="swiperBanner1">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide">
+										<img src="../../img/@thumb/@plp_center01.jpg" alt="스튜디오 수원">
+										<p class="name">스튜디오 수원 (현대차 전시장) 외부 전경</p>
+									</li>
+									<li class="swiper-slide">
+										<img src="../../img/@thumb/@plp_center01.jpg" alt="스튜디오 수원">
+										<p class="name">스튜디오 수원 (현대차 전시장) 외부 전경</p>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info_box">
+							<!-- html corner -->
+							<p class=tit>스튜디오 수원 (현대차 전시장)은<br>현대자동차 최대 100대가 전시되어 있는 대규모 전시장입니다.<br>신차 수준의 인증중고차를 만나보세요.</p>
+							<br>
+							<p class="desc">
+								차량 계약 후 계약금 결제 완료 시 방문 예약 가능하며,<br>
+								전일 오후 6시 이전 계약금 결제분에 한해 익일 예약만 가능합니다.<br>
+								<br>
+								계약금 결제 시 예약 가능한 시간표가 제공됩니다.<br>
+								차량 목록에서 원하는 차량을 주문 후 방문 예약을 진행해 주세요.
+							</p>
+							<!-- // html corner -->
+							<button class="btn_big color02" type="button">오시는 길</button>
+						</div>
+					</div>	
+					<!-- total_result -->
+					<div class="total_result">
+						<div class="all">전체 <em>180</em>대</div>
+						<ul class="box_sort">
+							<li>
+								<button type="button" class="btn_thumb" id="plpViewType" data-ref="plpViewList" onclick="changeList()">보기방식 변경</button>
+								<!-- <button type="button" class="btn_deal">보기방식 변경</button> -->
+							</li>				
+							<li class="com_select hs_none isSelected" data-ref="select">
+								<button type="button" class="btn_sort com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample" onclick="dropDown({reset: false});">인기순</span></button>
+								<div class="com_select_list" data-ref="dropDownList" id="dropDownExample">
+									<span class="com_select_list_inner">
+										<label class="com_select_item"><input type="radio" name="dropDownExample" checked=""> <span>인기순</span></label>
+										<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>최근 연식순</span></label>
+										<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>낮은 가격순</span></label>
+										<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>높은 가격순</span></label>
+										<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>최근 등록순</span></label>
+										<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>짧은 주행거리순</span></label>
+									</span>
+								</div>
+								<!-- tooltip -->
+								<div class="tooltip bottom">
+									<button type="button" class="open size01">상세보기</button>
+									<div class="cont">
+										<span class="text">인기순은 고객의 장바구니에 담긴 수, <br>고객이 찜한 수를 집계한 기준<br>높은 순으로 전시됩니다.
+										</span>
+										<button class="close">상세보기닫기</button>
+									</div>
+								</div>
+								<!-- //tooltip -->
+							</li>
+						</ul>
+					</div>
+					<!-- //total_result -->
+					<!-- 상품 리스트 -->
+					<div class="plp_template">
+						<div class="compare_wrap plp_list">
+							<ul class="unit_deal col_type01" id="plpViewList">
+								<li>
+									<a href="#" class="hover"><!-- list_deal hover될때 -->
+										<!-- unit -->
+										<div class="unit_img">
+											<img src="/HMC/p/img/@thumb/@visual_car_sample10.png" alt="상품명으로 뿌려주세요">
+											<div class="on"><img src="/HMC/p/img/@thumb/plp_3x2_hover.jpg" alt="상품명으로 뿌려주세요"></div> <!-- 실내 이미지 -->
+											<span class="flag_big02">비교하기 선택 완료</span>
+										</div>
+										<div class="unit_info">
+											<div class="tag">
+												<span class="flag_mid02">New</span>
+												<span class="flag_mid01 ico_video">영상</span>
+											</div>
+											<div class="price">
+												<span class="num"><em>3,820</em><i>만원</i></span>
+												<span class="like"><em>245</em></span>
+											</div>
+											<div class="name">
+												<span class="model">펠리세이드 페이스리프트</span>
+												<span class="desc"> 가솔린 3.8 4WD 익스클루시브 8인승 오토</span>
+											</div>
+											<div class="drive">
+												<span>20년 12월</span>
+												<span>50,000km</span>
+												<span>12가1234</span>
+											</div>
+										</div>
+										<button class="btn_experience">오감만족 정보 확인</button>
+										<!-- //unit -->
+										<!--  성능 그래프  -->
+										<!--#include file="/HMC/p/SHTML/H_display/include/inc_unit_detail.shtml"-->
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);"> 
+										<!-- unit -->
+										<div class="unit_img">
+											<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+											<div class="on"><img src="/HMC/p/img/@thumb/plp_3x2_hover.jpg" alt="상품명으로 뿌려주세요"></div> <!-- 실내 이미지 -->
+											<span class="flag_big02">비교하기 선택 완료</span>
+										</div>
+										<div class="unit_info">
+											<div class="tag">
+												<span class="flag_mid02">New</span>
+												<span class="flag_mid01 ico_video">영상</span>
+											</div>
+											<div class="price">
+												<span class="num"><em>3,820</em><i>만원</i></span>
+												<span class="like"><em>245</em></span>
+											</div>
+											<div class="name">
+												<span class="model">현대 뉴 투싼iX</span>
+												<span class="desc">디젤(E-VGT)2WD 스마트</span>
+											</div>
+											<div class="drive">
+												<span>20년 12월</span>
+												<span>50,000km</span>
+												<span>12가1234</span>
+											</div>
+										</div>
+										<button class="btn_experience">오감만족 정보 확인</button>
+										<!-- //unit -->
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);"> 
+										<!-- unit -->
+										<div class="unit_img">
+											<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+											<div class="on"><img src="/HMC/p/img/@thumb/plp_3x2_hover.jpg" alt="상품명으로 뿌려주세요"></div> <!-- 실내 이미지 -->
+											<span class="flag_big02">비교하기 선택 완료</span>
+										</div>
+										<div class="unit_info">
+											<div class="tag">
+												<span class="flag_mid02">New</span>
+												<span class="flag_mid01 ico_video">영상</span>
+											</div>
+											<div class="price">
+												<span class="num"><em>3,820</em><i>만원</i></span>
+												<span class="like"><em>245</em></span>
+											</div>
+											<div class="name">
+												<span class="model">현대 쏘나타 뉴 라이즈 
+												</span>
+												<span class="desc">2.0 스타일</span>
+											</div>
+											<div class="drive">
+												<span>20년 12월</span>
+												<span>50,000km</span>
+												<span>12가1234</span>
+											</div>
+										</div>
+										<button class="btn_experience">오감만족 정보 확인</button>
+										<!-- //unit -->
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);"> 
+										<!-- unit -->
+										<div class="unit_img">
+											<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+											<div class="on"><img src="/HMC/p/img/@thumb/plp_3x2_hover.jpg" alt="상품명으로 뿌려주세요"></div> <!-- 실내 이미지 -->
+											<span class="flag_big02">비교하기 선택 완료</span>
+										</div>
+										<div class="unit_info">
+											<div class="tag">
+												<span class="flag_mid02">New</span>
+												<span class="flag_mid01 ico_video">영상</span>
+											</div>
+											<div class="price">
+												<span class="num"><em>3,820</em><i>만원</i></span>
+												<span class="like"><em>245</em></span>
+											</div>
+											<div class="name">
+												<span class="model">그랜저 IG </span>
+												<span class="desc">가솔린 3.3 캘리그래피</span>
+											</div>
+											<div class="drive">
+												<span>20년 12월</span>
+												<span>50,000km</span>
+												<span>12가1234</span>
+											</div>
+										</div>
+										<button class="btn_experience">오감만족 정보 확인</button>
+										<!-- //unit -->
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);"> 
+										<!-- unit -->
+										<div class="unit_img">
+											<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+											<div class="on"><img src="/HMC/p/img/@thumb/plp_3x2_hover.jpg" alt="상품명으로 뿌려주세요"></div> <!-- 실내 이미지 -->
+											<span class="flag_big02">비교하기 선택 완료</span>
+										</div>
+										<div class="unit_info">
+											<!-- <div class="tag">
+												<span class="flag_mid02">New</span>
+												<span class="flag_mid01 ico_video">영상</span>
+											</div> -->
+											<div class="price">
+												<span class="num"><em>3,820</em><i>만원</i></span>
+												<span class="like"><em>245</em></span>
+											</div>
+											<div class="name">
+												<span class="model">그랜저 IG </span>
+												<span class="desc">가솔린 3.3 캘리그래피</span>
+											</div>
+											<div class="drive">
+												<span>20년 12월</span>
+												<span>50,000km</span>
+												<span>12가1234</span>
+											</div>
+										</div>
+										<button class="btn_experience">오감만족 정보 확인</button>
+										<!-- //unit -->
+									</a>
+								</li>
+								<li>
+									<a href="javascript:void(0);"> 
+										<!-- unit -->
+										<div class="unit_img">
+											<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+											<div class="on"><img src="/HMC/p/img/@thumb/plp_3x2_hover.jpg" alt="상품명으로 뿌려주세요"></div> <!-- 실내 이미지 -->
+											<span class="flag_big02">비교하기 선택 완료</span>
+										</div>
+										<div class="unit_info">
+											<div class="tag">
+												<span class="flag_mid02">New</span>
+												<span class="flag_mid01 ico_video">영상</span>
+											</div>
+											<div class="price">
+												<span class="num"><em>3,820</em><i>만원</i></span>
+												<span class="like"><em>245</em></span>
+											</div>
+											<div class="name">
+												<span class="model">그랜저 IG </span>
+												<span class="desc">가솔린 3.3 캘리그래피</span>
+											</div>
+											<div class="drive">
+												<span>20년 12월</span>
+												<span>50,000km</span>
+												<span>12가1234</span>
+											</div>
+										</div>
+										<button class="btn_experience">오감만족 정보 확인</button>
+										<!-- //unit -->
+									</a>
+								</li>
+							</ul>
+							<div class="btn_area col_type">
+								<button type="button" class="btn_more">더보기</button>
+							</div>
+						</div>
+					</div>
+					<!-- //상품 리스트 -->                                      
+				</div>
+            </div>            
+            <!-- //container -->
+
+        </div>
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+<script>
+	  const swiper1 = new Swiper('.swiperBanner1', getSwiperOption({
+			target : '.swiperBanner1', 
+			slidesPerView : 1,
+			spaceBetween : 0,
+			pagination : true,
+			// pagination_cls : "01",
+			navigation : true,
+			loop:true,
+			addOption : { // 추가 옵션 (Swiper API) 				
+			},
+		})
+	);
+	//목록 오감만족 원형 데이터
+    CPODonutChart($('#progress_period'), true, true, 1000);
+    CPODonutChart($('#progress_warranty'), true, true, 1000);
+    CPODonutChart($('#progress_compare'), true, true, 1000);
+    CPODonutChart($('#progress_history'), true, true, 1000);
+    CPODonutChart($('#progress_bluelink'), true, true, 1000);
+
+    //unit_list 오감만족 정보 펼침/닫힘   
+    function experienceSlide() {
+        $('.btn_experience').on('click', function() {
+            if(!$(this).hasClass('on')) {
+                $(this).addClass('on').next('.unit_detail').slideDown(300).css('display', 'flex');
+            } else {
+                $(this).removeClass('on').next('.unit_detail').slideUp(300);
+            }
+            event.preventDefault();
+        });
+    } 
+    experienceSlide();
+</script>
+</body>
+</html>

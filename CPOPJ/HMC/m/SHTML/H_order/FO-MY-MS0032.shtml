@@ -1,0 +1,1835 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>내차팔기 상세 : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_order.css">
+</head>
+<body>
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">내차팔기 상세</h1>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<!-- [order_detail] WRAP 내차팔기 상세 -->
+		<div class="order_detail sec_line"> 
+			<!-- 01. 주문정보 -->
+			<section class="order_info">
+				<div class="order_no">
+					<span class="flag_mid02">최종견적확인</span>
+					<span class="no">20211112321564565421</span>
+				</div>
+				<div class="unit_type order">
+					<a href="javascript:void(0);" class="mid_area">
+						<div class="unit_img">
+							<img src="/HMC/m/img/@thumb/plp_310x310_01.jpg" alt="">
+						</div>
+						<div class="unit_info">
+							<p class="num"><span class="flag_small03">Trade-In</span>123가1234</p> <!-- 2022.09.13 [CPO-3126] 수정 -->
+							<p class="name">
+								<span class="model">그랜저 IG </span>
+								<span class="desc">가솔린 3.3 캘리그래피</span>
+							</p>
+							<p class="drive">
+								<em>20년 12월(21년형)</em>
+								<em>50,000km</em>								
+							</p>
+						</div>
+					</a>
+				</div>
+			</section>
+			<!-- //01. 주문정보 -->
+
+
+			<!-- 02. 주문진행 상태 -->
+			<!-- CS002,CS003 견적요청 -->
+			<!-- 
+			<section class="box_type order_step"> 2023-01-20 [CPO-9017] 삭제 
+				<div class="seq">
+					<span class="now">견적</span>
+					<span>평가</span>
+					<span>계약</span>
+					<span>완료</span>
+				</div>
+				<div class="txt">
+					<em>요청하신 예상 견적가격을 산정중입니다.</em>
+					<p> 2023-01-17 [CPO-8606]
+						예상 시세는 약 4,400 ~ 4,380만원입니다.<br>
+						24시간 안에 견적을 발송해 드립니다.
+					</p>
+					<p>123현1234 차량의 예상 시세는<br>약 2,296~2,449만원 입니다.</p>
+				</div>
+			</section>
+			-->
+			<!-- //CS002,CS003 견적요청 -->
+			<!-- CS004 견적수신 -->
+			<!-- 2023-01-20 [CPO-9017] 삭제
+			<section class="box_type order_step">
+				<div class="seq">
+					<span class="now">견적</span>
+					<span>평가</span>
+					<span>계약</span>
+					<span>완료</span>
+				</div>
+				
+				<div class="txt">
+					<em>예상 견적가격은<br>43,800,000원 입니다.</em>
+					<p>견적 기한 내 방문평가를 신청해 주세요.</p>
+					<p id="dueDate" class="time">1일 10 : 50 : 12</p>
+					<span class="date">2021.11.30 23:59까지 신청가능</span> 2023-01-17 [CPO-8606] 위치 변경
+				</div>
+				<div class="btn_area">
+					<button type="button" class="btn_mid05">방문평가 신청</button>
+				</div>
+			</section>
+			-->
+			<!-- //CS004 견적수신 -->
+			<!-- CS009, CS010 방문평가요청 -->
+			<!-- 2023-01-20 [CPO-9017] 삭제
+			<section class="box_type order_step">
+				<div class="seq">
+					<span class="on">견적</span>
+					<span class="now">평가</span>
+					<span>계약</span>
+					<span>완료</span>
+				</div> 
+				<div class="txt">
+					<em>차량 방문평가사 배정 중입니다.</em>
+					<p>방문평가 이후 일부 감가 항목이 발생할 수 있습니다.</p>2023-01-17 [CPO-8606] 변경
+				</div>
+				2023-01-17 [CPO-8606] 추가
+				<div class="bg_box cont_type01">
+					<div class="tit">
+						방문평가 신청정보
+						<button type="button" class="btn_icon_mid01" data-popup="FO-OR-MS0006">변경</button>
+					</div>
+					<ul class="list">
+						<li>방문평가 위치 : (06179) 서울시 강남구 테헤란로 510 1002호</li>
+						<li class="col_point">방문평가 희망일 : 2021.10.20 12:00</li>
+					</ul>
+				</div>
+				2023-01-17 [CPO-8606] 추가
+			</section>
+			-->
+			<!-- //CS009, CS010 방문평가요청 -->
+			<!-- CS011 방문평가대기 -->
+			<!-- 2022.09.13 [CPO-3126] 수정 -->
+			<!-- <section class="box_type order_step">
+				<div class="seq">
+					<span class="on">견적</span>
+					<span class="now">평가</span>
+					<span>계약</span>
+					<span>완료</span>
+				</div>
+				<div class="txt">
+					<em>2021.10.20(수) 12:00</em>
+					<p>차량 방문평가사가 방문할 예정입니다.</p>
+				</div>
+				<button type="button" class="btn_combi01_01">방문평가사 정보 확인하기</button>
+			</section> -->
+			<!-- // 2022.09.13 [CPO-3126] 수정 -->
+			<!-- //CS011 방문평가대기 -->
+			<!-- CS011 방문평가대기 -->
+			<section class="box_type order_step">
+				<div class="seq">
+					<span class="on">견적</span>
+					<span class="now">평가</span>
+					<span>계약</span>
+					<span>완료</span>
+				</div>
+				<div class="txt">
+					<em>2021.10.20(수) 12:00</em>
+					<p>차량 방문평가사가 방문할 예정입니다.</p>
+				</div>
+				<!-- <button type="button" class="btn_combi01_01">방문평가사 정보 확인하기</button> 삭제 2023-01-17 [CPO-8606] -->
+				<!-- 2023-01-17 [CPO-8606] 추가 -->
+				
+				<div class="bg_box cont_type01">
+					<!-- 2023-01-27 [CPO-8606] 문구변경 및 삭제 -->
+					<div class="tit">
+						방문평가 정보
+						<!-- <button type="button" class="btn_icon_mid01" data-popup="FO-OR-MS0006">변경</button> -->
+					</div>
+					<!-- //2023-01-27 [CPO-8606] 문구변경 및 삭제 -->
+					<ul class="list">
+						<li class="profile">
+							<div class="img"><img src="/HMC/m/img/@thumb/profile.jpg" alt="평가사 사진"></div>
+							<div class="txt">
+								<span class="name">최현대</span>
+								<span class="num">01012341234</span> 
+							</div>
+						</li> 
+						<li>방문평가 위치 : (06179) 서울시 강남구 테헤란로 510 1002호</li>
+						<li>방문평가 회사 : (주) 현대글로비스</li>
+						<li class="col_point">방문평가 예정일 : 2021.10.20 12:00</li>
+					</ul>
+				</div>
+				<!-- 2023-01-17 [CPO-8606] 추가 -->
+			</section>
+			<!-- 2022.09.13 [CPO-3126] 수정 -->
+			<!-- trade In 혜택 추가 -->
+			<section class="box_type toggle">
+				<div class="trade_in">
+					<button class="sec_tit tit_btn">Trade-In 혜택</button>
+					<div class="cont">
+						<div class="info_box">
+							<p>Trade-In 혜택 적용 예정인<br> 신차 계약이 있습니다.</p>
+						</div>
+						<div class="caution02">
+							<div class="top_area">
+								<span class="flag_mid03">신차 계약번호</span>
+								<span class="num">A20211112321564565421</span>
+							</div>		
+							<p class="tit">더 뉴 그랜저 IG 가솔린 3.3 캘리그래피 모던 스마트 캘리그래피</p>						
+							<div class="detail">
+								<p>2022.08.25(수) 계약완료</p>
+								<p>계약 영업점 : 현대자동차 강남 지점 (02-123-4567)</p>
+								<p>담당 카마스터 : 홍길동 (010-1234-5678)</p>
+							</div>
+							<dl class="price">
+								<dt>신차 견적 :</dt>
+								<dd><em>3,820</em>만원</dd>
+							</dl>
+							<ul class="desc">
+								<li>Trade-In 시 추가 할인 가능 금액 120만원 (예상)</li>
+							</ul>
+						</div>						
+					</div>
+				</div>
+			</section>
+			<!-- // 2022.09.13 [CPO-3126] 수정 -->
+			<!-- //CS011 방문평가대기 -->
+			<!-- CS012,CS101 방문평가중 -->
+			<section class="box_type order_step">
+				<div class="seq">
+					<span class="on">견적</span>
+					<span class="now">평가</span>
+					<span>계약</span>
+					<span>완료</span>
+				</div>
+				<div class="txt">
+					<em>방문평가사가 차량 평가를 위해 출발하였습니다.</em>
+				</div>
+				<!-- 2023-01-27 [CPO-8606] 추가 -->
+				<div class="bg_box cont_type01">
+					<div class="tit">
+						방문평가 정보
+					</div>
+					<ul class="list">
+						<li class="profile">
+							<div class="img"></div>
+							<div class="txt">
+								<span class="name">최현대</span>
+								<span class="num">01012341234</span> 
+							</div>
+						</li> 
+						<li>방문평가 위치 : (06179) 서울시 강남구 테헤란로 510 1002호</li>
+						<li>방문평가 회사 : (주) 현대글로비스</li>
+						<li class="col_point">방문평가 예정일 : 2021.10.20 12:00</li>
+					</ul>
+				</div>
+				<!-- //2023-01-27 [CPO-8606] 추가 -->
+			</section>
+			<!-- //CS012,CS101 방문평가중 -->
+			<!-- CS013 방문평가완료 -->
+			<section class="box_type order_step">
+				<div class="seq">
+					<span class="on">견적</span>
+					<span class="now">평가</span>
+					<span>계약</span>
+					<span>완료</span>
+				</div>
+				<div class="txt">
+					<em>차량 방문평가가 완료되었습니다.</em>
+					<p>최종 견적은 1영업일 이내 확정됩니다.</p>
+				</div>
+				<!-- <button type="button" class="btn_combi01_01">방문평가사 정보 확인하기</button> 삭제 [CPO-8606] -->
+			</section>
+			<!-- //CS013 방문평가완료 -->
+			<!-- CS102 최종견적확인 -->
+			<section class="box_type order_step">
+				<div class="seq">
+					<span class="now">견적</span>
+					<span>평가</span>
+					<span>계약</span>
+					<span>완료</span>
+				</div>
+				
+				<div class="txt">
+					<em>최종 견적가격은<br>43,600,000원 입니다.</em>
+					<p>기한 내 계약을 완료해 주세요.</p>
+					<div class="time">
+						<span id="dueDate">1일 10 : 50 : 12</span>
+						<i>남음</i>
+					</div>
+					<!-- <p id="dueDate" class="time">1일 10 : 50 : 12<i>남음</i></p>2023-01-27 [CPO-8606] 남음추가 -->
+					<span class="date">2021.11.30 23:59까지 계약가능</span><!-- 2023-01-17 [CPO-8606] 위치 변경 -->
+				</div>
+				<div class="btn_area">
+					<button type="button" class="btn_mid05">계약서 서명하기</button>
+				</div>
+				<p class="caution">온라인 서명이 불가능할 경우, 고객센터(1577-1577)로 연락해 주세요.</p>
+			</section>
+			<!-- //CS102 최종견적확인 -->
+			<!-- CS015 계약진행중 -->
+			<section class="box_type order_step">
+				<div class="seq">
+					<span class="on">견적</span>
+					<span class="on">평가</span>
+					<span class="now">계약</span>
+					<span>완료</span>
+				</div>
+				
+				<div class="txt">
+					<em>문자(이메일)로 계약서가 발송되었습니다</em>
+					<p>기한 내 계약을 완료해 주세요.</p>
+					<div class="time">
+						<span id="dueDate">1일 10 : 50 : 12</span>
+						<i>남음</i>
+					</div>
+					<!-- <p id="dueDate" class="time">1일 10 : 50 : 12<i>남음</i></p>2023-01-27 [CPO-8606] 남음추가 -->
+					<span class="date">2021.10.23 23:59까지 계약가능</span><!-- 2023-01-17 [CPO-8606] 위치 변경 -->
+				</div>
+				<div class="bg_box">
+					<dl class="list_type01">
+						<dt>
+							<em>대표 명의자</em><br>
+							<span class="stxt">서명완료</span>
+						</dt>
+						<dd>홍길동 01012345678</dd>
+					</dl>
+					<dl class="list_type01">
+						<dt>
+							<em>공동 명의자1</em><br>
+							<span class="stxt col_point">서명대기</span>
+						</dt>
+						<dd>
+							홍길동 01012345678<br>
+							<button type="button" class="btn_txt_small01">전자서명 재요청</button>
+						</dd>
+					</dl>
+				</div>
+				<p class="caution">온라인 서명이 불가능할 경우, 고객센터(1577-1577)로 연락해 주세요.</p>
+			</section>
+			<!-- //CS015 계약진행중 -->
+			<!-- CS017 계약완료 -->
+			<section class="box_type order_step">
+				<div class="seq">
+					<span class="on">견적</span>
+					<span class="on">평가</span>
+					<span class="now">계약</span>
+					<span>완료</span>
+				</div>
+				<!-- <span class="date">2021.10.23 23:59까지 계약가능</span> --> <!-- 2022.09.13 [CPO-3126] 수정 -->
+				<div class="txt">
+					<em>명의이전 서류를 등록해 주시기 바랍니다.</em>
+					<p>원본으로 제출이 필요한 서류는 탁송기사에게 전달해야 합니다.</p> <!-- 2022.09.22 [CPO-3363] -->
+				</div>
+				<div class="btn_area">
+					<button type="button" class="btn_mid05">명의이전 서류 등록</button>
+				</div>
+				<button type="button" class="btn_combi01_01">탁송기사에게 전달할 서류 확인하기</button>
+				<!-- 2022.09.22 [CPO-3363] -->	
+				<div class="type_depth">
+					<div class="txt">
+						<p>압류/저당/영치 상태가 확인되었습니다.<br>3영업일 이내에 납부 후 납부 완료 버튼을 선택해 주세요.</p>					
+					</div>
+					<div class="btn_area">
+						<button type="button" class="btn_mid05">납부 완료 확인</button> <!-- 2023-01-17 [CPO-8606] 버튼명 변경 -->
+					</div>
+				</div>
+				<!-- // 2022.09.22 [CPO-3363] -->
+				<!-- 2023-01-17 [CPO-8606] 추가 -->
+				<div class="type_depth">
+					<div class="txt">
+						<p>하이패스 미납 상태가 확인되었습니다.<br>3영업일 이내에 납부 후 납부 완료 확인 버튼을 선택해 주세요.</p>					
+					</div>
+					<div class="btn_area">
+						<button type="button" class="btn_mid05">납부 완료 확인</button>
+					</div>
+					<button type="button" class="btn_combi01_01 icon_link">하이패스 미납 통행료 조회</button>
+				</div>
+				<!-- //2023-01-17 [CPO-8606] 추가 -->
+			</section>
+			<section class="box_type order_step">
+				<div class="seq">
+					<span class="on">견적</span>
+					<span class="on">평가</span>
+					<span class="now">계약</span>
+					<span>완료</span>
+				</div>
+				<div class="txt">
+					<em>명의이전 서류 확인 후, 탁송기사 배정이 진행됩니다.</em>
+				</div>
+				<div class="btn_area">
+					<button type="button" class="btn_mid05" disabled>명의이전 서류 담당자 확인 중</button>
+				</div>
+				<button type="button" class="btn_combi01_01">탁송기사에게 전달할 서류 확인하기</button>
+				<!-- <div class="type_depth">
+					<div class="txt">
+						<p>관리자가 압류/저당/영치 납부완료를 확인 하고 있습니다.</p>					
+					</div>
+					<div class="btn_area">
+						<button type="button" class="btn_mid05" disabled>납부 완료 담당자 확인 중</button>
+					</div>
+				</div> -->
+			</section>
+			<section class="box_type order_step">
+				<div class="seq">
+					<span class="on">견적</span>
+					<span class="on">평가</span>
+					<span class="now">계약</span>
+					<span>완료</span>
+				</div>
+				<div class="txt">
+					<em>명의이전 서류를 등록해주시기 바랍니다.</em>
+					<p>원본으로 제출이 필요한 서류는 탁송기사에게 전달해야 합니다.</p>
+				</div>
+				<div class="btn_area">
+					<button type="button" class="btn_mid05">명의이전 서류 등록</button>
+				</div>
+				<button type="button" class="btn_combi01_01">탁송기사에게 전달할 서류 확인하기</button>
+			</section>
+			<!-- 2022.09.22 [CPO-3363] -->	
+			<section class="box_type order_step">
+				<div class="seq">
+					<span class="on">견적</span>
+					<span class="on">평가</span>
+					<span class="now">계약</span>
+					<span>완료</span>
+				</div>
+				<div class="type_depth">
+					<div class="txt">
+						<p>압류/저당/영치 상태가 확인되었습니다.<br>3영업일 이내에 납부 후 납부 완료 버튼을 선택해 주세요.</p>					
+					</div>
+					<div class="btn_area">
+						<button type="button" class="btn_mid05">납부 완료 확인</button>
+					</div>
+				</div>
+			</section>
+			<section class="box_type order_step">
+				<div class="seq">
+					<span class="on">견적</span>
+					<span class="on">평가</span>
+					<span class="now">계약</span>
+					<span>완료</span>
+				</div>
+				<div class="type_depth">
+					<div class="txt">
+						<p>하이패스 미납 상태가 확인되었습니다.<br>3영업일 이내에 납부 후 납부 완료 확인 버튼을 선택해 주세요.</p>					
+					</div>
+					<div class="btn_area">
+						<button type="button" class="btn_mid05">납부 완료 확인</button>
+					</div>
+					<button type="button" class="btn_combi01 icon_link">하이패스 미납 통행료 조회</button>
+				</div>
+			</section>
+			<!-- // 2022.09.22 [CPO-3363] -->
+			<!-- //CS017 계약완료 -->
+			<!-- CS018 차량인도요청 -->
+			<section class="box_type order_step">
+				<div class="seq">
+					<span class="on">견적</span>
+					<span class="on">평가</span>
+					<span class="on">계약</span>
+					<span class="now">완료</span>
+				</div>
+				<div class="txt">
+					<em>탁송기사 배정 중입니다.</em>
+					<p>명의이전 서류를 확인 후 탁송기사에게 차량인도 시 제출해 주시기 바랍니다.</p>
+				</div>
+				<!-- 2023-01-17 [CPO-8606]-->
+				<div class="bg_box cont_type01">
+					<div class="tit">탁송기사에게 전달할 서류</div>
+					<p class="txt">자동차등록증 원본, 자동차세완납증명서, 매도용 인감증명서 원본, 계약서</p>
+					<div class="caution">
+						<p class="tit">유의사항</p>
+						<ul>
+							<li>매도용 인감증명서는 <button type="button" class="btn_txt_small01 col_point">매수자 인적 사항 정보</button> 확인 후 발급 바랍니다.</li>
+							<li><button type="button" class="btn_txt_small01 col_point">계약서 다운로드</button> 및 출력 후 서명해 주세요.</li>
+						</ul>
+					</div>
+				</div>
+				<!-- <div class="caution02 none"> 2023-01-17 [CPO-8606] UI변경
+					<ul>
+						<li class="tit">
+							탁송기사에게 전달할 서류
+							<div class="cpo_tooltip">
+								<button class="open"></button>
+								<div class="cont">
+									<P class="img"><img src="/HMC/m/img/document_sample.jpg" alt=""></P>
+									<p class="text">인감증명서는 자동차 매도용 
+										인감증명서를 제출하셔야 합니다.</p>
+									<button class="close">툴팁닫기</button>
+								</div>
+							</div>
+						</li>
+						<li>자동차등록증 원본, 매도용 인감증명서 원본, 자동차세완납증명서</li>
+						<li>자동차등록증 원본, 매도용 인감증명서 원본 (인감도장 소유자 한정)</li>
+						<li>자동차세완납증명서, 자동차등록증 원본, 법인등기부등록 사본, 사업자등록증 사본, 법인 매도용 인감증명서 원본, 법인인감(양도증명서에 날인 필요)</li>
+						<li>단체설립인가서 사본, 직인증명서(도장 날인),소속증명서, 회의록, 사업자등록증 or 고유번호증</li>
+					</ul>
+				</div> -->
+				<div class="bg_box">
+					<dl class="list_type01">
+						<dt>
+							<em>차량인도 예정일</em>
+						</dt>
+						<dd>2021.10.25(월)</dd>
+					</dl>
+				</div>
+				<!-- <div class="txt_btn">
+					<p>계약서를 출력하여 서명해주세요.</p>
+					<button type="button" class="btn_combi01_01">계약서 다운로드</button>
+				</div> -->
+			</section>
+			<!-- //CS018 차량인도요청 -->
+			<!-- CS019 차량인도대기 -->
+			<section class="box_type order_step">
+				<div class="seq">
+					<span class="on">견적</span>
+					<span class="on">평가</span>
+					<span class="on">계약</span>
+					<span class="now">완료</span>
+				</div>
+				<div class="txt">
+					<em>차량인도를 위해 탁송기사가 방문할 예정입니다.</em>
+					<p>명의이전 서류를 확인 후 탁송기사에게 차량인도 시 제출해 주시기 바랍니다.</p> <!-- 2022.09.13 [CPO-3126] 수정 -->
+				</div>
+				<!-- 2023-01-17 [CPO-8606]-->
+				<div class="bg_box cont_type01">
+					<div class="tit">탁송기사에게 전달할 서류</div>
+					<p class="txt">자동차등록증 원본, 자동차세완납증명서, 매도용 인감증명서 원본, 계약서</p>
+					<div class="caution">
+						<p class="tit">유의사항</p>
+						<ul>
+							<li>매도용 인감증명서는 <button type="button" class="btn_txt_small01 col_point">매수자 인적 사항 정보</button> 확인 후 발급 바랍니다.</li>
+							<li><button type="button" class="btn_txt_small01 col_point">계약서 다운로드</button> 및 출력 후 서명해 주세요.</li>
+						</ul>
+					</div>
+				</div>
+				<!-- <div class="caution02 none"> 2023-01-17 [CPO-8606] UI변경
+					<ul>
+						<li class="tit">
+							탁송기사에게 전달할 서류
+							<div class="cpo_tooltip">
+								<button class="open"></button>
+								<div class="cont">
+									<P class="img"><img src="/HMC/m/img/document_sample.jpg" alt=""></P>
+									<p class="text">인감증명서는 자동차 매도용 
+										인감증명서를 제출하셔야 합니다.</p>
+									<button class="close">툴팁닫기</button>
+								</div>
+							</div>
+						</li>
+						<li>자동차등록증 원본, 매도용 인감증명서 원본, 자동차세완납증명서</li>
+						<li>자동차등록증 원본, 매도용 인감증명서 원본 (인감도장 소유자 한정)</li>
+						<li>자동차세완납증명서, 자동차등록증 원본, 법인등기부등록 사본, 사업자등록증 사본, 법인 매도용 인감증명서 원본, 법인인감(양도증명서에 날인 필요)</li>
+						<li>단체설립인가서 사본, 직인증명서(도장 날인),소속증명서, 회의록, 사업자등록증 or 고유번호증</li>
+					</ul>
+				</div> -->
+				<!-- //2023-01-17 [CPO-8606] -->
+				<!-- 2022.09.13 [CPO-3126] 수정 -->
+				<div class="bg_box">
+					<dl class="list_type01">
+						<dt>
+							<em>차량인도 예정일</em>
+						</dt>
+						<dd>2021.10.25(월)</dd>
+					</dl>
+				</div>
+				<!-- // 2022.09.13 [CPO-3126] 수정 -->
+				<!-- 2022-10-13 [CPO-4662] -->
+				<!-- <div class="txt_btn">
+					<p>계약서를 출력하여 서명해주세요.</p>
+					<button type="button" class="btn_combi01_01">계약서 다운로드</button>
+				</div> -->
+				<!-- //2022-10-13 [CPO-4662] -->
+			</section>
+			<!-- //CS019 차량인도대기 -->
+			<!-- CS020 차량인도중 --> 
+			<!-- 2022.09.13 [CPO-3126] 수정 -->
+			<!-- <section class="box_type order_step">
+				<div class="seq">
+					<span class="on">견적</span>
+					<span class="on">평가</span>
+					<span class="on">계약</span>
+					<span class="now">완료</span>
+				</div>
+				<div class="txt">
+					<em>탁송기사가 차량 인도를 위해 출발하였습니다.</em>
+					<p>명의이전 서류를 확인 후 탁송기사에게 차량인도 시<br>제출해 주시기 바랍니다.</p>
+				</div>
+				<button type="button" class="btn_combi01_01">탁송기사에게 전달할 서류 확인하기</button>
+			</section> -->
+			<!-- // 2022.09.13 [CPO-3126] 수정 -->
+			<!-- //CS020 차량인도중 -->
+			<!-- CS021~ 차량인도완료 -->
+			<section class="box_type order_step">
+				<div class="seq">
+					<span class="on">견적</span>
+					<span class="on">평가</span>
+					<span class="on">계약</span>
+					<span class="now">완료</span>
+				</div>
+				<div class="txt">
+					<em>탁송기사에게 차량이 인도되었습니다.</em>
+					<p>차량판매금이 지급 요청되었습니다.</p>
+				</div>
+			</section>
+			<!-- //CS021~ 차량인도완료 -->
+			<!-- CS025 명의이전완료 -->
+			<section class="box_type order_step">
+				<div class="seq">
+					<span class="on">견적</span>
+					<span class="on">평가</span>
+					<span class="on">계약</span>
+					<span class="on">완료</span>
+				</div>
+				<div class="txt">
+					<em>명의이전 및 차량판매대금 43,800,000원이 지급 완료되었습니다.</em> <!-- 2022-10-13 [CPO-4662] -->
+				</div>
+				<div class="btn_area">
+					<button type="button" class="btn_mid02">리뷰 작성</button> <!-- 2022.09.13 [CPO-3126] 수정 -->
+				</div>
+			</section>
+			<!-- //CS025 명의이전완료 -->
+			<!-- 2022.09.13 [CPO-3126] 수정 -->
+			<!-- CS025 명의이전완료 : trade In type                       -->
+			<section class="box_type order_step">
+				<div class="seq">
+					<span class="on">견적</span>
+					<span class="on">평가</span>
+					<span class="on">계약</span>
+					<span class="on">완료</span>
+				</div>
+				<div class="txt">
+					<em>내차팔기가 완료되었습니다.</em>
+					<p>차량견적 30,000,000원은 <br>신차 잔금 결제에 사용될 예정입니다.</p>
+				</div>
+				<div class="bg_box">
+					<ul class="list_type01">
+						<li>
+							<span class="tit">차량판매대금</span>
+							<span class="price"><em>30,000,000</em>원</span>
+						</li>
+						<li>
+							<span class="tit">신차 예상 견적</span>
+							<span class="price"><em>20,000,000</em>원</span>
+						</li>
+						<li>
+							<span class="tit">Trade-In 할인 예정</span>
+							<span class="price"><em>3,000,000</em>원</span>
+						</li>
+					</ul>
+				</div>
+				<div class="btn_area">
+					<button type="button" class="btn_mid02">리뷰 작성</button> <!-- 2023-02-08[CPO-9263] 추가 -->
+				</div>
+			</section>
+			<section class="box_type order_step">
+				<div class="seq">
+					<span class="on">견적</span>
+					<span class="on">평가</span>
+					<span class="on">계약</span>
+					<span class="on">완료</span>
+				</div>
+				<div class="txt">
+					<em>내차팔기가 완료되었습니다.</em>
+					<p>차량견적 30,000,000원 중 10,000,000원은 지급완료	되었고 남은 금액은 신차 잔금 결제에 활용될 예정입니다.</p>
+				</div>
+				<div class="bg_box">
+					<ul class="list_type01">
+						<li>
+							<span class="tit">차량판매대금</span>
+							<span class="price"><em>30,000,000</em>원</span>
+						</li>
+						<li>
+							<span class="tit">신차 예상 견적</span>
+							<span class="price"><em>20,000,000</em>원</span>
+						</li>
+						<li>
+							<span class="tit">Trade-In 할인 예정</span>
+							<span class="price"><em>3,000,000</em>원</span>
+						</li>
+					</ul>
+				</div>
+				<div class="caution">
+					<ul>
+						<li class="col_point">차량대금 지급완료일 : 2022.04.02 15:02:12</li>
+					</ul>
+				</div>
+				<div class="btn_area">
+					<button type="button" class="btn_mid02">리뷰 작성</button> <!-- 2023-02-08[CPO-9263] 추가 -->
+				</div>
+			</section>
+			<!-- //CS025 명의이전완료 -->
+			<!-- // 2022.09.13 [CPO-3126] 수정 -->
+			<!-- CS027 계약해지요청 -->
+			<section class="box_type order_step">
+				<div class="txt">
+					<!-- 2022.09.13 [CPO-3126] 수정 -->
+					<em>2022.03.02 (수)<br>계약해지가 진행중입니다.</em>
+					<p>아래 가상계좌로 2022.03.07(월)까지 반환금을 입금하시면 계약해지 및 차량반품이 진행됩니다.</p> 
+					<!-- // 2022.09.13 [CPO-3126] 수정 -->
+				</div>
+			</section>
+			<!-- //CS027 계약해지요청 -->
+			<!-- CS029~ 계약해지대기 -->
+			<section class="box_type order_step">
+				<div class="txt">
+					<em>모든 반환금 납입이 확인되어 계약해지가 진행중입니다.</em>
+				</div>
+			</section>
+			<!-- //CS029~ 계약해지대기 -->
+			<!-- CS030 계약해지완료 -->
+			<section class="box_type order_step">
+				<div class="txt">
+					<em>계약해지가 완료되었습니다.</em>
+				</div>
+			</section>
+			<!-- //CS030 계약해지완료 -->
+			<!-- CS006 계약해지완료 -->
+			<section class="box_type order_step">
+				<div class="seq">
+					<span>견적</span>
+					<span>평가</span>
+					<span>계약</span>
+					<span>완료</span>
+				</div>
+				<!-- 2023-01-20 [CPO-9017] 변경 -->
+				<div class="txt">
+					<em>2022.02.23(수)<br>방문평가 신청 유효기간이 만료되었습니다.</em>
+					<p>시세조회 단계부터 다시 진행해 주세요.</p>
+				</div>
+				<div class="btn_area">
+					<button type="button" class="btn_mid05">시세 조회</button>
+				</div>
+				<!-- //2023-01-20 [CPO-9017] 변경 -->
+			</section>
+			<!-- //CS030 계약해지완료 -->
+			<!-- CS007 견적취소 -->
+			<section class="box_type order_step">
+				<div class="seq">
+					<span>견적</span>
+					<span>평가</span>
+					<span>계약</span>
+					<span>완료</span>
+				</div>
+				<!-- 2023-01-20 [CPO-9017] 변경 -->
+				<div class="txt">
+					<em>2022.02.23(수)<br>방문평가가 취소되었습니다.</em>
+					<p>시세조회 단계부터 다시 진행해 주세요.</p>
+				</div>
+				<div class="caution02">
+					<ul>
+						<li class="tit">방문평가 취소사유</li>
+						<li>방문평가일 당일 무대응</li>
+					</ul>
+				</div>
+				<div class="btn_area">
+					<button type="button" class="btn_mid05">시세 조회</button>
+				</div>
+				<!-- //2023-01-20 [CPO-9017] 변경 -->
+			</section>
+			<!-- //CS007 견적취소 -->
+			<!-- CS008 견적불가 -->
+			<section class="box_type order_step">
+				<div class="seq">
+					<span>견적</span>
+					<span>평가</span>
+					<span>계약</span>
+					<span>완료</span>
+				</div>
+				<div class="txt">
+					<em>2022.02.23(수)<br>해당 차량은 견적이 불가합니다.</em>
+				</div>
+				<div class="caution02">
+					<ul>
+						<li class="tit">견적불가사유</li>
+						<li>주행거리가 00km 이상인 차량</li>
+						<li>침수 혹은 전손 차량</li>
+						<li>보험 사고 금액이 신차 가격의 00% 초과한 차량</li>
+					</ul>
+				</div>
+			</section>
+			<!-- //CS008 견적불가 -->
+			<!-- CS009 계약취소 -->
+			<section class="box_type order_step">
+				<div class="seq">
+					<span>견적</span>
+					<span>평가</span>
+					<span>계약</span>
+					<span>완료</span>
+				</div>
+				<div class="txt">
+					<em>2022.02.23(수)<br>계약이 취소되었습니다.</em>
+				</div>
+				<div class="caution02">
+					<ul>
+						<li class="tit">계약취소사유</li>
+						<li>시세 정보 확인 불가 차량</li>
+					</ul>
+				</div>
+			</section>
+			<!-- //CS009 계약취소 -->
+			<!-- CS110 차량인도실패 -->
+			<section class="box_type order_step">
+				<div class="seq">
+					<span>견적</span>
+					<span>평가</span>
+					<span>계약</span>
+					<span>완료</span>
+				</div>
+				<div class="txt">
+					<em>탁송기사가 약속된 장소에 방문하였으나 차량인도에 실패하였습니다.</em>
+					<p>차량 판매의 재진행을 원하는 경우 24시간 이내에 고객센터(1577-1577)로 연락바랍니다.</p><!-- 2022-10-23 [CPO-4663]-->
+				</div>
+			</section>
+			<!-- //CS110 차량인도실패 -->
+			<!-- CS111 일시중지 -->
+			<!-- 2022.09.13 [CPO-3126] 수정 -->
+			<!-- <section class="box_type order_step">
+				<div class="seq">
+					<span>견적</span>
+					<span>평가</span>
+					<span>계약</span>
+					<span>완료</span>
+				</div>
+				<div class="txt">
+					<em>2022.02.23(수)<br>내차팔기가 일시 중지되었습니다.</em>
+					<p>진행 불가 사유가 확인되어 내차팔기가 일시 중지되었습니다. 자세한 사항은 고객센터(1577-1577)로 문의 바랍니다.</p>
+				</div>
+				<div class="caution02">
+					<ul>
+						<li class="tit">일시중지사유</li>
+						<li>탁송업체 대응 불가 상태</li>
+					</ul>
+				</div>
+			</section> -->
+			<!-- // 2022.09.13 [CPO-3126] 수정 -->
+			<!-- //CS111 일시중지 -->
+
+			<!-- CS017 계약완료 220818추가 -->
+			<section class="box_type order_step">
+				<div class="seq">
+					<span class="on">견적</span>
+					<span class="on">평가</span>
+					<span class="now">계약</span>
+					<span>완료</span>
+				</div>
+				<div class="txt">
+					<em>명의이전 서류 확인 후, 탁송기사 배정이 진행됩니다.</em>
+				</div>
+				<div class="btn_area">
+					<button type="button" class="btn_mid02" disabled >명의이전 서류 담당자 확인 중</button> <!-- 2022.09.22 [CPO-3363] -->
+				</div>
+				<button type="button" class="btn_combi01_01">탁송기사에게 전달할 서류 확인하기</button>
+				<!-- 2022.09.22 [CPO-3363] -->
+				<div class="type_depth">
+					<div class="txt">
+						<p>관리자가 압류/저당/영치 납부완료를 확인 하고 있습니다.</p>
+					</div>
+					<div class="btn_area">
+						<button type="button" class="btn_mid02" disabled >납부 완료 담당자 확인 중</button>
+					</div>
+				</div>
+				<!-- // 2022.09.22 [CPO-3363] -->
+			</section>
+			<!-- CS017 계약완료 220818추가 -->
+			
+			<!-- //02. 주문진행 상태 -->
+
+
+			<!-- 견적정보 -->
+			<!-- <section> 2023-01-20 [CPO-9017] 삭제
+				<div class="sec_tit">견적정보</div>
+				<ul class="list_type01">
+					<li>
+						<span class="tit">예상 견적가격</span>
+						<span class="price"><em>24,280,000</em>원</span>
+					</li>
+				</ul>
+			</section> -->
+			<!--  2023-01-20 [CPO-9017] 추가 -->
+			<section>
+				<div class="sec_tit">시세정보</div>
+				<ul class="list_type01">
+					<li>
+						<span class="tit">예상 시세가격</span>
+						<span class="price">약<em>4,400~4,380</em>원</span>
+					</li>
+				</ul>
+			</section>
+			<!--  2023-01-20 [CPO-9017] 추가삭제 -->
+			<section>      
+				<div class="sec_tit">견적정보</div>
+				<!-- <ul class="list_type01"> 2023-01-20 [CPO-9017] 삭제
+					<li>
+						<span class="tit">예상 견적가격</span>
+						<span class="price"><em>24,280,000</em>원</span>
+					</li>
+				</ul> -->
+				<dl class="price_total">
+					<dt>최종 견적가격</dt>
+					<dd><em>23,980,000</em>원</dd>
+				</dl>
+			</section>
+			<!-- <section> 2023-01-20 [CPO-9017] 삭제
+				<div class="sec_tit">견적정보</div>
+				<ul class="list_type01">
+					<li>
+						<span class="tit">예상 견적가격</span>
+						<span class="price"><em>24,280,000</em>원</span>
+					</li>
+				</ul>
+				<div class="caution">
+					<ul>
+						<li>예상 견적가격은 2022.02.21에 산정된 금액이며 새로운 견적을 진행하는 경우 예상 견적가격은 변경될 수 있습니다.</li>
+					</ul>
+				</div>
+			</section> -->
+			<!-- //견적정보 -->
+
+			<!-- 계약정보 2022-10-12 [CPO-4663]-->
+			<section>
+				<div class="sec_tit">계약정보</div> 
+				<ul class="list_type02">
+					<li>
+						<button type="button" class="icon_txt02">계약서 미리보기</button>
+					</li>
+				</ul>
+			</section>
+			<!-- // 2022-10-12 [CPO-4663] 계약정보 --> 
+
+			<!-- 계약정보 -->
+			<section>
+				<div class="sec_tit">계약정보</div> 
+				<ul class="list_type02">
+					<li>
+						<button type="button" class="icon_txt02">계약서</button>
+					</li>
+					<li>
+						<button type="button" class="icon_txt03">자동차등록증</button>
+					</li>
+				</ul>
+			</section>
+			<!-- //계약정보 --> 
+	
+			<!-- 차량평가 결과 -->
+			<section>
+				<div class="sec_tit arrow">
+					<a href="FO-MY-MS0037">차량평가 결과</a>
+					<span class="r_txt">평가일 : 2021.10.15</span>
+				</div>
+				<ul class="list_type01">
+					<li>
+						<span class="tit">사고감가 (외부패널)</span>
+						<span class="price"><em>-100,000</em>원</span>
+					</li>
+					<li>
+						<span class="tit">사고감가 (골격)</span>
+						<span class="price"><em>-100,000</em>원</span>
+					</li>
+					<li>
+						<span class="tit">외판감가</span>
+						<span class="price"><em>-50,000</em>원</span>
+					</li>
+					<li>
+						<span class="tit">기타감가</span>
+						<span class="price"><em>-50,000</em>원</span>
+					</li>
+				</ul>
+				<dl class="price_total">
+					<dt>감가총액</dt>
+					<dd><em>-300,000</em>원</dd>
+				</dl>
+			</section>
+			<section>
+				<div class="sec_tit arrow">
+					<a href="FO-MY-MS0037">차량평가 결과</a>
+					<span class="r_txt">평가일 : 2021.10.15</span>
+				</div>
+				<ul class="list_type01">
+					<li>
+						<span class="tit">감가내역 없음</span>
+						<span class="price"><em>0</em>원</span>
+					</li>
+				</ul>
+				<dl class="price_total">
+					<dt>감가총액</dt>
+					<dd><em>0</em>원</dd>
+				</dl>
+			</section>
+			<!-- //차량평가 결과 -->
+
+			<!-- 명의정보 -->
+			<section class="box_type">
+				<div class="sec_tit">
+					명의정보
+					<p class="txt">차량입고 후 점검이 완료되면 명의이전이 진행됩니다.</p>
+				</div>
+				
+				<div class="line_box">
+					<div class="info_list">
+						<div class="flag">
+							<span class="flag_mid01">대표명의자</span>
+							<span class="flag_mid03">개인</span>
+						</div>
+						<dl class="list">
+							<dt>
+								<span class="name">방기정</span>
+								<span class="num">01012345678</span>
+							</dt>
+							<dd>
+								(06179) 서울시 강남구 테헤란로 510
+							</dd>
+							<dd>email@email.com</dd>
+						</dl>
+					</div>
+				</div>
+			</section>
+
+			<section class="box_type">
+				<div class="sec_tit">
+					명의정보
+					<p class="txt">차량입고 후 점검이 완료되면 명의이전이 진행됩니다.</p>
+				</div>
+				<div class="line_box">
+					<div class="info_list">
+						<div class="flag">
+							<span class="flag_mid01">대표명의자</span>
+							<span class="flag_mid03">개인</span>
+						</div>
+						<dl class="list">
+							<dt>
+								<span class="name">방기정</span>
+								<span class="num">01012345678</span>
+							</dt>
+							<dd>
+								(06179) 서울시 강남구 테헤란로 510
+							</dd>
+							<dd>email@email.com</dd>
+						</dl>
+						<!-- <div class="bg_box">
+							<dl>
+								<dt>차량인도정보</dt>
+								<dd>(06179) 서울 중구 세종대로 110</dd>
+							</dl>
+						</div> -->
+					</div>
+				</div>
+			</section>
+			
+			<!-- 2023-01-17 [CPO-8606] 차량인도 UI변경 -->
+			<section>
+				<div class="sec_tit">차량 인도정보</div>
+				<div class="info_list">
+					<dl class="list">
+						<dt>
+							<span class="name">김현대</span>
+							<span class="num">01012345678</span>
+						</dt>
+						<dd>
+							(06179) 서울특별시 강남구 테헤란로 510(대치동) A동 1001호
+						</dd>
+					</dl>
+				</div>
+			</section>
+			<!-- //2023-01-17 [CPO-8606] 차량인도 UI변경 -->
+
+			<section class="box_type">
+				<div class="sec_tit">
+					명의정보
+					<p class="txt">차량입고 후 점검이 완료되면 명의이전이 진행됩니다.</p>
+				</div>
+				<div class="line_box">
+					<div class="info_list">
+						<div class="flag">
+							<span class="flag_mid01">대표명의자</span>
+							<span class="flag_mid03">개인</span>
+						</div>
+						<dl class="list">
+							<dt>
+								<span class="name">방기정</span>
+								<span class="num">01012345678</span>
+							</dt>
+							<dd>
+								(06179) 서울시 강남구 테헤란로 510
+							</dd>
+							<dd>email@email.com</dd>
+						</dl>
+						<!-- <div class="bg_box">
+							<dl>
+								<dt>차량인도정보</dt>
+								<dd>(06179) 서울 중구 세종대로 110</dd>
+								<dd class="col_point">차량인도 예정일 : 2022.02.27</dd>
+							</dl>
+						</div> -->
+					</div>
+				</div>
+			</section>
+
+			<!-- 2023-01-17 [CPO-8606] 차량인도 UI변경 -->
+			<section>
+				<div class="sec_tit">차량 인도정보</div>
+				<div class="info_list">
+					<dl class="list">
+						<dt>
+							<span class="name">김현대</span>
+							<span class="num">01012345678</span>
+						</dt>
+						<dd>
+							(06179) 서울특별시 강남구 테헤란로 510(대치동) A동 1001호
+						</dd>
+					</dl>
+					<div class="etc">
+						<p class="col_point">차량인도 예정일 : 2022.02.27</p>
+					</div>
+				</div>
+			</section>
+			<!-- //2023-01-17 [CPO-8606] 차량인도 UI변경 -->
+
+			<section class="box_type toggle">  <!-- 2022.09.22 [CPO-3366] -->
+				<div class="sec_tit">
+					명의정보
+					<p class="txt">차량입고 후 점검이 완료되면 명의이전이 진행됩니다.</p>
+				</div>
+				<div class="line_box info_list">
+					<div class="flag">
+						<span class="flag_mid01">대표명의자</span>
+						<span class="flag_mid03">개인사업자</span>
+						<span class="r_txt">명의지분 60%</span>
+					</div>
+					<dl class="list">
+						<dt>
+							<span class="name">이현대</span>
+							<span class="num">01012345678</span>
+						</dt>
+						<dd>
+							(06179) 서울시 강남구 테헤란로 510
+						</dd>
+						<dd>email@email.com</dd>
+					</dl>
+					<div class="list_more">
+						<ul>
+							<li class="tit">(주)현대상사</li>
+							<li>법인등록번호 : 110111-1234567</li>
+							<li>사업자등록번호 : 123-45-12345</li>
+						</ul>
+						<button type="button" class="btn_more" data-text="상세닫기">상세보기</button>
+					</div>
+					<!-- <div class="bg_box">
+						<dl>
+							<dt>차량인도정보</dt>
+							<dd>(06179) 서울 중구 세종대로 110</dd>
+						</dl>
+					</div> -->
+				</div>
+				<div class="line_box">
+					<div class="info_list">
+						<div class="flag">
+							<span class="flag_mid02">공동명의자1</span>
+							<span class="flag_mid03">개인</span>
+							<span class="r_txt">명의지분 40%</span>
+						</div>
+						<dl class="list">
+							<dt>
+								<span class="name">방기정</span>
+								<span class="num">01012345678</span>
+							</dt>
+							<dd>
+								(06179) 서울시 강남구 테헤란로 510
+							</dd>
+							<dd>email@email.com</dd>
+						</dl>
+					</div>
+				</div>
+			</section>
+
+			<!-- 2023-01-17 [CPO-8606] 차량인도 UI변경 -->
+			<section>
+				<div class="sec_tit">차량 인도정보</div>
+				<div class="info_list">
+					<dl class="list">
+						<dt>
+							<span class="name">김현대</span>
+							<span class="num">01012345678</span>
+						</dt>
+						<dd>
+							(06179) 서울특별시 강남구 테헤란로 510(대치동) A동 1001호
+						</dd>
+					</dl>
+					<div class="etc">
+						<p class="col_point">차량인도 예정일 : 2022.02.27</p>
+					</div>
+				</div>
+			</section>
+			<!-- //2023-01-17 [CPO-8606] 차량인도 UI변경 -->
+
+			<section class="box_type">
+				<div class="sec_tit">
+					명의정보
+				</div>
+				<div class="bg_box">
+					<p class="icon_check">현대 인증중고차로 명의이전이 완료되었습니다.</p>
+					<!-- <p class="icon_check">제네시스 인증중고차로 명의이전이 <br>완료되었습니다.</p> -->
+				</div>
+			</section>
+			<!-- //명의정보 -->
+
+			<!-- 방문평가 신청정보 -->
+			<section>
+				<div class="sec_tit">
+					방문평가 신청정보
+					<!-- <button type="button" class="btn_icon_mid01" data-popup="FO-OR-MS0006">변경</button> 2023-01-20 [CPO-9017] 삭제 -->
+				</div>
+				<div class="info_list">
+					<dl class="list">
+						<dt>
+							<span class="name">방기정</span>
+							<span class="num">01012345678</span>
+						</dt>
+						<dd>
+							(06179) 서울시 강남구 테헤란로 510
+						</dd>
+					</dl>
+					<div class="etc" >
+						<p class="col_point">방문평가 희망일 : 2021.10.15 09:00</p> <!-- 2022.09.13 [CPO-3126] 수정 -->
+					</div>
+				</div>
+			</section>
+			<!-- //방문평가 신청정보 -->
+
+			<!-- 차량대금 입금계좌 -->
+			<section>
+				<div class="sec_tit">
+					차량대금 입금계좌
+					<button type="button" class="btn_icon_mid01" data-popup="FO-OR-MS0006">변경</button>
+				</div>
+				<dl class="list_type01">
+					<dt><img src="/HMC/m/img/finance/bank_020.png" class="bank_logo" alt="우리은행로고">우리은행</dt>
+					<dd>김현대 / 1002123112345</dd>
+				</dl>
+			</section>
+			<!-- 차량대금 입금계좌 -->
+
+			<!-- 반환금 가상계좌 -->
+			<section>
+				<div class="sec_tit">
+					반환금 가상계좌
+				</div>
+				<dl class="list_type01">
+					<dt><img src="/HMC/m/img/finance/bank_002.png" class="bank_logo" alt="산업은행로고">산업은행</dt>
+					<dd>현대 인증중고차 / 1002123112345</dd>
+				</dl>
+				<div class="caution">
+					<ul>
+						<li>2020.03.07까지 45,100,000원을 입금해 주세요.</li>
+					</ul>
+				</div>
+			</section>
+			<!-- 반환금 가상계좌 -->
+ 
+			<!-- 차량 판매금액 -->
+			<section class="box_type">
+				<div class="sec_tit">차량 판매금액</div>
+				<ul class="price_list">
+					<li>
+						<span class="tit">총지급예정금액</span>
+						<span class="price"><em>23,980,000</em>원</span>
+						<div class="depth_list">
+							<p class="title">
+								<span class="tit">최종 견적가격</span>
+								<span class="price"><em>23,980,000</em>원</span>
+							</p>
+						</div>
+						<!-- 2022.09.13 [CPO-3126] 수정 -->
+						<!-- <div class="depth_list">
+							<p class="title">
+								<span class="tit">추가지급금액</span>
+								<span class="price"><em>1,500,000</em>원</span>
+							</p>
+							<ul class="depth_02">
+								<li>
+									<span class="tit">프로모션 금액1</span>
+									<span class="price"><em>1,400,000</em>원</span>
+								</li>
+								<li>
+									<span class="tit">매입프리미엄</span>
+									<span class="price"><em>100,000</em>원</span>
+								</li>
+							</ul>
+						</div> -->
+						<!-- // 2022.09.13 [CPO-3126] 수정 -->
+						<!-- 2022.09.22 [CPO-3366] -->
+						<!-- <div class="depth_list">
+							<p class="title">
+								<span class="tit">반환금액</span>
+								<span class="price col_red"><em>-1,500,000</em>원</span>
+							</p>
+							<ul class="depth_02">
+								<li>
+									<span class="tit">패널티 금액1</span>
+									<span class="price"><em>-1,400,000</em>원</span>
+								</li>
+								<li>
+									<span class="tit">패널티 금액2</span>
+									<span class="price"><em>-100,000</em>원</span>
+								</li>
+							</ul>
+						</div> -->
+						<!-- // 2022.09.22 [CPO-3366] -->
+					</li>
+				</ul>
+				<dl class="price_total">
+					<dt>지급완료금액</dt>
+					<dd><em>0</em>원</dd>
+				</dl>
+				<div class="caution">
+					<ul>
+						<li>차량인도가 완료되면 차량대금 입금계좌로 최종지급예정금액이 입금됩니다.</li>
+					</ul>
+				</div>
+				<!-- 2022.09.22 [CPO-3366] -->
+				<!-- <div class="caution">
+					<ul>
+						<li class="col_point">차량대금 지급완료일 : 2022.04.02 15:02:12</li>
+					</ul>
+				</div> -->
+				<!-- // 2022.09.22 [CPO-3366] -->
+			</section>
+			<!-- 2022.09.22 [CPO-3366] -->
+			<section class="box_type">
+				<div class="sec_tit">차량 판매금액</div>
+				<ul class="price_list">
+					<li>
+						<span class="tit">총지급예정금액</span>
+						<span class="price"><em>0</em>원</span>
+						<div class="depth_list">
+							<p class="title">
+								<span class="tit">최종 견적가격</span>
+								<span class="price"><em>-31,500,000</em>원</span>
+							</p>
+							<ul class="depth_02">
+								<li>
+									<span class="tit">패널티 금액1</span>
+									<span class="price"><em>-1,400,000</em>원</span>
+								</li>
+								<li>
+									<span class="tit">패널티 금액2</span>
+									<span class="price"><em>-100,000</em>원</span>
+								</li>
+							</ul>
+						</div>	
+						<div class="depth_list">
+							<p class="title">
+								<span class="tit">신차 구매 견적</span>
+								<span class="price"><em>40,000,000</em>원</span>
+							</p>
+							<p class="title">
+								<span class="tit">Trade-In 추가할인 (예상)</span>
+								<span class="price col_red"><em>-2,000,000</em>원</span>
+							</p>
+						</div>
+						<!-- 2022-10-13 [CPO-4662] -->
+						<div class="depth_list">
+							<div class="title">
+								<span class="tit">
+									상계예정금액
+									<div class="cpo_tooltip">
+										<button class="open">상계예정금액</button>
+										<div class="cont">
+											<p class="text">판매하는 차량의 최종견적 가격과 신차 구매 견적을 서로 상쇄하여 소멸하는 금액</p>
+											<button class="close">툴팁닫기</button>
+										</div>
+									</div>
+								</span>
+								<span class="price"><em>18,000,000</em>원</span>
+							</div>
+						</div>
+						<!-- //2022-10-13 [CPO-4662] -->
+					</li>
+				</ul>
+				<dl class="price_total">
+					<dt>Trade-In 후 신차 잔금 (예상)</dt>
+					<dd><em>30,000,000</em>원</dd>
+				</dl>
+				<div class="caution">
+					<ul>
+						<li>신차 인도 시 현대자동차 영업점을 통해 결제 진행됩니다.</li>
+					</ul>
+				</div>
+			</section>
+			<!-- // 2022.09.22 [CPO-3366] -->
+			<!-- // 차량 판매금액 -->
+			<!-- 2022.09.13 [CPO-3126] 수정 -->
+			<!-- 차량 판매금액 : trade type -->
+			<section class="box_type">
+				<div class="sec_tit">차량 판매금액</div>
+				<!-- 2022.09.22 [CPO-3366] -->
+				<ul class="price_list">
+					<li>
+						<span class="tit">총지급예정금액</span>
+						<span class="price"><em>12,000,000</em>원</span>
+						<div class="depth_list">
+							<p class="title">
+								<span class="tit">최종 견적가격</span>
+								<span class="price"><em>31,500,000</em>원</span>
+							</p>
+							<ul class="depth_02">
+								<li>
+									<span class="tit">패널티 금액1</span>
+									<span class="price"><em>-1,400,000</em>원</span>
+								</li>
+								<li>
+									<span class="tit">패널티 금액2</span>
+									<span class="price"><em>-100,000</em>원</span>
+								</li>
+							</ul>
+						</div>	
+						<div class="depth_list">
+							<p class="title">
+								<span class="tit">신차 구매 견적</span>
+								<span class="price"><em>20,000,000</em>원</span>
+							</p>
+							<p class="title">
+								<span class="tit">Trade-In 추가할인 (예상)</span>
+								<span class="price col_red"><em>-2,000,000</em>원</span>
+							</p>
+						</div>
+						<!-- 2022-10-13 [CPO-4662] -->
+						<div class="depth_list">
+							<div class="title">
+								<span class="tit">
+									상계예정금액
+									<div class="cpo_tooltip">
+										<button class="open">상계예정금액</button>
+										<div class="cont">
+											<p class="text">판매하는 차량의 최종견적 가격과 신차 구매 견적을 서로 상쇄하여 소멸하는 금액</p>
+											<button class="close">툴팁닫기</button>
+										</div>
+									</div>
+								</span>
+								<span class="price"><em>18,000,000</em>원</span>
+							</div>
+						</div>
+						<!-- //2022-10-13 [CPO-4662] -->					
+					</li>
+					<li>
+						<span class="tit">Trade-In 후 신차 잔금</span>
+						<span class="price"><em>0</em>원</span>						
+					</li>
+				</ul>
+				<dl class="price_total">
+					<dt>지급완료금액</dt>
+					<dd><em>30,000,000</em>원</dd>
+				</dl>				
+				<div class="caution">
+					<ul>
+						<li class="col_point">차량대금 지급완료일 : 2022.04.02 15:02:12</li>
+					</ul>
+				</div>
+				<!-- // 2022.09.22 [CPO-3366] -->
+			</section>
+			<!-- // 차량 판매금액 : trade type -->
+			<!-- // 2022.09.13 [CPO-3126] 수정 -->
+			<!-- step. 계약해지 -->
+			<!-- 계약해지 진행정보 -->
+			<section>      
+				<div class="sec_tit">계약해지 진행정보</div>
+				<ul class="list_type01">
+					<li>
+						<span class="tit">계약해지 요청일</span>
+						<span>2022.03.02</span>
+					</li>
+					<li>
+						<span class="tit">계약해지 완료일</span>
+						<span>2022.03.07</span>
+					</li>
+				</ul>
+			</section>
+			<!-- // 계약해지 진행정보-->
+			<!-- 2022.09.13 [CPO-3126] 수정 -->
+			<!-- 반환금 납입내역 : type1 -->
+			<section class="box_type">
+				<div class="sec_tit">
+					반환금 납입내역
+					<p class="txt">반환금 입금이 아직 완료되지 않았습니다.</p>
+				</div>
+				<ul class="price_list">
+					<li>
+						<span class="tit">반환 완료금액</span>
+						<span class="price"><em>0</em>원</span>						
+					</li>
+				</ul>
+				<dl class="price_total">
+					<dt>반환 미완료 금액</dt>
+					<dd><em>45,100,000</em>원</dd>
+				</dl>
+			</section>
+			<!-- //반환금 납입내역 -->
+			<!-- 반환금 납입내역 : type2 -->
+			<section class="box_type">
+				<div class="sec_tit">
+					반환금 납입내역
+					<p class="txt">반환금 입금이 모두 완료되었습니다.</p>
+				</div>
+				<ul class="price_list">
+					<li>
+						<span class="tit">반환 완료금액</span>
+						<span class="price"><em>23,980,000</em>원</span>
+						<div class="depth_list">
+							<ul class="depth_02">
+								<li>
+									<span class="tit">계좌번호</span>
+									<span>우리은행 / 100292334</span>
+								</li>
+								<li>
+									<span class="tit">입금일</span>
+									<span>2022.03.02 15:24:24</span>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+				<dl class="price_total">
+					<dt>반환 미완료 금액</dt>
+					<dd><em>0</em>원</dd>
+				</dl>
+			</section>
+			<!-- // 2022.09.13 [CPO-3126] 수정 -->
+			<!-- //반환금 납입내역 -->
+			<!-- 반환금 상세내역 -->
+			<!-- 2022.09.13 [CPO-3126] 수정 -->
+			<!-- <section class="box_type">
+				<div class="sec_tit">반환금 상세내역</div>
+				<ul class="price_list">
+					<li>
+						<span class="tit">지급금액</span>
+						<span class="price"><em>45,100,000</em>원</span>
+					</li>
+					<li>
+						<span class="tit">패널티금액</span>
+						<span class="price col_red"><em>-1,500,000</em>원</span>
+						<div class="depth_list">
+							<ul class="depth_02">
+								<li>
+									<span class="tit">항목1</span>
+									<span class="price"><em>-1,400,000</em>원</span>
+								</li>
+								<li>
+									<span class="tit">항목2</span>
+									<span class="price"><em>-1,400,000</em>원</span>
+								</li>
+							</ul>
+							
+						</div>
+					</li>
+				</ul>
+				<dl class="price_total">
+					<dt>총 반환 금액</dt>
+					<dd><em>45,100,000</em>원</dd>
+				</dl>
+			</section> -->
+			<!-- // 2022.09.13 [CPO-3126] 수정 -->
+			<!-- //반환금 상세내역 -->
+			<!-- 반품 인수정보 -->
+			<section>
+				<div class="sec_tit">
+					반품 인수정보
+				</div>
+				<div class="info_list">
+					<div class="flag">
+						<span class="flag_mid04">차량인수완료</span>
+					</div>
+					<dl class="list">
+						<dt>
+							<span class="name">방기정</span>
+							<span class="num">01012345678</span>
+						</dt>
+						<dd>
+							(06179) 서울시 강남구 테헤란로 510
+						</dd>
+					</dl>
+					<div class="etc">
+						<p class="col_point">차량인수일 : 2021.10.25</p>
+					</div>
+				</div>
+			</section>
+			<!-- //반품 인수정보 -->
+			<!-- //step. 계약해지 -->
+
+			<!-- 내차팔기 -->
+			<section class="box_type mycar_step toggle">
+				<p class="title">내차팔기는 이렇게 진행됩니다.</p>
+				<ol class="step_list">
+					<li>
+						<button class="tit_btn"><span>1</span>견적진행</button>
+						<div class="cont">
+							<ul>
+								<li>
+									<p class="tit">시세확인</p>
+									<p class="txt">
+										이름과 차량번호를 입력하고 시세를 확인합니다.
+									</p>
+								</li>
+								<li>
+									<p class="tit">방문평가신청</p>
+									<p class="txt">
+										예상 시세를 확인하고 방문평가 신청이 가능 합니다.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<button class="tit_btn"><span>2</span>방문평가</button>
+						<div class="cont">
+							<ul>
+								<li>
+									<p class="tit">방문평가대기</p>
+									<p class="txt">
+										작성해주신 방문평가 신청서를 바탕으로 방문평가사를 배정하였습니다.
+									</p>
+								</li>
+								<li>
+									<p class="tit">방문평가중</p>
+									<p class="txt">
+										방문평가사가 차량 평가를 진행중입니다.
+									</p>
+								</li>
+								<li>
+									<p class="tit">방문평가완료</p>
+									<p class="txt">
+										감가심사팀에서 검토한 내용을 바탕으로 최종 견적을 산정합니다.
+									</p>
+								</li>
+								<li>
+									<p class="tit">최종견적확인</p>
+									<p class="txt">
+										최종견적가격을 확인하고 판매계약여부를 결정합니다.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<button class="tit_btn"><span>3</span>계약진행</button>
+						<div class="cont">
+							<ul>
+								<li>
+									<p class="tit">계약진행중</p>
+									<p class="txt">
+										SMS 또는 이메일로 발송된 eSign 계약서의 서명을 완료해 주세요.
+									</p>
+								</li>
+								<li>
+									<p class="tit">계약완료</p>
+									<p class="txt">
+										계약서 서명이 모두 완료되었습니다. (단, 계약서를 탁송기사에게 직접 전달하는 경우도 있습니다.)
+									</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<button class="tit_btn"><span>4</span>차량인도/입금/명의이전</button>
+						<div class="cont">
+							<ul>
+								<li>
+									<p class="tit">차량인도요청</p>
+									<p class="txt">
+										탁송업체에 탁송기사를 배정 요청하였습니다.
+									</p>
+								</li>
+								<li>
+									<p class="tit">차량인도대기</p>
+									<p class="txt">
+										탁송기사가 배정되었으며 탁송일이 확정되었습니다.
+									</p>
+								</li>
+								<li>
+									<p class="tit">차량인도완료</p>
+									<p class="txt">
+										탁송기사에게 차량을 인도하였습니다.<br>
+										반드시 모든 명의이전 서류를 탁송기사에게 제출해야 합니다.<br>
+										차량인도 즉시 차량판매금이 지급 요청됩니다.
+									</p>
+								</li>
+								<li>
+									<p class="tit">명의이전완료</p>
+									<p class="txt">
+										현대자동차로 명의이전이 완료되어 모든 내차팔기가 종료됩니다.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ol>
+				<div class="banner">
+					<a href="javascript:void(0);"><img src="/HMC/m/img//@thumb/order_banner.jpg" alt=""></a>
+				</div>
+				<div class="btn_area">
+					<a href="javascript:void(0);" class="btn_txt_big01">방문평가취소</a><!-- 2023-01-20 [CPO-9017] 버튼명변경 -->
+				</div>
+			</section>
+			<!-- 내차팔기 : trade In type -->
+			<section class="box_type mycar_step toggle">
+				<p class="title">내차팔기는 이렇게 진행됩니다.</p>
+				<ol class="step_list">
+					<li>
+						<button class="tit_btn"><span>1</span>견적진행</button>
+						<div class="cont">
+							<ul>
+								<li>
+									<p class="tit">시세확인</p>
+									<p class="txt">
+										이름과 차량번호를 입력하고 시세를 확인합니다.
+									</p>
+								</li>
+								<li>
+									<p class="tit">방문평가신청</p>
+									<p class="txt">
+										예상 시세를 확인하고 방문평가 신청이 가능 합니다.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<button class="tit_btn"><span>2</span>방문평가</button>
+						<div class="cont">
+							<ul>
+								<li>
+									<p class="tit">방문평가대기</p>
+									<p class="txt">
+										작성해주신 방문평가 신청서를 바탕으로 방문평가사를 배정하였습니다.
+									</p>
+								</li>
+								<li>
+									<p class="tit">방문평가중</p>
+									<p class="txt">
+										방문평가사가 차량 평가를 진행중입니다.
+									</p>
+								</li>
+								<li>
+									<p class="tit">방문평가완료</p>
+									<p class="txt">
+										감가심사팀에서 검토한 내용을 바탕으로 최종 견적을 산정합니다.
+									</p>
+								</li>
+								<li>
+									<p class="tit">최종견적확인</p>
+									<p class="txt">
+										최종견적가격을 확인하고 판매계약여부를 결정합니다.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<button class="tit_btn"><span>3</span>계약진행</button>
+						<div class="cont">
+							<ul>
+								<li>
+									<p class="tit">계약진행중</p>
+									<p class="txt">
+										SMS 또는 이메일로 발송된 eSign 계약서의 서명을 완료해 주세요.
+									</p>
+								</li>
+								<li>
+									<p class="tit">계약완료</p>
+									<p class="txt">
+										계약서 서명이 모두 완료되었습니다. (단, 계약서를 탁송기사에게 직접 전달하는 경우도 있습니다.)
+									</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+					<li>
+						<button class="tit_btn"><span>4</span>차량인도/명의이전/Trade-In 상계처리</button>
+						<div class="cont">
+							<ul>
+								<li>
+									<p class="tit">차량인도요청</p>
+									<p class="txt">
+										탁송업체에 탁송기사를 배정 요청하였습니다.
+									</p>
+								</li>
+								<li>
+									<p class="tit">차량인도대기</p>
+									<p class="txt">
+										탁송기사가 배정되었으며 탁송일이 확정되었습니다.
+									</p>
+								</li>
+								<li>
+									<p class="tit">차량인도완료</p>
+									<p class="txt">
+										탁송기사에게 차량을 인도하였습니다.<br>
+										반드시 모든 명의이전 서류를 탁송기사에게 제출해야 합니다. <br>
+										차량인도 즉시 차량판매금이 지급 요청됩니다.
+									</p>
+								</li>
+								<li>
+									<p class="tit">명의이전완료</p>
+									<p class="txt">
+										현대자동차로 명의이전이 완료되어 모든 내차팔기가 종료됩니다.
+									</p>
+								</li>
+								<li>
+									<p class="tit">Trade-In 상계 처리</p>
+									<p class="txt">
+										차량인도완료 후 Trade-In 상계가 진행 됩니다.
+									</p>
+								</li>
+							</ul>
+						</div>
+					</li>
+				</ol>
+				<div class="banner">
+					<a href="javascript:void(0);"><img src="/HMC/m/img//@thumb/order_banner.jpg" alt=""></a>
+				</div>
+				<div class="btn_area">
+					<a href="javascript:void(0);" class="btn_txt_big01">방문평가취소</a><!-- <li> 2023-01-20 [CPO-9017] 버튼명변경 -->
+				</div>
+			</section>
+			<!-- // 내차팔기 -->
+
+			<!-- 자주 묻는 질문 -->
+			<section class="box_type toggle"> <!-- 2022.09.13 [CPO-3126] 수정 -->
+				<div class="sec_tit">자주 묻는 질문 TOP 5</div>
+				<!--#include file="/HMC/m/SHTML/H_order/inc/order_faq.shtml"-->
+			</section>
+			<!-- //자주 묻는 질문 -->
+
+		</div>
+		<!-- //[order_detail] WRAP 판매상세 -->
+
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!-- 2023 0207 푸터 삭제 -->
+</div>
+<!-- //cpo wrap -->
+
+<!-- <script>CPO.countDueDay('dueDate', '2022-12-20 17:35:00');//  카운드 시간</script> -->
+<script>
+	CPO.toggle();
+	CPO.tooltip();
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<section class="main_con5">
+    <p class="con_tit tit_registration">
+      <span>중고차 사기 전에</span>
+      <strong>매매등록 여부 확인하자</strong>
+    </p>
+    <p class="con_tit tit_cert">
+      <span>내 차, 나도 모르던 정보까지</span>
+      <strong>한눈에 확인하자!</strong>
+    </p>
+    <div class="masking_wrap">
+      <div class="circle">
+        <div class="circle_mask show">
+          <img src="/HILAB/m/img/main/img_illust_car.svg" alt="" class="car" />
+          <img src="/HILAB/m/img/main/img_person.svg" alt="" class="person" />
+        </div>
+        <div class="bg_circle"></div>
+      </div>
+      <div class="msking_text">
+        <div class="text_registration">
+          <strong>
+            차량번호만 입력하면
+            <span class="text_line"></span>
+          </strong>
+          <p class="first">중고차 정상매물 등록 여부 확인</p>
+          <p>매매 차량 기본 정보 확인</p>
+        </div>
+        <div class="text_cert">
+          <strong>
+            내 차 본인인증 하면
+            <span class="text_line"></span>
+          </strong>
+          <p class="first">차량 세부 정보 확인</p>
+          <p>차량 정비 이력 확인</p>
+        </div>
+        <div class="btn_area">
+          <a href="#none" class="btn_mid07">
+            차량 통합정보 조회하기
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="intro_bg3"></div>
+</section>

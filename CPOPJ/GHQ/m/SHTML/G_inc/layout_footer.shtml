@@ -1,0 +1,140 @@
+
+	<!-- s: footer -->
+	<div id="CPOfooter">
+		<div class="foot_logo"><a href="#">GENESIS</a></div>
+		<div class="foot_copy">Copyright © Hyundai Motor Company.<br>All Rights Reserved.</div>
+		<ul class="foot_menu">
+			<li><a href="#">이용약관</a></li>
+			<li><a href="#">개인정보처리방침</a></li>
+			<li><a href="#">고객센터</a></li>
+		</ul>
+		<div class="foot_info">
+			<button type="button">사업자정보</button>
+			<div>
+				<span>상호명: 현대자동차</span>대표이사: 장재훈<a href="#">사업자정보확인</a><br>
+				<span>주소: 서울시 서초구 헌릉로 12</span>사업자등록번호: 101-81-09147<br>
+				통신판매업 신고번호: 2002-01546
+			</div>
+		</div>
+	</div>
+	<!-- e: footer -->
+
+
+	<!-- 2023-02-06 write 삭제 brand 추가-->
+	<!-- Top button(s) -->
+<div id="CPOtop">
+	<a href="javascript:void(0)" role="button" title="chatbot">chatbot</a>
+	<a href="javascript:void(0)" role="button" title="brand">brand</a>
+	<!-- <a href="javascript:void(0)" role="button" title="write">write</a> -->
+	<a href="javascript:void(0)" role="button" title="top">Top</a>
+</div>
+	<!--// Top button(e) -->
+
+<!-- ------------------     공통 토스트 팝업     ------------------ -->
+<!-- Toast POPUP Layout -->
+<div class="CPOpop_toast" id="CPOToast_Wrap">
+	<div class="message"></div>
+</div>
+<!-- Alert POPUP Layout -->
+<div class="CPOpop_alert" id="CPOAlert_Wrap">
+	<div class="message"></div>
+	<div class="btn_area">
+		<ul>
+			<li><button type="button" class="btn_alert01">확인</button></li>
+		</ul>
+	</div>
+</div>
+<!-- Alert POPUP Layout -->
+<div class="CPOpop_alert" id="CPOAlert_Wrap02">
+	<div class="message"></div>
+	<div class="btn_area">
+		<ul>
+			<li><button type="button" class="btn_alert">취소</button></li>
+			<li><button type="button" class="btn_alert">확인</button></li>
+		</ul>
+	</div>
+</div>
+
+
+
+
+
+<script>
+	$(function(){
+		
+		$('.CPOpop_alert .btn_alert, .CPOpop_alert .btn_alert01').on('click', function(){
+			CPO.POPUP_close($(this));
+		});
+		// ALERT2 -- 로그인 확인 
+		$(".CPO_Btn_Alert01").on("click",function(){
+			CPO.POPUP_open("CPOAlert_Wrap02", "로그인이 필요합니다.");
+		});
+		// ALERT2 -- 선택차량 삭제
+		$(".CPO_Btn_Alert02").on("click",function(){
+			CPO.POPUP_open("CPOAlert_Wrap02", "선택차량을 삭제하시겠습니까?");
+		});
+		// ALERT3 -- 선택차량 삭제
+		$(".CPO_Btn_Alert03").on("click",function(){
+			CPO.POPUP_open("CPOAlert_Wrap02", "로그아웃 하시겠습니까?");
+		});
+		// ALERT4 -- 캐시 삭제
+		$(".CPO_Btn_Alert04").on("click",function(){
+			CPO.POPUP_open("CPOAlert_Wrap02", "<p>캐시를 삭제 하시겠습니까?<br />삭제 시, 처음 콘텐츠를 로딩하는데 시간이 다소 소요될 수 있습니다.</p>");
+		});
+		// ALERT5 -- 서비스 해지 시
+		$(".CPO_Btn_Alert05").on("click",function(){
+			CPO.POPUP_open("CPOAlert_Wrap", "<p class='txt01'>중고차 결제, 배송중이거나 판매중이기 때문에 서비스 해지를 진행할 수 없습니다.<br />중고차 구매, 판매를 완료하신 후에 다시 시도해주세요.</p>");
+		});
+		// ALERT6 -- 현대차량 등록 가능
+		$(".CPO_Btn_Alert06").on("click",function(){
+			CPO.POPUP_open("CPOAlert_Wrap", "현대자동차만 등록 가능합니다.");
+		});
+		// ALERT7 -- 입고알림은 최대 10개까지 등록 가능
+		$(".CPO_Btn_Alert07").on("click",function(){
+			CPO.POPUP_open("CPOAlert_Wrap", "<p class='txt01'>입고알림은 최대 10개까지 등록 가능하며 이미 10개의 알림을 등록하셨습니다.</p>");
+		});
+
+		// TOAST -- 장바구니 담기
+		$(".CPO_Btn_Cart").on("click",function(){
+			CPO.POPUP_toast("CPOToast_Wrap", "차량이 장바구니에 담겼습니다.");
+		});
+
+		// TOAST -- 찜하기 CHECKBOX
+		$('.CPO_Chk_Wish').change(function() {
+			if(this.checked) {
+				CPO.POPUP_toast("CPOToast_Wrap", "차량이 찜목록에 추가되었습니다.");
+			} else {
+				CPO.POPUP_toast("CPOToast_Wrap", "차량이 찜목록에서 해제되었습니다.");
+			};
+		});
+
+		// TOAST -- 가격변동 알림 BUTTON
+		$(".btn_alarm01").on("click",function(){
+			if( $(this).hasClass("on") === true ) { 
+				CPO.POPUP_toast("CPOToast_Wrap", "<span class='icon_alarm01'>가격변동알림 신청이 취소되었습니다.</span>");
+				$(this).removeClass("on")
+			} else { 
+				CPO.POPUP_toast("CPOToast_Wrap", "<span class='icon_alarm01'>가격변동알림 신청이 완료되었습니다.</span>");
+				$(this).addClass("on")
+			}
+		});
+
+		// TOAST -- 알림 수신에 동의. CHECKBOX
+		$('.CPO_Chk_Agree').change(function() {
+			if(this.checked) {
+				CPO.POPUP_toast("CPOToast_Wrap", "<p class='text_type01'>알림 수신에 동의하셨습니다.<span class='date'>2021.10.31</span></p>");
+			} else {
+				CPO.POPUP_toast("CPOToast_Wrap", "<p class='text_type01'>알림 수신에 미동의하셨습니다.<span class='date'>2021.10.31</span></p>");
+			};
+		});
+
+		// TOAST -- 광고성 정보 수신 동의. CHECKBOX
+		$('.CPO_Chk_Market').change(function() {
+			if(this.checked) {
+				CPO.POPUP_toast("CPOToast_Wrap", "<p class='text_type01'><span>광고성 정보 수신을 동의하셨습니다.<br>2021.10.06<br>동의 항목 : 카카오톡, E-mail, SMS</span><span class='txt'>변경을 원하시면 <em>마이페이지 > 앱 설정</em>에서<br>다시 설정해주세요.</span></p>");
+			} else {
+				CPO.POPUP_toast("CPOToast_Wrap", "<p class='text_type01'><span>광고성 정보 수신을 미동의하셨습니다.<br>2021.10.06<br>동의 항목 : 카카오톡, E-mail, SMS</span><span class='txt'>변경을 원하시면 <em>마이페이지 > 앱 설정</em>에서<br>다시 설정해주세요.</span></p>");
+			};
+		});
+	});
+</script>

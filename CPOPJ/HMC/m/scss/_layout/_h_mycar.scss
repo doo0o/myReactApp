@@ -1,0 +1,15 @@
+@import '../_common/h_function';
+@import '../_common/h_mixins';
+
+// 차량등록[Layer]
+.layer_mycar {
+	padding: 25px 21px 0;
+	.cont {
+		margin-top: 30px;
+		p.txt {
+			margin-bottom: 20px;
+			color: $COL_Base_03;
+			@include Mix_Font('Head-M', 16, 20);
+		}
+	}
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>계약금 결제 : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_order.css">
+</head>
+<body>
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<!-- S : [CPO-1204 : 디자인검수2차] -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">계약금 결제</h1>
+		</div>
+		<!-- E : [CPO-1204 : 디자인검수2차] -->
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="contract_payment">
+			<p class="txt">
+				입금계좌 확인 후<br>
+				<strong>5분 이내</strong>로 결제해 주세요.
+			</p>
+			<p class="txt2">결제완료 후 입금확인 버튼을 반드시 눌러주세요.</p>
+			<div class="bank_info_item protrude_el">
+				<div class="logo"><img src="/HMC/m/img/finance/bank_020.png" alt="우리은행로고"></div>
+				<div class="cont">
+					<div class="bank_info">
+						<div class="info1">
+							<div class="bank">우리은행</div>
+							<div class="num">12345671234567</div>
+						</div>
+						<div class="info2">
+							<div class="payment">100,000<span>원</span></div>
+							<div class="name">김현대</div>
+						</div>
+					</div>
+					<div class="state">입금대기 (2022.04.01 08:00까지)</div>
+				</div>
+			</div>
+
+			<div class="caution">
+				<ul>
+					<li>가상계좌로 입금 완료 후 5분 이내에 입금여부가 확인됩니다.</li>
+					<li>결제 금액과 입금 금액이 다를 경우 정상 입금 처리가 불가능합니다.</li>
+					<li>무통장입금 설정 후 5분 이내로 입금이 완료되지 않으면 해당 차량 주문 진행이 자동으로 취소됩니다. </li>
+					<li>계약취소 요청 시 설정하셨던 가상계좌 정보는 삭제됩니다.</li>
+					<li>설정하신 무통장입금 정보를 다른 은행으로 변경하시려면	계약취소 완료 후 진행이 가능합니다. </li>
+				</ul>
+			</div>
+
+			<!-- 2022-11-15 CPO-6055 -->
+			<!-- <div class="btn_cancel">
+				<a href="javascript:void(0);" class="btn_txt_big01">계약취소</a>
+			</div> -->
+
+		</div>
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">입금확인</button>
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+</body>
+</html>

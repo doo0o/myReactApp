@@ -1,0 +1,129 @@
+<!-- FO-MY-MS0056 : 신용카드 매출전표 - FULL -->
+<div class="CPOpop_full" id="FO-MY-MS0056">
+	<div class="p_head">
+		<h2 class="tit">신용카드 매출전표</h2>
+	</div>
+	<div class="p_wrap">
+		<!-- 신용카드 매출전표 -->
+		<div class="tbl_cont">
+			<section class="tbl_list">
+				<div class="sec_tit">결제정보</div>
+				<table class="table">
+					<caption>결제정보</caption>
+					<colgroup>
+						<col width="120px">
+						<col width="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>카드종류</th>
+							<td>현대카드</td>
+						</tr>
+						<tr>
+							<th>카드번호</th>
+							<td>000000*******000*</td>
+						</tr>
+						<tr>
+							<th>거래종류</th>
+							<td>신용거래</td>
+						</tr>
+						<tr>
+							<th>거래일시</th>
+							<td>20211023084757</td>
+						</tr>
+						<tr>
+							<th>할부개월</th>
+							<td>일시불</td>
+						</tr>
+						<tr>
+							<th>승인번호</th>
+							<td>30094971</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="sec_tit">구매정보</div>
+				<table class="table">
+					<caption>구매정보</caption>
+					<colgroup>
+						<col width="120px">
+						<col width="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>주문번호</th>
+							<td>00000000000001</td>
+						</tr>
+						<tr>
+							<th>구매자명</th>
+							<td>김현대</td>
+						</tr>
+						<tr>
+							<th>상품명</th>
+							<td>그랜저 IG 익스클루시브</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="sec_tit">결제금액정보</div>
+
+				<table class="table">
+					<caption>결제금액정보</caption>
+					<colgroup>
+						<col width="120px">
+						<col width="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>과세금액</th>
+							<td>38,600,000원</td>
+						</tr>
+						<tr>
+							<th>비과세금액</th>
+							<td>0원</td>
+						</tr>
+						<tr>
+							<th>부가세</th>
+							<td>3,860,000원</td>
+						</tr>
+						<tr>
+							<th>합계금액</th>
+							<td>42,460,000원</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="sec_tit">판매자정보</div>
+				<table class="table">
+					<caption>판매자정보</caption>
+					<colgroup>
+						<col width="120px">
+						<col width="*">
+					</colgroup>
+					<tbody>
+						<tr>
+							<th>상호</th>
+							<td>현대자동차 주식회사</td>
+						</tr>
+						<tr>
+							<th>사업자등록번호</th>
+							<td>101-81-09147</td>
+						</tr>
+						<tr>
+							<th>주소</th>
+							<td>서울특별시 서초구 헌릉로 12</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section class="bg_line">
+				<div class="caution">
+					<ul>
+						<li>위 신용카드 매출전표는 부가가치세법 제 32조의 2 제 3항에 의하여 발행되었으며, 동법 시행령 제 57조 제 2항에 의하여 세금계산서를 교부하지 않습니다.</li>
+						<li>카드사 정책상 실제 카드번호가 아닌 가상 카드번호로 보여질 수 있습니다.</li>
+						<li>신용카드 영수증은 결제하신 카드사의 홈페이지 및 서비스에서 확인 가능합니다.</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+		<!-- //신용카드 매출전표 -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

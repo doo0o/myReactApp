@@ -1,0 +1,1487 @@
+@charset "UTF-8";
+/* 메인 */
+/* 공통 Font 합수 (폰트명 끝부분, font-size, line-height) 
+ex) @include Mix_Font('Head-M', 18, 23); */
+/* 공통 Font 합수 (폰트명 끝부분, font-size, line-height)
+ex) @include Mix_Font('Head-M', 18, 23); */
+.no_scroll {
+  position: fixed;
+  overflow: hidden;
+}
+
+#HIheader .h_header_main {
+  z-index: 1;
+  width: 100%;
+}
+#HIheader .h_header_main .ic_back::before {
+  background-position: -240px -25px;
+}
+#HIheader .h_header_main .ic_cart::before {
+  background-position: -168px -25px;
+}
+#HIheader .h_header_main .ic_home::before {
+  background-position: -144px -25px;
+}
+#HIheader .h_header_main .ic_mycar::before {
+  background-position: -168px -51px;
+}
+#HIheader .h_header_main .ic_close::before {
+  background-position: -120px -51px;
+}
+#HIheader .h_header_main .ic_logo::before {
+  background-position: 0 -106px;
+}
+#HIheader .h_header_main .ic_more::before {
+  background-position: -192px -51px;
+}
+#HIheader .h_header_main .ic_sound::before {
+  background-position: -240px -51px;
+}
+#HIheader .h_header_main .ic_sound.off::before {
+  background-position: -264px -51px;
+}
+#HIheader .h_header_main .ic_share::before {
+  background-position: -21px -212px;
+}
+#HIheader .h_header_main .menu {
+  border: 1px solid rgba(221, 221, 221, 0.3);
+  color: #fff;
+}
+#HIheader .h_header_main .menu::before {
+  background-position: -115px -10px;
+}
+#HIheader .h_header_main .tit {
+  text-align: center;
+  color: #fff;
+  width: 100%;
+}
+#HIheader .h_header_main.reverse {
+  transition: background-image 1s;
+}
+#HIheader .h_header_main.reverse .ic_back::before {
+  background-position: -264px -25px;
+}
+#HIheader .h_header_main.reverse .ic_cart::before {
+  background-position: -25px -25px;
+}
+#HIheader .h_header_main.reverse .ic_alarm::before {
+  background-position: 0 -25px;
+}
+#HIheader .h_header_main.reverse .ic_mic::before {
+  background-position: -72px -25px;
+}
+#HIheader .h_header_main.reverse .ic_filter::before {
+  background-position: -96px -25px;
+}
+#HIheader .h_header_main.reverse .ic_set::before {
+  background-position: -120px -25px;
+}
+#HIheader .h_header_main.reverse .ic_home::before {
+  background-position: -192px -25px;
+}
+#HIheader .h_header_main.reverse .ic_search::before {
+  background-position: -48px -25px;
+}
+#HIheader .h_header_main.reverse .ic_mycar::before {
+  background-position: -144px -51px;
+}
+#HIheader .h_header_main.reverse .ic_close::before {
+  background-position: -216px -25px;
+}
+#HIheader .h_header_main.reverse .ic_logo::before {
+  background-position: 0 0;
+}
+#HIheader .h_header_main.reverse .menu {
+  border: 1px solid #DDDDDD;
+  color: #000;
+}
+#HIheader .h_header_main.reverse .menu::before {
+  background-position: -115px 0;
+}
+#HIheader .h_header_main.reverse .tit {
+  color: #000;
+  transition: color 1s;
+}
+
+#HIcontents.HI_main > div:last-child:not(.btn_sticky) {
+  padding-bottom: inherit;
+}
+
+.HI_main {
+  /* actionbar */
+}
+.HI_main * {
+  user-select: none;
+}
+.HI_main .main_intro {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HI_main .main_intro::after {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  content: "";
+  display: block;
+  width: 20px;
+  height: 40px;
+  transform: translateX(-50%);
+  opacity: 0;
+  background: #002C5F url("/HILAB/m/img/main/icon_main01.png") no-repeat 0 0/150px auto;
+  background-position: -124px -4px;
+}
+.HI_main .main_intro_end::after {
+  z-index: 100;
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+.HI_main .main_intro_end.hidden {
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: inherit;
+}
+.HI_main .main_intro.skip_page .intro_bg1 {
+  background: #002C5F url("/HILAB/m/img/main/bg_skip.png") no-repeat -70px 40vh;
+}
+.HI_main .main_intro .skip_btn {
+  opacity: 0;
+  position: fixed;
+  z-index: 100;
+  top: 70px;
+  right: 21px;
+  padding-right: 20px;
+  color: #fff;
+}
+.HI_main .main_intro .skip_btn.show {
+  opacity: 1;
+  transition: opacity 0.7s;
+}
+.HI_main .main_intro .skip_btn.hidden {
+  opacity: 0;
+  z-index: -1;
+}
+.HI_main .main_intro .skip_btn::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 6px;
+  right: 0;
+  width: 6px;
+  height: 11px;
+  background: url("/HILAB/m/img/main/icon_main01.png") no-repeat 0 0/150px auto;
+  background-position: -113px -4px;
+}
+.HI_main .main_intro .skip_btn::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 6px;
+  right: 7px;
+  width: 6px;
+  height: 11px;
+  background: url("/HILAB/m/img/main/icon_main01.png") no-repeat 0 0/150px auto;
+  background-position: -113px -4px;
+}
+.HI_main .main_intro_video > div {
+  position: fixed;
+  z-index: 1;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+.HI_main .main_intro_video > div.top_pos {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: auto;
+}
+.HI_main .main_intro_video > div.hidden {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.HI_main .main_intro_video > div.main_video3 {
+  transform: scale(1);
+}
+.HI_main .main_intro_video > div.main_video3.scale {
+  transform: scale(0.7);
+  transition: transform 1s;
+}
+.HI_main .main_intro_con {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+}
+.HI_main .main_intro_txt1 {
+  position: relative;
+  top: 17.6630434783vh;
+  left: 4.0760869565vh;
+  font-family: "HynSans_Head-M";
+  font-size: 130px;
+  line-height: 130px;
+  color: #fff;
+  opacity: 0;
+}
+.HI_main .main_intro_txt1.action {
+  opacity: 1;
+  transition: opacity 0.8s;
+}
+.HI_main .main_intro_txt1.scale {
+  font-size: 80px;
+  line-height: 80px;
+  transition: all 1.2s;
+  transform-origin: 50% 50%;
+}
+.HI_main .main_intro_txt1.hidden {
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+.HI_main .main_intro_txt2 {
+  opacity: 1;
+  position: absolute;
+  top: 32.0652173913vh;
+  left: 4.0760869565vh;
+  font-family: "HynSans_Head-R";
+  font-size: 18px;
+  line-height: 18px;
+  color: #AACAE6;
+  transform: translateY(0);
+  opacity: 0;
+}
+.HI_main .main_intro_txt2 strong {
+  font-size: 30px;
+  line-height: 30px;
+}
+.HI_main .main_intro_txt2 span {
+  display: block;
+  margin-top: 10px;
+  line-height: 30px;
+}
+.HI_main .main_intro_txt2.action {
+  opacity: 1;
+  transform: translateY(1.3586956522vh);
+  transition: opacity 0.6s, transform 1s;
+}
+.HI_main .main_intro_txt2.hidden {
+  opacity: 0;
+  transform: translateY(4.0760869565vh);
+  transition: opacity 1s, transform 1.2s;
+}
+.HI_main .main_intro_txt3 {
+  position: fixed;
+  top: 17.6630434783vh;
+  left: 4.0760869565vh;
+  opacity: 0;
+  color: #AACAE6;
+  font-family: "HynSans_Txt-R";
+  font-size: 18px;
+  line-height: 30px;
+}
+.HI_main .main_intro_txt3.action {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.8s;
+}
+.HI_main .main_intro_txt3.hidden {
+  opacity: 0;
+  transform: translateY(-3vh);
+  transition: opacity 0.8s, transform 0.7s;
+}
+.HI_main .main_intro_txt4 {
+  position: fixed;
+  top: 17.6630434783vh;
+  left: 4.0760869565vh;
+  opacity: 0;
+}
+.HI_main .main_intro_txt4 span {
+  font-family: "HynSans_Txt-R";
+  font-size: 16px;
+  line-height: 30px;
+  color: #AACAE6;
+}
+.HI_main .main_intro_txt4 strong {
+  display: block;
+  margin-top: 16px;
+  color: #fff;
+  font-family: "HynSans_Head-M";
+  font-size: 48px;
+  line-height: 60px;
+}
+.HI_main .main_intro_txt4.action {
+  opacity: 1;
+  transition: opacity 1.5s;
+}
+.HI_main .main_intro_txt4.color span, .HI_main .main_intro_txt4.color strong {
+  color: #007FA8;
+  transition: color 0.8s;
+}
+.HI_main .main_intro_txt4.hidden {
+  transform: translateY(-60vh);
+  transition: transform 1s 0.2s;
+}
+.HI_main .main_intro.end {
+  z-index: -1;
+}
+.HI_main .main_intro.end .main_intro_video {
+  display: none;
+}
+.HI_main .main_intro.end .main_intro_con {
+  display: none;
+}
+.HI_main .main_intro_brige {
+  position: relative;
+  z-index: 300;
+  height: 30vh;
+  width: 100%;
+  opacity: 1;
+  font-family: "HynSans_Head-R";
+  font-size: 34px;
+  line-height: 43px;
+}
+.HI_main .main_intro_brige.bg-change span, .HI_main .main_intro_brige.bg-change strong {
+  color: #000;
+}
+.HI_main .main_intro_brige span {
+  display: block;
+  color: #fff;
+  transition: color 0.3s;
+}
+.HI_main .main_intro_brige strong {
+  display: block;
+  margin-top: 10px;
+  color: #fff;
+  transition: color 0.3s;
+}
+.HI_main .main_intro_brige .bg_trend.show::before {
+  opacity: 1;
+  top: -85px;
+}
+.HI_main .main_contents {
+  position: relative;
+  padding-top: 100vh;
+  background-color: #fff;
+  overflow: hidden;
+}
+.HI_main .main_contents .scroll-spy {
+  opacity: 0;
+  transform: translateY(2vh);
+  transition: opacity 0.3s, transform 0.3s;
+}
+.HI_main .main_contents .scroll-spy-1 {
+  opacity: 0;
+  transform: translateY(2vh);
+  transition: opacity 0.3s, transform 0.3s;
+}
+.HI_main .main_contents .scroll-spy-1.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.HI_main .main_contents .scroll-spy.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.HI_main section .con_tit strong {
+  font-family: "HynSans_Head-R";
+  font-size: 30px;
+  line-height: 38px;
+}
+.HI_main section .con_tit span {
+  display: block;
+  margin-top: 3px;
+  font-family: "HynSans_Head-R";
+  font-size: 18px;
+  line-height: 23px;
+}
+.HI_main section .con_tit em {
+  display: block;
+  color: #007FA8;
+  font-family: "HynSans_Head-R";
+  font-size: 14px;
+  line-height: 18px;
+}
+.HI_main section .graph {
+  margin-top: 20px;
+}
+.HI_main section .graph .sell_num p:first-child {
+  display: flex;
+  align-items: center;
+  font-family: "HynSans_Head-R";
+  font-size: 24px;
+  line-height: 30px;
+}
+.HI_main section .graph .sell_num p:first-child strong {
+  font-family: "HynSans_Head-M";
+  font-size: 45px;
+  line-height: 56px;
+}
+.HI_main section .graph .contrast_txt {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: "HynSans_Head-R";
+  font-size: 12px;
+  line-height: 15px;
+}
+.HI_main section .graph .upandown_txt {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: "HynSans_Head-R";
+  font-size: 16px;
+  line-height: 20px;
+}
+.HI_main section .graph .upandown_txt::after {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  margin: -2px 0 0 1px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+.HI_main section .graph .upandown_txt.up {
+  color: #FB6B39;
+}
+.HI_main section .graph .upandown_txt.up::after {
+  border-bottom: 11px solid #FB6B39;
+}
+.HI_main section .graph .upandown_txt.down {
+  color: #43D1FF;
+}
+.HI_main section .graph .upandown_txt.down::after {
+  margin-top: -1px;
+  border-top: 11px solid #43D1FF;
+}
+.HI_main section .graph_img {
+  padding-top: 40px;
+  text-align: center;
+}
+.HI_main section .graph_img p {
+  margin-bottom: 12px;
+}
+.HI_main section .graph_img img {
+  display: inline-block;
+}
+.HI_main section .graph_deal {
+  display: flex;
+  gap: 9px;
+  margin-top: 30px;
+  color: #fff;
+}
+.HI_main section .graph_deal li {
+  flex-grow: 1;
+  padding: 14px 10px 12px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  background-color: #007FA8;
+}
+.HI_main section .graph_deal li .tit {
+  position: relative;
+  width: 100%;
+  margin-bottom: 12px;
+  font-family: "HynSans_Head-R";
+  font-size: 13px;
+  line-height: 16px;
+}
+.HI_main section .graph_deal li .tit i {
+  position: relative;
+  top: -2px;
+  margin-right: 3px;
+}
+.HI_main section .graph_deal li .tit i.icon_person {
+  top: -4px;
+}
+.HI_main section .graph_deal li .deal_num {
+  margin-bottom: 10px;
+  font-family: "HynSans_Head-R";
+  font-size: 12px;
+  line-height: 18px;
+}
+.HI_main section .graph_deal li .deal_num em {
+  display: block;
+  font-family: "HynSans_Head-R";
+  font-size: 18px;
+  line-height: 23px;
+}
+.HI_main section .graph_deal li .upandown_txt {
+  justify-content: flex-start;
+  font-family: "HynSans_Head-M";
+  font-size: 14px;
+  line-height: 18px;
+}
+.HI_main .main_con1 {
+  position: relative;
+  z-index: 250;
+  top: -1px;
+  padding: 70px 21px 0;
+  background-color: #007FA8;
+}
+.HI_main .main_con1.bg-change {
+  background-color: #fff;
+  transition: background-color 0.3s;
+}
+.HI_main .main_con1.bg-change .con_tit {
+  position: relative;
+  z-index: 300;
+}
+.HI_main .main_con1 .con_tit em {
+  font-family: "HynSans_Head-R";
+  font-size: 12px;
+  line-height: 15px;
+}
+.HI_main .main_con1 .graph {
+  position: relative;
+  z-index: 300;
+}
+.HI_main .main_con1 .graph_img {
+  height: 190px;
+}
+.HI_main .main_con2 {
+  position: relative;
+  z-index: 150;
+  padding: 100px 21px 0;
+}
+.HI_main .main_con2 .graph {
+  margin-top: 20px;
+}
+.HI_main .main_con2 .graph .age_percent p {
+  display: flex;
+  align-items: center;
+  font-family: "HynSans_Head-R";
+  font-size: 24px;
+  line-height: 30px;
+}
+.HI_main .main_con2 .graph .age_percent p strong {
+  font-family: "HynSans_Head-M";
+  font-size: 50px;
+  line-height: 63px;
+}
+.HI_main .main_con2 .graph .age_percent p em {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 5px;
+}
+.HI_main .main_con2 .graph .age_percent p em i {
+  font-family: "HynSans_Head-M";
+  font-size: 35px;
+  line-height: 44px;
+}
+.HI_main .main_con2 .graph .age_percent p.upandown_txt {
+  font-family: "HynSans_Head-R";
+  font-size: 16px;
+  line-height: 20px;
+}
+.HI_main .main_con2 .graph_img {
+  width: 270px;
+  margin: 40px auto 0;
+  padding-top: 0;
+  border-top: 0;
+}
+.HI_main .main_con2 .graph_img img {
+  display: block;
+  width: 100%;
+}
+.HI_main .main_con2 .graph .age_type {
+  margin-top: 20px;
+}
+.HI_main .main_con2 .graph .age_type li:nth-last-child(1) div, .HI_main .main_con2 .graph .age_type li:nth-last-child(2) div {
+  border-bottom: 0 none;
+}
+.HI_main .main_con2::before {
+  transform: translateY(-60px);
+}
+.HI_main .main_con3 {
+  position: relative;
+  z-index: 100;
+  padding: 100px 21px 31px;
+  background-color: #fff;
+}
+.HI_main .main_con3.scroll-spy {
+  transform: translateY(0);
+}
+.HI_main .main_con3 .con_tit {
+  margin-bottom: 20px;
+}
+.HI_main .main_con3 .con_tit,
+.HI_main .main_con3 .slider1 .swiper-tit {
+  transform: translateY(2vh);
+  opacity: 0;
+}
+.HI_main .main_con3 .swiper-container .swiper-slide {
+  background-color: #fff;
+}
+.HI_main .main_con3 .swiper-container .swiper-slide > div {
+  width: 100%;
+  background: white;
+}
+.HI_main .main_con3 .swiper-container .swiper-tit {
+  padding: 0 5px;
+}
+.HI_main .main_con3 .swiper-container .swiper-tit strong {
+  font-family: "HynSans_Head-B";
+  font-size: 18px;
+  line-height: 23px;
+}
+.HI_main .main_con3 .swiper-container .swiper-tit em {
+  display: block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-family: "HynSans_Head-L";
+  font-size: 30px;
+  line-height: 38px;
+}
+.HI_main .main_con3 .swiper-container .swiper-tit span {
+  display: flex;
+  align-items: center;
+  font-family: "HynSans_Head-R";
+  font-size: 24px;
+  line-height: 30px;
+}
+.HI_main .main_con3 .swiper-container .swiper-tit span i {
+  font-family: "HynSans_Head-M";
+  font-size: 45px;
+  line-height: 56px;
+}
+.HI_main .main_con3 .swiper-container .swiper-pagination {
+  margin-top: 40px;
+  opacity: 0;
+}
+.HI_main .main_con3 .swiper-container.slider2 .swiper-pagination {
+  opacity: 1;
+}
+.HI_main .main_con3 .tab {
+  position: relative;
+  z-index: 100;
+  margin-bottom: 45px;
+}
+.HI_main .main_con3 .tab_list {
+  position: absolute;
+  z-index: 5;
+  right: 0;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+  border: 1px solid #DDDDDD;
+  border-radius: 16px;
+  height: 32px;
+  padding: 2px;
+}
+.HI_main .main_con3 .tab_list::before {
+  display: none;
+}
+.HI_main .main_con3 .tab_list li a {
+  width: 50px;
+  height: 26px;
+  text-align: center;
+  border-radius: 13px;
+  color: #767676;
+  font-family: "HynSans_Head-R";
+  font-size: 14px;
+  line-height: 18px;
+}
+.HI_main .main_con3 .tab_list li.on a {
+  color: #fff;
+  border: 1px solid #002C5F;
+  background-color: #002C5F;
+}
+.HI_main .main_con3 .tab_list li.on a::after {
+  display: none;
+}
+.HI_main .main_con3 .tab_cont {
+  padding-top: 30px;
+}
+.HI_main .main_con3 .tab_cont.action .car {
+  display: flex;
+  justify-content: center;
+  margin-top: 28px;
+}
+.HI_main .main_con3 .tab_cont.action .car img {
+  position: relative;
+  width: 40.7608695652vh;
+}
+.HI_main .main_con3 .tab_cont.action::before {
+  transform: translate(20vw, -320px);
+  transition: all 0.3s;
+}
+.HI_main .main_con3 .tab_cont.action .slider1 .swiper-tit, .HI_main .main_con3 .tab_cont.action .slider2 .swiper-tit {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.3s;
+}
+.HI_main .main_con3 .tab_cont.action .slider1 .car img, .HI_main .main_con3 .tab_cont.action .slider2 .car img {
+  transform: translateY(0);
+  opacity: 1;
+  transition: all 0.3s 0.5s;
+}
+.HI_main .main_con3 .tab_cont.action .slider1 .swiper-pagination, .HI_main .main_con3 .tab_cont.action .slider2 .swiper-pagination {
+  opacity: 1;
+  transition: opacity 0.7s;
+}
+.HI_main .fix_motion_wrap1 {
+  position: relative;
+  height: 200vh;
+  background-color: #007FA8;
+}
+.HI_main .main_con4 {
+  position: relative;
+  z-index: 100;
+  min-height: 100vh;
+  background-color: #007FA8;
+}
+.HI_main .main_con4.main_con4_top {
+  overflow: hidden;
+}
+.HI_main .main_con4.main_con4_top .con_tit {
+  position: relative;
+  z-index: 20;
+  transform: translateY(3vh);
+  opacity: 0;
+  transition: transform 0.4s, opacity 0.4s;
+}
+.HI_main .main_con4.main_con4_top .movecar {
+  position: relative;
+  z-index: 100;
+  top: 10px;
+  left: 50%;
+  transform: translateX(100%);
+}
+.HI_main .main_con4 .con_tit {
+  padding: 70px 21px 0;
+  color: #fff;
+}
+.HI_main .main_con4 .con_tit strong {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "HynSans_Head-R";
+  font-size: 24px;
+  line-height: 30px;
+}
+.HI_main .main_con4 .con_tit span {
+  font-family: "HynSans_Head-R";
+  font-size: 34px;
+  line-height: 43px;
+}
+.HI_main .main_con4 .car_info {
+  position: absolute;
+  z-index: 100;
+  top: 76.0869565217vh;
+  right: 0;
+  padding-right: 21px;
+  text-align: right;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(2vh);
+  font-family: "HynSans_Head-R";
+  font-size: 24px;
+  line-height: 30px;
+}
+.HI_main .main_con4 .car_info strong {
+  display: block;
+  font-family: "HynSans_Head-R";
+  font-size: 30px;
+  line-height: 38px;
+}
+.HI_main .main_con4 .car_info.top {
+  text-align: left;
+  position: absolute;
+  z-index: 100;
+  top: 90px;
+  right: auto;
+  bottom: auto;
+  left: 21px;
+}
+.HI_main .main_con4 .movecar {
+  width: 450px;
+}
+.HI_main .main_con4 .movecar img {
+  width: 100%;
+}
+.HI_main .main_con4 .step2_graph {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.HI_main .main_con4 .step2_graph_refer {
+  margin-bottom: 40px;
+  padding: 0 10px;
+  font-family: "HynSans_Head-R";
+  font-size: 15px;
+  line-height: 19px;
+}
+.HI_main .main_con4 .step2_graph_refer::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.HI_main .main_con4 .step2_graph_refer::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.HI_main .main_con4 .step2_graph_refer p {
+  padding: 9px 15px;
+  text-align: center;
+  color: #fff;
+}
+.HI_main .main_con4 .step2_graph_refer p em {
+  display: block;
+  color: #43D1FF;
+  font-family: "HynSans_Head-R";
+  font-size: 14px;
+  line-height: 18px;
+}
+.HI_main .main_con4 .step2_graph .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  color: #fff;
+  font-family: "HynSans_Head-R";
+  font-size: 20px;
+  line-height: 25px;
+}
+.HI_main .main_con4 .step2_graph .price strong {
+  font-family: "HynSans_Head-M";
+  font-size: 36px;
+  line-height: 45px;
+  display: inline-block;
+  margin: 0 2px;
+}
+.HI_main .main_con4 .step2_graph .graph_wrap {
+  display: flex;
+  justify-content: center;
+}
+.HI_main .main_con4 .btn_area {
+  position: fixed;
+  z-index: 5;
+  right: 0;
+  left: 0;
+  opacity: 0;
+}
+.HI_main .main_con4 .intro_bg3 {
+  opacity: 1;
+}
+.HI_main .main_con4_1 {
+  position: relative;
+  z-index: 200;
+  opacity: 1;
+  margin-top: 135px;
+  padding-bottom: 31px;
+  background-color: #007FA8;
+}
+.HI_main .main_con4_1 .step3_refer {
+  padding: 100px 21px 0;
+  margin: 0px 0 40px;
+  text-align: left;
+  color: #fff;
+  position: relative;
+}
+.HI_main .main_con4_1 .step3_refer p {
+  font-family: "HynSans_Head-R";
+  font-size: 18px;
+  line-height: 23px;
+}
+.HI_main .main_con4_1 .step3_refer em {
+  color: #43D1FF;
+  font-family: "HynSans_Head-R";
+  font-size: 12px;
+  line-height: 15px;
+}
+.HI_main .main_con4_1 .step3_graph {
+  position: relative;
+  z-index: 10;
+}
+.HI_main .main_con4_1 .step3_graph .graph_wrap {
+  display: flex;
+  justify-content: center;
+  height: 240px;
+  padding: 0 21px;
+}
+.HI_main .main_con4_1 .step3_graph .year_percent {
+  margin: 10px 21px 30px;
+}
+.HI_main .main_con4_1 .step3_graph .year_percent li {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  color: #fff;
+}
+.HI_main .main_con4_1 .step3_graph .year_percent li::after {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.2;
+}
+.HI_main .main_con4_1 .step3_graph .year_percent li span {
+  font-family: "HynSans_Head-R";
+  font-size: 12px;
+  line-height: 15px;
+}
+.HI_main .main_con4_1 .step3_graph .year_percent li span::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.HI_main .main_con4_1 .step3_graph .year_percent li span.year_dot1::before {
+  background-color: #002C5F;
+}
+.HI_main .main_con4_1 .step3_graph .year_percent li span.year_dot2::before {
+  background-color: #43D1FF;
+}
+.HI_main .main_con4_1 .step3_graph .year_percent li span.year_dot3::before {
+  background-color: #fff;
+}
+.HI_main .main_con4_1 .step3_graph .year_percent li span.year_dot4::before {
+  background-color: #AACAE6;
+}
+.HI_main .main_con4_1 .step3_graph .year_percent li em {
+  font-family: "HynSans_Head-R";
+  font-size: 16px;
+  line-height: 20px;
+}
+.HI_main .main_con4_1 .step3_graph .info_list {
+  color: #fff;
+  text-align: center;
+}
+.HI_main .main_con4_1 .step3_graph .info_list .info_list_refer {
+  margin-bottom: 10px;
+  font-family: "HynSans_Head-R";
+  font-size: 15px;
+  line-height: 19px;
+}
+.HI_main .main_con4_1 .step3_graph .info_list ul {
+  display: flex;
+  gap: 7px;
+  margin: 0 21px 25px;
+}
+.HI_main .main_con4_1 .step3_graph .info_list ul li {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1 33%;
+  padding: 42px 0 16px;
+  color: #fff;
+  text-align: center;
+  font-family: "HynSans_Head-R";
+  font-size: 13px;
+  line-height: 16px;
+  background: #002C5F;
+}
+.HI_main .main_con4_1 .step3_graph .info_list ul li i {
+  position: absolute;
+  top: 16px;
+}
+.HI_main .main_con4_1 .step1 .car_info {
+  padding: 70px 0 0 21px;
+  opacity: 1;
+  text-align: left;
+  font-family: "HynSans_Head-R";
+  font-size: 16px;
+  line-height: 24px;
+  transition: inherit;
+}
+.HI_main .main_con4_1 .step1 .car_info strong {
+  margin-top: 0;
+  font-family: "HynSans_Head-R";
+  font-size: 24px;
+  line-height: 30px;
+}
+.HI_main .main_con4_1 .step1 .movecar {
+  margin-top: 130px;
+}
+.HI_main .main_con4_1 .step1 .movecar img {
+  width: 310px;
+  height: auto;
+  transition: transform 0.6s cubic-bezier(0.24, 0.97, 0.47, 1.07);
+  transform: translate(20vw, -13.5869565217vh);
+}
+.HI_main .main_con4_1 .step1 .step2_graph {
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+  margin-top: -13.5869565217vh;
+  position: relative;
+  z-index: 50;
+}
+.HI_main .main_con4_1 .step1 .step2_graph_refer {
+  margin-bottom: 40px;
+  padding: 0 10px;
+  font-family: "HynSans_Head-R";
+  font-size: 15px;
+  line-height: 19px;
+}
+.HI_main .main_con4_1 .step1 .step2_graph_refer::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.HI_main .main_con4_1 .step1 .step2_graph_refer::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.HI_main .main_con4_1 .step1 .step2_graph_refer p {
+  padding: 9px 15px;
+  text-align: center;
+  color: #fff;
+}
+.HI_main .main_con4_1 .step1 .step2_graph_refer p em {
+  display: block;
+  color: #43D1FF;
+  font-family: "HynSans_Head-R";
+  font-size: 14px;
+  line-height: 18px;
+}
+.HI_main .main_con4_1 .step1 .step2_graph .graph_wrap {
+  height: 180px;
+}
+.HI_main .main_con4_1 .btn_area {
+  position: relative;
+  z-index: 10;
+  position: relative;
+  z-index: 10;
+  margin: 0 21px;
+  opacity: 1;
+}
+.HI_main .last_fix_wrap {
+  background-color: #fff;
+}
+.HI_main .main_con5 {
+  width: 100%;
+  height: 100vh;
+  padding-top: 70px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #fff;
+}
+.HI_main .main_con5 .con_tit {
+  position: absolute;
+  margin: 0 21px 0;
+  opacity: 0;
+}
+.HI_main .main_con5 .con_tit.tit_registration {
+  opacity: 1;
+}
+.HI_main .main_con5 .con_tit span {
+  margin-bottom: 5px;
+  font-family: "HynSans_Head-R";
+  font-size: 24px;
+  line-height: 30px;
+}
+.HI_main .main_con5 .con_tit strong {
+  font-family: "HynSans_Head-R";
+  font-size: 34px;
+  line-height: 43px;
+}
+.HI_main .main_con5 .con_tit.tit_cert {
+  opacity: 0;
+}
+.HI_main .main_con5 .circle {
+  width: 28.5326086957vh;
+  height: 28.5326086957vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.HI_main .main_con5 .circle_mask {
+  overflow: hidden;
+  width: 24.4565217391vh;
+  height: 24.4565217391vh;
+  border-radius: 50%;
+  background-color: #00142F;
+  transform: scale(0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.HI_main .main_con5 .circle_mask .person {
+  position: absolute;
+  width: auto;
+  height: 19.2934782609vh;
+  opacity: 0;
+  transform: translateY(100%);
+}
+.HI_main .main_con5 .circle_mask .car {
+  position: absolute;
+  width: 34.7826086957vh;
+  height: 16.7119565217vh;
+  transform: translateX(35.3260869565vh);
+}
+.HI_main .main_con5 .bg_circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border: 1px dashed #43D1FF;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.HI_main .main_con5 .intro_bg3 {
+  position: absolute;
+  z-index: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60vh;
+  background-color: #036686;
+  transform: translate(0px, 0%);
+  /* &.show {
+  	transform: translateY(0);
+  	transition: transform 0.4s;
+  } */
+}
+.HI_main .main_con5 .msking_text {
+  position: absolute;
+  z-index: 5;
+  bottom: 81px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  color: #fff;
+}
+.HI_main .main_con5 .msking_text strong {
+  font-family: "HynSans_Head-R";
+  font-size: 18px;
+  line-height: 23px;
+}
+.HI_main .main_con5 .msking_text > div {
+  text-align: center;
+}
+.HI_main .main_con5 .msking_text > div strong {
+  position: relative;
+  display: block;
+  padding-bottom: 1.222826087vh;
+  transform: translateY(2vh);
+  font-family: "HynSans_Head-R";
+  font-size: 24px;
+  line-height: 30px;
+}
+.HI_main .main_con5 .msking_text > div strong .text_line {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  width: 240px;
+  height: 1px;
+  background-color: #fff;
+}
+.HI_main .main_con5 .msking_text > div p {
+  margin-top: 1.6304347826vh;
+  transform: translateY(2vh);
+  font-family: "HynSans_Head-R";
+  font-size: 16px;
+  line-height: 20px;
+}
+.HI_main .main_con5 .msking_text > div p:last-child {
+  margin: 10px 0 37px;
+}
+.HI_main .main_con5 .msking_text .text_registration {
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  margin: 0 auto;
+}
+.HI_main .main_con5 .msking_text .text_cert {
+  position: absolute;
+  bottom: 60px;
+  width: 100%;
+  margin: 0 auto;
+  opacity: 0;
+}
+.HI_main .main_con5 .msking_text .btn_area {
+  margin: 0 21px;
+  transform: translateY(2vh);
+}
+.HI_main .main_con6 {
+  position: relative;
+  top: -1px;
+  opacity: 1;
+  padding-bottom: 31px;
+  background-color: #fff;
+}
+.HI_main .main_con6 .con_tit {
+  padding: 70px 21px 35px;
+}
+.HI_main .main_con6 .con_tit span {
+  margin-bottom: 5px;
+  font-family: "HynSans_Head-R";
+  font-size: 24px;
+  line-height: 30px;
+}
+.HI_main .main_con6 .con_tit strong {
+  display: block;
+  font-family: "HynSans_Head-R";
+  font-size: 30px;
+  line-height: 38px;
+}
+.HI_main .main_con6 .swiper-container {
+  padding: 0 40px;
+}
+.HI_main .main_con6 .swiper-container .swiper-slide {
+  flex-shrink: 1;
+}
+.HI_main .main_con6 .swiper-container .swiper-slide a {
+  display: block;
+}
+.HI_main .main_con6 .swiper-container .swiper-slide span {
+  position: relative;
+  display: block;
+  width: 38.0434782609vh;
+  margin-bottom: 20px;
+  padding-top: 28.5326086957vh;
+  overflow: hidden;
+}
+.HI_main .main_con6 .swiper-container .swiper-slide img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.HI_main .main_con6 .swiper-container .swiper-slide p {
+  height: 80px;
+  margin-bottom: 22px;
+  font-family: "HynSans_Head-R";
+  font-size: 20px;
+  line-height: 26px;
+}
+.HI_main .main_con6 .swiper-container .swiper-pagination {
+  opacity: 1;
+}
+.HI_main .main_con6 .btn_area {
+  margin: 76px 21px 0;
+}
+.HI_main .main_con6 .intro_bg3 {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #00142F;
+  opacity: 0;
+  transform: translateY(50vh);
+}
+.HI_main .intro_bg1 {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100vw;
+  background-color: #002C5F;
+}
+.HI_main .intro_bg1.hidden {
+  transform: scale(0.7);
+  transition: transform 1.5s;
+}
+.HI_main .intro_bg2 {
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100vw;
+  background-color: #007FA8;
+  opacity: 0;
+  transform: scale(0.6) translateY(200%);
+  transition: opacity 0.8s, transform 0.8s;
+}
+.HI_main .intro_bg2.action {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+.HI_main .intro_bg2.hidden {
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+.HI_main .list_half {
+  display: flex;
+  flex-wrap: wrap;
+}
+.HI_main .list_half li {
+  flex: 1 1 50%;
+  flex-grow: 0;
+}
+.HI_main .list_half li:only-child {
+  flex-grow: 1;
+}
+.HI_main .list_half li:only-child div {
+  margin-right: 0;
+}
+.HI_main .list_half li div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #EDEDED;
+  margin-right: 10px;
+  padding: 6px 0 5px;
+}
+.HI_main .list_half li:nth-child(2n) div {
+  margin-right: 0;
+  margin-left: 10px;
+}
+.HI_main .list_half li span {
+  font-family: "HynSans_Head-R";
+  font-size: 16px;
+  line-height: 20px;
+}
+.HI_main .list_half li em {
+  position: relative;
+  color: #666666;
+  font-family: "HynSans_Head-R";
+  font-size: 12px;
+  line-height: 15px;
+}
+.HI_main .list_half li em::before {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+.HI_main .dot_color01::before {
+  background-color: #87E2FF;
+}
+.HI_main .dot_color02::before {
+  background-color: #0F5DB8;
+}
+.HI_main .dot_color03::before {
+  background-color: #002C5F;
+}
+.HI_main .dot_color04::before {
+  background-color: #014799;
+}
+.HI_main .dot_color05::before {
+  background-color: #4286D4;
+}
+.HI_main .dot_color06::before {
+  background-color: #00AAD2;
+}
+.HI_main .dot_color07::before {
+  background-color: #1EBBCB;
+}
+.HI_main .dot_color08::before {
+  background-color: #43D1FF;
+}
+.HI_main .btn_area .btn_mid07 {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+}
+.HI_main .icon01 {
+  background: url("/HILAB/m/img/main/icon_main01.png") no-repeat 0 0/150px auto;
+}
+.HI_main .icon01.icon_person {
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+  background-position: -4px 0px;
+}
+.HI_main .icon01.icon_dealer {
+  display: inline-block;
+  width: 15px;
+  height: 20px;
+  background-position: -22px 0px;
+}
+.HI_main .icon01.icon_sale_volum {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: -41px -4px;
+}
+.HI_main .icon01.icon_mileage {
+  display: inline-block;
+  width: 17px;
+  height: 20px;
+  background-position: -66px -4px;
+}
+.HI_main .icon01.icon_preference {
+  display: inline-block;
+  width: 20px;
+  height: 18px;
+  background-position: -88px -4px;
+}
+.HI_main .swiper-pagination.type03 {
+  column-gap: 4px;
+}
+.HI_main .swiper-pagination.type03 .swiper-pagination-bullet {
+  width: 26px;
+  height: 2px;
+  border-radius: 0;
+  background-color: #DDDDDD;
+}
+.HI_main .swiper-pagination.type03 .swiper-pagination-bullet-active {
+  background-color: #007FA8;
+}
+.HI_main .swiper-pagination.type04 {
+  column-gap: 5px;
+}
+.HI_main .swiper-pagination.type04 .swiper-pagination-bullet {
+  width: 52px;
+  height: 2px;
+  border-radius: 0;
+  background-color: #DDDDDD;
+  opacity: 0.2;
+}
+.HI_main .swiper-pagination.type04 .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #00AAD2;
+}
+
+#HIactionbar.hidden {
+  display: none;
+}
+/*# sourceMappingURL=maps/hi_main.css.map */

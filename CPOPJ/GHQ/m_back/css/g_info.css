@@ -1,0 +1,24 @@
+@charset "UTF-8";
+/* 
+	1. 이용약관
+
+*/
+/*PDP 성능상태 점검기록부 팝업 사고이력 단순수리 정보*/
+/* 제네시스 제외 */
+/* 제네시스 제외 */
+/* 공통 Font 합수 (폰트명 끝부분, font-size, line-height) 
+ex) @include Mix_Font('Head-M', 18, 23); */
+/* 상품유닛 */
+/* button */
+/* 제네시스 body 배경색 */
+/* 제네시스 body 배경색 */
+.term_wrap {
+  padding: 20px 21px;
+}
+.term_wrap .sel_type01 {
+  border-color: #E5E5E5 !important;
+}
+.term_wrap .form_type02 {
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=maps/g_info.css.map */

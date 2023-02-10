@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>개인/법인 로그인</title>
+	<!--#include file="/HMC/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_login.css">
+</head>
+<body>
+<!--#include file="/HMC/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--#include file="/HMC/SHTML/H_inc/layout_header.shtml"-->
+		<!--  s: title area : SUB  -->
+		<div class="h_sub my_head2">
+			<button type="button" class="ic_back">뒤로가기</button>
+		</div>
+		<!--  e: title area : SUB  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="corp_login">
+			<h4 class="tit"><em>현대자동차 인증 중고차</em>에<br>오신 것을 환영합니다.</h4>
+			<ul class="list">
+				<li class="indiv">
+					<h5>개인 계정</h5>
+					<p>개인 소유의 차량을 구매 및 판매</p>
+					<a href="#" class="btn_mid01">로그인 하기</a>
+					<div class="btn_txt">
+						<a href="#">회원 가입하기</a>
+					</div>
+				</li>
+				<li class="crop">
+					<h5>법인 계정</h5>
+					<p>법인 소유의 차량을 구매 및 판매</p>
+					<a href="#" class="btn_mid01">로그인 하기</a>
+					<div class="btn_txt">
+						<a href="#">법인 계정 등록하기</a>
+					</div>
+				</li>
+			</ul>
+			<div class="btn_line">
+				<a href="#">법인 계정 등록 메뉴얼</a>
+			</div>
+		</div>
+		<!-- contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HMC/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/HMC/SHTML/H_inc/popup_include_all.shtml"-->
+
+</body>
+</html>

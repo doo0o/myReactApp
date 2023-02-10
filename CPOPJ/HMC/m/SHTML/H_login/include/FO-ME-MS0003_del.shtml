@@ -1,0 +1,53 @@
+<!-- FO-ME-MS0003 : 이용약관 및 개인정보처리방침(공통) - FULL -->
+<div class="CPOpop_modal" id="FO-ME-MS0003">
+	<div class="p_inner">
+		<div class="p_wrap">
+			<!-- member -->
+			<div class="join_list">
+				<div class="tit">
+					<h3>이용약관 및 개인정보처리방침</h3>
+					<p class="txt">현대자동차 인증 중고차 서비스 가입에<br>동의해주세요.</p>
+				</div>
+				<div class="item">
+					<input type="checkbox" name="chk_comm" id="chk_list01" class="chk_type01 large"><label for="chk_list01">전체약관에 동의 합니다.</label>
+				</div>
+				<ul class="accordion on">
+					<li>
+						<div class="item">
+							<input type="checkbox" name="chk_comm" id="chk_list02" class="chk_type01"><label for="chk_list02">[필수] 이용 약관 동의</label>
+							<button type="button" class="btn_arrow" data-popup="FO-ME-MS0002">이용 약관 자세히 보기</button>
+						</div>
+					</li>
+					<li>
+						<div class="item">
+							<input type="checkbox" name="chk_comm" id="chk_list03" class="chk_type01"><label for="chk_list03">[필수] 개인정보 수집 및 이용 동의</label>
+							<button type="button" class="btn_arrow" data-popup="FO-ME-MS0002">개인정보 수집 및 이용 자세히 보기</button>
+						</div>
+					</li>
+					<li>
+						<div class="item">
+							<input type="checkbox" name="chk_comm" id="chk_list04" class="chk_type01"><label for="chk_list04">[선택] 마케팅 활용 및 광고 수신 동의</label>
+						</div>
+						<!-- 마케팅 활용 및 광고 수신 항목-->
+						<div class="accordion on">
+							<div class="join_agree">
+								<!--#include file="/HMC/m/SHTML/agree/agree_03.shtml"--><!-- bo등록되는 html -->
+							</div>
+							<ul class="join_sns">
+								<li><input type="checkbox" name="JoinChk01_SNS" id="JoinChk01_SNS1" class="chk_type02 small"><label for="JoinChk01_SNS1">카카오톡</label></li>
+								<li><input type="checkbox" name="JoinChk01_SNS" id="JoinChk01_SNS2" class="chk_type02 small"><label for="JoinChk01_SNS2">E-mail</label></li>
+								<li><input type="checkbox" name="JoinChk01_SNS" id="JoinChk01_SNS3" class="chk_type02 small"><label for="JoinChk01_SNS3">SMS</label></li>						
+							</ul>
+						</div>
+						<!-- 마케팅 활용 및 광고 수신 항목-->
+					</li>
+				</ul>
+			</div>
+			<!-- //member -->
+			<div class="btn_sticky">
+				<button type="button" class="btn_mid01">동의</button>
+			</div>
+		</div>	
+		<button type="button" class="pop_close">닫기</button>
+	</div>
+</div>

@@ -1,0 +1,47 @@
+<!-- FO-TI-MS0029 : 보조키 여부 수정 - BOTTOM -->
+<div class="CPOpop_full" id="FO-TI-MS0029"><!-- 2022-09-16 CPO-3291 -->
+	<div class="p_head">
+		<h2 class="tit txt_hidden">차랑키 여부 수정</h2><!-- 2022-09-16 CPO-3291 -->
+	</div>
+	<div class="p_wrap">
+		<!-- 보조키 여부 수정 -->
+		<div class="sale_modify">
+			<div class="entry_carbase">
+				<div class="top02">
+					<h5 class="tit">차량 키가<br />몇 개 있나요?</h5><!-- 2022-09-16 CPO-3291 -->
+				</div>
+				<!-- 입력 -->
+				<ul class="entry_carmore_options">
+					<!-- 2022-09-16 CPO-3291 -->
+					<li>
+						<input type="radio" name="saleKeyChk2" id="saleKeyChk201" class="chk_type07" onchange="inputFunc(this)" />
+						<label for="saleKeyChk201">2개 이상 있어요</label>
+						<div class="box_input">
+							<div class="inbox_type01">
+								<input type="text" id="saleKeyTxt2" placeholder="예: 카드키/스마트키가 1개 더 있어요." class="txt">
+								<button type="button" class="btn_delete">삭제</button>
+							</div>
+						</div>
+					</li>
+					<li>
+						<input type="radio" name="saleKeyChk2" id="saleKeyChk202" class="chk_type07" />
+						<label for="saleKeyChk202">2개 있어요</label>
+					</li>
+					<li>
+						<input type="radio" name="saleKeyChk2" id="saleKeyChk203" class="chk_type07" />
+						<label for="saleKeyChk203">1개 있어요</label>
+					</li>
+					<!-- //2022-09-16 CPO-3291 -->
+				</ul>
+				<!-- //입력 -->
+			</div>
+		</div>
+		<!-- //차량키 여부 수정 -->
+		<!-- (3). STICKY BUTTON -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">수정하기</button>
+		</div>
+		<!-- //(3). STICKY BUTTON -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

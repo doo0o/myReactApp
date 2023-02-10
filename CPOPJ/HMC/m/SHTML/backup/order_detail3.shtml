@@ -1,0 +1,115 @@
+<!-- 02. 주문진행 상태 -->
+<!-- 01. 견적요청 -->
+<div class="order_detail">
+	<div class="seq">
+		<span class="now">견적</span>
+		<span>검수</span>
+		<span>계약</span>
+		<span>계약</span>
+	</div>
+	<h4 class="txt">
+		<em>요청하신 예상 견적가격을<br>산정중입니다.</em>
+		<span>
+			123현1234 차량의 예상 시세는<br>
+			약 0,000~0,000만원 입니다.
+		</span>
+	</h4>
+</div>
+<!-- 02. 견적수신 -->
+<div class="order_detail">
+	<div class="seq">
+		<span class="now">견적</span>
+		<span>검수</span>
+		<span>계약</span>
+		<span>계약</span>
+	</div>
+	<p class="date">2021.11.30 17시 32분까지 계약가능</p>
+	<h4 class="txt">
+		<em>예상 견적가격은<br>43,800,000원 입니다.</em>
+		<span>차량의 압류 및 저당권 해지 후 해지 완료<br>처리해주세요.</span>
+	</h4>
+	<p id="dueDate" class="time"></p>
+	<script>CPO.countDueDay('dueDate', '2022-12-20 17:35:00');//  카운드 시간</script>
+	<div class="btn_area">
+        <button type="button" class="btn_mid05">압류 및 저당권 해지 완료</button>
+		<!-- <button type="button" class="btn_mid05" disabled>압류 및 저당권 해지 완료</button> -->
+	</div>
+</div>
+<!-- 03. 실사검수완료 -->
+<div class="order_detail">
+	<div class="seq">
+		<span class="on">견적</span>
+		<span class="now">검수</span>
+		<span>계약</span>
+		<span>계약</span>
+	</div>
+	<h4 class="txt">
+		<em>차량 실사검수가 완료되었습니다.</em>
+		<span>최종 견적은 1영업일 이내 확정됩니다.</span>
+	</h4>
+</div>
+<div class="order_detail">
+	<div class="seq">
+		<span class="on">견적</span>
+		<span class="on">검수</span>
+		<span class="now">계약</span>
+		<span>계약</span>
+	</div>
+	<p class="date">2021.11.30 17시 32분까지 계약가능</p>
+	<h4 class="txt">
+		<em>계약서가<br>발송되었습니다.</em>
+		<span>기한 내 온라인 서명을 완료해 주세요.</span>
+	</h4>
+	<p id="dueDate" class="time"></p>
+	<script>CPO.countDueDay('dueDate', '2022-12-20 17:35:00');//  카운드 시간</script>
+	<dl class="box">
+		<dt>
+			<span>대표 명의자</span>
+			<em class="off">서명완료</em>
+		</dt>
+		<dd>
+			<span>홍길동 010-1234-5678</span>
+		</dd>
+		<dt>
+			<span>공동 명의자1</span>
+			<em>서명대기</em>
+		</dt>
+		<dd>
+			<span>홍길동 010-1234-5678</span>
+			<button type="button">전자서명 재요청</a>
+		</dd>
+	</dl>
+</div>
+<!-- 05. 견적만료 -->
+<div class="order_detail">
+	<div class="seq">
+		<span>견적</span>
+		<span>검수</span>
+		<span>계약</span>
+		<span>계약</span>
+	</div>
+	<h4 class="txt">
+		<em>견적 유효기간이 만료되었습니다.</em>
+		<span>견적만료일: 2022.02.23(수)</span>
+	</h4>
+	<div class="btn_area">
+		<button type="button" class="btn_mid05">재견적 요청</button>
+	</div>
+</div>
+<!-- 06. 견적취소 -->
+<div class="order_detail">
+	<div class="seq">
+		<span>견적</span>
+		<span>검수</span>
+		<span>계약</span>
+		<span>계약</span>
+	</div>
+	<h4 class="txt">
+		<em>진행중인 견적이 취소되었습니다.</em>
+		<span>견적취소일: 2022.02.23(수)<br>취소사유: 실사검수일 당일 무대응</span>
+	</h4>
+	<div class="btn_area">
+		<button type="button" class="btn_mid05">정보수정 후 재견적</button>
+	</div>
+</div>
+<!-- //02. 주문진행 상태 -->

@@ -1,0 +1,44 @@
+<!-- STEP : 3-2-03 : 외판 스크래치 -->
+<div class="entry_carbase">
+	<div class="top02">
+		<h5 class="tit">외판에<br />스크래치가 있나요?</h5>
+		<div class="txt">외판 스크래치 안내
+			<!-- tooltip -->
+			<span class="cpo_tooltip">
+				<button type="button" class="open">외판 스크래치 안내 확인</button>
+				<div class="cont">
+					<div class="swiperType01">
+						<ol class="swiper-wrapper">
+							<li class="swiper-slide">
+								<p class="img"><img src="/HMC/img/sale_tooltip_02.jpg" alt="계기판 확인 사진" /></p>
+								<p class="txt">스크래치 개수가 많아도 1판 수리비가 발생합니다.</p> 
+							</li>
+							<li class="swiper-slide">
+								<p class="img"><img src="/HMC/img/sale_tooltip_03.jpg" alt="계기판 확인 사진" /></p>
+								<p class="txt">스크래치 개수가 많아도 1판 수리비가 발생합니다.</p> 
+							</li>
+							<li class="swiper-slide">
+								<p class="img"><img src="/HMC/img/sale_tooltip_04.jpg" alt="계기판 확인 사진" /></p>
+								<p class="txt">스크래치 개수가 많아도 1판 수리비가 발생합니다.</p> 
+							</li>
+						</ol>
+						<div class="swiper-pagination"></div>
+					</div>
+					<button class="close">툴팁닫기</button>
+				</div>
+			</span>
+			<!-- //tooltip -->
+		</div>
+	</div>
+	<!-- 입력 -->
+	<div class="entry">
+		<ol>
+			<li><input type="radio" name="saleScratchChk" id="saleScratchChk01" class="chk_type07" /><label for="saleScratchChk01">1~2판 있어요</label></li>
+			<li><input type="radio" name="saleScratchChk" id="saleScratchChk02" class="chk_type07" /><label for="saleScratchChk02">3~4판 있어요</label></li>
+			<li><input type="radio" name="saleScratchChk" id="saleScratchChk03" class="chk_type07" /><label for="saleScratchChk03">5~6판 있어요</label></li>
+			<li><input type="radio" name="saleScratchChk" id="saleScratchChk04" class="chk_type07" /><label for="saleScratchChk04">7판 이상 있어요</label></li>
+			<li><input type="radio" name="saleScratchChk" id="saleScratchChk05" class="chk_type07" /><label for="saleScratchChk05">아니요, 없어요</label></li>
+		</ol>
+	</div>
+	<!-- //입력 -->
+</div>

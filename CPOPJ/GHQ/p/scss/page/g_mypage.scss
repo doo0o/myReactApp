@@ -1,0 +1,1061 @@
+@charset 'utf-8';
+
+@import '../_common/g_function';
+@import '../_common/g_mixins';
+
+.my {
+	.cont_wrap {
+		> .btn_area:last-child {
+			margin-top:32px;
+		}
+	}
+	.page_tit {
+		margin-bottom:24px;
+	}
+	.no_data {
+		margin-top:40px;
+	}
+
+	.bg_box {
+		padding:32px 40px;
+		background:color('COL_gs08');
+		.list_data {
+			li {
+				display: flex;
+				.tit {
+					width: 144px;
+					color:color('COL_gs03');
+				}
+				.txt {
+					color:color('COL_gs02');
+				}
+				+ li {
+					margin-top:12px;
+				}
+			}
+		}
+		.btn_box{
+			display:flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top:20px;
+			padding-top:20px;
+			border-top:1px solid color('COL_gs06');
+			.desc {
+				color:color('COL_gs03');
+				@include fontT(15);
+			}
+			.btn_small.color02 {
+				flex-shrink: 0;
+			}
+		}
+	}
+	.total_result {
+		padding-bottom:16px;
+		border-bottom:1px solid color('COL_gs06');
+		.form_area {
+			width: 140px;
+		}
+	}
+	.my_list {
+		> div, > li {
+			padding:32px 0;
+			border-bottom:1px solid color('COL_gs06');
+			&:first-child {
+				padding-top:40px;
+			}			
+		}	
+		.unit_type {
+			position:relative;
+			display:flex;
+			justify-content: space-between;				
+		}
+		.top_area {
+			position:relative;
+			.logo {
+				display: inline-block;
+				width: 30px; height: 20px;
+				img {
+					display:block; 
+					width: 100%; height: 100%;
+				}
+			}
+			.btn_close {
+				@include Pos($p:absolute, $r:0, $t:50%);
+				margin-top:-8px;
+			}
+		}
+		.btn_box {
+			position:relative;
+			display:flex;
+			.btn_small {
+				align-self: flex-end;
+			}
+			.btn_close {
+				@include Pos($p:absolute, $r:0, $t:0);
+			}
+		}
+	}
+
+	/* S: 인덱스 */
+	.index {
+		.data_list {
+			display: flex;
+			li {
+				position:relative;
+				flex:1;
+				padding:11px 0 11px 24px;
+				border-left:1px solid color('COL_gs05');
+				&.blue {
+					.tit {
+						display: flex;
+						align-items: center;						
+						&::before {
+							content:'';
+							display:inline-block;
+							margin-right:4px;
+							width: 16px; height:16px;
+							background:url('./../img/icon/icon_ui_point01.svg') no-repeat;
+						} 
+					}
+					.num {						
+						em {
+							padding-left:4px;
+							@include fontH(24);
+						}
+					}
+				}
+				.tooltip {
+					@include Pos($p:absolute,$l:15px,$t:12px);
+				}
+				.tit {
+					color:color('COL_gs03');
+					@include fontT(14);
+				}
+				.num {
+					margin-top:8px;
+					@include fontHM(30);
+				}
+			}
+		}
+		.no_data {
+			margin:16px 0 80px;
+			background:color('COL_gs08');
+		}
+
+		.cont_box {
+			margin-top:80px;
+			&.insert {
+				margin-top:40px;
+			}
+			.my_slide {
+				margin-top:12px;
+				.swiper-slide {
+					display:flex;
+					align-items: center;
+				}
+				.item {
+					flex:1 1;
+					width: calc((100% - 20px) / 2);
+					padding:24px;
+					background:color('COL_gs08');
+					.box_graph {
+						margin-top:12px;
+						background:$COL_white;
+						border:1px solid color('COL_gs06');
+						.txt {
+							border-bottom:1px solid color('COL_gs06');
+							text-align: center;
+							color:color('COL_gs03');
+							@include fontT(13);
+							line-height:35px;
+						}
+						.graph {
+							padding:16px;
+							height: 250px;
+							img {
+								height: 100%;
+							}
+						}
+					}
+					&.no_data {
+						margin:0;
+						padding:150px 0;
+					}
+				}
+				[class^="swiper-pagination0"] {
+					margin-top:24px;
+				}
+			}
+			.list {
+				.unit_type {
+					padding: 32px 0;
+					border-bottom:1px solid color('COL_gs06');
+					&:first-child {
+						margin-top:16px;
+						border-top:1px solid color('COL_gs06');
+					}
+				}
+				.unit_info {
+					width: 360px;
+				}
+			}
+			.unit_type {
+				display:flex;
+				align-items: center;
+				justify-content: space-between;
+			}
+			.box_step {
+				width: 256px;
+				.list_step {
+					margin-bottom:16px;
+				}
+				.time {
+					@include fontHM(16);
+					color:$COL_black;
+				}
+				.info_txt {
+					color:color('COL_gs03');
+					@include fontT(14);
+				}
+				.date_txt {
+					color:color('COL_gs02');
+					@include fontTM(14);
+				}
+			}
+		}		
+		.box_service {
+			display:flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-top:80px;
+			li {
+				position:relative;				
+				width: 400px;
+				border:1px solid color('COL_gs06');
+				a {
+					display: block;
+					padding:32px 0 32px 124px;
+				}
+				&::before {
+					content: '';
+					@include Pos($p:absolute,$l:32px,$t:32px);
+					display: inline-block;
+					width: 60px;
+					height: 60px;
+					background-color: color('COL_gs03');
+					
+				}
+				&:first-child {
+					&::before {
+						-webkit-mask: url('../img/icon/icon_info_01.png') 0 0 no-repeat;
+						mask: url('../img/icon/icon_info_01.png') 0 0 no-repeat;
+					}
+				}
+				&:last-child {
+					&::before {
+						-webkit-mask: url('../img/icon/icon_info_01.png') -300px 0 no-repeat;
+						mask: url('../img/icon/icon_info_01.png') -300px 0  no-repeat;
+					}
+				}
+				.tit {
+					@include fontH(20);
+				}
+				.txt {
+					margin-top:4px;
+					color:color('COL_gs04');
+					@include fontT(15);
+				}
+			}
+		}
+	}
+
+	/* S: 회원정보 */
+	.member {		
+		.terms {
+			margin-top:80px;
+			.sec_tit{
+				padding-bottom:16px;
+				margin-bottom:24px;
+				border-bottom:1px solid color('COL_gs06');
+			}
+			ul {
+				.switch {
+					position: relative;
+					display: block;
+					label {
+						color:transparent;
+						font-size:0;
+						text-indent:-9999px;
+					}
+					.desc {
+						width: 100%;
+						margin-top:4px;
+						color:color('COL_gs04');
+						@include fontT(14);
+					}
+					.toggle_btn01 {
+						position:absolute;
+						top:12px;
+						right:0;
+					}
+					.caution {
+						width: 100%;
+						margin-top:8px;
+						.tit {
+							color:color('COL_gs03');
+							@include fontTM(14);
+							+ ul {
+								margin-top:8px;
+							}
+						}						
+					}
+				}
+			}
+			& + .btn_box {
+				margin-top:40px;
+				line-height:0;
+			}
+		}
+	}
+	/* E: 회원정보 */
+
+	/* S: 서비스해지 */ 
+	.terminate {	
+		.caution {
+			.tit {
+				@include Pos($p:relative);
+				@include fontH(18);
+				padding-left :32px;
+				&::before {
+					content:'';
+					@include Pos($p:absolute,$l:0,$t:50%);
+					margin-top:-12px;
+					width: 24px; height: 24px;
+					background:url('./../img/icon/icon_ui_info02.svg') center no-repeat;
+				}
+			}
+			ul {
+				margin-top:16px;
+			}
+		}
+		.agree {
+			margin-top:24px;
+			text-align: center;
+			& + .btn_area {
+				margin-top:16px;
+			}
+		}
+	}
+	/* E: 서비스해지 */ 
+
+	/* S: 포인트내역 */
+	.point {
+		 .point_box {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding-top:40px;
+			border-top:1px solid color('COL_gs05');
+			.tit {
+				@include Pos($p:relative);
+				padding-left:28px;
+				color:color('COL_gs03');
+				@include fontH(20);
+				&::before {
+					content: '';
+					@include Pos($p:absolute,$l:0,$t:50%);
+					margin-top:-12px;
+					width: 24px; height: 24px;
+					background:url('./../img/icon/icon_ui_point02.svg') center no-repeat;
+				}
+			}
+			.point {
+				@include fontH(30);
+				em {
+					margin-right:4px;
+					@include fontHM(36);
+				}
+			}
+		}
+		
+		.cont_point {
+			margin-top:80px;
+			.sec_tit {
+				padding-bottom:20px;
+				border-bottom:1px solid color('COL_gs06');
+			}
+		}
+		.point_history {
+			li {
+				display: flex;
+				column-gap: 48px;
+				padding:16px 20px;
+				justify-content: space-between;
+				align-items: center;
+				border-bottom:1px solid color('COL_gs06');
+				.point {
+					@include fontTM(16);
+				}
+				&.plus {
+					.point,
+					.stat {
+						color:color('COL_secondary2');
+					}
+				}
+				.tit {
+					width: 332px;
+					color:color('COL_gs02');
+					word-break: keep-all;
+				}
+				.point {
+					width: 120px;
+					text-align: right;
+				}
+				.date {
+					color:color('COL_gs03');
+				}
+			}
+		}
+		.btn_area {
+			width: 100%;
+			margin-top:32px;
+			text-align: center;
+		}
+		.info_box {
+			margin-top:40px;
+			padding:24px;
+			background:color('COL_gs08');
+			text-align: center;
+			p {
+				color:color('COL_gs03');
+				@include fontT(14);
+			}
+			.txt_btn {
+				margin-top:4px;
+			}
+		}
+	}
+	/* E: 포인트내역 */
+
+	/* S:프로모션 */
+	.promotion {		
+		.bg_box {
+			margin-top:16px;
+		}
+		.caution {
+			display: flex;
+			justify-content: flex-end;
+			margin-top:16px;			
+		}
+		.item_list {
+			margin-top:40px;
+			li {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding:24px 0;
+				border-bottom:1px solid color('COL_gs06');
+				&:first-child {
+					padding-top:0;
+				}								
+				&.disabled {
+					.tit,
+					.date,
+					.time,
+					.num {
+						color:color('COL_gs04');
+					}					
+				}
+			}
+			.tit_box {
+				margin-right:auto;
+				.flag {
+					margin-bottom:8px;
+				}	
+				.tit {
+					width: 580px;
+					@include fontHM(18);
+					@include Mix_Ellipsis(2);
+				}
+				.date {
+					display: block;
+					margin-top:8px;
+					color:color('COL_gs03');
+					@include fontT(14);					
+				}
+				.time {
+					margin-left:4px;
+					color:color('COL_error');
+				}
+				.txt_failure {
+					color:color('COL_gs03');
+					@include fontT(15);
+				}
+			}
+						
+			.num {
+				display: inline-flex;
+				margin-right:20px;
+				align-items: center;
+				color:color('COL_secondary2');
+				@include fontHM(36);
+				em {
+					@include fontHM(20);
+				}
+			}
+			
+			& + .btn_area {
+				margin-top:32px;
+			}
+		}
+
+		// 프로모션 등록
+		&_detail {
+			.desc {
+				margin-top:24px;
+				color:color('COL_gs02');
+			}
+			.bg_box {
+				margin-top:16px;			
+				dl {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					margin-top:16px;
+					padding-bottom:16px;
+					border-bottom:1px solid color('COL_gs06');
+					&:first-child {
+						margin-top:0;
+					}
+					&:last-child {
+						padding-bottom:0;
+						border-bottom:none;
+					}
+					dt {
+						@include fontTM(16,32px);
+						color:color('COL_gs02');
+					}
+				}
+				.list_file {
+					display:flex;
+					flex-flow:row wrap;
+					align-items: center;
+					gap :8px 32px;
+					margin-top:16px;
+					&:first-of-type {
+						margin-bottom:40px;
+					}
+					li {
+						width: calc((100% - 32px) / 2);
+						.btn_file {
+							margin-right:8px;
+						}
+					}
+				}
+			}
+			.btn_area {
+				margin-top:32px;
+				& + .btn_box  {
+					margin-top: 40px;
+					text-align: right;
+				}
+			}
+			.caution {
+				margin-top:48px;
+				li:first-child {
+					margin-top:8px;
+				}
+			}
+			.error_msg {
+				@include Pos($p:relative);
+				margin-top:16px;
+				padding:18px 20px 18px 52px;
+				background:color('COL_gs08');
+				&::before {
+					content:'';
+					@include Pos($p:absolute, $l:20px, $t:50%);
+					margin-top:-12px;
+					width: 24px;
+					height: 24px;
+					background:url('./../img/icon/icon_ui_limited02.svg') no-repeat center;
+				}
+			}
+		}	
+	}
+
+	/* S: 공지사항 */
+	.notice {
+		.total_result {
+			padding-bottom:20px;
+		}
+		.list_notice {
+			li {				
+				padding:16px 20px;
+				border-bottom:1px solid color('COL_gs06');
+				a {
+					display:flex;
+					align-items: center;
+					flex-flow: row nowrap;
+				}
+				&.noti {
+					background:color('COL_gs08');
+				}
+			}
+			.title {
+				max-width:580px;
+				@include Mix_Ellipsis01;
+			}
+			.icon {
+				display: block;
+				margin-right:12px;
+				font-size:0;
+				text-indent:-9999px;
+				width: 24px; height: 24px;
+				background:url('./../img/icon/icon_ui_urgency02.svg');
+			}
+			[class^="flag"] {
+				margin-left:8px;
+			}
+			.date {
+				margin-left:auto;
+				color:color('COL_gs04');
+			}
+		}
+		&_detail {
+			.top {				
+				.title {
+					@include fontHM(20);
+				}
+				.date {
+					margin-top:8px;
+					color:color('COL_gs03');
+					@include fontH(16);
+				}				
+			}
+			.cont {
+				margin-top:24px;
+				padding:24px 0;
+				border:1px solid color('COL_gs06');
+				border-width: 1px 0;
+			}
+			.btn_area {
+				margin-top:32px;
+			} 
+			.post_list {
+				margin-top:80px;
+				li {
+					display: flex;
+					align-items: center;
+					gap:0 20px;
+					padding:0 20px;
+					height:56px;
+					border-bottom:1px solid color('COL_gs06');
+					&:first-child {
+						border-top:1px solid color('COL_gs06');
+					}
+					.txt {
+						color:color('COL_gs03');
+					}
+					.tit {
+						width: 611px;
+						@include Mix_Ellipsis01;
+						&.disabled {
+							color:color('COL_gs03');
+							pointer-events: none;
+						}
+					}
+					.date {
+						color:color('COL_gs04');
+					}
+				}
+			}
+		}
+	}
+	/* E: 공지사항 */
+
+	/* S: 보유차량 */
+	&_car {
+		.my_list {
+			.top_area {
+				display: flex;
+				align-items: center;
+				span {
+					margin-left:8px;
+					@include fontHM(16);
+				}				
+			}	
+			.unit_type {
+				margin-top:12px;
+			}					
+		}
+		.detail {
+			.unit_info {
+				.name {
+					@include fontH(18);
+				}
+			}
+			.drive_box {
+				position: relative;
+				display:flex;
+				align-items: baseline;
+				justify-content: center;
+				padding:40px;
+				margin:48px auto 0;
+				width: 740px; 
+				background:$COL_white;
+				box-shadow: 0px 0px 20px rgba(156, 156, 156, 0.1);
+				.tit {
+					@include fontHM(16);
+					&.auto {
+						position:relative;
+						padding-left:20px;
+						color:color('COL_secondary2');
+						&::before {
+							content:'';
+							position:absolute;
+							left:0; top:50%;
+							margin-top:-8px;
+							width: 16px; height: 16px;
+							background:url('./../img/icon/icon_ui_auto03.svg') no-repeat;
+						}
+					}
+				}
+				.form_area {
+					flex:1 0;
+					margin-left:20px;
+					max-width: 264px;				
+				}
+				.btn_area {
+					margin-left:12px;
+				}
+			}
+		}
+		.car_price {
+			display:flex;
+			column-gap:81px;
+			margin-top:-60px;
+			padding:100px 40px 40px;
+			background:color('COL_gs08');
+			.price_box {
+				position:relative;
+				width: 300px;
+				&::after {
+					content:'';
+					position:absolute;
+					top:0; right:-40px;
+					width: 1px;
+					height:213px ;
+					background:color('COL_gs06');
+				}			
+				.price {
+					.tit {
+						@include fontHM(18);
+						&:last-child {
+							margin-top:4px;
+						}
+						em {
+							@include fontHM(30);
+							vertical-align: middle;
+						}						
+					}	
+					.desc {
+						margin-top:12px;
+						color:color('COL_gs03');
+						word-break: keep-all;
+						@include fontT(14);
+					}
+					&.type_no {
+						.tit {
+							@include fontHM(20);
+						}						
+					}					
+				}
+				.data_list {
+					margin-top:16px;
+					li {
+						margin-top:8px;
+						display:flex;
+						justify-content: space-between;
+						.tit {
+							color:color('COL_gs03');
+							@include fontT(16);
+						}
+						.data {
+							@include fontTM(18);
+							em {
+								@include fontT(16);
+							}
+						}
+					}
+				}
+			}
+
+			.graph_box {
+				flex:1 1;
+				img {
+					width: 100%;
+				}
+			}
+		}		
+	}
+	/* E: 보유차량 */
+
+	/* S: 관심차량 */
+	.wish {
+		.caution {
+			display: flex;
+			justify-content: flex-end;
+			margin-top:16px;			
+		}
+		.my_list {
+			&.recently {
+				> li {
+					padding:0;
+					border:none;
+				}
+				.date_box {
+					margin-top:40px;
+					font-size:0;
+					[class^="flag"] {
+						margin-right:8px;
+						vertical-align: middle
+					}
+					span {
+						@include fontHM(20);
+						vertical-align: middle ;
+					}
+				}
+				.unit_type {
+					display: flex;
+					justify-content: space-between;
+					padding:32px 0;
+					border-bottom:1px solid color('COL_gs06');				
+					&:first-child {
+						padding-top:16px;
+					}
+				}
+			}
+		}		
+	}
+	/* E: 관심차량 */
+
+	/* S: 나의리뷰 */
+	.review {
+		.my_list {
+			.unit_type {
+				flex-wrap: wrap;
+			}
+			+ .after > div {				
+				padding-top:24px;
+			}			
+			> div:not(.box_review) {				
+				padding:24px 0;
+				&:first-child {
+					padding-top:40px;
+				}
+			}
+			.box_review {
+				width: 100%;
+				margin-top:24px;
+				.box_img {
+					width: 120px;
+					height: 120px;
+				}
+			}
+			.box_acc {
+				position :relative;
+				align-self: flex-start;
+				.link {
+					@include Pos($p:absolute,$t:24px,$r:0);
+					display:none;
+					width: 80px;
+					padding:9px 0;
+					border:1px solid color('COL_gs05');
+					button {
+						width: 100%;
+						color:color('COL_gs02');
+						@include fontT(14,34px);
+					}
+				}				
+				&.on {
+					.link  {
+						display: block;
+					}					
+				}
+			}
+			.btn_edit {
+				width: 24px; height: 24px;
+				font-size:0;
+				color:transparent;
+				&::before {
+					content: '';
+					display: inline-block;
+					width: 24px; height: 24px;
+					background:url('./../img/icon/icon_ui_more02_02.svg') no-repeat;
+				}
+			}			
+		}
+
+		// 리뷰작성
+		&_edit {
+			.addphoto_list {
+				margin-top:12px;
+			}
+		}		
+	}
+	/* E: 나의리뷰 */
+
+	/* S: 입고알림 */
+	.alram {
+		.my_list {
+			> li {
+				padding:0;
+				border:none;
+				&:first-child {
+					.top_area {
+						margin-top:40px;
+					}
+				}
+				&.end {
+					.mid_area * , .top_area .date {
+						color:color('COL_gs04');
+					}
+					.unit_img {
+						opacity:0.3;
+					}
+				}
+			}
+			.top_area {
+				display:flex;
+				align-items:center;
+				margin-top:32px;
+				.date {
+					margin-right:8px;
+					color:color('COL_gs03');
+				}				
+				+ .unit_type {
+					padding-top:16px;
+					.btn_close {
+						top:-20px;
+					}
+				}
+			}
+			.unit_type {
+				position:relative;
+				display: flex;
+				justify-content: space-between;
+				padding:32px 0;
+				border-bottom:1px solid color('COL_gs06');
+				.btn_box {
+					flex-direction: column;
+					justify-content:flex-end ;
+				}
+			}
+			.btn_close {
+				position:absolute;
+				top:32px;
+				right:0;
+			}
+		}
+	}
+	/* E: 입고알림 */
+}
+
+/* 팝업 */
+[class^="popup_"] {
+	.car_entry {
+		.top_area {
+			.sub_txt {
+				color:color('COL_gs02');
+				@include fontH(20);
+			}
+			.txt {
+				color:color('COL_gs03');
+				@include fontT(14);
+			}
+		}
+		.inp_area {
+			margin-top:24px;
+			.form_area {
+				margin-top:4px;
+			}
+		}
+	}
+	.pop_terms {
+		.top_area {
+			.tit {
+				@include fontHM(16);
+			}
+			.date {
+				@include fontT(13);
+			}
+		}
+		.cont {
+			margin-top:24px;
+			color:color('COL_gs03');
+		}
+	}
+
+	.alram {
+		.top_area {	
+			padding-bottom:16px;	
+			border-bottom:1px solid color('COL_gs06');
+			.txt {
+				word-break: keep-all;
+				color:color('COL_gs03');
+			}
+			.tit {
+				word-break: keep-all;
+				@include fontH(18); 
+			}
+			.caution {
+				margin-top:4px;
+			}
+		}
+		.btn_box {
+			margin-top:16px;
+			.tit {
+				@include fontTM(16);
+			}
+			.form_area {
+				margin-top:16px;
+			}
+			.caution {
+				margin-top:16px;
+			}
+		}
+		.alram_list {
+			> li {
+				display:flex;
+				align-items: center;
+				margin:32px 0;
+				.tit {
+					width: 156px;
+					@include fontTM(16);
+					&.a_top {
+						align-self:flex-start ;
+					}
+				}
+				.item {
+					width: calc(100% - 156px);
+					&.color {
+						display: inline-block;
+						width: 70px;
+						text-align: center;
+						img {
+							display: block;
+						}
+						.txt {
+							margin-top:8px;
+							@include fontT(15);
+						}
+					}
+				}
+			}
+			.caution {
+				margin-top:16px;
+			}
+		}
+	}
+}

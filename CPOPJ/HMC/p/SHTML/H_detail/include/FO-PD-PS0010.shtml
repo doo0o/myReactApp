@@ -1,0 +1,20 @@
+<!-- FO-PD-PS0010 : 공유하기 - Simple -->
+<div class="popup_modal" id="FO-PD-PS0010">
+	<div class="p_body">
+		<div class="p_inner">
+
+			<div class="p_head">
+				<h2 class="tit">공유하기</h2>
+			</div>
+			<div class="p_wrap">
+				<ul class="share_items">
+					<li class="share_item"><a href="#" class="share_btn share_btn_kakao">카카오톡</a></li>
+					<li class="share_item"><a href="#" class="share_btn share_btn_facebook">페이스북</a></li>
+					<li class="share_item"><a href="#" class="share_btn share_btn_link">링크복사</a></li>
+				</ul>
+			</div>
+			<button type="button" class="pop_close">닫기</button>
+
+		</div>
+	</div>
+</div>

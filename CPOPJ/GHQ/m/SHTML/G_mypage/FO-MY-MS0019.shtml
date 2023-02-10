@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>알림 신청내역</title>
+	<!--#include file="/GHQ/m/SHTML/G_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/g_mypage.css">
+</head>
+<body>
+<!--#include file="/GHQ/m/SHTML/G_inc/common_skip.shtml"-->
+<!--#include file="/GHQ/m/SHTML/G_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">입고알림 신청내역</h3>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<!-- 데이터 없을 때 -->
+		<div class="no_data alarm">
+			<p class="tit">입고알림신청 내역이 없습니다.</p>
+			<p class="txt">입고알림을 신청하고<br />원하시는 조건의 차량을 알아보세요.</p>
+			<p class="btn_area">
+				<a href="javascript:void(0);" data-popup="FO-MY-MS0020" class="btn_mid01 jQ_Pop_Open">입고알림 신청</a>
+				<a href="javascript:void(0);" class="btn_mid02">홈으로 가기</a>
+			</p>
+		</div>
+		
+		<!-- //데이터 없을 때 -->
+		<div class="alarm_list">
+			<div class="top_total">
+				<span class="all">전체 <em>20</em>개</span>
+			</div>
+			<p class="caution bg">기간이 만료된 알림은 1개월 후 목록에서 자동으로 삭제됩니다.</p>
+			<div>
+				<div class="unit_type">
+					<div class="top_area">
+						<p class="tit"><span class="flag_mid05">조건검색</span>현대 쏘나타 DN8 2.0 가솔린 인스퍼레이션</p>
+						<button type="button" class="btn_del01">삭제</button>
+					</div>
+					<div data-popup="FO-MY-MS0020_02"  class="mid_area jQ_Pop_Open">
+						<div class="unit_img">
+							<img src="/HMC/mo/img/@thumb/plp_310x310_01.jpg" alt="">
+						</div>
+						<div class="unit_info">
+							<p class="drive">
+								<em>20년 12월(21년형)</em>
+								<em>50,000km</em>
+								<em>가솔린</em>
+							</p>
+							<p class="price"><em>3,440</em><i>만원</i></p>
+							
+							<div class="unit_btm">
+								<span class="alarm_term">2022.05.11까지 알림</span>
+								<button type="button" data-popup="FO-MY-MS0020_01" class="btn_txt_mid02 jQ_Pop_Open">알림연장</button>
+							</div>
+						</div>
+					</div>
+					<p class="msg active">조건에 맞는 차량이 새로 입고되었어요.</p>
+		
+					
+				</div>
+				<div class="unit_type">
+					<div class="top_area">
+						<p class="tit"><span class="flag_mid05">조건검색</span>현대 쏘나타 DN8 2.0 가솔린 인스퍼레이션</p>
+						<button type="button" class="btn_del01">삭제</button>
+					</div>
+					<div data-popup="FO-MY-MS0020_02"  class="mid_area jQ_Pop_Open">
+						<div class="unit_img">
+							<img src="/HMC/mo/img/@thumb/plp_310x310_01.jpg" alt="">
+							<span class="end">일시품절</span>
+						</div>
+						<div class="unit_info">
+							<p class="drive">
+								<em>20년 12월(21년형)</em>
+								<em>50,000km</em>
+								<em>가솔린</em>
+							</p>
+							<p class="price"><em>3,440</em><i>만원</i></p>
+							
+							<div class="unit_btm">
+								<span class="alarm_term">2022.05.11까지 알림</span>
+								<button type="button" data-popup="FO-MY-MS0020_01" class="btn_txt_mid02 jQ_Pop_Open">알림연장</button>
+							</div>
+						</div>
+					</div>
+					<p class="msg disabled">입고된 차량이 없습니다.</p>
+					<div class="CPOpop_bottom" id="MS0019_2">
+						<div class="p_head">
+							<h5 class="tit">타이틀</h5>
+						</div>
+						<div class="p_wrap">
+							<!-- contents -->
+							<div class="cont">
+								
+							</div>
+							<!-- //contents -->
+							<!-- sticky -->
+							<div class="btn_sticky">
+								<button type="button" class="btn_big01">확인</button>
+							</div>
+							<!-- //sticky -->
+						</div>
+						<button type="button" class="pop_close">닫기</button>
+					</div>
+				</div>
+				<div class="unit_type">
+					<div class="top_area">
+						<p class="tit"><span class="flag_mid05">판매준비중</span>현대 쏘나타 DN8 2.0 가솔린 인스퍼레이션</p>
+						<button type="button" class="btn_del01">삭제</button>
+					</div>
+					<div data-popup="FO-MY-MS0020_02"  class="mid_area jQ_Pop_Open">
+						<div class="unit_img">
+							<img src="/HMC/mo/img/@thumb/online_img02.png" alt="">
+						</div>
+						<div class="unit_info">
+							<p class="drive">
+								<em>20년 12월(21년형)</em>
+								<em>50,000km</em>
+								<em>가솔린</em>
+							</p>
+							<p class="price"><em>3,440</em><i>만원</i></p>
+							
+							<div class="unit_btm">
+								<span class="alarm_term">2022.05.11까지 알림</span>
+								<button type="button" data-popup="FO-MY-MS0020_01" class="btn_txt_mid02 jQ_Pop_Open">알림연장</button>
+							</div>
+						</div>
+					</div>
+					
+					<p class="msg active">조건에 맞는 차량이 새로 입고되었어요.</p>
+				</div>
+				<div class="unit_type">
+					<div class="top_area">
+						<p class="tit"><span class="flag_mid05">유사차량</span>현대 쏘나타 DN8 2.0 가솔린 인스퍼레이션</p>
+						<button type="button" class="btn_del01">삭제</button>
+					</div>
+					<div data-popup="FO-MY-MS0020_02"  class="mid_area jQ_Pop_Open">
+						<div class="unit_img">
+							<img src="/HMC/mo/img/@thumb/online_img02.png" alt="">
+						</div>
+						<div class="unit_info">
+							<p class="drive">
+								<em>20년 12월(21년형)</em>
+								<em>50,000km</em>
+								<em>가솔린</em>
+							</p>
+							<p class="price"><em>3,440</em><i>만원</i></p>
+							
+							<div class="unit_btm">
+								<span class="alarm_term">2022.05.11까지 알림</span>
+								<button type="button" data-popup="FO-MY-MS0020_01" class="btn_txt_mid02 jQ_Pop_Open">알림연장</button>
+							</div>
+						</div>
+					</div>
+					
+					<p class="msg active">조건에 맞는 차량이 새로 입고되었어요.</p>
+				</div>
+				<div class="unit_type soldout last">
+					<div class="top_area">
+						<p class="tit"><span class="flag_mid05">조건선택</span>현대 쏘나타 DN8 2.0 가솔린 인스퍼레이션</p>
+						<button type="button" class="btn_del01">삭제</button>
+					</div>
+					<div data-popup="FO-MY-MS0020_02"  class="mid_area jQ_Pop_Open">
+						<div class="unit_img">
+							<img src="/HMC/mo/img/@thumb/online_img02.png" alt="">
+						</div>
+						<div class="unit_info">
+							<p class="drive">
+								<em>20년 12월(21년형)</em>
+								<em>50,000km</em>
+								<em>가솔린</em>
+							</p>
+							<p class="price"><em>3,440</em><i>만원</i></p>
+							
+							<div class="unit_btm">
+								<span class="alarm_term">2022.05.11까지 알림</span>
+							</div>
+						</div>
+					</div>
+					
+					<p class="msg disabled">알림 기간이 만료되었습니다.</p>
+				</div>
+			</div>
+			<!--#include file="/GHQ/m/SHTML/G_mypage/include/FO-MY-MS0020.shtml"-->
+			<!--#include file="/GHQ/m/SHTML/G_mypage/include/FO-MY-MS0020_01.shtml"-->
+			<!--#include file="/GHQ/m/SHTML/G_mypage/include/FO-MY-MS0020_02.shtml"-->
+		</div>
+		
+		<div class="btn_sticky">
+			<button type="button"  data-popup="FO-MY-MS0020" class="btn_big01 jQ_Pop_Open" title="입고알림 신청">입고알림 신청</button>
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/GHQ/m/SHTML/G_inc/layout_footer.shtml"-->
+</div>
+
+
+<!-- //cpo wrap -->
+<script>
+	$(".jQ_Pop_Open").on("click",function(event){
+		event.stopPropagation();
+		CPO.POPUP_open($(this));
+	});
+</script>
+</body>
+</html>

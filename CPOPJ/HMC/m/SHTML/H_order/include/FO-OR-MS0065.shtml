@@ -1,0 +1,31 @@
+<!-- FO-OR-MS0065 : 주문정보 수정 - BOTTOM -->
+<div class="CPOpop_bottom" id="FO-OR-MS0065">
+	<div class="p_head">
+		<h2 class="tit">주문정보 수정</h2>
+	</div>
+	<div class="p_wrap">
+		<div class="select_list">
+			<ul>
+				<li>
+					<input type="radio" class="chk_select" name="select" id="select_01">
+					<label for="select_01">
+						명의 및 탁송 정보 수정
+					</label>
+				</li>
+				<li>
+					<input type="radio" class="chk_select" name="select" id="select_02">
+					<label for="select_02">
+						차량 실물 확인하기변경/취소
+					</label>
+				</li>
+			</ul>
+		</div>
+		
+		<!-- btn_sticky -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">선택하기</button>
+		</div>
+		<!-- //btn_sticky -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>나의리뷰 : 현대 CUV</title>
+	<!--#include file="/HMC/p/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_mypage.css"> <!-- 해당 CSS -->
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+    <div id="CPOcontents">
+        <div id="layoutWrap" class="my">
+            <!-- container -->
+            <div class="container flex">
+                <!--#include file="/HMC/p/SHTML/H_inc/layout_left.shtml"-->
+                <!-- cont_wrap --> 
+                <div class="cont_wrap review_edit" data-id="myReview">
+                    <h1 class="page_tit">나의리뷰 등록</h1>	
+					<div class="unit_type type02">
+						<!-- unit -->
+						<div class="mid_area">
+							<div class="unit_img">
+								<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+							</div>
+							<div class="unit_info">
+								<div class="tag">
+									<span class="flag_big03">내차사기</span>
+								</div>
+								<div class="name">
+									<span class="model">그랜저 IG </span>
+									<span class="desc">가솔린 3.3 캘리그래피</span>
+								</div>
+								<div class="status">
+									<span class="tit on">구매완료</span> <!-- 활성화 on class -->
+									<span class="date">2021.10.15</span>
+								</div>
+							</div>
+						</div>
+						<!-- //unit -->
+					</div>
+					<ul class="rating">
+						<li>
+							<p class="tit">인증차량 품질은 만족하시나요?</p>
+							<div class="star">
+								<button type="button" class="on">별01</button>
+								<button type="button" class="on">별02</button>
+								<button type="button" class="on">별03</button>
+								<button type="button" class="on">별04</button>
+								<button type="button" class="on">별05</button>
+							</div>
+						</li>
+						<li>
+							<p class="tit">차량가격은 적정했나요?</p>
+							<div class="star">
+								<button type="button" class="on">별01</button>
+								<button type="button" class="on">별02</button>
+								<button type="button" class="on">별03</button>
+								<button type="button" class="on">별04</button>
+								<button type="button" class="on">별05</button>
+							</div>
+						</li>
+						<li>
+							<p class="tit">서비스는 만족하셨나요?</p>
+							<div class="star">
+								<button type="button" class="on">별01</button>
+								<button type="button" class="on">별02</button>
+								<button type="button" class="on">별03</button>
+								<button type="button" class="on">별04</button>
+								<button type="button" class="on">별05</button>
+							</div>
+						</li>
+					</ul>
+					<div class="form_area">
+						<div class="textarea" onclick="textareaFunc()" tabindex="0" onfocus="textareaFunc()">
+							<div class="inner"><textarea placeholder="차량 구매 경험에 대한 고객님의 솔직한 후기를 작성해 주세요." rows="4" cols="21" role="textbox" maxlength="1000"></textarea></div>
+							<span class="txt_check"><em class="first">0</em> / <em class="last">1000</em>자</span>
+						</div>
+						<!-- <p class="validation error">에러 메세지</p> -->
+					</div>
+					<div class="addphoto_list">
+						<dl class="on">
+							<dd>
+								<ul class="list" id="imgList01"></ul>
+							</dd>
+							<dt>								
+								<input type="file" id="CarPhotoMore" class="file_morephoto" data-file="imgList01" data-item="5" multiple /><!-- data-item 에 최대 등록 수량 -->
+								<label for="CarPhotoMore">
+								
+								</label>
+							</dt>
+						</dl>  
+						<div class="caution">
+							<ul>
+								<li>이미지는 최대 5개까지 등록 가능합니다.</li>
+								<li>12MB 미만의 JPG 혹은 PNG만 등록 가능합니다.</li>
+								<li>내차사기 및 내차팔기와 관련한 리뷰만 등록해 주세요.</li>
+								<li>작성하신 리뷰는 추가 동의없이 온라인 서비스 안내 및 차량상세 페이지 등에 노출될 수 있습니다.</li>
+							</ul>
+						</div>						
+					</div>
+					<div class="btn_area col_type">
+						<button type="button" class="btn_big color02">취소하기</button>
+						<button type="button" class="btn_big color01">리뷰등록</button>
+						<!-- <button type="button" class="btn_big color01">수정하기</button> -->
+					</div>
+                </div>
+                <!-- //cont_wrap -->
+            </div>
+            <!-- //container -->
+        </div>
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<div class="pop_toast" id="toast_wrap">
+	<div class="txt"></div>
+</div> 
+<script>
+	lnb_active();
+	ImgUpload02();
+	// 별점 선택
+	const btnStar = document.querySelectorAll('.rating .star button');
+	btnStar.forEach((btn) => {
+		btn.addEventListener('click' , function(e) {
+			$(this).addClass('on').prevAll().addClass('on');
+			if($(this).hasClass('on')) {
+				$(this).nextAll().removeClass('on');
+			}
+		});
+	})
+
+</script>
+</html>

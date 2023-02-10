@@ -1,0 +1,70 @@
+<section class="faq_list">
+    <div class="sec_tit m">
+        자주 묻는 질문 TOP 5
+        <button type="button" class="txt_btn01 s_small">전체보기</button>
+    </div>
+	<div class="qa_wrap">
+		<ul>
+			<li class="cont">
+				<button type="button" class="js_toggle">
+					<span>1.</span>결제 방법을 변경하고 싶어요.
+				</button>
+				<div class="group">
+					<div class="gray_box">
+						결제 방법을 변경하고 싶어요.
+					</div>
+				</div>
+			</li>
+			
+			<li class="cont">
+				<button type="button" class="js_toggle">
+					<span>2.</span>차량탁송까지 기간은 얼마나 걸리나요?
+				</button>
+				<div class="group">
+					<div class="gray_box">
+						보험 확인 후, 평균 7~10일의 탁송 기간이 소요됩니다.
+					</div>
+				</div>
+			</li>
+
+			<li class="cont">
+				<button type="button" class="js_toggle">
+					<span>3.</span>결제완료 후, 명의정보 변경을 할 수 있나요?
+				</button>
+				<div class="group">
+					<div class="gray_box">
+						입력한 차량정보는 조회기준으로 1주일간 자동으로 임시 저장됩니다. <br>
+						진행중이던 견적 신정을 이어서 진행하고 싶으시다면
+						<a class="txt_btn" href="#a">내차팔기 이어서 진행하기</a>에 방문해보세요.
+					</div>
+				</div>
+			</li>
+
+			<li class="cont">
+				<button type="button" class="js_toggle">
+					<span>4.</span>차량 구매 시, 필요한 서류에는 어떤 것들이 있나요?
+				</button>
+				<div class="group">
+					<div class="gray_box">
+						입력한 차량정보는 조회기준으로 1주일간 자동으로 임시 저장됩니다. <br>
+						진행중이던 견적 신정을 이어서 진행하고 싶으시다면
+						<a class="txt_btn" href="#a">내차팔기 이어서 진행하기</a>에 방문해보세요.
+					</div>
+				</div>
+			</li>
+
+			<li class="cont">
+				<button type="button" class="js_toggle">
+					<span>5.</span>차량 구매 시, 현금영수증을 받을 수 있나요?
+				</button>
+				<div class="group">
+					<div class="gray_box">
+						입력한 차량정보는 조회기준으로 1주일간 자동으로 임시 저장됩니다. <br>
+						진행중이던 견적 신정을 이어서 진행하고 싶으시다면
+						<a class="txt_btn" href="#a">내차팔기 이어서 진행하기</a>에 방문해보세요.
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</section>

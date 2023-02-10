@@ -1,0 +1,17 @@
+<!-- FO-PD-MS0010 : 공유하기 - Simple -->
+<div class="HIpop_modal" id="FO-CL-MS0010">
+	<div class="p_inner">
+		<div class="p_head">
+			<p class="tit">공유하기</p>
+		</div>
+		<div class="p_wrap">
+			<ul class="share_items">
+				<li class="share_item"><a href="#" class="share_btn share_btn_kakao">카카오톡</a></li>
+				<li class="share_item"><a href="#" class="share_btn share_btn_facebook">페이스북</a></li>
+				<li class="share_item"><a href="#" class="share_btn share_btn_message">문자</a></li>
+				<li class="share_item"><a href="#" class="share_btn share_btn_link">링크복사</a></li>
+			</ul>
+		</div>
+		<button type="button" class="pop_close">닫기</button>
+	</div>
+</div>

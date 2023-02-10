@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>상품상세</title>
+	<!--#include file="/HMC/p/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_detail.css">
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+		<div id="CPOcontents">
+
+			<div class="pdp_toast" id="pdp_toast">
+				<span>장바구니에 담은 사람 9,999명, 찜한 사람 99,999명</span>
+			</div>
+
+			<!-- contents -->
+			<div class="car_detail_cont">
+
+				<!--  s: 01. 차량 이미지  -->
+				<!--#include file="/HMC/p/SHTML/H_detail/con_gallery.shtml"-->
+				<!--  e: 01. 차량 이미지  -->
+
+				<div class="car_detail_box">
+
+					<div class="car_detail_box1">
+
+						<!--  s: 02. 차량 가격정보  -->
+						<!--#include file="/HMC/p/SHTML/H_detail/con_snippet.shtml"-->
+						<!--  e: 02. 차량 가격정보  -->
+
+						<!--  s: 03. TAB-01 기본정보  -->
+						<!--#include file="/HMC/p/SHTML/H_detail/con_info.shtml"-->
+						<!--  e: 03. TAB-01 기본정보  -->
+
+						<!--  s: 04. TAB-02 주요 옵션  -->
+						<!--#include file="/HMC/p/SHTML/H_detail/con_options.shtml"-->
+						<!--  e: 04. TAB-02 주요 옵션  -->
+
+						<!--  s: 05. TAB-03 인증정보  -->
+						<!--#include file="/HMC/p/SHTML/H_detail/con_certify.shtml"-->
+						<!--  e: 05. TAB-03 인증정보  -->
+
+						<!--  s: 07. TAB-05 금융정보  -->
+						<!--#include file="/HMC/p/SHTML/H_detail/con_estimate.shtml"-->
+						<!--  e: 07. TAB-05 금융정보  -->
+
+						<!--  s: 08. 동일모델 구매리뷰  -->
+						<!--#include file="/HMC/p/SHTML/H_detail/con_review.shtml"-->
+						<!--  e: 08. 동일모델 구매리뷰  -->
+					</div>
+
+					<!-- 결제정보 -->
+					<div class="car_detail_box2">
+						<div class="sticky_box">
+
+							<div class="pdp_buy">
+								<div class="number">12더 3453</div>
+								<div class="name">스마트스트림 가솔린 1.6 터보 하이브리드</div>
+								<div class="drive">
+									<span>20년 12월(21년형 페이스리프트)</span>
+									<span>10,000km</span>
+								</div>
+
+								<div class="option">
+									<div class="ck_wish">
+										<input type="checkbox" name="ck_ProductWish" id="ck_wish01" />
+										<label for="ck_wish01">찜하기</label>
+									</div>
+									<!-- 공유하기 -->
+									<button type="button" class="pdp_share" onclick="popupOpen('FO-PD-PS0010');">공유하기</button>
+									<!-- //공유하기 -->
+								</div>
+
+								<ul class="price_list">
+									<li data-ref="toggleBox">
+										<button class="box" onclick="toggleBox();">
+											<span class="tit">총 차량 구매 금액</span>
+											<span class="price"><em>29,060,000</em>원</span>
+										</button>
+										<div class="depth_list">
+											<ul class="depth_02">
+												<li>
+													<span class="tit">차량가격</span>
+													<span class="price"><em>28,560,000</em>원</span>
+												</li>
+												<li>
+													<span class="tit">탁송료</span>
+													<span class="price"><em>200,000</em>원</span>
+												</li>
+												<li>
+													<span class="tit">관리비</span>
+													<span class="price"><em>300,000</em>원</span>
+												</li>
+											</ul>
+										</div>
+									</li>
+									<li data-ref="toggleBox">
+										<button class="box" onclick="toggleBox();">
+											<span class="tit">이전 등록 관련 비용</span>
+											<span class="price"><em>1,530,000</em>원</span>
+										</button>
+										<div class="depth_list">
+											<ul class="depth_02">
+												<li>
+													<span class="tit">이전 등록 비용 (현금결제)</span>
+													<span class="price"><em>1,500,000</em>원</span>
+												</li>
+												<li>
+													<span class="tit">이전등록대행 수수료</span>
+													<span class="price"><em>30,000</em>원</span>
+												</li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+								<dl class="price_total">
+									<dt>총 견적 합계</dt>
+									<dd><em>30,560,000</em>원</dd>
+								</dl>
+
+								<div class="btn_area full_type">
+									<a href="CPO_OR_M0001.shtml" class="btn_big color02">장바구니 담기</a>
+									<a href="/HMC/p/SHTML/H_order/FO-OR-MS0005.shtml" class="btn_big color01">바로 구매</a>
+								</div>
+								<div class="btn_area full_type">
+									<button type="button" class="btn_mid color01" disabled>일시품절 된 상품입니다.</button>
+									<!-- <button type="button" class="btn_mid color01" disabled>판매종료 된 상품입니다.</button> -->
+								</div>
+								
+							</div>
+
+							<div class="noti_wrap">
+								<!-- vod 안내 -->
+								<div class="noti_vod">
+									<a href="#">
+										<div class="tit">이 상품을 소개한 방송이 있습니다.</div>
+										<div class="txt">궁금한 점을 확인해 보세요!</div>
+										<div class="img"><img src="/HMC/m/img/@thumb/pap_img_01.png" alt=""/></div>
+									</a>
+								</div>
+								<!-- //vod 안내 -->
+								<!-- 전시장안내 -->
+								<div class="noti_showroom">
+									<div class="tit"><strong>수원 오토월드</strong>에서<br> 직접 확인할 수 있는 차량입니다.</div>
+									<div class="txt">
+										차량 계약을 하시면 전시장 방문 예약을 할 수 있습니다.<br>
+										전시장 방문 예약은 조기 마감될 수 있습니다.
+									</div>
+									<div class="img" style="background-image: url('/HMC/p/img/pdp/img_showroom.png')"></div>
+								</div>
+								<!-- //전시장안내 -->
+							</div>
+
+						</div>
+					</div>
+					<!-- //결제정보 -->
+
+				</div>
+				
+				<!-- 인기있는 비슷한 차량 -->
+				<!--#include file="/HMC/p/SHTML/H_detail/con_bot.shtml"-->
+				<!-- //인기있는 비슷한 차량 -->
+
+			</div>
+			<!-- //contents -->
+
+			
+		</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+
+<!-- 오감만족 -->
+<!--#include file="/HMC/p/SHTML/H_detail/include/FO-PD-PS0025.shtml"-->
+
+<!-- 공유하기 -->
+<!--#include file="/HMC/p/SHTML/H_detail/include/FO-PD-PS0010.shtml"-->
+
+<!-- 신차가격대비 -->
+<!--#include file="/HMC/p/SHTML/H_detail/include/FO-PD-PS0004.shtml"-->
+
+<!-- 옵션 -->
+<!--#include file="/HMC/p/SHTML/H_detail/include/FO-PD-PS0008.shtml"-->
+
+<!-- 인증항목 -->
+<!--#include file="/HMC/p/SHTML/H_detail/include/FO-PD-PS0005.shtml"-->
+
+<!-- 성능상태 점검기록부 -->
+<!--#include file="/HMC/p/SHTML/H_detail/include/FO-PD-PS0006.shtml"-->
+
+<!-- 보험이력 보고서 -->
+<!--#include file="/HMC/p/SHTML/H_detail/include/FO-PD-PS0007.shtml"-->
+
+<!-- 구매 및 환불 안내 -->
+<!--#include file="/HMC/p/SHTML/H_detail/include/FO-PD-PS0013.shtml"-->
+
+<!-- 보증 상세 -->
+<!--#include file="/HMC/p/SHTML/H_detail/include/FO-PD-PS0014.shtml"-->
+
+<!-- 리뷰 -->
+<!--#include file="/HMC/p/SHTML/H_sale/include/FO-TI-PS0018.shtml"-->
+<script>
+
+tooltip();
+
+var popFunc = {
+	"3" : function() {
+		popupOpen('FO-PD-PS0004');
+		setTimeout(()=>{
+			graphAnimate();
+		},1000);
+	},
+	"4" : function(){popupOpen('FO-PD-PS0005')},
+	"5" : function(){popupOpen('FO-PD-PS0014')},
+	"6" : function(){popupOpen('FO-PD-PS0006')},
+	"7" : function(){popupOpen('FO-PD-PS0007')},
+	"8" : function(){popupOpen('FO-PD-PS0008')},
+	"9" : function(){popupOpen('FO-TI-PS0018')},
+	"10" : function(){popupOpen('FO-PD-PS0010')},
+	"11" : function(){popupOpen('FO-PD-PS0013')},
+	"12" : function(){
+		popupOpen('FO-PD-PS0025');
+		experience.active();
+	},
+}
+document.addEventListener('DOMContentLoaded', popFunc[MSG.getParam('pop')]);
+</script>
+</body>
+</html>

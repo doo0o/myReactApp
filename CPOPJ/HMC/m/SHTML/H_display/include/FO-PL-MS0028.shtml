@@ -1,0 +1,58 @@
+<!-- FO-PL-MS0028 : 전시장 정보  - BOTTOM -->
+<div class="CPOpop_full" id="FO-PL-MS0028">
+	<div class="p_head">
+		<h2 class="tit">스튜디오 수원 (현대차 전시장)</h2> <!-- [CPO-6080] 2022.11.18 -->
+	</div>
+	<div class="p_wrap">
+		<div class="box_showroom layer_bg">
+            <section class="showroom_info">
+                <p class="tit">익일 예약만 가능합니다.</p>
+                <p class="txt">차량 계약 후 계약금을 내야 방문예약 가능합니다.<br>
+                    차량 목록에서 원하시는 차량을 주문 후 방문 예약을 진행해 주세요.</p>
+                <div class="box_map">
+                    <img src="/HMC/m/img/showroom/img_map.png" alt="지도">
+                </div>
+                <ul class="detail">
+                    <li class="adress">서울 강남구 수서동 수서현대로 15-2 서울 강남구 수서동 수서현대로 15-2</li> <!-- [CPO-6080] 2022.11.18 -->
+                    <li class="tel">080-600-6000</li>
+                </ul>
+            </section>
+            <section class="traffic_info">
+                <p class="sec_tit">대중교통</p>
+                <ul>
+                    <li>
+                        <span>사당역 4번 출구, 과천</span>
+                        <p>좌석버스 7000, 7001번 승차 &rarr; 과천, 의왕간 고속도로 &rarr; 아주대</p>
+                    </li>
+                    <li>
+                        <span>잠실역 4번 출구</span>
+                        <p>좌석버스 1007-1번 승차 &rarr; 경부고속도로 &rarr; 아주대 </p>
+                    </li>
+                    <li>
+                        <span>수원지역</span>
+                        <p>1호선(국철) 이용, 수원역에서 하차, 시내버스 11-1, 46-1, 720, 720-2, 730번 승차 &rarr; 아주대</p>
+                    </li>
+                </ul>
+                <p class="sec_tit">자가용</p>
+                <ul>
+                    <li>
+                        <span>서대전IC</span>
+                        <p>&rarr; 계백로(1.3km) &rarr; 유성대로(1.3km) &rarr; 한우물로(668m)</p>
+                    </li>
+                    <li>
+                        <span>유성IC</span>
+                        <p>&rarr; 월드컵대로(541m) &rarr; 현충원로(524m) &rarr; 유성대로(5.86km) &rarr; 한우물로(668m)</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
+		<!-- sticky --> 
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">확인</button>
+		</div>
+		<!-- //sticky -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+<script>	
+</script>

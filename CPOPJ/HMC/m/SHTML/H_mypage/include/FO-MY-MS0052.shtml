@@ -1,0 +1,16 @@
+<!-- FO-MY-MS0014 : 차량등록 - FULL -->
+<div class="CPOpop_full" id="FO-MY-MS0052">
+	<div class="p_head">
+		<h4 class="tit">블루링크 연동하기</h4>
+	</div>
+	<div class="p_wrap">
+		<div class="lyer_terms">
+			<!--#include file="/HMC/m/SHTML/H_mypage/include/FO-MY-MS0052_1.shtml"-->
+		</div>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+	
+	<div class="btn_sticky">
+		<button type="button" class="btn_big01">동의하기</button>
+	</div>
+</div>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>현대차 CPO 이용약관 및 개인정보처리방침</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_login.css">
+</head>
+<body>
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--#include file="/HMC/m/SHTML/H_inc/layout_header.shtml"-->
+
+		<!-- s: h_header : default  -->
+		<div class="h_header">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">이용약관 및 개인정보처리방침</h1>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="join_list">
+			<h2 class="tit">현대자동차 인증 중고차<br>서비스 가입에 동의해주세요.</h2>
+
+			<div class="item">
+				<input type="checkbox" name="chk_comm" id="chk_list01" class="chk_type01 large"><label for="chk_list01">전체약관에 동의 합니다.</label>
+			</div>
+			<ul class="accordion on">
+				<li>
+					<div class="item">
+						<input type="checkbox" name="chk_comm" id="chk_list02" class="chk_type01"><label for="chk_list02">[필수] 이용 약관 동의</label>
+						<button type="button" class="btn_arrow" data-popup="FO-ME-MS0002">이용 약관 자세히 보기</button>
+					</div>
+				</li>
+				<li>
+					<div class="item">
+						<input type="checkbox" name="chk_comm" id="chk_list03" class="chk_type01"><label for="chk_list03">[필수] 개인정보 수집 및 이용 동의</label>
+						<button type="button" class="btn_arrow" data-popup="FO-ME-MS0002">개인정보 수집 및 이용 자세히 보기</button>
+					</div>
+				</li>
+				<li>
+					<div class="item">
+						<input type="checkbox" name="chk_comm" id="chk_list04" class="chk_type01"><label for="chk_list04">[선택] 마케팅 활용 및 광고 수신 동의</label>
+						<button type="button" class="btn_arrow ac">마케팅 활용 및 광고 수신 펼쳐보기</button><!-- 아래 펼쳐질때 class ac 추가-->
+					</div>
+					<!-- 마케팅 활용 및 광고 수신 항목-->
+					<div class="accordion">
+						<div class="join_agree">
+							<!--#include file="agree/agree_03.shtml"--><!-- bo등록되는 html -->
+						</div>
+						<ul class="join_sns">
+							<li><input type="checkbox" name="JoinChk01_SNS" id="JoinChk01_SNS1" class="chk_type02 small"><label for="JoinChk01_SNS1">카카오톡</label></li>
+							<li><input type="checkbox" name="JoinChk01_SNS" id="JoinChk01_SNS2" class="chk_type02 small"><label for="JoinChk01_SNS2">E-mail</label></li>
+							<li><input type="checkbox" name="JoinChk01_SNS" id="JoinChk01_SNS3" class="chk_type02 small"><label for="JoinChk01_SNS3">SMS</label></li>
+							<!--<li><input type="checkbox" name="JoinChk01_SNS" id="JoinChk01_SNS4" class="chk_type02"><label for="JoinChk01_SNS4">Push</label></li>-->
+						</ul>
+					</div>
+					<!-- 마케팅 활용 및 광고 수신 항목-->
+				</li>
+			</ul>
+			</ul>
+		</div>
+		<div class="btn_sticky">
+			<button type="button" class="btn_mid01">동의</button>
+		</div>
+		<!-- contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/HMC/m/SHTML/H_inc/popup_include_all.shtml"-->
+
+</body>
+</html>

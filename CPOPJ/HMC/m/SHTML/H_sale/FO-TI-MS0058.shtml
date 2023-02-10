@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>차량정보 및 시세 확인 : 현대차 CPO</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_sale.css">
+</head>
+<body class="sale_head01">
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--  s: h_header  -->
+		<div class="h_header_navi02">
+			<h1 class="tit"><a href="#" class="ic_logo">현대CPO</a></h1>
+			<div class="util">
+				<button type="button" class="menu" data-ref="menuLayer">내차사기</button>
+				<div class="menu_layer" id="menuLayer">
+					<ul>
+						<li class="on"><a href="#">내차사기</a></li>
+						<li><a href="#">내차팔기</a></li>
+					</ul>
+				</div>
+				<ul>
+					<li><button type="button" class="ic_mycar jQ_POP_open" data-popup="FO-TI-MS0017">내차팔기 정보</button></li><!-- jQ_POP_open 팝업 호출 class / data-popup 팝업 id 값 -->
+				</ul>
+			</div>
+		</div>
+		<!--  e: h_header  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<!-- [COMMON] 내차팔기 입력 진행 상황 progress -->
+			<!--#include file="/HMC/m/SHTML/H_sale/include/sale_progress.shtml"-->
+		<!-- //[COMMON] 내차팔기 입력 진행 상황 progress -->
+		<!-- 차량정보 및 시세 확인 -->
+		<div id="FO_TI_MS0002" class="sale_car_info">
+			<!-- 01. 차량정보 -->
+			<div class="sale_step01">
+				<div class="head">
+					<span class="txt">차량에 대한 정보를<br>불러왔어요.</span>
+					<div class="txt2">
+						<span class="num">23나2345</span>
+						<span class="name">더 뉴 그랜저<em>&middot;</em>2020년</span>
+					</div>
+					<div class="imgs">
+						<img src="/HMC/m/img/@thumb/sale_car.png" alt=""/>
+					</div>
+				</div>
+				<div class="list">
+					<ul>
+						<li>
+							<span class="tit">차량번호</span>
+							<span class="txt">23나2345</span>
+						</li>
+						<li>
+							<span class="tit">제조사명</span>
+							<span class="txt">현대</span>
+						</li>
+						<li>
+							<span class="tit">모델명</span>
+							<span class="txt">더 뉴 그랜저</span>
+						</li>
+						<li>
+							<span class="tit">신차등급명</span>
+							<span class="txt">2.5 가솔린 캘리그래피</span>
+						</li>
+						<li>
+							<span class="tit">최초등록일</span>
+							<span class="txt">2019.12.28</span>
+						</li>
+						<li>
+							<span class="tit">연식</span>
+							<span class="txt">2020년</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- // 01. 차량정보 -->
+			<!-- 02. 차량정보 그래프 -->
+			<div class="sale_step02">
+				<p class="tit">
+					시세 계산을 위한<br>데이터가 부족해요.
+				</p>
+				<p class="txt3">
+					조회하신 차량은 시세 계산을 위한 데이터가 부족하여 <br>
+					내차팔기 서비스 이용이 어렵습니다.<br>
+					불편을 드려 죄송합니다. 
+				</p>
+				<div class="graph">
+					<img src="/HMC/m/img/result_failed_graph.png" alt=""/>
+				</div>
+			</div>
+
+			<div class="sale_step02_02">
+				<section class="caution">
+					<p class="tit">왜 내 차의 시세는 나오지 않나요?</p> <!-- 2022-09-16 CPO-3291 --> 
+					<ul>
+						<li>신차는 수집된 데이터가 적어 시세가 나오지 않을 수 있어요.</li>
+						<li>판매된 차량 수가 적은 차량은 데이터가 적어 시세가 나오지 않을 수 있어요.</li>
+						<li>오래된 연식 차량의 경우 시세 산정이 불가할 수 있어요.</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+		<!-- //차량정보 및 시세 확인 -->
+		
+		<!-- 05. BUTTON -->
+		<div class="btn_sticky btn_sale">
+			<button type="button" class="btn_big04">다른 차량 조회하기</button>  <!-- 2022-09-16 CPO-3291 -->
+		</div>
+		<!-- //05. BUTTON -->
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+</div>
+<!-- //cpo wrap -->
+
+<script>
+	var entryFunc = function() {
+		var html = document.querySelector('html');
+		var wrap = document.querySelector('#CPOcontents');
+		var step1	= wrap.querySelector('.sale_step01');
+		var step2 = wrap.querySelector('.sale_step02');
+		setTimeout(function(){
+			html.classList.add('scroll_hidden');
+			wrap.classList.add('on');
+			step1.style.cssText = `height: ${step1.getBoundingClientRect().height}px`;
+			saleProgress(3);
+		},10);
+		setTimeout(function(){
+			wrap.classList.add('ready');
+		},3000);
+		setTimeout(function(){
+			html.classList.remove('scroll_hidden');
+		},4000);
+	}
+	entryFunc();
+</script>
+
+</body>
+</html>

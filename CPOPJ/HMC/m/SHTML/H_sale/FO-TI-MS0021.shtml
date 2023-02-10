@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>STEP3-1.구매/옵션 정보 입력 : 현대차 CPO</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_sale.css">
+</head>
+<body class="bg_color">
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header  -->
+		<div class="h_header">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit align_c">구매/옵션 정보 입력</h1>			
+		</div>
+		<!-- e: h_header  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<!-- [COMMON] 내차팔기 입력 진행 상황 progress -->
+			<!--#include file="/HMC/m/SHTML/H_sale/include/sale_progress.shtml"-->
+		<!-- //[COMMON] 내차팔기 입력 진행 상황 progress -->
+		<!-- STEP3-1.구매/옵션 정보 입력 -->
+		<div class="step3_box">
+			
+			<div class="select_box_wrap">
+				<div class="inner_box step31_drive">
+					<!--#include file="/HMC/m/SHTML/H_sale/inc/step3_1_01_drive.shtml"-->
+				</div>
+				<!-- 2022-09-16 CPO-3291 -->
+				<div class="inner_box step31_area">
+					<!--#include file="/HMC/m/SHTML/H_sale/inc/step3_1_04_area.shtml"-->
+				</div>
+				<div class="inner_box step31_option">
+					<!--#include file="/HMC/m/SHTML/H_sale/inc/step3_1_02_option.shtml"-->
+				</div>
+				<div class="inner_box step31_how">
+					<!--#include file="/HMC/m/SHTML/H_sale/inc/step3_1_03_how.shtml"-->
+				</div>
+				<div class="inner_box step_com">
+					<div class="top">
+						<p class="tit">구매/옵션 정보를<br />모두 입력하셨어요.</p> <!-- 2022-09-16 CPO-3291 -->
+						<p class="txt">아래 내용을 확인 후 수리/손상 정보를 입력해 주세요.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- 선택 내용 -->
+			<div class="sale_carinfo">
+				<div class="mycar_infobox">
+					<ol class="mycar_infobox__inner">
+						<li>
+							<span class="tit">주행거리</span>
+							<span class="txt">
+								23,345 km
+								<button type="button" class="btn_txt_mid02 jQ_POP_open" data-popup="FO-TI-MS0022">수정</button>
+							</span>
+						</li>
+						<!-- 2022-09-16 CPO-3291 -->
+						<li>
+							<span class="tit">매각 희망지역</span>
+							<span class="txt">
+								<span data-ref="area1">서울시 강남구</span>
+								<button type="button" class="btn_txt_mid02 jQ_POP_open" data-popup="FO-TI-MS0050">수정</button>
+							</span>
+						</li>
+						<!-- //2022-09-16 CPO-3291 -->
+						<li>
+							<span class="tit">별도 추가 옵션</span>
+							<span class="txt">
+								네, 있어요
+								<button type="button" class="btn_txt_mid02 jQ_POP_open" data-popup="FO-TI-MS0023">수정</button>
+							</span>
+						</li>
+						<li>
+							<span class="tit">구입방식</span>
+							<span class="txt">
+								운용 리스
+								<button type="button" class="btn_txt_mid02 jQ_POP_open" data-popup="FO-TI-MS0024">수정</button>
+							</span>
+						</li>
+						<li>
+							<span class="tit">변속기</span>
+							<span class="txt">오토</span>
+						</li>
+						<li>
+							<span class="tit">색상</span>
+							<span class="txt">미드나잇 블랙 펄</span>
+						</li>
+						<li>
+							<span class="tit">출고 당시 옵션</span>
+							<span class="txt">외장 2건, 내장 5건, 안전 3건, 편의 2건, 멀티미디어 2건</span>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!-- //선택 내용 -->
+			<!-- button  -->
+			<div class="btn_add_picture">
+				<button type="button" class="btn_big01">수리/손상 정보 입력하기</button>
+			</div>
+			<!-- //button  -->
+		</div>
+		<!-- //STEP3-1.구매/옵션 정보 입력 -->
+
+
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+</div>
+<!-- //cpo wrap -->
+<!-- 주행거리 수정 -->
+<!--#include file="/HMC/m/SHTML/H_sale/include/Edit-31F-MS0022.shtml"-->
+<!-- 구매옵션 수정 -->
+<!--#include file="/HMC/m/SHTML/H_sale/include/Edit-31F-MS0023.shtml"-->
+<!-- 출고 당시 옵션 -->
+<!--#include file="/HMC/m/SHTML/H_sale/include/FO-TI-MS0043.shtml"-->
+<!-- 구매 방식 수정 -->
+<!--#include file="/HMC/m/SHTML/H_sale/include/Edit-31B-MS0024.shtml"-->
+<!-- 블루링크 연동하기 -->
+<!--#include file="/HMC/m/SHTML/H_sale/include/FO-TI-MS0051.shtml"-->
+<!-- 매각 희망지역 --><!-- 2022-09-16 CPO-3291 -->
+<!--#include file="/HMC/m/SHTML/H_sale/include/FO-TI-MS0050.shtml"-->
+<script>
+//2022-09-16 CPO-3291 - 매각 희망지역 추가
+var selectStep = new SelectStep(3, 4);
+
+$(".step3_box .step31_drive .btn_ok01").on("click",function(){
+	$(".step31_drive").removeClass('show');
+	$(".step31_option").addClass('show');
+	event.stopPropagation();
+	selectStep.step('next');
+});
+
+//2022-09-16 CPO-3291 - 매각 희망지역 추가
+$('.step3_box input[name=saleAreaChk]').on('change',function(){
+	if ($("#saleAreaChk01").is(':checked')) {
+		CPO.POPUP_open($(this));
+		document.querySelector('#'+this.dataset.popup).querySelector('.area_confirm').addEventListener('click', function(){
+			CPO.POPUP_close($(this));
+			if(selectStep.currentNum == 1) {
+				selectStep.step('next');
+			}			
+		})
+	}
+});
+
+$('.step3_box input[name=saleOpeionChk]').on('change',function(){
+	if ($("#saleOpeionChk01").is(':checked')) {
+		$("#saleOpenChkYes").addClass('yes');
+		$("#saleOpeionTxt").focus();
+		setTimeout(function(){
+			selectStep.heightFunc();
+		}, 300)
+	} else {
+		$("#saleOpenChkYes").removeClass('yes');
+		selectStep.step('next');
+	}
+});
+
+$('.step3_box input[name=saleBuyChk ]').on('change',function(){
+	selectStep.step('next');
+});
+
+</script>
+</body>
+</html>

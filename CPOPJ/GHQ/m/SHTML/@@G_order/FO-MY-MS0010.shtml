@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>관심차량 : 제네시스 CUV</title>
+	<!--#include file="/GHQ/m/SHTML/G_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/g_order.css">
+</head>
+<body>
+<!--#include file="/GHQ/m/SHTML/G_inc/common_skip.shtml"-->
+<!--#include file="/GHQ/m/SHTML/G_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--  s: h_header : default  -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">관심차량</h1>
+		</div>
+		<!--  e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="cpo_cart">
+			<ul class="cpo_tab01">
+				<li><a href="#">찜한상품</a></li>
+				<li><a href="#" class="on">최근본상품</a></li>
+			</ul>
+			<!-- 01. 장바구니 없을 때 -->
+			<div class="no_data">
+				<p class="tit">최근본상품이 없습니다.</p>
+				<p class="txt">다양한 차량들을 둘러보고<br />마음에 드는 차량들을 찾아보세요.</p>  
+				<div class="btn_area">
+					<a href="#" class="btn_mid02">홈으로 가기</a>
+				</div>
+			</div>
+			<!-- //01. 장바구니 없을 때 -->
+			<!-- 02. 장바구니 list -->
+			<div class="sorting">
+				<span class="cart_list_all">전체 <i>20</i>개</span>
+				<a href="#" class="btn_icon_mid01">비교하기</a>
+			</div>
+			<div class="cart_list">
+				<div class="notice_01">
+					<ol>
+						<li>최근본상품은 최대 1개월까지 보관됩니다.</li>
+					</ol>
+				</div>
+				<!-- list -->
+				<h4 class="date"><i>Today</i>2021.11.03</h4>
+				<ol class="list type02">
+					<li><!-- 일시품절, 판매완료 시, class soldout 추가-->
+						<!-- unit -->
+						<div class="unit_tit">
+							<span class="tit">G70 3.3T 스포츠 AWD 프레스티지</span>
+							<button type="button" class="btn_del01">삭제</button>
+						</div>
+						<a href="#" class="unit_link">
+							<div class="unit_img">
+								<img src="/GHQ/m/img/@thumb/plp_310x310_01.jpg" alt="" />
+								<div class="unit_like"><input type="checkbox" class="CPO_Chk_Wish" name="ck_ProductWish" id="ck_wish01"><label for="ck_wish01">찜하기</label></div>
+							</div>
+							<div class="unit_info">
+								<span class="drive">
+									<em>21년형</em>
+									<em>50,000km</em>
+									<em>가솔린</em>
+								</span>
+								<span class="price"><em>3,440</em><i>만원</i></span>
+							</div>
+						</a>
+						<span class="unit_btn2"><button type="button" class="btn_txt04">장바구니 담기</button></span>
+						<!-- //unit -->
+					</li>
+					<li><!-- 일시품절, 판매완료 시, class soldout 추가-->
+						<!-- unit -->
+						<div class="unit_tit">
+							<span class="tit">G70 3.3T 스포츠 AWD 프레스티지</span>
+							<button type="button" class="btn_del01">삭제</button>
+						</div>
+						<a href="#" class="unit_link">
+							<div class="unit_img">
+								<img data-src="/GHQ/m/img/@thumb/plp_500x500_01.jpg" class="cpo_lazy_v" alt="" />
+								<div class="unit_like"><input type="checkbox" class="CPO_Chk_Wish" name="ck_ProductWish2" id="ck_wish02"><label for="ck_wish02">찜하기</label></div>
+							</div>
+							<div class="unit_info">
+								<span class="drive">
+									<em>21년형</em>
+									<em>50,000km</em>
+									<em>가솔린</em>
+								</span>
+								<span class="price"><em>3,440</em><i>만원</i></span>
+							</div>
+						</a>
+						<span class="unit_btn2"><button type="button" class="btn_txt04">장바구니 담기</button></span>
+						<!-- //unit -->
+					</li>
+				</ol>
+				<h4 class="date">2021.11.01</h4>
+				<ol class="list type02">
+					<li><!-- 일시품절, 판매완료 시, class soldout 추가-->
+						<!-- unit -->
+						<div class="unit_tit">
+							<span class="tit">G70 3.3T 스포츠 AWD 프레스티지</span>
+							<button type="button" class="btn_del01">삭제</button>
+						</div>
+						<a href="#" class="unit_link">
+							<div class="unit_img">
+								<img src="/GHQ/m/img/@thumb/plp_500x500_04.jpg" alt="" />
+								<div class="unit_like"><input type="checkbox" class="CPO_Chk_Wish" name="ck_ProductWish3" id="ck_wish03"><label for="ck_wish03">찜하기</label></div>
+							</div>
+							<div class="unit_info">
+								<span class="drive">
+									<em>21년형</em>
+									<em>50,000km</em>
+									<em>가솔린</em>
+								</span>
+								<span class="price"><em>3,440</em><i>만원</i></span>
+							</div>
+						</a>
+						<span class="unit_btn2"><button type="button" class="btn_txt04">장바구니 담기</button></span>
+						<!-- //unit -->
+					</li>
+					<li class="soldout"><!-- 일시품절, 판매완료 시, class soldout 추가-->
+						<!-- unit -->
+						<div class="unit_tit">
+							<span class="tit">G70 3.3T 스포츠 AWD 프레스티지</span>
+							<button type="button" class="btn_del01">삭제</button>
+						</div>
+						<div class="unit_link">
+							<span class="end">일시품절</span>
+							<div class="unit_img"><img data-src="/GHQ/m/img/@thumb/plp_500x500_02.jpg" class="cpo_lazy_v" alt="" /></div>
+							<div class="unit_info">
+								<span class="drive">
+									<em>21년형</em>
+									<em>50,000km</em>
+									<em>가솔린</em>
+								</span>
+							</div>
+						</div>
+						<!-- //unit -->
+					</li>
+					<li class="soldout"><!-- 일시품절, 판매완료 시, class soldout 추가-->
+						<!-- unit -->
+						<div class="unit_tit">
+							<span class="tit">G70 3.3T 스포츠 AWD 프레스티지</span>
+							<button type="button" class="btn_del01">삭제</button>
+						</div>
+						<div class="unit_link">
+							<span class="end">판매완료</span>
+							<div class="unit_img"><img data-src="/GHQ/m/img/@thumb/plp_500x500_03.jpg" class="cpo_lazy_v" alt="" /></div>
+							<div class="unit_info">
+								<span class="drive">
+									<em>21년형</em>
+									<em>50,000km</em>
+									<em>가솔린</em>
+								</span>
+							</div>
+						</div>
+						<!-- //unit -->
+					</li>
+				</ol>
+				<!-- //list -->
+			</div>
+			<!-- 02. 장바구니 list -->
+			<!-- 03. 고객님의 인기차량 -->
+			<div class="plp_best01 popular">
+				<div class="top">
+					<h4 class="tit">고객님의 인기차량 추천드려요</h4>
+				</div>
+				<!-- 상품 swiper inc_best_01.shtml -->
+				<!--#include file="/GHQ/m/SHTML/G_display/include/inc_best_02.shtml"-->
+
+			</div>
+			<!-- 03. 고객님의 인기차량 -->
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/GHQ/m/SHTML/G_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/GHQ/m/SHTML/G_inc/popup_include_all.shtml"-->
+<script>
+$(document).ready(function(){
+	if ($('input[name=cartList]').length > 0) {
+		CPOCartCheck();// 장바구니 checkBox All & Button
+	}
+	if ($('.chk_type04').length > 0) {
+		CPOCompareCheck($(this));// 비교차량 선택 checkBox & Button
+	}
+	/* 장바구니 checkBox All & Button */
+	$('input[name=cartList]').on('change', function(){
+		CPOCartCheck();
+	});
+	$('#cartListAll').on('change', function(){
+		var chkAll = $(this).is(":checked");
+		if(chkAll){
+			$('input[name=cartList]').not(':disabled').prop('checked', true);
+		} else {
+			$('input[name=cartList]').not(':disabled').prop('checked', false);
+		}
+		CPOCartCheck();
+	});
+	/* 비교차량 선택 checkBox & Button */
+	$('.chk_type04').on('change', function(){
+		CPOCompareCheck($(this))
+	});
+});
+</script>
+</body>
+</html>

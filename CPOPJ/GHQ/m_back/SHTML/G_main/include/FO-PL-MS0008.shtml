@@ -1,0 +1,106 @@
+<!-- FO-PL-MS0008 : 예산설정 - FULL -->
+<div class="CPOpop_full2 dark" id="FO-PL-MS0008">
+	<div class="p_head">
+		<h4 class="tit">예산설정</h4>
+	</div>
+	<div class="p_wrap preference_set">
+		<!-- [01] STEP -->
+		<div class="pas_set01">
+			<ol>
+				<li class="on"><span>1</span><em>단계</em></li>
+				<li><span>2</span><em>단계</em></li>
+				<li><span>3</span><em>단계</em></li>
+			</ol>
+			<div class="tit">
+				고객님의 예산을 설정해주세요.
+			</div>
+		</div>
+		<!-- //[01] STEP -->
+		<!-- [02] 차량 이미지 -->
+		<div class="pas_set02 swiperType01">
+			<ol class="swiper-wrapper">
+				<li class="swiper-slide">
+					<span class="tit">THE NEW G70</span>
+					<span class="img"><img src="../../img/main/Main_KV_GV70 1.png" alt="실시간 조회 이미지01"></span>
+				</li>
+				<li class="swiper-slide">
+					<span class="tit">THE NEW G70</span>
+					<span class="img"><img src="../../img/main/Main_KV_GV70 1.png" alt="실시간 조회 이미지01"></span>
+				</li>
+				<li class="swiper-slide">
+					<span class="tit">THE NEW G70</span>
+					<span class="img"><img src="../../img/main/Main_KV_GV70 1.png" alt="실시간 조회 이미지01"></span>
+				</li>
+			</ol>
+			<div class="swiper-pagination"></div>
+		</div>
+		<!-- //[02] 차량 이미지 -->
+		<!-- 가격 -->
+		<div class="pas_set03">
+			<div class="top">
+				가격
+				<span class="data" id="rangePrice-Chk"><i class="start"></i>만원 ~ <i class="end"></i></i>만원</span>
+			</div>
+			<!-- range -->
+			<div class="pas_range">
+				<!-- 가격 그래프 -->
+				<div class="range_chart">
+					<ol class="list_chart">
+						<li><div class="bar" style="height:10%"><i>100만원 (20)</i></div></li>
+						<li><div class="bar" style="height:20%"><i>600만원 (20)</i></div></li>
+						<li><div class="bar" style="height:30%"><i>1100만원 (20)</i></div></li>
+						<li><div class="bar" style="height:40%"><i>1600만원 (20)</i></div></li>
+						<li><div class="bar" style="height:50%"><i>2100만원 (20)</i></div></li>
+						<li><div class="bar" style="height:60%"><i>2600만원 (20)</i></div></li>
+						<li><div class="bar" style="height:40%"><i>3100만원 (20)</i></div></li>
+						<li><div class="bar" style="height:60%"><i>3600만원 (20)</i></div></li>
+						<li><div class="bar" style="height:50%"><i>4100만원 (20)</i></div></li>
+						<li><div class="bar" style="height:60%"><i>4600만원 (20)</i></div></li>
+						<li><div class="bar" style="height:70%"><i>5100만원 (20)</i></div></li>
+						<li><div class="bar" style="height:80%"><i>5600만원 (20)</i></div></li>
+						<li><div class="bar" style="height:100%"><i>6100만원 (20)</i></div></li>
+						<li><div class="bar" style="height:50%"><i>6600만원 (20)</i></div></li>
+						<li><div class="bar" style="height:60%"><i>7100만원 (20)</i></div></li>
+						<li><div class="bar" style="height:10%"><i>7600만원 (20)</i></div></li>
+						<li><div class="bar" style="height:10%"><i>8000만원 (20)</i></div></li>
+						<li><div class="bar" style="height:50%"><i>6600만원 (20)</i></div></li>
+						<li><div class="bar" style="height:60%"><i>7100만원 (20)</i></div></li>
+						<li><div class="bar" style="height:10%"><i>7600만원 (20)</i></div></li>
+						<li><div class="bar" style="height:10%"><i>8000만원 (20)</i></div></li>
+					</ol>
+				</div>
+				<!-- //가격 그래프 -->
+				<!-- range (가격) -->
+				<div id="rangePrice" class="cpo_range">
+					<div class="cpoRange"></div>
+					<p class="amountArea">
+						<input type="number" id="SpriceMine" title="최저 가격" data-min="100" data-max="8000" steps="500" value="1000">
+						<input type="number" id="SpriceMine2" title="최대 가격" data-min="100" data-max="8000" steps="500" value="8000">
+					</p>
+				</div>
+				<!-- //range (가격) -->
+			</div>
+			<!-- //range -->
+		</div>
+		<!-- //가격 -->
+		<!-- 버튼 -->
+		<div class="pas_btn">
+			<dl class="result">
+				<dt>선택 구간 내 차량수</dt>
+				<dd><em>1,236</em><i> 대</i></dd>
+			</dl>
+			<ul>
+				<li><button type="button" class="btn_modal01">취소</button></li>
+				<li><button type="button" class="btn_modal02" data-popup="FO-PL-MS0009">다음</button></li><!-- main_layer 에 btn_modal02 스크립트 걸어둠 개발팀에서 커스텀해사 사용 -->
+			</ul>
+		</div>
+		<!-- //버튼 -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+<script>
+$(document).ready(function() {
+	SRCH.FilterPriceRange('SpriceMine', 'SpriceMine2', 'rangePrice', 500, '만원'); // 가격 선택
+	SRCH.FilterPriceChart();//가격 상단 그래프
+});
+</script>

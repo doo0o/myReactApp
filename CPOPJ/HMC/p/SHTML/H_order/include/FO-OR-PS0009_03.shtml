@@ -1,0 +1,43 @@
+<div class="popup_full" id="FO-OR-PS0009_03">
+	<div class="p_body">
+		<div class="p_inner s_small">
+			<div class="p_head">
+				<h2 class="tit">주소검색</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+				<div class="inner_view srch_address">
+						<!-- 01. 주소 입력 -->
+						<div class="addr_head">	
+							<div class="form_area">
+								<div class="inbox_type02 hs02" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+									<input type="text" class="txt" title="주소 검색" placeholder="도로명, 건물명, 번지 검색" name="" value="">
+									<button type="button" class="btn_delete">삭제</button>
+								</div>
+							</div>
+							<div class="btn_area">
+								<button type="button" class="btn_small color01">검색</button>
+							</div>
+						</div>
+						<!-- //01. 주소 입력 -->
+						
+						<!-- 03. 검색결과 -->
+						<div class="address_list">
+							<div class="total">
+								<span class="tit">검색결과</span>
+								<span class="num">전체&nbsp;<i>20</i>건</span>
+							</div>
+
+							<!--데이터 없을시-->
+							<!--#include file="/HMC/p/SHTML/H_order/include/con_search03.shtml"-->
+							<!--//데이터 없을시-->
+
+						</div>
+						<!-- //03. 검색결과 -->
+				</div>
+				<!-- //contents -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

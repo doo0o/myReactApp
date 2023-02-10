@@ -1,0 +1,149 @@
+@import '../_common/h_function';
+@import '../_common/h_mixins';
+
+/* 서류안내,등록[Layer] */
+section.bg_line {
+	position: relative;
+	&::before {
+		@include Mix_Space_Bar;
+	}
+	> .caution {
+		padding: 40px 21px 0;
+	}
+}
+section.top_txt {
+	.type01 {
+		@include Mix_Font('Head-R', 26, 33);
+	}
+	.type02 {
+		margin-top: 12px;
+		color: $COL_Base_03;
+		word-break: keep-all;
+		@include Mix_Font('Txt-R', 15, 23);
+	}
+	.caution {
+		margin-top: 10px;
+	}
+	.error_msg {
+		position: relative;
+		margin: 0 -6px 30px;
+		padding: 20px 20px 20px 48px;
+		background-color: $COL_Light_Sand;
+		@include Mix_Font('Txt-M', 13, 20);
+		&::after {
+			content: '';
+			position: absolute;
+			width: 18px;
+			height: 18px;
+			top: 50%;
+			left: 20px;
+			transform:translateY(-50%);
+			@include Mix_Mypage_Bg;
+			background-position:-253px -60px;
+		}
+	}
+}
+.document_cont {
+	.top_txt {
+		margin: 25px 21px 30px;
+	}
+	.bg_line {
+		padding: 38px 15px 0;
+		.sec_tit {
+			margin-left: 6px;
+			margin-bottom: 15px;
+		}
+	}
+	.list_type01 {
+		margin-top: 30px;
+		padding-top: 30px;
+		border-top: 1px solid $COL_Line_Medium;
+		dl:not(.sample) {
+			margin-bottom: 30px;
+			dt{
+				margin-bottom: 6px;
+				@include Mix_Font('Head-M', 16, 20);
+			}
+			dd {
+				color: $COL_Base_03;
+			}
+		}
+		dl.sample {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 14px;
+			border: 1px solid $COL_Line_Medium;
+			dt {
+				@include Mix_Font('Txt-M', 13, 20);
+			}
+			dd {
+				width: 150px;
+				margin-left: 10px;
+				img {
+					width: 150px;
+				}
+			}
+		}
+
+	}
+	.list_type02 {
+		&:not(:last-of-type) {
+			margin-bottom: 40px;
+		}
+		dl {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 25px 20px;
+			background-color: $COL_Light;
+			&:not(:first-child) {
+				margin-top: 10px;
+			}
+			dt {
+				@include Mix_Font('Txt-M', 16, 24);
+			}
+		}
+		ul {
+			margin-top: -10px;
+			padding: 0 20px 25px;
+			background-color: $COL_Light;
+			li {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-between;				
+				padding-top: 15px;
+				&:first-child {
+					border-top: 1px solid $COL_Line_Dark;
+				}
+				.file_name {
+					flex: 1  80%;
+					margin-right: 15px;
+					@include Mix_Ellipsis01;
+					text-align: left;
+					color: $COL_Base_03;
+					
+					&::before {
+						content: '';
+						display: inline-block;
+						width: 15px;
+						height: 15px;
+						margin-right: 6px;
+						margin-top: -2px;
+						vertical-align: middle;
+						@include Mix_Order_Bg(-116px -35px);
+					}
+				}
+				.noti_txt{
+					@include Mix_Font('Txt-R', 12, 18);
+					color:$COL_Red;
+					margin:4px 0 0 20px;
+				}
+			}
+		}
+		& +.caution {
+			margin-top: -10px;
+			padding: 0 6px;
+		}
+	}
+}
