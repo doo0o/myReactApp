@@ -1,0 +1,70 @@
+<!-- AC_MO_05_0701 : 실사검수정보 변경 - full -->
+<div class="CPOpop_full" id="AC_MO_05_0701">
+	<div class="p_head">
+		<h4 class="tit">실사검수정보 변경</h4>
+	</div>
+	<div class="p_wrap">
+		<!-- 실사검수정보 변경 -->
+		<div class="work_request">
+			<h6 class="tit">실사검수 방문주소</h6>
+			<ol>
+				<li>					
+					<div class="txt_box disabled"><!-- 2022.05.04 disabled class 추가 -->
+						<span class="tit">이름</span>
+						김현대
+					</div>
+				</li>
+				<li>
+					<div class="txt_box disabled"><!-- 2022.05.04 disabled class 추가 -->
+						<span class="tit">휴대폰번호</span>
+						010-1234-4500
+					</div>
+				</li>
+				<li>
+					<div class="txt_box">
+						<span class="tit">주소</span>
+						(06179) 서울특별시 강남구 테헤란로 510(대치동)
+						<button type="button" class="btn_small01">주소검색</button>
+					</div>
+					<div class="txt_box sub">
+						<span class="tit">상세주소</span>
+						1234-14 번지
+					</div>						
+					<!-- 2022.05.25 추가 -->
+					<div class="inp_box sub"> <!-- 인풋 사용 시 해당 class 적용 -->
+						<span class="tit">상세주소</span>
+						<input type="text" class="txt" title="상세주소 입력" placeholder="상세주소 입력" name="" value="">
+					</div>
+					<!-- // 2022.05.25 추가 -->
+					<!-- <p class="msg">* 실사검수 받으실 주소입니다.</p> -->
+				</li>
+			</ol>
+			<h6 class="tit">검수일 선택</h6>
+			<ol>
+				<li>
+					<div class="txt_box">
+						<input type="text" class="date-picker" id="startDate">
+					</div>
+					<div class="select sub">
+						<select>
+							<option>15:00</option>
+						</select>
+					</div>
+					
+				</li>
+			</ol>
+			<h6 class="tit">변경 사유</h6>
+			<div class="textarea_01">
+				<textarea name="" id="saleAccidentTxt" class="area" placeholder="50자 이내로 작성해 주세요" rows="3" cols="21" role="textbox"></textarea>
+				<span class="txt_check"><em class="first">0</em> / <em class="last">50</em>자</span>
+			</div>
+		</div>
+		<!-- //실사검수정보 변경 -->
+		<!-- sticky button -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_action01">변경정보 저장</button>
+		</div>
+		<!-- //sticky button -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>현대차 CPO : 주문완료</title>
+	<!--#include file="inc_demo/common_meta.shtml"-->
+	<link rel="stylesheet" href="../css/order.css">
+</head>
+<body>
+<!--#include file="inc_demo/common_skip.shtml"-->
+<div id="CPOwrap">
+	<!-- s: container -->
+	<div class="container">
+		<div id="contents">
+<!-- ////////////////////////////////////////////////////////////////    contents start    ///////////////////////////////////////////////////////////////////////-->
+		<div class="order_cont_top">
+			<!--  s: title area : SUB  -->
+			<div class="h_sub " id="stickyTit">
+				<button type="button" class="icon_back">뒤로가기</button>
+				<h3 class="tit">주문완료</h3>
+			</div>
+			<!--  e: title area : SUB  -->
+			<div class="order_title">
+				<div class="title">주문 및 계약이 완료되었습니다.
+					<p>배송을 위한 <span class="highlight">보험증서를 등록</span>하세요.</p>
+				</div>
+			</div>
+		</div>
+		<div class="order_content">
+			<div class="cont_visual payment">
+				<div class="title_box">
+					<p class="title">계약번호</p>
+					<p class="contract_num">2021900112345</p>
+				</div>
+				<div class="btn_area">
+					<a href="#" class="btn_contract type01">보험증서 등록</a>
+					<div class="btn_area type02">
+						<a href="CPO_ME_M0012.shtml" class="btn_contract type02">주문 내역 보기</a>
+						<a href="#" class="btn_contract type02">계약서 확인</a>
+					</div>
+				</div>
+			</div>
+			<div class="order_section_wrap">
+				<ol class="order_section">
+					<li class="item_order step01">
+						<div class="cont_section">
+							<div class="item_title_box">
+								<div class="title">배송정보</div>
+								<a href="#" class="btn_link_order"><span class="blind">링크버튼</span></a>
+							</div>
+							<div class="name_card_area msg">
+								<div class="name_card">
+									<div class="name_box">
+										<p class="name">박보은</p>
+									</div>
+									<div class="addr_box">
+										<p class="addr">서울시 강남구 테헤란로 510</p>
+									</div>
+									<div class="phone_box">
+										<p class="phone">010-1234-1234</p>
+									</div>
+								</div>
+								<div class="message_box">
+									<label class="input_text_message">
+										<input type="text" class="message_text" placeholder="도착 전 휴대폰으로 전화주세요.">
+									</label>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="item_order step02">
+						<div class="cont_section">
+							<div class="item_title_box">
+								<div class="title">결제정보</div>
+								<a href="#" class="btn_link_order"><span class="blind">링크버튼</span></a>
+							</div>
+							<div class="group_payment card">
+								<div class="title_box">
+									<p class="title">결제금액</p>
+									<p class="price"><em class="num">40,990,000</em>원</p>
+								</div>
+								<div class="payment_info">
+									<div class="pay_finish_text">
+										<div class="fint_text_box">
+											<p class="text">할부결제</p>
+											<p class="text">금리5.25% 60개월</p>
+										</div>
+										<div class="price_box">
+											<p class="price"><em class="num">20,000,000</em>원</p>
+										</div>
+									</div>
+									<div class="pay_finish_text">
+										<div class="fint_text_box">
+											<p class="text">포인트결제</p>
+											<p class="text">블루멤버스 포인트 차감</p>
+										</div>
+										<div class="price_box">
+											<p class="price"><em class="num">500,000</em>원</p>
+										</div>
+									</div>
+									<div class="pay_finish_text">
+										<div class="fint_text_box">
+											<p class="text">현금결제</p>
+											<p class="text">우리은행 입금</p>
+										</div>
+										<div class="price_box">
+											<p class="price"><em class="num">11,760,000</em>원</p>
+										</div>
+									</div>
+									<div class="pay_finish_text">
+										<div class="fint_text_box">
+											<p class="text">카드결제</p>
+											<p class="text">현대카드 무이자 6개월</p>
+										</div>
+										<div class="price_box">
+											<p class="price"><em class="num">9,140,000</em>원</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ol>
+				<div class="banner_area">
+					<div class="img_box">
+						<a href="#"><img src="../img/img_order_banner.jpg" alt="MY HYUNDAI 앱에서 신차고객과 동일한 혜택을 누리세요."></a>
+					</div>
+				</div>
+			</div>
+		</div>
+<!-- ////////////////////////////////////////////////////////////////    contents start    ///////////////////////////////////////////////////////////////////////-->
+		</div>
+	</div>
+	<!-- e: container -->
+	<!--#include file="inc_demo/layout_footer.shtml"-->
+</div>
+</body>
+</html>

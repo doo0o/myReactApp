@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20.1" viewBox="0 0 20 20.1">
+  <g id="Menu_R" transform="translate(-325 -37)">
+    <g id="Icon_Mike" transform="translate(325 37)">
+      <rect id="Guide" width="20" height="20" fill="#fff"/>
+      <g id="Icon" transform="translate(-381.344 -426.497)">
+        <line id="선_10" data-name="선 10" x2="7.259" transform="translate(387.714 445.697)" fill="none" stroke="#111" stroke-width="1.8"/>
+        <path id="패스_36" data-name="패스 36" d="M398.344,436.7v3.483a2.246,2.246,0,0,1-2.334,2.135h-9.333a2.244,2.244,0,0,1-2.333-2.135V436.7" transform="translate(0 -0.543)" fill="none" stroke="#111" stroke-width="1.8"/>
+        <line id="선_11" data-name="선 11" y2="4.221" transform="translate(391.344 441.438)" fill="none" stroke="#111" stroke-width="1.8"/>
+        <rect id="사각형_45" data-name="사각형 45" width="6.135" height="10.672" rx="0.112" transform="translate(388.164 427.497)" fill="none" stroke="#000" stroke-width="1.8"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Table : 현대 CUV Auction</title>
+	<!--#include file="/CA/p/SHTML/00_common/include/common_meta.shtml"-->
+    <style>
+        hr {display: block; padding: 10px 0}
+    </style>
+</head>
+<body>
+<!--#include file="/CA/p/SHTML/00_common/include/common_skip.shtml"-->
+<!--#include file="/CA/p/SHTML/00_common/include/layout_loading.shtml"-->
+<!-- CAwrap -->
+<div id="CAwrap">
+    <p class="sec_tit">Table</p>
+    <table class="table">
+        <caption>font 15px</caption>
+        <colgroup>
+            <col width="126px">
+            <col width="*">
+            <col width="126px">
+            <col width="*">
+        </colgroup>
+        <tbody>
+            <tr>
+                <th>외관색상</th>
+                <td>사이버 그레이 메탈릭(팬텀블랙)</td>
+                <th>실내색상</th>
+                <td>블루/하바나브라운투톤(리무진전용/하바나 브라운시트)</td>
+            </tr>
+            <tr>
+                <th>외관색상</th>
+                <td>사이버 그레이 메탈릭(팬텀블랙)</td>
+                <th>실내색상</th>
+                <td>블루/하바나브라운투톤(리무진전용/하바나 브라운시트)</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table class="table group">
+        <caption>font 15px</caption>
+        <colgroup>
+            <col width="126px">
+            <col width="126px">
+            <col width="*">
+        </colgroup>
+        <tbody>
+            <tr class="th_group">
+                <th rowspan="2">thead</th>
+                <td colspan="2">사이버 그레이 메탈릭(팬텀블랙)</td>
+            </tr>
+            <tr>
+                <th>외관색상</th>
+                <td>사이버 그레이 메탈릭(팬텀블랙)</td>
+            </tr>
+            <tr class="th_group">
+                <th rowspan="2">thead</th>
+                <td colspan="2">사이버 그레이 메탈릭(팬텀블랙)</td>
+            </tr>
+            <tr>
+                <th>외관색상</th>
+                <td>사이버 그레이 메탈릭(팬텀블랙)</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr/>
+	
+</div>
+<!-- //CAwrap -->
+
+</body>
+</html>

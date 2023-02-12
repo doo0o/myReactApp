@@ -1,0 +1,33 @@
+<!-- AC_MO_06_01080000 : 현재 외관 평가 - full -->
+<div class="CPOpop_full" id="AC_MO_06_01080000">
+	<div class="p_head">
+		<h4 class="tit">현재 외관 평가</h4>
+	</div>
+	<div class="p_wrap">
+		<!-- 현재 외관 평가 -->
+		<div class="work_carimg">
+			<!--#include file="/ISPT/SHTML/03_work/include/step3_2_03_select.shtml"-->
+		</div>
+		<!-- sticky button -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_action01">수정하기</button>
+		</div>
+		<!-- //sticky button -->
+		<!-- //현재 외관 평가 -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+<!--#include file="/ISPT/SHTML/03_work/inc/AC_MO_06_01080100.shtml"-->
+<script>
+	var showMap = function(_this) {
+		var wrap = _this.closest('.CPOpop_full');
+		var name = _this.getAttribute('name');
+		var input = wrap.querySelectorAll('[name="'+name+'"]');
+		var carMap = wrap.querySelector('.car_modify');
+		if(input[0].checked) {
+			carMap.style.display = 'block';
+		} else {
+			carMap.style.display = 'none';
+		}
+	}
+</script>

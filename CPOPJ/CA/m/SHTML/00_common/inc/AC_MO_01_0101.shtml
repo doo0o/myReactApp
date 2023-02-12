@@ -1,0 +1,17 @@
+<!-- AC_MO_01_0101 : 이용약관  - bottom -->
+<div class="CPOpop_bottom" id="AC_MO_01_0101">
+	<div class="p_head">
+		<h4 class="tit">이용약관</h4>
+	</div>
+	<div class="p_wrap">
+		<!-- 이용약관 -->
+		<div class="term_wrap">
+			<!--#include file="/NonCPO/SHTML/00_common/inc/sample_agree.shtml"-->
+		</div>
+		<div class="btn_sticky">
+			<button type="button" class="btn_action01">동의하기</button>
+		</div>
+		<!-- //이용약관 -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

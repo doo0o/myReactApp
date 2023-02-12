@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>상세 : 공지사항 : 현대 CUV</title>
+	<!--#include file="/CA/p/SHTML/00_common/include/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/c_customer.css">
+</head>
+<body>
+<!--#include file="/CA/p/SHTML/00_common/include/common_skip.shtml"-->
+<!--#include file="/CA/p/SHTML/00_common/include/layout_loading.shtml"-->
+<!-- CAwrap -->
+<div id="CAwrap">
+	<!--#include file="/CA/p/SHTML/00_common/include/layout_header.shtml"-->
+    <div id="CAcontents">
+        <div id="layoutWrap" class="customer">
+            <!-- container -->
+            <div class="container notice_detail"> 
+                <h1 class="page_tit">공지사항</h1>
+
+                <div class="top">
+                    <em class="title">[이벤트] 11월 차량할인 프로모션 종료 알림</em>
+                    <p class="date">2022.11.28</p>
+                </div>
+                <div class="cont">
+                    이 약관은 현대자동차 주식회사(이하 ‘회사’라 합니다)가 현대자동차 홈페이지 국문본(이하 ‘현대자동차 홈페이지’라 합니다) 및 이를 지원하기 위한 서버를 통하여 회원에게 제공하는 용역과 관련하여 회사와 회원과의 권리, 의무, 기타 필요한 사항을 규정함을 목적으로 합니다.<br>
+                    <br>
+                    11월 차량 할인 프로모션 종료됨을 알립니다.<br>
+                    종료 이후에 문의 주신 분들은 시간 지연 및 제한으로 인해 프로모션 참가 못한다는 점 양해 부탁드립니다.<br>
+                    이 약관은 현대자동차 주식회사(이하 ‘회사’라 합니다)가 현대자동차 홈페이지 국문본(이하 ‘현대자동차 홈페이지’라 합니다) 및 이를 지원하기 위한 서버를 통하여 회원에게 제공하는 용역과 관련하여 회사와 회원과의 권리, 의무, 기타 필요한 사항을 규정함을 목적으로 합니다.<br>
+                    <br>
+                    11월 차량 할인 프로모션 종료됨을 알립니다.<br>
+                    종료 이후에 문의 주신 분들은 시간 지연 및 제한으로 인해 프로모션 참가 못한다는 점 양해 부탁드립니다.<br>
+                    이 약관은 현대자동차 주식회사(이하 ‘회사’라 합니다)가 현대자동차 홈페이지 국문본(이하 ‘현대자동차 홈페이지’라 합니다) 및 이를 지원하기 위한 서버를 통하여 회원에게 제공하는 용역과 관련하여 회사와 회원과의 권리, 의무, 기타 필요한 사항을 규정함을 목적으로 합니다.<br>
+                    <br>
+                    11월 차량 할인 프로모션 종료됨을 알립니다.<br>
+                    종료 이후에 문의 주신 분들은 시간 지연 및 제한으로 인해 프로모션 참가 못한다는 점 양해 부탁드립니다.<br>
+                    이 약관은 현대자동차 주식회사(이하 ‘회사’라 합니다)가 현대자동차 홈페이지 국문본(이하 ‘현대자동차 홈페이지’라 합니다) 및 이를 지원하기 위한 서버를 통하여 회원에게 제공하는 용역과 관련하여 회사와 회원과의 권리, 의무, 기타 필요한 사항을 규정함을 목적으로 합니다.<br>
+                    <br>
+                    11월 차량 할인 프로모션 종료됨을 알립니다.<br>
+                    종료 이후에 문의 주신 분들은 시간 지연 및 제한으로 인해 프로모션 참가 못한다는 점 양해 부탁드립니다.
+                    <br>
+                </div>
+                <div class="btn_area col_type">
+                    <button type="button" class="btn_big color02">목록으로 가기</button>
+                </div>
+                <ul class="post_list">
+                    <li>
+                        <span class="txt">이전글</span>
+                        <a href="javascript:void(0)" class="tit">[공지사항] 현대자동차 CPOA 신규 회원가입 혜택 안내</a>
+                        <span class="date">2021.11.20</span>
+                    </li>
+                    <li>
+                        <span class="txt">다음글</span>
+                        <a href="javascript:void(0)" class="tit disabled">다음글이 없습니다.</a> <!-- 다음글이 없을 시 disabled 클래스 추가 -->
+                    </li>
+                </ul>
+            </div>
+            <!-- //container -->
+        </div>
+	</div> 
+	<!-- //CAcontents -->
+	<!--#include file="/CA/p/SHTML/00_common/include/layout_footer.shtml"-->
+</div>
+<!-- //CAwrap -->
+</body>
+<script>
+	toggle();
+</script>
+</html>

@@ -1,0 +1,38 @@
+<!-- AC_MO_05_0501 : 공지사항 상세 - full -->
+<div class="CPOpop_full" id="AC_MO_05_0501">
+	<div class="p_head">
+		<h4 class="tit">공지사항</h4>
+	</div>
+	<div class="p_wrap">
+		<!-- 공지사항 상세 -->
+		<div class="notice_detail">
+			<div class="box_scroll">
+				<div class="top">
+					<span class="tit">정규 시스템 정검 안내</span>
+					<span class="date">2021.11.28</span>
+				</div>
+				<div class="detail_cont">
+
+					12월 15일 정기 시스템 점검이 예정되어 있어 알려 드립니다.
+					<br />해당 시간에는 CPO 실사평가 관리 페이지에 접속할 수 없습니다. 
+					<br />
+					<br />일시 : 12월 15일 오전 01:00 ~ 02:00
+				</div>
+			</div>
+			<div class="post_list">
+				<ul>
+					<li>
+						<span>이전글</span>
+						<button type="button" class="btn_post">정기 시스템 정검 안내 정기 시스템 정검 안내</button>
+					</li>
+					<li>
+						<span>다음글</span>
+						<button type="button" class="btn_post" disabled>다음글이 없습니다.</button>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //공지사항 상세 -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

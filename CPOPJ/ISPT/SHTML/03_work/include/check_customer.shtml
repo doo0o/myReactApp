@@ -1,0 +1,29 @@
+<div class="sale_confirm">
+    <div class="top">
+        <h4 class="tit">고객 추가 입력 항목 확인</h4>
+    </div>
+    <div class="inner">
+        <dl class="car_info">
+            <dt>추가옵션
+                <button type="button" class="btn_txt07">튜닝이력</button>
+            </dt>
+            <dd>크롬 휠, 추가 네비게이션, 시야 확장 사이드 미러</dd>
+            <dt>사고여부
+                <button type="button" class="btn_txt07">보험이력</button>
+            </dt>
+            <dd>주차하다가 살짝 긁혔어요.</dd>
+            <dt>정비/수리필요</dt>
+            <dd>엔진 오일 교체가 필요해요</dd>
+            <dt>방문평가사 확인 의견</dt>
+            <dd>
+                <!-- textarea -->
+                <div class="textarea_01">
+                    <textarea name="" id="saleAccidentTxt" class="area" placeholder="50자 이내로 작성해 주세요" rows="3" cols="21" role="textbox"></textarea>
+                    <span class="txt_check"><em class="first">0</em> / <em class="last">50</em>자</span>
+                </div>
+                <!-- //textarea -->
+            </dd>
+        </dl>
+    </div>
+</div>
+<!-- //07. 고객 추가 입력 항목 확인 -->

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>현대차 CPO : 공통 레이아웃</title>
+	<!--#include file="inc_demo/common_meta.shtml"-->
+</head>
+<body class="layout">
+<!--#include file="inc_demo/common_skip.shtml"-->
+<div class="wrap">
+	<!--#include file="inc_demo/layout_header.shtml"-->
+	<!-- s: container -->
+	<div class="container sub">
+		<div id="contents">
+<!-- ////////////////////////////////////////////////////////////////    contents start    ///////////////////////////////////////////////////////////////////////-->
+	<!--#include file="inc_demo/layout_title.shtml"-->
+		
+<!-- ////////////////////////////////////////////////////////////////    contents start    ///////////////////////////////////////////////////////////////////////-->
+		</div>
+	</div>
+	<!-- e: container -->
+	<!--#include file="inc_demo/layout_footer.shtml"-->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,264 @@
+
+@mixin Mix_Icon_Car_Edit($display){// 내차팔기, 교환/판금 
+	&::before{
+		display:$display;
+		margin:0 auto;
+		width:18px;
+		height:18px;
+		border-radius:100%;
+		@include Mix_Form_Bg;
+		@if($display == inline-block){
+			vertical-align:middle;
+			margin:0 5px 0 0;
+		}
+	}
+	&.icon_w{
+		@if($display == block){
+			background:#C57D59;
+		}
+		&::before{
+			content:'';
+			background-position:0 -125px;
+		}
+	}
+	&.icon_x{
+		@if($display == block){
+			background:#3EA0C0;
+		}
+		
+		&::before{
+			content:'';
+			background-position:0 -148px;
+		}
+	}
+}
+
+// 교환/판금 수정 
+.car_modify{
+	> .top{
+		position:sticky;
+		top:0;
+		left:0;
+		z-index:3;
+		width:100%;
+		height:60px;
+		background:$COL_White;
+		border-bottom:1px solid $COL_Gray02;
+		padding:20px 21px 0;
+		text-align:right;
+		.info{
+			float:left;
+			padding:3px 0 0 0;
+			color:$COL_Gray05;
+			@include Mix_Font('Head-R', 13, 17);
+			&::before{
+				content:'';
+				display:inline-block;
+				width:14px;
+				height:11px;
+				@include Mix_Form_Bg;
+				background-position:-21px -131px;
+				vertical-align:middle;
+				margin:0 5px 0 0 ;
+			}
+		}
+	}
+}
+
+// 자동자 교환/판금 확인 자동자 영여기
+.car_area{
+	display:block;
+	padding:0 21px;
+	> dt{
+		padding:20px 0 0;
+		color:$COL_Gray08;
+		> span{
+			display:block;
+		}
+		.tit{
+			@include Mix_Font('Head-M', 18, 24);
+		}
+		.txt{
+			@include Mix_Font('Txt-R', 14, 18);
+		}
+	}
+	> dd{
+		padding:20px 0;
+		border-bottom:1px solid $COL_Gray02;
+		.carimg_box{//여백 있음 안됨
+			position:relative;
+			z-index:2;
+			&.up{
+				[class^=btn_area]{
+					width:10.5%;
+					height:8.5%;
+				}
+			}
+			&.down{
+				[class^=btn_area]{
+					width:5.5%;
+					height:5.5%;
+				}
+			}
+			.carimg{
+				width:100%;
+				img{
+					width:100%;
+				}
+			}
+		}
+		.carimg_info{
+			padding:20px 0 0;
+			text-align:center;
+			span{
+				display:inline-block;
+				margin:0 20px;
+				@include Mix_Icon_Car_Edit(inline-block);
+			}
+		}
+		[class^=btn_area]{
+			position:absolute;
+			border-radius:100%;
+			width:10%;
+			height:8%;
+			@include Mix_Size_0;
+			@include Mix_Icon_Car_Edit(block);
+		}
+		// 외판 중앙
+		.btn_area001{top:0;		left:44.9%;}
+		.btn_area002{top:8.9%;	left:44.9%;}
+		.btn_area003{top:19.2%;	left:44.9%;}
+		.btn_area004{top:81%;	left:45.1%;}
+		.btn_area005{top:91.8%;	left:44.8%;}
+		// 외판 좌측
+		.btn_area006{top:14.7%;	left:11%;}
+		.btn_area007{top:39.3%;	left:8.9%;}
+		.btn_area008{top:56.3%;	left:8.9%;}
+		// 외판 우측
+		.btn_area009{top:14.7%;	left:78.8%;}
+		.btn_area010{top:39.3%;	left:80.8%;}
+		.btn_area011{top:56.3%;	left:80.8%;}
+
+		// 골격 중앙
+		.btn_area201{top:14%;		left:35%;}
+		.btn_area202{top:25.6%;		left:34.8%;}
+		.btn_area203{top:20%;		left:41%;}
+		.btn_area204{top:14%;		left:59%;}
+		.btn_area205{top:25.5%;		left:59%;}
+		.btn_area206{top:20%;		left:53%;}
+		.btn_area207{top:33.6%;		left:47.3%;}
+		.btn_area208{top:52.9%;		left:47.3%;}
+		.btn_area209{top:78.8%;		left:47.2%;}
+		.btn_area210{top:89.1%;		left:47.3%;}
+
+		// 골격 하단
+		.btn_area211{top:72%;		left:33.1%;}
+		.btn_area212{top:81.5%;		left:34.5%;}
+		.btn_area213{top:72%;		left:61.4%;}
+		.btn_area214{top:81%;		left:60%;}
+
+		// 골격 좌측
+		.btn_area215{top:46%;		left:4%;}
+		.btn_area216{top:38%;		left:25%;}
+		.btn_area217{top:51.9%;		left:23.4%;}
+		.btn_area218{top:63.3%;		left:26.9%;}
+		.btn_area219{top:84.3%;		left:16.3%;}
+
+		// 골격 우측
+		.btn_area220{top:46%;		left:90.5%;}
+		.btn_area221{top:38%;		left:69%;}
+		.btn_area222{top:51.9%;		left:71.4%;}
+		.btn_area223{top:63.3%;		left:67.6%;}
+		.btn_area224{top:84.3%;		left:78.3%;}
+	}
+}
+// 교환/판금 선택 Layer 
+.layer_caredit{
+	position:fixed;
+	left:50%;
+	top:50%;
+	z-index:10;
+	transform:translate(-50%, -70%);
+	width:230px;
+	padding:18px;
+	background:$COL_White;
+	border:1px solid $COL_Gray03;
+	box-shadow: 0px 3px 6px rgba($COL_Gray08, 0.12);
+	display:none;
+	> .tit{
+		margin-bottom:10px;
+		color:$COL_Gray08;
+		@include Mix_Font('Head-M', 13, 17);
+		text-align:center;
+	}
+	.inner{
+		display:flex;
+		flex-wrap:wrap;
+		row-gap:9px;
+		align-items:center;
+		justify-content:space-between;
+		label{
+			width:calc(1/2*100% - (1 - 1/2)*5px);
+		}
+	}
+
+}
+
+
+.btn_reset01{// 내차팔기 초기화 버튼
+	color:$COL_Gray08;
+	@include Mix_Font('Head-R', 14, 18);
+	&::before{
+		content:'';
+		display:inline-block;
+		width:14px;
+		height:14px;
+		@include Mix_Form_Bg;
+		background-position:-40px -131px;
+		vertical-align:middle;
+		margin:0 2px 2px 0;
+	}
+	&::after{
+		content:'';
+		display:block;
+		position:absolute;
+		bottom:0;
+		right:0;
+		width:calc(100% - 18px);
+		height:1px;
+		background:COL_Text_Base04;
+	}
+
+}
+
+// 교환/판금 선택 Layer 
+.layer_caredit{
+	position:fixed;
+	left:50%;
+	top:50%;
+	z-index:10;
+	transform:translate(-50%, -70%);
+	width:230px;
+	padding:18px;
+	background:$COL_White;
+	border:1px solid $COL_Gray03;
+	box-shadow: 0px 3px 6px rgba($COL_Gray08, 0.12);
+	display:none;
+	> .tit{
+		margin-bottom:10px;
+		color:$COL_Gray08;
+		@include Mix_Font('Head-M', 13, 17);
+		text-align:center;
+	}
+	.inner{
+		display:flex;
+		flex-wrap:wrap;
+		row-gap:9px;
+		align-items:center;
+		justify-content:space-between;
+		label{
+			width:calc(1/2*100% - (1 - 1/2)*5px);
+		}
+	}
+
+}

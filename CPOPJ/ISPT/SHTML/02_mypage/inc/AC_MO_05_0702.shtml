@@ -1,0 +1,56 @@
+<!-- AC_MO_05_0702 : 업무요청 - modal -->
+<div class="CPOpop_modal" id="AC_MO_05_0702">
+	<div class="p_head">
+		<h4 class="tit">업무요청</h4>
+	</div>
+	<div class="p_wrap">
+		<!-- 업무요청 -->
+		<div class="work_request">
+			<ol>
+				<li>
+					<span class="tit base">요청구분</span>
+					<div class="select">
+						<select>
+							<option>선택</option>
+						</select>
+					</div>
+					<!-- 비활성화 시 disabled 속성 추가 -->
+					<!-- <div class="select">
+						<select disabled>
+							<option>선택</option>
+						</select>
+					</div> -->
+					<!-- // 비활성화 시 disabled 속성 추가 -->
+					<p class="txt_error">요청구분을 반드시 선택해 주세요.</p> <!-- 2022.06.08 추가 -->
+				</li>
+				<li>
+					<span class="tit base">요청상세</span>
+					<div class="textarea_01">
+						<textarea name="" id="saleAccidentTxt" class="area" placeholder="50자 이내로 작성해 주세요" rows="3" cols="21" role="textbox"></textarea>
+						<span class="txt_check"><em class="first">0</em> / <em class="last">50</em>자</span>
+					</div>
+					<!-- 비활성화 시 disabled 속성 추가 -->
+					<!-- <div class="textarea_01">
+						<textarea name="" id="saleAccidentTxt" class="area" placeholder="50자 이내로 작성해 주세요" rows="3" cols="21" role="textbox" disabled></textarea>
+						<span class="txt_check"><em class="first">0</em> / <em class="last">50</em>자</span>
+					</div> -->
+					<!-- // 비활성화 시 disabled 속성 추가 -->
+					<p class="txt_error">요청상세 내용을 반드시 입력해 주세요.</p> <!-- 2022.06.08 추가 -->
+				</li>
+				<li>
+					<span class="tit">처리결과</span>
+					<div class="txt">
+						미처리
+					</div>
+				</li>
+			</ol>
+		</div>
+		<!-- //업무요청 -->
+		<!-- sticky button -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_action01">확인</button>
+		</div>
+		<!-- //sticky button -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

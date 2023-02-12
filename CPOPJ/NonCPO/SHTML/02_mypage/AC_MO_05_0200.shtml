@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>실사검수사 모바일웹</title>
+	<!--#include file="/NonCPO/SHTML/po_inc/common_meta.shtml"-->
+	
+</head>
+<body>
+<!--#include file="/NonCPO/SHTML/po_inc/common_skip.shtml"-->
+<!--#include file="/NonCPO/SHTML/po_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		
+		<div class="h_detail">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h3 class="tit">지난평가</h3>
+			<ul class="util">
+				<li><a href="#" class="ic_request">업무요청 관리로 가기</a></li>
+				<li><button type="button" class="ic_menu" data-popup="sideMenu">메뉴</button></li>
+			</ul>
+		</div>
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+
+		<!-- sorting -->
+		<div class="plp_sorting">
+			<h5 class="tit">전체 <em>12,180</em><i>개</i></h5>
+		</div>
+		<!-- //sorting -->
+		<!-- noData -->
+		<div class="noData" >
+			<p class="tit">실사검수를 진행한 내역이 없습니다. </p>
+			<p class="btn"><a href="#" class="btn_middle02">홈으로 가기</a></p>
+		</div>
+		<!-- noData -->
+		<!-- list -->
+		<div class="plp_list">
+			<ol>
+				<li>
+					<!-- -->
+					<div class="unit_work01">
+						<div class="top">
+							<span class="tit">예약일자</span>
+							<span class="day">1월 25일 15시</span>
+							<span class="name">김현대</span>
+							<a href="#" class="btn_txt07">변경</a>
+						</div>
+						<div class="mid">
+							<span class="add">12345 경기도 하남시 대청로 119 부영아파트 777동 777호</span>
+							<span class="status">
+								☞1월25일 10:30 <i>평가 완료</i>
+							</span>
+						</div>
+						<div class="btn end"><!-- 버튼 2개 class add / 버튼 1개 class end -->
+							<button type="button" class="btn_middle01">평가내용</button>
+						</div>
+					</div>
+					<!-- -->
+				</li>
+				<li>
+					<!-- -->
+					<div class="unit_work01">
+						<div class="top">
+							<span class="tit">예약일자</span>
+							<span class="day">1월 25일 15시</span>
+							<span class="name">김현대</span>
+							<a href="#" class="btn_txt07">변경</a>
+						</div>
+						<div class="mid">
+							<span class="add">12345 경기도 하남시 대청로 119 부영아파트 777동 777호</span>
+							<span class="status">
+								☞1월25일 10:30 <i>평가 완료</i>
+							</span>
+						</div>
+						<div class="btn end"><!-- 버튼 2개 class add / 버튼 1개 class end -->
+							<button type="button" class="btn_middle01">평가내용</button>
+						</div>
+					</div>
+					<!-- -->
+				</li>
+				<li>
+					<!-- -->
+					<div class="unit_work01">
+						<div class="top">
+							<span class="tit">예약일자</span>
+							<span class="day">1월 25일 15시</span>
+							<span class="name">김현대</span>
+							<a href="#" class="btn_txt07">변경</a>
+						</div>
+						<div class="mid">
+							<span class="add">12345 경기도 하남시 대청로 119 부영아파트 777동 777호</span>
+							<span class="status">
+								☞1월25일 10:30 <i>평가 완료</i>
+							</span>
+						</div>
+						<div class="btn end"><!-- 버튼 2개 class add / 버튼 1개 class end -->
+							<button type="button" class="btn_middle01">평가내용</button>
+						</div>
+					</div>
+					<!-- -->
+				</li>
+			</ol>
+		</div>
+		<!-- //list -->
+
+
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/NonCPO/SHTML/po_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+
+
+</body>
+</html>

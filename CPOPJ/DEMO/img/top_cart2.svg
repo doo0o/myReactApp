@@ -1,0 +1,8 @@
+<svg id="Icon_Cart_24" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <rect id="Guide" width="20" height="20" fill="#fff" opacity="0"/>
+  <g id="icon" transform="translate(-1 0)">
+    <path id="패스_3217" data-name="패스 3217" d="M.686,1H3.567V13.568H16.682l2.472-9.431H6.32" transform="translate(0.824 0.311)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1.5"/>
+    <circle id="타원_64" data-name="타원 64" cx="1.5" cy="1.5" r="1.5" transform="translate(4.301 17)" fill="#fff"/>
+    <circle id="타원_65" data-name="타원 65" cx="1.5" cy="1.5" r="1.5" transform="translate(14.725 17)" fill="#fff"/>
+  </g>
+</svg>

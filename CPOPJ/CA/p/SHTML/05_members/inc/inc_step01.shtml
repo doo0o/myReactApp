@@ -1,0 +1,94 @@
+<div class="srch_address">
+    <!-- 01. 매매상사 입력 -->
+    <div class="addr_head">
+        <div class="tit">매매상사</div>
+        <div class="form_area">
+            <div class="inbox_type02 hs02" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+                <input type="text" class="txt" title="매매상사 조회" placeholder="매매상사 조회" name="" value="">
+                <button type="button" class="btn_delete">삭제</button>
+            </div>
+        </div>
+        <div class="btn_area">
+            <button type="button" class="btn_small color01">조회</button>
+        </div>
+    </div>
+    <!-- //01. 매매상사 입력 -->
+
+    <!-- 02. 검색결과 -->
+    <div class="address_list">
+        <div class="total">
+            <span class="tit">검색결과</span>
+            <span class="num">전체 <i>30</i>건</span>
+        </div>
+
+        <!--데이터 없을시-->
+        <div class="no_data error">
+            <p class="tit">검색결과가 없습니다.</p>
+            <p class="txt">찾으시는 매매상사명을 다시 한번 확인해 주시기 바라며, <br>
+                매매상사명이 검색되지 않을 경우,<br>
+                관리자에게 문의해 주시기 바랍니다.</p>
+        </div>
+        <!--//데이터 없을시-->
+
+        <!-- 데이터 있을시 -->
+        <div class="scroll_box">
+            <div class="list_cont">
+                <div class="item">
+                    <p class="tit">북수원 매매상사</p>
+                    <p class="name">홍길동</p>
+                    <button type="button" class="btn_tbl color02" title="매매상사 선택">선택</button>
+                </div>
+                <div class="item">
+                    <p class="tit">북수원 매매상사</p>
+                    <p class="name">홍길동</p>
+                    <button type="button" class="btn_tbl color02" title="매매상사 선택">선택</button>
+                </div>
+                <div class="item">
+                    <p class="tit">북수원 매매상사</p>
+                    <p class="name">홍길동</p>
+                    <button type="button" class="btn_tbl color02" title="매매상사 선택">선택</button>
+                </div>
+                <div class="item">
+                    <p class="tit">북수원 매매상사</p>
+                    <p class="name">홍길동</p>
+                    <button type="button" class="btn_tbl color02" title="매매상사 선택">선택</button>
+                </div>
+                <div class="item">
+                    <p class="tit">북수원 매매상사</p>
+                    <p class="name">홍길동</p>
+                    <button type="button" class="btn_tbl color02" title="매매상사 선택">선택</button>
+                </div>
+            </div>
+        </div>
+        <!-- //데이터 있을시 -->
+    </div>
+    <!-- //02. 검색결과 -->
+
+    <!-- 03. 정보입력 -->
+    <div class="inp_info">
+        <div class="tit">
+           <span class="point01">북수원 매매상사</span> 정보입력
+        </div>
+        <ul class="form_list type01">
+            <li>
+                <div class="form_area">
+                    <div class="inbox_type02 hs02" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+                        <input type="tel" class="txt type_business" title="사업자번호 입력" placeholder="사업자등록번호" maxlength="10"><!-- 사업자번호 : 'type_business' 입력값 하이픈 추가 기능 -->
+                        <button type="button" class="btn_delete">삭제 </button>
+                    </div>
+                    <!-- <p class="validation error">에러 메세지</p> -->
+                </div>
+            </li>
+            <li>
+                <div class="form_area">
+                    <div class="inbox_type02 hs02" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+                        <input type="tel" class="txt" title="매매상사코드 입력" placeholder="매매상사코드" maxlength="4">
+                        <button type="button" class="btn_delete">삭제 </button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- //03. 정보입력 -->
+</div>
+<!-- //매매상사 검색 -->

@@ -1,0 +1,169 @@
+<div class="sale_confirm">
+    <div class="top">
+        <h4 class="tit">방문평가사 추가 확인</h4>
+    </div>
+    <div class="inner">
+        <dl class="car_info">
+            <dt>유리복원</dt>
+            <dd class="km"><input type="text" class="inp_txt" pattern="[0-9]*" inputmode="numeric" name="" value=""> 판</dd>
+            <dt>유리찍힘</dt>
+            <dd class="km"><input type="text" class="inp_txt" pattern="[0-9]*" inputmode="numeric" name="" value=""> 판</dd>
+            <dt>시트</dt>
+            <dd>
+                <input type="checkbox" class="chk_type03" name="chkCode01" id="chkCode01_01">
+                <label for="chkCode01_01">앞좌석</label>
+                <input type="checkbox" class="chk_type03" name="chkCode01" id="chkCode01_02">
+                <label for="chkCode01_02">뒷좌석</label>
+                <input type="checkbox" class="chk_type03" name="chkCode01" id="chkCode01_03">
+                <label for="chkCode01_03">조수석</label>
+
+            </dd>
+            <dt>계기판 경고등 있음</dt>
+            <dd class="toggle">
+                <input type="checkbox" class="chk_type02" name="chkCode02" id="chkCode02_01" checked>
+                <label for="chkCode02_01">계기판 경고등 확인</label>
+            </dd>
+        <!-- 체크시 display:block -->
+            <dd class="cont" style="display:block">
+                <!-- textarea -->
+                <div class="textarea_01">
+                    <textarea name="" id="chkCode02_01Txt" class="area" placeholder="이상 소견을 텍스트나 이미지로 등록해주세요 
+                    " rows="3" cols="21" role="textbox"></textarea>
+                </div>
+                <div class="addphoto_list">
+                    <dl class="on">
+                        <dt>
+                            <input type="file" id="CarPhotoMore01" class="file_morephoto" data-file="chkPhoto0201" data-item="1" accept="image/*" multiple /><!-- data-item 에 최대 등록 수량 -->
+                            <label for="CarPhotoMore01">
+                                <span class="t01">사진 추가하기</span>
+                                <span class="t02"><em id="chkPhoto0101no">0</em>/1</span>
+                            </label>
+                        </dt>
+                        <dd>
+                            <ol class="list" id="chkPhoto0201"></ol>
+                        </dd>
+                    </dl>
+                </div>
+                <!-- //textarea -->
+            </dd>
+        <!-- //체크시 display:block -->
+            <dt>옵션기능 작동 이상</dt>
+            <dd class="toggle">
+                <input type="checkbox" class="chk_type02" name="chkCode02" id="chkCode02_02">
+                <label for="chkCode02_02">옵션기능 작동 확인</label>
+            </dd>
+        <!-- 체크시 display:block -->
+            <dd class="cont">
+                <!-- textarea -->
+                <div class="textarea_01">
+                    <textarea name="" id="chkCode02_02Txt" class="area" placeholder="이상 소견을 텍스트나 이미지로 등록해주세요 
+                    " rows="3" cols="21" role="textbox"></textarea>
+                </div>
+                <div class="addphoto_list">
+                    <dl class="on">
+                        <dt>
+                            <input type="file" id="CarPhotoMore" class="file_morephoto" data-file="chkPhoto0102" data-item="5" accept="image/*" multiple /><!-- data-item 에 최대 등록 수량 -->
+                            <label for="CarPhotoMore">
+                                <span class="t01">사진 추가하기</span>
+                                <span class="t02"><em id="chkPhoto0102no">0</em>/5</span>
+                            </label>
+                        </dt>
+                        <dd>
+                            <ol class="list" id="chkPhoto0102"></ol>
+                        </dd>
+                    </dl>
+                </div>
+                <!-- //textarea -->
+            </dd>
+        <!-- //체크시 display:block -->
+            <dt>누유</dt>
+            <dd class="toggle">
+                <input type="checkbox" class="chk_type02" name="chkCode02" id="chkCode02_03">
+                <label for="chkCode02_03">누유 확인</label>
+            </dd>
+        <!-- 체크시 display:block -->
+            <dd class="cont">
+                <!-- textarea -->
+                <div class="textarea_01">
+                    <textarea name="" id="chkCode02_03Txt" class="area" placeholder="이상 소견을 텍스트나 이미지로 등록해주세요 
+                    " rows="3" cols="21" role="textbox"></textarea>
+                </div>
+                <div class="addphoto_list">
+                    <dl class="on">
+                        <dt>
+                            <input type="file" id="CarPhotoMore" class="file_morephoto" data-file="chkPhoto0103" data-item="5" accept="image/*" multiple /><!-- data-item 에 최대 등록 수량 -->
+                            <label for="CarPhotoMore">
+                                <span class="t01">사진 추가하기</span>
+                                <span class="t02"><em id="chkPhoto0103no">0</em>/5</span>
+                            </label>
+                        </dt>
+                        <dd>
+                            <ol class="list" id="chkPhoto0103"></ol>
+                        </dd>
+                    </dl>
+                </div>
+                <!-- //textarea -->
+            </dd>
+        <!-- //체크시 display:block -->
+            <dt>범퍼</dt>
+            <dd class="toggle">
+                <input type="checkbox" class="chk_type02" name="chkCode02" id="chkCode02_04">
+                <label for="chkCode02_04">범퍼 확인</label>
+            </dd>
+        <!-- 체크시 display:block -->
+            <dd class="cont">
+                <!-- textarea -->
+                <div class="textarea_01">
+                    <textarea name="" id="chkCode02_04Txt" class="area" placeholder="이상 소견을 텍스트나 이미지로 등록해주세요 
+                    " rows="3" cols="21" role="textbox"></textarea>
+                </div>
+                <div class="addphoto_list">
+                    <dl class="on">
+                        <dt>
+                            <input type="file" id="CarPhotoMore" class="file_morephoto" data-file="chkPhoto0104" data-item="5" accept="image/*" multiple /><!-- data-item 에 최대 등록 수량 -->
+                            <label for="CarPhotoMore">
+                                <span class="t01">사진 추가하기</span>
+                                <span class="t02"><em id="chkPhoto0104no">0</em>/5</span>
+                            </label>
+                        </dt>
+                        <dd>
+                            <ol class="list" id="chkPhoto0104"></ol>
+                        </dd>
+                    </dl>
+                </div>
+                <!-- //textarea -->
+            </dd>
+        <!-- //체크시 display:block -->
+            <dt>라이트 이상</dt>
+            <dd class="toggle">
+                <input type="checkbox" class="chk_type02" name="chkCode02" id="chkCode02_05">
+                <label for="chkCode02_05">라이트 확인</label>
+            </dd>
+        <!-- 체크시 display:block -->
+            <dd class="cont">
+                <!-- textarea -->
+                <div class="textarea_01">
+                    <textarea name="" id="chkCode02_05Txt" class="area" placeholder="이상 소견을 텍스트나 이미지로 등록해주세요 
+                    " rows="3" cols="21" role="textbox"></textarea>
+                </div>
+                <div class="addphoto_list">
+                    <dl class="on">
+                        <dt>
+                            <input type="file" id="CarPhotoMore" class="file_morephoto" data-file="chkPhoto0105" data-item="5" accept="image/*" multiple /><!-- data-item 에 최대 등록 수량 -->
+                            <label for="CarPhotoMore">
+                                <span class="t01">사진 추가하기</span>
+                                <span class="t02"><em id="chkPhoto0105no">0</em>/5</span>
+                            </label>
+                        </dt>
+                        <dd>
+                            <ol class="list" id="chkPhoto0105"></ol>
+                        </dd>
+                    </dl>
+                </div>
+                <!-- //textarea -->
+            </dd>
+        <!-- //체크시 display:block -->
+        </dl>
+    </div>
+</div>
+<!-- //08. 방문평가사 추가 확인 -->

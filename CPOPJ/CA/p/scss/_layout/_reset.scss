@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, 
+acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, 
+sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, 
+embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, 
+section, summary, time, mark, audio, video {margin:0; padding:0;}
+
+body, th, td, input, select, 
+textarea, button{
+	color: $COL_black;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.25px;
+	font-family: $font;
+}
+
+*, *:before, *:after{box-sizing:border-box;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display: block;}
+
+body, html{width:100%;height:100%;}
+html {overflow: auto;}
+html.scroll_hidden {
+	overflow: hidden;
+	padding-right: 3px;
+}
+h1, h2, h3, h4, h5, h6{font-size: 100%;font-weight: inherit;}
+ol, ul, li ,dl, dt, dd{list-style:none outside none; padding:0; margin:0;}
+hr{display:none;}
+span{margin:0; padding:0; outline:0;}
+fieldset, img, table, caption, tbody, tfoot, thead, tr, th, td, button, hr{border:0;}
+address, caption, cite, code, dfn, em, strong, th, var, i{font-style: normal;}
+strong{font-weight:500;}
+blockquote, q{quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after{content: ''; content: none;}
+table{border-collapse:collapse;border-spacing:0;width:100%;word-break:break-word;}
+img{vertical-align:middle;}
+a{text-decoration:none; cursor:pointer; color:inherit}
+a:active, a:hover{text-decoration: none;}
+// a.link {color: $COL_black; text-decoration: underline;}
+input, select, label{vertical-align:middle;}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+textarea:focus,
+.selector:focus select,
+.selectorForm:focus select {outline:none;}
+input, select, textarea, button{vertical-align: middle; padding: 0; margin: 0; border: 0; caret-color: $COL_secondary1; background: transparent;}
+button,input[type='text'],input[type='search'],input[type='password'],input[type='tel'],input[type='num'],input[type='button'],input[type='submit'],input[type='reset'],input[type='file']{-webkit-appearance:button; border-radius:0}
+textarea{resize:none;width:100%;box-shadow:none;overflow: auto;}
+button{background-color: transparent; cursor: pointer; vertical-align: middle;}
+caption, legend{display:none;}
+option {font-weight:500}
+
+input[type=text]::-ms-clear {display:none;}
+
+:-webkit-input-placeholder {color:$COL_gs04;}
+:-moz-input-placeholder {color:$COL_gs04;}
+:-ms-input-placeholder {color:$COL_gs04;}
+::placeholder {color:$COL_gs04;}
+
+*::-webkit-scrollbar {
+	width: 13px;
+}
+*::-webkit-scrollbar-thumb {
+	background: rgba($COL_gs03, 0.36);
+	background-clip: padding-box;
+	border: 4px solid transparent;
+	border-radius: 10px;
+	box-shadow: 0px 0px 0px 1px rgba($COL_white,0.1) inset;
+	-webkit-box-shadow: 0px 0px 0px 1px rgba($COL_white,0.1) inset;
+	-moz-box-shadow: 0px 0px 0px 1px rgba($COL_white,0.1) inset;
+}
+*::-webkit-scrollbar-thumb:hover {
+	background: rgba($COL_gs03, 0.7);
+	background-clip: padding-box;
+	border: 4px solid transparent;
+	border-radius: 10px;
+}
+*::-webkit-scrollbar-track {
+	background: transparent;
+}

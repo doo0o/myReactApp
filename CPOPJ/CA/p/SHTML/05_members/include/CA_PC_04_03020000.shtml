@@ -1,0 +1,25 @@
+<!-- 휴대폰번호 변경 -->
+<div class="popup_full" id="CA_PC_04_03020000">
+    <div class="p_body">
+        <div class="p_inner s_small">
+            <div class="p_head">
+                <h2 class="tit">휴대폰번호 변경</h2>
+            </div>
+            <div class="p_wrap">
+                <!-- contents -->
+                <div class="inner_view change_info">
+                    <div class="step_cont">
+                        <!-- 휴대번호 입력 -->
+                        <!--#include file="/CA/p/SHTML/05_members/inc/inc_step03.shtml"-->
+                        
+                        <div class="btn_area">
+                            <button type="button" class="btn_big color01" disabled>변경</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- //contents -->
+            </div>
+            <button type="button" class="pop_close">닫기</button>
+        </div>
+    </div>
+</div>

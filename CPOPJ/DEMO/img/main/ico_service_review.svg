@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Icon" transform="translate(-473 0.227)">
+    <rect id="Guide" width="20" height="20" transform="translate(473 -0.227)" fill="#fff" opacity="0"/>
+    <path id="message" d="M18,18l-4.61-1.153a9,9,0,1,1,3.458-3.458Zm-5.086-7.826A1.174,1.174,0,1,1,14.088,9,1.174,1.174,0,0,1,12.914,10.174ZM9,10.174A1.174,1.174,0,1,1,10.175,9,1.173,1.173,0,0,1,9,10.174Zm-3.912,0A1.174,1.174,0,1,1,6.263,9,1.174,1.174,0,0,1,5.09,10.174Z" transform="translate(474.001 0.773)" fill="#fff" fill-rule="evenodd"/>
+  </g>
+</svg>

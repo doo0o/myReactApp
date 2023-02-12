@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>현대차 CPO : 인트로</title>
+	<!--#include file="inc_demo/common_meta.shtml"-->
+	<link rel="stylesheet" href="../css/main.css">
+</head>
+<body class="CPOintro">
+<!--#include file="inc_demo/common_skip.shtml"-->
+<div id="CPOwrap">
+	<!-- s: container -->
+	<div class="container">
+		<div id="contents">
+<!-- ////////////////////////////////////////////////////////////////    contents start    ///////////////////////////////////////////////////////////////////////-->
+			<div class="intro_wrap">
+				<div class="logo"><h1>현대 로고</h1></div>
+				<!-- 02 : right  -->
+				<div class="intro_get">
+					<!-- right : step 1 -->
+					<div class="text_box" id="step_1">
+						<div class="title">내차사기</div>
+						<div class="text">나에게 맞는 차량을<br><span class="shadow right">구매</span>할래요.</div>
+					</div>
+					<!-- right : step 2 -->
+					<div class="today_text_box" id="step_2">
+						<p class="today">2021년 9월 3일</p>
+						<div class="today_text">
+							<div class="title">오늘 준비된 차량은</div>
+							<div class="text"><span class="count"><em class="num"></em>대</span>입니다!</div>
+						</div>
+						<div class="input_box">
+							<label class="input_search_intro">
+								<input type="text" placeholder="검색을 원하시나요?">
+								<button class="btn_search_intro">검색</button>
+							</label>
+						</div>
+					</div>
+					
+					<!-- right : step 3 -->
+					<div class="car_wrap" id="step_3">
+						<div class="item01">
+							<div class="car_txt"><em >1</em><i>st</i><span>그랜저 IG</span></div>
+							<a href="CPO_DP_M0004.shtml"class="car_img"><img src="../img/intro/img_intro_car_1st.png" alt="판매 인기 1등"></a>
+						</div>
+						<div class="item02">
+							<div class="car_txt"><em >2</em><i>nd</i><span>투싼 하이브리드</span></div>
+							<a href="CPO_DP_M0004.shtml" class="car_img"><img src="../img/intro/img_intro_car_2nd.png" alt="판매 인기 2등"></a>
+						</div>
+						<div class="item03">
+							<div class="car_txt"><em >3</em><i>rd</i><span>더 뉴 그랜저</span></div>
+							<a href="CPO_DP_M0004.shtml" class="car_img"><img src="../img/intro/img_intro_car_3rd.png" alt="판매 인기 3등"></a>
+						</div>
+					</div>
+					<a href="CPO_DP_M0004.shtml" class="intro_popular_text">
+						<span class="title">박보은님을 위한 차량 추천</span>
+					</a>
+				</div>
+				<!-- //02 : right  -->
+				<!-- 01 : left  -->
+				<div class="intro_sell_wrap">
+					<div class="intro_sell">
+						<div class="text_box">
+							<div class="title">내차팔기</div>
+							<div class="text">내가 타던 차량을<br><span class="shadow left">판매</span>할래요.</div>
+						</div>
+					</div>
+				</div>
+				<!-- //01 : left  -->
+			</div>
+<!-- ////////////////////////////////////////////////////////////////    contents end    ///////////////////////////////////////////////////////////////////////-->
+		</div>
+	</div>
+	<!-- e: container -->
+</div>
+</body>
+<script>
+	function intro_touch(){
+		var introWrap = document.querySelector('.intro_wrap');
+		var introGet = document.querySelector('.intro_get');
+		var introSell = document.querySelector('.intro_sell');
+		introWrap.addEventListener('touchstart', function(event) {
+			var touch = event.touches[0];
+			touchstartX = touch.clientX;
+			console.log(touchstartX);
+			windowW = $(window).width() / 2;
+			$('.text_box').addClass('hide');
+			if(touchstartX < windowW){
+				// 왼쪽 터치
+				$('.intro_sell_wrap').addClass('left');
+				$('.intro_sell_wrap').removeClass('right');
+			} else if (touchstartX > windowW){
+				// 오른쪽 터치
+				$('.intro_sell_wrap').addClass('right');
+				$('.intro_sell_wrap').removeClass('left');
+			}
+			if($('.intro_get').hasClass('on')){
+				$('.intro_wrap').addClass('fixed');
+			} else {
+				$('.intro_wrap').removeClass('fixed');
+			}
+		}, false);
+		introWrap.addEventListener('touchend', function(event) {
+			var touch = event.changedTouches[event.changedTouches.length - 1];
+			touchendX = touch.clientX;
+			if($('.intro_get').hasClass('on') == false){
+				if(touchstartX == touchendX){
+					$('.text_box').removeClass('hide');
+				}
+			}
+		}, false);
+		introWrap.addEventListener('touchmove', function(event) {
+			var touch = event.touches[0];
+			touchmoveX = touch.clientX;
+			touchoffsetX = touchmoveX - touchstartX;
+			touchToLeft = (touchstartX - touchmoveX) / 2;
+			if(touchoffsetX < 0){
+				// 오른쪽에서 왼쪽 드래그
+				$('.intro_sell').css({'width':(50 - touchToLeft) + '%'});
+				introWrap.addEventListener('touchend', function(event) {
+					if(touchToLeft > 15){
+						$('.intro_sell').css({'width':'0%'});
+						$('.intro_get').addClass('on');
+						$('.text_box').addClass('hide');
+						$('.intro_link_main').addClass('on');
+						// setTimeout(() => {
+							// setTimeout(() => {
+								$('.intro_get').addClass('fade');
+								$('.today_text_box').addClass('hide');
+								setTimeout(() => {
+									$('.today_text_box').removeClass('hide');
+									//$('.today_text_box .today').text('전일 18시 기준');
+									$('.today_text_box .today').css("display", "none");
+									$('.today_text_box .today_text').html(
+										'<div class="title">오늘의 <span class="under">판매 인기</span></div><div class="text">Top3 모델입니다!</div>'
+									);
+									$('.intro_get').addClass('popular');
+									if($('.intro_get').hasClass('popular')){
+										setTimeout(() => {
+													$('.car_wrap .item01').addClass('on');
+											setTimeout(() => {
+													$('.car_wrap .item02').addClass('on');
+												setTimeout(() => {
+													$('.car_wrap .item03').addClass('on');
+												}, 100); // 2번 나오고 3번 나오는 시간
+											}, 200); // 1번 나오고 2번 나오는 시간
+										}, 300); // 1번 차 이미지 나오는 시간
+									}
+								}, 3000); // 커지면서 검은화면 되는 시간
+							// }, 000); // 카운트 돌면서 멈춰있는 시간
+						// }, 2000); // 0% 됐을 때 커지는 시간
+					} else if(touchToLeft <= 15) {
+						$('.intro_sell').css({'width':'50%'});
+						$('.text_box').removeClass('hide');
+					}
+				});
+			}
+			else if(touchoffsetX > 0) {
+				// 왼쪽에서 오른쪽 드래그
+				$('.intro_sell').css({'width':(50 + touchoffsetX) + '%'});
+				introWrap.addEventListener('touchend', function(event) {
+					if(touchoffsetX > 15){
+						$('.intro_sell').css({'width': '100%'});
+						$('.text_box').addClass('hide');
+					} else if(touchoffsetX <= 15) {
+						$('.intro_sell').css({'width': '50%'});
+						$('.text_box').removeClass('hide');
+					}
+				});
+			}
+		}, false);
+	};
+	intro_touch();
+	function car_count(){
+		var counterNum = 312432;
+		counterControl( $('.today_text .num') , counterNum);
+		function counterControl( target , number , config ){
+			var _target = target;
+			var number = number.toString();
+			var numArray = number.split("");
+			var isBg = false;
+			var defaults = {
+				speed: 1000,
+				isDigitBg: false,
+				comma: true
+			}
+			$.extend(defaults, config);
+			_target.empty();
+			_target.html('<span class="pplNum"></span>');
+			for(var i=0; i<numArray.length; i++) { 
+				var html = '';
+				numArray[i] = parseInt(numArray[i], 10);
+				if( defaults.isDigitBg ){
+					html = '<span class="digit-con"><span class="digit'+i+'"></span></span>';
+				}else{
+					html = '<span class="digit-con"><span class="digit'+i+'">0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>0<br>1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br></span></span>';
+				}
+				_target.find('.pplNum').append(html);	
+			}
+			if( defaults.comma ){
+				_target.find(".digit-con:nth-last-child(3n+4)").after("<span class='comma'>,</a>");
+			}
+			checkScroll();
+			
+			$(window).bind('scroll', function(){
+				checkScroll();
+			});
+			function checkScroll(){
+				if( _target.offset().top < $(window).scrollTop() + $(window).height() ){
+					for(var i=0; i<numArray.length; i++) {
+						var increment = _target.find('.digit-con').outerHeight();
+						_target.find('.digit'+i).delay(i*300).animate({top: -( (increment * numArray[i]) + (increment*10) )}, defaults.speed , 'linear');
+					}
+				}
+			}
+		}
+	};
+	car_count();
+	let vh = window.innerHeight * 0.01
+	document.documentElement.style.setProperty('--vh', `${vh}px`)
+	window.addEventListener('resize', () => {
+		let vh = window.innerHeight * 0.01
+		document.documentElement.style.setProperty('--vh', `${vh}px`)
+	});
+</script>
+</html>

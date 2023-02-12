@@ -1,0 +1,63 @@
+@charset "UTF-8";
+.blind{position:absolute;width:1px;height:1px;clip:rect(0 0 0 0);overflow: hidden;}
+.clearfix::after{content:'';display:block;clear:both;}
+
+/* s:CPO_OR_M0001 나의 차고 */
+.CPOcart .container{padding:0;}
+.CPOcart_head{background-color:#fff;}
+.btn_cart_search{display:inline-block;width:20px;height:20px;background-image:url(../img/thumb/icon_cart_search.png);background-repeat:no-repeat;background-size:20px auto;vertical-align:middle;}
+.btn_cart_delete{display:block;position:absolute;right:0px;top:-1px;width:24px;height:24px;background-image:url(../img/thumb/icon_cart_delete.png);background-repeat:no-repeat;background-size:24px auto;}
+
+.CPOcart_head .tit{font-size:17px!important;}
+
+.item_list{margin-bottom:9px;padding:28px 20px 20px;background-color:#fff;}
+.item_list:last-child{margin:0;}
+.item_list .item_head{display:flex;}
+.item_list .item_head .img_box{position:relative;flex:0 0 110px;width:110px;}
+.item_list .item_head .img_box a{display:block;}
+.item_list .item_head .img_box a img{display:block;width:100%;}
+.item_list .item_head .img_box .chk_box{position:absolute;left:8px;top:8px;}
+.item_list .item_head .info_area{position:relative;flex:1 auto;margin-left:14px;padding-right:24px;}
+.item_list .item_head .info_area .name{font-size:17px;font-family:"HynSans_Head-R";word-break:keep-all}
+.item_list .item_head .info_area .desc_box{margin-top:12px;color:#808080;}
+.item_list .item_head .info_area .desc_box span:not(:first-child)::before{content:'·';display:inline-block;margin-right:4px;color:#b3b3b3;vertical-align:middle;}
+.item_list .item_head .info_area .price_box{margin-top:18px;}
+.item_list .item_head .info_area .price_box .price{color:#002c5f;font-size:18px;font-family:"HynSans_Head-R";}
+.item_list .item_head .info_area .price_box .price .num{margin-right:2px;font-size:20px;font-family:"HynSans_Head-M";}
+.item_list .btn_area{display:flex;justify-content:space-between;margin-top:15px;}
+.item_list .btn_area [class ^= 'btn_cart_']{display:flex;justify-content:center;align-items:center;flex:0 0 calc(50% - 3px);width:calc(50% - 3px);height:36px;font-size:13px;}
+.item_list .btn_area .btn_cart_alarm{border:1px solid #dedede;color:#585858;}
+.item_list .btn_area .btn_cart_order{background-color:#007fa8;color:#fff;font-family:"HynSans_Txt-M";}
+
+.item_price{margin-top:20px;background-color:#f6f6f6;}
+.item_price .price_area{padding:20px 20px 15px;}
+.item_price .total_price{display:flex;justify-content:space-between;color:#002c5f;font-size:16px;}
+.item_price .total_price .text{font-family:"HynSans_Txt-B";}
+.item_price .total_price .price{font-family:"HynSans_Head-M";}
+
+.group_price{margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid rgba(0,0,0,.07);}
+.group_price .step01, .group_price .step02 li{display:flex;justify-content:space-between;}
+.group_price [class ^= 'step']{color:#4d4d4d;}
+.group_price .step01 .price{font-family:"HynSans_Head-M";}
+.group_price .step02{margin:8px 0 0 14px;}
+.group_price .step02 .text{color:#a0a0a0;font-size:13px;}
+.group_price .step02 .text .price{font-family:"HynSans_Head-R";}
+.group_price .step02 li:not(:first-child){margin-top:7px;}
+
+.cart_wrap{background-color:#ebf0f2;}
+.cart_wrap .pdp09_recomend{margin-top:60px;padding:23px 0 42px 20px;border:none;background-color:#fff;}
+.cart_wrap [class^="pdp"] > .top{padding-bottom:9px;}
+.cart_wrap .plp_type03 .unit_info .desc{margin-bottom:3px;}
+
+.btn_fixed_area{position:fixed;left:0;bottom:0;width:100%;font-family:"HynSans_Head-R";z-index:601;}
+.btn_fixed_area.select .btn_order_dis{display:none;}
+.btn_fixed_area.select .btn_order{display:flex;}
+.btn_fixed_area.compare .fixed_order{display:none;}
+.btn_fixed_area.compare .fixed_compare{display:flex;}
+.btn_fixed_area .btn_order_dis{display:flex;justify-content:center;align-items:center;width:100%;height:56px;background-color:#b3b3b3;color:rgba(255,255,255,.4);font-size:16px;}
+.btn_fixed_area .btn_order{display:none;justify-content:center;align-items:center;width:100%;height:56px;background-color:#002c5f;color:#fff;font-size:16px;}
+.btn_fixed_area .fixed_compare{display:none;justify-content:center;width:100%;height:56px;background-color:#002c5f;}
+.btn_fixed_area .fixed_compare .btn_mg_compare{display:flex;justify-content:center;align-items:center;flex:0 0 50%;width:50%;color:#fff;}
+.btn_fixed_area .fixed_compare .btn_mg_compare:not(:first-child){border-left:1px solid #405d80;}
+
+/* e:CPO_OR_M0001 나의 차고 */

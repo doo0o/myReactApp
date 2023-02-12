@@ -1,0 +1,9 @@
+
+<div class="h_detail">
+	<button type="button" class="ic_back">뒤로가기</button>
+	<h3 class="tit">24더 3215</h1>
+	<ul class="util">
+		<li><a href="#" class="ic_request">알림</a><i class="ico_new">N</i></li> <!-- 2022.08.10 new 추가 -->
+		<li><button type="button" class="ic_menu" data-popup="sideMenu">메뉴</button></li>
+	</ul>
+</div>

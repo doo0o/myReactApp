@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>현대차 CPO : 결제 및 서명</title>
+	<!--#include file="inc_demo/common_meta.shtml"-->
+	<link rel="stylesheet" href="../css/order.css">
+</head>
+<body>
+<!--#include file="inc_demo/common_skip.shtml"-->
+<div id="CPOwrap" class="CPOorder">
+	<!-- s: container -->
+	<div class="container">
+		<div id="contents">
+<!-- ////////////////////////////////////////////////////////////////    contents start    ///////////////////////////////////////////////////////////////////////-->
+			<div class="order_cont_top">
+				<!--  s: title area : SUB  -->
+				<div class="h_sub " id="stickyTit">
+					<button type="button" class="icon_back">뒤로가기</button>
+					<h3 class="tit">결제</h3>
+				</div>
+				<!--  e: title area : SUB  -->
+				<div class="order_title">
+					<div class="title">결제가 완료되면
+						<p><span class="highlight">계약완료 버튼</span>을 탭하세요.</p>
+					</div>
+				</div>
+			</div>
+			<div class="order_content">
+				<div class="cont_visual payment">
+					<div class="title_box">
+						<p class="title">결제대기 금액</p>
+						<p class="price"><em class="num">0</em>원</p>
+					</div>
+					<div class="progress_box">
+						<ul class="list_progress">
+							<li class="item_progress">
+								<p class="text">할부신청<em>완료</em></p>
+							</li>
+							<li class="item_progress">
+								<p class="text">포인트결제<em>완료</em></p>
+							</li>
+							<li class="item_progress">
+								<p class="text">현금결제<em>완료</em></p>
+							</li>
+							<li class="item_progress">
+								<p class="text">카드결제<em>완료</em></p>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="order_section_wrap">
+					<ol class="order_section">
+						<li class="item_order step01">
+							<div class="cont_payment">
+								<div class="item_title_box">
+									<div class="title">1. 할부결제<span class="flag">신청완료</span></div>
+									<a href="#" class="btn_link_order"><span class="blind">링크버튼</span></a>
+								</div>
+								<div class="cont_section">
+									<div class="group_payment month">
+										<div class="title_box">
+											<p class="title">결제금액</p>
+											<p class="price"><em class="num">20,000,000</em>원</p>
+										</div>
+										<div class="payment_info">
+											<div class="head">
+												<p class="text">현대캐피탈 중고차론</p>
+												<p class="price">월 <em class="num">551,230</em>원</p>
+											</div>
+											<div class="text_box">
+												<p class="text">이용기간 60개월</p>
+												<p class="text">확정금리 5.25%</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cont_payment">
+								<div class="item_title_box">
+									<div class="title">2. 포인트결제<span class="flag">결제완료</span></div>
+									<a href="#" class="btn_link_order"><span class="blind">링크버튼</span></a>
+								</div>
+								<div class="cont_section">
+									<div class="group_payment cash">
+										<div class="title_box">
+											<p class="title">결제금액</p>
+											<p class="price"><em class="num">500,000</em>원</p>
+										</div>
+										<div class="payment_info">
+											<div class="head">
+												<p class="text">블루멤버스 포인트 차감</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cont_payment">
+								<div class="item_title_box">
+									<div class="title">3. 현금결제<span class="flag">입금완료</span></div>
+									<a href="#" class="btn_link_order"><span class="blind">링크버튼</span></a>
+								</div>
+								<div class="cont_section">
+									<div class="group_payment cash">
+										<div class="title_box">
+											<p class="title">결제금액</p>
+											<p class="price"><em class="num">11,260,000</em>원</p>
+										</div>
+										<div class="payment_info">
+											<div class="head">
+												<p class="text">우리은행</p>
+											</div>
+											<div class="text_box">
+												<p>1002-345-678912</p>
+											</div>
+											<div class="btn_area">
+												<a href="#" class="btn_payment">입금 확인</a>
+												<a href="#" class="btn_payment">입금내역 조회</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cont_payment">
+								<div class="item_title_box">
+									<div class="title">4. 카드결제<span class="flag">입금완료</span></div>
+									<a href="#" class="btn_link_order"><span class="blind">링크버튼</span></a>
+								</div>
+								<div class="cont_section">
+									<div class="group_payment card">
+										<div class="title_box">
+											<p class="title">결제금액</p>
+											<p class="price"><em class="num">9,140,000</em>원</p>
+										</div>
+										<div class="payment_info">
+											<div class="head">
+												<p class="text">현대카드 (무이자6개월)</p>
+											</div>
+											<div class="text_box">
+												<p class="text">1234-****-****-**12</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="item_order last">
+							<div class="agree_box">
+								<div class="chk_box">
+									<label class="chk_order01">
+										<input type="checkbox" name="chk_order01" checked>
+										<span></span>
+									</label>
+									<p class="text">계약에 관한 모든 약관에 동의합니다.</p>
+								</div>
+								<a href="#" class="btn_link_text">약관보기</a>
+							</div>
+						</li>
+					</ol>
+				</div>
+				<div class="btn_fixed_area">
+					<div class="fixed_order">
+						<a href="CPO_OR_M0021.shtml" class="btn_order">계약완료</a>
+					</div>
+				</div>
+			</div>
+<!-- ////////////////////////////////////////////////////////////////    contents start    ///////////////////////////////////////////////////////////////////////-->
+		</div>
+	</div>
+	<!-- e: container -->
+	<!--#include file="inc_demo/layout_footer.shtml"-->
+</div>
+</body>
+</html>

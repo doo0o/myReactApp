@@ -1,0 +1,44 @@
+<div class="popup_full" id="CA_PC_03_02010200">
+    <div class="p_body">
+        <div class="p_inner s_mid"><!-- s_small/s_mid/s_large -->
+            <div class="p_head">
+                <h2 class="tit">압류/저당/영치 조회</h2>
+            </div>
+            <div class="p_wrap">
+                <!-- contents -->
+                <div class="inner_view"> 
+                    <div class="data_rule">
+                        <p class="txt">2022.11.01 기준</p>
+                    </div>
+                    <table class="table">
+                        <colgroup>
+                           <col style="width: 18%" />
+                           <col style="width: 32%"/>
+                           <col style="width: 18%" />
+                           <col />
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th>압류</th>
+                                <td>1간</td>
+                                <th>저당</th>
+                                <td>0건</td>
+                            </tr>
+                            <tr>
+                                <th>영치</th>
+                                <td>1간</td>
+                                <th>하이패스 미납</th>
+                                <td>없음</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="btn_area">
+                        <button type="button" class="btn_big color01">확인</button>
+                    </div>
+                </div>
+                <!-- //contents -->
+            </div>
+            <button type="button" class="pop_close">닫기</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+<!-- AC_MO_06_01050000 : 튜닝이력 조회 - modal -->
+<div class="CPOpop_modal" id="AC_MO_06_01050000">
+	<div class="p_head">
+		<h4 class="tit">튜닝이력 조회</h4>
+	</div>
+	<div class="p_wrap">
+		<!-- 데이터 없을 시 2022.06.08 추가 -->
+		<div class="noData">
+			<p class="tit">데이터가 존재하지 않습니다. </p>
+		</div>
+		<!-- // 데이터 없을 시 2022.06.08 추가 -->
+		<!-- 튜닝이력 조회 -->
+		<div class="sale_car02">
+			<dl class="car_info">
+				<dt>11월12일</dt>
+				<dd>[엔진] 엔진 교체</dd>
+				<dt>11월12일</dt>
+				<dd>[엔진] 엔진 교체</dd>
+				<dt>11월12일</dt>
+				<dd>[엔진] 엔진 교체</dd>
+				<dt>11월12일</dt>
+				<dd>[엔진] 엔진 교체</dd>
+				<dt>11월12일</dt>
+				<dd>[엔진] 엔진 교체</dd>
+				<dt>11월12일</dt>
+				<dd>[엔진] 엔진 교체</dd>
+				<dt>11월12일</dt>
+				<dd>[엔진] 엔진 교체</dd>
+				<dt>11월12일</dt>
+				<dd>[엔진] 엔진 교체</dd>
+				<dt>11월12일</dt>
+				<dd>[엔진] 엔진 교체</dd>
+				<dt>11월12일</dt>
+				<dd>[엔진] 엔진 교체</dd>
+				<dt>11월12일</dt>
+				<dd>[엔진] 엔진 교체</dd>
+				<dt>11월12일</dt>
+				<dd>[엔진] 엔진 교체</dd>
+			</dl>
+		</div>
+		<!-- //튜닝이력 조회 -->
+		<!-- sticky button -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_action01">확인</button>
+		</div>
+		<!-- //sticky button -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

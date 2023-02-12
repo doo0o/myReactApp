@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>현대차 CPO : 메인</title>
+	<!--#include file="inc_demo/common_meta.shtml"-->
+	<script src="../js/uxui/lib/jquery-ui.min.js"></script>
+</head>
+<body>
+<!--#include file="inc_demo/common_skip.shtml"-->
+<div id="CPOwrap" class="pdpArea">
+	<!-- s: container -->
+	<div class="container">
+		<div id="contents">
+<!-- ////////////////////////////////////////////////////////////////    contents start    ///////////////////////////////////////////////////////////////////////-->
+			<!--  s: title area : 상품상세  -->
+			<div class="h_detail">
+				<button type="button" class="icon_back">뒤로가기</button>
+				<h3 class="tit">24더 3215</h3>
+				<a href="#" class="icon_sns2"><img src="../img/top_sns2.svg" alt="" /></a>
+				<a href="#" class="icon_cart2"><img src="../img/top_cart2.svg" alt="" /></a>
+			</div>
+			<!--  e: title area : 상품상세  -->
+			<!--  s: 01. 차량 이미지  -->
+			<div class="pdp01_car">
+				<div class="zoom"><button type="button" class="btn_view">자세한 이미지와 영상을 확인 하세요</button></div>
+				<div class="visual_img">
+					<ol class="swiper-wrapper">
+						<li class="swiper-slide"><img src="../img/thumb/pdp_car_img.jpg" alt="" /></li>
+						<li class="swiper-slide"><div class="play"><button type="button">플레이</button></div><img src="../img/thumb/car_visual_02.jpg" alt="" /></li>
+						<li class="swiper-slide">
+							<div class="inner">
+								<p><img src="../img/thumb/car_visual_03.jpg" alt="" /></p>
+								<p><img src="../img/thumb/car_visual_04.jpg" alt="" /></p>
+								<p><img src="../img/thumb/car_visual_05.jpg" alt="" /></p>
+							</div>
+						</li>
+						<li class="swiper-slide">
+							<div class="inner">
+								<p><img src="../img/thumb/car_visual_08.jfif" alt="" /></p>
+								<p><img src="../img/thumb/car_visual_09.jfif" alt="" /></p>
+								<p><img src="../img/thumb/car_visual_10.jpg" alt="" /></p>
+								<p><img src="../img/thumb/car_visual_11.jpg" alt="" /></p>
+								<p><img src="../img/thumb/car_visual_12.jpg" alt="" /></p>
+								<p><img src="../img/thumb/car_visual_13.jpg" alt="" /></p>
+							</div>
+						</li>
+					</ol>
+					<div class="swiper-pagination"></div>
+				</div>
+				<div class="zoom2"><button type="button" class="btn_view">닫기</button></div>
+			</div>
+			
+
+			<!--  s: 02. 차량 가격정보  -->
+			<div class="pdp02_price">
+				<!--  차량 정보  -->
+				<div class="flag">
+					<span class="cod_01">신차급</span>
+					<span class="cod_02">1인 소유차량</span>
+				</div>
+				<div class="name">더 뉴 그랜저 가솔린 3.3 캘리그래피</div>
+				<div class="drive">
+					<span>21년 1월</span>
+					<span>50,000km</span>
+					<span>휘발유  </span>
+				</div>
+				<div class="price">
+					<span class="pay"><em>3,820</em><i>만원</i></span>
+					<span class="install">할부 월 <em>55</em>만원</span>
+					<button type="button" class="calc">금융계산기</button>
+				</div>
+				<!--  //차량 정보  -->
+				<!--  성능 그래프  -->
+				<div class="chart">
+					<ul>
+						<li><div class="pie donut_1"><span>75<i>%</i></span></div>
+							<button type="button" class="detail">신차대비</button>
+						</li>
+						<li><div class="pie"><span>9.6</span></div>
+							<button type="button" class="detail">인증점수</button>
+						</li>
+						<li><div class="pie"><span>8.9</span></div>
+							<button type="button" class="detail">성능진단</button>
+						</li>
+						<li><div class="pie"><span>2</span></div>
+							<button type="button" class="detail">보험이력</button>
+						</li>
+					</ul>
+				</div>
+				<!--  //성능 그래프  -->
+				<!-- 안내 01 -->
+				<div class="notice_01">
+					<p class="btn_arrow01"><i>적정 시세 대비가격 낮음</i> 차량입니다.</p>
+				</div>
+				<!-- //안내 01 -->
+				<!-- 안내 02 -->
+				<div class="notice_02">
+					<p>차고에 담은 사람 500명, 찜한 사람 1,200명이 있습니다.</p>
+				</div>
+				<!-- //안내 02 -->
+			</div>
+			<!--  e: 02. 차량 가격정보  -->
+
+			<!--  s: 02-1. fixed - 버튼   -->
+			<div class="pdp_button">
+				<ul>
+					<li class="wish"><input type="checkbox" class="chk_wish02" name="ck_ProductWish" id="ck_wish01" /><label for="ck_wish01">찜하기</label></li>
+					<li class="cart"><a href="CPO_OR_M0001.shtml" class="btn_cart">차고담기</a></li>
+					<li class="buy"><button type="button" class="btn_buy">구매하기</button></li>
+				</ul>
+			</div>
+			<!--  e: 02-1. fixed - 버튼   -->
+
+			<!--  s: 02-2. 버튼   -->
+			<div class="pdp_tabs">
+				<ul class="on_1" id="pdpTab">
+					<li><button type="button" data-href="pdpTab-01">기본정보</button></li>
+					<li><button type="button" data-href="pdpTab-02">옵션정보</button></li>
+					<li><button type="button" data-href="pdpTab-03">인증정보</button></li>
+					<li><button type="button" data-href="pdpTab-04">성능/보험</button></li>
+					<li><button type="button" data-href="pdpTab-05">금융정보</button></li>
+				</ul>
+			</div>
+			<!--  e: 02-2. 버튼   -->
+
+			<!--  s: 03. TAB-01 기본정보  -->
+			<div class="pdp03_tabs" id="pdpTab-01">
+				<div class="top">
+					<h4 class="tit">차량 기본 정보</h4>
+					<button type="button" class="btn_alarm">입고알림신청</button>
+				</div>
+				<div class="cont_box base">
+					<ol class="base_01">
+						<li>
+							<span class="tit">연식</span>
+							<span class="txt">2021년 1월</span>
+						</li>
+						<li>
+							<span class="tit">주행거리</span>
+							<span class="txt">50,000km</span>
+						</li>
+						<li>
+							<span class="tit">배기량</span>
+							<span class="txt">3,000cc</span>
+						</li>
+						<li>
+							<span class="tit">승차인원</span>
+							<span class="txt">5인</span>
+						</li>
+						<li>
+							<span class="tit">차량번호</span>
+							<span class="txt">24더 3215</span>
+						</li>
+						<li>
+							<span class="tit">변속기</span>
+							<span class="txt">오토</span>
+						</li>
+						<li>
+							<span class="tit">차종</span>
+							<span class="txt">승용/대형</span>
+						</li>
+						<li>
+							<span class="tit">연료</span>
+							<span class="txt">휘발유</span>
+						</li>
+						<li>
+							<span class="tit">용도구분</span>
+							<span class="txt">자가용</span>
+						</li>
+						<li>
+							<span class="tit">구동방식</span>
+							<span class="txt">2륜(2WD)</span>
+						</li>
+						<li>
+							<span class="tit">왼관색상</span>
+							<span class="txt">글로윙 실버</span>
+						</li>
+						<li>
+							<span class="tit">실내색상</span>
+							<span class="txt">카키 원톤</span>
+						</li>
+						<li>
+							<span class="tit">최초등록일</span>
+							<span class="txt">2019.12.26</span>
+						</li>
+						<li>
+							<span class="tit">제시번호</span>
+							<span class="txt">2021073068</span>
+						</li>
+					</ol>
+					<h6 class="tit line">이전 소유자 정보</h6>
+					<ol class="base_01">
+						<li>
+							<span class="tit">용도</span>
+							<span class="txt">출퇴근용</span>
+						</li>
+						<li>
+							<span class="tit">지역</span>
+							<span class="txt">서울시 송파구</span>
+						</li>
+						<li>
+							<span class="tit">흡연여부</span>
+							<span class="txt">비흡연</span>
+						</li>
+						<li>
+							<span class="tit">반려동물</span>
+							<span class="txt">미탑승</span>
+						</li>
+						<li>
+							<span class="tit">주차장</span>
+							<span class="txt">지상(단독주택)</span>
+						</li>
+					</ol>
+				</div>
+				<div class="option_03">
+						<button type="button" class="btn_more">기본정보 접힘</button>
+					</div>
+					<h6 class="tit">차량 생존 스토리</h6>
+				<div class="cont_box base">
+					<div class="base_02">
+						<ol>
+							<li class="now">
+								<span class="tit">현대자동차 매입 완료</span>
+								<span class="date">2021.07.14</span>
+							</li>
+							<li>
+								<span class="tit">명의변경 </span>
+								<span class="date">2021.05.20</span>
+							</li>
+							<li>
+								<span class="tit">타차피해 (사이드패털) </span>
+								<span class="date">2021.01.12</span>
+							</li>
+							<li class="year"><span class="date">2021</span></li>
+							<li>
+								<span class="tit">신차출고 </span>
+								<span class="date">2020.03.05</span>
+							</li>
+							<li class="year"><span class="date">2020</span></li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<!--  e: 03. TAB-01 기본정보  -->
+
+			<!--  s: 04. TAB-02 추가된 옵션  -->
+			<div class="pdp03_tabs" id="pdpTab-02">
+				<div class="top">
+					<h4 class="tit"><a href="#">추가된 옵션</a></h4>
+				</div>
+				<div class="cont_box option">
+					<ol class="option_01">
+						<li>
+							<span class="img"><img src="../img/thumb/icon_pdp_21_on.svg" alt="" /></span>
+							<span class="txt">주행 조향 보조 시스템</span>
+						</li>
+						<li>
+							<span class="img"><img src="../img/thumb/icon_pdp_22_on.svg" alt="" /></span>
+							<span class="txt">LED 헤드램프</span>
+						</li>
+						<li>
+							<span class="img"><img src="../img/thumb/icon_pdp_23_on.svg" alt="" /></span>
+							<span class="txt">전동사이드미러</span>
+						</li>
+						<li>
+							<span class="img"><img src="../img/thumb/icon_pdp_24_on.svg" alt="" /></span>
+							<span class="txt">블루링크</span>
+						</li>
+						<li>
+							<span class="img"><img src="../img/thumb/icon_pdp_25_on.svg" alt="" /></span>
+							<span class="txt">열선 핸들</span>
+						</li>
+						<li>
+							<span class="img"><img src="../img/thumb/icon_pdp_26_on.svg" alt="" /></span>
+							<span class="txt">앞좌석 통풍 시트</span>
+						</li>
+						<li>
+							<span class="img"><img src="../img/thumb/icon_pdp_27_on.svg" alt="" /></span>
+							<span class="txt">메모리 시트</span>
+						</li>
+						<li>
+							<span class="img"><img src="../img/thumb/icon_pdp_28_on.svg" alt="" /></span>
+							<span class="txt">가죽시트</span>
+						</li>
+						<li>
+							<span class="img"><img src="../img/thumb/icon_pdp_29_on.svg" alt="" /></span>
+							<span class="txt">버튼 시동시스템</span>
+						</li>
+						<li class="off">
+							<span class="img"><img src="../img/thumb/icon_pdp_31_off.svg" alt="" /></span>
+							<span class="txt">무릎 보호 에어백</span>
+						</li>
+						<li class="off">
+							<span class="img"><img src="../img/thumb/icon_pdp_33_off.svg" alt="" /></span>
+							<span class="txt">크롬 휠</span>
+						</li>
+						<li class="off">
+							<span class="img"><img src="../img/thumb/icon_pdp_32_off.svg" alt="" /></span>
+							<span class="txt">하이패스</span>
+						</li>
+					</ol>
+					<p class="option_02"><span><i>450만원</i> 상당의 선택옵션</span>이 추가 장착되어 있습니다.</p>
+					<div class="option_03">
+						<button type="button" class="btn_more">주요옵션 펼침</button>
+					</div>
+				</div>
+			</div>
+			<!--  e: 04. TAB-02 추가된 옵션  -->
+
+			<!--  s: 05. TAB-03 인증정보  -->
+			<div class="pdp03_tabs" id="pdpTab-03">
+				<div class="top">
+					<h4 class="tit"><a href="#">제조사 인증 및 보증</a></h4>
+				</div>
+				<div class="cont_box certify">
+					<div class="certify_01">
+						<p class="photo"><img src="../img/thumb/pdp_profile.jpg" alt="" /></p>
+						<p class="info">현대자동차 차량평가전문가, <span class="name">나현대 책임</span></p>
+						<p class="txt">
+							이 차량은 200개 인증항목을 통과한
+							<br /><em>9.8점</em> 현대자동차 인증차량입니다.
+						</p>
+						<div class="link"><a href="#">인증항목 보러가기</a></div>
+					</div>
+
+					<div class="certify_02">
+						<h6 class="tit">보증현황</h6>
+						<p class="txt01">잔여 보증기간은 차량등록 시점에 작성된 것이므로 차량 구매 시 반드시 잔여 보증기간을 재확인하시기 바랍니다.</p>
+						<ol>
+							<li>
+								<span class="tit">제조사 보증 (일반/차제)</span>
+								<span class="txt">1년 5개월/40,550km</span>
+								<span class="bar"><em style="width:50%">50%</em></span>
+							</li>
+							<li>
+								<span class="tit">제조사 보증 (엔진/미션)</span>
+								<span class="txt">3년 5개월/80,550km</span>
+								<span class="bar"><em style="width:60%">60%</em></span>
+							</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<!--  e: 05. TAB-03 인증정보  -->
+
+			<!--  s: 06. TAB-04 성능/보험  -->
+			<div class="pdp03_tabs" id="pdpTab-04">
+				<div class="top">
+					<h4 class="tit"><a href="#">성능점검기록부</a></h4>
+				</div>
+				<div class="cont_box perfor">
+					<ol class="perfor_01">
+						<li>
+							<span class="img"><img src="../img/thumb/icon_pdp_11.svg" alt="" /></span>
+							<span class="tit">판금여부</span>
+							<span class="case on">1건</span>
+						</li>
+						<li>
+							<span class="img"><img src="../img/thumb/icon_pdp_11.svg" alt="" /></span>
+							<span class="tit">부식여부</span>
+							<span class="case">0건</span>
+						</li>
+						<li>
+							<span class="img"><img src="../img/thumb/icon_pdp_12.svg" alt="" /></span>
+							<span class="tit">교환여부</span>
+							<span class="case on">2건</span>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<div class="pdp03_tabs">
+				<div class="top">
+					<h4 class="tit"><a hrerf="#">보험이력</a></h4>
+				</div>
+				<div class="cont_box perfor">
+					<ol class="perfor_01">
+						<li>
+							<span class="img"><img src="../img/thumb/icon_pdp_01.svg" alt="" /></span>
+							<span class="tit">내차피해</span>
+							<span class="case">0건</span>
+						</li>
+						<li>
+							<span class="img"><img src="../img/thumb/icon_pdp_01.svg" alt="" /></span>
+							<span class="tit">타차피해</span>
+							<span class="case on">1건</span>
+						</li>
+						<li>
+							<span class="img"><img src="../img/thumb/icon_pdp_02.svg" alt="" /></span>
+							<span class="tit">용도변경</span>
+							<span class="case">0건</span>
+						</li>
+						<li>
+							<span class="img"><img src="../img/thumb/icon_pdp_03.svg" alt="" /></span>
+							<span class="tit">특수사고</span>
+							<span class="case on">2건</span>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!--  e: 06. TAB-04 성능/보험  -->
+
+			<!--  s: 07. TAB-05 금융정보  -->
+			<div class="pdp03_tabs last" id="pdpTab-05">
+				<div class="top">
+					<h4 class="tit">총 비용 및 할부금 계산</h4>
+					<button type="button" class="btn_refresh">다시계산</button>
+				</div>
+				<div class="cont_box calc">
+					<ol class="calc_01">
+						<li>
+							<input type="checkbox" class="chk" name="calcChck" id="calcChck01" />
+							<label for="calcChck01">차량가격 <span>28,560,000원</span></label>
+						</li>
+						<li>
+							<input type="checkbox" class="chk" name="calcChck" id="calcChck02" disabled />
+							<label for="calcChck02">세금 및 부대비용 <span>5,154,800원</span></label>
+						</li>
+					</ol>
+					<dl class="calc_total">
+						<dt>
+							<span class="txt01">총 구매 예상 비용</span>
+							<span class="txt02">(보험료 별도)</span>
+						</dt>
+						<dd><em>28,560,000</em><i>원</i></dd>
+					</dl>
+					<ol class="calc_02">
+						<li>
+							<span class="tit">선수금</span>
+							<input type="text" class="inp_txt" placeholder="금액을 입력하세요" />
+						</li>
+						<li>
+							<span class="tit">할부기간</span>
+							<select class="sel">
+								<option>24개월</option>
+								<option selected>36개월</option>
+								<option>48개월</option>
+							</select>
+						</li>
+					</ol>
+					<dl class="calc_total">
+						<dt>
+							<span class="txt01">월 예상 납입금 </span>
+							<span class="txt02">(금리 <em>5.9%</em> 기준)</span>
+						</dt>
+						<dd><em>606,088</em><i>원</i></dd>
+					</dl>
+					<ol class="calc_03">
+						<li>월 납입금은 예시이며, 이용 조건 및 고객님의 신용등급에 따라 변경될 수 있습니다.</li>
+						<li>선수금은 기본 30% 기준으로 설정되어 있으며, 위 금액은 참고자료이며, 정확한 금액은 대출/할부 업체에 문의하세요.</li>
+					</ol>
+				</div>
+			</div>
+			<div id="pdpTab-end"></div>
+			<!--  e: 07. TAB-05 금융정보  -->
+
+			<!--  s: 08. 동일모델 구매리뷰  -->
+			<div class="pdp08_review">
+				<div class="top">
+					<h4 class="tit"><a href="#">동일모델 구매리뷰</a></h4>
+				</div>
+				<div class="cont_box">
+					<!-- swiper list -->
+					<div class="review_list01">
+						<ol class="swiper-wrapper">
+							<li class="swiper-slide">
+								<div class="review_box">
+									<span class="date">21.04.05</span>
+									<span class="name">Ee*******님</span>
+									<p class="pie"><span>4.7</span></p>
+									<p class="tit">더 뉴 그랜저 디젤 3.0 캘리그라피 </p>
+									<p class="txt">전체적으로 모두 좋은 상태를 보여주고 있습니다. 신차 수준에 가까운 상태로 추천드리는 차량입니다. 전체적으로 모두 좋은 상태를 보여주고 있습니다. </p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="review_box">
+									<span class="date">21.01.20</span>
+									<span class="name">Hy********님</span>
+									<p class="pie"><span>4.7</span></p>
+									<p class="tit">더 뉴 그랜저 디젤 3.0 캘리그라피 </p>
+									<p class="txt">전체적으로 모두 좋은 상태를 보여주고 있습니다. 신차 수준에 가까운 상태로 추천드리는 차량입니다. 전체적으로 모두 좋은 상태를 보여주고 있습니다. </p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="review_box">
+									<span class="date">20.12.02</span>
+									<span class="name">Da*****님</span>
+									<p class="pie"><span>4.7</span></p>
+									<p class="tit">더 뉴 그랜저 디젤 3.0 캘리그라피 </p>
+									<p class="txt">전체적으로 모두 좋은 상태를 보여주고 있습니다. 신차 수준에 가까운 상태로 추천드리는 차량입니다. 전체적으로 모두 좋은 상태를 보여주고 있습니다. </p>
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="review_box">
+									<span class="date">21.04.05</span>
+									<span class="name">Ee*******님</span>
+									<p class="pie"><span>4.7</span></p>
+									<p class="tit">더 뉴 그랜저 디젤 3.0 캘리그라피 </p>
+									<p class="txt">전체적으로 모두 좋은 상태를 보여주고 있습니다. 신차 수준에 가까운 상태로 추천드리는 차량입니다. 전체적으로 모두 좋은 상태를 보여주고 있습니다. </p>
+								</div>
+							</li>
+						</ol>
+						<div class="swiper-pagination"></div>
+					</div>
+					<!-- //swiper list -->
+				</div>
+			</div>
+			<!--  e: 08. 동일모델 구매리뷰  -->
+
+			<!--  s: 09. 다른 고객이 함께 본 차량  -->
+			<div class="pdp09_recomend">
+				<div class="top">
+					<h4 class="tit">다른 고객이 함께 본 차량</h4>
+				</div>
+				<div class="cont_box">
+					<!-- swiper list -->
+					<div class="plp_type03">
+						<ol class="swiper-wrapper">
+							<li class="swiper-slide">
+								<a href="#" class="unit_link">
+									<div class="unit_img"><img src="../img/thumb/plp_160x160_01.jpg" alt="" /></div>
+									<div class="unit_info">
+										<span class="name">더 뉴 그랜저</span>
+										<span class="desc">가솔린 프리미엄 밀레니얼</span>
+										<span class="price"><em>3,440</em><i>만원</i></span>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" class="unit_link">
+									<div class="unit_img"><img src="../img/thumb/plp_160x160_02.jpg" alt="" /></div>
+									<div class="unit_info">
+										<span class="name">더 뉴 그랜저</span>
+										<span class="desc">가솔린 프리미엄 밀레니얼</span>
+										<span class="price"><em>3,440</em><i>만원</i></span>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" class="unit_link">
+									<div class="unit_img"><img src="../img/thumb/plp_160x160_03.jpg" alt="" /></div>
+									<div class="unit_info">
+										<span class="name">더 뉴 그랜저</span>
+										<span class="desc">가솔린 프리미엄 밀레니얼</span>
+										<span class="price"><em>3,440</em><i>만원</i></span>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide">
+								<a href="#" class="unit_link">
+									<div class="unit_img"><img src="../img/thumb/plp_160x160_04.jpg" alt="" /></div>
+									<div class="unit_info">
+										<span class="name">더 뉴 그랜저</span>
+										<span class="desc">가솔린 프리미엄 밀레니얼</span>
+										<span class="price"><em>3,440</em><i>만원</i></span>
+									</div>
+								</a>
+							</li>
+						</ol>
+					</div>
+					<!-- //swiper list -->
+				</div>
+			</div>
+			<!--  e: 09. 다른 고객이 함께 본 차량  -->
+
+			<!--  s: 10. 링크  -->
+			<div class="pdp10_link">
+				<ul>
+					<li><a href="#" class="faq btn_arrow01">구매 관련 자주묻는 질문 </a></li>
+					<li><a href="#" class="info btn_arrow01">구매 및 환불 안내</a></li>
+				</ul>
+			</div>
+			<!--  e: 10. 링크  -->
+				
+<!-- ////////////////////////////////////////////////////////////////    contents start    ///////////////////////////////////////////////////////////////////////-->
+		</div>
+	</div>
+	<!-- e: container -->
+	<!--#include file="inc_demo/layout_footer.shtml"-->
+</div>
+</body>
+<script>
+/* Only 상품상세 
+	* 자동차 이미지 
+	*/
+
+function pdpCar(){
+	var winHeight = window.innerHeight;
+	var scrollValue = $(document).scrollTop() + 50;
+	var fixedTop = winHeight - scrollValue;
+
+	var priceMrg = winHeight*0.28 ;
+	console.log(winHeight, priceMrg, fixedTop);
+	$('.pdp01_car').css({ 'height': 'calc(100% - ' + scrollValue+ 'px)' });
+	$('.pdp01_car').css({ 'top': '-' + scrollValue + 'px' });
+	$('.pdp02_price').css({ 'margin-top': '' + priceMrg + 'px' });
+	$('.pdp01_car .zoom').css({ 'top': '' + (priceMrg+50) + 'px' });
+}
+
+function pdpTabBtn(thisObj){
+	var _tabBtn = thisObj.attr('data-href');
+	var _tab1 = $('#pdpTab-01').offset().top - 48;
+	var _tab2 = $('#pdpTab-02').offset().top - 48;
+	var _tab3 = $('#pdpTab-03').offset().top - 48;
+	var _tab4 = $('#pdpTab-04').offset().top - 48;
+	var _tab5 = $('#pdpTab-05').offset().top - 48;
+	var _tabEnd = $('#pdpTab-end').offset().top - 48;
+
+	if( _tabBtn == 'pdpTab-01' ){
+		$('html, body').animate({scrollTop: _tab1}, 680);
+		$('#pdpTab').attr('class', 'on_1');
+	} else if ( _tabBtn == 'pdpTab-02' ){
+		$('html, body').animate({scrollTop: _tab2}, 680);
+		$('#pdpTab').attr('class', 'on_2');
+	} else if ( _tabBtn == 'pdpTab-03' ){
+		$('html, body').animate({scrollTop: _tab3}, 680);
+		$('#pdpTab').attr('class', 'on_3');
+	} else if ( _tabBtn == 'pdpTab-04' ){
+		$('html, body').animate({scrollTop: _tab4}, 680);
+		$('#pdpTab').attr('class', 'on_4');
+	} else if ( _tabBtn == 'pdpTab-05' ){
+		$('html, body').animate({scrollTop: _tab5}, 680);
+		$('#pdpTab').attr('class', 'on_5');
+	}
+}
+
+$(document).ready(function() {
+	$(".pdp_tabs ul li button").on("click", function(event) { 
+		pdpTabBtn($(this));
+	});
+
+
+	$(".pdp01_car .btn_view").on("click", function(event) { 
+		var winHeight = window.innerHeight;
+		var scrollValue = $(document).scrollTop() + 50;
+		var fixedTop = winHeight - scrollValue;
+		
+		$('.pdp01_car .visual_img ol li .inner').height(winHeight);
+
+		if( $('body').hasClass('pdpCarZoom') ){
+			$('body').removeClass('pdpCarZoom');
+			pdpCar();
+		} else {
+			$('body').addClass('pdpCarZoom');
+			$('.pdp02_price').css({ 'margin-top': '' + winHeight + 'px' });
+
+		}
+
+	});
+
+
+});
+
+function pdpTab(){
+	var _scrollTop = $(document).scrollTop();
+	var _popTabY = $('.pdp_tabs').offset().top;
+	var _tab1 = $('#pdpTab-01').offset().top - 49;
+	var _tab2 = $('#pdpTab-02').offset().top - 49;
+	var _tab3 = $('#pdpTab-03').offset().top - 49;
+	var _tab4 = $('#pdpTab-04').offset().top - 49;
+	var _tab5 = $('#pdpTab-05').offset().top - 49;
+	var _tabEnd = $('#pdpTab-end').offset().top - 49;
+
+	if(_scrollTop >= _scrollTop ){
+		$('.pdp_tabs ').addClass('fixed');
+	} 
+	if(_scrollTop<_popTabY){
+		$('.pdp_tabs ').removeClass('fixed');
+		
+	}else if(_scrollTop>=_popTabY && _scrollTop<_tab2){
+		
+		console.log('tab02');
+		$('#pdpTab').attr('class', 'on_1');
+	}else if(_scrollTop>=_tab2 && _scrollTop<_tab3){
+		console.log('tab03');
+		$('#pdpTab').attr('class', 'on_2');
+		
+	}else if(_scrollTop>=_tab3 && _scrollTop<_tab4){
+		console.log('tab04');
+		$('#pdpTab').attr('class', 'on_3');
+		
+	}else if(_scrollTop>=_tab4 && _scrollTop<_tab5){
+		$('#pdpTab').attr('class', 'on_4');
+		
+	}else if(_scrollTop>=_tab5 && _scrollTop<_tabEnd){
+		console.log('tab05');
+		$('#pdpTab').attr('class', 'on_5');
+		
+	}else if(_scrollTop>=_tabEnd){
+		$('.pdp_tabs ').removeClass('fixed');
+		
+	}/*  */
+
+};
+
+
+
+pdpCar();
+pdpTab();
+
+$(window).scroll(function () {
+	pdpCar();
+	pdpTab();
+});
+
+//09. 다른 고객이 함께 본 차량
+var swiper = new Swiper(".plp_type03", {
+	slidesPerView:  'auto',
+	spaceBetween: 8,
+	grabCursor: true,
+});
+
+var swiper = new Swiper(".review_list01", {
+	slidesPerView:  'auto',
+	spaceBetween: 8,
+	grabCursor: true,
+	pagination: {
+		el: ".swiper-pagination",
+		clickable: true,
+	},
+});
+
+
+var swiper3 = new Swiper(".visual_img", {
+	slidesPerView:  'auto',
+	spaceBetween: 0,
+	//grabCursor: false,
+	freeMode : false, // 슬라이드 넘길 때 위치 고정 여부
+	//autoHeight : true, 
+	pagination: {
+		el: ".swiper-pagination",
+		//clickable: true,
+	},
+});
+// 도넛 
+
+</script>
+</html>

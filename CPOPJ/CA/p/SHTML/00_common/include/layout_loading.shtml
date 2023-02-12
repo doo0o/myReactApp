@@ -1,0 +1,10 @@
+<!-- layout_loading -->
+
+<!-- //layout_loading -->
+
+<script>
+	// CA.LOADING_open();
+	// setTimeout(function () {
+	// 	CA.LOADING_close()
+	// }, 3000);
+</script>

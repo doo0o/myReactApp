@@ -1,0 +1,160 @@
+@charset "UTF-8";
+/* Box Bg */
+/* Position */
+.members {
+  background-color: #CCCCCC;
+  padding: 57px 0;
+}
+.members #CAcontents #layoutWrap {
+  padding: 0;
+}
+.members #CAcontents #layoutWrap .container {
+  width: 560px;
+  background-color: #fff;
+  padding: 80px 64px;
+}
+.members .login .hd_logo {
+  margin-bottom: 32px;
+  text-align: center;
+}
+.members .login .greeting {
+  margin-bottom: 24px;
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+}
+.members .login .login_form_wrap .btn_big {
+  min-width: 159px;
+  padding: 0 24px;
+}
+.members .login .login_form_wrap .save_id {
+  padding: 16px 0;
+}
+.members .login .link {
+  display: flex;
+  column-gap: 24px;
+  margin: 24px 0;
+}
+
+.line_box {
+  border: 1px solid #EDEDED;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+.line_box .sec_tit {
+  margin-bottom: 16px;
+}
+.line_box .state_detail + .btn_area {
+  margin-top: 32px;
+}
+.line_box dl.full {
+  width: 100%;
+}
+
+.p_wrap .inner_view.change_phone {
+  min-height: 791px;
+}
+.p_wrap .inner_view.join_member {
+  min-height: 791px;
+}
+.p_wrap .inner_view.join_member .form_list + .form_list {
+  margin-top: 16px;
+}
+.p_wrap .inner_view.change_info {
+  min-height: 629px;
+}
+.p_wrap .inner_view .list_step + .step_cont {
+  padding-top: 32px;
+}
+.p_wrap .inner_view .step_cont > .btn_area {
+  margin-top: 32px;
+}
+.p_wrap .inner_view .step_cont .caution_mark {
+  position: absolute;
+  right: 32px;
+}
+.p_wrap .inner_view .sec_tit {
+  margin-bottom: 16px;
+}
+.p_wrap .inner_view .addr_head {
+  flex-wrap: wrap;
+}
+.p_wrap .inner_view .addr_head .tit {
+  width: 100%;
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+.p_wrap .inner_view .address_list .scroll_box {
+  padding: 4px 0;
+  background-color: #F7F7F7;
+}
+.p_wrap .inner_view .address_list .list_cont {
+  max-height: 275px;
+  margin: 0;
+  padding: 0;
+}
+.p_wrap .inner_view .address_list .list_cont .item {
+  width: calc(100% - 48px);
+  margin-left: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid #EDEDED;
+  display: flex;
+  column-gap: 8px;
+  align-items: center;
+}
+.p_wrap .inner_view .address_list .list_cont .item .tit {
+  flex: 1 1;
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+}
+.p_wrap .inner_view .address_list .list_cont .item .name {
+  min-width: 57px;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #333333;
+}
+.p_wrap .inner_view .address_list .list_cont .item:last-child {
+  border-bottom: none;
+}
+.p_wrap .inner_view .inp_info {
+  margin-top: 32px;
+}
+.p_wrap .inner_view .inp_info .tit {
+  width: 100%;
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+.p_wrap .inner_view .agree_terms .item .tit {
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 16px;
+}
+.p_wrap .inner_view .agree_terms .item .scroll_box {
+  height: 160px;
+  overflow-y: scroll;
+  margin-bottom: 8px;
+  border: 1px solid #EDEDED;
+  padding: 16px 1px 16px 20px;
+}
+.p_wrap .inner_view .agree_terms .item + .item {
+  margin-top: 32px;
+}
+.p_wrap .inner_view .agree_terms > .form_area {
+  margin-top: 32px;
+  text-align: center;
+}
+/*# sourceMappingURL=maps/c_members.css.map */
