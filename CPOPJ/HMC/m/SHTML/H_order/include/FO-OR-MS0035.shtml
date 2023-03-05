@@ -1,0 +1,37 @@
+<!-- FO-OR-MS0035 : 프로모션 선택 - BOTTOM -->
+<div class="CPOpop_bottom" id="FO-OR-MS0035">
+	<div class="p_head">
+		<h2 class="tit">프로모션 선택</h2>
+	</div>
+	<div class="p_wrap">
+		<div class="select_list">
+			<ul>
+				<li>
+					<input type="radio" class="chk_select" name="promotion_select" id="promotion_select_01">
+					<label for="promotion_select_01">
+						현대 가족사랑 할인 (1,800,000원)
+					</label>
+				</li>
+				<li>
+					<input type="radio" class="chk_select" name="promotion_select" id="promotion_select_02">
+					<label for="promotion_select_02">
+						여성운전자 할인 (1,000,000원)
+					</label>
+				</li>
+				<li>
+					<input type="radio" class="chk_select" name="promotion_select" id="promotion_select_03">
+					<label for="promotion_select_03">
+						중고 전시차 할인 (300,000원)
+					</label>
+				</li>
+			</ul>
+		</div>
+		
+		<!-- btn_sticky -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01" disabled>선택하기</button>
+		</div>
+		<!-- //btn_sticky -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

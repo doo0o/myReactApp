@@ -1,0 +1,110 @@
+<div class="popup_full" id="FO-OR-PS0042">
+	<div class="p_body">
+		<div class="p_inner s_small">
+			<div class="p_head">
+				<h2 class="tit">Hyundai Mobility 카드 안내</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+				<div class="inner_view layer_info">
+					<div class="img"><img src="/HMC/p/img/order/img_mobility.jpg" alt="Hyundai Mobility 카드 안내"></div>
+					<div class="sec_tit m">카드로 만나는 Hyundai Mobility</div>
+					<p class="txt1">내차사기 진행 시 블루멤버스 포인트 적립 등의 혜택부터 차 탈 때 주유적립, 모빌리티 업종 적립 혜택까지 제공되는 현대 & 제네시스 인증 중고차 고객만을 위한 전용카드입니다.</p>
+					<div class="btn_area col_type">
+						<button type="button" class="btn_mid color02">혜택 상세히 보기</button>
+					</div>
+					<div class="sec_tit m">현대 모빌리티 카드 안내</div>
+					<table class="table type01">
+						<caption>현대 모빌리티 카드 안내</caption>
+						<colgroup>
+							<col width="160px">
+							<col width="*">
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>Hyundai Mobility카드</th>
+								<td>국내전용/국내외겸용 3만원 (AMEX,VISA)</td>
+							</tr>
+							<tr>
+								<th>Hyundai Mobility카드</th>
+								<td>국내전용/국내외겸용 3만원 (AMEX,VISA)</td>
+							</tr>
+							<tr>
+								<th>Hyundai Mobility카드</th>
+								<td>연회비 없음</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<div class="caution">
+										<ul>
+											<li>모든 가맹점은 현대카드 가맹점 등록 및 업종 분류 기준 카드 이용대금 연체 시 약정금리+연체가산금리 3%의 연체이자율이 적용됩니다. (회원별, 이용 상품별 차등 적용/법정 최고금리 20% 이내)</li>
+											<li>단, 연체 발생시점에 약정금리가 없는 경우 아래와 같이 적용</li>
+										</ul>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					
+
+					<div class="sec_tit s">일시불</div>
+					<p class="txt2">거래 발생시점 기준 최소 기간(2개월)의 유이자할부 약정금리+연체가산금리 3%</p>
+
+					<div class="sec_tit s">무이자할부</div>
+					<p class="txt2">거래 발생시점 기준 최소 기간(2개월)의 유이자할부 약정금리+연체가산금리 3%</p>
+					<div class="caution">
+						<ul>
+							<li>상환 능력에 비해 신용카드 이용금액이 과도할 경우, 귀하의 개인신용평점이 하락할 수 있습니다.</li>
+							<li>개인신용평점 하락 시 금융거래와 관련된 불이익이 발생할 수 있습니다.</li>
+						</ul>
+					</div> 
+
+					<div class="toggle terms">
+						<div class="cont on">
+							<div class="head item">
+								<input type="checkbox" name="chk_comm" id="chk_terms02" class="chk_type01 bold">
+								<label for="chk_terms02">
+									<span class="txt">개인정보 제3자 제공동의</span><button type="button" class="btn_arr js_toggle">토글 버튼</button>
+								</label>
+							</div>
+							<div class="group on">
+								<ul class="list">
+									<li>
+										<div class="item">
+											<input type="checkbox" name="chk_comm" id="chk_terms02_1" class="chk_type01">
+											<label for="chk_terms02_1">
+												<span class="txt">[필수] 약관1</span><button type="button" class="btn_arr">팝업 버튼</button>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="item">
+											<input type="checkbox" name="chk_comm" id="chk_terms02_2" class="chk_type01">
+											<label for="chk_terms02_2">
+												<span class="txt">[필수] 약관2</span><button type="button" class="btn_arr">팝업 버튼</button>
+											</label>
+										</div>
+									</li>
+									<li>
+										<div class="item">
+											<input type="checkbox" name="chk_comm" id="chk_terms02_3" class="chk_type01">
+											<label for="chk_terms02_3">
+												<span class="txt">[필수] 약관3</span><button type="button" class="btn_arr">팝업 버튼</button>
+											</label>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="btn_area col_type">
+						<button type="button" class="btn_big color01">신청하기</button>
+					</div>
+				</div>
+				<!-- //contents -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

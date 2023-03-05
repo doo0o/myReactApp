@@ -1,0 +1,133 @@
+<div class="popup_modal" id="FO-OR-PS0064">
+	<div class="p_body">
+		<div class="p_inner s_large">
+			<div class="p_head">
+				<h2 class="tit">전시장 방문 예약을 통해 실제 차량을 확인 할 수 있습니다.</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+				<div class="inner_view layer_showroom">
+					<div class="box_showroom">
+						<section class="showroom_info">
+							<div class="sec_tit m">전시장 안내</div>
+							<div class="swiperParent">
+								<div class="swiperBanner">
+									<ul class="swiper-wrapper">
+										<li class="swiper-slide">
+											<img src="/HMC/m/img/showroom/img_showroom01.png" alt="">
+											<div class="txt_box">안성 스튜디오 외부 전경</div>
+										</li>
+										<li class="swiper-slide">     
+											<img src="/HMC/m/img/showroom/img_showroom01.png" alt="">
+											<div class="txt_box">안성 스튜디오 외부 전경</div>
+										</li>
+										<li class="swiper-slide">
+											<img src="/HMC/m/img/showroom/img_showroom01.png" alt="">
+											<div class="txt_box">안성 스튜디오 외부 전경</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="info">
+								<div class="sec_tit s">
+									안성 스튜디오
+									<button class="txt_btn01 s_small">오시는 길</button>
+								</div>
+								<ul class="detail">
+									<li class="adress">서울시 강남구 테헤란로 510</li>
+									<li class="tel">080-600-6000</li>
+								</ul>
+							</div>
+						</section>
+						<section class="visit_time">
+							<div class="sec_tit m">방문 시간을 선택해 주세요.</div>
+							<p class="txt">방문 예약은 익일만 가능하며,<br>예약 완료시에는 익일 오후 17:00까지 결제를 완료해 주세요.</p>
+							<dl class="date">
+								<dt>2022.10.25(수)</dt>
+								<dd>
+									<span>선택</span>
+									<span>불가</span>
+								</dd>
+							</dl>
+							<ul class="form_list type01">
+								<li>
+									<input type="radio" name="chk_time" id="chk_time01" class="chk_block">
+									<label for="chk_time01">09:00</label>
+								</li>
+								<li>
+									<input type="radio" name="chk_time" id="chk_time02" class="chk_block">
+									<label for="chk_time02">10:00</label>
+								</li>
+								<li>
+									<input type="radio" name="chk_time" id="chk_time03" class="chk_block" disabled="">
+									<label for="chk_time03">11:00</label>
+								</li>
+								<li>
+									<input type="radio" name="chk_time" id="chk_time04" class="chk_block">
+									<label for="chk_time04">12:00</label>
+								</li>
+								<li>
+									<input type="radio" name="chk_time" id="chk_time05" class="chk_block">
+									<label for="chk_time05">13:00</label>
+								</li>
+								<li>
+									<input type="radio" name="chk_time" id="chk_time06" class="chk_block">
+									<label for="chk_time06">14:00</label>
+								</li>
+								<li>
+									<input type="radio" name="chk_time" id="chk_time07" class="chk_block">
+									<label for="chk_time07">15:00</label>
+								</li>
+								<li>
+									<input type="radio" name="chk_time" id="chk_time08" class="chk_block">
+									<label for="chk_time08">16:00</label>
+								</li>
+							</ul>
+							<div class="info">
+								<div class="sec_tit s">예약내역</div>
+								<ul class="detail">
+									<li>
+										<span class="tit">전시장</span>
+										<span class="txt">안성 스튜디오</span>
+									</li>
+									<li>
+										<span class="tit">예약 시간</span>
+										<span class="txt point01">예약 하실 방문 시간을 선택 주세요</span>
+										<!-- <span class="txt point01">2023년 3월 3일 월요일 17:00</span> -->
+									</li>
+								</ul>
+							</div>
+						</section>
+					</div>
+					<p class="msg">예약을 확정 하시겠습니까?</p>
+					<!-- <p class="msg">예약을 변경 하시겠습니까?</p> -->
+					<div class="btn_area col_type">
+						<button type="button" class="btn_big color01">예약하기</button>
+					</div>
+				</div>
+				<!-- //contents -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>
+<script>
+	//전시장 안내 swiper
+	createObserver('#FO-OR-PS0064',function(){ //호출팝업ID
+		// 2022 - 02- 02 해당 스와이퍼 타겟 수정
+		const swiper1 =  new Swiper('#FO-OR-PS0064 .swiperBanner',
+			getSwiperOption({
+				target : '#FO-OR-PS0064 .swiperBanner',
+				slidesPerView : 1,
+				// LOOP 추가
+				loop: true,
+				pagination : true,
+				pagination_cls : "01",
+				navigation : true,
+				addOption : {
+					// slidesPerGroup: 2
+			},
+		})
+	)
+})
+</script>

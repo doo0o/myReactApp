@@ -1,0 +1,29 @@
+<div class="CPOpop_full" id="FO-TI-MS0050">
+	<div class="p_head">
+		<p class="tit">매각 희망지역</p>
+	</div>
+	<div class="p_wrap">
+		<div>
+			<ul class="select_list">
+			</ul>
+		</div>
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01 area_confirm">선택하기</button>
+		</div>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+
+<script>
+	var areaSel = new AreaSelect('#FO-TI-MS0050');
+
+	var createAreaSel = data => {
+		areaSel.create(data);
+		for(let idx = 0 ; idx < data.length; idx++) {
+			areaSel.addFunc(idx, function() {
+				areaSel.subCreate(idx, data[idx].sub)
+			})
+		}
+	}
+	sampleJson('/HMC/m/sample/area.json', createAreaSel);
+</script>

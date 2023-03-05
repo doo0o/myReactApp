@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>방문평가 모바일웹</title>
+	<!--#include file="/ISPT/SHTML/po_inc/common_meta.shtml"-->
+	
+</head>
+<body>
+<!--#include file="/ISPT/SHTML/po_inc/common_skip.shtml"-->
+<!--#include file="/ISPT/SHTML/po_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- 로그인 페이지 -->
+		<div class="login_form">
+			<div class="tit">
+				<h2>CUV 방문평가 관리</h2>
+				<p>- 방문평가사 로그인 - </p>
+			</div>
+			<ol class="form_box">
+				<li>
+					<span class="tit">방문평가사 ID</span> <!-- 2022.05.04 수정 -->
+					<input type="text" class="txt" name="" value="">
+				</li>
+				<li>
+					<span class="tit">휴대폰번호</span>
+					<input type="text" class="txt" pattern="[0-9]*" inputmode="numeric" name="" value="">
+				</li>
+				<li>
+					<span class="tit">인증번호</span>
+					<input type="text" class="txt" pattern="[0-9]*" inputmode="numeric" name="" value="">
+					<button type="button" class="btn_small02">인증요청</button>
+				</li>
+				<li class="on"><!-- 인증번호 요청 된 상태에서 class ADD -->
+					<span class="tit">인증번호</span>
+					<input type="text" class="txt" pattern="[0-9]*" inputmode="numeric" name="" value="">
+					<button type="button" class="btn_small02">인증재요청</button>
+					<p class="time">남은시간 <em>02:16</em></p>
+				</li>
+			</ol>
+			<p class="msg error">ID를 입력해주세요.</p><!-- 에러문구는 CLASS error --> <!-- 2022.05.04 수정 -->
+			<div class="btn">
+				<button type="button" class="btn_action01">로그인</button>
+			</div>
+		</div>
+		<!-- 로그인 페이지 -->
+
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+</div>
+<!-- //cpo wrap -->
+
+
+</body>
+</html>

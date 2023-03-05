@@ -1,0 +1,18 @@
+<div class="CPOpop_modal" id="FO-PD-MS0009">
+	<div class="p_inner">
+		<div class="p_head"></div>
+		<div class="p_wrap">
+			<div class="detail_optionPOP no_btn">
+				<div class="thumb">
+					<img src="../../img/@thumb/POP_PDP_option01.png" alt="선루프">
+				</div>
+				<div class="text_box">
+					<p class="text">자동차 루프가 유리로 되어 개폐할 수 있는 장치로 선루프와 넓은 파노라마 선루프가 있습니다.</p>
+					<p class="info">전방 차량/보행자/자전거 탑승자와 충돌 위험이 감지될 경우 운전자에게 이를 경고하고, 필요 시 브레이크를 제어하여 충돌하지 않도록 도와줍니다.</p>
+					<p class="caution small">사진과 설명은 참고용이며 실제 차량에 탑재되는 기능과 상이 할 수 있습니다.</p>
+				</div>
+			</div>
+		</div>
+		<button type="button" class="pop_close">닫기</button>
+	</div>
+</div>

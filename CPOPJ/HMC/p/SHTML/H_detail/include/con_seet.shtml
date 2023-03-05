@@ -1,0 +1,38 @@
+<div id="experienceCont5" class="experience_cont exp_seet">
+	<div class="exp_title exp_title2">
+		<p class="txt">차량의 실제 시트 입니다.</p>
+	</div>
+
+	<div class="seet_state_img">
+		<div 
+			class="img"
+			data-ref="zoomImgWrap"
+			style="background: url(../../img/pdp/pdp_seet.jpg) no-repeat 50% 50% / cover">
+		</div>
+	</div>
+	<div class="seet_state_touch">
+		<div class="control">
+			<button class="zoom_in" onclick="experience.seetZoom('in');">확대</button>
+			<div class="str" data-ref="zoomStr">1x</div>
+			<button class="zoom_out" onclick="experience.seetZoom('out');">축소</button>
+		</div>
+		<div class="trigger" data-ref="zoomTrigger">
+			<div class="scale scale6">6</div>
+			<div class="scale scale5">
+				<span>5.1</span><span>5.2</span><span>5.3</span><span>5.4</span><span>5.5</span><span>5.6</span><span>5.7</span><span>5.8</span><span>5.9</span>
+			</div>
+			<div class="scale scale3">
+				<span>3.1</span><span>3.2</span><span>3.3</span><span>3.4</span><span>3.5</span><span>3.6</span><span>3.7</span><span>3.8</span><span>3.9</span>
+			</div>
+			<div class="scale scale4">
+				<span>4.1</span><span>4.2</span><span>4.3</span><span>4.4</span><span>4.5</span><span>4.6</span><span>4.7</span><span>4.8</span><span>4.9</span>
+			</div>
+			<div class="scale scale2">
+				<span>2.1</span><span>2.2</span><span>2.3</span><span>2.4</span><span>2.5</span><span>2.6</span><span>2.7</span><span>2.8</span><span>2.9</span>
+			</div>
+			<div class="scale scale1">
+				<span>1.1</span><span>1.2</span><span>1.3</span><span>1.4</span><span>1.5</span><span>1.6</span><span>1.7</span><span>1.8</span><span>1.9</span>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>고객센터 팝업 모음</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_cscenter.css">
+</head>
+<style>
+	.btn_pop_sample{padding:0 10px;}
+	#CPOcontents button[class^="btn"]{margin:5px 0;}
+	button i{opacity:0.8;font-size:11px;font-style: italic;}
+
+</style>
+<body>
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">고객센터 팝업 모음</h3>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="sample_wrap">
+			<div class="btn_pop_sample">
+				<!-- <button class="btn_mid02" data-popup="FO-CS-MS0008">거래내역 전체목록 팝업</button> -->
+				<button class="btn_mid02 jQ_Pop_Open" data-popup="FO-CS-MS0007">거래내역 팝업</button>
+				<!-- <button class="btn_modal02" data-popup="FO-MY-MS0069">공지사항 상세 팝업</button> -->
+			</div>
+		</div>
+		<!-- contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/HMC/m/SHTML/H_cscenter/include/FO-CS-MS0007.shtml"-->
+<script>
+	$(function(){
+		CPO.tab();
+		$(".jQ_Pop_Open").on("click",function(){//레이어 팝업 스크립트
+			CPO.POPUP_open($(this));// 레이어팝업 open
+		});
+	});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>상품상세 : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_detail.css">
+	<style>
+		img {width: 100%}
+	</style>
+</head>
+<body>
+	<div>
+		<img src="../../img/@thumb/pdp_inside.png" alt="">
+	</div>
+</body>
+</html>

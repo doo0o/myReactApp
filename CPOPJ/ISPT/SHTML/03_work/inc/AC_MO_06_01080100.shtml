@@ -1,0 +1,64 @@
+<!-- AC_MO_06_01080100 : 평가항목별 상세 정보 -->
+<div class="CPOpop_full" id="AC_MO_06_01080100">
+	<div class="p_head">
+		<h4 class="tit">본넷</h4><!-- 선택항목이 타이틀이 되어야함 -->
+	</div>
+	<div class="p_wrap">
+        <div class="layer_car_status">
+            <div class="detail_check">
+                <h6 class="tit" id="carEditTit">앞도어(운전석)</h6>
+                <div class="inner">
+                    <input type="radio" name="carEdit" id="carEdit_a" class="chk_type08 icon_a" value="icon_a" /><label for="carEdit_a">스크레치</label>
+                    <input type="radio" name="carEdit" id="carEdit_p" class="chk_type08 icon_p" value="icon_p" /><label for="carEdit_p">도장필요</label>
+                    <input type="radio" name="carEdit" id="carEdit_ww" class="chk_type08 icon_ww" value="icon_ww" /><label for="carEdit_ww">판금필요</label>
+                    <input type="radio" name="carEdit" id="carEdit_xx" class="chk_type08 icon_xx" value="icon_xx" /><label for="carEdit_xx">교환필요</label>
+                </div>
+            </div>
+    
+            <div class="detail_check" data-role="subPart">
+                <h6 class="tit" id="carEditSubTit">도어캐치(운전석)</h6>
+                <div class="inner">
+                    <input type="radio" name="carEditSub" id="carEdit_xx2" class="chk_type08 icon_xx" value="icon_xx" /><label for="carEdit_xx2">교환필요</label>
+                    <input type="radio" name="carEditSub" id="carEdit_a2" class="chk_type08 icon_a" value="icon_a" /><label for="carEdit_a2">스크레치</label>
+                </div>
+            </div>
+            
+            <!-- 차량사진 등록 -->
+            <div class="sale_photo">
+                <div class="innerbox_01">
+                    <h6 class="tit">사진 등록 <em class="point01">*</em></h6>
+                    <p class="txt">1장 당 5M 이하로 제한 됩니다.</p>
+                    <div class="addphoto_list">
+                        <dl class="on">
+                            <dt>
+                                <input type="file" id="CarPhotoAdd3" class="file_morephoto" data-file="imgList03" data-item="5" accept="image/*" multiple /><!-- data-item 에 최대 등록 수량 -->
+                                <label for="CarPhotoAdd3">
+                                    <span class="t01">사진 추가하기</span>
+                                    <span class="t02"><em id="imgList03no">0</em>/30</span>
+                                </label>
+                            </dt>
+                            <dd>
+                                <ol class="list" id="imgList03"></ol>
+                            </dd> 
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <!-- 차량 사진 등록 -->
+
+            <div class="detail_check">
+                <h6 class="tit" id="carEditTit">상세 평가 내용 <em class="point01">*</em></h6>
+                <div class="textarea_01">
+                    <textarea name="" id="chkCode11_1Txt" class="area" placeholder="" rows="3" cols="21" role="textbox"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- sticky button -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_action01 check_save">저장하기</button>
+		</div>
+		<!-- //sticky button -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

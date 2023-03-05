@@ -1,0 +1,12 @@
+<!-- HIloading -->
+<div id="HIloading">
+	<div class="loading"><span>로딩중</span></div><!-- 기본로딩 -->
+</div>
+<!-- //HIloading -->
+
+<script>
+	// HI.LOADING_open();
+	// setTimeout(function () {
+	// 	HI.LOADING_close()
+	// }, 3000);
+</script>

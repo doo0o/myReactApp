@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>고객센터 - 자주묻는질문</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_cscenter.css">
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+    <!-- CPOcontents -->
+	<div id="CPOcontents">
+        <div id="layoutWrap" class="cscenter">
+			<!-- container -->
+            <div class="container"> 
+				<div class="title_box">
+					<h1 class="page_tit align_c">1:1 문의</h1>
+				</div>
+	
+				<div class="qa_form">
+					<ul class="form_list type02">
+						<li>
+							<label class="tit">문의유형<span class="required">*</span></label>
+							<div class="form_area">
+								<span class="com_select" data-ref="select">
+									<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDown_q_type" onclick="dropDown();">
+										문의 유형을 선택해 주세요.
+									</button>
+									<span class="com_select_list" data-ref="dropDownList" id="dropDown_q_type">
+										<span class="com_select_list_inner">
+											<label class="com_select_item"><input type="radio" name="dropDown_q_type"> <span>문의 유형을 선택해 주세요.</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDown_q_type"> <span>주문/결제</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDown_q_type"> <span>환불</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDown_q_type"> <span>반품</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDown_q_type"> <span>교환</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDown_q_type"> <span>AS</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDown_q_type"> <span>홈서비스</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDown_q_type"> <span>영수증/증빙서류</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDown_q_type"> <span>취소</span></label>
+										</span>
+									</span>
+								</span>
+							</div>
+						</li>
+						<li class="car_sel">
+							<label for="" class="tit">문의 차량 선택</label>
+							<div class="btn_area">
+								<button type="button" class="btn_small color02">거래내역 보기</button> <!--비활성 : disable 속성 추가-->
+							</div>
+						</li>
+						<li class="car_sel">
+							<label class="tit">문의 차량 선택</label>
+							<div class="btn_area">
+								<button type="button" class="btn_small color02" disabled>거래내역 보기</button> <!--비활성 : disable 속성 추가-->
+							</div>
+							<div class="unit_type type02">
+								<!-- unit -->
+								<div class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="order_num">
+											<span class="flag_mid01">결제진행중</span>
+											<span class="flag_mid03">Trade-in</span>
+											<span class="num">2021123154561231</span>
+										</div>
+										<div class="car_num">123가1234</div>
+										<div class="name">
+											<span class="model">현대 쏘나타 DN8 2.9</span>
+											<span class="desc">가솔린 인스퍼레이션</span>
+										</div>
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+									</div>
+									<button type="button" class="btn_close s_16">삭제</button>
+								</div>
+								<!-- //unit -->
+							</div>
+						</li>
+						<li>
+							<label class="tit">문의제목<span class="required">*</span></label>
+							<div class="form_area">
+								<div class="inbox_type02" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+									<input type="text" class="txt" title="문의제목 입력" value="" placeholder="문의 제목을 입력해 주세요.">
+									<button type="button" class="btn_delete">삭제</button>
+								</div>
+								<p class="validation error">에러 메세지</p>
+							</div>
+						</li>
+						<li>
+							<label class="tit">상세문의<span class="required">*</span></label>
+							<div class="form_area">
+								<div class="textarea" onclick="textareaFunc()" tabindex="0" onfocus="textareaFunc()">
+									<div class="inner"><textarea placeholder="질문의 내용을 상세히 입력해 주시면 정확한 답변을 드리는데 도움이 됩니다." rows="4" cols="21" role="textbox" maxlength="1000"></textarea></div>
+									<span class="txt_check"><em class="first">0</em> / <em class="last">1000</em>자</span>
+								</div>
+								<p class="validation error">에러 메세지</p>
+							</div>
+						</li>
+						<li>
+							<label class="tit">사진첨부</label>
+							<div class="addphoto_list">
+								<dl class="on">
+									<dd>
+										<ul class="list" id="imgList01"></ul>
+									</dd>
+									<dt>
+										<input type="file" id="CarPhotoMore" class="file_morephoto" data-file="imgList01" data-item="5" multiple /><!-- data-item 에 최대 등록 수량 -->
+										<label for="CarPhotoMore">
+										
+										</label>
+									</dt>
+								</dl>
+								<!-- <div class="pop_toast" id="toast_wrap">
+									<div class="txt"></div>
+								</div>        -->
+								<div class="caution">
+									<ul>
+										<li>이미지는 최대 5개까지 등록 가능합니다.</li>
+										<li>12MB 미만의 JPG 혹은 PNG만 등록 가능합니다.</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="form_area">
+								<input type="checkbox" name="chk_comm" id="chk_list01" class="chk_type01">
+								<label for="chk_list01"><span class="txt">[선택] 알림톡/문자메시지로 알림 받기</span></label>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="btn_area">
+					<button type="button" class="btn_big color02">취소하기</button>
+					<button type="button" class="btn_big color01">등록하기</button>
+				</div>
+				
+            </div>
+            <!-- //container -->
+        </div>
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<script>
+	toggle();
+	ImgUpload02();
+	
+</script>
+</html>

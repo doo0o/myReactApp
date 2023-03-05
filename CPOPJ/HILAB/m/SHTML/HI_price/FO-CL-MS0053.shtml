@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>관심 모델 구매 시세 조회 결과</title>
+	<!--#include file="/HILAB/m/SHTML/HI_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/hi_price.css">
+</head>
+<body>
+<!--#include file="/HILAB/m/SHTML/HI_inc/common_skip.shtml"-->
+<!--#include file="/HILAB/m/SHTML/HI_inc/layout_loading.shtml"-->
+<!-- HI wrap -->
+<div id="HIwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="HIheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">관심 모델 구매 시세 조회 결과</h1>
+			<div class="util">
+				<button type="button" class="ic_share">공유하기</button>
+			</div>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="HIcontents">
+		<!-- contents -->
+		<div class="quot_wrap nodata">
+			<div class="quot_head">
+				<div class="visual">
+					<div class="title_area">
+						<span class="brand">현대</span>
+						<p class="title">그랜저 IG</p>
+						<p class="title_sub">등급/트림을 선택하면 시세가 더 정확해져요</p>
+					</div>
+					<div class="btn_area">
+						<button type="button" class="btn_icon_big01" onclick="HI.POPUP_layer_open('FO-CL-MS0035');">변경하기</button>
+					</div>
+					<div class="img">
+						<img src="/HILAB/m/img/@thumb/img_quot_nodata.png" alt="">
+					</div>
+					<p class="txt_caution">모델 대표 이미지로 선택하신 등급/트림/옵션과 상이할 수 있습니다.</p>
+				</div>
+				<div class="chart">
+					<div class="title_area">
+						<div class="title">시세 계산을 위한<br>차량 정보가 부족해요.</div>
+						<p class="title_sub">조회하신 모델은 시세 계산을 위한 차량 정보가 부족하여<br>시세 및 통계 서비스 이용이 어렵습니다.<br>불편을 드려 죄송합니다.</p>
+					</div>
+					<div class="img">
+						<img src="/HILAB/m/img/img_nodata_chart.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="caution">
+				<p class="tit">왜 이 모델의 시세는 나오지 않나요?</p>
+				<ul>
+					<li>국내 운행 수가 적은 브랜드/모델은 수집된 데이터가 적어 시세가 나오지 않을 수 있어요.</li>
+					<li>오래된 연식 모델의 경우 시세 산정이 불가할 수 있어요.</li>
+				</ul>
+			</div>
+			<div class="btn_sticky">
+				<button type="button" class="btn_big01" title="다른 차량 조회하기" disabled>다른 차량 조회하기</button>
+			</div>
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!-- 2023 0210 푸터 추가 -->
+	<!--#include file="/HILAB/m/SHTML/HI_inc/layout_footer.shtml"-->
+</div>
+
+<!-- //HI wrap -->
+<!--#include file="/HILAB/m/SHTML/HI_price/include/FO-CL-MS0035.shtml"-->
+<script>
+	// 2023 0210 TOP / CHATBOT 추가
+	HI.top();
+</script>
+</body>
+</html>

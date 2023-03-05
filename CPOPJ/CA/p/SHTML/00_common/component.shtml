@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Component : 현대 CUV Auction</title>
+	<!--#include file="/CA/p/SHTML/00_common/include/common_meta.shtml"-->
+    <style>
+        hr {display: block; padding: 10px 0}
+    </style>
+</head>
+<body>
+<!--#include file="/CA/p/SHTML/00_common/include/common_skip.shtml"-->
+<!--#include file="/CA/p/SHTML/00_common/include/layout_loading.shtml"-->
+<!-- CAwrap -->
+<div id="CAwrap">
+    <p class="sec_tit">Button (big/mid/small/xsmall - color01~03)</p> 
+	<div class="btn_area"> <!-- + full_type/row_type /col_type -->
+        <button type="button" class="btn_big color01">버튼56</button>
+        <button type="button" class="btn_mid color01">버튼48</button>
+        <button type="button" class="btn_small color01">버튼40</button>
+        <button type="button" class="btn_xsmall color01">버튼32</button>
+        <button type="button" class="btn_xsmall ico_add color02">버튼32</button>
+        <button type="button" class="btn_tbl color02">버튼</button>
+        <button type="button" class="btn_tbl ico_arr color02">버튼</button>
+    </div>
+    <hr />
+
+    <p class="sec_tit">tab</p>
+    <div class="tab" data-ref="tab">
+        <ul class="list" role="tablist">
+            <li class="on"><button type="button" role="tab" aria-selected="true" aria-controls="tabCont01">텍스트</button></li>
+            <li><button role="tab" aria-selected="false" aria-controls="tabCont02">a tag</button></li>
+        </ul>
+        <div class="cont" id="tabCont01">tab1</div>
+        <div class="cont" id="tabCont02">tab2</div>
+    </div>
+    <div class="tab_txt" data-ref="tab2">
+        <ul class="list" role="tablist">
+            <li class="on"><button type="button" role="tab" aria-selected="true" aria-controls="tabCont03">텍스트</button></li>
+            <li><button type="button"  role="tab" aria-selected="false" aria-controls="tabCont04">a tag</button></li>
+        </ul>
+        <div class="cont" id="tabCont03">tab1</div>
+        <div class="cont" id="tabCont04">tab2</div>
+    </div>
+    <script>
+        const tab = new TabContents('tab');
+        const tab2 = new TabContents('tab2');
+    </script>
+    <hr />
+    
+    <p class="sec_tit">step</p>
+    <ol class="list_step">
+        <li class="end">계약</li>
+        <li class="end">결제</li>
+        <li class="now">탁송</li>
+        <li>명의이전</li>
+    </ol>
+    <hr/>
+    
+    <p class="sec_tit">step</p>
+    <div class="box_range">
+        <div id="rangeDistance"  class="cpo_range">
+            <div class="cpoRange" data-type="in_value">
+            </div>
+            <p class="amountArea">
+                <input type="number" id="Sdistance" title="최저 주행거리" data-min="5000" data-max="110000" value="30000">
+                <input type="number" id="Sdistance2" title="최대 주행거리" data-min="5000" data-max="110000" value="80000">
+            </p>
+        </div>
+
+        <div id="rangeDistance2"  class="cpo_range">
+            <div class="cpoRange" data-type="in_value">
+            </div>
+            <p class="amountArea">
+                <input type="number" id="Sdistance3" title="최저 주행거리" data-min="5000" data-max="110000" value="30000">
+                <input type="number" id="Sdistance4" title="최대 주행거리" data-min="5000" data-max="110000" value="80000">
+            </p>
+        </div>
+    </div>
+    <script>
+        SRCH.FilterPriceRange('Sdistance3', 'Sdistance4', 'rangeDistance2', 500, 'km'); // 주행거리 선택
+        SRCH.FilterPriceRange('Sdistance', 'Sdistance2', 'rangeDistance', 500, 'km'); // 주행거리 선택
+    </script>
+    <hr/>
+
+    <p class="sec_tit">Popup</p>
+    <button type="button" class="btn_big color01" onclick="popupOpen('popup01')">popup_modal inside Scroll</button>
+    <button type="button" class="btn_big color01" onclick="popupOpen('popup02')">popup_full window Scroll</button>
+    <button type="button" class="btn_big color01" onclick="popupOpen('CPOAlert_Wrap01')">Alert</button>
+    <button type="button" class="btn_big color01" onclick="popupToast('toast_wrap', '휴면 처리가 해제 되었습니다. 2021.10.13 로그인 페이지로 이동합니다.')">toast</button>
+</div>
+<!-- //CAwrap -->
+
+<!-- popup_modal inside Scroll -->
+<div class="popup_modal" id="popup01">
+    <div class="p_body">
+        <div class="p_inner s_small"><!-- s_small/s_mid/s_large -->
+            <div class="p_head">
+                <h2 class="tit">타이틀</h2>
+            </div>
+            <div class="p_wrap">
+                <!-- contents -->
+                <div class="inner_view"> 
+                    팝업 컨텐츠 추가추가 <br>
+                    팝업 컨텐츠 추가추가 <br>
+                    팝업 컨텐츠 추가추가 <br>
+                    팝업 컨텐츠 추가추가 <br>
+                    팝업 컨텐츠 추가추가 <br>
+                </div>
+                <!-- //contents -->
+                <!-- sticky -->
+                <div class="btn_area">
+                    <button type="button" class="btn_big color02">닫기</button>
+                    <button type="button" class="btn_big color01">동의하기</button>
+                </div>
+                <!-- //sticky -->
+            </div>                                  
+            <button type="button" class="pop_close">닫기</button>
+        </div>
+    </div>
+</div>
+
+<!-- popup_full window Scroll -->
+<div class="popup_full" id="popup02">
+    <div class="p_body">
+        <div class="p_inner s_small"><!-- s_small/s_mid/s_large -->
+            <div class="p_head">
+                <h2 class="tit">타이틀</h2>
+            </div>
+            <div class="p_wrap">
+                <!-- contents -->
+                <div class="inner_view"> 
+                    팝업 컨텐츠 추가추가 <br>
+                    팝업 컨텐츠 추가추가 <br>
+                    팝업 컨텐츠 추가추가 <br>
+                    팝업 컨텐츠 추가추가 <br>
+                    팝업 컨텐츠 추가추가 <br>
+                    <div class="btn_area">
+                        <button type="button" class="btn_big color02">닫기</button>
+                        <button type="button" class="btn_big color01">동의하기</button>
+                    </div>
+                </div>
+                <!-- //contents -->
+            </div>
+            <button type="button" class="pop_close">닫기</button>
+        </div>
+    </div>
+</div>
+
+<!-- alert -->
+<div class="CPOpop_alert" id="CPOAlert_Wrap01">
+    <div class="p_inner">
+        <div class="message">
+            <p class="tit">title</p>
+            Body text
+        </div>
+        <div class="btn_area">
+            <ul>
+                <li><button type="button" class="btn_alert02 pop_close">취소</button></li>
+                <li><button type="button" class="btn_alert01 pop_close">확인</button></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- toast -->
+<div class="pop_toast" id="toast_wrap">
+    <div class="txt"></div>
+</div>
+</body>
+<script>
+
+</script>
+</html>

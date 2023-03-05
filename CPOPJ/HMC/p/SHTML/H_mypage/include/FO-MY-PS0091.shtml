@@ -1,0 +1,44 @@
+<div class="popup_modal" id="FO-MY-PS0091">
+	<div class="p_body">
+		<div class="p_inner s_small">
+			<div class="p_head">
+				<h2 class="tit">입고알림 연장</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+				<div class="inner_view alram">
+					<div class="top_area">
+						<p class="txt">입고알림 연장을 신청하시면 기존 알림 신청 종료일에 연장된 기간이 추가됩니다.</p>
+					</div>
+					<div class="btn_box">
+						<p class="tit">알림 서비스 기간 연장</p>
+						<ul class="form_area row_type">
+							<li>
+								<input type="radio" name="chk_comm1" id="chk_block_5" class="chk_block hs02" checked="">
+								<label for="chk_block_5">7일</label>
+							</li>
+							<li>
+								<input type="radio" name="chk_comm1" id="chk_block02_5" class="chk_block hs02">
+								<label for="chk_block02_5">14일</label>
+							</li>
+							<li>
+								<input type="radio" name="chk_comm1" id="chk_block03_5" class="chk_block hs02">
+								<label for="chk_block03_5">30일</label>
+							</li>
+						</ul>
+						<div class="caution">
+							<p>연장 신청이 완료되면 기존 알림신청 종료일로 재변경이 불가합니다.</p>
+						</div>
+					</div>
+				</div>
+				<!-- //contents -->
+				<!-- sticky -->
+				<div class="btn_area full_type">
+					<button type="button" class="btn_big color01">입고알림 연장 </button>
+				</div>
+				<!-- // sticky -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

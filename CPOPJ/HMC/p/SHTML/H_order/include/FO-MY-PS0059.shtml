@@ -1,0 +1,168 @@
+<div class="popup_full" id="FO-MY-PS0059">
+	<div class="p_body">
+		<div class="p_inner s_small">  
+			<div class="p_head">
+				<h2 class="tit">서류 등록</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+					<div class="inner_view info_layer">
+						<p class="sub_text">차량 명의이전 및 세제감면에 필요한 서류를 등록해 주세요.</p>
+						<ul class="info_list document_cont">
+							<li>
+								<div class="name_info">
+									<span class="owner_name"> 대표명의자</span>
+									<span class="name">김현대</span>
+								</div>
+								<div class="gray_box">
+									<div class="add_list">
+										<dl>
+											<dt>신분증 사본</dt>
+											<dd class="btn_area">
+												<button type="button" class="btn_xsmall color02">등록하기</button>
+											</dd>
+										</dl>
+									</div>
+									<div class="add_list">
+										<dl>
+											<dt>사업자등록증 사본</dt>
+											<dd class="btn_area">
+												<button type="button" class="btn_xsmall color02">등록하기</button>
+											</dd>
+										</dl>
+									</div>
+									<div class="add_list">
+										<dl>
+											<dt>복지카드 사본</dt>
+											<dd class="btn_area">
+												<button type="button" class="btn_xsmall color02">등록하기</button>
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</li>
+					
+							<li>
+								<div class="name_info">
+									<span class="owner_name">공동명의자2</span>
+									<span class="name">이제네</span>
+								</div>
+								<div class="gray_box">
+									<div class="add_list">
+										<dl>
+											<dt>신분증 사본</dt>
+											<dd class="btn_area">
+												<button type="button" class="btn_xsmall color02">등록하기</button>
+											</dd>
+										</dl>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="name_info">
+									<span class="owner_name">공통명의자3</span>
+									<span class="name">윤제네</span>
+								</div>
+							</li>
+							<li>
+								<div class="info_tit">보험 가입 증명서</div>
+								<div class="gray_box">
+									<div class="add_list">
+										<dl>
+											<dt>신분증 사본</dt>
+											<dd class="btn_area">
+												<button type="button" class="btn_xsmall color02">추가하기</button>
+											</dd>
+										</dl>
+										<ul class="file_list">
+											<li>
+												<span class="file_name">Hyundai1415141235632123.JPG</span>
+												<button type="button" class="txt_btn03 btn_delete s_small">삭제</button>
+											</li>
+											<li>
+												<span class="file_name">Hyundai1415141235632123.JPG</span>
+												<button type="button" class="txt_btn03 btn_delete s_small">삭제</button>
+											</li>
+											<li>
+												<span class="file_name">Hyundai1415141235632123.JPG</span>
+												<button type="button" class="txt_btn03 btn_delete s_small">삭제</button>
+											</li>
+											<li>
+												<span class="file_name">Hyundai1415141235632123.JPG</span>
+												<button type="button" class="txt_btn03 btn_delete s_small">삭제</button>
+											</li>
+										</ul>
+									</div>
+									<div class="add_list">
+										<dl>
+											<dt>사업자등록증 사본</dt>
+											<dd class="btn_area">
+												<button type="button" class="btn_xsmall color02" disabled>추가하기</button>
+											</dd>
+										</dl>
+										<ul class="file_list">
+											<li>
+												<span class="file_name">Hyundai1415141235632123.JPG</span>
+												<button type="button" class="txt_btn03 btn_delete s_small">삭제</button>
+											</li>
+											<li>
+												<span class="file_name">Hyundai1415141235632123.JPG</span>
+												<button type="button" class="txt_btn03 btn_delete s_small">삭제</button>
+											</li>
+											<li>
+												<span class="file_name">Hyundai1415141235632123.JPG</span>
+												<button type="button" class="txt_btn03 btn_delete s_small">삭제</button>
+											</li>
+											<li>
+												<span class="file_name">Hyundai1415141235632123.JPG</span>
+												<button type="button" class="txt_btn03 btn_delete s_small">삭제</button>
+											</li>
+											<li>
+												<span class="file_name">Hyundai1415141235632123.JPG</span>
+												<button type="button" class="txt_btn03 btn_delete s_small">삭제</button>
+											</li>
+										</ul>
+									</div>
+									<div class="add_list">
+										<dl>
+											<dt>복지카드 사본</dt>
+											<dd class="btn_area">
+												<button type="button" class="btn_xsmall color02">추가하기</button>
+											</dd>
+										</dl>
+										<ul class="file_list">
+											<li>
+												<span class="file_name">Hyundai1415141235632123.JPG</span>
+												<button type="button" class="txt_btn03 btn_delete s_small">삭제</button>
+											</li>
+											<li>
+												<span class="file_name">Hyundai1415141235632123.JPG</span>
+												<button type="button" class="txt_btn03 btn_delete s_small">삭제</button>
+											</li>
+											<li>
+												<span class="file_name">Hyundai1415141235632123.JPG</span>
+												<button type="button" class="txt_btn03 btn_delete s_small">삭제</button>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="caution">
+							<ul>
+								<li>외국인인 경우 외국인 등록증 혹은 여권 사본을 등록해주시기 바랍니다.</li>
+								<li>모든 서류를 등록하신 후 ‘등록완료’ 버튼을 눌러 주세요.</li>
+								<li>12MB 미만의 파일로 최대 5개까지 등록이 가능합니다.</li>
+							</ul>
+						</div>
+						<div class="btn_area full_type">
+							<button type="button" class="btn_big color02">임시저장</button>
+							<button type="button" class="btn_big color01" disabled>등록완료</button><!-- disable 버튼 -->
+						</div>
+					</div>
+				<!-- //contents -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

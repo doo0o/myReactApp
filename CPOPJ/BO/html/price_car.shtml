@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!--#include file="inc_bo/inc_top.shtml"-->
+<script type="text/javascript">
+function filterPriceSider(amt01, amt02){// 주행구간 slider 스크립트
+	var amt01ID = $("#" + amt01);
+	var amt02ID = $("#" + amt02);
+	// 주행구간
+	if(maxValue < 1) {
+		maxValue = maxPriceSearch;
+	}
+	// D:주행구간슬라이더
+	$( ".sliderRange" ).slider({
+		range: true,
+		min: Number(minPriceSearch),
+		max: Number(maxPriceSearch),
+		values: [Number(minValue), Number(maxValue)],
+
+		create:function(event, ui){
+			var priceHandle = $('.priceSlider').find('.ui-slider-handle');
+			var comPriceHandle = $('.priceSlider').find('.ui-slider-range');
+			$(priceHandle[0]).append('<span class="minPrice"></span>');// 최소 거리
+			$(priceHandle[1]).append('<span class="maxPrice"></span>');
+			$(comPriceHandle[0]).append('<em class="comPrice"></em>');
+
+			$('.comPrice').text(minPriceSearch + "<i> - </i>" + maxPriceSearch);
+
+			if(minPriceSearch === maxPriceSearch){
+				$('.minPrice, .maxPrice').css('visibility', 'hidden')
+				$('.comPrice').css('visibility', 'visible')
+			}else {
+				$('.minPrice, .maxPrice').css('visibility', 'visible')
+				$('.comPrice').css('visibility', 'hidden')
+			}
+
+		},
+		slide: function(event, ui) {
+			$('.minPrice').text(ui.values[0]);
+			$('.maxPrice').text(ui.values[1]);
+			$('.comPrice').text(ui.values[0] + "-" + ui.values[1]);
+			amt01ID.val(ui.values[0]);
+			amt02ID.val(ui.values[1]);
+
+			var minPriceLeft = $('.minPrice').offset().left;
+			var maxPriceLeft = $('.maxPrice').offset().left;
+			var minPriceWidth = $('.minPrice').outerWidth();
+			if(minPriceLeft - (maxPriceLeft - minPriceWidth) > 0){
+				$('.minPrice, .maxPrice').css('visibility', 'hidden')
+				$('.comPrice').css('visibility', 'visible')
+			}else {
+				$('.minPrice, .maxPrice').css('visibility', 'visible')
+				$('.comPrice').css('visibility', 'hidden')
+			}
+
+		}
+	});
+	amt01ID.val($(".sliderRange").slider("values", 0));
+	amt02ID.val($(".sliderRange").slider("values", 1));
+	$(".minPrice").text($(".sliderRange").slider("values", 0));
+	$(".maxPrice").text($(".sliderRange").slider("values", 1));
+}
+</script>
+</head>
+<body>
+<!-- Ajax 로딩시 이미지 출력 영역 -->
+<div id="content">
+	<!-- 1depth title -->
+	<div class="title">
+		<h1>실사검수 상세</h1>
+	</div>
+	<!-- (1) table_insert -->
+	<div class="table_insert" id="search_bar">
+		<table summary="실사검수 상세" style="table-layout:fixed">
+		<caption>실사검수 상세</caption>
+		<colgroup>
+			<col style="width:10%;">
+			<col style="width:10%;">
+			<col style="width:10%;">
+			<col style="width:20%;">
+			<col style="width:10%;">
+			<col style="width:20%;">
+		</colgroup>
+		<tbody>
+			<tr>
+				<th>실사검수번호</th>
+				<td>
+					123456787878
+				</td>
+				<th>차종/등급</th>
+				<td>
+					아반테(HD) <br />1.6 VVT E16 디럭스
+				</td>
+				<th>차량등록번호<br />(차대번호)</th>
+				<td>
+					381354<br />
+					KMHDG4123456
+				</td>
+				<th>연식</th>
+				<td>
+					2013
+				</td>
+			</tr>
+			<tr>
+				<th>경의구분</th>
+				<td>
+					개인
+				</td>
+				<th>회원(ID)</th>
+				<td>
+					홍길동(kiaaa@naver.com)
+				</td>
+				<th>휴대폰번호</th>
+				<td>
+					010-3891-2010
+				</td>
+				<th>실사검수 상태</th>
+				<td>
+					실사검수요청
+				</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- (2) tab_box -->
+	<div class="tab_box marT10">
+		<ul class="tab">
+			<li><a href="#" class="tabmu"    id="tab1">실사검수정보</a></li>
+			<li><a href="#" class="tabmu"    id="tab2">차량정보</a></li>
+			<li><a href="#" class="tabmu_on" id="tab3">감가산정내역</a></li>
+		</ul>
+	</div>
+	<!-- (3) 주행 옵션정보 -->
+	<div class="tit_bar marT10">
+		<h2>주행/옵션정보</h2>
+	</div>
+	<div class="table_insert noline">
+		<table summary="주행/옵션정보" style="table-layout:fixed">
+			<caption>주행/옵션정보</caption>
+			<colgroup>
+				<col style="width:12%;" />
+				<col style="width:44%;" />
+				<col style="width:44%;" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>감가정보</th>
+					<th class="cnt">고객입력정보</th>
+					<th class="cnt last">실사평가정보</th>
+				</tr>
+				<tr>
+					<th class="bg01">주행거리</th>
+					<td class="line">
+						40,234km
+					</td>
+					<td>
+						45,234km
+						<span class="pricing_01 red">▲ 5,000</span>
+					</td>
+				</tr>
+				<tr>
+					<th class="bg01">차량옵션
+						<div class="marT10"><button type="button" class="btn_black">차량옵션조회</button></div>
+					</th>
+					<td class="line">
+						<!-- 선택 -->
+						<ol class="pricing_02">
+							<li><span class="tit">외장</span>
+								<p class="txt">썬루프, 전동접이 사이드미러</p>
+							</li>
+							<li><span class="tit">내장</span>
+								<p class="txt">통풍시트(운전석, 동승석), 전동시트(운전석, 동승석, 뒷자석), 가죽시트, 열선시트(앞, 뒤), 룸미러(전자식 룸미러(ECM), 하이패스 내장)</p>
+							</li>
+							<li><span class="tit">안전</span>
+								<p class="txt">주차보조(전방감지센서, 후방감지센서), 후방카메라, 가죽시트</p>
+							</li>
+							<li><span class="tit">편의</span>
+								<p class="txt">스마트키, 에어컨(오토에어컨, 풀오토에어컨)</p>
+							</li>
+							<li><span class="tit">멀티미디어</span>
+								<p class="txt">네비게이션, 에어컨(오토에어컨, 풀오토에어컨)</p>
+							</li>
+						</ol>
+						<!-- //선택 -->
+					</td>
+					<td>
+						동일함
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- //(3) 주행 옵션정보 -->
+	<!-- (4) 사고감가정보 -->
+	<div class="tit_bar marT10">
+		<h2>사고감가정보</h2>
+	</div>
+	<div class="table_insert noline">
+		<table summary="사고감가정보" style="table-layout:fixed">
+			<caption>사고감가정보</caption>
+			<colgroup>
+				<col style="width:12%;" />
+				<col style="width:44%;" />
+				<col style="width:44%;" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>감가정보</th>
+					<th class="cnt">고객입력정보</th>
+					<th class="cnt last">실사평가정보</th>
+				</tr>
+				<tr>
+					<th class="bg01">외판</th>
+					<td class="line">
+						<!-- 외판 고객 입력 사항 -->
+						<p class="pricing_03">
+							앞범퍼 또는 라이트 <span>판금</span>,
+							뒷도어 <span>교환</span>
+						</p>
+						<!-- //외판 고객 입력 사항 -->
+						<!-- 외판부위 영역 선택 -->
+						<div class="carimg_box up">
+							<div class="carimg"><img src="/BO/image/pricing/sale_car_up.png" alt="" /></div>
+							<!-- 중앙 -->
+							<button type="button" class="btn_area001 icon_w" disabled>앞범퍼 또는 라이트</button><!-- 판금 icon_w  / 교환 icon_x  class 추가하면 됩니다.-->
+							<button type="button" class="btn_area002" disabled>라디에이터 서포트</button>
+							<button type="button" class="btn_area003" disabled>본넷</button>
+							<button type="button" class="btn_area004" disabled>트렁크도어</button>
+							<button type="button" class="btn_area005" disabled>뒷범퍼 또는 라이트</button>
+							<!-- 좌측 -->
+							<button type="button" class="btn_area006" disabled>앞휀더</button>
+							<button type="button" class="btn_area007" disabled>앞도어</button>
+							<button type="button" class="btn_area008 icon_x" disabled>뒷도어</button>
+							<!-- 우측 -->
+							<button type="button" class="btn_area009" disabled>앞휀더</button>
+							<button type="button" class="btn_area010" disabled>앞도어</button>
+							<button type="button" class="btn_area011" disabled>뒷도어</button>
+						</div>
+						<!-- //외판부위 영역 선택 -->
+						<!-- 안내 -->
+						<div class="carimg_info">
+							<span class="icon_w">판금</span>
+							<span class="icon_x">교환</span>
+						</div>
+						<!-- //안내 -->
+					</td>
+					<td>
+						검수사 평가전입니다.
+					</td>
+				</tr>
+				<tr>
+					<th class="bg01">골격</th>
+					<td class="line">
+						<!-- 골격 고객 입력 사항 -->
+						<p class="pricing_03">
+							사이드멤버 <span>교환</span>,
+							사이드멤버 <span>판금</span>
+						</p>
+						<!-- //골격 고객 입력 사항 -->
+						<!-- 골격부위 영역 선택 -->
+						<div class="carimg_box down">
+							<div class="carimg"><img src="/BO/image/pricing/sale_car_down.png" alt="" /></div>
+							<!-- 중앙 -->
+							<button type="button" class="btn_area201" disabled>인사이드패널</button><!-- 판금 icon_w  / 교환 icon_x  class 추가하면 됩니다.-->
+							<button type="button" class="btn_area202" disabled>휠하우스</button>
+							<button type="button" class="btn_area203 icon_x" disabled>사이드멤버</button>
+							<button type="button" class="btn_area204" disabled>인사이드패널</button>
+							<button type="button" class="btn_area205" disabled>휠하우스</button>
+							<button type="button" class="btn_area206 icon_w" disabled>사이드멤버</button>
+							<button type="button" class="btn_area207" disabled>크로스 멤버</button>
+							<button type="button" class="btn_area208" disabled>루프패널</button>
+							<button type="button" class="btn_area209" disabled>트렁크플로어</button>
+							<button type="button" class="btn_area210" disabled>리어패널</button>
+							<!-- 하단 -->
+							<button type="button" class="btn_area211" disabled>휠하우스</button>
+							<button type="button" class="btn_area212" disabled>사이드멤버</button>
+							<button type="button" class="btn_area213" disabled>휠하우스</button>
+							<button type="button" class="btn_area214" disabled>사이드멤버</button>
+							<!-- 좌측 -->
+							<button type="button" class="btn_area215" disabled>사이드실패널</button>
+							<button type="button" class="btn_area216" disabled>A필터</button>
+							<button type="button" class="btn_area217" disabled>B필터</button>
+							<button type="button" class="btn_area218" disabled>C필터</button>
+							<button type="button" class="btn_area219" disabled>뒤휀더</button>
+							<!-- 우측 -->
+							<button type="button" class="btn_area220" disabled>사이드실패널</button>
+							<button type="button" class="btn_area221" disabled>A필터</button>
+							<button type="button" class="btn_area222" disabled>B필터</button>
+							<button type="button" class="btn_area223" disabled>C필터</button>
+							<button type="button" class="btn_area224" disabled>뒤휀더</button>
+						</div>
+						<!-- //골격부위 영역 선택 -->
+						<!-- 안내 -->
+						<div class="carimg_info">
+							<span class="icon_w">판금</span>
+							<span class="icon_x">교환</span>
+						</div>
+						<!-- //안내 -->
+					</td>
+					<td>
+						검수사 평가전입니다.
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- //(4) 사고감가정보 -->
+	
+	<!-- (5) 외판 스크래치 및 기타정보 -->
+	<div class="tit_bar marT10">
+		<h2>외판 스크래치 및 기타정보</h2>
+	</div>
+	<div class="table_insert noline">
+		<table summary="외판 스크래치 및 기타정보" style="table-layout:fixed">
+			<caption>외판 스크래치 및 기타정보</caption>
+			<colgroup>
+				<col style="width:10%;" />
+				<col style="width:45%;" />
+				<col style="width:45%;" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>감가정보</th>
+					<th class="cnt">고객입력정보</th>
+					<th class="cnt last">실사평가정보</th>
+				</tr>
+				<tr>
+					<th class="bg01">외판 스크래치</th>
+					<td class="line">
+						2판
+					</td>
+					<td>
+						13판
+						<span class="pricing_01 red">▲ 11판</span>
+					</td>
+				</tr>
+				<tr>
+					<th class="bg01">차키</th>
+					<td class="line">
+						2개
+					</td>
+					<td>
+						1개
+						<span class="pricing_01 blue">▼ 1개</span>
+					</td>
+				</tr>
+				<tr>
+					<th class="bg01">타이어</th>
+					<td class="line">
+						1개
+					</td>
+					<td>
+						2개
+						<span class="pricing_01 red">▲ 1개</span>
+					</td>
+				</tr>
+				<tr>
+					<th class="bg01">휠 스크래치</th>
+					<td class="line">
+						1개
+					</td>
+					<td>
+						동일함
+					</td>
+				</tr>
+				<tr>
+					<th class="bg01">차량사진</th>
+					<td class="line">
+						<!-- 등록 사진 -->
+						<ol class="pricing_04">
+							<li>
+								<span class="img"><img src="/HMC/img/@thumb/uiux_pcg_1600x1200_01_03.jpg" alt="" /></span>
+								<span class="txt">앞면</span>
+							</li>
+							<li>
+								<span class="img"><img src="/HMC/img/@thumb/visual_660x824_02.jpg" alt="" /></span>
+								<span class="txt">뒷면</span>
+							</li>
+							<li>
+								<span class="img"><img src="/HMC/img/@thumb/sample_car_01.jpg" alt="" /></span>
+								<span class="txt">좌측면</span>
+							</li>
+							<li>
+								<span class="img"><img src="/HMC/img/@thumb/sample_car_01.jpg" alt="" /></span>
+								<span class="txt">우측면</span>
+							</li>
+							<li>
+								<span class="img"><img src="/HMC/img/@thumb/sample_car_01.jpg" alt="" /></span>
+								<span class="txt">시동 켜진 계기판</span>
+							</li>
+							<li>
+								<span class="img"><img src="/HMC/img/@thumb/sample_car_01.jpg" alt="" /></span>
+								<span class="txt">추가사진</span>
+							</li>
+							<li>
+								<span class="img"><img src="/HMC/img/@thumb/sample_car_01.jpg" alt="" /></span>
+								<span class="txt">추가사진</span>
+							</li>
+							<li>
+								<span class="img"><img src="/HMC/img/@thumb/sample_car_01.jpg" alt="" /></span>
+								<span class="txt">추가사진</span>
+							</li>
+							<li>
+								<span class="img"><img src="/HMC/img/@thumb/sample_car_01.jpg" alt="" /></span>
+								<span class="txt">추가사진</span>
+							</li>
+							<li>
+								<span class="img"><img src="/HMC/img/@thumb/sample_car_01.jpg" alt="" /></span>
+								<span class="txt">추가사진</span>
+							</li>
+						</ol>	
+						<!-- //등록 사진 -->
+					</td>
+					<td>
+						<!-- 등록 사진 -->
+						<ol class="pricing_04">
+							<li>
+								<span class="img"><img src="/HMC/img/@thumb/uiux_pcg_1600x1200_01_03.jpg" alt="" /></span>
+								<span class="txt">앞면</span>
+							</li>
+							<li>
+								<span class="img"><img src="/HMC/img/@thumb/visual_660x824_02.jpg" alt="" /></span>
+								<span class="txt">뒷면</span>
+							</li>
+							<li>
+								<span class="img"><img src="/HMC/img/@thumb/sample_car_01.jpg" alt="" /></span>
+								<span class="txt">좌측면</span>
+							</li>
+							<li>
+								<span class="img"><img src="/HMC/img/@thumb/sample_car_01.jpg" alt="" /></span>
+								<span class="txt">우측면</span>
+							</li>
+							<li>
+								<span class="img"><img src="/HMC/img/@thumb/sample_car_01.jpg" alt="" /></span>
+								<span class="txt">시동 켜진 계기판</span>
+							</li>
+							<li>
+								<span class="img"><img src="/HMC/img/@thumb/sample_car_01.jpg" alt="" /></span>
+								<span class="txt">추가사진</span>
+							</li>
+							<li>
+								<span class="img"><img src="/HMC/img/@thumb/sample_car_01.jpg" alt="" /></span>
+								<span class="txt">추가사진</span>
+							</li>
+							<li>
+								<span class="img"><img src="/HMC/img/@thumb/sample_car_01.jpg" alt="" /></span>
+								<span class="txt">추가사진</span>
+							</li>
+							<li>
+								<span class="img"><img src="/HMC/img/@thumb/sample_car_01.jpg" alt="" /></span>
+								<span class="txt">추가사진</span>
+							</li>
+							<li>
+								<span class="img"><img src="/HMC/img/@thumb/sample_car_01.jpg" alt="" /></span>
+								<span class="txt">추가사진</span>
+							</li>
+						</ol>	
+						<!-- //등록 사진 -->
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- //(5) 외판 스크래치 및 기타정보 -->
+
+	<!-- (6) 고객 추가 입력 항목 -->
+	<div class="tit_bar marT10">
+		<h2>고객 추가 입력 항목</h2>
+	</div>
+	<div class="table_insert noline">
+		<table summary="고객 추가 입력 항목" style="table-layout:fixed">
+			<caption>고객 추가 입력 항목</caption>
+			<colgroup>
+				<col style="width:12%;" />
+				<col style="width:88%;" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th class="bg01">추가옵션</th>
+					<td>
+						휠 인치업
+						<button type="button" class="btn_black">튜닝이력조회</button>
+					</td>
+				</tr>
+				<tr>
+					<th class="bg01">사고여부</th>
+					<td>
+						주차하다가 살짝 긁힘
+						<button type="button" class="btn_black">보험이력조회</button>
+					</td>
+				</tr>
+				<tr>
+					<th class="bg01">정비/수리 필요</th>
+					<td>
+						앞유리가 살짝 깨졌어요.
+					</td>
+				</tr>
+				<tr>
+					<th class="bg01"><strong class="red">검수사 확인 의견</strong></th>
+					<td>
+						<strong class="red">앞유리 찍힘 판정, 사이드미러 미세한 스크래치</strong>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- //(6) 고객 추가 입력 항목 -->
+
+	<!-- (7) 실사검수 감가항목 -->
+	<div class="tit_bar marT10">
+		<h2>실사검수 감가항목</h2>
+	</div>
+	<div class="table_insert noline">
+		<table summary="실사검수 감가항목" style="table-layout:fixed">
+			<caption>실사검수 감가항목</caption>
+			<colgroup>
+				<col style="width:12%;" />
+				<col style="width:20%;" />
+				<col style="width:68%;" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th>감가정보</th>
+					<th class="cnt">이상여부</th>
+					<th class="cnt last">내용</th>
+				</tr>
+				<tr>
+					<th class="bg01">유리복원</th>
+					<td class="line">이상없음</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th class="bg01">유리찍힘</th>
+					<td class="line">
+						<strong class="red">이상있음</strong>
+					</td>
+					<td>
+						<strong class="red">1개</strong>
+					</td>
+				</tr>
+				<tr>
+					<th class="bg01">시트</th>
+					<td class="line">이상없음</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th class="bg01">계기판 경고등 있음</th>
+					<td class="line">
+						<strong class="red">이상있음</strong>
+					</td>
+					<td>
+						<strong class="red">엔진오일 경고등</strong>
+						<span class="pricing_05"><img src="/HMC/img/@thumb/uiux_pcg_1600x1200_01_03.jpg" /></span>
+					</td>
+				</tr>
+				<tr>
+					<th class="bg01">옵션 기능 작동 이상</th>
+					<td class="line">이상없음</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th class="bg01">누유</th>
+					<td class="line">이상없음</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th class="bg01">범퍼</th>
+					<td class="line">이상없음</td>
+					<td></td>
+				</tr>
+				<tr>
+					<th class="bg01">라이트</th>
+					<td class="line">이상없음</td>
+					<td></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<!-- //(7) 실사검수 감가항목 -->
+
+
+	<!-- Button Search -->
+	<div class="btn_sch marB30">
+		<a href="#" class="btn_blue" ><span>수기 입력</span></a>
+		<a href="#" class="btn_gblue"><span>닫기</span></a>
+	</div>
+	<!-- Button Search End-->
+</div>
+	
+</body>
+</html>

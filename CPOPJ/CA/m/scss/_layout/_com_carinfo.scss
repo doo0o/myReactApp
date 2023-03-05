@@ -1,0 +1,67 @@
+.sale_car02{
+	width:100%;
+	padding:0 20px 0;
+	.CPOpop_modal &{
+		margin-bottom:70px;
+		max-height:350px;
+		overflow-y:auto;
+	}
+	> p.tit{
+		padding:10px 0 10px 0;
+		border-bottom:1px solid $COL_Gray02;
+		color:$COL_Gray08;
+		@include Mix_Font('Txt-B', 14, 21);
+	}
+	.car_info{
+		display:flex;
+		flex-flow:row;
+		flex-wrap:wrap;
+		> dt{
+			flex:0 0 100px;
+			padding:12px 0;
+			border-bottom:1px solid $COL_Gray02;
+			color:$COL_Gray08;
+			@include Mix_Font('Txt-M', 13, 20);
+
+		}
+		> dd{
+			flex:0 0 calc(100% - 100px);
+			width:calc(100% - 100px);
+			padding:12px 0;
+			border-bottom:1px solid $COL_Gray02;
+			color:$COL_Gray08;
+			@include Mix_Font('Txt-R', 13, 20);
+			.list{
+				li{
+					&:not(:last-of-type){
+						margin-bottom:8px;
+					}
+				}
+			}
+			.tit{
+				margin-bottom:4px;
+				color:$COL_Gray08;
+				@include Mix_Font('Txt-B', 13, 20);
+			}
+			.txt{
+			}
+			.bull{
+				display:block;
+				position:relative;
+				z-index:1;
+				padding:0 0 0 8px;
+				&::before{
+					content:'';
+					display:block;
+					width:2px;
+					height:2px;
+					position:absolute;
+					top:8px;
+					left:0;
+					background:$COL_Gray08;
+				}
+			}
+		}
+	}
+
+}

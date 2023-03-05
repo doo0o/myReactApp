@@ -1,0 +1,138 @@
+[class^="option_key"]{
+	display:block;
+	color:map-get($COL_Base_04 , "bg_light");
+	@include Mix_Font('Txt-R', 11, 15);
+
+	text-align:center;
+	.pdp03_tabs &{// 상품상세 '주요옵션'
+		&::before{
+			content:'';
+			display:block;
+			width:48px;
+			height:48px;
+			margin:0 auto 6px;
+			background:url('../img/sprite_PDP_option.png') no-repeat;
+			background-size:auto 200px;
+		}
+	}
+	.unit_compare &{// 비교하기 레이어팝업 '주요옵션'
+		&::before{
+			content:'';
+			display:block;
+			width:30px;
+			height:30px;
+			margin:0 auto 6px;
+			background:url('../img/sprite_PDP_option_small.png') no-repeat;
+			background-size:auto 200px;
+		}
+	}
+}
+li.off{
+	[class^="option_key"]{		
+		.unit_compare &{
+			opacity:0.3;
+		}
+	}
+}
+.option_key001{ //네비게이션
+	@include Mix_PDP_Option(-159px 0);
+}
+.option_key013{ //하이패스
+	@include Mix_PDP_Option(-212px -53px);
+}
+.option_key002{ //블루투스
+	@include Mix_PDP_Option(-159px -106px);
+}
+.option_key031{ //크루즈컨트롤
+	@include Mix_PDP_Option(-106px -106px);
+}
+.option_key014{ //열선스티어링휠
+	@include Mix_PDP_Option(-53px 0);
+}
+.option_key015{ //열선시트(앞)
+	@include Mix_PDP_Option(-106px -53px);
+}
+.option_key016{ //열선시트(뒤)
+	@include Mix_PDP_Option(-106px -53px);
+}
+.option_key017{ //전동시트(앞)
+	@include Mix_PDP_Option(-53px -53px);
+}
+.option_key018{ //전동시트(뒤)
+	@include Mix_PDP_Option(-53px -53px);
+}
+.option_key019{ //통풍시트(앞)
+	@include Mix_PDP_Option(-159px -53px);
+}
+.option_key021{ //가죽시트
+	@include Mix_PDP_Option(0 -53px);
+}
+.option_key022{ //인조 가죽시트
+	@include Mix_PDP_Option(0 -53px);
+}
+.option_key023{ //직물 시트
+	@include Mix_PDP_Option(0 -53px);
+}
+.option_key033{ //전동식 트렁크
+	@include Mix_PDP_Option(-106px 0);
+}
+.option_key012{ //썬루프
+	@include Mix_PDP_Option(-265px 0);
+}
+.option_key037{ //헤드업디스플레이
+	@include Mix_PDP_Option(-212px -106px);
+}
+.option_key035{ //서라운드 뷰 모니터
+	@include Mix_PDP_Option(-53px -106px);
+}
+.option_key036{ //후방 모니터
+	@include Mix_PDP_Option(0 -106px);
+}
+.option_key038{ //후측방경보시스템
+	@include Mix_PDP_Option(-265px -53px);
+}
+.option_key039{ //차선이탈경보
+	@include Mix_PDP_Option(-265px -106px);
+}
+.option_key034{ //버튼시동
+	@include Mix_PDP_Option(-212px 0);
+}
+.option_key040{ //스마트키
+	@include Mix_PDP_Option(0 0);
+}
+
+// 성능점검, 보험이력 아이콘
+[class^="perfor_icon_"]{
+	&::before{
+		content:'';
+		display:block;
+		width:48px;height:48px;
+		margin:0 auto 5px;
+		background: url('../img/bg_pdp_icon.png') no-repeat;
+		background-size: auto 48px;
+	}
+}
+.perfor_icon_01{
+	@include Mix_PDP_Icon(0 0)
+}
+.perfor_icon_02{
+	@include Mix_PDP_Icon(-53px 0)
+}
+.perfor_icon_03{
+	@include Mix_PDP_Icon(-106px 0)
+}
+.perfor_icon_04{
+	@include Mix_PDP_Icon(-159px 0)
+}
+.perfor_icon_05{
+	@include Mix_PDP_Icon(-212px 0)
+}
+.perfor_icon_06{
+	@include Mix_PDP_Icon(-265px 0)
+}
+.perfor_icon_07{
+	@include Mix_PDP_Icon(-318px 0)
+}
+.perfor_icon_08{
+	@include Mix_PDP_Icon(-371px 0)
+}

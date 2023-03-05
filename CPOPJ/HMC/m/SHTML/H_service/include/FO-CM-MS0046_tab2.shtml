@@ -1,0 +1,83 @@
+<div class="service_list half white">
+	<p class="service_title">블루링크 / 제네시스 커넥티드<br>서비스로 더욱 편안한<br>드라이빙을 도와드립니다.</p>
+	<ul class="list_icon">
+		<li>
+			<div class="img">
+				<img src="/HMC/m/img/service/icon_connect01.png" alt="">
+			</div>
+			<div class="info">
+				<span class="tit02">원격제어</span>
+				<span class="txt02">스마트폰과 음성인식으로<br>편리하게 차량을<br>제어하실 수 있습니다.</span>
+			</div>
+		</li>
+		<li>
+			<div class="img">
+				<img src="/HMC/m/img/service/icon_connect02.png" alt="">
+			</div>
+			<div class="info">
+				<span class="tit02">안전 보안</span>
+				<span class="txt02">사고와 위급 상황에서도<br>든든하게 지켜드립니다.</span>
+			</div>
+		</li>
+		<li>
+			<div class="img">
+				<img src="/HMC/m/img/service/icon_connect03.png" alt="">
+			</div>
+			<div class="info">
+				<span class="tit02">차량 관리</span>
+				<span class="txt02">고객님 차의 믿음직한<br>주치의가 되어 드립니다.</span>
+			</div>
+		</li>
+		<li>
+			<div class="img">
+				<img src="/HMC/m/img/service/icon_connect04.png" alt="">
+			</div>
+			<div class="info">
+				<span class="tit02">길 안내</span>
+				<span class="txt02">빠르고 정확하게 목적지<br>까지 안내해 드립니다.</span>
+			</div>
+		</li>
+		<li>
+			<div class="img">
+				<img src="/HMC/m/img/service/icon_connect05.png" alt="">
+			</div>
+			<div class="info">
+				<span class="tit02">뮤직 스트리밍</span>
+				<span class="txt02">차량에서 휴대폰 연결 없이<br>스트리밍으로 음악을<br>감상할 수 있습니다.</span>
+			</div>
+		</li>
+		<li>
+			<div class="img">
+				<img src="/HMC/m/img/service/icon_connect06.png" alt="">
+			</div>
+			<div class="info">
+				<span class="tit02">디지털 키 2</span>
+				<span class="txt02">스마트폰 또는 NFC<br>카드 키에 차량을 등록하여<br>편리한 차량 제어를 경험해<br>보세요.</span>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="service_banner top">
+	<div class="inner">
+		<div class="img bluelink">
+			<img src="/HMC/m/img/service/icon_logo_bluelink.png" alt="">
+		</div>
+		<a href="#" class="btn_arrow_small01 icon_link">현대자동차 블루링크 서비스 소개</a>
+	</div>
+	<div class="inner black">
+		<div class="img connect">
+			<img src="/HMC/m/img/service/icon_logo_connect.png" alt="">
+		</div>
+		<a href="#" class="btn_arrow_small01 icon_link">제네시스 커텍티드 서비스 소개</a>
+	</div>
+</div>
+<div class="caution">
+	<p class="tit">유의사항</p>
+	<ul>
+		<li>차종에 따라 블루링크 / 제네시스 커넥티드 서비스가 제공됩니다.</li>
+		<li>블루링크 제공 차량은 가입신청서로만 가입이 가능합니다.</li>
+		<li>본인 명의 차량이 아닌 경우 또는 중고차 등 유료 가입 시 제네시스 커넥티드 앱으로 가입하실 수 있습니다.(내비게이션으로 가입 불가)</li>
+		<li>차량 계약자가 아닌 실 사용자 명의로 제네시스 커넥티드 서비스 가입을 희망하실 경우 실 사용자 명의로 제네시스 커넥티드 앱에 로그인하여 가입 진행해 주세요.</li>
+		<li>제네시스 커넥티드 앱 또는 내비게이션으로 가입이 어려우신 경우 가입 신청서를 작성하신 후 현대자동차 지점, 대리점 또는 제네시스 커넥티드 고객센터에 제출하시면 가입하실 수 있습니다.</li>
+	</ul>
+</div>

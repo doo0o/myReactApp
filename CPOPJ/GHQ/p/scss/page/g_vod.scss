@@ -1,0 +1,99 @@
+@charset 'utf-8';
+
+@import '../_common/g_function';
+@import '../_common/g_mixins';
+
+.vod{
+	.commerce_vod_sec{
+		margin-top: 80px;
+		.form_area{
+			width: 120px;
+			.com_select_btn{
+				color: $COL_black;
+				padding-right: 38px;
+			}
+			.com_select_item{
+				padding-right: 38px;
+			}
+		}
+		
+		.vod_list{
+			display: flex;
+			flex-wrap: wrap;
+			column-gap: 20px;
+			row-gap: 48px;
+			margin-top: 12px;
+			li{
+				width: 280px;
+				& > button{
+					display: block;
+				}
+			}
+			.vod_thum{
+				position: relative;
+				width: 100%; height: 350px;
+				img{
+					display: block;
+					width: 100%; height: 100%;
+					object-fit: cover;
+				}
+				.info--timer{
+					position: absolute;
+					bottom: 0;
+					right: 0;
+				}
+			}
+			.vod_info{
+				margin-top: 12px;
+				&--date{
+					@include fontT(15);
+					color: color(COL_gs03);
+				}
+				&--tit{
+					@include fontH(18);
+					margin-top: 4px;
+				}
+				&--btn{
+					display: flex;
+					align-items: center;
+					margin-top: 12px;
+					& > button{
+						display: flex;
+						align-items: center;
+						@include fontT(14);
+						color: color(COL_gs03);
+						margin-right: 12px;
+						&:last-child{
+							margin: 0;
+						}
+						&::before{
+							content: "";
+							display: inline-block;
+							width: 16px;
+							height: 16px;
+							margin-right: 4px;
+						}
+						&.views{
+							&::before{
+								background: {
+									image: url(../img/icon/icon_ui_play03.svg)
+								};
+							}
+						}
+						&.like{
+							&::before{
+								@include Icon_heart("line", $COL_black, $size : "16px");
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.swiper-button-disabled{
+		display: none;
+	}
+	.btn_area.col_type{
+		margin-top: 32px;
+	}
+}

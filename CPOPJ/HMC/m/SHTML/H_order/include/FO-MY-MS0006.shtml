@@ -1,0 +1,177 @@
+<!-- FO-MY-MS0033 : 차량정보 - FULL -->
+<div class="CPOpop_full" id="FO-MY-MS0033">
+	<div class="p_head">
+		<h2 class="tit">차량정보</h2>
+	</div>
+	<div class="p_wrap">		
+		<div class="car_info layer_bg no_btn">
+			<section class="top_txt">
+				<P class="type01">
+					차량에 대한 상세정보를<br>
+					확인하세요.
+				</P>
+				<div class="sec_tit">기본정보</div>
+				<ul class="list">
+					<li>
+						<span class="tit">차량번호</span>
+						<span class="txt">123차2381</span>
+					</li>
+					<li>
+						<span class="tit">제조사명</span>
+						<span class="txt">현대</span>
+					</li>
+					<li>
+						<span class="tit">모델명</span>
+						<span class="txt">쏘나타 DN8</span>
+					</li>
+					<li>
+						<span class="tit">신차등급명</span>
+						<span class="txt">2.5 가솔린 캘리그래피</span>
+					</li>
+					<li>
+						<span class="tit">최초등록일</span>
+						<span class="txt">2021.12.28</span>
+					</li>
+					<li>
+						<span class="tit">연식</span>
+						<span class="txt">2020년</span>
+					</li>
+					<li>
+						<span class="tit">차종</span>
+						<span class="txt">준대형</span>
+					</li>
+					<li>
+						<span class="tit">연료</span>
+						<span class="txt">가솔린</span>
+					</li>
+					<li>
+						<span class="tit">배기량</span>
+						<span class="txt">2,497cc</span>
+					</li>
+					<li>
+						<span class="tit">출고가격</span>
+						<span class="txt">38,573,000 원</span>
+					</li>
+				</ul>
+			</section>
+			<section class="bg_cont">
+				<div class="sec_tit">구매/옵션 정보</div>
+				<ul class="list">
+					<li>
+						<span class="tit">주행거리</span>
+						<span class="txt">12,345 km</span>
+					</li>
+					<li>
+						<span class="tit">별도 추가 옵션</span>
+						<span class="txt">크롬 휠, 추가 네비게이션, 시야 확장 사이드 미러</span>
+					</li>
+					<li>
+						<span class="tit">구입방식</span>
+						<span class="txt">결제가 모두 완료된 상태</span>
+					</li>
+					<li>
+						<span class="tit">변속기</span>
+						<span class="txt">오토</span>
+					</li>
+					<li>
+						<span class="tit">색상</span>
+						<span class="txt">녹턴 그레이 메탈릭</span>
+					</li>
+					<li>
+						<span class="tit">출고 당시 옵션</span>
+						<ul class="depth_02">
+							<li>
+								<span class="tit">외장</span>
+								<span class="txt">썬루프, 전동접이 사이드미러</span>
+							</li>
+							<li>
+								<span class="tit">내장</span>
+								<span class="txt">통풍시트(운전석, 동승석), 전동시트(운전석, 동승석, 
+									뒷자석), 가죽시트, 열선시트(앞, 뒤), 룸미러(전자식 
+									룸미러(ECM), 하이패스 내장)
+								</span>
+							</li>
+							<li>
+								<span class="tit">안전</span>
+								<span class="txt">주차보조(전방감지센서, 후방감지센서), 후방카메라, 가죽시트</span>
+							</li>
+							<li>
+								<span class="tit">편의</span>
+								<span class="txt">스마트키, 에어컨(오토에어컨)</span>
+							</li>
+							<li>
+								<span class="tit">멀티미디어</span>
+								<span class="txt">네비게이션</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<div class="sec_tit">수리/손상 정보</div>
+				<ul class="list">
+					<li>
+						<span class="tit">사고여부</span>
+						<span class="txt">주차하다가 살짝 긁혔어요.</span>
+					</li>
+					<li>
+						<span class="tit">교환/판금 이력</span>
+						<ul class="depth_02">
+							<li>
+								<dl>
+									<dt class="tit">외판부위</dt>
+									<dd>[교환] 본넷</dd>
+									<dd>[판금] 앞도어</dd>
+								</dl>
+								<dl>
+									<dt class="tit">골격부위</dt>
+									<dd>[교환] 사이드실 패널</dd>
+									<dd>[판금] 크로스멤버</dd>
+								</dl>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<span class="tit">외판 도색</span>
+						<span class="txt">2판 필요해요</span>
+					</li>
+					<li>
+						<span class="tit">휠 스크래치</span>
+						<span class="txt">2개 있어요</span>
+					</li>
+					<li>
+						<span class="tit">교체 필요 타이어</span>
+						<span class="txt">2개 있어요</span>
+					</li>
+					<li>
+						<span class="tit">정비/수리</span>
+						<span class="txt">엔진 오일 교체가 필요해요</span>
+					</li>
+					<li>
+						<span class="tit">보조키</span>
+						<span class="txt">네, 있어요</span>
+					</li>
+				</ul>
+				<div class="sec_tit">차량 사진</div>
+				<ul class="car_photo">
+					<li>
+						<span class="img"><img src="/HMC/m/img/@thumb/uiux_pcg_1600x1200_01_03.jpg" alt=""></span>
+						<span class="txt">앞면</span>
+					</li>
+					<li>
+						<span class="img"><img src="/HMC/m/img/@thumb/visual_660x824_02.jpg" alt=""></span>
+						<span class="txt">뒷면</span>
+					</li>
+					<li>
+						<span class="img"><img src="/HMC/m/img/@thumb/visual_660x824_02.jpg" alt=""></span>
+						<span class="txt">시동 켜진 계기판</span>
+					</li>
+					<li>
+						<span class="img"><img src="/HMC/m/img/@thumb/visual_660x824_02.jpg" alt=""></span>
+						<span class="txt">추가사진</span>
+					</li>
+				</ul>
+			</section>
+		</div>
+
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

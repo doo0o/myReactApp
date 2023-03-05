@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>회원정보</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_login.css">
+</head>
+<body>
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">회원정보</h1>		
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="mypage_member">
+			<div class="cont_member">
+				<ol class="head_box">
+					<li>
+						<span class="tit">법인명</span>
+						<span class="txt">㈜ 현대자동차</span>
+					</li>
+					<li>
+						<span class="tit">사업자 등록 번호</span>
+						<span class="txt">123-45-67890</span>
+					</li>
+				</ol>
+				<div class="join_list open"> <!--초기화면 펼침시 class open 추가-->
+					<div class="item">
+						현대자동차 인증 중고차
+					</div>
+					<ul class="accordion">
+						<li>
+							<div class="item">
+								이용 약관 동의
+								<button type="button" class="btn_arrow" data-popup="FO-ME-MS0002">이용 약관 자세히 보기</button><!-- 레이어 팝업 -->
+							</div>
+						</li>
+						<li>
+							<div class="item">
+								개인정보 수집 및 이용 동의
+								<button type="button" class="btn_arrow" data-popup="FO-ME-MS0002">개인정보 수집 및 이용 자세히 보기</button><!-- 레이어 팝업 -->
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="unit_btn">
+					<a href="#" class="btn_mid05">저장</a>
+				</div>
+				<div class="btn_area">
+					<button type="button" class="btn_txt_big01">서비스 해지</button>
+				</div>
+			</div>
+			<div class="btn_sticky">
+				<button type="button" class="btn_big01">회원정보 변경</button>
+			</div>
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/HMC/m/SHTML/H_inc/popup_include_all.shtml"-->
+</body>
+</html>

@@ -1,0 +1,3601 @@
+@charset "UTF-8";
+/* 
+	마이페이지
+*/
+/*PDP 성능상태 점검기록부 팝업 사고이력 단순수리 정보*/
+/* 제네시스 제외 */
+/* 제네시스 제외 */
+/* 공통 Font 합수 (폰트명 끝부분, font-size, line-height) 
+ex) @include Mix_Font('Head-M', 18, 23); */
+/* 상품유닛 */
+/* button */
+/* 제네시스 body 배경색 */
+/* 제네시스 body 배경색 */
+/*PDP 성능상태 점검기록부 팝업 사고이력 단순수리 정보*/
+/* 제네시스 제외 */
+/* 제네시스 제외 */
+/* 공통 Font 합수 (폰트명 끝부분, font-size, line-height) 
+ex) @include Mix_Font('Head-M', 18, 23); */
+/* 상품유닛 */
+/* button */
+/* 제네시스 body 배경색 */
+/* 제네시스 body 배경색 */
+.ipt_mycar {
+  display: block;
+  position: relative;
+  z-index: 410;
+  width: 100%;
+}
+.ipt_mycar input[type=text] {
+  width: 100%;
+  height: 66px;
+  padding: 18px 15px;
+  border: 1px solid #AF6249;
+  border-radius: 6px;
+  font-family: "GeneSans_Head-M";
+  font-size: 24px;
+  line-height: 66px;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.15);
+  caret-color: #AF6249;
+}
+.ipt_mycar input[type=text]::placeholder {
+  color: #727272;
+  text-shadow: none;
+}
+.ipt_mycar .btn_link {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #AF6249 !important;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+.ipt_mycar .btn_link::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 14px;
+  height: 14px;
+  background: url("../img/bg_form.png") no-repeat;
+  background-size: 200px auto;
+  background-position: -179px -19px;
+}
+.ipt_mycar .btn_link:disabled {
+  background: #F8F8F8 !important;
+}
+.ipt_mycar .btn_link:disabled::before {
+  background-position-y: 0;
+}
+
+.ipt_text {
+  position: relative;
+  width: 100%;
+}
+.ipt_text input[type=text] {
+  width: 100%;
+  height: 56px;
+  padding: 16.5px 38px 16.5px 100px;
+  border: none;
+  font-family: GeneSans_Head-R;
+  text-align: right;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.15);
+}
+.ipt_text input[type=text]:focus {
+  border: 1px solid #AF6249;
+}
+.ipt_text span {
+  position: absolute;
+  top: 19px;
+  left: 17px;
+  color: #262626;
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 18px;
+}
+.ipt_text .ico_clear {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 38px;
+  height: 56px;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+.ipt_text .ico_clear::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 19px;
+  right: 16px;
+  width: 18px;
+  height: 18px;
+  background: url("../img/bg_form.png") no-repeat;
+  background-size: 200px auto;
+  background-position: -122px -30px;
+}
+.ipt_text.on .ico_clear::before {
+  background-position-x: -145px;
+}
+
+.lyer_mycar {
+  min-height: 100%;
+  padding: 30px 21px;
+  background: #F8F8F8;
+}
+.lyer_mycar .head .tit {
+  padding-bottom: 12px;
+  font-family: "GeneSans_Head-L";
+  font-size: 24px;
+  line-height: 32px;
+}
+.lyer_mycar .head span {
+  color: #262626;
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 22px;
+}
+.lyer_mycar .cont {
+  margin-top: 30px;
+}
+.lyer_mycar .cont .cont_tit {
+  font-family: "GeneSans_Txt-M";
+  font-size: 15px;
+  line-height: 24px;
+  color: #262626;
+}
+.lyer_mycar .cont .entry {
+  position: relative;
+  margin: 20px 0 0;
+  padding-bottom: 2px;
+}
+.lyer_mycar .cont .entry .inp_txt {
+  width: 100%;
+  padding: 3px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  border-bottom: 2px solid #AF6249;
+  margin-top: 5px;
+  caret-color: rgba(0, 0, 0, 0.5);
+  color: #000000;
+  font-family: "GeneSans_Head-R";
+  font-size: 44px;
+  line-height: 55px;
+}
+.lyer_mycar .cont .entry .inp_txt::placeholder {
+  line-height: inherit;
+  color: #E5E5E5;
+}
+
+/*PDP 성능상태 점검기록부 팝업 사고이력 단순수리 정보*/
+/* 제네시스 제외 */
+/* 제네시스 제외 */
+/* 공통 Font 합수 (폰트명 끝부분, font-size, line-height) 
+ex) @include Mix_Font('Head-M', 18, 23); */
+/* 상품유닛 */
+/* button */
+/* 제네시스 body 배경색 */
+/* 제네시스 body 배경색 */
+.addr_head {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 55px;
+  transition: all 1s;
+  background: #F8F8F8;
+  border-top: 1px solid #F2F2F2;
+}
+.addr_head .inbox_type04 {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  padding: 0 60px 0 20px;
+  border-bottom: 1px solid #AF6249;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.06);
+  transition: all 0.1s linear;
+}
+.addr_head .inbox_type04 .txt {
+  caret-color: #AF6249;
+}
+.addr_head .inbox_type04 .ic_search {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  margin-top: -13px;
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+.addr_head .inbox_type04 .ic_search::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 0 auto;
+  background: url("../img/bg_layout.png") no-repeat;
+  background-size: 300px auto;
+  background-position: -51px -27px;
+}
+.addr_head .inbox_type04 .ico_delete {
+  right: 15px;
+}
+
+.address_txt {
+  padding: 40px 21px;
+}
+.address_txt .tit {
+  color: #000000;
+  font-family: "GeneSans_Head-R";
+  font-size: 24px;
+  line-height: 33px;
+}
+.address_txt .txt {
+  margin-top: 12px;
+  color: #262626;
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 23px;
+}
+.address_txt .txt2 {
+  margin-top: 25px;
+  color: #262626;
+  font-family: "GeneSans_Txt-R";
+  font-size: 13px;
+  line-height: 21px;
+}
+.address_txt .txt2 li:last-child {
+  margin-top: 15px;
+}
+.address_txt .txt2 em {
+  display: block;
+  color: #727272;
+}
+
+.address_list {
+  padding: 25px 15px 40px;
+  background-color: #F8F8F8;
+}
+.address_list .total {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 0 6px;
+  color: #262626;
+  font-family: "GeneSans_Head-R";
+  font-size: 14px;
+  line-height: 19px;
+}
+.address_list .total .num {
+  float: right;
+  color: #262626;
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 23px;
+}
+.address_list .total .num i {
+  color: #AF6249;
+  font-family: "GeneSans_Txt-M";
+  font-size: 14px;
+  line-height: 23px;
+}
+.address_list .list {
+  background-color: #FFFFFF;
+}
+.address_list .list button {
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid #F2F2F2;
+  font-size: 0;
+  text-align: left;
+}
+.address_list .list button > span {
+  display: block;
+  text-align: left;
+}
+.address_list .list button > span:last-child {
+  margin-top: 5px;
+}
+.address_list .list button .num {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 7px;
+  color: #000000;
+  font-family: "GeneSans_Head-R";
+  font-size: 13px;
+  line-height: 18px;
+}
+.address_list .list button .num:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+}
+.address_list .list button .addr {
+  display: flex;
+  color: #262626;
+  font-family: "GeneSans_Txt-R";
+  font-size: 12px;
+  line-height: 20px;
+}
+.address_list .list button .addr .flag {
+  width: 43px;
+  height: 21px;
+  margin-right: 5px;
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  color: #666666;
+  font-family: "GeneSans_Txt-R";
+  font-size: 12px;
+  line-height: 21px;
+  text-align: center;
+}
+.address_list .list button .addr .txt {
+  flex: 1;
+}
+.address_list .list li:last-child button {
+  border: 0;
+}
+
+/*PDP 성능상태 점검기록부 팝업 사고이력 단순수리 정보*/
+/* 제네시스 제외 */
+/* 제네시스 제외 */
+/* 공통 Font 합수 (폰트명 끝부분, font-size, line-height) 
+ex) @include Mix_Font('Head-M', 18, 23); */
+/* 상품유닛 */
+/* button */
+/* 제네시스 body 배경색 */
+/* 제네시스 body 배경색 */
+body.fixed {
+  background: #F8F8F8;
+}
+body.fixed #CPOcontents {
+  overflow: hidden;
+  height: 100%;
+  padding-top: 0;
+}
+body.fixed #CPOfooter {
+  display: none;
+}
+
+#searchForm {
+  height: 100%;
+}
+
+.cpo_search {
+  overflow-y: auto;
+  height: 100%;
+  background: #0D0D0D;
+}
+.cpo_search .btn_sticky {
+  bottom: -200px !important;
+  transition: bottom 1.2s ease;
+}
+.cpo_search .btn_sticky.load {
+  bottom: 0 !important;
+}
+.cpo_search.isAnimate {
+  overflow: hidden;
+}
+.cpo_search.fixed {
+  padding: 52px 0 0 0;
+}
+.cpo_search.fixed .srch_head {
+  top: 0;
+}
+.cpo_search.fixed .srch_head .ipt_search {
+  width: 100%;
+  margin: 0;
+  padding: 0 40px 0 30px;
+  border-width: 0 0 1px 0;
+}
+.cpo_search.fixed .srch_model .srch_keyword {
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+}
+.cpo_search.fixed .srch_model .srch_keyword .list {
+  padding-left: 25px;
+}
+.cpo_search.fixed .srch_model .srch_keyword .btn_open {
+  right: 8px;
+}
+.cpo_search.fixed .srch_model .srch_ifbox {
+  margin-top: 0;
+}
+.cpo_search.fixed .srch_recent {
+  margin-top: 0;
+}
+.cpo_search.fixed .srch_auto {
+  margin-top: 0;
+}
+
+.p_wrap .srch_ifbox {
+  margin-top: 0;
+}
+
+.srch_head {
+  position: fixed;
+  top: 150px;
+  left: 0;
+  z-index: 600;
+  width: 100%;
+  height: 53px;
+  transition: all 1s;
+  background: #0D0D0D;
+}
+.srch_head .ipt_search {
+  position: relative;
+  width: calc(100% - 42px);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 40px 0 20px;
+  border: 1px solid #AF6249;
+  background: #0D0D0D;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.12);
+  transition: all 0.1s linear;
+}
+.srch_head .ipt_search .util {
+  position: absolute;
+  top: 12px;
+  right: 17px;
+}
+.srch_head .ipt_search .util li {
+  float: left;
+  margin-left: 16px;
+}
+.srch_head .ipt_search .util li:first-of-type {
+  margin-left: 0;
+}
+.srch_head .ipt_search .ipt_sch {
+  width: 100%;
+  height: 53px;
+  border: 0;
+  background: transparent;
+  color: #FFFFFF;
+  font-family: "GeneSans_Head-R";
+  font-size: 15px;
+  line-height: 18px;
+  caret-color: #AD7B61;
+}
+.srch_head .ipt_search [class^=ic_] {
+  display: block;
+  width: 24px;
+  height: 24px;
+  padding-top: 2px;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+.srch_head .ipt_search [class^=ic_]::before {
+  content: "";
+  display: block;
+  height: 20px;
+  margin: 0 auto;
+  background: url("../img/bg_layout.png") no-repeat;
+  background-size: 300px auto;
+}
+.srch_head .ipt_search .ic_model,
+.srch_head .ipt_search .ic_back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 50px;
+}
+.srch_head .ipt_search .ic_model::before,
+.srch_head .ipt_search .ic_back::before {
+  width: 14px;
+  margin: 0 auto;
+  background-position: -172px 2px;
+}
+.srch_head .ipt_search .ic_mic::before {
+  width: 18px;
+  background-position: -76px -27px;
+}
+.srch_head .ipt_search .ic_search::before {
+  width: 20px;
+  background-position: -51px -27px;
+}
+
+.srch_model {
+  position: relative;
+}
+
+.srch_keyword {
+  position: sticky;
+  top: 202px;
+  left: 0;
+  z-index: 599;
+  width: calc(100% - 60px);
+  height: 58px;
+  margin: 0 auto;
+  background: #0D0D0D;
+  opacity: 0;
+  transition: all 1s;
+}
+.srch_keyword #srchBest2 {
+  display: none;
+}
+.srch_keyword .tit {
+  display: none;
+  color: #FFFFFF;
+}
+.srch_keyword .tit span {
+  color: #999999;
+}
+.srch_keyword .list {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: #0D0D0D;
+}
+.srch_keyword .list li {
+  position: relative;
+  font-family: "GeneSans_Head-R";
+  font-size: 13px;
+  line-height: 17px;
+}
+.srch_keyword .list li a {
+  display: block;
+  width: 100%;
+  padding: 20px 0 19px;
+  color: #CCCCCC;
+}
+.srch_keyword .list li a em {
+  display: inline-block;
+  width: 20px;
+  color: #AF6249;
+  font-family: "GeneSans_Txt-M";
+  font-size: 12px;
+  line-height: 16px;
+}
+.srch_keyword .btn_open {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -6px;
+  z-index: 402;
+  width: 40px;
+  height: 100%;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+.srch_keyword .btn_open::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 24px;
+  right: 13px;
+  width: 13px;
+  height: 9px;
+  background: url("../img/bg_library.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -29px 0;
+  transition: all 0.2s ease;
+}
+.srch_keyword.load {
+  opacity: 1;
+}
+.srch_keyword.on {
+  top: 56px;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+.srch_keyword.on .tit {
+  display: block;
+  padding: 21px 25px 17px;
+  border-bottom: 1px solid #1E1E1E;
+  font-family: "GeneSans_Head-R";
+  font-size: 13px;
+  line-height: 17px;
+}
+.srch_keyword.on .tit span {
+  margin-left: 10px;
+  font-family: "GeneSans_Head-R";
+  font-size: 11px;
+  line-height: 14px;
+}
+.srch_keyword.on .list {
+  padding: 0 25px;
+  height: auto;
+}
+.srch_keyword.on .list li a {
+  padding: 10px 0;
+}
+.srch_keyword.on .btn_open::before {
+  transform: rotate(180deg);
+}
+
+.srch_banner {
+  margin-top: 91vw;
+  padding: 0 30px;
+  transition: all 1s ease;
+}
+.srch_banner .swiper-slide {
+  width: 120px;
+}
+
+.srch_ifbox {
+  margin-top: 800px;
+  padding: 0 0 56px;
+  background: #111111;
+  transition: all 1s ease;
+  /* 검색 레이어 :버튼 */
+}
+.srch_ifbox.load {
+  margin-top: 300px;
+}
+.CPOpop_bottom .srch_ifbox {
+  margin-top: 0;
+  padding-bottom: 0;
+}
+.CPOpop_bottom .srch_ifbox .top .tit {
+  min-width: 70px;
+}
+.srch_ifbox .sch_btn {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 56px;
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+  font-family: "GeneSans_Head-R";
+  font-size: 15px;
+  line-height: 18px;
+}
+.srch_ifbox .sch_btn ul {
+  display: flex;
+}
+.srch_ifbox .sch_btn ul li {
+  float: left;
+  height: 56px;
+}
+.srch_ifbox .sch_btn ul li [class^=btn_] {
+  display: block;
+}
+.srch_ifbox .sch_btn ul li .btn_reset:before {
+  content: "";
+  display: inline-block;
+  overflow: hidden;
+  margin: 18px 0 0 18px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/search_reset.svg") no-repeat;
+}
+.srch_ifbox .sch_btn ul li .btn_reset {
+  color: transparent;
+  font-size: 0;
+}
+.srch_ifbox .sch_btn ul li .btn_go {
+  color: #FFFFFF;
+  font-family: "GeneSans_Head-R";
+  font-size: 16px;
+  line-height: 56px;
+  text-align: center;
+}
+.srch_ifbox .sch_btn ul li:nth-child(1) {
+  width: 56px;
+  border-right: 1px solid #808080;
+}
+.srch_ifbox .sch_btn ul li:nth-child(2) {
+  width: calc(100% - 56px);
+}
+.srch_ifbox .chk_type01 + label:before {
+  /*border:1px solid $COL_5959;
+  background:transparent;*/
+  background-position: -49px -63px !important;
+}
+.srch_ifbox .chk_type01:checked + label::before {
+  border: none;
+  background: url("../img/bg_form.png") no-repeat;
+  background-size: 200px auto;
+  background-position: -23px -63px !important;
+}
+.srch_ifbox .chk_type01:disabled + label::before {
+  /*border:1px solid $COL_Gray13;
+  background:$COL_BG_Light02;*/
+  background-position: -75px -63px !important;
+}
+
+.srch_recent {
+  display: none;
+  height: 100%;
+  overflow-y: auto;
+  margin-top: 300px;
+  background: #0D0D0D;
+  transition: margin 1s ease;
+}
+.srch_recent > .inner {
+  padding: 25px 21px;
+  margin-bottom: 8px;
+  border-top: 1px solid #0C0C0C;
+  border-bottom: 1px solid #0C0C0C;
+  background: #111111;
+}
+.srch_recent > .inner:first-of-type {
+  border-top: 0;
+}
+.srch_recent > .inner:last-of-type {
+  border-bottom: 0;
+}
+.srch_recent .top {
+  position: relative;
+  padding-bottom: 20px;
+}
+.srch_recent .top h4.tit {
+  color: #FFFFFF;
+  font-family: "GeneSans_Head-R";
+  font-size: 13px;
+  line-height: 17px;
+}
+.srch_recent .top .btn_txt01 {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  color: #999999;
+}
+.srch_recent .top .txt {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  color: #828282;
+  font-family: "GeneSans_Txt-R";
+  font-size: 11px;
+  line-height: 14px;
+}
+.srch_recent .recent_swiper {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  padding-bottom: 26px;
+}
+.srch_recent .recent_swiper .list {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  transition-property: transform, height;
+  transform: translate3d(0px, 0, 0);
+}
+.srch_recent .recent_swiper .list li {
+  flex-shrink: 0;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 5px 10px;
+  height: auto;
+}
+.srch_recent .recent_swiper .list .btn_txt01 {
+  position: absolute;
+  top: 2px;
+  right: 0;
+}
+.srch_recent .recent_swiper .list .btn_txt02 {
+  border: none;
+  background: #1A1A1A;
+  color: #bbb;
+}
+.srch_recent .recent_swiper .list .txt {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  color: #727272;
+  font-family: "GeneSans_Head-R";
+  font-size: 11px;
+  line-height: 14px;
+}
+.srch_recent .recent_swiper .recent_swiper {
+  overflow: hidden;
+  position: relative;
+  height: auto;
+  padding-bottom: 26px;
+}
+.srch_recent .recent_swiper .recent_swiper .list {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  transition-property: transform, height;
+  transform: translate3d(0px, 0, 0);
+}
+.srch_recent .recent_swiper .recent_swiper .list li {
+  display: flex;
+  flex-shrink: 0;
+  flex-flow: row wrap;
+  gap: 5px 10px;
+  height: auto;
+}
+.srch_recent .recent_list .list li {
+  background: #1A1A1A;
+}
+.srch_recent .recent_list .list li:not(:last-of-type) {
+  margin-bottom: 1px;
+}
+.srch_recent .recent_list .btn_txt03 > span.tit {
+  color: #CCCCCC;
+}
+.srch_recent .recent_list .btn_txt03 > span.txt {
+  color: #828282;
+}
+.srch_recent .recent_list.more_view li:nth-child(n+6) {
+  display: none;
+}
+.srch_recent .recent_list.more_view.on li {
+  display: block;
+}
+.srch_recent .recent_list.more_view .btn_more {
+  color: #bbb;
+  margin: 20px 0;
+}
+.srch_recent .noData::before {
+  content: none;
+}
+.srch_recent .noData .tit {
+  margin: 0;
+}
+
+.srch_auto {
+  display: none;
+  height: 100%;
+  overflow-y: auto;
+  background: #0D0D0D;
+}
+.srch_auto ol li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.srch_auto ol li a .tit {
+  color: #CCCCCC;
+  font-family: "GeneSans_Txt-M";
+  font-size: 13px;
+  line-height: 17px;
+}
+.srch_auto ol li a .txt {
+  color: #CCCCCC;
+  font-family: "GeneSans_Txt-R";
+  font-size: 13px;
+  line-height: 17px;
+}
+.srch_auto ol li a .txt i {
+  color: #AF6249;
+}
+.srch_auto ol li a .no {
+  color: #999999;
+  font-family: "GeneSans_Txt-R";
+  font-size: 11px;
+  line-height: 14px;
+}
+.srch_auto ol li a .date {
+  margin-left: auto;
+  color: #999999;
+  font-family: "GeneSans_Txt-R";
+  font-size: 11px;
+  line-height: 14px;
+}
+.srch_auto ol li a .more {
+  margin-left: auto;
+  color: #CCCCCC;
+  font-family: "GeneSans_Txt-R";
+  font-size: 11px;
+  line-height: 14px;
+}
+.srch_auto ol li a .more:after {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 12px;
+  margin: 0 0 1px 5px;
+  background: url("../img/bg_display.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -166px -53px;
+  vertical-align: middle;
+}
+.srch_auto .list_01 {
+  padding: 0 21px;
+  background: #0D0D0D;
+}
+.srch_auto .list_01 li {
+  padding: 14px 0 15px;
+  border-top: 1px solid #1A1A1A;
+}
+.srch_auto .list_01 li:first-of-type {
+  border-top: 0;
+}
+.srch_auto .list_02 {
+  padding: 0 21px;
+}
+.srch_auto .list_02 li {
+  padding: 14px 0 15px;
+  border-top: 1px solid #1E1E1E;
+}
+.srch_auto .list_02 li:first-of-type {
+  border-top: 0;
+}
+.srch_auto .list_02 li a {
+  display: flex;
+  justify-content: space-between;
+}
+.srch_auto .ic_history::before {
+  content: "";
+  display: flex;
+  margin-right: 6px;
+  width: 16px;
+  height: 16px;
+  background: url("../img/bg_display.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -179px -53px;
+}
+.srch_auto [class^=ic_model_]::before {
+  content: "";
+  display: flex;
+  margin-right: 10px;
+  width: 60px;
+  height: 60px;
+  background: url("../img/bg_model.png") no-repeat;
+  background-size: 300px 200px;
+}
+.srch_auto .ic_model_01::before {
+  background-position: 0 0;
+}
+.srch_auto .ic_model_02::before {
+  background-position: -65px 0;
+}
+.srch_auto .ic_model_03::before {
+  background-position: -130px 0;
+}
+
+/* 검색 레이어 :검색 조건 :상단 */
+.srch_box {
+  border-top: 1px solid #1E1E1E;
+}
+.srch_box#schBox-02.on .incont {
+  padding-bottom: 48px;
+}
+.srch_box#schBox-03 .incont, .srch_box#schBox-10 .incont {
+  padding: 0;
+}
+.srch_box#schBox-04.on .incont, .srch_box#schBox-05.on .incont {
+  padding-bottom: 17px;
+}
+.srch_box > .top {
+  position: relative;
+  padding: 30px 21px 20px 21px;
+}
+.srch_box > .top h4.tit {
+  display: inline-block;
+  color: #FFFFFF;
+  font-family: "GeneSans_Head-R";
+  font-size: 16px;
+  line-height: 20px;
+}
+.srch_box > .top span.check {
+  display: none;
+  max-width: calc(100% - 80px);
+  margin-left: 9px;
+  color: #AF6249;
+  font-family: "GeneSans_Txt-R";
+  font-size: 12px;
+  line-height: 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  vertical-align: -4px;
+}
+.srch_box.on > .top span.check {
+  display: inline-block;
+}
+.srch_box.on > .incont {
+  display: block;
+  padding: 0 21px 30px 21px;
+}
+.srch_box.on > .incont .cpo_range {
+  display: block;
+  margin-top: 5px;
+}
+.srch_box.show .top span.check {
+  display: inline-block;
+}
+.srch_box.on .btn_open::before {
+  transform: rotate(0);
+}
+.srch_box.on .range_chart ol li i {
+  height: 100%;
+  margin-top: 0;
+}
+.srch_box .btn_open {
+  display: block;
+  position: absolute;
+  top: 32px;
+  right: 18px;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  text-indent: -999999px;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+.srch_box .btn_open::before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 9px;
+  margin: 0 auto;
+  background: url("../img/bg_display.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -199px -53px;
+  transform: rotate(-180deg);
+  transition: 0.2s ease;
+}
+.srch_box > .incont {
+  padding: 0 21px 0 21px;
+  display: none;
+  overflow: hidden;
+}
+.srch_box > .incont .btn_area {
+  padding-top: 35px;
+}
+.srch_box > .incont .btn_area .btn_mid03 {
+  border-color: #FFFFFF;
+}
+.srch_box > .incont .carinfo {
+  padding-top: 6px;
+}
+.srch_box > .incont .carinfo > li {
+  padding: 0 0 25px;
+}
+.srch_box > .incont .carinfo > li > label {
+  padding-left: 55px;
+  color: #CCCCCC;
+}
+.srch_box > .incont .carinfo > li > label:before {
+  left: 21px;
+}
+.srch_box > .incont .carinfo > li .depth2 {
+  display: none;
+  padding: 25px 0 0 0;
+}
+.srch_box > .incont .carinfo > li .depth2 > li {
+  padding: 0 0 25px;
+}
+.srch_box > .incont .carinfo > li .depth2 > li:last-of-type {
+  padding: 0;
+}
+.srch_box > .incont .carinfo > li .depth2 > li > label {
+  padding-left: 84px;
+  color: #CCCCCC;
+}
+.srch_box > .incont .carinfo > li .depth2 > li > label:before {
+  left: 50px;
+}
+.srch_box > .incont .carinfo > li .depth3 {
+  display: none;
+  padding: 20px 0 0 0;
+  margin: 20px 0 0;
+  background: #0D0D0D;
+}
+.srch_box > .incont .carinfo > li .depth3 > li {
+  padding: 0 0 25px;
+}
+.srch_box > .incont .carinfo > li .depth3 > li > label {
+  padding-left: 114px;
+  color: #CCCCCC;
+}
+.srch_box > .incont .carinfo > li .depth3 > li > label:before {
+  left: 80px;
+}
+.srch_box > .incont .carinfo > li.on .depth2 {
+  display: block;
+}
+.srch_box > .incont .carinfo > li.on .depth2 > li.on .depth3 {
+  display: block;
+}
+.srch_box > .incont .gear {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 7px 10px;
+  margin-top: 6px;
+}
+.srch_box > .incont .gear [class^=model_]::after {
+  content: "";
+  display: block;
+  width: 158px;
+  height: 62px;
+  background: url("../img/bg_genesis.png") no-repeat;
+  background-size: 500px auto;
+}
+.srch_box > .incont .gear .model_g90::after {
+  background-position: 0 0;
+}
+.srch_box > .incont .gear .model_g80::after {
+  background-position: -168px 0;
+}
+.srch_box > .incont .gear .model_g70::after {
+  background-position: -326px 0;
+}
+.srch_box > .incont .gear .model_gv80::after {
+  background-position: 0 -67px;
+}
+.srch_box > .incont .gear .model_gv70::after {
+  background-position: -168px -67px;
+}
+.srch_box > .incont .gear#ModelList {
+  height: auto;
+  overflow: hidden;
+  margin-bottom: -30px;
+  transition: height 0.3s ease;
+}
+.srch_box > .incont .gear#ModelList li {
+  margin-bottom: 5px;
+}
+.srch_box > .incont .gear#ModelList .chk_type05 + label {
+  padding: 6px 0 11px;
+  border: none;
+  border-bottom: 1px solid transparent;
+  text-align: left;
+  font-family: GeneSans_Head-L;
+}
+.srch_box > .incont .gear#ModelList .chk_type05:checked + label {
+  border-color: #AF6249;
+}
+.srch_box > .incont .gear li {
+  width: calc(50% - 5px);
+}
+.srch_box > .incont .color {
+  zoom: 1;
+}
+.srch_box > .incont .color:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.srch_box > .incont .color li {
+  float: left;
+  width: 70px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+.srch_box > .incont .color li:nth-child(3n+2) {
+  width: calc(100% - 140px);
+}
+.srch_box > .incont .color li:nth-child(3n+2) label {
+  margin: 0 auto;
+}
+.srch_box > .incont .color .chk_type06:disabled + label {
+  opacity: 0.3;
+}
+.srch_box > .incont .color + .notice_03 {
+  padding-bottom: 25px;
+}
+.srch_box > .incont .option {
+  margin-top: 7px;
+}
+.srch_box > .incont .option dt {
+  color: #FFFFFF;
+  font-family: "GeneSans_Head-R";
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0 0 0;
+}
+.srch_box > .incont .option dd {
+  margin: 14px 0 37px;
+}
+.srch_box > .incont .option dd ol li {
+  margin-bottom: 20px;
+}
+.srch_box > .incont .option dd ol li label {
+  color: #CCCCCC;
+}
+.srch_box.no_data .text {
+  display: block;
+  margin-top: 47px;
+  text-align: center;
+  color: #4D4D4D;
+  font-family: "GeneSans_text-R";
+  font-size: 14px;
+  line-height: 21px;
+}
+.srch_box.no_data .list_chart {
+  display: none;
+}
+.srch_box.no_data .ui-slider-range:first-child {
+  width: 100% !important;
+  left: 0% !important;
+}
+.srch_box.no_data .ui-slider-handle:nth-child(2) {
+  left: 0 !important;
+}
+.srch_box.no_data .ui-slider-handle:nth-child(3) {
+  left: 100% !important;
+}
+.srch_box.no_data .cpo_range::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.srch_result .plp_filter {
+  height: 52px !important;
+  padding: 10px 0 10px 15px;
+  margin: 10px 0 24px 0 !important;
+  border-bottom: 1px solid #E5E5E5;
+}
+.srch_result .plp_filter .list {
+  top: 10px !important;
+  left: 40px !important;
+}
+
+/*가격 슬라이더*/
+.cpo_range {
+  display: none;
+  padding: 15px 0 0 0;
+}
+.cpo_range .amountArea {
+  visibility: hidden;
+}
+.cpo_range .cpoRange {
+  position: relative;
+  width: calc(100% - 22px);
+  height: 2px;
+  margin-left: 10px;
+  background: #1E1E1E;
+}
+.cpo_range .cpoRange .ui-slider-range {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  display: block;
+  height: 100%;
+  background: #AF6249;
+  border: 0;
+}
+.cpo_range .cpoRange .ui-slider-handle {
+  z-index: 2;
+  cursor: default;
+  -ms-touch-action: none;
+  touch-action: none;
+  outline: none;
+  width: 24px;
+  height: 24px;
+  background: #FFFFFF;
+  border: 2px solid #AF6249;
+  border-radius: 100%;
+  position: absolute;
+  top: -12px;
+  -webkit-box-shadow: 2px 2px 6px 0px rgba(50, 50, 50, 0.3);
+  -moz-box-shadow: 2px 2px 6px 0px rgba(50, 50, 50, 0.3);
+  box-shadow: 2px 2px 6px 0px rgba(50, 50, 50, 0.3);
+}
+.cpo_range .cpoRange .ui-slider-handle:nth-child(2) {
+  margin-left: -11px;
+}
+.cpo_range .cpoRange .ui-slider-handle:nth-child(3) {
+  margin-left: -11px;
+}
+.cpo_range .cpoRange .amountArea {
+  visibility: hidden;
+}
+.cpo_range .cpoRange .min_no,
+.cpo_range .cpoRange .max_no {
+  display: block;
+  width: 100px;
+  position: absolute;
+  top: 20px;
+  color: #727272;
+  font-family: "GeneSans_Txt-R";
+  font-size: 11px;
+  line-height: 18px;
+}
+.cpo_range .cpoRange .min_no {
+  left: -11px;
+  text-align: left;
+}
+.cpo_range .cpoRange .max_no {
+  right: -11px;
+  text-align: right;
+}
+
+/* 가격 차트 */
+#rangePrice {
+  margin-top: -10px;
+}
+
+.range_chart {
+  width: 100%;
+  height: 120px;
+  position: relative;
+  overflow: hidden;
+}
+.range_chart > ol {
+  width: 100%;
+  zoom: 1;
+}
+.range_chart > ol:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.range_chart > ol li {
+  display: flex;
+  width: 5%;
+  height: 120px;
+  margin: 0 auto;
+  text-indent: -99999px;
+  transition: height 1s;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  float: left;
+}
+.range_chart > ol li.on .bar i {
+  background: #AF6249;
+}
+.range_chart > ol li .bar {
+  width: 2px;
+}
+.range_chart > ol li .bar i {
+  display: block;
+  width: 2px;
+  height: 1%;
+  transition: margin 1s;
+  background: #959595;
+  margin-top: 120px;
+}
+
+@keyframes Ani_Price_Chart {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 100%;
+  }
+}
+.ipt_search .ico_delete {
+  position: absolute;
+  top: 50%;
+  right: 85px;
+  transform: translateY(-54%);
+  display: none;
+}
+
+/* 배경 : 흰색 */
+#CPOheader .h_sub.my_head {
+  background-color: #F2F2F2;
+}
+
+.my_main {
+  overflow-x: hidden;
+  background-color: #F1F4F5;
+}
+.my_main .unit_link {
+  display: flex;
+  gap: 0 16px;
+  padding: 20px 15px 20px;
+}
+.my_main .unit_link .unit_img {
+  width: 100px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.my_main_head {
+  background-color: #F2F2F2;
+  padding: 40px 15px 0;
+}
+.my_main_head .m_txt {
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  color: #000000;
+  font-family: "GeneSans_Head-L";
+  font-size: 24px;
+  line-height: 32px;
+}
+.my_main_head .m_txt em {
+  font-family: "GeneSans_Head-R";
+  font-size: 24px;
+  line-height: 32px;
+}
+.my_main_head .m_txt::after {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  margin-left: 6px;
+  background: url("../img/bg_mypage.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -143px 0;
+  vertical-align: middle;
+}
+.my_main_head .m_txt2 {
+  margin-top: 5px;
+  padding: 0 6px;
+  color: #666666;
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 22px;
+}
+.my_main_head .m_box {
+  margin-top: 30px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.015);
+}
+.my_main_head .m_box a {
+  color: #FFFFFF;
+}
+.my_main_head .m_box .m_point {
+  display: flex;
+  align-items: center;
+  padding: 25px 0;
+}
+.my_main_head .m_box .m_point + .m_list {
+  position: relative;
+}
+.my_main_head .m_box .m_point + .m_list:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  height: 1px;
+  background-color: #F2F2F2;
+}
+.my_main_head .m_box .m_point span {
+  padding-left: 20px;
+  color: #000000;
+  font-family: "GeneSans_Head-R";
+  font-size: 15px;
+  line-height: 18px;
+}
+.my_main_head .m_box .m_point span.tit {
+  flex: 1;
+}
+.my_main_head .m_box .m_point a {
+  height: 100%;
+  padding-right: 20px;
+}
+.my_main_head .m_box .m_point a.point {
+  font-family: "GeneSans_Head-R";
+  font-size: 22px;
+  line-height: 30px;
+  color: #AF6249;
+}
+.my_main_head .m_box .m_point a.point em {
+  font-family: GeneSans_Head-R;
+}
+.my_main_head .m_box .m_point a.point::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 14px;
+  margin-left: 6px;
+  background: url("../img/bg_mypage.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -172px -1px;
+  vertical-align: middle;
+}
+.my_main_head .m_box .m_point a.join {
+  color: #000000;
+  font-family: "GeneSans_Head-R";
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  text-underline-position: under;
+}
+.my_main_head .m_box .m_point a.join::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 13px;
+  margin-left: 5px;
+  background: url("../img/bg_mypage.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -184px -17px;
+  vertical-align: middle;
+}
+.my_main_head .m_box .m_list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.015);
+}
+.my_main_head .m_box .m_list li {
+  flex: 1;
+  text-align: center;
+}
+.my_main_head .m_box .m_list li a {
+  display: block;
+  position: relative;
+  height: 100%;
+  padding: 18px 0;
+  text-align: center;
+}
+.my_main_head .m_box .m_list li a span {
+  display: block;
+}
+.my_main_head .m_box .m_list li a span.num {
+  font-family: "GeneSans_Head-R";
+  font-size: 20px;
+  line-height: 27px;
+  color: #000000;
+}
+.my_main_head .m_box .m_list li a span.txt {
+  margin-top: 5px;
+  font-family: "GeneSans_Txt-R";
+  font-size: 13px;
+  line-height: 21px;
+  color: #4D4D4D;
+}
+.my_main_head .m_box .m_list li a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1px;
+  height: 52px;
+  background-color: #F2F2F2;
+  transform: translateY(-50%);
+}
+.my_main_head .m_box .m_list li:first-child a::before {
+  display: none;
+}
+.my_main_head .m_box2 {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  margin: 15px 0 30px;
+  padding: 30px 103px 30px 25px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.015);
+}
+.my_main_head .m_box2 .tit {
+  color: #000000;
+  font-family: "GeneSans_Head-R";
+  font-size: 18px;
+  line-height: 24px;
+}
+.my_main_head .m_box2 .txt {
+  margin-top: 8px;
+  color: #262626;
+  font-family: "GeneSans_Txt-R";
+  font-size: 13px;
+  line-height: 21px;
+}
+.my_main_head .m_box2 button {
+  position: absolute;
+  top: 50%;
+  right: 25px;
+  height: 32px;
+  padding: 0 10px;
+  background-color: #FFFFFF;
+  border: solid 1px #E5E5E5;
+  transform: translateY(-50%);
+  font-family: "GeneSans_Txt-R";
+  font-size: 13px;
+  line-height: 32px;
+}
+.my_main_head .m_box3 {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: 20px 20px 15px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.015);
+}
+.my_main_head .m_box3 .m_head_box {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-bottom: 15px;
+  border-bottom: solid 1px #F2F2F2;
+}
+.my_main_head .m_box3 .m_head_box .tit {
+  flex: 1;
+  color: #000000;
+  font-family: "GeneSans_Head-R";
+  font-size: 18px;
+  line-height: 25px;
+}
+.my_main_head .m_box3 .m_head_box .tit span::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 16px;
+  margin: 0 0 0 8px;
+  background: url("../img/bg_mypage.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -185px -17px;
+  vertical-align: middle;
+}
+.my_main_head .m_box3 .m_head_box .car {
+  height: 30px;
+  padding: 0 10px;
+  background-color: #FFFFFF;
+  border: solid 1px #E5E5E5;
+  font-family: "GeneSans_Txt-R";
+  font-size: 12px;
+  line-height: 30px;
+}
+.my_main_head .my_main_link .unit_mid {
+  padding: 5px 0 0;
+}
+.my_main_head .my_main_link .unit_mid .unit_info {
+  flex: 1;
+  padding-top: 15px;
+}
+
+.my_main_list {
+  margin-top: 8px;
+  padding: 5px 0 0;
+  background-color: #F8F8F8;
+  border-top: solid 1px #F2F2F2;
+}
+.my_main_list > li {
+  padding: 0 21px;
+  background-color: #FFFFFF;
+}
+.my_main_list > li > a {
+  display: block;
+  position: relative;
+  padding: 25px 0;
+  color: #000000;
+  font-family: "GeneSans_Head-R";
+  font-size: 16px;
+  line-height: 22px;
+}
+.my_main_list > li > a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 8px;
+  height: 12px;
+  background: url("../img/bg_mypage.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -185px -1px;
+  transform: translateY(-50%);
+}
+.my_main_list > li:last-child {
+  border-bottom: 0;
+}
+.my_main_list > li:last-child > a {
+  padding-bottom: 40px;
+}
+.my_main_list > li:last-child > a::after {
+  margin-top: -10px;
+}
+.my_main_list > li.last_list {
+  margin-bottom: 8px;
+  padding-bottom: 30px;
+  border-bottom: solid 1px #F2F2F2;
+}
+.my_main_list > li.last_list + li > a {
+  border-top: solid 1px #F2F2F2;
+}
+.my_main_list > li .my_main_swiper03 {
+  width: calc(100% + 42px);
+  margin: -10px -21px 0;
+  background-color: #FFFFFF;
+}
+.my_main_list .my_main_link {
+  display: inline-block;
+  padding: 20px 18px;
+  background-color: #FFFFFF;
+  border: solid 1px #F2F2F2;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.015);
+}
+.my_main_list .my_main_link .unit_info {
+  position: relative;
+}
+.my_main_list .my_main_link .unit_info .drive {
+  margin-top: 4px;
+  color: #666666;
+  font-family: "GeneSans_Txt-R";
+  font-size: 11px;
+  line-height: 17px;
+}
+.my_main_list .my_main_link .unit_info .drive em {
+  display: inline-block;
+  position: relative;
+  margin-right: 4px;
+  padding-right: 7px;
+}
+.my_main_list .my_main_link .unit_info .drive em::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 1px;
+  height: 10px;
+  transform: translateY(-50%);
+  background-color: #E5E5E5;
+}
+.my_main_list .my_main_link .unit_info .drive em:last-of-type {
+  margin-right: 0;
+  padding-right: 0;
+}
+.my_main_list .my_main_link .unit_info .drive em:last-of-type::after {
+  display: none;
+}
+.my_main_list .my_main_link .unit_info .price {
+  margin-top: 8px;
+  color: #000000;
+}
+.my_main_list .my_main_link .unit_info .price .price_tit {
+  font-family: "GeneSans_Txt-M";
+  font-size: 12px;
+  line-height: 20px;
+  vertical-align: 1px;
+}
+.my_main_list .my_main_link .unit_info .price em {
+  font-family: "GeneSans_Txt-M";
+  font-size: 16px;
+  line-height: 26px;
+}
+.my_main_list .my_main_link .unit_info .price i {
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 23px;
+  vertical-align: 1px;
+}
+.my_main_list .my_main_link .unit_info .price i.txt::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 13px;
+  background: url("../img/bg_library.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -60px 0;
+  vertical-align: middle;
+  margin: 0 0 2px 5px;
+}
+.my_main_list .my_main_link .unit_info .name .num {
+  display: block;
+  color: #666666;
+  font-family: "GeneSans_Head-R ";
+  font-size: 12px;
+  line-height: 17px;
+}
+.my_main_list .my_main_link .unit_info .name .model {
+  color: #000000;
+  font-family: "GeneSans_Head-R";
+  font-size: 14px;
+  line-height: 19px;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  word-break: break-word;
+}
+.my_main_list .my_main_link .unit_info .drive {
+  overflow: hidden;
+  display: block;
+  height: 16px;
+  margin-top: 2px;
+}
+.my_main_list .my_main_link .unit_info .price {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.my_main_list .my_main_link .unit_info .price em {
+  margin-right: 1px;
+  font-family: "GeneSans_Txt-M";
+  font-size: 18px;
+  line-height: 29px;
+}
+.my_main_list .my_main_link .unit_img img {
+  width: 100px;
+  height: 100px;
+}
+.my_main_list .my_main_link .unit_top {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 2px;
+  font-size: 0;
+}
+.my_main_list .my_main_link .unit_top .tit {
+  color: #000000;
+  font-family: "GeneSans_Txt-M";
+  font-size: 15px;
+  line-height: 24px;
+}
+.my_main_list .my_main_link .unit_top .num {
+  position: relative;
+  margin-left: 10px;
+  padding-left: 10px;
+  color: #262626;
+  font-family: "GeneSans_Head-R";
+  font-size: 13px;
+  line-height: 18px;
+}
+.my_main_list .my_main_link .unit_top .num::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1px;
+  height: 12px;
+  background-color: #E5E5E5;
+  transform: translateY(-50%);
+}
+.my_main_list .my_main_link .unit_top::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 2px;
+  width: 8px;
+  height: 12px;
+  background: url("../img/bg_mypage.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -185px -1px;
+  transform: translateY(-50%);
+}
+.my_main_list .my_main_link .unit_mid {
+  display: flex;
+  gap: 0 16px;
+  padding: 18px 0;
+}
+.my_main_list .my_main_link .unit_bot .tit {
+  display: flex;
+  padding: 15px 2px;
+  border-top: solid 1px #F2F2F2;
+  color: #262626;
+}
+.my_main_list .my_main_link .unit_bot .tit .txt {
+  flex: 1;
+  font-family: "GeneSans_Txt-M";
+  font-size: 13px;
+  line-height: 21px;
+}
+.my_main_list .my_main_link .unit_bot .tit .date {
+  font-family: "GeneSans_Txt-R";
+  font-size: 12px;
+  line-height: 19px;
+}
+.my_main_list .my_main_link .unit_bot .money {
+  position: relative;
+  padding: 10px 0 10px 12px;
+  background-color: #F8F8F8;
+  color: #666666;
+  font-family: "GeneSans_Txt-M";
+  font-size: 11px;
+  line-height: 18px;
+}
+
+.my_main_swiper01 {
+  position: relative;
+  width: calc(100% + 18px);
+  margin-top: 15px;
+  padding: 0 18px 56px 0;
+}
+.my_main_swiper01 .swiper-wrapper .swiper-slide {
+  width: 100%;
+  margin-right: 18px;
+}
+.my_main_swiper01 .swiper-wrapper .swiper-slide:last-child {
+  margin-right: 0;
+}
+.my_main_swiper01 .my_main_link {
+  display: flex;
+  width: 100%;
+  padding: 5px 0 0 0;
+  border: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+.my_main_swiper01 .my_main_link .unit_info {
+  flex: 1;
+  padding-top: 15px;
+}
+.my_main_swiper01 .my_main_link .num {
+  margin-bottom: 10px;
+  color: #666666;
+  font-size: 0;
+  line-height: initial;
+}
+.my_main_swiper01 .my_main_link .num span {
+  position: relative;
+  font-family: "GeneSans_Head-R";
+  font-size: 14px;
+  line-height: 19px;
+}
+.my_main_swiper01 .my_main_link .name .model {
+  color: #000000;
+}
+.my_main_swiper01 .my_main_link .name .desc {
+  color: #262626;
+  font-family: "GeneSans_Txt-R";
+  font-size: 12px;
+  line-height: 19px;
+}
+.my_main_swiper01 .my_main_link .price {
+  display: block;
+  position: relative;
+  margin-top: 3px;
+}
+.my_main_swiper01 .my_main_link .price i.txt {
+  color: #262626;
+  font-size: 14px;
+}
+.my_main_swiper01 .my_main_link .price i.txt::after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 13px;
+  background: url("../img/bg_library.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -47px 0;
+  vertical-align: middle;
+  margin: 0 0 0 5px;
+}
+.my_main_swiper01 .my_main_link .unit_img img {
+  width: 120px;
+  height: 120px;
+}
+.my_main_swiper01 .swiper-pagination {
+  bottom: 30px !important;
+}
+
+.my_main_swiper02 {
+  position: relative;
+  padding: 0 0 66px 15px;
+  background-color: #FFFFFF;
+}
+.my_main_swiper02 .swiper-wrapper .swiper-slide {
+  padding-right: 15px;
+}
+.my_main_swiper02 .swiper-wrapper .swiper-slide:last-child {
+  margin-right: 0;
+}
+.my_main_swiper02 .swiper-pagination {
+  bottom: 40px !important;
+}
+
+.my_main_swiper03 {
+  position: relative;
+  width: calc(100% + 30px);
+  margin: 0 0 0 -15px;
+  padding: 0 15px 26px;
+}
+.my_main_swiper03 .swiper-wrapper .swiper-slide {
+  width: 100%;
+  margin-right: 15px;
+}
+.my_main_swiper03 .swiper-wrapper .swiper-slide:last-child {
+  margin-right: 0;
+}
+.my_main_swiper03 .swiper-pagination {
+  bottom: 0 !important;
+}
+
+.app_setting {
+  background: #F8F8F8;
+}
+.app_setting ul {
+  padding: 21px 15px 40px;
+}
+.app_setting ul li {
+  padding: 3px 20px;
+  background: #FFFFFF;
+}
+.app_setting ul li .item {
+  position: relative;
+  padding: 22px 0;
+}
+.app_setting ul li .item:not(:last-of-type) {
+  border-bottom: 1px solid #F2F2F2;
+}
+.app_setting ul li .item.ver {
+  padding: 22px 0 25px;
+}
+.app_setting ul li .item.ver h5 {
+  font-family: "GeneSans_Head-R";
+  font-size: 15px;
+  line-height: 22px;
+}
+.app_setting ul li .item.ver p {
+  margin-top: 5px;
+}
+.app_setting ul li .item.ver + .item {
+  padding: 25px 0 22px;
+}
+.app_setting ul li .item h5 {
+  padding-right: 70px;
+  color: #000000;
+  font-family: "GeneSans_Head-R";
+  font-size: 15px;
+  line-height: 34px;
+}
+.app_setting ul li .item p {
+  margin-top: 4px;
+  padding-right: 60px;
+  color: #727272;
+  font-family: "GeneSans_Txt-R";
+  font-size: 12px;
+  line-height: 19px;
+  word-break: keep-all;
+}
+.app_setting ul li .item .chk_toggle {
+  position: absolute;
+  top: 25px;
+  right: 0;
+}
+.app_setting ul li .item .btn_icon01 {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  font-size: 13px;
+}
+.app_setting ul li .item .version {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  color: #727272;
+  font-family: "GeneSans_Txt-M";
+  font-size: 14px;
+  line-height: 22px;
+}
+.app_setting ul li .item .btn_logout {
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 17px;
+  height: 26px;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+.app_setting ul li .item .btn_logout::before {
+  content: "";
+  display: block;
+  width: 9px;
+  height: 13px;
+  margin-top: 5px;
+  background: url("../img/bg_library.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -136px 0;
+}
+.app_setting ul li:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+.app_alarm ol {
+  width: 100%;
+  padding: 42px 21px 80px 20px;
+  background: #F8F8F8;
+}
+.app_alarm ol li {
+  overflow: hidden;
+  position: relative;
+  padding-left: 43px;
+}
+.app_alarm ol li::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 34px;
+  background: url("../img/bg_mypage.png") no-repeat;
+  background-size: 300px 200px;
+}
+.app_alarm ol li:not(:last-of-type) {
+  margin-bottom: 24px;
+}
+.app_alarm ol li.alarm::before {
+  background-position: 0 0;
+}
+.app_alarm ol li.ad::before {
+  background-position: -39px 0;
+}
+.app_alarm ol li .item {
+  overflow: hidden;
+  margin-bottom: 8px;
+  background: #FFFFFF;
+}
+.app_alarm ol li .item .thumb img {
+  width: 100%;
+}
+.app_alarm ol li .item .text_box {
+  padding: 18px 20px 20px;
+}
+.app_alarm ol li .item .tit {
+  display: block;
+  margin-bottom: 4px;
+  color: #666666;
+  font-family: "GeneSans_Txt-M";
+  font-size: 10px;
+  line-height: 16px;
+}
+.app_alarm ol li .item .txt {
+  color: #000000;
+  font-family: "GeneSans_Txt-M";
+  font-size: 14px;
+  line-height: 22px;
+  word-break: keep-all;
+}
+.app_alarm ol li .date {
+  display: block;
+  color: #666666;
+  font-family: "GeneSans_Txt-R";
+  font-size: 12px;
+  line-height: 19px;
+  text-align: right;
+}
+.app_alarm .noData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.mypage_point {
+  background: #F8F8F8;
+}
+.mypage_point > .tit_box {
+  margin-bottom: 8px;
+  padding: 40px 21px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #F2F2F2;
+}
+.mypage_point > .tit_box .tit {
+  margin-bottom: 20px;
+  color: #000000;
+  font-family: "GeneSans_Head-L";
+  font-size: 24px;
+  line-height: 32px;
+}
+.mypage_point > .tit_box .tit span {
+  display: block;
+}
+.mypage_point > .tit_box .tit span.point {
+  display: inline-block;
+  position: relative;
+  font-family: "GeneSans_Head-R";
+  font-size: 24px;
+  line-height: 32px;
+}
+.mypage_point > .tit_box .tit span.point::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: 0;
+  background: #AF6249;
+}
+.mypage_point > .tit_box .txt {
+  color: #262626;
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 22px;
+}
+.mypage_point .cont_point {
+  padding: 0 21px 60px;
+  background: #FFFFFF;
+  border-top: 1px solid #F2F2F2;
+}
+.mypage_point .cont_point .sorting_point {
+  width: 100%;
+  padding: 25px 0 15px;
+  border-bottom: 1px solid #F2F2F2;
+  zoom: 1;
+}
+.mypage_point .cont_point .sorting_point:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.mypage_point .cont_point .sorting_point span {
+  float: left;
+  margin-top: 8px;
+  color: #262626;
+  font-family: "GeneSans_Txt-M";
+  font-size: 12px;
+  line-height: 19px;
+}
+.mypage_point .cont_point .sorting_point ul {
+  float: right;
+  zoom: 1;
+}
+.mypage_point .cont_point .sorting_point ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.mypage_point .cont_point .sorting_point ul li {
+  float: left;
+  margin-left: 6px;
+}
+.mypage_point .cont_point .sorting_point ul li button {
+  display: inline-block;
+  width: 59px;
+  height: 32px;
+  background: #F8F8F8;
+  color: #666666;
+  font-family: "GeneSans_Txt-R";
+  font-size: 11px;
+  line-height: 32px;
+}
+.mypage_point .cont_point .sorting_point ul li button.on {
+  color: #000000;
+  font-family: "GeneSans_Txt-M";
+  font-size: 11px;
+  line-height: 32px;
+}
+.mypage_point .cont_point .point_history {
+  margin-top: 35px;
+}
+.mypage_point .cont_point .point_history li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mypage_point .cont_point .point_history li:not(:last-of-type) {
+  margin-bottom: 35px;
+}
+.mypage_point .cont_point .point_history li span {
+  display: block;
+}
+.mypage_point .cont_point .point_history li .tit_box .tit {
+  margin-bottom: 7px;
+  font-family: "GeneSans_Head-R";
+  font-size: 15px;
+  line-height: 21px;
+}
+.mypage_point .cont_point .point_history li .tit_box .txt {
+  color: #666666;
+  font-family: "GeneSans_Txt-R";
+  font-size: 12px;
+  line-height: 19px;
+}
+.mypage_point .cont_point .point_history li .txt_box {
+  text-align: right;
+  color: #000000;
+}
+.mypage_point .cont_point .point_history li .txt_box .tit {
+  margin-bottom: 7px;
+  font-family: "GeneSans_Txt-R";
+  font-size: 15px;
+  line-height: 21px;
+}
+.mypage_point .cont_point .point_history li .txt_box .tit em {
+  font-family: "GeneSans_Txt-M";
+  font-size: 16px;
+  line-height: 21px;
+}
+.mypage_point .cont_point .point_history li .txt_box .txt {
+  font-family: "GeneSans_Txt-R";
+  font-size: 12px;
+  line-height: 19px;
+  color: #262626;
+}
+.mypage_point .cont_point .point_history li.plus .txt_box {
+  color: #AF6249;
+}
+
+.mypage_mycar {
+  margin: 0;
+  background: #F8F8F8;
+}
+.mypage_mycar .sorting {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 10px 21px;
+  line-height: 32px;
+  background-color: #FFFFFF;
+  margin-bottom: 8px;
+  background-color: #FFFFFF;
+  border: 1px solid #F2F2F2;
+  border-width: 1px 0;
+  border-top: solid 1px #E5E5E5;
+}
+.mypage_mycar .sorting .all {
+  color: #262626;
+}
+.mypage_mycar .sorting .all i {
+  color: #AF6249;
+  font-family: GeneSans_Txt-M;
+}
+.mypage_mycar li {
+  padding: 30px 15px 40px;
+  background: #FFFFFF;
+}
+.mypage_mycar li:last-of-type {
+  margin: 0 !important;
+}
+.mypage_mycar li .unit_tit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  padding: 0 6px;
+}
+.mypage_mycar li .unit_tit span {
+  font-family: "GeneSans_Txt-M";
+  font-size: 18px;
+  line-height: 29px;
+}
+.mypage_mycar li .btn_mid05 {
+  margin-top: 20px;
+  background-color: #1A1A1A;
+  border-color: #1A1A1A;
+  color: #FFFFFF;
+  text-align: center;
+  border-color: #1A1A1A;
+}
+.mypage_mycar li .btn_icon01.del::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 4px;
+  background: url("../img/bg_library.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -1px -45px;
+  vertical-align: middle;
+}
+.mypage_mycar li .unit_link .unit_info .price em {
+  font-family: "GeneSans_Txt-M";
+  font-size: 18px;
+  line-height: 29px;
+}
+.mypage_mycar li .unit_link .unit_info .price.off {
+  color: #666666;
+  font-family: "GeneSans_Txt-M";
+  font-size: 16px;
+  line-height: 26px;
+}
+.mypage_mycar li.soldout {
+  padding-bottom: 60px;
+}
+.mypage_mycar li.soldout [class^=btn_] {
+  display: none;
+}
+.mypage_mycar .noData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  text-align: center;
+}
+.mypage_mycar.plp_list ol .unit_link .unit_info .name span {
+  font-family: "GeneSans_Head-L";
+  font-size: 16px;
+  line-height: 22px;
+}
+.mypage_mycar.plp_list ol .unit_link .unit_info .drive {
+  font-family: "GeneSans_Txt-R";
+  font-size: 12px;
+  line-height: 19px;
+}
+
+.img_mycar {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  z-index: 401;
+  width: 100%;
+}
+.img_mycar .thumb {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  height: 0;
+  padding-bottom: 66.67%;
+}
+.img_mycar .thumb img {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: auto !important;
+  transform: translate(-50%, -50%);
+}
+
+.cont_mycar {
+  overflow: hidden;
+  position: relative;
+  z-index: 402;
+  margin-top: 224px;
+  padding-bottom: 116px;
+  background: #FFFFFF;
+}
+.cont_mycar .inbox_type02 > .txt {
+  padding-right: 56px;
+}
+.cont_mycar .inbox_type02 > .tit {
+  color: #727272;
+}
+.cont_mycar .inbox_type02 > em {
+  right: 38px !important;
+}
+.cont_mycar .inbox_type02 .ico_clear {
+  right: 17px;
+}
+.cont_mycar .inbox_type02.focus {
+  line-height: 54px;
+}
+.cont_mycar .inbox_type02.focus > .txt {
+  padding-right: 38px;
+}
+.cont_mycar .inbox_type02 + .cpo_error {
+  color: #666666;
+}
+.cont_mycar > ol {
+  background: #F8F8F8;
+}
+.cont_mycar > ol > li {
+  background: #FFFFFF;
+}
+.cont_mycar > ol > li:not(:last-of-type) {
+  margin-bottom: 8px;
+  border-bottom: solid 1px rgba(237, 237, 237, 0.5);
+}
+.cont_mycar > ol > li:not(:first-of-type) {
+  border-top: solid 1px rgba(237, 237, 237, 0.5);
+}
+.cont_mycar > ol > li.mileage .tit_box {
+  padding: 35px 21px 30px;
+}
+.cont_mycar > ol > li.mileage .tit_box > span {
+  display: block;
+}
+.cont_mycar > ol > li.mileage .tit_box .number {
+  margin-bottom: 10px;
+  font-family: "GeneSans_Head-R";
+  font-size: 16px;
+  line-height: 22px;
+}
+.cont_mycar > ol > li.mileage .tit_box .name {
+  margin-bottom: 5px;
+  font-family: "GeneSans_Txt-M";
+  font-size: 20px;
+  line-height: 32px;
+  color: #262626;
+}
+.cont_mycar > ol > li.mileage .tit_box .flag span {
+  color: #666666;
+  font-family: "GeneSans_Txt-R";
+  font-size: 12px;
+  line-height: 19px;
+}
+.cont_mycar > ol > li.mileage .tit_box .flag span:not(:first-of-type)::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 4px;
+  width: 1.5px;
+  height: 1.5px;
+  background: #727272;
+}
+.cont_mycar > ol > li.mileage .drive {
+  margin: 0 15px;
+  padding: 28px 18px 30px;
+  background: #F8F8F8;
+}
+.cont_mycar > ol > li.mileage .drive .btn_mile {
+  position: relative;
+  margin: 0 0 8px 2px;
+  padding-right: 11px;
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 22px;
+}
+.cont_mycar > ol > li.mileage .drive .btn_mile::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 4px;
+  width: 8px;
+  height: 13px;
+  background: url("../img/bg_library.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -47px 0;
+}
+.cont_mycar > ol > li.mileage .drive .mile_txt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cont_mycar > ol > li.mileage .drive .mile_txt dt span {
+  display: block;
+}
+.cont_mycar > ol > li.mileage .drive .mile_txt dt span.tit {
+  color: #262626;
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 22px;
+}
+.cont_mycar > ol > li.mileage .drive .mile_txt dt span.txt {
+  color: #AF6249;
+  font-family: "GeneSans_Txt-M";
+  font-size: 12px;
+  line-height: 19px;
+}
+.cont_mycar > ol > li.mileage .drive .mile_txt .km {
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 22px;
+}
+.cont_mycar > ol > li.mileage .drive .mile_txt .km em {
+  font-family: "GeneSans_Txt-M";
+  font-size: 16px;
+  line-height: 26px;
+}
+.cont_mycar > ol > li.mileage .detail {
+  padding: 0 35px 15px;
+}
+.cont_mycar > ol > li.mileage .detail ol {
+  display: none;
+  margin: 25px 0 0;
+  padding: 0 20px 30px;
+  border-bottom: 1px solid #F2F2F2;
+}
+.cont_mycar > ol > li.mileage .detail ol li {
+  display: flex;
+  justify-content: space-between;
+}
+.cont_mycar > ol > li.mileage .detail ol li:not(:last-of-type) {
+  margin-bottom: 18px;
+}
+.cont_mycar > ol > li.mileage .detail ol li .tit {
+  color: #666666;
+  font-family: "GeneSans_Txt-R";
+  font-size: 13px;
+  line-height: 21px;
+}
+.cont_mycar > ol > li.mileage .detail ol li .txt {
+  color: #262626;
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 22px;
+}
+.cont_mycar > ol > li.mileage .detail.more_view.on ol {
+  display: block;
+}
+.cont_mycar > ol > li.mileage .detail .btn_more {
+  padding: 15px 0 10px;
+}
+.cont_mycar > ol > li.value .tit_box {
+  padding: 39px 21px 30px;
+}
+.cont_mycar > ol > li.value .tit_box .tit {
+  font-family: "GeneSans_Head-L";
+  font-size: 24px;
+  line-height: 32px;
+}
+.cont_mycar > ol > li.value .tit_box .price {
+  zoom: 1;
+  font-size: 0;
+}
+.cont_mycar > ol > li.value .tit_box .price:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.cont_mycar > ol > li.value .tit_box .price > .txt {
+  position: relative;
+  font-family: "GeneSans_Head-R";
+  font-size: 24px;
+  line-height: 32px;
+}
+.cont_mycar > ol > li.value .tit_box .price > .txt::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #AF6249;
+}
+.cont_mycar > ol > li.value .tit_box .price .cpo_tooltip {
+  margin-left: 8px;
+  vertical-align: 6px;
+}
+.cont_mycar > ol > li.value .tit_box .km {
+  margin-top: 15px;
+  color: #727272;
+  font-family: "GeneSans_Txt-R";
+  font-size: 12px;
+  line-height: 19px;
+}
+.cont_mycar > ol > li.value .drive {
+  margin: 0 15px;
+  padding: 25px 20px;
+  background: #F8F8F8;
+}
+.cont_mycar > ol > li.value .drive li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cont_mycar > ol > li.value .drive li:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+.cont_mycar > ol > li.value .drive li .tit {
+  color: #262626;
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 26px;
+}
+.cont_mycar > ol > li.value .drive li .txt {
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 26px;
+}
+.cont_mycar > ol > li.value .drive li .txt em {
+  font-family: "GeneSans_Txt-M";
+  font-size: 16px;
+  line-height: 26px;
+  vertical-align: middle;
+}
+.cont_mycar > ol > li.value .drive .cpo_tooltip {
+  margin: 0 0 0 1px;
+}
+.cont_mycar > ol > li.value .chart {
+  margin-top: 20px;
+}
+
+.my_review {
+  overflow: hidden;
+  padding-bottom: 56px;
+  background-color: #F8F8F8;
+}
+.my_review .total {
+  position: relative;
+  margin-bottom: 0;
+  padding: 15px 21px;
+  background-color: #FFFFFF;
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 22px;
+}
+.my_review .total .review_list_all {
+  color: #262626;
+}
+.my_review .total .review_list_all i {
+  color: #AF6249;
+  font-family: "GeneSans_Txt-M";
+  font-size: 14px;
+  line-height: 22px;
+}
+.my_review .noData {
+  background-color: #FFFFFF;
+}
+
+.review_list {
+  position: relative;
+}
+.review_list li {
+  margin-bottom: 8px;
+  padding: 30px 21px;
+  background-color: #FFFFFF;
+  border: solid 1px #F2F2F2;
+  border-width: 1px 0;
+}
+.review_list li:last-child {
+  margin-bottom: 0;
+}
+.review_list .swiper-wrapper {
+  padding: 20px 15px 48px;
+}
+.review_list .swiper-wrapper .swiper-slide {
+  flex-wrap: wrap;
+  width: 100%;
+  margin-right: 15px;
+  padding: 20px 18px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.015);
+}
+.review_list .swiper-wrapper .swiper-slide:last-of-type {
+  margin-right: 30px;
+}
+.review_list .swiper-pagination {
+  bottom: 28px !important;
+}
+.review_list .review_txt {
+  margin-top: 30px;
+}
+.review_list .review_star {
+  margin-top: 0;
+}
+.review_list .review_bot {
+  display: flex;
+  gap: 0 15px;
+  height: 56px;
+  margin-top: 20px;
+}
+.review_list .review_bot .txt {
+  flex: 1;
+  overflow: hidden;
+  height: 60px;
+  color: #000000;
+  font-family: "GeneSans_Txt-R";
+  font-size: 13px;
+  line-height: 21px;
+}
+.review_list .review_bot .txt + span {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  width: 56px;
+  height: 56px;
+}
+.review_list .review_bot .txt + span img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+}
+.review_list .review_bot .txt + span span {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  width: 17px;
+  height: 17px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFFFFF;
+  font-family: "GeneSans_Txt-M";
+  font-size: 11px;
+  line-height: 17px;
+  text-align: center;
+}
+.review_list .review_bot .txt + span:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.review_list .btn_mid02 {
+  margin-top: 18px;
+}
+
+.my_question {
+  background-color: #F8F8F8;
+}
+.my_question .total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 50px;
+  margin-bottom: 0;
+  padding: 10px 21px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #F2F2F2;
+  margin-bottom: 8px;
+  color: #262626;
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 32px;
+  z-index: 3;
+}
+.my_question .total i {
+  color: #AF6249;
+  font-family: "GeneSans_Txt-M";
+  font-size: 14px;
+  line-height: 32px;
+}
+.my_question .q_tog.on::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+.my_question .q_box {
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #F2F2F2;
+  margin-bottom: 8px;
+}
+.my_question .q_box:first-child {
+  border-top: 0;
+}
+.my_question .q_box:last-child {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+.my_question .q_tit {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: 25px 21px;
+}
+.my_question .q_tit::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 21px;
+  width: 12px;
+  height: 8px;
+  margin-top: 4px;
+  background: url("../img/bg_mypage.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -126px 0px;
+  transform: translateY(-50%) rotate(0deg);
+}
+.my_question .q_tit .flag {
+  display: inline-block;
+  height: 22px;
+  padding: 0 7px;
+  border: solid 1px #000000;
+  font-family: "GeneSans_Txt-R";
+  font-size: 12px;
+  line-height: 19px;
+  color: #000000;
+}
+.my_question .q_tit .flag.on {
+  background-color: #1A1A1A;
+  border-color: #1A1A1A;
+  color: #FFFFFF;
+}
+.my_question .q_tit .tit {
+  margin-top: 12px;
+  padding-right: 41px;
+  color: #000000;
+  font-family: "GeneSans_Txt-M";
+  font-size: 15px;
+  line-height: 24px;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  word-break: break-word;
+}
+.my_question .q_tit .date {
+  margin-top: 4px;
+  color: #666666;
+  font-family: "GeneSans_Txt-R";
+  font-size: 12px;
+  line-height: 19px;
+}
+.my_question .q_cont {
+  display: none;
+  padding-bottom: 30px;
+}
+.my_question .q_cont .qa_txt {
+  display: flex;
+  gap: 0 8px;
+  padding: 0 21px 15px;
+  color: #262626;
+  font-family: "GeneSans_Txt-R";
+  font-size: 13px;
+  line-height: 21px;
+}
+.my_question .q_cont .qa_txt .mark {
+  flex: 20px;
+  color: #000000;
+  font-family: "GeneSans_Txt-M";
+  font-size: 15px;
+  line-height: 24px;
+  text-align: right;
+}
+.my_question .q_cont .qa_txt .txt {
+  width: 100%;
+}
+.my_question .q_cont .qa_txt .q_car {
+  display: block;
+  margin-top: 14px;
+  font-family: "GeneSans_Txt-R";
+  font-size: 12px;
+  line-height: 19px;
+  color: #666666;
+}
+.my_question .q_cont .qa_txt .date {
+  display: inline-block;
+  width: 100%;
+  margin-top: 14px;
+  color: #666666;
+  font-family: "GeneSans_Txt-R";
+  font-size: 12px;
+  line-height: 19px;
+}
+.my_question .q_cont .qa_txt.on {
+  padding-top: 35px;
+  padding-bottom: 0;
+}
+.my_question .q_cont .qa_txt.on .txt {
+  padding: 20px 17px;
+  background-color: #F8F8F8;
+}
+.my_question .q_cont .qa_txt.qa_ing {
+  text-align: center;
+}
+.my_question .q_cont .qa_txt + .qa_txt {
+  margin-top: 20px;
+}
+.my_question .q_cont .btn_area {
+  padding: 0 21px;
+  font-size: 0;
+  text-align: right;
+}
+.my_question .q_cont .btn_area li {
+  display: inline-block;
+  position: relative;
+}
+.my_question .q_cont .btn_area li:last-child button {
+  padding-right: 0;
+}
+.my_question .q_cont .btn_area li button {
+  padding: 0 10px;
+  color: #000000;
+  font-family: "GeneSans_Txt-M";
+  font-size: 13px;
+  line-height: 21px;
+}
+.my_question .q_cont .btn_area li:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 12px;
+  transform: translateY(-50%);
+  background-color: #E5E5E5;
+  vertical-align: middle;
+}
+.my_question .q_cont .btn_area li:first-child:before {
+  display: none;
+}
+.my_question .q_img {
+  position: relative;
+  height: 100%;
+  padding: 20px 21px;
+}
+.my_question .q_img .swiper-wrapper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100% !important;
+  height: 318px;
+  margin-right: 21px;
+  background-color: #F8F8F8;
+}
+.my_question .q_img .swiper-wrapper .swiper-slide:last-child {
+  margin-right: 0;
+}
+.my_question .q_img .swiper-wrapper .swiper-slide.wid img {
+  width: 100%;
+  height: auto;
+}
+.my_question .q_img .swiper-wrapper .swiper-slide.hei img {
+  width: auto;
+  height: 100%;
+}
+.alarm_list {
+  overflow-x: hidden;
+  background-color: #F8F8F8;
+}
+.alarm_list .total {
+  position: relative;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #F2F2F2;
+  margin-bottom: 8px;
+  margin-bottom: 0;
+  padding: 15px 21px;
+  color: #262626;
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 32px;
+}
+.alarm_list .total em {
+  color: #AF6249;
+  font-family: "GeneSans_Txt-M";
+  font-size: 14px;
+  line-height: 32px;
+}
+.alarm_list .a_box {
+  padding: 24px 15px 0;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #F2F2F2;
+  margin-bottom: 8px;
+  border-top: 1px solid #F2F2F2;
+}
+.alarm_list .a_box .tit {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 15px;
+  padding: 0 6px;
+  color: #727272;
+  font-family: "GeneSans_Txt-M";
+  font-size: 15px;
+  line-height: 24px;
+}
+.alarm_list .a_box .tit::before {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin-right: 8px;
+  background: url("../img/bg_mypage.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -227px 0;
+}
+.alarm_list .a_box .tit.on {
+  color: #262626;
+}
+.alarm_list .a_box .tit.on::before {
+  background-position: -197px 0;
+}
+.alarm_list .a_box .tit.on em {
+  color: #AF6249;
+}
+.alarm_list .a_box .tit span {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.alarm_list .a_box .tit button {
+  position: absolute;
+  top: 50%;
+  right: 6px;
+  width: 12px;
+  height: 12px;
+  background: url("../img/bg_mypage.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -206px -40px;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  transform: translateY(-50%);
+}
+.alarm_list .a_box .a_list {
+  padding: 25px 20px;
+  background-color: #F8F8F8;
+}
+.alarm_list .a_box .a_list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #666666;
+  font-family: "GeneSans_Txt-R";
+  font-size: 13px;
+  line-height: 21px;
+}
+.alarm_list .a_box .a_list li span {
+  flex: 1;
+}
+.alarm_list .a_box .a_list li span:last-child {
+  color: #262626;
+  text-align: right;
+}
+.alarm_list .a_box .a_list li:last-child {
+  margin-bottom: 0;
+}
+.alarm_list .a_box .a_txt {
+  padding: 20px 0 25px;
+  color: #4D4D4D;
+  font-family: "GeneSans_Txt-M";
+  font-size: 13px;
+  line-height: 21px;
+  text-align: center;
+}
+.alarm_list .a_box.last {
+  margin-bottom: 0;
+}
+.alarm_list .a_box.last .a_unit_box {
+  margin-bottom: 60px !important;
+}
+.alarm_list .a_box2 {
+  padding: 24px 21px 0;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 8px;
+}
+.alarm_list .a_box2 .tit {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-bottom: 0;
+  color: #727272;
+  font-family: "GeneSans_Txt-M";
+  font-size: 16px;
+  line-height: 20px;
+}
+.alarm_list .a_box2 .tit.on {
+  color: #000000;
+}
+.alarm_list .a_box2 .tit + .a_unit_box {
+  margin-top: 15px;
+}
+.alarm_list .a_box2 .tit span {
+  padding-right: 20px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.alarm_list .a_box2 .tit button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 12px;
+  height: 12px;
+  background: url("../img/bg_mypage.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -206px -40px;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+  transform: translateY(-50%);
+}
+.alarm_list .a_box2 .a_unit_box .a_unit2 .price em {
+  font-family: GeneSans_Head-R;
+}
+.alarm_list .a_box2.last {
+  margin-bottom: 0;
+}
+.alarm_list .a_swiper01 {
+  height: auto;
+  padding: 20px 0 30px;
+}
+.alarm_list .a_swiper01 .swiper-slide {
+  width: auto;
+}
+.alarm_list .a_unit.soldout .unit_img {
+  position: relative;
+}
+.alarm_list .a_unit.soldout .unit_img img {
+  opacity: 0.3;
+}
+.alarm_list .a_unit.soldout .unit_img span {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  font-family: "GeneSans_Txt-M";
+  font-size: 10px;
+  line-height: 20px;
+  text-align: center;
+}
+.alarm_list .a_unit.soldout .unit_info .date {
+  color: #727272;
+}
+.alarm_list .a_unit.soldout .price {
+  display: none;
+}
+.alarm_list .a_unit .unit_img {
+  overflow: hidden;
+  width: 120px;
+  height: 120px;
+}
+.alarm_list .a_unit .unit_img img {
+  width: 100%;
+  height: auto;
+}
+.alarm_list .a_unit .unit_img span {
+  display: none;
+}
+.alarm_list .a_unit .unit_info .price {
+  margin-top: 8px;
+  color: #000000;
+}
+.alarm_list .a_unit .unit_info .price .price_tit {
+  font-family: "GeneSans_Txt-M";
+  font-size: 12px;
+  line-height: 20px;
+  vertical-align: 1px;
+}
+.alarm_list .a_unit .unit_info .price em {
+  font-family: "GeneSans_Txt-M";
+  font-size: 16px;
+  line-height: 26px;
+}
+.alarm_list .a_unit .unit_info .price i {
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 23px;
+  vertical-align: 1px;
+}
+.alarm_list .a_unit .unit_info .price i.txt::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 13px;
+  background: url("../img/bg_library.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -60px 0;
+  vertical-align: middle;
+  margin: 0 0 2px 5px;
+}
+.alarm_list .a_unit .unit_info span {
+  display: block;
+}
+.alarm_list .a_unit .unit_info .date {
+  margin-top: 10px;
+  color: #666666;
+  font-family: "GeneSans_Txt-R";
+  font-size: 12px;
+  line-height: 19px;
+}
+.alarm_list .a_unit .unit_info .price {
+  margin-top: 2px;
+}
+.alarm_list .a_unit .unit_info .price em {
+  font-family: "GeneSans_Txt-M";
+  font-size: 18px;
+  line-height: 29px;
+}
+.alarm_list .swiper-slide.more {
+  width: 120px;
+  height: auto;
+  border: 1px solid #F2F2F2;
+  font-size: 0;
+  text-align: center;
+}
+.alarm_list .swiper-slide.more .a_unit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.alarm_list .swiper-slide.more div::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 15px;
+  background: url("../img/bg_mypage.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -257px 1px;
+  vertical-align: bottom;
+}
+.alarm_list .swiper-slide.more div span {
+  display: block;
+  font-family: "GeneSans_Txt-M";
+  font-size: 13px;
+  line-height: 21px;
+  color: #4D4D4D;
+}
+.alarm_list .a_unit_box {
+  margin: 20px 0 30px;
+}
+.alarm_list .a_unit_box .a_unit2 {
+  display: flex;
+  gap: 0 16px;
+}
+.alarm_list .a_unit_box .a_unit2 .price {
+  margin-top: 8px;
+  color: #000000;
+}
+.alarm_list .a_unit_box .a_unit2 .price .price_tit {
+  font-family: "GeneSans_Txt-M";
+  font-size: 12px;
+  line-height: 20px;
+  vertical-align: 1px;
+}
+.alarm_list .a_unit_box .a_unit2 .price em {
+  font-family: "GeneSans_Txt-M";
+  font-size: 16px;
+  line-height: 26px;
+}
+.alarm_list .a_unit_box .a_unit2 .price i {
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 23px;
+  vertical-align: 1px;
+}
+.alarm_list .a_unit_box .a_unit2 .price i.txt::after {
+  content: "";
+  display: inline-block;
+  width: 9px;
+  height: 13px;
+  background: url("../img/bg_library.png") no-repeat;
+  background-size: 300px 200px;
+  background-position: -60px 0;
+  vertical-align: middle;
+  margin: 0 0 2px 5px;
+}
+.alarm_list .a_unit_box .a_unit2.soldout .unit_img {
+  position: relative;
+}
+.alarm_list .a_unit_box .a_unit2.soldout .unit_img img {
+  opacity: 0.3;
+}
+.alarm_list .a_unit_box .a_unit2.soldout .unit_img span {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #FFFFFF;
+  font-family: "GeneSans_Txt-M";
+  font-size: 10px;
+  line-height: 20px;
+  text-align: center;
+}
+.alarm_list .a_unit_box .a_unit2.soldout .unit_info .top, .alarm_list .a_unit_box .a_unit2.soldout .unit_info .name {
+  color: #727272;
+}
+.alarm_list .a_unit_box .a_unit2.soldout .unit_info .price {
+  display: none;
+}
+.alarm_list .a_unit_box .a_unit2 .unit_img {
+  width: 100px;
+  height: 100px;
+}
+.alarm_list .a_unit_box .a_unit2 .unit_img span {
+  display: none;
+}
+.alarm_list .a_unit_box .a_unit2 .unit_info {
+  flex: 1;
+}
+.alarm_list .a_unit_box .a_unit2 .unit_info .top {
+  display: flex;
+  margin-bottom: 10px;
+  color: #666666;
+  font-family: "GeneSans_Txt-R";
+  font-size: 12px;
+  line-height: 19px;
+}
+.alarm_list .a_unit_box .a_unit2 .unit_info .top .txt {
+  position: relative;
+  margin-left: 7px;
+  padding-left: 7px;
+}
+.alarm_list .a_unit_box .a_unit2 .unit_info .top .txt::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1px;
+  height: 11px;
+  background-color: #E5E5E5;
+  transform: translateY(-50%);
+  vertical-align: middle;
+}
+.alarm_list .a_unit_box .a_unit2 .unit_info .name {
+  margin-bottom: 3px;
+  color: #000000;
+  font-family: "GeneSans_Head-R";
+  font-size: 14px;
+  line-height: 19px;
+}
+.alarm_list .a_unit_box .a_unit2 .unit_info .price {
+  display: inline-block;
+  margin: 0 0 3px;
+}
+.alarm_list .a_unit_box .a_unit2 .unit_info .price em {
+  font-family: "GeneSans_Txt-M";
+  font-size: 18px;
+  line-height: 29px;
+}
+.alarm_list .a_unit_box .a_unit2 .unit_info .price .line {
+  color: #727272;
+  text-decoration-line: line-through;
+}
+.alarm_list .a_unit_box .a_unit2 .unit_info .price .line em, .alarm_list .a_unit_box .a_unit2 .unit_info .price .line i {
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 22px;
+}
+.alarm_list .a_unit_box .a_unit2 .unit_info .txt {
+  color: #727272;
+  font-family: "GeneSans_Txt-R";
+  font-size: 12px;
+  line-height: 19px;
+}
+.alarm_list .a_unit_box .a_unit2 .unit_info .txt.on {
+  color: #1D8ABC;
+}
+.alarm_list .unit_img img {
+  width: 100%;
+  height: auto;
+}
+
+.srch_ifbox {
+  background-color: #FFFFFF;
+}
+.srch_ifbox .incont02 {
+  padding: 0 22px 27px;
+}
+.srch_ifbox .srch_caution {
+  padding-bottom: 10px;
+  background-color: #F8F8F8;
+  border-bottom: 1px solid #F2F2F2;
+}
+.srch_ifbox .srch_caution .incont {
+  padding: 20px 21px 30px;
+  background-color: #FFFFFF;
+}
+.srch_ifbox .srch_caution p {
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 22px;
+  color: #262626;
+}
+.srch_ifbox .srch_caution .notice_03 {
+  margin-top: 12px;
+}
+.srch_ifbox .tab_box {
+  display: flex;
+  border: 1px solid #E5E5E5;
+}
+.srch_ifbox .tab_box li {
+  width: 100%;
+}
+.srch_ifbox .tab_box li:last-child label:after {
+  display: none;
+}
+.srch_ifbox .tab_box input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+.srch_ifbox .tab_box input + label {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 42px;
+  background-color: #FFFFFF;
+  font-family: "GeneSans_Head-R";
+  font-size: 13px;
+  line-height: 42px;
+  color: #4D4D4D;
+  text-align: center;
+}
+.srch_ifbox .tab_box input + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -1px;
+  top: 50%;
+  width: 1px;
+  height: 18px;
+  transform: translateY(-50%);
+  background-color: #E5E5E5;
+  z-index: 1;
+}
+.srch_ifbox .tab_box input:checked + label {
+  color: #FFFFFF;
+  background-color: #1A1A1A;
+  z-index: 2;
+}
+.srch_ifbox .tab_box input:checked + label:after {
+  display: none;
+}
+.srch_ifbox .tab_box .tab_anchor {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 42px;
+  background-color: #F8F8F8;
+  font-family: "GeneSans_Head-R";
+  font-size: 14px;
+  line-height: 42px;
+  color: #4D4D4D;
+}
+.srch_ifbox .tab_box .tab_anchor:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 1px;
+  height: 18px;
+  transform: translateY(-50%);
+  background-color: #959595;
+}
+.srch_ifbox .tab_box .tab_anchor:first-child:before {
+  display: none;
+}
+.srch_ifbox #rangePrice {
+  height: 52px;
+  margin-top: 0;
+}
+.srch_ifbox #rangePrice .cpoRange {
+  background-color: #F2F2F2;
+}
+.srch_ifbox #rangePrice .cpoRange::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -11px;
+  width: calc(100% + 22px);
+  height: 2px;
+  background-color: #F2F2F2;
+}
+.srch_ifbox #rangePrice .max_no:after {
+  content: " 이상";
+}
+.srch_ifbox .srch_box {
+  border-color: #F2F2F2;
+}
+.srch_ifbox .srch_box .top .tit {
+  color: #000000;
+}
+.srch_ifbox .srch_box .top .check {
+  color: #727272;
+}
+.srch_ifbox .srch_box.disabled .tit {
+  opacity: 0.3;
+}
+.srch_ifbox .srch_box.disabled .btn_open {
+  pointer-events: none;
+  opacity: 0.3;
+}
+.srch_ifbox .srch_box [class^=depth] label {
+  pointer-events: none;
+}
+.srch_ifbox .srch_box .depth3 {
+  background-color: #F8F8F8 !important;
+}
+.srch_ifbox .srch_box .chk_rad01 + label {
+  color: #262626 !important;
+}
+.srch_ifbox .srch_box .chk_rad01:checked ~ [class^=depth] > li > label {
+  pointer-events: auto;
+}
+.srch_ifbox .srch_box .chk_type05 + label {
+  background-color: transparent;
+  color: #666666;
+}
+.srch_ifbox .srch_box .chk_type06 + label span {
+  color: #666666;
+}
+.srch_ifbox .srch_box .chk_type06:checked + label span {
+  padding-right: 0;
+  color: #262626;
+}
+/*# sourceMappingURL=maps/g_mypage.css.map */

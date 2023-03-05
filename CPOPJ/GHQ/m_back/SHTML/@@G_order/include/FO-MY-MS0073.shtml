@@ -1,0 +1,439 @@
+<!-- FO-OR-MS0073 : 명의정보 설정 - FULL -->
+<div class="CPOpop_full" id="FO-MY-MS0073">
+	<div class="p_head">
+		<h4 class="tit">명의정보 설정</h4>
+	</div>
+	<div class="p_wrap">
+		<div class="owner_wrap">
+			<!-- S : 명의정보_개인 -->
+			<div class="owner_box01">
+                <!-- 01. 대표 명의자 -->
+				<h4 class="tit">대표 명의자</h4>
+				<!-- (1) 기본정보-->
+				<div class="inner01">
+					<h5 class="tit">기본정보</h5>
+					<ol class="form_type01">
+						<li class="sel_type01">
+							<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+							<button type="button" class="btn_sel04 jQ_Select" id="FO-MY-MS0073-SelectCOM01" data-id="FO-MY-MS0073-SelectCOM0101" data-popup="FO-MY-MS0073-Select-COM01-Layer">개인</button>
+							<!-- Layer -->
+							<div class="CPOpop_bottom select" id="FO-MY-MS0073-Select-COM01-Layer">
+								<div class="p_head">
+									<h5 class="tit">선택</h5>
+								</div>
+								<div class="p_wrap">
+									<!-- list -->
+									<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectCOM01_Name" id="FO-MY-MS0073-SelectCOM0101"><label for="FO-MY-MS0073-SelectCOM0101">개인</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectCOM01_Name" id="FO-MY-MS0073-SelectCOM0102"><label for="FO-MY-MS0073-SelectCOM0102">개인사업자</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectCOM01_Name" id="FO-MY-MS0073-SelectCOM0103"><label for="FO-MY-MS0073-SelectCOM0103">법인사업자</label></li>
+									</ol>
+									<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectCOM01 변경 내용 적용  -->
+										<button type="button" class="btn_big01 jQ_Select_Save" data-id="FO-MY-MS0073-SelectCOM01">적용하기</button>
+									</div>
+									<!-- //list -->
+								</div>
+								<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+							</div>
+						</li>
+						<li class="inbox_type03 on"><!-- value 값 있는 경우 on -->
+							<span class="tit">이름</span>
+							<input type="text" class="txt" title="이름 입력" name="" value="김현대" disabled>
+						</li>
+						<li class="inbox_type03 identity on"><!-- value 값 있는 경우 on -->
+							<span class="tit">주민등록번호</span>
+							<input type="number" class="txt type_id01" title="주민등록번호 입력" placeholder="앞자리" name="" value="780101" disabled>
+							<input type="number" class="txt type_id02" title="주민등록번호 입력" placeholder="뒷자리" name="" value="">
+							<!-- 주민등록번호 : type_tel 입력값 하이픈 추가 기능 -->
+							<span class="validation">본인인증이 ￿완료되었습니다.</span><!-- 에러문구는 CLASS error / 완료는 ok-->
+						</li>
+						<li  class="inbox_type03 on"><!-- value 값 있는 경우 on -->
+							<span class="tit">휴대폰번호</span>
+							<input type="tel" class="txt type_tel" title="휴대폰번호 입력" placeholder="'-' 없이 숫자만 입력" name="" value="010-1234-7890"><!-- 전화번호 : type_tel 입력값 하이픈 추가 기능 -->
+							<span class="validation">입력하신 ￿휴대전화번호 ￿형식이￿ 유효하지￿않습니다.</span><!-- 에러문구는 CLASS error / 완료는 ok-->
+						</li>
+						<li class="inbox_type03 on">
+							<span class="tit">이메일</span>
+							<input type="email" class="txt type_email" title="이메일 입력" placeholder="" name="" value="kim">
+							<!-- [수정-SELECT] 2022-03-25 --><!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+							<button type="button" class="btn_sel04 jQ_Select" id="FO-MY-MS0073-SelectEMAIL01_Name" data-id="FO-MY-MS0073-SelectEMAIL0101" data-popup="FO-MY-MS0073-Select-EMAIL01-Layer">직접입력</button>
+							<!-- Layer -->
+							<div class="CPOpop_bottom select" id="FO-MY-MS0073-Select-EMAIL01-Layer">
+								<div class="p_head">
+									<h5 class="tit">이메일 선택</h5>
+								</div>
+								<div class="p_wrap">
+									<!-- list -->
+									<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL01_Name" id="FO-MY-MS0073-SelectEMAIL0101"><label for="FO-MY-MS0073-SelectEMAIL0101">직접입력</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL01_Name" id="FO-MY-MS0073-SelectEMAIL0102"><label for="FO-MY-MS0073-SelectEMAIL0102">@hyundai.com</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL01_Name" id="FO-MY-MS0073-SelectEMAIL0103"><label for="FO-MY-MS0073-SelectEMAIL0103">@naver.com</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL01_Name" id="FO-MY-MS0073-SelectEMAIL0104"><label for="FO-MY-MS0073-SelectEMAIL0104">@daum.net</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL01_Name" id="FO-MY-MS0073-SelectEMAIL0105"><label for="FO-MY-MS0073-SelectEMAIL0105">@hanmail.net</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL01_Name" id="FO-MY-MS0073-SelectEMAIL0106"><label for="FO-MY-MS0073-SelectEMAIL0106">@nate.com</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL01_Name" id="FO-MY-MS0073-SelectEMAIL0107"><label for="FO-MY-MS0073-SelectEMAIL0107">@gmail.com</label></li>
+									</ol>
+									<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectEMAIL01 변경 내용 적용  -->
+										<button type="button" class="btn_big01 jQ_Select_Save" data-id="FO-MY-MS0073-SelectEMAIL01">적용하기</button>
+									</div>
+									<!-- //list -->
+								</div>
+								<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+							</div>
+							<span class="validation">입력하신￿이메일￿형식이￿유효하지￿않습니다.</span><!-- 에러문구는 CLASS error -->
+						</li>
+                        <li class="inbox_type05"><!-- 주소 입력 후 calss on 추가 -->
+							<span class="tit">주소</span>
+							<div class="add"></div><!-- 주소 -->
+							<button type="button" class="btn_icon01">주소검색</button>
+						</li>
+						<li class="inbox_type03 on"><!-- 주소 입력 후 calss on 추가 -->
+							<span class="tit">상세주소</span>
+							<input type="text" class="txt" title="상세주소 입력" placeholder="상세주소 입력" name="" value="">
+						</li>
+					</ol>
+				</div>
+				<div class="notice_04">
+					<ol>
+						<li>대표명의자의 이름, 생년월일, 지분율은 자동차등록 원부에 기재된 내용이며 변경하실 수 없습니다.</li>
+						<li>외국인은 외국인등록번호 13자리를 입력해 주세요.</li>
+                        <li>주소는 반드시 주민등록상 주소로 입력해 주시기 바랍니다.</li>
+					</ol>
+				</div>
+                <!-- (2) 지분율 설정 -->
+				<div class="inner03">
+					<h5 class="tit">지분율 설정</h5>
+					<div class="inbox_type01">
+						<span class="tit">지분율</span>
+						<input type="number" pattern="\d*" class="txt" title="지분율 입력" name="" value="100" disabled><em>%</em>
+					</div>
+					<span class="validation">텍스트입니다</span><!-- 에러문구는 CLASS error -->
+				</div>
+            </div>
+            <!-- 02. 공동 명의자 -->
+			<div class="owner_box02">
+				<h4 class="tit">공동명의자 1</h4>
+				<!-- (1) 기본정보-->
+				<div class="inner01">
+					<h5 class="tit">기본정보</h5>
+					<ol class="form_type01">
+						<li class="sel_type01">
+							<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+							<button type="button" class="btn_sel04 jQ_Select" id="FO-MY-MS0073-SelectCOM02_Name" data-id="FO-MY-MS0073-SelectCOM0201" data-popup="FO-MY-MS0073-Select-COM02-Layer">개인</button>
+							<!-- Layer -->
+							<div class="CPOpop_bottom select" id="FO-MY-MS0073-Select-COM02-Layer">
+								<div class="p_head">
+									<h5 class="tit">선택</h5>
+								</div>
+								<div class="p_wrap">
+									<!-- list -->
+									<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectCOM02_Name" id="FO-MY-MS0073-SelectCOM0201"><label for="FO-MY-MS0073-SelectCOM0201">개인</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectCOM02_Name" id="FO-MY-MS0073-SelectCOM0202"><label for="FO-MY-MS0073-SelectCOM0202">개인사업자</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectCOM02_Name" id="FO-MY-MS0073-SelectCOM0203"><label for="FO-MY-MS0073-SelectCOM0203">법인사업자</label></li>
+									</ol>
+									<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectCOM02 변경 내용 적용  -->
+										<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectCOM02">적용하기</button>
+									</div>
+									<!-- //list -->
+								</div>
+								<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+							</div>
+							<!-- [수정-SELECT] 2022-03-25 -->
+						</li>
+						<li class="inbox_type03 on"><!-- value 값 있는 경우 on -->
+							<span class="tit">이름</span>
+							<input type="text" class="txt" title="이름 입력" name="" value="김현대" disabled>
+						</li>
+						<li class="inbox_type03 identity on"><!-- value 값 있는 경우 on -->
+							<span class="tit">주민등록번호</span>
+							<input type="number" class="txt type_id01" title="주민등록번호 입력" placeholder="앞자리" name="" value="780101" disabled>
+							<input type="number" class="txt type_id02" title="주민등록번호 입력" placeholder="뒷자리" name="" value="">
+							<!-- 주민등록번호 : type_tel 입력값 하이픈 추가 기능 -->
+							<span class="validation">본인인증이 ￿완료되었습니다.</span><!-- 에러문구는 CLASS error / 완료는 ok-->
+						</li>
+						<li  class="inbox_type03"><!-- value 값 있는 경우 on --><!-- [CPO-1204 : 디자인검수2차] -->
+							<span class="tit">휴대폰번호</span>
+							<input type="tel" class="txt type_tel" title="휴대폰번호 입력" placeholder="'-' 없이 숫자만 입력" name="" value=""><!-- 전화번호 : type_tel 입력값 하이픈 추가 기능 -->
+							<span class="validation">입력하신 ￿휴대전화번호 ￿형식이￿ 유효하지 ￿않습니다.</span><!-- 에러문구는 CLASS error / 완료는 ok-->
+						</li>
+						<li class="inbox_type03">
+							<span class="tit">이메일</span>
+							<input type="email" class="txt type_email" title="이메일 입력" placeholder="" name="" value="">
+							<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+							<button type="button" class="btn_sel04 jQ_Select" id="FO-MY-MS0073-SelectEMAIL02_Name" data-id="SFO-MY-MS0073-electEMAIL0201" data-popup="FO-MY-MS0073-Select-EMAIL02-Layer">직접입력</button>
+							<!-- Layer -->
+							<div class="CPOpop_bottom select" id="Select-EMAIL02-Layer">
+								<div class="p_head">
+									<h5 class="tit">이메일 선택</h5>
+								</div>
+								<div class="p_wrap">
+									<!-- list -->
+									<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL02_Name" id="FO-MY-MS0073-SelectEMAIL0201"><label for="FO-MY-MS0073-SelectEMAIL0201">직접입력</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL02_Name" id="FO-MY-MS0073-SelectEMAIL0202"><label for="FO-MY-MS0073-SelectEMAIL0202">@hyundai.com</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL02_Name" id="FO-MY-MS0073-SelectEMAIL0203"><label for="FO-MY-MS0073-SelectEMAIL0203">@naver.com</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL02_Name" id="FO-MY-MS0073-SelectEMAIL0204"><label for="FO-MY-MS0073-SelectEMAIL0204">@daum.net</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL02_Name" id="FO-MY-MS0073-SelectEMAIL0205"><label for="FO-MY-MS0073-SelectEMAIL0205">@hanmail.net</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL02_Name" id="FO-MY-MS0073-SelectEMAIL0206"><label for="FO-MY-MS0073-SelectEMAIL0206">@nate.com</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL02_Name" id="FO-MY-MS0073-SelectEMAIL0207"><label for="FO-MY-MS0073-SelectEMAIL0207">@gmail.com</label></li>
+									</ol>
+									<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectEMAIL03 변경 내용 적용  -->
+										<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectEMAIL03">적용하기</button>
+									</div>
+									<!-- //list -->
+								</div>
+								<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+							</div>
+							<span class="validation">입력하신￿ 이메일￿ 형식이 ￿유효하지 ￿않습니다.</span><!-- 에러문구는 CLASS error -->
+						</li>
+                        <li class="inbox_type05"><!-- 주소 입력 후 calss on 추가 -->
+							<span class="tit">주소</span>
+							<div class="add"></div><!-- 주소 -->
+							<button type="button" class="btn_icon01">주소검색</button>
+						</li>
+						<li class="inbox_type03 on"><!-- 주소 입력 후 calss on 추가 -->
+							<span class="tit">상세주소</span>
+							<input type="text" class="txt" title="상세주소 입력" placeholder="상세주소 입력" name="" value="">
+						</li>
+					</ol>
+				</div>
+				<!-- (2) 공지-->
+				<div class="notice_04">
+					<ol>
+						<li>공동명의자의 이름, 생년월일, 지분율은 자동차등록 원부에 기재된 내용이며 변경하실 수 없습니다.</li>
+                        <li>외국인은 외국인등록번호 13자리를 입력해 주세요.</li>
+                        <li>주소는 반드시 주민등록상 주소로 입력해 주시기 바랍니다.</li>
+					</ol>
+				</div>
+                 <!-- (3) 지분율 설정 -->
+				<div class="inner03">
+					<h5 class="tit">지분율 설정</h5>
+					<div class="inbox_type01">
+						<span class="tit">지분율</span>
+						<input type="number" pattern="\d*" class="txt" title="지분율 입력" name="" value="100" disabled><em>%</em>
+					</div>
+					<span class="validation">텍스트입니다</span><!-- 에러문구는 CLASS error -->
+				</div>
+			</div>
+			<!-- //02. 공동 명의자 정보 등록 -->
+            <!-- E : 명의정보_개인 -->
+
+            <!-- S : 명의정보_개인사업자 -->
+			<div class="owner_box01">
+                <!-- 01. 대표 명의자 -->
+				<h4 class="tit">대표 명의자</h4>
+				<!-- (1) 기본정보-->
+				<div class="inner01">
+					<h5 class="tit">기본정보</h5>
+					<ol class="form_type01">
+						<li class="sel_type01">
+							<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+							<button type="button" class="btn_sel04 jQ_Select" id="FO-MY-MS0073-SelectCOM03_Name" data-id="FO-MY-MS0073-SelectCOM0301" data-popup="FO-MY-MS0073-Select-COM03-Layer">개인</button>
+							<!-- Layer -->
+							<div class="CPOpop_bottom select" id="FO-MY-MS0073-Select-COM03-Layer">
+								<div class="p_head">
+									<h5 class="tit">선택</h5>
+								</div>
+								<div class="p_wrap">
+									<!-- list -->
+									<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectCOM03_Name" id="FO-MY-MS0073-SelectCOM0301"><label for="FO-MY-MS0073-SelectCOM0301">개인</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectCOM03_Name" id="FO-MY-MS0073-SelectCOM0302"><label for="FO-MY-MS0073-SelectCOM0302">개인사업자</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectCOM03_Name" id="FO-MY-MS0073-SelectCOM0303"><label for="FO-MY-MS0073-SelectCOM0303">법인사업자</label></li>
+									</ol>
+									<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectCOM01 변경 내용 적용  -->
+										<button type="button" class="btn_big01 jQ_Select_Save" data-id="FO-MY-MS0073-SelectCOM01">적용하기</button>
+									</div>
+									<!-- //list -->
+								</div>
+								<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+							</div>
+						</li>
+						<li class="inbox_type03 on"><!-- value 값 있는 경우 on -->
+							<span class="tit">이름</span>
+							<input type="text" class="txt" title="이름 입력" name="" value="김현대" disabled>
+						</li>
+						<li class="inbox_type03 identity on"><!-- value 값 있는 경우 on -->
+							<span class="tit">주민등록번호</span>
+							<input type="number" class="txt type_id01" title="주민등록번호 입력" placeholder="앞자리" name="" value="780101" disabled>
+							<input type="number" class="txt type_id02" title="주민등록번호 입력" placeholder="뒷자리" name="" value="">
+							<!-- 주민등록번호 : type_tel 입력값 하이픈 추가 기능 -->
+							<span class="validation">본인인증이 ￿완료되었습니다.</span><!-- 에러문구는 CLASS error / 완료는 ok-->
+						</li>
+						<li  class="inbox_type03 on"><!-- value 값 있는 경우 on -->
+							<span class="tit">휴대폰번호</span>
+							<input type="tel" class="txt type_tel" title="휴대폰번호 입력" placeholder="'-' 없이 숫자만 입력" name="" value="010-1234-7890"><!-- 전화번호 : type_tel 입력값 하이픈 추가 기능 -->
+							<span class="validation">입력하신 ￿휴대전화번호 ￿형식이￿ 유효하지 ￿않습니다.</span><!-- 에러문구는 CLASS error / 완료는 ok-->
+						</li>
+						<li class="inbox_type03 on">
+							<span class="tit">이메일</span>
+							<input type="email" class="txt type_email" title="이메일 입력" placeholder="" name="" value="kim@naver.com">
+							<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+							<button type="button" class="btn_sel04 jQ_Select" id="FO-MY-MS0073-SelectEMAIL03_Name" data-id="FO-MY-MS0073-SelectEMAIL0301" data-popup="FO-MY-MS0073-Select-EMAIL03-Layer">직접입력</button>
+							<!-- Layer -->
+							<div class="CPOpop_bottom select" id="FO-MY-MS0073-Select-EMAIL03-Layer">
+								<div class="p_head">
+									<h5 class="tit">이메일 선택</h5>
+								</div>
+								<div class="p_wrap">
+									<!-- list -->
+									<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL03_Name" id="FO-MY-MS0073-SelectEMAIL0301"><label for="FO-MY-MS0073-SelectEMAIL0301">직접입력</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL03_Name" id="FO-MY-MS0073-SelectEMAIL0302"><label for="FO-MY-MS0073-SelectEMAIL0302">@hyundai.com</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL03_Name" id="FO-MY-MS0073-SelectEMAIL0303"><label for="FO-MY-MS0073-SelectEMAIL0303">@naver.com</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL03_Name" id="FO-MY-MS0073-SelectEMAIL0304"><label for="FO-MY-MS0073-SelectEMAIL0304">@daum.net</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL03_Name" id="FO-MY-MS0073-SelectEMAIL0305"><label for="FO-MY-MS0073-SelectEMAIL0305">@hanmail.net</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL03_Name" id="FO-MY-MS0073-SelectEMAIL0306"><label for="FO-MY-MS0073-SelectEMAIL0306">@nate.com</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL03_Name" id="FO-MY-MS0073-SelectEMAIL0307"><label for="FO-MY-MS0073-SelectEMAIL0307">@gmail.com</label></li>
+									</ol>
+									<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectEMAIL01 변경 내용 적용  -->
+										<button type="button" class="btn_big01 jQ_Select_Save" data-id="FO-MY-MS0073-SelectEMAIL01">적용하기</button>
+									</div>
+									<!-- //list -->
+								</div>
+								<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+							</div>
+							<span class="validation">입력하신 ￿이메일 ￿형식이￿ 유효하지 ￿않습니다.</span><!-- 에러문구는 CLASS error -->
+						</li>
+                        <li class="inbox_type05"><!-- 주소 입력 후 calss on 추가 -->
+							<span class="tit">주소</span>
+							<div class="add"></div><!-- 주소 -->
+							<button type="button" class="btn_icon01">주소검색</button>
+						</li>
+						<li class="inbox_type03 on"><!-- 주소 입력 후 calss on 추가 -->
+							<span class="tit">상세주소</span>
+							<input type="text" class="txt" title="상세주소 입력" placeholder="상세주소 입력" name="" value="">
+						</li>
+					</ol>
+				</div>
+				<div class="notice_04">
+					<ol>
+						<li>대표명의자의 이름, 생년월일, 지분율은 자동차등록 원부에 기재된 내용이며 변경하실 수 없습니다.</li>
+						<li>외국인은 외국인등록번호 13자리를 입력해 주세요.</li>
+                        <li>주소는 반드시 주민등록상 주소로 입력해 주시기 바랍니다.</li>
+					</ol>
+				</div>
+                <!-- (2) 사업자정보 -->
+                <div class="inner02">
+                    <h5 class="tit">사업자정보</h5>
+                    <ol class="form_type01">
+                        <li class="inbox_type03"><!-- value 값 있는 경우 on -->
+                            <span class="tit">사업자명</span>
+                            <input type="text" class="txt" title="사업자명 입력" name="" value="" disabled>
+                        </li>
+                        <li class="inbox_type03"><!-- value 값 있는 경우 on -->
+                            <span class="tit">사업자등록번호</span>
+                            <input type="number" class="txt type_id" title="사업자등록번호 입력" placeholder="‘-’없이 숫자만 10자리 입력" name="" value="">
+                            <span class="validation">본인인증이 ￿완료되었습니다.</span><!-- 에러문구는 CLASS error / 완료는 ok-->
+                        </li>
+                        <li class="inbox_type05"><!-- 주소 입력 후 calss on 추가 -->
+                            <span class="tit">사업장 주소</span>
+                            <div class="add"></div><!-- 주소 -->
+                            <button type="button" class="btn_icon01">주소검색</button>
+                        </li>
+                        <li class="inbox_type03"><!-- 주소 입력 후 calss on 추가 -->
+                            <span class="tit">상세주소</span>
+                            <input type="text" class="txt" title="상세주소 입력" placeholder="상세주소 입력" name="" value="">
+                        </li>
+                    </ol>
+                </div>
+                <!-- (3) 지분율 설정 -->
+                <div class="inner03">
+                    <h5 class="tit">지분율 설정</h5>
+                    <div class="inbox_type01">
+                        <span class="tit">지분율</span>
+                        <input type="number" pattern="\d*" class="txt" title="지분율 입력" name="" value="0"><em>%</em>
+                    </div>
+                    <span class="validation">텍스트입니다</span><!-- 에러문구는 CLASS error -->
+                </div>
+            </div>
+			<!-- //02. 공동 명의자 정보 등록 -->
+            <!-- E : 명의정보_개인사업자 -->
+
+            <!-- S : 명의정보_법인사업자 -->
+            <div class="owner_box01">
+                <!-- 01. 대표 명의자 -->
+				<h4 class="tit">대표 명의자</h4>
+				<div class="inner02">
+                    <!-- (1) 기본정보 -->
+					<h5 class="tit">기본정보</h5>
+					<ol class="form_type01">
+						<li class="inbox_type03 on"><!-- value 값 있는 경우 on -->
+							<span class="tit">사업자명</span>
+							<input type="text" class="txt" title="사업자명 입력" name="" value="현대상사" disabled>
+						</li>
+                        <li class="inbox_type03"><!-- value 값 있는 경우 on -->
+							<span class="tit">법인등록번호</span>
+							<input type="number" class="txt type_id" title="사업자등록번호 입력" placeholder="‘-’없이 숫자만 10자리 입력" name="" value="">
+							<span class="validation">입력하신 법인등록번호 형식이 유효하지 않습니다.</span><!-- 에러문구는 CLASS error / 완료는 ok-->
+						</li>
+						<li class="inbox_type03"><!-- value 값 있는 경우 on -->
+							<span class="tit">사업자등록번호</span>
+							<input type="number" class="txt type_id" title="사업자등록번호 입력" placeholder="‘-’없이 숫자만 10자리 입력" name="" value="">
+							<span class="validation">본인인증이 ￿완료되었습니다.</span><!-- 에러문구는 CLASS error / 완료는 ok-->
+						</li>
+                        <li  class="inbox_type03 on"><!-- value 값 있는 경우 on -->
+							<span class="tit">휴대폰번호</span>
+							<input type="tel" class="txt type_tel" title="휴대폰번호 입력" placeholder="'-' 없이 숫자만 입력" name="" value="010-1234-7890"><!-- 전화번호 : type_tel 입력값 하이픈 추가 기능 -->
+							<span class="validation">입력하신 ￿휴대전화번호 ￿형식이￿ 유효하지￿ 않습니다.</span><!-- 에러문구는 CLASS error / 완료는 ok-->
+						</li>
+                        <li class="inbox_type03">
+							<span class="tit">이메일</span>
+							<input type="email" class="txt type_email" title="이메일 입력" placeholder="" name="" value="">
+							<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+							<button type="button" class="btn_sel04 jQ_Select" id="FO-MY-MS0073-SelectEMAIL04_Name" data-id="SFO-MY-MS0073-electEMAIL0401" data-popup="FO-MY-MS0073-Select-EMAIL04-Layer">직접입력</button>
+							<!-- Layer -->
+							<div class="CPOpop_bottom select" id="Select-EMAIL04-Layer">
+								<div class="p_head">
+									<h5 class="tit">이메일 선택</h5>
+								</div>
+								<div class="p_wrap">
+									<!-- list -->
+									<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL04_Name" id="FO-MY-MS0073-SelectEMAIL0401"><label for="FO-MY-MS0073-SelectEMAIL0401">직접입력</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL04_Name" id="FO-MY-MS0073-SelectEMAIL0402"><label for="FO-MY-MS0073-SelectEMAIL0402">@hyundai.com</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL04_Name" id="FO-MY-MS0073-SelectEMAIL0403"><label for="FO-MY-MS0073-SelectEMAIL0403">@naver.com</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL04_Name" id="FO-MY-MS0073-SelectEMAIL0404"><label for="FO-MY-MS0073-SelectEMAIL0404">@daum.net</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL04_Name" id="FO-MY-MS0073-SelectEMAIL0405"><label for="FO-MY-MS0073-SelectEMAIL0405">@hanmail.net</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL04_Name" id="FO-MY-MS0073-SelectEMAIL0406"><label for="FO-MY-MS0073-SelectEMAIL0406">@nate.com</label></li>
+										<li><input type="radio" class="chk_type09" name="FO-MY-MS0073-SelectEMAIL04_Name" id="FO-MY-MS0073-SelectEMAIL0407"><label for="FO-MY-MS0073-SelectEMAIL0407">@gmail.com</label></li>
+									</ol>
+									<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectEMAIL03 변경 내용 적용  -->
+										<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectEMAIL04">적용하기</button>
+									</div>
+									<!-- //list -->
+								</div>
+								<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+							</div>
+							<span class="validation">입력하신￿ 이메일￿ 형식이 ￿유효하지 ￿않습니다.</span><!-- 에러문구는 CLASS error -->
+						</li>
+						<li class="inbox_type05"><!-- 주소 입력 후 calss on 추가 -->
+							<span class="tit">사업장 주소</span>
+							<div class="add"></div><!-- 주소 -->
+							<button type="button" class="btn_icon01">주소검색</button>
+						</li>
+						<li class="inbox_type03"><!-- 주소 입력 후 calss on 추가 -->
+							<span class="tit">상세주소</span>
+							<input type="text" class="txt" title="상세주소 입력" placeholder="상세주소 입력" name="" value="">
+						</li>
+					</ol>
+                    <div class="notice_04">
+                        <ol>
+                            <li>법인명은 자동차등록 원부에 기재된 내용이며 변경하실 수 없습니다.</li>
+                            <li>사업장 주소는 반드시 법인등록상의 주소로 입력해 주시기 바랍니다.</li>
+                        </ol>
+                    </div>
+				</div>
+			</div>
+			<!-- E : 명의정보_법인사업자 -->
+			
+		</div>
+		<!-- 05. sticky button -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01" disabled>명의정보 등록완료</button>
+		</div>
+		<!--// 05. sticky button -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

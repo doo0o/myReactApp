@@ -1,0 +1,278 @@
+<div class="popup_full" id="FO-MY-PS0058">
+	<div class="p_body">
+		<div class="p_inner s_small">
+			<div class="p_head">
+				<h2 class="tit">전자서명방법</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+					<div class="inner_view info_layer">
+						<p class="sub_text">계약 진행을 위해 명의자 별 전자서명방법을 선택 후 정보를 입력해 주세요.</p>
+						<ul class="info_list">
+							<li>
+								<div class="name_info">
+									<span class="owner_name">대표명의자</span>
+									<span class="name">김현대</span>
+								</div>
+								<!-- 전자서명 -->
+								<div class="digital_sign">
+									<div class="select">
+										<ul class="radio_list">
+											<li>
+												<div class="radio">
+													<input type="radio" name="chk_compare01" id="chk_msg01" class="chk_radio">
+													<label for="chk_msg01"><span class="txt">문자메시지</span></label>
+												</div>
+											</li>
+											<li>
+												<div class="radio">
+													<input type="radio" name="chk_compare01" id="chk_email01" class="chk_radio email">
+													<label for="chk_email01"><span class="txt">이메일</span></label>
+												</div>
+											</li>
+										</ul>
+										<div class="radio_cont">
+											<div class="form_area">
+												<div class="inbox_type02 hs01" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+													<input type="tel" class="txt type_tel" title="전화번호 입력" placeholder="'-'없이 숫자만 입력" name="" value="">
+													<button type="button" class="btn_delete">삭제</button>
+												</div>
+											</div>
+											<div class="form_area">
+												<div class="inbox_type02 hs01 email" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+													<input type="email" class="txt type_email" title="이메일 입력" placeholder="이메일">
+													<button type="button" class="btn_delete">삭제</button>
+													<div class="slt_box">
+														<span class="com_select hs02 isSelected" data-ref="select">
+															<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="selectMail" onclick="dropDown({reset: false});">
+																직접입력
+															</button>
+															<span class="com_select_list" data-ref="dropDownList" id="selectMail">
+																<span class="com_select_list_inner">
+																	<label class="com_select_item"><input type="radio" name="selectMail"> <span>직접입력</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail"> <span>@hyundai.com</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail"> <span>@naver.com</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail"> <span>@daum.net</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail"> <span>@hanmail.net</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail"> <span>@nate.com</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail"> <span>@gmail.com</span></label>
+																</span>
+															</span>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- //전자서명 -->
+							</li>
+							<li>
+								<div class="name_info">
+									<span class="owner_name">공동명의자1</span>
+									<span class="name">박현대</span>
+								</div>
+								<!-- 전자서명 -->
+								<div class="digital_sign">
+									<div class="select">
+										<ul class="radio_list">
+											<li>
+												<div class="radio">
+													<input type="radio" name="chk_compare02" id="chk_msg02" class="chk_radio">
+													<label for="chk_msg02"><span class="txt">문자메시지</span></label>
+												</div>
+											</li>
+											<li>
+												<div class="radio">
+													<input type="radio" name="chk_compare02" id="chk_email02" class="chk_radio email">
+													<label for="chk_email02"><span class="txt">이메일</span></label>
+												</div>
+											</li>
+										</ul>
+										<div class="radio_cont">
+											<div class="form_area">
+												<div class="inbox_type02 hs01" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+													<input type="tel" class="txt type_tel" title="전화번호 입력" placeholder="'-'없이 숫자만 입력" name="" value="">
+													<button type="button" class="btn_delete">삭제</button>
+												</div>
+											</div>
+											<div class="form_area">
+												<div class="inbox_type02 hs01 email" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+													<input type="email" class="txt type_email" title="이메일 입력" placeholder="이메일">
+													<button type="button" class="btn_delete">삭제</button>
+													<div class="slt_box">
+														<span class="com_select hs02 isSelected" data-ref="select">
+															<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="selectMail01" onclick="dropDown({reset: false});">
+																직접입력
+															</button>
+															<span class="com_select_list" data-ref="dropDownList" id="selectMail">
+																<span class="com_select_list_inner">
+																	<label class="com_select_item"><input type="radio" name="selectMail01"> <span>직접입력</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail01"> <span>@hyundai.com</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail01"> <span>@naver.com</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail01"> <span>@daum.net</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail01"> <span>@hanmail.net</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail01"> <span>@nate.com</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail01"> <span>@gmail.com</span></label>
+																</span>
+															</span>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- //전자서명 -->
+							</li>
+							<li>
+								<div class="name_info">
+									<span class="owner_name">공동명의자2</span>
+									<span class="name">이제네</span>
+								</div>
+								<!-- 전자서명 -->
+								<div class="digital_sign">
+									<div class="select">
+										<ul class="radio_list">
+											<li>
+												<div class="radio">
+													<input type="radio" name="chk_compare03" id="chk_msg03" class="chk_radio">
+													<label for="chk_msg03"><span class="txt">문자메시지</span></label>
+												</div>
+											</li>
+											<li>
+												<div class="radio">
+													<input type="radio" name="chk_compare03" id="chk_email03" class="chk_radio email">
+													<label for="chk_email03"><span class="txt">이메일</span></label>
+												</div>
+											</li>
+										</ul>
+										<div class="radio_cont">
+											<div class="form_area">
+												<div class="inbox_type02 hs01" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+													<input type="tel" class="txt type_tel" title="전화번호 입력" placeholder="'-'없이 숫자만 입력" name="" value="">
+													<button type="button" class="btn_delete">삭제</button>
+												</div>
+											</div>
+											<div class="form_area">
+												<div class="inbox_type02 hs01 email" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+													<input type="email" class="txt type_email" title="이메일 입력" placeholder="이메일">
+													<button type="button" class="btn_delete">삭제</button>
+													<div class="slt_box">
+														<span class="com_select hs02 isSelected" data-ref="select">
+															<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="selectMail02" onclick="dropDown({reset: false});">
+																직접입력
+															</button>
+															<span class="com_select_list" data-ref="dropDownList" id="selectMail">
+																<span class="com_select_list_inner">
+																	<label class="com_select_item"><input type="radio" name="selectMail02"> <span>직접입력</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail02"> <span>@hyundai.com</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail02"> <span>@naver.com</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail02"> <span>@daum.net</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail02"> <span>@hanmail.net</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail02"> <span>@nate.com</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail02"> <span>@gmail.com</span></label>
+																</span>
+															</span>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- //전자서명 -->
+							</li>
+							<li>
+								<div class="name_info">
+									<span class="owner_name">공통명의자3</span>
+									<span class="name">윤제네</span>
+								</div>
+								<!-- 전자서명 -->
+								<div class="digital_sign">
+									<div class="select">
+										<ul class="radio_list">
+											<li>
+												<div class="radio">
+													<input type="radio" name="chk_compare04" id="chk_msg04" class="chk_radio">
+													<label for="chk_msg04"><span class="txt">문자메시지</span></label>
+												</div>
+											</li>
+											<li>
+												<div class="radio">
+													<input type="radio" name="chk_compare04" id="chk_email04" class="chk_radio email">
+													<label for="chk_email04"><span class="txt">이메일</span></label>
+												</div>
+											</li>
+										</ul>
+										<div class="radio_cont">
+											<div class="form_area">
+												<div class="inbox_type02 hs01" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+													<input type="tel" class="txt type_tel" title="전화번호 입력" placeholder="'-'없이 숫자만 입력" name="" value="">
+													<button type="button" class="btn_delete">삭제</button>
+												</div>
+											</div>
+											<div class="form_area">
+												<div class="inbox_type02 hs01 email" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+													<input type="email" class="txt type_email" title="이메일 입력" placeholder="이메일">
+													<button type="button" class="btn_delete">삭제</button>
+													<div class="slt_box">
+														<span class="com_select hs02 isSelected" data-ref="select">
+															<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="selectMail03" onclick="dropDown({reset: false});">
+																직접입력
+															</button>
+															<span class="com_select_list" data-ref="dropDownList" id="selectMail">
+																<span class="com_select_list_inner">
+																	<label class="com_select_item"><input type="radio" name="selectMail03"> <span>직접입력</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail03"> <span>@hyundai.com</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail03"> <span>@naver.com</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail03"> <span>@daum.net</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail03"> <span>@hanmail.net</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail03"> <span>@nate.com</span></label>
+																	<label class="com_select_item"><input type="radio" name="selectMail03"> <span>@gmail.com</span></label>
+																</span>
+															</span>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- //전자서명 -->
+							</li>
+						</ul>
+						<!-- 2023.02.09 추가 -->
+						<div class="caution">
+							<ul>
+								<li>명의자 정보와 전자서명을 요청하실 정보가 바를 경우 변경 하실 수 있습니다.</li>
+								<li>명의자 정보 변경 후, 아래의 확인 버튼을 눌러야 선택하신 수단의 변경된 정보로 계약서 서명을 요청 할 수 있습니다. 다만, 해당 명의자의 정보는 변경되지 않습니다.</li>
+							</ul>
+						</div>
+						<!-- // 2023.02.09 추가 -->
+						<div class="btn_area col_type">
+							<button type="button" class="btn_big color01">계약서 서명 요청하기</button>
+							<!-- <button type="button" class="btn_big color01" disabled>계약서 서명 요청하기</button> --><!-- disable 버튼 -->
+						</div>
+					</div>
+				<!-- //contents -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>
+
+<script>
+	$('#FO-MY-PS0058 .digital_sign .select .chk_radio').on('click', function(){
+		var emailCheck = $('.email:checked').val();
+		var radioCont = $(this).closest('.radio_list').next().children();
+
+		radioCont.css('display','none');
+		if (!emailCheck) {
+			radioCont.eq($(this).parent().parent().index()).css('display','block');
+		} else {
+			radioCont.eq($(this).parent().parent().index()).css('display','flex');
+		}
+	});
+
+</script>

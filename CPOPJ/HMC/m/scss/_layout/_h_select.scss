@@ -1,0 +1,190 @@
+[class^="slt_box"] {
+	position:relative;
+	height: 56px;
+	line-height: 52px;
+	&.line {
+		// border:1px solid $COL_Line_Medium; // 흰바탕
+		border:1px solid $COL_Line_Dark; // 흰바탕
+	}
+	&.list{
+		display:flex;
+		justify-content:space-between;
+		column-gap:10px;
+		dl{
+			flex:1;
+		}
+	}
+	.sel_value {
+		width:100%;
+		height:100%;
+		padding:0 38px 0 20px;
+		color:$COL_Black;
+		font-size: 15px;
+		text-align:left;
+		border-radius: 2px;
+		background-color: $COL_White;
+		@include Mix_Ellipsis01;
+		&.bg {
+			background-color: $COL_Light;
+		}
+		&::after{
+			content: '';
+			display: block;
+			position: absolute;
+			top: 50%;
+			right:20px;
+			transform: translateY(-50%);
+			@include Icon_Arr(1.5,'333333');
+		}
+		&.right {
+			text-align: right;
+		}
+		&:disabled {
+			// color: $COL_Base_01;
+			opacity: 0.5;
+			pointer-events: none;
+		}
+	}
+	> .tit {
+		position: absolute;
+		top: 50%;
+		left: 17px;
+		transform: translateY(-50%);
+		color: $COL_Base_01;
+		&.icon01{
+			color: $COL_Base_02;
+			&:before{
+				content:'';
+				display:inline-block;
+				width:15px;
+				height:18px;
+				margin-right:6px;
+				@include Mix_PDP_Bg(-145px 0);
+				vertical-align:middle;
+			}
+		}
+	}
+	dt.tit {
+		display: block;
+		margin-bottom: 8px;
+		color: $COL_Base_03;
+		@include Mix_Font('Txt-R', 14, 21);
+	}
+}
+.slt_box02 {
+	&.line {
+		border:1px solid $COL_Line_Medium; // 회색바탕
+	}
+}
+.CPOpop_full.select{
+	z-index:1003;
+	> .p_wrap .select_list {
+		padding-top: 25px;
+	}
+}
+.CPOpop_bottom.select{
+	z-index:1003;
+	// .p_wrap{
+	// 	max-height:calc(100vh - 116px);
+	// }
+}
+.select_list{
+	padding:10px 21px 0;
+	 li{
+		border-bottom:1px solid rgba($COL_Line_Medium, 0.5);
+		> .chk_select {
+			&+label{
+				position:relative;
+				display:block;
+				width:100%;
+				padding:16px 34px 16px 0;
+				color:$COL_Base_03;
+				@include Mix_Font('Txt-M', 15, 23);
+				&:before{
+					content:'';
+					display:block;
+					position:absolute;
+					top:50%;
+					right:5px;
+					width:18px;
+					height:18px;
+				}
+			}
+			&:checked+label{
+				&:before{
+					@include Mix_Form_Bg;
+					background-position:-136px -179px;
+					transform:translateY(-50%);
+				}
+				color:$COL_Secondary;
+			}
+		}
+		> button {
+			position: relative;
+			width: 100%; height: 52px;
+			padding:16px 34px 16px 0;
+			color:$COL_Base_03;
+			@include Mix_Font('Txt-M', 15, 23);
+			text-align: left;
+		}
+		&.current > button {
+			color:$COL_Secondary;
+		}
+		&.open {
+			border: 0;
+		}
+		&.open .sub {display: block;}
+	}
+	.sub {
+		display: none;
+		overflow: hidden;
+		margin: 0 -21px;
+		padding: 0 21px;
+		background: $COL_Light;
+		border: {
+			width: 1px 0;
+			style: solid;
+			color: $COL_Line_Medium;
+		}
+		li {border: 0;}
+		li ~ li {
+			border-top:1px solid $COL_Line_Medium;
+		}
+		li button {
+			position: relative;
+			width: 100%; height: 53px;
+			@include Mix_Font('Txt-R', 15, 23);
+			color:$COL_Base_03;
+			text-align: left;
+			&:before{
+				content:'';
+				display:block;
+				position:absolute;
+				top:50%;
+				right:5px;
+				width:18px;
+				height:18px;
+			}
+		}
+		li.current > button {
+			color:$COL_Secondary;
+			&:before{
+				@include Mix_Form_Bg;
+				background-position:-136px -179px;
+				transform:translateY(-50%);
+			}
+		}
+	}
+	.bank_logo {
+		display: inline-block;
+		width: 22px;
+		height: 22px;
+		margin-right: 10px;
+		font-size: 0;
+		vertical-align: middle;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}

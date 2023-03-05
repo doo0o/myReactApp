@@ -1,0 +1,68 @@
+<!-- FO-TI-MS0041 : 보유차량 팝업 - BOTTOM -->
+<div class="CPOpop_bottom" id="FO-TI-MS0041">
+	<div class="p_wrap">
+		<!-- 보유차량 팝업 -->
+		
+		<div class="sale_macar_proceeding">
+			<div class="title">
+				<strong>김현대님,<br/>보유 차량을 판매하시겠어요?</strong>
+				<p>차량을 선택하면 차량정보를 자동으로 불러올 수 있어요.</p>
+			</div>
+			
+			<!--슬라이드 개수 한개일때는 캐러셀 미노출.-->
+			<div class="sale_mycar_swiper01 swiperType01">
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide">
+						<div class="sale_slide_item02">
+							<div class="unit_mid">
+								<div class="unit_info">
+									<p class="name">
+										<span class="num">12가1234</span>
+										<span class="model">현대 더 뉴 그랜저</span>
+										<span class="desc">가솔린 3.3 캘리그래피</span>
+									</p>
+									<span class="price">
+										<em>3,000~3,820</em><i>만원</i>
+									</span>
+								</div>
+								
+								<div class="unit_img">
+									<img src="/GHQ/m/img/@thumb/plp_500x500_04.jpg" alt="상품명으로 뿌려주세요">
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="swiper-slide">
+						<div class="sale_slide_item02">
+							<div class="unit_mid">
+								<div class="unit_info">
+									<p class="name">
+										<span class="num">12가1234</span>
+										<span class="model">현대 더 뉴 그랜저</span>
+										<span class="desc">가솔린 3.3 캘리그래피</span>
+									</p>
+									<span class="price">
+										<em>3,000~3,820</em><i>만원</i>
+									</span>
+								</div>
+								
+								<div class="unit_img">
+									<img src="/GHQ/m/img/@thumb/plp_500x500_04.jpg" alt="상품명으로 뿌려주세요">
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="swiper-pagination"></div>
+			</div>
+		</div>
+
+		<!-- sticky -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">23나2345 차량정보 불러오기</button>
+		</div>
+		<!-- //sticky -->
+		<!-- //보유차량 팝업 -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

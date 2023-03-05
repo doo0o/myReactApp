@@ -1,0 +1,39 @@
+<!-- STEP : 3-2-02 : 교환/판금 -->
+<div class="entry_carbase">
+	<div class="top02">
+		<p class="tit">교환이나 판금을<br />한 적이 있나요?</p> <!-- 2022-09-16 CPO-3291 --> 
+		<div class="txt">교환/판금 안내
+			<!-- tooltip -->
+			<span class="cpo_tooltip">
+				<button type="button" class="open">교환/판금 안내 확인</button>
+				<div class="cont">
+					<div class="caution">
+						<ul>
+							<li>교환 : 차량 부품을 교환한 경우</li>
+							<li>판금 : 차량 외판에 전체적으로 수리를 한 경우</li>
+							<li>교환/판금 부위가 나중에 발견되면 차량 가격에 감가가 발생할 수 있습니다.</li>
+						</ul>
+					</div>
+					<button class="close">툴팁닫기</button>
+				</div>
+			</span>
+			<!-- //tooltip -->
+		</div>
+	</div>
+	<!-- 입력 -->
+	<ul class="entry_carmore_options">
+		<li>
+			<input type="radio" name="saleEditChk" id="saleEditChk01" class="chk_type07" data-popup="FO-TI-MS0026" />
+			<label for="saleEditChk01">네, 있어요</label>
+		</li>
+		<li>
+			<input type="radio" name="saleEditChk" id="saleEditChk02" class="chk_type07" />
+			<label for="saleEditChk02">아니요, 없어요</label>
+		</li>
+		<li>
+			<input type="radio" name="saleEditChk" id="saleEditChk03" class="chk_type07" />
+			<label for="saleEditChk03">잘 모르겠어요</label>
+		</li>
+	</ul>
+	<!-- //입력 -->
+</div>

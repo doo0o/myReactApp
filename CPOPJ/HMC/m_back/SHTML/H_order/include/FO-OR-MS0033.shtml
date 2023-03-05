@@ -1,0 +1,24 @@
+<!-- FO-OR-MS0033 : 이전등록비 감면신청 필요서류 - SIMPLE -->
+<div class="CPOpop_modal" id="FO-OR-MS0033">
+	<!-- S : [CPO-1204 : 디자인검수2차] -->
+	<div class="p_wrap regist_wrap">
+		<!-- 이전등록비 감면신청 필요서류 -->
+		<!-- E : [CPO-1204 : 디자인검수2차] -->
+		<div class="regist_list">
+			<h4 class="regist_tit">이전등록비 감면신청 필요서류</h4>
+			<h4 class="tit">공동명의</h4>
+			<p class="txt">보험가입증명서, 신분증 사본, 주민등록등본, 인감도장, 인감증명서(또는 본인서명사실확인서)</p>
+			<ol class="notice_04">
+				<li>모든 서류는 공동명의자 1인당 1부씩 각각 준비하셔야 합니다. 단, 공동명의자 전원의 주민등록주소지가 같을 때 주민등록등본은 1부만 필요합니다.</li>
+			</ol>
+			<h4 class="tit">장애인</h4>
+			<p class="txt">보험가입증명서, 복지카드 사본, 주민등록등본</p>
+			<h4 class="tit">국가유공자</h4>
+			<p class="txt">보험가입증명서, 국가유공자증, 주민등록등본</p>
+			<h4 class="tit">다자녀가구</h4>
+			<p class="txt">보험가입증명서, 신분증 사본, 주민등록등본, 가족관계증명서</p>
+		</div>
+		<!--// 이전등록비 감면신청 필요서류 -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

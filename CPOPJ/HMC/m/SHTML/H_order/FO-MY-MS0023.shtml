@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>주문취소 : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_order.css">
+</head>
+<body>
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">주문취소</h1>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<!-- 주문취소 -->
+		<div class="request_list sec_line">
+			<section class="order_info">
+				<!-- 00. 주문번호 -->
+				<div class="order_no">
+					<span class="tit">주문번호</span>
+					<span class="no">20211112321564565421</span>
+				</div>
+				<!-- //00. 주문번호 -->
+				<!-- 01. 차량 정보 -->
+				<div class="unit_type order">
+					<a href="javascript:void(0);" class="mid_area">
+						<div class="unit_img">
+							<img src="/HMC/m/img/@thumb/plp_310x310_01.jpg" alt="">
+						</div>
+						<div class="unit_info">
+							<p class="name">
+								<span class="model">그랜저 IG </span>
+								<span class="desc">가솔린 3.3 캘리그래피</span>
+							</p>
+							<p class="drive">
+								<em>20년 12월(21년형)</em>
+								<em>50,000km</em>
+								
+							</p>
+							<p class="price">
+								<em>3,820</em><i>만원</i>
+							</p>
+						</div>
+					</a>
+				</div>
+				<!-- //01. 차량 정보 -->
+			</section>
+
+			<!-- 02.  취소사유 -->
+			<section>
+				<div class="sec_tit">취소사유</div><!-- 2022-08-30 [CPO-3244] 타이틀추가 -->
+				<ul class="form_list02">
+					<li>
+						<div class="slt_box">
+							<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+							<button type="button" class="sel_value jQ_Select" id="refund_select" data-id="" data-popup="refund_layer">[필수] 주문취소 사유를 선택하세요.</button>
+							<!-- Layer -->
+							<div class="CPOpop_bottom select" id="refund_layer">
+								<div class="p_head">
+									<p class="tit">주문취소 사유</p>
+								</div>
+								<div class="p_wrap">
+									<!-- list -->
+									<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+										<li><input type="radio" class="chk_select" name="refund_select_Name" id="refund_select_01"><label for="refund_select_01">단순 변심</label></li>
+										<li><input type="radio" class="chk_select" name="refund_select_Name" id="refund_select_02"><label for="refund_select_02">다른 차량으로 재구매 예정</label></li>
+										<li><input type="radio" class="chk_select" name="refund_select_Name" id="refund_select_03"><label for="refund_select_03">다른 결제수단으로 재구매 예정</label></li>
+										<li><input type="radio" class="chk_select" name="refund_select_Name" id="refund_select_04"><label for="refund_select_04">차량의 가격이 타사 대비 높음</label></li>
+										<li><input type="radio" class="chk_select" name="refund_select_Name" id="refund_select_05"><label for="refund_select_05">직접 입력</label></li>
+									</ol>
+									<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectVer 변경 내용 적용  -->
+										<button type="button" class="btn_big01 jQ_Select_Save" data-id="refund_select">선택하기</button>
+									</div>
+									<!-- //list -->
+								</div>
+								<button type="button" class="pop_close">닫기</button>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="textarea">
+							<span class="tit">상세 사유</span>
+							<textarea class="area" placeholder="주문을 취소하는 상세한 사유를 입력해 주세요." rows="4" cols="21" role="textbox"></textarea>
+							<span class="txt_check"><em class="first">0</em> / <em class="last">1000</em>자</span>
+						</div>
+					</li>
+				</ul>
+			</section>
+			<!-- //02. 취소사유 -->
+			<!-- 03. 환불정보[미등록] -->
+			<section class="link_type">
+				<a href="javascript:void(0);" data-popup="FO-OR-MS0006">
+					<div class="sec_tit">환불정보</div>
+					<div class="entry">
+						<p class="txt">환불계좌를 등록해 주세요.</p>
+						<span class="btn_add">등록하기</span>
+					</div>
+				</a>
+			</section>
+			<!-- //03. 환불정보[미등록] -->
+
+			<!-- 03. 환불정보[등록] -->
+			<section>
+				<div class="sec_tit">
+					환불정보
+					<button type="button" class="btn_icon_mid01" data-popup="FO-OR-MS0006">변경</button>
+				</div>
+				<dl class="list_type01">
+					<dt><img src="/HMC/m/img/finance/bank_020.png" class="bank_logo" alt="우리은행로고">우리은행</dt>
+					<dd>김현대 / 10002030*****</dd>
+				</dl>
+			</section>
+			<!-- //03. 환불정보[등록] -->
+		</div>
+		
+		<!-- 03. fixed button -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big03">돌아가기</button>
+			<button type="button" class="btn_big01" disabled>주문취소</button>
+		</div>
+		<!-- //03. fixed button -->
+
+		<!-- //주문취소 -->
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!-- 2023 0207 푸터 삭제 -->
+</div>
+<!-- //cpo wrap -->
+
+</body>
+</html>

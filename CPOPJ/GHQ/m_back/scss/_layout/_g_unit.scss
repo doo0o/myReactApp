@@ -1,0 +1,1303 @@
+/* 리스트 없음 */
+.noData{
+	display:block;
+	padding:48px 60px 40px;
+	text-align:center;
+	&::before{
+		content:'';
+		display:block;
+		width:47px;
+		height:46px;
+		margin:0 auto 25px;
+		@include Mix_Layout_Bg;
+		background-position:0 -103px;
+	}
+	.tit{
+		margin-bottom:8px;
+		color:$COL_Text_Base02;
+		@include Mix_Font('Txt-M', 15, 24);
+	}
+	.txt{
+		color:$COL_Text_Base02;
+		@include Mix_Font('Txt-R', 13, 21);
+		word-break:keep-all;
+	}
+	.btn{
+		margin-top:40px;
+		[class^="btn_mid"]{
+			width:220px;
+			margin:0 auto 10px;
+			&:last-of-type{
+				margin-bottom:0;
+			}
+		}
+	}
+	&.alarm{
+		&::before{
+			width:44px;
+			height:45px;
+			background-position:-166px -102px;
+		}
+	}
+	&.review{
+		&::before{
+			width:44px;
+			height:50px;
+			background-position:-214px -97px;
+		}
+	}
+	&.history {
+		&::before{
+			width:60px;
+			height:60px;
+			margin-bottom: 15px;
+			background-position:-139px -213px;
+		}
+	}
+	&.promotion {
+		&::before{
+			width:60px;
+			height:60px;
+			margin-bottom: 15px;
+			background-position:-234px -213px;
+		}
+	}
+	&.point {
+		&::before{
+			width:60px;
+			height:60px;
+			margin-bottom: 15px;
+			background-position:-73px -236px;
+		}
+	}
+}
+.order_error{// 주문 에러
+	.noData{
+		&::before{
+			width:46px;
+			height:47px;
+			background-position:0 -213px;
+		}
+	}
+}
+
+/* 상품 유닛 */
+.unit_link{
+	width:100%;
+	display:block;
+	.unit_img{/* 썸네일 이미지 */
+		overflow:hidden;
+		position:relative;
+		z-index:3;
+		height:0;
+		margin-bottom:12px;
+		padding-bottom:100%;
+		img{
+			display:block;
+			position:absolute;
+			top:50%;
+			left:50%;
+			z-index:3;
+			width:100%;
+			height:auto !important;
+			transform:translate(-50%, -50%);
+		}
+		&.noimg{
+			// border:1px solid $COL_Line_Light01;
+			img{
+				// width:300px;
+				// height:300px;
+			}
+		}
+	}
+	.unit_info{
+		flex:1;
+		/* 차량 정보 */
+		> span{
+			display:block;
+		}
+		@include Mix_Unit_Name($COL_Text_Base04, $COL_Text_Base01);
+		@include Mix_Unit_Drive($COL_Text_Base01, $COL_Line_Light01, 4px);
+		@include Mix_Unit_Price($COL_Text_Base04);
+	}
+}
+.unit_like{//찜하기
+	position:absolute;
+	right:10px;
+	bottom:10px;
+	z-index:6;
+	.CPO_Chk_Wish{
+		&+label{
+			width:22px;
+			height:20px;
+		}
+	}
+}
+
+//상품유닛 리스트형
+.unit_type {
+	.top_area {
+		position: relative;
+		margin-bottom: 15px;
+		.tit {
+			padding-right: 30px;
+			@include Mix_Font('Txt-B', 16, 24);
+			color: $COL_Text_Base03;
+			display: -webkit-box;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 1;
+			word-break: break-word;
+			[class^=flag_] {
+				margin-right: 10px;
+				vertical-align: text-top;
+			}
+		}
+		.btn_del01 {
+			position: absolute;
+			top: 2px;
+			right: -1px;
+		}
+	}
+	.mid_area {
+		position: relative;
+		display: flex;
+		.unit_img{/* 썸네일 이미지 */
+			overflow:hidden;
+			position:relative;
+			z-index:3;
+			width: 100px;
+			height: 100px;
+			// margin-bottom: 12px;
+			margin-right: 16px;
+			img{
+				display:block;
+				position:absolute;
+				top:50%;
+				left:50%;
+				width:100%;
+				height:auto;
+				transform:translate(-50%, -50%);
+			}
+			&.noimg{
+				img{
+					width: 100%;
+					height: auto;
+				}
+			}
+			// .text_flag {
+			// 	z-index: 1;
+			// 	position:absolute;
+			// 	top: 8px;
+			// 	left:8px;
+			// }
+		}
+		.unit_info {
+			flex: 1 1;
+			@include Mix_Unit_Drive($COL_Text_Base01,$COL_AAA8A6, 0);
+			position: relative;
+			.num {
+				@include Mix_Font('Head-R', 11, 15);
+				color:$COL_Blue05;
+				&+.name {
+					margin-top: 2px;
+				}
+			}
+			.name {
+				@include Mix_Font('Head-R', 13, 18);
+				color:$COL_BLACK;
+				&+.drive {
+					margin-top: 2px;
+				}
+			}
+			.price {
+				color: $COL_BLACK; 
+				.price_tit {
+					@include Mix_Font('Txt-R', 12, 19);
+					vertical-align: 1px;
+				}
+				em {
+					@include Mix_Font('Txt-M', 18, 29);
+				}
+				i {
+					@include Mix_Font('Txt-R', 14, 22);
+					vertical-align: 1px;
+				}
+				.org {
+					color:$COL_Inactive_Text01;
+					text-decoration: line-through;
+				}
+				&+.notice {
+					margin-top: 3px;
+				}
+			}
+			.notice {
+				@include Mix_Font('Txt-R', 13, 20);
+				color:$COL_Inactive_Text01;
+				&.event {
+					color: $COL_info02 ;
+				}
+			}
+			.unit_btm {
+				position: absolute;
+				left: 0;
+				bottom: 0;
+			}
+			.alarm_term {
+				@include Mix_Font('Txt-R', 13, 20);
+				vertical-align: bottom;
+				padding-right: 5px;
+			}
+			.none {
+				color: $COL_Inactive_Text01;
+				@include Mix_Font('Txt-R', 14, 22);
+				margin-top: 4px;
+			}
+			@include Mix_Count_Like(calc(100% - 20px), 5px, $COL_Text_Base03, -265px, -53px, list)
+		}
+		.unit_info + .unit_img {
+			margin-right: 0;
+			margin-left: 16px;
+			width: 120px;
+		}
+	}
+	&.soldout {
+		.tit {
+			color: $COL_Inactive_Text01;
+		}
+		@include Mix_Unit_Soldout2(cart);
+	}
+	&.middle, &.inverse, &.order {
+		.mid_area {
+			align-items: center;
+		}
+	}
+	&.inverse .mid_area {
+		.unit_info {
+			.num {
+				@include Mix_Font('Head-R', 14, 19);
+				&+.name {
+					margin-top: 5px
+				}
+			}
+			.name {
+				.model {
+					@include Mix_Font('Head-R', 14, 19);
+				}
+				.desc {
+					display: block;
+					color:$COL_Text_Base03;
+					@include Mix_Font('Txt-R', 12, 19);
+				}
+				&+.price {
+					margin-top: 2px;
+				}
+			}
+		}		
+	}
+	&.review .mid_area {
+		.unit_img {
+			width: 80px;
+			height: 80px
+		}
+		.unit_info {
+			.name {
+				@include Mix_Font('Head-R', 14, 19);
+				margin-top: 5px;
+			}
+			.status {
+				display: flex;
+				align-items: center;
+				@include Mix_Font('Txt-R', 12, 18);
+				.tit{
+					color:$COL_Text_Base03;
+					display: flex;
+					align-items: center;
+					&::after {
+						content:'';
+						display: inline-block;
+						background-color: $COL_WHITE;
+						width:1px;
+						height:12px;
+						margin: 0 7px;
+					}
+				}
+				.date {
+					color: $COL_Text_Base01;
+				}
+			}
+		}
+	}
+	&.order .mid_area {
+		.unit_img {
+			width: 80px;
+			height: 80px
+		}
+	}
+	//리뷰수정가능 버튼
+	.btn_acc {
+		position:absolute;
+		top:0;
+		right:0;
+		width: auto;
+		button{
+			width:14px;
+			height:14px;
+			font-size:0;
+			&::before{
+				content:'';
+				display:block;
+				width:14px;
+				height:14px;
+				@include Mix_Mypage_Bg;
+				background-position:-205px -57px;
+			}
+		}
+		.link{
+			display:none;
+			position:absolute;
+			top:21px;
+			right:-6px;
+			width:82px;
+			padding:15px 0;
+			background-color:$COL_WHITE;
+			border:1px solid rgba($COL_BLACK, 0.2);
+			box-shadow:0px 3px 6px rgba($COL_BLACK, 0.12);
+			a{
+				display:inline-block;
+				width:100%;
+				color:$COL_Text_Base03;
+				@include Mix_Font('Txt-R', 13, 20);
+				text-align:center;
+				&:first-of-type{
+					margin-bottom:12px;
+				}
+			}
+		}
+	}
+}
+
+.CPO_Chk_Wish{
+	position:absolute;
+	width:1px;
+	height:1px;
+	&+label{
+		position:relative;
+		display:block;
+		@include Mix_Size_0;
+		border-top: 1px solid $COL_Line_Light01;
+		&:before{
+			content:'';
+			display:block;
+			position:absolute;
+			top:0;
+			left:0;
+			width:24px;
+			height:24px;
+			@include Mix_Display_Bg;
+			background-position: -105px -71px;
+		}
+	}
+	&:checked+label:before{
+		background-position: -134px -71px;
+	}
+	&:disabled+label:before{
+		opacity:0.9;
+	}
+}
+/* 준비차량 */
+.unit_coming{
+	position:relative;
+	> .unit_img{
+		img{
+			width:100%;
+		}
+	}
+	&::after{/* 이미지 하단 그라데이션 */
+		content:'';
+		display:block;
+		position:absolute;
+		bottom:0;
+		left:0;
+		z-index:1;
+		width:100%;height:50%;
+		background:linear-gradient(180deg, rgba($COL_Text_Base03, 0) 0%, rgba($COL_Text_Base03, 0.9) 50.43%);
+	}
+	.noti{
+		position:absolute;
+		bottom:88px;
+		left:0;
+		z-index:5;
+		width:100%;
+		color:$COL_WHITE;
+		@include Mix_Font('Txt-R', 11, 18);
+		text-shadow: 0px 0px 3px rgba($COL_Text_Base04, 0.7);
+		text-align:center;
+		opacity:.8;
+		&::before{
+			content:'※';
+			display:inline-block;
+			margin:0 5px 0 0;
+		}
+	}
+	.btn_alarm01{
+		position:absolute;
+		bottom:30px;
+		left:24px;
+		z-index:5;
+		width:calc(100% - 48px);
+		height:48px;
+		border:1px solid $COL_WHITE;
+		border-radius:0;
+		background:rgba($COL_Text_Base04, 0.25);
+		color:$COL_WHITE;
+		@include Mix_Font('Txt-R', 14, 22);
+		&::before{
+			margin-right:6px;
+			@include Mix_Display_Bg;
+			background-position:-162px -28px;
+		}
+		&.on{
+			border:1px solid $COL_WHITE;
+			background:$COL_WHITE;
+			color:$COL_Text_Base04;
+			&::before{
+				background-position:-180px -28px;
+			}
+		}
+	}
+	.unit_info{
+		position:absolute;
+		top:30px;
+		left:0;
+		z-index:5;
+		width:100%;
+		padding:0 20px;
+		/* 차량 정보 */
+		> span{
+			display:block;
+		}
+		.date{
+			display:inline-block;
+			background:$COL_1E1E;
+			margin-bottom:10px;
+			padding:2px 6px;
+			color:$COL_Gray13;
+			@include Mix_Font('Txt-R', 11, 17);
+		}
+		@include Mix_Unit_Name($COL_WHITE, $COL_WHITE);
+		.name{
+			.model, .desc{
+				@include Mix_Font('Head-L', 16, 22);
+			}
+		}
+		@include Mix_Unit_Drive($COL_AAA8A6, $COL_AAA8A6, 2px);
+		.drive{
+			font-size:0;
+			em{
+				@include Mix_Font('Txt-R', 13, 21);
+				&::after{
+					background:rgba($COL_WHITE, 0.2);
+				}
+			}
+		}
+		@include Mix_Unit_Price($COL_WHITE);
+		.price{
+			margin-top:5px;
+			em{
+				@include Mix_Font('Txt-R', 20, 32);
+			}
+			i{
+				@include Mix_Font('Txt-R', 18, 29);
+			}
+		}
+	}
+}
+/* 리뷰유닛 */
+.unit_review{
+	display:flex;
+	gap:0 18px;
+	width:100%;
+	span{
+		display:block;
+	}
+	.unit_img{
+		overflow:hidden;
+		width:86px;
+		height:86px;
+		margin:0;
+		padding:0;
+		// border-radius:4px;
+		img{
+			width:100%
+		}
+	}
+	.unit_info{
+		flex:1;
+		position:relative;
+		@include Mix_Unit_Name($COL_Text_Base04, $COL_Text_Base01);
+		@include Mix_Unit_Drive($COL_Text_Base01, $COL_Line_Light01, 5px);
+		.flag{
+			display:inline-block;
+			height: 18px;
+			padding:0 5px;
+			background-color:$COL_Text_Base01;
+			color:$COL_WHITE;
+			@include Mix_Font('Txt-R', 11, 18);
+		}
+		.name{
+			margin-top:5px;
+		}
+		.drive{
+			position:absolute;
+			bottom:2px;
+			margin-top:0;
+			em {
+				@include Mix_Font('Txt-R', 12, 19);
+				&:first-child {
+					color:$COL_Text_Base03;
+				}
+			}
+			.on{
+				// color:$COL_Secondary01;
+			}
+		}
+		.top_btn{
+			position:absolute;
+			top:0;
+			right:0;
+			button{
+				width:14px;
+				height:14px;
+				font-size:0;
+				&::before{
+					content:'';
+					display:block;
+					width:14px;
+					height:14px;
+					@include Mix_Mypage_Bg;
+					background-position:-205px -57px;
+				}
+			}
+			.link{
+				display:none;
+				position:absolute;
+				top:21px;
+				right:-6px;
+				width:82px;
+				padding:15px 0;
+				background-color:$COL_WHITE;
+				border:1px solid rgba($COL_Text_Base04, 0.2);
+				box-shadow:0px 3px 6px rgba($COL_Text_Base04, 0.06);
+				a{
+					display:inline-block;
+					width:100%;
+					color:$COL_Text_Base03;
+					@include Mix_Font('Txt-R', 12, 20);
+					text-align:center;
+					&:first-of-type{
+						margin-bottom:12px;
+					}
+				}
+			}
+		}
+	}
+}
+/* 내차정보 */
+.unit_car{
+	display:flex;
+	align-items:center;
+	gap:0 16px;
+	width:100%;
+	.unit_img{
+		overflow:hidden;
+		width:100px;
+		height:100px;
+		margin:0;
+		padding:0;
+		img{
+			width:100%
+		}
+	}
+	.unit_info{
+		flex:1;
+		position:relative;
+		.number{
+			margin-bottom:10px;
+			color:$COL_Text_Base01;
+			@include Mix_Font('Head-R', 12, 17);
+		}
+		.name{
+			color:$COL_Text_Base04;
+			@include Mix_Font('Head-R', 14, 19);
+			word-break:keep-all;
+		}
+		@include Mix_Unit_Drive($COL_Text_Base01, $COL_Line_Light01, 4px);
+		
+	}
+}
+
+/* 기획전 */
+.unit_plan{
+	position:relative;
+	> .unit_img{
+		img{
+			width:100%;
+		}
+	}
+	&::after{/* 이미지 하단 그라데이션 */
+		content:'';
+		display:block;
+		position:absolute;
+		bottom:0;
+		left:0;
+		z-index:1;
+		width:100%;
+		height:50%;
+		background:linear-gradient(180deg, rgba($COL_Text_Base04, 0) 0%, rgba($COL_Text_Base04, 0.3) 100%, rgba($COL_Text_Base04, 0.3) 100%);
+	}
+	.unit_info{
+		position:absolute;
+		bottom:25px;
+		left:0;
+		z-index:5;
+		width:100%;
+		padding:0 20px;
+		/* 차량 정보 */
+		> span{
+			display:block;
+		}
+		.name{
+			display:block;
+			margin-bottom:8px;
+			color:$COL_WHITE;
+			@include Mix_Font('Head-L', 24, 32);
+		}
+		.date{
+			display:block;
+			color:$COL_WHITE;
+			@include Mix_Font('Txt-R', 14, 22);
+		}
+	}
+}
+
+// **********************************************************
+// checkbox 찜하기 버튼
+// **********************************************************
+.btn_wish01{
+	position:absolute;
+	right:10px;
+	bottom:10px;
+	z-index:6;
+	width:22px;
+	height:20px;
+	@include Mix_Size_0;
+	@include Mix_Display_Bg;
+	background-position:-109px -28px;
+	&.on{
+		background-position:-136px -28px;
+	}
+}
+
+/* 상품목록 type 1 - inc_plp_list_01.shtml */
+.plp_template01{
+	.plp_list{/* 상품 목록*/
+		margin:0 15px 60px;
+		ol{
+			/* 상품유닛 */
+			.unit_link{
+				.unit_info{
+					.name{
+						span{
+							color:$COL_WHITE;
+						}
+					}
+					.drive{
+						color:$COL_8282;
+						@include Mix_Font('Txt-R', 12, 19);
+						em{
+							&::after{
+								background:$COL_333;
+							}
+						}
+					}
+					.price{
+						margin-top:4px;
+						color:$COL_WHITE;
+					}
+				}
+			}		
+		}
+	}
+}
+.plp_list{/* 상품 목록*/
+	ol{
+		/* 상품유닛 */
+		.unit_link{
+			.unit_info{
+				position: relative;
+				.name{
+					span{
+						color:$COL_Text_Base04;
+						@include Mix_Font('Head-L', 14, 19);
+					}
+					
+				}
+			}
+			img {
+				width: 100%;
+			}
+		}
+		li {
+			&:not(:first-child) {
+				margin-top:40px;
+			}
+		}
+		&.thumb{
+			display:flex;
+			flex-wrap:wrap;
+			row-gap:40px;
+			li{
+				margin-top:0;
+				width:50%;
+				&:nth-child(odd){
+					padding-right:5px;
+				}
+				&:nth-child(even){
+					padding-left:5px;
+				}				
+				/* 상품유닛 */
+				.unit_link{
+					.unit_img{
+						margin-bottom:10px;
+					}
+					.unit_info{
+						.name{
+							max-height:36px;
+							@include Mix_Ellipsis(2);
+						}
+						@include Mix_Count_Like(calc(100% - 18px), 10px , $COL_Gray13, -265px, -71px, block)
+					}
+					img {
+						&.banner_type01 {
+							display:block;						
+						}
+						&.banner_type02 {
+							display:none;
+						}
+					}
+				}
+			}
+		}
+		&.deal{
+			li{
+				padding:0;
+			}
+			.unit_link {
+				.unit_info {
+					@include Mix_Count_Like(0, 0 , $COL_Gray13, -265px, -71px, list)
+				}
+				img {
+					&.banner_type01 {
+						display:none;
+					}
+					&.banner_type02 {
+						display:block;
+						
+					}	
+				}						
+			}
+		}
+	}
+}
+
+/* 보유차량 리스트 */
+.unit_my_list{
+	position: relative;
+	display:flex;
+	flex-flow:row;
+	flex-wrap:wrap;
+	padding:24px 21px;
+	background:$COL_WHITE;
+	@include Mix_Cart_Line;
+	.unit_img{
+		flex:0 0 100px;
+		img{
+			width:100px;
+			height:100px;
+		}
+	}
+	.unit_info{
+		flex:calc(100% - 116px);
+		position:relative;
+		margin:0 0 0 16px;
+		> span{
+			display:block;
+		}
+		.num{
+			color:$COL_Blue03;
+			@include Mix_Font('Head-R', 12, 16);
+		}
+		.name{
+			max-height:38px;
+			margin-top:1px;
+			color:$COL_Text_Base03;
+			@include Mix_Font('Head-R', 14, 19);
+			@include Mix_Ellipsis(2);
+			> span{
+				word-break:keep-all;
+			}
+		}
+		@include Mix_Unit_Drive($COL_Text_Base01, $COL_Line_Light01, 0px);
+		.price{
+			position:absolute;
+			bottom:0;
+			color:$COL_Inactive_Text01;
+			@include Mix_Font('Txt-R', 14, 22);
+			em{
+				color:$COL_Text_Base04;
+				@include Mix_Font('Txt-M', 18, 29);
+			}
+			i{
+				margin-left:1px;
+				color:$COL_Text_Base04;
+				vertical-align:2px;
+			}
+		}
+		&+.duedate{
+			margin-top:20px;
+		}
+	}
+	.status{
+		display:block;
+		position:relative;
+		width:100%;
+		margin:0 0 15px;
+		.tit{
+			@include Mix_Font('Txt-M', 15, 20);
+			&::before{
+				content:'';
+				display:inline-block;
+				width:42px;
+				height:10px;
+				margin-right:10px;
+				@include Mix_Mypage_Bg;
+				background-position:-206px -75px;
+				vertical-align:middle;
+			}
+			&::after{
+				content:'';
+				display:inline-block;
+				width:11px;
+				height:16px;
+				margin-left:6px;
+				@include Mix_Mypage_Bg;
+				background-position:-185px -17px;
+				vertical-align:middle;
+			}
+		}
+		.close{
+			position:absolute;
+			top:50%;
+			right:0;
+			width:12px;
+			height:12px;
+			@include Mix_Mypage_Bg;
+			background-position:-206px -40px;
+			@include Mix_Size_0;
+			transform:translateY(-50%);
+		}
+	}
+	.duedate{
+		display:flex;
+		flex-flow:row;
+		flex-wrap:wrap;
+		align-items:center;
+		row-gap:5px;
+		width:100%;
+		padding-top:15px;
+		border-top:1px solid $COL_BG_Light02;
+		dt{
+			flex:30%;
+			color:$COL_Inactive_Text01;
+			@include Mix_Font('Txt-R', 12, 19);
+		}
+		dd{
+			flex:70%;
+			color:$COL_Text_Base01;
+			@include Mix_Font('Txt-R', 13, 21);
+			text-align:right;
+		}
+	}
+	.btn_mid02, .btn_mid05{
+		margin-top:20px !important;
+	}
+	&.no{
+		align-items:center;
+	}
+}
+
+/* 상품 스와이프 */
+.plp_best01{
+	padding:30px 0 110px 20px;
+	.top{/* title 영역 */
+		margin-bottom:16px;
+		padding:0 21px;
+		h4.tit{
+			color:$COL_Text_Base04;
+			@include Mix_Font('Head-R', 18, 25);
+		}
+	}
+	
+}
+.swiperType01, .swiperType02{/* list swipe 영역 */
+	overflow:hidden;
+	position:relative;
+	touch-action:pan-y;
+}
+.a_swiper01{
+	.swiper-slide{
+		margin-right:8px;
+		&:last-of-type{
+			margin-right:15px;
+		}
+	}
+}
+.plp_best01{
+	padding-left:0;
+	.swiperType01{
+		padding-left:21px;
+	}
+	.swiper-slide{
+		flex-shrink:0;
+		display:flex;
+		width:155px;height:100%;
+		margin-right:10px;
+		transition-property: transform;
+		&:last-of-type{
+			margin-right:21px;
+		}
+		/* 상품유닛 */
+		.unit_link{
+			.unit_info{
+				.name{
+					span{
+						display:block;
+						@include Mix_Ellipsis(2);
+					}
+					.model{
+						margin-bottom:0;
+						@include Mix_Font('Head-L', 18, 24);
+					}
+					.desc{
+						color:$COL_Text_Base01;
+						@include Mix_Font('Txt-R', 12, 19);
+					}
+				}
+				.drive{
+					@include Mix_Font('Txt-R', 12, 18);
+				}
+				.price{
+					margin-top:4px;
+					em{
+						@include Mix_Font('Txt-M', 16, 25);
+					}
+					i{
+						padding-left: 1px;
+						@include Mix_Font('Txt-R', 14, 22);
+					}
+				}
+			}
+		}
+		/* 일시품절, 판매완료 */
+		&.soldout{
+			@include Mix_Unit_Soldout(swiper);
+		}
+	}
+
+}
+
+.compare_in{
+	.swiperType02{/* list swipe 영역 */
+		.swiper-wrapper{
+			display:flex;
+			position:relative;
+			z-index:1;
+			width:100%;
+			height:100%;
+			transition-property:transform;
+			.swiper-slide{
+				flex-shrink:0;
+				display:flex;
+				width:155px;
+				height:100%;
+				margin-right:8px;
+				transition-property:transform;
+				&:last-of-type{
+					margin-right:20px;
+				}
+			}
+		}
+		/* 상품유닛 */
+		.unit_link{
+			.unit_info{
+				.name{
+					height:40px;
+					@include Mix_Ellipsis(2);
+					.model{
+						@include Mix_Font_Head_R;
+					}
+					.desc{
+						color:$COL_Text_Base04;
+						@include Mix_Font('Head-R', 14, 18);
+					}
+				}
+				.drive {
+					@include Mix_Font('Txt-R', 11, 18);
+				}
+				.none{
+					color:$COL_Inactive_Text01;
+				}
+			}
+		}
+		/* 일시품절, 판매완료 */
+		.swiper-slide.soldout,
+		&.soldout{
+			@include Mix_Unit_Soldout(swiper);
+		}
+	}
+}
+
+//리뷰 swiper
+.review_list01{
+	overflow:hidden;
+	position:relative;
+	margin-top:16px;
+	>ol{
+		padding-bottom:22px;
+		>li{
+			overflow:hidden;
+			width:calc(100% - 15px) !important;
+			height:318px;
+			margin-right:15px;
+			background:$COL_WHITE;
+			@include Mix_Font('Txt-R', 18, 24);
+			text-align:left;
+		}
+	}
+}
+.review_box{
+	position:relative;
+	width:100%;
+	padding:25px 20px;
+	background-color:$COL_BG_Light01;
+	border:1px solid $COL_Line_Light01;//border-radius:8px;
+	.review_top{
+		display:block;
+		text-align:left;
+	}
+	.review_bot{
+		display:flex;
+		height:56px;
+		margin-top:35px;
+		text-align:left;
+		.txt{
+			flex:1;
+			height:56px;
+			line-height:20px;
+			&+span{
+				display:inline-block;
+				overflow:hidden;
+				position:relative;
+				width:56px;
+				height:56px;
+				margin-left:18px;
+				&.vid{
+					span{
+						display:block;
+						position:absolute;
+						bottom:0;
+						right:0;
+						width:17px;
+						height:17px;
+						background-color:$COL_Text_Base04;
+						color:$COL_WHITE;
+						@include Mix_Font('Txt-M', 12, 17);
+						text-align:center;
+					}
+					&:before{
+						content:'';
+						position:absolute;
+						width:100%;
+						height:100%;
+						background-color:rgba($COL_Text_Base04,0.3);
+					}
+					&:after{
+						content:'';
+						position:absolute;
+						top:50%;
+						left:50%;
+						z-index:2;
+						width:10px;
+						height:8px;
+						@include Mix_PDP_Bg(-224px -1px);
+						transform:translate(-50%,-50%);
+					}
+				}
+				img{
+					position:absolute;
+					top:50%;
+					left:50%;
+					height:100%;
+					transform:translate(-50%,-50%);
+				}
+			}
+		}
+	}
+	.date{
+		display:inline-block;
+		margin-left:5px;
+		color:$COL_Text_Base02;
+		@include Mix_Font('Txt-M', 12, 16);
+		text-align:center;
+	}
+	.name{
+		height:20px;
+		margin-bottom:20px;
+		color:$COL_Text_Base03;
+		@include Mix_Font('Txt-R', 14, 20);
+	}
+	.tit{
+		display:-webkit-box;
+		overflow:hidden;
+		width:100%;
+		margin-top:30px;
+		color:$COL_Text_Base02;
+		@include Mix_Font('Txt-R', 13, 20);
+	}
+	.txt{
+		overflow:hidden;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Txt-M', 14, 18);
+		@include Mix_Ellipsis(4);
+	}
+}
+/*구매리뷰 상세 팝업*/
+.review_contrast{
+	padding:20px 21px 25px;
+	.review_box{
+		padding:0 0 20px 0;
+		background-color:$COL_WHITE;
+		border:0;
+		.tit{
+			margin-top:25px;
+			@include Mix_Font('Txt-R', 13, 16);
+		}
+		.flag{
+			float:right;
+			padding:3px 7px;
+			background-color:$COL_Line_Light01;
+			color:$COL_Text_Base02;
+			@include Mix_Font('Txt-R', 12, 16);
+		}
+	}
+	.review_star{
+		margin-top:20px;
+		span{
+			@include Mix_Font('Txt-R', 14, 18);
+		}
+		.star_txt{
+			margin-bottom:9px;
+		}
+	}
+	.review_cont .review_txt{
+		padding-top:50px;
+		color:$COL_Text_Base03;
+		@include Mix_Font('Txt-R', 14, 24);
+	}
+}
+.review_img{
+	overflow:visible;
+	position:relative;
+	height:100%;
+	.swiper-wrapper{
+		.swiper-slide{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			overflow:hidden;
+			width:100% !important;
+			height:318px;
+			margin-right:21px;
+			background-color:$COL_BG_Light01;
+			@include Mix_Font('Txt-R', 18, 24);
+			.inner{
+				overflow-x:hidden;
+				overflow-y:auto;
+				width:100%;
+			}
+			.btn_play{
+				overflow:hidden;
+				position:absolute;
+				top:50%;
+				left:calc(50% + 8px);
+				z-index:2;
+				width:48px;
+				height:48px;
+				@include Mix_PDP_Bg(-231px -191px);
+				@include Mix_Size_0;
+				transform:translate(-50%, -50%);
+			}
+			&:last-child{
+				margin-right:0;
+			}
+			&.wid img{
+				width:100%;
+				height:auto;
+			}
+			&.hei img{
+				width:auto;
+				height:100%;
+			}
+		}
+	}
+	.swiper-pagination{
+		bottom:-20px !important;
+	}
+}
+
+/*리뷰 별점*/
+.review_star{
+	overflow:hidden;
+	display:flex;
+	height:36px;
+	margin-top:15px;
+	.item{
+		position:relative;
+		text-align:left;
+		.star_txt{
+			display:block;
+			margin-bottom:8px;
+			color:$COL_Text_Base04;
+			@include Mix_Font('Head-R', 12, 17);
+		}
+		&:first-of-type{
+			border-left:0;
+		}
+	}
+	.line{
+		position:relative;
+		width:50px;
+		&::before{
+			content:'';
+			position:absolute;
+			top:50%;
+			left:50%;
+			width:1px;
+			height:38px;
+			background-color:$COL_BG_Light02;
+			transform:translate(-50%, -50%);
+		}
+	}
+}

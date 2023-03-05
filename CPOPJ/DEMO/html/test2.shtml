@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>현대차 CPO : 결제 및 서명</title>
+	<!--#include file="inc_demo/common_meta.shtml"-->
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/order.css">
+</head>
+<body>
+
+
+
+<script language='javascript'>
+	<!--
+	function fileSize() {
+	alert(document.aaa.pre.fileSize);
+	}
+	
+	function dreamkos_imgview()
+	{
+	  img_pre = 'pre';
+	  if(event.srcElement.value.match(/(.jpg|.jpeg|.gif|.png)/)) {
+		document.images[img_pre].src = event.srcElement.value;
+		document.images[img_pre].style.display = '';
+	  }
+	  else {
+	  document.images[img_pre].style.display = 'none';
+	  }
+	}
+	//-->
+	</script>
+	</head>
+	
+	
+	
+	
+	<body>
+	
+	<table bgcolor='#e4e9de' border='1' bordercolordark='#ffffff' bordercolorlight='#bccad5' cellspacing='0' cellpadding='1'>
+	
+	<form name="aaa">
+	  <tr>
+		<td><font color=green>♤</font> 이미지를 선택하십시요. <font color=green>♤</font></td>
+	  </tr>
+	  <tr>
+		<td><input type='file' name='dreamkos_file' size='32' onChange='dreamkos_imgview()'></td>
+	  </tr>
+	  <tr>
+		<td><img id='pre' style='display:none;' border='0'></td>
+	  </tr>
+	
+	  <a href="javascript:fileSize();">aaa</a>
+	
+	</form>
+	
+	</table>
+	</body>
+	
+	
+	------- 이미지 크기 제한 --------
+	
+	<SCRIPT language="Javascript">
+	var limitedImgWidth = 50; // Limited width of a image
+	var limitedImgHeight = 50; // Limited height of a image
+	function isValid(oImg) {
+	try {
+	oImg.style.display = "inline";
+	if ((oImg.width > 0 && oImg.width <= limitedImgWidth) &&
+	(oImg.height > 0 && oImg.height <= limitedImgHeight)) return true;
+	else throw new Object("error");
+	} catch (e) {
+	oImg.style.display = "none";
+	alert(e + "\\r\\n" + "Illegal image object!");
+	}
+	return false;
+	}
+	
+	function setNewImg(oElement) {
+	var oImg = document.getElementById("previewImg");
+	if (oElement.value != "") oImg.setAttribute("src", oElement.value);
+	}
+	</SCRIPT>
+	</HEAD>
+	<BODY>
+	<IMG id="previewImg" align="absmiddle" style="display:none" border="0"
+	onLoad="isValid(this);" onError="alert('Not image');">
+	<INPUT type="file" name="upImgPath" onChange="setNewImg(this);">
+	
+		
+
+
+	</body>
+	</html>
+	

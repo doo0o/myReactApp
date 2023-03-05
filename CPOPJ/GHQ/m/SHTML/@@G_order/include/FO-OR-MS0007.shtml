@@ -1,0 +1,264 @@
+<!-- FO-OR-MS0007 : 배송정보 설정 - FULL -->
+<div class="CPOpop_full" id="FO-OR-MS0007">
+	<div class="p_head">
+		<h4 class="tit">배송정보</h4><!-- [CPO-1202 : 디자인검수2차] -->
+	</div>
+	<div class="p_wrap">
+		<div class="delivery_info">
+			<!-- 01. 홈서비스, 픽업서비스 선택 -->
+			<ul class="cpo_tab02">
+				<li><input type="radio" name="cpoRadio" id="cpoRadio01" checked/><label for="cpoRadio01">홈서비스</label></li>
+				<li><input type="radio" name="cpoRadio" id="cpoRadio02"/><label for="cpoRadio02">픽업서비스</label></li>
+			</ul>
+			<!-- //01. 홈서비스, 픽업서비스 선택 -->
+			<!-- 02. 홈서비스 -->
+			<div class="d_home">
+				<h4 class="tit">배송지 선택</h4>
+				<ul class="list">
+					<li>
+						<input type="radio" class="chk_rad01" name="rdoAddress" id="rdoAddr01" checked/><label for="rdoAddr01">대표명의자</label><!-- [CPO-1202 : 디자인검수2차] -->
+						<div class="info">
+							<p class="name"><em>김현대</em><span>010-1234-1234</span></p>
+							<p class="addr">[06179] 서울시 강남구 테헤란로 510 (서울특별시 강남구 대치동 943)</p>
+							<ul class="addr_search">
+								<li class="inbox_type03">
+									<span class="tit">주소</span>
+									<input type="text" class="txt" title="주소" name="" value="">
+									<button type="button" class="btn_addr">주소검색</button>
+								</li>
+								<li class="inbox_type03">
+									<span class="tit">상세주소</span>
+									<input type="text" class="txt" title="상세주소" name="" value="">
+								</li>
+							</ul>
+							<button type="button" class="btn_mid02">배송주소 변경</button>
+						</div>
+					</li>
+					<li>
+						<input type="radio" class="chk_rad01" name="rdoAddress" id="rdoAddr02"/><label for="rdoAddr02">공동명의자 1</label><!-- [CPO-1202 : 디자인검수2차] -->
+						<div class="info">
+							<p class="name"><em>김현대</em><span>010-1234-1234</span></p>
+							<p class="addr">[06179] 서울시 강남구 테헤란로 510 (서울특별시 강남구 대치동 943)</p>
+							<ul class="addr_search">
+								<li class="inbox_type03">
+									<span class="tit">주소</span>
+									<input type="text" class="txt" title="주소" name="" value="">
+									<button type="button" class="btn_addr">주소검색</button>
+								</li>
+								<li class="inbox_type03">
+									<span class="tit">상세주소</span>
+									<input type="text" class="txt" title="상세주소" name="" value="">
+								</li>
+							</ul>
+							<button type="button" class="btn_mid02">배송주소 변경</button>
+						</div>
+					</li>
+					<li>
+						<input type="radio" class="chk_rad01" name="rdoAddress" id="rdoAddr03"/><label for="rdoAddr03">공동명의자 2</label><!-- [CPO-1202 : 디자인검수2차] -->
+						<div class="info">
+							<p class="name"><em>김현대</em><span>010-1234-1234</span></p>
+							<p class="addr">[06179] 서울시 강남구 테헤란로 510 (서울특별시 강남구 대치동 943)</p>
+							<ul class="addr_search">
+								<li class="inbox_type03">
+									<span class="tit">주소</span>
+									<input type="text" class="txt" title="주소" name="" value="">
+									<button type="button" class="btn_addr">주소검색</button>
+								</li>
+								<li class="inbox_type03">
+									<span class="tit">상세주소</span>
+									<input type="text" class="txt" title="상세주소" name="" value="">
+								</li>
+							</ul>
+							<button type="button" class="btn_mid02">배송주소 변경</button>
+						</div>
+					</li>
+					<li>
+						<input type="radio" class="chk_rad01" name="rdoAddress" id="rdoAddr04"/><label for="rdoAddr04">공동명의자 3</label><!-- [CPO-1202 : 디자인검수2차] -->
+						<div class="info">
+							<p class="name"><em>김현대</em><span>010-1234-1234</span></p>
+							<p class="addr">[06179] 서울시 강남구 테헤란로 510 (서울특별시 강남구 대치동 943)</p>
+							<ul class="addr_search">
+								<li class="inbox_type03">
+									<span class="tit">주소</span>
+									<input type="text" class="txt" title="주소" name="" value="">
+									<button type="button" class="btn_addr">주소검색</button>
+								</li>
+								<li class="inbox_type03">
+									<span class="tit">상세주소</span>
+									<input type="text" class="txt" title="상세주소" name="" value="">
+								</li>
+							</ul>
+							<button type="button" class="btn_mid02">배송주소 변경</button>
+						</div>
+					</li>
+				</ul>
+				<ol class="notice_04">
+					<li>구매하는 차량은 대표명의자 또는 공동명의자 본인이 직접 수령해야 합니다.</li>
+					<li>본 화면에서 배송주소를 변경하더라도 회원정보 또는 명의정보에 영향을 주지 않습니다.</li>
+				</ol>
+				<div class="d_list">
+					<h4 class="tit">배송 요청사항</h4>
+					<ol class="form_type01">
+						<li class="inbox_type03 dt">
+							<span class="tit">희망배송일 선택</span>
+							<input type="text" class="txt" id="datepic01" class="datepic" title="희망배송일 선택" disabled>
+						</li>
+						<li class="sel_type01">
+							<!-- [수정-SELECT] 2022-03-25 --><!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+							<button type="button" class="btn_sel04 jQ_Select" id="SelectMSG03" data-id="SelectMSG0301" data-popup="Select-MSG03-Layer">직접입력</button>
+							<!-- Layer -->
+							<div class="CPOpop_bottom select" id="Select-MSG03-Layer">
+								<div class="p_head">
+									<h5 class="tit">부재시 문자  선택</h5>
+								</div>
+								<div class="p_wrap">
+									<!-- list -->
+									<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+										<li><input type="radio" class="chk_type09" name="SelectMSG03_Name" id="SelectMSG0301"><label for="SelectMSG0301">직접입력</label></li>
+										<li><input type="radio" class="chk_type09" name="SelectMSG03_Name" id="SelectMSG0302"><label for="SelectMSG0302">방문 전 연락주세요.</label></li>
+										<li><input type="radio" class="chk_type09" name="SelectMSG03_Name" id="SelectMSG0303"><label for="SelectMSG0303">문 앞</label></li>
+									</ol>
+									<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectMSG03 변경 내용 적용  -->
+										<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectMSG03">적용하기</button>
+									</div>
+									<!-- //list -->
+								</div>
+								<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+							</div>
+							<!-- [수정-SELECT] 2022-03-25 -->
+							<div class="inbox_type06">
+								<input type="text" class="txt" value="" placeholder="부재시 문자 남겨 주세요.">
+							</div>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!-- //02. 홈서비스 -->
+			<!-- 03. 픽업서비스 -->
+			<div class="d_pickup">
+				<div class="d_box">
+					<h4 class="tit">픽업서비스란?</h4>
+					<p class="txt">픽업서비스는 전국 각지에 있는 도이치센터를 고객님이 직접 방문하여 다양한...</p>
+					<div class="txt2">
+						<p class="name">
+							<em>수원 도이치센터</em>
+							<span>02-1234-5678</span>
+						</p>
+						<p class="addr">[06179] 서울시 강남구 테헤란로 510 (서울특별시 강남구 대치동 943)</p>
+					</div>
+				</div>
+				<div class="d_list">
+					<h4 class="tit">방문 요청사항</h4>
+					<ol class="form_type01">
+						<li class="inbox_type03 dt">
+							<span class="tit">방문희망일 선택</span>
+							<input type="text" class="txt" id="datepic02" class="datepic" title="방문희망일 선택" disabled>
+						</li>
+						<li class="sel_type01">
+							<!-- [수정-SELECT] 2022-03-25 --><!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+							<button type="button" class="btn_sel04 jQ_Select" id="SelectMSG04" data-id="SelectMSG0401" data-popup="Select-MSG04-Layer">직접입력</button>
+							<!-- Layer -->
+							<div class="CPOpop_bottom select" id="Select-MSG04-Layer">
+								<div class="p_head">
+									<h5 class="tit">부재시 문자  선택</h5>
+								</div>
+								<div class="p_wrap">
+									<!-- list -->
+									<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+										<li><input type="radio" class="chk_type09" name="SelectMSG04_Name" id="SelectMSG0401"><label for="SelectMSG0401">직접입력</label></li>
+										<li><input type="radio" class="chk_type09" name="SelectMSG04_Name" id="SelectMSG0402"><label for="SelectMSG0402">방문 전 연락주세요.</label></li>
+										<li><input type="radio" class="chk_type09" name="SelectMSG04_Name" id="SelectMSG0403"><label for="SelectMSG0403">문 앞</label></li>
+									</ol>
+									<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectMSG04 변경 내용 적용  -->
+										<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectMSG04">적용하기</button>
+									</div>
+									<!-- //list -->
+								</div>
+								<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+							</div>
+							<!-- [수정-SELECT] 2022-03-25 -->
+							<div class="inbox_type06">
+								<input type="text" class="txt" value="" placeholder="부재시 문자 남겨 주세요.">
+							</div>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!-- //03. 픽업서비스 -->
+		</div>
+		<!-- 04. sticky button -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">배송정보 등록완료</button>
+		</div>
+		<!--// 04. sticky button -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+<script>
+	$(function() {
+		//datepicker 옵션값 추가
+		$("#datepic01, #datepic02").datepicker({
+			minDate:2, //최소 선택 날짜
+			maxDate:9, //최대 선택 날짜
+			onSelect:function(d, e) { //확인버튼 클릭시 close(날짜 선택시 close 되는 이슈 수정)
+				$(this).data('datepicker').inline = true;
+			},
+			onClose:function(d, e) { //확인버튼 클릭시 close
+				if($(this).parent().find('.txt').val() != ''){
+					$(this).parent().addClass('on');
+				}
+				$(this).data('datepicker').inline = false;
+				setTimeout(function(){
+					$('.date_dimm').hide();
+				},100)
+			}
+		});
+
+		//datepicker dimm 추가
+		$('.ui-datepicker-trigger').on('click',function(){
+			$('body').append('<div class="date_dimm"></div>');
+		});
+
+		//tab event
+		$('.cpo_tab02 li input').on('change',function(){
+			var checked = $('input[name="cpoRadio"]:checked').index('input[name="cpoRadio"]');
+
+			$('.d_home, .d_pickup').hide();
+
+			if(checked === 0){
+				$('.d_home').show();
+			}else{
+				$('.d_pickup').show();
+			}
+		});
+
+		//요청사항 selectbox event
+		$('.d_list .sel_type01 select').on('change',function(){
+			var inbox = $(this).parent().find('.inbox_type06');
+
+			if($(this).val() == 0){
+				inbox.show();
+			}else{
+				inbox.hide();
+			}
+		});
+
+		$('.delivery_info .btn_mid02').on('click',function(){
+			if(!$(this).hasClass('off')){
+				$(this).parent().find('.addr_search').show();
+				$(this).addClass('off');
+				$(this).text('주소변경 취소');
+			}else{
+				$(this).parent().find('.addr_search').hide();
+				$(this).removeClass('off');
+				$(this).text('배송주소 변경');
+			}
+		});
+
+	    $('.delivery_info .chk_rad01 + label').on('click',function(){
+			$('.delivery_info .addr_search').hide();
+			$('.delivery_info .btn_mid02').removeClass('off');
+			$('.delivery_info .btn_mid02').text('배송주소 변경');
+	    });
+	});
+</script>

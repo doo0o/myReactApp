@@ -1,0 +1,38 @@
+<!-- STEP : 3-1-01 : 주행거리 -->
+<div class="entry_carbase">
+	<div class="top02">
+		<p class="tit">주행거리는<br />몇 km 인가요?</p> <!-- 2022-09-16 CPO-3291 --> 
+		<div class="txt">주행거리 안내
+			<!-- tooltip -->
+			<span class="cpo_tooltip">
+				<button type="button" class="open">주행거리 안내 확인</button>
+				<div class="cont">
+					<p class="img"><img src="/HMC/m/img/sale_tooltip_01.jpg" alt="계기판 확인 사진" /></p>
+					<p class="text">계기판에 있는 차량의 주행거리를 확인해 주세요.</p>
+					<button class="close">툴팁닫기</button>
+				</div>
+			</span>
+			<!-- //tooltip -->
+		</div>
+	</div>
+	<!-- 입력 -->
+	
+	<div class="inp_type01 entry">
+		<input type="tel" name="" id="saleDriveKm" placeholder="12,345" class="txt type_nc" onfocusout="valChk(this);" onkeyup="valChk(this);" />
+		<button type="button" class="btn_delete">삭제</button>
+		<span class="unit">km</span>
+		<span class="btn_area"><button type="button" class="btn_ok01">확인</button></span>
+	</div>
+	<!-- //입력 -->
+	<!-- <ul class="navi">
+		<li><button type="button" class="btn_combi01_01 jQ_POP_open" data-popup="FO-TI-MS0051">주행거리 불러오기</button></li>
+	</ul> -->
+	
+	<p class="caution bg none">블루링크 서비스를 통해 주행거리를 불러왔습니다.</p><!-- 2022-10-12 CPO-4665 -->
+</div>
+<script>
+const valChk = _this => {
+	const parent = _this.closest('.entry');
+	(_this.value) ? parent.classList.add('isVal') : parent.classList.remove('isVal');
+}
+</script>

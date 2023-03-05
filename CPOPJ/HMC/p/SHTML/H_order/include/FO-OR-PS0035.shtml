@@ -1,0 +1,35 @@
+<div class="popup_modal" id="FO-OR-PS0035">
+	<div class="p_body">
+		<div class="p_inner s_small">
+			<div class="p_head">
+				<h2 class="tit">프로모션 선택</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+				<div class="inner_view layer_promotion">
+					<ul class="form_area">
+						<li>
+							<input type="checkbox" name="chk_promotion" id="chk_promotion01" class="chk_type01 bold">
+							<label for="chk_promotion01"><span class="txt">현대 가족사랑 할인 (1,800,000원)</span></label>
+						</li>
+						<li>
+							<input type="checkbox" name="chk_promotion" id="chk_promotion02" class="chk_type01 bold">
+							<label for="chk_promotion02"><span class="txt">여성운전자 할인 (1,000,000원)</span></label>
+						</li>
+						<li>
+							<input type="checkbox" name="chk_promotion" id="chk_promotion03" class="chk_type01 bold">
+							<label for="chk_promotion03"><span class="txt">중고 전시차 할인 (300,000원)</span></label>
+						</li>
+					</ul>
+				</div>
+				<!-- //contents -->
+				<!-- sticky -->
+				<div class="btn_area full_type">
+					<button type="button" class="btn_big color01">선택하기</button>
+				</div>
+				<!-- // sticky -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

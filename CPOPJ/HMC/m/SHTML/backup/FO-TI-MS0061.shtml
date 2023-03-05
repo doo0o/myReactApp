@@ -1,0 +1,28 @@
+
+<div class="CPOpop_bottom" id="FO-TI-MS0061">
+	<div class="p_head">
+		<h2 class="tit">차량정보 등록 불가</h2><!-- 2022-09-16 CPO-3291 -->
+	</div>
+	<div class="p_wrap">
+		<div class="mycar_reg_info">
+			<p class="title">차량 정보를 등록할 수 없습니다.</p>
+			<p class="txt">
+				죄송합니다.<br>
+				등록 요청하신 123차2381 차량은 시세 산정이 불가한<br>
+				차량입니다. 다른 차량의 시세를 조회해 보세요.
+			</p>
+			<div class="reason">
+				<p class="reason_tit">차량정보 등록 불가 이유</p>
+				<ul class="notice_04">
+					<li>데이터 부족 차량</li>
+					<li>오래된 연식의 차량</li>
+				</ul>
+			</div>
+		</div>
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">확인</button>
+		</div>
+		<!-- //sticky -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

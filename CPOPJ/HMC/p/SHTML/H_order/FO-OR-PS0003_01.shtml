@@ -1,0 +1,549 @@
+  <!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Layout Cart Type : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_cart.css">
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+    <!-- CPOcontents -->
+	<div id="CPOcontents">
+        <div id="layoutWrap" class="cart">
+            <!-- container -->
+            <div class="container flex">
+                <div class="cont_wrap no_data_area">
+
+					<!-- start: 상단page_tit 부분 no_data 추가 -->
+					<h1 class="page_tit">비교차량 선택 <button type="button" class="txt_btn01 s_large">장바구니 이동하기</button> </h1>
+
+					<div class="caution bg">
+						<p>차량은 최소 2대부터 5대까지 비교 가능하며, 보유차량을 비교할 경우, 실제 데이터와 다를 수 있습니다.</p>
+					</div>
+
+					<!-- start: 차량 선택 no_data  -->
+					<div class="compare_list">
+
+						<!-- start: no_data -->
+						<div class="no_data">
+							<p class="tit">보유차량과도 비교해 보세요.</p>
+							<div class="btn_area">
+								<a href="#" class="btn_small ico_add color02">보유차량 등록하기</a>
+							</div>
+						</div>
+						<!-- end:차량 선택 no_data -->
+
+					</div>
+					<!-- end: 차량 선택 -->
+
+
+					<!-- start: 장바구니 리스트 -->
+					<div class="order_list mgt_100">
+						<div class="top flex_box">
+							<a href=""><h2 class="sec_tit">장바구니<em class="arrow"></em></h2></a>
+							<span class="txt">전체 <em>4</em>개</span>
+						</div>
+						<ul class="unit_deal col_type02">
+							<li>
+								<!-- unit -->
+								<input type="checkbox" name="compare_type02" id="compare_type02_1" class="chk_compare">
+								<label for="compare_type02_1">
+								<span class="number">
+									<em>1</em>
+								</span>
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>21년 12월(22년형)</span>
+											<span>12가1234</span>
+										</div>
+									</div>
+								</label>
+								<!-- //unit -->
+							</li>
+
+							<li>
+								<!-- unit -->
+								<input type="checkbox" name="compare_type02" id="compare_type02_2" class="chk_compare">
+								<label for="compare_type02_2">
+								<span class="number">
+									<em>1</em>
+								</span>
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>21년 12월(22년형)</span>
+											<span>12가1234</span>
+										</div>
+									</div>
+								</label>
+								<!-- //unit -->
+							</li>
+
+							<li>
+								<!-- unit -->
+								<input type="checkbox" name="compare_type02" id="compare_type02_3" class="chk_compare">
+								<label for="compare_type02_3">
+								<span class="number">
+									<em>1</em>
+								</span>
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>21년 12월(22년형)</span>
+											<span>12가1234</span>
+										</div>
+									</div>
+								</label>
+								<!-- //unit -->
+							</li>
+
+							<li>
+								<!-- unit -->
+								<input type="checkbox" name="compare_type02" id="compare_type02_4" class="chk_compare">
+								<label for="compare_type02_4">
+								<span class="number">
+									<em>1</em>
+								</span>
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>21년 12월(22년형)</span>
+											<span>12가1234</span>
+										</div>
+									</div>
+								</label>
+								<!-- //unit -->
+							</li>
+
+						</ul>
+					</div>
+					<!-- end: 장바구니 리스트 -->
+
+					<div class="pick_list">
+						<div class="order_list mgt_100">
+							<div class="top flex_box">
+								<a href=""><h2 class="sec_tit">찜한상품<em class="arrow"></em></h2></a>
+								<span class="txt">전체 <em>8</em>개</span>
+							</div>
+							<ul class="unit_deal col_type02">
+								<li>
+									<!-- unit -->
+									<input type="checkbox" name="compare_type02" id="compare_type02_15" class="chk_compare">
+									<label for="compare_type02_15">
+										<span class="number">
+											<em>1</em>
+										</span>
+										<div class="unit_img">
+											<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+										</div>
+										<div class="unit_info">
+											<div class="price">
+												<span class="num"><em>3,820</em><i>만원</i></span>
+											</div>
+											<div class="name">
+												<span class="model">그랜저 IG </span>
+												<span class="desc">가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피</span>
+											</div>
+											<div class="drive">
+												<span>21년 12월(22년형)</span>
+												<span>12가1234</span>
+											</div>
+										</div>
+									</label>
+									<!-- //unit -->
+								</li>
+
+								<li>
+									<!-- unit -->
+									<input type="checkbox" name="compare_type02" id="compare_type02_16" class="chk_compare">
+									<label for="compare_type02_16">
+										<span class="number">
+											<em>1</em>
+										</span>
+										<div class="unit_img">
+											<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+										</div>
+										<div class="unit_info">
+											<div class="price">
+												<span class="num"><em>3,820</em><i>만원</i></span>
+											</div>
+											<div class="name">
+												<span class="model">그랜저 IG </span>
+												<span class="desc">가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피</span>
+											</div>
+											<div class="drive">
+												<span>21년 12월(22년형)</span>
+												<span>12가1234</span>
+											</div>
+										</div>
+									</label>
+									<!-- //unit -->
+								</li>
+
+								<li>
+									<!-- unit -->
+									<input type="checkbox" name="compare_type02" id="compare_type02_17" class="chk_compare">
+									<label for="compare_type02_17">
+										<span class="number">
+											<em>1</em>
+										</span>
+										<div class="unit_img">
+											<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+										</div>
+										<div class="unit_info">
+											<div class="price">
+												<span class="num"><em>3,820</em><i>만원</i></span>
+											</div>
+											<div class="name">
+												<span class="model">그랜저 IG </span>
+												<span class="desc">가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피</span>
+											</div>
+											<div class="drive">
+												<span>21년 12월(22년형)</span>
+												<span>12가1234</span>
+											</div>
+										</div>
+									</label>
+									<!-- //unit -->
+								</li>
+
+								<li>
+									<!-- unit -->
+									<input type="checkbox" name="compare_type02" id="compare_type02_18" class="chk_compare">
+									<label for="compare_type02_18">
+										<span class="number">
+											<em>1</em>
+										</span>
+										<div class="unit_img">
+											<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+										</div>
+										<div class="unit_info">
+											<div class="price">
+												<span class="num"><em>3,820</em><i>만원</i></span>
+											</div>
+											<div class="name">
+												<span class="model">그랜저 IG </span>
+												<span class="desc">가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피</span>
+											</div>
+											<div class="drive">
+												<span>21년 12월(22년형)</span>
+												<span>12가1234</span>
+											</div>
+										</div>
+									</label>
+									<!-- //unit -->
+								</li>
+							</ul>
+
+							<div class="btn_area">
+								<button type="button" class="btn_more">더보기</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="lately_pd_list">
+						<div class="top flex_box">
+							<a href=""><h2 class="sec_tit">최근본상품<em class="arrow"></em></h2></a>
+							<span class="txt">전체 <em>17</em>개</span>
+						</div>
+						<ul class="unit_deal col_type02">
+							<li>
+								<!-- unit -->
+								<input type="checkbox" name="compare_type02" id="compare_type02_5" class="chk_compare">
+								<label for="compare_type02_5">
+								<span class="number">
+									<em>1</em>
+								</span>
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>21년 12월(22년형)</span>
+											<span>12가1234</span>
+										</div>
+									</div>
+								</label>
+								<!-- //unit -->
+							</li>
+
+							<li class="soldout">
+								<!-- unit -->
+								<input type="checkbox" name="compare_type02" id="compare_type02_6" class="chk_compare" disabled>
+								<label for="compare_type02_6">
+								<span class="number">
+									<em>1</em>
+								</span>
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+										<span class="flag_soldout">일시품절</span>
+									</div>
+									<div class="unit_info">
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>21년 12월(22년형)</span>
+											<span>12가1234</span>
+										</div>
+									</div>
+								</label>
+								<!-- //unit -->
+							</li>
+
+							<li class="soldout">
+								<!-- unit -->
+								<input type="checkbox" name="compare_type02" id="compare_type02_7" class="chk_compare" disabled>
+								<label for="compare_type02_7">
+								<span class="number">
+									<em>1</em>
+								</span>
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+										<span class="flag_soldout">일시품절</span>
+									</div>
+									<div class="unit_info">
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>21년 12월(22년형)</span>
+											<span>12가1234</span>
+										</div>
+									</div>
+								</label>
+								<!-- //unit -->
+							</li>
+
+							<li>
+								<!-- unit -->
+								<input type="checkbox" name="compare_type02" id="compare_type02_8" class="chk_compare">
+								<label for="compare_type02_8">
+								<span class="number">
+									<em>1</em>
+								</span>
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>21년 12월(22년형)</span>
+											<span>12가1234</span>
+										</div>
+									</div>
+								</label>
+								<!-- //unit -->
+							</li>
+
+							<li>
+								<!-- unit -->
+								<input type="checkbox" name="compare_type02" id="compare_type02_9" class="chk_compare">
+								<label for="compare_type02_9">
+								<span class="number">
+									<em>1</em>
+								</span>
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>21년 12월(22년형)</span>
+											<span>12가1234</span>
+										</div>
+									</div>
+								</label>
+								<!-- //unit -->
+							</li>
+
+							<li>
+								<!-- unit -->
+								<input type="checkbox" name="compare_type02" id="compare_type02_10" class="chk_compare">
+								<label for="compare_type02_10">
+								<span class="number">
+									<em>1</em>
+								</span>
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>21년 12월(22년형)</span>
+											<span>12가1234</span>
+										</div>
+									</div>
+								</label>
+								<!-- //unit -->
+							</li>
+
+							<li>
+								<!-- unit -->
+								<input type="checkbox" name="compare_type02" id="compare_type02_11" class="chk_compare">
+								<label for="compare_type02_11">
+								<span class="number">
+									<em>1</em>
+								</span>
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>21년 12월(22년형)</span>
+											<span>12가1234</span>
+										</div>
+									</div>
+								</label>
+								<!-- //unit -->
+							</li>
+
+							<li class="soldout">
+								<!-- unit -->
+								<input type="checkbox" name="compare_type02" id="compare_type02_12" class="chk_compare" disabled>
+								<label for="compare_type02_12">
+								<span class="number">
+									<em>1</em>
+								</span>
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+										<span class="flag_soldout">일시품절</span>
+									</div>
+									<div class="unit_info">
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>21년 12월(22년형)</span>
+											<span>12가1234</span>
+										</div>
+									</div>
+								</label>
+								<!-- //unit -->
+							</li>
+						</ul>
+
+						<div class="btn_area">
+							<button type="button" class="btn_more">더보기</button>
+						</div>
+					</div>
+
+
+				</div>
+
+
+				<!-- start: 비교차량 없는 경우 nodata 추가 -->
+				<div class="cont_right sticky no_data">
+					<div class="cart_container">
+						<div class="ico-info car"></div>
+						<p class="tit">비교할 차량이 없습니다.</p>
+						<p class="desc">보유차량과 장바구니상품, 찜한상품,<br>
+							최근본상품을 비교할 수 있어요.</p>
+						<div class="btn_area full_type row_type">
+							<a href="#" class="btn_mid color02">비교차량 선택하기</a>
+							<a href="#" class="btn_mid color01">보유차량 등록하기</a>
+						</div>
+					</div>
+				</div>
+				<!-- end: 비교차량 없는 경우 nodata 추가 -->
+
+            </div>
+            <!-- //sc_container -->
+        </div>
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<script>
+
+</script>
+</html>

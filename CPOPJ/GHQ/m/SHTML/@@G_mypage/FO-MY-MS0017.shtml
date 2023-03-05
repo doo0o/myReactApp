@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>나의문의</title>
+	<!--#include file="/GHQ/m/SHTML/G_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/g_mypage.css">
+</head>
+<body>
+<!--#include file="/GHQ/m/SHTML/G_inc/common_skip.shtml"-->
+<!--#include file="/GHQ/m/SHTML/G_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--  s: h_header : default  -->
+		<div class="h_header">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">나의문의</h3>
+		</div>
+		<!--  e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<!-- 데이터 없을 때 -->
+		<div class="no_data history">
+			<p class="tit">문의 내역이 없습니다.</p>
+			<p class="txt">1:1 문의 등록 해주시면<br/>신속하게 답변해 드리겠습니다.</p>
+			<div class="btn_area"><a href="#" class="btn_mid02">1:1 문의 등록 하기</a></div>
+		</div>
+		<!-- //데이터 없을 때 -->
+		<div class="my_question">
+			<!-- 문의목록 -->
+			<div class="total">
+				<span class="question_list_all">전체 <i>20</i>개</span>
+				<a href="#" class="btn_icon_mid01">문의등록</a>
+			</div>
+			<div class="q_box">
+				<div class="q_tit q_tog">
+					<span class="flag">답변대기</span>
+					<p class="tit">[기타문의] A/S 문의입니다.</p>
+					<p class="date">2021.10.12 15:30:30</p>
+				</div>
+				<div class="q_cont">
+					<div class="qa_txt">
+						<span class="mark">Q.</span>
+						<span class="txt">최근에 그랜저IG를 구매했습니다. 우측 깜빡이를 키면 자꾸 경고음 비슷한게 들리는데 이 부분 A/S 가능할까요?</span>
+					</div>
+					<ul class="btn_area">
+						<li><button type="button">수정</button></li>
+						<li><button type="button">삭제</button></li>
+					</ul>
+					<div class="q_img img_resize swiperType01"> <!-- 세로형 가로형 분기 class추가 img_resize-->
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide"> <!--세로형일시 class hei 가로형 class wid-->
+								<img src="/GHQ/m/img//@thumb/car_visual_03.jpg" alt="" />
+							</li>
+							<li class="swiper-slide">     
+								<img src="/GHQ/m/img//@thumb/car_visual_02.jpg" alt="" />
+							</li>
+							<li class="swiper-slide">
+								<img src="/GHQ/m/img//@thumb/car_visual_10.jpg" alt="" />
+							</li>
+						</ul>
+						<div class="swiper-pagination"></div>
+					</div>
+					<!--[D] 확인중인 경우 qa_ing 클래스 추가-->
+					<div class="qa_txt qa_ing on"><!-- S : [CPO-1220 : 디자인검수2차] -->
+						<span class="mark">A.</span>
+						<span class="txt">담당자가 문의하신 내용을 확인 중입니다.</span>
+					</div>
+				</div>
+			</div>
+			<div class="q_box">
+				<div class="q_tit q_tog">
+					<span class="flag on">답변완료</span>
+					<p class="tit">[기타문의] 최대 1줄까지 제목을 표시하며 1줄을 초과하면 마지막에 말줄임(···) 표시 출력
+					</p>
+					<p class="date">2021.10.12 15:30:30</p>
+				</div>
+				<div class="q_cont">
+					<div class="qa_txt">
+						<span class="mark">Q.</span>
+						<span class="txt">
+							최근에 그랜저IG를 구매했습니다. 우측 깜빡이를 키면 자꾸 경고음 비슷한게 들리는데 이 부분 A/S 가능할까요?
+							<em class="q_car">현대 쏘나타 뉴 라이즈 LPI 모던</em>
+						</span>
+					</div>
+					<ul class="btn_area">
+						<li><button type="button">삭제</button></li>
+					</ul>
+					<div class="qa_txt on">
+						<span class="mark">A.</span>
+						<span class="txt">
+							안녕하세요. CPO 담당자입니다. 등록하신 차량의 정보를 변경하고 싶으시군요. 차량 정보의 경우 내차팔기 진행단계에 따라 변경 가능 여부가 결정됩니다. 감사합니다.
+							<span class="date">2021.10.12 15:30:30</span>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="q_box">
+				<div class="q_tit q_tog">
+					<span class="flag">답변대기</span>
+					<p class="tit">[기타문의] A/S 문의입니다.</p>
+					<p class="date">2021.10.12 15:30:30</p>
+				</div>
+				<div class="q_cont">
+					<div class="qa_txt">
+						<span class="mark">Q.</span>
+						<span class="txt">최근에 그랜저IG를 구매했습니다. 우측 깜빡이를 키면 자꾸 경고음 비슷한게 들리는데 이 부분 A/S 가능할까요?</span>
+					</div>
+					<ul class="btn_area">
+						<li><button type="button">수정</button></li>
+						<li><button type="button">삭제</button></li>
+					</ul>
+					<div class="q_img img_resize swiperType01"> <!-- 세로형 가로형 분기 class추가 img_resize-->
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide"> <!--세로형일시 class hei 가로형 class wid-->
+								<img src="/GHQ/m/img//@thumb/car_visual_03.jpg" alt="" />
+							</li>
+							<li class="swiper-slide">     
+								<img src="/GHQ/m/img//@thumb/car_visual_02.jpg" alt="" />
+							</li>
+							<li class="swiper-slide">
+								<img src="/GHQ/m/img//@thumb/car_visual_10.jpg" alt="" />
+							</li>
+						</ul>
+						<div class="swiper-pagination"></div>
+					</div>
+					<!--[D] 확인중인 경우 qa_ing 클래스 추가-->
+					<div class="qa_txt qa_ing on"><!-- S : [CPO-1220 : 디자인검수2차] -->
+						<span class="mark">A.</span>
+						<span class="txt">담당자가 문의하신 내용을 확인 중입니다.</span>
+					</div>
+				</div>
+			</div>
+			<div class="q_box">
+				<div class="q_tit q_tog">
+					<span class="flag">답변대기</span>
+					<p class="tit">[기타문의] 정보를 변경하고 싶습니다.</p>
+					<p class="date">2021.10.12 15:30:30</p>
+				</div>
+				<div class="q_cont">
+					<div class="qa_txt">
+						<span class="mark">Q.</span>
+						<span class="txt">최근에 그랜저IG를 구매했습니다. 우측 깜빡이를 키면 자꾸 경고음 비슷한게 들리는데 이 부분 A/S 가능할까요?</span>
+					</div>
+					<ul class="btn_area">
+						<li><button type="button">수정</button></li>
+						<li><button type="button">삭제</button></li>
+					</ul>
+					<div class="q_img img_resize swiperType01"> <!-- 세로형 가로형 분기 class추가 img_resize-->
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide"> <!--세로형일시 class hei 가로형 class wid-->
+								<img src="/GHQ/m/img//@thumb/car_visual_03.jpg" alt="" />
+							</li>
+							<li class="swiper-slide">     
+								<img src="/GHQ/m/img//@thumb/car_visual_02.jpg" alt="" />
+							</li>
+							<li class="swiper-slide">
+								<img src="/GHQ/m/img//@thumb/car_visual_10.jpg" alt="" />
+							</li>
+							<li class="swiper-slide"> <!--세로형일시 class hei 가로형 class wid-->
+								<img src="/GHQ/m/img//@thumb/car_visual_03.jpg" alt="" />
+							</li>
+							<li class="swiper-slide">     
+								<img src="/GHQ/m/img//@thumb/car_visual_02.jpg" alt="" />
+							</li>
+						</ul>
+						<div class="swiper-pagination"></div>
+					</div>
+					<!--[D] 확인중인 경우 qa_ing 클래스 추가-->
+					<div class="qa_txt qa_ing on"><!-- S : [CPO-1220 : 디자인검수2차] -->
+						<span class="mark">A.</span>
+						<span class="txt">담당자가 문의하신 내용을 확인 중입니다.</span>
+					</div>
+				</div>
+			</div>
+			<div class="q_box">
+				<div class="q_tit q_tog">
+					<span class="flag on">답변완료</span>
+					<p class="tit">[기타문의] 현재 타고 있는 차를 판매하려고 등</p>
+					<p class="date">2021.10.12 15:30:30</p>
+				</div>
+				<div class="q_cont">
+					<div class="qa_txt">
+						<span class="mark">Q.</span>
+						<span class="txt">최근에 그랜저IG를 구매했습니다. 우측 깜빡이를 키면 자꾸 경고음 비슷한게 들리는데 이 부분 A/S 가능할까요?</span>
+					</div>
+					<ul class="btn_area">
+						<li><button type="button">삭제</button></li>
+					</ul>
+					<div class="qa_txt on">
+						<span class="mark">A.</span>
+						<span class="txt">
+							안녕하세요. CPO 담당자입니다. 등록하신 차량의 정보를 변경하고 싶으시군요. 차량 정보의 경우 내차팔기 진행단계에 따라 변경 가능 여부가 결정됩니다. 감사합니다.
+							<span class="date">2021.10.12 15:30:30</span>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- //문의목록 -->
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/GHQ/m/SHTML/G_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/GHQ/m/SHTML/G_inc/popup_include_all.shtml"-->
+</body>
+<script>
+	CPO.top(1);// S : [CPO-1220 : 디자인검수2차] 
+</script>
+</html>

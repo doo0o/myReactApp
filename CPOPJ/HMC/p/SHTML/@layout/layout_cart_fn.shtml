@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Layout Cart Type : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<!-- <link rel="stylesheet" type="text/css" href="../../css/h_detail.css"> --> <!-- 해당 CSS -->
+	<style>
+	
+		*{
+			user-select: none;
+		}
+		
+		.tit{
+			font-size: 50px;
+		}
+		.top{
+			padding: 30px 0;
+			height: 200px;
+			background-color: #fff;
+			transition: all 1s;
+		}
+		/* drag */
+		.drag_drop{
+			overflow: hidden;
+			height: 100%;
+		}
+	
+		.drag_drop .dragParent::-webkit-scrollbar{
+			/* position: relative; */
+			/* z-index: 4; */
+		}
+		.container{
+			overflow: scroll;
+		}
+		.drag_drop{
+			overflow-y: hidden;
+			overflow-x: auto;
+			height: 100%;
+		}
+		.drag_drop .dragObjWrap{
+			position: relative;
+			display: flex;
+			height: 100%;
+			overflow: hidden;
+			padding-left: 341px;
+		}
+	
+		/* 드래그엔 드롭 ITEM  */
+		.drag_drop .dropObj{ 
+			height: auto;
+		}
+		
+		.drag_drop .dragObj.select {
+			border: 4px solid purple;
+			
+		}
+		.drag_drop .dragObj {
+			width: 340px;
+			height: 100%;
+			box-sizing: initial;
+			border: 1px solid #ccc;
+			background-color: #abedff;
+		}
+		.drag_drop .dragObj .top{
+			cursor: pointer;
+		}
+		.drag_drop .dragObj::-webkit-scrollbar{
+			display: none;
+		}
+	
+		.drag_drop .dragObj p{
+			font-size: 44px;
+			line-height: 44px;
+		}
+	
+		.drag_drop .dragObj .cont{
+			overflow-y: scroll;
+			height: 500px;
+			margin: 20px auto;
+			padding: 20px;
+		}
+		.drag_drop .dragObj .pin{
+			width: 50px;
+			background-color: bisque;
+		}
+		.drag_drop .dragObj .pin[data-fix="true"]{
+			background-color: #abedff;
+		}
+	
+	
+	
+		/* tablet */
+		@media (max-width: 1000px) {
+			.drag_drop .dragObj{
+				width: 240px;
+			}
+			.drag_drop .dragObjWrap{
+				padding-left: 240px;
+			}
+		}
+		.dragObjWrap.sticky .top{
+			position: sticky;
+			top: 0;
+			height: 130px;
+		}
+	
+		.dragObj.fixed{
+			position: absolute;
+			z-index: 1;
+			left: 0;
+			top: 0;
+		}
+	
+		.dropObj.select{
+			border: 3px solid yellow;
+		}
+		.touchNav{
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			width: 90%;
+			height: 90px;
+			z-index: 2;
+			transform: translate(-50%, -50%);
+			background: #ffffff50;
+		}
+		.touchNav button[class^='touch_']{
+			width: 90px;
+			height: 90px;
+			top: 0;
+			background-color: #ccc;
+		}
+		.touchNav button.touch_prev{
+			position: absolute;
+			left: 0;
+		}
+		.touchNav button.touch_next{
+			position: absolute;
+			right: 0;
+		}
+	</style>
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+    <!-- CPOcontents -->
+	<div id="CPOcontents">
+        <div id="layoutWrap" class="cart">
+            <!-- container -->
+            <div class="container flex">
+                <div class="cont_wrap">
+					<div class="drag_drop" id="drag">
+						<ul class="dragObjWrap">
+							<li class="dropObj">
+								<div class="dragObj fixed" data-drag-index="1"> 
+									<div class="top">
+										<button class="pin" data-fix="true">핀</button>
+										<p>가나다라1</p>
+									</div>
+									<div class="cont">
+										<p class="cont__tit">cont1</p>
+										<div> 
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+			
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+			
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+			
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+										</div>
+									</div>
+									
+								</div>
+							</li>
+							<li class="dropObj">
+								<div class="dragObj" data-drag-index="2">
+									<div class="top">
+										<button class="pin" data-fix="">핀</button>
+										<p>기니디리2</p>
+									</div>
+									<div class="cont">
+										<p class="cont__tit">cont2</p>
+										<div> 
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+			
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+			
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+			
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="dropObj">
+								<div class="dragObj" data-drag-index="3">
+									<div class="top">
+										<button class="pin" data-fix="">핀</button>
+										<p>거너더러3</p>
+									</div>
+									<div class="cont">
+										<p class="cont__tit">cont3</p>
+										<div> 
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+			
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+			
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+			
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="dropObj">
+								<div class="dragObj" data-drag-index="4">
+									<div class="top">
+										<button class="pin" data-fix="">핀</button>
+										<p>갸냐댜랴4</p>
+									</div>
+									<div class="cont">
+										<p class="cont__tit">cont4</p>
+										<div> 
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+			
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+			
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+			
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="dropObj">
+								<div class="dragObj" data-drag-index="5">
+									<div class="top">
+										<button class="pin" data-fix="">핀</button>
+										<p>갸냐댜랴5</p>
+									</div>
+									<div class="cont">
+										<p class="cont__tit">cont5</p>
+										<div> 
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+			
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+			
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+			
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="dropObj">
+								<div class="dragObj" data-drag-index="6">
+									<div class="top">
+										<button class="pin" data-fix="">핀</button>
+										<p>갸냐댜랴6</p>
+									</div>
+									<div class="cont">
+										<p class="cont__tit">cont6</p>
+										<div> 
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+			
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+			
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+			
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro dolore facere, vero iusto eius corrupti iure, ipsa laudantium aliquid vel, sapiente neque iste non! Provident sit delectus natus adipisci officia!
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+            </div>
+            <!-- //sc_container -->
+        </div>
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<script type="text/javascript">
+
+	let compare = new carCompare();
+	
+	function callback(){
+		alert(1)
+	}
+</script>
+</html>

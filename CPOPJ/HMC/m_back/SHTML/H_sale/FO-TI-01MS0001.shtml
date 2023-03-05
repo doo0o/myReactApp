@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>STEP1. 차량번호 입력 : 현대차 CPO</title>
+	<!--#include file="/HMC/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_sale.css">
+</head>
+<body class="bg_black"><!--GHQ bg 컬러 설정용 class-->
+<!--#include file="/HMC/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--#include file="/HMC/SHTML/H_inc/layout_header.shtml"-->
+		<!--  s: title area : MAIN  -->
+		<div class="h_navi">
+			<div class="menu">
+				<h1 class="logo"><a href="#" class="ic_logo">현대CPO</a></h1>
+				<button type="button" class="ic_menu" data-ref="menuLayer">내차사기</button>
+				<div class="menu_layer" id="menuLayer">
+					<ul>
+						<li><a href="#">내차사기</a></li>
+						<li class="on"><a href="#">내차팔기</a></li>
+					</ul>
+				</div>
+			</div>
+			<ul class="util">
+				<li><button type="button" class="ic_mycar jQ_POP_open" data-popup="FO-TI-MS0017">내차팔기 정보</button></li><!-- jQ_POP_open 팝업 호출 class / data-popup 팝업 id 값 -->
+			</ul>
+		</div>
+		<!--  e: title area : MAIN  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<!-- [COMMON] 내차팔기 입력 진행 상황 progress -->
+		<div class="sale_progress">
+			<span style="width:2.8%">총 28개 필수 입력값 중 1개 입력하셨습니다. (1/28)*100</span>
+		</div>
+		<!-- //[COMMON] 내차팔기 입력 진행 상황 progress -->
+		<!-- STEP 1. 차량번호 입력 -->
+		<!-- 01. HELLO -->
+		<div class="main_hello" style="display:none;">
+
+		</div>
+		<!-- //01. HELLO --> 
+		<!-- 02. 차량번호 입력 -->
+		<div class="step1_box">
+			<div class="entry_carbase">
+				<div class="top">
+					<p class="txt">어떤 차인지 확인해볼까요?</p>
+					<h5 class="tit">차량번호를 입력해주세요</h5>
+					<!-- tooltip -->
+					<span class="cpo_tooltip">
+						<button type="button" class="open">입력안내 확인</button>
+						<div class="cont">
+							<p class="txt">판매하는 차량의 소유자 명과 로그인한 계정의 이름이 동일해야 판매가 가능해요.</p>
+							<button class="close">툴팁닫기</button>
+						</div>
+					</span>
+					<!-- //tooltip -->
+				</div>
+
+				<!-- 입력 -->
+				<div class="entry">
+					<input type="text" name="" placeholder="12가1234" class="inp_txt" />
+				</div>
+				<!-- //입력 -->
+
+				<ul class="navi">
+					<li><button type="button" class="btn_txt06 jQ_POP_open" data-popup="FO-TI-MS0012">내차팔기 불가 차량 안내</button></li>
+					<li><button type="button" class="btn_txt06 jQ_POP_open" data-popup="FO-TI-MS0014">법인명의 차량 팔기 안내</button></li>
+				</ul>
+			</div>
+		</div>
+		<!-- //02. 차량번호 입력 -->
+
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HMC/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/HMC/SHTML/H_inc/popup_include_all.shtml"-->
+
+<!--#include file="/HMC/SHTML/H_sale/include/FO-TI-MS0040.shtml"--><!-- 내차팔기 진행중 팝업 -->
+<!--#include file="/HMC/SHTML/H_sale/include/FO-TI-MS0041.shtml"--><!-- 보유차량 팝업 -->
+<!--#include file="/HMC/SHTML/H_sale/include/FO-TI-MS0012.shtml"--><!-- 내차팔기 불가 차량 안내 -->
+<!--#include file="/HMC/SHTML/H_sale/include/FO-TI-MS0014.shtml"--><!-- 법인명의 차량 팔기 안내 -->
+<!--#include file="/HMC/SHTML/H_sale/include/FO-TI-MS0017.shtml"--><!-- 내차팔기 정보 레이어 -->
+<!--#include file="/HMC/SHTML/H_sale/include/FO-TI-MS0020.shtml"--><!-- 차량 상세정보 레이어 -->
+
+</body>
+</html>

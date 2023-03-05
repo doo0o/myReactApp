@@ -1,0 +1,188 @@
+//로그인 페이지 
+.login {
+	height:100%;
+	.end_txt {
+		position:absolute;
+		left:50%;
+		bottom:10px;
+		transform:translateX(-50%);
+		color:$COL_Gray07;
+		@include Mix_Font('Head-R', 13, 18);
+	}
+}
+.login_form{
+	position:absolute;
+	top:150px;
+	left:50%;
+	transform:translateX(-50%);
+	width:400px;
+	> .tit{
+		margin-bottom:30px;
+		text-align:center;
+		h2{
+			color:$COL_Black;
+			@include Mix_Font('Head-M', 26, 32);
+		}
+		p{
+			color:$COL_Gray08;
+			@include Mix_Font('Head-R', 15, 28);
+		}
+	}
+	.form_box{
+		> li{
+			position:relative;
+			border:1px solid #ddd;
+			&:not(:first-of-type){
+				border-top:0;
+			}
+			span.tit{
+				position:absolute;
+				top:50%;
+				left:10px;
+				transform: translateY(-50%);
+				color:#666;
+				@include Mix_Font('Txt-R', 13, 20);
+			}
+			input.txt{
+				border:0;
+				width:100%;
+				padding:0 0 0 90px;
+				color:#333;
+				@include Mix_Font('Head-M', 15, 60);
+			}
+			.btn_small02{
+				position:absolute;
+				top:50%;
+				right:10px;
+				transform: translateY(-50%);
+			}
+			.time{
+				display:none;
+				position:absolute;
+				top:calc(50% + 13px);
+				left:10px;
+				transform: translateY(-50%);
+				color:#000;
+				@include Mix_Font('Txt-R', 12, 15);
+			}
+			&.on{
+				.tit{
+					top:calc(50% - 10px);
+				}
+				.time{
+					display:block;
+				}
+			}
+		}
+	}
+	.msg{
+		display:none;
+		&.error{
+			margin:8px 0 0 0;
+			display:block;
+			color:#DB0000;
+			@include Mix_Font('Txt-R', 11, 20);
+		}
+	}
+	.btn{
+		margin-top:30px;
+	}
+	.desc_box {		
+		color:$COL_Gray07;
+		@include Mix_Font('Head-R', 13, 18);
+		p{
+			margin-top:5px;
+			&:first-child {
+				margin-top:20px;
+			}
+		}		
+	}	
+}
+
+
+// 이용약관 및 개인정보처리방침 페이지
+.join_list{
+	padding:30px 20px;
+	h2.tit{// 페이지 타이틀
+		margin-bottom:20px;
+		color:$COL_Gray08;
+		@include Mix_Font('Head-R', 24, 30);
+		word-break:keep-all;
+	}
+	.btn_arrow{// 더보기 버튼
+		position:absolute;
+		right:0;
+		width:24px;
+		height:24px;
+		@include Mix_Size_0;
+		&:before{
+			content:'';
+			position:absolute;
+			top:50%;
+			right:0;
+			@include Mix_Library_Bg;
+		}
+	}
+	& > .item{// 아코디언 
+		position:relative;
+		padding:20px 0 18px;
+		border-bottom:1px solid $COL_Gray02;
+		color:$COL_Gray08;
+		@include Mix_Font('Txt-B', 16, 20);
+		.btn_arrow{
+			&.ac:before{
+				width:13px;
+				height:9px;
+				background-position:-87px 0;
+				transform:translateY(-50%) rotate(0deg);
+			}
+			&.on:before{
+				transform:translateY(-50%) rotate(-180deg);
+			}
+		}
+		
+	}
+	& > ul.accordion{// 아코디언 내용
+		width:100%;
+		padding:20px 0;
+		&.on{
+			display:block;
+		}
+		> li{
+			padding:0 0 20px;
+			.item{
+				position:relative;
+				color:$COL_Gray08;
+				@include Mix_Font('Txt-R', 15, 18);
+				.btn_arrow{
+					&:before{
+						width:9px;
+						height:13px;
+						background-position:-105px 0;
+						transform:translateY(-50%) rotate(0);
+					}
+					&.ac:before{
+						margin-right:2px;
+						transform:translateY(-50%) rotate(90deg);
+					}
+					&.on:before{
+						transform:translateY(-50%) rotate(-90deg);
+					}
+				}
+			}
+			.accordion{
+				display:none;
+				padding:10px 22px 0 34px;
+				&.on{
+					display:block;
+				}
+			}
+		}
+	}
+}
+
+
+.agree_contents{
+	height:400px;
+	overflow:hidden;
+}

@@ -1,0 +1,50 @@
+<!-- FO-MY-MS0074 : 차량대금 입금계좌 - FULL -->
+<div class="CPOpop_full" id="FO-MY-MS0074">
+
+	<div class="p_head">
+		<h2 class="tit">차량대금 입금계좌</h2>
+	</div>
+	<div class="p_wrap">
+		<div class="layer_account_wrap layer_bg">
+			<div class="sec_tit">차량대금 입금계좌</div>
+
+			<ul class="form_list01">
+				<li>
+					<div class="slt_box">
+						<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+						<button type="button" class="sel_value jQ_Select" id="layerBankSel01" data-id="layerBankSel01_01" data-popup="layerBankSel-Layer01">입금은행을 선택해 주세요.</button>
+						<!-- Layer -->
+						<!--#include file="/HMC/m/SHTML/H_order/inc/layerBankSel-Layer01.shtml"--><!-- 은행선택 -->
+					</div>
+				</li>
+				<li>
+					<div class="inbox_type01 on">
+						<span class="tit">예금주명</span>
+						<input type="text" class="txt" title="이름 입력" value="김현대" disabled="" readonly="">
+						<button type="button" class="btn_delete">삭제</button>
+					</div>
+				</li>
+				<li>
+					<div class="inbox_type01">
+						<span class="tit">계좌번호</span>
+						<input type="tel" class="txt type_number" title="계좌번호 입력" placeholder="'-' 없이 숫자만 입력" name="" value="">
+						<button type="button" class="btn_delete">삭제</button>
+					</div>
+				</li>
+			</ul>
+
+			<div class="caution bg">
+				<ul>
+					<li>입금계좌의 예금주는 반드시 회원 본인이어야 합니다.</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01" title="입금계좌 등록완료" disabled>입금계좌 등록완료</button>
+		</div>
+
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+	<!--// 03. sticky button -->
+</div>

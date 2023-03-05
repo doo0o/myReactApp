@@ -1,0 +1,75 @@
+<!-- 관심차량 -->
+<div class="swiperType01">
+	<!-- swiper list -->
+	<ul class="swiper-wrapper thumb">
+		<li class="swiper-slide">
+			<a href="#" class="unit_link">
+				<!-- 2022-09-05 추가 -->
+				<div class="unit_img no_img">
+					<img src="/HMC/m/img/noimg_hmc_light.png" alt="이미지 없음"><!-- HMC 기본 버전 -->
+					<!-- <img src="/HMC/m/img/noimg_hmc_dark.png" alt="이미지 없음"> --><!-- HMC bg_dark 버전 -->
+					<!-- <img src="/HMC/m/img/noimg_ghq_light.png" alt="이미지 없음">--> <!-- GHQ 기본 버전 -->
+					<!-- <img src="/HMC/m/img/noimg_ghq_dark.png" alt="이미지 없음"> --><!-- GHQ bg_dark 버전 -->
+				</div>
+				<!-- //2022-09-05 추가 -->
+				<div class="unit_info best">
+					<p class="name">
+						<span class="model">쏘나타 DN8</span>
+						<span class="trim">가솔린 3.3 캘리그래피</span>
+					</p>
+					<p class="price"><em>3,820</em><i>만원</i></p>
+				</div>
+			</a>
+		</li>
+		<li class="swiper-slide">
+			<a href="#" class="unit_link">
+				<div class="unit_img"><img src="/HMC/m/img/@thumb/plp_500x500_01.jpg" alt="상품명으로 뿌려주세요" /></div>
+				<div class="unit_info best">
+					<p class="name">
+						<span class="model">쏘나타 DN8</span>
+						<span class="trim">가솔린 3.3 캘리그래피</span>
+					</p>
+					<p class="price"><em>3,820</em><i>만원</i></p>
+				</div>
+			</a>
+		</li>
+		<li class="swiper-slide">
+			<a href="#" class="unit_link">
+				<div class="unit_img"><img src="/HMC/m/img/@thumb/plp_160x160_01.jpg" alt="상품명으로 뿌려주세요" /></div>
+				<div class="unit_info best">
+					<p class="name">
+						<span class="model">쏘나타 DN8</span>
+						<span class="trim">가솔린 3.3 캘리그래피</span>
+					</p>
+					<p class="price"><em>3,820</em><i>만원</i></p>
+				</div>
+			</a>
+		</li>
+		<li class="swiper-slide">
+			<a href="#" class="unit_link">
+				<div class="unit_img"><img data-src="/HMC/m/img/@thumb/plp_160x160_02.jpg" class="cpo_lazy_h" alt="상품명으로 뿌려주세요" /></div>
+				<div class="unit_info best">
+					<p class="name">
+						<span class="model">쏘나타 DN8</span>
+						<span class="trim">가솔린 3.3 캘리그래피</span>
+					</p>
+					<p class="price"><em>3,820</em><i>만원</i></p>
+				</div>
+			</a>
+		</li>
+		<li class="swiper-slide">
+			<a href="#" class="unit_link">
+				<div class="unit_img"><img data-src="/HMC/m/img/@thumb/plp_160x160_03.jpg" class="cpo_lazy_h" alt="상품명으로 뿌려주세요" /></div>
+				<div class="unit_info best">
+					<p class="name">
+						<span class="model">쏘나타 DN8</span>
+						<span class="trim">가솔린 3.3 캘리그래피</span>
+					</p>
+					<p class="price"><em>3,820</em><i>만원</i></p>
+				</div>
+			</a>
+		</li>
+	</ul>
+	<!-- //swiper list -->
+</div>
+<!-- // 관심차량 -->

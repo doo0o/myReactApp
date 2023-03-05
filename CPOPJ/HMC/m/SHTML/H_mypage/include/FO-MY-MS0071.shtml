@@ -1,0 +1,161 @@
+<!-- FO-MY-MS0071 : 프로모션 상세 - FULL -->
+<div class="CPOpop_full" id="FO-MY-MS0071">
+	<div class="p_head">
+		<h2 class="tit">프로모션 상세</h2>
+	</div>
+	<div class="p_wrap">
+		<div class="document_cont">
+			<section class="top_txt">
+				<p class="error_msg">증빙서류가 다르게 확인되어 승인이 불가합니다.</p>
+				<P class="type01">
+					현대차 가족사랑 할인
+				</P>
+				<p class="type02">현대자동차 임직원 본인(배우자) 4촌 이내 친인척이 차량을 구매할 때, 3% 특별할인 프로모션</p>
+				<div class="list_type01">
+					<dl>
+						<dt>등록기간</dt>
+						<dd>2022.01.01~2022.03.11</dd>
+					</dl>
+					<dl>
+						<dt>사용기간</dt>
+						<dd>2022.01.01~2022.03.11</dd>
+					</dl>
+					<dl>
+						<dt>대상</dt>
+						<dd>계열사, 관계사, 협력사 본인(배우자) 및 4촌 이내 친인척</dd>
+					</dl>
+					<dl>
+						<dt>혜택</dt>
+						<dd>차량가격의 3% 할인</dd>
+					</dl>
+                    <dl>
+						<dt>차종</dt>
+						<dd>그랜저 IG</dd>
+					</dl>
+				</div>
+			</section>
+			<section class="bg_line">
+				<div class="sec_tit">증빙서류</div>
+				<!-- 등록 전 -->
+				<div class="list_type02">
+					<dl>
+						<dt>재직증명서</dt>
+						<dd><button type="button" class="btn_icon_big01">등록하기</button></dd>
+					</dl>
+					<dl>
+						<dt>4대보험 가입증명서</dt>
+						<dd><button type="button" class="btn_icon_big01">등록하기</button></dd>
+					</dl>
+				</div>
+				<!-- //등록 전 -->
+				<!-- 등록 완료 -->
+				<div class="list_type02">
+					<dl>
+						<dt>재직증명서</dt>
+						<dd><button type="button" class="btn_icon_big01">추가하기</button></dd>						
+					</dl>
+					<ul>
+						<li>
+							<button type="button" class="file_name">hyundai_hyundai_hyundai16345556hyundai_hyundai_hyundai16345556.jpg</button>
+							<button type="button" class="btn_txt_mid01">삭제</button>							
+						</li>
+					</ul>
+					<dl>
+						<dt>4대보험 가입증명서</dt>
+						<dd><button type="button" class="btn_icon_big01" disabled>추가하기</button></dd>
+					</dl>
+					<ul>
+						<li>
+							<button type="button" class="file_name">hyundai16345556873.jpg</button>
+							<button type="button" class="btn_txt_mid01">삭제</button>
+						</li>
+						<li>
+							<button type="button" class="file_name">hyundai16345556873.jpg</button>
+							<button type="button" class="btn_txt_mid01">삭제</button>
+						</li>
+						<li>
+							<button type="button" class="file_name">hyundai16345556873.jpg</button>
+							<button type="button" class="btn_txt_mid01">삭제</button>
+						</li>
+						<li>
+							<button type="button" class="file_name">hyundai16345556873.jpg</button>
+							<button type="button" class="btn_txt_mid01">삭제</button>
+						</li>
+						<li>
+							<button type="button" class="file_name">hyundai16345556873.jpg</button>
+							<button type="button" class="btn_txt_mid01">삭제</button>
+						</li>
+					</ul>
+				</div>
+				<!-- //등록 완료 -->
+				<!-- 서류검토중 -->
+				<div class="list_type02">
+					<dl>
+						<dt>재직증명서</dt>
+						<dd></dd>
+					</dl>
+					<ul>
+						<li>
+							<button type="button" class="file_name">hyundai_hyundai_hyundai16345556hyundai_hyundai_hyundai16345556.jpg</button>
+							<p class="noti_txt">반려사유 : 해당 서류의 유효기간이 만료되었습니다.</p>
+						</li>
+						<li>
+							<button type="button" class="file_name">hyundai16345556873.jpg</button>
+							<p class="noti_txt">반려사유 : 올바른 증빙서류로 다시 업로드해 주세요.</p>
+						</li>
+					</ul>
+					<dl>
+						<dt>4대보험 가입증명서</dt>
+						<dd></dd>
+					</dl>
+					<ul>
+						<li>
+							<button type="button" class="file_name">hyundai16345556873.jpg</button>
+						</li>
+						<li>
+							<button type="button" class="file_name">hyundai16345556873.jpg</button>
+						</li>
+						<li>
+							<button type="button" class="file_name">hyundai16345556873.jpg</button>
+						</li>
+						<li>
+							<button type="button" class="file_name">hyundai16345556873.jpg</button>
+						</li>
+						<li>
+							<button type="button" class="file_name">hyundai16345556873.jpg</button>
+						</li>
+					</ul>
+				</div>
+				<!-- //서류검토중 -->
+                <div class="caution">
+                    <ul>
+                        <li>최대 3영업일 이내에 심사가 완료됩니다.</li>
+                        <li>12MB 미만의 파일로 최대 5개까지 등록이 가능합니다.</li>
+                    </ul>
+                </div>
+			</section>
+		</div>
+
+		<!-- 04. sticky button -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01" disabled>등록완료</button>
+		</div>
+
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">등록완료</button>
+		</div>
+		<div class="btn_sticky">
+			<button type="button" class="btn_big03">등록 취소하기</button>
+			<button type="button" class="btn_big01">수정하기</button>
+		</div>
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">수정완료</button>
+		</div>
+		<div class="btn_sticky">
+			<button type="button" class="btn_big03">삭제하기</button>
+			<button type="button" class="btn_big01">수정하기</button>
+		</div>
+		<!--// 04. sticky button -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

@@ -1,0 +1,29 @@
+<div class="popup_full" id="FO-MY-PS0094">
+	<div class="p_body">
+		<div class="p_inner s_mid">
+			<div class="p_head">
+				<h2 class="tit">주행거리 및 사진 수정</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+					<div class="inner_view order_detail">
+						<div class="sale_photo">
+							<!--#include file="/HMC/p/SHTML/H_order/include/sale_photo.shtml"-->
+						</div>
+						<div class="btn_area col_type">
+							<button type="button" class="btn_big color01">수정하기</button>
+						</div>
+					</div>
+				<!-- //contents -->
+			</div>
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>
+<script>
+ImgUpload01();
+$(".btn_addphoto").on("click",function(e){
+	e.target.closest('div').querySelector('input[type="file"]').click();
+});
+ImgUpload02();
+</script>

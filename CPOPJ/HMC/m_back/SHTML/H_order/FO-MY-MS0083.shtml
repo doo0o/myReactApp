@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>제휴 보험사 : 현대 CPO</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_order.css">
+</head>
+<body>
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--#include file="/HMC/m/SHTML/H_inc/layout_header.shtml"-->
+		<!-- s: h_header : default  -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">제휴 보험사</h1>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="insurance">
+			<section class="top_txt">
+				<P class="type01">
+					제휴 보험사의 상품을<br>
+					가입하고 다양한 혜택을<br>
+					받아보세요.
+				</P>
+				<p class="type02">보험사 선택 시, 해당 보험사 가입 화면으로 이동합니다.</p>
+				<p class="caution">일반 상품의 가입을 원할 경우, 직접 가입을 진행해주세요.</p>
+			</section>
+			<ul class="list">
+				<li>
+					<a href="javascript:void(0);">
+						<img src="/HMC/m/img/@thumb/insurance_logo_01.png" alt="" />
+						<p class="tit">현대해상</p>
+						<p class="txt">전용보험 가입 시, 리워드 3만원</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="/HMC/m/img/@thumb/insurance_logo_02.png" alt="" />
+						<p class="tit">DB 손해보험</p>
+						<p class="txt">전용보험 가입 시, 리워드 3만원</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="/HMC/m/img/@thumb/insurance_logo_03.png" alt="" />
+						<p class="tit">삼성화재</p>
+						<p class="txt">전용보험 가입 시, 리워드 3만원</p>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);">
+						<img src="/HMC/m/img/@thumb/insurance_logo_04.png" alt="" />
+						<p class="tit">Carrot 보험</p>
+						<p class="txt">전용보험 가입 시, 리워드 3만원</p>
+					</a>
+				</li>
+			</ul>
+		</div>
+        <!-- 03. fixed button -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big03">제휴 보험 가입 완료</button>
+		</div>
+		<!-- //03. fixed button -->
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+
+<script>
+	$(document).ready(function() {
+		// 초기날짜셋팅
+		$('#startDate').datepicker('setDate', new Date(new Date().setMonth(new Date().getMonth()-3)));
+		$('#endDate').datepicker('setDate', new Date());
+	});
+		
+	</script>
+</body>
+</html>

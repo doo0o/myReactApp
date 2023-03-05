@@ -1,0 +1,79 @@
+<div class="pdp03_tabs white">
+	<div class="top">
+		<p class="tit">
+			<span>다양한 옵션들이 있어요</span>
+			<button type="button" class="btn_arrow_small01 jQ_POP_open" data-popup="FO-PD-MS0008">더보기</button>
+		</p>
+	</div>
+	<div class="cont_box option">
+		<ol class="option_01">
+			<li>
+				<span class="option_key001">내비게이션</span>
+			</li>
+			<li>
+				<span class="option_key013">하이패스</span>
+			</li>
+			<li>
+				<span class="option_key002">블루투스</span>
+			</li>
+			<li>
+				<span class="option_key031">크루즈<br>컨트롤</span>
+			</li>
+			<li>
+				<span class="option_key014">열선<br>스티어링 휠</span>
+			</li>
+			<li>
+				<span class="option_key015">열선 시트<br>(앞좌석)</span>
+			</li>
+			<li>
+				<span class="option_key016">열선 시트<br>(뒷좌석)</span>
+			</li>
+			<li>
+				<span class="option_key017">전동 시트<br>(앞좌석)</span>
+			</li>
+			<li>
+				<span class="option_key018">전동 시트<br>(뒷좌석)</span>
+			</li>
+			<li>
+				<span class="option_key019">통풍 시트<br>(앞좌석)</span>
+			</li>
+			<li>
+				<span class="option_key021">가죽 시트</span>
+			</li>
+			<li>
+				<span class="option_key022">인조가죽<br>시트</span>
+			</li>
+			<li>
+				<span class="option_key023">직물 시트</span>
+			</li>
+			<li>
+				<span class="option_key033">전동식<br>트렁크</span>
+			</li>
+			<li>
+				<span class="option_key012">선루프</span>
+			</li>
+			<li>
+				<span class="option_key037">헤드업<br>디스플레이</span>
+			</li>
+			<li>
+				<span class="option_key035">서라운드 뷰<br>모니터</span>
+			</li>
+			<li>
+				<span class="option_key036">후방 모니터</span>
+			</li>
+			<li>
+				<span class="option_key038">후측방 경보<br>시스템</span>
+			</li>
+			<li>
+				<span class="option_key039">차선<br>이탈 경보</span>
+			</li>
+			<li>
+				<span class="option_key034">버튼 시동</span>
+			</li>
+			<li>
+				<span class="option_key040">스마트 키</span>
+			</li>
+		</ol>
+	</div>
+	<p class="caution">이전 차주 블랙박스는 현대자동차 점검 대상에 포함되지 않습니다.</p><!-- CPO-4718 -->
+</div>

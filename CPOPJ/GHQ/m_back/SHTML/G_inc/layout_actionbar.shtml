@@ -1,0 +1,10 @@
+<!-- s: actionbar -->
+<div id="CPOactionbar">
+	<ul>
+		<li><a href="#" class="ac_home">HOME</a></li>
+		<li><button type="button" class="ac_saerch search-toggle">SEARCH</button></li>
+		<li><a href="#" class="ac_mypage">MY</a></li>
+		<li><a href="#" class="ac_wish">LIKE</a></li>
+	</ul>
+</div>
+<!-- e: actionbar -->

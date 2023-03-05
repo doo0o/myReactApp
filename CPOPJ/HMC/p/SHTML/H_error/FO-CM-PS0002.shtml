@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>에러페이지 : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_error.css">
+</head>
+<body>
+	<div id="CPOwrap">
+		<!--#include file="/HMC/p/SHTML/H_inc/error_header.shtml"-->
+
+		<div id="CPOcontents">
+			<div id="layoutWrap" class="error type_bg">
+				<!-- container -->
+				<div class="container"> 
+					<div class="error_cont">
+						<h1 class="tit">고객님 이용에 불편을 드려 죄송합니다.</h1>
+						<p class="txt">서비스 이용량이 많아 현재 접속이 원활하지않습니다.<br>잠시 후 다시 시도해 주세요.</p>
+						<div class="btn_area">
+							<button type="button" class="btn_small color02">홈으로 가기</button>
+						</div>
+					</div>
+				</div>
+				<!-- //container -->
+			</div>
+		</div>
+
+		<!--#include file="/HMC/p/SHTML/H_inc/error_footer.shtml"-->
+	</div>
+	<!--HMC_KR_FO-CM-MS0002_에러페이지_서버오류-->
+</body>
+</html> 

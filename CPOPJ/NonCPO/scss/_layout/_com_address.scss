@@ -1,0 +1,203 @@
+
+
+// input type1. 
+[class^="inbox_type"]{//  
+											// type2 = 원, 숫자, 삭제버튼
+											// type3 = 타이틀 UP, error 메세지
+											// type4 = 주소검색, 검색 필드 입력값
+											// type5 = 타이틀, 주소검색버튼
+	position:relative;
+	width:100%;
+	background:$COL_White;
+	border:1px solid transparent;
+	> .tit{// 타이틀
+		position:absolute;
+		top:50%;
+		left:17px;
+		transform:translateY(-50%);
+		color:$COL_Gray05;
+	}
+	> .txt{// 인풋 입력박스
+		width:100%;
+		caret-color:$COL_Blue02;
+		background:$COL_White;
+		border:0;
+		color:$COL_Gray08;
+		@include Mix_Font('Txt-R', 15, 18);
+		&:disabled{
+			color:$COL_Gray05;
+		}
+		&:focus{
+			outline:none;
+		}
+		&::placeholder{
+			color:$COL_Gray08;
+			@include Mix_Font('Txt-R', 15, 18);
+		}
+	}
+}
+// input type4. 
+.inbox_type04{// (1.주소검색)
+	&.focus{
+		.ico_delete{
+			&::before{
+				display:block;
+			}
+		}
+	}
+	> .tit{
+		@include Mix_Font('Txt-R', 14, 18);
+	}
+	> .txt{
+		height:47px;
+		padding:2px 0;
+		color:$COL_Gray08;
+		@include Mix_Font('Head-R', 16, 43);
+	}
+}
+
+.addr_head{// 검색하기 1. 상단 검색어 입력
+	position:sticky;
+	top:0;
+	left:0;
+	z-index:5;
+	width:100%;
+	height:55px;
+	transition:all 1s;
+	background:$COL_Light;
+	border-top:1px solid $COL_Gray02;
+	.inbox_type04{// header 타이틀 
+		position:relative;
+		width:100%;
+		height:50px;
+		padding:0 60px 0 20px;
+		border-bottom:1px solid $COL_Blue02;
+		background:$COL_White;
+		box-shadow:0px 3px 6px rgba($COL_Gray08, 0.12);
+		transition:all .1s linear;
+		.ic_search{// header - 검색 - 검은색
+			display:block;
+			position:absolute;
+			top:50%;
+			right:15px;
+			margin-top:-13px;
+			width:24px;
+			height:24px;
+			@include Mix_Size_0;
+			&::before{
+				content:'';
+				display:block;
+				width:20px;
+				height:20px;
+				margin:0 auto;
+				@include Mix_Layout_Bg;
+				background-position:-51px -27px;
+			}
+		}
+		.ico_delete{
+			right:15px;
+		}
+	}
+}
+
+.address_txt{
+	padding:40px 21px;
+	.tit{
+		color:$COL_Gray08;
+		@include Mix_Font('Head-M', 26, 33);
+	}
+	.txt{
+		margin-top:12px;
+		color:$COL_Gray08;
+		@include Mix_Font('Txt-R', 15, 23);
+	}
+	.txt2{
+		margin-top:25px;
+		color:$COL_Gray08;
+		@include Mix_Font('Txt-R', 14, 21);
+		li:last-child{
+			margin-top:15px;
+		}
+		em{
+			display:block;
+			margin-top: 2px;
+			color:$COL_Gray05;
+		}
+	}
+}
+
+.address_list{
+	padding:25px 15px 90px;
+	background-color:$COL_Light;
+	.total{
+		position:relative;
+		margin-bottom:10px;
+		padding:0 6px;
+		color:$COL_Gray08;
+		@include Mix_Font('Head-R', 14, 21);
+		.num{
+			float:right;
+			color:$COL_Gray08;
+			@include Mix_Font('Txt-R', 14, 21);
+			i{
+				color:$COL_Blue02;
+				@include Mix_Font('Txt-M', 14, 21);
+			}
+		}
+	}
+	.list{
+		background-color:$COL_White;
+		button{
+			width:100%;
+			padding:20px;
+			border-bottom:1px solid $COL_Gray02;
+			font-size:0;
+			text-align: left;
+			>span{
+				display:block;
+				text-align:left;
+				&:last-child{
+					margin-top:5px;
+				}
+			}
+			.num{
+				display: inline-block;
+				position: relative;
+				margin-bottom:7px;
+				color:$COL_Blue02;
+				@include Mix_Font('Head-R', 14, 18);
+				&:before {
+					content: '';
+					display: block;
+					position: absolute;
+					left: 0;
+					bottom: 1px;
+					width: 100%;
+					height: 1px;
+					background-color: $COL_Blue02;
+				}
+			}
+			.addr{
+				display:flex;
+				color:$COL_Gray08;
+				@include Mix_Font('Txt-R', 13, 21);
+				.flag{
+					width:43px;
+					height:21px;
+					margin-right:5px;
+					background-color:$COL_White;
+					border:1px solid $COL_Gray03;
+					color:$COL_Gray07;
+					@include Mix_Font('Head-R', 12, 21);
+					text-align:center;
+				}
+				.txt{
+					flex:1;
+				}
+			}
+		}
+		li:last-child button{
+			border:0;
+		}
+	}
+}

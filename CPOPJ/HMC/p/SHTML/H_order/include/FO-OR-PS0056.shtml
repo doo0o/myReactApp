@@ -1,0 +1,72 @@
+<div class="popup_modal" id="FO-OR-PS0056">
+	<div class="p_body">
+		<div class="p_inner s_small">
+			<div class="p_head">
+				<h2 class="tit">오토할부신청</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+				<div class="inner_view layer_installment">
+					<div class="top_wrap">
+						<p class="txt1">현대 인증중고차 내차사기를 위한 오토할부 신청을 진행해 주세요.</p>
+						<p class="txt2">최대 한도 및 상환기간 내에서 할부원금, 상환기간을 선택해 주세요.</p>
+						<div class="info_box">
+							<span class="installment">이용금리<em>연 5.9%</em></span>
+							<span class="installment">상환기간<em>60개월</em></span>
+							<span class="installment">최대한도<em>178,356</em><i>원</i></span>
+						</div>
+					</div>
+					<div class="sec_tit s">할부 상품 선택</div>
+					<ul class="form_list type03">
+						<li>
+							<label class="tit">상환기간</label>
+							<div class="form_area">
+								<span class="com_select hs02" data-ref="select">
+									<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample" onclick="dropDown();">
+										상환기간
+									</button>
+									<span class="com_select_list" data-ref="dropDownList" id="dropDownExample">
+										<span class="com_select_list_inner">
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>상환기간</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>12개월</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>24개월</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>36개월</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>48개월</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>60개월</span></label>
+										</span>
+									</span>
+								</span>
+							</div>
+						</li>
+						<li>
+							<label class="tit">할부원금</label>
+							<div class="form_area">
+								<div class="inbox_type02 hs02 txt_r " onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+									<input type="tel" class="txt type_nc" placeholder="" value="">
+									<button type="button" class="btn_delete">삭제</button>
+									<em>원</em>
+								</div>
+								<p class="validation error">
+									할부원금은  최소 10만원 이상 입력되어야 합니다.<br>
+									최대한도 이내의 금액을 입력해 주세요. 
+								</p>
+							</div>
+						</li>
+						<li>
+							<div class="tit">예상 납입금액</div>
+							<div class="price">월 <em>0</em> 원</div>
+						</li>
+					</ul>
+				</div>
+				<!-- //contents -->
+				<!-- sticky -->
+				<div class="btn_area full_type">
+					<button type="button" class="btn_big color02">돌아가기</button>
+					<button type="button" class="btn_big color01">오토할부 신청하기</button>
+				</div>
+				<!-- // sticky -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>비교차량 선택 : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_order.css">
+</head>
+<body>
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">비교차량 선택</h1>
+			<div class="util">
+				<ul>
+					<li><a href="#" class="ic_search">검색하기</a></li>
+					<li><a href="#" class="ic_home">홈으로 가기</a></li>
+					<!-- <li><a href="#" class="ic_cart">장바구니</a></li>
+					<li><a href="#" class="ic_alarm">알림</a></li>
+					<li><a href="#" class="ic_set">설정하기</a></li> -->
+				</ul>	
+			</div>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="compare_car">
+			<!-- 2023.01.25 CPO-8585 -->
+			<div class="top_total">
+				<div><strong>1</strong>개 선택/<span class="all">전체 <em>20</em>개</span></div>
+				<button type="button" class="btn_icon_mid01">선택취소</button>
+			</div>
+			<!-- // 2023.01.25 CPO-8585 -->	
+			<!--  안내 -->
+			<div class="caution small bg">
+				<ul>
+					<li>차량은 최소 2대부터 5대까지 비교 가능합니다.</li>
+					<li>보유차량을 비교할 경우, 실제 데이터와 다를 수 있습니다.</li>
+					<li>보유차량이 타사 차량인 경우 비교하기가 불가합니다.</li><!-- 2022-10-20 CPO-4727 -->
+				</ul>
+			</div>
+			<!-- // 안내 -->			
+			<!--  보유차량 -->
+			<!-- 보유차량 등록 전 -->
+			<section class="car_add">
+				<p class="txt">보유차량과도 비교해 보세요.</p>
+				<div class="btn_area">
+					<button type="button" class="btn_mid02 icon_plus">보유차량 등록하기</button>
+					<a class="btn_arrow_mid01" href="">로그인해서 내 보유차랑 보기</a><!-- 2022-10-20 CPO-4727 -->
+				</div>
+			</section>
+			<!-- // 보유차량 등록 전 -->
+			<!-- 보유차량 등록 후 -->
+			<section class="slide_product">
+				<div class="sec_tit">
+					<a href="#">보유차량</a>
+					<span class="all">전체 <em>3</em>개</span>
+				</div>
+				<div class="swiperType01">
+					<!-- swiper list -->
+					<ul class="swiper-wrapper thumb">
+						<li class="swiper-slide"> <!-- 품절,판매종료 시 soldout class 추가 -->
+							<a href="#" class="unit_link">
+								<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_00_2">
+								<label for="CompareCheck_00_2"> <!-- check 시 class="on" 추가 -->
+									<em class="num">2</em> <!-- 기준시 class base 추가 -->
+									<!-- 2022-09-05 추가 -->
+									<!-- no_img 보유차량 -->
+									<div class="unit_img no_img">
+										<img src="/HMC/m/img/noimg_sale_hmc.png" alt="이미지 없음">
+										<!-- <img src="/HMC/m/img/noimg_sale_ghq.png" alt="ghq 이미지 없음"> -->
+									</div>
+									<!-- //2022-09-05 추가 -->
+								</label>
+								<div class="unit_info">
+									<p class="name">
+										<span class="model">현대 그랜저 IG</span>
+										<span class="desc">가솔린 3.3 캘리그래피</span>
+									</p>
+									<p class="drive">
+										<em>20년 12월(21년형)</em>										
+									</p>
+									<p class="price"><em>3,820</em><i>만원</i></p>
+								</div>
+							</a>
+						</li>
+						<!-- default -->
+						<li class="swiper-slide"> <!-- 품절,판매종료 시 soldout class 추가 -->
+							<a href="#" class="unit_link">
+								<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_00">
+								<label for="CompareCheck_00"> <!-- check 시 class="on" 추가 -->
+									<em class="num">2</em> <!-- 기준시 class base 추가 -->
+									<div class="unit_img">
+										<img src="https://code2.car2b.com/data/_NewCarDB/FrontImage//20190308/5c8212e94c600_0.png" alt="상품명으로 뿌려주세요">
+										<!-- <span class="end">일시품절</span> -->
+									</div>
+								</label>
+								<div class="unit_info">
+									<p class="name">
+										<span class="model">현대 그랜저 IG</span>
+										<span class="desc">가솔린 3.3 캘리그래피</span>
+									</p>
+									<p class="drive">
+										<em>20년 12월(21년형)</em>										
+									</p>
+									<p class="price"><em>3,820</em><i>만원</i></p>
+								</div>
+							</a>
+						</li>
+						<!-- case1: 선택된상태 -->
+						<li class="swiper-slide"> <!-- 품절,판매종료 시 soldout class 추가 -->
+							<a href="#" class="unit_link">
+								<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_01" checked>
+								<label for="CompareCheck_01" class="on"> <!-- check 시 class="on" 추가 -->
+									<em class="num base">1</em> <!-- 기준시 class base 추가 -->
+									<div class="unit_img">
+										<img src="https://code2.car2b.com/data/_NewCarDB/FrontImage//20190308/5c8212e94c600_0.png" alt="상품명으로 뿌려주세요">
+										<!-- <span class="end">일시품절</span> -->
+									</div>
+								</label>
+								<div class="unit_info">
+									<p class="name">
+										<span class="model">현대 그랜저 IG</span>
+										<span class="desc">가솔린 3.3 캘리그래피</span>
+									</p>
+									<p class="drive">
+										<em>20년 12월(21년형)</em>
+										
+									</p>
+									<p class="price"><em>3,820</em><i>만원</i></p>
+								</div>
+							</a>
+						</li>
+						<!-- case2: 선택된 중복상품 -->
+						<li class="swiper-slide"> <!-- 품절,판매종료 시 soldout class 추가 -->
+							<a href="#" class="unit_link">
+								<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_03" disabled>
+								<label for="CompareCheck_03"> <!-- check 시 class="on" 추가 -->
+									<em class="num">1</em> <!-- 기준시 class base 추가 -->
+									<div class="unit_img">
+										<img src="https://code2.car2b.com/data/_NewCarDB/FrontImage//20190308/5c8212e94c600_0.png" alt="상품명으로 뿌려주세요">
+										<!-- <span class="end">일시품절</span> -->
+									</div>
+								</label>
+								<div class="unit_info">
+									<p class="name">
+										<span class="model">현대 그랜저 IG</span>
+										<span class="desc">가솔린 3.3 캘리그래피</span>
+									</p>
+									<p class="drive">
+										<em>20년 12월(21년형)</em>
+										
+									</p>
+									<p class="price"><em>3,820</em><i>만원</i></p>
+								</div>
+							</a>
+						</li>
+						<!-- case3: 선택상품이 5개이상이어서 더이상 선택못함 -->
+						<li class="swiper-slide"> <!-- 품절,판매종료 시 soldout class 추가 -->
+							<a href="#" class="unit_link">
+								<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_04" disabled>
+								<label for="CompareCheck_04"> <!-- check 시 class="on" 추가 -->
+									<em class="num">1</em> <!-- 기준시 class base 추가 -->
+									<div class="unit_img">
+										<img src="https://code2.car2b.com/data/_NewCarDB/FrontImage//20190308/5c8212e94c600_0.png" alt="상품명으로 뿌려주세요">
+										<!-- <span class="end">일시품절</span> -->
+									</div>
+								</label>
+								<div class="unit_info">
+									<p class="name">
+										<span class="model">현대 그랜저 IG</span>
+										<span class="desc">가솔린 3.3 캘리그래피</span>
+									</p>
+									<p class="drive">
+										<em>20년 12월(21년형)</em>										
+									</p>
+									<p class="price"><em>3,820</em><i>만원</i></p>
+								</div>
+							</a>
+						</li>
+						<!-- case4: 가격정보 없음 -->
+						<li class="swiper-slide"> <!-- 품절,판매종료 시 soldout class 추가 -->
+							<a href="#" class="unit_link">
+								<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_05">
+								<label for="CompareCheck_05"> <!-- check 시 class="on" 추가 -->
+									<em class="num">3</em> <!-- 기준시 class base 추가 -->
+									<div class="unit_img">
+										<img data-src="/HMC/m/img/@thumb/plp_160x160_01.jpg" class="" alt="상품명으로 뿌려주세요" src="/HMC/m/img/@thumb/plp_160x160_01.jpg">
+										<!-- <span class="end">일시품절</span> -->
+									</div>
+								</label>								
+								<div class="unit_info">
+									<p class="name">
+										<span class="model">현대 그랜저 IG</span>
+										<span class="desc">가솔린 3.3 캘리그래피</span>
+									</p>
+									<p class="drive">
+										<em>20년 12월(21년형)</em>
+										<em>100,000km</em>										
+									</p>
+									<p class="price none">가격정보 없음</p>
+								</div>
+							</a>
+						</li>												
+						<!-- case5: 품절 -->
+						<li class="swiper-slide soldout"> <!-- 품절,판매종료 시 soldout class 추가 -->
+							<a href="#" class="unit_link">
+								<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_06">
+								<label for="CompareCheck_06"> <!-- check 시 class="on" 추가 -->
+									<em class="num">3</em> <!-- 기준시 class base 추가 -->
+									<div class="unit_img">
+										<img data-src="/HMC/m/img/@thumb/plp_160x160_01.jpg" class="" alt="상품명으로 뿌려주세요" src="/HMC/m/img/@thumb/plp_160x160_01.jpg">
+										<span class="end">일시품절</span>
+										<!-- <span class="end">판매종료</span> -->
+									</div>
+								</label>								
+								<div class="unit_info">
+									<p class="name">
+										<span class="model">현대 그랜저 IG</span>
+										<span class="desc">가솔린 3.3 캘리그래피</span>
+									</p>
+									<p class="drive">
+										<em>20년 12월(21년형)</em>
+										<em>100,000km</em>
+										
+									</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+					<!-- //swiper list -->
+				</div>
+				<div class="btn_area">
+					<button type="button" class="btn_mid02 icon_plus">차량추가</button>
+				</div>
+			</section>
+			<!-- //보유차량 등록 후 -->
+			<div class="compare_box">				
+				<!-- // 보유차량 -->
+				<!--  장바구니 -->
+				<section class="slide_product">
+					<div class="sec_tit">
+						<a href="#">장바구니</a>
+						<span class="all">전체 <em>5</em>개</span>
+					</div>
+					<div class="swiperType01">
+						<!-- swiper list -->
+						<ul class="swiper-wrapper thumb">
+							<li class="swiper-slide"> <!-- 품절,판매종료 시 soldout class 추가 -->
+								<a href="#" class="unit_link">
+									<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_07">
+									<label for="CompareCheck_07"><!-- check 시 class="on"  on 추가 -->
+										<em class="num">4</em><!-- 기준시 class base 추가 -->
+										<div class="unit_img">
+											<img data-src="/HMC/m/img/@thumb/plp_160x160_01.jpg" class="" alt="상품명으로 뿌려주세요" src="/HMC/m/img/@thumb/plp_160x160_01.jpg">
+											<!-- <span class="end">일시품절</span> -->
+										</div>
+									</label>
+									<div class="unit_info">
+										<p class="name">
+											<span class="model">현대 더 뉴 그랜저</span>
+											<span class="desc">가솔린 프리미엄 밀레니얼</span>
+										</p>
+										<p class="drive">
+											<em>21년형</em>
+											<em>50,000km</em>											
+										</p>
+										<p class="price"><em>3,440~3,600</em><i>만원</i></p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide"> <!-- 품절,판매종료 시 soldout class 추가 -->
+								<a href="#" class="unit_link">
+									<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_07_2">
+									<label for="CompareCheck_07_2"><!-- check 시 class="on"  on 추가 -->
+										<em class="num">4</em><!-- 기준시 class base 추가 -->
+										<!-- 2022-09-05 추가 -->
+										<!-- no_img -->
+										<div class="unit_img no_img">
+											<img src="/HMC/m/img/noimg_hmc_light.png" alt="이미지 없음"><!-- HMC 기본 버전 -->
+											<!-- <img src="/HMC/m/img/noimg_ghq_light.png" alt="이미지 없음">--> <!-- GHQ 기본 버전 -->
+										</div>
+										<!-- //2022-09-05 추가 -->
+									</label>
+									<div class="unit_info">
+										<p class="name">
+											<span class="model">현대 더 뉴 그랜저</span>
+											<span class="desc">가솔린 프리미엄 밀레니얼</span>
+										</p>
+										<p class="drive">
+											<em>21년형</em>
+											<em>50,000km</em>											
+										</p>
+										<p class="price"><em>3,440~3,600</em><i>만원</i></p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide"> <!-- 품절,판매종료 시 soldout class 추가 -->
+								<a href="#" class="unit_link">
+									<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_08">
+									<label for="CompareCheck_08" class="on"> <!-- check 시 class="on" 추가 -->
+										<em class="num base">5</em> <!-- 기준시 class base 추가 -->
+										<div class="unit_img">
+											<img src="/HMC/m/img/@thumb/plp_500x500_02.jpg" alt="상품명으로 뿌려주세요">
+											<!-- <span class="end">일시품절</span> -->
+										</div>
+									</label>
+									<div class="unit_info">
+										<p class="name">
+											<span class="model">더 뉴 그랜저</span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</p>
+										<p class="drive">
+											<em>19년 2월(21년형)</em>
+											<em>12,167km</em>											
+										</p>
+										<p class="price"><em>3,820</em><i>만원</i></p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide"> <!-- 품절,판매종료 시 soldout class 추가 -->
+								<a href="#" class="unit_link">
+									<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_09">
+									<label for="CompareCheck_09"> <!-- check 시 class="on" 추가 -->
+										<em class="num">6</em> <!-- 기준시 class base 추가 -->
+										<div class="unit_img">
+											<img data-src="/HMC/m/img/@thumb/plp_160x160_01.jpg" class="" alt="상품명으로 뿌려주세요" src="/HMC/m/img/@thumb/plp_160x160_01.jpg">
+											<!-- <span class="end">일시품절</span> -->
+										</div>
+									</label>
+									<div class="unit_info">
+										<p class="name">
+											<span class="model">더 뉴 그랜저</span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</p>
+										<p class="drive">
+											<em>19년 2월(21ㄴ년형)</em>
+											<em>12,167km</em>											
+										</p>
+										<p class="price"><em>3,820</em><i>만원</i></p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide soldout"> <!-- 품절,판매종료 시 soldout class 추가 -->
+								<a href="#" class="unit_link">
+									<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_10" disabled="">
+									<label for="CompareCheck_10"> <!-- check 시 class="on"  on 추가 -->
+										<em class="num">7</em> <!-- 기준시 class base 추가 -->
+										<div class="unit_img">
+											<img data-src="/HMC/m/img/@thumb/plp_160x160_01.jpg" class="" alt="상품명으로 뿌려주세요" src="/HMC/m/img/@thumb/plp_160x160_01.jpg">
+											<span class="end">일시품절</span>
+										</div>
+									</label>								
+									<div class="unit_info">
+										<p class="name">
+											<span class="model">현대 그랜저 IG</span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</p>
+										<p class="drive">
+											<em>20년 12월(21년형)</em>
+											<em>100,000km</em>
+											
+										</p>
+										<p class="price"><em>2,000</em><em>~</em><em>3,280</em><i>만원</i></p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide"> <!-- 품절,판매종료 시 soldout class 추가 -->
+								<a href="#" class="unit_link">
+									<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_11">
+									<label for="CompareCheck_11"><!-- check 시 class="on"  on 추가 -->
+										<em class="num">8</em><!-- 기준시 class base 추가 -->
+										<div class="unit_img">
+											<img data-src="/HMC/m/img/@thumb/plp_160x160_01.jpg" class="" alt="상품명으로 뿌려주세요" src="/HMC/m/img/@thumb/plp_160x160_01.jpg">
+											<!-- 일시품절 -->
+										</div>
+									</label>
+									<div class="unit_info">
+										<p class="name">
+											<span class="model">현대 더 뉴 그랜저</span>
+											<span class="desc">가솔린 프리미엄 밀레니얼</span>
+										</p>
+										<p class="drive">
+											<em>21년형</em>
+											<em>50,000km</em>
+											
+										</p>
+										<p class="price"><em>3,440~3,600</em><i>만원</i></p>
+									</div>
+								</a>
+							</li>						
+						</ul>
+						<!-- //swiper list -->
+					</div>
+				</section>
+				<!-- // 장바구니 -->
+				<!--  찜한상품 -->
+				<section class="slide_product">
+					<div class="sec_tit">
+						<a href="#">찜한상품</a>
+						<span class="all">전체 <em>4</em>개</span>
+					</div>
+					<div class="swiperType01">
+						<!-- swiper list -->
+						<ul class="swiper-wrapper thumb">
+							<li class="swiper-slide"> <!-- 품절,판매종료 시 soldout class 추가 -->
+								<a href="#" class="unit_link">
+									<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_12">
+									<label for="CompareCheck_12"><!-- check 시 class="on"  on 추가 -->
+										<em class="num">9</em><!-- 기준시 class base 추가 -->
+										<div class="unit_img">
+											<img data-src="/HMC/m/img/@thumb/plp_160x160_01.jpg" class="" alt="상품명으로 뿌려주세요" src="/HMC/m/img/@thumb/plp_160x160_01.jpg">
+											<!-- <span class="end">일시품절</span> -->
+										</div>
+									</label>
+									<div class="unit_info">
+										<p class="name">
+											<span class="model">현대 더 뉴 그랜저</span>
+											<span class="desc">가솔린 프리미엄 밀레니얼</span>
+										</p>
+										<p class="drive">
+											<em>21년형</em>
+											<em>50,000km</em>											
+										</p>
+										<p class="price"><em>3,440~3,600</em><i>만원</i></p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide"> <!-- 품절,판매종료 시 soldout class 추가 -->
+								<a href="#" class="unit_link">
+									<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_13">
+									<label for="CompareCheck_13" class="on"> <!-- check 시 class="on" 추가 -->
+										<em class="num base">10</em> <!-- 기준시 class base 추가 -->
+										<div class="unit_img">
+											<img src="/HMC/m/img/@thumb/plp_500x500_02.jpg" alt="상품명으로 뿌려주세요">
+											<!-- <span class="end">일시품절</span> -->
+										</div>
+									</label>
+									<div class="unit_info">
+										<p class="name">
+											<span class="model">더 뉴 그랜저</span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</p>
+										<p class="drive">
+											<em>19년 2월(21년형)</em>
+											<em>12,167km</em>											
+										</p>
+										<p class="price"><em>3,820</em><i>만원</i></p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide"> <!-- 품절,판매종료 시 soldout class 추가 -->
+								<a href="#" class="unit_link">
+									<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_14">
+									<label for="CompareCheck_14"> <!-- check 시 class="on" 추가 -->
+										<em class="num">11</em> <!-- 기준시 class base 추가 -->
+										<div class="unit_img">
+											<img data-src="/HMC/m/img/@thumb/plp_160x160_01.jpg" class="" alt="상품명으로 뿌려주세요" src="/HMC/m/img/@thumb/plp_160x160_01.jpg">
+											<!-- <span class="end">일시품절</span> -->
+										</div>
+									</label>
+									<div class="unit_info">
+										<p class="name">
+											<span class="model">더 뉴 그랜저</span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</p>
+										<p class="drive">
+											<em>19년 2월(21ㄴ년형)</em>
+											<em>12,167km</em>											
+										</p>
+										<p class="price"><em>3,820</em><i>만원</i></p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide soldout"> <!-- 품절,판매종료 시 soldout class 추가 -->
+								<a href="#" class="unit_link">
+									<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_15" disabled="">
+									<label for="CompareCheck_15"> <!-- check 시 class="on"  on 추가 -->
+										<em class="num">12</em> <!-- 기준시 class base 추가 -->
+										<div class="unit_img">
+											<img data-src="/HMC/m/img/@thumb/plp_160x160_01.jpg" class="" alt="상품명으로 뿌려주세요" src="/HMC/m/img/@thumb/plp_160x160_01.jpg">
+											<span class="end">일시품절</span>
+										</div>
+									</label>								
+									<div class="unit_info">
+										<p class="name">
+											<span class="model">현대 그랜저 IG</span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</p>
+										<p class="drive">
+											<em>20년 12월(21년형)</em>
+											<em>100,000km</em>
+											
+										</p>
+										<p class="price"><em>2,000</em><em>~</em><em>3,280</em><i>만원</i></p>
+									</div>
+								</a>
+							</li>						
+						</ul>
+						<!-- //swiper list -->
+					</div>
+				</section>
+				<!-- // 찜한상품 -->
+				<!--  최근본상품 -->
+				<section class="slide_product">
+					<div class="sec_tit">
+						<a href="#">최근본상품</a>
+						<span class="all">전체 <em>5</em>개</span>
+					</div>
+					<div class="swiperType01">
+						<!-- swiper list -->
+						<ul class="swiper-wrapper thumb">
+							<li class="swiper-slide soldout"> <!-- 품절,판매종료 시 soldout class 추가 -->
+								<a href="www.naver.com" class="unit_link">
+									<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_16" disabled="">
+									<label for="CompareCheck_16"><!-- check 시 class="on"  on 추가 -->
+										<em class="num">13</em><!-- 기준시 class base 추가 -->
+										<div class="unit_img">
+											<img data-src="/HMC/m/img/@thumb/plp_160x160_01.jpg" class="" alt="상품명으로 뿌려주세요" src="/HMC/m/img/@thumb/plp_160x160_01.jpg">
+											<span class="end">일시품절</span>
+										</div>
+									</label>
+									<div class="unit_info">
+										<p class="name">
+											<span class="model">현대 더 뉴 그랜저</span>
+											<span class="desc">가솔린 프리미엄 밀레니얼</span>
+										</p>
+										<p class="drive">
+											<em>21년형</em>
+											<em>50,000km</em>
+										</p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide soldout"> <!-- 품절,판매종료 시 soldout class 추가 -->
+								<a href="#" class="unit_link">
+									<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_17" disabled="">
+									<label for="CompareCheck_17"> <!-- check 시 class="on" 추가 -->
+										<em class="num">14</em> <!-- 기준시 class base 추가 -->
+										<div class="unit_img">
+											<img src="/HMC/m/img/@thumb/plp_500x500_02.jpg" alt="상품명으로 뿌려주세요">
+											<span class="end">일시품절</span>
+										</div>
+									</label>
+									<div class="unit_info">
+										<p class="name">
+											<span class="model">더 뉴 그랜저</span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</p>
+										<p class="drive">
+											<em>19년 2월(21년형)</em>
+											<em>12,167km</em>											
+										</p>
+										<p class="price"><em>3,820</em><i>만원</i></p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide soldout"> <!-- 품절,판매종료 시 soldout class 추가 -->
+								<a href="#" class="unit_link">
+									<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_18" disabled="">
+									<label for="CompareCheck_18"> <!-- check 시 class="on" 추가 -->
+										<em class="num">15</em> <!-- 기준시 class base 추가 -->
+										<div class="unit_img">
+											<img data-src="/HMC/m/img/@thumb/plp_160x160_01.jpg" class="" alt="상품명으로 뿌려주세요" src="/HMC/m/img/@thumb/plp_160x160_01.jpg">
+											<span class="end">판매종료</span>
+										</div>
+									</label>
+									<div class="unit_info">
+										<p class="name">
+											<span class="model">더 뉴 그랜저</span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</p>
+										<p class="drive">
+											<em>19년 2월(21ㄴ년형)</em>
+											<em>12,167km</em>											
+										</p>
+										<p class="price"><em>3,820</em><i>만원</i></p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide"> <!-- 품절,판매종료 시 soldout class 추가 -->
+								<a href="#" class="unit_link">
+									<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_19">
+									<label for="CompareCheck_19"> <!-- check 시 class="on"  on 추가 -->
+										<em class="num">16</em> <!-- 기준시 class base 추가 -->
+										<div class="unit_img">
+											<img data-src="/HMC/m/img/@thumb/plp_160x160_01.jpg" class="" alt="상품명으로 뿌려주세요" src="/HMC/m/img/@thumb/plp_160x160_01.jpg">
+										</div>
+									</label>								
+									<div class="unit_info">
+										<p class="name">
+											<span class="model">현대 그랜저 IG</span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</p>
+										<p class="drive">
+											<em>20년 12월(21년형)</em>
+											<em>100,000km</em>
+											
+										</p>
+										<p class="price"><em>2,000</em><em>~</em><em>3,280</em><i>만원</i></p>
+									</div>
+								</a>
+							</li>
+							<li class="swiper-slide"> <!-- 품절,판매종료 시 soldout class 추가 -->
+								<a href="#" class="unit_link">
+									<input type="checkbox" class="chk_compare" name="CompareCheck" id="CompareCheck_20">
+									<label for="CompareCheck_20"><!-- check 시 class="on"  on 추가 -->
+										<em class="num">17</em><!-- 기준시 class base 추가 -->
+										<div class="unit_img">
+											<img data-src="/HMC/m/img/@thumb/plp_160x160_01.jpg" class="" alt="상품명으로 뿌려주세요" src="/HMC/m/img/@thumb/plp_160x160_01.jpg">
+											<!-- <span class="end">판매종료</span> -->
+										</div>
+									</label>
+									<div class="unit_info">
+										<p class="name">
+											<span class="model">현대 더 뉴 그랜저</span>
+											<span class="desc">가솔린 프리미엄 밀레니얼</span>
+										</p>
+										<p class="drive">
+											<em>21년형</em>
+											<em>50,000km</em>
+											
+										</p>
+										<p class="price"><em>3,440~3,600</em><i>만원</i></p>
+									</div>
+								</a>
+							</li>						
+						</ul>
+						<!-- //swiper list -->
+					</div>
+				</section>
+				<!-- // 최근본상품 -->	
+			</div>
+			<!-- DATA 없을 때 -->
+			<div class="no_data">
+				<p class="tit">비교할 차량이 없습니다.</p>
+				<p class="txt">보유차량과 장바구니상품, 찜한상품,<br />최근본상품을 비교할 수 있어요.</p>
+				<div class="btn_area">
+					<a href="#" class="btn_mid01">보유차량 등록하기</a>
+					<a href="#" class="btn_mid02">내차사기 홈으로 가기</a>
+				</div>
+			</div>
+			<!-- // DATA 없을 때 -->		
+		</div>
+		<div class="btn_sticky">		
+			<!-- 2023.01.25 CPO-8585 -->
+			<button type="button" class="btn_big01 jQ_POP_open" data-popup="FO-OR-MS0002">비교하기</button> 
+			<!-- // 2023.01.25 CPO-8585 -->
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/HMC/m/SHTML/H_order/include/FO-OR-MS0002.shtml"--> <!-- FO-OR-MS0002 : 비교하기 - FULL -->
+<script>
+	// 2023 0209 TOP / CHATBOT 추가
+	CPO.top();
+	// S :: 2022.08.24 script 추가
+	$(document).ready(function() {
+		if($('input[name=CompareCheck').length >= 0) {
+			CPOCompareCheck($(this));
+		}
+		$('input[name=CompareCheck').on('change', function(){
+			CPOCompareCheck($(this))
+		});
+	});
+	// E :: 2022.08.24 script 추가
+	
+	// 비교하기 스크립트
+	var compareFunc = function() {
+		// debugger;
+		var itemWrap = document.querySelector('.layer_compare .compare_list');
+		var items = document.querySelectorAll('.layer_compare .compare_list .item .cont');
+
+		items.forEach(function(item){
+			var scrollFunc = function(e) {
+				var _this = e.target;
+				items.forEach(function(item){
+					if(_this.scrollTop > 0) {
+						itemWrap.classList.add('fixed');
+					} else {
+						itemWrap.classList.remove('fixed');
+					}
+					if(_this != item) item.scrollTop = _this.scrollTop;
+				})
+			}
+			item.removeEventListener('scroll', scrollFunc);
+			item.addEventListener('scroll', scrollFunc);
+		})
+	};
+	$('.jQ_POP_open').on('click', function() {
+		compareFunc(); // 아이템 추가 시 재 실행
+	});
+</script>
+</body>
+</html>

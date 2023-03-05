@@ -1,0 +1,66 @@
+<div class="service_list">
+	<p class="service_title">구매 후에도 부담 없이<br>타실 수 있도록 함께 하겠습니다.</p>
+	<ul class="list_icon">
+		<li>
+			<div class="img">
+				<img src="/HMC/m/img/service/icon_guarantee01.png" alt="">
+			</div>
+			<div class="info">
+				<span class="tit">전 차량 보증 서비스 제공</span>
+				<span class="txt">현대 & 제네시스 인증 중고차에서 구매하시는 모든 차량에 별도의 가입없이 보증 서비스를 제공합니다.</span>
+			</div>
+		</li>
+		<li>
+			<div class="img">
+				<img src="/HMC/m/img/service/icon_guarantee02.png" alt="">
+			</div>
+			<div class="info">
+				<span class="tit">믿을 수 있는 전국 네트워크</span>
+				<span class="txt">블루핸즈의 1,300여개 방대한 네트워크를 통해전국 어디서나 편리한 서비스 이용이 가능합니다.</span>
+			</div>
+		</li>
+		<li>
+			<div class="img">
+				<img src="/HMC/m/img/service/icon_guarantee03.png" alt="">
+			</div>
+			<div class="info">
+				<span class="tit">합리적인 보장 기간</span>
+				<span class="txt">전 차량 기본 최소 1년/2만km 이내 보증외에, 구매 차량에 남은 보증 기간이 보장에 추가됩니다.</span>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="toggle_wrap">
+	<p class="service_title">보증 범위</p>
+	<div class="box_toggle" data-ref="toggleBox">
+		<div class="head" onclick="toggleBox()">엔진</div>
+		<div class="cont">
+			실린더 헤드/블록과 그 내부부품, 밸브장치와 그 구성품, 오일펌프, 워터펌프, 서모스탯 및 개스킷, 흡/배기 매니폴드 및 플라이휠, 엔진 타이밍 텐셔너, 타이밍 체인, 오일쿨러 및 오일제어밸브, 각종 엔진 내부 개스킷 및 씰류, 엔진 전장품 일체 (제너레이터, 알터네이터, 각종모터류, 예열장치, 각종저항, 케이블, 배선류, 센서, 릴레이, 스위치 류), 냉각장치(라디에이터), 배기관 및 머플러, LPG 관련부품 일체 (단, 배출가스 관련 부품은 별도 규정 적용), 엔진 마운틴, 타이밍벨트, 서지탱크, 터보차저
+		</div>
+	</div>
+	<div class="box_toggle" data-ref="toggleBox">
+		<div class="head" onclick="toggleBox()">변속기</div>
+		<div class="cont">
+			실린더 헤드/블록과 그 내부부품, 밸브장치와 그 구성품, 오일펌프, 워터펌프, 서모스탯 및 개스킷, 흡/배기 매니폴드 및 플라이휠, 엔진 타이밍 텐셔너, 타이밍 체인, 오일쿨러 및 오일제어밸브, 각종 엔진 내부 개스킷 및 씰류, 엔진 전장품 일체 (제너레이터, 알터네이터, 각종모터류, 예열장치, 각종저항, 케이블, 배선류, 센서, 릴레이, 스위치 류), 냉각장치(라디에이터), 배기관 및 머플러, LPG 관련부품 일체 (단, 배출가스 관련 부품은 별도 규정 적용), 엔진 마운틴, 타이밍벨트, 서지탱크, 터보차저
+		</div>
+	</div>
+	<div class="box_toggle" data-ref="toggleBox">
+		<div class="head" onclick="toggleBox()">제동장치</div>
+		<div class="cont">
+			실린더 헤드/블록과 그 내부부품, 밸브장치와 그 구성품, 오일펌프, 워터펌프, 서모스탯 및 개스킷, 흡/배기 매니폴드 및 플라이휠, 엔진 타이밍 텐셔너, 타이밍 체인, 오일쿨러 및 오일제어밸브, 각종 엔진 내부 개스킷 및 씰류, 엔진 전장품 일체 (제너레이터, 알터네이터, 각종모터류, 예열장치, 각종저항, 케이블, 배선류, 센서, 릴레이, 스위치 류), 냉각장치(라디에이터), 배기관 및 머플러, LPG 관련부품 일체 (단, 배출가스 관련 부품은 별도 규정 적용), 엔진 마운틴, 타이밍벨트, 서지탱크, 터보차저
+		</div>
+	</div>
+	<div class="box_toggle" data-ref="toggleBox">
+		<div class="head" onclick="toggleBox()">일반부품</div>
+		<div class="cont">
+			실린더 헤드/블록과 그 내부부품, 밸브장치와 그 구성품, 오일펌프, 워터펌프, 서모스탯 및 개스킷, 흡/배기 매니폴드 및 플라이휠, 엔진 타이밍 텐셔너, 타이밍 체인, 오일쿨러 및 오일제어밸브, 각종 엔진 내부 개스킷 및 씰류, 엔진 전장품 일체 (제너레이터, 알터네이터, 각종모터류, 예열장치, 각종저항, 케이블, 배선류, 센서, 릴레이, 스위치 류), 냉각장치(라디에이터), 배기관 및 머플러, LPG 관련부품 일체 (단, 배출가스 관련 부품은 별도 규정 적용), 엔진 마운틴, 타이밍벨트, 서지탱크, 터보차저
+		</div>
+	</div>
+</div>
+<div class="caution">
+	<p class="tit">유의사항</p>
+	<ul>
+		<li>보증한도 금액은 3,000,000원으로 제한되고, 건당 자기부담금 50,000원이 발생합니다.</li>
+		<li>소모성 부품(타이어, 각종 오일류, 패드, 부동액), PB 제품(차량 출고 시 장착된 옵션 외에 사용자가 추가 장착한 옵션)은 보증 대상이 아닙니다.</li>
+	</ul>
+</div>

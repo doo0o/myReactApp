@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>서비스해지 : 현대 CUV</title>
+	<!--#include file="/HMC/p/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_mypage.css"> <!-- 해당 CSS -->
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+    <div id="CPOcontents">
+        <div id="layoutWrap" class="my">
+            <!-- container -->
+            <div class="container flex">
+                <!--#include file="/HMC/p/SHTML/H_inc/layout_left.shtml"-->
+                <!-- cont_wrap -->
+                <div class="cont_wrap terminate" data-id="myPage">
+                    <h1 class="page_tit">서비스 해지</h1>
+					<div class="caution bg big">
+						<p class="tit">서비스 해지 전 꼭 확인해 주세요.</p>
+						<ul>
+							<li>서비스 해지 후 유예기간 없이 바로 재가입 할 수 있습니다. (재가입 시, 기존 데이터는 초기화됩니다.)</li>
+							<li>내차사기 및 내차팔기가 진행중일 경우, 데이터가 초기화되어 고객센터를 통해 수기로 진행되게 됩니다.</li>
+							<li>서비스 해지 후 회원의 개인정보는 이용약관에 의거하여 처리됩니다.</li>
+						</ul>
+					</div>
+					<!-- 법인 경우 -->
+					<div class="agree">
+						<input type="checkbox" name="chk_comm" id="chk_list02_1" class="chk_type01 bold">
+						<label for="chk_list02_1"><span class="txt">법인 서비스 해지 관련 안내를 모두 확인하였으며, 모든 내용에 동의 합니다.</span></label>
+					</div>
+					<!-- // 법인 경우 -->
+					<div class="btn_area col_type">
+						<button type="button" class="btn_small color02">취소</button>
+						<button type="button" class="btn_small color01">서비스 해지</button>
+					</div>
+                </div>
+                <!-- //cont_wrap -->
+            </div>
+            <!-- //container -->
+        </div>
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<script>
+	lnb_active();
+</script>
+</html>

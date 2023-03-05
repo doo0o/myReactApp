@@ -1,0 +1,37 @@
+<!-- AC_MO_06_01060000 : 보험이력 조회 - modal -->
+<div class="CPOpop_modal" id="AC_MO_06_01060000">
+	<div class="p_head">
+		<h4 class="tit">보험이력 조회</h4>
+	</div>
+	<div class="p_wrap">
+		<!-- 보험이력 조회 -->
+		<div class="sale_car02">
+			<p class="tit">사고이력 정보요약</p>
+			<dl class="car_info">
+				<dt>전손보험사고</dt>
+				<dd>1건</dd>
+				<dt>특수 용도 이력</dt>
+				<dd>없음</dd>
+				<dt>도난보험사고</dt>
+				<dd>1건</dd>
+				<dt>소유자변경</dt>
+				<dd>2회</dd>
+				<dt>침수보험사고</dt>
+				<dd>침수 분손 1건</dd>
+				<dt>차량번호변경</dt>
+				<dd>2회</dd>
+				<dt>내차피해</dt>
+				<dd>10회, 5,987,000원</dd>
+				<dt>상대차피해</dt>
+				<dd>2회, 1,009,098원</dd>
+			</dl>
+		</div>
+		<!-- //보험이력 조회 -->
+		<!-- sticky button -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_action01">확인</button>
+		</div>
+		<!-- //sticky button -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

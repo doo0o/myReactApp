@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>결제 : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_order.css">
+</head>
+<body>
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<!-- S : [CPO-1204 : 디자인검수2차] -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">결제</h1>
+		</div>
+		<!-- E : [CPO-1204 : 디자인검수2차] -->
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents" class="payment_cotents">
+		<!-- contents -->
+		<div class="payment_wrap">
+
+			<div class="payment_head">
+				<div class="txt">
+					결제기한 
+					<div class="state state2">추가결제 진행중
+						<div class="cpo_tooltip">
+							<button type="button" class="open">입력안내 확인</button>
+							<div class="cont">
+								<p class="text">추가금액 결제는 카드결제 및 무통장입금 처리만 가능합니다.</p>
+								<button class="close">툴팁닫기</button>
+							</div>
+						</div>
+					</div>
+					<!-- case
+					<div class="state state1">21.11.11 17:32까지</div>
+					<div class="state state2">오토할부 신청중</div>
+					<div class="state state3">기한만료(상담예정)</div>
+					 -->
+				</div>
+				<a href="FO-OR-MS0005.shtml" class="btn_arrow_mid01 jQ_POP_open">주문정보 수정</a><!-- 2022-09-02 [CPO-3239] -->
+			</div>
+
+			<button class="payment_nav">
+				<span class="txt">총 구매금액</span>
+				<span class="btn_arrow_mid01 number">46,800,000<span>원</span></span>
+			</button>
+
+			<div class="nav_box">
+
+				<button class="nav_benefit">적용 가능한 할인 혜택이 있어요.</button>
+				<!-- 2022-09-02 [CPO-3239] UI위치 변경 -->
+				<div class="box box2">
+					<a href="#" class="link_nav">
+						<span class="name"><span class="arrow">오토할부</span></span>
+						<!-- HMC -->
+						<span class="txt"><script>MSG.text('현대', '제네시스');</script> 인증중고차만의 쉽고 빠른 할부서비스입니다.</span>
+					</a>
+				</div>
+				<div class="box box2 isVal">
+					<a href="#" class="link_nav">
+						<span class="name"><span class="arrow">오토할부</span></span>
+						<span class="result_box">
+							<span class="result1">
+								<span class="sort">연5.2%, 60개월 할부</span>
+								<span class="num"><span>10,000,000</span>원</span>
+							</span>
+							<span class="result2">
+								<span class="divide">월 178,356원</span>
+								<span class="state">승인완료</span>
+							</span>
+						</span>
+					</a>
+				</div>
+
+				<div class="box_wrap">
+					<div class="box box1">
+						<a href="#" class="link_nav">
+							<span class="name"><span class="arrow">카드결제</span></span>
+							<span class="txt">실시간으로<br>빠르고 편하게<br>결제를 진행합니다.</span>
+						</a>
+					</div>
+					<div class="box box1">
+						<a href="#" class="link_nav">
+							<span class="name"><span class="arrow">무통장입금</span></span>
+							<span class="txt">가상계좌를 통해<br>현금으로 결제를<br> 진행합니다.</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="box_wrap">
+					<div class="box box1">
+						<a href="#" class="link_nav">
+							<span class="name"><span class="arrow">카드결제</span></span>
+							<span class="result">
+								<span class="logo_card"><img src="/HMC/m/img/@thumb/card_logo_01.png" alt=""></span>
+								<span class="count">
+									국민카드 외 <strong>3건</strong>
+								</span>
+								<span class="num">
+									15,100,000<span>원</span>
+								</span>
+							</span>
+						</a>
+					</div>
+
+					<div class="box box1">
+						<a href="#" class="link_nav">
+							<span class="name"><span class="arrow">무통장입금</span></span>
+							<span class="result">
+								<span class="logo_bank"><img src="/HMC/m/img/finance/bank_005.png" alt="하나은행로고"></span>
+								<span class="count">
+									하나은행 외 <strong>3건</strong>
+								</span>
+								<span class="num">
+									6,250,000<span>원</span>
+								</span>
+							</span>
+						</a>
+					</div>
+
+				</div>
+				<!-- //2022-09-02 [CPO-3239] UI위치 변경 -->
+
+				<!-- <div class="banner_mobility_card">
+					<a href="#">현대 모빌리티 카드 신청</a>
+				</div> 2022-09-02 [CPO-3239] 삭제 -->
+				
+			</div>
+			
+			<p class="caution">금액을 여러 결제수단으로 나누어 결제 하실 수 있습니다.</p><!-- 2022-09-02 [CPO-3239] 추가 -->
+
+			<div class="btn_cancel">
+				<button class="btn_txt_big01 jQ_POP_open" data-popup="FO-OR-MS0032">주문취소</button>
+			</div>
+
+			<div class="payment_bot">
+				<button class="total_payment jQ_POP_open" data-popup="FO-OR-MS0040">
+					<dl class="price_total">
+						<dt>남은 결제금액</dt>
+						<dd><em>46,800,000</em>원</dd>
+					</dl>
+				</button>
+				<!-- 2022-11-15 CPO-6055 -->
+				<!-- 남은 결제 금액이 0원인경우 -->
+				<div class="total_payment">
+					<p class="price_total com">결제완료</p>
+				</div>
+				<!-- //2022-11-15 CPO-6055 -->
+				<button type="button" class="btn_big01">계약하기</button>
+			</div>
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!-- 2023 0210 푸터 삭제 -->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/HMC/m/SHTML/H_order/include/FO-OR-MS0040.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_order/include/FO-OR-MS0041.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_order/include/FO-OR-MS0032.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_order/include/FO-OR-MS0065.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_order/include/FO-OR-MS0035.shtml"--> <!-- CPO-4720 프로모션 선택 추가 -->
+
+<!-- CPO-6106 추가 -->
+<!--#include file="/HMC/m/SHTML/H_order/include/FO-OR-MS0046.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_order/include/FO-OR-MS0071.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_order/include/FO-OR-MS0055.shtml"-->
+<!-- //CPO-6106 -->
+<script>
+	// 팝업 샘플
+	document.addEventListener('DOMContentLoaded', function(){
+		switch(MSG.getParam('pop')) {
+			case '1' : 
+				CPO.POPUP_layer_open('FO-OR-MS0040');
+				break;
+			case '2' : 
+				CPO.POPUP_layer_open('FO-OR-MS0041');
+				break;
+			case '3' : 
+				CPO.POPUP_layer_open('FO-OR-MS0032');
+				break;
+			case '4' : 
+				CPO.POPUP_layer_open('FO-OR-MS0035');
+				break;
+			case '5' : 
+				CPO.POPUP_layer_open('FO-OR-MS0046');
+				break;
+			case '6' : 
+				CPO.POPUP_layer_open('FO-OR-MS0071');
+				break;
+			case '7' : 
+				CPO.POPUP_layer_open('FO-OR-MS0055');
+				break;
+			default : break;
+		}
+	});
+</script>
+</body>
+</html>

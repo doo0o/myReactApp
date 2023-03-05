@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>내차사기 목록 : 현대 CUV</title>
+	<!--#include file="/HMC/p/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_order.css"> <!-- 해당 CSS -->
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+	<div id="CPOcontents">
+		<div id="layoutWrap" class="my">
+			<!-- container -->
+			<div class="container flex">
+				<!--#include file="/HMC/p/SHTML/H_inc/layout_left.shtml"-->
+				<!-- cont_wrap -->
+				<div class="cont_wrap buy_list" data-id="myOrder">
+					<h1 class="page_tit">내차사기 목록</h1>
+					<div class="date_result" >
+						<!-- CPO-9265 2023.03.09 수정 -->
+						<div class="tab date">
+							<ul class="list">
+								<li class="on"><button type="button">2023년</button></li>
+								<li><button type="button">2022년</button></li>
+								<li><button type="button">2021년</button></li>
+								<li><button type="button">2020년</button></li>
+								<li><button type="button">2019년</button></li>
+							</ul>
+						</div>
+						<div class="caution">
+							<p>내차 사기의 구매 내역은 최대 5년간 보관됩니다.</p>
+						</div>
+						<!-- <div class="calendar">
+							<div class="date-picker-wrap">
+								<input type="text" class="date-picker" id="startDate" readonly="" value="">
+							</div>
+							<span>~</span>
+							<div class="date-picker-wrap">
+								<input type="text" class="date-picker" id="endDate" readonly="" value="">
+							</div>
+						</div>
+						<button type="button" class="btn_xsmall color02">조회</button>
+						<div class="caution">
+							<ul>
+								<li>내차 사기의 조회기간은 3개월 단위로 가능합니다.</li>
+							</ul>
+						</div> -->
+						<!-- // CPO-9265 2023.03.09 수정 -->
+					</div>
+					
+					<!-- 노데이터 -->
+					<div class="no_data car">
+						<p class="tit">구매중인 상품이 없습니다.</p>
+						<p class="txt">내차사기는 믿고 맡길 수 있는 현대 & 제네시스 인증 중고차와 함께하세요.</p>
+						<div class="btn_area">
+							<a href="#" class="btn_small color02">내차사기 홈으로 가기</a>
+						</div>
+					</div>
+					<!-- // 노데이터 -->
+
+					<div class="product_list">
+						<div class="total_result">
+							<div class="all">전체 <em>20</em>개</div>
+						</div>
+						<div class="unit_type type01">
+							<a href="javascript:void(0);">
+								<!-- unit -->
+								<div class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="order_num">
+											<span class="flag_big01">입금대기중</span>
+											<span class="num">2021123154561231</span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>20년 12월</span>
+											<span>50,000km</span>
+											<span>12가1234</span>
+										</div>
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+									</div>
+								</div>
+								<div class="box_stat">
+									<p id="dueDate" class="time">00:04:59</p><!-- 5분 이하일 경우 카운팅 -->
+									<p class="info_txt">계약금을 입금해 주세요.</p>
+								</div>
+								<!-- //unit -->
+							</a>
+							<a href="javascript:void(0);">
+								<!-- unit -->
+								<div class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="order_num">
+											<span class="flag_big01">주문서 작성중</span>
+											<span class="num">2021123154561231</span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>20년 12월</span>
+											<span>50,000km</span>
+											<span>12가1234</span>
+										</div>
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+									</div>
+								</div>
+								<div class="box_stat">
+									<p class="time">YY.MM.DD HH:MM까지</p>
+									<p class="info_txt">결제를 완료해 주세요.</p>
+								</div>
+								<!-- //unit -->
+							</a>
+							<a href="javascript:void(0);">
+								<!-- unit -->
+								<div class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="order_num">
+											<span class="flag_big01">결제진행중</span>
+											<span class="num">2021123154561231</span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>20년 12월</span>
+											<span>50,000km</span>
+											<span>12가1234</span>
+										</div>
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+									</div>
+								</div>
+								<div class="box_stat">
+									<ul class="list_step small">
+										<li class="now">결제</li>
+										<li>계약</li>
+										<li>보험</li>
+										<li>탁송</li>
+									</ul>
+									<p class="time">21.11.11  17:32까지</p>
+									<p class="info_txt">남은 결제금액을 결제해 주세요.</p>
+								</div>
+								<!-- //unit -->
+							</a>
+							<a href="javascript:void(0);">
+								<!-- unit -->
+								<div class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="order_num">
+											<span class="flag_big01">결제진행중</span>
+											<span class="num">2021123154561231</span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>20년 12월</span>
+											<span>50,000km</span>
+											<span>12가1234</span>
+										</div>
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+									</div>
+								</div>
+								<div class="box_stat">
+									<ul class="list_step small">
+										<li class="now">결제</li>
+										<li>계약</li>
+										<li>보험</li>
+										<li>탁송</li>
+									</ul>
+									<p class="info_txt">고객센터에서 상담안내 예정입니다.</p>
+								</div>
+								<!-- //unit -->
+							</a>
+							<a href="javascript:void(0);">
+								<!-- unit -->
+								<div class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="order_num">
+											<span class="flag_big01">주문취소</span>
+											<span class="num">2021123154561231</span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>20년 12월</span>
+											<span>50,000km</span>
+											<span>12가1234</span>
+										</div>
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+									</div>
+								</div>
+								<div class="box_stat">
+									<ul class="list_step small">
+										<li>결제</li>
+										<li>계약</li>
+										<li>보험</li>
+										<li>탁송</li>
+									</ul>
+									<p class="info_txt">주문이 취소되었습니다.</p>
+								</div>
+								<!-- //unit -->
+							</a>
+							<a href="javascript:void(0);">
+								<!-- unit -->
+								<div class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="order_num">
+											<span class="flag_big01">환불완료</span> <!-- CPO-9265 2023.02.09 수정 -->
+											<span class="num">2021123154561231</span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>20년 12월</span>
+											<span>50,000km</span>
+											<span>12가1234</span>
+										</div>
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+									</div>
+								</div>
+								<div class="box_stat">
+									<p class="info_txt">책임환불이 완료되었습니다.</p> <!-- CPO-9265 2023.02.09 수정 -->
+								</div>
+								<!-- //unit -->
+							</a>
+						</div>
+						<div class="btn_area col_type">
+							<button type="button" class="btn_more">더보기</button>
+						 </div>
+					</div>
+				</div>				
+				<!-- //cont_wrap -->
+			</div>
+			<!-- //container -->
+		</div>
+	</div> 
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<script>
+	lnb_active();
+
+	calendar();
+	// 초기날짜 [예) 최근 31개월]
+	$('#startDate').datepicker('setDate', new Date(new Date().setMonth(new Date().getMonth()-1)));
+	$('#endDate').datepicker('setDate', new Date());
+</script>
+</html>

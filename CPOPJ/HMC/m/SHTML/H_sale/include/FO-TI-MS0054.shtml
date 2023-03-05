@@ -1,0 +1,69 @@
+
+<div class="CPOpop_bottom" id="FO-TI-MS0054">
+	<div class="p_head">
+		<h2 class="tit">매입의사 철회 및 법적조치 동의</h2><!-- 2022-09-16 CPO-3291 -->
+	</div>
+	<div class="p_wrap">
+		<div class="sale_cancel">
+			<p class="txt"><!-- 2023-01-30 CPO-9100 -->
+				중대한 결함이 있거나 정상 거래가 어려운 차량으로 판정 될 경우 매입 의사가 철회될 수 있습니다.<br>
+				(예. 엔진 및 동력전달장치 등 주요 부품 결함 / 침수 / 차대번호 조작 / 주행거리 조작 등의 이력이 있는 차량)
+			</p>
+			<button type="button" class="btn_combi01 jQ_POP_open" data-popup="FO-TI-MS0062">튜닝 차량 기준 및 처리 정책 확인하기</button>
+
+			<!-- 2023-01-26 CPO-9018 -->
+			<div class="sale_cancel_chk">
+				<p class="agree_all"><input type="checkbox" name="saleCancelAll" id="saleCancelAll" class="chk_type01 large"><label for="saleCancelAll">매입의사 철회 및 법적조치 약관에 동의합니다.</label></p>
+				<ul class="agree_child">
+					<li>
+						<input type="checkbox" name="saleCancel" id="saleCancel4" class="chk_type01">
+						<label for="saleCancel4">침수 혹은 전손 차량이 아닙니다.</label>
+					</li>
+					<li>
+						<input type="checkbox" name="saleCancel" id="saleCancel3" class="chk_type01">
+						<label for="saleCancel3">해외 반입 차량이 아닙니다.</label>
+					</li>
+					<li>
+						<input type="checkbox" name="saleCancel" id="saleCancel2" class="chk_type01">
+						<label for="saleCancel2">영업용 차량이 아닙니다.</label>
+					</li>
+					<li>
+						<input type="checkbox" name="saleCancel" id="saleCancel5" class="chk_type01">
+						<label for="saleCancel5">보험사고 이력이 신차가격의 50% 초과한 차량이 아닙니다.</label>
+					</li>
+					<li>
+						<input type="checkbox" name="saleCancel" id="saleCancel1" class="chk_type01">
+						<label for="saleCancel1">튜닝 차량이 아닙니다.</label>
+					</li>
+				</ul>
+			</div>
+			<!-- //2022-09-16 CPO-3291 -->
+		</div>
+		<div class="btn_sticky"><!-- 2023-01-30 CPO-9100 -->
+			<button type="button" class="btn_big03">동의하지 않습니다</button>
+			<button type="button" class="btn_big01" id="btnSaleCancel" disabled>동의합니다</button>
+		</div>
+
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+
+<script>
+	var chkEnableFunc = (function() {
+		var chkList = document.querySelectorAll('[name="saleCancel"]');
+		var targetBtn = document.querySelector('#btnSaleCancel');
+		var func = function() {
+			for(var idx = 0; idx < chkList.length; idx++) {
+				if(chkList[idx].checked === true) {
+					targetBtn.disabled = false;
+					break;
+				} else {
+					targetBtn.disabled = true;
+				}
+			}
+		}
+		chkList.forEach(function(_this){
+			_this.addEventListener('change',func);
+		})
+	})();
+</script>

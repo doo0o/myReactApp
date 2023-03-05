@@ -1,0 +1,50 @@
+<!-- FO-TI-MS0056 : 차량 모델 등급 선택 - Full -->
+<div class="CPOpop_full select" id="FO-TI-MS0056">
+	<div class="p_head">
+		<p class="tit txt_hidden">차량 모델 등급 선택</p><!-- 2022-09-16 CPO-3291 -->
+	</div> 
+	<div class="p_wrap">
+		<!-- 2022-09-16 CPO-3291 구조변경 -->
+		<div class="select_list">
+			<div class="mycar_model_header">
+				<p class="txt1">쏘나타 DN8 이군요!</p>
+				<p class="txt2">차량의 모델 등급을 선택해 주세요. 실제 차량과 다른 모델 등급 선택 시, 방문평가 과정에서 감가가 발생할 수 있습니다.</p> <!-- 2022-09-16 CPO-3291 --> 
+			</div>
+			<ol>
+				<li>
+					<input type="radio" class="chk_select" name="SelectCarModel" id="SelectCarModel01">
+					<label for="SelectCarModel01">2.0 가솔린 스마트</label>
+				</li>
+				<li>
+					<input type="radio" class="chk_select" name="SelectCarModel" id="SelectCarModel02">
+					<label for="SelectCarModel02">2.0 가솔린 프리미엄</label>
+				</li>
+				<li>
+					<input type="radio" class="chk_select" name="SelectCarModel" id="SelectCarModel03">
+					<label for="SelectCarModel03">2.0 가솔린 프리미엄 패밀리</label>
+				</li>
+				<li>
+					<input type="radio" class="chk_select" name="SelectCarModel" id="SelectCarModel04">
+					<label for="SelectCarModel04">2.0 가솔린 프리미엄 밀레니얼</label>
+				</li>
+				<li>
+					<input type="radio" class="chk_select" name="SelectCarModel" id="SelectCarModel05">
+					<label for="SelectCarModel05">2.0 가솔린 모던</label>
+				</li>
+				<li>
+					<input type="radio" class="chk_select" name="SelectCarModel" id="SelectCarModel06">
+					<label for="SelectCarModel06">2.0 가솔린 프리미엄 플러스</label>
+				</li>
+				<li>
+					<input type="radio" class="chk_select" name="SelectCarModel" id="SelectCarModel07">
+					<label for="SelectCarModel07">2.5 터보 (N 라인) 프리미엄</label>
+				</li>
+			</ol>
+		</div>
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">선택하기</button>
+		</div>
+
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

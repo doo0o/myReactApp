@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Layout My Type : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<!-- <link rel="stylesheet" type="text/css" href="../../css/h_detail.css"> --> <!-- 해당 CSS -->
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+    <div id="CPOcontents">
+        <div id="layoutWrap" class="my">
+            <!-- container -->
+            <div class="container flex">
+                <!--#include file="/HMC/p/SHTML/H_inc/layout_left.shtml"-->
+                <!-- cont_wrap -->
+                <div class="cont_wrap" data-id="myPage" style="background-color: blanchedalmond;">
+                    <h1 class="page_tit">마이페이지</h1>
+                </div>
+                <!-- //cont_wrap -->
+            </div>
+            <!-- //container -->
+        </div>
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<script>
+	lnb_active();
+</script>
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>결제 : 제네시스 CUV</title>
+	<!--#include file="/GHQ/m/SHTML/G_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/g_order.css">
+</head>
+<body>
+<!--#include file="/GHQ/m/SHTML/G_inc/common_skip.shtml"-->
+<!--#include file="/GHQ/m/SHTML/G_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--  s: h_header : default  -->
+		<!-- S : [CPO-1202 : 디자인검수2차] -->
+		<div class="h_header">
+			<h1 class="tit">결제</h1>
+			<div class="util">
+				<ul>
+					<li><a href="#" class="ic_close">닫기</a></li>
+				</ul>	
+			</div>
+		</div>
+		<!-- E  : [CPO-1202 : 디자인검수2차] -->
+		<!--  e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- [cpo_order] WRAP 결제하기 -->
+		<div class="cpo_order">
+			<!-- 00. 주문번호 -->
+			<div class="order_no">
+				<span class="tit">주문번호</span>
+				<span class="no">20211112321564565421</span>
+			</div>
+			<!-- //00. 주문번호 -->
+			<!-- 01. 차량 정보 -->
+			<div class="unit_order">
+				<div class="unit_img"><img src="/GHQ/m/img/@thumb/plp_310x310_01.jpg" alt="상품명으로 뿌려주세요"></div>
+				<div class="unit_info">
+					<p class="name">
+						<span class="model">쏘나타 DN8 2.0 </span>
+						<span class="desc">가솔린 프리미엄 밀레니얼</span>
+					</p>
+					<span class="drive">
+						<em>21년형</em>
+						<em>50,000km</em>
+						<em>가솔린</em>
+					</span>
+					<span class="price"><em>3,820</em><i>만원</i></span>
+				</div>
+				<div class="duedate">
+					<span class="tit">결제기한</span>
+					<span class="txt">2021.10.15 17:32까지</span>
+				</div>
+			</div>
+			<!-- //01. 차량 정보 -->
+			<!-- 02. 결제 예정 금액 -->
+			<!-- S : [CPO-1202 : 디자인검수2차] -->
+			<div class="order_box01 payment02">
+				<div class="top">
+					<h4 class="tit">결제 예정 금액</h4>
+					<button type="button" class="btn_show01 on" id="orderBoxPrice01" data-href="닫아보기">펼쳐보기</button>
+				</div>
+				<div class="inner">
+					<dl class="depth01">
+						<dt>차량가격</dt>
+						<dd><em>38,200,000</em>원</dd>
+						<dt>이전등록비용</dt>
+						<dd><em>38,200,000</em>원</dd>
+					</dl>
+					
+					<dl class="depth02">
+						<dt>등록세</dt>
+						<dd><em>34,000</em>원</dd>
+						<dt>취득세</dt>
+						<dd><em>15,000</em>원</dd>
+						<dt>공채매입비</dt>
+						<dd><em>34,000</em>원</dd>
+						<dt>증지대</dt>
+						<dd><em>15,000</em>원</dd>
+						<dt>인지대</dt>
+						<dd><em>15,000</em>원</dd>
+						<dt>이전대행수수료</dt>
+						<dd><em>15,000</em>원</dd>
+					</dl>
+					<dl class="depth01">
+						<dt>기타 부대비용</dt>
+						<dd><em>38,200,000</em>원</dd>
+					</dl>
+					<dl class="depth02">
+						<dt>배송비</dt>
+						<dd><em>34,000</em>원</dd>
+						<dt>임시자동차보험가입비용</dt>
+						<dd><em>15,000</em>원</dd>
+						<dt>기타 관리비용</dt>
+						<dd><em>34,000</em>원</dd>
+					</dl>
+					
+					<dl class="depth01">
+						<dt>할인 프로모션</dt>
+						<dd class="sale_price"><em>-38,200,000</em>원</dd><!--[P] 할인금액인경우(파란글씨) sale_price 클래스 추가-->
+					</dl>
+					<dl class="depth03">
+						<dt>총 결제금액</dt>
+						<dd><em>41,600,000</em>원</dd>
+					</dl>
+				</div>
+			</div>
+			<!-- //02. 결제 예정 금액 -->
+			<!-- 03. 멤버십 포인트 사용 -->
+			<div class="order_box01 point">
+				<div class="top">
+					<h4 class="tit">멤버십 포인트 사용</h4>
+				</div>
+				<div class="point_use">
+					<!-- (1.) 대표명의자 포인트 -->
+					<dl class="amount">
+						<dt><em>현대상사</em>님의 포인트
+							<button type="button" class="btn_txt01">전액사용</button>
+						</dt>
+						<dd>
+							<div class="inbox_type01">
+								<input type="text" pattern="[0-9]*" inputmode="numeric" class="txt" title="포인트 입력" name="" value="0"><em class="point">P</em>
+							</div>
+							<p class="possible"><em>500,000</em>P 사용가능</p>
+						</dd>
+					</dl>
+					<dl class="amount owner02"><!-- 공동명의자일때만 calss 'owner02'-->
+						<dt><em>박현대</em>님의 포인트</dt>
+						<dd>
+							<div class="inbox_type01">
+								<input type="text" pattern="[0-9]*" inputmode="numeric" class="txt" title="포인트 입력" name="" value="0" disabled><em class="point">P</em>
+							</div>
+							<p class="impossible">박현대님은 멤버십 회원이 아닙니다.</p><!-- 회원 아닌 경우 -->
+						</dd>
+						<dt><em>방기정</em>님의 포인트
+							<button type="button" class="btn_txt01">전액사용</button>
+						</dt>
+						<dd>
+							<div class="inbox_type01">
+								<input type="text" pattern="[0-9]*" inputmode="numeric" class="txt" title="포인트 입력" name="" value="0"><em class="point">P</em>
+							</div>
+							<p class="possible"><em>500,000</em>P 사용가능</p>
+						</dd>
+						<dt><em>오단비</em>님의 포인트</dt>
+						<dd><button type="button" class="btn color03">포인트 사용 인증하기</button></dd><!-- 인증 전 단계 -->
+					</dl>
+					<div class="notice_03">
+						<ol>
+							<li>명의정보 내 이름과 주민번호를 사용하여 본인인증합니다.</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<!-- //03. 블루멤버스 포인트 사용 -->
+			<!-- 04. 결제수단 및 금액 설정 -->
+			<div class="order_box01 payment03">
+				<div class="top">
+					<h4 class="tit">결제수단 및 금액 설정</h4>
+					<p class="txt">멤버십 포인트, 오토할부, 무통장입금, 신용카드로 분할하여 결제가 가능합니다. </p>
+				</div>
+				<div class="payment_set">
+					<!-- (1.) 오토할부(현대캐피탈) -->
+					<div class="loan_box">
+						<h5 class="pdp_tog">오토할부 (현대캐피탈)</h5>
+						<!-- accodion cont box -->
+						<div class="pdp_cont">
+							<dl class="amount">
+								<!-- 할부 확인 후 -->
+								<dt>결제금액
+									<button type="button" class="btn_txt01">할부 한도 재확인</button>
+								</dt>
+								<dd>
+									<div class="inbox_type01">
+										<input type="text" pattern="[0-9]*" inputmode="numeric" class="txt" title="결제금액 입력" name="" value="0"><em class="won">원</em>
+									</div>
+									<p class="possible">최대 <em>25,000,000</em>원 할부 신청 가능</p>
+								</dd>
+								<!--// 할부 확인 후 -->
+								<dd><button type="button" class="btn_mid05">할부 가능금액 확인</button></dd><!-- 할부 확인 후, dd style="display:none" -->
+							</dl>
+							<div class="notice_03">
+								<h6 class="tit">오토할부란?</h6>
+								<ol>
+									<li>24시간 대출 한도 조회 및 승인이 가능한 CPO 고객님을 위한 전용상품입니다.</li>
+									<li>한도조회는 개인신용평점에 영향을 주지 않습니다.</li>
+									<li>본 할부 가능금액 확인은 최대 한도를 확인하는 용도이며 실제 할부 신청은 다음 단계에서 진행이 가능합니다. </li>
+								</ol>
+							</div>
+							<!-- 데이터 없을 때 -->
+							<div class="order_error">
+								<div class="no_data">
+									<p class="tit">현재 오토할부 점검중입니다.<br/>잠시 후 다시 시도해 주시기 바랍니다.</p>
+									<p class="txt">점검 예정시간 : 05:00 ~ 07:00</p>
+								</div>
+							</div>
+						</div>
+						<!-- //accodion cont box -->
+					</div>
+					<!-- (2.) 현금 무통장입금 -->
+					<div class="cash_box">
+						<h5 class="pdp_tog on disabled">현금 무통장입금</h5>
+						<!-- accodion cont box -->
+						<div class="pdp_cont" style="display: block;">
+							<dl class="amount">
+								<dt>결제금액</dt>
+								<dd>
+									<div class="inbox_type01">
+										<input type="text" pattern="[0-9]*" inputmode="numeric" class="txt" title="결제금액 입력" name="" value="0"><em class="won">원</em>
+									</div>
+									<div class="add_price">
+										<div>
+											<span><input type="checkbox" class="chk_rad02" name="AmountAddCash" id="AmountAddCash01" checked disabled/><label for="AmountAddCash01">이전등록비용 (현금만 가능)</label></span>
+											<span class="price"><em>900,000</em>원</span>
+										</div>
+										<div>
+											<span><input type="checkbox" class="chk_rad02" name="AmountAddCash" id="AmountAddCash02" /><label for="AmountAddCash02">기타 부대비용 포함</label></span>
+											<span class="price"><em>900,000</em>원</span>
+										</div>
+									</div>
+								</dd>
+								<dd>
+									<div class="sel_type01">
+										<!-- [수정-SELECT] 2022-03-25 --><!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+										<button type="button" class="btn_sel06 jQ_Select" id="SelectBANK" data-id="" data-popup="Select-BANK-Layer">은행선택</button>
+										<!-- Layer -->
+										<div class="CPOpop_bottom select" id="Select-BANK-Layer">
+											<div class="p_head">
+												<h5 class="tit">은행선택</h5>
+											</div>
+											<div class="p_wrap">
+												<!-- list -->
+												<ol class="select_list"><!-- radio name=버튼ID + '_Name' --><!-- bank_code01 = bank_code은행코드번호 (은행로고) -->
+													<li><input type="radio" class="chk_type09 bank_code01" name="SelectBANK01_Name" id="SelectBANK0101"><label for="SelectBANK0101">기업은행</label></li>
+													<li><input type="radio" class="chk_type09 bank_code02" name="SelectBANK01_Name" id="SelectBANK0102"><label for="SelectBANK0102">국민은행</label></li>
+													<li><input type="radio" class="chk_type09 bank_code03" name="SelectBANK01_Name" id="SelectBANK0103"><label for="SelectBANK0103">신한은행</label></li>
+													<li><input type="radio" class="chk_type09 bank_code04" name="SelectBANK01_Name" id="SelectBANK0104"><label for="SelectBANK0104">제일은행</label></li>
+													<li><input type="radio" class="chk_type09 bank_code05" name="SelectBANK01_Name" id="SelectBANK0105"><label for="SelectBANK0105">우리은행</label></li>
+													<li><input type="radio" class="chk_type09 bank_code06" name="SelectBANK01_Name" id="SelectBANK0106"><label for="SelectBANK0106">농협은행</label></li>
+													<li><input type="radio" class="chk_type09 bank_code07" name="SelectBANK01_Name" id="SelectBANK0107"><label for="SelectBANK0107">하나은행</label></li>
+													<li><input type="radio" class="chk_type09 bank_code08" name="SelectBANK01_Name" id="SelectBANK0108"><label for="SelectBANK0108">케이뱅크</label></li>
+												</ol>
+												<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectBANK 변경 내용 적용  -->
+													<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectBANK">적용하기</button>
+												</div>
+												<!-- //list -->
+											</div>
+											<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+										</div>
+										<!-- [수정-SELECT] 2022-03-25 -->
+									</div>
+								</dd>
+							</dl>
+							<!-- 계좌 -->
+							<div class="add_btn"><button type="button" class="btn_mid05 add">환불계좌 등록하기</button></div><!-- 계좌 등록 전 -->
+							<dl class="amount card">
+								<dt>환불계좌</dt>
+								<dd>
+									<div class="inbox_type01 on"><!-- value 값 있는 경우 on -->
+										<span class="tit">예금주</span>
+										<input type="text" class="txt" title="예금주 입력" name="" value="김현대" disabled>
+									</div>
+								</dd>
+								<dd>
+									<div class="inbox_type01 on"><!-- value 값 있는 경우 on -->
+										<span class="tit">계좌번호</span>
+										<input type="text" class="txt" title="계좌번호 입력" name="" value="우리은행 23459612354513" disabled>
+									</div>
+									<p class="possible"><button type="button" class="btn_txt04">환불계좌 수정하기</button></p>
+								</dd>
+							</dl>
+							<div class="notice_03">
+								<ol>
+									<li>무통장입금은 결제 완료 후 마이페이지에서 가상계좌를 확인한 후 납입해주세요.</li>
+									<li>이전등록비용은 현금으로만 결제가 가능합니다.</li>
+									<li>최소 결제금액은 "이전등록비용+기타 부대비용" 입니다. (단, 기타 부대비용을 카드 결제로 결제하는 경우 최소 결제금액은 이전등록비용만 해당됩니다.)</li>
+								</ol>
+							</div>
+							<!-- //계좌 -->
+						</div>
+						<!-- //accodion cont box -->
+					</div>
+					<!-- (3.) 카드 결제 -->
+					<div class="card_box">
+						<h5 class="pdp_tog">카드 결제</h5>
+						<!-- accodion cont box -->
+						<div class="pdp_cont">
+							<dl class="amount card">
+								<dt>김현대 카드정보1</dt>
+								<dd>
+									<div class="inbox_type01">
+										<input type="text" pattern="[0-9]*" inputmode="numeric" class="txt" title="결제금액 입력" name="" value="0"><em class="won">원</em>
+									</div>
+									<div class="add_price">
+										<div>
+											<span><input type="checkbox" class="chk_rad02" name="AmountAddCash" id="AmountAddCash03" /><label for="AmountAddCash03">기타 부대비용 포함</label></span>
+											<span class="price"><em>900,000</em>원</span>
+										</div>
+									</div>
+								</dd>
+								<dd>
+									<div class="sel_type01">
+										<!-- [수정-SELECT] 2022-03-25 --><!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+										<button type="button" class="btn_sel06 jQ_Select" id="SelectCARD" data-id="" data-popup="Select-CARD-Layer">카드선택</button>
+										<!-- Layer -->
+										<div class="CPOpop_bottom select" id="Select-CARD-Layer">
+											<div class="p_head">
+												<h5 class="tit">카드선택</h5>
+											</div>
+											<div class="p_wrap">
+												<!-- list -->
+												<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+													<li><input type="radio" class="chk_type09" name="SelectCARD_Name" id="SelectCARD01"><label for="SelectCARD01">현대카드</label></li>
+													<li><input type="radio" class="chk_type09" name="SelectCARD_Name" id="SelectCARD02"><label for="SelectCARD02">국민카드</label></li>
+													<li><input type="radio" class="chk_type09" name="SelectCARD_Name" id="SelectCARD03"><label for="SelectCARD03">신한카드</label></li>
+												</ol>
+												<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectCARD 변경 내용 적용  -->
+													<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectCARD">적용하기</button>
+												</div>
+												<!-- //list -->
+											</div>
+											<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+										</div>
+										<!-- [수정-SELECT] 2022-03-25 -->
+									</div>
+								</dd>
+								<dd>
+									<div class="sel_type01">
+										<!-- [수정-SELECT] 2022-03-25 --><!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+										<button type="button" class="btn_sel06 jQ_Select" id="SelectCARDMonth" data-id="" data-popup="Select-CARDMonth-Layer">할부선택</button>
+										<!-- Layer -->
+										<div class="CPOpop_bottom select" id="Select-CARDMonth-Layer">
+											<div class="p_head">
+												<h5 class="tit">할부선택</h5>
+											</div>
+											<div class="p_wrap">
+												<!-- list -->
+												<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+													<li><input type="radio" class="chk_type09" name="SelectCARDMonth_Name" id="SelectCARDMonth01"><label for="SelectCARDMonth01">일시불</label></li>
+													<li><input type="radio" class="chk_type09" name="SelectCARDMonth_Name" id="SelectCARDMonth02"><label for="SelectCARDMonth02">3개월</label></li>
+													<li><input type="radio" class="chk_type09" name="SelectCARDMonth_Name" id="SelectCARDMonth03"><label for="SelectCARDMonth03">5개월</label></li>
+												</ol>
+												<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectCARDMonth 변경 내용 적용  -->
+													<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectCARDMonth">적용하기</button>
+												</div>
+												<!-- //list -->
+											</div>
+											<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+										</div>
+										<!-- [수정-SELECT] 2022-03-25 -->
+									</div>
+								</dd>
+								<dd>
+									<div class="inbox_type07 card">
+										<span class="tit">카드번호</span>
+										<span class="inp"><input type="text" pattern="[0-9]*" inputmode="numeric" class="txt" title="카드번호 입력" name="" value=""></span>
+										<span class="inp"><input type="text" pattern="[0-9]*" inputmode="numeric" class="txt" title="카드번호 입력" name="" value=""></span>
+										<span class="inp"><input type="text" pattern="[0-9]*" inputmode="numeric" class="txt" title="카드번호 입력" name="" value=""></span>
+										<span class="inp"><input type="text" pattern="[0-9]*" inputmode="numeric" class="txt" title="카드번호 입력" name="" value=""></span>
+									</div>
+								</dd>
+								<dd>
+									<div class="inbox_type07 year">
+										<span class="tit">유효기간</span>
+										<span class="inp"><input type="text" pattern="[0-9]*" inputmode="numeric" class="txt" title="유효기간 월 입력" name="" value="" placeholder="MM"></span>
+										<span class="inp"><input type="text" pattern="[0-9]*" inputmode="numeric" class="txt" title="유효기간 연 입력" name="" value="" placeholder="YY"></span>
+									</div>
+								</dd>
+							</dl>
+							<dl class="amount card owner02"><!-- 카드 추가 시에만 class 'owner02'-->
+								<dt>
+									김현대 카드정보2
+									<button type="button" class="btn_del04">삭제하기</button>
+								</dt>
+								<dd>
+									<div class="inbox_type01">
+										<input type="text" pattern="[0-9]*" inputmode="numeric" class="txt" title="결제금액 입력" name="" value="0"><em class="won">원</em>
+									</div>
+								</dd>
+								<dd>
+									<div class="sel_type01">
+										<!-- [수정-SELECT] 2022-03-25 --><!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+										<button type="button" class="btn_sel06 jQ_Select" id="SelectCARD01" data-id="" data-popup="Select-CARD01-Layer">카드선택</button>
+										<!-- Layer -->
+										<div class="CPOpop_bottom select" id="Select-CARD01-Layer">
+											<div class="p_head">
+												<h5 class="tit">카드선택</h5>
+											</div>
+											<div class="p_wrap">
+												<!-- list -->
+												<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+													<li><input type="radio" class="chk_type09" name="SelectCARD01_Name" id="SelectCARD0101"><label for="SelectCARD0101">현대카드</label></li>
+													<li><input type="radio" class="chk_type09" name="SelectCARD01_Name" id="SelectCARD0102"><label for="SelectCARD0102">국민카드</label></li>
+													<li><input type="radio" class="chk_type09" name="SelectCARD01_Name" id="SelectCARD0103"><label for="SelectCARD0103">신한카드</label></li>
+												</ol>
+												<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectCARD 변경 내용 적용  -->
+													<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectCARD01">적용하기</button>
+												</div>
+												<!-- //list -->
+											</div>
+											<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+										</div>
+										<!-- [수정-SELECT] 2022-03-25 -->
+									</div>
+								</dd>
+								<dd>
+									<div class="sel_type01">
+										<!-- [수정-SELECT] 2022-03-25 --><!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+										<button type="button" class="btn_sel06 jQ_Select" id="SelectCARD01Month" data-id="" data-popup="Select-CARD01Month-Layer">할부선택</button>
+										<!-- Layer -->
+										<div class="CPOpop_bottom select" id="Select-CARDMonth-Layer">
+											<div class="p_head">
+												<h5 class="tit">할부선택</h5>
+											</div>
+											<div class="p_wrap">
+												<!-- list -->
+												<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+													<li><input type="radio" class="chk_type09" name="SelectCARD01Month_Name" id="SelectCARD01Month01"><label for="SelectCARD01Month01">일시불</label></li>
+													<li><input type="radio" class="chk_type09" name="SelectCARD01Month_Name" id="SelectCARD01Month02"><label for="SelectCARD01Month02">3개월</label></li>
+													<li><input type="radio" class="chk_type09" name="SelectCARD01Month_Name" id="SelectCARD01Month03"><label for="SelectCARD01Month03">5개월</label></li>
+												</ol>
+												<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectCARDMonth 변경 내용 적용  -->
+													<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectCARD01Month">적용하기</button>
+												</div>
+												<!-- //list -->
+											</div>
+											<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+										</div>
+										<!-- [수정-SELECT] 2022-03-25 -->
+									</div>
+								</dd>
+								<dd>
+									<div class="inbox_type07 card">
+										<span class="tit">카드번호</span>
+										<span class="inp"><input type="text" pattern="[0-9]*" inputmode="numeric" class="txt" title="카드번호 입력" name="" value=""></span>
+										<span class="inp"><input type="text" pattern="[0-9]*" inputmode="numeric" class="txt" title="카드번호 입력" name="" value=""></span>
+										<span class="inp"><input type="text" pattern="[0-9]*" inputmode="numeric" class="txt" title="카드번호 입력" name="" value=""></span>
+										<span class="inp"><input type="text" pattern="[0-9]*" inputmode="numeric" class="txt" title="카드번호 입력" name="" value=""></span>
+									</div>
+								</dd>
+								<dd>
+									<div class="inbox_type07 year">
+										<span class="tit">유효기간</span>
+										<span class="inp"><input type="text" pattern="[0-9]*" inputmode="numeric" class="txt" title="유효기간 월 입력" name="" value="" placeholder="MM"></span>
+										<span class="inp"><input type="text" pattern="[0-9]*" inputmode="numeric" class="txt" title="유효기간 연 입력" name="" value="" placeholder="YY"></span>
+									</div>
+								</dd>
+							</dl>
+							<div class="add_btn"><button type="button" class="btn_mid05 add">결제카드 추가</button></div>
+
+							<div class="notice_03">
+								<ol>
+									<li>현재 현대카드가 점검 중이므로 선택이 불가능합니다. <br/>(점검 예정시간 : 05:00 ~ 07:00)</li>
+									<li>현재 신한카드가 점검 중이므로 선택이 불가능합니다. <br/>(점검 예정시간 : 05:00 ~ 07:00)</li>
+								</ol>
+							</div>
+						</div>
+						<!-- //accodion cont box -->
+					</div>
+					
+
+					<div class="promotion_swiper swiperType01" data-swiper-space="15">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<img src="/GHQ/m/img//@thumb/my_slide.png" alt="" />
+							</li>
+							<li class="swiper-slide">     
+								<img src="/GHQ/m/img//@thumb/my_slide.png" alt="" />
+							</li>
+							<li class="swiper-slide">
+								<img src="/GHQ/m/img//@thumb/my_slide.png" alt="" />
+							</li>
+						</ul>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			</div>
+			<!-- //04. 결제수단 및 금액 설정 -->
+			<!-- E : [CPO-1202 : 디자인검수2차] -->
+			<!-- 05. 결제약관 -->
+			<div class="order_box01 agree">
+				<div class="top">
+					<input type="checkbox" class="chk_type01" name="" id=""><label>주문약관 전체 내용에 동의합니다.</label>
+					<button type="button" class="btn_show01 on" data-href="닫아보기">펼쳐보기</button><!-- [CPO-1202 : 디자인검수2차] -->
+				</div>
+				<div class="inner">
+					<ol class="agree_list">
+						<li>
+							<input type="checkbox" class="chk_type01" name="" id=""><label>[필수] 약관1</label>
+							<button type="button" class="btn_show02" data-href="FO-ME-MS0002">약관 자세히 보기</button><!-- data-href 약관 layer ID -->
+						</li>
+						<li>
+							<input type="checkbox" class="chk_type01" name="" id=""><label>[필수] 약관2</label>
+							<button type="button" class="btn_show02" data-href="FO-ME-MS0002">약관 자세히 보기</button><!-- data-href 약관 layer ID -->
+						</li>
+						<li>
+							<input type="checkbox" class="chk_type01" name="" id=""><label>[필수] 약관3</label>
+							<button type="button" class="btn_show02" data-href="FO-ME-MS0002">약관 자세히 보기</button><!-- data-href 약관 layer ID -->
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!-- //05. 결제약관 -->
+			<!-- 06. fixed button -->
+			<div class="btn_sticky">
+				<div class="order_price">
+					<span class="tit">남은 결제금액</span>
+					<span class="price"><em>14,500,000</em>원</span>
+				</div>
+				<button type="button" class="btn_big01" disabled>결제하기</button>
+			</div>
+			<!-- //06. fixed button -->
+		</div>
+		<!-- //[cpo_order] WRAP 결제하기 -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/GHQ/m/SHTML/G_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/GHQ/m/SHTML/G_inc/popup_include_all.shtml"-->
+</body>
+</html>

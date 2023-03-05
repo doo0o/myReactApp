@@ -1,0 +1,135 @@
+<div class="pdp03_tabs first">
+	<div class="top">
+		<p class="tit">이 차를 사신다면 꼭 알아두세요</p>
+	</div>
+	<div class="cont_box cont_box1">
+		<div class="inner">
+			<ol class="base_01">
+				<li>
+					<span class="tit">용도</span>
+					<span class="txt">출퇴근용</span>
+				</li>
+				<li>
+					<span class="tit">구분</span>
+					<span class="txt">자가용</span>
+				</li>
+				<li>
+					<span class="tit">흡연여부</span>
+					<span class="txt">비 흡연</span>
+				</li>
+				<li>
+					<span class="tit">반려동물</span>
+					<span class="txt">미 탑승</span>
+				</li>
+				<li>
+					<span class="tit">주요운행지역</span>
+					<span class="txt">서울시 강남구</span>
+				</li>
+				<li>
+					<span class="tit">주차장</span>
+					<span class="txt">지상(단독주택)</span>
+				</li>
+			</ol>
+			<table class="table type02">
+				<caption>자동차 정보</caption>
+				<colgroup>
+					<col style="width:20%">
+					<col style="width:30%">
+					<col style="width:20%">
+					<col style="width:30%">
+				</colgroup>
+				<tbody>
+					<tr>
+						<th scope="row">연식</th>
+						<td>2020년</td>
+						<th scope="row">차종</th>
+						<td>승용/대형</td>
+					</tr>
+					<tr>
+						<th scope="row">주행거리</th>
+						<td>21,713km</td>
+						<th scope="row">연료</th>
+						<td>가솔린</td>
+					</tr>
+					<tr>
+						<th scope="row">배기량</th>
+						<td>2,359cc</td>
+						<th scope="row">구동방식</th>
+						<td>2륜(2WD)</td>
+					</tr>
+					<tr>
+						<th scope="row">승차인원</th>
+						<td>5인</td>
+						<th scope="row">최초등록</th>
+						<td>2022.04.26</td>
+					</tr>
+					<tr>
+						<th scope="row">차량번호</th>
+						<td>24더 3215</td>
+						<th scope="row">변속기</th>
+						<td>오토</td>
+					</tr>
+					<tr>
+						<th scope="row">외관색상</th>
+						<td>글로윙 실버</td>
+						<th scope="row">실내색상</th>
+						<td>블루/하바나브라운투톤(리무진전용/하바나브라운시트) </td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<p class="etc">제시번호: 제2021073068호</p>
+	</div>
+	
+	<div class="cont_box base" id="p_scr01">
+		<p class="tit">인증 히스토리</p>
+		<div class="base_02">
+			<ol>
+				<li class="now">
+					<span class="date">2021.07.14</span>
+					<span class="tit">현대자동차 인증 완료</span>
+				</li>
+				<li>
+					<span class="date">2021.05.20</span>
+					<span class="tit">성능점검일</span>
+				</li>
+				<li>
+					<span class="date">2021.01.12</span>
+					<span class="tit">현대자동차 매입 완료</span>
+				</li>
+				<li>
+					<span class="date">2021</span> -
+					<span class="date">2020</span>
+				<li>
+					<span class="date">2020.03.05</span>
+					<span class="tit">신차출고 </span>
+				</li>
+			</ol>
+			<ol>
+				<li class="now">
+					<span class="date">2021.07.14</span>
+					<span class="tit">제네시스 인증 완료</span>
+				</li>
+				<li>
+					<span class="date">2021.05.20</span>
+					<span class="tit">성능점검일</span>
+				</li>
+				<li>
+					<span class="date">2021.01.12</span>
+					<span class="tit">제네시스 매입 완료</span>
+				</li>
+				<li>
+					<span class="date">2021</span> -
+					<span class="date">2020</span>
+				</li>
+				<li>
+					<span class="date">2020.03.05</span>
+					<span class="tit">신차출고 </span>
+				</li>
+			</ol>
+			<div class="btn_center">
+				<button type="button" class="btn_small color02" data-popup="FO-MY-MS0020">비슷한 차 입고알림 신청하기</button>
+			</div>
+		</div>
+	</div>
+</div>

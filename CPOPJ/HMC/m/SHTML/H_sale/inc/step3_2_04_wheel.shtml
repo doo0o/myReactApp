@@ -1,0 +1,27 @@
+<!-- STEP : 3-2-04 : 휠 스크래치 -->
+<div class="entry_carbase"><!-- 네 있어요를 선택한 경우 class 'yes' 추가된다-->
+	<div class="top02">
+		<p class="tit">스크래치가 있는<br />휠이 있나요?</p> <!-- 2022-09-16 CPO-3291 --> 
+	</div>
+	<!-- 입력 -->
+	<ul class="entry_carmore_options">
+		<!-- 2022-09-16 CPO-3291 -->
+		<li>
+			<input type="radio" name="saleWheelChk" id="saleWheelChk01" class="chk_type07" />
+			<label for="saleWheelChk01">네, 있어요</label>
+			<div class="box_input">
+				<div class="inbox_type01">
+					<input type="tel" id="saleWheelTxt" placeholder="1 ~ 4개까지 입력 가능해요." class="txt type_number">
+					<button type="button" class="btn_delete">삭제</button>
+				</div>
+				<button class="btn_next" onclick="selectStep.step('next');">다음</button>
+			</div>
+		</li>
+		<li>
+			<input type="radio" name="saleWheelChk" id="saleWheelChk02" class="chk_type07" />
+			<label for="saleWheelChk02">아니요, 없어요</label>
+		</li>
+		<!-- //2022-09-16 CPO-3291 -->
+	</ul>
+	<!-- //입력 -->
+</div>

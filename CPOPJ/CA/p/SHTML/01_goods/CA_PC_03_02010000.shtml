@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>상품상세 : 현대 CUV</title>
+	<!--#include file="/CA/p/SHTML/00_common/include/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/c_goods.css">
+</head>
+<body>
+<!--#include file="/CA/p/SHTML/00_common/include/common_skip.shtml"-->
+<!--#include file="/CA/p/SHTML/00_common/include/layout_loading.shtml"-->
+<!-- CAwrap -->
+<div id="CAwrap">
+	<!--#include file="/CA/p/SHTML/00_common/include/layout_header.shtml"-->
+    <div id="CAcontents">
+        <div id="layoutWrap" class="goods_detail">
+            <!-- container -->
+            <div class="detail_top_area">
+                <div class="inner_wrap">
+                    <!--#include file="/CA/p/SHTML/01_goods/include/inc_pdp_top.shtml"-->
+                </div>
+            </div>
+            <div class="container"> 
+                <div class="tab pdp_detail" data-ref="tab">
+                    <ul class="list" role="tablist">
+                        <li class="on"><button type="button" role="tab" aria-selected="true" aria-controls="tabCont01">차량정보</button></li>
+                        <li><button role="tab" aria-selected="false" aria-controls="tabCont02">방문평가 정보</button></li>
+                        <li><button role="tab" aria-selected="false" aria-controls="tabCont03">보험이력 정보</button></li>
+                    </ul>
+
+                    <div class="cont" id="tabCont01">
+                        <h2 class="sec_tit type2">차량 기본정보</h2>
+                        <div class="cont_box">
+                            <ul class="drive_info">
+                                <li>
+                                    <p class="tit">연식</p>
+                                    <p class="info">20년 12월(21년형)</p>
+                                </li>
+                                <li>
+                                    <p class="tit">주행거리</p>
+                                    <p class="info">21,713Km</p>
+                                </li>
+                                <li>
+                                    <p class="tit">차량 픽업지역</p>
+                                    <p class="info">경기도 수원시</p>
+                                </li>
+                            </ul>
+                            <table class="table">
+                                <colgroup>
+                                    <col style="width: 126px" />
+                                    <col>
+                                    <col style="width: 126px" />
+                                    <col>
+                                    <col style="width: 126px" />
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>차종</th>
+                                        <td>SUV</td>
+                                        <th>용도구분</th>
+                                        <td>일반</td>
+                                        <th>제조사명</th>
+                                        <td>현대</td>
+                                    </tr>
+                                    <tr>
+                                        <th>모델그룹</th>
+                                        <td>싼타페</td>
+                                        <th>모델</th>
+                                        <td>싼타페(DM)</td>
+                                        <th>등급</th>
+                                        <td>디젤 R2.0 2WD</td>
+                                    </tr>
+                                    <tr>
+                                        <th>트림</th>
+                                        <td>프리미엄</td>
+                                        <th>연료</th>
+                                        <td>디젤</td>
+                                        <th>배기량</th>
+                                        <td>2000cc</td>
+                                    </tr>
+                                    <tr>
+                                        <th>변속기</th>
+                                        <td>오토</td>
+                                        <th>공차중량</th>
+                                        <td>1200kg</td>
+                                        <th>승차인원</th>
+                                        <td>5인승</td>
+                                    </tr>
+                                    <tr>
+                                        <th>연비</th>
+                                        <td>14.45km(2등급)</td>
+                                        <th>색상계열</th>
+                                        <td>흰색</td>
+                                        <th>외관색생</th>
+                                        <td>크리미화이트</td>
+                                    </tr>
+                                    <tr>
+                                        <th>실내색상</th>
+                                        <td>블랙</td>
+                                        <th>사고여부 </th>
+                                        <td>Y<button type="button" class="btn_tbl ico_arr color02">사고조회</button></td>
+                                        <th>튜닝이력</th>
+                                        <td>0건<button type="button" class="btn_tbl ico_arr color02">튜닝이력 조회</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th>압류/저당/영치</th>
+                                        <td>0건<button type="button" class="btn_tbl ico_arr color02">압류/저당/영치 조회</button></td>
+                                        <th>하이패스 미납</th>
+                                        <td>N</td>
+                                        <th>리콜여부</th>
+                                        <td>Y<button type="button" class="btn_tbl ico_arr color02">리콜정보조회</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th>정비이력</th>
+                                        <td colspan="5">0건<button type="button" class="btn_tbl ico_arr color02">정비이력 조회</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //차량 기본정보 -->
+                        <h2 class="sec_tit">기본 옵션 정보</h2>
+                        <table class="table group">
+                            <caption>font 15px</caption>
+                            <colgroup>
+                                <col width="126px">
+                                <col width="126px">
+                                <col width="*">
+                            </colgroup>
+                            <tbody>
+                                <tr class="th_group">
+                                    <th rowspan="4">외관(4개)</th>
+                                    <td colspan="2">루프렉</td>
+                                </tr>
+                                <tr>
+                                    <th>선루프</th>
+                                    <td>듀얼썬루프</td>
+                                </tr>
+                                <tr>
+                                    <th>사이드미러</th>
+                                    <td>방향지시등 일체형</td>
+                                </tr>
+                                <tr>
+                                    <th>헤드램프</th>
+                                    <td>HID</td>
+                                </tr>
+                                <tr class="th_group">
+                                    <th rowspan="3">내장(3개)</th>
+                                    <th>룸미러</th>
+                                    <td>전자식 룸미러(ECM)</td>
+                                </tr>
+                                <tr>
+                                    <th>피킹</th>
+                                    <td>사이브 브레이크</td>
+                                </tr>
+                                <tr>
+                                    <th>시트</th>
+                                    <td>메모리시트(운전석), 전동시트(뒷자석)</td>
+                                </tr>
+                                <tr class="th_group">
+                                    <th rowspan="2">안전(2개)</th>
+                                    <td colspan="2">경사로밀림방지</td>
+                                </tr>
+                                <tr>
+                                    <th>에어백</th>
+                                    <td>무릎보호</td>
+                                </tr>
+                                <tr class="th_group">
+                                    <th>편의(2개)</th>
+                                    <th>에어컨</th>
+                                    <td>수동에어컨</td>
+                                </tr>
+                                <tr class="th_group">
+                                    <th rowspan="2">멀티미디어(2개)</th>
+                                    <td colspan="2">CD, 네비게이션</td>
+                                </tr>
+                                <tr>
+                                    <th>유무선단자</th>
+                                    <td>블루투스</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <!-- //기본 옵션 정보 -->
+
+                        <h2 class="sec_tit">입찰하는데 도움이 되요.</h2>
+                        <div class="help_cont">
+                            <ul>
+                                <li class="help1">
+                                    신규등록 차량은<br>
+                                    익일 오전 9시부터 48시간<br>
+                                    입찰진행됩니다.</li>
+                                <li class="help2">금액은<br>
+                                    1만원 단위로<br>
+                                    입찰 가능합니다.</li>
+                                <li class="help3">세금계산서는<br>
+                                    소속 매매상사<br>
+                                    기준으로 발행됩니다.</li>
+                                <li class="help4">낙찰 후,<br>
+                                    낙찰가 수락 거부 시<br>
+                                    패널티가 부과됩니다.</li>
+                                <li class="help5">현대차의 <span class="name">홍길동</span> 평가사님이<br>
+                                    직접 방문하시어<br>
+                                    평가하신 차량입니다!</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //차량정보 -->
+
+                    <div class="cont" id="tabCont02">
+                    </div>
+                    <!-- //방문평가 정보 -->
+
+                    <div class="cont" id="tabCont03">
+                        <h2 class="sec_tit">보험 기초정보</h2>
+                        <table class="table">
+                            <colgroup>
+                                <col style="width:180px">
+                                <col>
+                                <col style="width:180px">
+                                <col >
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th>기준일자</th>
+                                    <td></td>
+                                    <th>최초보험가입일</th>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <div class="sec_tit">
+                            <h2>보험이력 조회기준 총 <em class="point01">0</em>건의 이력이 있습니다.</h2>
+                            <p class="desc">정보 조회일 2022.01.03</p>
+                        </div>
+                        <ul class="insure_summary">
+                            <li>
+                                <p class="tit">자차피해사고</p>
+                                <p class="count">0건</p>
+                            </li>
+                            <li>
+                                <p class="tit">타차가해사고</p>
+                                <p class="count">0건</p>
+                            </li>
+                            <li>
+                                <p class="tit">일반전손사고</p>
+                                <p class="count">0건</p>
+                            </li>
+                            <li>
+                                <p class="tit">침수전(분)사고</p>
+                                <p class="count">0건</p>
+                            </li>
+                            <li>
+                                <p class="tit">도난전손사고</p>
+                                <p class="count">0건</p>
+                            </li>
+                            <li>
+                                <p class="tit">특수용도변경이력</p>
+                                <p class="count">없음</p>
+                            </li>
+                            <li>
+                                <p class="tit">차량번호변경</p>
+                                <p class="count">0건</p>
+                            </li>
+                            <li>
+                                <p class="tit">소유주변경</p>
+                                <p class="count">0건</p>
+                            </li>
+                        </ul>
+                        
+                        <h2 class="sec_tit">이 차의 자동차번호/소유자 변경 이력</h2>
+                        <table class="table line">
+                            <colgroup>
+                                <col width="25%">
+                                <col width="25%">
+                                <col width="25%">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>변경등록일</th>
+                                    <th>변경내역</th>
+                                    <th>차량번호</th>
+                                    <th>차량용도</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="caution">
+                            <p>소유자 변경 이력은 개인 간의 소유 변경 이외에도 매매상사간 변경(상품용)까지 모두 포함된 횟수로 제공됩니다.</p>
+                            <p>소유자 변경 이력은 자료수집 방법상 오류가 발생할 수 있으니 의심되는 사항이 있으시면 문의 주시기 바랍니다.</p>
+                            <p>차량번호 소유자 변경 이력은 보고서 상의 제약에 따라 최근부터 4회까지만 제공되기 때문에 요약 정보의 횟수와 상이 할 수 있습니다.</p>
+                        </div>
+                        
+                        <h2 class="sec_tit">사고정보 상세이력</h2>
+                        <div class="detail_insure">
+                            <dl class="cont_history">
+                                <dt>정보제공 불가능 기간</dt>
+                                <dd>2019.09 ~ 2021.05</dd>
+                            </dl>
+                            <div class="caution">
+                                <p>24더 3215 차량이 자기차량손해담보에 가입하지 않은 동안에는 내 보험으로 처리한 사고이력정보의 제공이 불가능합니다.</p>
+                            </div>
+    
+                            <ol class="list_history">
+                                <li>
+                                    <p class="date">사고일 : 2020.08.10</p>
+    
+                                    <div class="box">
+                                        <p class="txt">
+                                            <span>내차 피해</span>
+                                            <span>없음</span>
+                                        </p>
+                                    </div>
+    
+                                    <div class="box">
+                                        <p class="txt">
+                                            <span>타차 가해</span>
+                                            <span><em>내차보험</em>으로 처리</span>
+                                        </p>
+                                    
+                                        <div class="cont">
+                                            <ol>
+                                                <li>
+                                                    <span>부품</span>
+                                                    <span><em>276,730</em>원</span>
+                                                </li>
+                                                <li>
+                                                    <span>공임</span>
+                                                    <span><em>118,110</em>원</span>
+                                                </li>
+                                                <li>
+                                                    <span>도장</span>
+                                                    <span><em>859,760</em>원</span>
+                                                </li>
+                                                <li class="total">
+                                                    <span>수리(견적)비용</span>
+                                                    <span><em>1,254,570</em>원</span>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <p class="date">사고일 : 2020.08.10</p>
+    
+                                    <div class="box">
+                                        <p class="txt">
+                                            <span>내차 피해</span>
+                                            <span><em>상대보험</em>으로 처리</span>
+                                        </p>
+    
+                                        <div class="cont">
+                                            <ol>
+                                                <li>
+                                                    <span>부품</span>
+                                                    <span><em>276,730</em>원</span>
+                                                </li>
+                                                <li>
+                                                    <span>공임</span>
+                                                    <span><em>118,110</em>원</span>
+                                                </li>
+                                                <li>
+                                                    <span>도장</span>
+                                                    <span><em>859,760</em>원</span>
+                                                </li>
+                                                <li class="total">
+                                                    <span>수리(견적)비용</span>
+                                                    <span><em>1,254,570</em>원</span>
+                                                </li>
+                                            </ol>
+                                            <p class="info">수리내역 - 리어 범퍼(교환), 리어 범퍼(도장), 리어 컴비네이션램프(우)(탈착), 리어 컴비네이션 램프(좌) (탈착), 후방 감지센서 (탈착)</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="box">
+                                        <p class="txt">
+                                            <span>타차 가해</span>
+                                            <span><em>내차보험</em>으로 처리</span>
+                                        </p>
+                                        <div class="cont">
+                                            <ol>
+                                                <li>
+                                                    <span>부품</span>
+                                                    <span><em>276,730</em>원</span>
+                                                </li>
+                                                <li>
+                                                    <span>공임</span>
+                                                    <span><em>118,110</em>원</span>
+                                                </li>
+                                                <li>
+                                                    <span>도장</span>
+                                                    <span><em>859,760</em>원</span>
+                                                </li>
+                                                <li class="total">
+                                                    <span>수리(견적)비용</span>
+                                                    <span><em>1,254,570</em>원</span>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+    
+                                </li>
+                                <li>
+                                    <p class="date">사고일 : 2020.08.10</p>
+                                    
+                                    <div class="box">
+                                        <p class="txt">
+                                            <span>내차 피해</span>
+                                            <span><em>상대보험</em>으로 처리</span>
+                                        </p>
+                                        <div class="cont">
+                                            <ul>
+                                                <li>
+                                                    <span>부품</span>
+                                                    <span><em>276,730</em>원</span>
+                                                </li>
+                                                <li>
+                                                    <span>공임</span>
+                                                    <span><em>118,110</em>원</span>
+                                                </li>
+                                                <li>
+                                                    <span>도장</span>
+                                                    <span><em>859,760</em>원</span>
+                                                </li>
+                                                <li class="total">
+                                                    <span>수리(견적)비용</span>
+                                                    <span><em>1,254,570</em>원</span>
+                                                </li>
+                                            </ul>
+                                            <p class="info">수리내역 - 리어 범퍼(교환), 리어 범퍼(도장), 리어 컴비네이션램프(우)(탈착), 리어 컴비네이션 램프(좌) (탈착), 후방 감지센서 (탈착)</p>
+                                        </div>
+                                    </div>
+    
+                                    <div class="box">
+                                        <p class="txt">
+                                            <span>타차 가해</span>
+                                            <span>없음</span>
+                                        </p>
+                                    </div>
+    
+                                </li>
+                            </ol>
+                            <div class="caution">
+                                <p>보험금 출처에 따라서 ‘가입한 보험사에서 지급된 경우 (내차보험) 와 ‘다른차량보험 에서 지급된 경우(상대보험)’로 나눠 제공됩니다.</p>
+                                <p>본 정보는 자동차사고로 상대방 차량 또는 재물에 발생한 손해와 관련된 정보로서, 상대방 차량 또는 재물에 발생한 손해 규모를 참고하여 자기 자동차의 손상여부 등을 간접적으로 확인할 수 있도록 제공하여 드리고 있습니다.</p>
+                                <p>쌍방과실로 해당 자동차의 손상, 수리기록이 내차 보험과 상대보험에서 동시에 처리된 경우에는 ‘내차보험＇에만 표시되고 ‘상대보험＇에서는 생략됩니다.</p>
+                                <p>카 히스토리 자료수집 방법상 일부 오류가 발생할 수 있습니다. 의심되는 사항이 있으시면 전화주시기 바랍니다.</p>
+                                <p>위 ‘수리(견적)비용’은 보험사가 지급하는 보험금 중에서 대차료, 휴차료 등 간접손해와 과실상계액 등을 제외한 수리 및 견적 (부품/공임/도장) 비용으로 실제 지급된 보험금과 차이가 있습니다.</p>
+                                <p>보험사고 이력은 최근 10건의 사고만 표시 됩니다.</p>
+                                <p>위 ‘수리내역 정보’는 해당 사고차량의 보험수리 작업내역 정보를 보유하고 있는 경우에 한하여 제한적으로 제공되고 있습니다. 앞으로 보유자료를 더욱 잘 정비하여 보다 많은 수리내역 정보가 제공될 수 있도록 노력하겠습니다.</p>
+                                <p>대인사고는 제외합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //보험이력 정보 -->
+                </div>
+            </div>
+            <!-- //container -->
+        </div>
+	</div> 
+	<!-- //CAcontents -->
+	<!--#include file="/CA/p/SHTML/00_common/include/layout_footer.shtml"-->
+</div>
+<!-- //CAwrap -->
+</body>
+<!-- 튜닝이력조회 -->
+<!--#include file="/CA/p/SHTML/01_goods/include/CA_PC_03_02010100.shtml" -->
+
+<!-- 압류/저당/영치 조회 -->
+<!--#include file="/CA/p/SHTML/01_goods/include/CA_PC_03_02010200.shtml" -->
+
+<!-- 리콜 이력 조회 -->
+<!--#include file="/CA/p/SHTML/01_goods/include/CA_PC_03_02010300.shtml" -->
+
+<!-- 정비 이력 조회 -->
+<!--#include file="/CA/p/SHTML/01_goods/include/CA_PC_03_02010400.shtml" -->
+
+<!-- 이미지확대 보기 -->
+<!--#include file="/CA/p/SHTML/01_goods/include/CA_PC_03_01040000.shtml" -->
+
+<script>
+    //tab
+    const tab = new TabContents('tab');
+
+    //상단 갤러리
+    const uspGallery = new UspGallery('uspGallery');
+    const uspGalleryPop = new UspGallery('uspGalleryPop');
+
+//퍼블확인용 개발 무관
+var popFunc = {
+	"3" : function(){popupOpen('CA_PC_03_02010100')},
+	"4" : function(){popupOpen('CA_PC_03_02010200')},
+	"5" : function(){popupOpen('CA_PC_03_02010300')},
+	"6" : function(){popupOpen('CA_PC_03_02010400')},
+	"7" : function(){popupOpen('CA_PC_03_01040000')}
+}
+document.addEventListener('DOMContentLoaded', popFunc[MSG.getParam('pop')]);
+</script>
+</html>

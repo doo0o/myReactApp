@@ -1,0 +1,70 @@
+<div class="popup_full" id="FO-OR-PS0071">
+	<div class="p_body">
+		<div class="p_inner s_small">
+			<div class="p_head">
+				<h2 class="tit">임직원몰 회원가입</h2>
+			</div>
+			<div class="p_wrap p_staff signup">
+				<!-- contents -->
+				<div class="inner_view"> 
+					<section>
+						<div class="sub_txt">
+							약관 동의 및 본인 인증이 필요합니다.
+						</div>
+					</section>
+					<section>
+						<div class="terms toggle">
+							<div class="cont on">
+								<div class="head js_toggle">
+									<input type="checkbox" name="chk_comm" id="signup_all_chk" class="chk_type01 bold">
+									<label for="signup_all_chk">
+										<span class="txt">전체 약관에 동의합니다.</span>
+									</label>
+								</div>
+								<div class="group">
+									<ul class="list">
+										<li>
+											<div class="item">
+												<input type="checkbox" name="chk_comm" id="chk_signup_01" class="chk_type01">
+												<label for="chk_signup_01">
+													<span class="txt">[필수] 이용 약관 동의</span><button type="button" class="btn_arr">팝업 버튼</button>
+												</label>
+											</div>
+										</li>
+										<li>
+											<div class="item">
+												<input type="checkbox" name="chk_comm" id="chk_signup_02" class="chk_type01">
+												<label for="chk_signup_02">
+													<span class="txt">[필수] 개인정보 수집 및 이용 동의</span><button type="button" class="btn_arr">팝업 버튼</button>
+												</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<!-- 활성화 버튼 -->
+					<div class="btn_area">
+						<button type="button" class="btn_big color01">확인</button>
+					</div>
+
+					<!-- 비활성화 버튼 -->
+					<div class="btn_area">
+						<button type="button" class="btn_big color01 disabled" disabled>확인</button>
+					</div>
+				</div>
+				<!-- //contents -->
+				<!-- sticky -->
+				<!-- //sticky -->
+			</div>
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>
+<script>
+	$(document).ready(function() {
+		toggle();
+	});
+</script>

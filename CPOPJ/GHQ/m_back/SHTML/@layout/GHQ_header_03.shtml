@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>검색결과 : 제네시스 CPO</title>
+	<!--#include file="/GHQ/SHTML/G_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/g_display.css">
+</head>
+<body>
+<!--#include file="/GHQ/SHTML/G_inc/common_skip.shtml"-->
+<!--#include file="/GHQ/SHTML/G_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--#include file="/GHQ/SHTML/G_inc/layout_header.shtml"-->
+		
+		<!--  s: title area : 검색결과  -->
+		<div class="h_search" id="stickyTit">
+			<button type="button" class="ic_back search-toggle">뒤로가기</button>
+			<input type="text" class="inp_sch" value="더 뉴 그랜저 가솔린 3.3 캘리그래피">
+			<button type="button" class="ic_clear">검색 값 지우기</button>
+			
+			<ul class="util">
+				<li><button type="button" class="ic_filter">상세검색</button></li>
+			</ul>
+		</div>
+		<!--  e: title area : 검색결과  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+
+		
+
+
+
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/GHQ/SHTML/G_inc/layout_actionbar.shtml"-->
+	<!--#include file="/GHQ/SHTML/G_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/GHQ/SHTML/G_inc/popup_include_all.shtml"-->
+</body>
+</html>

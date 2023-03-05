@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>메인 : 현대 CUV</title>
+	<!--#include file="/HMC/p/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_main.css">
+	<script type="text/javascript" src="../../js/ui/h_main.js"></script>
+</head>
+<body>
+	<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+
+	<main class="gate_wrap" data-ref="gateWrap">
+
+		<div class="gate__greeting" data-ref="gateGreeting">
+			<div class="gate__greeting__box">
+				<p class="gate__greeting--txt">
+					<span class="gate__greeting--txt1">Hyundai</span>
+					<span class="gate__greeting--txt2">&</span>
+					<span class="gate__greeting--txt3">Genesis</span>
+					<br>
+					<span class="gate__greeting--txt4">Certified</span>
+				</p>
+				<p class="gate__greeting--copy">Copyright &copy; Hyundai Motor Company. All Rights Reserved.</p>
+			</div>
+		</div>
+
+		<div class="gate__branch">
+			<div class="gate__branch__header">
+				<p class="gate__branch--logo">Hyundai</p>
+			</div>
+
+			<div class="gate__branch__box">
+				<div class="gate__branch--sell" data-refs="gateHoverItem">
+					<p class="gate__branch--txt">
+						<strong class="gate__branch--txt1">내차팔기</strong>
+						<span class="gate__branch--txt2">스마트한 내차팔기,<br>시작해볼까요?</span>
+						<span class="gate__branch--txt3">간편하고 정확하게 내차시세를 알아보세요.</span>
+					</p>
+					<a href="#" class="btn_big">시세 조회하기</a>
+				</div>
+
+				<div class="gate__branch--buy" data-refs="gateHoverItem">
+					<p class="gate__branch--txt">
+						<strong class="gate__branch--txt1">내차사기</strong>
+						<span class="gate__branch--txt2">원하는 차를 안심하고<br>구매해볼까요?</span>
+						<span class="gate__branch--txt3">원하시는 브랜드관을 선택해 주세요.</span>
+					</p>
+
+					<div class="gate__brand__link">
+
+						<a class="gate__brand__hmc" href="/HMC/p/SHTML/H_main/FO-PL-PS0001.shtml">
+							<span>현대자동차 브랜드관 바로가기</span>
+							<div class="gate__brand--img"></div>
+						</a>
+
+						<a class="gate__brand__ghq" href="/GHQ/p/SHTML/G_main/FO-PL-PS0007.shtml">
+							<span>제네시스 브랜드관 바로가기</span>
+							<div class="gate__brand--img"></div>
+						</a>
+
+					</div>
+				</div>
+			</div>
+			
+		</div>
+
+	</main>
+
+</div>
+<!-- //cpo wrap -->
+
+<script>
+window.addEventListener('DOMContentLoaded', function(){
+	var greetingTransitionCount = 0;
+	var greetingWrap = document.querySelector('[data-ref="gateGreeting"]');
+	var gateItems = document.querySelectorAll('[data-refs="gateHoverItem"]');
+	var currentGate = gateItems[0];
+	setTimeout(()=>{
+		document.querySelector('[data-ref="gateWrap"]').classList.add('isReady');
+
+		greetingWrap.addEventListener('transitionend', function(){
+			greetingTransitionCount++;
+			if(greetingTransitionCount == 8) {
+				currentGate.classList.add('isHover');
+				setTimeout(function(){
+					for(var idx = 0; idx < gateItems.length; idx++) {
+						gateItems[idx].addEventListener('mouseenter', function(e){
+							if(currentGate != e.target.closest('[data-refs="gateHoverItem"]')) {
+								currentGate.classList.remove('isHover');
+								e.target.closest('[data-refs="gateHoverItem"]').classList.add('isHover');
+								currentGate = e.target;
+							}
+						});
+					}
+				},1000)
+				
+			}
+		});
+	},10)
+});
+</script>
+</body>
+</html>

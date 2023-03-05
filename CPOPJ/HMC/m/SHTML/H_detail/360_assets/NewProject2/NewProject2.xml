@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <settings>
+    <preloader image="../../360vr/images/img_0_0_0.jpg" />
+    <userInterface 
+      showZoomButtons="false" 
+      showToolTips="false" 
+      showHotspotsButton="false" 
+      showFullScreenButton="true" 
+      showTogglePlayButton="false" 
+      showArrows="false" 
+      toolbarAlign="center" 
+      toolbarBackColor="transparent" 
+      toolbarHoverColor="#808285" 
+      toolbarForeColor="#A7A9AE" 
+      toolbarBackAlpha="0" 
+      toolbarAlpha="1" 
+      showProgressNumbers="false" 
+      showFullScreenToolbar="false" 
+      fullScreenBackColor="#000"
+      toolbarPosition="0" 
+      customCursorClass="default_cursor" 
+      viewerHint="" 
+      toolbarAutohide="false" 
+      showToolbarOnLoadStart="false" 
+      skin="basic" />
+    <control dragSpeed="0.13" doubleClickZooms="true" disableMouseControl="false" showHighresOnFullScreen="true" mouseHoverDrag="false" hideHotspotsOnLoad="false" hideHotspotsOnZoom="true" rowSensitivity="15" dragSensitivity="10" inBrowserFullScreen="false" doubleClickFullscreen="false" zoomSteps="1" zoomSpeed="300" singleClickZooms="false" pauseOnPreload="false" resumePreloadOnHover="false" mouseWheelDrag="false" mouseWheelDragZoomOnly="false" allowRotateInputInZoom="false" allowPanX="true" allowPanY="true" dragAcceleration="1" centerZoom="false" maxZoom="100" responsiveBaseWidth="1600" />
+    <rotation firstImage="23" rotate="2" rotatePeriod="7" bounce="false" rotateDirection="-1" forceDirection="false" inertiaRelToDragSpeed="true" inertiaTimeToStop="700" inertiaMaxInterval="120" useInertia="true" flipHorizontalInput="false" flipVerticalInput="false" bounceRows="true" rowsOnSingleIndex="false" flipAxis="false" spinOnPageScroll="false" pageScrollFollow="false" pageScrollDelay="300" pageScrollPeriod="3" label="2,2,,,,,,0,," />
+  </settings>
+  <hotspots />
+  <images rows="1">
+    <image src="../../360vr/images/img_0_0_0.jpg" />
+    <image src="../../360vr/images/img_0_0_1.jpg" label="2" />
+    <image src="../../360vr/images/img_0_0_2.jpg" />
+    <image src="../../360vr/images/img_0_0_3.jpg" />
+    <image src="../../360vr/images/img_0_0_4.jpg" />
+    <image src="../../360vr/images/img_0_0_5.jpg" />
+    <image src="../../360vr/images/img_0_0_6.jpg" />
+    <image src="../../360vr/images/img_0_0_7.jpg" />
+    <image src="../../360vr/images/img_0_0_8.jpg" />
+    <image src="../../360vr/images/img_0_0_9.jpg" />
+    <image src="../../360vr/images/img_0_0_10.jpg" />
+    <image src="../../360vr/images/img_0_0_11.jpg" />
+    <image src="../../360vr/images/img_0_0_12.jpg" />
+    <image src="../../360vr/images/img_0_0_13.jpg" />
+    <image src="../../360vr/images/img_0_0_14.jpg" />
+    <image src="../../360vr/images/img_0_0_15.jpg" />
+    <image src="../../360vr/images/img_0_0_16.jpg" />
+    <image src="../../360vr/images/img_0_0_17.jpg" />
+    <image src="../../360vr/images/img_0_0_18.jpg" />
+    <image src="../../360vr/images/img_0_0_19.jpg" />
+    <image src="../../360vr/images/img_0_0_20.jpg" />
+    <image src="../../360vr/images/img_0_0_21.jpg" />
+    <image src="../../360vr/images/img_0_0_22.jpg" />
+    <image src="../../360vr/images/img_0_0_23.jpg" />
+    <image src="../../360vr/images/img_0_0_24.jpg" />
+    <image src="../../360vr/images/img_0_0_25.jpg" label="1" />
+    <image src="../../360vr/images/img_0_0_26.jpg" />
+    <image src="../../360vr/images/img_0_0_27.jpg" />
+    <image src="../../360vr/images/img_0_0_28.jpg" />
+    <image src="../../360vr/images/img_0_0_29.jpg" />
+    <image src="../../360vr/images/img_0_0_30.jpg" />
+    <image src="../../360vr/images/img_0_0_31.jpg" />
+    <image src="../../360vr/images/img_0_0_32.jpg" />
+    <image src="../../360vr/images/img_0_0_33.jpg" />
+    <image src="../../360vr/images/img_0_0_34.jpg" />
+    <image src="../../360vr/images/img_0_0_35.jpg" />
+  </images>
+</config>

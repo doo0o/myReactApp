@@ -1,0 +1,29 @@
+<div id="experienceCont4" class="experience_cont exp_air_check">
+	<div
+		class="air_check_bg"
+		style="background-image: url('../../img/pdp/bg_air2.png')"
+	></div>
+	<div class="exp_title exp_title2">
+		<p class="txt">실내공기질 쾌적한 상태 입니다.</p>
+	</div>
+	<div class="air_check_box">
+		<div class="air_check_round" data-ref="airCheck">
+			<div class="line" data-ref="line"></div>
+			<div class="num" data-ref="num" data-number="28">99</div>
+			<div class="state">
+				<span class="state1" data-ref="state">쾌적</span>
+				<span class="state2" data-ref="state">좋음</span>
+				<span class="state3" data-ref="state">보통</span>
+			</div>
+		</div>
+	</div>
+	<div class="air_check_bot">
+		<p class="state">탈취 케어가 완료 되었으며, <br> 에어컨 필터를 신품으로 교체 했습니다.</p>
+		<div class="caution">
+			<ul>
+				<li>실내공기질 점수는 정밀 측정 후 내부 계산법으로 환산했습니다. 0~100까지 측정 가능하며 수치가 낮을 수록 우수합니다.</li>
+				<li>개인의 예민도에 따라 실제 체감 차이가 있을 수 있습니다.</li>
+			</ul>
+		</div>
+	</div>
+</div>

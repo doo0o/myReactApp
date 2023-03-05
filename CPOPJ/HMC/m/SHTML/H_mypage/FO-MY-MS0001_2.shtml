@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>마이메인</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_mypage.css">
+</head>
+<body class="bg_color">
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_navi01">
+			<!--<button type="button" class="ic_back">뒤로가기</button>-->
+			<div class="util">
+				<ul>
+					<li><a href="javascript:void(0);" class="ic_alarm on">알림</a></li>
+					<li><a href="javascript:void(0);" class="ic_set">설정하기</a></li>
+				</ul>	
+			</div>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="my_main">
+			<section class="user">
+				<a href="javascript:void(0);"><em>로그인</em></a>
+			</section>
+			 
+			
+			<!-- 보유차량 -->
+			<section class="my_car add">
+				<a href="javascript:void(0);">
+					<p class="tit">내차등록</p>
+					<p class="txt">차량을 등록하고 다양한 정보를 확인해 보세요!</p><!-- 보유 차량이 없거나 등록 전 상태(CRMS 조회 안됨) -->
+				</a>
+			</section>
+			<!-- //보유차량 -->
+
+			<section class="wish_list">
+				<ul>
+					<li>
+						<a href="javascript:void(0);">
+							<span class="num">0</span>
+							<span class="txt">장바구니</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<span class="num">0</span>
+							<span class="t xt">찜한상품</span>
+						</a>
+					</li>
+					<li>
+						<a href="javascript:void(0);">
+							<span class="num">0</span>
+							<span class="txt">최근본상품</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+
+			<section class="menu_list">
+				<ul>
+					<li><a href="javascript:void(0);" class="purchase">내차사기<span class="btn_txt_small01">더보기</span></a></li>
+					<li><a href="javascript:void(0);" class="sell">내차팔기<span class="btn_txt_small01">더보기</span></a></li>
+					<li><a href="javascript:void(0);" class="promotion">할인 프로모션 등록</a></li>
+					<li><a href="javascript:void(0);" class="review">나의리뷰</a></li>
+					<li><a href="javascript:void(0);" class="alarm">입고알림 신청내역</a></li>
+				</ul>
+			</section>
+			
+			<section class="service_list">
+				<ul>
+					<li><a href="javascript:void(0);" class="cs">고객센터</a></li>
+					<li><a href="javascript:void(0);" class="service">서비스 안내</a></li> <!-- [CPO-4664] 2022.10.12 -->
+					<li><a href="javascript:void(0);" class="notice">공지사항</a></li>
+				</ul>
+			</section>
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<script>
+	CPO.toggle();
+</script>
+</body>
+</html>

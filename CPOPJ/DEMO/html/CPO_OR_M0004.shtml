@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>현대차 CPO : 주문신청</title>
+	<!--#include file="inc_demo/common_meta.shtml"-->
+	<link rel="stylesheet" href="../css/order.css">
+</head>
+<body>
+<!--#include file="inc_demo/common_skip.shtml"-->
+<div id="CPOwrap" class="CPOorder">
+	<!-- s: container -->
+	<div class="container">
+		<div id="contents">
+<!-- ////////////////////////////////////////////////////////////////    contents start    ///////////////////////////////////////////////////////////////////////-->
+			<div class="order_cont_top">
+				<!--  s: title area : SUB  -->
+				<div class="h_sub " id="stickyTit">
+					<button type="button" class="icon_back">뒤로가기</button>
+					<h3 class="tit">주문</h3>
+				</div>
+				<!--  e: title area : SUB  -->
+				<div class="order_title">
+					<div class="title">선택한 차량을 확인하신 후
+						<p><span class="highlight">주문서를 작성</span>해주세요.</p>
+					</div>
+				</div>
+			</div>
+			<div class="order_content">
+				<div class="cont_visual apply">
+					<div class="visual_card">
+						<div class="img_box">
+							<img src="../img/thumb/order_thumb01.png" alt="더 뉴 그랜저 가솔린 3.3 캘리그래피">
+						</div>
+						<div class="info_area">
+							<div class="name_box">
+								<p class="name">더 뉴 그랜저 가솔린 3.3 캘리그래피</p>
+							</div>
+							<div class="desc_box">
+								<span class="desc_model">21년 1월</span>
+								<span class="desc_km">50,000km</span>
+							</div>
+							<div class="price_box">
+								<p class="price"><em class="num">3,820</em>만원</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="order_section_wrap">
+					<ol class="order_section">
+						<li class="item_order step01">
+							<div class="item_title_box">
+								<div class="title">1. 명의정보</div>
+								<a href="#" class="btn_link_order"><span class="blind">링크버튼</span></a>
+							</div>
+							<div class="cont_section">
+								<label class="input_radio_name">
+									<input type="radio" name="radio_order_name" checked>
+									<div class="name_card">
+										<div class="name_box">
+											<p class="name">박보은</p><span class="flag">대표명의자</span>
+										</div>
+										<div class="addr_box">
+											<p class="addr">서울시 강남구 테헤란로 510</p>
+										</div>
+										<div class="phone_box">
+											<p class="phone">010-1234-1234</p>
+										</div>
+									</div>
+								</label>
+								<label class="input_radio_name">
+									<input type="radio" name="radio_order_name">
+									<div class="name_card">
+										<div class="name_box">
+											<p class="name">박보미</p>
+										</div>
+										<div class="addr_box">
+											<p class="addr">서울시 강남구 테헤란로 510</p>
+										</div>
+										<div class="phone_box">
+											<p class="phone">010-1234-1234</p>
+										</div>
+									</div>
+								</label>
+							</div>
+						</li>
+						<li class="item_order step02">
+							<div class="item_title_box">
+								<p class="title">2. 배송정보</p>
+								<a href="#" class="btn_link_order"><span class="blind">링크버튼</span></a>
+							</div>
+							<div class="cont_section">
+								<div class="name_card_area msg">
+									<div class="name_card">
+										<div class="name_box">
+											<p class="name">박보은</p>
+										</div>
+										<div class="addr_box">
+											<p class="addr">서울시 강남구 테헤란로 510</p>
+										</div>
+										<div class="phone_box">
+											<p class="phone">010-1234-1234</p>
+										</div>
+									</div>
+									<div class="message_box">
+										<label class="input_text_message">
+											<input type="text" class="message_text" placeholder="도착 전 휴대폰으로 전화주세요.">
+										</label>
+									</div>
+								</div>
+								<div class="calendar_area">
+									<div class="calendar_head">
+										<p class="title">2021.09.10(오늘)</p>
+										<button class="btn_order_calendar"><span class="blind">배송시간 달력 버튼</span></button>
+									</div>
+									<div class="calendar_body">
+										<div class="delivery_time">
+											<p class="title">탁송시간</p>
+											<div class="text">09:00~12:00</div>
+											<div class="text">13:00~18:00</div>
+											<div class="text">18:00~20:00</div>
+										</div>
+										<div class="delivery_date">
+											<div class="day">
+												<p class="title today">오늘</p>
+												<div class="select">마감</div>
+												<div class="select">마감</div>
+												<div class="select">마감</div>
+											</div>
+											<div class="day">
+												<p class="title">내일</p>
+												<div class="select">마감</div>
+												<div class="select">
+													<label class="input_radio_calendar">
+														<input type="radio" name="radio_calendar" checked>
+														<span class="radio_calendar"></span>
+													</label>
+												</div>
+												<div class="select">마감</div>
+											</div>
+											<div class="day">
+												<p class="title">09.12</p>
+												<div class="select">
+													<label class="input_radio_calendar">
+														<input type="radio" name="radio_calendar">
+														<span class="radio_calendar"></span>
+													</label>
+												</div>
+												<div class="select">
+													<label class="input_radio_calendar">
+														<input type="radio" name="radio_calendar">
+														<span class="radio_calendar"></span>
+													</label>
+												</div>
+												<div class="select">
+													<label class="input_radio_calendar">
+														<input type="radio" name="radio_calendar">
+														<span class="radio_calendar"></span>
+													</label>
+												</div>
+											</div>
+											<div class="day">
+												<p class="title">09.12</p>
+												<div class="select">
+													<label class="input_radio_calendar">
+														<input type="radio" name="radio_calendar">
+														<span class="radio_calendar"></span>
+													</label>
+												</div>
+												<div class="select">
+													<label class="input_radio_calendar">
+														<input type="radio" name="radio_calendar">
+														<span class="radio_calendar"></span>
+													</label>
+												</div>
+												<div class="select">마감</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="item_order step03">
+							<div class="item_title_box">
+								<div class="title">3. H Warranty</div>
+								<a href="#" class="btn_link_order"><span class="blind">링크버튼</span></a>
+							</div>
+							<div class="cont_section">
+								<div class="warranty_cart">
+									<div class="title_box">
+										<p class="title">H Premium</p>
+									</div>
+									<div class="desc_box">
+										<span class="desc_day">365일</span>
+										<span class="desc_km">20,000km</span>
+										<span class="desc_warranty">보증연장</span>
+									</div>
+									<div class="price_box">
+										<p class="price"><em class="num">565,000</em>원</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="item_order step04">
+							<div class="item_title_box">
+								<div class="title">4. 결제방식 설정</div>
+							</div>
+							<div class="cont_section">
+								<div class="pay_setting">
+									<div class="cont_setting">
+										<div class="head_box">
+											<p class="text">차량가격</p>
+											<p class="price"><em class="num">38,200,000</em>원</p>
+										</div>
+										<div class="setting_box">
+											<ul class="list_setting input">
+												<li class="item_setting">
+													<label class="input_text_pay">
+														<input type="text" placeholder="500,000">
+														<p class="text">포인트결제</p>
+													</label>
+												</li>
+												<li class="item_setting">
+													<label class="input_text_pay">
+														<input type="text" placeholder="9,500,000">
+														<p class="text">현금결제</p>
+													</label>
+												</li>
+												<li class="item_setting">
+													<label class="input_text_pay">
+														<input type="text" placeholder="8,200,000">
+														<p class="text">카드결제</p>
+													</label>
+												</li>
+												<li class="item_setting">
+													<label class="input_text_pay">
+														<input type="text" placeholder="20,000,000">
+														<p class="text">할부결제</p>
+													</label>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="cont_setting">
+										<div class="head_box">
+											<p class="text">세금 및 부대비용</p>
+										</div>
+										<div class="setting_box">
+											<ul class="list_setting radio">
+												<li class="item_setting">
+													<div class="radio_box">
+														<label class="input_radio_text">
+															<input type="radio" name="radio_pay_setting01">
+															<span class="text">현금</span>
+														</label>
+														<label class="input_radio_text">
+															<input type="radio" name="radio_pay_setting01" checked>
+															<span class="text">카드</span>
+														</label>
+													</div>
+													<div class="group_text">
+														<div class="text_box">
+															<p class="text">관리비용</p>
+														</div>
+														<div class="price_box">
+															<p class="price"><em class="num">253,000</em>원</p>
+														</div>
+													</div>
+												</li>
+												<li class="item_setting">
+													<div class="radio_box">
+														<label class="input_radio_text">
+															<input type="radio" name="radio_pay_setting02">
+															<span class="text">현금</span>
+														</label>
+														<label class="input_radio_text">
+															<input type="radio" name="radio_pay_setting02" checked>
+															<span class="text">카드</span>
+														</label>
+													</div>
+													<div class="group_text">
+														<div class="text_box">
+															<p class="text">H Warranty</p>
+														</div>
+														<div class="price_box">
+															<p class="price"><em class="num">565,000</em>원</p>
+														</div>
+													</div>
+												</li>
+												<li class="item_setting">
+													<div class="radio_box">
+														<label class="input_radio_text">
+															<input type="radio" name="radio_pay_setting03">
+															<span class="text">현금</span>
+														</label>
+														<label class="input_radio_text">
+															<input type="radio" name="radio_pay_setting03" checked>
+															<span class="text">카드</span>
+														</label>
+													</div>
+													<div class="group_text">
+														<div class="text_box">
+															<p class="text">등록신청 대행료</p>
+														</div>
+														<div class="price_box">
+															<p class="price"><em class="num">22,000</em>원</p>
+														</div>
+													</div>
+												</li>
+												<li class="item_setting">
+													<div class="radio_box">
+														<label class="input_radio_text">
+															<input type="radio" name="radio_pay_setting04">
+															<span class="text">현금</span>
+														</label>
+														<label class="input_radio_text">
+															<input type="radio" name="radio_pay_setting04" checked>
+															<span class="text">카드</span>
+														</label>
+													</div>
+													<div class="group_text">
+														<div class="text_box">
+															<p class="text">탁송료</p>
+														</div>
+														<div class="price_box">
+															<p class="price"><em class="num">100,000</em>원</p>
+														</div>
+													</div>
+												</li>
+												<li class="item_setting">
+													<div class="radio_box">
+														<label class="input_radio_text">
+															<input type="radio" name="radio_pay_setting05" checked>
+															<span class="text">현금</span>
+														</label>
+														<label class="input_radio_text">
+															<input type="radio" name="radio_pay_setting05" disabled>
+															<span class="text">카드</span>
+														</label>
+													</div>
+													<div class="group_text">
+														<div class="text_box">
+															<p class="text">이전등록비</p>
+														</div>
+														<div class="price_box">
+															<p class="price"><em class="num">1,760,000</em>원</p>
+														</div>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="total_price">
+								<div class="title_box">
+									<p class="title">총 결제금액</p>
+									<p class="price"><em class="num">40,900,000</em>원</p>
+								</div>
+								<div class="amount_area">
+									<div class="amount_box">
+										<p class="title">포인트 결제금액</p>
+										<p class="price"><em class="num">500,000</em>원</p>
+									</div>
+									<div class="amount_box">
+										<p class="title">현금 결제금액</p>
+										<p class="price"><em class="num">10,000,000</em>원</p>
+									</div>
+									<div class="amount_box">
+										<p class="title">카드 결제금액</p>
+										<p class="price"><em class="num">9,140,000</em>원</p>
+									</div>
+									<div class="amount_box">
+										<p class="title">할부 결제금액</p>
+										<p class="price"><em class="num">20,000,000</em>원</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li class="item_order step02">
+							<div class="cont_section">
+								<div class="item_title_box">
+									<div class="title">5. 전자서명<span class="flag">서명완료</span></div>
+									<a href="#" class="btn_link_order"><span class="blind">링크버튼</span></a>
+								</div>
+								<div class="name_card payment">
+									<div class="name_box">
+										<p class="name">박보은</p>
+									</div>
+									<div class="addr_box">
+										<p class="addr">서울시 강남구 테헤란로 510</p>
+									</div>
+									<div class="phone_box">
+										<p class="phone">010-1234-1234</p>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="item_order last">
+							<div class="agree_box">
+								<div class="chk_box">
+									<label class="chk_order01" for="chk_order">
+										<input type="checkbox" name="chk_order01" id="chk_order" checked>
+										<span></span>
+									</label>
+									<p class="text">주문정보 확인 및 약관에 동의합니다.</p>
+								</div>
+								<a href="#" class="btn_link_text">약관보기</a>
+							</div>
+						</li>
+					</ol>
+				</div>
+				<div class="btn_fixed_area">
+					<div class="fixed_order">
+						<a href="CPO_OR_M0004_1.shtml" class="btn_order">40,900,000원 결제하기</a>
+					</div>
+				</div>
+			</div>
+		
+<!-- ////////////////////////////////////////////////////////////////    contents start    ///////////////////////////////////////////////////////////////////////-->
+		</div>
+	</div>
+	<!-- e: container -->
+	<!--#include file="inc_demo/layout_footer.shtml"-->
+</div>
+</body>
+</html>

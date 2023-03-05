@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>STEP3-1.구매/옵션 정보 입력 : 제네시스 CPO</title>
+	<!--#include file="/GHQ/SHTML/G_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/g_sale.css">
+</head>
+<body>
+<!--#include file="/GHQ/SHTML/G_inc/common_skip.shtml"-->
+<!--#include file="/GHQ/SHTML/G_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--#include file="/GHQ/SHTML/G_inc/layout_header.shtml"-->
+		<!--  s: title area : SUB  -->
+		<div class="h_sub ">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h3 class="tit">구매/옵션 정보 입력</h3>
+		</div>
+		<!--  e: title area : SUB  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<!-- [COMMON] 내차팔기 입력 진행 상황 progress -->
+		<div class="sale_progress">
+			<span style="width:50%">총 28개 필수 입력값 중 1개 입력하셨습니다. (14/28)*100</span>
+		</div>
+		<!-- //[COMMON] 내차팔기 입력 진행 상황 progress -->
+		<!-- STEP3-1.구매/옵션 정보 입력 -->
+		<div class="step3_box off"><!-- 전체 입력 한 경우 off class remove -->
+			<div class="step31_drive">
+				<!--#include file="/GHQ/SHTML/@@G_sale/inc/step3_1_01_drive.shtml"-->
+			</div>
+			<div class="step31_option" style="display:none">
+				<!--#include file="/GHQ/SHTML/@@G_sale/inc/step3_1_02_option.shtml"-->
+			</div>
+			<div class="step31_how" style="display:none">
+				<!--#include file="/GHQ/SHTML/@@G_sale/inc/step3_1_03_how.shtml"-->
+			</div>
+
+			<!-- 선택 내용 -->
+			<div class="sale_carinfo">
+				<div class="top">
+					<h4 class="tit">구매/옵션 정보를<br />모두 입력하셨어요.</h4>
+					<p class="txt">아래 내용을 확인 후 수리/손상 정보를 입력해 주세요.</p>
+				</div>
+				<ol class="mycar_infobox">
+					<li class="off" data-item="step31-drive">
+						<span class="tit">주행거리</span>
+						<span class="txt">
+							23,345 km
+							<button type="button" class="btn_txt07 jQ_POP_open" data-popup="FO-TI-MS0022">수정</button>
+						</span>
+					</li>
+					<li class="off" data-item="step31-option">
+						<span class="tit">별도 추가 옵션</span>
+						<span class="txt">
+							네, 있어요
+							<button type="button" class="btn_txt07 jQ_POP_open" data-popup="FO-TI-MS0023">수정</button>
+						</span>
+					</li>
+					<li class="off" data-item="step31-how">
+						<span class="tit">구입방식</span>
+						<span class="txt">
+							운용 리스
+							<button type="button" class="btn_txt07 jQ_POP_open" data-popup="FO-TI-MS0024">수정</button>
+						</span>
+					</li>
+					<li class="off" data-item="step31-how">
+						<span class="tit">변속기</span>
+						<span class="txt">오토</span>
+					</li>
+					<li class="off" data-item="step31-how">
+						<span class="tit">색상</span>
+						<span class="txt">미드나잇 블랙 펄</span>
+					</li>
+					<li class="off" data-item="step31-how">
+						<span class="tit">출고 당시 옵션</span>
+						<span class="txt">외장 2건, 내장 5건, 안전 3건, 편의 2건, 멀티미디어 2건</span>
+					</li>
+				</ol>
+			</div>
+			<!-- //선택 내용 -->
+			<!-- button  -->
+			<div class="btn_sticky">
+				<button type="button" class="btn_big01">수리/손상 정보 입력하기</button>
+			</div>
+			<!-- //button  -->
+		</div>
+		<!-- //STEP3-1.구매/옵션 정보 입력 -->
+
+
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/GHQ/SHTML/G_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/GHQ/SHTML/G_inc/popup_include_all.shtml"-->
+<!--#include file="/GHQ/SHTML/@@G_sale/include/Edit-31F-MS0022.shtml"--><!-- 주행거리 수정 -->
+<!--#include file="/GHQ/SHTML/@@G_sale/include/Edit-31F-MS0023.shtml"--><!-- 구매옵션 수정 -->
+<!--#include file="/GHQ/SHTML/@@G_sale/include/Edit-31B-MS0024.shtml"--><!-- 구매 방식 수정 -->
+<script>
+$(document).ready(function(){
+	$(".step31_drive .btn_ok01").on("click",function(){// 주행거리 입력 후, '확인' 버튼 클릭 시
+		$('.step31_drive').hide();
+		$('.step31_option').show();// 2. 추가한 옵션 보여지기
+		$('li[data-item="step31-drive"]').removeClass('off');// li step31-drive의 class removed
+	});
+	$('input[name=saleOpeionChk]').on('change',function(){// 2. 추가한 옵션이 있나요, 
+		if ($("#saleOpeionChk01").is(':checked')) {
+			$("#saleOpenChkYes").addClass('yes');
+			$("#saleOpeionTxt").focus();// 입력창에 포커스 인하기
+			console.log('네, 있어요');
+		} else {
+			$("#saleOpenChkYes").removeClass('yes');
+			$('.step31_option').hide();
+			$('.step31_how').show();
+			$('li[data-item="step31-option"]').removeClass('off');// li step31-drive의 class removed
+		}
+	});
+
+	$('input[name=saleBuyChk ]').on('change',function(){// 3. 어떤 방식으로 구입하셨나요?
+		$('.step31_how').hide();
+		$('.step3_box').removeClass('off');
+		$('li[data-item="step31-how"]').removeClass('off');// li step31-drive의 class removed
+	});
+});
+</script>
+</body>
+</html>

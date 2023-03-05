@@ -1,0 +1,29 @@
+<div class="CPOpop_full" id="FO-PD-MS0014">
+	<div class="p_head">
+		<h2 class="tit">보증 상세</h2>
+	</div>
+	<div class="p_wrap">
+		<div class="pdp_war no_btn">
+			<div class="pdp_war_header">
+				<p class="txt">24더 3215</p>
+				<p class="txt2">쏘나타 DN8 2.0 가솔린 프리미엄</p>
+				<p class="date">보증 조회일: 2021.12.06</p>
+			</div>
+			<div class="tab">
+				<ul class="tab_list tab_type2">
+					<li class="on"><button>일반 보증 기간</button></li>
+					<li><button>배출가스 부품 보증 기간</button></li>
+				</ul>
+				<div class="tab_cont">
+					<div class="tab_item on">
+						<!--#include file="/HMC/m/SHTML/H_detail/include/FO-PD-MS0014_tab1.shtml"-->
+					</div>
+					<div class="tab_item">
+						<!--#include file="/HMC/m/SHTML/H_detail/include/FO-PD-MS0014_tab2.shtml"-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

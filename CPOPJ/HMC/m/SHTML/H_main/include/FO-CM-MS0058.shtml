@@ -1,0 +1,16 @@
+<!-- FO-CM-MS0058 : 브랜드관 이동 팝업 - BOTTOM -->
+<div class="CPOpop_bottom" id="FO-CM-MS0058">
+	<div class="p_head">
+		<h2 class="tit txt_hidden">브랜드관 이동</h2>
+	</div>
+	<div class="p_wrap">
+		<div class="cont_move">
+			<span class="ico">제네시스</span>
+			<p class="txt"><script>MSG.text('제네시스', '현대');</script> 브랜드 차량을<br>구매하시겠습니까?</p>
+		</div>		
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01"><script>MSG.text('제네시스', '현대');</script> 브랜드관으로 이동하기</button>
+		</div>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

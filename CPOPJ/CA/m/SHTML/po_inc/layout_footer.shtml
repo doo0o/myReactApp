@@ -1,0 +1,166 @@
+
+	<!-- s: footer -->
+	<div id="CPOfooter">
+		<div class="foot_logo"><a href="#">HYUNDAI</a></div>
+		<div class="foot_copy">Copyright © Hyundai Motor Company.<br>All Rights Reserved.</div>
+		<ul class="foot_menu">
+			<li><a href="#">이용약관</a></li>
+			<li><a href="#"><em>개인정보처리방침</em></a></li>
+			<li><a href="#">고객센터</a></li>
+		</ul>
+		<div class="foot_info">
+			<button type="button">사업자정보</button>
+			<div>
+				<span>상호명: 현대자동차</span>대표이사: 장재훈<a href="#">사업자정보확인</a><br>
+				<span>주소: 서울시 서초구 헌릉로 12</span>사업자등록번호: 101-81-09147<br>
+				통신판매업 신고번호: 2002-01546
+			</div>
+		</div>
+	</div>
+	<!-- e: footer -->
+
+	<!-- Top button(s) -->
+	<div id="CPOtop">
+		<a href="javascript:void(0)" role="button" title="write">write</a>
+		<!-- <a href="javascript:void(0)" role="button" title="chatbot">chatbot</a> -->
+		<a href="javascript:void(0)" role="button" title="top">Top</a>
+	</div>
+	<!--// Top button(e) -->
+
+
+
+<!-- s: sideLayer -->
+<div class="CPOpop_side" id="sideMenu">
+	<div class="p_wrap">
+
+		<!--로그인 후-->
+		<div class="user_info">
+			<span class="name"><strong>김현대</strong> 검수사님</span>
+			<a href="#" class="btn_txt06">업무요청 관리</a>
+		</div>
+
+		<div class="menu">
+			<ul>
+				<li><a href="#" class="dep01">오늘평가</a></li>
+				<li><a href="#" class="dep01">지난평가</a></li>
+				<li><a href="#" class="dep01">평가예정</a></li>
+
+				<li class="sub"><a href="#" class="dep02">내실적현황</a></li>
+				<li><a href="#" class="dep02">공지사항</a></li>
+				<li><a href="#" class="dep02">자주 묻는 질문</a></li>
+				<li class="logout"><button type="button" class="btn_middle02">로그아웃</button></li>
+			</ul>
+		</div>
+
+		<!-- //내차팔기 정보 레이어 -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+<!-- e: sideLayer -->
+
+<!-- ------------------     공통 토스트 팝업     ------------------ -->
+<!-- Toast POPUP Layout -->
+<div class="CPOpop_toast" id="CPOToast_Wrap">
+	<div class="message"></div>
+</div>
+<!-- Alert POPUP Layout -->
+<div class="CPOpop_alert" id="CPOAlert_Wrap">
+	<div class="message"></div>
+	<div class="btn_area">
+		<ul>
+			<li><button type="button" class="btn_alert01">확인</button></li>
+		</ul>
+	</div>
+</div>
+<!-- Alert POPUP Layout -->
+<div class="CPOpop_alert" id="CPOAlert_Wrap02">
+	<div class="message"></div>
+	<div class="btn_area">
+		<ul>
+			<li><button type="button" class="btn_alert">취소</button></li>
+			<li><button type="button" class="btn_alert">확인</button></li>
+		</ul>
+	</div>
+</div>
+
+
+
+
+
+
+<script>
+$(function(){
+	CPO.footer();
+	CPO.tooltip();
+
+	CPOSwiper(); // SWIPER 공통 (마이페이지 > 메인 )
+
+	// 레이어팝업 상단 닫기 버튼 클릭 
+	$(document).on('click', '.pop_close', function(){
+		CPO.POPUP_close($(this));
+	});
+
+	
+	$(".ic_menu").on("click",function(){
+		CPO.POPUP_open($(this));
+	});
+
+
+	//업무내역
+	$(".plp_sorting .btn_sort").on("click",function(){
+		if($(this).parent().hasClass('on')){
+			$(this).parent().removeClass('on');
+		} else {
+			$(this).parent().addClass('on');
+		}
+	});
+
+
+	
+		//datepicker 옵션값
+		$(".date-picker").datepicker({
+			dateFormat:'yy.mm.dd',
+			showOn:'focus',
+			beforeShow:function(d, e){ //dim띄우기
+				$('body').append('<div class="date_dimm"></div>');
+			},
+			onSelect:function(d, e) {
+				$(this).data('datepicker').inline = true; // 날짜 선택시 창 닫히지 않게 처리
+			},
+			onClose:function(d, e) { //close
+				$(this).data('datepicker').inline = false;
+				setTimeout(function(){
+					$('.date_dimm').remove(); //dim닫기
+				},300)
+			}
+		});
+
+		// 초기날짜셋팅
+		$("#startDate").datepicker('setDate', new Date(new Date().setMonth(new Date().getMonth()-3)));
+		$("#endDate").datepicker('setDate', new Date());
+
+
+
+
+
+
+
+	$('.CPOpop_alert .btn_alert01, .CPOpop_alert .btn_alert02').on('click', function(){
+		CPO.POPUP_close($(this));
+	});
+	// ALERT -- 서비스 해지 시
+	$(".CPO_Btn_Alert01").on("click",function(){
+		CPO.POPUP_open("CPOAlert_Wrap", "<p class='txt01'>중고차 결제, 배송중이거나 판매중이기 때문에 서비스 해지를 진행할 수 없습니다.<br />중고차 구매, 판매를 완료하신 후에 다시 시도해주세요.</p>");
+	});
+	// ALERT -- 로그인 확인 
+	$(".CPO_Btn_Alert02").on("click",function(){
+		CPO.POPUP_open("CPOAlert_Wrap02", "로그인이 필요합니다.");
+	});
+	// TOAST -- 장바구니 담기
+	$(".CPO_Btn_Toast").on("click",function(){
+		CPO.POPUP_toast("CPOToast_Wrap", "차량이 장바구니에 담겼습니다.");
+	});
+
+
+});
+</script>

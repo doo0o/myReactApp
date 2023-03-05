@@ -1,0 +1,59 @@
+<div class="CPOpop_bottom" id="FO-OR-MS0071">
+	<div class="p_head">
+		<h2 class="tit">신용조회 제공 약관 동의</h2>
+	</div>
+	<div class="p_wrap">
+
+		<div class="agree_wrap agree_wrap_type2 toggle">
+			<div class="on">
+				<div class="top">
+					<input type="checkbox" class="chk_type01 large" id="chk_list2_01"><label for="chk_list2_01">전체 약관에 동의합니다.</label>
+				</div>
+				<div class="inner">
+					<ol>
+						<li>
+							<input type="checkbox" name="chk_comm" id="chk_list2_02" class="chk_type01"><label for="chk_list2_02">[필수] 개인정보 수집 및 이용 동의</label>
+							<button type="button" class="btn_show02" data-href="FO-ME-MS0002">약관 자세히 보기</button>
+						</li>
+						<li>
+							<input type="checkbox" name="chk_comm" id="chk_list2_03" class="chk_type01"><label for="chk_list2_03">[필수] 고유식별정보수집 및 이용 동의</label>
+							<button type="button" class="btn_show02" data-href="FO-ME-MS0002">약관 자세히 보기</button>
+						</li>
+						<li>
+							<input type="checkbox" name="chk_comm" id="chk_list2_04" class="chk_type01"><label for="chk_list2_04">[필수] 개인(신용)정보 조회 동의</label>
+							<button type="button" class="btn_show02" data-href="FO-ME-MS0002">약관 자세히 보기</button>
+						</li>
+						<li>
+							<input type="checkbox" name="chk_comm" id="chk_list2_05" class="chk_type01"><label for="chk_list2_05">[필수] 고유식별정보 조회 동의</label>
+							<button type="button" class="btn_show02" data-href="FO-ME-MS0002">약관 자세히 보기</button>
+						</li>
+						<li>
+							<input type="checkbox" name="chk_comm" id="chk_list2_06" class="chk_type01"><label for="chk_list2_06">[필수] 개인(신용)정보 제공 동의</label>
+							<button type="button" class="btn_show02" data-href="FO-ME-MS0002">약관 자세히 보기</button>
+						</li>
+						<li>
+							<input type="checkbox" name="chk_comm" id="chk_list2_07" class="chk_type01"><label for="chk_list2_07">[필수] 고유식별정보 제공 동의</label>
+							<button type="button" class="btn_show02" data-href="FO-ME-MS0002">약관 자세히 보기</button>
+						</li>
+						<li>
+							<input type="checkbox" name="chk_comm" id="chk_list2_08" class="chk_type01"><label for="chk_list2_08">[필수] 개인(신용)정보 이용 및 제3자 제공 동의</label>
+							<button type="button" class="btn_show02" data-href="FO-ME-MS0002">약관 자세히 보기</button>
+						</li>
+					</ol>
+				</div>
+				<button type="button" class="btn_show01 btnToggle" data-href="닫아보기">펼쳐보기</button>
+			</div>
+		</div>
+		
+		<!-- btn_sticky -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">확인</button>
+		</div>
+		<!-- //btn_sticky -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+
+<script>
+	CPO.toggle();
+</script>

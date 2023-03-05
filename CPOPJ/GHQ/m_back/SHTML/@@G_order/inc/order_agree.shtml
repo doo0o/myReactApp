@@ -1,0 +1,22 @@
+<div class="order_box01 agree">
+	<div class="top">
+		<input type="checkbox" class="chk_type01" name="" id=""><label for="">주문약관 전체 내용에 동의합니다.</label>
+		<button type="button" class="btn_show01" data-href="닫아보기">펼쳐보기</button>
+	</div>
+	<div class="inner">
+		<ol class="agree_list">
+			<li>
+				<input type="checkbox" class="chk_type01" name="" id=""><label>[필수] 약관1</label>
+				<button type="button" class="btn_show02" data-href="FO-ME-MS0002">약관 자세히 보기</button><!-- data-href 약관 layer ID -->
+			</li>
+			<li>
+				<input type="checkbox" class="chk_type01" name="" id=""><label>[필수] 약관2</label>
+				<button type="button" class="btn_show02" data-href="FO-ME-MS0002">약관 자세히 보기</button><!-- data-href 약관 layer ID -->
+			</li>
+			<li>
+				<input type="checkbox" class="chk_type01" name="" id=""><label>[필수] 약관3</label>
+				<button type="button" class="btn_show02" data-href="FO-ME-MS0002">약관 자세히 보기</button><!-- data-href 약관 layer ID -->
+			</li>
+		</ol>
+	</div>
+</div>

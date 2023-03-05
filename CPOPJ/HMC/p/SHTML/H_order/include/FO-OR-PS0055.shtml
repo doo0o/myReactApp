@@ -1,0 +1,67 @@
+<div class="popup_modal" id="FO-OR-PS0055">
+	<div class="p_body">
+		<div class="p_inner s_small">
+			<div class="p_head">
+				<h2 class="tit">대출 한도 및 금리 안내</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+				<div class="inner_view layer_installment">
+					<div class="top_wrap">
+						<p class="txt1">현대 인증중고차 내차사기를 위한 오토할부 한도 조회가 완료되었습니다.</p>
+						<P class="txt2">한도 결과 확인 후 할부 신청을 진행해 주세요.</P>
+						<P class="txt2 point01">할부신청 유효기간은 2022.06.09 까지 입니다.</P>
+					</div>
+					<div class="table_area">
+						<div claSS="sec_tit s">대출한도 및 금리안내</div>
+
+						<P claSS="txt1">개인신용평점 및 희망 차량의 조건에 따라 심사결과가 달라질 수 있습니다. </P>
+						<table class="table type01">
+							<caption>대출한도 및 금리안내</caption>
+							<colgroup>
+								<col width="126px">
+								<col width="*">
+							</colgroup>
+							<tbody>
+								<tr>
+									<th>최대한도</th>
+									<td>20,000,000 원</td>
+								</tr>
+								<tr>
+									<th>이용금리</th>
+									<td>연 5.9%</td>
+								</tr>
+								<tr>
+									<th>상환기간</th>
+									<td>최대 60개월</td>
+								</tr>
+								<tr>
+									<th>상환방식</th>
+									<td>원리금균등분할</td>
+								</tr>
+								<tr>
+									<th>납입시기</th>
+									<td>매월납부</td>
+								</tr>
+								<tr>
+									<th>중도상환 수수료</th>
+									<td>무료</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<!-- //contents -->
+				<!-- sticky -->
+				<div class="btn_area full_type">
+					<button type="button" class="btn_big color01">오토할부 진행하기</button>
+				</div>
+				<!-- <div class="btn_area full_type">
+					<button type="button" class="btn_big color01">할부 계산기에 적용</button>
+				</div> -->
+				<!-- //sticky -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

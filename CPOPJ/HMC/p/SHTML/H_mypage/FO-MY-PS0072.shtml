@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>승인내역 : 현대 CUV</title>
+	<!--#include file="/HMC/p/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_mypage.css"> <!-- 해당 CSS -->
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+    <div id="CPOcontents">
+        <div id="layoutWrap" class="my">
+            <!-- container -->
+            <div class="container flex">
+                <!--#include file="/HMC/p/SHTML/H_inc/layout_left.shtml"-->
+                <!-- cont_wrap -->
+                <div class="cont_wrap promotion" data-id="myEvent">
+                    <h1 class="page_tit">프로모션 등록</h1>
+					<div class="tab">
+						<ul class="list">
+							<li><a href="FO-MY-PS0070.shtml">프로모션(30)</a></li>
+							<li class="on"><a href="FO-MY-PS0072.shtml">승인내역(30)</a></li>
+						</ul>
+					</div>
+					<div class="caution">
+						<p>
+							사용기간이 만료되거나 사용한 프로모션은 목록에서 자동으로 삭제됩니다.
+						</p>
+					</div>
+					<!-- 노데이터 -->
+					<div class="no_data promotion">
+						<p class="tit">승인내역이 없습니다.</p>
+						<p class="txt">사용기간이 만료되거나 사용한 프로모션은 목록에서 자동으로 삭제됩니다.</p>
+						<div class="btn_area">
+							<a href="#" class="btn_small color02">내차사기 홈으로 가기</a>
+						</div>
+					</div> 
+					<!-- // 노데이터 -->
+					<ul class="item_list">
+						<li>
+							<div class="tit_box">
+								<div class="flag">
+									<span class="flag_big04">서류검토중</span>
+								</div>
+								<p class="tit">현대차 가족사랑 할인</p>
+								<span class="date">사용기간 : 2022.11.23~2022.11.24<em class="time">(16시간 남음)</em></span>
+							</div>
+							<p class="num">10<em>%</em></p>
+							<button type="button" class="btn_small color02">자세히 보기</button>
+						</li>
+						<li>
+							<div class="tit_box">
+								<div class="flag">
+									<span class="flag_big01">승인완료</span>
+								</div>
+								<p class="tit">현대자동차 전용카드 프로모션</p>
+								<span class="date">사용기간 : 2022.11.23~2022.11.24<em class="time">(16시간 남음)</em></span>
+							</div>
+							<p class="num">40<em>만원</em></p>
+							<button type="button" class="btn_small color02">자세히 보기</button>
+						</li>
+						<li class="disabled">
+							<div class="tit_box">
+								<div class="flag">
+									<span class="txt_failure">승인불가</span>
+									<div class="tooltip right">
+										<button type="button" class="open size01">상세보기</button>
+										<div class="cont">
+											<span class="text">서류를 심사한 결과, 심사불가 처리되었습니다.</span>
+											<button class="close">상세보기닫기</button>
+										</div>
+									</div>
+								</div>
+								<p class="tit">현대와 함께하는 2022 코리아세일페스타</p>
+								<span class="date">사용기간 : 2022.11.23~2022.11.24<em class="time">(16시간 남음)</em></span>
+							</div>
+							<p class="num">5<em>%</em></p>
+							<button type="button" class="btn_small color02">자세히 보기</button>
+						</li>
+						<li>
+							<div class="tit_box">
+								<div class="flag">
+									<span class="flag_big04">재승인요청</span>
+								</div>
+								<p class="tit">H패밀리 할인</p>
+								<span class="date">사용기간 : 2022.11.23~2022.11.24<em class="time">(16시간 남음)</em></span>
+							</div>
+							<p class="num">30<em>만원</em></p>
+							<button type="button" class="btn_small color02">자세히 보기</button>
+						</li> 
+						<li>
+							<div class="tit_box">
+								<div class="flag">
+									<span class="flag_big04">서류검토중</span>
+								</div>
+								<p class="tit">현대차 가족사랑 할인</p>
+								<span class="date">사용기간 : 2022.11.23~2022.11.24<em class="time">(16시간 남음)</em></span>
+							</div>
+							<p class="num">10<em>%</em></p>
+							<button type="button" class="btn_small color02">자세히 보기</button>
+						</li>
+						<li>
+							<div class="tit_box">
+								<div class="flag">
+									<span class="flag_big01">승인완료</span>
+								</div>
+								<p class="tit">현대자동차 전용카드 프로모션</p>
+								<span class="date">사용기간 : 2022.11.23~2022.11.24<em class="time">(16시간 남음)</em></span>
+							</div>
+							<p class="num">40<em>만원</em></p>
+							<button type="button" class="btn_small color02">자세히 보기</button>
+						</li>
+						<li class="disabled">
+							<div class="tit_box">
+								<div class="flag">
+									<span class="txt_failure">승인불가</span>
+									<div class="tooltip right">
+										<button type="button" class="open size01">상세보기</button>
+										<div class="cont">
+											<span class="text">서류를 심사한 결과, 심사불가 처리되었습니다.</span>
+											<button class="close">상세보기닫기</button>
+										</div>
+									</div>
+								</div>
+								<p class="tit">현대와 함께하는 2022 코리아세일페스타</p>
+								<span class="date">사용기간 : 2022.11.23~2022.11.24<em class="time">(16시간 남음)</em></span>
+							</div>
+							<p class="num">5<em>%</em></p>
+							<button type="button" class="btn_small color02">자세히 보기</button>
+						</li>
+						<li>
+							<div class="tit_box">
+								<div class="flag">
+									<span class="flag_big04">재승인요청</span>
+								</div>
+								<p class="tit">H패밀리 할인</p>
+								<span class="date">사용기간 : 2022.11.23~2022.11.24<em class="time">(16시간 남음)</em></span>
+							</div>
+							<p class="num">30<em>만원</em></p>
+							<button type="button" class="btn_small color02">자세히 보기</button>
+						</li> 
+						<li>
+							<div class="tit_box">
+								<div class="flag">
+									<span class="flag_big04">서류검토중</span>
+								</div>
+								<p class="tit">현대차 가족사랑 할인</p>
+								<span class="date">사용기간 : 2022.11.23~2022.11.24<em class="time">(16시간 남음)</em></span>
+							</div>
+							<p class="num">10<em>%</em></p>
+							<button type="button" class="btn_small color02">자세히 보기</button>
+						</li>
+						<li>
+							<div class="tit_box">
+								<div class="flag">
+									<span class="flag_big01">승인완료</span> 
+								</div>
+								<p class="tit">현대자동차 전용카드 프로모션</p>
+								<span class="date">사용기간 : 2022.11.23~2022.11.24<em class="time">(16시간 남음)</em></span>
+							</div>
+							<p class="num">40<em>만원</em></p>
+							<button type="button" class="btn_small color02">자세히 보기</button>
+						</li>
+						<li class="disabled">
+							<div class="tit_box">
+								<div class="flag">
+									<span class="txt_failure">승인불가</span>
+									<div class="tooltip right">
+										<button type="button" class="open size01">상세보기</button>
+										<div class="cont">
+											<span class="text">서류를 심사한 결과, 심사불가 처리되었습니다.</span>
+											<button class="close">상세보기닫기</button>
+										</div>
+									</div>
+								</div>
+								<p class="tit">현대와 함께하는 2022 코리아세일페스타</p>
+								<span class="date">사용기간 : 2022.11.23~2022.11.24<em class="time">(16시간 남음)</em></span>
+							</div>
+							<p class="num">5<em>%</em></p>
+							<button type="button" class="btn_small color02">자세히 보기</button>
+						</li>
+						<li>
+							<div class="tit_box">
+								<div class="flag">
+									<span class="flag_big04">재승인요청</span>
+								</div>
+								<p class="tit">H패밀리 할인</p>
+								<span class="date">사용기간 : 2022.11.23~2022.11.24<em class="time">(16시간 남음)</em></span>
+							</div>
+							<p class="num">30<em>만원</em></p>
+							<button type="button" class="btn_small color02">자세히 보기</button>
+						</li> 
+						<li>
+							<div class="tit_box">
+								<div class="flag">
+									<span class="flag_big04">서류검토중</span>
+								</div>
+								<p class="tit">현대차 가족사랑 할인</p>
+								<span class="date">사용기간 : 2022.11.23~2022.11.24<em class="time">(16시간 남음)</em></span>
+							</div>
+							<p class="num">10<em>%</em></p>
+							<button type="button" class="btn_small color02">자세히 보기</button>
+						</li>
+						<li>
+							<div class="tit_box">
+								<div class="flag">
+									<span class="flag_big01">승인완료</span> 
+								</div>
+								<p class="tit">현대자동차 전용카드 프로모션</p>
+								<span class="date">사용기간 : 2022.11.23~2022.11.24<em class="time">(16시간 남음)</em></span>
+							</div>
+							<p class="num">40<em>만원</em></p>
+							<button type="button" class="btn_small color02">자세히 보기</button>
+						</li>
+						<li class="disabled">
+							<div class="tit_box">
+								<div class="flag">
+									<span class="txt_failure">승인불가</span>
+									<div class="tooltip right">
+										<button type="button" class="open size01">상세보기</button>
+										<div class="cont">
+											<span class="text">서류를 심사한 결과, 심사불가 처리되었습니다.</span>
+											<button class="close">상세보기닫기</button>
+										</div>
+									</div>
+								</div>
+								<p class="tit">현대와 함께하는 2022 코리아세일페스타</p>
+								<span class="date">사용기간 : 2022.11.23~2022.11.24<em class="time">(16시간 남음)</em></span>
+							</div>
+							<p class="num">5<em>%</em></p>
+							<button type="button" class="btn_small color02">자세히 보기</button>
+						</li>
+						<li>
+							<div class="tit_box">
+								<div class="flag">
+									<span class="flag_big04">재승인요청</span>
+								</div>
+								<p class="tit">H패밀리 할인</p>
+								<span class="date">사용기간 : 2022.11.23~2022.11.24<em class="time">(16시간 남음)</em></span>
+							</div>
+							<p class="num">30<em>만원</em></p>
+							<button type="button" class="btn_small color02">자세히 보기</button>
+						</li> 
+						<li>
+							<div class="tit_box">
+								<div class="flag">
+									<span class="flag_big04">서류검토중</span>
+								</div>
+								<p class="tit">현대차 가족사랑 할인</p>
+								<span class="date">사용기간 : 2022.11.23~2022.11.24<em class="time">(16시간 남음)</em></span>
+							</div>
+							<p class="num">10<em>%</em></p>
+							<button type="button" class="btn_small color02">자세히 보기</button>
+						</li>
+						<li>
+							<div class="tit_box">
+								<div class="flag">
+									<span class="flag_big01">승인완료</span> 
+								</div>
+								<p class="tit">현대자동차 전용카드 프로모션</p>
+								<span class="date">사용기간 : 2022.11.23~2022.11.24<em class="time">(16시간 남음)</em></span>
+							</div>
+							<p class="num">40<em>만원</em></p>
+							<button type="button" class="btn_small color02">자세히 보기</button>
+						</li>
+						<li class="disabled">
+							<div class="tit_box">
+								<div class="flag">
+									<span class="txt_failure">승인불가</span>
+									<div class="tooltip right">
+										<button type="button" class="open size01">상세보기</button>
+										<div class="cont">
+											<span class="text">서류를 심사한 결과, 심사불가 처리되었습니다.</span>
+											<button class="close">상세보기닫기</button>
+										</div>
+									</div>
+								</div>
+								<p class="tit">현대와 함께하는 2022 코리아세일페스타</p>
+								<span class="date">사용기간 : 2022.11.23~2022.11.24<em class="time">(16시간 남음)</em></span>
+							</div>
+							<p class="num">5<em>%</em></p>
+							<button type="button" class="btn_small color02">자세히 보기</button>
+						</li>
+						<li>							
+							<div class="tit_box">
+								<div class="flag">
+									<span class="flag_big04">재승인요청</span>
+								</div>
+								<p class="tit">H패밀리 할인</p>
+								<span class="date">사용기간 : 2022.11.23~2022.11.24<em class="time">(16시간 남음)</em></span>
+							</div>
+							<p class="num">30<em>만원</em></p>
+							<button type="button" class="btn_small color02">자세히 보기</button>
+						</li> 
+					</ul>
+					<div class="btn_area col_type">
+						<button type="button" class="btn_more">더보기</button>
+					</div>	
+                </div>
+                <!-- //cont_wrap -->
+            </div>
+            <!-- //container -->
+        </div>
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<script>
+	lnb_active();
+	tooltip();
+</script>
+</html>

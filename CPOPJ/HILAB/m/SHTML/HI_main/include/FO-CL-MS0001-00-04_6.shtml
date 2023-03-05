@@ -1,0 +1,72 @@
+<section class="main_con6">
+  <p class="con_tit">
+    <span>중고차 거래를 위해</span>
+    <strong>기초지식부터 필요하다면</strong>
+  </p>
+  <div class="swiper-container slider3">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="#none">
+          <span
+            ><img src="/HILAB/m/img/@thumb/series01.png" alt=""
+          /></span>
+          <p>
+            신차 구매와 중고차 구매!<br />
+            내게 더 적합한 것은 무엇일까?
+          </p>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#none">
+          <span
+            ><img src="/HILAB/m/img/@thumb/series02.png" alt=""
+          /></span>
+          <p>
+            모르면 손해!<br />
+            중고차 거래 꿀팁 더 적합한 것은 무엇일까?
+          </p>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#none">
+          <span
+            ><img src="/HILAB/m/img/@thumb/series02.png" alt=""
+          /></span>
+          <p>
+            모르면 손해!<br />
+            중고차 거래 꿀팁 더 적합한 것은 무엇일까?
+          </p>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#none">
+          <span
+            ><img src="/HILAB/m/img/@thumb/series02.png" alt=""
+          /></span>
+          <p>
+            모르면 손해!<br />
+            중고차 거래 꿀팁 더 적합한 것은 무엇일까?
+          </p>
+        </a>
+      </div>
+      <div class="swiper-slide">
+        <a href="#none">
+          <span
+            ><img src="/HILAB/m/img/@thumb/series02.png" alt=""
+          /></span>
+          <p>
+            모르면 손해!<br />
+            중고차 거래 꿀팁 더 적합한 것은 무엇일까?
+          </p>
+        </a>
+      </div>
+    </div>
+    <div class="swiper-pagination type04"></div>
+  </div>
+  <div class="btn_area">
+	<!-- 20230127 class명 수정 -->
+    <a href="#none" class="btn_mid01">
+      더 많은 지식 확인하러 가기
+    </a>
+  </div>
+</section>

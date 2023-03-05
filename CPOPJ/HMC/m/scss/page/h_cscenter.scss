@@ -1,0 +1,473 @@
+@charset 'utf-8';
+/* 
+	고객센터
+*/
+
+@import '../_common/h_function';
+@import '../_common/h_mixins';
+
+/* base */
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	clip: rect(0,0,0,0);
+	border: 0;
+}
+/* 고객센터 헤더 */
+.CPOcscenter {
+	#CPOcontents {
+		padding:0;
+	}
+	// #CPOheader .h_sub {
+	// 	.tit, 
+	// 	.util {
+	// 		opacity: 1;
+	// 		transition: opacity 0.5s;
+	// 	}
+	// 	&:not(.fixed) {
+	// 		background-color: transparent;
+	// 		border-bottom: 0;
+	// 	}
+	// }
+}
+.CPOpop_full .p_cscenter {
+	padding-bottom: 0;
+}
+
+/* S :: 팝업/ 거래 내역조회 */
+.product_history {
+	// height: 100%;
+	.tab_cont{
+		padding-top:25px;
+		min-height:100%;
+	}
+	.caution {
+		margin:0 21px 15px;
+	}
+	.box_history {
+		padding:0 15px 0;
+	}
+	.history_list {
+		background:$COL_White;
+		@include Boxshadow(0px,5px,0.02);
+		li{
+			border-top: 1px solid $COL_Line_Medium;
+			&:first-child {
+				border-top: 0;
+			}
+		}
+		.unit_type {
+			padding:24px 20px;			
+			label {
+				display:flex;
+				align-items: center;
+				.tit {
+					position:relative;
+					padding-right:21px;
+					line-height:22px;
+					flex-shrink: 0;
+					&::after {
+						content:'';
+						position:absolute;
+						display:block;
+						top:50%;
+						right:10px;
+						margin-top:-6px;
+						width: 1px;
+						height:12px;
+						background:$COL_Line_Dark;
+					}
+				}
+				.num {
+					color:$COL_Base_02;
+					@include Mix_Font('Head-R', 14,18);
+					@include Mix_Ellipsis(1);
+				}
+			}
+		}
+	}
+}
+/* E :: 팝업/ 거래 내역조회 */
+
+/* S :: 1:1문의 작성하기 */
+.registration_wrap {
+	padding: 30px 21px 60px;
+	.select_product {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-top:20px;
+		strong {
+			color:$COL_Black;
+			@include Mix_Font('Head-M', 16, 20); 
+		}
+	}
+	.form_list02 {
+		margin:20px 0;
+	}
+	.unit_type {
+		padding:20px;
+		margin:12px 0 20px;
+		border: 1px solid $COL_Line_Medium;
+		@include Boxshadow(0, 5px, 0.02);
+		.top_area {
+			[class^="flag"] {
+				flex-shrink: 0;
+			}
+			.num {
+				margin: 0 22px 0 10px;
+				color:$COL_Base_02;
+				@include Mix_Font('Head-R' , 14, 21);
+				@include Mix_Ellipsis(1);
+			}
+		}
+	}
+	.box_alarm {
+		margin-top: 25px;
+		padding-top: 25px;
+		border-top: 1px solid $COL_Line_Medium;
+	}
+}
+/* E :: 1:1문의 작성하기 */
+
+/* S:: 고객센터 index */
+.cpo_cscenter {
+	.kv_box {
+		position:relative;
+		width: 100%;
+		text-align:center;
+		overflow: hidden;
+		
+		.text_box {
+			z-index: 1;
+			position:absolute;
+			top:103px;
+			left:50%;
+			width: 100%;
+			transform: translateX(-50%);
+			@include Mix_Font("Head-R" , 26, 33);
+			color:$COL_White;
+		}
+		img {			
+			display: block;			
+			width: 100%;	
+			height:auto;
+		}
+	}
+	.cont_box {
+		padding:35px 15px 30px;
+		text-align: center;
+	}	
+	.top_area{
+		display:flex;
+		justify-content: space-between;
+		align-items: center;
+		padding:0 6px;
+		span {
+			color:$COL_Base_01;
+			font-size:12px;
+			line-height:18px;
+		}		
+	}	
+	.qa_list {		
+		position: relative;
+		margin:20px -15px 12px; 
+		&::after{
+			content: "";
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 100%;
+			width: 30px;
+			background: linear-gradient(90deg, rgba($COL_White, 0) 0%, $COL_White 100%);
+		}
+		ul {
+			display:flex;	
+			padding:0 15px;
+			gap:0 10px;
+			-ms-overflow-style: none;
+			-webkit-overflow-scrolling: touch;
+			overflow: auto;
+			width: auto;
+			white-space: nowrap;
+		}
+		.qa_name {	
+			position:relative;
+			display:inline-block;
+			width: 80px;
+			input[type="radio"] {
+				position:absolute;
+				width:1px;
+				height:1px;
+				opacity:0;
+				&:checked {
+					+label {
+						background:$COL_Primary;
+						border-color:$COL_Primary;
+						color:$COL_White;
+					}					
+				}
+			}
+			label {
+				display:block;
+				padding:17px 0;
+				width: 82px;
+				height: 85px;
+				box-sizing: border-box;
+				color:$COL_Black;
+				background:$COL_Light;
+				border:1px solid rgba(237, 237, 237, 0.4);
+				text-align:center;
+				@include Mix_Font(Head-R, 13, 16);
+			}
+		}
+	}
+	.qa_banner {
+		margin-top:40px;		
+		text-align: left;
+		.swiper-slide {
+			position:relative ;
+			overflow: hidden;
+			.text_box {
+				position:absolute;
+				top:20px;
+				left:20px;
+				color:$COL_White;
+				line-height:25px;
+				font-size:20px;
+			}
+		}
+		.swiper-pagination {
+			margin-top:15px;
+		}
+	}
+	.qa_my {
+		position:relative;
+		padding: 40px 21px 0;
+		&::before {
+			@include Mix_Space_Bar;
+		}
+		.btn_area{
+			margin-top: 20px;
+		}	
+	}
+}
+/* E :: 고객센터 index */
+
+/* S:: FO-MY-MS0017 나의문의 */
+.my_question{
+	.q_box{
+		> li {
+			padding:35px 21px 30px;
+			position: relative;
+			&.active {
+				.tit_btn{
+					.tit {
+						display:block;
+						overflow: visible;
+						text-overflow: inherit;
+					}
+				}
+			}
+			&:last-child {
+				padding-bottom: 0;
+			}
+		}
+		> ::before {
+			@include Mix_Space_Bar;
+		}
+	}
+	.tit_btn {
+		&::after{
+			top: 10px;
+		}
+		.tit{
+			margin-top: 10px;
+			padding-right: 31px;
+			color:$COL_Black;
+			@include Mix_Font('Head-R', 16, 20);
+			@include Mix_Ellipsis(1);
+		}
+		.date{
+			margin-top:4px;
+			color:$COL_Base_02;
+			@include Mix_Font('Txt-R', 13, 20);
+		}
+	}
+	.q_cont{
+		display:none;
+		padding: 25px 0 0;
+		.qa_txt {
+			display:flex;
+			.mark {
+				color:$COL_Black;
+				@include Mix_Font('Head-M', 16, 20);
+			}
+			.txt{
+				flex: 1;
+				margin-left: 8px;
+				color:$COL_Base_03;
+				@include Mix_Font('Txt-R', 14, 21);
+				word-break: break-word;
+			}
+			.q_car {
+				display: block;
+				margin-top: 14px;
+				color: $COL_Base_02;
+			}
+			.date{
+				display: block;
+				margin-top: 14px;
+				color: $COL_Base_02;
+				@include Mix_Font('Txt-R', 13, 20);
+			}
+			&.on{
+				margin-top: 30px;
+				.mark {
+					color:$COL_Secondary;
+				}
+				.txt{
+					padding:20px 17px;
+					background-color:$COL_Light;
+					@include Mix_Font('Txt-R' , 14, 21)
+				}
+			}
+			&.qa_ing {
+				text-align: center;
+				.txt {
+					color:$COL_Base_02;
+					@include Mix_Font_Txt_M;
+				}
+			}
+			&+.qa_txt{
+				margin-top:20px;
+			}
+		}
+		.btn_area{
+			margin: 15px 0;
+			padding-bottom: 5px;
+			text-align: right;
+			li{
+				display:inline-block;
+				position: relative;
+				button{
+					color:$COL_Black;
+					@include Mix_Font('Head-R', 14, 18);
+				}
+				&:nth-child(2){
+					&:before{
+						content:'';
+						display:inline-block;
+						width:1px;
+						height:12px;
+						margin: 0 10px 0 6px;
+						background-color:$COL_Line_Dark;
+						vertical-align:middle;
+					}
+				}
+			}
+		}
+	}
+	.q_img{
+		position:relative;
+		.swiper-wrapper{
+			margin-bottom: 15px;
+			.swiper-slide{
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				overflow:hidden;
+				width:100% !important;
+				height: 88.3333vw;
+				margin-right:21px;
+				background-color:$COL_Light;
+				&:last-child{
+					margin-right:0;
+				}
+				&.wid img{
+					width:100%;
+					height:auto;
+				}
+				&.hei img{
+					width:auto;
+					height:100%;
+				}
+			}
+		}
+	}
+}
+/* E:: FO-MY-MS0017 나의문의 */
+
+/* 자주 묻는 질문 */
+.faq_wrap {
+	.inp_search{
+		input.txt{
+			&::placeholder{
+				color:$COL_Base_01;				
+			}
+		}
+	}
+	.tab_list{
+		button{
+			color: $COL_Base_02;
+		}
+	}
+	.toggle {
+		border-top: 1px solid $COL_Line_Medium;
+		li {
+			border-bottom: 1px solid $COL_Line_Medium;
+			.tit_btn {
+				width: 100%;
+				padding: 25px 53px 25px 21px;
+				@include Mix_Font('Head-R', 15, 19);
+				text-align: left;
+				word-break: keep-all;
+    			overflow-wrap: break-word;
+				&::after {
+					right: 21px;
+				}
+				> span {
+					display: block;
+					margin-bottom: 5px;
+					color: $COL_Base_01;
+					@include Mix_Font('Head-R', 12, 15);
+				}
+			}
+			> .cont {
+				display: none;
+				padding: 25px 21px;
+				border-top: 1px solid $COL_Line_Medium;
+				color: $COL_Base_03; 
+				background-color: $COL_Light;
+				@include Mix_Font_Txt_R;
+				word-break: break-word;
+			}
+			&.on {
+				.cont {
+					display: block;
+					a{
+						color: $COL_Secondary;
+					}
+				}
+			}
+		}
+	}
+	.no_data {
+		.etc {
+			position: relative;
+			margin-top: 40px;
+			padding-top: 40px;
+			.btn_area { 
+				margin-top: 15px;
+			}
+			&::before{
+				@include Mix_Space_Bar;
+			}
+		}
+	}
+}

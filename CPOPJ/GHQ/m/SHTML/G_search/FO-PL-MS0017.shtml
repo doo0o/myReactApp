@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>검색 : 제네시스 CUV</title>
+	<!--#include file="/GHQ/m/SHTML/G_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/g_display.css">
+</head>
+<body class="bg_dark">
+<!--#include file="/GHQ/m/SHTML/G_inc/common_skip.shtml"-->
+<!--#include file="/GHQ/m/SHTML/G_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents"><!-- 검색 필터 header/footer 없음 -->
+		<!-- contents -->
+		<form id="searchForm" name="searchForm" method="post" class="search_form">
+		<div id="searchLayer" class="cpo_search">
+			<!--  01: 상단 검색어 입력  -->
+			<div class="h_header_search">
+				<!-- input -->
+				<button type="button" id="srchHistory" data-href="back" class="ic_back">뒤로가기</button>
+				<div class="inp_search">
+					<input type="search" id="keySearch" class="txt" placeholder="모델명 혹은 키워드를 입력하세요" />
+					<button type="button" id="keySearchDel" class="btn_delete">입력값 삭제</button>
+				</div>
+				<div class="util">
+					<ul>
+						<li><a href="FO-PL-MS0018.shtml" class="ic_search">검색</a></li><!-- 2022-08-02 수정 -->
+						<li><button type="button" class="ic_mic" data-popup="FO-PL-MS0021">음성인식</button></li>
+					</ul>
+				</div>
+				<!-- //input -->
+			</div>
+			<!--  01: 상단 검색어 입력 -->
+
+			<!--#include file="/GHQ/m/SHTML/G_search/include/srch_keyword.shtml"-->
+			<!--#include file="/GHQ/m/SHTML/G_search/include/srch_model.shtml"-->
+			<!--#include file="/GHQ/m/SHTML/G_search/include/srch_recent.shtml"-->
+			<!--#include file="/GHQ/m/SHTML/G_search/include/srch_auto.shtml"-->
+			
+		</div>
+		</form>
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/GHQ/m/SHTML/G_search/include/FO-PL-MS0021.shtml"-->
+
+<script>
+$(function(){
+	CPO.toggle(); //더보기추가
+
+	// 검색하기 화면에서만 호출되는 스크립트
+	if($('#searchLayer').length != 0){
+		$('body').addClass('fixed');
+		SRCH.promotionSlide();
+		SRCH.PageLoad();
+		SRCH.Best10Rolling();
+		SRCH.Best10Open();
+		// SRCH.RecentSwipe(); //검색필터
+		FilterSpeechBtn();//음성인식 버튼 클릭 스크립트
+		if( $('.srch_model').css('display') === 'block' ){
+			SRCH.ModelFixed();
+		}
+		$(".inp_search .txt" ).focus(function() {// 검색창 focus In일때 화면
+			SRCH.RecentShow();
+		});
+		$(".inp_search .txt").keyup(function() { 
+			if($(this).val() === '') {
+				SRCH.RecentShow();
+			} else {
+				SRCH.AutoLayertShow();
+			}
+		});
+		FilterLayerBack();//뒤로가기 버튼 1. MODEL - 이전페이지 / 2. 최근검색어 - MODEL / 3. 자동완성 - MODEL
+	}
+
+	//최근검색조건
+	var recentSwiperFunc = function() {
+		var slides = document.querySelectorAll('.recent_swiper .swiper-slide');
+		if(slides.length > 1) {
+			recentSwiper = new Swiper('.recent_swiper', {
+				slidesPerView:'auto',
+				autoHeight: true,
+				freeMode:false,
+				pagination:{
+					el: '.recent_swiper .swiper-pagination'
+				}
+			});
+		}
+	}
+	recentSwiperFunc();
+
+	function FilterLayerBack(){// 뒤로가기 버튼 1. MODEL - 이전페이지 / 2. 최근검색어 - MODEL / 3. 자동완성 - MODEL
+		$(document).off("click","#srchHistory")
+			.on("click","#srchHistory", function(){
+			var _thisRef = $(this).attr('data-href');
+			if(_thisRef == 'back'){
+				window.history.back();
+			} else if (_thisRef == 'model'){
+				SRCH.ModelShow();
+			}
+		});
+	}
+});
+</script>
+
+<script>
+$(document).ready(function() {
+	SRCH.searchKey();// 검색어 입력
+	SRCH.FilterPriceRange('Syear', 'Syear2', 'rangeYear', 1, '년');//연도 선택
+	SRCH.FilterPriceRange('Sdistance', 'Sdistance2', 'rangeDistance', 500, 'km'); // 주행거리 선택
+	SRCH.FilterPriceRange('Sprice', 'Sprice2', 'rangePrice', 500, '만원'); // 가격 선택
+
+	// $('#schBox-02 .btn_txt05').on('click', function(){ // 모델 전체보기
+	// 	SRCH.FilterModelAll($(this));
+	// });
+	// $('.srch_model .btn_open').on('click', function(){ // 검색 조건 OPEN/CLOSE
+	// 	SRCH.FilterOpenClose($(this));
+	// 	SRCH.FilterPriceChart();//가격 상단 그래프
+	// });
+
+	// 모델그룹 열릴때 헤더 상단픽스
+	$('#schBox-02 .tit_btn').on('click', function(){ 
+		// if(!$('#schBox-02').hasClass('on')){
+			SRCH.HeadFixed()
+		// }
+	});
+	// 검색 조건 OPEN/CLOSE
+	$('.srch_model .tit_btn').on('click', function(){ 
+		SRCH.FilterOpenClose($(this));
+		SRCH.FilterPriceChart();//가격 상단 그래프
+	});
+	
+	// 검색레이어 체크 시, 스크립트
+	$('input[class^="chk_"]').on('change', function(){
+		var _chckName = $(this).attr('name');
+		var _chckID = $(this).attr('id');
+		var _chckLeng = $("[name="+ _chckName +"]").length;
+		var _chckName02 = $("[name="+ _chckName +"]");
+		var _isChecked = $("#schBox-02 input:checked");
+
+		var _labelTxt = $("label[for='"+_chckID+"']").text();
+
+		SRCH.FilterSaveCheck(_chckName, _chckName, $(this) );// 필터 내 > 카테고리, 브랜드, 색상, 옵션 적용하기 버튼
+		
+		// START---------  start 개발 단계에서 개발자들이 수정할 영역 
+		// if(_chckID == 'schChk_Detail01' ){
+		// 	if(this.checked){
+		// 		_chckName02.prop('disabled',true);
+		// 		$(this).prop('disabled',false);
+		// 		console.log('전체선택')
+		// 	} else {
+		// 		_chckName02.prop('disabled',false);
+		// 	}
+		// } else if (_chckID == 'schChk_Detail02') {
+		// 	$(this).parent().addClass('on');
+		// }else if (_chckID == 'schChk_Detail13') {
+		// 	$(this).parent().addClass('on');
+		// }
+
+		if($(this).is(":checked")){
+			$(this).parent().addClass('on');
+		} else {
+			$(this).parent().removeClass('on');
+		}
+		//  END ---------  end 개발 단계에서 개발자들이 수정할 영역 
+
+		if(_isChecked.length == 1) { 
+			// 모델그룹영역 1개선택시
+			$('#schBox-03').removeClass('disabled').addClass('show on')
+		} else if(_isChecked.length == 0 || _isChecked.length > 1) {
+			// 모델그룹영역 0개 또는 2개이상 선택시
+			$('#schBox-03').removeClass('show on').addClass('disabled')
+		}
+		
+		// //length 체크후, 다음 열림 닫힘
+		// if(_chckName == 'schChk_Model' && _chckLeng > 0){
+		// 	//1. 모델그룹 CHECK NAME = schChk_Model -- 모델그룹영역 id schBox-02 -- 하나라도 선택하면 모델상세 펼치기)
+		// 	SRCH.HeadFixed();
+		// 	$('#schBox-03').addClass('show on');
+		// } else if (_chckName == 'schChk_Detail' && _chckLeng > 0) {
+		// 	//2. 모델상세 CHECK NAME = schChk_Detail -- 모델상세영역 id schBox-03 -- 하나라도 선택하면 모델상세 펼치기)
+		// 	$('#schBox-04').addClass('show on');// 4. 연식 영역 id 
+		// 	$('#schBox-05').addClass('show on');// 5. 주행거리 영역 id
+		// 	$('#schBox-06').addClass('show on');// 6. 가격 영역 id
+		// 	$('#schBox-07').addClass('show on');// 7. 연료 영역 id
+		// 	SRCH.FilterPriceChart();//가격 상단 그래프
+		// } else if (_chckName == 'schChk_Fuel' && _chckLeng > 0) {
+		// 	//7. 연료 CHECK NAME = schChk_Fuel
+		// 	$('#schBox-08').addClass('show on');// 8. 변속기 영역 id
+		// } else if (_chckName == 'schChk_Gear' && _chckLeng > 0) {
+		// 	//8. 변속기 CHECK NAME = schChk_Gear
+		// 	$('#schBox-12').addClass('show on');// 구동 영역 id
+		// } else if (_chckName == 'schChk_WD' && _chckLeng > 0) {
+		// 	//12. 구동 CHECK NAME = schChk_WD
+		// 	$('#schBox-09').addClass('show on');// 색상 영역 id
+		// } else if (_chckName == 'schChk_Color' && _chckLeng > 0) {
+		// 	//9. 색상 CHECK NAME = schChk_Color
+		// 	$('#schBox-10').addClass('show on');// 차량정보 영역 id
+		// } else if (_chckName == 'schChk_Carinfo' && _chckLeng > 0) {
+		// 	//10. 차량정보 CHECK NAME = schChk_Carinfo
+		// 	$('#schBox-11').addClass('show on');// 옵션 영역 id
+		// } 
+	});
+	
+});
+</script>
+</body>
+</html>

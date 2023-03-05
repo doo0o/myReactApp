@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>내차팔기 서비스</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_service.css">
+</head>
+<body>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+	<!-- cpo wrap -->
+	<div id="CPOwrap">
+		<!-- ////////////////////     header   시작     ////////////////////-->
+		<div id="CPOheader">
+			<!-- s: h_header : default  -->
+			<div class="h_header_sub">
+				<button type="button" class="ic_back">뒤로가기</button>
+				<h1 class="tit">내차팔기 서비스</h1>
+			</div>
+			<!-- e: h_header : default  -->
+		</div>
+		<!-- ////////////////////     header   끝     ////////////////////-->
+		<!-- ////////////////////     contents 시작     ////////////////////-->
+		<div id="CPOcontents">
+			<!-- contents -->
+			<div class="service_guide">
+				<div class="tab">
+					<ul class="tab_list">
+						<li class="intro on"><a href="javascript:void(0)">서비스 안내</a></li>
+						<li class="guide"><a href="javascript:void(0)">내차팔기 가이드</a></li>
+					</ul>
+					<div class="tab_cont">
+						<div class="tab_item on">
+							<!--#include file="/HMC/m/SHTML/H_service/include/FO-CM-MS0055_index.shtml"-->
+						</div>
+						<div class="tab_item">
+							<div class="service_visual">
+								<div class="visual_dim"></div>
+								<img src="/HMC/m/img/service/img_bc_guide.png" alt="">
+							</div>
+							<div class="group_service">
+								<div class="service_toggle">
+									<p class="service_title">시세 확인부터 차량 인도까지 현대 & 제네시스 인증 중고차 판매 절차를 알려드립니다.</p>
+									<div class="service_box type02" data-ref="toggleBox">
+										<div class="tit" onclick="toggleBox()"><span class="num">1</span>시세조회<p>차량 번호 및 소유주를 입력하고, 차량 정보 및 시세를 확인합니다.</p></div>
+										<div class="cont">
+											<ol class="list">
+												<li><span class="txt">차량 번호 / 소유주명 입력하기</span><button type="button" class="btn_arr">팝업 버튼</button></li>
+												<li><span class="txt">차량 정보 및 시세 확인하기</span><button type="button" class="btn_arr">팝업 버튼</button></li>
+											</ol>
+										</div>
+									</div>
+									<div class="service_box type02" data-ref="toggleBox">
+										<div class="tit" onclick="toggleBox()"><span class="num">2</span>Trade-In<p>신차 계획이 있거나 신차 구매를 진행 중이라면 Trade-In으로 혜택을 받을 수 있습니다.</p></div>
+										<div class="cont">
+											<ol class="list">
+												<li><span class="txt">신차 구매 후 Trade-In 진행하기</span><button type="button" class="btn_arr">팝업 버튼</button></li>
+												<li><span class="txt">신차 구매 상태에서 Trade-In 진행하기</span><button type="button" class="btn_arr">팝업 버튼</button></li>
+												<li><span class="txt">신차 생산대기 상태에서 Trade-In 진행하기</span><button type="button" class="btn_arr">팝업 버튼</button></li>
+											</ol>
+										</div>
+									</div>
+									<div class="service_box type02" data-ref="toggleBox">
+										<div class="tit" onclick="toggleBox()"><span class="num">3</span>견적 신청<p>차량의 상세 정보를 입력하고 차량의 예상 견적 가격을 확인합니다.</p></div>
+										<div class="cont">
+											<ol class="list">
+												<li><span class="txt">차량의 구매 / 옵션 정보 입력하기</span><button type="button" class="btn_arr">팝업 버튼</button></li>
+												<li><span class="txt">차량의 수리 / 손상 정보 입력하기</span><button type="button" class="btn_arr">팝업 버튼</button></li>
+												<li><span class="txt">차량의 사진 등록하기</span><button type="button" class="btn_arr">팝업 버튼</button></li>
+												<li><span class="txt">예상 견적 신청하기</span><button type="button" class="btn_arr">팝업 버튼</button></li>
+											</ol>
+										</div>
+									</div>
+									<div class="service_box type02" data-ref="toggleBox">
+										<div class="tit" onclick="toggleBox()"><span class="num">4</span>차량 평가 및 계약 진행<p>방문평가사가 차량의 상태를 직접 확인하고 최종 견적을 전달하면 계약을 진행합니다.</p></div>
+										<div class="cont">
+											<ol class="list">
+												<li><span class="txt">방문 평가 진행하기</span><button type="button" class="btn_arr">팝업 버튼</button></li>
+												<li><span class="txt">계약 완료하기</span><button type="button" class="btn_arr">팝업 버튼</button></li>
+											</ol>
+										</div>
+									</div>
+									<div class="service_box type02" data-ref="toggleBox">
+										<div class="tit" onclick="toggleBox()"><span class="num">5</span>온라인 명의이전 및 차량인도<p>명의이전에 필요한 서류를 등록하고, 탁송 기사에게 차량을 인도합니다.</p></div>
+										<div class="cont">
+											<ol class="list">
+												<li><span class="txt">온라인 명의이전 진행하기</span><button type="button" class="btn_arr">팝업 버튼</button></li>
+												<li><span class="txt">차량 인도 완료하기</span><button type="button" class="btn_arr">팝업 버튼</button></li>
+												<li><span class="txt">차량 판매 대금 확인 및 리뷰 작성하기</span><button type="button" class="btn_arr">팝업 버튼</button></li>
+											</ol>
+										</div>
+									</div>
+								</div>
+								<div class="service_slide">
+									<p class="service_title">중고차 팔고 신차 살 때<br>혜택받으면서 편하고 쉽게!</p>
+									<div class="swiper-container trade_slide">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide">
+												<div class="img">
+													<img src="/HMC/m/img/service/icon_sc_slide01.png" alt="">
+												</div>
+												<div class="info">
+													<p class="tit">신차 구매 시 할인혜택 제공</p>
+													<span class="txt">Trade-In으로 중고차 판매와 신차 구매를<br>진행하면 추가 할인 헤택을 제공합니다.</span>
+												</div>
+											</li>
+											<li class="swiper-slide">
+												<div class="img">
+													<img src="/HMC/m/img/service/icon_sc_slide02.png" alt="">
+												</div>
+												<div class="info">
+													<p class="tit">신뢰할 수 있는 판매</p>
+													<span class="txt">완성차 판매 기업으로서 부당한 감가 없이<br>합리적인 가격에 판매할 수 있습니다.</span>
+												</div>
+											</li>
+											<li class="swiper-slide">
+												<div class="img">
+													<img src="/HMC/m/img/service/icon_sc_slide03.png" alt="">
+												</div>
+												<div class="info">
+													<p class="tit">신차 구매 시 중고차 가격 제외 후 결제</p>
+													<span class="txt">판매한 중고차 가격을 제외한 가격으로<br>신차를 구매할 수 있습니다.</span>
+												</div>
+											</li>
+										</ul>
+										<div class="swiper-pagination"></div>
+									</div>
+								</div>
+								<div class="service_table papers_sc">
+									<p class="section_title">필요서류</p>
+									<div class="table_area">
+										<table class="table line">
+											<caption>거래내용</caption>
+											<colgroup>
+												<col width="140px">
+												<col width="*">
+												<col width="*">
+												<col width="*">
+											</colgroup>
+											<thead>
+												<tr>
+													<th>내차팔기</th>
+													<th>개인</th>
+													<th>개인사업자</th>
+													<th>외국인</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<th colspan="4">온라인 수집</th>
+												</tr>
+												<tr>
+													<th>신분증 사본</th>
+													<td class="dot"></td>
+													<td class="dot"></td>
+													<td></td>
+												</tr>
+												<tr>
+													<th>사업등록증 사본</th>
+													<td></td>
+													<td class="dot"></td>
+													<td></td>
+												</tr>
+												<tr>
+													<th>외국인등록증 or<br>여권</th>
+													<td></td>
+													<td></td>
+													<td class="dot"></td>
+												</tr>
+												<tr>
+													<th>거소사실증명서</th>
+													<td></td>
+													<td></td>
+													<td class="dot"></td>
+												</tr>
+												<tr>
+													<th colspan="4">오프라인 수집</th>
+												</tr>
+												<tr>
+													<th>자동차등록증 원본</th>
+													<td class="dot"></td>
+													<td class="dot"></td>
+													<td class="dot"></td>
+												</tr>
+												<tr>
+													<th>자동차세 완납<br>증명서</th>
+													<td class="dot"></td>
+													<td class="dot">
+														<span>(온라인 등록 가능)</span>
+													</td>
+													<td></td>
+												</tr>
+												<tr>
+													<th>매도용 인감증명서<br>원본</th>
+													<td class="dot"></td>
+													<td class="dot"></td>
+													<td class="dot">
+														<span>(인감도장 소유자에 한함)</span>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+								<div class="service_table">
+									<p class="section_title">발급 기관</p>
+									<table class="table line">
+										<caption>거래내용</caption>
+										<colgroup>
+											<col width="50%">
+											<col width="50%">
+										</colgroup>
+										<thead>
+											<tr>
+												<th>서류명</th>
+												<th>발급기관</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th>거소사실증명서</th>
+												<td>동사무소, 구청, 군청</td>
+											</tr>
+											<tr>
+												<th>보험가입증명서</th>
+												<td></td>
+											</tr>
+											<tr>
+												<th>사업자등록증 사본</th>
+												<td>세무서</td>
+											</tr>
+											<tr>
+												<th>주민등록등본</th>
+												<td>동사무소</td>
+											</tr>
+											<tr>
+												<th>가족관계증명서</th>
+												<td>동사무소</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="service_img">
+									<div class="img">
+										<img src="/HMC/m/img/service/img_bc_banner.png" alt="">
+									</div>
+									<div class="info">
+										<span class="tit">법인중고차 구매도<br>현대 & 제네시스 인증 중고차에서!</span>
+										<a href="#" class="btn_combi02">법인 내차사기 안내</a>
+									</div>
+								</div>
+								<div class="service_slide">
+									<p class="service_title">중고차 구매가 처음이라면?<br>차 사기 전에 기초 지식 먼저 확인하자!</p>
+									<div class="swiper-container tip_slide">
+										<ul class="swiper-wrapper">
+											<li class="swiper-slide">
+												<a href="#">
+													<img src="/HMC/m/img/service/img_bc_slide01.png" alt="">
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="#">
+													<img src="/HMC/m/img/service/img_bc_slide01.png" alt="">
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="#">
+													<img src="/HMC/m/img/service/img_bc_slide01.png" alt="">
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="#">
+													<img src="/HMC/m/img/service/img_bc_slide01.png" alt="">
+												</a>
+											</li>
+											<li class="swiper-slide">
+												<a href="#">
+													<img src="/HMC/m/img/service/img_bc_slide01.png" alt="">
+												</a>
+											</li>
+										</ul>
+										<div class="swiper-pagination"></div>
+									</div>
+								</div>
+								<div class="service_qa toggle">
+									<div class="sec_tit">자주 묻는 질문 TOP 5</div>
+									<!--#include file="/HMC/m/SHTML/H_service/include/service_faq.shtml"-->
+								</div>
+								<div class="caution">
+									<p class="tit">유의사항</p>
+									<ul>
+										<li>판매하는 차량의 소유자 명과 로그인한 계정의 이름이 동일해야 판매가 가능합니다.</li>
+										<li>침수 혹은 전수 차량, 해외 반입 차량, 영업용 차량, 튜닝 차량, 보험사고 이력이 신차가격의 50%를 초과한 차량은 파내막 불가합니다.</li>
+										<li>차량에 정비/수리가 필요한 부분이 발견되면 가격에 감가가 발생할 수 있습니다.</li>
+										<li>매입 여부에 영향을 미치는 차량 상태 정보를 숨기거나 제공한 정보가 크게 상이한 경우, 매입 의사가 철회될 수 있습니다.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //contents -->
+		</div>
+		<!-- ////////////////////     contents 끝     ////////////////////-->
+		<!--#include file="/HMC/m/SHTML/H_inc/layout_footer.shtml"-->
+		<!--#include file="/HMC/m/SHTML/H_inc/layout_actionbar.shtml"-->
+	</div>
+	<!-- //cpo wrap -->
+	<script>
+		CPO.toggle();
+		const swiperTrade = new Swiper(".trade_slide", {
+			pagination: {
+				el: ".swiper-pagination",
+			},
+		});
+		const swiperTip = new Swiper(".tip_slide", {
+			pagination: {
+				el: ".swiper-pagination",
+			},
+		});
+		const tabScroll = function(){
+			const btnTab = document.querySelectorAll('.tab_list li');
+			const pageWrap = document.querySelector('html');
+			btnTab.forEach((btn) => {
+				btn.addEventListener('click', function(){
+					window.scrollTo(0, 0);
+					// 20230117 삭제
+					// if(btn.classList.contains('guide')){
+					// 	pageWrap.classList.remove('isMainLock');
+					// } else {
+					// 	if(pageWrap.classList.contains('isMainLock') != true){
+					// 		pageWrap.classList.add('isMainLock');
+					// 	}
+					// }
+					// //20230117 삭제
+				});
+			});
+		}
+		tabScroll();
+		service.scrollDim();
+		class SCInteraction {
+			constructor() {
+				this.html = document.querySelector('html');
+				this.wrap = document.querySelector('.sc_container');
+				this.intro = document.querySelector('.sc_intro');
+				this.animate = false;
+				this.stepNum = null;
+				this.touchRelX = 0;
+				this.touchRelY = 0;
+				this.touchStart = (e) => {
+					this.touchRelX = e.changedTouches[0].clientX;
+					this.touchRelY = e.changedTouches[0].clientY;
+				}
+				this.touchEnd = (e) => {
+					if(this.animate === false && this.touchRelY > e.changedTouches[0].clientY + 50) {
+						switch(this.stepNum) {
+							case 0 :
+								this.step01();
+							break;
+							case 1 :
+								this.step02();
+							break;
+							case 2 :
+								this.step03();
+							break;
+							case 3 :
+								this.introEnd();
+							break;
+						}
+					} else if(this.animate === false && this.touchRelY < e.changedTouches[0].clientY - 50) {
+						const state = 'back';
+						switch(this.stepNum) {
+							case 4 :
+								this.introEnd(state);
+							break;
+							case 3 :
+								this.step03(state);
+							break;
+							case 2 :
+								this.step02(state);
+							break;
+							case 1 :
+								this.step01(state);
+							break;
+						}
+					}
+				}
+				window.addEventListener('touchstart', this.touchStart);
+				window.addEventListener('touchend', this.touchEnd);
+				window.addEventListener('wheel', (e)=>{
+					if(this.animate === false && e.deltaY > 0) {
+						switch(this.stepNum) {
+							case 0 :
+								this.step01();
+							break;
+							case 1 :
+								this.step02();
+							break;
+							case 2 :
+								this.step03();	
+							break;
+							case 3 :
+								this.introEnd();	
+							break;
+						}
+					} else if(this.animate === false && e.deltaY < 0) {
+						const state = 'back';
+						switch(this.stepNum) {
+							case 3 :
+								this.step03(state);
+							break;
+							case 2 :
+								this.step02(state);
+							break;
+							case 1 :
+								this.step01(state);
+							break;
+						}
+					}
+				});
+			}
+			start() {
+				this.html.classList.add('isMainLock');
+				setTimeout(() => {
+					this.intro.classList.add('start');
+					setTimeout(() => {
+						this.stepNum = 0;
+					}, 2000);
+				}, 500);
+			}
+			step01(state){
+				if(state !== 'back') {
+					this.stepNum = 1;
+					this.animate = true;
+					this.intro.classList.add('step01');
+					setTimeout(()=>{
+						this.animate = false;
+					},2000);
+				} else {
+					this.stepNum = 0;
+					this.animate = true;
+					setTimeout(()=>{
+						this.animate = false;
+					},1000);
+				}
+			}
+			step02(state){
+				if(state !== 'back') {
+					this.stepNum = 2;
+					this.animate = true;
+					this.intro.classList.add('step02');
+					setTimeout(()=>{
+						this.intro.classList.add('show');
+					},1000);
+					setTimeout(()=>{
+						this.animate = false;
+					},3000);
+				} else {
+					this.stepNum = 1;
+					this.animate = true;
+					setTimeout(()=>{
+						this.animate = false;
+					},1000);
+				}
+			}
+			step03(state){
+				if(state !== 'back') {
+					this.stepNum = 3;
+					this.animate = true;
+					this.intro.classList.add('step03');
+					setTimeout(() => {
+						this.intro.classList.add('trans');
+						setTimeout(() => {
+							this.intro.classList.add('scan');
+							this.wrap.classList.add('end');
+							setTimeout(() => {
+								this.intro.classList.add('chart');
+							}, 2500);
+						}, 1000);
+					}, 1800);
+					setTimeout(()=>{
+						this.animate = false;
+					},8000);
+				} else {
+					this.stepNum = 2;
+					this.animate = true;
+					setTimeout(()=>{
+						this.animate = false;
+					},1000);
+				}
+			}
+			introEnd(state){
+				if(state !== 'back'){
+					this.stepNum = 4;
+					this.animate = true;
+					this.html.classList.remove('isMainLock');
+					setTimeout(()=>{
+						this.animate = false;
+						CPO.tab(); // 20230117 CPO.tab 위치 변경
+					},1000);
+				}
+			}
+		}
+		new SCInteraction({}).start();
+		function moSize() {
+			let vh = window.innerHeight * 0.01;
+			document.documentElement.style.setProperty('--vh', `${vh}px`);
+		}
+		moSize();
+		window.addEventListener('resize', moSize);
+		
+		const swiperSCReview = new Swiper(".slide_scReview", {
+			spaceBetween : 10,
+			// 20230130 추가
+			pagination: {
+				el: ".slide_scReview .swiper-pagination",
+			},
+		});
+		// 2023 0207 TOP / CHATBOT 추가
+		CPO.top();
+	</script>
+</body>
+</html>

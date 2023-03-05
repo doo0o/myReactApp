@@ -1,0 +1,95 @@
+<div class="list_cont">
+	<ul class="list">
+		<li>
+			<button type="button">
+				<span class="num">06179</span>
+				<span class="addr">
+					<span class="flag_big03">지번</span>
+					<span class="txt">서울 강남구 대치동 943 루첸타워</span>
+				</span>
+				<span class="addr">
+					<span class="flag_big03">도로명</span>
+					<span class="txt">서울 강남구 테헤란로 510(대치동, 루첸타워)</span>
+				</span>
+			</button>
+		</li>
+		<li>
+			<button type="button">
+				<span class="num">06179</span>
+				<span class="addr">
+					<span class="flag_big03">지번</span>
+					<span class="txt">서울 강남구 대치동 943 루첸타워</span>
+				</span>
+				<span class="addr">
+					<span class="flag_big03">도로명</span>
+					<span class="txt">서울 강남구 테헤란로 510(대치동, 루첸타워)</span>
+				</span>
+			</button>
+		</li>
+		<li>
+			<button type="button">
+				<span class="num">06179</span>
+				<span class="addr">
+					<span class="flag_big03">지번</span>
+					<span class="txt">서울 강남구 대치동 943 루첸타워</span>
+				</span>
+				<span class="addr">
+					<span class="flag_big03">도로명</span>
+					<span class="txt">서울 강남구 테헤란로 510(대치동, 루첸타워)</span>
+				</span>
+			</button>
+		</li>
+		<li>
+			<button type="button">
+				<span class="num">06179</span>
+				<span class="addr">
+					<span class="flag_big03">지번</span>
+					<span class="txt">서울 강남구 대치동 943 루첸타워</span>
+				</span>
+				<span class="addr">
+					<span class="flag_big03">도로명</span>
+					<span class="txt">서울 강남구 테헤란로 510(대치동, 루첸타워)</span>
+				</span>
+			</button>
+		</li>
+		<li>
+			<button type="button">
+				<span class="num">06179</span>
+				<span class="addr">
+					<span class="flag_big03">지번</span>
+					<span class="txt">서울 강남구 대치동 943 루첸타워</span>
+				</span>
+				<span class="addr">
+					<span class="flag_big03">도로명</span>
+					<span class="txt">서울 강남구 테헤란로 510(대치동, 루첸타워)</span>
+				</span>
+			</button>
+		</li>
+		<li>
+			<button type="button">
+				<span class="num">06179</span>
+				<span class="addr">
+					<span class="flag_big03">지번</span>
+					<span class="txt">서울 강남구 대치동 943 루첸타워</span>
+				</span>
+				<span class="addr">
+					<span class="flag_big03">도로명</span>
+					<span class="txt">서울 강남구 테헤란로 510(대치동, 루첸타워)</span>
+				</span>
+			</button>
+		</li>
+		<li>
+			<button type="button">
+				<span class="num">06179</span>
+				<span class="addr">
+					<span class="flag_big03">지번</span>
+					<span class="txt">서울 강남구 대치동 943 루첸타워</span>
+				</span>
+				<span class="addr">
+					<span class="flag_big03">도로명</span>
+					<span class="txt">서울 강남구 테헤란로 510(대치동, 루첸타워)</span>
+				</span>
+			</button>
+		</li>
+	</ul>
+</div>

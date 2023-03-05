@@ -1,0 +1,12 @@
+<div class="CPOpop_alert" id="FO-SP0060">
+  <div class="p_inner">
+    <div class="message">비교 가능한 차량이 없습니다.<br>
+      보유차량과 장바구니상품, 찜한상품,<br>
+      최근본상품을 비교할 수 있어요.</div>
+    <div class="btn_area">
+      <ul>
+        <li><button type="button" class="btn_alert01 pop_close">확인</button></li>
+      </ul>
+    </div>
+  </div>
+</div>

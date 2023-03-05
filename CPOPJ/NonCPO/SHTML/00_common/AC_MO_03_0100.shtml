@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>실사검수사 모바일웹</title>
+	<!--#include file="/NonCPO/SHTML/po_inc/common_meta.shtml"-->
+	
+</head>
+<body>
+<!--#include file="/NonCPO/SHTML/po_inc/common_skip.shtml"-->
+<!--#include file="/NonCPO/SHTML/po_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		
+		<div class="h_detail">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h3 class="tit">이용약관</h3>
+		</div>
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+
+		<!-- 이용약관 -->
+		<div class="term_wrap">
+			<div class="select">
+				<select>
+					<option>2020년 10월 27일 ~ 현재</option>
+				</select>
+			</div>
+			<!-- 약관 내용 -->
+			<!--#include file="/NonCPO/SHTML/00_common/inc/sample_agree.shtml"-->
+			<!-- 약관 내용 -->
+		</div>
+		<!-- //이용약관 -->
+
+
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/NonCPO/SHTML/po_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<script>
+	$(document).ready(function(){
+		CPOQuestToggle();// 추가 등록 사진 file upload
+	});
+</script>
+
+</body>
+</html>

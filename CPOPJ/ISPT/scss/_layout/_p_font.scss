@@ -1,0 +1,57 @@
+@font-face {
+	font-family: 'HynSans_Txt-R';
+	src: local(※), 
+			url('../font/HyundaiSansTextKRRegular.woff') format('woff'), /* Modern Browsers */
+			url('../font/HyundaiSansTextKRRegular.ttf') format('truetype'); /* Safari, Android, iOS */
+	font-style: normal;font-weight: normal;text-rendering: optimizeLegibility;
+}
+@font-face {
+	font-family: 'HynSans_Txt-M';
+	src: local(※), 
+			url('../font/HyundaiSansTextKRMedium.woff') format('woff'), /* Modern Browsers */
+			url('../font/HyundaiSansTextKRMedium.ttf') format('truetype'); /* Safari, Android, iOS */
+	font-style: normal;font-weight: normal;text-rendering: optimizeLegibility;
+}
+@font-face {
+	font-family: 'HynSans_Txt-B';
+	src: local(※), 
+			url('../font/HyundaiSansTextKRBold.woff') format('woff'), /* Modern Browsers */
+			url('../font/HyundaiSansTextKRBold.ttf') format('truetype'); /* Safari, Android, iOS */
+	font-style: normal;font-weight: normal;text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: 'HynSans_Head-L';
+	src: local(※), 
+			url('../font/HyundaiSansHeadKRLight.woff') format('woff'), /* Modern Browsers */
+			url('../font/HyundaiSansHeadKRLight.ttf') format('truetype'); /* Safari, Android, iOS */
+	font-style: normal;font-weight: normal;text-rendering: optimizeLegibility;
+}
+@font-face {
+	font-family: 'HynSans_Head-R';
+	src: local(※), 
+			url('../font/HyundaiSansHeadKRRegular.woff') format('woff'), /* Modern Browsers */
+			url('../font/HyundaiSansHeadKRRegular.ttf') format('truetype'); /* Safari, Android, iOS */
+	font-style: normal;font-weight: normal;text-rendering: optimizeLegibility;
+}
+@font-face {
+	font-family: 'HynSans_Head-M';
+	src: local(※), 
+			url('../font/HyundaiSansHeadKRMedium.woff') format('woff'), /* Modern Browsers */
+			url('../font/HyundaiSansHeadKRMedium.ttf') format('truetype'); /* Safari, Android, iOS */
+	font-style: normal;font-weight: normal;text-rendering: optimizeLegibility;
+}
+@font-face {
+	font-family: 'HynSans_Head-B';
+	src: local(※), 
+			url('../font/HyundaiSansHeadKRBold.woff') format('woff'), /* Modern Browsers */
+			url('../font/HyundaiSansHeadKRBold.ttf') format('truetype'); /* Safari, Android, iOS */
+	font-style: normal;font-weight: normal;text-rendering: optimizeLegibility;
+}
+
+.point01 {
+	color:$COL_info06 !important;
+}
+.point02 {
+	color:$COL_Secondary01 !important;
+}

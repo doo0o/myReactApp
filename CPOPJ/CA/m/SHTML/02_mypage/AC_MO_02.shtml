@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>CPO 중개매매몰</title>
+	<!--#include file="/NonCPO/SHTML/po_inc/common_meta.shtml"-->
+	
+</head>
+<body>
+<!--#include file="/NonCPO/SHTML/po_inc/common_skip.shtml"-->
+<!--#include file="/NonCPO/SHTML/po_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		
+		<div class="h_detail">
+			<!-- <button type="button" class="ic_back">뒤로가기</button> -->
+			<h3 class="tit">CPO 중개매매몰</h3>
+			<ul class="util">
+				<li><a href="#" class="ic_request">업무요청 관리로 가기</a></li>
+				<li><button type="button" class="ic_menu" data-popup="sideMenu">메뉴</button></li>
+			</ul>
+		</div>
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents" class="cpo_product">
+		<div class="srch_cont">
+            <ol class="srch_list">
+				<li>
+                    <div class="tit">
+					    <button type="button" class="btn_tit">소재지</button>
+                    </div>
+					<div class="cont">
+                        <!-- 지역 선택 -->
+                        <ol class="list_local">
+                            <li><input type="checkbox" class="chk_type01" id="schChk_Dep01_01"><label for="schChk_Dep01_01">서울</label>
+                                <ol class="depth2">
+                                    <li><input type="checkbox" class="chk_type01" id="schChk_Dep02_All"><label for="schChk_Dep02_All">강남구</label></li>
+                                    <li><input type="checkbox" class="chk_type01" id="schChk_Dep02_01"><label for="schChk_Dep02_01">강서구</label></li>
+                                    <li><input type="checkbox" class="chk_type01" id="schChk_Dep02_02"><label for="schChk_Dep02_02">강북구</label></li>
+                                    <li><input type="checkbox" class="chk_type01" id="schChk_Dep02_03"><label for="schChk_Dep02_03">강동구</label></li>
+                                    <li><input type="checkbox" class="chk_type01" id="schChk_Dep02_04"><label for="schChk_Dep02_04">관악구</label></li>
+                                </ol>
+                            </li>
+                            <li><input type="checkbox" class="chk_type01" id="schChk_Dep01_02"><label for="schChk_Dep01_02">경기도</label></li>
+                            <li><input type="checkbox" class="chk_type01" id="schChk_Dep01_03"><label for="schChk_Dep01_03">인천</label></li>
+                            <li><input type="checkbox" class="chk_type01" id="schChk_Dep01_04"><label for="schChk_Dep01_04">강원도</label></li>
+                            <li><input type="checkbox" class="chk_type01" id="schChk_Dep01_05"><label for="schChk_Dep01_05">충청북도</label></li>
+                            <li><input type="checkbox" class="chk_type01" id="schChk_Dep01_06"><label for="schChk_Dep01_06">세종</label></li>
+                            <li><input type="checkbox" class="chk_type01" id="schChk_Dep01_07"><label for="schChk_Dep01_07">충청남도</label></li>
+                            <li><input type="checkbox" class="chk_type01" id="schChk_Dep01_08"><label for="schChk_Dep01_08">대전</label></li>
+                            <li><input type="checkbox" class="chk_type01" id="schChk_Dep01_09"><label for="schChk_Dep01_09">경상북도</label></li>
+                        </ol>
+                        <!-- // 지역 선택 -->
+                        <p class="sub_tit">구분</p> 
+						<ul class="btn_list">
+                            <li>
+                                <input type="radio" id="formCar01" name="formCar" class="chk_block">
+                                <label for="formCar01">국산차</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="formCar02" name="formCar" class="chk_block">
+                                <label for="formCar02">수입차</label>
+                            </li>
+                        </ul>                        
+					</div>
+				</li>
+                <li>
+                    <div class="tit">
+					    <button type="button" class="btn_tit">차종</button>
+                        <span>경차</span>
+                    </div>
+					<div class="cont">
+						<ul class="btn_list">
+                            <li>
+                                <input type="checkbox" id="carType01" class="chk_block">
+                                <label for="carType01">경차</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="carType02" class="chk_block">
+                                <label for="carType02">소형차</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="carType03" class="chk_block">
+                                <label for="carType03">준준형차</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="carType04" class="chk_block">
+                                <label for="carType04">중형차</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="carType05" class="chk_block">
+                                <label for="carType05">대형차</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="carType06" class="chk_block">
+                                <label for="carType06">스포츠카</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="carType07" class="chk_block">
+                                <label for="carType07">SUV</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="carType08" class="chk_block">
+                                <label for="carType08">RV</label>
+                            </li>
+                        </ul>
+					</div>
+				</li>
+                <li>
+                    <div class="tit">
+					    <button type="button" class="btn_tit">제조사</button>
+                        <span>현대, 기아</span>
+                    </div>
+					<div class="cont">
+						<ul class="btn_list">
+                            <li>
+                                <input type="checkbox" id="madeBy01" class="chk_type01" checked>
+                                <label for="madeBy01">현대</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="madeBy02" class="chk_type01">
+                                <label for="madeBy02">제네시스</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="madeBy03" class="chk_type01" checked>
+                                <label for="madeBy03">기아</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="madeBy04" class="chk_type01">
+                                <label for="madeBy04">한국GM (쉐보레)</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="madeBy05" class="chk_type01">
+                                <label for="madeBy05">르노삼성</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="madeBy06" class="chk_type01">
+                                <label for="madeBy06">쌍용</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="madeBy07" class="chk_type01">
+                                <label for="madeBy07">기타</label>
+                            </li>
+                        </ul>
+					</div>
+				</li>
+                <li>
+                    <div class="tit">
+                        <button type="button" class="btn_tit">연식</button>
+                        <span>2013년 ~ 2022년</span>
+                    </div>
+                    <div class="cont">
+                        <!-- range (연식) -->
+                        <div id="rangeYear" class="cpo_range">
+                            <div class="cpoRange"></div>
+                            <p class="amountArea">
+                                <input type="number" id="Syear" title="시작 연도" data-min="2013" data-max="2021" step="1" value="2013">
+                                <input type="number" id="Syear2" title="끝 연도" data-min="2017" data-max="2021" step="1" value="2021">
+                            </p>
+                        </div>
+                        <!-- //range (연식) -->
+                    </div>
+                </li>
+                <li>
+                    <div class="tit">
+                        <button type="button" class="btn_tit">주행거리</button>
+                        <span>2,000km ~ 100,000km</span>
+                    </div>
+                    <div class="cont">
+                        <!-- range (주행거리) -->
+                        <div id="rangeDistance"  class="cpo_range">
+                            <div class="cpoRange"></div>
+                            <p class="amountArea">
+                                <input type="number" id="Sdistance" title="최저 주행거리" data-min="5000" data-max="110000" value="20000">
+                                <input type="number" id="Sdistance2" title="최대 주행거리" data-min="5000" data-max="110000" value="100000">
+                            </p>
+                        </div>
+                        <!-- //range (주행거리) -->
+                    </div>
+                </li>
+			</ol>
+        </div>
+        <div class="contents">
+            <div class="srch_box">
+                <div class="ipt_search">
+                    <input type="text" class="ipt_sch" placeholder="모델명을 입력해주세요.">
+                    <button type="button" id="keySearchDel" class="ico_delete">입력값 삭제</button>
+                    <div class="util">
+                        <a href="#" class="ic_search">검색하기</a>                
+                    </div>
+                </div>
+            </div>
+            <div class="sort_box">
+                <p class="data_num">전체<em>05</em>대</p>
+                <ul class="array_list">
+                    <li>
+                        <input type="radio" id="array01" name="cpoArray" class="chk_type02" checked>
+                        <label for="array01">최근 등록순</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="array02" name="cpoArray" class="chk_type02">
+                        <label for="array02">마감 임박순</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="array03" name="cpoArray" class="chk_type02">
+                        <label for="array03">최근 연식순</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="array04" name="cpoArray" class="chk_type02">
+                        <label for="array04">낮은 가격순</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="array05" name="cpoArray" class="chk_type02">
+                        <label for="array05">높은 가격순</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="array06" name="cpoArray" class="chk_type02">
+                        <label for="array06">짧은 주행거리순</label>
+                    </li>
+                </ul>
+                <div class="select">
+                    <select>
+                        <option>20개씩 보기</option>
+                        <option>40개씩 보기</option>
+                        <option>60개씩 보기</option>
+                    </select>
+                </div>
+                <ul class="btn_sorting">                   
+                    <li class="on"><button type="button" class="btn_list" data-ref="list">리스트형</button></li>
+                    <li><button type="button" class="btn_thumb" data-ref="thumb">썸네일형</button></li>
+                </ul>
+            </div>
+            <ol class="product_list list">
+                <li>
+                    <!-- unit -->
+                    <a href="#" class="unit_link">
+                        <div class="unit_img">
+                            <img src="/HMC/img/@thumb/plp_310x310_01.jpg" alt="상품명으로 뿌려주세요">
+                            <span class="text_flag">입찰진행중</span> <!-- 상태값 -->
+                        </div>
+                        <div class="unit_info">
+                            <div class="name">
+                                <p class="model">현대 더 뉴 그랜저IG 가솔린 2.2 프리미엄</p>
+                                <p class="desc"><em>현대</em><em>2010년 04월 (10년형)</em><em>62,167km</em><em>가솔린</em><em>2,000cc</em></p>
+                                <p class="adress">차량 소재지 : <em>서울시 영등포구</em></p>
+                            </div>
+                            <div class="price">
+                                <p class="money">예상 시세 <em>2,079만원</em></p>
+                                <p class="time">입찰마감 시간 <em>03월 22일 11시 30분</em></p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- //unit -->
+                </li>
+                <li>
+                    <!-- unit -->
+                    <a href="#" class="unit_link">
+                        <div class="unit_img">
+                            <img src="/HMC/img/@thumb/plp_500x500_01.jpg" alt="상품명으로 뿌려주세요">
+                            <span class="text_flag bg06">입찰마감</span> <!-- 상태값 -->
+                        </div>
+                        <div class="unit_info">
+                            <div class="name">
+                                <p class="model">현대 더 뉴 그랜저IG 가솔린 2.2 프리미엄</p>
+                                <p class="desc"><em>현대</em><em>2010년 04월 (10년형)</em><em>62,167km</em><em>가솔린</em><em>2,000cc</em></p>
+                                <p class="adress">차량 소재지 : <em>서울시 영등포구</em></p>
+                            </div>
+                            <div class="price">
+                                <p class="money">예상 시세 <em>2,079만원</em></p>
+                                <p class="time">입찰마감 시간 <em>03월 22일 11시 30분</em></p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- //unit -->
+                </li>
+                <li>
+                    <!-- unit -->
+                    <a href="#" class="unit_link">
+                        <div class="unit_img">
+                            <img data-src="/HMC/img/@thumb/plp_500x500_02.jpg" class="" alt="상품명으로 뿌려주세요" src="/HMC/img/@thumb/plp_500x500_02.jpg">                            
+                            <span class="text_flag bg02">낙찰완료</span>
+                        </div>
+                        <div class="unit_info">
+                            <div class="name">
+                                <p class="model">현대 더 뉴 그랜저IG 가솔린 2.2 프리미엄</p>
+                                <p class="desc"><em>현대</em><em>2010년 04월 (10년형)</em><em>62,167km</em><em>가솔린</em><em>2,000cc</em></p>
+                                <p class="adress">차량 소재지 : <em>서울시 영등포구</em></p>
+                            </div>
+                            <div class="price">
+                                <p class="money">예상 시세 <em>2,079만원</em></p>
+                                <p class="time">입찰마감 시간 <em>03월 22일 11시 30분</em></p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- --unit -->
+                </li>
+                <li>
+                    <!-- unit -->
+                    <a href="#" class="unit_link">
+                        <div class="unit_img">
+                            <img data-src="/HMC/img/@thumb/plp_500x500_03.jpg" class="" alt="상품명으로 뿌려주세요" src="/HMC/img/@thumb/plp_500x500_03.jpg">
+                        </div>
+                        <div class="unit_info">
+                            <div class="name">
+                                <p class="model">현대 더 뉴 그랜저IG 가솔린 2.2 프리미엄</p>
+                                <p class="desc"><em>현대</em><em>2010년 04월 (10년형)</em><em>62,167km</em><em>가솔린</em><em>2,000cc</em></p>
+                                <p class="adress">차량 소재지 : <em>서울시 영등포구</em></p>
+                            </div>
+                            <div class="price">
+                                <p class="money">예상 시세 <em>2,079만원</em></p>
+                                <p class="time">입찰마감 시간 <em>03월 22일 11시 30분</em></p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- //unit -->
+                </li>
+                <li>
+                    <!-- unit -->
+                    <a href="#" class="unit_link">
+                        <div class="unit_img">
+                            <img data-src="/HMC/img/@thumb/plp_500x500_03.jpg" class="" alt="상품명으로 뿌려주세요" src="/HMC/img/@thumb/plp_500x500_03.jpg">
+                        </div>
+                        <div class="unit_info">
+                            <div class="name">
+                                <p class="model">현대 더 뉴 그랜저IG 가솔린 2.2 프리미엄</p>
+                                <p class="desc"><em>현대</em><em>2010년 04월 (10년형)</em><em>62,167km</em><em>가솔린</em><em>2,000cc</em></p>
+                                <p class="adress">차량 소재지 : <em>서울시 영등포구</em></p>
+                            </div>
+                            <div class="price">
+                                <p class="money">예상 시세 <em>2,079만원</em></p>
+                                <p class="time">입찰마감 시간 <em>03월 22일 11시 30분</em></p>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- //unit -->
+                </li>
+            </ol>
+        </div>
+
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/NonCPO/SHTML/po_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+
+<script>
+	$(document).ready(function() {
+        // 차량검색 영역 토글 
+        productToggle();  
+        // 소재지 체크박스 
+        $('.list_local li input').on('click' , function() {
+            const checked = $(this).is(':checked');
+            if (checked){
+                $(this).parent('li').addClass('on');
+            }else {
+                $(this).parent('li').removeClass('on');
+            }
+        });
+        // 범위 설정
+        FRM.FilterPriceRange('Syear', 'Syear2', 'rangeYear', 1, '년');//연도 선택
+	    FRM.FilterPriceRange('Sdistance', 'Sdistance2', 'rangeDistance', 500, 'km'); // 주행거리 선택
+    });
+</script>
+</body>
+</html>

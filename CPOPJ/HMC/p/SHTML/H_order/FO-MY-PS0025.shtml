@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>탁송조회 : 현대 CUV</title>
+	<!--#include file="/HMC/p/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_order.css">
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+	<div id="CPOcontents">
+		<div id="layoutWrap" class="my">
+			<!-- container -->
+			<div class="container flex">
+				<!--#include file="/HMC/p/SHTML/H_inc/layout_left.shtml"-->
+				<!-- cont_wrap -->
+				<div class="cont_wrap order_detail" data-id="myOrder">
+					<h1 class="page_tit">탁송조회</h1>
+
+					<!-- 주문정보 -->
+					<section class="product_box">
+						<div class="order_info">
+							<div class="order_no">
+								<span class="flag_big01">탁송완료</span>
+								<span class="no">20211112321564565421</span>
+								<span class="date">주문일 : 2022.10.12</span>
+							</div>
+							<!-- 주문차량정보 -->
+							<!--#include file="/HMC/p/SHTML/H_order/con_buy/con_unit.shtml"-->
+							<!-- //주문차량정보 -->
+						</div>
+
+						<div class="order_step">
+							<div class="txt"> 
+								<em>2022.09.03(금)<br>탁송이 완료되었습니다.</em>
+								<!-- <em>2022.09.03(금) 오늘<br>차량이 탁송될 예정입니다.</em> -->
+							</div>
+							<div class="bg_box">
+								<ol class="delivery">
+									<li>
+										<span class="addr">서울시 강남구 삼성타운로 337-4 49층 4985호</span>
+										<span class="date">2021.09.03(수)</span>
+										<em>탁송완료</em>
+									</li>
+									<li>
+										<span class="addr">일죽U센터</span>
+										<span class="date">2021.09.03(수)</span>
+										<em>탁송출발</em>
+									</li>
+									<li>
+										<span class="addr">일죽U센터</span>
+										<span class="date">2021.09.03(수)</span>
+										<em>탁송준비중</em>
+									</li>
+								</ol>
+							</div>
+						</div>
+					</section>
+					<!-- //주문정보 -->
+
+					<!-- 계약정보 -->
+					<!-- 내차사기 안내 -->
+					<section class="info_box">
+						<!-- 차량 탁송정보 -->
+						<div class="sec_tit m">차량 탁송정보</div>
+						<div class="bg_box">
+							<ul class="list_type01">
+								<li>
+									<div class="tit">탁송지</div>
+									<div class="txt">
+										<dl class="info">
+											<dt>
+												<strong>김현대</strong>
+												<span class="num">01012345678</span>
+											</dt>
+											<dd>
+												(04524) 서울특별시 강남구 테헤란로 510(대치동) A동 1001호
+											</dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="tit">탁송회사</div>
+									<div class="txt">현대탁송</div>
+								</li>
+								<li>
+									<div class="tit">탁송기사</div>
+									<div class="txt">김안전</div>
+								</li>
+								<li>
+									<div class="tit">연락처</div>
+									<div class="txt">01012341234</div>
+								</li>
+							</ul>
+						</div>
+						<!-- //차량 탁송정보 -->
+					</section>
+
+					<!-- 자주 묻는 질문 TOP5 -->
+					<!--#include file="/HMC/p/SHTML/H_order/con_buy/con_faq.shtml"-->
+					<!-- //자주 묻는 질문 TOP5 -->
+
+				</div>
+				<!-- //cont_wrap -->
+			</div>
+			<!-- //container -->
+		</div>
+	</div> 
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<script>
+	lnb_active();
+	toggle();
+</script>
+</html>

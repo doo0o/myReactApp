@@ -1,0 +1,187 @@
+<div class="popup_full" id="FO-CM-PS0037">
+	<div class="p_body">
+		<div class="p_inner s_small">
+			<div class="p_head">
+				<h2 class="tit">내차사기</h2>
+			</div>
+			<div class="p_wrap unit_pop">
+				<!-- contents -->
+				<div class="txt_area">
+					<p>김현대님, 내차사기 진행 중인 차량이 있어요</p>
+					<p class="sub_txt">차량을 선택 하시면 진행 중인 화면으로 이동할게요.</p>
+				</div>
+				
+				<div class="unit_wrap">
+					<div class="unit_swiper">
+						<ul class="swiper-wrapper">
+							<li class="swiper-slide">
+								<div class="unit_type type01">
+									<!-- unit -->
+									<a href="javascript:void(0);" class="mid_area">
+										<div class="unit_img">
+											<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+										</div>
+										<div class="unit_info">
+											<div class="order_num">
+												<span class="flag_big01">결제진행중</span>
+												<!-- <span class="num">2021123154561231</span> -->
+											</div>
+											<div class="name">
+												<!-- <span class="flag_mid03">Trade-in</span> -->
+												<span class="model">그랜저 IG </span>
+												<span class="desc">가솔린 3.3 캘리그래피</span>
+											</div>
+											<div class="drive">
+												<span>20년 12월</span>
+												<span>50,000km</span>
+												<!-- <span>12가1234</span> -->
+											</div>
+											<div class="price">
+												<span class="num"><em>3,820</em><i>만원</i></span>
+											</div>
+										</div>
+									</a>
+									<!-- //unit -->
+								</div>
+								<div class="gray_box">
+									21.11.11 17:32까지 온라인 서명을 완료해 주세요.
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="unit_type type01">
+									<!-- unit -->
+									<a href="javascript:void(0);" class="mid_area">
+										<div class="unit_img">
+											<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+										</div>
+										<div class="unit_info">
+											<div class="order_num">
+												<span class="flag_big01">결제진행중</span>
+												<!-- <span class="num">2021123154561231</span> -->
+											</div>
+											<div class="name">
+												<!-- <span class="flag_mid03">Trade-in</span> -->
+												<span class="model">그랜저 IG </span>
+												<span class="desc">가솔린 3.3 캘리그래피</span>
+											</div>
+											<div class="drive">
+												<span>20년 12월</span>
+												<span>50,000km</span>
+												<!-- <span>12가1234</span> -->
+											</div>
+											<div class="price">
+												<span class="num"><em>3,820</em><i>만원</i></span>
+											</div>
+										</div>
+									</a>
+									<!-- //unit -->
+								</div>
+								<div class="gray_box">
+									21.11.11 17:32까지 온라인 서명을 완료해 주세요.
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="unit_type type01">
+									<!-- unit -->
+									<a href="javascript:void(0);" class="mid_area">
+										<div class="unit_img">
+											<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+										</div>
+										<div class="unit_info">
+											<div class="order_num">
+												<span class="flag_big01">결제진행중</span>
+												<!-- <span class="num">2021123154561231</span> -->
+											</div>
+											<div class="name">
+												<!-- <span class="flag_mid03">Trade-in</span> -->
+												<span class="model">그랜저 IG </span>
+												<span class="desc">가솔린 3.3 캘리그래피</span>
+											</div>
+											<div class="drive">
+												<span>20년 12월</span>
+												<span>50,000km</span>
+												<!-- <span>12가1234</span> -->
+											</div>
+											<div class="price">
+												<span class="num"><em>3,820</em><i>만원</i></span>
+											</div>
+										</div>
+									</a>
+									<!-- //unit -->
+								</div>
+								<div class="gray_box">
+									21.11.11 17:32까지 온라인 서명을 완료해 주세요.
+								</div>
+							</li>
+							<li class="swiper-slide">
+								<div class="unit_type type01">
+									<!-- unit -->
+									<a href="javascript:void(0);" class="mid_area">
+										<div class="unit_img">
+											<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+										</div>
+										<div class="unit_info">
+											<div class="order_num">
+												<span class="flag_big01">결제진행중</span>
+												<!-- <span class="num">2021123154561231</span> -->
+											</div>
+											<div class="name">
+												<!-- <span class="flag_mid03">Trade-in</span> -->
+												<span class="model">그랜저 IG </span>
+												<span class="desc">가솔린 3.3 캘리그래피</span>
+											</div>
+											<div class="drive">
+												<span>20년 12월</span>
+												<span>50,000km</span>
+												<!-- <span>12가1234</span> -->
+											</div>
+											<div class="price">
+												<span class="num"><em>3,820</em><i>만원</i></span>
+											</div>
+										</div>
+									</a>
+									<!-- //unit -->
+								</div>
+								<div class="gray_box">
+									21.11.11 17:32까지 온라인 서명을 완료해 주세요.
+								</div>
+							</li>
+						
+						</ul>
+					</div>
+				</div>
+				<script type="text/javascript">
+					const unitSwiper = new Swiper('.unit_swiper', getSwiperOption({
+						target : '.unit_swiper',
+						slidesPerView : 1,
+						spaceBetween: 25,
+						pagination: true,
+						pagination_cls : '01',
+						// 2022 - 02- 02 쉐브론 추가 및 LOOP 추가
+						navigation : true,
+						navigation_cls : 'type01',
+						loop : true,
+						addOption : {
+
+							// 2023 07 09 event 처리
+							on: {
+								slideChangeTransitionStart : function(){
+
+								},
+								
+								init : function(){
+
+								}
+							},
+						}
+					}))
+				</script>
+				<!-- //contents -->
+			</div>
+			<button type="button" class="pop_close">닫기</button>
+			<div class="btn_area full_type">
+				<button type="button" class="btn_big color01">23나 2345 차량 이어서 진행하기</button>
+			</div>
+		</div>
+	</div>
+</div>

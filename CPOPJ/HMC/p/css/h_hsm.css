@@ -1,0 +1,224 @@
+@charset "UTF-8";
+/*************************************************************************************
+*                                       폰트                                          *
+**************************************************************************************/
+/**
+	색 또는 크기 가변 ICON
+*/
+/**
+	replace 함수
+*/
+/**
+	Icon Info 01
+*/
+/* Box Bg */
+/* Position */
+.pop_sale .title_area .tit {
+  color: #333333;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  word-break: keep-all;
+}
+.pop_sale .title_area .tit02 {
+  color: #767676;
+}
+.pop_sale .title_area .txt {
+  display: block;
+  margin-top: 4px;
+  color: #767676;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.pop_sale .title_area .txt.info {
+  position: relative;
+  padding-left: 20px;
+}
+.pop_sale .title_area .txt.info::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/icon/icon_ui_info03.svg);
+  background-size: 16px auto;
+  background-repeat: no-repeat;
+}
+.pop_sale .title_area [class^=txt_btn] {
+  display: flex;
+  margin-top: 16px;
+}
+.pop_sale .list_step {
+  margin-top: 32px;
+}
+.pop_sale .list_step.line {
+  padding-top: 32px;
+  border-top: 1px solid #EDEDED;
+}
+.pop_sale .corp_caution {
+  margin-top: 32px;
+}
+.pop_sale .corp_trade, .pop_sale .info_caution {
+  margin-top: 16px;
+}
+.pop_sale .intent_caution {
+  margin-top: 20px;
+}
+.pop_sale .caution .tit {
+  margin-bottom: 12px;
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.pop_sale .text_area {
+  margin-top: 32px;
+}
+.pop_sale .btn_area {
+  margin-top: 32px;
+}
+.pop_sale .ipt_area {
+  margin-top: 32px;
+}
+.pop_sale .ipt_area .form_area {
+  display: grid;
+  align-items: end;
+}
+.pop_sale .ipt_area .form_area.half {
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 8px;
+}
+.pop_sale .box_input .title {
+  margin-bottom: 16px;
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.pop_sale .km_area .txt {
+  margin-top: 8px;
+  color: #767676;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.pop_sale .km_area button {
+  display: block;
+  margin-top: 20px;
+  color: #767676;
+}
+.pop_sale .form_list {
+  margin-top: 24px;
+}
+.pop_sale .list_trade {
+  margin-top: 32px;
+}
+.pop_sale .list_trade > li {
+  padding: 20px;
+  border: 1px solid #EDEDED;
+}
+.pop_sale .list_trade > li:not(:first-of-type) {
+  margin-top: 20px;
+}
+.pop_sale .list_trade > li .title {
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+.pop_sale .list_trade > li .list_info {
+  margin-top: 16px;
+}
+.pop_sale .list_trade > li .list_info li {
+  color: #767676;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.pop_sale .list_trade > li .list_info li:not(:first-of-type) {
+  margin-top: 4px;
+}
+.pop_sale .list_trade .group_amount {
+  margin-top: 16px;
+  padding: 12px 16px;
+  background: #F7F7F7;
+}
+.pop_sale .list_trade .group_amount .box_amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pop_sale .list_trade .group_amount .box_amount:not(:first-of-type) {
+  margin-top: 4px;
+}
+.pop_sale .list_trade .group_amount .box_amount .tit {
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+}
+.pop_sale .list_trade .group_amount .box_amount .price {
+  display: flex;
+  align-items: center;
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+}
+.pop_sale .list_trade .group_amount .box_amount .price .num {
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+.pop_sale .group_terms {
+  margin-top: 32px;
+  padding: 20px;
+  background: #F7F7F7;
+}
+.pop_sale .group_terms .list {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #EDEDED;
+}
+.pop_sale .group_terms .list li:not(:first-of-type) {
+  margin-top: 16px;
+}
+.pop_sale .list_addipt {
+  margin-top: 32px;
+}
+.pop_sale .list_addipt > ul > li:not(:first-of-type) {
+  margin-top: 32px;
+}
+.pop_sale .list_addipt > ul > li .title {
+  margin-bottom: 16px;
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.pop_sale .list_addipt > ul > li .form_area {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.pop_sale .list_addipt > ul > li .form_area.blank {
+  grid-column-gap: 8px;
+}
+.pop_sale .list_addipt > ul > li .form_area .box_chkbox:not(:first-of-type) {
+  margin-left: -1px;
+}
+.pop_sale .list_addipt > ul > li .form_area .box_chkbox .chk_block:checked + label {
+  position: relative;
+}
+
+.sale_caution .title {
+  margin-bottom: 20px;
+  color: #333333;
+}
+/*# sourceMappingURL=maps/h_hsm.css.map */

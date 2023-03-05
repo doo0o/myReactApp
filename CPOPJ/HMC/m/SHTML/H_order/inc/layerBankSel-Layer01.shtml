@@ -1,0 +1,32 @@
+<div class="CPOpop_bottom select" id="layerBankSel-Layer01">
+    <div class="p_head">
+        <p class="tit">은행선택</p><!-- 2022-09-02 [CPO-3239] 띄어쓰기 -->
+    </div>
+    <div class="p_wrap">
+        <!-- list -->
+        <ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+            <li><input type="radio" class="chk_select" name="layerBankSel01_Name" id="layerBankSel01_01"><label for="layerBankSel01_01"><span class="bank_logo"><img src="/HMC/m/img/finance/bank_002.png" alt="산업은행로고"></span>산업은행</label></li>
+            <li><input type="radio" class="chk_select" name="layerBankSel01_Name" id="layerBankSel01_02"><label for="layerBankSel01_02"><span class="bank_logo"><img src="/HMC/m/img/finance/bank_003.png" alt="기업은행로고"></span>기업은행</label></li>
+            <li><input type="radio" class="chk_select" name="layerBankSel01_Name" id="layerBankSel01_03"><label for="layerBankSel01_03"><span class="bank_logo"><img src="/HMC/m/img/finance/bank_004.png" alt="국민은행로고"></span>국민은행</label></li>
+            <li><input type="radio" class="chk_select" name="layerBankSel01_Name" id="layerBankSel01_04"><label for="layerBankSel01_04"><span class="bank_logo"><img src="/HMC/m/img/finance/bank_005.png" alt="하나은행로고"></span>하나은행</label></li>
+            <li><input type="radio" class="chk_select" name="layerBankSel01_Name" id="layerBankSel01_05"><label for="layerBankSel01_05"><span class="bank_logo"><img src="/HMC/m/img/finance/bank_011.png" alt="NH농협은행로고"></span>NH농협은행</label></li>
+            <li><input type="radio" class="chk_select" name="layerBankSel01_Name" id="layerBankSel01_06"><label for="layerBankSel01_06"><span class="bank_logo"><img src="/HMC/m/img/finance/bank_020.png" alt="우리은행로고"></span>우리은행</label></li>
+            <li><input type="radio" class="chk_select" name="layerBankSel01_Name" id="layerBankSel01_07"><label for="layerBankSel01_07"><span class="bank_logo"><img src="/HMC/m/img/finance/bank_023.png" alt="SC제일은행로고"></span>SC제일은행</label></li>
+            <li><input type="radio" class="chk_select" name="layerBankSel01_Name" id="layerBankSel01_08"><label for="layerBankSel01_08"><span class="bank_logo"><img src="/HMC/m/img/finance/bank_027.png" alt="씨티은행로고"></span>씨티은행</label></li>
+            <li><input type="radio" class="chk_select" name="layerBankSel01_Name" id="layerBankSel01_09"><label for="layerBankSel01_09"><span class="bank_logo"><img src="/HMC/m/img/finance/bank_031.png" alt="대구은행로고"></span>대구은행</label></li>
+            <li><input type="radio" class="chk_select" name="layerBankSel01_Name" id="layerBankSel01_10"><label for="layerBankSel01_10"><span class="bank_logo"><img src="/HMC/m/img/finance/bank_032.png" alt="부산은행로고"></span>부산은행</label></li>
+            <li><input type="radio" class="chk_select" name="layerBankSel01_Name" id="layerBankSel01_11"><label for="layerBankSel01_11"><span class="bank_logo"><img src="/HMC/m/img/finance/bank_034.png" alt="광주은행로고"></span>광주은행</label></li>
+            <li><input type="radio" class="chk_select" name="layerBankSel01_Name" id="layerBankSel01_12"><label for="layerBankSel01_12"><span class="bank_logo"><img src="/HMC/m/img/finance/bank_039.png" alt="경남은행로고"></span>경남은행</label></li>
+            <li><input type="radio" class="chk_select" name="layerBankSel01_Name" id="layerBankSel01_13"><label for="layerBankSel01_13"><span class="bank_logo"><img src="/HMC/m/img/finance/bank_055.png" alt="도이치은행로고"></span>도이치은행</label></li>
+            <li><input type="radio" class="chk_select" name="layerBankSel01_Name" id="layerBankSel01_14"><label for="layerBankSel01_14"><span class="bank_logo"><img src="/HMC/m/img/finance/bank_060.png" alt="BOA은행로고"></span>BOA은행</label></li>
+            <li><input type="radio" class="chk_select" name="layerBankSel01_Name" id="layerBankSel01_15"><label for="layerBankSel01_15"><span class="bank_logo"><img src="/HMC/m/img/finance/bank_088.png" alt="신한은행로고"></span>신한은행</label></li>
+            <li><input type="radio" class="chk_select" name="layerBankSel01_Name" id="layerBankSel01_16"><label for="layerBankSel01_16"><span class="bank_logo"><img src="/HMC/m/img/finance/bank_090.png" alt="카카오뱅크로고"></span>카카오뱅크</label></li>
+            <li><input type="radio" class="chk_select" name="layerBankSel01_Name" id="layerBankSel01_17"><label for="layerBankSel01_17"><span class="bank_logo"><img src="/HMC/m/img/finance/bank_092.png" alt="토스뱅크로고"></span>토스뱅크</label></li>
+        </ol>
+        <div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // priodSel 변경 내용 적용  -->
+            <button type="button" class="btn_big01 jQ_Select_Save" data-id="layerBankSel01">선택하기</button>
+        </div>
+        <!-- //list -->
+    </div>
+    <button type="button" class="pop_close">닫기</button>
+</div>

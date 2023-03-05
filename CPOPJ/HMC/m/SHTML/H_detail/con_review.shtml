@@ -1,0 +1,130 @@
+<div class="pdp_review_wrap">
+	<div class="pdp08_review">
+		<div class="top">
+			<p class="tit">이 모델을 구매하신 분들의 의견입니다</p>
+		</div>
+
+		<div class="review_list01 bg swiperType01">
+			<ul class="swiper-wrapper">
+				<li class="swiper-slide">
+					<a href="javascript:void(0);" class="review_box jQ_POP_open" data-popup="FO-TI-MS0018">
+						<p class="review_top">
+							<span class="name">Ee*******@hyundai.com</span>
+							<span class="date">2021.04.05</span>
+						</p>
+						<ul class="review_star">
+							<li>
+								<div class="star_txt sale_icon01">차량품질</div>
+								<div class="rating02 small">
+									<span class="star1"><em>1</em>점</span> <!-- 2022.11.08 수정 별점 점수에 따라 star1~5 class 변경 -->
+								</div>
+							</li>
+							<li>
+								<div class="star_txt sale_icon02">차량가격</div>
+								<div class="rating02 small">
+									<span class="star2"><em>2</em>점</span> <!-- 2022.11.08 수정 별점 점수에 따라 star1~5 class 변경 -->
+								</div>
+							</li>
+							<li>
+								<div class="star_txt sale_icon03">서비스</div>
+								<div class="rating02 small">
+									<span class="star3"><em>3</em>점</span> <!-- 2022.11.08 수정 별점 점수에 따라 star1~5 class 변경 -->
+								</div>
+							</li>
+						</ul>
+						<div class="review_bot">
+							<span class="txt">전체적으로 모두 좋은 상태를 보여주고 있습니다. 신차 수준에 가까운 상태로 추천드리는 차량입니다. 전체적으로 모두 좋은 상태를 보여주고 있습니다. </span>
+							<span class="img">
+								<img src="/HMC/m/img/@thumb/car_slide.png" alt=""/>
+								<span class="num">5</span>
+							</span>
+						</div>
+						<p class="tit">더 뉴 그랜저 디젤 3.0 캘리그라피 </p>
+					</a>
+				</li>
+				<li class="swiper-slide">
+					<a href="javascript:void(0);" class="review_box jQ_POP_open" data-popup="FO-TI-MS0018">
+						<p class="review_top">
+							<span class="name">Ee*******@hyundai.com</span>
+							<span class="date">2021.04.05</span>
+						</p>
+						<ul class="review_star">
+							<li>
+								<div class="star_txt sale_icon01">차량품질</div>
+								<div class="rating02 small">
+									<span class="star1"><em>1</em>점</span> <!-- 2022.11.08 수정 별점 점수에 따라 star1~5 class 변경 -->
+								</div>
+							</li>
+							<li>
+								<div class="star_txt sale_icon02">차량가격</div>
+								<div class="rating02 small">
+									<span class="star2"><em>2</em>점</span> <!-- 2022.11.08 수정 별점 점수에 따라 star1~5 class 변경 -->
+								</div>
+							</li>
+							<li>
+								<div class="star_txt sale_icon03">서비스</div>
+								<div class="rating02 small">
+									<span class="star3"><em>3</em>점</span> <!-- 2022.11.08 수정 별점 점수에 따라 star1~5 class 변경 -->
+								</div>
+							</li>
+						</ul>
+						<div class="review_bot">
+							<span class="txt">전체적으로 모두 좋은 상태를 보여주고 있습니다. 신차 수준에 가까운 상태로 추천드리는 차량입니다. 전체적으로 모두 좋은 상태를 보여주고 있습니다. </span>
+							<span class="img">
+								<img src="/HMC/m/img/@thumb/car_slide.png" alt=""/>
+								<span class="num">5</span>
+							</span>
+						</div>
+						<p class="tit">더 뉴 그랜저 디젤 3.0 캘리그라피 </p>
+					</a>
+				</li>
+				<li class="swiper-slide">
+					<a href="javascript:void(0);" class="review_box jQ_POP_open" data-popup="FO-TI-MS0018">
+						<p class="review_top">
+							<span class="name">Ee*******@hyundai.com</span>
+							<span class="date">2021.04.05</span>
+						</p>
+						<ul class="review_star">
+							<li>
+								<div class="star_txt sale_icon01">차량품질</div>
+								<div class="rating02 small">
+									<span class="star1"><em>1</em>점</span> <!-- 2022.11.08 수정 별점 점수에 따라 star1~5 class 변경 -->
+								</div>
+							</li>
+							<li>
+								<div class="star_txt sale_icon02">차량가격</div>
+								<div class="rating02 small">
+									<span class="star4"><em>4</em>점</span> <!-- 2022.11.08 수정 별점 점수에 따라 star1~5 class 변경 -->
+								</div>
+							</li>
+							<li>
+								<div class="star_txt sale_icon03">서비스</div>
+								<div class="rating02 small">
+									<span class="star5"><em>5</em>점</span> <!-- 2022.11.08 수정 별점 점수에 따라 star1~5 class 변경 -->
+								</div>
+							</li>
+						</ul>
+						<div class="review_bot">
+							<span class="txt">전체적으로 모두 좋은 상태를 보여주고 있습니다. 신차 수준에 가까운 상태로 추천드리는 차량입니다. 전체적으로 모두 좋은 상태를 보여주고 있습니다. </span>
+							<span class="img">
+								<img src="/HMC/m/img/@thumb/car_slide.png" alt=""/>
+								<span class="num">5</span>
+							</span>
+						</div>
+						<p class="tit">더 뉴 그랜저 디젤 3.0 캘리그라피 </p>
+					</a>
+				</li>
+			</ul>
+			<div class="swiper-pagination"></div>
+		</div>
+	</div>
+
+	<div class="slide_product">
+		<div class="top">
+			<h4 class="sec_tit">인기있는 비슷한 차량</h4>
+		</div>
+		<!-- 상품 swiper inc_best_01.shtml -->
+		<!--#include file="/HMC/m/SHTML/H_display/include/inc_best_01.shtml"-->
+	</div>
+
+</div>

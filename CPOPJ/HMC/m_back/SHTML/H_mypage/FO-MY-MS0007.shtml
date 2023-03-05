@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>보유차량</title>
+	<!--#include file="/HMC/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_mypage.css">
+</head>
+<body>
+<!--#include file="/HMC/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--#include file="/HMC/SHTML/H_inc/layout_header.shtml"-->
+		<!--  s: title area : SUB  -->
+		<div class="h_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h3 class="tit">보유차량</h3>
+		</div>
+		<!--  e: title area : SUB  -->
+		<!--  s: title area : SEARCH  -->
+		<div class="h_search h_deal">
+			<input type="text" class="inp_sch" placeholder="모델명 혹은 차대번호를 검색해보세요." />
+			<ul class="util">
+				<li><button type="button" class="ic_search">검색</button></li>
+			</ul>
+		</div>
+		<!--  e: title area : SEARCH  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="mypage_mycar plp_list">
+			<div class="sorting">
+				<span class="all">전체 <i>20</i>개</span>
+			</div>
+			<!-- 상품목록 -->
+			<ol class="deal">
+				<li>
+					<div class="unit_my_list">
+						<div class="status">
+							<span class="tit h">현대 더 뉴 그랜저 IG</span>
+							<button type="button" class="close">닫기</button>
+						</div>
+						<div class="unit_img"><img src="/HMC/img/@thumb/plp_310x310_01.jpg" alt="상품명으로 뿌려주세요"></div>
+						<div class="unit_info">
+							<p class="num">
+								<span>12가1234</span>
+							</p>
+							<p class="name">
+								<span class="model">가솔린 3.3 캘리그래피 가솔린 3.3 캘리그래피</span>
+							</p>
+							<span class="drive">
+								<em>21년형</em>
+								<em>가솔린</em>
+							</span>
+							<span class="price"><em>4,000~4,200</em><i>만원</i></span>
+						</div>
+						<dl class="duedate">
+							<dt>차대번호</dt>
+							<dd>KMTMF81CDNU064302</dd>
+							<dt>출고/등록일</dt>
+							<dd>2022.02.07</dd>
+						</dl>
+						<button type="button" class="btn_mid05">견적받기</button>
+					</div>
+				</li>
+				<li>
+					<div class="unit_my_list">
+						<div class="status">
+							<span class="tit k">기아 K8 하이브리드</span>
+							<button type="button" class="close">닫기</button>
+						</div>
+						<div class="unit_img"><img src="/HMC/img/@thumb/plp_310x310_01.jpg" alt="상품명으로 뿌려주세요"></div>
+						<div class="unit_info">
+							<p class="num">
+								<span>12가1234</span>
+							</p>
+							<p class="name">
+								<span class="model">가솔린 3.3 캘리그래피</span>
+							</p>
+							<span class="drive">
+								<em>21년형</em>
+								<em>10,239km</em>
+								<em>가솔린</em>
+							</span>
+							<span class="price">가격정보 없음</span>
+						</div>
+						<dl class="duedate">
+							<dt>차대번호</dt>
+							<dd>KMTMF81CDNU064302</dd>
+							<dt>출고/등록일</dt>
+							<dd>2022.02.07</dd>
+						</dl>
+						<button type="button" class="btn_mid05">견적받기</button>
+					</div>
+				</li>
+				<li>
+					<div class="unit_my_list no"> <!--시세를 받은 지 14일 경과 class no 추가-->
+						<div class="status">
+							<span class="tit h">현대 더 뉴 그랜저 IG</span>
+							<button type="button" class="close">닫기</button>
+						</div>
+						<div class="unit_img"><img src="/HMC/img/@thumb/plp_310x310_01.jpg" alt="상품명으로 뿌려주세요"></div>
+						<div class="unit_info">
+							<p class="num">
+								<span>12가1234</span>
+							</p>
+							<p class="name">
+								<span class="model">가솔린 3.3 캘리그래피</span>
+							</p>
+							<span class="drive">
+								<em>21년형</em>
+								<em>10,239km</em>
+								<em>가솔린</em>
+							</span>
+						</div>
+						<dl class="duedate">
+							<dt>차대번호</dt>
+							<dd>KMTMF81CDNU064302</dd>
+							<dt>출고/등록일</dt>
+							<dd>2022.02.07</dd>
+						</dl>
+						<button type="button" class="btn_mid05">견적받기</button>
+					</div>
+				</li>
+				<li>
+					<div class="unit_my_list">
+						<div class="status">
+							<span class="tit h">현대 더 뉴 그랜저 IG</span>
+							<button type="button" class="close">닫기</button>
+						</div>
+						<dl class="duedate">
+							<dt>차대번호</dt>
+							<dd>KMTMF81CDNU064302</dd>
+							<dt>출고/등록일</dt>
+							<dd>2022.02.07</dd>
+						</dl>
+						<button type="button" class="btn_mid02">네, 나의 차량이 맞습니다.</button>
+					</div>
+				</li>
+				<li>
+					<div class="unit_my_list">
+						<div class="status">
+							<span class="tit h">현대 더 뉴 그랜저 IG</span>
+							<button type="button" class="close">닫기</button>
+						</div>
+						<dl class="duedate">
+							<dt>차대번호</dt>
+							<dd>KMTMF81CDNU064302</dd>
+							<dt>출고/등록일</dt>
+							<dd>2022.02.07</dd>
+						</dl>
+						<button type="button" class="btn_mid02">네, 나의 차량이 맞습니다.</button>
+					</div>
+				</li>
+			</ol>
+			<!-- //상품목록 -->
+			<!-- 데이터 없을 때 -->
+			<div class="noData">
+				<p class="tit">아직 등록된 차량이 없습니다.</p>
+				<p class="txt">보유하고 계신 차량을 등록하고<br />합리적인 내차 가격도 알아보세요.</p>
+				<p class="btn"><a href="#" class="btn_mid01">보유차량 등록하기</a></p>
+			</div>
+			<!-- //데이터 없을 때 -->
+		</div>
+		<!-- //contents -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">보유차량 등록하기</button>
+		</div>
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HMC/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/HMC/SHTML/H_inc/popup_include_all.shtml"-->
+</body>
+</html>

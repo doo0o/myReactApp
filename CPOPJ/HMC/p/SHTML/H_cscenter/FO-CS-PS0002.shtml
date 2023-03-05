@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>고객센터 - 자주묻는질문</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_cscenter.css">
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+    <!-- CPOcontents -->
+	<div id="CPOcontents">
+        <div id="layoutWrap" class="cscenter">
+			<!-- container -->
+            <div class="container"> 
+				<h1 class="page_tit align_c">자주 묻는 질문</h1>
+				<div class="search_box">
+					<div class="form_area">
+						<div class="inbox_line fs02 hs01 search_type" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+							<input type="text" class="txt" title="텍스트" placeholder="궁금한 점을 검색해 보세요." name="" value="">
+							<button type="button" class="btn_delete">삭제</button>
+							<button type="button" class="btn_search">검색</button>
+						</div>
+					</div>
+				</div>
+				<div class="qa_list">
+					<ul>
+						<li class="qa_name">
+							<input type="radio" id="cs_qa00" name="qa" checked="">
+							<label for="cs_qa00">
+								<div class="icon_text qa_all">전체</div>
+							</label>
+						</li>
+						<li class="qa_name">
+							<input type="radio" id="cs_qa01" name="qa">
+							<label for="cs_qa01">
+								<div class="icon_text qa_buy">내차사기</div>
+							</label>
+						</li>
+						<li class="qa_name">
+							<input type="radio" id="cs_qa02" name="qa">
+							<label for="cs_qa02">
+								<div class="icon_text qa_sell">내차팔기</div>
+							</label>
+						</li>
+						<li class="qa_name">
+							<input type="radio" id="cs_qa03" name="qa">
+							<label for="cs_qa03">
+								<div class="icon_text qa_error">앱 오류문의</div>
+							</label>
+						</li>
+						<li class="qa_name">
+							<input type="radio" id="cs_qa04" name="qa">
+							<label for="cs_qa04">
+								<div class="icon_text qa_membership">회원&amp;멤버십</div>
+							</label>
+						</li>
+						<li class="qa_name">
+							<input type="radio" id="cs_qa05" name="qa">
+							<label for="cs_qa05">
+								<div class="icon_text qa_payment">결제문의</div>
+							</label>
+						</li>
+						<!-- <li class="qa_name">
+							<input type="radio" id="cs_qa06" name="qa">
+							<label for="cs_qa06">
+								<div class="icon_text qa_auction">경 공매</div>
+							</label>
+						</li> -->
+					</ul>
+				</div>
+
+				<div class="no_data car"> <!-- no-data 페이지 종류에 따라 class alarm, review, history, promotion, point 추가-->
+					<p class="tit">입력하신 검색어와 일치하는 검색 결과가 없습니다.</p>
+					<p class="txt">다른 검색어를 입력하여 검색해 주세요.</p>
+				</div>
+				<div class="qa_my">
+					<p class="icon_text">
+						찾고자 하는 질문이 없으신가요?
+					</p>
+					<div class="btn_area">
+						<button type="button" class="btn_big color01 icon_write">1:1 문의 등록 하기</button>
+						<button type="button" class="btn_big color02 icon_read">나의 문의 내역 보기</button>
+					</div>
+				</div>
+
+				<div class="qa_wrap type_question">
+					<div class="total_result">
+						<div class="all">전체 <em>32</em>개</div>
+					</div>
+					<ul>
+						<li class="cont">
+							<div class="head item">
+								<button type="button" class="js_toggle">
+									<p>
+										<span class="qa_name_txt">내차사기</span>
+										<span>배송은 언제 받을 수 있나요?</span>
+									</p>
+								</button>
+							</div>
+							<div class="group">
+								<div class="gray_box">
+									입력한 차량정보는 조회기준으로 1주일간 자동으로 임시 저장됩니다. <br>
+									진행중이던 견적 신정을 이어서 진행하고 싶으시다면
+									<a href="#a">내차팔기 이어서 진행하기</a>에 방문해보세요.
+									<ul class="img_list">
+										<li><img src="../../img/@thumb/@cscenter_answer_img01.jpg" alt=""></li>
+										<li><img src="../../img/@thumb/@cscenter_answer_img02.jpg" alt=""></li>
+										<li><img src="../../img/@thumb/@cscenter_answer_img03.jpg" alt=""></li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="cont">
+							<div class="head item">
+								<button type="button" class="js_toggle">
+									<p>
+										<span class="qa_name_txt">내차사기</span>
+										<span>차량 구매 시 필요한 서류는 뭔가요?</span>
+									</p>
+								</button>
+							</div>
+							<div class="group">
+								<div class="gray_box">
+									입력한 차량정보는 조회기준으로 1주일간 자동으로 임시 저장됩니다. <br>
+									진행중이던 견적 신정을 이어서 진행하고 싶으시다면
+									<a href="#a">내차팔기 이어서 진행하기</a>에 방문해보세요.
+								</div>
+							</div>
+						</li>
+						<li class="cont">
+							<div class="head item">
+								<button type="button" class="js_toggle">
+									<p>
+										<span class="qa_name_txt">내차사기</span>
+										<span>차량 구매 시 필요한 서류는 뭔가요?</span>
+									</p>
+								</button>
+							</div>
+							<div class="group">
+								<div class="gray_box">
+									입력한 차량정보는 조회기준으로 1주일간 자동으로 임시 저장됩니다. <br>
+									진행중이던 견적 신정을 이어서 진행하고 싶으시다면
+									<a href="#a">내차팔기 이어서 진행하기</a>에 방문해보세요.
+								</div>
+							</div>
+						</li>
+						<li class="cont">
+							<div class="head item">
+								<button type="button" class="js_toggle">
+									<p>
+										<span class="qa_name_txt">앱 오류 문의</span>
+										<span>주문을 취소하려면 어떻게 하나요?</span>
+									</p>
+								</button>
+							</div>
+							<div class="group">
+								<div class="gray_box">
+									입력한 차량정보는 조회기준으로 1주일간 자동으로 임시 저장됩니다. <br>
+									진행중이던 견적 신정을 이어서 진행하고 싶으시다면
+									<a href="#a">내차팔기 이어서 진행하기</a>에 방문해보세요.
+								</div>
+							</div>
+						</li>
+						<li class="cont">
+							<div class="head item">
+								<button type="button" class="js_toggle">
+									<p>
+										<span class="qa_name_txt">회원&멤버십</span>
+										<span>차량 구매 시 필요한 서류는 뭔가요?</span>
+									</p>
+								</button>
+							</div>
+							<div class="group">
+								<div class="gray_box">
+									입력한 차량정보는 조회기준으로 1주일간 자동으로 임시 저장됩니다. <br>
+									진행중이던 견적 신정을 이어서 진행하고 싶으시다면
+									<a href="#a">내차팔기 이어서 진행하기</a>에 방문해보세요.
+								</div>
+							</div>
+						</li>
+						<li class="cont">
+							<div class="head item">
+								<button type="button" class="js_toggle">
+									<p>
+										<span class="qa_name_txt">회원&멤버십</span>
+										<span>주문을 취소하려면 어떻게 하나요?</span>
+									</p>
+								</button>
+							</div>
+							<div class="group">
+								<div class="gray_box">
+									입력한 차량정보는 조회기준으로 1주일간 자동으로 임시 저장됩니다. <br>
+									진행중이던 견적 신정을 이어서 진행하고 싶으시다면
+									<a href="#a">내차팔기 이어서 진행하기</a>에 방문해보세요.
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="btn_area col_type">
+						<button type="button" class="btn_more">더보기</button>
+					</div>
+				</div>
+				
+            </div>
+            <!-- //container -->
+        </div>
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<script>
+	toggle();
+</script>
+</html>

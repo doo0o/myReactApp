@@ -1,0 +1,478 @@
+<div class="popup_full" id="FO-PD-PS0006">
+	<div class="p_body">
+		<div class="p_inner s_mid">
+			<div class="p_head">
+				<h2 class="tit">성능상태 점검기록부</h2>
+			</div>
+			<div class="p_wrap">
+				<div class="inner_view car_state">
+						
+					<div class="pdp_head_wrap">
+						<p class="car_num">24더 3215</p>
+						<p class="txt"><strong>쏘나타</strong> DN8 2.0 가솔린 프리미엄</p>
+						<p class="date">
+							<span>20년 12월(21년형 페이스리프트)</span><span>제시번호 2021073068</span>
+						</p>
+					</div>
+
+					<div class="car_state_cont">
+						<!--01.기본정보-->
+						<div class="pdp_tit2">
+							<span>자동차 기본정보</span>
+							<div class="opt_box">
+								<button class="btn_small color02 ico_down">성능상태 점검기록부 PDF 다운로드</button>
+							</div>
+						</div>
+						<div class="pdp_box01">
+							<table class="table">
+								<colgroup>
+									<col style="width: 20%;">
+									<col style="width: 30%;">
+									<col style="width: 20%;">
+									<col style="width: 30%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">최초등록</th>
+										<td>2019.12.26</td>
+										<th scope="row">차대번호</th>
+										<td>KMHF441CBJA064298</td>
+									</tr>
+									<tr>
+										<th scope="row">변속기</th>
+										<td>오토</td>
+										<th scope="row">보증유형</th>
+										<td>보험사보증</td>
+									</tr>
+									<tr>
+										<th scope="row">연료</th>
+										<td>가솔린</td>
+										<th scope="row">보험사</th>
+										<td>DB손해보험</td>
+									</tr>
+									<tr>
+										<th scope="row">원동기 형식</th>
+										<td colspan="3">G6DP</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!--//01.기본정보-->
+					</div>
+
+					<div class="car_state_cont">
+						<!--02.자동차 종합상태-->
+						<div class="pdp_tit2">
+							<span>자동차 종합상태</span>
+						</div>
+						<div class="pdp_box01">
+							<table class="table">
+								<colgroup>
+									<col style="width: 20%;">
+									<col style="width: 30%;">
+									<col style="width: 20%;">
+									<col style="width: 30%;">
+								</colgroup>
+								<tbody>
+									<tr>
+										<th scope="row">주행거리 계기상태</th>
+										<td>양호</td>
+										<th scope="row">용도변경</th>
+										<td>있음/렌트</td>
+									</tr>
+									<tr>
+										<th scope="row">주행거리</th>
+										<td>21,713km</td>
+										<th scope="row">배출가스</th>
+										<td>일산화탄소:0.45%<br>/ 탄화수소: 16ppm</td>
+									</tr>
+									<tr>
+										<th scope="row">차량번호표기</th>
+										<td>양호</td>
+										<th scope="row">색상 및 색상상태</th>
+										<td>-</td>
+									</tr>
+									<tr>
+										<th scope="row">튜닝</th>
+										<td>없음</td>
+										<th scope="row">옵션</th>
+										<td>있음</td>
+									</tr>
+									<tr>
+										<th scope="row">특별이력</th>
+										<td>없음</td>
+										<th scope="row">리콜대상</th>
+										<td>해당없음</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!--//02.자동차 종합상태-->
+					</div>
+
+					<div class="car_state_diagram">
+						<div class="diagram_wrap">
+							<div class="diagram_box">
+								<p class="info_tit">외부 판넬</p>
+								<ul class="car_state_info">
+									<li>
+										<span>사고이력 <em>양호</em></span>
+									</li>
+									<li>
+										<span>단순수리 <em>있음</em></span>
+									</li>
+								</ul>
+								<div class="info_img">
+									<img src="../../img/pdp/pdp_car_img2.png" alt="" />
+									<div class="btn_car" style="top:11%;left:47.5%;">
+										<button type="button" class="mark mark2" onclick="markBoxShow()">X</button>
+										<div class="car_detail">미션변속장치(A/T)</div>
+									</div>
+								</div>
+								<div class="info_mark">
+									<ul>
+										<li><span><span class="mark mark1">W</span>양호 <em>0건</em></span></li>
+										<li><span><span class="mark mark2">X</span>교환 <em>2건</em></span></li>
+										<li><span><span class="mark mark3">C</span>부식 <em>0건</em></span></li>
+									</ul>
+									<ul>
+										<li><span><span class="mark mark4">A</span>흠집 <em>0건</em></span></li>
+										<li><span><span class="mark mark5">U</span>요철 <em>0건</em></span></li>
+										<li><span><span class="mark mark6">T</span>손상 <em>0건</em></span></li>
+									</ul>
+								</div>
+							</div>
+
+							<div class="diagram_box">
+								<p class="info_tit">프레임</p>
+								<ul class="car_state_info">
+									<li>
+										<span>사고이력 <em>양호</em></span>
+									</li>
+									<li>
+										<span>단순수리 <em>있음</em></span>
+									</li>
+								</ul>
+								<div class="info_img">
+									<img src="../../img/pdp/pdp_car_img2_2.png" alt="" />
+									<div class="btn_car" style="top:58%;left:73%;">
+										<button type="button" class="mark mark2" onclick="markBoxShow()">X</button>
+										<div class="car_detail">사이드실 패널(우) 교환</div>
+									</div>
+								</div>
+								<div class="info_mark">
+									<ul>
+										<li><span><span class="mark mark1">W</span>양호 <em>0건</em></span></li>
+										<li><span><span class="mark mark2">X</span>교환 <em>2건</em></span></li>
+										<li><span><span class="mark mark3">C</span>부식 <em>0건</em></span></li>
+									</ul>
+									<ul>
+										<li><span><span class="mark mark4">A</span>흠집 <em>0건</em></span></li>
+										<li><span><span class="mark mark5">U</span>요철 <em>0건</em></span></li>
+										<li><span><span class="mark mark6">T</span>손상 <em>0건</em></span></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<script>
+							const markBoxShow = () => {
+								event.stopPropagation();
+								const wrap = document.querySelector('.car_state_diagram');
+								const btns = wrap.querySelectorAll('.btn_car');
+								const _this = event.target;
+								const parent = _this.closest('.btn_car');
+								const hide = () => {
+									btns.forEach(el=>{
+										el.classList.remove('show');
+									})
+									window.removeEventListener('click', hide);
+								}
+								btns.forEach(el=>{
+									el.classList.remove('show');
+								})
+								parent.classList.add('show');
+								if(parent.classList.contains('show')) {
+									window.addEventListener('click', hide);
+								}
+							}
+						</script>
+						<p class="info_txt">* 승용차 외에는 승용차에 준하여 표시</p>
+					</div>
+
+					<div class="pdp_tit2">
+						<span>자가진단사항</span>
+
+						<div class="state_total">
+							<div class="state_total_item">
+								<span>원동기</span>
+								<strong>양호</strong>
+							</div>
+							<div class="state_total_item">
+								<span>변속기</span>
+								<strong>양호</strong>
+							</div>
+						</div>
+					</div>
+					
+					<table class="table line">
+						<colgroup>
+							<col style="width:20%;">
+							<col>
+							<col style="width:17%;">
+						</colgroup>
+						<thead>
+							<tr>
+								<th scope="col">항목</th>
+								<th scope="col">상세 항목</th>
+								<th scope="col">상태</th>
+							</tr>
+						</thead>
+						<tbody class="v_center">
+							<tr>
+								<td rowspan="10">원동기<br>(이슈 0건)</td>
+								<td>작동상태(공회전)</td>
+								<td class="center">양호</td>
+							</tr>
+							<tr>
+								<td>오일누유 - 실린더 커버 (로커암 커버)</td>
+								<td class="center">없음</td>
+							</tr>
+							<tr>
+								<td>오일누유 - 실린더 헤드 / 개스킷</td>
+								<td class="center">없음</td>
+							</tr>
+							<tr>
+								<td>오일누유 - 실린더 블록 / 오일팬</td>
+								<td class="center">없음</td>
+							</tr>
+							<tr>
+								<td>오일 유량</td>
+								<td class="center">적정</td>
+							</tr>
+							<tr>
+								<td>냉각수누수 - 실린더 헤드 / 개스킷</td>
+								<td class="center">없음</td>
+							</tr>
+							<tr>
+								<td>냉각수누수 - 워터 펌프</td>
+								<td class="center">없음</td>
+							</tr>
+							<tr>
+								<td>냉각수누수 - 라디에이터</td>
+								<td class="center">없음</td>
+							</tr>
+							<tr>
+								<td>냉각수누수 - 냉각수 수량</td>
+								<td class="center">적정</td>
+							</tr>
+							<tr>
+								<td>커먼레일</td>
+								<td class="center">양호</td>
+							</tr>
+
+							<tr>
+								<td rowspan="7">변속기<br>(이슈 0건)</td>
+								<td>자동변속기(A/T) - 오일누유</td>
+								<td class="center">없음</td>
+							</tr>
+							<tr>
+								<td>자동변속기(A/T) - 오일누유 및 상태</td>
+								<td class="center">-</td>
+							</tr>
+							<tr>
+								<td>자동변속기(A/T) - 작동상태(공회전)</td>
+								<td class="center">양호</td>
+							</tr>
+							<tr>
+								<td>수동변속기(A/T) - 오일누유</td>
+								<td class="center">없음</td>
+							</tr>
+							<tr>
+								<td>수동변속기(A/T) - 기어변속장치</td>
+								<td class="center">양호</td>
+							</tr>
+							<tr>
+								<td>수동변속기(A/T) - 오일누유 및 상태</td>
+								<td class="center">적정</td>
+							</tr>
+							<tr>
+								<td>수동변속기(A/T) - 작동상태(공회전)</td>
+								<td class="center">양호</td>
+							</tr>
+
+							<tr>
+								<td rowspan="4">동력전달<br>(이슈 0건)</td>
+								<td>클러치 어샘블러</td>
+								<td class="center">양호</td>
+							</tr>
+							<tr>
+								<td>동속조인트</td>
+								<td class="center">양호</td>
+							</tr>
+							<tr>
+								<td>추진축 및 베어링</td>
+								<td class="center">양호</td>
+							</tr>
+							<tr>
+								<td>디퍼렌셜 기어</td>
+								<td class="center">양호</td>
+							</tr>
+
+							<tr>
+								<td rowspan="6">조향<br>(이슈 0건)</td>
+								<td>동력조향 작동 오일 누유</td>
+								<td class="center">없음</td>
+							</tr>
+							<tr>
+								<td>작동상태 - 스티어링 펌프</td>
+								<td class="center">양호</td>
+							</tr>
+							<tr>
+								<td>작동상태 - 스티어링 기어(MDPS 포함)</td>
+								<td class="center">양호</td>
+							</tr>
+							<tr>
+								<td>작동상태 - 스티어링조인트</td>
+								<td class="center">양호</td>
+							</tr>
+							<tr>
+								<td>작동상태 - 파워고압호스</td>
+								<td class="center">양호</td>
+							</tr>
+							<tr>
+								<td>작동상태 - 타이로드엔드 및 볼 조인트</td>
+								<td class="center">양호</td>
+							</tr>
+
+							<tr>
+								<td rowspan="3">제동<br>(이슈 0건)</td>
+								<td>브레이크 마스터 실린더오일 누유</td>
+								<td class="center">없음</td>
+							</tr>
+							<tr>
+								<td>브레이크 오일 누유</td>
+								<td class="center">없음</td>
+							</tr>
+							<tr>
+								<td>배력장치 상태</td>
+								<td class="center">양호</td>
+							</tr>
+
+							<tr>
+								<td rowspan="6">전기<br>(이슈 0건)</td>
+								<td>발전기 출력</td>
+								<td class="center">양호</td>
+							</tr>
+							<tr>
+								<td>시동 모터</td>
+								<td class="center">양호</td>
+							</tr>
+							<tr>
+								<td>와이퍼 모터</td>
+								<td class="center">양호</td>
+							</tr>
+							<tr>
+								<td>실내송풍 모터</td>
+								<td class="center">양호</td>
+							</tr>
+							<tr>
+								<td>라디에이터 팬 모터</td>
+								<td class="center">양호</td>
+							</tr>
+							<tr>
+								<td>윈도우 모터</td>
+								<td class="center">양호</td>
+							</tr>
+
+							<tr>
+								<td rowspan="3">고전원전기장치<br>(이슈 0건)</td>
+								<td>충전구 절연 상태</td>
+								<td class="center">양호</td>
+							</tr>
+							<tr>
+								<td>구동축전지 격리 상태</td>
+								<td class="center">양호</td>
+							</tr>
+							<tr>
+								<td>고전원전기배전상태</td>
+								<td class="center">양호</td>
+							</tr>
+
+							<tr>
+								<td>연료<br>(이슈 0건)</td>
+								<td>연료누출(LP가스포함)</td>
+								<td class="center">없음</td>
+							</tr>
+
+						</tbody>
+					</table>
+
+					<div class="pdp_box01">
+						<div class="pdp_tit2">특기사항 및 점검자의 의견</div>
+						<div class="pdp_cont">
+							차량 상태 우수, 별도 수리 필요 없음.
+						</div>
+					</div>
+
+					<div class="pdp_box01">
+						<div class="pdp_tit2">점검장면 촬영 사진</div>
+					
+						<div class="box_chk_point">
+							<div class="swiperType01">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide">
+										<div class="txt">전면</div>
+										<img src="/HMC/p/img/@thumb/car328x228_1.png" alt="" />
+									</li>
+								</ul>
+								<div class="swiper-pagination01"></div>
+							</div>
+							
+							<div class="swiperType01">
+								<ul class="swiper-wrapper">
+									<li class="swiper-slide">
+										<div class="txt">후면</div>
+										<img src="/HMC/p/img/@thumb/car328x228_2.png" alt="" />
+									</li>
+								</ul>
+								<div class="swiper-pagination01"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="car_state_noti">
+						<div class="sign">
+							<p>
+								점검일
+								<span>2022년 04월 20일</span>
+							</p>
+							<p>
+								중고자동차 성능상태 점검자
+								<span>홍길동 (인)</span>
+							</p>
+							<p>
+								자동차가격조사 산정자
+								<span>(인)</span>
+							</p>
+							<p>
+								중고자동차 성능 상태 고지자
+								<span>(주) 현대인증 중고차</span>
+							</p>
+						</div>
+
+						<div class="caution">
+							<ul>
+								<li>자동차 관리법령에 의해 차량상태와 구매보증까지 약속받은 중요한 문서입니다. 점검내용사항이 실제와 다를경우 30일, 2,000킬로미터 이내에서 무상보증수리 및 보상을 요구할 수 있습니다.</li>
+								<li>기록부의 유효기간은 점검일로부터 120일이내만 유효하므로 날짜가 지난문서는 반드시 재점검 후 교부요정을 하셔야 합니다. 최종 계약시 반드시 점검자와 고지자의 서명이 있는지 확인하십시오.</li>
+								<li>본 화면은 성능점검기록부의 내용을 서비스상에 표현하기 위해 제작된 것으로 차량 상담시 판매자에게 꼭 원본을 요청하시어 확인하시기 바랍니다.</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,57 @@
+<!-- FO-PD-MS0004 : 신차대비 차량가격 - FULL -->
+<div class="CPOpop_full" id="FO-PD-MS0004">
+	<div class="p_head">
+		<h4 class="tit">신차가격대비</h4>
+	</div>
+	<div class="p_wrap">
+		<div class="detail_contrast">
+			<div class="pdp_head">
+				<span class="txt">24더 3215는</span>
+				<span class="txt">신차대비 구매비용이<br><em class="under">19,230,000원</em>낮습니다.</span>
+			</div>
+			<div class="detail_cont">
+				<div id="progress_present" class="progressBar02" data-progress="53">
+					<svg width="160" height="160" preserveAspectRatio="none" viewBox="0 0 170 170" class="progressCircle">
+						<circle class="progressBg" />
+						<circle class="progressLine" />
+					</svg>
+					<div class="text_box">
+						<p class="text">신차대비 현재가격</p>
+						<span class="progressCount"></span>
+					</div>
+				</div>
+				<div class="detail_card">
+					<dl>
+						<dt>더 뉴 그랜저 2.5 가솔린 캘리그라피</dt>
+						<dd>
+							<ul>
+								<li>
+									<span class="title">신차가</span>
+									<div class="text"><i>47,790,000</i>원</div>
+								</li>
+								<li>
+									<span class="title">현재 판매가</span>
+									<div class="text">
+										<span><i>28,560,000</i>원</span>
+										<span class="percent">(53%)</span>
+									</div>
+								</li>
+							</ul>
+						</dd>
+					</dl>
+				</div>
+				<div class="notice_03">
+					<ol>
+						<li>신차가는 실제출고가격과 다르게 표현될 수 있습니다.</li>
+						<li>신차가는 현대인증 중고차에서 산정한 신차 기본가격 + 옵션가 기준으로 산출되었습니다.</li>
+						<li>친환경차는 구매보조금(국비/지방비)적용 전 가격 입니다.</li>
+					</ol>
+				</div>
+			</div>
+		</div>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+<script>
+	CPODonutChart($('#progress_present'), true, true, 1500);
+</script>

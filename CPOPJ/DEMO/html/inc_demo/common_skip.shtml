@@ -1,0 +1,9 @@
+<!-- 스킵 네비게이션(s) -->
+<div id="skip_navi">
+	<ul>
+		<li><a href="#contents">본문 바로가기</a></li>
+		<li><a href="#headerGnb">주요메뉴 바로가기</a></li>
+		<li><a href="#footer">하단 바로가기</a></li>
+	</ul>
+</div>
+<!--// 스킵 네비게이션(e) -->

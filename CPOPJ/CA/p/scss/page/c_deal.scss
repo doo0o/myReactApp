@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+@import '../_common/c_function';
+@import '../_common/c_mixins';
+
+.my_deal {
+    .summary {
+        border: 1px solid $COL_gs06;
+        padding: 40px;
+        margin-bottom: 64px;
+        .goods_wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 32px;
+            border-bottom: 1px solid $COL_gs06;
+            margin-bottom: 32px;
+        }
+    }
+    .sec_cont {
+        margin-top: 40px;
+        &.type_col {
+            display: flex;
+            align-items: baseline;
+            column-gap: 20px;
+            .col {
+                flex: 1 1;
+            }
+        }
+        .sec_tit {margin-bottom: 20px;}
+        .data_tit {
+            margin : 20px 0 12px;
+            @include fontHM(16);
+        }
+        .data_detail {
+            background: $COL_gs08;
+            padding: 24px 24px 24px 0;
+            row-gap: 12px;
+            display: flex;
+            flex-flow: column;
+            dl {
+                display: flex;
+                align-items: baseline;
+                dt {
+                    padding-left: 24px;
+                    width: 150px;
+                    color: $COL_gs03;
+                }
+                dd {
+                    color: $COL_gs02;
+                    padding-left: 16px;
+                }
+                .address {
+                    p + p {
+                        margin-top: 4px;
+                    }
+                    strong {
+                        font-weight: 500;
+                        color: $COL_black;
+                        display: inline-block;
+                    }
+                    span {
+                        display: inline-block;
+                        &:before {
+                            content: '';
+                            display: inline-block;
+                            width: 1px;
+                            height: 14px;
+                            margin: 0 8px;
+                            vertical-align: -2px;
+                            background-color: $COL_gs05;
+                        }
+                    }
+                }
+            } 
+        }
+        .table + .table {
+            margin-top: 25px;
+        }
+        .table .total {
+            background-color: $COL_gs07;
+            color: $COL_black;
+        }
+        & + .btn_area {
+            margin-top: 40px;
+        }
+    }
+    .banner {
+        padding: 16px 32px;
+        margin-bottom: 24px;
+        text-align: center;
+        background-color: $COL_lightsand;
+        span{
+            color:$COL_secondary2;
+        }
+        em {
+            font-weight: 500;
+        }
+    }
+}

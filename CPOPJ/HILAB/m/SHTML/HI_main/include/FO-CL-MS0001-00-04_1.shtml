@@ -1,0 +1,71 @@
+<section class="main_con1">
+    <!-- 인트로 브릿지 -->
+    <div class="main_intro_brige">
+        <p class="scroll-spy-1">
+            <span>지금 ,</span>
+            <strong> 중고차 시장 트렌드는? </strong>
+        </p>
+        <div class="bg_trend scroll-spy"></div>
+    </div>
+    <!-- // 인트로 브릿지 -->
+    <!-- step1 -->
+    <p class="con_tit scroll-spy">
+        <strong>얼마나 팔렸을까?</strong>
+        <span>거래유형별 중고차 거래량 증감율</span>
+        <em>※ 2022년 10월 기준<br />(※ 상사이전, 알선, 기타제외한/매도건)</em>
+    </p>
+    <div class="graph scroll-spy">
+        <div class="sell_num">
+            <p><strong>281,313</strong>건</p>
+            <p class="upandown_txt up">전월대비 4.2</p>
+            <!-- <p class="upandown_txt down">전월대비 4.2</p> -->
+        </div>
+        <div class="graph_img">
+            <img src="/HILAB/m/img/main/img_sell_Diagram.png" style="height: 100%" alt="" />
+        </div>
+        <ul class="graph_deal">
+            <li>
+                <div class="person">
+                <p class="tit">
+                    <i class="icon01 icon_person"></i>
+                    당사자거래
+                </p>
+                <p class="deal_num">
+                    <em>87,342건</em>
+                    /87,342건
+                </p>
+                <p class="contrast_txt">전월대비</p>
+                <p class="upandown_txt up">4.2%</p>
+                </div>
+            </li>
+            <li>
+                <div class="dealer">
+                <p class="tit">
+                    <i class="icon01 icon_dealer"></i>
+                    사업자매도
+                </p>
+                <p class="deal_num">
+                    <em>87,342건</em>
+                    /87,342건
+                </p>
+                <p class="contrast_txt">전월대비</p>
+                <p class="upandown_txt down">8.2%</p>
+                </div>
+            </li>
+            <li>
+                <div class="dealer">
+                <p class="tit">
+                    <i class="icon01 icon_dealer"></i>
+                    사업자알선
+                </p>
+                <p class="deal_num">
+                    <em>87,342건</em>
+                    /87,342건
+                </p>
+                <p class="contrast_txt">전월대비</p>
+                <p class="upandown_txt up">10.2%</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>

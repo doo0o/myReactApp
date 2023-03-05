@@ -1,0 +1,1254 @@
+
+@import '../_common/h_function';
+@import '../_common/h_mixins';
+
+// **********************************************************
+// checkBox 
+// **********************************************************
+input.eng{
+	ime-mode:inactive;
+}
+input.kor{
+	ime-mode:active;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+[class^="chk_type"]{
+	width:1px;height:1px;opacity:0;
+	position:absolute;
+}
+.chk_type01{
+	&+label{
+		position:relative;
+		display:inline-block;
+		line-height:25px !important;
+		padding-left:34px;
+		&:before{
+			content:'';
+			display:block;
+			position:absolute;
+			top:0;
+			left:0;
+			width:25px;
+			height:25px;
+			@include Mix_Form_Bg;
+		background-position:-58px 0;
+		}
+	}
+	&:checked+label:before{
+		background-position:0 0;
+	}
+	&:disabled+label:before{
+		background-position:-29px 0;
+	}
+}
+.chk_type02{
+	&+label{
+		position:relative;
+		display:inline-block;
+		padding-left:26px;
+		color:$COL_Text_Base03;
+		@include Mix_Font('Txt-R', 13, 19);
+		&:before{
+			content:''; 
+			display:block;
+			position:absolute;
+			top:0;
+			left:0;
+			width:19px;
+			height:19px;
+			@include Mix_Form_Bg;
+			background-position:-133px 0;
+		}
+	}
+	&:checked+label:before{
+		background-position:-87px 0;
+	}
+	&:disabled+label:before{
+		background-position:-110px 0;
+	}
+}
+.chk_type03{// 인기순 form 체크박스
+	&+label{
+		position:relative;
+		display:block;
+		padding:0 0 0 18px;
+		color:$COL_Text_Base03;
+		@include Mix_Font('Txt-R', 13, 32);
+	}
+	&:checked+label{
+		color:$COL_Blue03;
+		@include Mix_Font('Txt-M', 14, 20);
+	}
+}
+.chk_type04{/* 비교하기 체크박스 */
+	&+label{
+		position:relative;
+		&.on{
+			.no{
+				display:block;
+			}
+		}
+		.no{
+			display:none;
+			position:absolute;
+			top:6px;
+			left:6px;
+			z-index:5;
+			width:24px;
+			height:24px;
+			color:$COL_WHITE;
+			@include Mix_Font('Head-M', 14, 25);
+			text-align:center;
+			border-radius:100%;
+			background-color:$COL_Secondary01;
+			&.base{
+				&:before{
+					content:'기준';
+					display:block;
+					position:absolute;
+					bottom:-117px;
+					right:-117px;
+					height:20px;
+					padding:0 7px 0 21px;
+					border-radius:10px;
+					background:rgba($COL_Text_Base04, 0.6);
+					color:$COL_WHITE;
+					@include Mix_Font('Head-R', 11, 20);
+				}
+				&:after{
+					content:'';
+					display:block;
+					position:absolute;
+					right:-89px;
+					bottom:-113px;
+					width:13px;
+					height:13px;
+					@include Mix_Display_Bg;
+					background-position:-171px 0;
+				}
+			}
+		}
+		&:before{
+			content:'';
+			display:block;
+			position:absolute;
+			top:4px;
+			left:4px;
+			z-index:4;
+			width:28px;
+			height:28px;
+			@include Mix_Form_Bg;
+			background-position:-23px -30px;
+		}
+	}
+	&:checked+label{
+		&::before{
+			background-image:none;
+		}
+	}
+	&:disabled+label{
+		&::before{
+			background-position:-56px -30px;
+		}
+		&.on{
+			.no{
+				display:block;
+				@include Mix_Form_Bg;
+				background-position:-91px -32px;
+				text-shadow:0px 2px 2px rgba($COL_Text_Base04, 0.1);
+			}
+			&::before{
+				display:none;
+			}
+
+		}
+	}
+}
+.chk_type05{// 검색하기 '모델그룹, 사각 체크박스
+	&+label{
+		display: block;
+		padding:11px 0;
+		border:1px solid $COL_Line_Dark01;
+		background:$COL_WHITE;
+		color:$COL_Text_Base02;
+		@include Mix_Font('Head-R', 14, 24);
+		text-align:center;
+	}
+	&:checked+label{
+		color:$COL_Secondary01;
+		border:1px solid $COL_Secondary01;
+	}
+}
+.chk_type06{// 검색하기 'color 체크박스
+	&+label{
+		display:block;
+		width:80px;
+		margin:0 auto;
+		img{
+			width:100%;
+		}
+		span{
+			display:block;
+			margin-top:3px;
+			padding-right:15px;
+			color:$COL_Text_Base03;
+			@include Mix_Font('Head-R', 14, 18);
+			&:before{
+				content:'';
+				display:inline-block;
+				width:12px;
+				height:10px;
+				margin-right:6px;
+			}
+		}
+	}
+	&:checked+label{
+		span{
+			padding-right:0;
+			color:$COL_Secondary01;
+			&:before{
+				@include Mix_Form_Bg;
+				background-position:-157px -16px;
+			}
+		}
+		
+	}
+}
+.chk_type07{// 내차팔기 radio 버튼
+	&.yes{
+		&:checked+label{
+			&:after{
+				display:none;
+			}
+		}
+	}
+	&+label{
+		position:relative;
+		display:block;
+		width:100%;
+		padding:14px 34px 14px 0;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Txt-M', 15, 24);
+		&:before{
+			content:'';
+			display:block;
+			position:absolute;
+			top:50%;
+			right:0;
+			width:24px;
+			height:24px;
+			@include Mix_Form_Bg;
+			background-position:-107px -90px;
+			transform:translateY(-50%);
+		}
+		&:after{
+			content:'';
+			display:block;
+			width:100%;
+			height:1px;
+			position:absolute;
+			bottom:0;
+			left:0;
+			background:$COL_Gray05;
+		}
+	}
+	&:checked+label{
+		&:before{
+			background-position:-78px -90px;
+		}
+		&:after{
+			height:3px;
+			background:$COL_Primary01;
+		}
+		color:$COL_Primary01;
+		@include Mix_Font('Txt-M', 14, 20);
+	}
+}
+
+.chk_type08{// 내차팔기 radio 버튼
+	&+label{
+		position:relative;
+		display:inline-block;
+		padding:11px 0 9px;
+		background:$COL_WHITE;
+		border:1px solid $COL_Line_Dark01;
+		color:$COL_Text_Base03;
+		@include Mix_Font('Txt-M', 14, 18);
+		text-align:center;
+		&:before{
+			content:'';
+			display:inline-block;
+			width:18px;
+			height:18px;
+			border-radius:100%;
+			margin:0 5px 2px 0;
+			@include Mix_Form_Bg;
+			background-position:0 -125px;
+			vertical-align:middle;
+		}
+	}
+	&.icon_x{
+		&+label{
+			&::before{
+				background-position:0 -148px;
+			}
+		}
+		&:checked+label{
+			background:$COL_info02;
+			border:1px solid $COL_info02;
+		}
+	}
+	&:checked+label{
+		color:$COL_WHITE;
+		background:$COL_info01;
+		border:1px solid $COL_info01;
+	}
+}
+
+.chk_type09{// SELECT radio 버튼
+	&+label{
+		position:relative;
+		display:block;
+		width:100%;
+		padding:14px 34px 14px 0;
+		color:$COL_Text_Base03;
+		@include Mix_Font('Txt-M', 15, 24);
+		&:before{
+			content:'';
+			display:block;
+			position:absolute;
+			top:50%;
+			right:5px;
+			width:18px;
+			height:18px;
+		}
+	}
+	&:checked+label{
+		&:before{
+			@include Mix_Form_Bg;
+			background-position:-136px -179px;
+			transform:translateY(-50%);
+		}
+		color:$COL_Secondary01;
+	}
+}
+
+// **********************************************************
+// textbox 
+// **********************************************************
+.form_error_chat{// 에러 메세지
+	margin-top:7px;
+	color:$COL_RED01;
+	@include Mix_Font('Txt-R', 12, 16);
+}
+.ico_clear,
+.ico_delete{// 초기화, 삭제 버튼 clear/delete 버튼 (type2/type4)
+	width:20px;
+	height:20px;
+	@include Mix_Size_0;
+	&::before{
+		content:'';
+		display:block;
+		width:18px;
+		height:18px;
+		@include Mix_Form_Bg;
+		background-position:-122px -30px;
+	}
+	.focus &{
+		&::before{
+			background-position-x:-102px -131px;
+		}
+	}
+}
+
+.form_txt{
+	position:relative;
+	input{
+		position:relative;
+		width:100%;
+		height:66px;
+		padding:21px 16px;
+		border:1px solid $COL_Line_Dark01;
+		//border-radius:4px;
+		@include Mix_Font('Txt-R', 18, 24);
+		&:focus{
+			padding:28px 16px 11px;
+			border:1px solid $COL_Secondary01;
+			&+span{
+				display:block;
+				color:$COL_Secondary01;
+			}
+		}
+		&::placeholder{
+			color:$COL_Inactive_Text01;
+			@include Mix_Font('Txt-R', 16, 20);
+		}
+	}
+	&.on{
+		input{
+			padding:28px 16px 11px;
+		}
+		span{
+			display:block;
+		}
+	}
+	.btn_delete{
+		display:none;
+		position:absolute;
+		top:50%;
+		right:16px;
+		width:18px;
+		height:18px;
+		@include Mix_Form_Bg;
+		background-position:0 -30px;
+		font-size:0;
+		transform:translateY(-50%);
+	}
+	span{
+		display:none;
+		position:absolute;
+		top:11px;
+		left:16px;
+		z-index:2;
+		color:$COL_Inactive_Text01;
+		@include Mix_Font('Txt-M', 11, 14);
+	}
+}
+.form_txt.normal input{
+	height:auto;
+	padding:11px 26px 11px 18px;
+}
+
+// input type1. 
+[class^="inbox_type"]{// 인풋박스 포커스인	 // type1 = 원, %, P 
+											// type2 = 원, 숫자, 삭제버튼
+											// type3 = 타이틀 UP, error 메세지
+											// type4 = 주소검색, 검색 필드 입력값
+											// type5 = 타이틀, 주소검색버튼
+	position:relative;
+	width:100%;
+	background:$COL_WHITE;
+	border:1px solid transparent;
+	&.identity{// 주민등록번호
+		&.on{
+			&::before{
+				content:"";
+				position:absolute;
+				top:49px;
+				left:110px;
+				display:block;
+				width: 8px;
+				height: 1px;
+				background-color:$COL_Gray14;
+			}
+			> .txt{
+				display:inline-block;
+			}
+		} 
+		.txt{
+			width:130px;
+			&.type_id01{
+				padding-right:0;
+			}
+			&.type_id02{
+				padding-left:0;
+			}
+		}
+
+	}
+	> .tit{// 타이틀
+		position:absolute;
+		top:50%;
+		left:17px;
+		transform:translateY(-50%);
+		color:$COL_Inactive_Text01;
+	}
+	> .txt{// 인풋 입력박스
+		width:100%;
+		caret-color:$COL_Blue03;
+		background:$COL_WHITE;
+		border:0;
+		color:$COL_Text_Base03;
+		@include Mix_Font('Txt-R', 15, 18);
+		&:disabled{
+			color:$COL_Inactive_Text01;
+		}
+		&:focus{
+			outline:none;
+		}
+		&::placeholder{
+			color:$COL_Text_Base03;
+			@include Mix_Font('Txt-R', 15, 18);
+		}
+	}
+	> em{// 원, P 단위
+		position:absolute;
+		top:50%;
+		margin-top:-10px;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Txt-R', 14, 20);
+		&.won{
+			right:17px;
+			margin-top:-11px;
+		}
+		&.point{
+			// right:19px;
+		}
+	}
+	&.focus{// 인풋 입력박스 focusIN 일때
+		border:1px solid $COL_Blue03;
+		.tit{
+			color:$COL_Blue03;
+		}
+	}
+	.ico_clear,
+	.ico_delete{// 인풋박스 clear 버튼
+		display:block;
+		position:absolute;
+		top:50%;
+		right:13px;
+		transform:translateY(-50%);
+	}
+	.validation{
+		padding:0 20px 10px;
+		margin-top:-10px;
+	}
+}
+.validation{
+	display:none;
+	padding:8px 0 0;
+	@include Mix_Font('Txt-R', 12, 16);
+	&.error{
+		display:block;
+		color:$COL_RED01;
+	}
+	&.ok{
+		display:block;
+		color:$COL_Blue03;
+	}
+}
+// input type1. 
+.inbox_type01{// 인풋박스만 있는 타입 type1 = 원, %, P - class focus만 있음
+	display:block;
+	> .tit{
+		@include Mix_Font('Txt-R', 14, 18);
+	}
+	> .txt{
+		@include Mix_Font('Txt-R', 15, 54);
+		text-align:right;
+	}
+	> em{
+		right:17px;
+	}
+	.tit ~ em {
+		right: 20px;
+	}
+	[type="text"]{
+		padding:0 17px;
+		@include Mix_Font_Txt_R;
+	}
+	[type="number"]{
+		padding:0 33px 0 20px;
+	}
+	[inputmode="numeric"]{
+		padding:0 30px 0 17px;
+		@include Mix_Font_Head_R;
+	}
+}
+// input type2. 
+.inbox_type02{// 디폴트값이 있는 경우 type2 = 원, 숫자, 삭제버튼, focusin 시 원 삭제
+	display:block;
+	> .tit{
+		@include Mix_Font('Txt-R', 14, 18);
+	}
+	> .txt{
+		padding:0 51px 0 17px;
+		@include Mix_Font('Head-R', 15, 54);
+		text-align:right;
+		&::placeholder{
+			text-align:right;
+		}
+	}
+	> em{
+		right:37px !important;
+	}
+	.ico_clear{// 인풋박스 clear/delete 버튼 (type2)
+		display:block;
+		position:absolute;
+		top:50%;
+		right:13px;
+		transform:translateY(-50%);
+	}
+	&.focus{
+		> .txt{
+			padding-right:37px;
+			@include Mix_Font('Txt-R', 18, 20);
+		}
+		> em{
+			display:none;
+		}
+	}
+}
+// input type3. 
+.inbox_type03{// 타이틀이 박스 안에 있는 타입, 타이틀 UP, error 메세지
+	min-height:74px;
+	> .tit{
+		left:20px;
+		@include Mix_Font('Txt-R', 15, 23);
+		transform:translateY(-50%);
+		transition:all 0.1s linear;
+	}
+	> .txt{
+		display:none;
+		padding:0 20px;
+		@include Mix_Font('Txt-R', 15, 40);
+		&[type="email"]{
+			width:calc(100% - 115px)
+		}
+		&::placeholder {
+			color: $COL_Inactive_Text01;
+		}
+	}
+	> .sel{
+		display:none;
+		position:absolute;
+		top:21px;
+		right:0;
+		width:130px;
+		height:50px;
+		border:0;
+		padding-right:30px;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Txt-R', 15, 50);
+		@include Mix_Select_Bg01;
+	}
+	> .btn_sel04{
+		display:none;
+		position:absolute;
+		top:21px;
+		right:0;
+		width:130px;
+		height:50px;
+	}
+	&.focus{
+		> .txt,
+		> .sel,
+		> .btn_sel04{
+			display:block;
+		}
+	}
+	&.on{
+		> .tit{
+			top:15px;
+			@include Mix_Font('Txt-M', 12, 16);
+			transform:translateY(0);
+			transition:all 0.1s linear;
+		}
+		> .txt{
+			display:block;
+			padding-top:30px;
+		}
+		> .sel,
+		> .btn_sel04{
+			display:block;
+		}
+	}
+}
+// input type4. 
+.inbox_type04{// 인풋박스, ic_delete 버튼 // (1.주소검색)
+	&.focus{
+		.ico_delete{
+			&::before{
+				display:block;
+			}
+		}
+	}
+	> .tit{
+		@include Mix_Font('Txt-R', 14, 18);
+	}
+	> .txt{
+		height:47px;
+		padding:2px 0;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Head-R', 16, 43);
+	}
+	.ico_delete{// 인풋박스 clear/delete 버튼 (type2 / type4)
+		display:none;
+		position:absolute;
+		top:50%;
+		right:16px;
+		transform:translateY(-50%);
+		&::before{
+			display:none;
+		}
+	}
+}
+
+// input type5. 
+.inbox_type05{// 타이틀이 박스 안에 있는 타입, 삭제 버튼 없음 //
+	min-height:78px;
+	&.on{
+		> .tit{
+			top:15px;
+			transform:translateY(0);
+			transition:all 0.1s linear;
+		}
+		> .add{
+			display:block;
+		}
+	}
+	> .tit{
+		left:20px;
+		color:$COL_Inactive_Text01;
+		@include Mix_Font('Txt-R', 14, 18);
+		transform:translateY(-50%);
+		transition:all 0.1s linear;
+	}
+	> .add{
+		display:none;
+		height:97px;
+		padding:36px 95px 0 20px;
+		color:$COL_Inactive_Text01;
+		@include Mix_Font('Txt-R', 15, 23);
+	}
+	> .btn_icon01{
+		position:absolute;
+		top:50%;
+		right:20px;
+		margin-top:-16px;
+		font-size:13px;
+	}
+}
+.inbox_type06{
+	width:calc(100% - 40px);
+	height:53px;
+	margin:0 20px;
+	border-top:1px solid $COL_Line_Light01;
+	color:$COL_Text_Base04;
+	@include Mix_Font('Head-R', 16, 53);
+
+}
+
+// input type7 (카드)
+.inbox_type07{// 
+	display:block;
+	text-align:right;
+	> .tit{
+		@include Mix_Font('Txt-R', 14, 18);
+	}
+	> span{
+		&:nth-child(2){
+			&::before{
+				display:none;
+			}
+		}
+	}
+	&.card{//카드일대
+		padding-right: 17px;
+		.inp{
+			width: 33px;
+			padding-left: 16px;
+			box-sizing: initial;
+			&::before{
+				content:'';
+				left:2px;
+				top: 50%;
+				width: 8px;
+				height: 1px;
+				margin-top:-1px;
+				background-color: $COL_Gray14;
+			}
+			&:first-child {
+				padding-left: 0;
+			}
+			.txt {
+				width: 100%;
+			}
+		}
+	}
+	&.year{//연월일때
+		padding-right: 17px;
+		.inp{
+			width: 35px;
+			padding-left: 23px;
+			box-sizing: initial;
+			&::before{
+				content:'/';
+				left: 6px;
+			}
+			.txt {
+				width: 100%;
+				text-align: right;
+				&::placeholder {
+					text-align: right;
+				}
+			}
+			&:first-child {
+				padding-left: 0;
+			}
+		}
+	}
+	.inp{
+		position:relative;
+		display:inline-block;
+		width:19%;
+		&::before{
+			content:'-';
+			position:absolute;
+			top:0;
+			display:block;
+			color:$COL_Gray14;
+			@include Mix_Font('Txt-R', 15, 54);
+		}
+		.txt{
+			width:calc(100% - 10px);
+			padding:0;
+			border:0;
+			outline:0;
+			@include Mix_Font('Txt-R', 15, 54);
+			text-align:center;
+			&::placeholder {
+				color: $COL_Inactive_Text01;
+			}
+			
+		}
+		
+	}
+}
+
+
+
+
+// textarea type1 
+.cpo_error{
+	margin-top:8px;
+	color:$COL_RED01;
+	@include Mix_Font('Txt-R', 12, 16);
+}
+.review_textarea{
+	position:relative;
+	width:100%;
+	padding:17px 17px 60px;
+	border:1px solid $COL_Line_Dark01;
+	//border-radius:4px;
+	transition:padding 0.1s linear;
+	&.focus{
+		border:1px solid $COL_Blue03;
+		.tit{
+			color:$COL_Blue03;
+		}
+	}
+	&.on{
+		padding:32px 17px 36px;
+		> .tit{
+			display:block;
+		}
+		.txt_check {
+			.first {
+				color:$COL_Text_Base04;
+			}
+		}
+	}
+	> .tit{
+		display:none;
+		position:absolute;
+		top:15px;
+		left:17px;
+		color:$COL_Inactive_Text01;
+		@include Mix_Font('Txt-M', 12, 18);
+	}
+	.txt_check{
+		position:absolute;
+		right:16px;
+		bottom:9px;
+		@include Mix_Font('Txt-R', 13, 17);
+		color: $COL_Inactive_Text01;
+	}
+	textarea{
+		border:none;
+		width:100%;
+		height:115px;
+		padding:0;
+		@include Mix_Font('Txt-R', 15, 22);
+		resize:none;
+		&.on{
+			overflow-x:hidden;
+			overflow-y:scroll;
+		}
+		&::placeholder{
+			color:$COL_Inactive_Text01;
+		}
+	}
+}
+
+// **********************************************************
+// selectbox 
+// **********************************************************
+.sel_type01{
+	position:relative;
+	select{
+		width:100%;
+		height:56px;
+		padding:0 34px 0 20px;
+		border:0;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Txt-R', 15, 56);
+		@include Mix_Select_Bg01;
+		&:focus{
+			outline:0;
+			border:0;
+		}
+		&.on{
+			padding-top:8px;
+			opacity:1;
+			&+.tit{
+				top:15px;
+				font-size:12px;
+				transform:translateY(0);
+				transition:all 0.1s linear;
+			}
+		}
+		&:disabled {
+			background-image:url('../img/bg_select01_disabled.png');
+			color:$COL_Inactive_Text01;
+		}
+	}
+}
+
+// 마이페이지 체크박스 토글
+.chk_toggle{
+	input[type="checkbox"]{
+		position:absolute;
+		left:-9999px;
+		& + span{
+			display:block;
+			position:relative;
+			width:50px;
+			height:30px;
+			border-radius:15px;
+			background:$COL_Line_Dark01;
+			@include Mix_Size_0;
+			&::before{
+				content:'';
+				display:inline-block;
+				position:absolute;
+				top:2px;
+				left:2px;
+				width:26px;
+				height:26px;
+				border-radius:50%;
+				background:$COL_WHITE;
+				transition:left .1s linear;
+				box-shadow:0px 1px 4px rgba($COL_Text_Base04, 0.2);
+			}
+		}
+		&:checked + span{
+			background:$COL_Blue03;
+			&::before{
+				left:22px;
+			}
+		}
+	}
+}
+// //마이페이지 체크박스 토글
+
+//Radio type01
+.chk_rad01{
+	position:absolute;
+	width:1px;
+	height:1px;
+	opacity:0;
+	&:checked + label::before{
+		background-position:-100px -62px;
+	}
+	&+label{
+		display:inline-block;
+		position:relative;
+		width:100%;
+		padding:4px 0 4px 33px;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Txt-B', 16, 20);
+		&::before{
+			content:'';
+			display:block;
+			position:absolute;
+			top:0;
+			left:0;
+			width:26px;
+			height:26px;
+			@include Mix_Form_Bg;
+			background-position:-130px -62px;
+			vertical-align:middle;
+		}
+	}
+}
+.chk_rad02{
+	position:absolute;
+	width:1px;
+	height:1px;
+	opacity:0;
+	&:disabled + label {
+		color: $COL_Text_Base02;
+		&::before {
+			background-position:-52px -171px;
+		}
+	}
+	&:checked + label::before{
+		background-position:-75px -171px;
+	}
+	&:disabled:checked + label::before {
+		background-position:-98px -171px;
+	}
+	&+label{
+		display:inline-block;
+		position:relative;
+		width:100%;
+		padding:0 0 0 26px;
+		color:$COL_Text_Base03;
+		@include Mix_Font('Txt-R', 13, 18);
+		&::before{
+			content:'';
+			display:block;
+			position:absolute;
+			top:0;
+			left:0;
+			width:18px;
+			height:18px;
+			@include Mix_Form_Bg;
+			background-position:-29px -171px;
+			vertical-align:middle;
+		}
+	}
+}
+// 명의정보 설정 입력 form / 
+.form_type01{
+	background:$COL_WHITE;
+	box-shadow: 0px 0px 1px rgb(0 0 0 / 15%);
+	li{
+		border-top:1px solid $COL_Line_Light01;
+		&:not(.focus){
+			&:first-of-type{
+				border-top:0;
+			}
+		}
+	}
+}
+
+// 주문취소 form / 
+.form_type02{
+	background:$COL_WHITE;
+	> li{
+		margin-top:10px;
+		&:first-of-type{
+			margin-top:0;
+		}
+		> .sel_type01{
+			border:1px solid $COL_Line_Dark01;
+		}
+		> .inbox_type03 {
+			border:1px solid $COL_Line_Dark01;
+			&.focus {
+				border:1px solid $COL_Blue03;
+			}
+		}
+	}
+}
+
+// 인풋박스 radio 버튼 2단 / 
+.form_type03{
+	display:flex;
+	flex-flow:row;
+	flex-wrap:wrap;
+	row-gap:13px;
+	margin:0 6px 20px;
+	li{
+		flex: 0 0 50%;
+		align-self: flex-start;
+		label{
+			@include Mix_Font('Txt-R', 15, 18);
+		}
+	}
+	.row{
+		display:block;
+		flex:none;
+		width:100%;
+	}
+}
+
+
+/* 상품목록 plp_sorting */
+.sorting_layer{
+	display:none;
+	position:absolute;
+	top:25px;
+	right:-35px;
+	width:130px;
+	padding:8px 0;
+	border:1px solid $COL_Line_Dark01;
+	background:$COL_WHITE;
+	box-shadow: 0px 3px 6px rgba($COL_Text_Base04, 0.12);
+	ol.plp_sort{// 상품목록, 인기순...  sorting
+		li{
+			border-top:1px solid $COL_Line_Light01;
+			&:first-of-type{
+				border-top:0;
+			}
+		}
+	}
+}
+
+
+
+.addphoto_list{// 사진 업로드
+	dl{
+		display:flex;
+		flex-wrap:nowrap;
+		position:relative;
+		height: 75px;
+		&.on{
+			> dt{
+				width:100%;
+				padding-right:21px;
+				span.t01{display:block;}
+				span.t02{display:none;}
+			}
+			> dd{
+				display:none;
+			}
+		}
+		dt{
+			width:75px;
+			height:100%;
+			span.t01{display:none;}
+			span.t02{display:block;}
+			.file_morephoto[type="file"]{// 파일 선택
+				opacity:0;
+				position:absolute;
+				width:1px;
+				height:1px;
+				overflow:hidden;
+				&+label{
+					position:relative;
+					display:block;
+					width:100%;
+					height:100%;
+					background:$COL_BG_Light01;
+					border:1px dashed $COL_Line_Dark01;
+					> span{// 사진 추가하기 & 사진 수량
+						position:absolute;
+						top:50%;
+						left:50%;
+						transform:translate(-50%, -50%);
+						color:$COL_Inactive_Text01;
+						text-align:center;
+						&::before{
+							content:'';
+							display:block;
+							margin:0 auto 5px;
+							@include Mix_Form_Bg;
+						}
+					}
+					span.t01{// 사진 추가하기
+						@include Mix_Font('Head-R', 12, 17);
+						&::before{
+							width:12px;
+							height:12px;
+							background-position:-179px -38px;
+						}
+					}
+					span.t02{// 사진 수량
+						@include Mix_Font('Txt-R', 11, 18);
+						em{
+							color:$COL_Secondary01;
+						}
+						&::before{
+							width:30px;
+							height:30px;
+							margin-bottom:0;
+							background-position:-136px -144px;
+						}
+					}
+				}
+			}
+		}
+		dd{
+			// width:80%;
+			width: calc(100% - 75px);
+			.list{// 업로드 사진 미리보기
+				overflow-x:auto;
+				overflow-y:hidden;
+				white-space:nowrap;
+				li{
+					display:inline-block;
+					overflow:hidden;
+					position:relative;
+					width: 75px;
+					height: 75px;
+					margin-left:6px;
+					img{
+						width:100%;
+						height:100%;
+						object-fit:cover;
+					}
+				}
+			}
+		}
+
+	}
+	.notice_addphoto {
+		margin-top: 12px;
+		@include Mix_Font('Txt-R', 13, 20); 
+		color: $COL_Inactive_Text01;
+	}
+	
+}
+/* 2차 css 임시용 */
+// 검색 input
+.inp_search {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15px;
+	border-bottom: 1px solid $COL_Blue03;
+	&::after{
+		content:'';
+		display:block;
+		height:20px;
+		width: 20px;
+		margin:0 auto;
+		@include Mix_Layout_Bg;
+		background-position: -51px -27px;
+	}
+	.txt {
+		flex: 1;
+		  width: 100%;
+		@include Mix_Font('Head-R', 16, 52);
+	}
+	.btn_delete {
+		display: none;
+	}
+	&.delete_on {
+		.btn_delete {
+			display: block;
+		}
+	}
+	&.focus, &.delete_on {
+		&::after {
+			display: none;
+		}
+	}
+}
+
+// 삭제버튼
+[class^="btn_delete"]{
+	display: block;
+	width: 18px;
+	height: 18px;
+	@include Mix_Size_0;
+	@include Mix_Form_Bg;
+	background-position:-122px -30px;
+}

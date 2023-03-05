@@ -1,0 +1,69 @@
+<!-- FO-MY-MS0020_01 : 입고알림 신청_상품상세/판매준비차량 - BOTTOM -->
+<div class="CPOpop_bottom" id="FO-MY-MS0020_01">
+	<div class="p_head">
+		<h4 class="tit">입고알림 신청</h4>
+	</div>
+	<div class="p_wrap">
+		<div class="srch_ifbox">
+            <!-- S: 알림 안내 문구 -->
+            <div class="srch_caution">
+                <div class="incont">
+                    <p>입고알림을 신청하시면 <br/>유사한 조건의 차량 입고 시, 알림을 보내드려요.</p>
+                </div>
+            </div>
+			<!-- //E: 알림 안내 문구 -->
+            
+			<!--  S: 01. 알림 서비스 기간 설정  -->
+            <!--[D] 판매준비차량 알림일때 해당 부분 비노출 처리 필요-->
+			<div class="srch_box">
+				<div class="top">
+					<h4 class="tit">알림 서비스 기간 설정</h4>
+				</div>
+				<div class="incont02">
+                    <ul class="tab_box">
+						<li><input type="radio" name="dateChk2" id="dateChk21" checked><label for="dateChk21">7일</label></li>
+						<li><input type="radio" name="dateChk2" id="dateChk22"><label for="dateChk22">14일</label></li>
+						<li><input type="radio" name="dateChk2" id="dateChk23"><label for="dateChk23">30일</label></li>
+					</ul>
+				</div>
+			</div>
+			<!--  E: 01. 알림 서비스 기간 설정  -->
+            
+            <!--  S: 02. 모델그룹  -->
+            <div class="srch_box show">
+                <div class="top">
+                    <h4 class="tit">모델그룹</h4>
+                    <span class="check" id="schChk_Model">그랜저</span>
+                </div>
+            </div>
+            <!--  E: 02. 모델그룹  -->
+
+			<!--  S: 03. 모델  -->
+			<div class="srch_box show">
+				<div class="top">
+					<h4 class="tit">모델</h4>
+					<span class="check" id="schChk_Detail">더 뉴 그랜저 가솔린 2.5 프리미엄</span>
+				</div>
+			</div>
+			<!--  E: 03. 모델  -->
+			<!--  S: 04. 색상계열  -->
+			<div class="srch_box show">
+				<div class="top">
+					<h4 class="tit">색상계열</h4>
+					<span class="check" id="schChk_Color">화이트</span>
+				</div>
+			</div>
+			<!--  E: 04. 색상계열  -->
+		</div>
+
+		<!-- btn_sticky -->
+		<div class="btn_sticky">
+			<div class="btn_sticky">
+                <button type="button" class="btn_modal04">초기화</button>
+                <button type="button" class="btn_modal01">입고알림 신청</button>
+            </div>
+		</div>
+		<!-- //btn_sticky -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

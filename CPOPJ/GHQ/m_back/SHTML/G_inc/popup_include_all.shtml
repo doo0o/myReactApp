@@ -1,0 +1,95 @@
+<!--#include file="/GHQ/SHTML/G_login/include/FO-ME-MS0002.shtml"--><!-- 이용약관 (Full) 동의 버튼 -->
+
+
+<!--#include file="/GHQ/SHTML/G_detail/@@include/FO-PD-MS0002.shtml"-->
+<!--#include file="/GHQ/SHTML/G_detail/@@include/FO-PD-MS0003.shtml"-->
+<!--#include file="/GHQ/SHTML/G_detail/@@include/FO-PD-MS0004.shtml"-->
+<!--#include file="/GHQ/SHTML/G_detail/@@include/FO-PD-MS0005.shtml"-->
+<!--#include file="/GHQ/SHTML/G_detail/@@include/FO-PD-MS0006.shtml"-->
+<!--#include file="/GHQ/SHTML/G_detail/@@include/FO-PD-MS0007.shtml"-->
+<!--#include file="/GHQ/SHTML/G_detail/@@include/FO-PD-MS0008.shtml"-->
+<!--#include file="/GHQ/SHTML/G_detail/@@include/FO-PD-MS0009.shtml"-->
+<!--#include file="/GHQ/SHTML/G_detail/@@include/FO-PD-MS0010.shtml"-->
+<!--#include file="/GHQ/SHTML/G_detail/@@include/FO-PD-MS0012.shtml"-->
+<!--#include file="/GHQ/SHTML/G_detail/@@include/FO-PD-MS0013.shtml"-->
+<!--#include file="/GHQ/SHTML/G_detail/@@include/FO-PD-MS0014.shtml"-->
+
+
+<!--#include file="/GHQ/SHTML/@@G_mypage/include/FO-MY-MS0008.shtml"-->
+<!--#include file="/GHQ/SHTML/@@G_mypage/include/FO-MY-MS0015.shtml"-->
+<!--#include file="/GHQ/SHTML/@@G_mypage/include/FO-MY-MS0052.shtml"-->
+<!--#include file="/GHQ/SHTML/@@G_mypage/include/FO-MY-MS0020.shtml"-->
+<!--#include file="/GHQ/SHTML/@@G_mypage/include/FO-MY-MS0020_01.shtml"-->
+
+
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-OR-MS0002.shtml"--><!-- 비교하기 -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-OR-MS0006.shtml"--><!-- 1. 명의_명의정보 설정 -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-MY-MS0073.shtml"--><!-- 1. 명의_명의정보 설정[판매관리] -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-OR-MS0033.shtml"--><!-- 1-1. 이전등록비 감면신청 필요서류(Simple) -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-OR-MS0007.shtml"--><!-- 2. 배송정보_홈서비스 -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-MY-MS0075.shtml"--><!-- 2. 차량인도 방문정보 -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-OR-MS0009.shtml"--><!-- 3. 주소 조회 -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-OR-MS0032.shtml"--><!-- 4. 환불계좌 -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-MY-MS0074.shtml"--><!-- 4. 환불계좌[판매관리] -->
+
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-MY-MS0062.shtml"--><!-- 11.결제 내역 -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-MY-MS0063.shtml"--><!-- 11-1.결제 변경 -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-MY-MS0054.shtml"--><!-- 12.현금영수증 승인전표  -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-MY-MS0056.shtml"--><!-- 14.신용카드 매출전표 -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-MY-MS0057.shtml"--><!-- 15.거래명세표 -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-MY-MS0065.shtml"--><!-- 16-1.PDF 상세보기 -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-MY-MS0066.shtml"--><!-- 16-2.중고차 매매계약서 -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-MY-MS0067.shtml"--><!-- 16-3.중고차 판매계약서 -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-MY-MS0059.shtml"--><!-- 17.이전서류 등록 -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-MY-MS0060.shtml"--><!-- 18.온라인 인증서 -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-MY-MS0064.shtml"--><!-- 19.차량 회수주소 -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-MY-MS0033.shtml"--><!-- 20.차량 등록 -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-TI-MS0006.shtml"--><!-- 20.차량 정보 -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-MY-MS0034.shtml"--><!-- 21.실사검수 신청 -->
+<!--#include file="/GHQ/SHTML/@@G_order/include/FO-MY-MS0006.shtml"--><!-- 22.이전 등록 서류 안내 -->
+
+
+
+<!--#include file="/GHQ/SHTML/@@G_sale/include/FO-TI-MS0017.shtml"--><!-- 내차팔기 정보 레이어 -->
+<!--#include file="/GHQ/SHTML/@@G_sale/include/FO-TI-MS0040.shtml"--><!-- 내차팔기 진행중 팝업 -->
+<!--#include file="/GHQ/SHTML/@@G_sale/include/FO-TI-MS0041.shtml"--><!-- 보유차량 팝업 -->
+
+<!--#include file="/GHQ/SHTML/@@G_sale/include/FO-TI-MS0012.shtml"--><!-- 내차팔기 불가 차량 안내 -->
+<!--#include file="/GHQ/SHTML/@@G_sale/include/FO-TI-MS0014.shtml"--><!-- 법인명의 차량 팔기 안내 -->
+<!--#include file="/GHQ/SHTML/@@G_sale/include/FO-TI-MS0020.shtml"--><!-- 차량 상세정보 레이어 -->
+
+
+<!--#include file="/GHQ/SHTML/@@G_sale/include/FO-TI-MS0043.shtml"--><!-- 출고 당시 옵션 안내 -->
+
+<!--#include file="/GHQ/SHTML/@@G_sale/include/FO-TI-33B-MS0033-01.shtml"--><!-- 사진 업로드(앞면) -->
+<!--#include file="/GHQ/SHTML/@@G_sale/include/FO-TI-33B-MS0033-02.shtml"--><!-- 사진 업로드(뒷면) -->
+<!--#include file="/GHQ/SHTML/@@G_sale/include/FO-TI-33B-MS0033-03.shtml"--><!-- 사진 업로드(좌측면) -->
+<!--#include file="/GHQ/SHTML/@@G_sale/include/FO-TI-33B-MS0033-04.shtml"--><!-- 사진 업로드(우측면) -->
+<!--#include file="/GHQ/SHTML/@@G_sale/include/FO-TI-33B-MS0033-05.shtml"--><!-- 사진 업로드(시동 켜진 계기판) -->
+<!--#include file="/GHQ/SHTML/@@G_sale/include/FO-TI-33B-MS0034.shtml"--><!-- 사진 등록시 주의사항 -->
+
+<!--#include file="/GHQ/SHTML/@@G_sale/include/FO-TI-06F-01MS0037.shtml"--><!-- 이전차주 정보등록 -->
+<!--#include file="/GHQ/SHTML/@@G_sale/inc/FO-TI-MS0044.shtml"--><!-- 보험 이력 안내 -->
+
+<!--#include file="/GHQ/SHTML/G_search/include/FO-PL-MS0021.shtml"--><!-- 음성검색 -->
+
+<!--#include file="/GHQ/SHTML/@@G_cscenter/include/FO-CS-MS0006.shtml"--><!-- 공지사항 상세 --> 
+<!--#include file="/GHQ/SHTML/@@G_cscenter/include/FO-CS-MS0007.shtml"--><!-- 차량 조회하기 -->
+<!--#include file="/GHQ/SHTML/@@G_cscenter/include/FO-CS-MS0008.shtml"--><!-- 판매내역 전체보기 -->
+
+
+
+<script>
+$(function(){
+	
+	$(".jQ_Select").on("click",function(){//셀렉트박스 레이어 스크립트
+		CPO.POPUP_open($(this));// 레이어팝업 open
+		CPO_SelectLayer($(this));// 레이어팝업에 data 값 넘기기
+	});
+	$(".jQ_Select_Save").on("click",function(){//셀렉트박스 레이어 스크립트
+		CPO.POPUP_close($(this));// 레이어팝업 close
+		CPO_SelectSave($(this));// 레이어팝업에 data 값 넘기기
+	});
+	
+});
+</script>

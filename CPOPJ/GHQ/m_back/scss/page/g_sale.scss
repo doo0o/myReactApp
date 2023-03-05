@@ -1,0 +1,2202 @@
+@charset 'utf-8';
+/* 
+	내차팔기
+*/
+@import '../_common/g_function';
+@import '../_common/g_mixins';
+
+body.bg_black {
+	background:$COL_Text_Base04;
+	.h_navi, 
+	.h_sub {
+		background:$COL_Text_Base04 !important;
+	}
+	.sale_progress {
+		background:$COL_1E1E;
+	}
+}
+body:not(.bg_black):not([class^="sale_head"]) {
+	background-color: $COL_BG_Light01;
+	.h_navi, 
+	.h_sub {
+		background:$COL_BG_Light01;
+		&.visual {
+			background-color: transparent;
+		}
+	}
+	#CPOheader{
+		[class^=h_],
+		[class^=h_].fixed{
+			background:$COL_BG_Light01;
+		}
+		.h_sub.visual {
+			background-color: transparent;
+			h3.tit {
+				color: #FFF;
+			}
+			&.fixed {
+				background:$COL_BG_Light01;
+				border-bottom:1px solid $COL_BG_Light02;
+				h3.tit {
+					color: #111;
+				}
+				.ic_del::before{
+					background-position: -226px -27px;
+				}
+			}
+		}
+		.ic_mycar::before{
+			background-position:-241px 0;
+		}
+		.ic_logo::before{
+			background-position:-52px -213px;
+		}
+		.ic_menu {
+			border-color: rgba($COL_Text_Base04, 0.1);
+			color: $COL_Text_Base03;
+			&:before {
+				background-position: -52px -236px;
+			}
+		}
+		.menu_layer {
+			background-color: $COL_WHITE;
+			border-color: rgba($COL_Text_Base04, 0.1);
+			a {
+				color: $COL_Text_Base03;
+			}
+		}
+	}
+}
+[class^=sale_head]{
+	#CPOheader{
+		[class^=h_],
+		[class^=h_].fixed{
+			background:$COL_Text_Base04 !important;
+		}
+	}
+	.sale_progress {
+		background-color:$COL_1E1E;;
+	}
+}
+.sale_head02 {
+	#CPOheader{
+		[class^=h_] {
+			background:transparent !important;
+		}
+		[class^=h_].fixed{
+			background:$COL_Text_Base04 !important;
+		}
+	}
+	#CPOcontents {
+		padding-top: 0;
+	}
+	.sale_progress {
+		background-color: rgba($COL_WHITE, 0.3);
+	}
+}
+
+.CPOpop_full2{
+	background:$COL_BG_Light02 !important;
+}
+
+.p_wrap{
+	&.sale_modify{
+		.entry_carbase{
+			padding:0 21px 30px;
+			.top02{
+				h5.tit{
+					@include Mix_Font('Head-L', 22, 30);
+					color:$COL_Text_Base04;
+				}
+				.txt{// 수정하기 화면 툴팁 삭제
+					display:none;
+				}
+			}
+			.btn_txt06 {
+				color: $COL_Text_Base04;
+				&:before {
+					background-color: $COL_Text_Base04;
+				}
+				
+				&:after {
+					background-position: -74px 0
+				}
+			}
+		}
+	}
+}
+
+
+
+@import '../_layout/g_sale_form';// 내차팔기 form
+@import '../_layout/g_sale_info';// 안내 레이어 POPUP
+
+.sale_progress{
+	width:100%;
+	position:fixed;
+	left:0;
+	top:49px;
+	background:$COL_Line_Light01;
+	z-index:601;
+	span{
+		display:block;
+		height:1px;
+		background:$COL_C36F51;
+		@include Mix_Size_0;
+		.sale_head &{
+			// background:$COL_Primary01;
+			
+		}
+	}
+}
+// 2. 소유주명 입력				내차팔기 page STEP2.
+// 5. 구매/옵션 정보 입력				내차팔기 page STEP3-1.
+.sale_car01{
+	margin:0 0 30px;
+	.mycar_infobox{
+		> li{
+			border-bottom:1px solid rgba($COL_WHITE, 0.04);
+			> .tit{
+				padding:8px 0;
+			}
+			> .txt{
+				padding:8px 0;
+				color:$COL_WHITE;
+			}
+		}
+	}
+}
+.sale_carinfo{
+	width:100%;
+	padding:20px 21px 100px;
+	> .top{
+		margin:21px 0 40px;
+		&::before{
+			content:'';
+			display:block;
+			width:49px;
+			height:49px;
+			margin:0 auto 10px;
+			@include Mix_Form_Bg;
+			background-position:-136px -90px;
+		}
+		> .tit{
+			color:$COL_Text_Base04;
+			@include Mix_Font('Head-L', 28, 38);
+			text-align:center;
+		}
+		> .txt{
+			margin-top:10px;
+			color:$COL_Text_Base03;
+			@include Mix_Font('Txt-R', 14, 23);
+			text-align:center;
+		}
+	}
+	.mycar_infobox{
+		> li{
+			.step3_box.off &{
+				border-bottom:0;
+				> .tit{
+					padding:8px 0;
+					color:$COL_Text_Base01;
+				}
+				> .txt{
+					padding:8px 0;
+					color:$COL_Text_Base03;
+				}
+			}
+			border-bottom:1px solid $COL_Line_Light01;
+			> .tit{
+				padding:16px 0;
+				color:$COL_Text_Base02;
+			}
+			> .txt{
+				padding:16px 0;
+				color:$COL_Text_Base04;
+			}
+		}
+	}
+}
+.mycar_infobox{
+	> li{
+		display:flex;
+		flex-flow:row;
+		flex-wrap:wrap;
+		&.off{
+			display:none;
+		}
+		> .tit{
+			flex:0 0 120px;
+			color:$COL_Gray13;
+			@include Mix_Font('Txt-R', 13, 21);
+		}
+		> .txt{
+			flex:0 0 calc(100% - 120px);
+			width:calc(100% - 120px);
+			@include Mix_Font('Txt-M', 13, 21);
+			text-align:right;
+			color:$COL_WHITE;
+			[class^="btn_"]{
+				@include Mix_Font('Txt-R', 13, 21);
+			}
+			.btn_txt07 {
+				color: $COL_C36F51;
+				&:after {
+					background-color: $COL_C36F51;
+				}
+			}
+		}
+	}
+}
+
+// 1. 차량번호 입력				내차팔기 page STEP1.
+// 2. 소유주명 입력				내차팔기 page STEP2.
+// 5. 구매/옵션 정보 입력				내차팔기 page STEP3-1.
+.main_hello{//HELLO
+	padding:134px 30px;
+}
+.sale_modify .step32_edit{
+	min-height:calc(100% - 60px);
+}
+.entry_carbase{// 1. 차량번호 입력, 2. 소유주명 입력, 5. 구매/옵션 정보 입력
+	padding:0 30px 30px;
+	&.yes{
+		> .top02{//5. 구매/옵션 정보 입력
+			h5.tit{
+				@include Mix_Font('Txt-R', 22, 28);
+			}
+		}
+		.review_textarea{// 구매옵션, 네 있어요 입력
+			display:block !important;
+			padding:15px 20px 40px 20px !important;
+			textarea{
+				background:transparent;
+				height:85px !important;
+			}
+			&.focus{
+				border-color:$COL_Secondary01;
+			}
+		}
+	}
+	.sale_modify .step32_edit &{
+		padding:0 21px;
+		height:auto;
+		.top02{
+			margin-bottom:35px;
+		}
+		> .entry{
+			position: sticky;
+			top: 0;
+			left: 0;
+			z-index: 3;
+			width:100%;
+			margin:0 0 10px;
+			> ol{
+				display:flex;
+				flex-wrap:wrap;
+				column-gap:9px;
+				align-items:center;
+				li{
+					width:calc(1/3*100% - (1 - 1/3)*9px);
+					text-align:center;
+					.chk_type07 + label{
+						padding:34px 0 0;
+						&::before{
+							top:0;
+							left:50%;
+							transform:translate(-50%, 0);
+						}
+						&::after{
+							bottom:-10px;
+						}
+
+					}
+				}
+			}
+		}
+	}
+	> .top02{//5. 구매/옵션 정보 입력
+		h5.tit{
+			display:block;
+			color:$COL_Text_Base04;
+			@include Mix_Font('Head-L', 30, 41);
+			.step31_option & {
+				@include Mix_Font('Head-L', 22, 30);
+			}
+		}
+		> .txt{
+			margin-top:10px;
+			color:$COL_Inactive_Text01;
+			@include Mix_Font('Head-R', 13, 17);
+		}
+	}
+	> .top{
+		> .txt{
+			color:$COL_WHITE;
+			@include Mix_Font('Head-L', 15, 21);
+		}
+		h5.tit{
+			display:inline-block;
+			margin-top: 6px;
+			color:$COL_WHITE;
+			@include Mix_Font('Head-L', 20, 27);
+		}
+		.cpo_tooltip .open {
+			background-position: -21px -148px;
+		}
+	}
+	> ul.navi{
+		li{
+			margin-bottom:12px;
+		}
+	}
+	> .entry{
+		position:relative;
+		margin:35px 0 20px;
+		.inp_txt{// 입력
+			width:100%;
+			padding:3px;
+			background:transparent;
+			border:0;
+			outline:0;
+			border-bottom:1px solid $COL_C36F51;
+			margin-top:5px;
+			caret-color:rgba(255,255,255,0.5);
+			color:$COL_Primary01;
+			@include Mix_Font('Head-R',44, 55);
+			&::placeholder{
+				color: $COL_333;
+				line-height:inherit;
+			}
+		}
+		.inp_txt02{// 입력
+			width:100%;
+			padding:3px 3px 8px 3px;
+			background:transparent;
+			border:0;
+			outline:0;
+			border-bottom:1px solid $COL_Secondary01;
+			margin-top:0;
+			caret-color:rgba($COL_Text_Base04, 0.5);
+			color:$COL_Text_Base04;
+			@include Mix_Font('Head-R',30, 41);
+			&::placeholder{
+				color: $COL_Line_Light01;
+				line-height:inherit;
+			}
+		}
+		.btn_area{
+			position:absolute;
+			top:50%;
+			right:0;
+			color:$COL_AAA8A6;
+			transform: translateY(-50%);
+			@include Mix_Font('Txt-R',20, 32);
+			.btn_ok01{
+				&.off{
+					display:none;
+				}
+			}
+
+		}
+		> ol{
+			li{
+				//border-bottom:1px solid $COL_Gray05;
+				.review_textarea{
+					display:none;
+				}
+			}
+		}
+	}
+}
+
+// 3. 차량정보 및 시세 확인
+.sale_car_info.on{
+	.sale_step01{
+		.head{
+			margin-top:0;
+			transition:all 0.5s linear;
+			.txt{
+				padding-top:90px;
+				opacity:1;
+				transition:all 0.1s linear;
+				transition-delay:0.45s;
+			}
+			.imgs{
+				top:180px;
+				opacity:1;
+				transition:all 0.2s linear;
+				transition-delay:0.8s;
+			}
+		}
+		.list ol{
+			margin-top:0;
+			opacity:1;
+			transition:all 0.2s linear;
+			transition-delay:0.8s;
+		}
+		&.on{
+			.txt2{
+				opacity:1;
+				transition:all 0.2s linear;
+				transition-delay:0.8s;
+			}
+		}
+	}
+	.sale_step02{	
+		opacity:1;
+		transition:all 0.2s linear;
+		transition-delay:0.8s;
+		&.on{
+			.txt span::after{
+				width:100%;
+				transition:all 0.4s linear;
+			}
+		}
+	}
+	.sale_step03.on{
+		padding-top:60px;
+		transition:all 0.2s linear;
+	}
+	.sale_step04.on{
+		padding-top:60px;
+		transition:all 0.2s linear;
+	}
+}
+.sale_car_info{
+	background-color:$COL_WHITE;
+}
+.sale_step01{
+	position:relative;
+	z-index:3;
+	background-color:$COL_WHITE;
+	padding-top:230px;
+	.head{
+		position:fixed;
+		top:0;
+		width:100%;
+		height:280px;
+		margin-top:-400px;
+		background:$COL_Text_Base04;
+		text-align:center;
+		.txt{
+			display:block;
+			padding-top:70px;
+			color:$COL_WHITE;
+			@include Mix_Font('Head-L', 24, 33);
+			opacity:0;
+			&.off{
+				padding-top:70px !important;
+				opacity:0 !important;
+			}
+		}
+		.txt2{
+			display:inline-block;
+			position:absolute;
+			top:50%;
+			left:21px;
+			margin-top:25px;
+			text-align:left;
+			transform:translateY(-50%);
+			opacity:0;
+			transition:all 0.2s linear;
+			>span{
+				display:block;
+				color:$COL_WHITE;
+				&.num{
+					@include Mix_Font('Txt-M', 16, 26);
+				}
+				&.name{
+					margin-top:3px;
+					@include Mix_Font('Txt-R', 12, 20);
+					em{
+						padding:0 6px;
+					}
+				}
+			}
+		}
+		.imgs{
+			position:absolute;
+			transition:all 0.2s linear;
+			top:200px;
+			right:0;
+			width:100%;
+			opacity:0;
+			img{
+				width:270px;
+				margin:0 auto;
+			}
+		}
+	}
+	.list{
+		overflow:hidden;
+		ol{
+			margin-top:20px;
+			padding:60px 21px;
+			opacity:0;
+			li{
+				display:flex;
+				padding:9px 0;
+				border-bottom:solid 1px rgba($COL_Text_Base04, 0.04);
+				.tit{
+					color:$COL_Text_Base01;
+					@include Mix_Font('Txt-R', 12, 20);
+				}
+				.txt{
+					flex:1;
+					color:$COL_Text_Base04;
+					@include Mix_Font('Txt-M', 12, 20);
+					text-align:right;
+				}
+			}
+		}
+	}
+}
+.sale_step02{
+	padding:60px 21px;
+	background:$COL_WHITE url('../img/@thumb/sale_car_bg01.png') no-repeat 0 0;
+	background-size:cover;
+	opacity:0;
+	transition:all 0.2s linear;
+	transition-delay:0.8s;
+	.txt{
+		display:block;
+		color:$COL_WHITE;
+		@include Mix_Font('Head-R', 16, 22);
+		text-shadow:0px 0px 3px rgba($COL_Text_Base04, 0.7);
+		span{
+			display:inline-block;
+			position:relative;
+			margin-bottom:10px;
+			color:$COL_BG_Light01;
+			@include Mix_Font('Txt-M', 16, 26);
+			text-shadow:0px 0px 3px rgba($COL_Text_Base04, 0.7);
+			&::after{
+				content:'';
+				position:absolute;
+				left:0;
+				bottom:0;
+				width:0;
+				height:1px;
+				background-color:$COL_C36F51;
+			}
+			em{
+				margin-right:4px;
+				@include Mix_Font('Head-R', 36, 49);
+			}
+		}
+	}
+	.txt2{
+		margin-top:20px;
+		color:$COL_Gray13;
+		@include Mix_Font('Txt-R', 12, 20);
+		text-shadow:0px 0px 3px rgba($COL_Text_Base04, 0.7);
+	}
+	.graph{
+		margin-top:40px;
+		img{
+			width:100%;
+		}
+	}
+}
+.sale_step03{
+	display: none;
+	padding:120px 15px 60px;
+	background-color:$COL_WHITE;
+	transition:all 0.2s linear;
+	h4.tit{
+		margin-bottom:16px;
+		padding:0 6px;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Head-R', 17, 20);
+	}
+	.review_list01 > ol > li{
+		width:100% !important;
+		margin-right:8px;
+	}
+}
+.sale_step04{
+	width:100%;
+	height:600px;
+	padding-top:120px;
+	background:url('../img/@thumb/car_sale_bg02.png') no-repeat 0 0;
+	background-size:cover;
+	color:$COL_WHITE;
+	@include Mix_Font('Head-L', 26, 36);
+	text-shadow:0px 0px 2px rgba($COL_Text_Base04, 0.6);
+	text-align:center;
+	transition:all 0.2s linear;
+}
+.btn_sale{
+	height:56px;
+	background-color:$COL_WHITE;
+	opacity:0;
+	button{
+		position:absolute;
+   		top:56px;
+	}
+	&.on{
+		opacity:1;
+		transition:all 0.1s linear;
+		button{
+			top:0px;
+			transition:all 0.4s linear;
+			transition-delay:0.4s;
+		}
+	} 
+}
+// 3. 차량정보 및 시세확인 불가
+.sale_step02_01{
+	padding:111px 21px;
+	background:$COL_WHITE url('../img/@thumb/sale_car_bg01.png') no-repeat 0 0;
+	background-size:cover;
+	h3.tit{
+		color:$COL_WHITE;
+		@include Mix_Font('Head-L', 30, 41);
+	}
+	p.txt{
+		margin-top:10px;
+		color:$COL_WHITE;
+		@include Mix_Font('Txt-R', 14, 23);
+	}
+	.graph{
+		margin-top:40px;
+		opacity:0.4;
+		img{
+			width:100%;
+		}
+	}
+}
+.sale_step02_02{
+	padding:40px 21px;
+	.tit{
+		margin-bottom:20px;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Head-R', 18, 25);
+	}
+}
+
+
+// 4. 추가정보입력				내차팔기 page STEP3. Main
+.entry_carmore{
+	.sale_prcir01{// 김현대님 차량 시세
+		position:fixed;
+		top:0;
+		left:0;
+		z-index:5;
+		width:100%;
+		padding:80px 21px 30px;
+		background:$COL_Text_Base04 !important;
+		h4{
+			color:$COL_WHITE;
+			@include Mix_Font('Head-L', 16, 22);
+			> span{
+				display:block;
+				&.price{
+					position:relative;
+					display:inline-block;
+					margin:8px 0 13px;
+					@include Mix_Font('Txt-R', 15, 49);
+					> em{
+						@include Mix_Font('Head-R', 36, 49);
+					}
+					&::after{
+						content:'';
+						display:block;
+						width:100%;
+						height:1px;
+						margin-top:-9px;
+						background:$COL_C36F51;
+					}
+					
+				}
+			}
+
+		}
+		.btn{
+			margin-top:40px;
+		}
+	}
+	
+	.sale_detail_header {
+		position: relative;
+		height: 302px;
+		margin-top: -50px;
+		padding: 70px 20px;
+		overflow: hidden;
+		transition: height 1s;
+		&:before, &:after {
+			content: "";
+			position: absolute;
+			top: 0; left: 0;
+			width: 100%; height: 100%;
+			background: $COL_Primary01;
+			z-index: -1;
+			opacity: 1;
+			transition: opacity 1s;
+		}
+		&:after {
+			background: url('../img/@thumb/sale_car_bg02.png') no-repeat 0 0 / cover;
+			opacity: 0;
+		}
+		h4{
+			color:$COL_WHITE;
+			@include Mix_Font('Head-L', 16, 22);
+			> span{
+				display:block;
+				&.price{
+					position:relative;
+					display:inline-block;
+					margin:8px 0 10px;
+					@include Mix_Font('Head-L', 15, 45);
+					> em{
+						@include Mix_Font('Head-R', 36, 45);
+						margin-right: 4px;
+					}
+					&::after{
+						content:'';
+						display:block;
+						width:100%;
+						height:1px;
+						margin-top:-8px;
+						background:$COL_Secondary01;
+					}
+				}
+			}
+		}
+		.txt {
+			margin-top: 15px;
+			@include Mix_Font('Txt-R', 11, 18);
+			letter-spacing: -.025em;
+			color: #fff;
+		}
+		.graph {
+			position: absolute;
+			bottom: 88px; left: 0;
+			width: 100%; height: 232px;
+			text-align: center;
+			img {height: 100%;}
+			opacity: 0;
+			transition: opacity 1s;
+		}
+		.btn {
+			position: absolute;
+			bottom: 15px; right: 0; left: 0;
+			text-align: center;
+		}
+		.btn button {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: flex-start;
+			width: 100%; height: 33px;
+			color: #fff;
+			@include Mix_Font('Txt-R', 10, 17);
+			letter-spacing: -.025em;
+			.str {
+				display: block;
+				position: relative;
+				transition: transform 1s;
+				span {
+					transition: opacity 1s;
+				}
+				&_close {
+					position: absolute;
+					top: 0; left: 0;
+					width: 100%;
+					text-align: center;
+					opacity: 0;
+				}
+			}
+			&:after {
+				content: "";
+				position: absolute;
+				width: 30px; height: 10px;
+				@include Mix_Sale_Bg;
+				margin: 0 auto;
+				background-position: -202px -27px;
+				transform: translate(0, 23px);
+				transition: transform 1s;
+			}
+		}
+		&.open {height: 569px;
+			&:before {opacity: 0;}
+			&:after {opacity: 1;}
+			.graph {opacity: 1;}
+			.btn button .str {transform: translateY(16px);}
+			.btn button .str_open {opacity: 0;}
+			.btn button .str_close {opacity: 1;}
+			.btn button:after {transform: translate(0, 0) rotate(-180deg);}
+		}
+		~ .sale_car02 {
+			padding-top: 13px;
+		}
+	}
+	.sale_car02{
+		width:100%;
+		padding:280px 21px 0;
+		background-color: $COL_WHITE;
+		.car_info{
+			display:flex;
+			flex-flow:row;
+			flex-wrap:wrap;
+			> dt{
+				flex:0 0 100px;
+				padding:16px 0;
+				border-bottom:1px solid $COL_Line_Light01;
+				color:$COL_Text_Base04;
+				@include Mix_Font('Txt-M', 13, 21);
+
+			}
+			> dd{
+				flex:0 0 calc(100% - 100px);
+				width:calc(100% - 100px);
+				padding:16px 0;
+				border-bottom:1px solid $COL_BG_Light02;
+				color:$COL_Text_Base03;
+				@include Mix_Font('Txt-R', 13, 21);
+				.list{
+					li{
+						&:not(:last-of-type){
+							margin-bottom:8px;
+						}
+					}
+				}
+				.tit{
+					margin-bottom:4px;
+					color:$COL_Text_Base03;
+					@include Mix_Font('Txt-M', 13, 21);
+				}
+				.txt{
+				}
+				.bull{
+					display:block;
+					position:relative;
+					z-index:1;
+					padding:0 0 0 8px;
+					&::before{
+						content:'';
+						display:block;
+						width:2px;
+						height:2px;
+						position:absolute;
+						top:8px;
+						left:0;
+						background:$COL_Text_Base03;
+					}
+				}
+			}
+		}
+		
+	}
+	.entry_more{
+		background-color: $COL_WHITE;
+		> ul{
+			> li{
+				border-bottom:1px solid $COL_Gray05;
+				&.off{
+					> a::after{
+						content:'';
+						position:absolute;
+						top:50%;
+						right:21px;
+						transform:translateY(-50%);
+						display:block;
+						width:11px;
+						height:18px;
+						@include Mix_Sale_Bg;
+						background-position:-159px 0;
+					}
+				}
+				[class^=link_]{
+					position:relative;
+					display:block;
+					padding:37px 50px 37px 80px;
+					&::before{
+						content:'';
+						position:absolute;
+						top:50%;
+						left:21px;
+						transform:translateY(-50%);
+						display:block;
+						width:48px;
+						height:48px;
+						@include Mix_Sale_Bg;
+					}
+					> span{
+						display:block;
+						margin-bottom:3px;
+						color:$COL_Text_Base03;
+						@include Mix_Font('Head-R', 18, 25);
+					}
+					> em{
+						display:block;
+						color:$COL_Text_Base02;
+						@include Mix_Font('Txt-R', 12, 20);
+					}
+					> i{
+						position:absolute;
+						top:50%;
+						right:21px;
+						transform:translateY(-50%);
+						display:block;
+						@include Mix_Font('Txt-M', 12, 16);
+						&::before{
+							content:'';
+							display:block;
+							margin:0 auto 10px;
+							@include Mix_Sale_Bg;
+						}
+						&.ing{
+							color:$COL_Secondary01;
+							&::before{
+								width:22px;
+								height:22px;
+								background-position:-202px 0;
+							}
+						}
+						&.end{
+							color:$COL_Text_Base03;
+							&::before{
+								width:22px;
+								height:17px;
+								background-position:-175px 0;
+							}
+						}
+						&.yet{
+							color:$COL_AAA8A6;
+							&::before{
+								width:22px;
+								height:17px;
+								background-position:-175px -22px;
+							}
+						}
+					}
+				}
+				.link_option{
+					&::before{
+						background-position:0 0;
+					}
+				}
+				.link_repair{
+					&::before{
+						background-position:-53px 0;
+					}
+				}
+				.link_photo{
+					&::before{
+						background-position:-106px 0;
+					}
+				}
+			}
+		}
+		> .btn{
+			padding:22px 0;
+			text-align:center;
+			.btn_txt01{
+				display:inline-block;
+			}
+		}
+	}
+}
+
+.entry_carinfo{// 작성한 내용 하단 뿌려지기
+	position:sticky;
+	bottom:0;
+	left:0;
+	width:100%;
+}
+// 6. 수리/손상 정보 입력				내차팔기 page STEP3-2.
+// 7. 차량 사진 등록				내차팔기 page STEP3-3.	div.sale_photo
+.sale_photo{// 차량 사진 등록
+	> .top{
+		padding:60px 21px 30px;
+		h5.tit{
+			color:$COL_Text_Base04;
+			@include Mix_Font('Head-L', 30, 41);
+		}
+		.btn{
+			margin-top:10px;
+		}
+		.btn_txt06{
+			color:$COL_Text_Base04;
+			&::before{
+				background-color: $COL_Text_Base04;
+			}
+			&::after{
+				background-position:-47px 0;
+			}
+		}
+	}
+	> .innerbox_01{//(1). 필수 등록 사진
+		padding:0 21px 50px;
+		> ol{
+			display:flex;
+			flex-wrap:wrap;
+			row-gap:9px;
+			column-gap:10px;
+			align-items:center;
+			li{
+				width:calc(1/3*100% - (1 - 1/3)*10px);
+			}
+		}
+		[class^="addphoto_"]{//사진 
+			position:relative;
+			overflow:hidden;
+			width:100%;
+			background-size:101% auto !important;
+			border:1px dashed $COL_BG_Light01;
+			> .btn_addphoto{// 업로드 사진
+				display:block;
+				width:100%;
+				overflow:hidden;
+				position:relative;
+				z-index:3;
+				height:0;
+				padding-bottom:100%;
+				> em{
+					position:absolute;
+					bottom:50%;
+					left:0;
+					display:block;
+					width:100%;
+					transform:translateY(50%);
+					color:$COL_Inactive_Text01;
+					@include Mix_Font('Head-R', 12, 17);
+					&::before{
+						content:'';
+						display:block;
+						width:12px;
+						height:12px;
+						margin:0 auto 4px;
+						@include Mix_Form_Bg;
+						background-position:-179px -38px;
+					}
+				}
+			}
+			&.on{// 사진 등록 된 경우
+				border-color:transparent;
+				> .btn_addphoto{
+					> em{
+						left:0;
+						width:auto;
+						bottom:-1px;
+						background:rgba($COL_Text_Base04, 0.7);
+						transform:translateY(0);
+						padding:3px 7px;
+						color:$COL_WHITE;
+						@include Mix_Font('Txt-R', 10, 16);
+						&::before{
+							display:none;
+						}
+					}
+				}
+				> span{// 등록 된 사진 영역
+					width:100%;
+					height:100%;
+					position:absolute;
+					top:0;left:0;
+					> img{
+						width:100%;
+						height:100%;
+						object-fit:cover;
+					}
+				}
+			}
+		}
+		.addphoto_1{background:url('../img/sale_car_01.png') no-repeat;}
+		.addphoto_2{background:url('../img/sale_car_02.png') no-repeat;}
+		.addphoto_3{background:url('../img/sale_car_03.png') no-repeat;}
+		.addphoto_4{background:url('../img/sale_car_04.png') no-repeat;}
+		.addphoto_5{background:url('../img/sale_car_05.png') no-repeat;}
+	}
+	> .innerbox_02{//(2). 추가 등록 사진
+		padding:0 0 30px 21px;
+		h6.tit{
+			color:$COL_Text_Base04;
+			@include Mix_Font('Head-R', 15, 21);
+		}
+		p.txt{
+			margin:0 0 15px;
+			color:$COL_Inactive_Text01;
+			@include Mix_Font('Head-R', 12, 17);
+		}
+	}
+}
+.car_sample{// LAYER POPUP / 사진 업로드
+	margin:0 21px;
+	position:relative;
+	ol{
+		li{
+			width:100%;
+			display:block !important;
+			.img{
+				img{
+					width:100%;
+				}
+			}
+			.tit{
+				margin-top:10px;
+				display:block;
+				color:$COL_Text_Base04;
+				@include Mix_Font('Head-R', 15, 21);
+				text-align:center;
+			}
+			.txt{
+				min-height:55px;
+				padding:6px 10px;
+				color:$COL_Text_Base03;
+				@include Mix_Font('Txt-R', 13, 21);
+				text-align:center;
+				word-break:keep-all;
+				
+			}
+		}
+	}
+}
+.car_sample2{// LAYER POPUP / 사진 업로드 주의사항
+	margin:30px 21px 0;
+	padding:18px;
+	background:$COL_BG_Light01;
+	.tit{
+		color:$COL_Text_Base03;
+		@include Mix_Font('Head-R', 13, 18);
+	}
+	.txt{
+		color:$COL_Text_Base01;
+		@include Mix_Font('Txt-R', 12, 20);
+	}
+}
+
+// 8. 입력정보 확인
+.sale_confirm2{
+	padding:40px 35px 30px;
+	// margin-bottom:40px;
+	background:$COL_Text_Base04;
+	> h5.tit{
+		margin-bottom:10px;
+		color:$COL_WHITE;
+		@include Mix_Font('Head-L', 24, 33);
+	}
+	> .txt{
+		margin-bottom:40px;
+		color:$COL_Gray13;
+		@include Mix_Font('Txt-R', 13, 21);
+	}
+	> dl{
+		margin-bottom:10px;
+		position:relative;
+		border-bottom:1px solid $COL_WHITE;
+		dt{
+			width:100px;
+			position:absolute;
+			top:8px;
+			right:0;
+			img{
+				width:100%;
+			}
+		}
+		dd{
+			> span{
+				display:block;
+				&.name{
+					margin-bottom:2px;
+					color:$COL_WHITE;
+					@include Mix_Font('Head-L', 15, 21);
+				}
+				&.number{
+					margin-bottom:10px;
+					color:$COL_WHITE;
+					@include Mix_Font('Head-R', 30, 41);
+				}
+			}
+		}
+	}
+	> .list{
+		li{
+			&:not(:last-of-type){
+				border-bottom:solid 1px $COL_1A1A;
+			}
+			display:flex;
+			padding:9px 0;
+ 			.tit{
+				color:$COL_Gray13;
+				@include Mix_Font('Txt-R', 13, 21);
+			}
+			.txt{
+				flex:1;
+				color:$COL_WHITE;
+				@include Mix_Font('Txt-M', 13, 21);
+				text-align:right; 
+			}
+		}
+	}
+}
+.sale_confirm{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: $COL_BG_Light01;
+	> .top{
+		position:relative;
+		padding:0 21px 15px;
+		h4.tit{
+			color:$COL_Text_Base04;
+			@include Mix_Font('Head-R', 18, 25);
+		}
+		> .btn_txt07{
+			position:absolute;
+			top:0;
+			right:35px;
+			color: $COL_C36F51;
+			&:after {
+				background-color: $COL_C36F51;
+			}
+		}
+	}
+	> .inner{
+		// margin:0 15px 40px;
+		margin:0 15px 0;
+		padding:25px 20px;
+		background:$COL_WHITE;
+	}
+	.car_info{// 차량 정보
+		> dt{
+			&:not(:first-of-type){
+				margin-top:25px;
+			}
+			position:relative;
+			color:$COL_Text_Base04;
+			@include Mix_Font('Txt-M', 14, 23);
+			> .btn_txt07{
+				position:absolute;
+				top:0;
+				right:0;
+				@include Mix_Font('Txt-R', 13, 21);
+				color: $COL_C36F51;
+				&:after {
+					background-color: $COL_C36F51;
+				}
+			}
+		}
+		> dd{
+			&:not(:last-of-type){
+				padding:0 0 25px;
+				border-bottom:1px solid $COL_BG_Light02;
+			}
+			margin-top:8px;
+			color:$COL_Text_Base03;
+			@include Mix_Font('Txt-R', 13, 21);
+			.list{
+				li{
+					&:not(:last-of-type){
+						margin-bottom:8px;
+					}
+				}
+			}
+			.tit{
+				margin-bottom:4px;
+				color:$COL_Text_Base03;
+				@include Mix_Font('Txt-M', 13, 21);
+			}
+			.txt{
+			}
+			.bull{
+				display:block;
+				position:relative;
+				z-index:1;
+				padding:0 0 0 8px;
+				&::before{
+					content:'';
+					display:block;
+					width:2px;
+					height:2px;
+					position:absolute;
+					top:8px;
+					left:0;
+					background:$COL_Text_Base03;
+				}
+			}
+		}
+	}
+	.car_photo{// 차량사진
+		display:flex;
+		flex-wrap:wrap;
+		row-gap:9px;
+		column-gap:10px;
+		align-items:center;
+		li{
+			position:relative;
+			overflow:hidden;
+			width:calc(1/2*100% - (1 - 1/2)*10px);
+			.img{
+				display:block;
+				width:100%;
+				height:calc(50vw - 40px);
+				overflow:hidden;
+				img{
+					width:100%;
+					height:100%;
+					object-fit:cover;
+				}
+			}
+			.txt{
+				display:inline-block;
+				position:absolute;
+				left:0;
+				bottom:-1px;
+				z-index:5;
+				background:rgba($COL_Text_Base04, 0.7);
+				transform:translateY(0);
+				padding:6px 7px;
+				color:$COL_WHITE;
+				@include Mix_Font('Txt-R', 10, 14);
+			}
+		}
+	}
+}
+// 9. 견적신청 완료
+.sale_confirm3{
+	> .inner01{
+		margin:41px 0 40px;
+		word-break:keep-all;
+		&::before{
+			content:'';
+			display:block;
+			width:49px;
+			height:49px;
+			margin:0 auto 10px;
+			@include Mix_Form_Bg;
+			background-position:-136px -90px;
+		}
+		> .tit{
+			color:$COL_Text_Base04;
+			@include Mix_Font('Head-L', 24, 33);
+			text-align:center;
+		}
+		> .txt{
+			margin-top:10px;
+			color:$COL_Text_Base03;
+			@include Mix_Font('Txt-R', 13, 21);
+			text-align:center;
+		}
+	}
+	> .inner02{
+		margin:0 15px 20px;
+		padding:15px 20px;
+		background:$COL_WHITE;
+		box-shadow: 0px 0px 5px rgba($COL_Text_Base04, 0.015);
+	}
+	> .inner03{
+		margin:0 15px 20px;
+		padding:25px 20px;
+		background:$COL_WHITE;
+		box-shadow: 0px 0px 5px rgba($COL_Text_Base04, 0.015);
+		> .txt01{
+			margin-bottom:6px;
+			color:$COL_Text_Base04;
+			@include Mix_Font('Head-M', 15, 24);
+			> span{
+				color:$COL_Secondary01;
+			}
+		}
+		> .txt02{
+			margin-bottom:18px;
+			color:$COL_Text_Base01;
+			@include Mix_Font('Txt-R', 12, 20);
+			word-break:keep-all;
+		}
+		> .txt03{
+			> .btn_txt06{
+				color:$COL_Text_Base03;
+				&::before{
+					display:none;
+				}
+				&::after{
+					background-position:-47px 0;
+					bottom: 5px;
+				}
+			}
+		}
+		
+		.list{
+			padding-top:14px;
+			li{
+				position:relative;
+				border-left:1px dashed $COL_Inactive_Text01;
+				padding:0 0 20px 15px;
+				&::before{
+					content:'';
+					display:block;
+					position:absolute;
+					top:5px;
+					left:-4px;
+					z-index:2;
+					width:8px;
+					height:8px;
+					border:1px solid $COL_Inactive_Text01;
+					background:$COL_WHITE;
+					border-radius:100%;
+				}
+				&::after{
+					content:'';
+					display:block;
+					position:absolute;
+					top:0;
+					left:-4px;
+					width:8px;
+					height:17px;
+					background:$COL_WHITE;
+				}
+				&.on{
+					&::before{
+						border:1px solid $COL_Secondary01;
+						background:$COL_Secondary01;
+					}
+					.tit{
+						color:$COL_Text_Base03;
+					}
+				}
+				.tit{
+					margin-bottom:2px;
+					color:$COL_Text_Base01;
+					@include Mix_Font('Txt-M', 13, 21);
+				}
+				.txt{
+					color:$COL_Text_Base01;
+					@include Mix_Font('Txt-R', 12, 20);
+				}
+				&:last-child{
+					padding-bottom:0;
+					border-left:0;
+				}
+			}
+		}
+	}
+}
+
+
+.step1_box,
+.step2_box{
+	padding-top:30px;
+	min-height:calc(100% - 50px);
+	position:relative;
+}
+.step3_box{
+	padding-top:60px;
+	min-height:calc(100% - 50px);
+	position:relative;
+	.btn_txt06 {
+		color: $COL_Text_Base04;
+		&:before {
+			background-color: $COL_Text_Base04;
+		}
+		&:after {
+			background-position: -74px 0
+		}
+	}
+	.btn_ok01 {
+		background-position: -59px -131px;
+	}
+}
+// 5. 구매/옵션 정보 입력				내차팔기 page STEP3-1.
+.step3_box{
+	&.off{
+		.sale_carinfo{
+			position:sticky;
+			bottom:0;
+			left:0;
+			padding:20px 21px;
+			> .top{
+				display:none;
+			}
+
+		}
+		.btn_sticky{
+			display:none;
+		}
+	}
+}
+
+
+// 자동자 교환/판금 확인 자동자 영여기
+.car_area{
+	display:block;
+	padding:0 21px;
+	> dt{
+		padding:20px 0 0;
+		color:$COL_Text_Base03;
+		> span{
+			display:block;
+		}
+		.tit{
+			@include Mix_Font('Head-R', 18, 25);
+			color: $COL_Text_Base03;
+		}
+		.txt{
+			@include Mix_Font('Txt-R', 13, 21);
+			color: $COL_Text_Base03;
+		}
+	}
+	> dd{
+		padding:20px 0;
+		border-bottom:1px solid $COL_Line_Light01;
+		.carimg_box{//여백 있음 안됨
+			position:relative;
+			z-index:2;
+			&.up{
+				[class^=btn_area]{
+					width:10.5%;
+					height:8.5%;
+				}
+			}
+			&.down{
+				[class^=btn_area]{
+					width:5.5%;
+					height:5.5%;
+				}
+			}
+			.carimg{
+				width:100%;
+				img{
+					width:100%;
+				}
+			}
+		}
+		.carimg_info{
+			padding:20px 0 0;
+			text-align:center;
+			span{
+				display:inline-block;
+				margin:0 20px;
+				@include Mix_Icon_Car_Edit(inline-block);
+			}
+		}
+		[class^=btn_area]{
+			position:absolute;
+			border-radius:100%;
+			width:10%;
+			height:8%;
+			@include Mix_Size_0;
+			@include Mix_Icon_Car_Edit(block);
+		}
+		// 외판 중앙
+		.btn_area001{top:0;		left:44.9%;}
+		.btn_area002{top:8.9%;	left:44.9%;}
+		.btn_area003{top:19.2%;	left:44.9%;}
+		.btn_area004{top:81%;	left:45.1%;}
+		.btn_area005{top:91.8%;	left:44.8%;}
+		// 외판 좌측
+		.btn_area006{top:14.7%;	left:11%;}
+		.btn_area007{top:39.3%;	left:8.9%;}
+		.btn_area008{top:56.3%;	left:8.9%;}
+		// 외판 우측
+		.btn_area009{top:14.7%;	left:78.8%;}
+		.btn_area010{top:39.3%;	left:80.8%;}
+		.btn_area011{top:56.3%;	left:80.8%;}
+
+		// 골격 중앙
+		.btn_area201{top:14%;		left:35%;}
+		.btn_area202{top:25.6%;		left:34.8%;}
+		.btn_area203{top:20%;		left:41%;}
+		.btn_area204{top:14%;		left:59%;}
+		.btn_area205{top:25.5%;		left:59%;}
+		.btn_area206{top:20%;		left:53%;}
+		.btn_area207{top:33.6%;		left:47.3%;}
+		.btn_area208{top:52.9%;		left:47.3%;}
+		.btn_area209{top:78.8%;		left:47.2%;}
+		.btn_area210{top:89.1%;		left:47.3%;}
+
+		// 골격 하단
+		.btn_area211{top:72%;		left:33.1%;}
+		.btn_area212{top:81.5%;		left:34.5%;}
+		.btn_area213{top:72%;		left:61.4%;}
+		.btn_area214{top:81%;		left:60%;}
+
+		// 골격 좌측
+		.btn_area215{top:46%;		left:4%;}
+		.btn_area216{top:38%;		left:25%;}
+		.btn_area217{top:51.9%;		left:23.4%;}
+		.btn_area218{top:63.3%;		left:26.9%;}
+		.btn_area219{top:84.3%;		left:16.3%;}
+
+		// 골격 우측
+		.btn_area220{top:46%;		left:90.5%;}
+		.btn_area221{top:38%;		left:69%;}
+		.btn_area222{top:51.9%;		left:71.4%;}
+		.btn_area223{top:63.3%;		left:67.6%;}
+		.btn_area224{top:84.3%;		left:78.3%;}
+	}
+}
+// 교환/판금 선택 Layer 
+.layer_caredit{
+	position:fixed;
+	left:50%;
+	top:50%;
+	z-index:10;
+	transform:translate(-50%, -70%);
+	width:230px;
+	padding:18px;
+	background:$COL_WHITE;
+	border:1px solid $COL_Line_Light01;
+	box-shadow: 0px 4px 8px rgba($COL_Text_Base04, 0.06);
+	display:none;
+	> .tit{
+		margin-bottom:10px;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Head-R', 12, 17);
+		text-align:center;
+	}
+	.inner{
+		display:flex;
+		flex-wrap:wrap;
+		row-gap:9px;
+		align-items:center;
+		justify-content:space-between;
+		label{
+			width:calc(1/2*100% - (1 - 1/2)*5px);
+		}
+	}
+
+}
+
+/* popup_이전차주 정보등록 */
+.lyer_prevowner {
+    padding-bottom: 60px;
+	.chk_type05 {
+		& + label {
+			border-color: $COL_Line_Light01;
+			background-color: transparent;
+			color: $COL_Text_Base01;
+		}
+		&:checked + label {
+			color: $COL_Text_Base04;
+			border-color: $COL_Text_Base04;
+		}
+	}
+	.box_car_info {
+		padding: 25px 21px;
+		border-bottom: 1px solid $COL_BG_Light02;
+		.title {
+			display: block;
+			padding-bottom: 20px;
+			@include Mix_Font('Txt-M', 15px, 24px);
+			color:$COL_Text_Base04;
+		}
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+	.select_info {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px 0px;
+		li {
+			width: 100%;
+		}
+		&.col2 {
+			gap: 7px 10px;
+			li {
+				width: calc(50% - 5px);
+			}
+		}
+	}
+}
+// 교환/판금 수정 
+.car_modify{
+	> .top{
+		position:sticky;
+		top:0;
+		left:0;
+		z-index:3;
+		width:100%;
+		height:62px;
+		background:$COL_WHITE;
+		padding:30px 21px 0;
+		text-align:right;
+		.info{
+			float:left;
+			padding:3px 0 0 0;
+			color:$COL_Inactive_Text01;
+			@include Mix_Font('Head-R', 12, 17);
+			&::before{
+				content:'';
+				display:inline-block;
+				width:14px;
+				height:11px;
+				@include Mix_Form_Bg;
+				background-position:-21px -131px;
+				vertical-align:middle;
+				margin:0 5px 0 0 ;
+			}
+		}
+	}
+}
+
+/* 공통 슬라이드 */
+.sale_mycar_swiper01 {
+	padding:30px 15px 0;
+	.swiper-slide{
+		width:100%;
+		margin-right:15px;
+		&:last-child{
+			margin-right:0;
+		}
+	}
+	.swiper-pagination-bullets {
+		display: flex;
+		overflow: hidden;
+		position: relative;
+		align-items: center;
+		justify-content: center;
+		margin-top: 15px;
+	}
+	.sale_slide_item{
+		display:inline-block;
+		position: relative;
+		width: 100%;
+		padding:20px 18px; 
+		background-color:$COL_WHITE;
+		box-shadow:0px 0px 5px rgba($COL_Text_Base04, 0.015);
+		.unit_info{
+			position:relative;
+			width: 100%;
+			@include Mix_Unit_Drive($COL_Text_Base01, $COL_Line_Light01, 4px);
+			@include Mix_Unit_Price($COL_Text_Base04);
+			.name{
+				.num{
+					display:block;
+					color:$COL_Text_Base01;
+					@include Mix_Font('Head-R', 12, 17);
+				}
+				.model{
+					color:$COL_Text_Base04;
+					@include Mix_Font('Head-R', 14, 19);
+					@include Mix_Ellipsis(2);
+				}
+			}
+			.drive{
+				overflow:hidden;
+				display:block;
+				height:16px;
+				margin-top:3px;
+				@include Mix_Font('Txt-R', 11, 18);
+			}
+			.price{
+				display: block;
+				position:absolute;
+				left:0;
+				bottom:-4px;
+				width: 100%;
+				em {
+					@include Mix_Font('Txt-M', 18, 29);
+				}
+			}
+		} 
+		.unit_img img{
+			width:100px;
+			height:100px;
+		}
+		.unit_top{
+			padding: 0 2px;
+			.tit{
+				color:$COL_Text_Base04;
+				@include Mix_Font('Txt-M', 15, 24);
+			}
+			.num{
+				position:relative;
+				margin-left:10px;
+				padding-left:10px;
+				color:$COL_Text_Base03;
+				@include Mix_Font('Head-R', 12, 16);
+				&::before{
+					content:'';
+					position:absolute;
+					top:50%;
+					left:0;
+					width:1px;
+					height:12px;
+					background-color:$COL_Line_Dark01;
+					transform:translateY(-50%);
+				}
+			}
+		}
+		.unit_mid{
+			display:flex;
+			gap:0 16px;
+			padding:18px 0;
+		}
+		.unit_bot{
+			.tit{
+				display:flex;
+				padding:16px 0;
+				border-top:solid 1px $COL_BG_Light02;
+				color:$COL_Text_Base03;
+				.txt{
+					flex:1;
+					@include Mix_Font('Txt-M', 13, 21);
+				}
+				.date{
+					@include Mix_Font('Txt-R', 12, 20);
+				}
+			}
+			.money{
+				display: block;
+				position:relative;
+				padding:10px 0 10px 12px;
+				background-color:$COL_BG_Light01;
+				color:$COL_Text_Base01;
+				@include Mix_Font('Txt-M', 11, 18);
+				&::after{
+					content:'';
+					display:block;
+					position:absolute;
+					top:50%;
+					right:14px;
+					width:7px;
+					height:12px;
+					@include Mix_Sale_Bg;
+					background-position:-258px 0px;
+					transform:translateY(-50%);
+				}
+			}
+		}
+		.btn_del01 {
+			position: absolute;
+			right: 20px;
+			top: 15px;
+		}
+	}
+
+	.sale_slide_item02{
+		display:inline-block;
+		position: relative;
+		width: 100%;
+		padding:0 20px; 
+		background-color:$COL_WHITE;
+		box-shadow:0px 0px 5px rgba($COL_Text_Base04, 0.015);
+		.unit_info{
+			position:relative;
+			width: 100%;
+			@include Mix_Unit_Name($COL_Text_Base04,$COL_Text_Base03);
+			@include Mix_Unit_Price($COL_Text_Base04);
+			.name{
+				.num{
+					display:block;
+					color:$COL_Text_Base01;
+					@include Mix_Font('Head-R', 14, 19); 
+				}
+				.model {
+					display: block;
+					margin: 6px 0 0;
+				}
+			}
+			.price{
+				display: block;
+				width: 100%;
+				em {
+					@include Mix_Font('Txt-M', 18, 29);
+				}
+			}
+		} 
+		.unit_img img{
+			width:120px;
+			height:120px;
+		}
+		.unit_mid{
+			display:flex;
+			align-items: center;
+			gap:0 16px;
+			padding:10px 0;
+		}
+	}
+}
+/* popup_내차팔기 정보 팝업 */
+.p_wrap.sale_mycar_wrap {
+	height: 100%;
+	padding: 60px 0 0;
+	background-color: $COL_BG_Light02;
+	.user_info {
+		padding: 0 21px;
+		.user_name {
+			@include Mix_Font('Head-L', 24, 33);
+			color:$COL_Text_Base04;
+			strong {
+				@include Mix_Font('Head-R', 24, 33);
+			}
+		}
+		a.user_name {
+			&::after{
+				content:'';
+				display:inline-block;
+				width:24px;
+				height:24px;
+				margin-left:8px;
+				@include Mix_Sale_Bg;
+				background-position:-229px 0px;
+				vertical-align:middle;
+			}
+		}
+		p {
+			margin-top: 5px;
+			@include Mix_Font('Txt-R', 14, 23);
+			color: $COL_Text_Base01;
+		}
+	}
+	.sale_mycar_links{
+		padding-top: 30px;
+		border-bottom: 1px solid $COL_BG_Light02;
+		ul {
+			padding:10px 21px;
+			background-color:$COL_WHITE;
+		}
+		li{
+			border-bottom:solid 1px $COL_BG_Light01;
+			a {
+				display:flex;
+				align-items: center;
+				position:relative;
+				min-height: 78px;
+				padding:0 0 0 66px;
+				color:$COL_Text_Base04;
+				@include Mix_Font('Head-R', 15, 21);
+				&::before {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: 0;
+					width: 52px;
+					height: 52px;			
+					@include Mix_Sale_Bg;
+					transform: translateY(-50%);
+				}
+				&::after{
+					content:'';
+					display:block;
+					position:absolute;
+					top:50%;
+					right:0;
+					width:7px;
+					height:12px;
+					@include Mix_Sale_Bg;
+					background-position:-270px 0;
+					transform:translateY(-50%);
+				}
+				&.link_mypage:before {
+					background-position:0px -53px;
+				}
+				&.link_service:before {
+					background-position:-53px -53px;
+				}
+				&.link_chatbot:before {
+					background-position: -106px -53px;
+				}
+			}
+			&:last-child{
+				border-bottom:0;
+			}
+		}
+	}
+	.sale_mycar_qna {
+		margin-top: 10px;
+		padding:40px 21px;
+		background: $COL_WHITE;
+		border-top: 1px solid $COL_BG_Light02;
+		strong {
+			display: block;
+			@include Mix_Font('Txt-M', 15, 24);
+		}
+		ul {
+			margin-top: 16px;
+			padding-top: 16px;
+			border-top: 1px solid $COL_Gray14;
+		}
+		li {
+			margin-top: 19px;
+			a {
+				display: block;
+				position: relative;
+				padding-right: 20px;
+				color: $COL_Text_Base04;
+				@include Mix_Font('Txt-R', 14, 23);
+				&::after{
+					content:'';
+					display:block;
+					position:absolute;
+					top:50%;
+					right:0;
+					width:7px;
+					height:12px;
+					@include Mix_Sale_Bg;
+					background-position: -270px 0;
+					transform:translateY(-50%);
+				}
+			}
+			&:first-child{
+				margin-top: 0;
+			}
+		}
+		.btn_mid02 {
+			margin-top: 30px;
+		}
+	}
+	.sale_mycar_notice {
+		padding: 30px 21px;
+		background-color: $COL_BG_Light01;
+		strong {
+			display: block;
+			@include Mix_Font('Txt-M', 15, 24);
+		}
+		.notice_04 {
+			margin-top: 16px;
+		}
+	}
+}
+/* 내차팔기 진행중 팝업 */
+.sale_macar_proceeding {
+	padding: 52px 0 30px;
+	background-color: $COL_BG_Light01;
+	.title {
+		padding: 0 21px;
+		strong {
+			@include Mix_Font('Head-R', 18, 25);
+		}
+		p {
+			margin-top: 10px;
+			color: $COL_Text_Base03;
+		}
+	}
+	.sale_slide_item {
+		padding-bottom: 0;
+	}
+}
+/* 내차팔기 불가 차량안내 팝업 */
+.CPOpop_full .sale_mycar_impossible {
+	padding-bottom: 96px;
+}
+.sale_mycar_impossible {
+	padding: 0 15px 40px;
+	.noData {
+		padding: 20px 6px 0;
+		& + .box_info {
+			margin-top: 40px;
+		}
+	}	
+	.box_info {
+		padding: 18px 20px 0;
+		background-color: $COL_BG_Light01;
+		.title {
+			display: block;
+			margin-bottom: 15px;
+			padding: 7px 0 15px;
+			border-bottom: 1px solid $COL_Line_Light01;
+			@include Mix_Font('Head-R', 15, 24);
+			& + .info_cont {
+				padding: 0 0 30px;
+			}
+		}
+		.sub_title {
+			display: block;
+			margin-bottom: 6px;
+			@include Mix_Font('Head-R', 14, 18);
+		}
+		.info_cont {
+			padding-bottom: 18px;
+			p {
+				@include Mix_Font('Txt_R', 13, 20);
+				color: $COL_Text_Base02;
+				word-break: keep-all;
+			}
+		}
+		& + .box_info {
+			margin-top: 15px
+		}
+		.notice_04 {
+			li {
+				@include Mix_Font('Txt-M', 12, 20);
+				color: $COL_Text_Base01;
+			}
+		}
+	}
+}
+
+/* 출고 당시 옵션 팝업 */
+.shipping_option_wrap {
+	padding: 20px 25px 0;
+	.option_list {
+		color: $COL_Text_Base03;
+		@include Mix_Font('Txt-R', 13, 21);
+	}
+	dt {
+		margin-top: 14px;
+		@include Mix_Font('Txt-M', 13, 21);
+		&:first-child{
+			margin-top: 0;
+		}
+	}
+	dd {
+		margin-top: 4px;
+	}
+}
+
+/* 보험 이력 안내 팝업 */
+.insurance_history_wrap {
+	padding: 52px 15px 30px;
+	background-color: $COL_BG_Light01;
+	color: $COL_Text_Base03;
+	.insurance_summary {
+		padding: 0 6px;
+		strong {
+			display: block;
+			@include Mix_Font('Head-R', 18, 25);
+			color: $COL_Text_Base04;
+			i {
+				position: relative;
+				&:before {
+					content: '';
+					display: block;
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					width: 100%;
+					height: 2px;
+					background-color: $COL_Secondary01;
+				}
+			}
+		}
+		p {
+			margin-top: 10px;
+			@include Mix_Font('Txt-R', 14, 23);
+		}
+	}
+	.insurance_history_list {
+		margin-top: 30px;
+		padding: 0 20px;
+		background-color: $COL_WHITE;
+		strong {
+			display: block;
+			padding: 20px 0 16px;
+			@include Mix_Font('Txt-M', 15, 24);
+			border-bottom: 1px solid $COL_BG_Light02;
+		}
+		ul {
+			padding: 16px 0 20px;
+		}
+		li {
+			overflow: hidden;
+			margin-top: 8px;
+			color: $COL_Text_Base03;
+			.date {
+				float: left;
+				@include Mix_Font('Txt-M', 13, 21);
+			}
+			.price {
+				float: right;
+				@include Mix_Font('Txt-R', 12, 20);
+			}
+			&:first-child{
+				margin-top: 0;
+			}
+		}
+	}	
+}

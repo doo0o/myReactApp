@@ -1,0 +1,133 @@
+@import '../_common/g_function';
+@import '../_common/g_mixins';
+
+/* 서류안내,등록[Layer] */
+section.bg_line {
+    position: relative;
+    &::before {
+        @include Mix_Space_Bar;
+    }
+    > .caution {
+        padding: 40px 21px 0;
+    }
+}
+section.top_txt {
+    .type01 {
+        @include Mix_Font('Head-L', 24, 32);
+    }
+    .type02 {
+        margin-top: 12px;
+        color: map-get($COL_Base_04 , "bg_light");
+        word-break: keep-all;
+        @include Mix_Font('Txt-R', 14, 22);
+    }
+    .caution {
+        margin-top: 10px;
+    }
+    .error_msg {
+		position: relative;
+		margin: 0 -6px 30px;
+		padding: 20px 20px 20px 48px;
+		background-color: map-get($COL_Box_01 , "bg_light");
+		@include Mix_Font('Txt-M', 12, 19);
+		&::after {
+			content: '';
+			position: absolute;
+			width: 18px;
+			height: 18px;
+			top: 50%;
+			left: 20px;
+			transform:translateY(-50%);
+			@include Mix_Mypage_Bg;
+			background-position:-253px -60px;
+		}
+	}
+}
+.document_cont {
+    .top_txt {
+        margin: 25px 21px 30px;
+    }
+    .bg_line {
+        padding: 38px 15px 0;
+        .sec_tit {
+            margin-left: 6px;
+            margin-bottom: 15px;
+        }
+    }
+    .list_type01 {
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: 1px solid map-get($COL_Box_02 , "bg_light");
+        dl {
+            margin-bottom: 30px;
+            dt{
+                margin-bottom: 6px;
+                @include Mix_Font('Head-R', 15, 20);
+            }
+            dd {
+                color: map-get($COL_Base_04 , "bg_light");
+            }
+        }
+        dl.sample {
+            display: none;
+        }
+    }
+    .list_type02 {
+        &:not(:last-of-type) {
+            margin-bottom: 40px;
+        }
+        dl {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 25px 20px;
+            background-color: map-get($COL_Box_01 , "bg_light");
+            &:not(:first-child) {
+                margin-top: 10px;
+            }
+            dt {
+                @include Mix_Font('Txt-M', 15, 24);
+            }
+        }
+        ul {
+            margin-top: -10px;
+            padding: 0 20px 25px;
+            background-color: map-get($COL_Box_01 , "bg_light");
+            li {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding-top: 15px;
+                &:first-child {
+                    border-top: 1px solid map-get($COL_Line_01 , "bg_light");
+                }
+                .file_name {
+                    flex: 1 80%;
+                    margin-right: 15px;
+					@include Mix_Ellipsis01;
+					text-align: left;
+                    color: map-get($COL_Base_04 , "bg_light");
+                    &::before {
+                        content: '';
+                        display: inline-block;
+                        width: 15px;
+                        height: 15px;
+                        margin-right: 6px;
+                        margin-top: -2px;
+                        vertical-align: middle;
+                        @include Mix_Order_Bg(-116px -35px);
+                    }
+                }
+                .noti_txt{
+                    @include Mix_Font('Txt-R', 11, 18);
+					color:map-get($COL_Red , "bg_light");;
+					margin:4px 0 0 20px;
+				}
+            }
+        }
+        & +.caution {
+			margin-top: -10px;
+			padding: 0 6px;
+		}
+    }
+}

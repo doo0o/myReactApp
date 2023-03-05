@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>고객센터</title>
+	<!--#include file="/HMC/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_cscenter.css">
+</head>
+<body>
+<!--#include file="/HMC/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--#include file="/HMC/SHTML/H_inc/layout_header.shtml"-->
+		<!--  s: title area : SUB  -->
+		<div class="h_sub ">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h3 class="tit">1:1 문의</h3>
+		</div>
+		<!--  e: title area : SUB  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="registration_wrap">
+			<ul class="form_type02">
+				<li>
+					<!-- [수정-SELECT] 2022-03-25 --><!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+					<button type="button" class="btn_sel01 jQ_Select" id="SelectQna" data-id="" data-popup="Select-QNA-Layer">문의 유형을 선택해주세요.</button>
+					<!-- Layer -->
+					<div class="CPOpop_bottom select" id="Select-QNA-Layer">
+						<div class="p_head">
+							<h5 class="tit">문의 유형을 선택해주세요.</h5>
+						</div>
+						<div class="p_wrap">
+							<!-- list -->
+							<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+								<li><input type="radio" class="chk_type09" name="SelectQna_Name" id="SelectQna01"><label for="SelectQna01">앱 이용문의</label></li>
+								<li><input type="radio" class="chk_type09" name="SelectQna_Name" id="SelectQna02"><label for="SelectQna02">이벤트</label></li>
+								<li><input type="radio" class="chk_type09" name="SelectQna_Name" id="SelectQna03"><label for="SelectQna03">취소/환불/반품</label></li>
+								<li><input type="radio" class="chk_type09" name="SelectQna_Name" id="SelectQna04"><label for="SelectQna04">AS</label></li>
+								<li><input type="radio" class="chk_type09" name="SelectQna_Name" id="SelectQna05"><label for="SelectQna05">회원/정보관리</label></li>
+								<li><input type="radio" class="chk_type09" name="SelectQna_Name" id="SelectQna06"><label for="SelectQna06">주문/결제</label></li>
+								<li><input type="radio" class="chk_type09" name="SelectQna_Name" id="SelectQna07"><label for="SelectQna07">홈서비스</label></li>
+								<li><input type="radio" class="chk_type09" name="SelectQna_Name" id="SelectQna08"><label for="SelectQna08">영수증/증빙서류</label></li>
+								<li><input type="radio" class="chk_type09" name="SelectQna_Name" id="SelectQna09"><label for="SelectQna09">내차팔기</label></li>
+								<li><input type="radio" class="chk_type09" name="SelectQna_Name" id="SelectQna10"><label for="SelectQna10">기타</label></li>
+							</ol>
+							<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectQna 변경 내용 적용  -->
+								<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectQna">적용하기</button>
+							</div>
+							<!-- //list -->
+						</div>
+						<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+					</div>
+					<!-- [수정-SELECT] 2022-03-25 -->
+				</li>
+				<!--주문 / 결제 옵션 선택했을 시 노출-->
+				<li>
+					<div class="select_product">
+						<strong>문의 차량 선택</strong>
+						<button type="button" class="btn_2icon02" data-popup="FO-CS-MS0007">차량 조회하기</button><!-- S : [CPO-1210 : 디자인검수2차] -->
+					</div>
+
+					<!--상품 선택 완료했을 시 노출_case1-->
+					<div class="unit_item small">
+						<div class="unit_top">
+							<span class="tit">결제진행중</span>
+							<span class="num">2109012200000000</span>
+						</div>
+
+						<div class="unit_mid">
+							<div class="unit_img"><img src="/HMC/img/@thumb/plp_310x310_01.jpg" alt="상품명으로 뿌려주세요"></div>
+							<div class="unit_info">
+								<p class="name">
+									<span class="model">쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼</span>
+								</p>
+								<span class="price"><em>3,820</em><i>만원</i></span>
+							</div>
+						</div>
+
+						<button type="button" class="btn_del01">삭제</button>
+					</div>	
+
+					<!--상품 선택 완료했을 시 노출_case2-->
+					<div class="unit_item small">
+						<div class="unit_top">
+							<span class="tit">견적요청중</span>
+							<span class="num">2109012200000000</span>
+						</div>
+
+						<div class="unit_mid">
+							<div class="unit_img"><img src="/HMC/img/@thumb/plp_310x310_01.jpg" alt="상품명으로 뿌려주세요"></div>
+							<div class="unit_info">
+								<p class="num"><span>12가1234</span></p>
+								<p class="name">
+									<span class="model">판매내역 선택 케이스</span>
+								</p>
+								<span class="price"><em>3,820</em><i>만원</i></span>
+							</div>
+						</div>
+
+						<button type="button" class="btn_del01">삭제</button>
+					</div>	
+				</li>
+				
+				<li>
+					<div class="inbox_type03"><!-- value 값 있는 경우 on -->
+						<span class="tit">문의제목 입력</span>
+						<input type="text" class="txt" title="예금주 입력" name="" >
+					</div>
+				</li>
+				<li>
+					<!-- textarea -->
+					<div class="review_textarea">
+						<span class="tit">상세 문의 입력</span>
+						<textarea id="review_text" placeholder="질문의 내용을 상세히 입력해 주시면 정확한 답변을 드리는데 도움이 됩니다." rows="4" cols="21" role="textbox"></textarea>
+						<span class="txt_check"><em class="first">0</em> / <em class="last">1000</em>자</span>
+					</div>
+					<!-- textarea -->
+				</li>
+			</ul>
+			
+			<!-- 파일 업로드 -->
+			<div class="addphoto_list">
+				<dl class="on">
+					<dt>
+						<input type="file" id="CarPhotoMore" class="file_morephoto" data-file="imgList01" data-item="5" multiple /><!-- data-item 에 최대 등록 수량 -->
+						<label for="CarPhotoMore">
+							<span class="t01">사진 추가하기</span>
+							<span class="t02"><em id="imgList01no">0</em> / 5</span><!-- S : [CPO-1210 : 디자인검수2차] -->
+						</label>
+					</dt>
+					<dd>
+						<ol class="list" id="imgList01"></ol>
+					</dd>
+				</dl>
+				<p class="notice_addphoto">이미지는 최대 5개까지 등록 가능합니다.</p>
+			</div>
+			<!-- 파일 업로드 -->
+			
+			<div class="box_alarm">
+				<input type="checkbox" name="chk_comm" id="alarm" class="chk_type01"><label for="alarm">알림톡/문자로 알림 받기[선택]</label>
+			</div>
+		</div>
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01" title="등록하기">등록하기</button>
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HMC/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/HMC/SHTML/H_inc/popup_include_all.shtml"-->
+
+<script>
+	$(document).ready(function(){
+		$(".btn_icon01").on("click",function(){
+			CPO.POPUP_open($(this));
+		});
+		FRM.ImgUpload02();// 추가 등록 사진 file upload
+
+	});
+</script>
+</body>
+</html>

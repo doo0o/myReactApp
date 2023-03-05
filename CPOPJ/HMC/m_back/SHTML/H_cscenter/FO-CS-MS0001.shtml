@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>고객센터</title>
+	<!--#include file="/HMC/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_cscenter.css">
+</head>
+<body class="fixed" style="overflow: hidden;">
+<!--#include file="/HMC/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap" class="CPOcscenter">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--#include file="/HMC/SHTML/H_inc/layout_header.shtml"-->
+		<!--  s: title area : SUB  -->
+		<div class="h_sub ">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h3 class="tit">고객센터</h3>
+			<ul class="util">
+				<li><a href="#" class="ic_cart">장바구니</a></li>
+			</ul>
+		</div>
+		<!--  e: title area : SUB  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+
+		<!-- 검색 영역 -->
+        <div class="search_wrap">
+            <div class="user_info">
+				<div class="txt_welcome">
+					<strong>박보은 고객님, <br/>챗봇 <i>에어스</i>가 도와드릴게요.</strong>
+				</div>
+				
+				<div class="box_search">
+					<strong><i>에어스</i>에게 무엇이든 물어보세요</strong>
+
+					<div class="int_search">
+						<input type="text" placeholder="결제수단을 변경하고 싶어요"/>
+						<button type="button"><span class="hidden">검색</span></button>
+					</div>
+				</div>
+            </div>
+
+            <div class="box_gif">
+                <img src="/HMC/img/chatbot_loading.png" alt="" />
+            </div>
+		</div>
+
+        <!-- 챗봇 리스트 -->
+		<div class="chatbot_list">
+			<div class="chat_item chatbot">
+				<div class="bubble_box">
+					<div class="bubble">
+						안녕하세요. <br/> 거래중인 차량 문의가 있으신가요?
+					</div>
+				</div>
+			</div>
+
+			<!-- 유저 내역_내역 있음_다중 케이스 -->
+			<div class="chat_item user">
+				<div class="box_tab">
+					<button type="button" class="active">구매내역</button>
+					<button type="button">판매내역</button>
+				</div>
+				<div class="tab_container">
+					<!-- 구매내역 탭 -->
+					<div class="tab_conts active">
+						<!-- swiper list -->
+						<div class="swiperType01" data-swiper-space="15">
+							<ol class="swiper-wrapper">
+								<li class="swiper-slide">
+									<div class="unit_item small">
+										<div class="unit_top">
+											<span class="tit">결제진행중</span>
+											<span class="num">2109012200000000</span>
+										</div>
+										<div class="unit_mid">
+											<div class="unit_img"><img data-src="/HMC/img/@thumb/plp_310x310_01.jpg" class="cpo_lazy_v" alt="" /></div>
+											<div class="unit_info">
+												<p class="name">
+													<span class="model">쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼</span>
+												</p>
+												<span class="price"><em>3,820</em><i>만원</i></span>
+											</div>
+										</div>
+										<div class="unit_bot">
+											<button type="button">챗봇으로 문의하기</button>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="unit_item small">
+										<div class="unit_top">
+											<span class="tit">결제진행중</span>
+											<span class="num">2109012200000000</span>
+										</div>
+										<div class="unit_mid">
+											<div class="unit_img"><img data-src="/HMC/img/@thumb/plp_310x310_01.jpg" class="cpo_lazy_v" alt="" /></div>
+											<div class="unit_info">
+												<p class="name">
+													<span class="model">쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼</span>
+												</p>
+												<span class="price"><em>3,820</em><i>만원</i></span>
+											</div>
+										</div>
+										
+										<div class="unit_bot">
+											<button type="button">챗봇으로 문의하기</button>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="unit_item small">
+										<div class="unit_top">
+											<span class="tit">결제진행중</span>
+											<span class="num">2109012200000000</span>
+										</div>
+										<div class="unit_mid">
+											<div class="unit_img"><img data-src="/HMC/img/@thumb/plp_310x310_01.jpg" class="cpo_lazy_v" alt="" /></div>
+											<div class="unit_info">
+												<p class="name">
+													<span class="model">쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼</span>
+												</p>
+												<span class="price"><em>3,820</em><i>만원</i></span>
+											</div>
+										</div>
+										<div class="unit_bot">
+											<button type="button">챗봇으로 문의하기</button>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<button type="button" class="btn_all" data-popup="FO-CS-MS0008" data-tab="0"><span>구매내역 전체보기</span></button>
+								</li>
+							</ol>
+							<div class="swiper-pagination"></div>
+						</div>
+						<!-- //swiper list -->
+					</div>
+					<!-- 판매내역 탭 -->
+					<div class="tab_conts">
+						<!-- swiper list -->
+						<div class="swiperType01" data-swiper-space="15">
+							<ol class="swiper-wrapper">
+								<li class="swiper-slide">
+									<div class="unit_item small">
+										<div class="unit_top">
+											<span class="tit">견적요청중</span>
+											<span class="num">2109012200000000</span>
+										</div>
+										<div class="unit_mid">
+											<div class="unit_img"><img data-src="/HMC/img/@thumb/plp_310x310_01.jpg" class="cpo_lazy_v" alt="" /></div>
+											<div class="unit_info">
+												<p class="num"><span>12가1234</span></p>
+												<p class="name">
+													<span class="model">쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼</span>
+												</p>
+												<span class="price"><em>3,820</em><i>만원</i></span>
+											</div>
+										</div>
+										
+										<div class="unit_bot">
+											<button type="button">챗봇으로 문의하기</button>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="unit_item small">
+										<div class="unit_top">
+											<span class="tit">견적요청중</span>
+											<span class="num">2109012200000000</span>
+										</div>
+										<div class="unit_mid">
+											<div class="unit_img"><img data-src="/HMC/img/@thumb/plp_310x310_01.jpg" class="cpo_lazy_v" alt="" /></div>
+											<div class="unit_info">
+												<p class="num"><span>12가1234</span></p>
+												<p class="name">
+													<span class="model">쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼</span>
+												</p>
+												<span class="price"><em>3,820</em><i>만원</i></span>
+											</div>
+										</div>
+										<div class="unit_bot">
+											<button type="button">챗봇으로 문의하기</button>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<button type="button" class="btn_all" data-popup="FO-CS-MS0008" data-tab="1"><span>판매내역 전체보기</span></button>
+								</li>
+							</ol>
+							<div class="swiper-pagination"></div>
+						</div>
+						<!-- //swiper list -->
+					</div>
+				</div>
+			</div>
+
+			<!-- 유저 내역_내역 있음_단일 케이스 -->
+			<div class="chat_item user">
+				<div class="box_tab">
+					<button type="button" class="active">구매내역</button>
+					<button type="button">판매내역</button>
+				</div>
+				<div class="tab_container">
+					<!-- 구매내역 탭 -->
+					<div class="tab_conts active">
+						<!-- swiper list -->
+						<div class="swiperType01" data-swiper-space="15">
+							<ol class="swiper-wrapper">
+								<li class="swiper-slide">
+									<div class="unit_item small">
+										<div class="unit_top">
+											<span class="tit">결제진행중</span>
+											<span class="num">2109012200000000</span>
+										</div>
+										<div class="unit_mid">
+											<div class="unit_img"><img data-src="/HMC/img/@thumb/plp_310x310_01.jpg" class="cpo_lazy_v" alt="" /></div>
+											<div class="unit_info">
+												<p class="name">
+													<span class="model">쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼</span>
+												</p>
+												<span class="price"><em>3,820</em><i>만원</i></span>
+											</div>
+										</div>
+										<div class="unit_bot">
+											<button type="button">챗봇으로 문의하기</button>
+										</div>
+									</div>
+								</li>
+							</ol>
+							<div class="swiper-pagination"></div>
+						</div>
+						<!-- //swiper list -->
+					</div>
+					<!-- 판매내역 탭 -->
+					<div class="tab_conts">
+						<!-- swiper list -->
+						<div class="swiperType01" data-swiper-space="15">
+							<ol class="swiper-wrapper">
+								<li class="swiper-slide">
+									<div class="unit_item small">
+										<div class="unit_top">
+											<span class="tit">견적요청중</span>
+											<span class="num">2109012200000000</span>
+										</div>
+										<div class="unit_mid">
+											<div class="unit_img"><img data-src="/HMC/img/@thumb/plp_310x310_01.jpg" class="cpo_lazy_v" alt="" /></div>
+											<div class="unit_info">
+												<p class="num"><span>12가1234</span></p>
+												<p class="name">
+													<span class="model">쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼</span>
+												</p>
+												<span class="price"><em>3,820</em><i>만원</i></span>
+											</div>
+										</div>
+										
+										<div class="unit_bot">
+											<button type="button">챗봇으로 문의하기</button>
+										</div>
+									</div>
+								</li>
+								<li class="swiper-slide">
+									<div class="unit_item small">
+										<div class="unit_top">
+											<span class="tit">견적요청중</span>
+											<span class="num">2109012200000000</span>
+										</div>
+										<div class="unit_mid">
+											<div class="unit_img"><img data-src="/HMC/img/@thumb/plp_310x310_01.jpg" class="cpo_lazy_v" alt="" /></div>
+											<div class="unit_info">
+												<p class="num"><span>12가1234</span></p>
+												<p class="name">
+													<span class="model">쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼</span>
+												</p>
+												<span class="price"><em>3,820</em><i>만원</i></span>
+											</div>
+										</div>
+										
+										<div class="unit_bot">
+											<button type="button">챗봇으로 문의하기</button>
+										</div>
+									</div>
+								</li>
+							</ol>
+							<div class="swiper-pagination"></div>
+						</div>
+						<!-- //swiper list -->
+					</div>
+				</div>
+			</div>
+
+			<!-- 유저 내역_내역 없음 -->
+			<div class="chat_item user">
+				<div class="box_tab">
+					<button type="button" class="active">구매내역</button>
+					<button type="button">판매내역</button>
+				</div>
+				<div class="tab_container">
+					<!-- 구매내역 탭 -->
+					<div class="tab_conts active">
+						<!-- swiper list -->
+						<div class="swiperType01" data-swiper-space="15">
+							<ol class="swiper-wrapper">
+								<li class="swiper-slide">
+									<div class="box_no_data">
+										<p>최근 구매한 차량이 없습니다.</p>
+										<button type="button" class="btn_history"  data-tab="0" data-popup="FO-CS-MS0008" >과거 내역 확인하기</button>
+									</div>
+								</li>
+							</ol>
+							<div class="swiper-pagination"></div>
+						</div>
+						<!-- //swiper list -->
+					</div>
+					<!-- 판매내역 탭 -->
+					<div class="tab_conts">
+						<!-- swiper list -->
+						<div class="swiperType01" data-swiper-space="15">
+							<ol class="swiper-wrapper">
+								<li class="swiper-slide">
+									<div class="box_no_data">
+										<p>최근 판매한 차량이 없습니다.</p>
+										<button type="button" class="btn_history"  data-tab="1" data-popup="FO-CS-MS0008" >과거 내역 확인하기</button>
+									</div>
+								</li>
+							</ol>
+							<div class="swiper-pagination"></div>
+						</div>
+						<!-- //swiper list -->
+					</div>
+				</div>
+			</div>
+
+			<!--faq-->
+			<div class="chat_item chatbot">
+				<div class="bubble_box">
+					<div class="bubble">
+						무엇을 찾으시나요?<br/>챗봇 에어스에게 물어보세요
+					</div>
+				</div>
+
+				<div class="box_faq">
+					<button type="button" class="btn_link01"><span>내 차 사기</span></button>
+					<button type="button" class="btn_link02"><span>내 차 팔기</span></button>
+					<button type="button" class="btn_link03"><span>결제문의</span></button>
+					<button type="button" class="btn_link04"><span>결제문의</span></button>
+					<button type="button" class="btn_link05"><span>앱 오류문의</span></button>
+					<button type="button" class="btn_link06"><span>이용문의</span></button>
+				</div>
+			</div>
+
+			<!--자주묻는 질문 전시코너-->
+			<div class="chat_item chatbot">
+				<div class="bubble_box">
+					<div class="bubble">
+						자주 묻는 질문이에요
+						<span>2022. 02. 20 기준</span>
+					</div>
+				</div>
+
+				<div class="box_questions">
+					<button type="button" class="btn_link">#법인구매</button>
+					<button type="button" class="btn_link">#홈서비스가 뭔가요???????</button>
+					<button type="button" class="btn_link">#구매포인트 적립</button>
+					<button type="button" class="btn_link">#배송지 변경</button>
+					<button type="button" class="btn_link">#개인정보 변경</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- 문의 링크 -->
+		<div class="box_links">
+			<strong>현대 CPO 전문 상담사에게 <br/>자세한 문의를 하고 싶다면?</strong>
+			<a href="#" class="btn_mid01">1:1 문의 등록 하기</a>
+			<a href="#" class="btn_mid02">나의 문의 내역 보기</a>
+		</div>
+
+		<!-- 서비스안내 -->
+		<div class="box_service">
+			<div class="inner">
+				<strong class="title">현대CPO,<br/>무엇이 특별할까요?</strong>
+				
+				<!-- swiper list -->
+				<div class="swiperType02">
+					<ol class="swiper-wrapper">
+						<li class="swiper-slide">
+							<a href="#" class="link_banner">
+								<img src="/HMC/img/@thumb/bo_720x721_01.jpg" alt="" />
+								<span>우리 대표님 법인차량 <br/>CPO 인증으로 안전구매!</span>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" class="link_banner">
+								<img src="/HMC/img/@thumb/bo_720x721_01.jpg" alt="" />
+								<span>우리 대표님 법인차량 <br/>CPO 인증으로 안전구매!</span>
+							</a>
+						</li>
+						<li class="swiper-slide">
+							<a href="#" class="link_banner">
+								<img src="/HMC/img/@thumb/bo_720x721_01.jpg" alt="" />
+								<span>우리 대표님 법인차량 <br/>CPO 인증으로 안전구매!</span>
+							</a>
+						</li>
+					</ol>
+					<div class="swiper-pagination"></div>
+				</div>
+				<!-- //swiper list -->
+			</div>
+		</div> 
+
+		<!-- 공지사항 -->
+		<div class="box_notice">
+			<div class="inner">
+				<strong class="title">현대 CPO의 소식을 확인하세요!</strong>
+				<ul>
+					<li><a href="#">[공지사항] 블루포인트 결제 시 4천원 적립 안내블루포인트 결제 시 4천원 적립 안내</a></li>
+					<li><a href="#">[공지사항] 블루포인트 결제 시 4천원 적립 안내</a></li>
+					<li><a href="#">[공지사항] 블루포인트 결제 시 4천원 적립 안내</a></li>
+				</ul>
+
+				<a href="#" class="btn_mid02">공지사항 전체 보기</a>
+			</div>
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HMC/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/HMC/SHTML/H_inc/popup_include_all.shtml"-->
+<script>
+	$(document).ready(function(){
+		var winH = $(window).innerHeight();
+		var $user = $('.user_info');
+		var $gif = $('.box_gif');
+		var $chatbot = $('.chatbot_list');
+		var $userOffset = $user.offset().top;
+		var $height = $chatbot.find('.chat_item').eq(0).height();
+
+		//팝업 호출 ------ 호출시 해당 탭에 해당하는 부분 trigger
+		$(".btn_history, .btn_all").on("click",function(){
+			var tab = $(this).data('tab');
+			var layerTarget = $(`#${$(this).data('popup')}`);
+			CPO.POPUP_open($(this));
+			layerTarget.find('.product_history .cpo_tab01 li').eq(tab).find('a').trigger('click');
+		});
+		/* 구매내역 탭이동 */
+		$('.box_tab button').on('click',function(e){
+			var _this = $(this);
+			var idx = _this.index();
+			var tabConts = _this.parents('.box_tab').siblings('.tab_container');
+			_this.addClass('active').siblings().removeClass('active')
+			tabConts.find('.tab_conts').eq(idx).addClass('active').siblings().removeClass('active')
+		})
+		
+
+		//상단 화면 액션용 스크립트		
+		//상단 gif 위치 설정용 디바이스 높이 설정.
+		$('.search_wrap').css('height', `${winH - 50}px`);
+
+		//처음 시작후 화면 높이가 잡혀있지 않아 셋타임으로 노출
+		setTimeout(function(){$gif.css('opacity', 1)}, 10);
+
+		function startEvent() {	
+			$('.CPOcscenter').addClass('active');
+			$chatbot.css('margin-top' , `-${$height + 10}px`)
+			$('body').removeAttr('style');
+		}
+
+		setTimeout(startEvent, 1000);
+
+		// chatlist 정지위치 계산
+		//chatList offset.top값 - .user_info 높이값 - .user_info css top값
+		var chatListTop = Math.round( $chatbot.offset().top) - ($height + 15) - $user.outerHeight() - 110;
+		
+		$(window).on('scroll', function(e){
+			var scrTop = $(this).scrollTop();
+			if($userOffset < scrTop) {
+				$('.search_wrap').addClass('active')
+			} 
+			if(chatListTop < scrTop) {
+				$('.search_wrap').addClass('static')
+				$('.user_info').css('top', `${chatListTop + 60}px` )
+			} else {
+				$('.search_wrap').removeClass('static')
+				$('.user_info').css('top', `110px` )
+			}
+		})
+	});
+</script>
+</body>
+</html>

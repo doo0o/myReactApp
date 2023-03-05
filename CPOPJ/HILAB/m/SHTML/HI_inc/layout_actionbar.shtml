@@ -1,0 +1,11 @@
+<!-- s: actionbar -->
+<div id="HIactionbar">
+	<ul>
+		<li class="ac_home on"><a href="#">HOME</a></li>
+		<li class="ac_saerch"><a href="/HMC/m/SHTML/H_search/FO-PL-MS0017.shtml">SEARCH</a></li>
+		<li class="ac_lab"><a href="#">중고차 연구소</a></li>
+		<li class="ac_mypage"><a href="#">MY</a></li>
+		<li class="ac_wish"><a href="#" class="on">LIKE</a></li>
+	</ul>
+</div>
+<!-- e: actionbar -->

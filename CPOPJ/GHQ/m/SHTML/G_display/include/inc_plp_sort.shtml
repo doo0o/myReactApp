@@ -1,0 +1,15 @@
+<!-- 전체수량 -->
+<div class="plp_sorting top_total">
+	<span class="all">전체 <em>20대</em></span>
+	<ul class="box_sort">
+		<li>
+			<button type="button" class="btn_sort jQ_Select" id="PlpSort01" data-id="PlpSort01" data-popup="PlpSort01-Layer">인기순</button>
+			<!-- sorting Layer -->
+			<!--#include file="/GHQ/m/SHTML/G_display/include/inc_plp_sorting_layer.shtml"-->
+			<!-- sorting Layer -->
+		</li>
+		<li><button type="button" class="btn_deal" id="plpViewType" data-ref="plpViewList">1단으로 보기</button></li> <!-- 1차 오픈 시 display none -->
+		<li><button type="button" class="btn_filter jQ_Pop_Open" data-popup="FO-PL-MS0019">상세조건 변경</button></li>
+	</ul>
+</div>
+<!-- //전체수량 -->	

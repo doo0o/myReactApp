@@ -1,0 +1,735 @@
+@charset 'utf-8';
+
+@import '../_common/h_function';
+@import '../_common/h_mixins';
+
+
+.date-picker-wrap{
+	position: relative;
+	display: inline-block;
+}
+// 달력/* DatePicker Container */
+.ui-datepicker{
+	width: 260px;
+	padding: 16px 8px 8px;
+	display: none;
+	position: absolute !important;
+	z-index: 3001 !important;
+	top: auto !important;
+	left:0 !important;
+	height:auto;
+	background-color:$COL_white;
+	border: 1px solid $COL_secondary1;
+	a{
+		text-decoration:none;
+	}
+	thead{
+		th{
+			padding-bottom: 8px;
+			background-color:$COL_white;
+			color: $COL_gs02;
+			@include fontH(13);
+			text-align: center;
+		}
+	}
+	tbody{
+		td{
+			padding-bottom:4px;
+			text-align:center;
+			&:last-child{
+				border-right:0px;
+			}
+			&.ui-state-disabled{
+				.ui-state-default{
+					color: $COL_gs03;
+					@include fontH(15,32px);
+				}
+				&.ui-state-active{
+					@include fontHM(15,32px);
+					background-color: $COL_gs06 !important;
+				}
+				&.ui-state-hover{
+					&::before{
+						background-color: $COL_gs03;
+					}
+				}
+			}
+			.ui-state-default{
+				position: relative;
+				display:inline-block;
+				width:32px;
+				height:32px;
+				border-radius:100%;
+				color:$COL_black;
+				@include fontHM(15,32px);
+				text-align:center;
+			}
+			.ui-state-hover{
+				&::before{
+					content: "";
+					position: absolute;
+					bottom: 2px;
+					left: 50%;
+					transform: translateX(-50%);
+					display: block;
+					width: 50%;
+					height: 1px;
+					background-color: black;
+				}
+			}
+		}
+		& > tr:last-child{
+			td{
+				padding: 0;
+			}
+		}
+	}
+	.ui-datepicker-buttonpane {
+		height: 52px;
+	}
+	button.ui-datepicker-current{
+		display:none;
+	}
+	button.ui-datepicker-close:not(.ui-datepicker-del){
+		display: none;
+	}
+	.btnclose,
+	button.ui-datepicker-del{
+		display: none;
+	}
+	.ui-datepicker-header{
+		position: relative;
+		background:$COL_white;
+		color:$COL_black;
+		@include fontH(18);
+	}
+	.ui-datepicker-calendar{
+		margin-top: 16px;
+		@include fontT(15);
+		.ui-state-active{
+			position:relative;
+			margin:-1px;
+			background: $COL_secondary1 !important;
+			color:$COL_white !important;
+			&::before{
+				display: none;
+			}
+		}
+		td{
+			&:first-child .ui-state-active{
+				margin-left:0;
+			}
+			&:last-child .ui-state-active{
+				margin-right:0;
+			}
+		}
+	}
+	.ui-datepicker-today span, .ui-state-highlight{
+		// background:$COL_Line_Medium !important;
+		color:$COL_black !important;
+	}
+	.ui-datepicker-title{
+		text-align:center;
+		span{
+			color: $COL_black;
+			@include fontHM(18);
+			margin: 0;
+		}
+	}
+	.ui-datepicker-prev, .ui-datepicker-next{
+		display:inline-block;
+		position: absolute;
+		top: 50%;
+		width:30px;
+		height:30px;
+		text-align:center;
+		@include Icon_arrow($COL_black,$type:"right");
+		background-repeat:no-repeat;
+		line-height:600%;
+		overflow:hidden;
+		cursor:pointer;
+		font-size: 0;
+	}
+	.ui-datepicker-prev{
+		left: 0;
+		transform:translateY(-50%) rotate(180deg);
+	}
+	.ui-datepicker-next{
+		right: 0;
+		transform: translateY(-50%);
+	}
+	.ui-datepicker-unselectable .ui-state-default{
+		color:$COL_gs02;
+		margin: 0;
+		@include fontH(15,32px);
+	}
+}
+button.ui-datepicker-trigger{
+	position:absolute;
+	top:50%;
+	right:0;
+	width:100%;
+	height:100%;
+	font-size:0;
+	transform:translateY(-50%);
+}
+// 달력 : e
+
+// 방문평가 팝업 : s
+.visit_layer{
+	div.date-picker{
+		font-size: 0;
+	}
+	.ui-datepicker{
+		position: relative !important;
+		border: none;
+		width: 325.5px;
+		padding: 0 16px 16px;
+		thead{
+			th{
+				padding-bottom: 20px;
+			}
+		}
+		tbody{
+			.ui-state-default{
+				width: 35px;
+				height: 35px;
+				line-height: 35px;
+			}
+		}
+		.ui-datepicker-calendar{
+			margin-top: 24px;
+		}
+	}
+	.sec_tit{
+		margin-bottom: 16px;
+	}
+	.caution{
+		margin-top: 16px;
+	}
+	& > section:not(:first-child){
+		margin-top: 32px;
+		padding-top: 32px;
+		border-top:1px solid $COL_gs06;
+	}
+	.visit_selected{
+		.flex_box{
+			display: flex;
+		}
+		.calendar_wrap{
+			padding-right: 32px;
+		}
+		&.on{
+			.selected_time{
+				.form_area.box_type{
+					display: flex;
+				}
+			}
+			.bg_box{
+				color: $COL_hyundaiblue;
+			}
+		}
+		.selected_time{
+			width: 100%;
+			padding-left: 32px;
+			border-left: 1px solid $COL_gs06;
+			& > .no_sel_txt{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				@include fontT(14);
+				color: $COL_gs04;
+				height: 291px;
+			}
+			.form_area.box_type{
+				display: none;
+				li{
+					position: relative;
+					flex: initial;
+					width: calc(50% - 4px);
+					height: 48px;
+				}
+				.chk_block{
+					&:disabled{
+						& + label{
+							background-color: $COL_gs08;
+						}
+					}
+					& + label{
+						.txt{
+							@include fontH(15);
+						}
+						&::before{
+							display: none;
+						}
+					}
+				}
+				.chk_block:checked{
+					&:not(:disabled){
+						& + label .txt{
+							color: $COL_secondary1;
+						}
+					}
+				}
+			}
+			.no_select{
+				height: 100%;
+			}
+		}
+		.bg_box{
+			margin-top: 16px;
+			padding: 20px 0;
+			text-align: center;
+			@include fontHM(20);
+			color: $COL_gs04;
+			background-color: $COL_gs08;
+		}
+	}
+	.btn_area.col_type{
+		margin-top: 32px;
+	}
+}
+
+// 방문평가 팝업 : e
+
+// 명의이전완료 서류 정보 : s
+.change_info_layer_v{
+	.sec_tit{
+		.txt{
+			@include fontT(15);
+			
+		}
+	}
+	& > section:not(:first-child){
+		margin-top: 32px;
+	}
+
+	.box_type2{
+		margin-top: 16px;
+		& > li{
+			box-shadow: 0px 0px 5px rgba($COL_black, 0.02);
+			&:not(:first-child){
+				margin-top: 16px;
+			}
+		}
+		.chk_radio{
+			&:checked{
+				+ label{
+					border-color: $COL_secondary1;
+					.name{
+						color: $COL_black;
+					}
+					
+				}
+			}
+			+ label{
+				display: block;
+				padding: 24px 24px 24px 58px;
+				width: 100%;
+				height: 100%;
+				border: 1px solid $COL_gs05;
+				&::before{
+					top: 24px;
+					left: 24px;
+				}
+			}	
+		}
+	}
+	.name_info{
+		display: flex;
+		align-items: center;
+		padding-left: 8px;
+		&> span:last-child{
+			padding-left: 8px;
+		}
+		&> span:first-child{
+			position: relative;
+			padding-right: 9px;
+			&::before{
+				content: "";
+				position: absolute;
+				top: 50%;
+				right: 0;
+				display: block;
+				width: 1px;
+				height: 14px;
+				background-color: $COL_gs05;
+				transform: translateY(-50%);
+			}
+		}
+	}
+	.name{
+		@include fontTM(16);
+		color: $COL_gs03;
+		
+	}
+	.owner_name{
+		display: inline-block;
+		@include fontT(15);
+		color: $COL_gs03;
+	}
+	.address_txt{
+		margin-top: 4px;
+		@include fontT(15);
+	}
+
+	.send_adr{
+		.name_info{
+			margin-top: 16px;
+			padding: 0;
+			.name{
+				@include fontTM(16);
+				color: $COL_black;
+			}
+			.phone_num{
+				@include fontT(16);
+				color: $COL_gs02;
+			}
+		}
+		.caution{
+			margin-top: 8px;
+		}
+		.form_list{
+			margin-top: 8px;
+		}
+	}
+	.btn_area.col_type{
+		margin-top: 32px;
+	}
+}
+.change_info_layer{
+	.sec_tit{
+		margin-bottom: 16px;
+		.tit{
+			width: 166px;
+		}
+		.form_area{
+			flex:1;
+		}
+		.com_select_item{
+			@include fontT(16);
+		}
+		&.name_info{
+			justify-content: initial;
+			.tit{
+				width: auto;
+				position: relative;
+				padding-right: 9px;
+				&::before{
+					content: "";
+					position: absolute;
+					top: 50%;
+					right: 0;
+					display: block;
+					width: 1px;
+					height: 14px;
+					background-color: $COL_gs05;
+					transform: translateY(-50%);
+				}
+			}
+			.owner_name{
+				padding-left: 8px;
+				@include fontH(16);
+				em{
+					display: inline-block;
+					margin-left: 4px;
+					@include fontHM(16);
+				}
+			}
+		}
+	}
+	.inbox_type01 ~ .inbox_type01{
+		margin-top: 8px;
+	}
+	.caution{
+		margin-top: 16px;
+	}
+}
+// 명의이전완료 서류 정보 : e
+
+
+// 개인정보 제3자 제공동의 : s
+.agreement_layer{ 
+	& > section:not(:first-child){
+		margin-top: 24px;
+	}
+	
+	.txt{
+		@include fontT(13)
+	}
+	.depth1{
+		& > li {
+			&:not(:first-child){
+				margin-top: 24px;
+			}
+			& > .tit{
+				@include fontTM(16);
+				strong{
+					@include fontHM(16);
+				}
+			}
+		}
+	}
+	.depth2{
+		&:not(:first-child){
+			margin-top: 24px;
+		}
+		& > .tit{
+			margin-top: 4px;
+			@include fontT(16);
+		}
+		& > .depth3{
+			margin-top: 8px;
+			.tit{
+				@include fontT(16);
+				color: $COL_gs02;
+			}
+			.txt{
+				@include fontT(16);
+				color: $COL_gs03;
+			}
+		}
+	}
+	.btn_area.col_type{
+		margin-top: 32px;
+	}
+}
+// 개인정보 제3자 제공동의 : e
+
+
+// 전자서명방법, 서류등록 : e
+
+.info_layer{
+	.sub_text{
+		@include fontT(16);
+		color: $COL_gs03;
+	}
+	.select{
+		margin-top: 20px;
+	}
+	.name_info{
+		display: flex;
+		align-items: center;
+		&> span:last-child{
+			padding-left: 8px;
+		}
+		&> span:first-child{
+			position: relative;
+			padding-right: 9px;
+			&::before{
+				content: "";
+				position: absolute;
+				top: 50%;
+				right: 0;
+				display: block;
+				width: 1px;
+				height: 14px;
+				background-color: $COL_gs05;
+				transform: translateY(-50%);
+			}
+		}
+	}
+	.name{
+		@include fontTM(18);
+		color: $COL_hyundaiblue;
+		
+	}
+	.owner_name{
+		display: inline-block;
+		@include fontT(16);
+		color: $COL_gs03;
+	}
+
+	.radio_list{
+		display: flex;
+		& > li:first-child{
+			margin-right: 48px;
+		}
+	}
+	.info_tit{
+		@include fontTM(18);
+	}
+	.info_list{
+		margin-top: 20px;
+		border-top: 1px solid $COL_gs06;
+		padding-top: 20px;
+		& > li:not(:first-child){
+			margin-top: 20px;
+		}
+	}
+	.radio_cont{
+		margin-top: 16px;
+		& > .form_area{
+			display: none;
+		}
+	}
+	.btn_area.col_type{
+		margin-top: 32px;
+	}
+	
+	.gray_box{
+		margin-top: 20px;
+		padding: 0 20px;
+		background-color: $COL_gs08;
+	}
+	.add_list{
+		padding: 16px 0;
+		&:not(:first-child){
+			border-top: 1px solid $COL_gs06;
+		}
+		dl{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			dt{
+				@include fontTM(16);
+				color: $COL_gs02;
+			}
+		}
+		.file_list{
+			margin-top: 16px;
+			& > li{
+				position: relative;
+				display:flex;
+				align-items: center;
+				justify-content: space-between;
+				padding-left: 20px;
+				&:not(:first-child){
+					margin-top: 4px;
+				}
+				&::before{
+					content: "";
+					position: absolute;
+					left: 0;
+					top:50%;
+					transform: translateY(-50%);
+					display: block;
+					width: 16px;
+					height: 16px;
+					background: {
+						image : url(../img/icon/icon_ui_file03.svg);
+						repeat: no-repeat;
+					}
+				}
+				.file_name{
+					display: inline-block;
+					width: 90%;
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					color: $COL_gs02;
+				}
+				.btn_delete{
+					color: $COL_gs03;
+				}
+			}
+		}
+	}
+	.caution{
+		margin-top: 20px;
+	}
+	.btn_area.full_type{
+		margin-top: 32px;
+	}
+	.document_guide{
+		.sub_text{
+			margin-bottom: 24px;
+		}
+		.gray_box{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 16px;
+			margin-top: 32px;
+			.right{
+				.tit{
+					@include fontTM(15);
+				}
+				.txt{
+					@include fontT(14);
+					color: $COL_gs03 ;
+				}
+			}
+		}
+		.table_sec{
+			&:not(:first-child){
+				margin-top: 32px;
+			}
+			.caution{
+				margin-top: 16px;
+			}
+		}
+		.table_tit{
+			@include fontHM(18);
+			margin-bottom: 16px;
+		}
+		.table_img{
+			text-align: center;
+			img{
+				width: 358px;
+				height: 200px;
+			}
+			.txt{
+				margin-top: 8px;
+				color: $COL_gs02;
+				@include fontT(16);
+				em{
+					@include fontTM(16);	 
+				}
+			}
+		}
+	}
+}
+
+// 전자서명방법, 서류등록 : s 
+
+
+// ** 
+// * 판매 관리 팝업
+// ** 
+
+// 차량정보, 판매 계약 정보 : S
+.car_info_layer{
+	.sub_text{
+		@include fontT(16);
+		color: $COL_gs03;
+		margin-bottom: 24px;
+	}
+	section{
+		&:not(:first-child){
+			margin-top: 32px; 
+		}
+		.sec_tit{
+			margin-bottom: 16px;	
+		}
+	}
+	.car_photo_list{
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 12px;
+		& > li{
+			width : calc(20% - 8px);
+			&:not(:nth-child(5n+1)){
+				margin-left: 8px;
+			}
+			img{
+				width: 100%;
+			}
+			.txt{
+				margin-top: 4px;
+			}
+		}
+	}
+	.sub_tit{
+		@include fontH(16);
+		color: $COL_gs02;
+		margin-bottom: 16px;
+	}
+	.table{
+		td + td{
+			border-left: 1px solid $COL_gs06;
+		}
+	}
+}
+
+// 차량정보, 판매 계약 정보 : E

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>방문평가 신청</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_sale.css">
+</head>
+<body class="bg_color02">
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--  s: h_header  -->
+		<div class="h_header">
+			<h1 class="tit"><a href="#" class="ic_logo">현대</a></h1>
+			<div class="util">
+				<button type="button" class="menu" data-ref="menuLayer">내차팔기</button>
+				<div class="menu_layer" id="menuLayer">
+					<ul>
+						<li><a href="#">내차사기</a></li>
+						<li class="on"><a href="#">내차팔기</a></li>
+					</ul>
+				</div>
+				<ul>
+					<li><button type="button" class="ic_mycar jQ_POP_open" data-popup="FO-TI-MS0017">내차팔기 정보</button></li><!-- jQ_POP_open 팝업 호출 class / data-popup 팝업 id 값 -->
+				</ul>
+			</div>
+		</div>
+		<!--  e: h_header  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="visiting_main">
+			<div class="top_area">
+				<p class="tit">Trade-In을 시작합니다!<br> 기한 내 방문평가를 신청해주세요.</p>
+				<p class="tit">내차팔기를 시작합니다!<br> 기한 내 방문평가를 신청해주세요.</p>
+				<p class="date">4일 23 : 59 : 59</p>
+				<p class="sub_txt">지금 신청이 어려울 경우 마이페이지 &gt; 내차팔기 목록에서 신청하실 수 있어요.</p>
+
+				<button type="button" class="btn_mid05">방문평가 신청하기</button>
+			</div>
+
+			<div class="unit_type order">
+				<div class="mid_area">
+					<div class="unit_img">
+						<img src="/HMC/m/img/@thumb/sale_car.png" alt="">
+					</div>
+					<div class="unit_info">
+						<p class="num">123차2381</p>
+						<p class="name">
+							<span class="model">현대 쏘나타 DN8 2.0</span>
+							<span class="desc">가솔린 인스퍼레이션</span>
+						</p>
+						<p class="drive">
+							<em>20년 12월(21년형 페이스리프트)</em>
+							<em>10,000km</em>
+						</p>
+					</div>
+				</div>
+
+			</div>
+			<div class="sale_confirm3">
+				<div class="inner03">
+					<p class="txt01"><span>30초면 OK, </span>다음 차주를 위해 알려주세요!</p>
+					<p class="txt02">답변은 익명으로 저장되며, 견적 금액 산정에 영향을 미치지 않아요.</p>
+					<p class="txt03"><button type="button" class="btn_arrow_mid01 jQ_POP_open" data-popup="FO-TI-MS0037">차량정보 추가입력</button></p>
+				</div>
+				<div class="inner03">
+					<p class="txt01">차주 정보 입력이 완료되었습니다!</p>
+					<p class="txt02">답변은 익명으로 저장되며, 견적 금액 산정에 영향을 미치지 않아요.</p>
+					<p class="txt03"><button type="button" class="btn_arrow_mid01 jQ_POP_open" data-popup="FO-TI-MS0037">입력 정보 수정하기</button></p>
+				</div>
+			</div>
+
+		</div> 
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!-- 추가정보 입력 -->
+<!--#include file="/HMC/m/SHTML/H_sale/include/FO-TI-06F-01MS0037.shtml"-->
+<!-- 방문평가 신청 -->
+<!--#include file="/HMC/m/SHTML/H_sale/include/FO-TI-MS0076.shtml"-->
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+	switch(MSG.getParam('pop')) {
+		case '1' : 
+			CPO.POPUP_layer_open('FO-TI-MS0037');
+			break;
+		case '2' : 
+			CPO.POPUP_layer_open('FO-TI-MS0076');
+			break;
+		default : break;
+	}
+});
+</script>
+</body>
+</html>

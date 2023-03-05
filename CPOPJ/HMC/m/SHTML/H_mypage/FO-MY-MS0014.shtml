@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>나의리뷰</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_mypage.css">
+</head>
+<body>
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">나의리뷰</h1>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<!-- 리뷰목록 -->
+		<div class="my_review">
+
+			<!-- 데이터 없을 때 -->
+			<div class="no_data review">
+				<p class="tit">작성 가능한 리뷰가 없습니다.</p>
+				<p class="txt">차량을 구입(판매)하고<br>솔직한 리뷰를 작성해 보세요.</p>
+				<div class="btn_area">
+					<a href="#" class="btn_mid02">내차사기 홈으로 가기</a>
+				</div>
+			</div>
+			<!-- //데이터 없을 때 -->
+			
+			<div class="top_total">
+				<span class="all">전체 <em>20</em>개</span>
+			</div>
+
+			
+			<!--리뷰 list-->
+			<!-- 리뷰 작성전 목록 -->
+			<ul class="unit_list before">
+				<li>
+					<div class="unit_type review">
+						<div class="mid_area">
+							<div class="unit_img">
+								<img src="/HMC/m/img/@thumb/plp_310x310_01.jpg" alt="">
+							</div>
+							<div class="unit_info">
+								<span class="flag_small02">내차사기</span><!-- 2022-08-22 문구수정 -->
+								<p class="name">
+									<span class="model">그랜저 IG </span>
+									<span class="desc">가솔린 3.3 캘리그래피</span>
+								</p>
+								<div class="unit_btm">
+									<div class="status">
+										<span class="tit on">구매완료</span>
+										<span class="date">2021.10.15</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="btn_mid02">리뷰작성</button>
+				</li>
+				<li>
+					<div class="unit_type review">
+						<div class="mid_area">
+							<div class="unit_img">
+								<img src="/HMC/m/img/@thumb/plp_310x310_01.jpg" alt="">
+							</div>
+							<div class="unit_info">
+								<span class="flag_small02">내차사기</span><!-- 2022-08-22 문구수정 -->
+								<p class="name">
+									<span class="model">그랜저 IG </span>
+									<span class="desc">가솔린 3.3 캘리그래피</span>
+								</p>
+								<div class="unit_btm">
+									<div class="status">
+										<span class="tit on">구매완료</span>
+										<span class="date">2021.10.15</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button type="button" class="btn_mid02">리뷰작성</button>
+				</li>
+			</ul>
+			<!-- //리뷰 작성전 목록 -->
+
+			<!-- 작성된 리뷰 -->
+			<ul class="unit_list after">
+				<li>
+					<a href="javascript:void(0);">
+						<div class="unit_type review">
+							<div class="mid_area">
+								<div class="unit_img">
+									<img src="/HMC/m/img/@thumb/plp_310x310_01.jpg" alt="">
+								</div>
+								<div class="unit_info">
+									<div class="btn_acc">
+										<button type="button">수정/삭제</button>
+										<div class="link">
+											<button type="button">수정하기</button>
+											<button type="button">삭제하기</button>
+										</div>
+									</div>
+									<span class="flag_small02">내차팔기</span><!-- 2022-08-22 문구수정 -->
+									<p class="name">
+										<span class="model">그랜저 IG </span>
+										<span class="desc">가솔린 3.3 캘리그래피</span>
+									</p>
+									<div class="unit_btm">
+										<div class="status">
+											<span class="tit">작성완료</span>
+											<span class="date">2021.10.15</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="review_box">
+							<ul class="review_star">
+								<li>
+									<div class="star_txt">방문평가</div>
+									<div class="rating02">
+										<span class="star1"><em>1</em>점</span> <!-- 2022.11.08 수정 별점 점수에 따라 star1~5 class 변경 -->
+									</div>
+								</li>
+								<li>
+									<div class="star_txt">견적가격</div>
+									<div class="rating02">
+										<span class="star2"><em>2</em>점</span> <!-- 2022.11.08 수정 별점 점수에 따라 star1~5 class 변경 -->
+									</div>
+								</li>
+								<li>
+									<div class="star_txt">서비스</div><!-- 2022-08-22 문구수정 -->
+									<div class="rating02">
+										<span class="star3"><em>3</em>점</span> <!-- 2022.11.08 수정 별점 점수에 따라 star1~5 class 변경 -->
+									</div>
+								</li>
+							</ul>
+							<div class="review_bot">
+								<span class="txt">전체적으로 모두 좋은 상태를 보여주고 있습니다. 전체적으로 모두 좋은 상태를 보여주고 있습니다.</span>
+								<!-- <span class="img">
+									<img src="/HMC/m/img/@thumb/car_slide.png" alt=""/>
+									<span class="num">5</span>
+								</span> -->
+							</div>
+						</div>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0);" class="jQ_POP_open" data-popup="FO-MY-MS0016">
+						<div class="unit_type review">
+							<div class="mid_area">
+								<div class="unit_img">
+									<img src="/HMC/m/img/@thumb/plp_310x310_01.jpg" alt="">
+								</div>
+								<div class="unit_info">
+									<div class="btn_acc">
+										<button type="button">수정/삭제</button>
+										<div class="link">
+											<button type="button">수정하기</button>
+											<button type="button">삭제하기</button>
+										</div>
+									</div>
+									<span class="flag_small02">내차사기</span><!-- 2022-08-22 문구수정 -->
+									<p class="name">
+										<span class="model">그랜저 IG </span>
+										<span class="desc">가솔린 3.3 캘리그래피</span>
+									</p>
+									<div class="unit_btm">
+										<div class="status">
+											<span class="tit">작성완료</span>
+											<span class="date">2021.10.15</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="review_box">
+							<ul class="review_star">
+								<li>
+									<div class="star_txt">차량품질</div>
+									<div class="rating02">
+										<span class="star1"><em>1</em>점</span> <!-- 2022.11.08 수정 별점 점수에 따라 star1~5 class 변경 -->
+									</div>
+								</li>
+								<li>
+									<div class="star_txt">차량가격</div>
+									<div class="rating02">
+										<span class="star2"><em>2</em>점</span> <!-- 2022.11.08 수정 별점 점수에 따라 star1~5 class 변경 -->
+									</div>
+								</li>
+								<li>
+									<div class="star_txt">서비스</div><!-- 2022-08-22 문구수정 -->
+									<div class="rating02">
+										<span class="star3"><em>3</em>점</span> <!-- 2022.11.08 수정 별점 점수에 따라 star1~5 class 변경 -->
+									</div>
+								</li>
+							</ul>
+							<div class="review_bot">
+								<span class="txt">저는 처음 중고차 판매하는 건데 차량에 대해 잘 모르기 때문에 어떻게 판매해야 할지, 제대로 된 가격에 판매할 수 있을지 걱정이었는데 현대에서 판매해서 정말 다행이었습니다. 모든 과정을 정말 만족스럽게 진행했습니다.</span>
+								<span class="img">
+									<img src="/HMC/m/img/@thumb/car_slide.png" alt=""/>
+									<span class="num">5</span>
+								</span>
+							</div>
+						</div>
+					</a>
+				</li>
+			</ul>
+			<!-- //작성된 리뷰 -->
+		</div>
+		<!-- //리뷰목록 -->
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!-- 2023 0207 푸터 삭제 -->
+</div>
+<!-- //cpo wrap -->
+</body>
+<script>
+	$(document).ready(function(){ // 수정하기 레이어팝업
+		$('.btn_acc').on('click', function(e){
+			if(!$(this).hasClass('on')) { 
+				$(this).find('.link').show();
+				$(this).addClass('on');
+			}else{
+				$(this).find('.link').hide();
+				$(this).removeClass('on');
+			}
+			return false;
+		});
+	});
+</script>
+</html>

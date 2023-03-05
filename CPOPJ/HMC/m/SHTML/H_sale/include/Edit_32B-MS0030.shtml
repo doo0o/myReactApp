@@ -1,0 +1,41 @@
+<!-- FO-TI-MS0030 : 휠스크래치 수정 - BOTTOM -->
+<div class="CPOpop_full" id="FO-TI-MS0030"><!-- 2022-09-16 CPO-3291 -->
+	<div class="p_head">
+		<h2 class="tit txt_hidden">휠스크래치 수정</h2><!-- 2022-09-16 CPO-3291 -->
+	</div>
+	<div class="p_wrap sale_modify">
+		<!-- 휠스크래치 수정 --><!-- STEP : 3-2-04 : 휠 스크래치 -->
+		<div class="entry_carbase">
+			<div class="top02">
+				<p class="tit">스크래치가 있는<br />휠이 있나요?</p> <!-- 2022-09-16 CPO-3291 --> 
+			</div>
+			<!-- 입력 -->
+			<ul class="entry_carmore_options">
+				<!-- 2022-09-16 CPO-3291 -->
+				<li>
+					<input type="radio" name="saleWheelChk2" id="saleWheelChk201" class="chk_type07" onchange="inputFunc(this)" />
+					<label for="saleWheelChk201">네, 있어요</label>
+					<div class="box_input">
+						<div class="inbox_type01">
+							<input type="tel" id="saleWheelTxt2" placeholder="1 ~ 4개까지 입력 가능해요." class="txt type_number">
+							<button type="button" class="btn_delete">삭제</button>
+						</div>
+					</div>
+				</li>
+				<li>
+					<input type="radio" name="saleWheelChk2" id="saleWheelChk202" class="chk_type07" />
+					<label for="saleWheelChk202">아니요, 없어요</label>
+				</li>
+				<!-- //2022-09-16 CPO-3291 -->
+			</ul>
+			<!-- //입력 -->
+		</div>
+		<!-- //휠스크래치 수정 -->
+		<!-- (3). STICKY BUTTON -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">수정하기</button>
+		</div>
+		<!-- //(3). STICKY BUTTON -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

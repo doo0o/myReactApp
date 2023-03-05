@@ -1,0 +1,1279 @@
+// **********************************************************
+// Form 공통 
+// **********************************************************
+.form_area {
+	.tit + .inbox_type02 {
+		margin-top: 8px;
+	}
+	.validation{
+		margin-top: 4px;
+		@include fontT(13);
+		&.error {
+			color: color('COL_error');
+		}
+		&.ok {
+			color: $COL_black;
+		}
+	}
+	// 정렬 
+	&.row_type {
+		display:flex;
+		li , div {
+			flex:1;
+			&:not(:first-child) {
+				margin-left:-1px;
+			}
+			.chk_block {
+				&:checked {
+					& + label {
+						position:relative;
+						z-index: 1;
+					}					
+				}
+			}
+		}		
+	}
+	// 결제방법, 명의유형
+	&.box_type {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 8px;
+		li {
+			flex: 1 1;
+			height: 108px;
+			.chk_type01 {
+				+ label {
+					justify-content: center;
+					flex-direction: column;
+				}
+			}	
+		}
+		.chk_type01 {
+			+ label {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				gap: 8px;
+				padding-left: 0;
+				width: 100%;
+				height: 100%;
+				border: 1px solid color(COL_gs05);
+				&::before {
+					position: relative;
+				}
+				.txt {
+					padding-left: 0;
+					&[class*="icon_"]::before {
+						content: "";
+						display: inline-block;
+						width: 24px;
+						height: 24px;
+						margin-right: 4px;
+						vertical-align: middle;
+						opacity: 0.4;
+					}
+					&.icon_card::before {
+						background-image: url(../img/icon/icon_card.svg);
+					}
+					&.icon_bank::before {
+						background-image: url(../img/icon/icon_bankbook.svg);
+					}
+				}
+			}
+			&:checked + label {
+				border: 1px solid color(COL_secondary2);
+				.txt::before {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	// 삭제버튼
+	[class^="btn_delete"]{
+		content: "";
+		display: none;
+		width: 16px;
+		height: 16px;
+		border-radius: 50%;
+		@include Mix_Size_0;
+		background: url(../img/icon/icon_input_close.svg) no-repeat 0 0;
+	}
+}
+ul.form_list.type01 {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	li {
+		flex:0 calc((100% - 8px)/2);
+		&.full {
+			flex: 0 100%;
+			&.checked {
+				.form_area {
+					margin-top: 8px;
+				}
+			}
+		}
+		&:nth-child(even).checked {
+			align-self: center;
+			.form_area {
+				margin-left: 8px;
+			}
+		}
+		.text_type { // 이름 | 핸드폰 text
+			margin: 12px 0 8px;
+			.num {
+				position: relative;
+				padding-left: 25px;
+				color: color(COL_gs03);
+				&::before {
+					content:'';
+					@include Pos($p: absolute, $t: 50%, $l: 12px);
+					transform: translateY(-50%);
+					width: 1px;
+					height: 14px;
+					background-color: color(COL_gs05);
+				}
+			}
+		}
+	}
+}
+ul.form_list.type02 {
+	border-top: 1px solid color(COL_gs06);
+	border-bottom: 1px solid color(COL_gs06);
+	> li {
+		position: relative;
+		padding: 16px 24px 16px 180px;
+		label.tit {
+			position: absolute;
+			top: 32px;
+			left: 24px;
+			color: color(COL_gs03);
+			.required {
+				color: color(COL_error);
+			}
+		}
+	}
+}
+ul.form_list.type03 { //560 레이어팝업
+	li {
+		display: flex;
+		justify-content: space-between;
+		~ li {
+			margin-top: 16px;
+		}
+		.tit {
+			display: block;
+			@include fontH(16);
+		}
+		label.tit {
+			line-height: 40px;
+		}
+		:not(label.tit) {
+			align-items: center;
+		}
+		.form_area {
+			width: 330px;
+		}
+		&.full {
+			flex-direction: column;
+			.tit {
+				margin-bottom: 8px;
+			}
+			.form_area {
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				gap: 0 8px;
+				width: 100%;
+				.com_select {
+					width: 156px;
+				}
+				.inbox_type02 {
+					flex: 1;
+				}
+			}
+			.validation {
+				width: 100%;
+			}
+		}
+	}
+}
+// **********************************************************
+// Input 
+// **********************************************************
+// inbox_type default
+[class^="inbox_type"]{
+	position: relative;
+	width: 100%;
+	background-color: $COL_white;
+	border: 1px solid color('COL_gs06');
+	> .txt{// 인풋 입력박스
+		position: relative;
+		width: 100%;
+		padding-right: 26px;
+		z-index: -1;
+		&:disabled{
+			color: color('COL_gs02');
+			opacity: 1;
+			// -webkit-text-fill-color: color('COL_gs04');
+			~ span {
+				color: color('COL_gs04');
+			}
+		}
+		&:focus{
+			outline:none; 
+		}
+		&::placeholder{
+			color: color('COL_gs03');
+		}
+		&.delete_on + .btn_delete {
+			display: block;
+		}
+	}
+	> .tit {
+		color: color('COL_gs03');
+	}
+	&.focus{// 인풋 입력박스 focusIN 일때
+		border:1px solid $COL_black !important;
+		.txt {z-index: 1;}
+	}
+	&.disabled {
+		background-color: color('COL_gs08');
+	}
+}
+// inbox_type01 타이틀이 박스 안에 있고, 인풋박스 클릭시 타이틀 위로 올라가는 타입
+.inbox_type01 {
+	height: 80px;
+	padding: 16px 20px;
+	> .tit{
+		position:absolute;
+		top:50%;
+		left:20px;
+		transform:translateY(-50%);
+	}
+	> .txt{// 인풋 입력박스
+		opacity: 0;
+	}
+	&.focus{// 인풋 입력박스 focusIN 일때
+		> .tit{
+			color:$COL_black;
+		}
+	}
+	&.on{
+		> .tit{
+			top:16px;
+			transform:translateY(0);
+			transition:all 0.1s linear;
+			@include fontT(13);
+			
+		}
+		> .txt{
+			opacity: 1;
+			position: static;
+			margin-top: 24px;
+			z-index: 1;
+		}
+		.slt_box {
+			display: block !important;
+		}
+	}
+	.btn_delete {
+		position: absolute;
+		top: 43px;
+		right: 19px;
+	}
+	&.email {
+		display: flex ;
+		flex-wrap: wrap;
+		padding-top: 34px;
+		.txt {
+			flex: 1;
+			height: 24px;
+			margin-top: 4px;
+			padding-right: 10px;			
+		}
+		.btn_delete {
+			position: static;
+			margin-top: 9px;
+			padding-right: 10px;
+		}
+		.slt_box {
+			display: none;
+			width: 160px;
+			margin: -4px -20px 0 0;
+			.com_select_btn {
+				border: none;
+			}
+		}
+	}
+	&.identity{// 주민등록번호
+		// font-size: 0;
+		&.on{
+			&::before{
+				content:"";
+				position:absolute;
+				top:50px;
+				left:50%;
+				display:block;
+				width: 4px;
+				height: 1px;
+				background-color:color('COL_gs03');
+			}
+			> .txt{
+				display:inline-block;
+			}
+		} 
+		.txt{
+			width: calc(50% - 4px);
+			&.type_id01{
+				+ .btn_delete {
+					right: auto;
+					left: calc(50% - 26px);
+				}
+			}
+			&.type_id02{
+				padding-left: 10px;
+			}
+		}
+	}
+	&.address { //주소
+		&.on{
+			> .add{ 
+				display:block;
+			}
+		}
+		> .add{
+			display:none;
+			padding:21px 95px 0 0;
+			word-break: keep-all;
+		}
+		> .btn_xsmall{
+			position:absolute;
+			top:50%;
+			right:19px;
+			transform:translateY(-50%);
+		}
+	}
+	// 모바일 상품상세 고객확인 및 본인인증에서 쓰는 인풋인데 PC는 안쓰는거 같아요
+	// &.cert_input { 
+	// 	display: flex;
+	// 	flex-wrap: wrap;
+	// 	align-items: center;
+	// 	.txt {
+	// 		flex: 1;
+	// 	}
+	// 	.btn_delete {
+	// 		position: static;
+	// 		margin: 15px 10px 0 0;
+	// 		padding-right: 10px;
+	// 	}
+	// }
+	// &.cert {
+	// 	display: flex;
+	// 	flex-wrap: wrap;
+	// 	align-items: center;
+	// 	.txt {
+	// 		flex: 1;
+	// 	}
+	// 	.btn_delete {
+	// 		position: static;
+	// 		margin: 15px 10px 0 0;
+	// 		padding-right: 10px;
+	// 	}
+	// 	.timer {
+	// 		display: none;
+	// 		margin-top: 16px;
+	// 		color: color('COL_secondary2');
+	// 	}
+	// 	&.on .timer {display: block;}
+	// }
+	&.disabled .ui-datepicker-trigger {
+		pointer-events: none;
+		opacity: 0.5;
+	}
+}
+// inbox_type02 타이틀이 박스 안에 있는 타입
+.inbox_type02 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 56px;
+	padding: 0 20px;
+	line-height: 56px;
+	.tit {
+		padding-right: 10px;
+	}
+	.txt {
+		flex: 1;
+		padding: 0;
+		z-index: 1;
+	}
+	&.txt_r > .txt{
+		text-align: right;
+		&::placeholder{
+			text-align: right;
+		}
+	}
+	.btn_delete {
+		margin-left: 5px;
+		+ em {
+			margin-left: 5px;
+		}
+	}
+	&.hs01 {
+		height: 48px;
+		line-height: 40px;
+		padding: 0 16px;
+	}
+	&.hs02 {
+		height: 40px;
+		line-height: 40px;
+		padding: 0 12px;
+		font-size: 15px;
+	}
+	&.cert {
+		.timer {
+			margin-left: 4px;
+			color: color(COL_secondary2);
+		}
+	}
+	&.identity {
+		&::before{
+			content:"";
+			position:absolute;
+			top:50%;
+			left:50%;
+			display:block;
+			width: 4px;
+			height: 1px;
+			transform: translateX(-50%);
+			background-color:$COL_black;
+		}
+		.txt{
+			width: calc(50% - 7px);
+			&.type_id01{
+				+ .btn_delete {
+					right: auto;
+					left: calc(50% - 26px);
+				}
+			}
+			&.type_id02{
+				padding-left: 15px;
+			}
+		}
+		.btn_delete {
+			z-index: 1;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 12px;
+		}
+	}
+	&.search_type{
+		.btn_search{
+			display: inline-block;
+			background-image: url(../img/icon/icon_ui_search01.svg);
+			width: 32px;
+			height: 32px;
+			margin-left: 20px;
+			font-size: 0;
+		}
+	}
+}
+
+// inbox_line input text 라인 타입
+.inbox_line{
+	position: relative;
+	display: flex;
+	align-items: center;
+	&.focus{
+		border: none !important;
+	}
+	.txt{
+		z-index: 0;
+		flex: 1;
+		width: 100%;
+		color: $COL_black;
+		caret-color:rgba(0,0,0,0.5);
+		outline: none;
+		&.delete_on{
+			& + .btn_delete{
+				display: block;
+				width: 24px;
+				height: 24px;
+				background-image: url('../img/icon/icon_input_close_L.svg');
+			}
+		}
+		&::placeholder{
+			color: color(COL_gs05);
+		}
+	}
+	&::before{
+		content: "";
+		position: absolute;
+		bottom: 0;
+		display: block;
+		width: 100%;
+		height: 4px;
+		background-color: $COL_black;
+	}
+	&.search_type{
+		.btn_search{
+			display: inline-block;
+			background-image: url(../img/icon/icon_ui_search01.svg);
+			width: 32px;
+			height: 32px;
+			margin-left: 20px;
+		}
+	}
+	
+	em{
+		@include fontTM(18, 26px);
+		color: $COL_black;
+		margin-left: 16px;
+	}
+
+	// disabled
+	&.disabled{
+		background-color: initial;
+		color: color('COL_gs10');
+		.txt{
+			&:disabled{
+				& ~ em{
+					color :color('COL_gs10');
+				}
+			}
+		}
+		&::before{
+			background-color :color('COL_gs10');
+		}
+	}
+	// 타입 별 폰트 사이즈
+	&.fs01{
+		 padding: 4px 0 8px;
+		.txt{
+			@include fontHM(30);
+		}
+	}
+	&.fs02{
+		padding: 4px 0 12px;
+		.txt{
+			@include fontHM(24);
+		}
+	}
+	&.fs03{
+		padding: 4px 0 10px;
+		.txt{
+			@include fontHM(20);
+		}
+	}
+	// 타입 별 폰트 높이
+	&.hs01{
+		height: 48px;
+	}
+	&.hs02{
+		height: 40px;
+	}
+	&.hs03{
+		height: 60px;
+	}
+}
+
+// **********************************************************
+// Textarea 
+// **********************************************************
+[class^="textarea"]{
+	position: relative;
+	width: auto;
+	height: 192px;
+	padding: 16px 20px 40px;
+	border: 1px solid color('COL_gs06');
+	background-color: $COL_white;
+	&.focus{
+		border: 1px solid $COL_black;		
+		.txt_check .first {
+			color:$COL_black;
+		}
+	}
+	&.on {
+		.txt_check .first {
+			color:$COL_black;
+		}
+	}
+	.inner {
+		position: relative;
+		height: 100%;
+	}
+	textarea{
+		height: 100%;
+		&::placeholder{
+			color: color('COL_gs04');
+		}
+	}
+	.txt_check{
+		position: absolute;
+		right: 20px;
+		bottom: 10px;
+		color: color('COL_gs03');
+		@include fontT(14);		
+	}
+	&.disabled {
+		background-color: color('COL_gs08');
+		textarea {
+			color: color('COL_gs04');
+		}
+		.txt_check {
+			color: color('COL_gs04');
+		}
+	}
+}
+
+[class^="chk_"]{
+	opacity:0;
+	position:absolute;width:1px;height:1px;
+	&:not(.chk_block, .chk_compare){
+		& + label:not(:first-of-type){margin-left:48px;}
+	}
+}
+// 체크박스 타입1
+.chk_type01 {
+	&+label{
+		position:relative;
+		display:inline-block;
+		cursor:pointer;
+		&::before{
+			content:'';
+			display:inline-block;
+			position:absolute;top:0;left:0;
+			width:24px;height:24px;
+			background: {
+				image:url(./../img/icon/icon_chk01.svg);
+				size:24px auto;
+				repeat:no-repeat;
+			};
+		}
+		.txt{
+			padding-left:32px;
+			color: color('COL_gs03');
+		}
+	}
+	&:checked:not(:disabled){
+		& + label {
+			.txt {
+				color:$COL_black ;
+			}			
+		}
+		& + label::before{
+			background: {
+				image:url(./../img/icon/icon_chk01_check.svg);
+			};
+		}
+	}
+	&:disabled{		
+		& + label {
+			.txt  {
+				color:color('COL_gs04');
+			}
+		}
+		&:not(:checked) + label::before {
+			background: {
+				image:url(./../img/icon/icon_chk01_disabled.svg);
+			};
+		}
+		&:checked {
+			& + label::before{
+				background: {
+					image:url(./../img/icon/icon_chk01_check_disabled.svg);
+				};
+			}
+		}
+	}
+	&.bold{
+		& + label{
+			.txt{
+				@include fontHM(16,24px);
+			}
+		}
+	}
+	&.mid{
+		& + label{
+			.txt{
+				@include fontT(15,24px);
+			}
+		}
+	}
+	&.small{
+		& + label{
+			.txt{
+				@include fontT(13,24px);
+				&::before{
+					top:-2px;
+				}
+			}
+		}
+	}
+}
+// 체크박스 타입2
+.chk_type02{
+	&+label{
+		position:relative;
+		display:inline-block;
+		padding-left:20px;
+		cursor:pointer;
+		.txt {
+			color:color('COL_gs03');
+		}
+		&::before{
+			content:'';
+			display:inline-block;
+			position:absolute;top:4px;left:0;
+			width:16px;height:16px;
+			background-color:color('COL_gs10');
+			-webkit-mask: url('../img/icon/icon_chk02.svg') no-repeat;
+			mask: url('../img/icon/icon_chk02.svg') no-repeat;
+		}
+	}
+	&:checked{
+		& + label{
+			&::before{
+				background: {
+					color:color('COL_secondary2');
+				};
+			}
+			.txt{
+				color:color('COL_secondary2');
+			}
+		}
+	}
+	&:disabled {
+		& + label {
+			.txt {
+				color:color('COL_gs04');
+			}
+		}
+	}
+	&.mid{
+		& + label{
+			.txt{
+				@include fontT(15);
+			}
+		}
+	}
+	&.small{
+		& + label{
+			.txt{
+				@include fontT(13);
+			}
+		}
+	}
+}
+// 라디오
+.chk_radio {
+	&+label{
+		position:relative;
+		display:inline-block;
+		padding-left:32px;
+		cursor:pointer;
+		&::before{
+			content:'';
+			display:block;
+			position:absolute;top:0;left:0;
+			width:24px;height:24px;
+			border:1px solid color('COL_gs10');
+			border-radius:50%;
+			background-color:$COL_white;
+		}
+		.txt {
+			color:color('COL_gs03');
+		}
+	}
+	&:checked{
+		& + label {
+			.txt {
+				color:$COL_black;
+			}
+			&::before {
+				border: {
+					width:8px;
+					color:color('COL_secondary2');
+				};
+			}
+		}
+		&:disabled{
+			& + label::before{
+				border: {
+					width:8px;
+					color:color('COL_gs10');
+				}
+			}
+		}
+	}
+	&:disabled{
+		& + label{
+			.txt{
+				color:color('COL_gs10');
+			}
+			&::before{
+				background-color:color('COL_gs07');
+			}
+		}
+	}
+	&.bold{
+		& + label{
+			.txt{
+				@include fontHM(16,24px);
+			}
+		}
+	}
+	&.mid{
+		& + label{
+			.txt{
+				@include fontT(15,24px);
+			}
+		}
+	}
+	&.small{
+		& + label{
+			&::before{
+				top:1px;
+			}
+			.txt{
+				@include fontT(13,24px);
+			}
+		}
+	}
+}
+// 박스타입 체크&라디오
+.chk_block{
+	&.hs02 {
+		& + label {
+			height:40px;
+			@include fontHM(15, 40px);
+		}
+	}
+	&.hs03 {
+		& + label {
+			height:32px;
+			@include fontHM(13, 32px);
+		}
+	}
+	& + label{
+		display:block;
+		height:48px;
+		padding:0 16px;
+		border:1px solid color('COL_gs05');
+		background:$COL_white;
+		color:color('COL_gs03');
+		@include fontHM(15, 48px);
+		text-align:center;
+		transition:all .3;
+		cursor:pointer;
+	}
+	&:not(:disabled):hover + label{
+		background:color('COL_gs08');
+		color:color('COL_gs04');
+	}
+	&:not(:disabled):checked{
+		& + label{
+			color:$COL_black;
+			border:1px solid $COL_black;
+		}
+		&:hover + label{
+			background:$COL_white;
+			border-color:$COL_black;
+		}
+	}
+	&:disabled{
+		& + label {
+			background:color('COL_gs08');
+			color:color('COL_gs10');
+			pointer-events: none;
+		}
+		&:checked + label{
+			color:color('COL_gs03');
+			border-color:color('COL_gs03');
+		}
+	}
+}
+.chk_model{
+	& + label{
+		display:flex;flex-direction:column;justify-content:center;align-items:center;
+		position:relative;
+		width:191px;height:160px;
+		cursor:pointer;
+		.img{
+			width:191px;
+			img{
+				display:block;
+				width:100%;
+			}
+		}
+		.txt{
+			margin-top:8px;
+			color:color('COL_gs03');
+		}
+	}
+	&:checked + label{
+		border:1px solid color('COL_secondary2');
+		&::before{
+			content:'';
+			position:absolute;left:12px;top:12px;
+			width:24px;height:24px;
+			background: {
+				image:url(./../img/icon/icon_chk01_check.svg);
+				size:24px auto;
+				repeat:no-repeat;
+			};
+		}
+		.txt{
+			color:$COL_black;
+		}
+	}
+}
+// 검색 색상계열
+.chk_color{
+	&+label{
+		display:block;
+		width:64px;
+		margin:0 auto;
+		cursor:pointer;
+		img{
+			width:100%;
+		}
+		span{
+			display:flex;justify-content:center;align-items:center;
+			margin-top:10px;
+			color:color('COL_gs03');
+			@include fontH(16);
+			text-align:center;
+			&:before{
+				content:'';
+				display:inline-block;
+				width:16px;
+				height:16px;
+				margin-right:4px;
+				background: {
+					image:url('./../img/icon/icon_chk02.svg');
+					size:16px auto;
+					repeat:no-repeat;
+				};
+			}
+		}
+	}
+	&:checked+label{
+		span{
+			color:color('COL_secondary2');
+			&:before{
+				content:'';
+				display:inline-block;
+				width:16px;
+				height:16px;
+				margin-right:4px;
+				background: {
+					image:url('./../img/icon/icon_chk02_check.svg');
+					repeat:no-repeat;
+				};
+			}
+		}
+		
+	}
+}
+.select_info.col2{
+	display:flex;
+	width:100%;
+	li{
+		flex:1 0 auto;
+	}
+}
+// 비교하기 체크박스
+// .chk_compare {
+// 	&+label {
+// 		position:relative;
+// 		display:block;
+// 		.number{
+// 			z-index: 1;
+// 			display:inline-block;
+// 			position:absolute;
+// 			width:24px;height:24px;
+// 			border-radius:12px;
+// 			border:1px solid rgba(255, 255, 255, .5);
+// 			background:rgba(0, 0, 0, .15);
+// 			box-shadow:0px 0px 2px rgba(0, 0, 0, .2);
+// 			&::before{
+// 				content:'';
+// 				display:inline-block;
+// 				position:absolute;left:3px;top:3px;
+// 				width:16px;height:16px;
+// 				background: {
+// 					image:url(./../img/icon/icon_ui_check03_02.svg);
+// 					size:16px auto;
+// 					repeat:no-repeat;
+// 				}
+// 				z-index:5;
+// 			}
+// 			em{
+// 				display:none;
+// 				position:absolute;left:7px;top:2px;
+// 				color:$COL_white;@include fontHM(15);
+// 				text-align:center;
+// 			}
+// 		}
+// 	}
+// 	&:checked{
+// 		& + label{
+// 			.number{
+// 				border-color:color('COL_secondary2');
+// 				background:color('COL_secondary2');
+// 				box-shadow:none;
+// 				&::before{
+// 					content:none;
+// 				}
+// 				em{
+// 					display:inline-block;
+// 				}
+// 			}
+// 		}
+// 	}
+// 	&:disabled{
+// 		& + label{
+// 			.number{
+// 				opacity:0.25;
+// 			}
+// 		}
+// 		&:checked{
+// 			& + label{
+// 				.number{
+// 					border-color:color('COL_gs04');
+// 					background:color('COL_gs04');
+// 					opacity:1;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
+.com_select {
+	position: relative;
+	display: block;
+	&_btn {
+		position: relative;
+		width: 100%;
+		height: 56px;
+		line-height: 56px;
+		padding: 0 52px 0 20px;
+		color: color('COL_gs04');
+		border: 1px solid color('COL_gs06');
+		background-color: $COL_white;
+		text-align: left;
+		.isSelected & {
+			color: $COL_black;
+			&:disabled {
+				color: color('COL_gs02');
+			}
+		}
+		&:after {
+			content: "";
+			@include Pos(absolute, $t: 50%, $r: 20px);
+			width: 16px; height: 16px;
+			transform: translateY(-50%);
+			background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 5L8 11L2 5' stroke='%23767676' stroke-width='1.2' stroke-linejoin='round'/%3E%3C/svg%3E%0A") no-repeat;
+		}
+		&:hover {border-color:$COL_black;}
+		&:disabled {
+			border-color: color("COL_gs06");
+			color: color("COL_gs04");
+			background-color: color("COL_gs08"); 
+			pointer-events: none;
+		}
+		&:disabled:after {
+			background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 5L8 11L2 5' stroke='%239c9c9c' stroke-width='1.2' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
+		}		
+	}
+	&_list {
+		display: none;
+		z-index: 2;
+		@include Pos(absolute, 100%, 0, auto, 0);
+		background: #fff;
+		border: 1px solid $COL_black;
+		&_inner {
+			display: block;
+			max-height: 250px;
+			overflow-y: auto;
+		}
+		.slt_box & {
+			left: -1px; right: -1px;
+		}
+		&.isBot {top: auto; bottom: 100%;}
+		&.isShow {display: block;}
+	}
+	&_item {
+		display: block;
+		position: relative;
+		padding: 16px 52px 16px 20px;
+		width: 100%;
+		&:hover {
+			background: #F7F7F7;
+		}
+		span{
+			&:before {
+				content: "";
+				@include Pos(absolute, $t: 50%, $r: 20px);
+				width: 16px; height: 16px;
+				transform: translateY(-50%);
+			}
+			&.bank_logo img {
+				width: 20px; height: 20px;
+				margin-right: 4px;
+			}
+		}
+		&.isChecked span {
+			color: $COL_black;
+			&:before {
+				background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M3 7.11099L6.84717 11L13 4' stroke='%23000000' stroke-width='1.5'/%3E%3C/svg%3E");
+			}
+		}
+	}
+	&.hs01 {
+		.com_select_btn {
+			height: 48px;
+			line-height: 48px;
+			padding: 0 52px 0 18px;
+		}
+	}
+	&.hs02 {
+		@include fontT(15);
+		.com_select_btn {
+			height: 40px;
+			padding: 0 48px 0 12px;
+			@include fontT(15);
+		}
+		.com_select_item {
+			padding: 8px 48px 9px 12px;
+		}
+		.com_select_list_inner {
+			max-height: 180px;
+		}
+	}
+	&.hs_none {
+		.btn_sort { //리스트 정렬용
+			@include fontT(14);
+			color: $COL_black;
+			border: none;
+			padding: 0 0 0 24px;
+			height: auto;
+			&:after {
+				display: none;
+			}
+		}
+		.com_select_item {
+			padding: 0 12px;
+			@include fontT(15, 40px);
+			span:before {
+				right: 12px;
+				margin-left: 4px;
+			}
+		}
+	}
+	input {
+		position: absolute;
+		opacity: 0;
+		z-index: -1;
+	}
+	input:checked ~ span {
+		color: $COL_black;
+		&:before {
+			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M3 7.11099L6.84717 11L13 4' stroke='%23000000' stroke-width='1.5'/%3E%3C/svg%3E");
+		}
+	}
+	input:disabled ~ span {
+		color: color('COL_gs04');
+	}
+	input:checked:disabled ~ span {
+		&:before {
+			background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 7.11099L6.84717 11L13 4' stroke='%239c9c9c' stroke-width='1.5'/%3E%3C/svg%3E%0A") no-repeat;
+		}
+	}
+}
+
+.scrollBar {
+	position: absolute;
+}
+.scrollBarTrackY {
+	@include Pos(absolute, $b: 0, $r: 0);
+	width: 3px;
+	border-radius: 6px;
+	background: #EDEDED;
+	.scrollBarThumb {
+		@include Pos(absolute, $t: 0, $r: 0);
+		width: 3px;
+		background: #767676;
+		border-radius: 6px;
+	}
+}
+.scrollBarTrackX {
+	@include Pos(absolute, $r: 0, $b: 0);
+	height: 3px;
+	border-radius: 6px;
+	background: #EDEDED;
+	.scrollBarThumb {
+		@include Pos(absolute, $b: 0, $l: 0);
+		height: 3px;
+		background: #767676;
+		border-radius: 6px;
+	}
+}
+// 좋아요 버튼
+.btn_wish{
+	label{
+		display:inline-block;
+		input{
+			display:inline-flex;justify-content:center;align-items:center;
+			position:relative;
+			width:32px;height:32px;
+			cursor:pointer;
+			-webkit-appearance:none;
+			&::before{
+				content:'';
+				display:inline-block;
+				width:24px;height:24px;
+				@include Icon_heart("line", color('COL_secondary2'), $size : "24px");
+			}
+			&:checked{
+				&::before{
+					@include Icon_heart("fill", color('COL_secondary2'), $size : "24px");
+				}
+			}
+		}
+	}
+}
+
+
+//달력
+.calendar {
+	font-size: 0;
+	.date-picker {
+		position:relative;
+		padding:0 4px 0 12px;
+		width: 123px;
+		height:32px;
+		border:1px solid color(COL_gs06);
+		background: {
+			image :url('./../img/icon/icon_ui_calendar.svg');
+			repeat:no-repeat;
+			position:95px center;
+			size: 16px 16px;
+		}
+		color:color(COL_gs03);
+		cursor: pointer;
+		@include fontT(15);
+	}
+	& > span {
+		display: inline-block;
+		width: 30px;
+		text-align: center;
+		color:color(COL_gs03);
+		@include fontT(15,30px);
+		vertical-align: middle;
+	}
+}

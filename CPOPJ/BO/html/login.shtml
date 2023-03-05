@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- 	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+
+<!-- 	<meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" /> -->
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="Author" content="borythewide" />
+	<meta name="content" content="온라인 Admin입니다." />
+	<meta name="keywords" content="온라인 Admin" />
+	<meta name="description" content="온라인 Admin" />
+<!-- 	<meta name="viewport" content="user-scalable=yes, maximum-scale=1.0, width=1270" /> -->
+	<title>Backoffice</title>
+
+
+<script>
+		var _scheme = 'http';
+		var _baseUrl = 'http://dev-bo-ecore.hyundaimotorgroup.com/';
+		var _jsUrl = 'http://dev-static-ecore.hyundaimotorgroup.com/hmg-demo-bo/static/js/';
+		var _fileuploadUrl = 'http://ecore-demo.hyundaimotorgroup.com/hmg-dev-static/upload/';
+		var _sampleFileUrl = 'http://dev-static-ecore.hyundaimotorgroup.com/hmg-demo-bo/static/upload/';
+		var _cssUrl = 'http://dev-static-ecore.hyundaimotorgroup.com/hmg-demo-bo/static/css/';
+		var _imgUrl = 'http://dev-static-ecore.hyundaimotorgroup.com/hmg-demo-bo/static/image/';
+		var _imgUrlLang = 'http://dev-static-ecore.hyundaimotorgroup.com/hmg-demo-bo/static/image/lang/ko';
+		var _cabUrl = 'http://dev-static-ecore.hyundaimotorgroup.com/hmg-demo-bo/static/cab/';
+		var _authorityCheck = 'true';
+		var _partnerBaseUrl = 'http://dev-po-ecore.hyundaimotorgroup.com/';
+
+		var _commonAdminYn = 'N';
+		var _commonPartnerYn = 'N';
+		var _userId = 'null';
+	    var _usrNm  = 'null';
+	    var _deptErpNo  = 'null';
+	    var _rollSiteNo  = '0';
+		var _defaultSystemLanguage = 'en';
+	    var _currentLocaleLanguage = 'ko';
+		var _dbLocaleLanguage = 'en';
+		var _timeZoneOffset = '9';
+		var _fileuploadUrl = 'http://ecore-demo.hyundaimotorgroup.com/hmg-dev-static/upload/';
+		var _goodsImgaeUploadUrl = 'http://ecore-demo.hyundaimotorgroup.com/hmg-dev-static/upload/goods/';
+		var _sampleFileuploadUrl = 'http://dev-static-ecore.hyundaimotorgroup.com/hmg-demo-bo/upload/fileupload/';
+		var _displayImageUploadUrl = 'http://ecore-demo.hyundaimotorgroup.com/hmg-dev-static/upload/display/';
+		var _altBlankMsg			= "{0} 을(를) 입력해 주세요.";
+		var _altSelMsg				= "{0} 을(를) 선택해 주세요.";
+		var wisegridTotalcount ="총";
+		var wisegridTotalcountNum ="개";
+		var _inputOnlyNum		= "숫자만 입력 가능합니다.";
+		var _storeAuthority = 'N';
+		var _ckEditorFileuploadUrl = 'null';
+		var _productUploadUrl = 'http://ecore-demo.hyundaimotorgroup.com/hmg-dev-static/upload/product/';
+
+		var _ossImgUrl = 'http://dev-bo-ecore.hyundaimotorgroup.com/Admincommon/readOSS.do';
+		var _ossImgUrlPublic = 'http://dev-bo-ecore.hyundaimotorgroup.com/Admincommon/readOSSPublic.do';
+		var _ossImgUrlCert = 'http://dev-bo-ecore.hyundaimotorgroup.com/Admincommon/readOSSCert.do';
+
+		var _reverseGeocodingUrl = 'https://api.map.baidu.com/reverse_geocoding/v3/';
+
+		var _baiduReverseGeocodingAk = 'mDGFklahqzBV3TkF6Dsk4tVVitYYvgXz';
+		var _baiduReverseGeocodingOutput = 'json';
+		var _baiduReverseGeocodingCoordtype = 'bd09ll';
+
+		var csrfHeaderName = '';
+		var csrfToke = '';
+</script>
+<script>
+	<!--
+		var _defaultDebugFlag = true;
+		var _defaultPage = [50,100,200,300,500,1000];
+		var _defaultPageEvent = [10,20,50,100,200,500,'전체'];
+		var searchHeight = 0;
+		//-->
+	</script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.clearable').clearSearch();
+		if( $('body').is('#menu') ){
+			console.log('menu');
+		} else {
+			$(document).bind("click", function (e) {
+				if( window.parent.$(".contextMenu").css("display") == "block"){
+					window.parent.$(".contextMenu").hide(100);
+				}
+			});
+		}
+		// 메뉴 오른쪽 버튼 클릭 시 나오는 레이어 떴을 때 닫기,
+		//F12키, Ctrl + U(소스보기) 막기
+
+		/* $(document).bind('keydown',function(e){
+			if ( (e.keyCode == 123) || ( e.ctrlKey == true && e.keyCode == 85 ) ) {
+				e.preventDefault();
+				e.returnValue = false;
+			}
+		}); */
+
+
+	});
+
+	function mouseRightClick() {
+		if ((event.button==2) || (event.button==2)) {
+			//alert('컨텐츠 보호를 위해 마우스 우클릭이 제한됩니다.');
+		}
+	}
+
+	//document.onmousedown=mouseRightClick; //왼쪽 메뉴 영역 외 오른쪽 마우스 막기
+
+	</script>
+
+	<script type="javascript/text">
+	var _hmt = _hmt || [];
+	(function() {
+	  var hm = document.createElement("script");
+	  hm.src = "https://hm.baidu.com/hm.js?dd786dc56afc967f2e4ace728f7a7950";
+	  var s = document.getElementsByTagName("script")[0];
+	  s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="http://dev-static.hmgkcpo.com/bo/css/common/login.css?ts=202103151329" />
+	
+<script src="http://dev-static-ecore.hyundaimotorgroup.com/hmg-demo-bo/static/js/login/login.js?ts=202103151329"></script>
+<script>
+	var _id = "아이디";
+	var _pwd = "비밀번호";
+
+	var _idInputValid = argMessage(_altBlankMsg, _id);
+	var _pwdInputValid = argMessage(_altBlankMsg, _pwd);
+
+	if(false){
+	    commerce.admin.Login.openPasswordInitpup();
+	}
+
+	$(document).ready(function(){
+		if(location.href.indexOf(_partnerBaseUrl) > -1){
+			$('.loginContainer').css('background',$('.loginContainer').css('background-image').replace('bo_bg.png','po_bg.png'));
+			$('.loginBg img').attr('src',$('.loginBg img').attr('src').replace('bo_loginBg.png','po_loginBg.png'));
+		}
+		
+	    $( ".popInfo" ).click(function() {
+	        $( "#PopInfoLayer" ).toggle();
+	      });
+	});
+</script>
+</head>
+<body id="body-login">
+	<form name="loginForm" method='post'>
+		<input type="hidden" name="redirectUrl" 	value="main.do" />
+		<input type="hidden" name="cookieDomain" 	value="backoffice" />
+		<input type="hidden" name="usrSctCd" 		value="" />
+	<!-- login Header -->
+		
+	<!-- //login Header -->
+	<!-- login Form -->
+		<div class="loginContainer">
+			<div class="loginWrap">
+				<img src="http://dev-static-ecore.hyundaimotorgroup.com/hmg-demo-bo/static/image/common/h_logo_bo.png" alt="" class="loginLogo">
+				<div class="loginBox">
+					<div class="loginBg">
+						<img src="http://dev-static-ecore.hyundaimotorgroup.com/hmg-demo-bo/static/image/common/bo_loginBg.png" alt="">
+					</div>
+					<div class="loginInput">
+						<p class="loginTit">HYUNDAI</p>
+						<p class="loginName">Online SalesPlatform Admin</p>
+						<p class="loginInfo" >관리자 계정으로 로그인하세요</p>
+						<div class="loginArea">
+							<div class="id">
+								<label for="userId"></label>
+								<input type="text" title="아이디" name="userId" class="text" placeholder="ID">
+							</div>
+							<div class="pw">
+								<label for="password"></label>
+								<input type="password" title="비밀번호" name="password" id="password" class="text" placeholder="PASSWORD" onkeypress="javscript:commerce.admin.Login.handle_keypress(event)">
+							</div>
+							<p class="id_save">
+								<input type="checkbox" value="" name="idsave" id="idsave"><label for="idsave">아이디 저장</label>
+								<a href="#" class="text_r" onclick="javascript:commerce.admin.Login.openPasswordInitpup();">비밀번호 찾기</a>
+							</p>
+<!-- 								<a href="#" onclick="javascript:commerce.admin.Login.doLogin();" class="btn_login">Login</a> -->
+						</div>
+						<div class="btnArea">
+<!-- 							<a href="javascript:;" class="btn type01 c02">LOGIN</a> -->
+							<a href="#" onclick="javascript:commerce.admin.Login.doLogin();" class="btn type01 c02">로그인</a>
+<!-- 							<a href="javascript:;" class="btn type01 c01">도움말</a> -->
+						</div>
+						<ul class="infoArea">
+							<li>운영체제 : Windows 7/10</li>
+							<li>브라우저 : InternetExplorer 10이상, Chrome</li>
+						</ul>
+					</div>
+				</div>
+				<p class="loginCopy">Copyright ⓒ 2019 . All rights reserved.</p>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

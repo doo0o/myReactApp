@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>팝업 : 제네시스 CPO</title>
+	<!--#include file="/GHQ/SHTML/G_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/g_order.css">
+</head>
+<body>
+<!--#include file="/GHQ/SHTML/G_inc/common_skip.shtml"-->
+<!--#include file="/GHQ/SHTML/G_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--#include file="/GHQ/SHTML/G_inc/layout_header.shtml"-->
+		
+		<!--  s: title area : SUB  -->
+		<div class="h_sub ">
+			<!-- <button type="button" class="ic_back">뒤로가기</button> -->
+			<h3 class="tit">팝업</h3>
+		</div>
+		<!--  e: title area : SUB  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+
+		<div class="sample_wrap">
+			<p class="tit">FULL 팝업</p>
+			<div class="btn_pop_sample">
+				<button class="btn_modal01" data-popup="FO-CM-MS0003">이용약관 (Full) 공통</button>
+				<button class="btn_modal01" data-popup="FO-OR-MS0002">비교하기 (Full) 공통</button>
+			</div>
+		</div>
+
+		<div class="sample_wrap">
+			<p class="tit">Simple(Modal) 팝업</p>
+			<div class="btn_pop_sample">
+				<button class="btn_modal01" data-popup="FO-ME-MS0002">이용약관 (Simple) 동의 버튼</button>
+			</div>
+		</div>
+
+		<div class="sample_wrap">
+			<p class="tit">공통 토스트 팝업</p>
+			<div class="btn_pop_sample">
+					<button type="button" class="btn_mid03 CPO_Btn_Cart">장바구니 담기</button>
+					<div class="black_bg">
+						<div class="unit_like"><input type="checkbox" name="ck_ProductWish" id="ck_wish01" class="CPO_Chk_Wish"><label for="ck_wish01">찜하기</label></div>
+					</div>
+					<button type="button" class="btn_alarm01">가격변동알림</button>
+					
+					<div class="white_bg">
+						<input type="checkbox" name="ck_Agree" id="ck_Agree01" class="chk_type01 CPO_Chk_Agree"><label for="ck_Agree01">알림 수신에 동의</label>
+					</div>
+					<div class="white_bg">
+						<input type="checkbox" name="ck_Agree" id="ck_Agree02" class="chk_type01 CPO_Chk_Market"><label for="ck_Agree02">광고성 정보 수신 동의</label>
+					</div>
+
+				</div>
+		</div>
+		
+		<div class="sample_wrap">
+			<p class="tit">공통 Alert 팝업</p>
+			<div class="btn_pop_sample">
+				<button type="button" class="btn_mid03 CPO_Btn_Alert01">로그인이 필요합니다.</button>
+				<button type="button" class="btn_mid03 CPO_Btn_Alert02">선택차량 삭제</button>
+				<button type="button" class="btn_mid03 CPO_Btn_Alert03">로그아웃 하시겠습니까?</button>
+				<button type="button" class="btn_mid03 CPO_Btn_Alert04">캐시를 삭제하시겟습니까?</button>
+				<button type="button" class="btn_mid03 CPO_Btn_Alert05">서비스 해지</button>
+				<button type="button" class="btn_mid03 CPO_Btn_Alert06">현대차량만 등록 가능</button>
+				<button type="button" class="btn_mid03 CPO_Btn_Alert07">입고알림은 최대 10개까지 등록 가능</button>
+			</div>
+		</div>
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/GHQ/SHTML/G_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/GHQ/SHTML/G_inc/popup_include_all.shtml"-->
+
+<script>
+	//팝업 호출 ------ Sample
+	$(".btn_pop01").on("click",function(){
+		CPO.POPUP_toast($('#popup_toast01'));
+	});
+	
+	//팝업 호출 ------ Sample
+	$(".btn_modal01 , .btn_modal02").on("click",function(){
+		CPO.POPUP_open($(this));
+	});
+	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>기획전 목록 : 제네시스 CPO</title>
+	<!--#include file="/GHQ/SHTML/G_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/g_display.css">
+</head>
+<body>
+<!--#include file="/GHQ/SHTML/G_inc/common_skip.shtml"-->
+<!--#include file="/GHQ/SHTML/G_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--#include file="/GHQ/SHTML/G_inc/layout_header.shtml"-->
+		
+		<!--  s: title area : SUB  -->
+		<div class="h_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h3 class="tit">기획전</h3>
+			<ul class="util">
+				<li><a href="#" class="ic_cart">장바구니</a></li>
+			</ul>
+		</div>
+		<!--  e: title area : SUB  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		
+		<!-- 01. 기획전 목록 -->
+		<div class="plp_plan01">
+			<!-- list -->
+			<div class="plan_list">
+				<ol>
+					<li>
+						<!-- plan -->
+						<div class="unit_plan">
+							<div class="unit_img"><img src="/GHQ/img/@thumb/visual_660x824_03.jpg" alt="캠핑에 알맞은 패밀리카 기획전" /></div>
+							<div class="unit_info">
+								<span class="name">캠핑에 알맞은<br />패밀리카 기획전</span>
+								<span class="date">2021.08.15 – 2021.10.06</span>
+							</div>
+						</div>
+						<!-- //plan -->
+					</li>
+					<li>
+						<!-- plan -->
+						<div class="unit_plan">
+							<div class="unit_img"><img src="/GHQ/img/@thumb/visual_660x824_04.jpg" alt="프리미엄 차량 기획전" /></div>
+							<div class="unit_info">
+								<span class="name">프리미엄 차량 기획전</span>
+								<span class="date">2021.08.15 – 2021.10.06</span>
+							</div>
+						</div>
+						<!-- //plan -->
+					</li>
+					<li>
+						<!-- plan -->
+						<div class="unit_plan">
+							<div class="unit_img"><img data-src="/HMC/img/@thumb/visual_660x824_05.jpg" class="cpo_lazy_v" alt="CASPER 커스터마이징 기획전" /></div>
+							<div class="unit_info">
+								<span class="name">CASPER<br />커스터마이징 기획전</span>
+								<span class="date">2021.08.15 – 2021.10.06</span>
+							</div>
+						</div>
+						<!-- //plan -->
+					</li>
+				</ol>
+			</div>
+			<!-- //list -->
+		</div>
+		<!-- //01. 기획전 목록 -->
+
+		
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/GHQ/SHTML/G_inc/layout_actionbar.shtml"-->
+	<!--#include file="/GHQ/SHTML/G_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/GHQ/SHTML/G_inc/popup_include_all.shtml"-->
+</body>
+</html>

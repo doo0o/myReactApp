@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>선호설정 - 색상선택 : 제네시스 CUV</title>
+	<!--#include file="/GHQ/m/SHTML/G_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/g_main.css">
+</head>
+<body class="bg_dark">
+<!--#include file="/GHQ/m/SHTML/G_inc/common_skip.shtml"-->
+<!--#include file="/GHQ/m/SHTML/G_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div class="CPOpop_full2 active bg_dark" id="FO-PL-MS0009">
+	<div class="p_head"></div>
+	<div class="p_wrap">
+		<div class="preference_set">
+			<!-- [01] STEP -->
+			<div class="pas_set01">
+				<ol>
+					<li class="end"><span>1</span><em>단계</em></li>
+					<li class="on"><span>2</span><em>단계</em></li>
+					<li><span>3</span><em>단계</em></li>
+				</ol>
+				<div class="tit">
+					선호하는 차량 색상을 선택해주세요.
+					<div class="sub">복수 선택이 가능합니다.</div>
+				</div>
+			</div>
+			<!-- //[01] STEP -->
+			<!-- [02] 차량 이미지 -->
+			<div class="pas_set02" id="PasCar">
+				<span class="tit">THE NEW G70</span>
+				<span class="img"><img src="../../img/main/Main_KV_GV70 1.png" alt="실시간 조회 이미지01"></span>
+			</div>
+			<!-- //[02] 차량 이미지 -->
+			<!-- 색상 -->
+			<div class="pas_set03">
+				<div class="top">
+					색상
+					<span class="data">비크 블랙 외 1개</span>
+				</div>
+				<!-- 색상 -->
+				<div class="pas_color">
+					<p class="tit">메탈릭(유광)</p>
+					<ol class="color">
+						<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color01" data-id="Main_KV_GV70 1" data-name="THE NEW G70"><label for="schChk_Color01"><img src="/GHQ/m/img/color/srch_010.png" alt="화이트 색상이미지" /><span>화이트</span></label></li>
+						<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color02" data-id="Main_KV_GV70 2" data-name="THE NEW G71"><label for="schChk_Color02"><img src="/GHQ/m/img/color/srch_004.png" alt="베이지  색상이미지" /><span>베이지</span></label></li>
+						<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color03" data-id="Main_KV_GV70 3" data-name="THE NEW G72"><label for="schChk_Color03"><img src="/GHQ/m/img/color/srch_011.png" alt="실버 색상이미지" /><span>실버</span></label></li>
+						<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color04" data-id="Main_KV_GV70 1" data-name="THE NEW G73"><label for="schChk_Color04"><img src="/GHQ/m/img/color/srch_012.png" alt="메탈 색상이미지" /><span>메탈</span></label></li>
+						<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color05" data-id="Main_KV_GV70 2" data-name="THE NEW G74"><label for="schChk_Color05"><img src="/GHQ/m/img/color/srch_009.png" alt="그레이 색상이미지" /><span>그레이</span></label></li>
+						<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color06" data-id="Main_KV_GV70 3" data-name="THE NEW G75"><label for="schChk_Color06"><img src="/GHQ/m/img/color/srch_002.png" alt="블랙 색상이미지" /><span>블랙</span></label></li>
+						<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color07" data-id="Main_KV_GV70 1" data-name="THE NEW G76"><label for="schChk_Color07"><img src="/GHQ/m/img/color/srch_005.png" alt="레드 색상이미지" /><span>레드</span></label></li>
+						<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color08" data-id="Main_KV_GV70 2" data-name="THE NEW G77"><label for="schChk_Color08"><img src="/GHQ/m/img/color/srch_001.png" alt="브라운 색상이미지" /><span>브라운</span></label></li>
+						<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color09" data-id="Main_KV_GV70 3" data-name="THE NEW G78"><label for="schChk_Color09"><img src="/GHQ/m/img/color/srch_013.png" alt="골드 색상이미지" /><span>골드</span></label></li>
+						<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color10" data-id="Main_KV_GV70 1" data-name="THE NEW G79"><label for="schChk_Color10"><img src="/GHQ/m/img/color/srch_007.png" alt="그린 색상이미지" /><span>그린</span></label></li>
+						<li><input type="checkbox" class="chk_color" name="schChk_Color" id="schChk_Color11" data-id="Main_KV_GV70 2" data-name="THE NEW G80"><label for="schChk_Color11"><img src="/GHQ/m/img/color/srch_008.png" alt="블루 색상이미지" /><span>블루</span></label></li>
+					</ol>
+					<p class="tit">메탈릭(무광)</p>
+					<ol class="color">
+						<li><input type="checkbox" class="chk_color" name="mineChk_ColorB" id="mineChk_ColorB01" data-id="Main_KV_GV70 3" data-name="THE NEW G81"><label for="mineChk_ColorB01"><img src="/GHQ/m/img/color/mine_color_b_01.png" alt="무광1"><span>무광</span></label></li>
+						<li><input type="checkbox" class="chk_color" name="mineChk_ColorB" id="mineChk_ColorB02" data-id="Main_KV_GV70 1" data-name="THE NEW G82"><label for="mineChk_ColorB02"><img src="/GHQ/m/img/color/mine_color_b_02.png" alt="무광2"><span>무광</span></label></li>
+						<li><input type="checkbox" class="chk_color" name="mineChk_ColorB" id="mineChk_ColorB03" data-id="Main_KV_GV70 2" data-name="THE NEW G83"><label for="mineChk_ColorB03"><img src="/GHQ/m/img/color/mine_color_b_03.png" alt="무광3"><span>무광</span></label></li>
+					</ol>
+				</div>
+				<!-- //색상 -->
+			</div>
+			<!-- //색상 -->
+			<!-- 버튼 -->
+			<div class="pas_btn">
+				<div class="result">
+					<!-- Default -->
+					<dl>
+						<dt>전체 색상 차량수</dt>
+						<dd><em>100</em><i> 대</i></dd>
+					</dl>
+   
+					<!-- 선택옵션을 누른 경우 -->
+					<!-- <dl>
+						<dt>선택 색상 차량수</dt>
+						<dd><em>0</em><i> 대</i></dd>
+					</dl> -->
+
+					<!-- 0대일 경우에만 노출 -->
+					<!-- <p class="caution small">고객님의 선호에 맞는 상품이 없지만,<br>추후 재고가 들어오면 추천해 드리겠습니다</p> -->
+					<!-- //0대일 경우에만 노출 -->
+				</div>
+				<div class="btn_area flex">
+					<button type="button" class="btn_mid04" data-popup="FO-PL-MS0008">이전</button>
+					<button type="button" class="btn_mid06" data-popup="FO-PL-MS0010">다음</button>
+				</div>
+			</div>
+			<!-- //버튼 -->
+		</div>
+	</div>
+
+	<button type="button" class="pop_close">닫기</button>
+</div>
+<!-- //cpo wrap -->
+</body>
+<script>
+	$(document).ready(function(){
+		var pas = [];
+		var tot;
+
+		$('.pas_color input:checkbox').on('click',function(){
+			if($(this).is(":checked")){
+				pas[$(this)[0].id] = {id: $(this)[0].dataset.id, name: $(this)[0].dataset.name};
+			}else{
+				delete pas[$(this)[0].id];
+			}
+
+			tot = Object.values(pas);
+			
+			if(tot.length === 0){
+				$('#PasCar .img img').attr('src','../../img/main/Main_KV_GV70 1.png');
+				$('#PasCar .tit').text('THE NEW G70');
+			}else{
+				$('#PasCar .img img').attr('src','../../img/main/' + tot[tot.length - 1].id + '.png');
+				$('#PasCar .tit').text(tot[tot.length - 1].name);
+			}
+		});
+	});
+</script>
+</html>

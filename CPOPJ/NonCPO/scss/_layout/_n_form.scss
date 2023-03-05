@@ -1,0 +1,182 @@
+// form 태그 
+
+@import '../_common/n_function';
+@import '../_common/n_mixins';
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+	-webkit-appearance:none;
+	margin:0;
+}
+
+[class^="chk_"]{
+	width:1px;height:1px;opacity:0;
+	position:absolute;
+	&+label {
+		color: $COL_Gray07;
+	}
+	&:disabled+label {
+		color: $COL_Gray05;
+	}
+}
+
+.chk_type01 {
+	&+label{
+		position:relative;
+		display:inline-block;
+		padding-left:34px;
+		@include Mix_Font ('Txt-R', 15, 24);
+		&::before{
+			content:'';
+			display:block;
+			position:absolute;
+			top:0;
+			left:0;
+			width: 24px;
+			height: 24px;
+			border:1px solid $COL_Gray04;
+			border-radius: 50%;
+			@include Mix_Form_Bg;
+			background-color: $COL_White; 
+			background-position:0 0;
+		}
+	}
+	&:disabled+label::before{
+		background-color: $COL_Gray02; 
+	}
+	&:checked+label::before{
+		border-color: $COL_Blue02;
+		background-color: $COL_Blue02; 
+		background-position:-54px 0;
+	}
+	&:checked:disabled+label::before{
+		border-color: $COL_Gray04;
+		background-color: $COL_Gray04;
+	}
+}
+
+.chk_type02{
+	&+label{
+		position:relative;
+		display:inline-block;
+		padding-left:32px;
+		@include Mix_Font('Txt-R', 15, 22);
+		&:before{
+			content:''; 
+			display:block;
+			position:absolute;
+			top:0;
+			left:0;
+			width:22px;
+			height:22px;
+			@include Mix_Form_Bg;
+			background-position:0 0;
+		}
+	}
+	&:checked+label:before{
+		background-position:-27px 0;
+	}
+	&.small {
+		&+label{
+			padding-left:25px;
+			@include Mix_Font('Txt-R', 13, 22);
+		}
+	}
+}
+
+.chk_block {
+	width:1px;height:1px;opacity:0;
+	position:absolute;
+	&+label{
+		display: block;
+		padding:11px 0;
+		border:1px solid $COL_Gray03;
+		background:$COL_White;
+		color:$COL_Gray07;
+		@include Mix_Font('Head-R', 14, 24);
+		text-align:center;
+	}
+	&:checked+label{
+		color:$COL_Blue02;
+		border:1px solid $COL_Blue02;
+	}
+}
+
+.ico_delete{ // 초기화, 삭제 버튼 clear/delete 버튼 (type2/type4)
+	width:18px;
+	height:18px;
+	@include Mix_Size_0;
+	&::before{
+		content:'';
+		display:block;
+		width:18px;
+		height:18px;
+		@include Mix_Form_Bg;
+		background-position: -81px 0;
+	}
+	.focus &{
+		&::before{
+			background-position-x:-145px;
+		}
+	}
+}
+
+// 검색창
+.srch_box {
+	position:absolute;
+	top:20px;
+	right:20px;
+	width:350px;
+	.ipt_search {
+		position:relative;
+		height:50px;
+		padding:0 75px 0 20px;
+		border:1px solid $COL_Gray02;
+		background:$COL_White;		
+		transition:all .1s linear;
+		.util{
+			position:absolute;
+			top:12px;
+			right:17px;
+			li{
+				float:left;
+				margin-left:16px;
+				&:first-of-type{
+					margin-left:0;
+				}
+			}
+		}
+
+		.ipt_sch{
+			width:100%;
+			height:48px;
+			border:0;
+			background:transparent;
+			color:$COL_Gray08;
+			@include Mix_Font('Head-R', 16, 20);
+		}           		
+		.ic_search{
+			display:block;
+			width:24px;
+			height:24px;
+			padding-top:2px;
+			@include Mix_Size_0;
+			&::before{
+				content:'';
+				display:block;
+				height:20px;
+				margin:0 auto;
+				width:20px;
+				@include Mix_Layout_Bg;
+				background-position:-51px -27px;
+			}
+		}
+		.ico_delete{
+			position:absolute;
+			display:block;
+			top:50%;
+			right:50px;
+			transform:translateY(-54%);
+		}
+	}
+}

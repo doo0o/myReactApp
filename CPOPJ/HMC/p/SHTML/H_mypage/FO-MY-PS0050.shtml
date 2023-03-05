@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>보유차량 상세 : 현대 CUV</title>
+	<!--#include file="/HMC/p/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_mypage.css"> <!-- 해당 CSS -->
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+    <div id="CPOcontents">
+        <div id="layoutWrap" class="my">
+            <!-- container -->
+            <div class="container flex">
+                <!--#include file="/HMC/p/SHTML/H_inc/layout_left.shtml"-->
+                <!-- cont_wrap -->
+                <div class="cont_wrap my_car" data-id="myCar">
+                    <h1 class="page_tit">보유차량</h1>
+					<div class="detail">
+						<div class="unit_type type01">
+							<!-- unit -->
+							<div class="mid_area">
+								<div class="unit_img">
+									<img src="/HMC/p/img/@thumb/nobg_300x180.png" alt="상품명으로 뿌려주세요">
+								</div>
+								<div class="unit_info">
+									<div class="car_num">123가1234</div>
+									<div class="name">
+										<span class="model">그랜저 IG </span>
+										<span class="desc">가솔린 3.3 캘리그래피</span>
+									</div>
+									<div class="drive">
+										<span>22년 02월(21년형 페이스리프트)</span>
+										<span>최초등록일 : 2019.09.20</span>
+									</div>
+									<ul class="car_info01">
+										<li>
+											<span class="tit">제조사명</span>
+											<span class="txt">DFSK(동풍자동차)</span>
+										</li>
+										<li>
+											<span class="tit">차종</span>
+											<span class="txt">컨버터블</span>
+										</li>
+										<li>
+											<span class="tit">배기량</span>
+											<span class="txt">5,000cc</span>
+										</li>
+										<li>
+											<span class="tit">연료</span>
+											<span class="txt">가솔린</span>
+										</li>
+										<li>
+											<span class="tit">변속기</span>
+											<span class="txt">자동변속기</span>
+										</li>
+										<li>
+											<span class="tit">색상</span>
+											<span class="txt">사이버 그레이 메탈릭 (팬텀블랙)</span>
+										</li>
+										<li>
+											<span class="tit">승차인원</span>
+											<span class="txt">00인승</span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- //unit -->
+						</div>
+						<!-- (개인) 데이터 없을 경우 -->
+						<div class="drive_box">
+							<p class="tit">보유차량 주행거리</p>
+							<div class="form_area">
+								<div class="inbox_line fs03 hs02" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+									<input type="tell" class="txt type_tel type_nc" title="텍스트" placeholder="12,345" name="" value="">
+									<div>
+										<button type="button" class="btn_delete">삭제</button>
+									</div>
+									<em>km</em>
+								</div>
+								<!-- <p class="validation error">주행거리는 1,000,000km 이하로만 입력이 가능합니다.</p> -->
+							</div>
+							<div class="btn_area col_type">
+								<button type="button" class="btn_small color01">적용</button>
+								<button type="button" class="btn_small color02">주행거리 불러오기</button>
+							</div>
+						</div>
+						<div class="car_price">
+							<div class="price_box">
+								<div class="price type_no"> <!-- 데이터 없을 시 클래스 추가 -->
+									<p class="tit">시세 계산을 위한 데이터가 부족해요.</p>
+									<p class="desc">조회하신 차량은 시세 계산을 위한 데이터가 부족하여
+										내차팔기 서비스 이용이 어렵습니다.<br>
+										불편을 드려 죄송합니다</p>
+								</div>
+								<ul class="data_list">
+									<li>
+										<div class="tit">잔존가치</div>
+										<p class="data">0%</p>
+									</li>
+									<li>
+										<div class="tit">
+											신차가격
+											<!-- 툴팁 TBD -->
+											<div class="tooltip right">
+												<button type="button" class="open size01">상세보기</button>
+												<div class="cont">
+													<span class="text">내용 TBD 내용 TBD 내용 TBD 내용 TBD</span>
+													<button class="close">상세보기닫기</button>
+												</div>
+											</div>
+											<!-- // 툴팁 TBD -->
+										</div>
+										<p class="data">0<em>만원</em></p>
+									</li>
+								</ul>
+							</div>
+							<div class="graph_box">
+								<img src="../../img/@thumb/@graph_nodata.png" alt="">
+							</div>
+						</div>
+						<!-- // (개인) 데이터 없을 경우 -->
+						<!-- (개인)주행거리 자동 연동시 -->
+						<div class="drive_box">
+							<p class="tit auto">자동 연동중</p>
+							<div class="form_area">
+								<div class="inbox_line fs03 hs02 disabled" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+									<input type="tell" class="txt type_tel type_nc" title="텍스트" placeholder="12,345" name="" value="" disabled="">
+									<div>
+										<button type="button" class="btn_delete">삭제</button>
+									</div>
+									<em>km</em>
+								</div>
+							</div>
+						</div>
+						<div class="car_price">
+							<div class="price_box">
+								<div class="price">
+									<p class="tit">보유차량의 시세는</p>
+									<p class="tit"><em>2,000~2,500</em>만원입니다.</p>
+									<p class="desc">최근 7일 간 동일 엔진/구동타입 중<br>주행거리 20,000 ~ 25,000km 차량의 거래가 (2022.4.29 11시 25분 기준)</p>
+								</div>
+								<ul class="data_list">
+									<li>
+										<div class="tit">잔존가치</div>
+										<p class="data">57,0%</p>
+									</li>
+									<li>
+										<div class="tit">
+											신차가격
+											<!-- 툴팁 TBD -->
+											<div class="tooltip right">
+												<button type="button" class="open size01">상세보기</button>
+												<div class="cont">
+													<span class="text">내용 TBD 내용 TBD 내용 TBD 내용 TBD</span>
+													<button class="close">상세보기닫기</button>
+												</div>
+											</div>
+											<!-- // 툴팁 TBD -->
+										</div>
+										<p class="data">3,586<em>만원</em></p>
+									</li>
+								</ul>
+							</div>
+							<div class="graph_box">
+								<img src="../../img/@thumb/@graph.png" alt="">
+							</div>
+						</div>						
+						<!-- // (개인)주행거리 자동 연동시 -->
+					</div>
+					<div class="btn_area col_type">
+						<button type="button" class="btn_big color01">시세조회</button>
+					</div>						
+                </div>
+                <!-- //cont_wrap -->
+            </div>
+            <!-- //container -->
+        </div>
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<script>
+	lnb_active(); // lnb
+	tooltip(); //툴팁
+</script>
+</html>

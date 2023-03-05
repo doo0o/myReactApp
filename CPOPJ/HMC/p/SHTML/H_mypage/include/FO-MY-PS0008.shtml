@@ -1,0 +1,36 @@
+<div class="popup_modal" id="FO-MY-PS0008">
+	<div class="p_body">
+		<div class="p_inner s_small">
+			<div class="p_head">
+				<h2 class="tit">차량등록</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+				<div class="inner_view car_entry">
+					<div class="top_area">
+						<p class="sub_txt">보유차량을 간편하게 등록하세요.</p>
+						<p class="txt">내 차 시세를 알아보고, 견적 받아보세요.</p>
+					</div>
+					<div class="inp_area"> 
+						<p class="txt">차량번호를 알려주세요.</p>
+						<div class="form_area">
+							<div class="inbox_line fs01 hs01" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+								<input type="text" class="txt" title="텍스트" placeholder="12가 1234" name="" value="">
+								<button type="button" class="btn_delete">삭제</button>
+							</div>
+							<p class="validation error">차량정보를 불러올 수 없습니다. 차량번호를 다시 입력해 주세요.예시)12가1234</p>
+							<!-- <p class="validation error">보유차량으로 등록된 차량입니다.</p> -->
+						</div>
+					</div>
+				</div>
+				<!-- //contents -->
+				<!-- sticky -->
+				<div class="btn_area full_type">
+					<button type="button" class="btn_big color01">등록하기</button>
+				</div>
+				<!-- // sticky -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

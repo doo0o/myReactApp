@@ -1,0 +1,38 @@
+<!-- FO-TI-MS0032 : 정비/수리 수정 - FULL -->
+<div class="CPOpop_full" id="FO-TI-MS0032">
+	<div class="p_head">
+		<h2 class="tit txt_hidden">정비/수리 수정</h2><!-- 2022-09-16 CPO-3291 -->
+	</div>
+	<div class="p_wrap">
+		<!-- 정비/수리 수정 -->
+		<div class="sale_modify">
+			<div class="entry_carbase">
+				<div class="top02">
+					<p class="tit">정비/수리가<br />필요한가요?</p> <!-- 2022-09-16 CPO-3291 --> 
+				</div>
+				<ul class="entry_carmore_options">
+					<li>
+						<input type="radio" name="saleRepairChk2" id="saleRepairChk201" class="chk_type07" onchange="focusFunc('#saleRepairTxt2')" /><label for="saleRepairChk201">네, 필요해요</label>
+						<div class="box_textarea">
+							<div class="textarea">
+								<textarea name="" id="saleRepairTxt2" class="area" placeholder="예: 엔진 오일 교체가 필요해요." rows="3" cols="21" role="textbox"></textarea>
+								<span class="txt_check"><em class="first">0</em> / <em class="last">1000</em>자</span>
+							</div>
+						</div>
+					</li>
+					<li>
+						<input type="radio" name="saleRepairChk2" id="saleRepairChk202" class="chk_type07" />
+						<label for="saleRepairChk202">아니요, 필요 없어요</label>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- //정비/수리 수정 -->
+		<!-- (3). STICKY BUTTON -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">수정하기</button>
+		</div>
+		<!-- //(3). STICKY BUTTON -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>고객센터</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_cscenter.css">
+</head>
+<body>
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">자주 묻는 질문</h3>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="faq_wrap">
+			<div class="inp_search">
+				<input type="search" class="txt" placeholder="궁금한 점을 검색해보세요.">
+				<button type="button" class="btn_delete">삭제</button>
+			</div>
+			<ul class="tab_list x-scroll">
+				<li class="on"><button>전체</button></li>
+				<li><button>내차사기</button></li>
+				<li><button>내차팔기</button></li>
+				<li><button>앱 오류문의</button></li>
+				<li><button>회원 &amp; 멤버십</button></li>
+				<li><button>결제문의</button></li>
+				<li><button>경공매</button></li>
+			</ul>
+			<!-- 검색 결과 없을 때 -->
+			<div class="no_data">
+				<p class="tit">입력하신 검색어와 일치하는<br>검색 결과가 없습니다.</p>
+				<p class="txt">다른 검색어를 입력하여 검색해주세요.</p>
+
+				<div class="etc">
+					<p class="tit">찾고자 하는 질문이 없으신가요?</p>
+					<div class="btn_area">
+						<button type="button" class="btn_mid01">1:1 문의 등록 하기</button>
+						<button type="button" class="btn_mid02">나의 문의 내역 보기</button>
+					</div>
+				</div>
+			</div>
+			<!-- //검색 결과 없을 때 -->
+
+			<div class="top_total">
+				<span class="all">전체 <em>20</em>개</span>
+			</div>
+			<ul class="toggle">
+				<li>
+					<button class="tit_btn">
+						<span>내차사기</span>
+						배송은 언제 받을 수 있나요?
+					</button>
+					<div class="cont">
+						아이디 찾기 또는 비밀번호 찾기 진행을 부탁드려요.<br>
+						회원 가입하신 사실을 잊으셨거나 제휴 사이트를 통해 가입된 경우가 많습니다.<br><br>
+
+						<a href="#none" class="btn_txt_mid02">아이디 찾기 또는 비밀번호 찾기</a>를 진행해 주세요.
+					</div>
+				</li>
+				<li>
+					<button class="tit_btn">
+						<span>내차사기</span>
+						배송은 언제 받을 수 있나요?
+					</button>
+					<div class="cont">
+						아이디 찾기 또는 비밀번호 찾기 진행을 부탁드려요.<br>
+						회원 가입하신 사실을 잊으셨거나 제휴 사이트를 통해 가입된 경우가 많습니다.
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!-- 2023 02 06 푸터 탭바 추가 -->
+	<!-- 푸터 -->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_footer.shtml"-->
+	<!-- 탭바 -->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_actionbar.shtml"-->
+</div>
+<!-- //cpo wrap -->
+</body>
+<script>
+	CPO.top(1);
+	CPO.tab();
+	CPO.toggle();
+</script>
+</html>

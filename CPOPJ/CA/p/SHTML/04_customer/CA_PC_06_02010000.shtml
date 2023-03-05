@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>목록 : 공지사항 : 현대 CUV</title>
+	<!--#include file="/CA/p/SHTML/00_common/include/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/c_customer.css">
+</head>
+<body>
+<!--#include file="/CA/p/SHTML/00_common/include/common_skip.shtml"-->
+<!--#include file="/CA/p/SHTML/00_common/include/layout_loading.shtml"-->
+<!-- CAwrap -->
+<div id="CAwrap">
+	<!--#include file="/CA/p/SHTML/00_common/include/layout_header.shtml"-->
+    <div id="CAcontents">
+        <div id="layoutWrap" class="customer">
+            <!-- container -->
+            <div class="container notice"> 
+                <h1 class="page_tit">공지사항</h1>
+
+                <div class="total_result">
+                    <div class="all">전체 <em>10</em>개</div>
+                </div>
+
+                <ul class="list_notice">
+                    <li class="noti">
+                        <a href="javascript:void(0)"><i class="icon">공지아이콘</i><span class="title">[긴급공지] 현대자동차 CPOA 신규 회원가입 혜택 안내
+                            현대자동차 CPOA 신규 회원가입 혜택 안내</span><span class="flag_big01">NEW</span><span class="date">2021.12.03</span></a>
+                    </li>
+                    <li class="noti">
+                        <a href="javascript:void(0)"><i class="icon">공지아이콘</i><span class="title">[긴급공지] 서비스 종료 안내
+                        </span><span class="date">2021.12.03</span></a>
+                    </li>
+                    <li class="noti">
+                        <a href="javascript:void(0)"><i class="icon">공지아이콘</i><span class="title">[긴급공지] 서비스 종료 안내
+                        </span><span class="date">2021.12.03</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><span class="title">[공지사항] 현대자동차 CPOA 신규 회원가입 혜택 안내</span><span class="flag_big01">NEW</span><span class="date">2021.12.03</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><span class="title">[이벤트] 현대자동차 CPOA 신규 회원가입 혜택 안내</span><span class="flag_big01">NEW</span><span class="date">2021.12.03</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><span class="title">[공지사항] 회원 등급별 혜택 개편 안내</span><span class="date">2021.12.03</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><span class="title">[공지사항] 회원 등급별 혜택 개편 안내</span><span class="date">2021.12.03</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><span class="title">[공지사항] 현대자동차 CPOA 신규 회원가입 혜택 안내</span><span class="date">2021.12.03</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)"><span class="title">[이벤트] 11월 차량할인 프로모션 종료 알림 11월 차량할인 프로모션 종료 알림 11월 차량할인 프로모션 종료 알림</span><span class="date">2021.12.03</span></a>
+                    </li>
+                </ul>
+
+                <div class="btn_area">
+                    <button type="button" class="btn_more">더보기</button>
+                </div>
+                <!-- //데이터 있을경우 -->
+
+                <div class="no_data review">
+                    <p class="tit">게시된 공지사항이 없습니다.</p>
+                </div>
+                <!-- //데이터 없을경우 -->
+            </div>
+            <!-- //container -->
+        </div>
+	</div> 
+	<!-- //CAcontents -->
+	<!--#include file="/CA/p/SHTML/00_common/include/layout_footer.shtml"-->
+</div>
+<!-- //CAwrap -->
+</body>
+<script>
+	toggle();
+</script>
+</html>

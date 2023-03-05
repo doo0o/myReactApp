@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>내차팔기 목록 : 현대 CUV</title>
+	<!--#include file="/HMC/p/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_order.css">
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+	<div id="CPOcontents">
+		<div id="layoutWrap" class="my">
+			<!-- container -->
+			<div class="container flex">
+				<!--#include file="/HMC/p/SHTML/H_inc/layout_left.shtml"-->
+				<!-- cont_wrap -->
+				<div class="cont_wrap car_trade" data-id="mySale">
+					<h1 class="page_tit">중고차 판매계약</h1>
+					<div class="cont_box">
+						<!-- 개인 -->
+						<section>
+							<div class="sec_tit m">대표명의자</div>
+							<div class="sec_tit s">명의구분</div>
+							<ul class="form_area box_type">
+								<li><input type="radio" name="RadioChkPayment" id="RadioChkPayment_01" class="chk_type01 bold" checked=""><label for="RadioChkPayment_01"><span class="txt">개인</span></label></li>
+								<li><input type="radio" name="RadioChkPayment" id="RadioChkPayment_02" class="chk_type01 bold"><label for="RadioChkPayment_02"><span class="txt">개인사업자</span></label></li>
+							</ul>
+							<div class="sec_tit s">기본정보</div>
+							<ul class="form_list type01">
+								<li>
+									<div class="form_area">
+										<div class="inbox_type01 on disabled" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">이름</span>
+											<input type="text" class="txt" title="이름 입력" value="김현대" disabled>
+											<button type="button" class="btn_delete">삭제</button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="form_area">
+										<div class="inbox_type01 identity" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">주민등록번호</span>
+											<input type="tel" class="txt type_id01" maxlength="6" title="주민등록번호 앞자리 입력" placeholder="앞자리" name="" value="">
+											<button type="button" class="btn_delete">삭제</button>
+											<input type="tel" class="txt type_id02" maxlength="7" title="주민등록번호 뒷자리 입력" placeholder="뒷자리" name="" value="">
+											<button type="button" class="btn_delete">삭제</button>
+										</div>
+										<!-- <p class="validation ok">본인인증이 완료되었습니다.</p>
+										<p class="validation error">입력하신 주민등록번호로 명의자를 확인할 수 없습니다.</p>
+										<p class="validation error">본인인증을 완료해주시기 바랍니다.</p> -->
+									</div>
+								</li>
+								<li>
+									<div class="form_area">
+										<div class="inbox_type01 on disabled" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">휴대폰번호</span>
+											<input type="tel" class="txt type_tel" title="휴대폰번호 입력" placeholder="'-'없이 숫자만 입력" name="" value="01012345678" disabled> <!-- 전화번호 : type_tel 입력값 하이픈 추가 기능 -->
+											<button type="button" class="btn_delete">삭제</button>
+										</div>
+										<!-- <p class="validation error">입력하신 휴대폰번호 형식이 유효하지 않습니다.</p> -->
+									</div>
+								</li>
+								<li>
+									<div class="form_area">
+										<div class="inbox_type01 email" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">이메일</span>
+											<input type="email" class="txt type_email" title="이메일 입력" placeholder="이메일">
+											<button type="button" class="btn_delete">삭제</button>
+											<div class="slt_box">
+												<span class="com_select hs02 isSelected" data-ref="select">
+													<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="selectMail" onclick="dropDown({reset: false});">
+														직접입력
+													</button>
+													<span class="com_select_list" data-ref="dropDownList" id="selectMail">
+														<span class="com_select_list_inner">
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>직접입력</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@hyundai.com</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@naver.com</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@daum.net</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@hanmail.net</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@nate.com</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@gmail.com</span></label>
+														</span>
+													</span>
+												</span>
+											</div>
+										</div>
+										<!-- <p class="validation error">입력하신 이메일 형식이 유효하지 않습니다.</p> -->
+									</div>
+								</li>
+								<li class="full">
+									<div class="form_area">
+										<div class="inbox_type01 address on" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()"><!-- 주소 입력 후 class on 추가 -->
+											<span class="tit">주소</span>
+											<div class="add">
+												(06179) 서울특별시 강남구 테헤란로 510(대치동)
+											</div>
+											<button type="button" class="btn_xsmall color02">주소검색</button>
+										</div>
+									</div>                          
+								</li>
+								<li class="full">
+									<div class="form_area">
+										<div class="inbox_type01" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">상세주소</span>
+											<input type="text" class="txt" title="상세주소 입력" placeholder="상세주소 입력" name="" value="">
+											<button type="button" class="btn_delete">삭제</button>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="caution">
+								<ul>
+									<li>대표명의자의 이름, 지분율은 자동차등록 원부에 기재된 내용이며 변경하실 수 없습니다.</li>
+									<li>대표명의자의 휴대폰번호는 회원정보에 등록된 내용이며 변경하실 수 없습니다.</li>
+									<li>대표명의자 본인의 주민등록번호를 입력하여 본인확인을 진행해 주시기 바랍니다.</li>
+									<li>외국인은 외국인등록번호 13자리를 입력해 주시기 바랍니다.</li>
+									<li>개명 등으로 표시된 정보와 다른 경우 회원정보에서 먼저 정보를 변경한 후 계약을 진행해 주시기 바랍니다.</li>
+									<li>주소는 반드시 주민등록상 주소로 입력해 주시기 바랍니다.</li>
+								</ul>
+							</div>						
+							<div class="sec_tit s">전자서명 방법</div>
+							<div class="form_area">
+								<input type="radio" name="RadioChkRecipt01" id="RadioChkRecipt01_1" class="chk_radio"><label for="RadioChkRecipt01_1"><span class="txt">문자메시지</span></label>
+								<input type="radio" name="RadioChkRecipt01" id="RadioChkRecipt01_2" class="chk_radio"><label for="RadioChkRecipt01_2"><span class="txt">이메일</span></label>
+							</div>
+						</section>
+						<!-- // 개인 -->
+						<!-- 법인 -->
+						<section>
+							<div class="sec_tit m">대표명의자<span class="name">법인사업자</span></div>
+							<div class="sec_tit s">기본정보</div>
+							<ul class="form_list type01">
+								<li>
+									<div class="form_area">
+										<div class="inbox_type01 on disabled" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">법인명</span>
+											<input type="text" class="txt" title="이름 입력" value="현대상사" disabled>
+											<button type="button" class="btn_delete">삭제</button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="form_area">
+										<div class="inbox_type01 on disabled" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">법인등록번호</span>
+											<input type="tel" class="txt type_corporate" title="법인등록번호 입력" placeholder="'-'없이 숫자만 입력" maxlength="13" value="123456-1234567" disabled><!-- 법인등록번호 : 'type_corporate' 입력값 하이픈 추가 기능 -->
+											<button type="button" class="btn_delete">삭제 </button>
+										</div>
+										<!-- <p class="validation error">입력하신 법인등록번호 형식이 유효하지 않습니다.</p> -->
+									</div>
+								</li>
+								<li>
+									<div class="form_area">
+										<div class="inbox_type01 on disabled" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">사업자번호</span>
+											<input type="tel" class="txt type_business" title="사업자번호 입력" placeholder="'-'없이 숫자만 입력" maxlength="10" value="123-45-67890" disabled><!-- 사업자번호 : 'type_business' 입력값 하이픈 추가 기능 -->
+											<button type="button" class="btn_delete">삭제 </button>
+										</div>
+										<!-- <p class="validation error">에러 메세지</p> -->
+									</div>
+								</li>
+								<li>
+									<div class="form_area">
+										<div class="inbox_type01 on disabled" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">담당자명</span>
+											<input type="text" class="txt" title="이름 입력" value="김현대" disabled="">
+											<button type="button" class="btn_delete">삭제</button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="form_area">
+										<div class="inbox_type01 on disabled" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">담당자 휴대폰번호</span>
+											<input type="tel" class="txt type_tel" title="휴대폰번호 입력" placeholder="'-'없이 숫자만 입력" name="" value="01012345678" disabled> <!-- 전화번호 : type_tel 입력값 하이픈 추가 기능 -->
+											<button type="button" class="btn_delete">삭제</button>
+										</div>
+										<!-- <p class="validation error">입력하신 휴대폰번호 형식이 유효하지 않습니다.</p> -->
+									</div>
+								</li>
+								<li>
+									<div class="form_area">
+										<div class="inbox_type01 email on" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">이메일</span>
+											<input type="email" class="txt type_email" title="이메일 입력" placeholder="이메일" value="kim">
+											<button type="button" class="btn_delete">삭제</button>
+											<div class="slt_box">
+												<span class="com_select hs02 isSelected" data-ref="select">
+													<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="selectMail" onclick="dropDown({reset: false});">
+														직접입력
+													</button>
+													<span class="com_select_list" data-ref="dropDownList" id="selectMail">
+														<span class="com_select_list_inner">
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>직접입력</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@hyundai.com</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@naver.com</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@daum.net</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@hanmail.net</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@nate.com</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@gmail.com</span></label>
+														</span>
+													</span>
+												</span>
+											</div>
+										</div>
+										<!-- <p class="validation error">입력하신 이메일 형식이 유효하지 않습니다.</p> -->
+									</div>
+								</li>
+								<li class="full">
+									<div class="form_area">
+										<div class="inbox_type01 address on" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()"><!-- 주소 입력 후 class on 추가 -->
+											<span class="tit">사업장 주소</span>
+											<div class="add">
+												(06179) 서울특별시 강남구 테헤란로 510(대치동)
+											</div>
+											<button type="button" class="btn_xsmall color02">주소검색</button>
+										</div> 
+									</div>
+								</li>
+								<li class="full">
+									<div class="form_area">
+										<div class="inbox_type01 on" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">상세주소</span>
+											<input type="text" class="txt" title="상세주소 입력" placeholder="상세주소 입력" name="" value="101호">
+											<button type="button" class="btn_delete">삭제</button>
+										</div>
+									</div>
+								</li>
+							</ul> 
+							<div class="caution">
+								<ul>
+									<li>대표명의자의 법인명, 지분율은 자동차등록 원부에 기재된 내용이며 변경하실 수 없습니다.</li>
+									<li>대표명의자의 법인등록번호, 사업자등록번호, 휴대폰번호는 회원정보에 등록된 내용이며 변경하실 수 없습니다.</li>
+									<li>사업장 주소는 반드시 법인등록상의 주소로 입력해 주시기 바랍니다.</li>									
+								</ul>
+							</div>
+						</section>
+						<!-- // 법인 --> 
+						<!-- 공동 명의자 : 법인 -->
+						<section>
+							<div class="sec_tit m">공동명의자1<span class="name">개인</span></div>
+							<div class="sec_tit s">기본정보</div>
+							<ul class="form_list type01">
+								<li>
+									<div class="form_area">
+										<div class="inbox_type01 on disabled" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">이름</span>
+											<input type="text" class="txt" title="이름 입력" value="김현대" disabled>
+											<button type="button" class="btn_delete">삭제</button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="form_area">
+										<div class="inbox_type01 identity" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">주민등록번호</span>
+											<input type="tel" class="txt type_id01" maxlength="6" title="주민등록번호 앞자리 입력" placeholder="앞자리" name="" value="">
+											<button type="button" class="btn_delete">삭제</button>
+											<input type="tel" class="txt type_id02" maxlength="7" title="주민등록번호 뒷자리 입력" placeholder="뒷자리" name="" value="">
+											<button type="button" class="btn_delete">삭제</button>
+										</div>
+										<!-- <p class="validation ok">본인인증이 완료되었습니다.</p>
+										<p class="validation error">입력하신 주민등록번호로 명의자를 확인할 수 없습니다.</p>
+										<p class="validation error">본인인증을 완료해주시기 바랍니다.</p> -->
+									</div>
+								</li>
+								<li>
+									<div class="form_area">
+										<div class="inbox_type01" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">휴대폰번호</span>
+											<input type="tel" class="txt type_tel" title="휴대폰번호 입력" placeholder="'-'없이 숫자만 입력" name="" value=""> <!-- 전화번호 : type_tel 입력값 하이픈 추가 기능 -->
+											<button type="button" class="btn_delete">삭제</button>
+										</div>
+										<!-- <p class="validation error">입력하신 휴대폰번호 형식이 유효하지 않습니다.</p> -->
+									</div>
+								</li>
+								<li>
+									<div class="form_area">
+										<div class="inbox_type01 email" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">이메일</span>
+											<input type="email" class="txt type_email" title="이메일 입력" placeholder="이메일">
+											<button type="button" class="btn_delete">삭제</button>
+											<div class="slt_box">
+												<span class="com_select hs02 isSelected" data-ref="select">
+													<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="selectMail" onclick="dropDown({reset: false});">
+														직접입력
+													</button>
+													<span class="com_select_list" data-ref="dropDownList" id="selectMail">
+														<span class="com_select_list_inner">
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>직접입력</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@hyundai.com</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@naver.com</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@daum.net</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@hanmail.net</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@nate.com</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@gmail.com</span></label>
+														</span>
+													</span>
+												</span>
+											</div>
+										</div>
+										<!-- <p class="validation error">입력하신 이메일 형식이 유효하지 않습니다.</p> -->
+									</div>
+								</li>								
+							</ul>
+							<div class="caution">
+								<ul>
+									<li>공동명의자의 이름, 지분율은 자동차등록 원부에 기재된 내용이며 변경하실 수 없습니다.</li>
+									<li>외국인은 외국인등록번호 13자리를 입력해 주시기 바랍니다.</li>
+								</ul>
+							</div>
+							<ul class="form_list type01">
+								<li class="full">
+									<div class="form_area">
+										<input type="checkbox" name="chk_comm" id="chk_list02" class="chk_type01"><label for="chk_list02"><span class="txt">대표명의자와 주소 동일</span></label>
+									</div>                
+								</li>
+								<li class="full">
+									<div class="form_area">
+										<div class="inbox_type01 address" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()"><!-- 주소 입력 후 class on 추가 -->
+											<span class="tit">주소</span>
+											<div class="add"></div>
+											<button type="button" class="btn_xsmall color02">주소검색</button>
+										</div> 
+									</div>
+								</li>
+							</ul>
+							<div class="caution">
+								<p>주소는 반드시 주민등록상 주소로 입력해 주시기 바랍니다.</p>
+							</div>
+						</section>
+						<!-- // 공동 명의자 : 법인 -->
+						<!-- 공동 명의 -->
+						<section>
+							<div class="sec_tit m">공동명의자1<button type="button" class="btn_small color02">삭제하기</button></div>
+							<div class="sec_tit s">명의구분</div>
+							<ul class="form_area box_type">
+								<li><input type="radio" name="RadioChkPayment1" id="RadioChkPayment_03" class="chk_type01 bold"><label for="RadioChkPayment_03"><span class="txt">개인</span></label></li>
+								<li><input type="radio" name="RadioChkPayment1" id="RadioChkPayment_04" class="chk_type01 bold" checked=""><label for="RadioChkPayment_04"><span class="txt">개인사업자</span></label></li>
+							</ul>
+							<div class="sec_tit s">기본정보</div>
+							<ul class="form_list type01">
+								<li>
+									<div class="form_area">
+										<div class="inbox_type01 " onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">이름</span>
+											<input type="text" class="txt" title="이름 입력" value="">
+											<button type="button" class="btn_delete">삭제</button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="form_area">
+										<div class="inbox_type01 identity" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">주민등록번호</span>
+											<input type="tel" class="txt type_id01" maxlength="6" title="주민등록번호 앞자리 입력" placeholder="앞자리" name="" value="">
+											<button type="button" class="btn_delete">삭제</button>
+											<input type="tel" class="txt type_id02" maxlength="7" title="주민등록번호 뒷자리 입력" placeholder="뒷자리" name="" value="">
+											<button type="button" class="btn_delete">삭제</button>
+										</div>
+										<!-- <p class="validation ok">본인인증이 완료되었습니다.</p>
+										<p class="validation error">입력하신 주민등록번호로 명의자를 확인할 수 없습니다.</p>
+										<p class="validation error">본인인증을 완료해주시기 바랍니다.</p> -->
+									</div>
+								</li>
+								<li>
+									<div class="form_area">
+										<div class="inbox_type01" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">휴대폰번호</span>
+											<input type="tel" class="txt type_tel" title="휴대폰번호 입력" placeholder="'-'없이 숫자만 입력" name="" value=""> <!-- 전화번호 : type_tel 입력값 하이픈 추가 기능 -->
+											<button type="button" class="btn_delete">삭제</button>
+										</div>
+										<!-- <p class="validation error">입력하신 휴대폰번호 형식이 유효하지 않습니다.</p> -->
+									</div>
+								</li>
+								<li>
+									<div class="form_area">
+										<div class="inbox_type01 email" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">이메일</span>
+											<input type="email" class="txt type_email" title="이메일 입력" placeholder="이메일">
+											<button type="button" class="btn_delete">삭제</button>
+											<div class="slt_box">
+												<span class="com_select hs02 isSelected" data-ref="select">
+													<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="selectMail" onclick="dropDown({reset: false});">
+														직접입력
+													</button>
+													<span class="com_select_list" data-ref="dropDownList" id="selectMail">
+														<span class="com_select_list_inner">
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>직접입력</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@hyundai.com</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@naver.com</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@daum.net</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@hanmail.net</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@nate.com</span></label>
+															<label class="com_select_item"><input type="radio" name="selectMail"> <span>@gmail.com</span></label>
+														</span>
+													</span>
+												</span>
+											</div>
+										</div>
+										<!-- <p class="validation error">입력하신 이메일 형식이 유효하지 않습니다.</p> -->
+									</div>
+								</li>								
+							</ul>
+							<div class="caution">
+								<p>외국인은 외국인등록번호 13자리를 입력해 주시기 바랍니다.</p>
+							</div>
+							<ul class="form_list type01">
+								<li class="full">
+									<div class="form_area">
+										<input type="checkbox" name="chk_comm" id="chk_list02" class="chk_type01"><label for="chk_list02"><span class="txt">대표명의자와 주소 동일</span></label>
+									</div>                
+								</li>
+								<li class="full">
+									<div class="form_area">
+										<div class="inbox_type01 address on disabled" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()"><!-- 주소 입력 후 class on 추가 -->
+											<span class="tit">주소</span>
+											<div class="add">(06179) 서울특별시 강남구 테헤란로 510(대치동)</div>
+											<button type="button" class="btn_xsmall color02 disabled">주소검색</button>
+										</div>
+									</div>
+								</li>
+								<li class="full">
+									<div class="form_area">
+										<div class="inbox_type01 on disabled" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">상세주소</span>
+											<input type="text" class="txt" title="상세주소 입력" placeholder="상세주소 입력" name="" value="101호" disabled>
+											<button type="button" class="btn_delete">삭제</button>
+										</div>
+										<!-- <p class="validation error">에러 메세지</p> -->
+									</div>
+								</li>
+							</ul>
+							<div class="caution">
+								<p>주소는 반드시 주민등록상 주소로 입력해 주시기 바랍니다.</p>
+							</div>
+							<div class="sec_tit s">사업자정보</div>
+							<ul class="form_list type01">
+								<li>
+									<div class="form_area">
+										<div class="inbox_type01 " onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">사업자명</span>
+											<input type="text" class="txt" title="이름 입력" value="">
+											<button type="button" class="btn_delete">삭제</button>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="form_area">
+										<div class="inbox_type01" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">사업자등록번호</span>
+											<input type="tel" class="txt type_business" title="사업자번호 입력" placeholder="'-'없이 숫자만 입력" maxlength="10" value=""><!-- 사업자번호 : 'type_business' 입력값 하이픈 추가 기능 -->
+											<button type="button" class="btn_delete">삭제 </button>
+										</div>
+										<!-- <p class="validation error">에러 메세지</p> -->
+									</div>
+								</li>
+								<li class="full">
+									<div class="form_area">
+										<div class="inbox_type01 address on" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()"><!-- 주소 입력 후 class on 추가 -->
+											<span class="tit">사업장 주소</span>
+											<div class="add">
+												(06179) 서울특별시 강남구 테헤란로 510(대치동)
+											</div>
+											<button type="button" class="btn_xsmall color02">주소검색</button>
+										</div> 
+									</div>
+								</li>
+							</ul>
+							<div class="sec_tit s">전자서명 방법</div>
+							<div class="form_area">
+								<input type="radio" name="RadioChkRecipt01" id="RadioChkRecipt01_3" class="chk_radio"><label for="RadioChkRecipt01_3"><span class="txt">문자메시지</span></label>
+								<input type="radio" name="RadioChkRecipt01" id="RadioChkRecipt01_4" class="chk_radio"><label for="RadioChkRecipt01_4"><span class="txt">이메일</span></label>
+							</div>							
+						</section>
+						<section>
+							<div class="btn_area col_type">
+								<button type="button" class="btn_mid color01 ico_add">공동명의자 추가</button>
+							</div>
+							<div class="bg_box caution">
+								<p>공동명의자는 최대 3명까지 등록 가능 합니다.</p>
+							</div>
+						</section>
+						<!-- // 공동 명의 -->
+						<section>
+							<div class="sec_tit m">계약서 서명 방법<span class="sub_txt">계약서 서명 방법은 계약서 다운로드 후 서명하고 탁송기사에게 전달해 주세요</span></div>
+						</section>
+						<!-- 지분율 -->
+						<section>
+							<div class="sec_tit m">지분율 설정</div>
+							<ul class="setting">
+								<li>
+									<div class="snippet">
+										<span class="position">대표명의자</span>
+										<strong class="name">박현대</strong>
+									</div>
+									<div class="form_area">
+										<div class="inbox_type02 txt_r" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">지분율</span>
+											<input type="tel" pattern="\d*" class="txt type_number" title="지분율 입력" placeholder="" name="" value="50" maxlength="3">
+											<button type="button" class="btn_delete">삭제</button>
+											<em>%</em>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="snippet">
+										<span class="position">공동명의자 1</span>
+										<strong class="name">박현대</strong>
+									</div>
+									<div class="form_area">
+										<div class="inbox_type02 txt_r" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">지분율</span>
+											<input type="tel" pattern="\d*" class="txt type_number" title="지분율 입력" placeholder="" name="" value="10" maxlength="3">
+											<button type="button" class="btn_delete">삭제</button>
+											<em>%</em>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="snippet">
+										<span class="position">공동명의자 2</span>
+										<strong class="name">박현대</strong>
+									</div>
+									<div class="form_area">
+										<div class="inbox_type02 txt_r" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">지분율</span>
+											<input type="tel" pattern="\d*" class="txt type_number" title="지분율 입력" placeholder="" name="" value="40" maxlength="3">
+											<button type="button" class="btn_delete">삭제</button>
+											<em>%</em>
+										</div>
+										<p class="validation error">지분율에는 최소 1% 이상의 값이 입력되어야 합니다.</p>
+									</div>
+								</li>
+							</ul>
+							<div class="bg_box caution">
+								<ul>
+									<li>지분율은 최소 1이상을 입력해야 하며 최대 100까지 입력 가능합니다.</li>
+									<li>지분율의 합은 100%이어야 합니다.</li>
+								</ul>
+							</div>
+						</section>
+						<!-- // 지분율 -->
+						<!-- 지분율 -->
+						<section>
+							<div class="sec_tit m">지분율 설정</div>
+							<ul class="setting">
+								<li>
+									<div class="snippet">
+										<span class="position">대표명의자</span>
+										<strong class="name">박현대</strong>
+									</div>
+									<div class="form_area">
+										<div class="inbox_type02 txt_r disabled" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">지분율</span>
+											<input type="tel" pattern="\d*" class="txt type_number" title="지분율 입력" placeholder="" name="" value="50" maxlength="3" disabled>
+											<button type="button" class="btn_delete">삭제</button>
+											<em>%</em>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="snippet">
+										<span class="position">공동명의자 1</span>
+										<strong class="name">박현대</strong>
+									</div>
+									<div class="form_area">
+										<div class="inbox_type02 txt_r disabled" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">지분율</span>
+											<input type="tel" pattern="\d*" class="txt type_number" title="지분율 입력" placeholder="" name="" value="10" maxlength="3" disabled>
+											<button type="button" class="btn_delete">삭제</button>
+											<em>%</em>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="snippet">
+										<span class="position">공동명의자 2</span>
+										<strong class="name">박현대</strong>
+									</div>
+									<div class="form_area">
+										<div class="inbox_type02 txt_r disabled" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">지분율</span>
+											<input type="tel" pattern="\d*" class="txt type_number" title="지분율 입력" placeholder="" name="" value="40" maxlength="3" disabled>
+											<button type="button" class="btn_delete">삭제</button>
+											<em>%</em>
+										</div>
+										<!-- <p class="validation error">지분율에는 최소 1% 이상의 값이 입력되어야 합니다.</p> -->
+									</div>
+								</li>
+							</ul>
+							<div class="bg_box caution">
+								<ul>
+									<li>지분율은 최소 1이상을 입력해야 하며 최대 100까지 입력 가능합니다.</li>
+									<li>지분율의 합은 100%이어야 합니다.</li>
+								</ul>
+							</div>
+						</section>
+						<!-- // 지분율 -->
+						<section>
+							<div class="sec_tit m">차량 인도정보 확인</div>
+							<div class="sec_tit s">차량인도주소</div>
+							<ul class="form_list type01">
+								<li>
+									<div class="form_area">
+										<span class="com_select hs01" data-ref="select">
+											<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample02" onclick="dropDown();">
+												차량 인도하실 분 선택
+											</button>
+											<span class="com_select_list" data-ref="dropDownList" id="dropDownExample02">
+												<span class="com_select_list_inner">
+													<label class="com_select_item"><input type="radio" name="dropDownExample02"><span>차량 인도하실 분 선택</span></label>
+													<label class="com_select_item"><input type="radio" name="dropDownExample02"><span>대표명의자</span></label>
+													<label class="com_select_item"><input type="radio" name="dropDownExample02"><span>공동명의자1 현대상사 김현대</span></label>
+													<label class="com_select_item"><input type="radio" name="dropDownExample02"><span>공동명의자2 현대상사 이현대</span></label>
+													<label class="com_select_item"><input type="radio" name="dropDownExample02"><span>공동명의자3 현대상사 박현대</span></label>
+												</span>
+											</span>
+										</span>
+									</div>
+								</li>
+								<li class="full">
+									<div class="form_area">
+										<div class="inbox_type01 on" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">휴대폰번호</span>
+											<input type="tel" class="txt type_tel" title="휴대폰번호 입력" placeholder="'-'없이 숫자만 입력" name="" value="01012345678"> <!-- 전화번호 : type_tel 입력값 하이픈 추가 기능 -->
+											<button type="button" class="btn_delete">삭제</button>
+										</div>
+										<!-- <p class="validation error">입력하신 휴대폰번호 형식이 유효하지 않습니다.</p> -->
+									</div>
+								</li>
+								<li class="full">
+									<div class="form_area">
+										<div class="inbox_type01 address on" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()"><!-- 주소 입력 후 class on 추가 -->
+											<span class="tit">주소</span>
+											<div class="add">
+												(06179) 서울특별시 강남구 테헤란로 510(대치동)
+											</div>
+											<button type="button" class="btn_xsmall color02">주소검색</button>
+										</div>
+									</div>
+								</li>
+								<li class="full">
+									<div class="form_area">
+										<div class="inbox_type01 on" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">상세주소</span>
+											<input type="text" class="txt" title="상세주소 입력" placeholder="상세주소 입력" name="" value="101호">
+											<button type="button" class="btn_delete">삭제</button>
+										</div>
+									</div>
+								</li>
+							</ul>
+							<div class="caution">
+								<ul>
+									<li>명의정보 입력 완료 후 선택해 주세요.</li>
+									<li>탁송기사가 방문할 주소입니다. 본 주소를 수정하더라도 명의정보의 주소에 영향을 주지 않습니다.</li>
+								</ul>
+							</div>
+						</section>						
+						<section class="bank_box">
+							<div class="sec_tit m">차량대금 입금계좌
+								<button type="button" class="btn_small color02 ico_add">입금 계좌를 설정해 주세요</button>
+							</div>
+							<div class="sec_tit m">차량대금 입금계좌</div>
+							<div class="bg_box">
+								<div class="list_type01">
+									<span class="bank">
+										<img src="/HMC/m/img/finance/bank_004.png" alt="" class="logo">
+										국민은행
+										<em>12345600000*****</em>
+									</span>
+									<span class="bank_name">김현대</span>
+									<button type="button" class="btn_xsmall color02">변경</button>
+								</div>
+							</div>
+						</section>
+						<section>
+							<div class="sec_tit m">계약내용</div>
+							<ul class="form_list type01">
+								<li>
+									<button type="button" class="bg_box">									
+										<P>판매 계약 정보</P>
+										<span class="txt_btn01 s_mid c_point01">필수확인</span>
+									</button>
+								</li>
+								<li>
+									<button type="button" class="bg_box">									
+										<P>이전 서류 안내</P>
+										<span class="txt_btn01 s_mid c_point01">필수확인</span>
+									</button>
+								</li>
+							</ul>
+							<ul class="form_list type01">
+								<li>
+									<button type="button" class="bg_box" disabled>									
+										<P>판매 계약 정보</P>
+										<span class="txt_btn01 s_mid">확인완료</span>
+									</button>
+								</li>
+								<li>
+									<button type="button" class="bg_box" disabled>									
+										<P>이전 서류 안내</P>
+										<span class="txt_btn01 s_mid">확인완료</span>
+									</button>
+								</li>
+							</ul>
+							<div class="toggle terms">
+								<div class="cont on">
+									<div class="head item">
+										<input type="checkbox" name="chk_comm" id="chk_terms01" class="chk_type01 bold">
+										<label for="chk_terms01">
+											<span class="txt">명의자정보 확인 및 판매 약관에 동의합니다.</span><button type="button" class="btn_arr js_toggle">토글 버튼</button>
+										</label>
+									</div>
+									<div class="group on">
+										<ul class="list">
+											<li>
+												<div class="item">
+													<input type="checkbox" name="chk_comm" id="chk_terms01_1" class="chk_type01">
+													<label for="chk_terms01_1">
+														<span class="txt">[필수] 약관1</span><button type="button" class="btn_arr">팝업 버튼</button>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="item">
+													<input type="checkbox" name="chk_comm" id="chk_terms01_2" class="chk_type01">
+													<label for="chk_terms01_2">
+														<span class="txt">[필수] 약관2</span><button type="button" class="btn_arr">팝업 버튼</button>
+													</label>
+												</div>
+											</li>
+											<li>
+												<div class="item">
+													<input type="checkbox" name="chk_comm" id="chk_terms01_3" class="chk_type01">
+													<label for="chk_terms01_3">
+														<span class="txt">[필수] 약관3</span><button type="button" class="btn_arr">팝업 버튼</button>
+													</label>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="end_terms">
+								<input type="checkbox" name="chk_comm" id="chk_terms02_1" class="chk_type01 bold">
+								<label for="chk_terms02_1">
+									<span class="txt">차량 대금 지급방식에 동의합니다.</span>
+								</label>
+								<p class="sub_txt">차량 대금은 차량인도 즉시 차량대금 입금계좌로 지급됩니다.</p>
+							</div>
+						</section>
+					</div>
+					<div class="btn_area col_type">
+						<button type="button" class="btn_big color01">명의정보 등록하기</button>
+					</div>
+				</div>				
+				<!-- //cont_wrap -->
+			</div>
+			<!-- //container -->
+		</div>
+	</div> 
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<script>
+	lnb_active();
+	toggle();
+</script>
+</html>

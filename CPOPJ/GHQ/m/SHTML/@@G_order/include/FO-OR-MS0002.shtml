@@ -1,0 +1,433 @@
+<!-- FO-OR-MS0002 : 비교하기 - FULL -->
+<div class="CPOpop_full" id="FO-OR-MS0002">
+	<div class="p_head">
+		<h4 class="tit">비교하기</h4>
+	</div>
+	<div class="p_wrap" id="compareBox">
+		<!-- 비교하기 -->
+		<div class="lyer_compare">
+			<ol class="list">
+				<li class="slide  target">
+					<!-- 상품 정보  -->
+					<div class="unit_compare">
+						<!-- A. fixed -->
+						<div class="top">
+							<div class="inner"><!-- 등록버튼 있을 시에만 btnAdd class 추가 -->
+								<button type="button" class="btn_pin01">고정시키기</button>
+								<button type="button" class="btn_del03">삭제</button>
+								<h5 class="tit">
+									<span class="model">더 뉴 그랜저</span>
+									<span class="desc">가솔린 프리미엄 밀레니얼</span>
+								</h5>
+								<div class="img"><img src="/HMC/img/@thumb/car_visual_03.jpg" alt="" /></div>
+								<a href="#" class="btn small color02">주문하기</a>
+							</div>
+						</div>
+						<!-- //A. fixed -->
+						<!-- B. info -->
+						<!-- S : [CPO-1216 : 디자인검수2차] -->
+						<div class="cont">
+							<ol class="info_box01">
+								<li>
+									<span class="tit_01"><em>2,850</em><i>만원</i></span>
+									<span class="txt_01">할부 월 84만원<br />(36개월/5.9%)</span>
+								</li>
+								<li>
+									<span class="tit_01"><em>19</em><i>년형</i></span>
+									<span class="txt_01">최초등록 : 19년 3월</span>
+								</li>
+								<li>
+									<span class="tit_01"><em>12,450</em><i>km</i></span>
+								</li>
+								<li>
+									<span class="tit_01"><em>2,000</em><i>cc</i></span>
+									<span class="txt_01">가솔린</span>
+								</li>
+								<li>
+									<span class="tit_02">미드나잇 블랙 펄</span>
+								</li>
+								<li>
+									<span class="tit_02">2WD / FWD</span>
+									<span class="txt_01">(전륜구동)</span>
+								</li>
+							</ol>
+							<!-- 성능 -->
+							<div class="info_box02">
+								<h6 class="tit">성능점검<em>5</em></h6>
+								<dl>
+									<dt>판금여부</dt>
+									<dd><em>0</em>건</dd>
+									<dt>부식여부</dt>
+									<dd><em>0</em>건</dd>
+									<dt>교환여부</dt>
+									<dd><em>2</em>건</dd>
+								</dl>
+							</div>
+							<!-- //성능 -->
+							<!-- 보험이력 -->
+							<div class="info_box02">
+								<h6 class="tit">보험이력<em>5</em></h6>
+								<dl>
+									<dt>내차피해</dt>
+									<dd><em>0</em>건</dd>
+									<dt>타차가해</dt>
+									<dd><em>0</em>건</dd>
+									<dt>용도변경</dt>
+									<dd><em>2</em>건</dd>
+									<dt>특수사고</dt>
+									<dd><em>2</em>건</dd>
+								</dl>
+							</div>
+							<!-- //보험이력 -->
+							<!-- 주요옵션 -->
+							<div class="info_box02">
+								<h6 class="tit">주요옵션<em>5</em></h6>
+								<ol class="option_01">
+									<li>
+										<span class="option_key02_32">내비게이션</span>
+									</li>
+									<li>
+										<span class="option_key03_31">하이패스</span>
+									</li>
+									<li>
+										<span class="option_key02_24">크루즈<br>컨트롤</span>
+									</li>
+									<li>
+										<span class="option_key02_10">열선<br>스티어링 휠</span>
+									</li>
+									<li>
+										<span class="option_key03_22">열선 시트<br>(앞좌석)</span>
+									</li>
+									<li>
+										<span class="option_key03_23">열선 시트<br>(뒷좌석)</span>
+									</li>
+									<li>
+										<span class="option_key03_20">전동 시트<br>(앞좌석)</span>
+									</li>
+									<li>
+										<span class="option_key03_26">통풍 시트<br>(앞좌석)</span>
+									</li>
+									<li>
+										<span class="option_key03_18">가죽 시트</span>
+									</li>
+									<li class="off">
+										<span class="option_key03_06">LED 헤드<br>램프</span>
+									</li>
+									<li>
+										<span class="option_key02_25">전동<br>트렁크</span>
+									</li>
+									<li>
+										<span class="option_key03_65">썬루프</span>
+									</li>
+									<li>
+										<span class="option_key03_57">서라운드 뷰<br>모니터</span>
+									</li>
+									<li>
+										<span class="option_key03_56">후방 모니터</span>
+									</li>
+									<li>
+										<span class="option_key03_51">후측방 경보<br>시스템</span>
+									</li>
+									<li>
+										<span class="option_key02_35">버튼시동&nbsp;&amp;<br>스마트 키</span>
+									</li>
+								</ol>
+							</div>
+							<!-- //최초등록 -->
+						</div>
+						<!-- E : [CPO-1216 : 디자인검수2차] -->
+						<!-- //B. info -->
+					</div>
+					<!-- //상품 정보  -->
+				</li>
+				<li class="slide">
+					<!-- 상품 정보  -->
+					<div class="unit_compare">
+						<!-- A. fixed -->
+						<div class="top">
+							<div class="inner"><!-- 등록버튼 있을 시에만 btnAdd class 추가 -->
+								<button type="button" class="btn_pin01">고정시키기</button>
+								<button type="button" class="btn_del03">삭제</button>
+								<h5 class="tit">
+									<span class="model">그랜저 IG</span>
+									<span class="desc">가솔린 3.3 캘리그래피</span>
+								</h5>
+								<div class="img"><img src="/HMC/img/@thumb/plp_310x310_01.jpg" alt="상품명" /></div>
+								<a href="#" class="btn small color02">주문하기</a>
+							</div>
+						</div>
+						<!-- //A. fixed -->
+						<!-- B. info -->
+						<div class="cont">
+							<ol class="info_box01">
+								<li>
+									<span class="tit_01"><em>2,850</em><i>만원</i></span>
+									<span class="txt_01">할부 월 84만원<br />(36개월/5.9%)</span>
+								</li>
+								<li>
+									<span class="tit_01"><em>19</em><i>년형</i></span>
+									<span class="txt_01">최초등록 : 19년 3월</span>
+								</li>
+								<li>
+									<span class="tit_01"><em>12,450</em><i>km</i></span>
+								</li>
+								<li>
+									<span class="tit_01"><em>2,000</em><i>cc</i></span>
+									<span class="txt_01">가솔린</span>
+								</li>
+								<li>
+									<span class="tit_02">미드나잇 블랙 펄</span>
+								</li>
+								<li>
+									<span class="tit_02">2WD / FWD</span>
+									<span class="txt_01">(전륜구동)</span>
+								</li>
+							</ol>
+							<!-- 성능 -->
+							<div class="info_box02">
+								<h6 class="tit">성능점검<em>5</em></h6>
+								<dl>
+									<dt>판금여부</dt>
+									<dd><em>0</em>건</dd>
+									<dt>부식여부</dt>
+									<dd><em>0</em>건</dd>
+									<dt>교환여부</dt>
+									<dd><em>2</em>건</dd>
+								</dl>
+							</div>
+							<!-- //성능 -->
+							<!-- 보험이력 -->
+							<div class="info_box02">
+								<h6 class="tit">보험이력<em>5</em></h6>
+								<dl>
+									<dt>내차피해</dt>
+									<dd><em>0</em>건</dd>
+									<dt>타차가해</dt>
+									<dd><em>0</em>건</dd>
+									<dt>용도변경</dt>
+									<dd><em>2</em>건</dd>
+									<dt>특수사고</dt>
+									<dd><em>2</em>건</dd>
+								</dl>
+							</div>
+							<!-- //보험이력 -->
+							<!-- 주요옵션 -->
+							<div class="info_box02">
+								<h6 class="tit">주요옵션<em>5</em></h6>
+								<ol class="option_01">
+									<li>
+										<span class="option_key02_32">내비게이션</span><!-- [CPO-1216 : 디자인검수2차] -->
+									</li>
+									<li>
+										<span class="option_key03_31">하이패스</span>
+									</li>
+									<li>
+										<span class="option_key02_24">크루즈<br>컨트롤</span>
+									</li>
+									<li>
+										<span class="option_key02_10">열선<br>스티어링 휠</span><!-- [CPO-1216 : 디자인검수2차] -->
+									</li>
+									<li>
+										<span class="option_key03_22">열선 시트<br>(앞좌석)</span>
+									</li>
+									<li>
+										<span class="option_key03_23">열선 시트<br>(뒷좌석)</span>
+									</li>
+									<li>
+										<span class="option_key03_20">전동 시트<br>(앞좌석)</span>
+									</li>
+									<li>
+										<span class="option_key03_26">통풍 시트<br>(앞좌석)</span>
+									</li>
+									<li>
+										<span class="option_key03_18">가죽 시트</span>
+									</li>
+									<li class="off">
+										<span class="option_key03_06">LED 헤드<br>램프</span>
+									</li>
+									<li>
+										<span class="option_key02_25">전동<br>트렁크</span><!-- [CPO-1216 : 디자인검수2차] -->
+									</li>
+									<li>
+										<span class="option_key03_65">썬루프</span>
+									</li>
+									<li>
+										<span class="option_key03_57">서라운드 뷰<br>모니터</span><!-- [CPO-1216 : 디자인검수2차] -->
+									</li>
+									<li>
+										<span class="option_key03_56">후방 모니터</span>
+									</li>
+									<li>
+										<span class="option_key03_51">후측방 경보<br>시스템</span>
+									</li>
+									<li>
+										<span class="option_key02_35">버튼시동&nbsp;&amp;<br>스마트 키</span>
+									</li>
+								</ol>
+							</div>
+							<!-- //최초등록 -->
+						</div>
+						<!-- //B. info -->
+					</div>
+					<!-- //상품 정보  -->
+				</li>
+				<li class="slide ">
+					<!-- 상품 정보  -->
+					<div class="unit_compare">
+						<!-- A. fixed -->
+						<div class="top">
+							<div class="inner"><!-- 등록버튼 있을 시에만 btnAdd class 추가 -->
+								<button type="button" class="btn_pin01">고정시키기</button>
+								<button type="button" class="btn_del03">삭제</button>
+								<h5 class="tit">
+									<span class="model">더 뉴 그랜저</span>
+									<span class="desc">가솔린 프리미엄 밀레니얼</span>
+								</h5>
+								<div class="img"><img src="/HMC/img/@thumb/plp_500x500_02.jpg" alt="" /></div>
+								<a href="#" class="btn small color02">주문하기</a>
+							</div>
+						</div>
+						<!-- //A. fixed -->
+						<!-- B. info -->
+						
+						<!-- S : [CPO-1216 : 디자인검수2차] -->
+						<div class="cont">
+							<ol class="info_box01">
+								<li>
+									<span class="tit_01"><em>2,850</em><i>만원</i></span>
+									<span class="txt_01">할부 월 84만원<br />(36개월/5.9%)</span>
+								</li>
+								<li>
+									<span class="tit_01"><em>19</em><i>년형</i></span>
+									<span class="txt_01">최초등록 : 19년 3월</span>
+								</li>
+								<li>
+									<span class="tit_01"><em>12,450</em><i>km</i></span>
+								</li>
+								<li>
+									<span class="tit_01"><em>2,000</em><i>cc</i></span>
+									<span class="txt_01">가솔린</span>
+								</li>
+								<li>
+									<span class="tit_02">미드나잇 블랙 펄</span>
+								</li>
+								<li>
+									<span class="tit_02">2WD / FWD</span>
+									<span class="txt_01">(전륜구동)</span>
+								</li>
+							</ol>
+							<!-- 성능 -->
+							<div class="info_box02">
+								<h6 class="tit">성능점검<em>5</em></h6>
+								<dl>
+									<dt>판금여부</dt>
+									<dd><em>0</em>건</dd>
+									<dt>부식여부</dt>
+									<dd><em>0</em>건</dd>
+									<dt>교환여부</dt>
+									<dd><em>2</em>건</dd>
+								</dl>
+							</div>
+							<!-- //성능 -->
+							<!-- 보험이력 -->
+							<div class="info_box02">
+								<h6 class="tit">보험이력<em>5</em></h6>
+								<dl>
+									<dt>내차피해</dt>
+									<dd><em>0</em>건</dd>
+									<dt>타차가해</dt>
+									<dd><em>0</em>건</dd>
+									<dt>용도변경</dt>
+									<dd><em>2</em>건</dd>
+									<dt>특수사고</dt>
+									<dd><em>2</em>건</dd>
+								</dl>
+							</div>
+							<!-- //보험이력 -->
+							<!-- 주요옵션 -->
+							<div class="info_box02">
+								<h6 class="tit">주요옵션<em>5</em></h6>
+								<ol class="option_01">
+									<li>
+										<span class="option_key02_32">내비게이션</span>
+									</li>
+									<li>
+										<span class="option_key03_31">하이패스</span>
+									</li>
+									<li>
+										<span class="option_key02_24">크루즈<br>컨트롤</span>
+									</li>
+									<li>
+										<span class="option_key02_10">열선<br>스티어링 휠</span>
+									</li>
+									<li>
+										<span class="option_key03_22">열선 시트<br>(앞좌석)</span>
+									</li>
+									<li>
+										<span class="option_key03_23">열선 시트<br>(뒷좌석)</span>
+									</li>
+									<li>
+										<span class="option_key03_20">전동 시트<br>(앞좌석)</span>
+									</li>
+									<li>
+										<span class="option_key03_26">통풍 시트<br>(앞좌석)</span>
+									</li>
+									<li>
+										<span class="option_key03_18">가죽 시트</span>
+									</li>
+									<li class="off">
+										<span class="option_key03_06">LED 헤드<br>램프</span>
+									</li>
+									<li>
+										<span class="option_key02_25">전동<br>트렁크</span>
+									</li>
+									<li>
+										<span class="option_key03_65">썬루프</span>
+									</li>
+									<li>
+										<span class="option_key03_57">서라운드 뷰<br>모니터</span>
+									</li>
+									<li>
+										<span class="option_key03_56">후방 모니터</span>
+									</li>
+									<li>
+										<span class="option_key03_51">후측방 경보<br>시스템</span>
+									</li>
+									<li>
+										<span class="option_key02_35">버튼시동&nbsp;&amp;<br>스마트 키</span>
+									</li>
+								</ol>
+							</div>
+							<!-- //최초등록 -->
+						</div>
+						<!-- E : [CPO-1216 : 디자인검수2차] -->
+						<!-- //B. info -->
+					</div>
+					<!-- //상품 정보  -->
+				</li>
+				<li class="slide">
+					<!-- 추가 버튼 -->
+					<div class="unit_compare">
+						<div class="top">
+							<div class="inner btnAdd"><!-- 등록버튼 있을 시에만 btnAdd class 추가 -->
+								<button type="button" class="btn_addcar">비교차량을<br />등록해주세요.</button>
+							</div>
+						</div>
+					</div>
+					<!-- 추가 버튼 -->
+				</li>
+			</ol>
+		</div>
+		<!-- //비교하기 -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+
+<script>
+// 차량 등록 하기 버튼
+$(".btn_addcar").on("click",function(){
+	CPO.POPUP_close($(this));
+});
+CPOCompareTarget()/* 비교하기 상단 고정 */
+CPOCompareSticky()/* 비교하기 상단 고정 */
+</script>

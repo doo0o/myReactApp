@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>마이페이지 : 현대 CUV</title>
+	<!--#include file="/HMC/p/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_mypage.css"> <!-- 해당 CSS -->
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+    <div id="CPOcontents">
+        <div id="layoutWrap" class="my">
+            <!-- container -->
+            <div class="container flex">
+                <!--#include file="/HMC/p/SHTML/H_inc/layout_left.shtml"-->
+                <!-- cont_wrap -->
+                <div class="cont_wrap index" data-id="myPage">
+                    <h1 class="page_tit">마이페이지</h1>
+					<ul class="data_list">
+						<li>
+							<div class="tooltip toast right on"> <!-- display: none 할 때 class on 제거 -->
+								<div class="cont">
+									<span class="text">장바구니에 이미 판매된 차량이 있어요.</span>
+								</div>
+							</div>
+							<a href="javascript:void(0)">
+								<p class="tit">장바구니</p>
+								<p class="num">24</p>
+							</a>
+						</li>
+						<li>
+							<a hreaf="javascript:void(0)">
+								<p class="tit">찜한상품</p>
+								<p class="num">5</p>
+							</a>
+						</li>
+						<li>
+							<a href="javascript:void(0)">
+								<p class="tit">최근본상품</p>
+								<p class="num">0</p>
+							</a>
+						</li>
+						<li class="blue">
+							<a href="javacript:void(0)">
+								<p class="tit">블루멤버스 포인트</p>
+								<p class="num">0<em>P</em></p>
+							</a>
+						</li>
+					</ul> 
+					<div class="cont_box insert">
+						<div class="sec_tit l">내차등록<button type="button" class="txt_btn01 s_mid">전체보기</button></div>
+						<div class="my_slide">
+							<div class="swiperBanner">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide">
+										<!-- item -->
+										<div class="item">
+											<div class="unit_type type02">
+												<!-- unit -->
+												<a href="javascript:void(0)" class="mid_area">
+													<div class="unit_img">
+														<img src="/HMC/p/img/@thumb/nobg_300x180.png" alt="상품명으로 뿌려주세요">
+													</div>
+													<div class="unit_info">
+														<div class="car_num">123가1234</div>
+														<div class="name">
+															<span class="model">1번 그랜저 IG </span>
+															<span class="desc">가솔린 3.3 캘리그래피</span>
+														</div>
+														<div class="price">
+															<span class="num"><em>3,280~4,370</em><i>만원</i></span>
+														</div>
+													</div>
+												</a>
+												<!-- //unit -->											
+											</div>
+											<div class="box_graph">
+												<p class="txt">주행거리에 따른 내 차 시세를 확인해 보세요.</p>
+												<div class="graph">
+													<img src="../../img/@thumb/@graph.png" alt="그래프">
+												</div>
+											</div>
+										</div>
+										<!-- // item -->									
+									</div>
+									<div class="swiper-slide"> 
+										<!-- item -->
+										<div class="item">
+											<div class="unit_type type02">
+												<!-- unit -->
+												<a href="javascript:void(0)" class="mid_area">
+													<div class="unit_img">
+														<img src="/HMC/p/img/@thumb/nobg_300x180.png" alt="상품명으로 뿌려주세요">
+													</div>
+													<div class="unit_info">
+														<div class="car_num">123가1234</div>
+														<div class="name">
+															<span class="model">2번 그랜저 IG </span>
+															<span class="desc">가솔린 3.3 캘리그래피</span>
+														</div>
+														<div class="price">
+															<span class="num no">가격정보 없음</span>
+														</div>
+													</div>
+												</a>
+												<!-- //unit -->										
+											</div>
+											<div class="box_graph">
+												<p class="txt">가격정보가 없어 내 차 시세를 확인 할 수 없습니다.</p>
+												<div class="graph">
+													<img src="../../img/@thumb/@graph_nodata.png" alt="그래프">
+												</div>
+											</div>
+										</div>
+										<!-- // item -->
+									</div>
+									<div class="swiper-slide">
+										<!-- item -->
+										<div class="item">
+											<div class="unit_type type02">
+												<!-- unit -->
+												<a href="javascript:void(0)" class="mid_area">
+													<div class="unit_img">
+														<img src="/HMC/p/img/@thumb/nobg_300x180.png" alt="상품명으로 뿌려주세요">
+													</div>
+													<div class="unit_info">
+														<div class="car_num">123가1234</div>
+														<div class="name">
+															<span class="model">3번 쏘나타 DN8 2.0</span>
+															<span class="desc">가솔린 2.0 가솔린 프리미엄 패밀리</span>
+														</div>
+														<div class="price">
+															<span class="num"><em>3,280~4,370</em><i>만원</i></span>
+														</div>
+													</div>
+												</a>
+												<!-- //unit -->										
+											</div>
+											<div class="box_graph">
+												<p class="txt">주행거리에 따른 내 차 시세를 확인해 보세요.</p>
+												<div class="graph">
+													<img src="../../img/@thumb/@graph.png" alt="그래프">
+												</div>
+											</div>
+										</div>
+										<!-- // item -->									
+									</div>								
+									<div class="swiper-slide">
+										<!-- item -->
+										<div class="item">
+											<div class="unit_type type02">
+												<!-- unit -->
+												<a href="javascript:void(0)" class="mid_area">
+													<div class="unit_img">
+														<img src="/HMC/p/img/@thumb/nobg_300x180.png" alt="상품명으로 뿌려주세요">
+													</div>
+													<div class="unit_info">
+														<div class="car_num">123가1234</div>
+														<div class="name">
+															<span class="model">4번 그랜저 IG </span>
+															<span class="desc">가솔린 3.3 캘리그래피</span>
+														</div>
+														<div class="price">
+															<span class="num"><em>3,280~4,370</em><i>만원</i></span>
+														</div>
+													</div>
+												</a>
+												<!-- //unit -->										
+											</div>
+											<div class="box_graph">
+												<p class="txt">주행거리에 따른 내 차 시세를 확인해 보세요.</p>
+												<div class="graph">
+													<img src="../../img/@thumb/@graph.png" alt="그래프">
+												</div>
+											</div>
+										</div>
+										<!-- // item -->									
+									</div>
+									<div class="swiper-slide">
+										<!-- 보유차량 등록하기 -->
+										<div class="item no_data addcar">
+											<p class="tit02">차량을 등록하고 다양한 정보를 확인해 보세요!</p>
+											<div class="btn_area">
+												<a href="javascript:void(0)" class="btn_small color02">보유차량 등록하기</a>
+											</div>
+										</div>
+										<!-- // 보유차량 등록하기 -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cont_box purchase">
+						<div class="sec_tit l">내차사기<button type="button" class="txt_btn01 s_mid">전체보기</button></div>
+						<div class="list">
+							<div class="unit_type type01">
+								<!-- unit -->
+								<a href="javascript:void(0)" class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="order_num">
+											<span class="flag_big01">결제진행중</span>
+											<span class="num">2021123154561231</span>
+										</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>20년 12월</span>
+											<span>50,000km</span>
+											<span>12가1234</span>
+										</div>
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+									</div>
+								</a>
+								<div class="box_step">
+									<ul class="list_step small">
+										<li class="end">결제</li>
+										<li class="end">계약</li>
+										<li class="now">보험</li>
+										<li>탁송</li>
+									</ul>
+									<p class="info_txt">자동차 보험가입을 진행해 주세요.</p>
+								</div>
+								<!-- //unit -->
+							</div>
+							<div class="unit_type type01">
+								<!-- unit -->
+								<a href="javascript:void(0)" class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="order_num">
+											<span class="flag_big01">반품신청</span>
+											<span class="num">2021123154561231</span>
+										</div>
+										<div class="name">
+											<span class="model">제네시스 G70 </span>
+											<span class="desc">2.0T 4WD 스탠다드</span>
+										</div>
+										<div class="drive">
+											<span>20년 12월</span>
+											<span>50,000km</span>
+											<span>12가1234</span>
+										</div>
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+									</div>
+								</a>
+								<div class="box_step">									
+									<p class="info_txt">책임환불 신청이 완료되었습니다.</p>
+								</div>
+								<!-- //unit -->
+							</div>
+							<div class="unit_type type01">
+								<!-- unit -->
+								<a href="javascript:void(0)" class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="order_num">
+											<span class="flag_big01">입금대기중</span>
+											<span class="num">2021123154561231</span>
+										</div>
+										<div class="name">
+											<span class="model">더 뉴 그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>20년 12월</span>
+											<span>50,000km</span>
+											<span>12가1234</span>
+										</div>
+										<div class="price">
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+									</div>
+								</a>
+								<div class="box_step">
+									<span class="time">00:05:50</span>
+									<p class="info_txt">계약금을 입금해 주세요.</p>
+								</div>
+								<!-- //unit -->
+							</div>
+						</div>
+					</div>
+					<div class="cont_box sell">
+						<div class="sec_tit l">내차팔기<button type="button" class="txt_btn01 s_mid">전체보기</button></div>
+						<div class="list">
+							<div class="unit_type type01 align_c">
+								<!-- unit -->
+								<a href="javascript:void(0)" class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="order_num">
+											<span class="flag_big02">계약진행중</span>
+											<span class="flag_big03">Trade-In</span>
+											<span class="num">2021123154561231</span>
+										</div>
+										<div class="car_num">123가1234</div>
+										<div class="name">
+											<span class="model">현대 쏘나타 DN8 2.0 가솔린 프리미엄 밀레니얼 DN8 2.0 </span>
+											<span class="desc"> 가솔린 프리미엄 밀레니얼 DN8 2.0 가솔린 프리미엄 밀레니얼 DN8 2.0 </span>
+										</div>
+										<div class="drive">
+											<span>22년 12월(21년형)</span>
+											<span>12,167km</span>
+										</div>
+										<div class="price">
+											<span class=txt>최종 견적가격 : </span>
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+									</div>
+								</a>
+								<div class="box_step">
+									<ul class="list_step small">
+										<li class="end">견적</li>
+										<li class="end">평가</li>
+										<li class="now">계약</li>
+										<li>완료</li>
+									</ul>
+									<span class="date_txt">21.11.11 17:32까지</span>
+									<p class="info_txt">계약서 서명을 완료해 주세요.</p>
+								</div>
+								<!-- //unit -->
+							</div>
+							<div class="unit_type type01 align_c">
+								<!-- unit -->
+								<a href="javascript:void(0)" class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="order_num">
+											<span class="flag_big02">계약진행중</span>
+											<span class="flag_big03">Trade-In</span>
+											<span class="num">2021123154561231</span>
+										</div>
+										<div class="car_num">123가1234</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>22년 12월(21년형)</span>
+											<span>12,167km</span>
+										</div>
+										<div class="price">
+											<span class=txt>최종 견적가격 : </span>
+											<span class="num"><em>3,820</em><i>만원</i></span>
+										</div>
+									</div>
+								</a>
+								<div class="box_step">
+									<ul class="list_step small">
+										<li class="end">견적</li>
+										<li class="end">평가</li>
+										<li class="now">계약</li>
+										<li>완료</li>
+									</ul>
+									<span class="date_txt">21.11.11 17:32까지</span>
+									<p class="info_txt">계약서 서명을 완료해 주세요.</p>
+								</div>
+								<!-- //unit -->
+							</div>
+							<div class="unit_type type01 align_c">
+								<!-- unit -->
+								<a href="javascript:void(0)" class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="order_num">
+											<span class="flag_big02">정보입력중</span>
+											<span class="flag_big03">Trade-In</span>
+											<span class="num">2021123154561231</span>
+										</div>
+										<div class="car_num">123가1234</div>
+										<div class="name">
+											<span class="model">그랜저 IG </span>
+											<span class="desc">가솔린 3.3 캘리그래피</span>
+										</div>
+										<div class="drive">
+											<span>22년 12월(21년형)</span>
+											<span>12,167km</span>
+										</div>
+										<div class="price">
+											<span class=txt>예상 견적가격 : </span>
+											<span class="num"><em>4,000~4,200</em><i>만원</i></span>
+										</div>
+									</div>
+								</a>
+								<div class="box_step">
+									<p class="info_txt">추가정보 입력 완료!<br>견적요청을 완료해 주세요.</p>
+								</div>
+								<!-- //unit -->
+							</div>
+							<div class="unit_type type01 align_c">
+								<!-- unit -->
+								<a href="javascript:void(0)" class="mid_area">
+									<div class="unit_img">
+										<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="unit_info">
+										<div class="order_num">
+											<span class="flag_big02">계약해지완료</span>
+											<span class="num">2021123154561231</span>
+										</div>
+										<div class="car_num">123가1234</div>
+										<div class="name">
+											<span class="model">현대 쏘나타 DN8 2.0</span>
+											<span class="desc"> 가솔린 프리미엄 밀레니얼</span>
+										</div>
+										<div class="drive">
+											<span>22년 12월(21년형)</span>
+											<span>12,167km</span>
+										</div>
+										<div class="price">
+											<span class=txt>최종 견적가격 : </span>
+											<span class="num"><em>4,200</em><i>만원</i></span>
+										</div>
+									</div>
+								</a>
+								<div class="box_step">
+									<p class="info_txt">계약해지가 완료되었습니다.</p>
+								</div>
+								<!-- //unit -->
+							</div>
+						</div>
+					</div>
+					<ul class="box_service">
+						<li><a href="javascript:void(0)">
+							<p class="tit">내차사기 서비스 안내</p>
+							<p class=txt>내차사기 현대 인증 중고차<br>무엇이 특별할까요?</p>
+						</a></li>
+						<li><a href="javascript:void(0)">
+							<p class="tit">내차팔기 서비스 안내</p>
+							<p class=txt>내차팔기 현대 인증 중고차<br>무엇이 다를까요?</p>
+						</a></li>
+					</ul>
+                </div>
+                <!-- //cont_wrap -->
+            </div>
+            <!-- //container -->
+        </div>
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<script>
+	lnb_active();
+	const mymainSwiper1 =  new Swiper('.my_slide .swiperBanner',
+		getSwiperOption({
+			target : '.my_slide .swiperBanner',
+			spaceBetween : 20,
+			slidesPerView : 2,
+			pagination : true,
+			// pagination_cls : "02",
+			navigation : true,
+			addOption : {
+				// slidesPerGroup: 2
+			},
+		})
+	);
+</script>
+</html>

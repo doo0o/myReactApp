@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>STEP1. 차량번호 입력 : 현대차 CPO</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_vod.css">
+</head>
+<body>
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--  s: h_header : navi  -->
+		<div class="h_header_detail">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit align_c hidden">VOD 커머스 </h1>
+			<div class="util">
+				<ul>
+					<li><a href="#" class="ic_cart on">장바구니</a></li> <!--장바구니-->
+				</ul>
+			</div>
+		</div>
+		<!--  e: h_header : navi  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+
+		<div class="vod_commerce__main">
+			<div 
+				class="vod_commerce__main__box"
+				style="background-image:url('/HMC/m/img/@thumb/vod3.png')">
+				<div class="vod_commerce__main__title">
+					<p class="main__title--txt">방송 오픈까지</p>
+					<p class="main__title--day">D-45</p>
+					<p class="main__title--txt">방송이 곧 시작합니다</p>
+					<p class="main__title--time">15:27</p>
+				</div>
+
+				<div class="vod_commerce__main--play_btn">
+					<button type="button">동영상 플레이</button>
+				</div>
+
+				<div class="vod_commerce__main__info">
+					<div class="main__info__state">
+						<span class="info__state--txt">최초공개예정</span>
+					</div>
+					<div class="main__info__state">
+						<span class="info__state--txt2">최초공개중</span>
+						<span class="info__state--num">55:23</span>
+					</div>
+					<p class="main__info--txt">김정훈 엔지니어가 함께하는 플래그 십 2023 펠리세이드</p>
+					<div class="main__info__options">
+						<span class="info--option"><span class="item__ico item__ico--play">재생횟수</span>2,700</span>
+						<span class="info--option"><span class="item__ico item__ico--like">좋아요</span>2,700</span>
+					</div>
+				</div>
+
+				<div class="vod_commerce__main__alerm">
+					<p class="main__alerm--txt">VOD 커머스 이벤트 소식을 받아보세요</p>
+					<div class="main__alerm--btn">
+						<button type="button" class="btn_icon_mid01 icon_bell">알림받기</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="vod_commerce__list">
+
+			<section class="vod_commerce__list__section vod_commerce__list__section1">
+				<div class="sec_tit">방송 예정</div>				
+				<div id="modChagneList" class="vod_commerce__list__wrap">
+					<ul>
+						<li class="vod_commerce__list__item">
+							<a href="#" class="list__item__box">
+								<div
+									class="list__item--thumb"
+									style="background-image: url('/HMC/m/img/@thumb/vod1.png')"
+								></div>
+								<div class="list__item__info">
+									<div class="list__item--open_day">3월 12일 12:30</div>
+									<div class="list__item--name">김정훈 엔지니어가 함께하는 플래그 십 펠리세이드김정훈 엔지니어가 함께하는 플래그 십 펠리세이드</div>
+									<div class="list__item--d_day">1일 23:20시간 남음</div>
+								</div>
+							</a>
+						</li>
+						<li class="vod_commerce__list__item">
+							<a href="#" class="list__item__box">
+								<div
+									class="list__item--thumb"
+									style="background-image: url('/HMC/m/img/@thumb/vod1.png')"
+								></div>
+								<div class="list__item__info">
+									<div class="list__item--open_day">3월 12일 12:30</div>
+									<div class="list__item--name">김정훈 엔지니어</div>
+									<div class="list__item--d_day">1일 23:20시간 남음</div>
+								</div>
+							</a>
+						</li>						
+					</ul>					
+				</div>
+				<script>
+					// 아이템 갯수에 맞춰 클래스 적용 스크립트
+					var modChagneList = new ModeChange({
+						target: '#modChagneList',
+						item: '.vod_commerce__list__item',
+						idx: 3,
+						className: 'isModLand'
+					})
+				</script>
+			</section>
+
+			<section class="vod_commerce__list__section vod_commerce__list__section2">
+				<div class="sec_tit">다시 보기
+					<div class="list__head__options">
+						<button type="button" class="btn_sort02 jQ_Select" id="PlpSort01" data-id="PlpSort0101" data-popup="PlpSort01-Layer">인기순</button>
+						<!-- sorting Layer -->
+						<div class="CPOpop_bottom select" id="PlpSort01-Layer">
+							<div class="p_head">
+								<p class="tit">정렬 방식</p> <!-- 언젠가 수정될때의 날짜로 해주세요 -->
+							</div>
+							<div class="p_wrap">
+								<!-- sorting -->
+								<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+									<li><input type="radio" class="chk_select" name="PlpSort01_Name" id="PlpSort0101" checked><label for="PlpSort0101">최신순</label></li>
+									<li><input type="radio" class="chk_select" name="PlpSort01_Name" id="PlpSort0102"><label for="PlpSort0102">조회순</label></li>
+									<li><input type="radio" class="chk_select" name="PlpSort01_Name" id="PlpSort0103"><label for="PlpSort0103">좋아요 순</label></li>
+								</ol>
+								<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // PlpSort01 변경 내용 적용  -->
+									<button type="button" class="btn_big01 jQ_Select_Save" data-id="PlpSort01">적용하기</button>
+								</div>
+								<!-- //sorting -->
+							</div>
+							<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+						</div>
+						<!-- //sorting Layer -->
+					</div>
+				</div>
+				<div class="vod_commerce__list__wrap">
+					<ul>
+						<li class="vod_commerce__list__item">
+							<a href="#" class="list__item__box">
+								<div
+									class="list__item--thumb"
+									style="background-image: url('/HMC/m/img/@thumb/vod2.png')"
+								>
+									<span class="list__item--play_time">40:23</span>
+								</div>
+								<div class="list__item__info">
+									<div class="list__item--date">2022년 02월 16일</div>
+									<div class="list__item--name">김정훈 엔지니어</div>
+									<div class="list__item__options">
+										<span class="list__item--option"><span class="item__ico item__ico--play">재생횟수</span>2,700</span>
+										<span class="list__item--option"><span class="item__ico item__ico--like">좋아요</span>2,700</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="vod_commerce__list__item">
+							<a href="#" class="list__item__box">
+								<div
+									class="list__item--thumb"
+									style="background-image: url('/HMC/m/img/@thumb/vod2.png')"
+								>
+									<span class="list__item--play_time">40:23</span>
+								</div>
+								<div class="list__item__info">
+									<div class="list__item--date">2022년 02월 16일</div>
+									<div class="list__item--name">김정훈 엔지니어가 함께하는 플래그십 2023 펠리김정훈 엔지니어가 함께하는 플래그십 2023 펠리</div>
+									<div class="list__item__options">
+										<span class="list__item--option"><span class="item__ico item__ico--play">재생횟수</span>2,700</span>
+										<span class="list__item--option"><span class="item__ico item__ico--like">좋아요</span>2,700</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="vod_commerce__list__item">
+							<a href="#" class="list__item__box">
+								<div
+									class="list__item--thumb"
+									style="background-image: url('/HMC/m/img/@thumb/vod2.png')"
+								>
+									<span class="list__item--play_time">40:23</span>
+								</div>
+								<div class="list__item__info">
+									<div class="list__item--date">2022년 02월 16일</div>
+									<div class="list__item--name">김정훈 엔지니어가 함께하는 플래그십 2023 펠리김정훈 엔지니어가 함께하는 플래그십 2023 펠리</div>
+									<div class="list__item__options">
+										<span class="list__item--option"><span class="item__ico item__ico--play">재생횟수</span>2,700</span>
+										<span class="list__item--option"><span class="item__ico item__ico--like">좋아요</span>2,700</span>
+									</div>
+								</div>
+							</a>
+						</li>
+						<li class="vod_commerce__list__item">
+							<a href="#" class="list__item__box">
+								<div
+									class="list__item--thumb"
+									style="background-image: url('/HMC/m/img/@thumb/vod2.png')"
+								>
+									<span class="list__item--play_time">40:23</span>
+								</div>
+								<div class="list__item__info">
+									<div class="list__item--date">2022년 02월 16일</div>
+									<div class="list__item--name">김정훈 엔지니어가 함께하는 플래그십 2023 펠리김정훈 엔지니어가 함께하는 플래그십 2023 펠리</div>
+									<div class="list__item__options">
+										<span class="list__item--option"><span class="item__ico item__ico--play">재생횟수</span>2,700</span>
+										<span class="list__item--option"><span class="item__ico item__ico--like">좋아요</span>2,700</span>
+									</div>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+		</div>
+	</div>
+	<!-- 2023 02 06 푸터 추가 -->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_footer.shtml"-->
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_actionbar.shtml"-->
+</div>
+<!-- //cpo wrap -->
+
+<script>
+$(function(){
+		
+		$(".jQ_Select").on("click",function(){//셀렉트박스 레이어 스크립트
+				CPO.POPUP_open($(this));// 레이어팝업 open
+				CPO_SelectLayer($(this));// 레이어팝업에 data 값 넘기기
+		});
+		$(".jQ_Select_Save").on("click",function(){//셀렉트박스 레이어 스크립트
+				CPO.POPUP_close($(this));// 레이어팝업 close
+				CPO_SelectSave($(this));// 레이어팝업에 data 값 넘기기
+		});
+
+		// 2023 02 06 top, chatbot, brand 버튼 추가
+		CPO.top();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>마이페이지 팝업 모음 : 현대 CUV</title>
+	<!--#include file="/HMC/p/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_mypage.css"> <!-- 해당 CSS -->
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+    <div id="CPOcontents">
+        <div id="layoutWrap" class="members">
+            <!-- container -->
+			<div class="container">
+				<div class="btn_area full_type row_type">
+					<p class="sec_tit m">보유차량</p>
+					<button class="btn_mid color02" onclick="popupOpen('FO-MY-PS0008')">FO-MY-PS0008 보유차량 등록</button>
+					<button class="btn_mid color02" onclick="popupOpen('FO-MY-PS0051')">FO-MY-PS0051 블루링크 연동</button>
+					<p class="sec_tit m">입고알림신청</p>
+					<button class="btn_mid color02" onclick="popupOpen('FO-MY-PS0091')">FO-MY-PS0091 입고알림 연장</button>
+					<button class="btn_mid color02" onclick="popupOpen('FO-MY-PS0020')">FO-MY-PS0020 입고알림신청</button>
+					<button class="btn_mid color02" onclick="popupOpen('FO-MY-PS0020_2')">FO-MY-PS0020_2 입고알림신청 (상세내역)</button>
+				</div>			
+            </div>
+            <!-- //container -->
+        </div>
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_mypage/include/FO-MY-PS0008.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_mypage/include/FO-MY-PS0051.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_mypage/include/FO-MY-PS0091.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_mypage/include/FO-MY-PS0020.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_mypage/include/FO-MY-PS0020_2.shtml"-->
+</body>
+<script> 
+</script>
+</html>

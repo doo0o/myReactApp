@@ -1,0 +1,2052 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>비교하기 : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_cart.css">
+	<!-- start: sortable.js 신규 추가 -->
+	<script src="/HMC/p/js/library/Sortable.min.js"></script>
+	<!-- end: sortable.js 신규 추가 -->
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- 코치마크 -->
+<!--#include file="/HMC/p/SHTML/H_order/include/inc_coach.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+	<!-- CPOcontents -->
+	<div id="CPOcontents">
+		<div id="layoutWrap" class="cart">
+			<!-- container -->
+			<div class="container flex">
+				<div class="cont_wrap">
+					<h1 class="page_tit">차량 비교하기 <button type="button" class="txt_btn01 s_mid">장바구니 이동하기</button></h1>
+
+					<div class="top_area">
+						<div class="form_area">
+							<input type="checkbox" name="chk_cart" id="totalViewCheck" class="chk_type01 total_check bold">
+							<label for="totalViewCheck"><span class="txt">전체 간단히 보기</span></label>
+						</div>
+						<div class="btn_box flex_box">
+							<div class="desc">
+								<p>핀 아이콘과 드래그로 비교 순서를 변경할 수 있으며, 차량의 정보와 가격은 실제 거래 시점과 상이할 수 있습니다.</p>
+							</div>
+							<button type="button" class="btn_prev">이전</button>
+							<button type="button" class="btn_next">다음</button>
+						</div>
+					</div>
+					<div class="top_sticky_container"></div>
+					<!-- start: 차량 비교하기 -->
+					<div class="compare_sort_container">
+						<div class="tit_fix_container">
+							<div class="tit_group">
+								<div class="tit"><button type="button" class="txt_btn02 s_large" data-toggle-idx="toggle-0">차량 정보</button></div>
+								<div class="desc">
+									<p class="sub_tit price">판매가/예상 시세</p>
+									<p class="sub_tit fix">기준 차량 대비 가격</p>
+									<p class="sub_tit loan">월 할부 납입금<em>(36개월 할부/5.9% 기준)</em></p>
+									<p class="sub_tit discount">신차 가격 대비</p>
+								</div>
+							</div>
+							<div class="tit_group">
+								<div class="tit"><button type="button" class="txt_btn02 s_large" data-toggle-idx="toggle-1">주요 정보</button></div>
+								<div class="desc">
+									<p class="sub_tit">주행거리</p>
+									<p class="sub_tit">운행 기간</p>
+									<p class="sub_tit">연식</p>
+									<p class="sub_tit">최초 등록일</p>
+									<p class="sub_tit">소유권 변경 이력</p>
+									<p class="sub_tit">차종</p>
+									<p class="sub_tit">승차 인원</p>
+									<p class="sub_tit">변속기</p>
+									<p class="sub_tit">구동방식</p>
+									<p class="sub_tit">연료</p>
+									<p class="sub_tit">배기량</p>
+									<p class="sub_tit">색상</p>
+								</div>
+								<!-- 접혔을때 -->
+								<div class="short-desc">
+									<ul class="list_tit">
+										<li class="sub_tit">주행거리</li>
+										<li class="sub_tit">운행 기간</li>
+									</ul>
+								</div>
+								<!-- // 접혔을때 -->
+							</div>
+							<div class="tit_group">
+								<div class="tit"><button type="button" class="txt_btn02 s_large" data-toggle-idx="toggle-2">제조사 보증 정보</button></div>
+								<div class="desc">
+									<p class="sub_tit">보증 잔여 기간</p>
+									<p class="sub_tit">보증 잔여 주행거리</p>
+								</div>
+								<div class="short-desc">
+									<p class="sub_tit">보증 잔여 기간</p>
+								</div>
+							</div>
+							<div class="tit_group">
+								<div class="tit"><button type="button" class="txt_btn02 s_large" data-toggle-idx="toggle-3">오감만족</button></div>
+								<div class="desc">
+									<p class="sub_tit">타이어 마모도</p>
+									<p class="sub_tit">차량 하부 (누유)</p>
+									<p class="sub_tit">차량 하부 (누수)</p>
+									<p class="sub_tit">차량 하부 (오일)</p>
+									<p class="sub_tit">차량 하부 (냉각수)</p>
+									<p class="sub_tit">엔진</p>
+									<p class="sub_tit">실내 공기질</p>
+								</div>
+								<!-- 접혔을떄 -->
+								<div class="short-desc">
+									<ul class="list_tit">
+										<li class="sub_tit">엔진</li>
+										<li class="sub_tit">실내 공기질</li>
+									</ul>
+								</div>
+								<!-- // 접혔을때 -->
+							</div>
+							<div class="tit_group">
+								<div class="tit"><button type="button" class="txt_btn02 s_large" data-toggle-idx="toggle-4">정비 이력</button></div>
+								<div class="desc">
+									<p class="sub_tit">교환 이력</p>
+									<p class="sub_tit">판금 이력</p>
+									<p class="sub_tit">부식</p>
+									<p class="sub_tit">흠집</p>
+								</div>
+							</div>
+							<div class="tit_group">
+								<div class="tit"><button type="button" class="txt_btn02 s_large" data-toggle-idx="toggle-5">보험 이력</button></div>
+								<div class="desc">
+									<p class="sub_tit">내차피해</p>
+									<p class="sub_tit">타차피해</p>
+									<p class="sub_tit">용도변경</p>
+									<p class="sub_tit">특수사고</p>
+								</div>
+							</div>
+							<div class="tit_group">
+								<div class="tit"><button type="button" class="txt_btn02 s_large" data-toggle-idx="toggle-6">추가 정보</button></div>
+								<div class="desc">
+									<p class="sub_tit">용도</p>
+									<p class="sub_tit">구분</p>
+									<p class="sub_tit">흡연여부</p>
+									<p class="sub_tit">반려동물 탑승 여부</p>
+									<p class="sub_tit">주요 운행 지역</p>
+									<p class="sub_tit">주차장</p>
+								</div>
+								<!-- 접혔을때 -->
+								<div class="short-desc">
+									<p class="sub_tit">용도</p>
+								</div>
+								<!-- // 접혔을때 -->
+							</div>
+							<div class="tit_group">
+								<div class="tit"><button type="button" class="txt_btn02 s_large" data-toggle-idx="toggle-7">옵션 정보</button></div>
+								<div class="desc">
+									<div class="radio_box">
+										<input type="radio" name="chk_comm" id="chk_radio01_1" class="chk_radio small" checked/>
+										<label for="chk_radio01_1"><span class="txt">전체</span></label>
+									</div>
+									<div class="radio_box">
+										<input type="radio" name="chk_comm" id="chk_radio01_2" class="chk_radio small"/>
+										<label for="chk_radio01_2"><span class="txt">동일 옵션만 보기</span></label>
+									</div>
+									<div class="radio_box">
+										<input type="radio" name="chk_comm" id="chk_radio01_3" class="chk_radio small"/>
+										<label for="chk_radio01_3"><span class="txt">다른 옵션만 보기</span></label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="dnd_container">
+							<div class="move_container">
+								<div class="dnd_list">
+									<div class="prd_item_container">
+										<div class="unit_compare">
+											<div class="info_desc_group">
+												<div class="check_pin">
+													<input type="checkbox" id="chk_01" class="chk_pin" />
+													<label for="chk_01"><span class="txt">11차1111</span></label>
+												</div>
+												<div class="unit_img">
+													<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+													<span class="flag_soldout">일시품절</span>
+												</div>
+												<div class="unit_info">
+													<div class="name"><p class="txt">팰리세이드 가솔린 3.8 4WD  팰리세이드 가솔린 3.8 4WD</p></div>
+													<div class="price">
+														<span class="num"><em>2,900</em>만원</span>
+													</div>
+													<!-- start: 기준 차량 / 만약 .prd_item_container 클래스 부분에 pin 설정. 즉 체크되어 기준차량이 되면 무조건 해당 부분만 노출하게끔 설정됨. -->
+													<div class="bg_box fixed"><em class="ico"></em>기준 차량</div>
+													<!-- end: 기준 차량 / 만약 .prd_item_container 클래스 부분에 pin 설정. 즉 체크되어 기준차량이 되면 무조건 해당 부분만 노출하게끔 설정됨. -->
+													<!-- start: 기준 대비 가격 하락 혹은 상승 선택부분 / bg_box 에 m_down 혹은 m_up 선택입력 -->
+													<!--<div class="bg_box m_down">
+														<span class="txt">기준 대비 </span>
+														<span class="d_price">800 ~ 1000만원<em class="ico"></em></span>
+													</div>-->
+													<div class="bg_box m_up">
+														<span class="txt">기준 대비 </span>
+														<span class="d_price">220만원<em class="ico"></em></span>
+													</div>
+													<!-- end: 기준 대비 가격 하락 혹은 상승 선택부분 / bg_box 에 m_down 혹은 m_up 선택입력 -->
+													<div class="loan">84<i>만원</i></div>
+													<div class="compare_rate">
+														<span class="num">
+															<em class="rate">23<i>%</i></em>
+															<em class="discount">3,200만원</em>
+														</span>
+													</div>
+													<button type="button" class="btn_mid color01">주문하기</button>
+												</div>
+											</div>
+											<div class="info_desc_group">
+												<div class="detail_group">
+													<div class="txt"><strong class="p_num">12,167</strong>km</div>
+													<div class="txt"><strong class="p_num">2</strong>년 <strong class="p_num">6</strong>개월</div>
+													<div class="txt"><strong class="p_num">2022</strong>년형</div>
+													<div class="txt"><strong class="p_num">21</strong>년 <strong class="p_num">3</strong>월</div>
+													<div class="txt">없음</div>
+													<div class="txt">승용 / 대형</div>
+													<div class="txt"><strong class="p_num">5</strong>인</div>
+													<div class="txt">오토</div>
+													<div class="txt">2WD</div>
+													<div class="txt">가솔린</div>
+													<div class="txt"><strong class="p_num">2,999</strong>cc</div>
+													<div class="txt line2">팬텀 블랙 펄 <em class="add_info">(초크 화이트 메탈릭)</em></div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<ul class="txt_list">
+														<li class="txt">
+															<strong class="p_num">12,167</strong>km
+														</li>
+														<li class="txt">
+															<strong class="p_num">2</strong>년
+															<strong class="p_num">6</strong>개월
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="info_desc_group">
+												<div class="detail_group">
+													<div class="txt"><strong class="p_num">1</strong>년<strong class="p_num">5</strong>월</div>
+													<div class="txt"><strong class="p_num">58,842</strong>km</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<div class="txt">
+														<strong class="p_num">1</strong>년<strong class="p_num">5</strong>개월
+													</div>
+												</div> 
+											</div>
+											<div class="info_desc_group">
+												<div class="detail_group">
+													<ul class="txt_list">
+														<li class="txt">아주좋음 <strong class="p_num">2</strong></li>
+														<li class="txt">좋음 <strong class="p_num">1</strong></li>
+														<li class="txt">보통 <strong class="p_num">1</strong></li>
+													</ul>												
+													<div class="txt">양호</div>
+													<div class="txt">정상</div>
+													<div class="txt">양호</div>
+													<div class="txt">주의</div>
+													<div class="txt">우수</div>
+													<div class="txt">쾌적</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<ul class="txt_list">
+														<li class="txt">우수</li>
+														<li class="txt">좋음</li>
+													</ul>
+												</div>
+											</div>
+											<div class="info_desc_group"> 
+												<div class="detail_group">
+													<div class="txt"><strong class="p_num">1</strong>건</div>
+													<div class="txt"><strong class="p_num">0</strong>건</div>
+													<div class="txt"><strong class="p_num">2</strong>건</div>
+													<div class="txt"><strong class="p_num">1</strong>건</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<div class="txt">없음</div>
+												</div>
+											</div>
+											<div class="info_desc_group">
+												<div class="detail_group">
+													<div class="txt"><strong class="p_num">1</strong>건</div>
+													<div class="txt"><strong class="p_num">0</strong>건</div>
+													<div class="txt">있음</div>
+													<div class="txt"><strong class="p_num">1</strong>건</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<p class="txt">있음</p>
+												</div>
+											</div>
+											<div class="info_desc_group">
+												<div class="detail_group">
+													<div class="txt">출퇴근용</div>
+													<div class="txt">자가용</div>
+													<div class="txt">비흡연</div>
+													<div class="txt">탑승</div>
+													<div class="txt">서울시 강남구</div>
+													<div class="txt">지상</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<div class="txt">출퇴근용</div>
+												</div>
+											</div>
+											<div class="info_desc_group option_group"> 
+												<div class="detail_group">
+													<div class="sub_group">
+														<p class="tit_opt">외관</p>
+														<!-- 옵션 활성화시 active class 추가-->
+														<ul>
+															<li><p class="opt active">전동식 트렁크</p></li>
+															<li><p class="opt">썬루프</p></li>
+															<li><p class="opt active">헤드업 디스플레이</p></li>
+														</ul>
+													</div>
+													<div class="sub_group">
+														<p class="tit_opt">내장</p>
+														<!-- 옵션 활성화시 active class 추가-->
+														<ul>
+															<li><p class="opt">네비게이션</p></li>
+															<li><p class="opt">크루즈 컨트롤</p></li>
+															<li><p class="opt active">열선 스티어링 휠</p></li>
+															<li><p class="opt active">열선 시트(앞좌석)</p></li>
+															<li><p class="opt active">열선 시트(뒷좌석)</p></li>
+															<li><p class="opt">전동 시트(앞좌석)</p></li>
+															<li><p class="opt">전동 시트(뒷좌석)</p></li>
+															<li><p class="opt">통풍 시트(앞좌석)</p></li>
+															<li><p class="opt active">가죽 시트</p></li>
+															<li><p class="opt">인조가죽 시트</p></li>
+															<li><p class="opt">직물 시트</p></li>
+															<li><p class="opt active">버튼 시동</p></li>
+														</ul>
+													</div>
+													<div class="sub_group">
+														<p class="tit_opt">안전</p>
+														<!-- 옵션 활성화시 active class 추가-->
+														<ul>
+															<li><p class="opt">서라운드 뷰 모니터</p></li>
+															<li><p class="opt active">후방 모니터</p></li>
+															<li><p class="opt active">후측방 경보 시스템</p></li>
+															<li><p class="opt">차선 이탈 경보</p></li>
+														</ul>
+													</div>
+													<div class="sub_group">
+														<p class="tit_opt">편의/멀티미디어</p>
+														<!-- 옵션 활성화시 active class 추가-->
+														<ul>
+															<li><p class="opt active">하이패스</p></li>
+															<li><p class="opt active">블루투스</p></li>
+															<li><p class="opt">스마트 키</p></li>
+														</ul>
+													</div>
+													<div class="sub_group">
+														<p class="tit_opt">추가 옵션</p>
+														<!-- 옵션 활성화시 active class 추가-->
+														<ul>
+															<li>
+																<p class="opt active">있음</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<ul class="option_list">
+														<li class="item">
+															<span class="s_tit check">주요 옵션</span>
+															<span class="s_val">11</span>
+														</li>
+														<li class="item">
+															<span class="s_tit add">추가 옵션</span>
+															<span class="s_val">42</span>
+														</li>
+													</ul>
+												</div>
+
+											</div>
+										</div>
+										<!--<div class="add_box">
+											<a href="">비교차량을<br>등록해 주세요.</a>
+										</div>-->
+										<button type="button" class="btn_close">닫기</button>
+									</div>
+									<div class="prd_item_container cur_my_car">
+										<div class="unit_compare">
+											<div class="info_desc_group">
+												<div class="check_pin">
+													<input type="checkbox" id="chk_02" class="chk_pin"/>
+													<label for="chk_02"><span class="txt">22차2222</span></label>
+												</div>
+												<div class="unit_img">
+													<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+													<span class="flag_soldout">일시품절</span>
+												</div>
+												<div class="unit_info">
+													<div class="name"><p class="txt">팰리세이드 가솔린 3.8 4WD</p></div>
+													<div class="price">
+														<span class="num"><em class="range">2,990~3,820</em>만원</span>
+													</div>
+													<!-- start: 기준 차량 / 만약 .prd_item_container 클래스 부분에 pin 설정. 즉 체크되어 기준차량이 되면 무조건 해당 부분만 노출하게끔 설정됨. -->
+													<div class="bg_box fixed"><em class="ico"></em>기준 차량</div>
+													<!-- end: 기준 차량 / 만약 .prd_item_container 클래스 부분에 pin 설정. 즉 체크되어 기준차량이 되면 무조건 해당 부분만 노출하게끔 설정됨. -->
+
+													<!-- start: 기준 차량 대비 가격 하락 혹은 상승 선택부분 / bg_box 에 m_down 혹은 m_up 선택입력 -->
+													<div class="bg_box m_down">
+														<span class="txt">기준 대비 </span>
+														<span class="d_price">800 ~ 1000만원<em class="ico"></em></span>
+													</div>
+													<!--<div class="bg_box m_up">
+														<span class="txt">기준 대비 </span>
+														<span class="d_price">220만원<em class="ico"></em></span>
+													</div>-->
+													<!-- end: 기준 차량 대비 가격 하락 혹은 상승 선택부분 / bg_box 에 m_down 혹은 m_up 선택입력 -->
+													<div class="loan">84<i>만원</i></div>
+													<div class="compare_rate">
+														<span class="num">
+															<em class="rate">23<i>%</i></em>
+															<em class="discount">3,200만원</em>
+														</span>
+													</div>
+
+													<button type="button" class="btn_mid color01">내 차 보기</button>
+												</div>
+											</div>
+											<div class="info_desc_group">
+												<div class="detail_group">
+													<div class="txt"><strong class="p_num">12,167</strong>km</div>
+													<div class="txt"><strong class="p_num">2</strong>년 <strong class="p_num">6</strong>개월</div>
+													<div class="txt"><strong class="p_num">2022</strong>년형</div>
+													<div class="txt"><strong class="p_num">21</strong>년 <strong class="p_num">3</strong>월</div>
+													<div class="txt">없음</div>
+													<div class="txt">승용 / 대형</div>
+													<div class="txt"><strong class="p_num">5</strong>인</div>
+													<div class="txt">오토</div>
+													<div class="txt">2WD</div>
+													<div class="txt">가솔린</div>
+													<div class="txt"><strong class="p_num">2,999</strong>cc</div>
+													<div class="txt line2">팬텀 블랙 펄 <em class="add_info">(초크 화이트 메탈릭)</em></div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<ul class="txt_list">
+														<li class="txt">
+															<strong class="p_num">12,167</strong>km
+														</li>
+														<li class="txt">
+															<strong class="p_num">2</strong>년
+															<strong class="p_num">6</strong>개월
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="info_desc_group">
+												<div class="detail_group">
+													<div class="txt"><strong class="p_num">1</strong>년<strong class="p_num">5</strong>월</div>
+													<div class="txt"><strong class="p_num">58,842</strong>km</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<div class="txt">
+														<strong class="p_num">1</strong>년<strong class="p_num">5</strong>개월
+													</div>
+												</div> 
+											</div>
+											<div class="info_desc_group">
+												<div class="detail_group">
+													<ul class="txt_list">
+														<li class="txt">아주좋음 <strong class="p_num">2</strong></li>
+														<li class="txt">좋음 <strong class="p_num">1</strong></li>
+														<li class="txt">보통 <strong class="p_num">1</strong></li>
+													</ul>												
+													<div class="txt">양호</div>
+													<div class="txt">정상</div>
+													<div class="txt">양호</div>
+													<div class="txt">주의</div>
+													<div class="txt">우수</div>
+													<div class="txt">쾌적</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<ul class="txt_list">
+														<li class="txt">우수</li>
+														<li class="txt">좋음</li>
+													</ul>
+												</div>
+											</div>
+											<div class="info_desc_group"> 
+												<div class="detail_group">
+													<div class="txt"><strong class="p_num">1</strong>건</div>
+													<div class="txt"><strong class="p_num">0</strong>건</div>
+													<div class="txt"><strong class="p_num">2</strong>건</div>
+													<div class="txt"><strong class="p_num">1</strong>건</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<div class="txt">없음</div>
+												</div>
+											</div>
+											<div class="info_desc_group">
+												<div class="detail_group">
+													<div class="txt"><strong class="p_num">1</strong>건</div>
+													<div class="txt"><strong class="p_num">0</strong>건</div>
+													<div class="txt">있음</div>
+													<div class="txt"><strong class="p_num">1</strong>건</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<p class="txt">있음</p>
+												</div>
+											</div>
+											<div class="info_desc_group">
+												<div class="detail_group">
+													<div class="txt">출퇴근용</div>
+													<div class="txt">자가용</div>
+													<div class="txt">비흡연</div>
+													<div class="txt">탑승</div>
+													<div class="txt">서울시 강남구</div>
+													<div class="txt">지상</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<div class="txt">출퇴근용</div>
+												</div>
+											</div>
+											<div class="info_desc_group option_group">
+												<div class="detail_group">
+													<div class="sub_group">
+														<p class="tit_opt">외관</p>
+														<!-- 옵션 활성화시 active class 추가-->
+														<ul>
+															<li><p class="opt active">전동식 트렁크</p></li>
+															<li><p class="opt">썬루프</p></li>
+															<li><p class="opt active">헤드업 디스플레이</p></li>
+														</ul>
+													</div>
+													<div class="sub_group">
+														<p class="tit_opt">내장</p>
+														<!-- 옵션 활성화시 active class 추가-->
+														<ul>
+															<li><p class="opt">네비게이션</p></li>
+															<li><p class="opt">크루즈 컨트롤</p></li>
+															<li><p class="opt active">열선 스티어링 휠</p></li>
+															<li><p class="opt active">열선 시트(앞좌석)</p></li>
+															<li><p class="opt active">열선 시트(뒷좌석)</p></li>
+															<li><p class="opt">전동 시트(앞좌석)</p></li>
+															<li><p class="opt">전동 시트(뒷좌석)</p></li>
+															<li><p class="opt">통풍 시트(앞좌석)</p></li>
+															<li><p class="opt active">가죽 시트</p></li>
+															<li><p class="opt">인조가죽 시트</p></li>
+															<li><p class="opt">직물 시트</p></li>
+															<li><p class="opt active">버튼 시동</p></li>
+														</ul>
+													</div>
+													<div class="sub_group">
+														<p class="tit_opt">안전</p>
+														<!-- 옵션 활성화시 active class 추가-->
+														<ul>
+															<li><p class="opt">서라운드 뷰 모니터</p></li>
+															<li><p class="opt active">후방 모니터</p></li>
+															<li><p class="opt active">후측방 경보 시스템</p></li>
+															<li><p class="opt">차선 이탈 경보</p></li>
+														</ul>
+													</div>
+													<div class="sub_group">
+														<p class="tit_opt">편의/멀티미디어</p>
+														<!-- 옵션 활성화시 active class 추가-->
+														<ul>
+															<li><p class="opt active">하이패스</p></li>
+															<li><p class="opt active">블루투스</p></li>
+															<li><p class="opt">스마트 키</p></li>
+														</ul>
+													</div>
+													<div class="sub_group">
+														<p class="tit_opt">추가 옵션</p>
+														<!-- 옵션 활성화시 active class 추가-->
+														<ul>
+															<li>
+																<p class="opt active">있음</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<ul class="option_list">
+														<li class="item">
+															<span class="s_tit check">주요 옵션</span>
+															<span class="s_val">11</span>
+														</li>
+														<li class="item">
+															<span class="s_tit add">추가 옵션</span>
+															<span class="s_val">42</span>
+														</li>
+													</ul>																					
+												</div>
+											</div>
+										</div>
+										<!--<div class="add_box">
+											<a href="">비교차량을<br>등록해 주세요.</a>
+										</div>-->
+										<button type="button" class="btn_close s_24">닫기</button>
+									</div>
+									<div class="prd_item_container soldout">
+										<div class="unit_compare">
+											<div class="info_desc_group">
+												<div class="check_pin">
+													<input type="checkbox" id="chk_03" class="chk_pin"/>
+													<label for="chk_03"><span class="txt">33차3333</span></label>
+												</div>
+												<div class="unit_img">
+													<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+													<span class="flag_soldout">일시품절</span>
+												</div>
+												<div class="unit_info">
+													<div class="name"><p class="txt">팰리세이드 가솔린 3.8 4WD  팰리세이드 가솔린 3.8 4WD</p></div>
+
+													<div class="price">
+														<span class="num"><em>3,820</em>만원</span>
+													</div>
+													<!-- start: 기준 차량 / 만약 .prd_item_container 클래스 부분에 pin 설정. 즉 체크되어 기준차량이 되면 무조건 해당 부분만 노출하게끔 설정됨. -->
+													<div class="bg_box fixed"><em class="ico"></em>기준 차량</div>
+													<!-- end: 기준 차량 / 만약 .prd_item_container 클래스 부분에 pin 설정. 즉 체크되어 기준차량이 되면 무조건 해당 부분만 노출하게끔 설정됨. -->
+													<!-- start: 기준 대비 가격 하락 혹은 상승 선택부분 / bg_box 에 m_down 혹은 m_up 선택입력 -->
+													<!--<div class="bg_box m_down">
+														<span class="txt">기준 대비 </span>
+														<span class="d_price">800 ~ 1000만원<em class="ico"></em></span>
+													</div>-->
+													<div class="bg_box m_up">
+														<span class="txt">기준 대비 </span>
+														<span class="d_price">220만원<em class="ico"></em></span>
+													</div>
+													<!-- end: 기준 대비 가격 하락 혹은 상승 선택부분 / bg_box 에 m_down 혹은 m_up 선택입력 -->
+													<div class="loan">84<i>만원</i></div>
+													<div class="compare_rate">
+														<span class="num">
+															<em class="rate">23<i>%</i></em>
+															<em class="discount">3,200만원</em>
+														</span>
+													</div>
+													<button type="button" class="btn_mid color01" disabled>일시품절</button>
+												</div>
+											</div>
+											<div class="info_desc_group"> 
+												<div class="detail_group">
+													<div class="txt"><strong class="p_num">12,167</strong>km</div>
+													<div class="txt"><strong class="p_num">2</strong>년 <strong class="p_num">6</strong>개월</div>
+													<div class="txt"><strong class="p_num">2022</strong>년형</div>
+													<div class="txt"><strong class="p_num">21</strong>년 <strong class="p_num">3</strong>월</div>
+													<div class="txt">없음</div>
+													<div class="txt">승용 / 대형</div>
+													<div class="txt"><strong class="p_num">5</strong>인</div>
+													<div class="txt">오토</div>
+													<div class="txt">2WD</div>
+													<div class="txt">가솔린</div>
+													<div class="txt"><strong class="p_num">2,999</strong>cc</div>
+													<div class="txt line2">팬텀 블랙 펄 <em class="add_info">(초크 화이트 메탈릭)</em></div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<ul class="txt_list">
+														<li class="txt">
+															<strong class="p_num">12,167</strong>km
+														</li>
+														<li class="txt">
+															<strong class="p_num">2</strong>년
+															<strong class="p_num">6</strong>개월
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="info_desc_group">
+												<div class="detail_group">
+													<div class="txt"><strong class="p_num">1</strong>년<strong class="p_num">5</strong>월</div>
+													<div class="txt"><strong class="p_num">58,842</strong>km</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<div class="txt">
+														<strong class="p_num">1</strong>년<strong class="p_num">5</strong>개월
+													</div>
+												</div> 
+											</div>
+											<div class="info_desc_group">
+												<div class="detail_group">
+													<ul class="txt_list">
+														<li class="txt">아주좋음 <strong class="p_num">2</strong></li>
+														<li class="txt">좋음 <strong class="p_num">1</strong></li>
+														<li class="txt">보통 <strong class="p_num">1</strong></li>
+													</ul>												
+													<div class="txt">양호</div>
+													<div class="txt">정상</div>
+													<div class="txt">양호</div>
+													<div class="txt">주의</div>
+													<div class="txt">우수</div>
+													<div class="txt">쾌적</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<ul class="txt_list">
+														<li class="txt">우수</li>
+														<li class="txt">좋음</li>
+													</ul>
+												</div>
+											</div>
+											<div class="info_desc_group"> 
+												<div class="detail_group">
+													<div class="txt"><strong class="p_num">1</strong>건</div>
+													<div class="txt"><strong class="p_num">0</strong>건</div>
+													<div class="txt"><strong class="p_num">2</strong>건</div>
+													<div class="txt"><strong class="p_num">1</strong>건</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<div class="txt">없음</div>
+												</div>
+											</div>
+											<div class="info_desc_group">
+												<div class="detail_group">
+													<div class="txt"><strong class="p_num">1</strong>건</div>
+													<div class="txt"><strong class="p_num">0</strong>건</div>
+													<div class="txt">있음</div>
+													<div class="txt"><strong class="p_num">1</strong>건</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<p class="txt">있음</p>
+												</div>
+											</div>
+											<div class="info_desc_group">
+												<div class="detail_group">
+													<div class="txt">출퇴근용</div>
+													<div class="txt">자가용</div>
+													<div class="txt">비흡연</div>
+													<div class="txt">탑승</div>
+													<div class="txt">서울시 강남구</div>
+													<div class="txt">지상</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<div class="txt">출퇴근용</div>
+												</div>
+											</div>
+											<div class="info_desc_group option_group">
+												<div class="detail_group">
+													<div class="sub_group">
+														<p class="tit_opt">외관</p>
+														<ul>
+															<li><p class="opt active">전동식 트렁크</p></li>
+															<li><p class="opt">썬루프</p></li>
+															<li><p class="opt active">헤드업 디스플레이</p></li>
+														</ul>
+													</div>
+													<div class="sub_group">
+														<p class="tit_opt">내장</p>
+														<ul>
+															<li><p class="opt">네비게이션</p></li>
+															<li><p class="opt">크루즈 컨트롤</p></li>
+															<li><p class="opt active">열선 스티어링 휠</p></li>
+															<li><p class="opt active">열선 시트(앞좌석)</p></li>
+															<li><p class="opt active">열선 시트(뒷좌석)</p></li>
+															<li><p class="opt">전동 시트(앞좌석)</p></li>
+															<li><p class="opt">전동 시트(뒷좌석)</p></li>
+															<li><p class="opt">통풍 시트(앞좌석)</p></li>
+															<li><p class="opt active">가죽 시트</p></li>
+															<li><p class="opt">인조가죽 시트</p></li>
+															<li><p class="opt">직물 시트</p></li>
+															<li><p class="opt active">버튼 시동</p></li>
+														</ul>
+													</div>
+													<div class="sub_group">
+														<p class="tit_opt">안전</p>
+														<ul>
+															<li><p class="opt">서라운드 뷰 모니터</p></li>
+															<li><p class="opt active">후방 모니터</p></li>
+															<li><p class="opt active">후측방 경보 시스템</p></li>
+															<li><p class="opt">차선 이탈 경보</p></li>
+														</ul>
+													</div>
+													<div class="sub_group">
+														<p class="tit_opt">편의/멀티미디어</p>
+														<ul>
+															<li><p class="opt active">하이패스</p></li>
+															<li><p class="opt active">블루투스</p></li>
+															<li><p class="opt">스마트 키</p></li>
+														</ul>
+													</div>
+													<div class="sub_group">
+														<p class="tit_opt">추가 옵션</p>
+														<ul>
+															<li>
+																<p class="opt active">있음</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<ul class="option_list">
+														<li class="item">
+															<span class="s_tit check">주요 옵션</span>
+															<span class="s_val">11</span>
+														</li>
+														<li class="item">
+															<span class="s_tit add">추가 옵션</span>
+															<span class="s_val">42</span>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!--<div class="add_box">
+											<a href="">비교차량을<br>등록해 주세요.</a>
+										</div>-->
+										<button type="button" class="btn_close s_24">닫기</button>
+									</div>
+									<div class="prd_item_container no_price">
+										<div class="unit_compare">
+											<div class="info_desc_group">
+												<div class="check_pin">
+													<input type="checkbox" id="chk_04" class="chk_pin"/>
+													<label for="chk_04"><span class="txt">44차4444</span></label>
+												</div>
+
+												<div class="unit_img">
+													<img src="/HMC/p/img/@thumb/plp_380x253.jpg" alt="상품명으로 뿌려주세요">
+													<span class="flag_soldout">일시품절</span>
+												</div>
+												<div class="unit_info">
+													<div class="name"><p class="txt">팰리세이드 가솔린 3.8 4WD  팰리세이드 가솔린 3.8 4WD</p></div>
+													<div class="price">
+														<!-- span class="num"><em>3,820</em>만원</span>-->
+														<span class="num"><em>가격정보없음</em></span>
+													</div>
+													<!-- start: 기준 차량 / 만약 .prd_item_container 클래스 부분에 pin 설정. 즉 체크되어 기준차량이 되면 무조건 해당 부분만 노출하게끔 설정됨. -->
+													<div class="bg_box fixed"><em class="ico"></em>기준 차량</div>
+													<!-- end: 기준 차량 / 만약 .prd_item_container 클래스 부분에 pin 설정. 즉 체크되어 기준차량이 되면 무조건 해당 부분만 노출하게끔 설정됨. -->
+													<!-- start: 기준 대비 가격 하락 혹은 상승 선택부분 / bg_box 에 m_down 혹은 m_up 선택입력 -->
+													<!--<div class="bg_box m_down">
+														<span class="txt">기준 대비 </span>
+														<span class="d_price">800 ~ 1000만원<em class="ico"></em></span>
+													</div>-->
+													<div class="bg_box m_up">
+														<span class="txt">기준 대비 </span>
+														<span class="d_price">220만원<em class="ico"></em></span>
+													</div>
+													<!-- end: 기준 대비 가격 하락 혹은 상승 선택부분 / bg_box 에 m_down 혹은 m_up 선택입력 -->
+													<div class="loan">84<i>만원</i></div>
+													<div class="compare_rate">
+														<span class="num">
+															<em class="rate">23<i>%</i></em>
+															<em class="discount">3,200만원</em>
+														</span>
+													</div>
+													<button type="button" class="btn_mid color01">시세 조회</button>
+												</div>
+											</div>
+											<div class="info_desc_group"> 
+												<div class="detail_group">
+													<div class="txt"><strong class="p_num">12,167</strong>km</div>
+													<div class="txt"><strong class="p_num">2</strong>년 <strong class="p_num">6</strong>개월</div>
+													<div class="txt"><strong class="p_num">2022</strong>년형</div>
+													<div class="txt"><strong class="p_num">21</strong>년 <strong class="p_num">3</strong>월</div>
+													<div class="txt">없음</div>
+													<div class="txt">승용 / 대형</div>
+													<div class="txt"><strong class="p_num">5</strong>인</div>
+													<div class="txt">오토</div>
+													<div class="txt">2WD</div>
+													<div class="txt">가솔린</div>
+													<div class="txt"><strong class="p_num">2,999</strong>cc</div>
+													<div class="txt line2">팬텀 블랙 펄 <em class="add_info">(초크 화이트 메탈릭)</em></div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<ul class="txt_list">
+														<li class="txt">
+															<strong class="p_num">12,167</strong>km
+														</li>
+														<li class="txt">
+															<strong class="p_num">2</strong>년
+															<strong class="p_num">6</strong>개월
+														</li>
+													</ul>
+												</div>
+											</div>
+											<div class="info_desc_group">
+												<div class="detail_group">
+													<div class="txt"><strong class="p_num">1</strong>년<strong class="p_num">5</strong>월</div>
+													<div class="txt"><strong class="p_num">58,842</strong>km</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<div class="txt">
+														<strong class="p_num">1</strong>년<strong class="p_num">5</strong>개월
+													</div>
+												</div> 
+											</div>
+											<div class="info_desc_group">
+												<div class="detail_group">
+													<ul class="txt_list">
+														<li class="txt">아주좋음 <strong class="p_num">2</strong></li>
+														<li class="txt">좋음 <strong class="p_num">1</strong></li>
+														<li class="txt">보통 <strong class="p_num">1</strong></li>
+													</ul>												
+													<div class="txt">양호</div>
+													<div class="txt">정상</div>
+													<div class="txt">양호</div>
+													<div class="txt">주의</div>
+													<div class="txt">우수</div>
+													<div class="txt">쾌적</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<ul class="txt_list">
+														<li class="txt">우수</li>
+														<li class="txt">좋음</li>
+													</ul>
+												</div>
+											</div>
+											<div class="info_desc_group"> 
+												<div class="detail_group">
+													<div class="txt"><strong class="p_num">1</strong>건</div>
+													<div class="txt"><strong class="p_num">0</strong>건</div>
+													<div class="txt"><strong class="p_num">2</strong>건</div>
+													<div class="txt"><strong class="p_num">1</strong>건</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<div class="txt">없음</div>
+												</div>
+											</div>
+											<div class="info_desc_group">
+												<div class="detail_group">
+													<div class="txt"><strong class="p_num">1</strong>건</div>
+													<div class="txt"><strong class="p_num">0</strong>건</div>
+													<div class="txt">있음</div>
+													<div class="txt"><strong class="p_num">1</strong>건</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<p class="txt">있음</p>
+												</div>
+											</div>
+											<div class="info_desc_group">
+												<div class="detail_group">
+													<div class="txt">출퇴근용</div>
+													<div class="txt">자가용</div>
+													<div class="txt">비흡연</div>
+													<div class="txt">탑승</div>
+													<div class="txt">서울시 강남구</div>
+													<div class="txt">지상</div>
+												</div>
+												<div class="summary_group"> <!-- 접었을때 -->
+													<div class="txt">출퇴근용</div>
+												</div>
+											</div>
+											<div class="info_desc_group option_group">
+												<div class="detail_group">
+													<div class="sub_group">
+														<p class="tit_opt">외관</p>
+														<ul>
+															<li><p class="opt active">전동식 트렁크</p></li>
+															<li><p class="opt">썬루프</p></li>
+															<li><p class="opt active">헤드업 디스플레이</p></li>
+														</ul>
+													</div>
+													<div class="sub_group">
+														<p class="tit_opt">내장</p>
+														<ul>
+															<li><p class="opt">네비게이션</p></li>
+															<li><p class="opt">크루즈 컨트롤</p></li>
+															<li><p class="opt active">열선 스티어링 휠</p></li>
+															<li><p class="opt active">열선 시트(앞좌석)</p></li>
+															<li><p class="opt active">열선 시트(뒷좌석)</p></li>
+															<li><p class="opt">전동 시트(앞좌석)</p></li>
+															<li><p class="opt">전동 시트(뒷좌석)</p></li>
+															<li><p class="opt">통풍 시트(앞좌석)</p></li>
+															<li><p class="opt active">가죽 시트</p></li>
+															<li><p class="opt">인조가죽 시트</p></li>
+															<li><p class="opt">직물 시트</p></li>
+															<li><p class="opt active">버튼 시동</p></li>
+														</ul>
+													</div>
+													<div class="sub_group">
+														<p class="tit_opt">안전</p>
+														<ul>
+															<li><p class="opt">서라운드 뷰 모니터</p></li>
+															<li><p class="opt active">후방 모니터</p></li>
+															<li><p class="opt active">후측방 경보 시스템</p></li>
+															<li><p class="opt">차선 이탈 경보</p></li>
+														</ul>
+													</div>
+													<div class="sub_group">
+														<p class="tit_opt">편의/멀티미디어</p>
+														<ul>
+															<li><p class="opt active">하이패스</p></li>
+															<li><p class="opt active">블루투스</p></li>
+															<li><p class="opt">스마트 키</p></li>
+														</ul>
+													</div>
+													<div class="sub_group">
+														<p class="tit_opt">추가 옵션</p>
+														<ul>
+															<li>
+																<p class="opt active">있음</p>
+															</li>
+														</ul>
+													</div>
+												</div>
+												<div class="summary_group">
+													<ul class="option_list">
+														<li class="item">
+															<span class="s_tit check">주요 옵션</span>
+															<span class="s_val">11</span>
+														</li>
+														<li class="item">
+															<span class="s_tit add">추가 옵션</span>
+															<span class="s_val">42</span>
+														</li>
+													</ul>	
+												</div>
+
+											</div>
+										</div>
+										<!--<div class="add_box">
+											<a href="">비교차량을<br>등록해 주세요.</a>
+										</div>-->
+										<button type="button" class="btn_close s_24">닫기</button>
+									</div>
+									<div class="prd_item_container empty">
+										<div class="add_box">
+											<a href="javascript:void(0)">비교차량을<br>등록해 주세요.</a>
+										</div>
+										<!-- <button type="button" class="btn_close s_24">닫기</button> -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end: 차량 비교하기 -->
+
+
+
+				</div>
+
+			</div>
+			<!-- //sc_container -->
+		</div>
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<script>
+
+	/*
+	* 아래 클래스 CompareDnd / ToggleItem 등은
+	* 화면 렌더링이 전부 다 이루어 지고 호출되어야 인터렉션 이슈가 발생하지 않는다.
+	* 상단에 Sortable.min.js 가 호출되고 있고 CompareDnd 클래스 내부에 Sortable.create 로 호출 되어 지고 있다.
+	*
+	* */
+
+	/**
+	 * 공통 기능 static 클래스
+	 */
+	class Utils{
+		/**
+		 * 컨테이너 안에서 엘리먼트 추가된 위치를 서로 바꿈
+		 * @param container
+		 * @param prevEle
+		 * @param nextEle
+		 */
+		static swapElement({ container, prevEle, nextEle}){
+			container.insertBefore(prevEle, nextEle);
+			// container.prepend(nextEle);
+		}
+
+		/**
+		 * querySelectorAll 로 가져온 엘리먼트 리스트
+		 * @param selector 한꺼번에 가져올 엘리먼트의 selector
+		 * @param target - 인덱스 값을 알기 위한 엘리먼트 (  selector 로 가져온 리스트 안에 존재하는 엘리먼트 중 하나임 )
+		 * @returns {number}
+		 */
+		static findIndex({selector, target}) {
+			let items=document.querySelectorAll(selector);
+			return [...items].indexOf(target);
+		}
+
+		/**
+		 * getBoundingClientRect 를 함수화 한 것
+		 * @param ele 해당 엘리먼트
+		 * @param prop - { x, y, width, height, top, left }
+		 * @returns {number | null} 수치값 ( 단위는 없음 )
+		 */
+		static getElementRectValue(ele, prop) {
+			return (ele)? ele.getBoundingClientRect()[`${prop}`]: null;
+		}
+
+		/**
+		 * 지정할 엘리먼트의 셀렉터 전달해 주면 해당 엘리먼트를
+		 * 찾아서 height 값을 하나의 배열에 취합하고 들어 있는 배열의 최대값을 가려낸다.
+		 * @param selector
+		 * @returns {number}
+		 */
+		static getEleMaxH( selector ) {
+			let eleInfoH=Utils.getCombineByEleH( document.querySelectorAll(selector) );
+			// console.log(eleInfoH);
+			return Math.max(...eleInfoH);
+		}
+
+		/**
+		 * 각 엘리먼트의 height 값을 하나의 배열로 취합한다.
+		 * @param items
+		 * @returns {*[]}
+		 */
+		static getCombineByEleH( items ) {
+			const eleInfoH=[];
+			//target.clientHeight, target.scrollHeight, target.offsetHeight
+			items.forEach( (target)=> eleInfoH.push( Utils.getElementRectValue( target, 'height')  ) );
+			return eleInfoH;
+		}
+	}
+
+	/**
+	 * drag and drop 설정 클래스
+	 * 속성 네이밍에 Selector 라는 prefix 를 가지는 것들은 querySelector 를 이용하기에 마침표 필수 - ex) dndContainerSelector: '.dnd_list',
+	 * 속성 네이밍에 Selector prefix -> 셀렉터 네임  -> ex) dndContainerSelector: '.dnd_list',
+	 * 속성 네이밍에 Class prefix -> 점 없이 그냥 CSS classname  -> ex) pinClass : 'pin'
+	 * 속성 네이밍에 Container -> querySelector 혹은 getElementById  -> ex) document.querySelector('.move_container') 대입
+	 *        SortableLib: Sortable,
+	 *        dndParentContainer:document.querySelector('.dnd_container'),
+	 *        dndMoveContainer: document.querySelector('.move_container'),
+	 *        dndContainerSelector: '.dnd_list',
+	 *        dndSelector:'.prd_item_container',
+	 *        pinClass:'pin',
+	 *        checkClass:'chk_pin',
+	 *        closeBtnClass:'btn_close',
+	 *        stickContainerSelector: '.top_sticky_container',
+	 */
+	class CompareDnd {
+		constructor({
+						SortableLib,      // Sortable.min.js 인스턴스 ( 상단 header 에 Sortable.miny.js 를 불렀다면 Sortable 를 인자로 넘겨주면된다.
+						dndParentContainer,  // dnd element 전체 container - '.dnd_container'
+						dndMoveContainer, // dnd element 좌우 버튼 클릭시를 x 좌표로 이동하게 하는 container - '.move_container'
+						dndContainerSelector, //Sortable 라이브러리에서 드래그앤드랍을 위한 컨테이너 - '.dnd_list'
+						dndSelector,   // 드래그 앤 드랍을 위한 엘리먼트 셀렉터 .prd_item_container
+						pinClass, // 첫번째 고정 시킴을 알게 해주는 css class
+						checkClass, // 체크 박스 css class name
+						closeBtnClass, // delete button css class name - 'btn_close'
+						stickContainerSelector, // 상단 sticky menu 컨테이너 셀렉터
+						maxDndLen = 5
+					}) {
+			this.dndParentContainer = dndParentContainer; //	document.querySelector('.dnd_container');
+			this.dndMoveContainer = dndMoveContainer; // document.querySelector('.move_container');
+			this.dndContainerSelector = dndContainerSelector; //'.dnd_list'
+			this.dndContainer = document.querySelector(this.dndContainerSelector);
+			this.dndSelector = dndSelector; // .prd_item_container
+			this.SortableLib = SortableLib;  // Sortable.js 라이브러리의 인스턴스 ( 해당 소스는 header 에 미리 로드 되어 있어야 한다 )
+			this.pinClass = pinClass;  //
+			this.checkClass = checkClass;
+			this.closeBtnClass = closeBtnClass;
+			this.stickContainerSelector = stickContainerSelector;
+			this.maxDndLen = maxDndLen;
+			this.isLeft=false;
+			this.init();
+		}
+
+		init() {
+			//사이즈 초기화
+			this.dndElementsHeightInit();
+			this.sortableInit();
+			this.checkPinInit();
+			this.closeItems = this.closeBtnInit();
+			this.getCreateTopSticky();
+			this.setIsLeft(false);
+			let prevBtn = document.querySelector('.btn_prev ');
+			let nextBtn = document.querySelector('.btn_next');
+			prevBtn.addEventListener('click', () => this.moveDndElement(false));
+			nextBtn.addEventListener('click', () => this.moveDndElement(true));
+		}
+
+		/**
+		 * 드래그 앤 드랍 시켜주는 라이브러리 초기 셋팅
+		 */
+		sortableInit() {
+			let context = this;
+			this.sortable = this.SortableLib.create(this.dndContainer, {
+				filter: '.pin', //고정해서 움직이지 않게할 엘리먼트 class name
+				handle: '.unit_compare', // 해당 클래스 네임을 가지고 있는 것만 드래그드랍
+				animation: 450, // 드래그 앤 드랍 모션 속도
+				direction: 'horizontal',  // 가로 세로 드래그 방향 설정 --> height 값이 화면 보다 크면 오버 사이즈가 되어서 큰 차이가 없다.
+				// delay: 50, // 선택 드래그까지 delay
+				chosenClass: 'dim', // 선택 엘리먼트에 추가할 수 있는 toggle class
+				// swap: true, //엘리먼트 교체 여부
+				// swapClass: 'dim', // 엘리먼트 교체시 바뀔 아이템을 나타내 줄 toggle class( 드랍 후엔 제거 된다 )
+				swapThreshold: 0.2, // 드래그 드랍 충돌 범위 1 이 최대
+				fallbackTolerance: 5, // 적정 수치값 3 ~ 5 - 드래그로 간주되기 전에 마우스가 얼마나 멀리 움직여야 하는지 픽셀 단위로 지정.
+				onMove: (evt, originalEvent) => {
+					let target = evt.related;
+					//드래그 앤 드랍되는 엘리먼트 클래스( .prd_item_container)에
+					// pin or empty 이 존재하면 drag and drop 중지시킴.
+					if (target.classList.contains('pin') || target.classList.contains('empty')) {
+						return false;
+					}
+				},
+				// Element dragging ended
+				onEnd: (evt)=>{
+					//상단 부분 sticky 제거 후 재 생성. ( 드래그 앤 드랍 되면 상단 정보도 바뀌어야 하기에 )
+					context.updatePinCheckState();
+					context.updateTopSticky();
+					setTimeout(() => {
+						// console.log('context.getIsLeft()=', context.getIsLeft() );
+						context.getTopStickyItemsMoveX(context.getIsLeft());
+					}, 10);
+					// let itemEl = evt.item;  // dragged HTMLElement
+					// evt.to;    // target list
+					// evt.from;  // previous list
+					// evt.oldIndex;  // element's old index within old parent
+					// evt.newIndex;  // element's new index within new parent
+					// evt.oldDraggableIndex; // element's old index within old parent, only counting draggable elements
+					// evt.newDraggableIndex; // element's new index within new parent, only counting draggable elements
+					// evt.clone // the clone element
+					// evt.pullMode;  // when item is in another sortable: `"clone"` if cloning, `true` if moving
+				}
+			});
+		}
+
+		/**
+		 * 드래그앤 드랍 엘리먼트들 translateX, left 초기화
+		 * @returns {Promise<void>}
+		 */
+		async resetDndItemsPos() {
+			// 드래그 및 이동으로 인해 배치가 달라지므로 계속 셀렉터를 가져와야 한다.
+			let mvItems = [...document.querySelectorAll(this.dndSelector)];
+			let len = mvItems.length;
+			for (let i = 0; i < len; i++) {
+				let item = mvItems[i];
+				item.style.left = '0';
+				item.style.transition = 'left 0.35s ease, transform 0.35s ease';
+				item.style.transform = 'translateX(0)';
+				await setTimeout(() => {
+					// 이동된 스타일 값을 전부 지우지 않는다면
+					// 다른 곳에서의 포지션 설정과 값이 꼬여서 엉뚱한 포지션이동이 될 수 있다.
+					item.setAttribute('style', '');
+				}, 100);
+			}
+		}
+
+		/**
+		 * 좌우 버튼 움직임에 대한 토글 변수 참조
+		 * @returns {boolean}
+		 */
+		getIsLeft() {
+			return this.isLeft;
+		}
+
+		/**
+		 * 좌우 버튼 움직임 토글 변수 상태 변경
+		 * @param value
+		 */
+		setIsLeft(value) {
+			this.isLeft = value;
+		}
+
+		/**
+		 * x 좌표로 이동 = ( 컨테이너 width 크기 - 아이템 모두 크기 ) * direction
+		 * @param isLeft
+		 * @param totalW
+		 * @param mw
+		 * @returns {number}
+		 */
+		getMoveX(isLeft, totalW, mw ) {
+			let direction = (isLeft) ? 1 : 0;
+			return (totalW - mw) * direction;
+		}
+
+		/**
+		 * 좌우 버튼 클릭시 움직일 함수
+		 * @param isLeft
+		 */
+		moveDndElement(isLeft) {
+			// this.isLeft=isLeft;
+			this.setIsLeft(isLeft);
+
+			this.getDndItemsMoveX(this.getIsLeft() )
+			this.getTopStickyItemsMoveX(this.getIsLeft() )
+		}
+
+		/**
+		 * 좌우 버튼 클릭시 -> 아래 상세 엘리먼트( 드래그앤드랍 엘리먼트 ) 좌우 이동
+		 * @param isLeft
+		 */
+		getDndItemsMoveX(isLeft) {
+
+			//스티키 메뉴들
+			let mvItems = document.querySelectorAll('.prd_item_container');
+			mvItems.forEach((item, i) => {
+				//좌표점을 미리 지정해 놔야 한다.
+				item.style.left = '0';
+				item.style.transition = 'left 0.35s ease';
+			});
+
+			let containerW = Utils.getElementRectValue(this.dndParentContainer, 'width');
+			let moveEleW = Utils.getElementRectValue(this.dndMoveContainer, 'width');
+
+			let tx = this.getMoveX(this.getIsLeft(), containerW, moveEleW);
+
+			// 아래처럼 전체를 슬라이드 시키는 게 간편하지만
+			// 고정시키는 핀 엘리먼트는 무조건 첫번째로 오면서 해당 엘리먼트는 이동이 불가해 진다.
+			// 따라서 첫번째를 제외한 나머지 엘리먼트를 이동시켜야만 한다.
+			// dndMoveContainer.style.transform = `translateX(${tx}px)`;
+			// 드래그 및 이동으로 인해 배치가 달라지므로 계속 셀렉터를 가져와야 한다.
+			let len = mvItems.length;
+			for (let i = 0; i < len; i++) {
+				let item = mvItems[i];
+				if (i === 0 && item.classList.contains('pin')) {
+					continue;
+				}
+				item.style.left = `${tx}px`;
+				setTimeout(() => {
+					item.style.transition = '';
+				}, 350);
+			}
+		}
+
+		/**
+		 * 스티키 메뉴 x 위치 이동 ( 개별로 좌표 입력된다 )
+		 * @param isLeft
+		 */
+		getTopStickyItemsMoveX(isLeft) {
+			//스티키 메뉴들
+			let stickyItems=[...document.querySelectorAll('.top_sticky_container .info_desc_group')];
+
+			stickyItems.forEach((item, i) => {
+				//좌표점을 미리 지정해 놔야 한다.
+				item.style.left = '0';
+			});
+
+			let containerW = Utils.getElementRectValue(this.dndParentContainer, 'width');
+			let moveEleW = Utils.getElementRectValue(this.dndMoveContainer, 'width');
+			let tx = this.getMoveX(isLeft, containerW, moveEleW);
+
+			for (let i = 0; i < stickyItems.length; i++) {
+				let sItem = stickyItems[i];
+				if (i === 0 && sItem.classList.contains('check')) {
+					continue;
+				}
+				sItem.style.left = `${tx}px`;
+			}
+		}
+
+		/**
+		 * 초기 height 설정 - 엘리먼트 배치에 필요.
+		 */
+		dndElementsHeightInit() {
+			let dndElements = document.querySelectorAll(this.dndSelector);
+			let dndEleW = Utils.getElementRectValue(dndElements[0], 'width'); //238px
+			let dndViewTotalW = dndElements.length * dndEleW;
+			let dndViewTotalH = 0;
+
+			dndViewTotalH = Utils.getEleMaxH('.unit_compare')
+
+			//dnd 할 엘리먼트 컨테이너 사이즈 지정
+			//flex, flex-direction: column 이기 때문에 사이즈 지정이 필요하다.
+			this.dndContainer.style.width = `${dndViewTotalW}px`;
+			this.dndContainer.style.height = `${dndViewTotalH}px`;
+
+			//마스킹 영역 - 이 영역이 실질적으로 width/height 를 적용해 화면에 보여주는 영역~
+			// width 는 이미 css 로 적용되어 있다.
+			this.dndParentContainer.style.height = `${dndViewTotalH}px`;
+		}
+
+		/**
+		 * 체크박스 핀 ( 드래그 앤드랍 안에 있는 체크박스 - 스티키 메뉴에 있는 체크박스는 제외 )
+		 * @returns {*|*[]}
+		 */
+		getPinCheckItems() {
+			return this.checkPinItems;
+		}
+
+		/**
+		 * 드래그 앤드랍 안에 있는 엘리먼트의 내의 체크박스만 가져오기 - 스티키 메뉴에 있는 체크박스는 제외
+		 */
+		updatePinCheckState() {
+			this.checkPinItems = [...document.querySelectorAll(`${this.dndSelector} .${this.checkClass}`)];
+		}
+
+
+		/**
+		 * 초기 pin checkbox  설정
+		 */
+		checkPinInit() {
+			this.prevCheckItem = null;
+			//체크박스의 체크한 엘리먼트를 담아두는 변수.
+			this.updatePinCheckState()
+
+			//체크 박스 addEventListener
+			for (let i = 0; i < this.checkPinItems.length; i++) {
+				let item = this.checkPinItems[i];
+				item.addEventListener('click', (evt) => {
+					let checkbox = evt.currentTarget;
+					// console.log(checkbox.checked);
+					if(this.getIsLeft()){
+						this.setIsLeft(false);
+					}
+					if (this.prevCheckItem !== null && this.prevCheckItem === checkbox) {
+						evt.preventDefault();
+					} else {
+						let targetParent = checkbox.closest(this.dndSelector);
+						//상단에 고정핀 토글 class
+						this.activePinCheckbox(targetParent, checkbox.checked);
+					}
+					//checkbox 의 상태를 업데이트 시킴
+					this.updateCheckPrevItem(checkbox);
+				});
+			}
+
+			//첫번째 체크박스 엘리먼트 체크해 두기 =============================================================
+			this.setActiveCheck(this.checkPinItems[0]);
+			//end =====================================================================================
+		}
+
+		/**
+		 * 입력된 checkbox 의 checked 속성을 true 로 만들고 click 이벤트를 발생시킨다.
+		 * @param targetItem
+		 */
+		setActiveCheck(targetItem) {
+			if(targetItem.type!=='checkbox'){
+				console.log( '입력된 타켓이 checkbox 가 아닙니다.')
+				return false;
+			}
+			// console.log('클릭이벤트 targetItem=', targetItem);
+			targetItem.checked=true;
+			targetItem.dispatchEvent(new Event('click'));
+		}
+
+		/**
+		 * 체크박스 체크한 엘리먼트 있는 지 체크 - 설정해둔 이전 체크된 체크박스와 현재 check 하고 있는 체크박스가 다른경우
+		 * @param checkBoxItem
+		 */
+		updateCheckPrevItem(checkBoxItem) {
+			if (this.isPrevItemCheck()) {
+
+				if (this.prevCheckItem !== checkBoxItem) {
+					this.prevCheckItem.checked = false;
+					//이전 엘리먼트에 활성화 되 있는 pin 클래스 제거
+					this.prevCheckItem.closest(this.dndSelector).classList.remove(this.pinClass);
+				}
+				this.updateTopSticky();
+			}
+			//change event 로 인해 변경된 현재 체크 박스를 prevCheckItem 에 담아둔다.
+			this.prevCheckItem = checkBoxItem;
+			this.updatePinCheckState();
+		}
+
+		/**
+		 * 현재 체크박스 중 체크된 내역이 있는지 참조 함수
+		 * @returns {boolean}
+		 */
+		isPrevItemCheck() {
+			return this.prevCheckItem !== null;
+		}
+
+		/**
+		 * 상단 checkbox 상태 설정.
+		 * @param target
+		 * @param isChk
+		 */
+		activePinCheckbox(target, isChk = true) {
+			// console.log('체크 이벤트 발생', target, isChk);
+			//드래그 앤 드랍의 포지션 값이 남아 있을 수 있기에 포지션 리셋 시킨다.
+			this.resetDndItemsPos().then(() => {
+				if(this.getIsLeft()){
+					this.setIsLeft(false);
+				}
+				//체크된 상태
+				if (isChk) {
+					target.classList.add(this.pinClass);
+					//여기서 매번 호출하는 이유는 드래그앤드랍 및 고정 핀 등의 영향으로
+					//계속 갱신되기에 그 갱신된 엘리먼트 정보가 필요하다.
+					//'.prd_item_container'
+					let prdList = [...document.querySelectorAll(this.dndSelector)];
+					this.swapMotion({checkItem: target, prevEle: prdList[0]});
+				}else{
+					target.classList.remove(this.pinClass);
+					this.updateTopSticky();
+				}
+			});
+		}
+
+		/**
+		 * 서로 위치를 바꾸면서 모션
+		 * @param prevEle - 이전 엘리먼트
+		 * @param nextEle - 바뀔 엘리먼트
+		 */
+		swapMotion({checkItem, prevEle}) {
+			let spd = 0.15; // 단위 초
+			//현재 선택한 엘리먼트의 인덱스 값
+			let findIdx = Utils.findIndex({selector: this.dndSelector, target: checkItem});
+			let eleW = Number(Utils.getElementRectValue(checkItem, 'width'));
+			let mv = eleW * findIdx;
+			let leftMv = (mv === 0) ? 0 : mv * -1;
+
+			//checkItem - 체크 버튼에서 evt.currentTarget.closest('.prd_item_container'); 한 엘리먼트
+			//prevEle - '.prd_item_container' 엘리먼트 중 첫번째 엘리먼트( 다른 엘리먼트가 체크되기전에 첫번째 체크되어 있던 아이템 )
+
+			//각자의 위치로 이동할 엘리먼트에 이동 위치를 설정해 준다.
+			//각각 엘리먼트들은 서로 상대경로로 위치해 있기에 -> element width * element index 로 위치값을 서로 잡아줘야 한다.
+			//위치 맨앞으로 이동시킴
+			checkItem.style.transform = `translateX(${leftMv}px)`;
+			checkItem.style.transition = `transform ${spd}s`;
+			//
+			prevEle.style.transform = `translateX(${mv}px)`;
+			prevEle.style.transition = `transform ${spd}s`;
+
+			setTimeout(() => {
+
+				//위에서 spd 가 0.15 초 동안 이동하기에 시간에 맞추어 입력된 스타일을 모두 지운다
+				//스타일을 지우지 않으면 위치가 swap 될때 위치가 잘못 될 수 있다. 왜냐하면 절대위치가 아니고 상대위치이기 때문이다.
+				checkItem.setAttribute('style', '');
+				prevEle.setAttribute('style', '');
+
+				this.dndContainer.prepend(checkItem);
+
+				// 위치가 바뀌었으니 sticky 메뉴 내용 업데이트
+				this.updateTopSticky();
+			}, 150);
+
+		}
+
+		/**
+		 * 초기 닫기 버튼 설정.
+		 * @returns {*[]}
+		 */
+		closeBtnInit() {
+			const closeItems = [...document.querySelectorAll(`.${this.closeBtnClass}`)];
+			//닫기 클릭시 엘리먼트 제거
+			closeItems.forEach((item) => {
+				item.addEventListener('click', this.onDndEleRemove.bind(this));
+			});
+			return closeItems;
+		}
+
+
+		/**
+		 * dnd close 버튼 이벤트 및 제거
+		 * @param items
+		 * @param target
+		 * @returns {*}
+		 */
+		removeCloseBtn({items, target}) {
+			let findIdx = items.findIndex((item) => item === target);
+
+			let findItem = null;
+			if (findIdx !== -1) {
+				findItem = items[findIdx];
+				findItem.removeEventListener('click', this.onDndEleRemove.bind(this));
+				items.splice(findIdx, 1);
+
+			} else {
+				console.log('찾고자 하는 닫기 버튼 없음.');
+				findItem = null;
+				return
+			}
+
+			return findItem;
+		}
+
+		/**
+		 * dnd 엘리먼트 제거 및 배치 재설정. 빈 엘리먼트 추가
+		 * @param evt
+		 */
+		onDndEleRemove(evt) {
+			let findItem = this.removeCloseBtn({items: this.closeItems, target: evt.currentTarget});
+			let parent = findItem.closest(this.dndSelector);
+
+			this.deleteDndElement(parent);
+
+			//엘리먼트 제거시 첫번째 엘리먼트를 자동으로 pin 체크 되게 해주어야 한다.
+			this.updatePinCheckState();
+			this.setActiveCheck( this.getPinCheckItems()[0] );
+			this.setIsLeft(false);
+			setTimeout(() => {
+				this.getTopStickyItemsMoveX(this.getIsLeft());
+			}, 0);
+		}
+
+
+		/**
+		 * drag and drop 되는 비교차량 엘리먼트 제거
+		 * @param target
+		 */
+		deleteDndElement(target) {
+			// 체크 버튼 prevCheckItem 값이 있는 경우 즉 체크한 경우가 있는 경우
+			if (this.prevCheckItem) {
+				let checkBtnContainer = this.prevCheckItem.closest(this.dndSelector);
+				if (checkBtnContainer) {
+					// 만약 제거한 엘리먼트에 pin 클래스 설정되어 있는 경우
+					// 이전 엘리먼트 값은 자동 제거 되지 않으므로 null 처리해 초기화 해야 한다.
+					if (checkBtnContainer === parent) {
+						this.prevCheckItem = null;
+					}
+				}
+			}
+			target.remove();
+			this.resetDndItemsPos()
+					.then(() => {
+						this.updateTopSticky(this.addDndEmptyElement);
+					});
+		}
+
+		/**
+		 * 상단 stick 부분 전부 제거 후 다시 복제 생성.
+		 */
+		updateTopSticky(fn) {
+			this.removeTopSticky().then(() => {
+				this.getCreateTopSticky();
+				if (fn) {
+					fn.call(this);
+				}
+			});
+		}
+
+
+		/**
+		 * 차량 비교 default 엘리먼트 추가
+		 */
+		addDndEmptyElement() {
+			if (this.dndContainer.children.length >= this.maxDndLen) {
+				console.log('dnd 엘리먼트 최대 개수를 오버하고 있습니다.')
+				return;
+			}
+
+			this.dndContainer.appendChild(this.addEmptyDndTag());
+		}
+
+		/**
+		 * 차량 비교 default 엘리먼트 초기 css 클래스 및 설정.
+		 * @returns {HTMLDivElement}
+		 */
+		addEmptyDndTag() {
+			let container = document.createElement('div');
+			container.classList.add(this.dndSelector.split('.').join(''));
+			container.classList.add('empty');
+			container.innerHTML += this.addBoxTag();
+			return container;
+		}
+
+		/**
+		 * 차량 비교 default 엘리먼트 컨텐츠 내용.
+		 * @returns {string}
+		 */
+		addBoxTag() {
+			return `<div class="add_box"><a href="javascript:void(0)">비교차량을<br>등록해 주세요.</a></div>`;
+		}
+
+
+		/**
+		 * 상단 메뉴 sticky 메뉴 제거
+		 * @returns {Promise<void>}
+		 */
+		async removeTopSticky() {
+			let wrapper = document.querySelector('.sticky_items_wrapper');
+			if (wrapper) {
+				wrapper.remove();
+			}
+		}
+
+		/**
+		 * 스티키 메뉴에서 close 버튼 클릭 이벤트 핸들러
+		 * @param evt
+		 * @returns {Promise<void>}
+		 */
+		async onDndEleRemoveByStickyMenu(evt){
+			let btn = evt.currentTarget;
+			btn.removeEventListener('click', this.onDndEleRemoveByStickyMenu );
+			//document.querySelectorAll(this.dndSelector);
+
+			let findIdx = Utils.findIndex({selector: '.top_sticky_container .btn_close', target: btn})
+			// console.log(findIdx);
+			let dndElements = [...document.querySelectorAll(this.dndSelector)];
+
+			const activeCheck=()=>{
+				setTimeout(() => {
+					//엘리먼트 제거시 첫번째 엘리먼트를 자동으로 pin 체크 되게 해주어야 한다.
+					let cloneCheckPinItems=document.querySelectorAll('.top_sticky_container .chk_pin');
+					this.setActiveCheck(cloneCheckPinItems[findIdx]);
+
+					//엘리먼트 제거시 첫번째 엘리먼트를 자동으로 pin 체크 되게 해주어야 한다.
+					this.updatePinCheckState();
+
+					this.setActiveCheck( this.getPinCheckItems()[0] );
+					// console.log( 'this.getPinCheckItems()[0]=',this.getPinCheckItems()[0].checked );
+					this.setIsLeft(false);
+					setTimeout(() => {
+						this.getTopStickyItemsMoveX(this.getIsLeft());
+					}, 0);
+				}, 200);
+			}
+			await this.deleteDndElement(dndElements[findIdx]);
+			await activeCheck();
+		}
+		/**
+		 * 상단 메뉴 sticky 생성
+		 */
+		getCreateTopSticky() {
+			let stickyContainer = document.querySelector(this.stickContainerSelector);
+			let hasWrapper = stickyContainer.querySelector('.sticky_items_wrapper');
+			if (hasWrapper) {
+				hasWrapper.remove();
+			}
+			let stickyWrapper = document.createElement('div');
+			stickyContainer.appendChild(stickyWrapper);
+			stickyWrapper.classList.add('sticky_items_wrapper');
+
+			//제목 부분
+			let titleItem = document.querySelector('.tit_fix_container .tit_group .tit');
+			let title = titleItem.cloneNode(true)
+			stickyWrapper.appendChild(title);
+
+			//컨텐츠 부분
+			let infoGroup = document.querySelectorAll(`${this.dndSelector} .info_desc_group:first-child`);
+
+			//복제할 컨텐츠가 없다면 여기서 종료.
+			if (!infoGroup) {
+				return;
+			}
+
+			infoGroup.forEach((item, i) => {
+				let cloneNode = item.cloneNode(true);
+				let relatedItems = [].slice.call(cloneNode.children);
+
+				let currentCheckState = item.closest(this.dndSelector).classList.contains('pin');
+				let currentMyCarState = item.closest(this.dndSelector).classList.contains('cur_my_car');
+				let currentNoPriceState = item.closest(this.dndSelector).classList.contains('no_price');
+
+				//기준차량 설정 되었는지체크 - pin 설정되었는지
+				if (currentCheckState) {
+					cloneNode.classList.add('check');
+				}
+				//현재 보유 차량인지 체크
+				if (currentMyCarState) {
+					cloneNode.classList.add('cur_my_car');
+				}
+				//가격정보없음 상태인지 체크
+				if (currentNoPriceState) {
+					cloneNode.classList.add('no_price');
+				}
+
+				relatedItems.forEach((item, j) => {
+					//이미지 제거
+					if (item.classList.contains('unit_img')) {
+						item.remove();
+					}
+					//복제된 체크박스 핀
+					let chkPin = item.querySelector('.check_pin .chk_pin');
+					if (chkPin) {
+						//아이디값 수정 - 체크 박스는 기존 체크 박스와 아이디가 충돌 되지않게 다시 부여한다.
+						chkPin.setAttribute('id', `chk_clone${i}`);
+						//복제된 label 에서 for 값으로 드래그앤 드랍 안에 있는 체크박스들 id 값을 참조 하고 있기에
+						// 여기서 별도로 label 아이디를 주지 않는다.
+						// 그래야 스티키 메뉴에서 라벨 클릭시 원본 체크박스로 click 이벤트가 발생하기 때문
+						// 즉 스티기 체크박스와 드래그앤드랍안에 체크박스와 같은 기능 공유.
+
+						//첫번째일때 disabled  등록 - 첫번째 체크박스 핀 클릭 못하게 막음.
+						if (j === 0 && i === 0) {
+							chkPin.setAttribute('disabled', true);
+						}
+					}
+					// 할인율 제거
+					let compareRate = item.querySelector('.unit_info .compare_rate');
+					// 주문하기 버튼
+					let button = item.querySelector('.unit_info .btn_mid');
+					//할부 부분
+					let loan = item.querySelector('.unit_info .loan');
+					// 복제 후 필요없는 엘리먼트들 제거
+					// 할인율 제거
+					if (compareRate) {
+						compareRate.remove();
+					}
+					//할부 부분 제거
+					if (loan) {
+						loan.remove();
+					}
+					// 주문하기 버튼 제거
+					if (button) {
+						button.remove();
+					}
+				});
+				stickyWrapper.appendChild(cloneNode);
+
+				//닫기 버튼 추가
+				let closeBtn = document.createElement('button');
+				closeBtn.type = 'button';
+				closeBtn.textContent = '닫기';
+				closeBtn.classList.add('btn_close');
+				// closeBtn.classList.add('s_16');
+				cloneNode.appendChild(closeBtn);
+				//계속해서 제거후 복제 생성되고 해당 닫기버튼의 부모엘리먼트가 제거 되는 부분이기에
+				//자식 엘리먼트인 닫기 버튼의 이벤트 리스너는 한번만 실행되게 설정.
+				closeBtn.addEventListener('click', this.onDndEleRemoveByStickyMenu.bind(this));
+			});
+			let infoLen = infoGroup.length;
+			let emptyLen = (infoLen < this.maxDndLen)? this.maxDndLen - infoLen : this.maxDndLen;
+
+			//비어있는 상태 엘리먼트 추가
+			for (let i = 0; i < emptyLen; i++) {
+				let infoItem = document.createElement('div');
+				stickyWrapper.appendChild(infoItem);
+				infoItem.classList.add('info_desc_group');
+				infoItem.innerHTML += this.addBoxTag();
+			}
+		}
+	}
+
+	/**
+	 * 좌측 타이틀 메뉴 toggle 설정 클래스
+	 * containerSelector:'.dnd_container',
+	 * descSelector:'.prd_item_container',
+	 * descInfoGroupSelector:'.info_desc_group',
+	 * toggleBtnContainerSelector:'.tit_fix_container',
+	 * toggleBtnSelector: '.txt_btn02',
+	 * totalCheckSelector:'.total_check'
+	 */
+	class ToggleItem{
+		constructor({
+						containerSelector,  // 화면이 접히고 열릴때 컨텐츠 container - toggle 을 할때 마다 컨텐츠의 height 값 계산하여 다시 부여
+						descSelector,    // 화면이 접히고 열릴때 컨텐츠 셀렉터
+						descInfoGroupSelector, // 화면이 접히고 열릴때 컨텐츠 개별 셀렉터
+						toggleBtnContainerSelector, // 타이틀 메뉴 컨테이너 셀렉터
+						toggleBtnSelector,  // 토글 버튼 셀렉터
+						totalCheckSelector  // 전체 간략 보기 체크박스 셀렉터
+					}) {
+			this.containerSelector=containerSelector;
+			this.descSelector=descSelector;
+			this.descInfoGroupSelector=descInfoGroupSelector;
+			this.toggleBtnContainer=document.querySelector(toggleBtnContainerSelector);
+			this.toggleBtnSelector=toggleBtnSelector;
+			this.totalCheckSelector=totalCheckSelector;
+			this.container = document.querySelector(this.containerSelector);
+			this.init();
+			this.toggleInit();
+		}
+
+		getDetailItemsViewLen(){
+			return this.detailViewItems.length;
+		}
+
+		init() {
+			let toggleButtons=[...this.toggleBtnContainer.querySelectorAll(this.toggleBtnSelector)];
+			this.toggleItems=Array.from([...toggleButtons], (item)=>{
+				return {item:item, chk: false }
+			});
+			this.detailViewItems=[];
+			const descSection=[...document.querySelectorAll(this.descSelector)];
+			for (let v of descSection ) {
+				//.info_desc_group
+				this.detailViewItems.push([...v.querySelectorAll(this.descInfoGroupSelector)]);
+			}
+
+			this.totalCheckerState=false;
+			const onTotalCheckView=async (evt)=>{
+				this.totalCheckerState=!this.totalCheckerState;
+				await this.allItemCheck(this.totalCheckerState);
+				//toggle 로 인해 화면 렌더링 되는데 delay 가 있기에 await 로 호출홰 준다.
+				await this.updateContainerResizeH();
+			}
+			this.totalChecker = document.querySelector(this.totalCheckSelector);
+			this.totalChecker.addEventListener('change', onTotalCheckView);
+		}
+
+		/**
+		 * 전체 간단히 보기 체크박스 설정
+		 * @param isOn
+		 */
+		allItemCheck( isOn ) {
+			//타이틀 부분
+			this.upDownTitleView(isOn)
+
+			let len=this.getDetailItemsViewLen();
+			//상세 부분
+			for (let i = 0; i < len; i++) {
+				let targetItems=this.detailViewItems[i];
+				if (targetItems.length > 0) {
+					let subLen=targetItems.length;
+					for (let j = 0; j < subLen; j++) {
+						let targetDesc = this.detailViewItems[i][j];
+						if (isOn) {
+							targetDesc.classList.add('up');
+						}else{
+							targetDesc.classList.remove('up');
+						}
+					}
+				}
+			}
+			const FirstBox = document.querySelector('.unit_compare:first-child .info_desc_group');
+			const contBox = document.querySelector('.compare_sort_container');
+			FirstBox.classList.contains('up') ? contBox.classList.add('on') : contBox.classList.remove('on');
+		}
+
+		/**
+		 * 타이틀 토글 메뉴 설정
+		 * @param isOn
+		 */
+		upDownTitleView(isOn) {
+			let len = this.toggleItems.length;
+			for (let i = 0; i < len; i++) {
+				this.toggleItems.splice(i, 1, {...this.toggleItems[i], chk:isOn});
+				let btnItem=this.toggleItems[i].item;
+				let parent=btnItem.closest('.tit_group');
+				//
+				if(isOn){
+					btnItem.classList.add('up');
+					parent.classList.add('up');
+				}else{
+					btnItem.classList.remove('up');
+					parent.classList.remove('up');
+				}
+			}
+
+		}
+
+		// console.log(detailViewItems)
+		/**
+		 * 차량 정보 상세 부분 (drag ana drop 되는 부분)
+		 * @param isOn - true 이면 엘리먼트가 접힌( 축소된 )상태
+		 * @param idx
+		 */
+		upDownDescView( isOn, idx ){
+			let len=this.getDetailItemsViewLen();
+			for (let i = 0; i < len; i++) {
+				let targetItems=this.detailViewItems[i];
+				if (targetItems.length > 0) {
+					let targetDesc = this.detailViewItems[i][idx];
+					if (isOn) {
+						targetDesc.classList.add('up');
+					}else{
+						targetDesc.classList.remove('up');
+					}
+				}
+			}
+		}
+
+		/**
+		 * 전체간단히 보기의 체크박스 토글 set method - 입력된 값으로 토글 값이 정해진다.
+		 * @param state
+		 */
+		setTotalCheck( state=false ) {
+			this.totalCheckerState=state;
+			this.totalChecker.checked=state;
+		}
+
+		/**
+		 * 토글 초기 세팅
+		 */
+		toggleInit() {
+			const onBtnClick=async (evt)=>{
+				let toggleIdx=evt.currentTarget.getAttribute('data-toggle-idx');
+				let findIdx=Number( toggleIdx.split('toggle-').join('') );
+				let targetItem=this.toggleItems[findIdx];
+				let chk=!targetItem.chk;
+				this.toggleItems.splice(findIdx, 1, {...this.toggleItems[findIdx], chk:chk});
+				let btnItem=evt.currentTarget;
+				let parent=btnItem.closest('.tit_group');
+				//
+				if(chk){
+					btnItem.classList.add('up');
+					parent.classList.add('up');
+				}else{
+					btnItem.classList.remove('up');
+					parent.classList.remove('up');
+				}
+				await this.upDownDescView(chk, findIdx);
+
+				//만약 전체 간단히 보기 체크가 되어 있다면
+				if (this.totalCheckerState) {
+					this.setTotalCheck(false);
+				}
+
+				//toggle 로 인해 화면 렌더링 되는데 delay 가 있기에 await 로 호출홰 준다.
+				await this.updateContainerResizeH();
+				const FirstBox = document.querySelector('.unit_compare:first-child .info_desc_group');
+				const contBox = document.querySelector('.compare_sort_container');
+				FirstBox.classList.contains('up') ? contBox.classList.add('on') : contBox.classList.remove('on');
+				
+			}
+			this.toggleItems.forEach(( listItem )=> listItem.item.addEventListener('click', onBtnClick) );
+		}
+
+		/**
+		 * dnd 엘리먼트 height 값 구하기
+		 */
+		updateContainerResizeH() {
+			setTimeout(()=>{
+				let itemH = Utils.getEleMaxH('.prd_item_container .unit_compare');
+				this.container.style.height=`${itemH}px`;
+			}, 300 );
+		}
+	}
+
+	//규칙 - 속성 네이밍에 Selector 라는 prefix 를 가지는 것들은 querySelector 를 이용하기에 마침표 필수
+	// 네이밍에 Class prefix -> 점 없이 그냥 CSS classname
+	// 네이밍에 Container -> querySelector 혹은 getElementById
+	//토글 관련 클래스 인스턴스
+	const toggleMenus = new ToggleItem({
+		containerSelector:'.dnd_container',
+		descSelector:'.prd_item_container',
+		descInfoGroupSelector:'.info_desc_group',
+		toggleBtnContainerSelector:'.tit_fix_container',
+		toggleBtnSelector: '.txt_btn02',
+		totalCheckSelector:'.total_check'
+	});
+
+	//규칙
+	// 속성 네이밍에 Selector 라는 prefix 를 가지는 것들은 querySelector 를 이용하기에 마침표 필수 - ex) dndContainerSelector: '.dnd_list',
+	// 속성 네이밍에 Selector prefix -> 셀렉터 네임  -> ex) dndContainerSelector: '.dnd_list',
+	// 속성 네이밍에 Class prefix -> 점 없이 그냥 CSS classname  -> ex) pinClass : 'pin'
+	// 속성 네이밍에 Container -> querySelector 혹은 getElementById  -> ex) document.querySelector('.move_container') 대입
+	//드래그 앤 드랍 관련 클래스 인스턴스 - 상단 차량 정보만 clone 하여 sticky 화 해주는 메뉴도 같이 설정되어 있다.
+	const compareDnd=new CompareDnd({
+		SortableLib: Sortable,
+		dndParentContainer:document.querySelector('.dnd_container'),
+		dndMoveContainer: document.querySelector('.move_container'),
+		dndContainerSelector: '.dnd_list',
+		dndSelector:'.prd_item_container',
+		pinClass:'pin',
+		checkClass:'chk_pin',
+		closeBtnClass:'btn_close',
+		stickContainerSelector: '.top_sticky_container',
+	});
+
+	/**
+	 * Throttle 기능 함수
+	 * @param fn  실행할 함수
+	 * @param delay  delay 시간
+	 * @param scope  실행 영역 - 내부에서 해당 변수 없을시 this 처리 - 만약 global 에서 호출하면 this 는 window
+	 * @returns {(function(): void)|*}
+	 */
+	const getThrottle=(fn, delay, scope)=>{
+		delay || (delay=250);
+		let last, deferTimer;
+		return function(){
+			let context=scope || this;
+			let now=+new Date, args=arguments;
+			if (last && now < last + delay) {
+				clearTimeout(deferTimer);
+				deferTimer=setTimeout(()=>{
+					last=now;
+					fn.apply(context, args);
+				}, delay);
+			}else{
+				last=now;
+				fn.apply(context, args);
+			}
+		}
+	}
+
+	// 상단에 sticky 처리 되는 부분.
+	let stickyCloneView=document.querySelector('.top_sticky_container');
+	const onScroll=(e)=>{
+		let titleEle = document.querySelector('.tit_fix_container .tit_group');
+		// let titEleY=Utils.getElementRectValue(titleEle, 'y');
+		// let titEleH=Utils.getElementRectValue(titleEle, 'height');
+		// console.log( titEleH-titEleY, titEleY, titEleH )
+		if( !e.currentTarget ){ return; }
+		// titEleH+titEleY<200  --> 원래값
+		if( e.currentTarget.scrollY> 200 ){
+			stickyCloneView.classList.add('up');
+		}else{
+			stickyCloneView.classList.remove('up');
+		}
+	}
+
+	//스크롤 이벤트
+	window.addEventListener('scroll', getThrottle( onScroll, 80 ) );
+
+	// coachMark();
+</script>
+</html>

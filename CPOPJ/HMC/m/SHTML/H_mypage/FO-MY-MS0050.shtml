@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>보유차량 상세페이지</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_mypage.css">
+</head>
+<body>
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_sub">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit">보유차량</h1>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="my_car">
+			<!-- 차량정보 -->
+			<section class="car_info">
+				<div class="model_img"><img src="/HMC/m/img/noimg/car_275x165_01.png" alt="그랜저 가솔린 3.3 캘리그래피 2021" /></div>
+				<!-- <div class="model_img"><img src="/HMC/m/img/@thumb/visual_300x180_01.png" alt="그랜저 가솔린 3.3 캘리그래피 2021" /></div> -->
+				<div class="tit_box">
+					<p class="number">107버 8522</p>
+					<p class="name">그랜저 가솔린 3.3 캘리그래피</p>
+					<p class="year">21년형</p>
+				</div>
+				<div class="drive">
+					<div class="mile_ipt">
+						<!-- <button type="button" class="btn_arrow_mid01">주행거리 연동하기</button> -->
+						<div class="inbox_type02 small">
+							<span class="tit">주행거리</span>
+							<input type="tel" class="txt type_nc" placeholder="12,345">
+							<button type="button" class="btn_delete">삭제</button>
+							<em>km</em>
+						</div>
+						<!-- 삭제 2022-08-22 <p class="caution small none bg">150,000km 이하로 수정이 가능합니다.</p> -->
+					</div>
+				</div>
+				<div class="drive">
+					<div class="mile_ipt">
+						<button type="button" class="btn_arrow_big01">주행거리 연동하기</button>
+						<div class="inbox_type02 1small">
+							<span class="tit">주행거리</span>
+							<input type="tel" class="txt type_nc" placeholder="12,345">
+							<button type="button" class="btn_delete">삭제</button>
+							<em>km</em>
+						</div>
+						<!-- 삭제 2022-08-22 <p class="caution small none bg">150,000km 이하로 수정이 가능합니다.</p> -->
+					</div>
+				</div>
+				<div class="drive">
+					<ul class="bg_box">
+						<li>
+							<span class="tit">
+								주행거리
+								<em>자동 연동중</em>
+							</span>
+							<span class="txt">
+								<em>6,155</em>km
+							</span>
+						</li>
+					</ul>
+				</div>
+				<div class="detail toggle">
+					<ul>
+						<li>
+							<span class="tit">최초등록일</span>
+							<span class="txt">2019.09.20</span>
+						</li>
+						<li>
+							<span class="tit">제조사명</span>
+							<span class="txt">현대</span>
+						</li>
+						<li>
+							<span class="tit">차종</span>
+							<span class="txt">대형차</span>
+						</li>
+						<li>
+							<span class="tit">배기량</span>
+							<span class="txt">5,000cc</span>
+						</li>
+						<li>
+							<span class="tit">연료</span>
+							<span class="txt">가솔린</span>
+						</li>
+						<li>
+							<span class="tit">변속기</span>
+							<span class="txt">자동변속기</span>
+						</li>
+						<li>
+							<span class="tit">색상</span>
+							<span class="txt">흰색</span>
+						</li>
+						<li>
+							<span class="tit">승차인원</span>
+							<span class="txt">5인승</span>
+						</li>
+					</ul>
+					<button type="button" class="btn_more" data-text="차량정보 상세닫기">차량정보 상세보기</button>
+				</div>
+			</section>
+			<!-- //차량정보 -->
+			
+			<!-- 내차시세 -->
+			<section class="car_price">
+				<div class="tit_box">
+					<p class="tit">
+						내 차 시세<br>
+						<em>2,000~2,500만원</em>
+					</p>
+					<p class="txt">최근 7일 간 동일 엔진/구동타입 중 주행거리 50,001~60,000km 차량의 거래가 (2021.11.22 13시 25분 기준)</p>
+				</div>
+				<ul class="bg_box">
+					<li>
+						<span class="tit">잔존가치</span>
+						<span class="txt"><em>57.0</em>%</span>
+					</li>
+					<li>
+						<span class="tit">
+							신차가격
+							<div class="cpo_tooltip">
+								<button class="open">툴팁열기</button>
+								<div class="cont">
+									<p class="text">할인혜택을 제외한 해당 차량의 출고당시 가격입니다. 연식과 출고일에 따라 가격이 달라질 수 있습니다.</p>
+									<button class="close">툴팁닫기</button>
+								</div>
+							</div>
+						</span>
+						<span class="txt price"><em>3,586</em>만원</span>
+					</li>
+				</ul>
+				<div class="chart">
+					<img src="../../img/@thumb/mypage_chart.jpg" alt="">
+					<img src="../../img/@thumb/mypage_chart_no.jpg" alt="">
+				</div>
+			</section>
+			<!-- //내차시세 -->
+		</div>
+
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">시세조회</button>
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!-- 2023 0207 푸터 삭제 -->
+</div>
+<!-- //cpo wrap -->
+
+<script>
+$(function(){
+	CPO.toggle(); //더보기추가
+});
+</script>
+</body>
+</html>

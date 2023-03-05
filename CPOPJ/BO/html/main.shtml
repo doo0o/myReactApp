@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=10" />
+	<meta http-equiv="Content-Type" content="text/html; CHARSET=utf-8" />
+	<meta http-equiv="imagetoolbar" content="no" />
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="Author" content="borythewide" />
+	<meta name="content" content="온라인 Admin입니다." />
+	<meta name="keywords" content="온라인 Admin" />
+	<meta name="description" content="온라인 Admin" />
+	<meta name="viewport" content="user-scalable=yes, maximum-scale=1.0, width=1270" />
+	<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+	<meta name="_csrf" content="" />
+	<meta name="_csrf_header" content="" />
+	<title>Backoffice</title>
+	
+	<link rel="stylesheet" type="text/css" href="http://dev-static.hmgkcpo.com/bo/css/common/style_bo.css" />
+	<link rel="stylesheet" type="text/css" href="../css/common/common.css" />
+	<link rel="stylesheet" type="text/css" href="../css/common/contents.css" />
+
+	<script type="text/javascript" src="../js/jquery/jquery-1.12.0.min.js?ts=202103151329" ></script>
+	<script type="text/javascript" src="../js/jquery/jquery-migrate-1.3.0.js?ts=202103151329" ></script>
+	<script type="text/javascript" src="../js/jquery/jquery.all.js?ts=202103151329" ></script>
+
+	<script type="text/javascript" src="../js/common/common.js?ts=202103151329" ></script>
+	<script type="text/javascript" src="../js/jquery/jquery.clearsearch.v1.0.3.js?ts=202103151329"></script>
+	<script type="text/javascript" src="../js/common/util.js?ts=202103151329" ></script>
+	<script type="text/javascript" src="../js/jquery/jquery.main.js?ts=202103151329" ></script>
+
+
+	
+	<script type="text/javascript">
+	$(document).ready(function(){
+
+		$('.clearable').clearSearch();
+		if( $('body').is('#menu') ){
+			console.log('menu');
+		} else {
+			$(document).bind("click", function (e) {
+				if( window.parent.$(".contextMenu").css("display") == "block"){
+					window.parent.$(".contextMenu").hide(100);
+				}
+			});
+		}
+		// 메뉴 오른쪽 버튼 클릭 시 나오는 레이어 떴을 때 닫기,
+		//F12키, Ctrl + U(소스보기) 막기
+
+		/* $(document).bind('keydown',function(e){
+			if ( (e.keyCode == 123) || ( e.ctrlKey == true && e.keyCode == 85 ) ) {
+				e.preventDefault();
+				e.returnValue = false;
+			}
+		}); */
+	});
+
+	function mouseRightClick() {
+		if ((event.button==2) || (event.button==2)) {
+			//alert('컨텐츠 보호를 위해 마우스 우클릭이 제한됩니다.');
+		}
+	}
+	//document.onmousedown=mouseRightClick; //왼쪽 메뉴 영역 외 오른쪽 마우스 막기
+	</script>
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+//	if(_authorityCheck == 'true'){
+	if(false){
+
+		var hideElementList = $("");
+		$("a[class*=btn_]").not(hideElementList)
+			.removeAttr("href")
+			.removeAttr("id")
+			.removeAttr("onClick")
+			.off()
+			.removeClass()
+			.addClass("btn_none");
+	}
+
+	// 팝업모드이면 popup_body 클래스를 추가
+	var isPopup = x2co.util.getParam(window.location.search).isPopup;
+	if(isPopup) {
+		$("#content").addClass("popup_body");
+	}
+});
+</script>
+
+</head>
+<body>
+<!-- Ajax 로딩시 이미지 출력 영역 -->
+<div id="ajax_indicator" style="display:none"><p><img src="../image/common/loading2.gif" /></p></div>
+
+
+<div id="wrap" class="headQa">
+
+	
+<!-- header s -->
+	<div id="header">
+		
+		<a href="#"><h1 class="logo">ADMIN</h1></a>
+		
+		<!-- CIT area s -->
+		<!-- member info s -->
+		<input type='hidden' id="receiveCountLink">
+		<ul class="gnb_member">
+			<!-- <li><a href="#" class="phonebook" id="employeePop">직원연락처</a></li> -->
+			<li class="user hands" id="userId">testadmin(testadmin)
+				<ul class="user_layer">
+					<li>접속시간 : 2021-12-08 18:57:45</li>
+					<li>접속IP : 58.87.63.222</li>
+				</ul>
+			</li>
+ 			<li class="msg cursor" id="innerCount" innerCount="0">공지알림 <span>0</span></li>
+			<li class="msg cursor" id="receiveCount" receiveCount="0">업무알림 <span>0</span></li>			
+			<li class="sel">관리자 언어 : <select name="sbLanguage" id="sbLanguage"><option value="ko" >Korean</option><option value="zh" >Chinese</option><option value="en" >English</option></select></li>
+			<li class="sel">데이타 언어 : <select name="dbLanguage" id="dbLanguage"><option value="ko" >Korean</option><option value="en" >english</option><option value="zh" >chinese</option></select></li>
+			<li class="logout"><a href="javascript:commerce.admin.Main.logout();">Logout</a></li>
+		</ul>
+		<!--// member info s -->
+		<!-- favorites s -->
+		<div id="gnb_favorites_id" class="gnb_favorites">
+		</div>
+		<div class="menuBar"><button id="snbToggle">좌측메뉴</button></div>
+		<!--// favorites e -->
+	</div>
+<!--// header e -->
+<!-- container s -->
+	<div id="container">
+	
+		<!-- Left Area s -->
+		<div id="snb">
+			<div id="snb_treebox">
+				<!-- Sub Title -->
+				<h2 class="d_none">트리메뉴</h2>
+				<!--// Sub Title -->
+				<!-- Tree Menu s -->
+				<!-- for tree menu -->
+				<!-- left search area s -->
+				<fieldset class="snb_scrh">
+					<legend>검색</legend>
+					<div class="srch_box">
+						<input name="srch" id="srch" type="text" /><button id="search_btn">검색</button>
+					</div>
+				</fieldset>
+				<!--// left search area e -->
+				<!-- Tree Menu s -->
+				<ul id="tree" class="filetree treeview">
+					<li class="collapsable">
+						<span menuobj="" class="folder">공통</span>
+						<ul>
+							<li><span class="file"><a favscrid="" href="login.shtml" target="embeded-content-01">로그인 디자인 적용</a></span></li>
+							<li><span class="file"><a favscrid="" href="main.shtml" target="embeded-content-01">에러페이지 1</a></span></li>
+						</ul>
+					</li>
+					<li class="collapsable">
+						<span menuobj="" class="folder">로그인</span>
+						<ul>
+							<li><span class="file"><a favscrid="" href="#tabs" data-href="#">상품연식관리</a></span></li>
+							<li><span class="file"><a favscrid="" href="#tabs" data-href="#">색상 &amp; 패키지/옵션 조합관리</a></span></li>
+							<li><span class="file"><a favscrid="" href="#tabs" data-href="#">색상 &amp; 패키지/옵션 조합관리</a></span></li>
+						</ul>
+					</li>
+					<li class="collapsable"><span class="file"><a favscrid="" href="review.shtml" target="embeded-content-01">리뷰작성</a></span></li>
+					<li class="collapsable"><span class="file"><a favscrid="" href="price_range.shtml" target="embeded-content-01">시세현황 - 주행거리 RANGE</a></span></li>
+					<li class="collapsable"><span class="file"><a favscrid="" href="price_car.shtml" target="embeded-content-01">실사검수 상세(감가산정내역)</a></span></li>
+					<li class="collapsable"><span class="file"><a favscrid="" href="price_car_modify.shtml" target="embeded-content-01">실사검수 상세(감가산정내역-수정)</a></span></li>
+					
+
+				</ul>
+				<!--// Tree Menu e -->
+			</div>
+		</div><!--// snb div -->
+		<!--// Left Area e -->
+		<hr />
+
+		<!-- Contents Area -->
+		<div id="contArea">
+			<!--// ifrm_set div s -->
+			<div class="ifrm_set">
+				<div id="wrap-con-01" style="display:block;"><iframe id="embeded-content-01" name="embeded-content-01" class="embeded-frame" src="login.shtml" frameborder="0" width="100%" scrolling="auto" title="탭1영역"></iframe></div>
+				<div id="wrap-con-02"><iframe id="embeded-content-02" name="embeded-content-02" class="embeded-frame" src="about:blank" frameborder="0" width="100%" scrolling="auto" title="탭2영역"></iframe></div>
+				<div id="wrap-con-03"><iframe id="embeded-content-03" name="embeded-content-03" class="embeded-frame" src="about:blank" frameborder="0" width="100%" scrolling="auto" title="탭3영역"></iframe></div>
+				<div id="wrap-con-04"><iframe id="embeded-content-04" name="embeded-content-04" class="embeded-frame" src="about:blank" frameborder="0" width="100%" scrolling="auto" title="탭4영역"></iframe></div>
+				<div id="wrap-con-05"><iframe id="embeded-content-05" name="embeded-content-05" class="embeded-frame" src="about:blank" frameborder="0" width="100%" scrolling="auto" title="탭5영역"></iframe></div>
+				<div id="wrap-con-06"><iframe id="embeded-content-06" name="embeded-content-06" class="embeded-frame" src="about:blank" frameborder="0" width="100%" scrolling="auto" title="탭6영역"></iframe></div>
+				<div id="wrap-con-07"><iframe id="embeded-content-07" name="embeded-content-07" class="embeded-frame" src="about:blank" frameborder="0" width="100%" scrolling="auto" title="탭7영역"></iframe></div>
+				<div id="wrap-con-08"><iframe id="embeded-content-08" name="embeded-content-08" class="embeded-frame" src="about:blank" frameborder="0" width="100%" scrolling="auto" title="탭8영역"></iframe></div>
+				<div id="wrap-con-09"><iframe id="embeded-content-09" name="embeded-content-09" class="embeded-frame" src="about:blank" frameborder="0" width="100%" scrolling="auto" title="탭9영역"></iframe></div>
+				<div id="wrap-con-10"><iframe id="embeded-content-10" name="embeded-content-10" class="embeded-frame" src="about:blank" frameborder="0" width="100%" scrolling="auto" title="탭10영역"></iframe></div>
+			</div>
+			<!--// ifrm_set div e -->
+		</div><!--// contArea div -->
+		<!--  Contents Area //-->
+
+		<div id="footerHeight"><!-- 하단고정영역 --></div>
+	</div>
+	<!--// container e -->
+<hr />
+		
+		<!-- footer s -->
+		<div id="footer">
+			<div id="section_tabs"></div>
+		</div>
+		
+	<!-- footer e -->
+</div>
+<!--// wrap div -->
+
+
+<!-- contextmenu s -->
+<ul id="popTreeMenu" class="contextMenu" >
+	<li class="new"><a href="#new">POPUP</a></li>
+	<li class="bookmark"><a href="#bookmark">즐겨찾기</a></li>
+</ul>
+<!-- contextmenu e -->
+
+<script>
+jQuery(document).ready(function(){
+//콘텐츠 사이즈 조절
+	function content_resize() {
+		var Hcon = $( window ).height();
+		$("#contArea").css('height',Hcon-106-46).css('overflow-y','hidden');
+		$(".embeded-frame").css("height",Hcon-106-46);
+		$("#embeded-menu").css("height",Hcon-106-46);
+		$("#snb").css('height',Hcon-106-46);
+	}
+	content_resize();
+	$( window ).resize(function() {
+		content_resize();
+	});
+//End 콘텐츠 사이즈 조절
+	$("#userId").hover(function(){
+		$(".user_layer").toggle();
+	});
+});
+</script>
+
+</body>
+</html>
+
+

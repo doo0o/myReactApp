@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>해시태그 검색 결과</title>
+	<!--#include file="/HILAB/m/SHTML/HI_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/hi_contents.css">
+</head>
+<body  class="bg_dark">
+<!--#include file="/HILAB/m/SHTML/HI_inc/common_skip.shtml"-->
+<!--#include file="/HILAB/m/SHTML/HI_inc/layout_loading.shtml"-->
+<!-- HI wrap -->
+<div id="HIwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="HIheader">
+		
+		<!--  s: h_header : SEARCH  -->
+		<div class="h_header_search">
+			<!-- input -->
+			<button type="button" id="srchHistory" data-href="back" class="ic_back">뒤로가기</button>
+			<div class="inp_search">
+				<input type="search" id="keySearch" class="txt" placeholder="해시태그를 입력해 주세요" value="" />
+				<button type="button" id="keySearchDel" class="btn_delete">입력값 삭제</button>
+			</div>
+			<!-- //input -->
+		</div>
+		<!--  e: h_header : SEARCH  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="HIcontents">
+		<!-- contents -->
+		<div class="search_result">
+			<div class="title">
+				<span>'중고차'</span>에 대한 <em>32</em>건의<br>검색결과가 있습니다.
+			</div>
+			<ul class="list_hashtag">
+				<li>
+					<a href="#">
+						<span class="hash">#</span><span class="txt"><em>중고차</em>거래사기</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="hash">#</span><span class="txt"><em>중고차</em> 구매 서류</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="hash">#</span><span class="txt"><em>중고차</em> 구매 방식</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="hash">#</span><span class="txt"><em>중고차</em>거래사기</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="hash">#</span><span class="txt"><em>중고차</em>구매대행</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="hash">#</span><span class="txt"><em>중고차</em>거래사기</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="hash">#</span><span class="txt"><em>중고차</em>거래사기</span>
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<span class="hash">#</span><span class="txt"><em>중고차</em>거래사기</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HILAB/m/SHTML/HI_inc/layout_actionbar.shtml"-->
+	<!--#include file="/HILAB/m/SHTML/HI_inc/layout_footer.shtml"-->
+</div>
+<!-- //HI wrap -->
+<script>
+	// 2023 0210 TOP / CHATBOT 추가
+	HI.top();
+</script>
+</body>
+</html>

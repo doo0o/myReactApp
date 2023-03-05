@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>중고차 거래 꿀팁</title>
+	<!--#include file="/HILAB/m/SHTML/HI_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="/HILAB/p/css/hi_contents.css">
+</head>
+<body>
+<!--#include file="/HILAB/p/SHTML/HI_inc/common_skip.shtml"-->
+<!--#include file="/HILAB/p/SHTML/HI_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="HIwrap">
+	<!--#include file="/HILAB/p/SHTML/HI_inc/layout_header.shtml"-->
+	<div id="HIcontents">
+		<div id="layoutWrap">
+			<!-- container -->
+				<!--#include file="/HILAB/p/SHTML/HI_contents/include/search_layer.shtml"-->
+			<!-- //container -->
+		</div>
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HILAB/p/SHTML/HI_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+
+<!--#include file="/HILAB/p/SHTML/HI_inc/brand_loading.shtml"-->
+<script>
+	// 퍼블확인용
+	const srchLayer = document.querySelector('.HI_search');
+	window.onload = function(){
+		srchLayer.style.display = 'block';
+	}
+	// //퍼블확인용
+	searchLayer('.HI_search');
+</script>
+</body>
+</html>

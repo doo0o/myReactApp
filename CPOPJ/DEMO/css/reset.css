@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@font-face {
+	font-family: 'HynSans_Txt-R';
+	src: url('../font/HyundaiSansTextKRRegular.eot'); /* IE9 Compat Modes */
+	src: url('../font/HyundaiSansTextKRRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	local(※), url('../font/HyundaiSansTextKRRegular.woff') format('woff'), /* Modern Browsers */
+	url('../font/HyundaiSansTextKRRegular.ttf') format('truetype'); /* Safari, Android, iOS */
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}
+@font-face {
+	font-family: 'HynSans_Txt-M';
+	src: url('../font/HyundaiSansTextKRMedium.eot'); /* IE9 Compat Modes */
+	src: url('../font/HyundaiSansTextKRMedium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	local(※), url('../font/HyundaiSansTextKRMedium.woff') format('woff'), /* Modern Browsers */
+	url('../font/HyundaiSansTextKRMedium.ttf') format('truetype'); /* Safari, Android, iOS */
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}
+@font-face {
+	font-family: 'HynSans_Txt-B';
+	src: url('../font/HyundaiSansTextKRBold.eot'); /* IE9 Compat Modes */
+	src: url('../font/HyundaiSansTextKRBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	local(※), url('../font/HyundaiSansTextKRBold.woff') format('woff'), /* Modern Browsers */
+	url('../font/HyundaiSansTextKRBold.ttf') format('truetype'); /* Safari, Android, iOS */
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}
+@font-face {
+	font-family: 'HynSans_Head-R';
+	src: url('../font/HyundaiSansHeadKRRegular.eot'); /* IE9 Compat Modes */
+	src: url('../font/HyundaiSansHeadKRRegular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	local(※), url('../font/HyundaiSansHeadKRRegular.woff') format('woff'), /* Modern Browsers */
+	url('../font/HyundaiSansHeadKRRegular.ttf') format('truetype'); /* Safari, Android, iOS */
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: 'HynSans_Head-M';
+	src: url('../font/HyundaiSansHeadKRMedium.eot'); /* IE9 Compat Modes */
+	src: url('../font/HyundaiSansHeadKRMedium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	local(※), url('../font/HyundaiSansHeadKRMedium.woff') format('woff'), /* Modern Browsers */
+	url('../font/HyundaiSansHeadKRMedium.ttf') format('truetype'); /* Safari, Android, iOS */
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}
+@font-face {
+	font-family: 'HynSans_Head-L';
+	src: local(※), url('../font/HHyundaiSansHeadKRLight.woff') format('woff'), /* Modern Browsers */
+	url('../font/HyundaiSansHeadKRLight.ttf') format('truetype'); /* Safari, Android, iOS */
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}
+
+@font-face {
+	font-family: 'HynSans_Head-B';
+	src: url('../font/HyundaiSansHeadKRBold.eot'); /* IE9 Compat Modes */
+	src: url('../font/HyundaiSansHeadKRBold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	local(※), url('../font/HyundaiSansHeadKRBold.woff') format('woff'), /* Modern Browsers */
+	url('../font/HyundaiSansHeadKRBold.ttf') format('truetype'); /* Safari, Android, iOS */
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, 
+acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, 
+sub, sup, tt, var, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, 
+embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, 
+section, summary, time, mark, audio, video {margin:0; padding:0; /*vertical-align:baseline;*/}
+
+body, th, td, input, select, 
+textarea, button{
+	color: #000000;
+	font-size: 14px;
+	line-height: 1.4;
+	font-family: HynSans_Txt-R, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림,  Arial, Verdana, sans-serif;
+}
+
+*{box-sizing:border-box;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display: block;}
+
+body{-webkit-text-size-adjust: none;-webkit-overflow-scrolling:touch;}
+body, html{width:100%;height:100%;}
+h1, h2, h3, h4, h5, h6{font-size: 100%;font-weight: 400; }
+ol, ul, li ,dl, dt, dd{list-style:none outside none; padding:0; margin:0;}
+hr{display:none;}
+span{margin:0; padding:0; outline:0;}
+fieldset, img, table, caption, tbody, tfoot, thead, tr, th, td, button, hr{border:0;}
+address, caption, cite, code, dfn, em, strong, th, var, i{font-style: normal;}
+strong{font-weight:500;}
+blockquote, q{quotes:none;}
+blockquote:before, blockquote:after, q:before, q:after{content: ''; content: none;}
+table{border-collapse:collapse;border-spacing:0;width:100%;word-break:break-word;}
+img{vertical-align:middle;}
+a{text-decoration:none; cursor:pointer; color:#6f6f6f}
+a:active, a:hover{text-decoration: none;}
+a.link {color: #141414; text-decoration: underline;}
+input, select, label{vertical-align:middle;}
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus,
+.selector:focus select,
+.selectorForm:focus select {outline:none; /* border:1px solid #6f6f6f!important; */}
+input, select, textarea, button{font-size: 100%; vertical-align: middle; padding: 0; margin: 0;}
+button,input[type='text'],input[type='password'],input[type='tel'],input[type='num'],input[type='button'],input[type='submit'],input[type='reset'],input[type='file']{-webkit-appearance:button; border-radius:0}
+button,
+select{outline:none;}
+input[type='search']::-webkit-search-cancel-button{-webkit-appearance:none}
+textarea{resize:none;width:100%;padding: 10px;border:1px solid #bbb;box-shadow:none;box-sizing: border-box;line-height: 1.3rem;overflow: auto;}
+button{border: 0 none; background-color: transparent; cursor: pointer; vertical-align: middle;}
+caption, legend{display:none;}
+option {font-weight:500}
+
+select{appearance:none;-webkit-appearance:none;-moz-appearance:none;-o-appearance:none;}
+select::-ms-expand{display:none;}
+
+select[disabled] {color:#999}
+input[type='text'][disabled],input[type='password'][disabled] {background:#f9f9f9}
+input[type=text]::-ms-clear {display:none;}
+
+:-webkit-input-placeholder {color:#999;line-height:1.3rem;text-align:left;}
+:-moz-input-placeholder {color:#999;line-height:1.3rem;text-align:left;}
+:-ms-input-placeholder {color:#999;line-height:1.3rem;text-align:left;}
+::placeholder {color:#999;line-height:1.3rem;text-align:left;}
+
+
+
+

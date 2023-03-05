@@ -1,0 +1,178 @@
+<!-- FO-CS-MS0004 : 거래내역 - BOTTOM -->
+<div class="CPOpop_full" id="FO-CS-MS0007">
+	<div class="p_head">
+		<h5 class="tit">거래내역</h5>
+	</div>
+	<div class="p_wrap">
+		<!-- 거래내역 -->
+        <div class="product_history">
+            <ul class="cpo_tab01">
+                <li><a href="#" class="tab_anchor on">구매내역</a></li>
+                <li><a href="#" class="tab_anchor">판매내역</a></li>
+            </ul>
+            <div class="tab_container">
+                <!--구매내역 탭-->
+                <div class="tab_cont active">
+                    <!-- 내역 없음 -->
+                    <div class="no_data">
+                        <p class="tit">최근 구매한 차량이 없습니다.</p>
+                    </div>
+
+                    <!-- 내역 있음 -->
+                    <div class="box_history">
+                        <div class="notice_01">
+                            <ol>
+                                <li>최근 한 달 이내 해당되는 상품만 조회 가능합니다.</li>
+                            </ol>
+                        </div>
+
+                        <ul class="history_list">
+                            <li>
+                                <div class="unit_item">
+                                    <div class="unit_top">
+                                        <input type="radio" name="tabRadio" id="cartList01" class="chk_type01" />
+                                        <label for="cartList01">
+                                            <span class="tit">결제진행중</span>
+                                            <span class="num">2109012200000000</span>
+                                        </label>
+                                    </div>
+                                    <div class="unit_mid">
+                                        <div class="unit_img"><img data-src="/GHQ/m/img/@thumb/plp_310x310_01.jpg" class="cpo_lazy_v" alt="" /></div>
+                                        <div class="unit_info">
+                                            <p class="name">
+                                                <span class="model">쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼</span>
+                                            </p>
+                                            <span class="price"><em>3,820</em><i>만원</i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="unit_item">
+                                    <div class="unit_top">
+                                        <input type="radio" name="tabRadio" id="cartList02" class="chk_type01" />
+                                        <label for="cartList02">
+                                            <span class="tit">배송완료</span>
+                                            <span class="num">2109012200000000</span>
+                                        </label>
+                                    </div>
+                                    <div class="unit_mid">
+                                        <div class="unit_img"><img data-src="/GHQ/m/img/@thumb/plp_310x310_01.jpg" class="cpo_lazy_v" alt="" /></div>
+                                        <div class="unit_info">
+                                            <p class="name">
+                                                <span class="model">쏘나타</span>
+                                            </p>
+                                            <span class="price"><em>3,820</em><i>만원</i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--판매내역 탭-->
+                <div class="tab_cont">
+                    <!-- 내역 없음 -->
+                    <div class="no_data">
+                        <p class="tit">최근 판매한 차량이 없습니다.</p>
+                    </div>
+
+                    <!-- 내역 있음 -->
+                    <div class="box_history">
+                        <div class="notice_01">
+                            <ol>
+                                <li>최근 한 달 이내 해당되는 상품만 조회 가능합니다.</li>
+                            </ol>
+                        </div>
+
+                        <ul class="history_list">
+                            <li>
+                                <div class="unit_item">
+                                    <div class="unit_top">
+                                        <input type="radio" name="tabRadio" id="cartList03" class="chk_type01" />
+                                        <label for="cartList03">
+                                            <span class="tit">견적요청중</span>
+                                            <span class="num">2109012200000000</span>
+                                        </label>
+                                    </div>
+                                    <div class="unit_mid">
+                                        <div class="unit_img"><img data-src="/GHQ/m/img/@thumb/plp_310x310_01.jpg" class="cpo_lazy_v" alt="" /></div>
+                                        <div class="unit_info">
+                                            <p class="num"><span>12가1234</span></p>
+                                            <p class="name">
+                                                <span class="model">쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼쏘나타 DN8 2.0 솔린 프리미엄 밀레니얼</span>
+                                            </p>
+                                            <span class="price"><em>3,820</em><i>만원</i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="unit_item">
+                                    <div class="unit_top">
+                                        <input type="radio" name="tabRadio" id="cartList04" class="chk_type01" />
+                                        <label for="cartList04">
+                                            <span class="tit">계약해지완료</span>
+                                            <span class="num">2109012200000000</span>
+                                        </label>
+                                    </div>
+                                    <div class="unit_mid">
+                                        <div class="unit_img"><img data-src="/GHQ/m/img/@thumb/plp_310x310_01.jpg" class="cpo_lazy_v" alt="" /></div>
+                                        <div class="unit_info">
+                                            <p class="num"><span>12가1234</span></p>
+                                            <p class="name">
+                                                <span class="model">쏘나타</span>
+                                            </p>
+                                            <span class="price"><em>3,820</em><i>만원</i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="unit_item">
+                                    <div class="unit_top">
+                                        <input type="radio" name="tabRadio" id="cartList05" class="chk_type01" />
+                                        <label for="cartList05">
+                                            <span class="tit">매입완료</span>
+                                            <span class="num">2109012200000000</span>
+                                        </label>
+                                    </div>
+                                    <div class="unit_mid">
+                                        <div class="unit_img"><img data-src="/GHQ/m/img/@thumb/plp_310x310_01.jpg" class="cpo_lazy_v" alt="" /></div>
+                                        <div class="unit_info">
+                                            <p class="num"><span>12가1234</span></p>
+                                            <p class="name">
+                                                <span class="model">쏘나타</span>
+                                            </p>
+                                            <span class="price"><em>3,820</em><i>만원</i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+		<!-- sticky --> 
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01" disabled>선택차량 문의하기</button>
+		</div>
+		<!-- //sticky -->
+		<!-- //거래내역 -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+<script>
+    $('.tab_anchor').on('click',function(e){
+        e.preventDefault();
+        var anchor = $(this).parents('li');
+        var tabConts = $(this).parents('.product_history').find('.tab_container .tab_cont');
+        var idx = anchor.index();
+        anchor.parents('.cpo_tab01').find('a').removeClass('on');
+        anchor.find('a').addClass('on');
+        tabConts.removeClass('active').eq(idx).addClass('active');
+        tabConts.scrollTop(0);
+    })
+</script>

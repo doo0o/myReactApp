@@ -1,0 +1,119 @@
+<!-- FO-PD-MS0004 : 신차대비 차량가격 - FULL -->
+<div class="CPOpop_full" id="FO-PD-MS0004">
+	<div class="p_head">
+		<h2 class="tit">신차가격대비</h2>
+	</div>
+	<div class="p_wrap">
+		<div class="detail_contrast no_btn">
+			<div class="pdp_head_wrap">
+				<p class="car_num">24더 3215는</p>
+				<p class="txt">
+					신차 대비 구매비용이<br>
+					<em class="under">19,230,000원</em> 낮습니다
+				</p>
+			</div>
+			<div class="detail_contrast_cont">
+
+				<div class="graph_wrap" data-ref="priceCompareGraph">
+
+					<div class="graph">
+						<div class="bg">
+							<svg xmlns="http://www.w3.org/2000/svg" width="110" height="94" viewBox="0 0 110 94" fill="none">
+								<path data-ref="path" d="M1 1L110 100" stroke="url(#paint0_linear_56_419)" stroke-width="1.6" stroke-linecap="square" stroke-dasharray="3 3"/>
+								<defs>
+									<linearGradient id="paint0_linear_56_419" x1="5.25557" y1="6.6649" x2="92.0694" y2="1.6153" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#DDDDDD"/>
+										<stop offset="1" stop-color="#00AAD2"/>
+										<!-- 제네시스 용
+										<stop stop-color="#E5E5E5"/>
+										<stop offset="1"/>
+										-->
+									</linearGradient>
+								</defs>
+							</svg>
+							<div class="grd" data-ref="grd" style="clip-path : polygon(0 0, 0 100%, 100% 100%, 100% 100%, 0 0);"></div>
+						</div>
+						<div class="bar bar1">
+							<span class="txt">출시가</span>
+							<span class="num" data-ref="start">47790000</span>
+						</div>
+						<div class="bar bar2" data-ref="bar" style="height: 0;">
+							<span class="txt">현재</span>
+							<span class="num" data-ref="now">28560000</span>
+						</div>
+					</div>
+					<div class="per">
+						<p class="txt">신차가격대비</p>
+						<p class="num"><span data-ref="per">0</span>%</p>
+					</div>
+				</div>
+			</div>
+
+			<script>
+				const graphAnimate = () => {
+					const wrap = document.querySelector('[data-ref="priceCompareGraph"]');
+					const path = wrap.querySelector('[data-ref="path"]');
+					const grd = wrap.querySelector('[data-ref="grd"]');
+					const bar = wrap.querySelector('[data-ref="bar"]');
+					const per = wrap.querySelector('[data-ref="per"]');
+					const starPrice = wrap.querySelector('[data-ref="start"]').innerText;
+					const nowPrice = wrap.querySelector('[data-ref="now"]').innerText;
+					
+					const calcNum = Math.floor((nowPrice / starPrice) * 100);
+					const pathNum = 100 - calcNum;
+
+					numFunc({
+						start: 100,
+						total: pathNum,
+						time: .8,
+						callBack: val => {
+							path.setAttribute('d', `M1 1L110 ${val}`);
+							grd.style.cssText= `clip-path : polygon(0 0, 0 100%, 100% 100%, 100% ${val}%, 0 0);`
+						}
+					})
+
+					numFunc({
+						start: 0,
+						total: calcNum,
+						time: .8,
+						callBack: val => {
+							per.innerText = Math.floor(val);
+							bar.style.height = val + '%';
+						}
+					})
+				}
+
+			</script>
+
+			<div class="detail_contrast_card">
+				<p class="car_name">쏘나타 DN8 2.0 가솔린 프리미엄</p>
+				<div class="car_price">
+					<p class="car_txt">
+						<span class="txt_tit">신차가</span>
+						<span class="txt_con">
+							<span class="num">47,790,000</span>원
+						</span>
+					</p>
+					<p class="car_txt">
+						<span class="txt_tit">현재 판매가</span>
+						<span class="txt_con">
+							<span class="num">28,560,000</span>원
+							<span class="per">(53%)</span>
+						</span>
+					</p>
+				</div>
+
+			</div>
+
+			<div class="caution">
+				<ul>
+					<li>신차가는 실제출고가격과 다르게 표현될 수 있습니다.</li>
+					<li>신차가는 현대인증 중고차에서 산정한 신차 기본가격 + 옵션가 기준으로 산출되었습니다.</li>
+					<li>친환경차는 구매보조금(국비/지방비)적용 전 가격 입니다.</li>
+				</ul>
+			</div>
+
+		</div>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

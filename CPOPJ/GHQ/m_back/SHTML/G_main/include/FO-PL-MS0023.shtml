@@ -1,0 +1,44 @@
+<!-- FO-PL-MS0023 : 추가옵션 - Simple -->
+<div class="CPOpop_modal" id="FO-PL-MS0023">
+	<div class="p_head">
+		<h4 class="tit">추가 옵션</h4>
+	</div>
+	<div class="p_wrap">
+		<ol class="main_option">
+			<li>
+				<div class="tog_tit">스포츠 모델</div>
+				<div class="tog_txt">고품질 러기지 스크린으로 이동 중 여행 가방, 스포츠 장비 등 개인 소지품을 안전하게 할 수 있으며, 미끄럼 방지 러기지 매트가 함께 제공됩니다.</div>
+			</li>
+			<li>
+				<div class="tog_tit">AWD (4륜구동)</div>
+				<div class="tog_txt">고품질 러기지 스크린으로 이동 중 여행 가방, 스포츠 장비 등 개인 소지품을 안전하게 할 수 있으며, 미끄럼 방지 러기지 매트가 함께 제공됩니다.</div>
+			</li>
+			<li>
+				<div class="tog_tit">파노라마 선루프</div>
+				<div class="tog_txt">고품질 러기지 스크린으로 이동 중 여행 가방, 스포츠 장비 등 개인 소지품을 안전하게 할 수 있으며, 미끄럼 방지 러기지 매트가 함께 제공됩니다.</div>
+			</li>
+			<li>
+				<div class="tog_tit">서라운드 뷰</div>
+				<div class="tog_txt">고품질 러기지 스크린으로 이동 중 여행 가방, 스포츠 장비 등 개인 소지품을 안전하게 할 수 있으며, 미끄럼 방지 러기지 매트가 함께 제공됩니다.</div>
+			</li>
+			<li>
+				<div class="tog_tit">헤드업 디스플레이</div>
+				<div class="tog_txt">고품질 러기지 스크린으로 이동 중 여행 가방, 스포츠 장비 등 개인 소지품을 안전하게 할 수 있으며, 미끄럼 방지 러기지 매트가 함께 제공됩니다.</div>
+			</li>
+		</ol>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+<script>
+	$(document).ready(function(){
+		$('.main_option .tog_tit').on('click',function(){
+			if(!$(this).parent().hasClass('on')){
+				$(this).parent().addClass('on');
+				$(this).next('.tog_txt').slideDown(100);
+			}else{
+				$(this).parent().removeClass('on');
+				$(this).next('.tog_txt').slideUp(100);
+			}
+		});
+	});
+</script>

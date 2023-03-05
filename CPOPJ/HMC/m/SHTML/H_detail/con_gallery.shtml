@@ -1,0 +1,99 @@
+<div class="pdp01_car">
+
+	<div class="inner fullTarget">
+		<div class="btn_img"><button class="jQ_POP_open" data-popup="FO-PD-MS0024" onclick="zoomActiveFunc();">이미지 보기</button></div>
+		<div class="btn_full_screen">
+			<div class="tip_box">전체화면으로 차량을 크게 보세요</div> 
+			<button onclick="fullShowFunc()">전체화면 보기</button>
+		</div>
+		<div class="toggle_show">
+			<label>
+				<input type="checkbox">
+				<span>360</span>
+			</label>
+		</div>
+
+		<!-- 외부 -->
+		<div class="show_outside">
+			<div class="outside_inner">
+				<div id="vrCarViewContainer"></div>
+			</div>
+			<div id="show_loading" class="show_loading"></div>
+		</div>
+		<script src="/HMC/m/js/lib360/js/vr_mobile.js"></script>
+		<script>
+			var imgArry = [];
+
+			for(let i=35;i>=0;i--) {
+				imgArry.push("/HMC/m/js/lib360/img/car/img_0_0_"+i+".jpg");
+			}
+			var t = new vrCarView({
+				"appPath": "/HMC/m/js/lib360",
+				"container": $("#vrCarViewContainer"),
+				"options": {
+					"imgCount": 35,
+					"srcOutClose": imgArry,
+					"markDetail": {
+						"base": "", //이미지경로 베이스
+						"display": 0, //0 none, 1 display
+						"close": {
+								"markClose": []
+						}
+					},
+					"loadingImageFlag": true,
+					"loadingImageStyle": { display: 'block' }
+				}
+			});
+			var fullShowFunc = () => {
+				if(document.querySelector('.fullTarget').classList.contains('full')) {
+					t.CloseFullScreenMode();
+				} else {
+					t.OpenFullScreenMode();
+				}
+			}
+		</script>
+
+		<!-- 내부 -->
+		<script src="/HMC/m/js/library/pannellum.js"></script>
+		<div class="show_inside" id="showInside"></div>
+
+		<!-- 이미지가 없을 경우 -->
+		<!-- <p class="no_img">이미지 준비중입니다</p> -->
+
+	</div>
+
+	<div class="btn_experience">
+		<button class="jQ_POP_open" data-popup="FO-PD-MS0025" onclick="experience.active()">해당차량을 오감으로 경험해 보세요</button>
+	</div>
+
+</div>
+
+<script>
+	// 갤러리 효과 및 토글 기능 스크립트
+	const loadFunc = () => {
+		let targetWrap = document.querySelector('.pdp01_car');
+		let btnShowToggle = targetWrap.querySelector('.toggle_show input[type="checkbox"]');
+		setTimeout(()=> {
+			targetWrap.classList.add('ready');
+		}, 3000);
+		setTimeout(()=>{
+			targetWrap.classList.add('start');
+		}, 3300);
+		btnShowToggle.addEventListener('click',(e)=>{
+			if(e.target.checked) {
+				targetWrap.classList.add('isInsideShow');
+				if(!targetWrap.querySelector(".show_inside").classList.contains("pnlm-container")) {
+				}
+			} else {
+				targetWrap.classList.remove('isInsideShow');
+			}
+		})
+		pannellum.viewer('showInside', {
+			"type": "equirectangular",
+			"panorama": "/HMC/m/SHTML/H_detail/inside.jpg",
+			"autoLoad": true,
+			"showControls": false
+		});
+	}
+	loadFunc();
+</script>

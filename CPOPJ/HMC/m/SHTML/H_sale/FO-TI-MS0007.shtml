@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>견적신청 완료 : 현대차 CPO</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_sale.css">
+</head>
+<body class="bg_color02">
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--  s: h_header  -->
+		<div class="h_header">
+			<h1 class="tit"><a href="#" class="ic_logo">현대CPO</a></h1>
+			<div class="util">
+				<button type="button" class="menu" data-ref="menuLayer2">내차팔기</button>
+				<div class="menu_layer" id="menuLayer2">
+					<ul>
+						<li><a href="#">내차사기</a></li>
+						<li class="on"><a href="#">내차팔기</a></li>
+					</ul>
+				</div>
+				<ul>
+					<li><button type="button" class="ic_mycar jQ_POP_open" data-popup="FO-TI-MS0017">내차팔기 정보</button></li><!-- jQ_POP_open 팝업 호출 class / data-popup 팝업 id 값 -->
+				</ul>
+			</div>
+		</div>
+		<!--  e: h_header  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<!-- 견적신청 완료 -->
+		<div class="sale_confirm3">
+			<!-- (1) -->
+			<div class="inner01">
+				<p class="tit">견적요청이 완료되었습니다.</p>
+				<p class="txt">입력해주신 정보를 통해 예상 견적가를 산정하고 있어요.<br />견적 산정에 최대 2일 정도 소요될 수 있어요.</p>
+			</div>
+			<!-- (2) -->
+			<div class="inner02">
+				<div class="unit_type middle">
+					<div class="mid_area">
+						<div class="unit_img">
+							<img src="/HMC/m/img/@thumb/plp_310x310_01.jpg" alt="">
+						</div>
+						<div class="unit_info">
+							<p class="num">123가1234</p>
+							<p class="name">
+								<span class="model">그랜저 IG </span>
+								<span class="desc">가솔린 3.3 캘리그래피</span>
+							</p>
+							<p class="drive">
+								<em>20년 12월(21년형)</em>
+								<em>50,000km</em>								
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- (3) -->
+			<div class="inner03">
+				<p class="txt01"><span>30초면 OK, </span>다음 차주를 위해 알려주세요!</p>
+				<p class="txt02">답변은 익명으로 저장되며, 견적 금액 산정에 영향을 미치지 않아요.</p>
+				<p class="txt03"><button type="button" class="btn_arrow_mid01 jQ_POP_open" data-popup="FO-TI-MS0037">이전 차주 정보 입력하기</button></p>
+			</div>
+			<div class="inner03">
+				<p class="txt01">차주 정보 입력이 완료되었습니다!</p>
+				<p class="txt02">답변은 익명으로 저장되며, 견적 금액 산정에 영향을 미치지 않아요.</p>
+				<p class="txt03"><button type="button" class="btn_arrow_mid01 jQ_POP_open" data-popup="FO-TI-MS0037">이전 차주 정보 수정하기</button></p>
+			</div>
+			<!-- (4) -->
+			<div class="inner03">
+				<p class="txt04">견적요청 이후 이렇게 진행돼요.</p>
+				<ol class="sale_car_process">
+					<li>
+						<strong>입력해주신 정보를 바탕으로</strong>
+						차량에 대한 평가를 진행하여 예상 견적 가격을 알려드려요.
+					</li>
+					<li>
+						<strong>예상 견적 가격이 마음에 드시면</strong>
+						차량에 대한 정밀한 평가를 위해 방문평가를 요청해요.
+					</li>
+					<li>
+						<strong>방문평가를 요청하시면</strong>
+						방문평가사가 지정된 날짜에 방문하여 차량을 살펴보고 더 정확한 견적 가격을 알려드려요.
+					</li>
+				</ol>
+			</div>
+		</div>
+		<!-- //견적신청 완료 -->
+		<!-- 05. BUTTON STICKY -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">내차팔기 진행 확인하기</button> <!-- 2022-09-16 CPO-3291 -->  
+		</div>
+		<!-- //05. BUTTON STICKY -->
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<!-- 추가정보 입력 -->
+<!--#include file="/HMC/m/SHTML/H_sale/include/FO-TI-06F-01MS0037.shtml"-->
+
+</body>
+</html>

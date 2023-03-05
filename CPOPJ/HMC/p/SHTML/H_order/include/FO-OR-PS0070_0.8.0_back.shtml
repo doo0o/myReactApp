@@ -1,0 +1,106 @@
+<div class="popup_modal" id="FO-OR-PS0070">
+	<div class="p_body">
+		<div class="p_inner s_mid">
+			<div class="p_head">
+				<h2 class="tit">명의이전완료 서류 정보</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+					<div class="inner_view change_info_layer_v">
+						<section class="select">
+							<div class="sec_tit m">발송 대상 선택
+								<div class="form_area"><input type="checkbox" name="chk_comm" id="chk_list01_1" class="chk_type01"><label for="chk_list01_1"><span class="txt">탁송정보와 동일</span></label></div>
+							</div>
+							<ul class="form_area box_type2">
+								<li>
+									<input type="radio" name="chk_comm_3" id="chk_radio04_1" class="chk_radio small">
+									<label for="chk_radio04_1">
+										<div class="name_info">
+											<span class="owner_name">대표명의자</span>
+											<span class="name">김현대</span>
+										</div>
+										<p class="address_txt">(04524) 서울특별시 강남구 테헤란로 510(대치동) A동 1001호</p>
+									</label>
+								</li>
+								<li>
+									<input type="radio" name="chk_comm_3" id="chk_radio04_2" class="chk_radio small">
+									<label for="chk_radio04_2">
+										<div class="name_info">
+											<span class="owner_name">공동명의자1</span>
+											<span class="name">박현대</span>
+										</div>
+										<p class="address_txt">(04524) 서울특별시 강남구 테헤란로 510(대치동) A동 1001호</p>
+									</label>
+								</li>
+								<li>
+									<input type="radio" name="chk_comm_3" id="chk_radio04_3" class="chk_radio small">
+									<label for="chk_radio04_3">
+										<div class="name_info">
+											<span class="owner_name">공동명의자2</span>
+											<span class="name">김제네</span>
+										</div>
+										<p class="address_txt">(04524) 서울특별시 강남구 테헤란로 510(대치동) A동 1001호</p>
+									</label>
+								</li>
+								<li>
+									<input type="radio" name="chk_comm_3" id="chk_radio04_4" class="chk_radio small">
+									<label for="chk_radio04_4">
+										<div class="name_info">
+											<span class="owner_name">공동명의자3</span>
+											<span class="name">이제네</span>
+										</div>
+										<p class="address_txt">(04524) 서울특별시 강남구 테헤란로 510(대치동) A동 1001호</p>
+									</label>
+								</li>
+							</ul>
+						</section>
+						<section class="send_adr">
+							<div class="sec_tit m">발송주소</div>
+							<div class="name_info">
+								<span class="name">김현대</span>
+								<span class="phone_num">01012345678</span>
+							</div>
+							<ul class="form_list type01">
+								<li class="full">
+									<div class="form_area">
+										<div class="inbox_type01 address on" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()"><!-- 주소 입력 후 class on 추가 -->
+											<span class="tit">주소</span>
+											<div class="add">
+												(06179) 서울특별시 강남구 테헤란로 510(대치동)
+											</div>
+											<button type="button" class="btn_xsmall color02">주소검색</button>
+										</div>
+									</div>
+								</li>
+								<li class="full">
+									<div class="form_area">
+										<div class="inbox_type01 address on" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+											<span class="tit">상세주소</span>
+											<div class="add">
+												A동 1001호 
+											</div>
+											<!-- <input type="text" class="txt" title="상세주소 입력" placeholder="상세주소 입력" name="" value="">
+											<button type="button" class="btn_delete">삭제</button> -->
+										</div>
+									</div>
+								</li>
+							</ul> 
+							<div class="caution">
+								<ul>
+									<li>차량등록증 원부를 배송 받으실 주소입니다.</li>
+									<li>탁송정보와 주소가 다른 경우, 배송 주소를 변경 하실 수 있습니다.</li>
+									<li>주소 변경 후, 아래의 확인 버튼을 눌러야 배송 주소가 변경되며, 탁송 정보는 변경되지 않습니다.</li>
+								</ul>
+							</div>
+						</section>
+						<div class="btn_area col_type">
+							<button type="button" class="btn_big color01">확인</button>
+							<!-- <button type="button" class="btn_big color01" disabled>확인</button> --><!-- disable 버튼 -->
+						</div>
+					</div>
+				<!-- //contents -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

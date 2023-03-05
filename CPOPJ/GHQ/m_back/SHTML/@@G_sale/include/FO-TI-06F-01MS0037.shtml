@@ -1,0 +1,119 @@
+<!-- FO-TI-MS0037 : 이전차주 정보등록 - FULL -->
+<div class="CPOpop_full" id="FO-TI-MS0037">
+	<div class="p_head">
+		<h4 class="tit"></h4>
+	</div>
+	<div class="p_wrap">
+		<!-- 이전차주 정보등록 -->
+		<div class="lyer_prevowner">
+			<div class="notice_01">
+				<ol>
+					<li>입력해주신 정보는 다음 차주가 선호도에 맞게 구매할 수 있도록 제공하는 부가정보로, 견적 금액 산정에 영향을 미치지 않아요.<br/>견적 금액에는 사고이력 및 현대CPO 인증 결과만 반영됩니다.</li>
+				</ol>
+			</div>
+
+			<!--차량용도-->
+			<div class="box_car_info">
+				<strong class="title">주요 차량 용도가 무엇이었나요? </strong>
+				
+				 <ul class="select_info col2">
+					<li><input type="radio" class="chk_type05" name="rdo_Usage" id="rdo_Usage01"><label for="rdo_Usage01">출퇴근</label></li>
+					<li><input type="radio" class="chk_type05" name="rdo_Usage" id="rdo_Usage02"><label for="rdo_Usage02">장보기</label></li>
+					<li><input type="radio" class="chk_type05" name="rdo_Usage" id="rdo_Usage03"><label for="rdo_Usage03">근거리 통학</label></li>
+					<li><input type="radio" class="chk_type05" name="rdo_Usage" id="rdo_Usage04"><label for="rdo_Usage04">주말 나들이</label></li>
+					<li><input type="radio" class="chk_type05" name="rdo_Usage" id="rdo_Usage05"><label for="rdo_Usage05">업무용</label></li>
+				 </ul>
+			</div>
+			
+			<!--운행지역-->
+			<div class="box_car_info">
+				<strong class="title">주요 운행지역은 어디인가요?</strong>
+				
+				<ul class="form_type02">
+					<li>
+						<!-- [수정-SELECT] 2022-03-25 --><!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+						<button type="button" class="btn_sel01 jQ_Select" id="SelectCITY" data-id="" data-popup="Select-CITY-Layer">시 선택</button>
+						<!-- Layer -->
+						<div class="CPOpop_bottom select" id="Select-CITY-Layer">
+							<div class="p_head">
+								<h5 class="tit">시 선택</h5>
+							</div>
+							<div class="p_wrap">
+								<!-- list -->
+								<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+									<li><input type="radio" class="chk_type09" name="SelectCITY_Name" id="SelectCITY01"><label for="SelectCITY01">서울시</label></li>
+									<li><input type="radio" class="chk_type09" name="SelectCITY_Name" id="SelectCITY02"><label for="SelectCITY02">인천시</label></li>
+								</ol>
+								<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectBANK01 변경 내용 적용  -->
+									<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectCITY">적용하기</button>
+								</div>
+								<!-- //list -->
+							</div>
+							<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+						</div>
+						<!-- [수정-SELECT] 2022-03-25 -->
+					</li>
+					<li>
+						<!-- [수정-SELECT] 2022-03-25 --><!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+						<button type="button" class="btn_sel01 jQ_Select" id="SelectAREA" data-id="" data-popup="Select-AREA-Layer" disabled>구 선택</button>
+						<!-- Layer -->
+						<div class="CPOpop_bottom select" id="Select-AREA-Layer">
+							<div class="p_head">
+								<h5 class="tit">구 선택</h5>
+							</div>
+							<div class="p_wrap">
+								<!-- list -->
+								<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+									<li><input type="radio" class="chk_type09" name="SelectAREA_Name" id="SelectAREA01"><label for="SelectAREA01">서울시</label></li>
+									<li><input type="radio" class="chk_type09" name="SelectAREA_Name" id="SelectAREA02"><label for="SelectAREA02">인천시</label></li>
+								</ol>
+								<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectBANK01 변경 내용 적용  -->
+									<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectAREA">적용하기</button>
+								</div>
+								<!-- //list -->
+							</div>
+							<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+						</div>
+						<!-- [수정-SELECT] 2022-03-25 -->
+					</li>
+				</ul>
+			</div>
+			
+			<!--주차상태-->
+			<div class="box_car_info">
+				<strong class="title">평소 차량을 주차한 곳은 어떤 상태였나요?</strong>
+				
+				 <ul class="select_info col2">
+					<li><input type="radio" class="chk_type05" name="rdo_parking" id="rdo_parking01"><label for="rdo_parking01">지상</label></li>
+					<li><input type="radio" class="chk_type05" name="rdo_parking" id="rdo_parking02"><label for="rdo_parking02">지하</label></li>
+				 </ul>
+			</div>
+
+			<!--반려동물-->
+			<div class="box_car_info">
+				<strong class="title">차량 내 반려동물이 탑승했나요?</strong>
+				
+				 <ul class="select_info">
+					<li><input type="radio" class="chk_type05" name="rdo_pet" id="rdo_pet01"><label for="rdo_pet01">네, 반려동물이 탑승한 적 있어요.</label></li>
+					<li><input type="radio" class="chk_type05" name="rdo_pet" id="rdo_pet02"><label for="rdo_pet02">아니오, 반려동물을 키우지 않아요.</label></li>
+				 </ul>
+			</div>
+
+			<!--흡연여부-->
+			<div class="box_car_info">
+				<strong class="title">차량 내 흡연 여부를 알려주세요.</strong>
+				
+				 <ul class="select_info col2">
+					<li><input type="radio" class="chk_type05" name="rdo_smoking" id="rdo_smoking01"><label for="rdo_smoking01">흡연</label></li>
+					<li><input type="radio" class="chk_type05" name="rdo_smoking" id="rdo_smoking02"><label for="rdo_smoking02">비흡연</label></li>
+				 </ul>
+			</div>
+		</div>
+
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01" disabled title="입력완료">입력완료</button>
+		</div>
+		<!-- //이전차주 정보등록 -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

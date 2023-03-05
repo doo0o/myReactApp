@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>판매 준비 차량목록 : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_display.css">
+</head>
+<body class="bg_dark">
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_detail">
+			<button type="button" class="ic_back">뒤로가기</button>
+			<h1 class="tit align_c hidden">Coming Soon</h1>
+			<div class="util">
+				<ul>
+					<li><a href="#" class="ic_cart on">장바구니</a></li> <!--장바구니-->
+				</ul>
+			</div>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="cpo_plp">
+			<!-- 01. 비쥬얼 이미지 -->
+			<div class="display_corner">
+				<!-- BO 코너 영역 -->
+				<div class="bo_img">
+					<img src="/HMC/m/img/@thumb/bo_720x721_01.jpg" alt="판매 준비 차량 입고 예정인 차량들을 미리 확인해보세요." />
+				</div>
+				<!-- //BO 코너 영역 -->
+				<div class="title">
+					<strong class="tit">Coming Soon</strong>
+					<p class="copy">입고 예정인 차량들을 미리 확인해보세요.</p>
+				</div>
+			</div>
+			<!-- //01. 비쥬얼 이미지 -->
+			<!-- 02. 판매 준비 차량 목록 -->
+			<div class="plp_coming">
+				<!-- 전체수량 -->
+				<div class="plp_sorting top_total">
+					<span class="all">전체 <em>20대</em></span>
+				</div>
+				<!-- //전체수량 -->
+				<!-- list -->
+				<ul class="coming_list">
+					<li>
+						<!-- coming -->
+						<div class="unit_coming">
+							<div class="unit_img"><img src="/HMC/m/img/@thumb/visual_660x824_01.jpg" alt="더 뉴 그랜저 IG 가솔린 3.3 캘리그래피" /></div>
+							<p class="noti">예시이미지 입니다.</p>							
+							<div class="unit_info">
+								<p class="name">
+									<span class="model">그랜저 IG </span>
+									<span class="desc">가솔린 3.3 캘리그래피</span>
+								</p>
+								<p class="drive">
+									<em>20년 12월(21년형)</em>
+									<em>10,000km</em>
+									
+									<em>크리미 화이트 펄</em>
+								</p>
+							</div>
+							<!-- <button class="btn_mid04 icon_bell">입고알림신청</button> -->
+							<button class="btn_mid06 icon_bell">알림 신청 완료</button>
+						</div>
+						<!-- //coming -->
+					</li>
+					<li>
+						<!-- coming -->
+						<div class="unit_coming">
+							<div class="unit_img"><img data-src="/HMC/m/img/@thumb/visual_660x824_02.jpg" class="cpo_lazy_v" alt="더 뉴 그랜저 IG 가솔린 3.3 캘리그래피" /></div>
+							<p class="noti">예시이미지 입니다.</p>							
+							<div class="unit_info">
+								<p class="name">
+									<span class="model">그랜저 IG </span>
+									<span class="desc">가솔린 3.3 캘리그래피</span>
+								</p>
+								<p class="drive">
+									<em>20년 12월(21년형)</em>
+									<em>10,000km</em>
+									
+									<em>크리미 화이트 펄</em>
+								</p>
+							</div>
+							<button class="btn_mid04 icon_bell">입고 알림 신청</button>
+							<!-- <button class="btn_mid06 icon_bell">알림 신청 완료</button> -->
+						</div>
+						<!-- //coming -->
+					</li>
+				</ul>
+				<!-- //list -->
+			</div>
+			<!-- //02. 판매 준비 차량 목록 -->
+		</div>
+
+
+
+
+		
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_actionbar.shtml"-->
+	<!--#include file="/HMC/m/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //cpo wrap -->
+<script>
+	// 2023 0209 TOP / CHATBOT 추가
+	CPO.top();
+</script>
+</body>
+</html>

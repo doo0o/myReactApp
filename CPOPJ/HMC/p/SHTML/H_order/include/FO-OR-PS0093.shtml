@@ -1,0 +1,39 @@
+<div class="popup_modal" id="FO-OR-PS0093">
+	<div class="p_body">
+		<div class="p_inner s_small">
+			<div class="p_head">
+				<h2 class="tit">명의자 선택</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+				<div class="inner_view layer_chklist">
+					<ul class="form_area">
+						<li>
+							<input type="radio" name="chk_name" id="chk_name01" class="chk_radio bold">
+							<label for="chk_name01"><span class="txt">대표명의자 김현대</span></label>
+						</li>
+						<li>
+							<input type="radio" name="chk_name" id="chk_name02" class="chk_radio bold">
+							<label for="chk_name02"><span class="txt">공동명의자1 홍길동</span></label>
+						</li>
+						<li>
+							<input type="radio" name="chk_name" id="chk_name03" class="chk_radio bold">
+							<label for="chk_name03"><span class="txt">공동명의자2 홍이동</span></label>
+						</li>
+						<li>
+							<input type="radio" name="chk_name" id="chk_name04" class="chk_radio bold">
+							<label for="chk_name04"><span class="txt">공동명의자3 홍삼동</span></label>
+						</li>
+					</ul>
+				</div>
+				<!-- //contents -->
+				<!-- sticky -->
+				<div class="btn_area full_type">
+					<button type="button" class="btn_big color01">선택하기</button>
+				</div>
+				<!-- // sticky -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

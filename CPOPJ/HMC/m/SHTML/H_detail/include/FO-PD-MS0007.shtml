@@ -1,0 +1,431 @@
+<div class="CPOpop_full layer_bg_wrap" id="FO-PD-MS0007">
+	<div class="p_head">
+		<h2 class="tit">보험이력 보고서</h2>
+	</div>
+	<div class="p_wrap">
+		<div class="detail_insure no_btn">
+			<!-- 최상단 타이틀 부분 -->
+			<div class="pdp_head_wrap">
+				<p class="car_num">24더 3215는</p>
+				<p class="txt">
+					사고이력 조회기준<br>
+					총 <em class="under">1건</em>의 보험이력이 있습니다
+				</p>
+				<p class="date">정보 조회일 : 2021.08.21</p>
+
+				<div class="head_box">
+					<ul>
+						<li>
+							<span>내차피해</span>
+							<strong><i>20</i>건</strong>  <!-- 건수가 있을 경우 strong 태그 처리 -->
+						</li>
+						<li>
+							<span>타차가해</span>
+							<span><i>0</i>건</span>
+						</li>
+						<li>
+							<span>용도변경</span>
+							<!-- <span><i>없음</i></span> -->
+							<strong><i>있음</i></strong>
+						</li>
+						<li>
+							<span>전손보험사고</span>
+							<span><i>0</i>건</span>
+						</li>
+						<li>
+							<span>도난보험사고</span>
+							<span><i>0</i>건</span>
+						</li>
+						<li>
+							<span>침수보험사고</span>
+							<strong><i>2</i>건</strong>
+						</li>
+						<li>
+							<span>소유자변경</span>
+							<span><i>0</i>건</span>
+						</li>
+						<li>
+							<span>차량번호변경</span>
+							<span><i>0</i>건</span>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+			<!-- // 최상단 타이틀 부분 -->
+			<!-- 보험이력 컨텐츠 -->
+			<div class="pdp_pop" data-ref="toggleBoxWrap">
+				<!-- 컨텐츠 헤더 영역 자동차 일반 사양 -->
+				<div class="pdp_tit2">
+					<span>자동차 일반 사양</span>
+				</div>
+				<div class="pdp_box01">
+					<ol class="pdp_list">
+						<li>
+							<span class="tit">제조사</span>
+							<span class="txt">현대</span>
+						</li>
+						<li>
+							<span class="tit">자동차명</span>
+							<span class="txt">더 뉴 그랜저</span>
+						</li>
+						<li>
+							<span class="tit">배기량</span>
+							<span class="txt">1,999cc</span>
+						</li>
+						<li>
+							<span class="tit">연식</span>
+							<span class="txt">2020년</span>
+						</li>
+						<li>
+							<span class="tit">용도/차종</span>
+							<span class="txt">자가용/승용</span>
+						</li>
+						<li>
+							<span class="tit">사용연료</span>
+							<span class="txt">휘발유</span>
+						</li>
+						<li>
+							<span class="tit">차체형상</span>
+							<span class="txt">세단/4도어</span>
+						</li>
+						<li>
+							<span class="tit">최초 보험 가입일자</span>
+							<span class="txt">2020년 07월 03일</span>
+						</li>
+					</ol>
+				</div>
+
+				<!--자동차 보험 상세정보 모두 펼쳐보기-->
+				<div class="pdp_tit2">
+					<span>자동차 보험 상세정보</span>
+					<button type="button" class="btn_info_more" data-ref="btnToggleAll" data-str="모두 닫기" onclick="toggleBox('all')">모두 펼쳐보기</button>
+				</div>
+				<!--//자동차 보험 상세정보 모두 펼쳐보기-->
+
+				<!-- step01 자동차 용도 이력 -->
+				<div class="pdp_box01" data-ref="toggleBox">
+					<div class="pdp_tit pdp_tog" onclick="toggleBox()">자동차 용도 이력</div>
+					<div class="pdp_cont">
+						<ol class="pdp_list">
+							<li>
+								<span class="tit step01">대여용도 사용이력(렌터카)</span>
+								<span class="txt">없음</span>
+							</li>
+							<li>
+								<span class="tit step02">영업용도 사용이력</span>
+								<span class="txt on">있음</span>
+							</li>
+							<li>
+								<span class="tit step03">관용용도 사용이력</span>
+								<span class="txt">없음</span>
+							</li>
+						</ol>
+						<p class="caution small">본 정보는 차량의 과거 자동차번호 변경기록을 모두 검색하여 제공하는 것으로 대여용(렌트카), 영업용(택시 등)으로 사용된 적이 있는지 확인할 수 있습니다.</p>
+					</div>
+				</div>
+				<!-- //step01 자동차 용도 이력 -->
+				<!-- step02 자동차 번호/소유자 변경이력 -->
+				<div class="pdp_box01" data-ref="toggleBox">
+					<div class="pdp_tit pdp_tog" onclick="toggleBox()">
+						자동차 번호/소유자 변경이력
+						<p>3건</p>
+					</div>
+					<div class="pdp_cont">
+						<div class="mileage_info">
+							<dl>
+								<dt>2021.08.11</dt>
+								<dd>
+									<span>변경내역</span>
+									<span>소유자변경</span>
+								</dd>
+								<dt>2020.04.04</dt>
+								<dd>
+									<span>변경내역</span>
+									<span>차량번호 변경</span>
+								</dd>
+								<dd>
+									<span>차량번호</span>
+									<span>156서****</span>
+								</dd>
+								<dd>
+									<span>차량용도</span>
+									<span>자가용/승용</span>
+								</dd>
+								<dt>2019.06.22</dt>
+								<dd>
+									<span>변경내역</span>
+									<span>최초등록</span>
+								</dd>
+							</dl>
+						</div>
+						<div class="caution small">
+							<ul>
+								<li>소유자 변경 이력은 개인 간의 소유 변경 이외에도 매매상사간 변경(상품용)까지 모두 포함된 횟수로 제공됩니다.</li>
+								<li>소유자 변경 이력은 자료수집 방법상 오류가 발생할 수 있으니 의심되는 사항이 있으시면 문의 주시기 바랍니다.</li>
+								<li>차량번호 소유자 변경 이력은 보고서 상의 제약에 따라 최근부터 4회까지만 제공되기 때문에 요약 정보의 횟수와 상이 할 수 있습니다.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- //step02 자동차 번호/소유자 변경이력 -->
+				<!-- step03 보험 특수 사고이력 -->
+				<div class="pdp_box01" data-ref="toggleBox">
+					<div class="pdp_tit pdp_tog" onclick="toggleBox()">
+						보험 특수 사고이력
+						<p>0건</p>
+					</div>
+					<div class="pdp_cont">
+						<ol class="pdp_list">
+							<li>
+								<span class="tit step04">전손 보험사고</span>
+								<span class="txt">0건</span>
+							</li>
+							<li>
+								<span class="tit step05">도난 보험사고</span>
+								<span class="txt">0건</span>
+							</li>
+							<li>
+								<span class="tit step06">침수 보험사고</span>
+								<span class="txt">0건</span>
+							</li>
+						</ol>
+						<p class="caution small">자동차 보험으로 처리된 사고기록 중에서, 전손사고, 도난사고, 침수사고 발생 여부를 확인할 수 있으며, 침수사고는 부분침수로 인한 경미한 사고일 수도 있습니다.</p>
+					</div>
+				</div>
+				<!-- //step03 보험 특수 사고이력 -->
+				<!-- step04 보험사고이력 -->
+				<div class="pdp_box01" data-ref="toggleBox">
+					<div class="pdp_tit pdp_tog" onclick="toggleBox()">
+						보험사고이력
+						<p>2건</p>
+					</div> 
+					<div class="pdp_cont">
+						<div class="cont_history">
+							<dl>
+								<dt>정보제공 불가능 기간</dt>
+								<dd>2019.09 ~ 2021.05</dd>
+							</dl>
+							<p>24더 3215 차량이 자기차량손해담보에 가입하지 않은 동안에는 내 보험으로 처리한 사고이력정보의 제공이 불가능합니다.</p>
+						</div>
+
+						<ol class="list_history">
+							<li>
+								<p class="date">2020.08.10</p>
+
+								<p class="txt">
+									<span>내차 피해</span>
+									<span>없음</span>
+								</p>
+
+								<p class="txt">
+									<span>타차 가해</span>
+									<span><em>내차보험</em>으로 처리</span>
+								</p>
+								
+								<div class="cont">
+									<ol>
+										<li>
+											<span>부품</span>
+											<span><em>276,730</em>원</span>
+										</li>
+										<li>
+											<span>공임</span>
+											<span><em>118,110</em>원</span>
+										</li>
+										<li>
+											<span>도장</span>
+											<span><em>859,760</em>원</span>
+										</li>
+										<li class="total">
+											<span>수리(견적)비용</span>
+											<span><em>1,254,570</em>원</span>
+										</li>
+									</ol>
+								</div>
+							</li>
+							<li>
+								<p class="date">2020.08.10</p>
+
+								<p class="txt">
+									<span>내차 피해</span>
+									<span><em>상대보험</em>으로 처리</span>
+								</p>
+
+								<div class="cont">
+									<ol>
+										<li>
+											<span>부품</span>
+											<span><em>276,730</em>원</span>
+										</li>
+										<li>
+											<span>공임</span>
+											<span><em>118,110</em>원</span>
+										</li>
+										<li>
+											<span>도장</span>
+											<span><em>859,760</em>원</span>
+										</li>
+										<li class="total">
+											<span>수리(견적)비용</span>
+											<span><em>1,254,570</em>원</span>
+										</li>
+									</ol>
+									<p class="info">수리내역 - 리어 범퍼(교환), 리어 범퍼(도장), 리어 컴비네이션램프(우)(탈착), 리어 컴비네이션 램프(좌) (탈착), 후방 감지센서 (탈착)</p>
+								</div>
+
+								<p class="txt">
+									<span>타차 가해</span>
+									<span><em>내차보험</em>으로 처리</span>
+								</p>
+								<div class="cont">
+									<ol>
+										<li>
+											<span>부품</span>
+											<span><em>276,730</em>원</span>
+										</li>
+										<li>
+											<span>공임</span>
+											<span><em>118,110</em>원</span>
+										</li>
+										<li>
+											<span>도장</span>
+											<span><em>859,760</em>원</span>
+										</li>
+										<li class="total">
+											<span>수리(견적)비용</span>
+											<span><em>1,254,570</em>원</span>
+										</li>
+									</ol>
+								</div>
+							</li>
+							<li>
+								<p class="date">2020.08.10</p>
+
+								<p class="txt">
+									<span>내차 피해</span>
+									<span><em>상대보험</em>으로 처리</span>
+								</p>
+								<div class="cont">
+									<ul>
+										<li>
+											<span>부품</span>
+											<span><em>276,730</em>원</span>
+										</li>
+										<li>
+											<span>공임</span>
+											<span><em>118,110</em>원</span>
+										</li>
+										<li>
+											<span>도장</span>
+											<span><em>859,760</em>원</span>
+										</li>
+										<li class="total">
+											<span>수리(견적)비용</span>
+											<span><em>1,254,570</em>원</span>
+										</li>
+									</ul>
+									<p class="info">수리내역 - 리어 범퍼(교환), 리어 범퍼(도장), 리어 컴비네이션램프(우)(탈착), 리어 컴비네이션 램프(좌) (탈착), 후방 감지센서 (탈착)</p>
+								</div>
+
+								<p class="txt">
+									<span>타차 가해</span>
+									<span>없음</span>
+								</p>
+							</li>
+						</ol>
+						<div class="caution small">
+							<ul>
+								<li>보험금 출처에 따라서 ‘가입한 보험사에서 지급된 경우 (내차보험) 와 ‘다른차량보험 에서 지급된 경우(상대보험)’로 나눠 제공됩니다.</li>
+								<li>본 정보는 자동차사고로 상대방 차량 또는 재물에 발생한 손해와 관련된 정보로서, 상대방 차량 또는 재물에 발생한 손해 규모를 참고하여 자기 자동차의 손상여부 등을 간접적으로 확인할 수 있도록 제공하여 드리고 있습니다.</li>
+								<li>쌍방과실로 해당 자동차의 손상, 수리기록이 내차 보험과 상대보험에서 동시에 처리된 경우에는 ‘내차보험＇에만 표시되고 ‘상대보험＇에서는 생략됩니다.</li>
+								<li>카히스토리 자료수집 방법상 일부 오류가 발생할 수 있습니다. 의심되는 사항이 있으시면 전화주시기 바랍니다.</li>
+								<li>위 ‘수리(견적)비용’은 보험사가 지급하는 보험금 중에서 대차료, 휴차료 등 간접손해와 과실상계액 등을 제외한 수리 및 견적 (부품/공임/도장) 비용으로 실제 지급된 보험금과 차이가 있습니다.</li>
+								<li>보험사고 이력은 최근 10건의 사고만 표시 됩니다.</li>
+								<li>위 ‘수리내역 정보’는 해당 사고차량의 보험수리 작업내역 정보를 보유하고 있는 경우에 한하여 제한적으로 제공되고 있습니다. 앞으로 보유자료를 더욱 잘 정비하여 보다 많은 수리내역 정보가 제공될 수 있도록 노력하겠습니다.</li>
+								<li>대인사고는 제외합니다.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- //step04 보험사고이력 -->
+				<!-- step05 주행거리정보 -->
+				<div class="pdp_box01" data-ref="toggleBox">
+					<div class="pdp_tit pdp_tog" onclick="toggleBox()">주행거리정보</div>
+					<div class="pdp_cont">
+						<div class="mileage_info">
+							<dl>
+								<dt>2020.07.09</dt>
+								<dd>
+									<span>주행거리</span>
+									<span>9km</span>
+								</dd>
+								<dd>
+									<span>제공처</span>
+									<span>자동차보험회사</span>
+								</dd>
+								<dt>2021.01.04</dt>
+								<dd>
+									<span>주행거리</span>
+									<span>4,232km</span>
+								</dd>
+								<dd>
+									<span>제공처</span>
+									<span>자동차보험회사</span>
+								</dd>
+							</dl>
+						</div>
+						<div class="caution small">
+							<ul>
+								<li>주행거리이력 정보서비스는 자동차보험 가입자 또는 중고차 판매자가 보험회사 또는 중고차쇼핑몰에 직접 제출한 주행거리자료를 제공받아 확인절차 없이 그대로 제공하는 것이며, 개발원과 보험회사, 중고차 쇼핑몰은 주행거리 정보의 정확성을 보장하지 아니하므로 차량을 확인하기 위한 참고 정보로만 활용하시기 바랍니다.(무료시범 서비스)</li>
+								<li>해당 정보의 오류로 손실이 발생한 경우 개발원과 보험회사, 중고차 쇼핑몰은 이에 대한 책임을 지지 아니합니다.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- //step05 주행거리정보 -->
+				<!-- step06 부가 이용정보 -->
+				<div class="pdp_box01" data-ref="toggleBox">
+					<div class="pdp_tit pdp_tog" onclick="toggleBox()">부가 이용정보</div>
+					<div class="pdp_cont">
+						<div class="caution">
+							<ul>
+								<li>본 중고차 사고이력정보는 정보조회일지를 기준으로 작성된 것 입니다.</li>
+								<li>본 정보는 자동차 일반정보로서 조회차량을 확인하기 위하여 참고로 제공하는 것이며, 일부 차량의 경우, 정보의 누락이나 오류가 있을 수 있습니다.</li>
+								<li>침수사고에는 경미한 부분침수도 포함되며, 자료의 누락으로 “이력없음“ 으로 표시되는 경우가 있습니다.</li>
+								<li>본 정보는 중고차 품질 확인을 위한 용도로만 활용해야 하며, 보험개발원과의 혐의없이 정보의 수집 및 가공 등을 통하여 제 3자에게 제공할 수 없습니다.</li>
+								<li>수리비용은 보험사에서 지급되는 보험금 산정을 위하여 책정된 차량 수리관련 창목만의 비용으로 실제 지급받은 보험금과 차이가 있을 수 있습니다.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- //step06 부가 이용정보 -->
+				<!-- step07 정보이용관련 유의사항 -->
+				<div class="pdp_box01" data-ref="toggleBox">
+					<div class="pdp_tit pdp_tog" onclick="toggleBox()">정보이용관련 유의사항</div>
+					<div class="pdp_cont info_caution">
+						<p class="txt">자동차보험사고기록이 없었다고 해서 반드시 무사고라고 할 수는 없습니다.</p>
+						<ul class="list">
+							<li>중고차 사고이력정보 서비스는 자동차 보험을 취급하는 14개 손해보험사의 자동차 보험수리비 지급기록(1995년 이후)에 근거하여 제공하고 있습니다. 따라서 다음과 같은 경우에는 중고차 사고 이력정보 서비스를 제공할 수 없습니다.</li>
+							<li>1. 사고가 있었다 하더라도 보험회사에 사고신고를 하지 않고 자비로 처리한 경우, 사고신고를 하였 더라고 면책, 취소 등의 사유로 보험금이 지급되지 않은 경우, 사고신고 후 자비로 처리한 경우입니다.</li>
+							<li>2. 사고가 있었다 하더라도 종합보험, 즉 자기차량담보나 대물배상담보의 자동차 보험에 가입하지 않아서 자동차 보험으로 수리비용을 청구하지 못한 경우(단, 이 경우라도 타인 자동차보험에서 보상받은 경우에는 사고정보 제공 가능)</li>
+							<li>3. 자동차보험이 아닌 운수공제(택시공제, 화물공제, 버스공제 등)에 가입되어 운수공제로부터 자동차의 피해에 대한 손해를 보상받은 경우 등</li>
+							<li>본 중고차 사고이력 정보는 중고차 품질확인을 위한 보조 정보이며 결정적인 판단 자료로 사용되어서는 아니됩니다. 따라서 정밀한 중고차 품질확인을 원하시면 차량 진단 전문업체의 진단을 받아 보시기 바랍니다.</li>
+						</ul>
+					</div>
+				</div>
+				<!-- //step07 정보이용관련 유의사항 -->
+			</div>
+			<div class="kidi_info"> 
+				<div class="tit">보험개발원</div>
+				<div class="cont">
+					<p class="txt">보험개발원(www.kidi.or.kr)은 보험업법 제 176조에 의하여 설립된 보험요율산출기관이며, 중고차사고이력정보서비스(www.carhistory.or.kr) 는 보험업법시행령 제 86조 제1호 근거하여 제공합니다.</p>
+					<p class="txt2">중고차 거래의 활성화와 중고차 매매시장의 투명성을 높이기 위하여, 보험개발원에서 보유하고 있거나 수집한 1996년 이후의 자동차관련 정보를 기초로 제공되는 온라인 서비스입니다. 본 정보는 중고차품질확인을 위한 보조정보로서 자동차와 관련된 모든 사고의 발생 여부나 품질확인을 위한 결정적인 판단자료로 사용 되어서는 아니됩니다. 따라서 본 정보의 확대해석이나 오남용으로 발생하는 사항에 대해서 보험개발원은 어떤 책임도 부담하지 아니합니다.</p>
+					<p class="date">2022년 04월 20일</p>
+				</div>
+			</div>
+			<!-- //보험이력 컨텐츠 -->
+		</div>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

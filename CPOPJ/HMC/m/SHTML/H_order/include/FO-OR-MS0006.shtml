@@ -1,0 +1,691 @@
+<!-- FO-OR-MS0006 : 명의정보 설정 - FULL -->
+<div class="CPOpop_full" id="FO-OR-MS0006">
+	<div class="p_head">
+		<h2 class="tit">명의정보</h2> <!-- 2022.08.25 tag 수정 -->
+	</div>
+	<div class="p_wrap">
+
+		<div class="layer_onwer_info layer_bg">
+			<!-- /// -->
+			<section class="onwer_section">
+				<div class="onwer_title">대표 명의자</div>		
+				<section>
+					<div class="sec_tit">
+						기본정보
+						<!-- 2022-11-22 CPO-6106 선택 라디오 삭제 -->
+					</div>
+					<ul class="form_list01">
+						<li>
+							<div class="slt_box">
+								<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+								<button type="button" class="sel_value jQ_Select" id="selectBase01" data-id="selectBase01_01" data-popup="selectBase01-Layer01">개인</button>
+								<!-- Layer -->
+								<div class="CPOpop_bottom select" id="selectBase01-Layer01">
+									<div class="p_head">
+										<p class="tit">명의종류 선택</p>
+									</div>
+									<div class="p_wrap">
+										<!-- list -->
+										<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+											<li><input type="radio" class="chk_select" name="selectBase01_Name" id="selectBase01_01"><label for="selectBase01_01">개인</label></li>
+											<li><input type="radio" class="chk_select" name="selectBase01_Name" id="selectBase01_02"><label for="selectBase01_02">개인사업자</label></li>
+										</ol>
+										<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectVer 변경 내용 적용  -->
+											<button type="button" class="btn_big01 jQ_Select_Save" data-id="selectBase01">선택하기</button>
+										</div>
+										<!-- //list -->
+									</div>
+									<button type="button" class="pop_close">닫기</button>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="inbox_type01 on">
+								<span class="tit">이름</span>
+								<input type="text" class="txt" title="이름 입력" value="김현대" disabled="" readonly="">
+								<button type="button" class="btn_delete">삭제</button>
+							</div>
+						</li>
+						<li>
+							<div class="inbox_type01 identity">
+								<span class="tit">주민등록번호</span>
+								<input type="tel" class="txt type_id01 type_number" maxlength="6" title="주민등록번호 앞자리 입력" placeholder="앞자리">
+								<input type="tel" class="txt type_id02 type_number" maxlength="7" title="주민등록번호 뒷자리 입력" placeholder="뒷자리">
+								<!-- <span class="validation error">입력하신 주민등록번호로 명의자를 확인할 수 없습니다.</span> -->
+							</div>
+						</li>
+						<li>
+							<div class="inbox_type01">
+								<span class="tit">휴대폰번호</span>
+								<input type="tel" class="txt type_number" title="휴대폰번호 입력" placeholder="'-' 없이 숫자만 입력" name="" value="">
+								<button type="button" class="btn_delete">삭제</button>
+								<!-- <span class="validation error">입력하신 휴대전화번호 형식이 유효하지 않습니다.</span> -->         
+								<!-- 에러문구는 CLASS error / 완료는 ok-->
+							</div>
+						</li>
+
+						<!-- 2022-11-22 CPO-6106 -->
+						<!-- 법인 -->
+						<li>
+							<div class="inbox_type01 on">
+								<span class="tit">법인명</span>
+								<input type="text" class="txt" title="법인명 입력" value="현대상사" disabled="" readonly="">
+								<button type="button" class="btn_delete">삭제</button>
+							</div>
+						</li>
+						<li>
+							<div class="inbox_type01 on">
+								<span class="tit">법인등록번호</span>
+								<input type="tel" class="txt type_corporate" title="법인등록번호 입력" placeholder="'-' 없이 13자리 입력" name="" value="123456-12134567" maxlength="13" disabled="" readonly="">
+								<button type="button" class="btn_delete">삭제</button>
+							</div>
+						</li>
+						<li>
+							<div class="inbox_type01 on">
+								<span class="tit">사업자등록번호</span>
+								<input type="tel" class="txt type_business" title="사업자등록번호 입력" placeholder="'-' 없이 10자리 입력" name="" value="123-45-67890" maxlength="10" disabled="" readonly="">
+								<button type="button" class="btn_delete">삭제</button>
+							</div>
+						</li>
+						<li>
+							<div class="inbox_type01">
+								<span class="tit">담당자 휴대폰번호</span>
+								<input type="tel" class="txt type_number" title="담당자 휴대폰번호 입력" placeholder="'-' 없이 숫자만 입력" name="" value="">
+								<button type="button" class="btn_delete">삭제</button>
+								<!-- <span class="validation error">입력하신 휴대전화번호 형식이 유효하지 않습니다.</span> -->         
+								<!-- 에러문구는 CLASS error / 완료는 ok-->
+							</div>
+						</li>
+						<!-- //법인 -->
+
+						<li>
+							<div class="inbox_type01 email">
+								<span class="tit">이메일</span>
+								<input type="email" class="txt type_email" title="이메일 입력" placeholder="" name="" value="">
+								<button type="button" class="btn_delete">삭제</button>
+								<div class="slt_box">
+									<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+									<button type="button" class="sel_value jQ_Select" id="SelectEMAIL03" data-id="SelectEMAIL0301" data-popup="SelectEMAIL03Layer">직접입력</button>
+		
+									<!-- Layer -->
+									<div class="CPOpop_bottom select" id="SelectEMAIL03Layer">
+										<div class="p_head">
+											<p class="tit">이메일 주소 선택</p>
+										</div>
+										<div class="p_wrap">
+											<!-- list -->
+											<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+												<li><input type="radio" class="chk_select" name="SelectEMAIL03_Name" id="SelectEMAIL0301"><label for="SelectEMAIL0301">직접입력</label></li>
+												<li><input type="radio" class="chk_select" name="SelectEMAIL03_Name" id="SelectEMAIL0302"><label for="SelectEMAIL0302">@hyundai.com</label></li>
+												<li><input type="radio" class="chk_select" name="SelectEMAIL03_Name" id="SelectEMAIL0303"><label for="SelectEMAIL0303">@naver.com</label></li>
+												<li><input type="radio" class="chk_select" name="SelectEMAIL03_Name" id="SelectEMAIL0304"><label for="SelectEMAIL0304">@daum.net</label></li>
+												<li><input type="radio" class="chk_select" name="SelectEMAIL03_Name" id="SelectEMAIL0305"><label for="SelectEMAIL0305">@hanmail.net</label></li>
+												<li><input type="radio" class="chk_select" name="SelectEMAIL03_Name" id="SelectEMAIL0306"><label for="SelectEMAIL0306">@nate.com</label></li>
+												<li><input type="radio" class="chk_select" name="SelectEMAIL03_Name" id="SelectEMAIL0307"><label for="SelectEMAIL0307">@gmail.com</label></li>
+											</ol>
+											<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectEMAIL03 변경 내용 적용  -->
+												<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectEMAIL03">선택하기</button>
+											</div>
+											<!-- //list -->
+										</div>
+										<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="inbox_type01 address">
+								<span class="tit">주소</span>
+								<div class="add">
+									(06179)  서울특별시 강남구 테헤란로 510(대치동)
+								</div>
+								<button type="button" class="btn_icon_mid01">주소검색</button>
+							</div>
+						</li>
+						<li>
+							<div class="inbox_type01">
+								<span class="tit">상세주소</span>
+								<input type="text" class="txt" title="상세주소 입력" placeholder="상세주소 입력" name="" value="">
+								<button type="button" class="btn_delete">삭제</button>
+							</div>
+						</li>
+					</ul>
+					<div class="caution bg">
+						<ul>
+							<li>대표명의자 본인의 주민등록번호를 입력하여 본인확인을 진행해 주세요.</li>
+							<li>개명 등으로 표시된 정보와 다른 경우 회원정보에서 먼저 정보를 변경한 후 계약을 진행해 주시기 바랍니다.</li>
+							<li>외국인은 외국인등록번호 13자리를 입력해 주세요.</li>
+							<li>주소는 반드시 주민등록상 주소로 입력해 주시기 바랍니다.</li>
+						</ul>
+					</div>
+					<!-- 법인 사업자 -->
+					<p class="caution bg">사업장 주소는 반드시 법인등록상의 주소로 입력해 주시기 바랍니다.</p>
+				</section>
+		
+				<!-- 2022-11-22 CPO-6106 -->
+				<section class="benefit_select_section">
+					<div class="sec_tit">이전등록비용 감면 대상 여부</div><!-- 2022-10-07 [CPO-4630] 문구변경 -->
+					<div class="slt_box line">
+						<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+						<button type="button" class="sel_value jQ_Select" id="RadioChkBenefit" data-id="RadioChkBenefit_01" data-popup="RadioChkBenefit-Layer01">해당없음</button>
+						<!-- Layer -->
+						<div class="CPOpop_bottom select" id="RadioChkBenefit-Layer01">
+							<div class="p_head">
+								<p class="tit">이전등록비용 감면 대상 선택</p>
+							</div>
+							<div class="p_wrap">
+								<!-- list -->
+								<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+									<li><input type="radio" class="chk_select" name="RadioChkBenefit_Name" id="RadioChkBenefit_01" /><label for="RadioChkBenefit_01">해당없음</label></li>
+									<li><input type="radio" class="chk_select" name="RadioChkBenefit_Name" id="RadioChkBenefit_02" /><label for="RadioChkBenefit_02">장애정도 중증 (1~3급)</label></li>
+									<li><input type="radio" class="chk_select" name="RadioChkBenefit_Name" id="RadioChkBenefit_03" /><label for="RadioChkBenefit_03">장애정도 경증 (4~6급)</label></li>
+									<li><input type="radio" class="chk_select" name="RadioChkBenefit_Name" id="RadioChkBenefit_04" /><label for="RadioChkBenefit_04">시각장애 4급</label></li>
+									<li><input type="radio" class="chk_select" name="RadioChkBenefit_Name" id="RadioChkBenefit_05" /><label for="RadioChkBenefit_05">국가유공자</label></li>
+									<li><input type="radio" class="chk_select" name="RadioChkBenefit_Name" id="RadioChkBenefit_06" /><label for="RadioChkBenefit_06">고엽제 후유증</label></li>
+									<li><input type="radio" class="chk_select" name="RadioChkBenefit_Name" id="RadioChkBenefit_07" /><label for="RadioChkBenefit_07">광주민주화운동 유공자</label></li>
+								</ol>
+								<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectVer 변경 내용 적용  -->
+									<button type="button" class="btn_big01 jQ_Select_Save" data-id="RadioChkBenefit">선택하기</button>
+								</div>
+								<!-- //list -->
+							</div>
+							<button type="button" class="pop_close">닫기</button>
+						</div>
+					</div>
+
+					<ul class="benefit_select_etc">
+						<li><input type="checkbox" class="chk_type01" id="ChkBenefit_04" checked /><label for="ChkBenefit_04">다자녀 (19세 미만 3인 이상)</label></li>
+						<li class="row"><button type="button" class="btn_combi01_01 jQ_POP_open" data-popup="FO-OR-MS0033">이전등록비용 감면신청 필요서류 안내</button></li><!-- 2022-10-07 [CPO-4630] 문구변경 -->
+					</ul>
+				</section>
+				<!-- //2022-11-22 CPO-6106 -->
+		
+				<section>
+					<div class="sec_tit">사업자정보</div>
+					<ul class="form_list01">
+						<li>
+							<div class="inbox_type01 on">
+								<span class="tit">사업자명</span>
+								<input type="text" class="txt" title="사업자명 입력" value="현대해상 " disabled="" readonly="">
+								<button type="button" class="btn_delete">삭제</button>
+							</div>
+						</li>
+						<li>
+							<div class="inbox_type01">
+								<span class="tit">사업자등록번호</span>
+								<input type="tel" class="txt type_business" title="사업자등록번호 입력" placeholder="'-' 없이 10자리 입력" name="" value="" maxlength="10">
+								<button type="button" class="btn_delete">삭제</button>
+							</div>
+						</li>
+						<li>
+							<div class="inbox_type01 address">
+								<span class="tit">사업장 주소</span>
+								<div class="add">
+									(06179)  서울특별시 강남구 테헤란로 510(대치동)
+								</div>
+								<button type="button" class="btn_icon_mid01">주소검색</button>
+							</div>
+						</li>
+						<li>
+							<div class="inbox_type01">
+								<span class="tit">상세주소</span>
+								<input type="text" class="txt" title="상세주소 입력" placeholder="상세주소 입력" name="" value="">
+								<button type="button" class="btn_delete">삭제</button>
+							</div>
+						</li>
+					</ul>
+				</section>
+
+				<!-- 2022-10-20 CPO-4721 지분율 삭제 -->
+			</section>
+
+
+			<section class="onwer_section">
+				<div class="onwer_title">
+					공동명의자 1
+					<button type="button" class="btn_icon_mid01">삭제하기</button>
+				</div>
+		
+				<section>
+					<div class="sec_tit">
+						기본정보
+						<!-- 2022-11-22 CPO-6106 선택 라디오 삭제 -->
+					</div>
+					<ul class="form_list01">
+						<li>
+							<div class="slt_box">
+								<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+								<button type="button" class="sel_value jQ_Select" id="selectBase02" data-id="selectBase02_01" data-popup="selectBase02-Layer01">개인</button>
+								<!-- Layer -->
+								<div class="CPOpop_bottom select" id="selectBase02-Layer01">
+									<div class="p_head">
+										<p class="tit">명의종류 선택</p>
+									</div>
+									<div class="p_wrap">
+										<!-- list -->
+										<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+											<li><input type="radio" class="chk_select" name="selectBase02_Name" id="selectBase02_01"><label for="selectBase02_01">개인</label></li>
+											<li><input type="radio" class="chk_select" name="selectBase02_Name" id="selectBase02_02"><label for="selectBase02_02">개인사업자</label></li>
+										</ol>
+										<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectVer 변경 내용 적용  -->
+											<button type="button" class="btn_big01 jQ_Select_Save" data-id="selectBase02">선택하기</button>
+										</div>
+										<!-- //list -->
+									</div>
+									<button type="button" class="pop_close">닫기</button>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="inbox_type01">
+								<span class="tit">이름</span>
+								<input type="text" class="txt" title="이름 입력">
+								<button type="button" class="btn_delete">삭제</button>
+							</div>
+						</li>
+						<li>
+							<div class="inbox_type01 identity">
+								<span class="tit">주민등록번호</span>
+								<input type="tel" class="txt type_id01 type_number" maxlength="6" title="주민등록번호 앞자리 입력" placeholder="앞자리">
+								<input type="tel" class="txt type_id02 type_number" maxlength="7" title="주민등록번호 뒷자리 입력" placeholder="뒷자리">
+								<!-- <span class="validation error">입력하신 주민등록번호로 명의자를 확인할 수 없습니다.</span> -->
+							</div>
+						</li>
+						<li>
+							<div class="inbox_type01">
+								<span class="tit">휴대폰번호</span>
+								<input type="tel" class="txt type_number" title="휴대폰번호 입력" placeholder="'-' 없이 숫자만 입력" name="" value="">
+								<button type="button" class="btn_delete">삭제</button>
+								<!-- <span class="validation error">입력하신 휴대전화번호 형식이 유효하지 않습니다.</span> -->         
+								<!-- 에러문구는 CLASS error / 완료는 ok-->
+							</div>
+						</li>
+						<li>
+							<div class="inbox_type01 email">
+								<span class="tit">이메일</span>
+								<input type="email" class="txt type_email" title="이메일 입력" placeholder="" name="" value="">
+								<button type="button" class="btn_delete">삭제</button>
+								<div class="slt_box">
+									<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+									<button type="button" class="sel_value jQ_Select" id="SelectEMAIL01" data-id="SelectEMAIL0101" data-popup="SelectEMAIL01-Layer">직접입력</button>
+		
+									<!-- Layer -->
+									<div class="CPOpop_bottom select" id="SelectEMAIL01-Layer">
+										<div class="p_head">
+											<p class="tit">이메일 주소 선택</p>
+										</div>
+										<div class="p_wrap">
+											<!-- list -->
+											<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+												<li><input type="radio" class="chk_select" name="SelectEMAIL01_Name" id="SelectEMAIL0101"><label for="SelectEMAIL0101">직접입력</label></li>
+												<li><input type="radio" class="chk_select" name="SelectEMAIL01_Name" id="SelectEMAIL0102"><label for="SelectEMAIL0102">@hyundai.com</label></li>
+												<li><input type="radio" class="chk_select" name="SelectEMAIL01_Name" id="SelectEMAIL0103"><label for="SelectEMAIL0103">@naver.com</label></li>
+												<li><input type="radio" class="chk_select" name="SelectEMAIL01_Name" id="SelectEMAIL0104"><label for="SelectEMAIL0104">@daum.net</label></li>
+												<li><input type="radio" class="chk_select" name="SelectEMAIL01_Name" id="SelectEMAIL0105"><label for="SelectEMAIL0105">@hanmail.net</label></li>
+												<li><input type="radio" class="chk_select" name="SelectEMAIL01_Name" id="SelectEMAIL0106"><label for="SelectEMAIL0106">@nate.com</label></li>
+												<li><input type="radio" class="chk_select" name="SelectEMAIL01_Name" id="SelectEMAIL0107"><label for="SelectEMAIL0107">@gmail.com</label></li>
+											</ol>
+											<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectEMAIL01 변경 내용 적용  -->
+												<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectEMAIL01">선택하기</button>
+											</div>
+											<!-- //list -->
+										</div>
+										<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- 2022-09-02 [CPO-3239] 추가 -->
+						<li>
+							<div class="slt_box">
+								<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+								<button type="button" class="sel_value jQ_Select" id="selectBase03" data-id="selectBase03_01" data-popup="selectBase03-Layer01">대표명의자와의 관계</button>
+								<!-- Layer -->
+								<div class="CPOpop_bottom select" id="selectBase03-Layer01">
+									<div class="p_head">
+										<p class="tit">대표명의자와의 관계</p>
+									</div>
+									<div class="p_wrap">
+										<!-- list -->
+										<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+											<li><input type="radio" class="chk_select" name="selectBase03_Name" id="selectBase03_01"><label for="selectBase03_01">배우자</label></li>
+											<li><input type="radio" class="chk_select" name="selectBase03_Name" id="selectBase03_02"><label for="selectBase03_02">부모</label></li>
+											<li><input type="radio" class="chk_select" name="selectBase03_Name" id="selectBase03_03"><label for="selectBase03_03">배우자 부모</label></li>
+											<li><input type="radio" class="chk_select" name="selectBase03_Name" id="selectBase03_04"><label for="selectBase03_04">형제자매</label></li>
+											<li><input type="radio" class="chk_select" name="selectBase03_Name" id="selectBase03_05"><label for="selectBase03_05">자녀</label></li>
+											<li><input type="radio" class="chk_select" name="selectBase03_Name" id="selectBase03_06"><label for="selectBase03_06">조부모/외조부모</label></li>
+											<li><input type="radio" class="chk_select" name="selectBase03_Name" id="selectBase03_07"><label for="selectBase03_07">손자손녀</label></li>
+											<li><input type="radio" class="chk_select" name="selectBase03_Name" id="selectBase03_08"><label for="selectBase03_08">며느리/사위</label></li>
+											<li><input type="radio" class="chk_select" name="selectBase03_Name" id="selectBase03_09"><label for="selectBase03_09">손자며느리/손녀사위</label></li>
+											<li><input type="radio" class="chk_select" name="selectBase03_Name" id="selectBase03_10"><label for="selectBase03_10">직장관계자 그 외 가족</label></li>
+										</ol>
+										<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectVer 변경 내용 적용  -->
+											<button type="button" class="btn_big01 jQ_Select_Save" data-id="selectBase03">선택하기</button>
+										</div>
+										<!-- //list -->
+									</div>
+									<button type="button" class="pop_close">닫기</button>
+								</div>
+							</div>
+						</li>
+						<!-- //2022-09-02 [CPO-3239] 추가 -->
+					</ul>
+
+					<p class="caution bg">외국인은 외국인등록번호 13자리를 입력해 주세요.</p>
+
+					<div class="address_chk">
+						<input type="checkbox" id="addressChk" class="chk_type02 small"><label for="addressChk">대표명의자와 주소 동일</label>
+					</div>
+					<ul class="form_list01">
+						<li>
+							<div class="inbox_type01 address">
+								<span class="tit">주소</span>
+								<div class="add">
+									(06179)  서울특별시 강남구 테헤란로 510(대치동)
+								</div>
+								<button type="button" class="btn_icon_mid01">주소검색</button>
+							</div>
+						</li>
+						<li>
+							<div class="inbox_type01">
+								<span class="tit">상세주소</span>
+								<input type="text" class="txt" title="상세주소 입력" placeholder="상세주소 입력" name="" value="">
+								<button type="button" class="btn_delete">삭제</button>
+							</div>
+						</li>
+					</ul>
+					
+					<p class="caution bg">주소는 반드시 주민등록상 주소로 입력해 주시기 바랍니다.</p>
+				</section>
+		
+				<!-- 2022-10-20 CPO-4721 지분율 삭제 -->
+			</section>
+			
+			
+			<div class="btn_area protrude_el">
+				<button type="button" class="btn_mid05 icon_plus">공동명의자 추가</button>
+			</div>
+			
+			<div class="caution bg">
+				<ul>
+					<li>공동명의자는 최대 3명까지 등록 가능하며 계약자는 명의자 중에 반드시 포함되어야 합니다.</li>
+					<li>취등록세의 면제 또는 감면을 위해 공동명의를 하실 경우, 면제/감면 대상자를 대표명의자로 지정하셔야 합니다.</li>
+					<!-- 2022-10-20 CPO-4721 유의사항 삭제 -->
+				</ul>
+			</div>
+			
+			<!-- 2022-11-22 CPO-6106 -->
+			<section class="onwer_section share">
+				<section>
+					<div class="sec_tit">지분율 설정</div>
+					<ul class="setting">
+						<li>
+							<div class="snippet">
+								<strong class="name">이현대</strong>
+								<span class="position">대표명의자</span>
+							</div>
+							<div class="protrude_el">
+								<div class="inbox_type02 on">
+									<span class="tit">지분율</span>
+									<input type="tel" pattern="\d*" class="txt type_number" title="지분율 입력" name="" value="" maxlength="3">
+									<button class="btn_delete">삭제</button>
+									<em>%</em>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="snippet">
+								<strong class="name">김현대</strong>
+								<span class="position">공동명의자 1</span>
+							</div>
+							<div class="protrude_el">
+								<div class="inbox_type02 on">
+									<span class="tit">지분율</span>
+									<input type="tel" pattern="\d*" class="txt type_number" title="지분율 입력" name="" value="" maxlength="3">
+									<button class="btn_delete">삭제</button>
+									<em>%</em>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="snippet">
+								<strong class="name">박현대</strong>
+								<span class="position">공동명의자 2</span>
+							</div>
+							<div class="protrude_el">
+								<div class="inbox_type02 on">
+									<span class="tit">지분율</span>
+									<input type="tel" pattern="\d*" class="txt type_number" title="지분율 입력" name="" value="" maxlength="3">
+									<button class="btn_delete">삭제</button>
+									<em>%</em>
+								</div>
+							</div>
+						</li>
+					</ul>
+
+					<div class="caution">
+						<ul>
+							<li>지분율은 최소 1이상을 입력해야 하며 최대 100까지 입력 가능합니다.</li>
+							<li>지분율의 합은 100%이어야 합니다.</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="delivery_info_chk">
+					<!-- 2022-11-22 CPO-6106 -->
+					<div class="sec_tit">차량 탁송정보 확인</div><!-- 2022-09-02 [CPO-3239] -->
+		
+					<ul class="form_list01">
+						<li>
+							<div class="slt_box">
+								<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+								<button type="button" class="sel_value jQ_Select" id="selectDelivery" data-id="selectDelivery_01" data-popup="selectDelivery-Layer01">차량 받는 분 선택</button>
+								<!-- Layer -->
+								<div class="CPOpop_bottom select" id="selectDelivery-Layer01">
+									<div class="p_head">
+										<p class="tit">차량 받는 분 선택</p>
+									</div>
+									<div class="p_wrap">
+										<!-- list -->
+										<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+											<li><input type="radio" class="chk_select" name="selectDelivery_Name" id="selectDelivery_01"><label for="selectDelivery_01">대표명의자 김현대</label></li>
+											<li><input type="radio" class="chk_select" name="selectDelivery_Name" id="selectDelivery_02"><label for="selectDelivery_02">공동명의자1 김현대</label></li>
+										</ol>
+										<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectVer 변경 내용 적용  -->
+											<button type="button" class="btn_big01 jQ_Select_Save" data-id="selectDelivery">선택하기</button>
+										</div>
+										<!-- //list -->
+									</div>
+									<button type="button" class="pop_close">닫기</button>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="inbox_type01">
+								<span class="tit">휴대폰번호</span>
+								<input type="tel" class="txt type_number" title="휴대폰번호 입력" placeholder="'-' 없이 숫자만 입력" name="" value="">
+								<button type="button" class="btn_delete">삭제</button>
+								<!-- <span class="validation error">입력하신 휴대전화번호 형식이 유효하지 않습니다.</span> -->         
+								<!-- 에러문구는 CLASS error / 완료는 ok-->
+							</div>
+						</li>
+						<li>
+							<div class="inbox_type01 address on">
+								<span class="tit">주소</span>
+								<div class="add">
+									(06179)  서울특별시 강남구 테헤란로 510(대치동)
+								</div>
+								<button type="button" class="btn_icon_mid01">주소검색</button>
+							</div>
+						</li>
+						<li>
+							<div class="inbox_type01">
+								<span class="tit">상세주소</span>
+								<input type="text" class="txt" title="상세주소 입력" placeholder="상세주소 입력" name="" value="">
+								<button type="button" class="btn_delete">삭제</button>
+							</div>
+						</li>
+					</ul>
+		
+					<div class="caution bg">
+						<ul>
+							<li>명의정보 입력 완료 후 선택 하실 수 있습니다.</li>
+							<li>차량을 탁송받으실 주소입니다. 본 주소를 수정하더라도 명의정보의 주소에 영향을 주지 않습니다.</li>
+						</ul>
+					</div>
+				</section>
+		
+				<section class="receipt_section">
+					<div class="sec_tit">영수증 발행</div>
+					<ul class="form_type03">
+						<li>
+							<input type="radio" class="chk_radio" name="RadioChkRecipt" id="RadioChkRecipt_01" checked onclick="radioChkRecipt()" />
+							<label for="RadioChkRecipt_01">발행 안 함</label>
+						</li>
+						<li>
+							<input type="radio" class="chk_radio" name="RadioChkRecipt" id="RadioChkRecipt_02" onclick="radioChkRecipt()" />
+							<label for="RadioChkRecipt_02">현금영수증</label>
+						</li>
+						<li>
+							<input type="radio" class="chk_radio" name="RadioChkRecipt" id="RadioChkRecipt_03" onclick="radioChkRecipt()" />
+							<label for="RadioChkRecipt_03">세금계산서</label>
+						</li>
+					</ul>
+
+					<div class="tax_invoice" data-ref="RadioChkRecipt">
+						<!-- 현금영수증  -->
+						<ul class="form_list01" data-ref="RadioChkRecipt_02">
+							<li>
+								<div class="slt_box">
+									<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+									<button type="button" class="sel_value jQ_Select" id="taxChkSelect02" data-id="taxChkSelect02_01" data-popup="taxChkSelect02-Layer01">영수증 받는 분 선택</button>
+									<!-- Layer -->
+									<div class="CPOpop_bottom select" id="taxChkSelect02-Layer01">
+										<div class="p_head">
+											<p class="tit">영수증 받는 분 선택</p>
+										</div>
+										<div class="p_wrap">
+											<!-- list -->
+											<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+												<li><input type="radio" class="chk_select" name="taxChkSelect02_Name" id="taxChkSelect02_01"><label for="taxChkSelect02_01">대표명의자 김현대</label></li>
+												<li><input type="radio" class="chk_select" name="taxChkSelect02_Name" id="taxChkSelect02_02"><label for="taxChkSelect02_02">공동명의자1 김현대</label></li>
+											</ol>
+											<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectVer 변경 내용 적용  -->
+												<button type="button" class="btn_big01 jQ_Select_Save" data-id="taxChkSelect02">선택하기</button>
+											</div>
+											<!-- //list -->
+										</div>
+										<button type="button" class="pop_close">닫기</button>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<!-- //현금영수증  -->
+
+						<!-- 세금계산서  -->
+						<ul class="form_list01" data-ref="RadioChkRecipt_03">
+							<li>
+								<div class="slt_box">
+									<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+									<button type="button" class="sel_value jQ_Select" id="taxChkSelect" data-id="taxChkSelect_01" data-popup="taxChkSelect-Layer01">영수증 받는 분 선택</button>
+									<!-- Layer -->
+									<div class="CPOpop_bottom select" id="taxChkSelect-Layer01">
+										<div class="p_head">
+											<p class="tit">영수증 받는 분 선택</p>
+										</div>
+										<div class="p_wrap">
+											<!-- list -->
+											<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+												<li><input type="radio" class="chk_select" name="taxChkSelect_Name" id="taxChkSelect_01"><label for="taxChkSelect_01">대표명의자 김현대</label></li>
+												<li><input type="radio" class="chk_select" name="taxChkSelect_Name" id="taxChkSelect_02"><label for="taxChkSelect_02">공동명의자1 김현대</label></li>
+											</ol>
+											<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectVer 변경 내용 적용  -->
+												<button type="button" class="btn_big01 jQ_Select_Save" data-id="taxChkSelect">선택하기</button>
+											</div>
+											<!-- //list -->
+										</div>
+										<button type="button" class="pop_close">닫기</button>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="inbox_type01">
+									<span class="tit">세금계산서 담당 전화번호</span>
+									<input type="tel" class="txt type_number" title="세금계산서 담당 전화번호 입력" placeholder="'-' 없이 숫자만 입력" name="" value="">
+									<button type="button" class="btn_delete">삭제</button>
+								</div>
+							</li>
+							<li>
+								<div class="inbox_type01 email">
+									<span class="tit">세금계산서 담당 이메일</span>
+									<input type="email" class="txt type_email" title="세금계산서 담당 이메일 입력" placeholder="" name="" value="">
+									<button type="button" class="btn_delete">삭제</button>
+									<div class="slt_box">
+										<!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+										<button type="button" class="sel_value jQ_Select" id="SelectEMAIL02" data-id="SelectEMAIL0201" data-popup="SelectEMAIL02-Layer">직접입력</button> <!-- 2022.08.25 클래스명 변경 -->
+										<!-- Layer -->
+										<div class="CPOpop_bottom select" id="SelectEMAIL02-Layer">
+											<div class="p_head">
+												<p class="tit">이메일 주소 선택</p>
+											</div>
+											<div class="p_wrap">
+												<!-- list -->
+												<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+													<li><input type="radio" class="chk_select" name="SelectEMAIL02_Name" id="SelectEMAIL0201"><label for="SelectEMAIL0201">직접입력</label></li>
+													<li><input type="radio" class="chk_select" name="SelectEMAIL02_Name" id="SelectEMAIL0202"><label for="SelectEMAIL0202">@hyundai.com</label></li>
+													<li><input type="radio" class="chk_select" name="SelectEMAIL02_Name" id="SelectEMAIL0203"><label for="SelectEMAIL0203">@naver.com</label></li>
+													<li><input type="radio" class="chk_select" name="SelectEMAIL02_Name" id="SelectEMAIL0204"><label for="SelectEMAIL0204">@daum.net</label></li>
+													<li><input type="radio" class="chk_select" name="SelectEMAIL02_Name" id="SelectEMAIL0205"><label for="SelectEMAIL0205">@hanmail.net</label></li>
+													<li><input type="radio" class="chk_select" name="SelectEMAIL02_Name" id="SelectEMAIL0206"><label for="SelectEMAIL0206">@nate.com</label></li>
+													<li><input type="radio" class="chk_select" name="SelectEMAIL02_Name" id="SelectEMAIL0207"><label for="SelectEMAIL0207">@gmail.com</label></li>
+												</ol>
+												<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectEMAIL02 변경 내용 적용  -->
+													<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectEMAIL02">선택하기</button>
+												</div>
+												<!-- //list -->
+											</div>
+											<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<!-- //세금계산서  -->
+					</div>
+
+					<script>
+						function radioChkRecipt() {
+							var chkRadio = event.target;
+							var inputWrap = document.querySelector("[data-ref='RadioChkRecipt']");
+							var targetId = chkRadio.getAttribute("id");
+							if(targetId != "RadioChkRecipt_01") {
+								for(var child of inputWrap.children) {
+									child.classList.remove("isShow");
+								}
+								inputWrap.style.display = "block";
+								inputWrap.querySelector("[data-ref="+targetId+"]").classList.add("isShow");
+							} else {
+								inputWrap.style.display = null;
+							}
+						}
+					</script>
+					
+					<div class="caution">
+						<ul>
+							<li>명의정보 입력 완료 후 선택 하실 수 있습니다.</li>
+						</ul>
+					</div>
+				</section>
+	
+			</section>
+			<!-- /// -->
+		
+		</div>
+
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01" disabled>명의정보 등록완료</button>
+		</div>
+		
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

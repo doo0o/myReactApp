@@ -1,0 +1,606 @@
+@charset "UTF-8";
+/*************************************************************************************
+*                                       폰트                                          *
+**************************************************************************************/
+/**
+	색 또는 크기 가변 ICON
+*/
+/**
+	replace 함수
+*/
+/**
+	Icon Info 01
+*/
+/* Box Bg */
+/* Position */
+.sell_list {
+  /* S ::시세확인/정보입력 */
+  /* E ::시세확인/정보입력 */
+  /* S ::견적/계약 */
+  /* E ::견적/계약 */
+}
+.sell_list .tab:not(.date) > .list {
+  margin-top: 24px;
+}
+.sell_list .no_data {
+  margin-top: 40px;
+}
+.sell_list .product_list {
+  margin-top: 40px;
+}
+.sell_list .product_list .unit_type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 0;
+  border-bottom: 1px solid #EDEDED;
+}
+.sell_list .product_list .unit_type:first-child {
+  padding-top: 0;
+}
+.sell_list .product_list .mid_area {
+  flex: 500px 0;
+  width: 500px;
+}
+.sell_list .product_list .box_stat {
+  flex-shrink: 0;
+  width: 256px;
+  text-align: center;
+}
+.sell_list .product_list .box_stat .list_step {
+  margin-bottom: 16px;
+}
+.sell_list .product_list .box_stat .info_txt {
+  color: #767676;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.sell_list .product_list .box_stat .date_txt {
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.sell_list .product_list + .btn_area {
+  margin-top: 32px;
+}
+.sell_list .quote .caution {
+  margin-top: 16px;
+}
+.sell_list .contract .top_area {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 0 32px;
+  border-bottom: 1px solid #EDEDED;
+}
+.sell_list .contract .top_area .toggle_btn01 {
+  flex-shrink: 0;
+  width: 108px;
+}
+.sell_list .contract .top_area .date_result {
+  display: none;
+  margin-left: 32px;
+  width: calc(100% - 140px);
+}
+.sell_list .contract .top_area .date_result.on {
+  display: flex;
+}
+.sell_list .contract .total_result + .unit_type {
+  padding-top: 16px;
+}
+
+/* S:: 중고차 판매계약 */
+.car_trade .cont_box {
+  margin-top: 24px;
+  padding: 40px;
+  border: 1px solid #EDEDED;
+}
+.car_trade .cont_box + .btn_area {
+  margin-top: 32px;
+}
+.car_trade section:not(:first-child) {
+  margin-top: 40px;
+  padding-top: 40px;
+  border-top: 1px solid #EDEDED;
+}
+.car_trade section .sec_tit.m {
+  margin-bottom: 20px;
+}
+.car_trade section .sec_tit.m .name {
+  position: relative;
+  padding-left: 17px;
+  margin-right: auto;
+  color: #767676;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.car_trade section .sec_tit.m .name::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  margin-top: -7px;
+  width: 1px;
+  height: 14px;
+  background: #DDDDDD;
+}
+.car_trade section .sec_tit.m .sub_txt {
+  color: #00AAD2;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+.car_trade section .sec_tit.m + .s {
+  margin-top: 0;
+}
+.car_trade section .sec_tit.s {
+  margin: 40px 0 12px;
+}
+.car_trade section .sec_tit + .item {
+  margin-top: 0;
+}
+.car_trade section.bank_box .list_type01 {
+  display: flex;
+  align-items: center;
+}
+.car_trade section.bank_box .list_type01 .bank {
+  display: flex;
+  align-items: center;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 23px;
+}
+.car_trade section.bank_box .list_type01 .bank em {
+  margin-left: 4px;
+}
+.car_trade section.bank_box .list_type01 .bank .logo {
+  margin-right: 12px;
+  width: 30px;
+  height: 30px;
+}
+.car_trade section.bank_box .list_type01 .bank_name {
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 23px;
+  position: relative;
+  padding-left: 25px;
+}
+.car_trade section.bank_box .list_type01 .bank_name::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 12px;
+  background-color: #DDDDDD;
+}
+.car_trade section.bank_box .list_type01 .btn_xsmall {
+  margin-left: auto;
+}
+.car_trade section .bg_box {
+  padding: 20px;
+  background: #F7F7F7;
+}
+.car_trade section .form_list.type01 .bg_box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.car_trade section .terms {
+  margin-top: 40px;
+}
+.car_trade section .end_terms {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid #EDEDED;
+}
+.car_trade section .end_terms .sub_txt {
+  margin-top: 4px;
+  padding-left: 32px;
+  color: #767676;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.car_trade section .caution {
+  margin-top: 16px;
+}
+.car_trade section .caution + .form_list {
+  margin-top: 16px;
+}
+.car_trade section .setting li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.car_trade section .setting li .snippet {
+  flex: 1 1;
+  width: 50%;
+}
+.car_trade section .setting li .snippet .position {
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.car_trade section .setting li .snippet .name {
+  margin-left: 4px;
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.car_trade section .setting li .form_area {
+  flex: 1 1;
+}
+
+/* E:: 중고차 판매계약 */
+/* S:: 차량평가결과 */
+.car_result .cont_box {
+  margin-top: 24px;
+  padding: 40px;
+  border: 1px solid #EDEDED;
+}
+.car_result .cont_box .sec_tit.s {
+  margin: 20px 0 12px;
+}
+.car_result .cont_box .caution {
+  margin-top: 16px;
+}
+.car_result .bg_box {
+  padding: 20px;
+  background: #F7F7F7;
+}
+.car_result .top_txt {
+  display: flex;
+  align-items: center;
+}
+.car_result .top_txt span {
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+}
+.car_result .top_txt em {
+  margin: 0 4px;
+  position: relative;
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+}
+.car_result .top_txt em::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #00AAD2;
+}
+.car_result .info_txt {
+  margin-top: 32px;
+  padding: 40px;
+  background: #F6F3F2;
+  text-align: center;
+}
+.car_result .info_txt .text {
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+.car_result .info_txt .text::before {
+  content: "";
+  display: block;
+  margin: 0 auto 12px;
+  width: 60px;
+  height: 60px;
+  background: url("./../img/my/img_car_result.png") no-repeat;
+}
+.car_result .info_txt .date {
+  margin-top: 8px;
+  color: #00AAD2;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+.car_result .info_txt .list {
+  margin-top: 24px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 8px;
+}
+.car_result .info_txt .list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: calc(50% - 4px);
+  height: 64px;
+  background: #fff;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+}
+.car_result .info_txt .list li::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-color: #00AAD2;
+  background-position: center;
+  -webkit-mask: url("./../img/icon/icon_ui_check02.svg") no-repeat 0 0;
+  mask: url("./../img/icon/icon_ui_check02.svg") no-repeat 0 0;
+}
+.car_result .price_list li {
+  display: flex;
+  justify-content: space-between;
+}
+.car_result .price_list li.total .tit {
+  color: #002C5F;
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.car_result .price_list li.total .price em {
+  color: #002C5F;
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+.car_result .price_list li .tit {
+  color: #333333;
+}
+.car_result .price_list li .price {
+  text-align: right;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+}
+.car_result .price_list li .price em {
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  vertical-align: middle;
+}
+.car_result .price_list li + li {
+  margin-top: 12px;
+}
+.car_result .data_list li {
+  display: flex;
+}
+.car_result .data_list li .tit {
+  flex: 176px 0;
+  width: 176px;
+  color: #767676;
+}
+.car_result .data_list li .data {
+  flex: 1 1;
+  color: #333333;
+}
+.car_result .data_list li .data .name {
+  position: relative;
+  padding-right: 17px;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.car_result .data_list li .data .name::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 8px;
+  margin-top: -7px;
+  width: 1px;
+  height: 14px;
+  background: #DDDDDD;
+}
+.car_result .data_list li .data.point {
+  color: #002C5F;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.car_result .data_list li .data.end {
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.car_result .data_list li + li {
+  margin-top: 12px;
+}
+
+/* E:: 차량평가결과 */
+/* S:: 내차팔기 상세 */
+.order_detail .order_info .order_no [class^=flag_] + [class^=flag_] {
+  margin-left: 4px;
+}
+.order_detail .order_info .unit_type {
+  margin-top: 32px;
+}
+.order_detail .product_box .order_step > .txt p .point02 {
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.order_detail .product_box .order_step .bg_box.list_type {
+  width: 560px;
+  text-align: left;
+}
+.order_detail .product_box .order_step .bg_box.list_type .list_tit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.order_detail .product_box .order_step .bg_box.list_type .list_tit .desc {
+  padding-bottom: 16px;
+  margin: 8px 0 16px;
+  width: 100%;
+  color: #767676;
+  border-bottom: 1px solid #EDEDED;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.order_detail .product_box .order_step .bg_box.list_type .list {
+  margin-top: 16px;
+}
+.order_detail .product_box .order_step .bg_box.list_type .list li {
+  display: flex;
+  align-items: flex-start;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.order_detail .product_box .order_step .bg_box.list_type .list li + li {
+  margin-top: 8px;
+}
+.order_detail .product_box .order_step .bg_box.list_type .list li .tit {
+  flex-shrink: 0;
+  margin-right: 20px;
+  width: 156px;
+  color: #767676;
+}
+.order_detail .product_box .order_step .bg_box.list_type .list li .txt {
+  align-self: flex-start;
+  flex: 1 1;
+  color: #333333;
+}
+.order_detail .product_box .order_step .bg_box.list_type .list li .txt em {
+  font-weight: 500;
+}
+.order_detail .product_box .order_step .bg_box.txt_type [class^=txt_btn].icon_dowm {
+  margin-top: 16px;
+}
+.order_detail .product_box .order_step strong.txt_date {
+  display: block;
+  margin-top: 24px;
+  color: #002C5F;
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+.order_detail .info_box .sec_tit.m .info {
+  display: flex;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  align-items: center;
+  color: #333333;
+}
+.order_detail .info_box .sec_tit.m .info .discount {
+  padding: 0 4px;
+  color: #002C5F;
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.order_detail .info_box .sec_tit.m .info .discount em {
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  vertical-align: middle;
+}
+.order_detail .info_box .trade_in {
+  border-top: 1px solid #EDEDED;
+}
+.order_detail .info_box .trade_in .info_txt {
+  margin-top: 20px;
+  color: #333333;
+}
+.order_detail .info_box .trade_in .bg_box {
+  margin-top: 12px;
+}
+.order_detail .info_box .trade_in .bg_box .list_tit {
+  color: #333333;
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #EDEDED;
+}
+.order_detail .info_box .trade_in .bg_box .list_type01 .txt .info {
+  display: flex;
+}
+.order_detail .info_box .trade_in .bg_box .list_type01 .txt .info .price {
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+}
+.order_detail .info_box .trade_in .bg_box .list_type01 .txt .info .price em {
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  vertical-align: middle;
+}
+.order_detail .info_box .trade_in .bg_box .list_type01 .txt .info .sub_txt {
+  position: relative;
+  padding-left: 17px;
+}
+.order_detail .info_box .trade_in .bg_box .list_type01 .txt .info .sub_txt::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 12px;
+  background-color: #DDDDDD;
+}
+.order_detail .info_box .trade_in .bg_box .list_type01 .txt .info .sub_txt .txt_discount {
+  padding: 0 4px;
+  color: #002C5F;
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.order_detail .info_box .trade_in .bg_box .list_type01 .txt .info .sub_txt .txt_discount em {
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  vertical-align: middle;
+}
+.order_detail .bank_box .sec_tit.m:not(:first-child) {
+  margin-top: 40px;
+}
+
+/* E:: 내차팔기 상세 */
+/*# sourceMappingURL=maps/song.css.map */

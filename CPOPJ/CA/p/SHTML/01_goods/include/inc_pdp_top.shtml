@@ -1,0 +1,35 @@
+<div class="pdp_usp_img" data-ref="uspGallery">
+    <!--#include file="/CA/p/SHTML/01_goods/include/pdp_gallery.shtml"-->	
+</div>
+<div class="pdp_sum">
+    <div class="car_info">
+        <div class="car_num">24머 1234</div>
+        <h1 class="page_tit">아반떼(DN789) 5인승 LPG 1.6 Style A/T 런칭</h1>
+        <div class="drive">
+            <span>6년 8월식</span>
+            <span>50,000km</span>
+            <span>서울</span>
+        </div>
+    </div>
+    <div class="bid_info">
+        <div class="state">
+            <p class="tit">중개매매 번호</p>
+            <p class="info">202201547487538</p>
+        </div>
+        <div class="state">
+            <p class="tit">입찰 참여 수</p>
+            <p class="info">152명</p>
+        </div>
+        <div class="timer">입찰 남은 시간 <span>12시간 45분 52초</span></div>
+        <div class="price">
+            <div class="form_area">
+                <div class="inbox_type02 txt_r" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()"><!-- 2023-02-09 inbox_type02 변경 -->
+                    <input type="text" class="txt" title="텍스트" placeholder="" name="" value="">
+                    <em>만원</em>
+                </div>
+            </div>
+            <button type="button" class="btn_big color01">입찰하기</button>
+            <!-- <button type="button" class="btn_big color02">입찰취소</button> -->
+        </div>
+    </div>
+</div>

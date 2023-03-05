@@ -1,0 +1,149 @@
+<!-- 상품목록 type 1 -->
+<div class="plp_template01">
+	<!-- 상품목록 -->
+	<div class="plp_list">
+		<ul class="deal" id="plpViewList">
+			<li>
+				<!-- 2022-09-05 추가 -->
+				<!-- unit no_img -->
+				 <a href="#" class="unit_link">
+					<div class="unit_img no_img">
+						<img src="/HMC/m/img/noimg_hmc_light.png" alt="이미지 없음"><!-- HMC 기본 버전 -->
+						<!-- <img src="/HMC/m/img/noimg_hmc_dark.png" alt="이미지 없음"> --><!-- HMC bg_dark 버전 -->
+						<!-- <img src="/HMC/m/img/noimg_ghq_light.png" alt="이미지 없음">--> <!-- GHQ 기본 버전 -->
+						<!-- <img src="/HMC/m/img/noimg_ghq_dark.png" alt="이미지 없음"> --><!-- GHQ bg_dark 버전 -->
+						<div class="box_flag">
+							<span class="flag_mid02">NEW</span>
+							<span class="flag_mid01 icon_video">영상</span> <!-- 플래그 포함 일때 -->
+						</div>
+					</div>
+					<div class="unit_info">
+						<div class="count_like">245</div>
+						<p class="name">
+							<span class="model">그랜저 IG </span>
+							<span class="desc">가솔린 3.3 캘리그래피</span>
+						</p>
+						<p class="drive">
+							<em>20년 12월(21년형)</em>
+							<em>50,000km</em>
+						</p>
+						<p class="price"><em>3,820</em><i>만원</i></p>
+					</div>
+				</a>
+				<!-- //unit no_img -->
+				<!-- //2022-09-05 추가 -->
+			</li>
+			<li>
+				 <!-- unit -->
+				 <a href="#" class="unit_link">
+					<div class="unit_img">
+						<img src="/HMC/m/img/@thumb/plp_310x310_01.jpg" alt="상품명으로 뿌려주세요">
+						<div class="box_flag">
+							<span class="flag_mid01 icon_video">영상</span>
+						</div>
+					</div>
+					<div class="unit_info">
+						<div class="count_like">245</div>
+						<p class="name">
+							<span class="model">그랜저 IG </span>
+							<span class="desc">가솔린 3.3 캘리그래피</span>
+						</p>
+						<p class="drive">
+							<em>20년 12월(21년형)</em>
+							<em>50,000km</em>
+							
+						</p>
+						<p class="price"><em>3,820</em><i>만원</i></p>
+					</div>
+				</a>
+				<!-- //unit -->
+			</li>
+			<li>
+				 <!-- unit -->
+				 <a href="#" class="unit_link">
+					<div class="unit_img">
+						<img src="/HMC/m/img/@thumb/plp_310x310_01.jpg" alt="상품명으로 뿌려주세요">	
+						<div class="box_flag">
+							<span class="flag_mid02">NEW</span>
+							<span class="flag_mid01 icon_video">영상</span>
+						</div>
+					</div>
+					<div class="unit_info">
+						<div class="count_like">245</div>
+						<p class="name">
+							<span class="model">그랜저 IG </span>
+							<span class="desc">가솔린 3.3 캘리그래피</span>
+						</p>
+						<p class="drive">
+							<em>20년 12월(21년형)</em>
+							<em>50,000km</em>
+							
+						</p>
+						<p class="price"><em>3,820</em><i>만원</i></p>
+					</div>
+				</a>
+				<!-- //unit -->
+			</li>
+			<li>
+				 <!-- unit -->
+				 <a href="#" class="unit_link">
+					<div class="unit_img">
+						<img src="/HMC/m/img/@thumb/plp_310x310_01.jpg" alt="상품명으로 뿌려주세요">
+						<div class="box_flag">
+							<span class="flag_mid02">NEW</span>
+							<span class="flag_mid01 icon_video">영상</span> <!-- 플래그 포함 일때 -->
+						</div>
+					</div>
+					<div class="unit_info">
+						<div class="count_like">245</div>
+						<p class="name">
+							<span class="model">그랜저 IG </span>
+							<span class="desc">가솔린 3.3 캘리그래피</span>
+						</p>
+						<p class="drive">
+							<em>20년 12월(21년형)</em>
+							<em>50,000km</em>
+							
+						</p>
+						<p class="price"><em>3,820</em><i>만원</i></p>
+					</div>
+				</a>
+				<!-- //unit -->
+			</li>
+			<li>
+				 <!-- unit -->
+				 <a href="#" class="unit_link">
+					<div class="unit_img">
+						<img src="/HMC/m/img/@thumb/plp_310x310_01.jpg" alt="상품명으로 뿌려주세요">
+					</div>
+					<div class="unit_info">
+						<div class="count_like">245</div>
+						<p class="name">
+							<span class="model">그랜저 IG </span>
+							<span class="desc">가솔린 3.3 캘리그래피</span>
+						</p>
+						<p class="drive">
+							<em>20년 12월(21년형)</em>
+							<em>50,000km</em>
+							
+						</p>
+						<p class="price"><em>3,820</em><i>만원</i></p>
+					</div>
+				</a>
+				<!-- //unit -->
+			</li>
+			<li>				
+				<a href="#" class="unit_link">
+					<!-- banner :: 2열 보기방식 -->
+					<img src="/HMC/m/img/@thumb/serach_banner_01.jpg" class="banner_type01" alt="기획전 중고차 체크하는 방법부터 안전한 구매까지">
+					<!-- //banner :: 2열 보기방식 -->
+					<!-- banner :: 1열 보기방식 -->
+					<img src="/HMC/m/img/@thumb/serach_banner_03.jpg" class="banner_type02" alt="기획전 중고차 체크하는 방법부터 안전한 구매까지">
+					<!-- // banner :: 1열 보기방식 -->				
+				</a>								
+			</li>
+		</ul>
+	</div>
+	<!-- //상품목록 -->
+</div>
+<!-- //상품목록 type 1 -->

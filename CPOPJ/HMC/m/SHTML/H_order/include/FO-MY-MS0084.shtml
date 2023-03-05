@@ -1,0 +1,19 @@
+<!-- FO-MY-MS0084 : 개인정보 제3자 제공동의 - FULL -->
+<div class="CPOpop_full" id="FO-MY-MS0084">
+	<div class="p_head">
+		<h2 class="tit">개인정보 제3자 제공동의</h2>
+	</div>
+	<div class="p_wrap">
+		
+		<div class="layer_terms">
+			약관내용
+		</div>
+
+		<!-- 04. sticky button -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">동의하기</button>
+		</div>
+		<!--// 04. sticky button -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

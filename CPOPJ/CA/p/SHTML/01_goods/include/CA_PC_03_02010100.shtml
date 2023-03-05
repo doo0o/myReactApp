@@ -1,0 +1,44 @@
+<div class="popup_full" id="CA_PC_03_02010100">
+    <div class="p_body">
+        <div class="p_inner s_mid"><!-- s_small/s_mid/s_large -->
+            <div class="p_head">
+                <h2 class="tit">튜닝이력조회</h2>
+            </div>
+            <div class="p_wrap">
+                <!-- contents -->
+                <div class="inner_view"> 
+                    <div class="data_rule">
+                        <p class="txt">2022.11.01 기준</p>
+                    </div>
+                    <table class="table line">
+                        <colgroup>
+                            <col style="width:106px" />
+                            <col style="width:180px" />
+                            <col />
+                        </colgroup>
+                        <thead>
+                            <tr class="v_center">
+                                <th>튜닝등록일</th>
+                                <th>튜닝사항</th>
+                                <th>튜닝 내역</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="v_center">
+                                <td class="center">2022.05.27</td>
+                                <td class="center">변경등록(튜닝) 구조변경</td>
+                                <td>등화장치 구조 변경 후 내역 :<br>
+                                    전조등 변경(17년형,LED,가변형)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="btn_area">
+                        <button type="button" class="btn_big color01">확인</button>
+                    </div>
+                </div>
+                <!-- //contents -->
+            </div>
+            <button type="button" class="pop_close">닫기</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+<!-- FO-TI-MS0024 : 구입 방식 수정 - FULL -->
+<div class="CPOpop_bottom" id="FO-TI-MS0024">
+	<div class="p_head">
+		<h4 class="tit txt_hidden">구입 방식 수정</h4>
+	</div>
+	<div class="p_wrap sale_modify">
+		<!-- 구입 방식 수정 -->
+		<!--#include file="/HMC/SHTML/H_sale/inc/step3_1_03_how.shtml"-->
+		<!-- //구입 방식 수정 -->
+		<!-- (3). STICKY BUTTON -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">수정하기</button>
+		</div>
+		<!-- //(3). STICKY BUTTON -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

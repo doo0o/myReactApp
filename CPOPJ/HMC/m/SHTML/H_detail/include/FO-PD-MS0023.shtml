@@ -1,0 +1,62 @@
+<div class="CPOpop_bottom" id="FO-PD-MS0023">
+	<div class="p_head">
+		<p class="tit">타이어 제동 검사 보고서</p>
+	</div>
+	<div class="p_wrap">
+		<div class="break_test_result no_btn">
+			
+			<div class="break_test_box">
+				<p class="state state1">정상</p>
+				<p class="tit tit1">일반 제동거리</p>
+				<p class="txt">100km/h에서 60km/h로 감속한 경우</p>
+				<div class="diagram">
+					<div class="car_area">
+						<div class="car" data-ref="breakNum">제동거리 <span>35</span>m</div>
+					</div>
+					<div class="bar">
+						<span class="meter">0m</span>
+						<span class="meter">20m</span>
+						<span class="meter">50m</span>
+						<span class="meter">80m</span>
+					</div>
+					<div class="new">
+						<span>새 타이어</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="break_test_box">
+				<p class="state state2">주의</p>
+				<p class="tit tit2">젖은 노면(빗길) 제동거리</p>
+				<p class="txt">수심 8mm에서 차량속도 120km/h 인 경우</p>
+				<div class="diagram">
+					<div class="car_area">
+						<div class="car" data-ref="breakNum">제동거리 <span>70</span>m</div>
+					</div>
+					<div class="bar">
+						<span class="meter">0m</span>
+						<span class="meter">20m</span>
+						<span class="meter">50m</span>
+						<span class="meter">80m</span>
+					</div>
+				</div>
+			</div>
+
+			<p class="caution">타이어를 교체 없이 오랫동안 사용하게 되면 트레드(Tread-타이어 표면 무늬) 홈 깊이가 낮아지면서 배수 성능이 저하되고, 수막현상이 발생해 제동거리가 늘어나게 됩니다. 비 오는 날에는 특히 전방 시야도 흐려지기 때문에 대형사고의 위험이 있으니 타이어 상태를 꼭 확인해 주세요!</p>
+
+		</div>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>
+
+<script>
+const breakNumMov = () => {
+	const target = document.querySelectorAll('[data-ref="breakNum"]');
+	setTimeout(()=>{
+		target.forEach(_this=>{
+			const number = _this.querySelector('span').innerText;
+			_this.style.width = number+'%';
+		})
+	},500)
+}
+</script>

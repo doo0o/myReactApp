@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!--#include file="inc_bo/inc_top.shtml"-->
+<script type="text/javascript">
+function filterPriceSider(amt01, amt02){// 주행구간 slider 스크립트
+	var amt01ID = $("#" + amt01);
+	var amt02ID = $("#" + amt02);
+	// 주행구간
+	if(maxValue < 1) {
+		maxValue = maxPriceSearch;
+	}
+	// D:주행구간슬라이더
+	$( ".sliderRange" ).slider({
+		range: true,
+		min: Number(minPriceSearch),
+		max: Number(maxPriceSearch),
+		values: [Number(minValue), Number(maxValue)],
+
+		create:function(event, ui){
+			var priceHandle = $('.priceSlider').find('.ui-slider-handle');
+			var comPriceHandle = $('.priceSlider').find('.ui-slider-range');
+			$(priceHandle[0]).append('<span class="minPrice"></span>');// 최소 거리
+			$(priceHandle[1]).append('<span class="maxPrice"></span>');
+			$(comPriceHandle[0]).append('<em class="comPrice"></em>');
+
+			$('.comPrice').text(minPriceSearch + "<i> - </i>" + maxPriceSearch);
+
+			if(minPriceSearch === maxPriceSearch){
+				$('.minPrice, .maxPrice').css('visibility', 'hidden')
+				$('.comPrice').css('visibility', 'visible')
+			}else {
+				$('.minPrice, .maxPrice').css('visibility', 'visible')
+				$('.comPrice').css('visibility', 'hidden')
+			}
+
+		},
+		slide: function(event, ui) {
+			$('.minPrice').text(ui.values[0]);
+			$('.maxPrice').text(ui.values[1]);
+			$('.comPrice').text(ui.values[0] + "-" + ui.values[1]);
+			amt01ID.val(ui.values[0]);
+			amt02ID.val(ui.values[1]);
+
+			var minPriceLeft = $('.minPrice').offset().left;
+			var maxPriceLeft = $('.maxPrice').offset().left;
+			var minPriceWidth = $('.minPrice').outerWidth();
+			if(minPriceLeft - (maxPriceLeft - minPriceWidth) > 0){
+				$('.minPrice, .maxPrice').css('visibility', 'hidden')
+				$('.comPrice').css('visibility', 'visible')
+			}else {
+				$('.minPrice, .maxPrice').css('visibility', 'visible')
+				$('.comPrice').css('visibility', 'hidden')
+			}
+
+		}
+	});
+	amt01ID.val($(".sliderRange").slider("values", 0));
+	amt02ID.val($(".sliderRange").slider("values", 1));
+	$(".minPrice").text($(".sliderRange").slider("values", 0));
+	$(".maxPrice").text($(".sliderRange").slider("values", 1));
+}
+</script>
+</head>
+<body>
+<!-- Ajax 로딩시 이미지 출력 영역 -->
+<div id="content">
+	<!-- 1depth title -->
+	<div class="title">
+		<h1>시세 현황</h1>
+		<span class="toggle_btn">닫기</span>
+	</div>
+	<!-- Search List Area -->
+	<div class="table_insert" id="search_bar">
+		<table summary="시세 현황">
+			<caption>시세 현황</caption>
+			<colgroup>
+				<col style="width:10%;" />
+				<col style="width:20%;" />
+				<col style="width:10%;" />
+				<col style="width:30%;" />
+				<col style="width:20%;" />
+			</colgroup>
+			<tbody>
+				<tr>
+					<th class="t_pointR">*사이트번호</th>
+					<td colspan="3">
+						<select class="w200">
+							<option value="">:: 제조사 ::</option>
+						</select>
+						<select class="w200">
+							<option value="">:: 모델명 ::</option>
+						</select>
+						<select class="w200">
+							<option value="">:: 트림 ::</option>
+						</select>
+					</td>
+					<th class="t_pointR">*차량등록번호</th>
+				</tr>
+				<tr>
+					<th>옵션정보</th>
+					<td colspan="3">
+						<input type="checkbox" name="optionChk" id="optionChk01" /><label for="optionChk01">전체</label>
+						<input type="checkbox" name="optionChk" id="optionChk02" /><label for="optionChk02">드라이버패키지</label>
+						<input type="checkbox" name="optionChk" id="optionChk03" /><label for="optionChk03">와이드 파노라마 썬루프</label>
+					</td>
+					<td rowspan="3">
+						<textarea row="7" cols="50"></textarea>
+					</td>
+				</tr>
+				<tr>
+					<th>연식</th>
+					<td>
+						<select class="w200">
+							<option value="">:: 전체 ::</option>
+						</select>
+					</td>
+					<th rowspan="2">주행거리</th>
+					<td>
+						<input type="checkbox" name="driveChk" id="driveChk01" /><label for="driveChk01">단일 주행거리 선택</label>
+
+	
+	
+					</td>
+				</tr>
+				<tr>
+					<th>색상정보</th>
+					<td>
+						<select class="w200">
+							<option value="">:: 전체 ::</option>
+						</select>
+					</td>
+					<td>
+						<!-- range 와 함께 있는 input class chk_range 추가 -->
+						<input type="checkbox" name="driveChk" id="driveChk02" class="chk_range" /><label for="driveChk02">주행구간 선택</label>
+						<!-- 주행 구간 range 영역 -->
+						<script>
+							var minValue = "0";
+							var maxValue = "0";
+							var minPriceSearch = "10";
+							var maxPriceSearch = "5000";
+							$(function(){
+								filterPriceSider('amount', 'amount2');
+								
+							});
+						</script>
+						<div class="priceSlider">
+							<div class="sliderRange"></div>
+							<p class="amountArea">
+								<span class="r1"><input type="number" id="amount" title="최소 주행구간"></span>
+								<span class="r2"><input type="number" id="amount2" title="최대 주행구간"></span>
+							</p>
+						</div>
+						<!-- //주행 구간 range 영역 -->
+						
+					</td>
+				</tr>
+				</tbody>
+		</table>
+	</div>
+	<!-- Button Search -->
+	<div class="btn_sch">
+		<a href="#" class="btn_gblue" id="btn_init" title="초기화" ><span>초기화</span></a>
+		<a href="#" class="btn_blue"	id=btn_search title="검색"><span>검색</span></a>
+	</div>
+	<!-- // Button Search -->
+	
+		<!--// Search List Area end -->
+		<!-- Area1 -->
+		<div class="tit_bar marT10">
+			<h2>조회결과</h2>
+			<span id="emailTemplateListGrid-totalcount"></span>
+		</div>
+		<!-- Grid Toolbar Area -->
+	
+		<div class="grid_set">
+			<div class="grid_box">
+				<div class="g_areaL">
+					<a href="#" class="btn_black" id="btn_reg_pop"	title="추가"><span>추가 </span></a>
+					
+				</div>
+				<!-- right area -->
+				<div class="g_areaR">
+					<div class="grid_select marL05"></div>
+				</div>
+			</div>
+			<!-- Grid Toolbar Area end-->
+			<div id="emailTemplateListGrid" tuiGrid></div>
+		</div>
+		<!--// Area1 end-->
+	</div>
+	
+</body>
+</html>
+
+<script>
+	//검색영역 숨김 처리
+	$('#content .title').on('click', '.toggle_btn', function() {
+		if(!$(this).hasClass('close')) {
+			$(this).addClass('close').text('열기');
+			$('#content .table_insert').addClass('hidden');
+			$('#content .btn_sch').hide();
+		} else {
+			$(this).removeClass('close').text('닫기');
+			$('#content .table_insert').removeClass('hidden');
+			$('#content .btn_sch').show();
+		}
+	})
+</script>

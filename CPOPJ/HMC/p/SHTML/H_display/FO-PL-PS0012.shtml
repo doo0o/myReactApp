@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Layout PLP Type : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_display.css"> <!-- 해당 CSS -->
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- 코치마크 -->
+<!--#include file="/HMC/p/SHTML/H_display/include/inc_coach.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+    <!-- CPOcontents -->
+	<div id="CPOcontents">
+        <div id="layoutWrap" class="plp">
+            <div class="cont_top">
+                <div class="key_visual"><img src="../../img/@thumb/@plp_key_visual.jpg" gSrc="/GHQ/p/img/@thumb/@plp_key_visual.jpg" alt="page_tit + sub_tit 노출 되야함"><script>MSG.src();</script> <!-- 20230130 수정 -->
+                </div>
+                <!-- //key_visual -->
+                <div class="key_cont">
+                    <h1 class="page_tit"><script>MSG.text('PALISADE', 'GV70');</script></h1>
+                    <h2 class="sub_tit">당신의 모든 세상</h2>
+                    <div class="navi">
+                        <a href="#" class="link_01"><span>시세추이</span></a>
+                        <a href="#" class="link_02"><span>잔존율</span></a>
+                        <a href="#" class="link_03"><span>실거래차트</span></a>
+                    </div>
+                </div>
+                <!-- //key_cont -->
+            </div>
+            <!-- //cont_top -->
+            <!-- container -->
+            <div class="container">
+                <!-- 01상세조건 선택 및 변경 레이어 -->
+                <!--#include file="/HMC/p/SHTML/H_display/include/inc_plp_sort.shtml"-->
+                <!-- 02상품목록 -->
+                <!--#include file="/HMC/p/SHTML/H_display/include/inc_plp_list.shtml"-->
+            </div>
+            <!-- //container -->
+            
+            <!-- 03비교담기-->
+            <!--#include file="/HMC/p/SHTML/H_display/include/inc_compare_box.shtml"-->
+        </div>
+        <!-- 04최근본상품/찜상품 플로팅버튼-->
+        <!--#include file="/HMC/p/SHTML/H_display/include/inc_plp_floating.shtml"-->
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+<script>
+    compareToggle()
+
+    //목록 오감만족 원형 데이터
+    CPODonutChart($('#progress_period'), true, true, 1000);
+    CPODonutChart($('#progress_warranty'), true, true, 1000);
+    CPODonutChart($('#progress_compare'), true, true, 1000);
+    CPODonutChart($('#progress_history'), true, true, 1000);
+    CPODonutChart($('#progress_bluelink'), true, true, 1000);
+
+    //unit_list 오감만족 정보 펼침/닫힘   
+    function experienceSlide() {
+        $('.btn_experience').on('click', function() {
+            if(!$(this).hasClass('on')) {
+                $(this).addClass('on').parent().siblings('.unit_detail').slideDown(300).css('display', 'flex');
+            } else {
+                $(this).removeClass('on').parent().siblings('.unit_detail').slideUp(300);
+            }
+            event.preventDefault();
+        });
+    } 
+    experienceSlide();
+    // coachMark();
+    tooltip()
+</script>
+</body>
+</html>

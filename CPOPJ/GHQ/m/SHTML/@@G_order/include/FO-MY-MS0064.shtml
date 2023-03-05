@@ -1,0 +1,78 @@
+<!-- FO-MY-MS0064 : 차량 회수주소 - FULL -->
+<div class="CPOpop_full" id="FO-MY-MS0064">
+	<div class="p_head">
+		<h4 class="tit">차량 회수주소</h4>
+	</div>
+	<div class="p_wrap">
+		<!-- 차량 회수주소 -->
+		<div class="owner_wrap">
+			<!-- (1) 기본정보-->
+			<div class="inner01">
+				<h5 class="tit">기본정보</h5>
+				<ol class="form_type01">
+					<li class="inbox_type03"><!-- value 값 있는 경우 on -->
+						<span class="tit">이름</span>
+						<input type="text" class="txt" title="이름 입력" name="" value="">
+					</li>
+					<li  class="inbox_type03"><!-- value 값 있는 경우 on -->
+						<span class="tit">휴대폰번호</span>
+						<input type="tel" class="txt type_tel" title="휴대폰번호 입력" placeholder="'-' 없이 숫자만 입력" name="" value=""><!-- 전화번호 : type_tel 입력값 하이픈 추가 기능 -->
+						<span class="validation">입력하신휴대전화번호 형식이￿ 유효하지￿않습니다.</span><!-- 에러문구는 error / 완료는 ok-->
+					</li>
+					<li class="inbox_type05"><!-- 주소 입력 후 calss on 추가 -->
+						<span class="tit">주소</span>
+						<div class="add">
+							(06179) 서울특별시 강남구 테헤란로 510(대치동)
+						</div>
+						<button type="button" class="btn_icon_mid01">주소검색</button>
+					</li>
+					<li class="inbox_type03"><!-- 주소 입력 후 calss on 추가 -->
+						<span class="tit">상세주소</span>
+						<input type="text" class="txt type_add" title="상세주소 입력" placeholder="상세주소 입력" name="" value="">
+					</li>
+				</ol>
+			</div>
+			<!-- (2) 방문 요청사항-->
+			<div class="inner02">
+				<h5 class="tit">방문 요청사항</h5>
+				<ol class="form_type01">
+					<li class="sel_type01">
+						<!-- [수정-SELECT] 2022-03-25 --><!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+						<button type="button" class="btn_sel04 jQ_Select" id="SelectMSG02" data-id="SelectMSG0201" data-popup="Select-MSG02-Layer">직접입력</button>
+						<!-- Layer -->
+						<div class="CPOpop_bottom select" id="Select-MSG02-Layer">
+							<div class="p_head">
+								<h5 class="tit">출발 전 문자 선택</h5>
+							</div>
+							<div class="p_wrap">
+								<!-- list -->
+								<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+									<li><input type="radio" class="chk_type09" name="SelectMSG02_Name" id="SelectMSG0201"><label for="SelectMSG0201">직접입력</label></li>
+									<li><input type="radio" class="chk_type09" name="SelectMSG02_Name" id="SelectMSG0202"><label for="SelectMSG0202">방문 전 연락주세요.</label></li>
+									<li><input type="radio" class="chk_type09" name="SelectMSG02_Name" id="SelectMSG0203"><label for="SelectMSG0203">문 앞</label></li>
+								</ol>
+								<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectMSG02 변경 내용 적용  -->
+									<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectMSG02">적용하기</button>
+								</div>
+								<!-- //list -->
+							</div>
+							<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+						</div>
+						<!-- [수정-SELECT] 2022-03-25 -->
+						<div class="inbox_type06">
+							<input type="text" class="txt" value="" placeholder="출발 전 문자 남겨 주세요.">
+						</div>
+					</li>
+				</ol>
+			</div>
+			<!-- //(2) 방문 요청사항-->
+		</div>
+		<!-- //차량 회수주소 -->
+		<!-- 04. sticky button -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01" disabled>차량 회수주소 등록</button>
+		</div>
+		<!--// 04. sticky button -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

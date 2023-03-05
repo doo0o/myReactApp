@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!--#include file="guide_inc/guide_top.shtml"-->
+</head>
+<style type="text/css">
+	/* 유닛가이드 레이아웃 css*/
+	.component tr td .brush_iframe > img {width:200px;height:auto;} 
+	.component .brush_iframe.list img {width:400px;height:auto;} 
+	.component .mc tr td > img {width:333px;height:auto;} 
+	.component .brush_iframe .display_list ol.unitA > li{width:100%;height: auto;} 
+	.component .brush_iframe.list img{width:335px;} 
+	.component .brush_iframe.list_big{width:700px;} 
+	.component .brush_iframe.list_big > img{width:670px;} 
+	.component .source_view {width:1000px;} 
+
+	/* 상품유닛관련 css */
+	.display_list.pc .list_prod { display: table; width: auto; height: 150px; }
+	.display_list.pc .list_prod [class^="unit"] { display: table-cell; vertical-align: top; text-align: left; }
+	.display_list.pc .list_prod .unit_img a { display: block; width: 95px; height: 95px; }
+	.display_list.pc .list_prod .unit_info_big { width: 450px; }
+	
+	.red{color:#ff0000}
+	tr.bold td{border-top:2px solid #000}
+	tr.bg th{background:#f6f6f6}
+
+	#contents .component::after{content:'';display:block;clear:both;}
+	#contents ol.pre{float:left;width:calc(100% - 250px);}
+	#contents ol.design{float:right;width:250px;}
+	#contents li{margin-top:20px;text-align:center;}
+	#contents li:first-child{margin:0;}
+	#sideMenu{margin-left:-650px;}
+	#uio_item3_1 li{text-align:center;}
+</style>
+<body>
+<!-- WRAP -->
+<div id="wrap">
+	<!--#include file="guide_inc/guide_head.shtml"-->
+	<!-- container -->
+	<div id="container">
+		<!-- left -->
+		<div id="sideMenu">
+			<ul class="navigation">
+				<li><button id="item1">Full Popup</button>
+					<ul class="sub">
+						<li><button id="item1_1">PDP 퍼센트 바</button></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- left -->
+		<!-- contents -->
+		<div id="contents">
+			
+			<h3>PDP 퍼센트 바</h3>
+			<div id="uio_item1_1" class="component">
+				<ol class="pre">
+					<li>
+						<pre class="brush: html;">
+							<!-- data-progress로 퍼센트 조절 -->
+							<div id="sample01" class="progressBar01" data-progress="80">
+								<svg width="65" height="65" preserveAspectRatio="none" viewBox="0 0 65 65" class="progressCircle">
+									<circle class="progressBg" />
+									<circle class="progressLine" />
+								</svg>
+								<div class="text_box">
+									<p class="text">2년<br>6개월</p>
+								</div>
+							</div>
+							<!-- // data-progress로 퍼센트 조절 -->
+							<script>
+								$(function(){
+									// 순서대로 타겟, 애니메이션 유무, 텍스트 애니메이션 유무, 속도
+									progress($('#sample01'), true, true, 1000);
+								});
+							</script>
+						</pre>
+					</li>
+					<li>
+						<pre class="brush: html;">
+							<!-- 160짜리 progressBar02 -->
+							<div id="sample02" class="progressBar02" data-progress="53">
+								<svg width="166" height="166" preserveAspectRatio="none" viewBox="0 0 166 166" class="progressCircle">
+									<circle class="progressBg" />
+									<circle class="progressLine" />
+								</svg>
+								<div class="text_box">
+									<p class="text">신차대비 현재가격</p>
+									<span class="progressCount"></span>
+								</div>
+							</div>
+							<!-- 160짜리 progressBar02 -->
+							<script>
+								$(function(){
+									// 순서대로 타겟, 애니메이션 유무, 텍스트 애니메이션 유무, 속도
+									progress($('#sample02'), true, false, 1500);
+								});
+							</script>
+						</pre>
+					</li>
+				</ol>
+				<ol class="design">
+					<li style="display:flex;justify-content:center;align-items:center;height:391px;">
+						<!-- data-progress로 퍼센트 조절 -->
+						<div id="progress_period" class="progressBar01" data-progress="80">
+							<svg width="65" height="65" preserveAspectRatio="none" viewBox="0 0 65 65" class="progressCircle">
+								<circle class="progressBg" />
+								<circle class="progressLine" />
+							</svg>
+							<div class="text_box">
+								<p class="text">2년<br>6개월</p>
+							</div>
+						</div>
+						<!-- // data-progress로 퍼센트 조절 -->
+					</li>
+					<li style="display:flex;justify-content:center;align-items:center;height:410px;">
+						<!-- 160짜리 progressBar02 -->
+						<div id="progress_present" class="progressBar02" data-progress="53">
+							<svg width="166" height="166" preserveAspectRatio="none" viewBox="0 0 166 166" class="progressCircle">
+								<circle class="progressBg" />
+								<circle class="progressLine" />
+							</svg>
+							<div class="text_box">
+								<p class="text">신차대비 현재가격</p>
+								<span class="progressCount"></span>
+							</div>
+						</div>
+						<!-- 160짜리 progressBar02 -->
+					</li>
+				</ol>
+			</div>
+		</div>
+		<!-- contents -->
+	</div>
+	<!-- //container -->
+	<!--#include file="guide_inc/guide_footer.shtml"-->
+</div>
+<!-- //WRAP -->
+<script>
+	$(function(){
+		// 순서대로 타겟, 애니메이션 유무, 텍스트 애니메이션 유무, 속도
+		progress($('#progress_period'), true, true, 1000);
+		progress($('#progress_present'), true, false, 1500);
+	});
+</script>
+</body>
+</html>

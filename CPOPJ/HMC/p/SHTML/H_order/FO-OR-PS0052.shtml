@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>계약 : 현대 CUV</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="/HMC/p/css/h_order.css">
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+	<!-- CPOcontents -->
+	<!-- CPOcontents -->
+	<div id="CPOcontents">
+		<div id="layoutWrap" class="order type_bg">
+			<div class="cont_top">
+				<ol class="list_step">
+					<li class="now"><h1>01. 계약</h1></li>
+					<li>02. 주문서 작성</li>
+					<li>03. 잔여금액결제</li>
+				</ol>
+			</div>
+			<!-- //cont_top -->
+
+			<!-- cont_wrap -->
+			<div class="container flex">
+				<div class="cont_wrap">
+					<div class="sec_tit m">무통장 입금 안내</div>
+					<div class="contract_payment">
+						<p class="txt">입금계좌 확인 후 <strong>5분 이내</strong>로 결제해 주세요.</p>
+						<p class="txt2">결제완료 후 입금확인 버튼을 반드시 눌러 주세요.</p>
+						
+						<ul class="bg_box">
+							<li>
+								<div class="tit">입금 계좌</div>
+								<div class="txt bank">
+									<img src="/HMC/m/img/finance/bank_004.png" alt="국민은행로고" class="logo">
+									<span>국민은행</span>
+									<span>12345671234567</span>
+									<button type="button" class="txt_btn03 s_mid">계좌번호 복사</button>
+								</div>
+							</li>
+							<li>
+								<div class="tit">예금주</div>
+								<div class="txt">김현대</div>
+							</li>
+							<li>
+								<div class="tit">계약금</div>
+								<div class="payment"><em>300,000</em>원</div>
+							</li>
+							<li>
+								<div class="tit">입금기한</div>
+								<div class="txt point01">2022.04.01 08:08 까지</div>
+							</li>
+							<li>
+								<div class="tit">진행상태</div>
+								<div class="txt point01">입금 대기중</div>
+							</li>
+						</ul>
+			
+						<div class="caution">
+							<ul>
+								<li>가상계좌로 입금 완료 후 5분 이내에 입금여부가 확인됩니다.</li>
+								<li>결제 금액과 입금 금액이 다를 경우 정상 입금 처리가 불가능합니다.</li>
+								<li>무통장입금 설정 후 5분 이내로 입금이 완료되지 않으면 해당 차량 주문 진행이 자동으로 취소됩니다. </li>
+								<li>계약취소 요청 시 설정하셨던 가상계좌 정보는 삭제됩니다.</li>
+								<li>설정하신 무통장입금 정보를 다른 은행으로 변경하시려면 고객센터로 연락 바랍니다.</li>
+							</ul>
+						</div>
+						
+						<button type="button" class="txt_btn03 s_small c_gs03">계약취소</button>
+					</div>			
+				</div>
+				<div class="cont_right sticky">
+					<section>
+						<div class="sec_tit m">주문차량</div>
+						<div class="unit_type type02">
+							<div class="mid_area">
+								<div class="unit_img">
+									<img src="/HMC/p/img/@thumb/plp_120x120.jpg" alt="상품명으로 뿌려주세요">
+								</div>
+								<div class="unit_info">
+									<div class="name">
+										<span class="model">그랜저 IG </span>
+										<span class="desc">가솔린 3.3 캘리그래피</span>
+									</div>
+									<div class="drive">
+										<span>20년 12월</span>
+										<span>50,000km</span>
+										<span>12가1234</span>
+									</div>
+									<div class="price">
+										<span class="num"><em>4,370</em><i>만원</i></span>
+									</div>
+								</div>
+							</div>
+							<div class="caution">
+								<p>부대비용이 포함되어 있지 않은 차량 가격입니다.</p>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="sec_tit m">
+							<span>계약금액</span>
+							<span class="price">300,000<i>원</i></span>
+						</div>
+					</section>
+					
+					<section>
+						<div class="btn_area full_type">
+							<button type="button" class="btn_big color01">입금 확인</button>
+						</div>
+					</section>
+				</div>
+			</div>
+			<!-- //cont_wrap -->
+		</div>
+	</div>
+	<!-- //CPOcontents -->
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+</html>

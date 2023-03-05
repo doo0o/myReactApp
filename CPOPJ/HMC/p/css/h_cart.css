@@ -1,0 +1,1307 @@
+@charset "UTF-8";
+/*************************************************************************************
+*                                       폰트                                          *
+**************************************************************************************/
+/**
+	색 또는 크기 가변 ICON
+*/
+/**
+	replace 함수
+*/
+/**
+	Icon Info 01
+*/
+/* Box Bg */
+/* Position */
+/* 장바구니 */
+.cart .mgt_12 {
+  margin-top: 12px;
+}
+.cart .mgt_24 {
+  margin-top: 24px;
+}
+.cart .mgt_100 {
+  margin-top: 100px;
+}
+.cart .mgt_28 {
+  margin-top: 28px;
+}
+.cart .mgt_32 {
+  margin-top: 32px;
+}
+.cart .mgr_24 {
+  margin-right: 24px;
+}
+.cart .total_result {
+  margin-top: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #EDEDED;
+}
+.cart .total_result .form_area .txt > em {
+  color: #00AAD2;
+}
+.cart .top_area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 12px 0;
+}
+.cart .top_area .desc {
+  margin-right: 24px;
+  color: #767676;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+.cart .order_list_container .no_data {
+  margin-top: 24px;
+  padding: 80px 0;
+  border-top: 1px solid #EDEDED;
+}
+.cart .order_list_container .list li {
+  position: relative;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  padding: 32px 0;
+  border-bottom: 1px solid #EDEDED;
+}
+.cart .order_list_container .list li.soldout .form_area, .cart .order_list_container .list li.soldout .btn_small {
+  visibility: hidden;
+}
+.cart .order_list_container .list li.soldout .caution {
+  display: none;
+}
+.cart .order_list_container .list li.soldout .unit_info {
+  color: #767676 !important;
+}
+.cart .order_list_container .list li.soldout .unit_info .price {
+  display: none;
+}
+.cart .order_list_container .list li.soldout a {
+  pointer-events: none;
+}
+.cart .order_list_container .list li .form_area {
+  width: 24px;
+  flex-shrink: 0;
+}
+.cart .order_list_container .list li .form_area .chk_type01 + label::before {
+  transform: translateY(-50%);
+}
+.cart .order_list_container .list li .btn_small {
+  flex-shrink: 0;
+  margin-left: auto;
+  margin-right: 40px;
+}
+.cart .order_list_container .list li .btn_close {
+  position: absolute;
+  right: 16px;
+  top: 16px;
+}
+.cart .unit_deal + .btn_area {
+  margin-top: 32px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.cart .favorite_list {
+  margin-top: 80px;
+}
+.cart .favorite_list .sec_tit {
+  margin-bottom: 24px;
+}
+.cart .sec_tit.l {
+  margin: 80px 0 24px;
+}
+.cart .top.flex_box .txt > em {
+  color: #00AAD2;
+}
+.cart .unit_deal.col_type02 {
+  margin-top: 24px;
+}
+.cart .unit_deal.col_type02 .unit_info {
+  margin-top: 8px;
+}
+.cart .unit_deal.col_type02 .soldout .number {
+  visibility: hidden;
+}
+.cart .flex_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart [class*=_list] .top {
+  margin-top: 80px;
+}
+.cart [class*=_list] .top .sec_tit {
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+}
+.cart [class*=_list] .arrow {
+  position: relative;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+}
+.cart [class*=_list] .arrow::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+  background: url(../img/icon/icon_ui_arrow_r01.svg);
+  background-size: 18px;
+}
+.cart [class*=_list] .full {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+.cart .compare_list .sec_tit.l:first-child {
+  margin-top: 40px;
+}
+.cart .cont_right {
+  background: #F7F7F7;
+}
+.cart .cont_right.sticky {
+  margin-top: 60px;
+}
+.cart .cont_right .no_data {
+  padding: 0;
+}
+.cart .cont_wrap.no_data_area ~ .cont_right.sticky {
+  margin-top: 64px;
+}
+.cart .cart_container {
+  padding: 24px;
+  background-color: #F7F7F7;
+}
+.cart .cart_container .list.compare li:first-child {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #DDDDDD;
+}
+.cart .cart_container .list > li {
+  margin-bottom: 24px;
+}
+.cart .cart_container .btn_area.full_type.row_type {
+  margin-top: 24px;
+}
+.cart [class^=btn_] + .btn_reset02 {
+  margin-top: 8px;
+}
+.cart .btn_reset02 {
+  justify-content: center;
+}
+.cart .page_tit + .caution.bg {
+  margin-top: 24px;
+}
+.cart .compare_list .top {
+  margin-top: 40px;
+}
+.cart .compare_list .unit_deal .flag_pin {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  padding: 0 4px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+.cart .compare_list .unit_deal .flag_pin::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 14px;
+  margin-right: 2px;
+  vertical-align: middle;
+  background: url(../img/icon/icon_compare_pin_off03.svg);
+}
+.cart .compare_list .no_price .unit_img {
+  height: 127px;
+  background-image: url("data:image/svg+xml,%3Csvg width='160' height='32' viewBox='0 0 160 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.8029 26.2761C32.2929 26.2761 41.6058 21.678 41.6058 16.0031C41.6058 10.3281 32.2929 5.72461 20.8029 5.72461C9.31285 5.72461 0 10.3308 0 16.0031C0 21.6753 9.31426 26.2761 20.8029 26.2761ZM24.7179 21.2353C24.3387 22.4929 23.5209 23.5856 22.4027 24.3288C21.9669 24.523 21.4941 24.6279 21.0141 24.6371C20.9113 24.6371 20.8381 24.6371 20.8071 24.6371C17.2872 24.6624 13.7822 24.1925 10.4029 23.2424C10.3775 23.2356 10.3085 23.2085 10.2874 23.2003C10.0057 23.1121 9.86489 22.9871 9.86489 22.8377C9.86791 22.7749 9.88464 22.7134 9.91401 22.6572C9.94337 22.6011 9.9847 22.5515 10.0353 22.5118C10.0761 22.4697 10.1409 22.4195 10.224 22.3502C12.255 20.8685 14.5146 19.7032 16.9203 18.8969C18.5084 18.2728 20.1446 17.7693 21.814 17.3909C22.8702 17.1777 26.7866 16.5992 24.7193 21.2353H24.7179ZM35.2291 10.8849C35.2599 10.8182 35.3087 10.7607 35.3704 10.7184C35.4321 10.6762 35.5044 10.6506 35.5798 10.6445C35.7353 10.6437 35.8869 10.6914 36.0121 10.7803C38.4555 12.2306 39.9032 14.0395 39.9032 16.0017C39.9032 19.5447 35.1799 22.5892 28.4272 23.9214C27.9921 24.0029 27.7048 24.0015 27.6062 23.8956C27.568 23.8509 27.5471 23.7947 27.5471 23.7367C27.5471 23.6787 27.568 23.6226 27.6062 23.5778C27.6586 23.4922 27.7189 23.4113 27.7865 23.3361C30.7617 19.6232 33.2097 15.5441 35.0658 11.2067C35.1235 11.0832 35.1827 10.9609 35.2291 10.8849ZM16.9499 10.7491C17.3314 9.49375 18.1488 8.40302 19.2651 7.65972C19.7006 7.46504 20.1736 7.3605 20.6536 7.35281C20.7564 7.35281 20.8296 7.35281 20.8592 7.35281C24.3792 7.32623 27.8842 7.79561 31.2635 8.74609C31.286 8.74609 31.355 8.77868 31.3761 8.78683C31.6578 8.8751 31.7986 8.99732 31.7986 9.14941C31.7947 9.21218 31.7774 9.27351 31.7478 9.32957C31.7183 9.38564 31.6771 9.43525 31.6268 9.47532C31.5846 9.5147 31.5212 9.56766 31.4367 9.63556C29.4082 11.1176 27.151 12.2834 24.7474 13.0902C23.1603 13.7141 21.525 14.2172 19.8565 14.5949C18.7961 14.8108 14.8811 15.3852 16.9499 10.7491ZM13.1757 8.0834C13.6109 8.00192 13.8968 8.00328 13.9996 8.1092C14.0335 8.1552 14.0518 8.21026 14.0518 8.26673C14.0518 8.32319 14.0335 8.37826 13.9996 8.42425C13.9454 8.50872 13.8847 8.58907 13.8179 8.66461C10.8433 12.3788 8.39616 16.4594 6.54139 20.7981C6.48224 20.9203 6.42169 21.0425 6.3724 21.1226C6.34186 21.1889 6.29352 21.2462 6.23237 21.2884C6.17122 21.3307 6.09948 21.3564 6.02456 21.363C5.86837 21.3626 5.71623 21.3151 5.5894 21.2272C3.14888 19.7755 1.69696 17.9681 1.69696 16.0044C1.69696 12.4588 6.42169 9.41285 13.1757 8.0834Z' fill='%23c6c6c6'/%3E%3Cpath d='M58.8949 8.62598V14.2439H52.2873V8.62598H48.647V23.3708H52.2873V17.4406H58.8949V23.3695H62.5339V8.62598H58.8949Z' fill='%23c6c6c6'/%3E%3Cpath d='M75.2724 8.62772L71.4701 14.467L67.6678 8.62772H63.3726L69.6576 18.2693V23.3766H73.2825V18.2666L79.5676 8.625H75.2696L75.2724 8.62772Z' fill='%23c6c6c6'/%3E%3Cpath d='M91.224 8.62207V19.4302C91.226 19.5286 91.2072 19.6263 91.1689 19.7176C91.1306 19.8088 91.0736 19.8916 91.0012 19.961C90.9288 20.0304 90.8426 20.085 90.7478 20.1214C90.653 20.1578 90.5515 20.1754 90.4495 20.173H84.6151V8.62207H80.9761V23.3669H91.731C92.1501 23.3999 92.5715 23.3447 92.9662 23.205C93.361 23.0654 93.7195 22.8447 94.017 22.5582C94.3145 22.2717 94.5438 21.9263 94.6892 21.5458C94.8345 21.1654 94.8924 20.7591 94.8588 20.3549V8.62207H91.224Z' fill='%23c6c6c6'/%3E%3Cpath d='M109.006 8.62953H98.2471V23.3744H101.886V11.8221H107.725C107.826 11.8201 107.927 11.8378 108.021 11.8741C108.115 11.9105 108.201 11.9647 108.273 12.0337C108.345 12.1026 108.402 12.1848 108.44 12.2754C108.479 12.3659 108.498 12.463 108.496 12.5609V23.3744H112.131V11.6442C112.151 11.2414 112.086 10.8388 111.941 10.4606C111.796 10.0824 111.573 9.73626 111.286 9.44296C110.983 9.16615 110.624 8.95139 110.232 8.8116C109.841 8.67181 109.423 8.60988 109.006 8.62953Z' fill='%23c6c6c6'/%3E%3Cpath d='M125.709 8.62465H114.952V23.3695H125.709C126.128 23.4011 126.549 23.345 126.943 23.2048C127.336 23.0646 127.694 22.8438 127.991 22.5575C128.288 22.2713 128.517 21.9264 128.662 21.5466C128.807 21.1668 128.866 20.7611 128.833 20.3575V11.6393C128.854 11.2362 128.79 10.8332 128.644 10.4546C128.499 10.076 128.276 9.72978 127.988 9.43672C127.685 9.16032 127.326 8.94591 126.935 8.80636C126.543 8.66681 126.126 8.60501 125.709 8.62465ZM125.197 12.5804V19.4137C125.2 19.5135 125.182 19.6129 125.144 19.7058C125.106 19.7988 125.049 19.8834 124.976 19.9546C124.904 20.0259 124.817 20.0823 124.721 20.1205C124.626 20.1587 124.523 20.1779 124.419 20.1769H118.586V11.8172H124.397C124.503 11.8121 124.608 11.8282 124.707 11.8646C124.806 11.901 124.896 11.9569 124.971 12.0287C125.047 12.1005 125.106 12.1867 125.144 12.2817C125.183 12.3767 125.201 12.4784 125.197 12.5804Z' fill='%23c6c6c6'/%3E%3Cpath d='M134.79 8.62892C134.373 8.6082 133.955 8.66976 133.562 8.80984C133.17 8.94992 132.811 9.16559 132.508 9.4437C132.219 9.73624 131.996 10.0822 131.851 10.4606C131.705 10.839 131.641 11.242 131.663 11.645V23.3751H135.293V18.8123H141.904V23.3738H145.538V8.62892H134.79ZM141.904 11.8215V15.6238H135.292V12.5711C135.291 12.4726 135.311 12.375 135.35 12.2839C135.388 12.1928 135.446 12.11 135.518 12.0403C135.59 11.9706 135.676 11.9154 135.77 11.8779C135.864 11.8403 135.966 11.8211 136.068 11.8215H141.904Z' fill='%23c6c6c6'/%3E%3Cpath d='M152 8.62793H148.361V23.3728H152V8.62793Z' fill='%23c6c6c6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #F7F7F7;
+}
+.cart .compare_list .no_price .unit_info {
+  color: #767676;
+}
+.cart .compare_list .no_price .price > em {
+  color: #9C9C9C;
+}
+.cart .compare_list .no_price .price .num > em {
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+.cart .divider {
+  width: 100%;
+  height: 1px;
+  background-color: #DDDDDD;
+}
+.cart .no_line {
+  border: 0;
+}
+.cart .btn_prev, .cart .btn_next {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #DDDDDD;
+  font-size: 0;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+}
+.cart .btn_prev.active, .cart .btn_prev:hover, .cart .btn_next.active, .cart .btn_next:hover {
+  opacity: 1;
+}
+.cart .btn_prev + .btn_next {
+  margin-left: 8px;
+}
+.cart .btn_prev {
+  background-image: url(../img/icon/icon_ui_arrow_l02.svg);
+}
+.cart .btn_next {
+  background-image: url(../img/icon/icon_ui_arrow_r02.svg);
+}
+.cart .txt_btn02 {
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  justify-content: space-between;
+  width: 100%;
+}
+.cart .txt_btn02.up::after {
+  transform: rotate(180deg);
+}
+.cart .compare_sort_container {
+  display: flex;
+  margin-top: -160px;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  border: 1px solid #EDEDED;
+  max-width: 1180px;
+}
+.cart .compare_sort_container.on .unit_compare + .btn_close {
+  top: 23px;
+  width: 16px;
+  height: 16px;
+}
+.cart .compare_sort_container.on .unit_compare + .btn_close::before {
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 3.00006L12.9999 13.0001' stroke='%23000' stroke-width='1.2'/%3E%3Cpath d='M3 12.9999L13 3' stroke='%23000' stroke-width='1.2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+}
+.cart .compare_sort_container.on .prd_item_container .add_box {
+  margin-top: 20px;
+}
+.cart .tit_fix_container {
+  flex-shrink: 0;
+  width: 160px;
+  padding: 20px 16px;
+  border-right: 1px solid #EDEDED;
+}
+.cart .tit_fix_container .tit_group {
+  position: relative;
+  border-bottom: 1px solid #EDEDED;
+  padding-bottom: 24px;
+}
+.cart .tit_fix_container .tit_group:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.cart .tit_fix_container .tit_group .tit {
+  padding: 10px 0;
+}
+.cart .tit_fix_container .tit_group .desc .sub_tit {
+  margin-top: 8px;
+  color: #767676;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+.cart .tit_fix_container .tit_group .desc .sub_tit:first-child {
+  margin-top: 0;
+}
+.cart .tit_fix_container .tit_group .desc .sub_tit.price {
+  margin-top: 220px;
+}
+.cart .tit_fix_container .tit_group .desc .sub_tit.fix {
+  margin-top: 32px;
+}
+.cart .tit_fix_container .tit_group .desc .sub_tit.loan {
+  margin-top: 12px;
+}
+.cart .tit_fix_container .tit_group .desc .sub_tit.loan > em {
+  display: block;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+.cart .tit_fix_container .tit_group .desc .sub_tit.discount {
+  margin-top: 12px;
+}
+.cart .tit_fix_container .tit_group .desc .radio_box {
+  margin-top: 8px;
+}
+.cart .tit_fix_container .tit_group .desc .radio_box:first-child {
+  margin-top: 0;
+}
+.cart .tit_fix_container .tit_group .desc.up {
+  overflow: hidden;
+}
+.cart .tit_fix_container .tit_group .desc.up .tit {
+  padding-bottom: 0;
+}
+.cart .tit_fix_container .tit_group .desc.up .desc {
+  display: none;
+  visibility: hidden;
+}
+.cart .tit_fix_container .tit_group .desc.up .short-desc {
+  display: block;
+}
+.cart .tit_fix_container .tit_group .short-desc {
+  display: none;
+  margin-top: 1px;
+}
+.cart .tit_fix_container .tit_group .short-desc .list_tit {
+  display: flex;
+}
+.cart .tit_fix_container .tit_group .short-desc .list_tit .sub_tit {
+  position: relative;
+  padding-left: 17px;
+}
+.cart .tit_fix_container .tit_group .short-desc .list_tit .sub_tit::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  margin-top: -6px;
+  width: 1px;
+  height: 12px;
+  background: #DDDDDD;
+}
+.cart .tit_fix_container .tit_group .short-desc .list_tit .sub_tit:first-child {
+  padding-left: 0;
+}
+.cart .tit_fix_container .tit_group .short-desc .list_tit .sub_tit:first-child::before {
+  display: none;
+}
+.cart .tit_fix_container .tit_group .short-desc .sub_tit {
+  color: #767676;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.cart .tit_fix_container .tit_group.up .tit {
+  padding-bottom: 0;
+}
+.cart .tit_fix_container .tit_group.up .desc {
+  display: none;
+}
+.cart .tit_fix_container .tit_group.up .short-desc {
+  display: block;
+}
+.cart .dnd_container {
+  overflow: hidden;
+  position: relative;
+  width: 1018px;
+}
+.cart .dnd_container::before {
+  z-index: 11;
+  content: "";
+  position: absolute;
+  top: -13px;
+  right: 0;
+  width: 50px;
+  height: 120%;
+  box-shadow: inset -5px 0px 10px 1px rgba(0, 0, 0, 0.05);
+}
+.cart .dnd_container .move_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  will-change: transform;
+  transition: transform 0.55s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.cart .dnd_container .move_container .dnd_list {
+  display: flex;
+  height: 3057px;
+  flex-flow: column wrap;
+  align-content: flex-start;
+}
+.cart .prd_item_container {
+  position: relative;
+  background-color: #fff;
+  width: 238px;
+  height: 100%;
+  border-right: 1px solid #EDEDED;
+}
+.cart .prd_item_container [class^=chk_] {
+  display: none;
+}
+.cart .prd_item_container.dim {
+  filter: contrast(0.85);
+}
+.cart .prd_item_container .unit_compare {
+  position: relative;
+  width: 238px;
+  padding: 20px 24px;
+}
+.cart .prd_item_container .info_desc_group {
+  padding: 44px 4px 0;
+  border-top: 1px solid #EDEDED;
+}
+.cart .prd_item_container .info_desc_group .txt_list {
+  display: flex;
+  align-items: center;
+}
+.cart .prd_item_container .info_desc_group .txt_list .txt {
+  padding-left: 12px;
+}
+.cart .prd_item_container .info_desc_group .txt_list .txt:first-child {
+  padding-left: 0;
+}
+.cart .prd_item_container .info_desc_group.up {
+  padding-top: 34px;
+}
+.cart .prd_item_container .info_desc_group.up .summary_group .txt_list {
+  display: flex;
+}
+.cart .prd_item_container .info_desc_group.up .summary_group .txt_list .txt {
+  position: relative;
+  padding-left: 25px;
+}
+.cart .prd_item_container .info_desc_group.up .summary_group .txt_list .txt::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  margin-top: -6px;
+  width: 1px;
+  height: 12px;
+  background: #DDDDDD;
+}
+.cart .prd_item_container .info_desc_group.up .summary_group .txt_list .txt:first-child {
+  padding-left: 0;
+}
+.cart .prd_item_container .info_desc_group.up .summary_group .txt_list .txt:first-child::before {
+  display: none;
+}
+.cart .prd_item_container .info_desc_group:nth-child(1) {
+  padding: 0;
+  border-top: none;
+}
+.cart .prd_item_container .info_desc_group div.txt {
+  margin-top: 8px;
+}
+.cart .prd_item_container .info_desc_group .txt {
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+.cart .prd_item_container .info_desc_group .txt:first-child {
+  margin-top: 0;
+}
+.cart .prd_item_container .info_desc_group .txt.line2 {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+  line-height: 24px;
+}
+.cart .prd_item_container .info_desc_group .txt .add_info {
+  display: block;
+}
+.cart .prd_item_container .info_desc_group .txt .p_num {
+  display: inline-block;
+  margin-right: 2px;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+}
+.cart .prd_item_container .info_desc_group.option_group {
+  padding: 16px 0 0;
+}
+.cart .prd_item_container .info_desc_group.option_group .sub_group {
+  margin-top: 16px;
+  padding: 16px 4px 0;
+  border-top: 1px solid #EDEDED;
+}
+.cart .prd_item_container .info_desc_group.option_group .sub_group:first-child {
+  padding-top: 0;
+  margin-top: 0;
+  border-top: none;
+}
+.cart .prd_item_container .info_desc_group.option_group .sub_group ul li {
+  margin-top: 8px;
+}
+.cart .prd_item_container .info_desc_group.option_group .tit_opt {
+  color: #767676;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+}
+.cart .prd_item_container .info_desc_group.option_group .opt {
+  color: #9C9C9C;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+}
+.cart .prd_item_container .info_desc_group.option_group .opt::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  vertical-align: middle;
+  background-color: #CCCCCC;
+  -webkit-mask: url("../img/icon/icon_chk02.svg") no-repeat 0 0;
+  mask: url("../img/icon/icon_chk02.svg") no-repeat 0 0;
+}
+.cart .prd_item_container .info_desc_group.option_group .opt.active {
+  color: #333333;
+}
+.cart .prd_item_container .info_desc_group.option_group .opt.active::before {
+  background-color: #00AAD2;
+}
+.cart .prd_item_container .check_pin .chk_pin + label {
+  position: relative;
+  display: inline-block;
+}
+.cart .prd_item_container .check_pin .chk_pin + label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/icon/icon_compare_pin_off.svg);
+  background-size: 24px auto;
+  background-repeat: no-repeat;
+}
+.cart .prd_item_container .check_pin .chk_pin:checked:not(:disabled) + label::before {
+  background-image: url(../img/icon/icon_compare_pin.svg);
+}
+.cart .prd_item_container .check_pin .txt {
+  padding-left: 28px;
+  color: #00AAD2;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.cart .prd_item_container .unit_img {
+  position: relative;
+  margin-top: 16px;
+  height: 127px;
+}
+.cart .prd_item_container .unit_img img {
+  width: 100%;
+}
+.cart .prd_item_container .unit_info {
+  margin-top: 16px;
+}
+.cart .prd_item_container .unit_info .name {
+  height: 38px;
+}
+.cart .prd_item_container .unit_info .name > .txt {
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.cart .prd_item_container .unit_info .price {
+  display: block;
+  margin-top: 16px;
+}
+.cart .prd_item_container .unit_info .price .num {
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+}
+.cart .prd_item_container .unit_info .price .num > em {
+  margin-right: 2px;
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  color: #00AAD2;
+}
+.cart .prd_item_container .unit_info .price .num .range {
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 36px;
+}
+.cart .prd_item_container .unit_info .bg_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+  height: 36px;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+.cart .prd_item_container .unit_info .bg_box .txt {
+  margin-right: 4px;
+  color: #767676;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+.cart .prd_item_container .unit_info .bg_box .ico {
+  display: inline-block;
+  width: 10px;
+  height: 11px;
+  margin-left: 2px;
+  vertical-align: middle;
+}
+.cart .prd_item_container .unit_info .bg_box.fixed {
+  display: none;
+  background-color: #fff;
+  color: #00AAD2;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.cart .prd_item_container .unit_info .bg_box.fixed .ico {
+  width: 16px;
+  height: 16px;
+  margin: 0 4px 0 0;
+  background: url(../img/icon/icon_circle_check.svg) 0 50% no-repeat;
+}
+.cart .prd_item_container .unit_info .bg_box.m_down {
+  background: #F7F7F7;
+  color: #767676;
+}
+.cart .prd_item_container .unit_info .bg_box.m_down .d_price {
+  color: #00AAD2;
+}
+.cart .prd_item_container .unit_info .bg_box.m_down .ico {
+  background: url(../img/icon/icon_down_triangle.svg) center no-repeat;
+}
+.cart .prd_item_container .unit_info .bg_box.m_up {
+  background: #F7F7F7;
+  color: #767676;
+}
+.cart .prd_item_container .unit_info .bg_box.m_up .d_price {
+  color: #DB0000;
+}
+.cart .prd_item_container .unit_info .bg_box.m_up .ico {
+  background: url(../img/icon/icon_up_triangle.svg) center no-repeat;
+}
+.cart .prd_item_container .unit_info .loan {
+  margin-top: 18px;
+  font-weight: 500;
+}
+.cart .prd_item_container .unit_info .loan > i {
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+}
+.cart .prd_item_container .unit_info .compare_rate {
+  margin-top: 22px;
+}
+.cart .prd_item_container .unit_info .compare_rate .num {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.cart .prd_item_container .unit_info .compare_rate .rate {
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.cart .prd_item_container .unit_info .compare_rate .rate > i {
+  font-weight: 400;
+}
+.cart .prd_item_container .unit_info .compare_rate .discount {
+  margin-left: 8px;
+  color: #9C9C9C;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+.cart .prd_item_container .unit_info .btn_mid {
+  margin-top: 16px;
+  min-width: 100%;
+}
+.cart .prd_item_container.no_price .unit_info .price > .num > em {
+  color: #9C9C9C;
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+}
+.cart .prd_item_container.no_price .bg_box, .cart .prd_item_container.no_price .loan, .cart .prd_item_container.no_price .compare_rate {
+  visibility: hidden;
+}
+.cart .prd_item_container.soldout .unit_img {
+  position: relative;
+}
+.cart .prd_item_container.soldout .unit_img img {
+  opacity: 0.5;
+}
+.cart .prd_item_container.soldout .flag_soldout {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 20px;
+  color: #fff;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+}
+.cart .prd_item_container.cur_my_car .loan, .cart .prd_item_container.cur_my_car .compare_rate {
+  visibility: hidden;
+}
+.cart .prd_item_container.empty .add_box {
+  display: block;
+}
+.cart .prd_item_container.empty .btn_close {
+  display: none;
+}
+.cart .prd_item_container.pin {
+  z-index: 10;
+  background-color: #F7F7F7;
+}
+.cart .prd_item_container.pin .bg_box.m_down, .cart .prd_item_container.pin .bg_box.m_up {
+  display: none;
+}
+.cart .prd_item_container.pin .bg_box.fixed {
+  display: flex;
+  visibility: visible;
+}
+.cart .prd_item_container .add_box {
+  display: none;
+  margin: 61px 24px 0;
+  width: 190px;
+  height: 120px;
+  border: 1px #DDDDDD dashed;
+}
+.cart .prd_item_container .add_box > a {
+  display: inline-block;
+  padding-top: 30px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #767676;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+.cart .prd_item_container .add_box > a::before {
+  content: "";
+  display: block;
+  margin: 0 auto 5px;
+  width: 16px;
+  height: 16px;
+  background: url(../img/icon/icon_ui_add03.svg) 0 50% no-repeat;
+}
+.cart .prd_item_container .btn_close {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+}
+.cart .prd_item_container .btn_close::before {
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3.75 3.75012L20.2497 20.25' stroke='%23000' stroke-width='1.5'/%3E%3Cpath d='M3.75 20.2498L20.2498 3.75002' stroke='%23000' stroke-width='1.5'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+}
+.cart .prd_item_container .summary_group {
+  display: none;
+}
+.cart .prd_item_container .summary_group .option_list {
+  display: flex;
+  justify-content: space-between;
+}
+.cart .prd_item_container .summary_group .option_list .item {
+  padding: 12px 0;
+  background-color: #00AAD2;
+  width: calc(50% - 4px);
+  color: #fff;
+  text-align: center;
+}
+.cart .prd_item_container .summary_group .option_list .item .s_tit {
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+}
+.cart .prd_item_container .summary_group .option_list .item .s_tit::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.cart .prd_item_container .summary_group .option_list .item .s_tit.check::before {
+  background: url(../img/icon/icon_circle_check_white.svg) 50% 50% no-repeat;
+  background-size: 16px;
+}
+.cart .prd_item_container .summary_group .option_list .item .s_tit.add::before {
+  background: url(../img/icon/icon_circle_add.svg) 50% 50% no-repeat;
+  background-size: 16px;
+}
+.cart .prd_item_container .summary_group .option_list .item .s_val {
+  display: block;
+  width: 100%;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+.cart .prd_item_container .info_desc_group.up .detail_group {
+  display: none;
+}
+.cart .prd_item_container .info_desc_group.up .check_pin .chk_pin + label {
+  line-height: 20px;
+}
+.cart .prd_item_container .info_desc_group.up .check_pin .chk_pin + label::before {
+  top: 2px;
+  width: 16px;
+  height: 16px;
+  background: url(../img/icon/icon_compare_pin_off02.svg);
+}
+.cart .prd_item_container .info_desc_group.up .check_pin .chk_pin:checked:not(:disabled) + label::before {
+  background: url(../img/icon/icon_compare_pin02.svg) center no-repeat;
+}
+.cart .prd_item_container .info_desc_group.up .check_pin .txt {
+  padding-left: 20px;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+}
+.cart .prd_item_container .info_desc_group.up .unit_info {
+  margin-top: 8px;
+}
+.cart .prd_item_container .info_desc_group.up .unit_info .price {
+  margin-top: 4px;
+}
+.cart .prd_item_container .info_desc_group.up .unit_info .price .num {
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.cart .prd_item_container .info_desc_group.up .unit_info .price .num > em {
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+.cart .prd_item_container .info_desc_group.up .unit_info .bg_box {
+  margin-top: 2px;
+  height: 20px;
+  justify-content: flex-start;
+  background-color: transparent;
+}
+.cart .prd_item_container .info_desc_group.up .unit_info .bg_box.fixed {
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+.cart .prd_item_container .info_desc_group.up .unit_info .bg_box .txt {
+  display: none;
+}
+.cart .prd_item_container .info_desc_group.up .unit_img,
+.cart .prd_item_container .info_desc_group.up .loan,
+.cart .prd_item_container .info_desc_group.up .compare_rate,
+.cart .prd_item_container .info_desc_group.up .btn_mid,
+.cart .prd_item_container .info_desc_group.up .sub_group {
+  display: none;
+}
+.cart .prd_item_container .info_desc_group.up .summary_group {
+  display: block;
+}
+.cart .tit_fix_container .tit_group:nth-child(1), .cart .prd_item_container .info_desc_group:nth-child(1) {
+  height: 505px;
+}
+.cart .tit_fix_container .tit_group:nth-child(1) .tit, .cart .prd_item_container .info_desc_group:nth-child(1) .tit {
+  padding: 0;
+}
+.cart .tit_fix_container .tit_group:nth-child(1).up, .cart .prd_item_container .info_desc_group:nth-child(1).up {
+  height: 152px;
+}
+.cart .tit_fix_container .tit_group:nth-child(2), .cart .prd_item_container .info_desc_group:nth-child(2) {
+  height: 466px;
+}
+.cart .tit_fix_container .tit_group:nth-child(2).up, .cart .prd_item_container .info_desc_group:nth-child(2).up {
+  height: 82px;
+}
+.cart .tit_fix_container .tit_group:nth-child(3), .cart .prd_item_container .info_desc_group:nth-child(3) {
+  height: 126px;
+}
+.cart .tit_fix_container .tit_group:nth-child(3).up, .cart .prd_item_container .info_desc_group:nth-child(3).up {
+  height: 82px;
+}
+.cart .tit_fix_container .tit_group:nth-child(4), .cart .prd_item_container .info_desc_group:nth-child(4) {
+  height: 286px;
+}
+.cart .tit_fix_container .tit_group:nth-child(4).up, .cart .prd_item_container .info_desc_group:nth-child(4).up {
+  height: 82px;
+}
+.cart .tit_fix_container .tit_group:nth-child(5), .cart .prd_item_container .info_desc_group:nth-child(5) {
+  height: 190px;
+}
+.cart .tit_fix_container .tit_group:nth-child(5).up, .cart .prd_item_container .info_desc_group:nth-child(5).up {
+  height: 82px;
+}
+.cart .tit_fix_container .tit_group:nth-child(6), .cart .prd_item_container .info_desc_group:nth-child(6) {
+  height: 190px;
+}
+.cart .tit_fix_container .tit_group:nth-child(6).up, .cart .prd_item_container .info_desc_group:nth-child(6).up {
+  height: 82px;
+}
+.cart .tit_fix_container .tit_group:nth-child(7), .cart .prd_item_container .info_desc_group:nth-child(7) {
+  height: 254px;
+}
+.cart .tit_fix_container .tit_group:nth-child(7).up, .cart .prd_item_container .info_desc_group:nth-child(7).up {
+  height: 82px;
+}
+.cart .tit_fix_container .tit_group:nth-child(8), .cart .prd_item_container .info_desc_group:nth-child(8) {
+  height: 979px;
+}
+.cart .tit_fix_container .tit_group:nth-child(8).up, .cart .prd_item_container .info_desc_group:nth-child(8).up {
+  height: 95px;
+}
+.cart .tit_fix_container .tit_group {
+  transition: height 0.3s ease;
+}
+.cart .prd_item_container .info_desc_group {
+  transition: height 0.3s ease;
+}
+.cart .top_sticky_container {
+  z-index: 11;
+  position: sticky;
+  top: 70px;
+  margin-left: 1px;
+  transform: translateY(-400px);
+  transition: transform 0.15s, opacity 0.1s;
+  opacity: 0;
+  background-color: #fff;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.05);
+}
+.cart .top_sticky_container [class^=chk_] {
+  display: none;
+}
+.cart .top_sticky_container.up {
+  opacity: 1;
+  transform: translateY(0);
+}
+.cart .top_sticky_container .sticky_items_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex: 0;
+  width: 1178px;
+  height: 160px;
+  overflow: hidden;
+}
+.cart .top_sticky_container .tit {
+  width: 160px;
+  height: 160px;
+  padding: 20px 16px;
+  border-right: 1px solid #EDEDED;
+}
+.cart .top_sticky_container .tit .txt_btn02::after {
+  transform: rotate(180deg);
+}
+.cart .top_sticky_container .info_desc_group {
+  position: relative;
+  width: 238px;
+  height: 100%;
+  padding: 20px 24px;
+  border-right: 1px solid #EDEDED;
+}
+.cart .top_sticky_container .info_desc_group .bg_box .ico {
+  display: inline-block;
+  vertical-align: middle;
+}
+.cart .top_sticky_container .info_desc_group .bg_box .d_price {
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+.cart .top_sticky_container .info_desc_group .bg_box .txt {
+  display: none;
+}
+.cart .top_sticky_container .info_desc_group .bg_box.fixed {
+  display: none;
+  color: #00AAD2;
+}
+.cart .top_sticky_container .info_desc_group .bg_box.fixed .ico {
+  width: 16px;
+  height: 16px;
+  margin-right: 2px;
+  background: url(../img/icon/icon_circle_check.svg) 0 50% no-repeat;
+}
+.cart .top_sticky_container .info_desc_group .bg_box.m_down {
+  color: #767676;
+}
+.cart .top_sticky_container .info_desc_group .bg_box.m_down .d_price {
+  color: #00AAD2;
+}
+.cart .top_sticky_container .info_desc_group .bg_box.m_down .ico {
+  display: inline-block;
+  width: 10px;
+  height: 11px;
+  margin-left: 2px;
+  background: url(../img/icon/icon_down_triangle.svg) 100% 50% no-repeat;
+}
+.cart .top_sticky_container .info_desc_group .bg_box.m_up {
+  color: #767676;
+}
+.cart .top_sticky_container .info_desc_group .bg_box.m_up .d_price {
+  color: #DB0000;
+}
+.cart .top_sticky_container .info_desc_group .bg_box.m_up .ico {
+  display: inline-block;
+  width: 10px;
+  height: 11px;
+  margin-left: 2px;
+  background: url(../img/icon/icon_up_triangle.svg) 100% 50% no-repeat;
+}
+.cart .top_sticky_container .info_desc_group .add_box {
+  width: 100%;
+  border: 1px #DDDDDD dashed;
+  padding: 28px 24px;
+}
+.cart .top_sticky_container .info_desc_group .add_box > a {
+  display: inline-block;
+  width: 100%;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: #767676;
+}
+.cart .top_sticky_container .info_desc_group .add_box > a::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 0 auto 5px auto;
+  background: url(../img/icon/icon_ui_add03.svg) 0 50% no-repeat;
+}
+.cart .top_sticky_container .info_desc_group .check_pin .chk_pin + label {
+  position: relative;
+  display: inline-block;
+  line-height: 20px;
+}
+.cart .top_sticky_container .info_desc_group .check_pin .chk_pin + label::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  background: url(../img/icon/icon_compare_pin_off02.svg) center no-repeat;
+}
+.cart .top_sticky_container .info_desc_group .check_pin .chk_pin:checked:not(:disabled) + label::before {
+  background: url(../img/icon/icon_compare_pin02.svg) center no-repeat;
+}
+.cart .top_sticky_container .info_desc_group .check_pin .chk_pin:disabled:checked + label::before, .cart .top_sticky_container .info_desc_group .check_pin .chk_pin:disabled + label::before {
+  background: url(../img/icon/icon_compare_pin02.svg) center no-repeat;
+}
+.cart .top_sticky_container .info_desc_group .check_pin .txt {
+  padding-left: 20px;
+  color: #00AAD2;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+}
+.cart .top_sticky_container .info_desc_group .unit_info {
+  margin-top: 8px;
+}
+.cart .top_sticky_container .info_desc_group .unit_info .name {
+  height: 38px;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.cart .top_sticky_container .info_desc_group .unit_info .name > .txt {
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 19px;
+}
+.cart .top_sticky_container .info_desc_group .unit_info .price {
+  margin-top: 4px;
+}
+.cart .top_sticky_container .info_desc_group .unit_info .price .num {
+  display: block;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+.cart .top_sticky_container .info_desc_group .unit_info .price .num > em {
+  margin-right: 2px;
+  font-family: HynSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  color: #00AAD2;
+  vertical-align: middle;
+}
+.cart .top_sticky_container .info_desc_group .unit_info .bg_box {
+  margin-top: 2px;
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+}
+.cart .top_sticky_container .info_desc_group .unit_info .bg_box.fixed {
+  color: #00AAD2;
+}
+.cart .top_sticky_container .info_desc_group .unit_info .bg_box.fixed .ico {
+  background: url(../img/icon/icon_circle_check.svg) 0 50% no-repeat;
+}
+.cart .top_sticky_container .info_desc_group .unit_info .loan, .cart .top_sticky_container .info_desc_group .unit_info .compare_rate, .cart .top_sticky_container .info_desc_group .unit_info .btn_mid {
+  display: none;
+}
+.cart .top_sticky_container .info_desc_group.check {
+  z-index: 10;
+  background-color: #F7F7F7;
+}
+.cart .top_sticky_container .info_desc_group.check .bg_box.m_down, .cart .top_sticky_container .info_desc_group.check .bg_box.m_up {
+  display: none;
+}
+.cart .top_sticky_container .info_desc_group.check .bg_box.fixed {
+  display: block;
+  visibility: visible;
+}
+.cart .top_sticky_container .info_desc_group.cur_my_car .unit_info .bg_box {
+  visibility: visible;
+}
+.cart .top_sticky_container .info_desc_group.cur_my_car.check .unit_info .bg_box {
+  visibility: visible;
+}
+.cart .top_sticky_container .info_desc_group.no_price .unit_info .price .num {
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+}
+.cart .top_sticky_container .info_desc_group.no_price .unit_info .price .num > em {
+  font-family: HynSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #9C9C9C;
+}
+.cart .top_sticky_container .info_desc_group.no_price .bg_box {
+  visibility: hidden;
+}
+.cart .top_sticky_container .btn_close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 16px;
+  height: 16px;
+}
+.cart .top_sticky_container .btn_close::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M3 3.00006L12.9999 13.0001' stroke='%23000' stroke-width='1.2'/%3E%3Cpath d='M3 12.9999L13 3' stroke='%23000' stroke-width='1.2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  50% {
+    opacity: 0.1;
+    transform: scaleY(0.5) translateY(-400px);
+  }
+  100% {
+    opacity: 0;
+    transform: scaleY(0) translateY(-400px);
+    height: 0vh;
+    visibility: hidden;
+  }
+}
+
+.coach_wrap .coach_cont .step .comment.txt1 {
+  top: 88px;
+  left: 854px;
+}
+.coach_wrap .coach_cont .step .comment.txt2 {
+  top: 368px;
+  left: 897px;
+}
+.coach_wrap .coach_cont .step .comment.txt3 {
+  top: 368px;
+  left: 300px;
+}
+/*# sourceMappingURL=maps/h_cart.css.map */

@@ -1,0 +1,80 @@
+<div class="popup_modal" id="FO-OR-PS0070">
+	<div class="p_body">
+		<div class="p_inner s_small">
+			<div class="p_head">
+				<h2 class="tit">명의이전완료 서류 배송 정보</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+					<div class="inner_view change_info_layer">
+						<!-- 공동명의 type -->
+						<div class="sec_tit m">
+							<div class="tit">배송지 설정</div>
+							<div class="form_area">
+								<span class="com_select hs01 isSelected" data-ref="select">
+									<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample" onclick="dropDown({reset: false});">
+										대표명의자 김현대
+									</button>
+									<span class="com_select_list" data-ref="dropDownList" id="dropDownExample">
+										<span class="com_select_list_inner">
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>대표명의자 김현대</span></label>
+											<label class="com_select_item"><input type="radio" name="dropDownExample"> <span>공동명의자1 박현대</span></label>
+										</span>
+									</span>
+								</span>
+							</div>
+						</div>
+						<!-- //공동명의 type -->
+
+						<!-- 단일명의 type -->
+						<div class="sec_tit m name_info">
+							<div class="tit">배송지 설정</div>
+							<div class="owner_name">대표명의자<em>김현대</em></div>
+						</div>
+						<!-- 단일명의 type -->
+						<ul class="form_list type01">
+							<li class="full">
+								<div class="form_area">
+									<div class="inbox_type01 on" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+										<span class="tit">휴대폰번호</span>
+										<input type="tel" class="txt type_tel" title="휴대폰번호 입력" placeholder="'-'없이 숫자만 입력" name="" value="01012345678"><!-- 휴대폰번호 : 'type_tel' 입력값 하이픈 추가 기능 -->
+										<button type="button" class="btn_delete">삭제</button>
+									</div>
+								</div>
+							</li>
+							<li class="full">
+								<div class="form_area">
+									<div class="inbox_type01 address on" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()"><!-- 주소검색 버튼있는 영역 : 'address' class추가 -->
+										<span class="tit">주소</span>
+										<input type="text" class="txt" title="이름 입력" value="(06179) 서울특별시 강남구 테헤란로 510(대치동)">
+										<button type="button" class="btn_xsmall color02">주소검색</button>
+									</div>
+								</div>
+							</li>
+							<li class="full">
+								<div class="form_area">
+									<div class="inbox_type01 on" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+										<span class="tit">상세주소</span>
+										<input type="text" class="txt" title="상세주소 입력" placeholder="상세주소 입력" name="" value="101호">
+										<button type="button" class="btn_delete">삭제</button>
+									</div>
+								</div>
+							</li>
+						</ul>
+						<div class="caution">
+							<ul>
+								<li>차량등록증 원부를 배송 받으실 주소입니다.</li>
+								<li>차량 탁송 정보와 주소가 다른 경우, 변경 하실 수 있습니다.</li>
+								<li>주소 변경 후, 아래의 확인 버튼을 눌러야 배송 주소가 변경되며, 차량 탁송 정보는 변경되지 않습니다.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="btn_area full_type">
+						<button type="button" class="btn_big color01">확인</button>
+					</div>
+				<!-- //contents -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

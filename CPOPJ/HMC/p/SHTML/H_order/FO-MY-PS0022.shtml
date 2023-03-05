@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>내차사기 상세 : 현대 CUV</title>
+	<!--#include file="/HMC/p/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_order.css">
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+	<div id="CPOcontents">
+		<div id="layoutWrap" class="my">
+			<!-- container -->
+			<div class="container flex">
+				<!--#include file="/HMC/p/SHTML/H_inc/layout_left.shtml"-->
+				<!-- cont_wrap -->
+				<div class="cont_wrap order_detail" data-id="myOrder">
+					<h1 class="page_tit">내차사기 상세</h1>
+
+					<!-- 주문정보 -->
+					<section class="product_box">
+						<div class="order_info">
+							<div class="order_no">
+								<span class="flag_big01">결제완료</span>
+								<span class="no">20211112321564565421</span>
+								<span class="date">주문일 : 2022.10.12</span>
+							</div>
+							<!-- 주문차량정보 -->
+							<!--#include file="/HMC/p/SHTML/H_order/con_buy/con_unit.shtml"-->
+							<!-- //주문차량정보 -->
+						</div>
+
+						<!-- 진행 상태 및 안내 -->
+						<!--#include file="/HMC/p/SHTML/H_order/con_buy/con_order_step.shtml"-->
+						<!-- //진행 상태 및 안내 -->
+					</section>
+					<!-- //주문정보 -->
+
+					<!-- 계약정보 -->
+					<!-- 내차사기 안내 -->
+					<section class="info_box">
+						<div class="sec_tit m">
+							계약정보
+							<div class="btn_area col_type">
+								<button type="button" class="btn_mid color02">온라인 인증서</button>
+								<button type="button" class="btn_mid color02">계약서</button>
+								<button type="button" class="btn_mid color02">명의이전서류 수정</button>
+							</div>
+						</div>
+
+						<!-- 명의정보 -->
+						<!--#include file="/HMC/p/SHTML/H_order/con_buy/con_name_info.shtml"-->
+						<!-- //명의정보 -->
+
+						<!-- 차량 탁송정보 -->
+						<div class="sec_tit m">차량 탁송정보</div>
+						<div class="bg_box">
+							<ul class="list_type01">
+								<li>
+									<div class="tit">탁송지</div>
+									<div class="txt">
+										<dl class="info">
+											<dt>
+												<strong>김현대</strong>
+												<span class="num">01012345678</span>
+											</dt>
+											<dd>
+												(04524) 서울특별시 강남구 테헤란로 510(대치동) A동 1001호
+											</dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="tit">탁송예정일</div>
+									<div class="txt"><strong>2022.03.15</strong></div>
+								</li>
+								<!-- <li>
+									<div class="tit">탁송완료일</div>
+									<div class="txt"><strong>2022.03.15</strong></div>
+								</li> -->
+							</ul>
+						</div>
+						<!-- //차량 탁송정보 -->
+
+						<!-- 명의이전완료 서류 배송 정보 -->
+						<div class="sec_tit m">
+							명의이전완료 서류 배송 정보
+							<button type="button" class="txt_btn03 s_small c_gs03">변경</button>
+						</div>
+						<div class="bg_box">
+							<ul class="list_type01">
+								<li>
+									<div class="tit">배송지</div>
+									<div class="txt">
+										<dl class="info">
+											<dt>
+												<strong>김현대</strong>
+												<span class="num">01012345678</span>
+											</dt>
+											<dd>
+												(04524) 서울특별시 강남구 테헤란로 510(대치동) A동 1001호
+											</dd>
+										</dl>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- //명의이전완료 서류 배송 정보 -->
+
+						<!-- 차량 실물 확인하기 -->
+						<div class="sec_tit m">
+							차량 실물 확인하기
+							<div class="btn_area">
+								<button type="button" class="txt_btn03 s_small c_gs03">변경</button>
+								<button type="button" class="txt_btn03 s_small c_gs03">취소</button>
+							</div>
+						</div>
+						<div class="bg_box">
+							<ul class="list_type01">
+								<li>
+									<div class="tit">예약시간</div>
+									<div class="txt point02"><em>2022.10.25(월) 12:00</em></div>
+								</li>
+								<li>
+									<div class="tit">전시장</div>
+									<div class="txt">
+										<dl class="info">
+											<dt>
+												<em>안성 스튜디오</em>
+												<span class="num">02-3543-2345</span>
+											</dt>
+											<dd>
+												서울 강남구 수서동 수서현대로 15-2 현대빌딩 1층
+											</dd>
+										</dl>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- //차량 실물 확인하기 -->
+
+						<!-- 차량 회수 정보 -->
+						<div class="sec_tit m">
+							차량 회수 정보
+							<div class="btn_area">
+								<button type="button" class="txt_btn03 s_small c_gs03">변경</button>
+								<button type="button" class="txt_btn03 s_small c_gs03">취소</button>
+							</div>
+						</div>
+						<div class="bg_box">
+							<ul class="list_type01">
+								<li>
+									<div class="tit">회수지</div>
+									<div class="txt">
+										<dl class="info">
+											<dt>
+												<strong>김현대</strong>
+												<span class="num">01012345678</span>
+											</dt>
+											<dd>
+												(04524) 서울특별시 강남구 테헤란로 510(대치동) A동 1001호
+											</dd>
+										</dl>
+									</div>
+								</li>
+								<li>
+									<div class="tit">차량 회수일</div>
+									<div class="txt"><strong> 2022.10.15</strong></div>
+								</li>
+								<li>
+									<div class="tit">탁송메시지</div>
+									<div class="txt"> 탁송 전 연락해 주세요.</div>
+								</li>
+							</ul>
+						</div>
+						<!-- //차량 회수 정보 -->
+
+						<!-- 블루멤버스 포인트 -->
+						<div class="sec_tit m">
+							블루멤버스 포인트
+							<button type="button" class="txt_btn01 s_small c_gs03">적립안내</button>
+						</div>
+						<div class="bg_box">
+							<ul class="list_type01">
+								<li class="half">
+									<div class="tit">구매적립 예정</div>
+									<div class="txt">100,000P</div>
+									<div class="tit">적립완료</div>
+									<div class="txt">2022.03.01</div>
+								</li>
+							</ul>
+						</div>
+						<!-- //블루멤버스 포인트 -->
+
+					</section>
+					<!-- //내차사기 안내 -->
+					<!-- //계약정보 -->
+
+					<!-- 주문금액정보 -->
+					<section class="price_box cont">
+						<div class="sec_tit m group_toggle">주문/결제정보</div>
+						<div class="order_detail">
+							<ul class="price_list">
+								<li class="point02">
+									<div class="tit">총 주문금액</div>
+									<div class="price"><em>40,076,000</em>원</div>
+									<ul class="cont_box depth_list">
+										<li>
+											<div class="tit">차량가격</div>
+											<div class="price"><em>38,200,000</em>원</div>
+										</li>
+										<li>
+											<div class="tit">기타부대비용</div>
+											<div class="price"><em>3,876,000</em>원</div>
+											<ul class="depth_02 group_target">
+												<li>
+													<div class="tit">관리비</div>
+													<div class="price"><em>50,000</em>원</div>
+												</li>
+												<li>
+													<div class="tit">이전등록비</div> <!-- CPO-9265 2023.02.09 수정 -->
+													<div class="price"><em>3,056,000</em>원</div>
+												</li>
+												<li>
+													<div class="tit">이전등록대행수수료</div>
+													<div class="price"><em>50,000</em>원</div>
+												</li>
+												<li>
+													<div class="tit">탁송료</div>
+													<div class="price"><em>180,000</em>원</div>
+												</li>
+												<li>
+													<div class="tit">추가 탁송료</div>
+													<div class="price"><em>180,000</em>원</div>
+												</li>
+												<li>
+													<div class="tit">회수 탁송료</div>
+													<div class="price"><em>180,000</em>원</div>
+												</li>
+												<li>
+													<div class="tit">추가 회수 탁송료</div>
+													<div class="price"><em>180,000</em>원</div>
+												</li>
+												<li>
+													<div class="tit">철회 탁송료</div>
+													<div class="price"><em>180,000</em>원</div>
+												</li>
+												<li>
+													<div class="tit">추가 철회 탁송료</div>
+													<div class="price"><em>180,000</em>원</div>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="tit">할인 프로모션</div>
+											<div class="price point03"><em>-1,800,000</em>원</div>
+											<ul class="depth_02 group_target">
+												<li>
+													<div class="tit">프로모션명</div>
+													<div class="price"><em>-1,800,000</em>원</div>
+												</li>
+											</ul>
+										</li>
+										<li>
+											<div class="tit">환급금</div>
+											<div class="price point03"><em>-200,000</em>원</div>
+										</li>
+									</ul>
+								</li>
+								<li class="point02 line">
+									<div class="tit">총 결제금액</div>
+									<div class="price"><em>40,076,000</em>원</div>
+								</li>
+								<li class="point02">
+									<div class="tit">환불 차감금액</div>
+									<div class="price point02"><em>1,020,000</em>원</div>
+									<ul class="cont_box">
+										<li>
+											<div class="tit">페널티(클레임 비용)</div> <!-- CPO-9265 2023.02.09 수정 -->
+											<div class="price"><em>50,000</em>원</div>
+										</li>
+										<li>
+											<div class="tit">탁송료</div>
+											<div class="price"><em>180,000</em>원</div>
+										</li>
+										<li>
+											<div class="tit">추가 탁송료</div>
+											<div class="price"><em>180,000</em>원</div>
+										</li>
+										<li>
+											<div class="tit">회수 탁송료</div>
+											<div class="price"><em>180,000</em>원</div>
+										</li>
+										<li>
+											<div class="tit">추가 회수 탁송료</div>
+											<div class="price"><em>180,000</em>원</div>
+										</li>
+									</ul>
+								</li>
+								<li class="point02 line">
+									<div class="tit">취소/환불 예정금액</div>
+									<div class="price point02"><em>39,256,000</em>원</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<!-- //주문금액정보 -->
+
+					<!-- 결제 완료 내역 -->
+					<section class="price_box cont">
+						<div class="sec_tit m group_toggle">결제 완료 내역</div>
+						<div class="payment_detail">
+							<ul class="price_list">
+								<li>
+									<div class="tit">무통장입금</div>
+									<div class="price"><em>10,000,000</em>원</div>
+									<ul class="cont_box group_target">
+										<li>
+											<div class="logo"><img src="/HMC/m/img/finance/bank_004.png" alt=""></div>
+											<div class="cont">
+												<dl class="info01">
+													<dt>
+														<div class="state">
+															<em>입금대기</em>
+														</div>
+														<div class="txt">
+															<span>우리은행 12345678910</span>
+															<span>김현대</span>
+														</div>	
+													</dt>
+													<dd>
+														<div class="price1"><em>500,000</em>원</div>
+													</dd>
+												</dl>
+											</div>
+										</li>
+										<li>
+											<div class="logo"><img src="/HMC/m/img/finance/bank_004.png" alt=""></div>
+											<div class="cont">
+												<dl class="info01">
+													<dt>
+														<div class="state">
+															<em>입금완료</em>
+														</div>
+														<div class="txt">
+															<span>우리은행 12345678910</span>
+															<span>김현대</span>
+														</div>	
+													</dt>
+													<dd>
+														<div class="price1"><em>500,000</em>원</div>
+													</dd>
+												</dl>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<div class="tit">오토할부</div>
+									<div class="price"><em>10,000,000</em>원</div>
+									<ul class="cont_box group_target">
+										<li>
+											<div class="logo"><img src="/HMC/m/img/finance/bank_004.png" alt=""></div>
+											<div class="cont">
+												<dl class="info01">
+													<dt>
+														<div class="state">
+															<em>승인완료</em><span>(2021.11.12 12:12:12)</span>
+														</div>
+														<div class="txt">
+															<span>현대캐피탈</span>
+															<span>연5.2%, 60개월</span>
+															<span>김현대</span>
+														</div>	
+													</dt>
+													<dd>
+														<div class="price1"><em>500,000</em>원</div>
+														<div class="price2">월 520,000원</div>
+													</dd>
+												</dl>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<div class="tit">신용카드</div>
+									<div class="price"><em>10,000,000</em>원</div>
+									<ul class="cont_box group_target">
+										<li>
+											<div class="logo logo_card"><img src="/HMC/m/img/finance/card_381.png" alt=""></div>
+											<div class="cont">
+												<dl class="info01">
+													<dt>
+														<div class="state">
+															<em>결제완료</em><span class="date">(2021.11.12 12:12:12)</span>
+														</div>
+														<div class="txt">
+															<span>우리카드 12345600000*****</span>
+															<span>일시불</span>
+															<span>김현대</span>
+														</div>	
+													</dt>
+													<dd>
+														<div class="price1"><em>500,000</em>원</div>
+													</dd>
+												</dl>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li class="total">
+									<div class="tit">총 결제금액</div>
+									<div class="price"><em>39,256,000</em>원</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<!-- //결제 완료 내역 -->
+
+					<!-- 취소환불 내역 -->
+					<section class="price_box cont">
+						<div class="sec_tit m group_toggle">취소/환불 내역</div>
+						<div class="payment_detail">
+							<ul class="price_list">
+								<li>
+									<div class="tit">무통장입금</div>
+									<div class="price"><em>10,000,000</em>원</div>
+									<ul class="cont_box group_target">
+										<li>
+											<div class="logo"><img src="/HMC/m/img/finance/bank_004.png" alt=""></div>
+											<div class="cont">
+												<dl class="info01">
+													<dt>
+														<div class="state">
+															<em>결제취소</em><span>(2021.11.12 12:12:12)</span>
+														</div>
+														<div class="txt">
+															<span>우리은행 12345678910</span>
+															<span>김현대</span>
+														</div>	
+													</dt>
+													<dd>
+														<div class="price1"><em>500,000</em>원</div>
+													</dd>
+												</dl>
+												<dl class="info02">
+													<dt>
+														<div class="state">
+															<em>환불완료</em><span>(2021.11.12 12:12:12)</span>
+														</div>
+														<div class="txt">
+															<span>우리은행 12345678910</span>
+															<span>김현대</span>
+														</div>	
+													</dt>
+													<dd>
+														<div class="price1"><em>-500,000</em>원</div>
+													</dd>
+												</dl>
+											</div>
+										</li>
+										<li>
+											<div class="logo"><img src="/HMC/m/img/finance/bank_004.png" alt=""></div>
+											<div class="cont">
+												<dl class="info01">
+													<dt>
+														<div class="state">
+															<em>입금완료</em><span>(2021.11.12 12:12:12)</span>
+														</div>
+														<div class="txt">
+															<span>우리은행 12345678910</span>
+															<span>김현대</span>
+														</div>	
+													</dt>
+													<dd>
+														<div class="price1"><em>500,000</em>원</div>
+													</dd>
+												</dl>
+												<dl class="info02">
+													<dt>
+														<div class="state">
+															<em>환불대기</em><span>(2021.11.12 12:12:12)</span>
+														</div>
+														<div class="txt">
+															<span>우리은행 12345678910</span>
+															<span>김현대</span>
+														</div>	
+													</dt>
+													<dd>
+														<div class="price1"><em>-500,000</em>원</div>
+													</dd>
+												</dl>
+											</div>
+										</li>
+										<li>
+											<div class="logo"><img src="/HMC/m/img/finance/bank_004.png" alt=""></div>
+											<div class="cont">
+												<dl class="info01">
+													<dt>
+														<div class="state">
+															<em>미입금취소</em><span>(2021.11.12 12:12:12)</span>
+														</div>
+														<div class="txt">
+															<span>우리은행 12345678910</span>
+															<span>김현대</span>
+														</div>	
+													</dt>
+													<dd>
+														<div class="price1"><em>500,000</em>원</div>
+													</dd>
+												</dl>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<div class="tit">오토할부</div>
+									<div class="price"><em>10,000,000</em>원</div>
+									<ul class="cont_box group_target">
+										<li>
+											<div class="logo"><img src="/HMC/m/img/finance/bank_004.png" alt=""></div>
+											<div class="cont">
+												<dl class="info01">
+													<dt>
+														<div class="state">
+															<em>승인취소</em><span>(2021.11.12 12:12:12)</span>
+														</div>
+														<div class="txt">
+															<span>현대캐피탈</span>
+															<span>연5.2%, 60개월</span>
+															<span>김현대</span>
+														</div>	
+													</dt>
+													<dd>
+														<div class="price1"><em>500,000</em>원</div>
+														<div class="price2">월 520,000원</div>
+													</dd>
+												</dl>
+												<dl class="info02">
+													<dt>
+														<div class="state">
+															<em>승인취소</em><span>(2021.11.12 12:12:12)</span>
+														</div>
+														<div class="txt">
+															<span>현대캐피탈</span>
+															<span>연5.2%, 60개월</span>
+															<span>김현대</span>
+														</div>	
+													</dt>
+													<dd>
+														<div class="price1"><em>500,000</em>원</div>
+														<div class="price2">월 520,000원</div>
+													</dd>
+												</dl>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<div class="tit">신용카드</div>
+									<div class="price"><em>10,000,000</em>원</div>
+									<ul class="cont_box group_target">
+										<li>
+											<div class="logo logo_card"><img src="/HMC/m/img/finance/card_381.png" alt=""></div>
+											<div class="cont">
+												<dl class="info01">
+													<dt>
+														<div class="state">
+															<em>결제취소</em><span class="date">(2021.11.12 12:12:12)</span>
+														</div>
+														<div class="txt">
+															<span>국민카드 12345600000*****</span>
+															<span>일시불</span>
+															<span>김현대</span>
+														</div>	
+													</dt>
+													<dd>
+														<div class="price1"><em>500,000</em>원</div>
+													</dd>
+												</dl>
+												<dl class="info02">
+													<dt>
+														<div class="state">
+															<em>환불완료</em><span class="date">(2021.11.12 12:12:12)</span>
+														</div>
+														<div class="txt">
+															<span>우리카드 12345600000*****</span>
+															<span>일시불</span>
+															<span>김현대</span>
+														</div>	
+													</dt>
+													<dd>
+														<div class="price1"><em>-500,000</em>원</div>
+													</dd>
+												</dl>
+											</div>
+										</li>
+										<li>
+											<div class="logo logo_card"><img src="/HMC/m/img/finance/card_381.png" alt=""></div>
+											<div class="cont">
+												<dl class="info01">
+													<dt>
+														<div class="state">
+															<em>결제완료</em><span class="date">(2021.11.12 12:12:12)</span>
+														</div>
+														<div class="txt">
+															<span>국민카드 12345600000*****</span>
+															<span>일시불</span>
+															<span>김현대</span>
+														</div>	
+													</dt>
+													<dd>
+														<div class="price1"><em>500,000</em>원</div>
+													</dd>
+												</dl>
+												<dl class="info02">
+													<dt>
+														<div class="state">
+															<em>환불대기</em><span class="date">(2021.11.12 12:12:12)</span>
+														</div>
+														<div class="txt">
+															<span>우리카드 12345600000*****</span>
+															<span>일시불</span>
+															<span>김현대</span>
+														</div>	
+													</dt>
+													<dd>
+														<div class="price1"><em>-500,000</em>원</div>
+													</dd>
+												</dl>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li class="total">
+									<div class="tit">총 취소/환불 금액</div>
+									<div class="price"><em>39,256,000</em>원</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<!-- //취소환불 내역 -->
+
+					<!-- 취소환불 예정금액 -->
+					<section class="price_box cont">
+						<div class="sec_tit m group_toggle">취소/환불 예정금액</div>
+						<div class="payment_detail">
+							<ul class="price_list">
+								<li>
+									<div class="tit">무통장입금</div>
+									<div class="price"><em>10,000,000</em>원</div>
+									<ul class="cont_box group_target">
+										<li>
+											<div class="logo"><img src="/HMC/m/img/finance/bank_004.png" alt=""></div>
+											<div class="cont">
+												<dl class="info01">
+													<dt>
+														<div class="state">
+															<em>환불대기</em><span>(2021.11.12 12:12:12)</span>
+														</div>
+														<div class="txt">
+															<span>우리은행 12345678910</span>
+															<span>김현대</span>
+														</div>	
+													</dt>
+													<dd>
+														<div class="price1"><em>500,000</em>원</div>
+													</dd>
+												</dl>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<div class="tit">오토할부</div>
+									<div class="price"><em>10,000,000</em>원</div>
+									<ul class="cont_box group_target">
+										<li>
+											<div class="logo"><img src="/HMC/m/img/finance/bank_004.png" alt=""></div>
+											<div class="cont">
+												<dl class="info01">
+													<dt>
+														<div class="state">
+															<em>취소대기</em><span>(2021.11.12 12:12:12)</span>
+														</div>
+														<div class="txt">
+															<span>현대캐피탈</span>
+															<span>연5.2%, 60개월</span>
+															<span>김현대</span>
+														</div>	
+													</dt>
+													<dd>
+														<div class="price1"><em>500,000</em>원</div>
+														<div class="price2">월 520,000원</div>
+													</dd>
+												</dl>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<div class="tit">신용카드</div>
+									<div class="price"><em>10,000,000</em>원</div>
+									<ul class="cont_box group_target">
+										<li>
+											<div class="logo logo_card"><img src="/HMC/m/img/finance/card_381.png" alt=""></div>
+											<div class="cont">
+												<dl class="info01">
+													<dt>
+														<div class="state">
+															<em>환불대기</em><span class="date">(2021.11.12 12:12:12)</span>
+														</div>
+														<div class="txt">
+															<span>국민카드 12345600000*****</span>
+															<span>일시불</span>
+															<span>김현대</span>
+														</div>	
+													</dt>
+													<dd>
+														<div class="price1"><em>500,000</em>원</div>
+													</dd>
+												</dl>
+											</div>
+										</li>
+									</ul>
+								</li>
+								<li class="total">
+									<div class="tit">총 취소/환불 예정금액</div>
+									<div class="price"><em>39,256,000</em>원</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<!-- //취소환불 예정금액 -->
+
+					<!-- 환불정보 -->
+					<section class="info_box">
+						<div class="sec_tit m">
+							환불정보
+							<button type="button" class="btn_small color02 ico_add">환불 금액을 받으실 환불계좌를 등록해 주세요.</button>
+						</div>
+					</section>
+
+					<section class="info_box">
+						<div class="sec_tit m">환불정보</div> 
+						<div class="bg_box">
+							<div class="list_type02">
+								<span class="bank">
+									<img src="/HMC/m/img/finance/bank_004.png" alt="" class="logo">
+									국민은행
+									<em>12345600000*****</em>
+								</span>
+								<span class="bank_name">김현대</span>
+								<button type="button" class="btn_xsmall color02">변경</button>
+							</div>
+						</div>
+					</section>
+					<!-- //환불정보 -->
+
+					<!-- 내차사기 안내 --> 
+					<!--#include file="/HMC/p/SHTML/H_order/con_buy/con_mycar_step.shtml"-->
+					<!-- //내차사기 안내 -->
+
+					<!-- 배너코너 -->
+					<section class="banner">
+						<img src="/HMC/p/img/@thumb/@banner.jpg" alt="배너명">
+					</section>
+					<!-- //배너코너 -->
+
+					<!-- 자주 묻는 질문 TOP5 -->
+					<!--#include file="/HMC/p/SHTML/H_order/con_buy/con_faq.shtml"-->
+					<!-- //자주 묻는 질문 TOP5 -->
+
+					<!-- 주문취소 -->
+					<div class="btn_area cancel">
+						<a href="javascript:void(0);" class="txt_btn03 s_small c_gs03">주문취소</a>
+					</div>
+					<!-- //주문취소 -->
+
+				</div>
+				<!-- //cont_wrap -->
+			</div>
+			<!-- //container -->
+		</div>
+	</div> 
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<script>
+	lnb_active();
+	toggle();
+	group_toggle();
+	
+	// let _this = event.target;
+	class ChkCompare{
+		constructor(){
+			this.wrap = document.querySelectorAll('.input_compare'); 
+			//radio와 text type의 input을 감싼 부모에 class 추가 input_compare
+			this.inputReset();
+			// this.insuranceReset();
+			this.insurance = document.querySelectorAll('.insurance .cont');
+		}
+
+		inputReset(){
+			this.wrap.forEach(el => {
+				let radio = el.querySelector('.radio input');
+				let inputText = el.querySelector('.form_area input');
+				let com_select_btn = el.querySelector('.form_area .com_select_btn');
+				if(radio.checked == false){
+					inputText.setAttribute('disabled', "");
+					if(com_select_btn) com_select_btn.setAttribute('disabled',"");
+					inputText.closest("[class^='inbox_type']").classList.add('disabled');
+				}
+			});
+		}
+
+		insuranceReset(){
+			this.insurance.forEach(el => {
+				let radio = el.querySelector('.radio input');
+				if(radio.checked == false){
+					el.classList.remove('on');
+				}
+			});
+		}
+
+		inputCompare(){
+			let _this = event.target;
+			let inputText = _this.closest('.input_compare').querySelector('.form_area input');
+			let com_select_btn = _this.closest('.input_compare').querySelector('.form_area .com_select_btn');
+			if(_this.checked == true){
+				inputText.removeAttribute('disabled');
+				if(com_select_btn) com_select_btn.removeAttribute('disabled',"");
+				inputText.closest("[class^='inbox_type']").classList.remove('disabled')
+			}
+			this.inputReset(_this);
+		}
+
+		insuranceCompare(){
+			let _this = event.target;
+			let insurance_cont = _this.closest('.cont');
+			this.insuranceReset();
+			insurance_cont.classList.add('on');
+		}
+	}
+	let compare = new ChkCompare();
+	let compare_mycar = new ChkCompare();
+
+</script>
+</html>

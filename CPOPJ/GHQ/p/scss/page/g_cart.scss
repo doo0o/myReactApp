@@ -1,0 +1,1310 @@
+@charset 'utf-8';
+
+@import '../_common/g_function';
+@import '../_common/g_mixins';
+/* 장바구니 */
+.cart {
+	.mgt_12{margin-top:12px;}
+	.mgt_24{margin-top:24px;}
+	.mgt_100{margin-top:100px;}
+	.mgt_28{margin-top:28px;}
+	.mgt_32{margin-top:32px;}
+	.mgr_24{margin-right:24px;}
+
+	.total_result{
+		margin-top: 24px;
+		padding-bottom: 12px;
+		border-bottom: 1px solid color('COL_gs06');
+		.form_area .txt > em{
+			color: color('COL_secondary2');
+		}
+	}
+	.top_area {		
+		display:flex;
+		align-items: center;
+		justify-content: space-between;
+		margin:12px 0;
+		.desc {
+			margin-right:24px;
+			color: color('COL_gs03');
+			@include fontT(13);
+		}
+	}
+	//장바구니 좌측 체크 리스트
+	.order_list_container{
+		.no_data{
+			margin-top: 24px;
+			padding: 80px 0;
+			border-top: 1px solid color('COL_gs06');
+		}
+		.list {
+			li {
+				position: relative;
+				display: flex;
+				align-items: center;
+				column-gap: 20px;
+				padding: 32px 0;
+				border-bottom: 1px solid color('COL_gs06');
+				&.soldout {
+					.form_area, .btn_small {
+						visibility:hidden;
+					}
+					.caution {
+						display: none;
+					}
+					.unit_info {
+						color: color('COL_gs03') !important;
+						.price {
+							display: none;
+						}
+					}
+					a {pointer-events: none;}
+				}
+				.form_area {
+					width: 24px;
+					flex-shrink: 0;
+					.chk_type01 + label::before {
+						transform: translateY(-50%);
+					}
+					
+				}
+				.btn_small{
+					flex-shrink: 0;
+					margin-left: auto;
+					margin-right: 40px;
+				}
+				.btn_close{
+					position: absolute;
+					right: 16px;
+					top: 16px;
+				}
+			}
+		}
+	}
+	
+	// unit list + 더보기 버튼 or 등록 버튼
+	.unit_deal + .btn_area{
+		margin-top:32px;
+		display: inline-block;
+		width:100%;
+		text-align:center;
+	}
+
+	//관심차량 추천
+	.favorite_list{
+		margin-top: 80px;
+		.sec_tit {
+			margin-bottom: 24px;
+		}
+	}
+
+	.sec_tit.l {
+		margin: 80px 0 24px;
+	}
+
+	//타이틀 > 전체 개수 컬러
+	.top.flex_box{
+		.txt>em{
+			color:color('COL_secondary2');
+		}
+	}
+	//비교차량 선택 > 장바구니 / 찜한상품 /최근 본 상품
+	.unit_deal.col_type02{
+		margin-top:24px;
+		.unit_info{
+			margin-top:8px;
+		}
+		.soldout .number{
+			visibility: hidden;
+		}
+	}
+
+
+	.flex_box{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	//각 리스트에서 _list 라는 클래스를 가지고 있는 상단 타이틀 / 화살표 아이콘/ 선택 개수 표현
+	[class*=_list]{
+		.top{
+			margin-top:80px;
+			.sec_tit{
+				@include fontHM(24);
+				color: $COL_black;
+			}
+		}
+		.arrow{
+			position:relative;
+			display: inline-block;
+			width:18px;
+			height:18px;
+			&::before{
+				content: '';
+				@include Pos($p: absolute, $t: 0, $l:0 );
+				width:18px;
+				height:18px;
+				background:url(../img/icon/icon_ui_arrow_r01.svg);
+				background-size:18px;
+			}
+		}
+		.full{
+			display: inline-block;
+			width:100%;
+			text-align:center;
+		}
+
+	}
+
+	.compare_list .sec_tit.l:first-child {
+		margin-top: 40px;
+	}
+		
+	//우측 sticky
+	.cont_right{
+		background:color( 'COL_gs08');
+		&.sticky{
+			margin-top: 60px;
+		}
+		//우측 비교대상 없음
+		.no_data {
+			padding: 0;
+		}
+	}
+
+	//장바구니에 차량 없을 때 > 우측 비교 차량 sticky 메뉴바
+	.cont_wrap.no_data_area ~ .cont_right.sticky{
+		margin-top:64px;
+	}
+	//장바구니 우측 비교 리스트
+	.cart_container{
+		padding:24px;
+		background-color:color('COL_gs08');
+		.list{
+			&.compare li:first-child {
+				padding-bottom:24px;
+				border-bottom:1px solid color('COL_gs05');
+			}
+			&>li{
+				margin-bottom:24px;
+			}
+		}
+		.btn_area.full_type.row_type {
+			margin-top: 24px;
+		}
+		// .unit_type.type02{
+		// 	.unit_info{
+		// 		.model, .desc{
+		// 			color:$COL_black;
+		// 			@include fontT(15, 19px);
+		// 		}
+		// 	}
+		// }
+		// .tit{
+		// 	margin-top:8px;
+		// 	@include fontT(18);
+		// }
+		// .desc{
+		// 	margin-top:8px;
+		// 	color: color('COL_gs03');
+		// 	@include fontT(14)
+		// }
+		// .btn_area{
+		// 	margin-top:24px;
+		// 	.btn_mid{
+		// 		margin-top:8px;
+		// 		&:first-child{margin-top:0}
+		// 	}
+		// 	row-gap: 0;
+		// 	column-gap:0;
+		// }
+	}
+
+	// 작은 버튼 + 새로고침 버튼
+	[class^="btn_"] + .btn_reset02{
+		margin-top: 8px;
+	}
+
+	//새로고침 아이콘
+	.btn_reset02{
+		justify-content: center;
+	}
+
+	//상단 타이틀 + bg box
+	.page_tit + .caution.bg{
+		margin-top:28px;
+	}
+
+	//보유차량 리스트
+	.compare_list{
+		.top{margin-top:40px;}
+		.unit_deal{
+			.flag_pin{
+				display: block;
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				z-index: 1;
+				padding: 0 4px;
+				background: rgba(0, 0, 0, 0.6);
+				color: $COL_white;
+				text-align: center;
+				@include fontT(13);
+				&::before {
+					content: '';
+					display: inline-block;
+					width:12px;
+					height:14px;
+					margin-right: 2px;
+					vertical-align: middle;
+					background:url(../img/icon/icon_compare_pin_off03.svg);
+				}
+			}
+		}
+		//가격 정보 없을 경우
+		.no_price{
+			.unit_img{
+				height:127px;
+				@include Icon_hyundai($color:c6c6c6);
+				background-position: 50% 50%;
+				background-color: color('COL_gs08');
+			}
+			.unit_info{
+				color: color('COL_gs03');
+			}
+			.price{
+				&>em{
+					color: color('COL_gs04');
+				}
+				.num>em{
+					@include fontTM(18)
+				}
+			}
+		}
+	}
+	.divider{
+		width:100%;
+		height:1px;
+		background-color:color('COL_gs05');
+	}
+	.no_line{border:0;}
+
+	.btn_prev, .btn_next{
+		position:relative;
+		width: 40px;
+		height: 40px;
+		border: 1px solid color('COL_gs05');
+		font-size: 0;
+		text-align: center;
+		background-position: center;
+		background-repeat: no-repeat;
+		opacity:0.4;
+		&.active, &:hover{
+			opacity:1;
+		}
+	}
+	.btn_prev + .btn_next{
+		margin-left:8px;
+	}
+	.btn_prev{
+		background-image:url(../img/icon/icon_ui_arrow_l02.svg);
+	}
+	.btn_next{
+		background-image: url(../img/icon/icon_ui_arrow_r02.svg);
+	}
+
+	.txt_btn02{
+		@include fontT(14);
+		justify-content: space-between;
+		width:100%;
+		&.up::after{
+			transform: rotate(180deg);
+		}
+	}
+
+	//차량 비교하기
+	.compare_sort_container{
+		display: flex;
+		margin-top:-160px;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		border:1px solid color('COL_gs06');
+		max-width:1180px;
+		&.on {
+			.unit_compare + .btn_close {
+				top:23px;
+				width: 16px;
+				height: 16px;
+				&::before {
+					width: 16px; height: 16px;
+					@include Icon_close($COL_black,'16px');
+				}
+			}
+			.prd_item_container .add_box {
+				margin-top:20px;
+			}
+		}
+	}
+	//차량 비교하기 > 좌측 타이틀
+	.tit_fix_container{
+		flex-shrink: 0;
+		width:160px;
+		padding:20px 16px;
+		border-right:1px solid color('COL_gs06');
+		.tit_group{
+			position:relative;
+			border-bottom: 1px solid color('COL_gs06');
+			padding-bottom:24px;
+			&:last-child{
+				border-bottom:none;
+				padding-bottom:0;
+			}
+			.tit{
+				padding:10px 0;
+			}
+			.desc{
+				.sub_tit {
+					margin-top:8px;
+					color:color('COL_gs03');
+					@include fontT(14,24px);
+					&:first-child {
+						margin-top:0;
+					}
+					&.price{
+						margin-top:220px;
+					}
+					&.fix{
+						margin-top:32px;
+					}
+					&.loan{
+						margin-top:12px;
+						&>em{
+							display: block;
+							@include fontT(12);
+						}
+					}
+					&.discount{
+						margin-top:12px;
+					}					
+				}			
+				.radio_box{
+					margin-top:8px;
+					&:first-child{
+						margin-top:0;
+					}					
+				}
+				&.up {
+					overflow:hidden;
+					.tit {
+						padding-bottom:0;
+					}
+					.desc{
+						display: none;
+						visibility: hidden;
+					}
+					.short-desc{
+						display: block;
+					}
+				}
+
+			}			
+			.short-desc{ // 접혔을때 버전
+				display: none;
+				margin-top:1px;
+				.list_tit {
+					display: flex;
+					.sub_tit {
+						position: relative;
+						padding-left:17px;
+						&::before {
+							content: '';
+							position: absolute;
+							top:50%; left: 8px;
+							margin-top:-6px;
+							width: 1px; height:12px;
+							background:color('COL_gs05');
+						}
+						&:first-child {
+							padding-left:0;
+							&::before {
+								display: none;
+							}
+						}	
+					}
+				}
+				.sub_tit {
+					color: color('COL_gs03');
+					@include fontT(14);
+				}
+			}
+			&.up {
+				.tit {
+					padding-bottom:0;
+				}
+				.desc {
+					display: none;
+				}
+				.short-desc {
+					display: block;
+				}
+			}
+		}
+	}
+
+	// 좌우 이동 및 드래그 할 때 지정된 영역만 보여주기 위한 컨테이너
+	.dnd_container{
+		overflow: hidden;
+		position: relative;
+		width:1018px;
+		//영역 그림자
+		&::before{
+			z-index: 11;
+			content:'';
+			@include Pos($p:absolute, $t:-13px, $r:0);
+			width:50px;
+			height:120%;
+			box-shadow: inset -5px 0px 10px 1px rgb(0 0 0 / 5%);
+		}
+
+		//좌우 이동시 필요한 컨테이너
+		.move_container{
+			position:absolute;
+			top:0;
+			left:0;
+			will-change: transform;
+			transition: transform 0.55s cubic-bezier(0.22, 0.61, 0.36, 1);;
+
+			//drag and drop 할 컨테이너
+			.dnd_list{
+				display: flex;
+				//overflow: hidden;
+				height:3057px;
+				flex-flow: column wrap;
+				align-content: flex-start;
+			}
+		}
+	}
+
+	//차량 비교 우측 dnd 엘리먼트
+	.prd_item_container{
+		//클릭시 상단으로 자동 스크롤 방지
+		[class^=chk_]{
+			display: none;
+		}
+		&.dim {
+			filter: contrast(0.85);
+		}
+		position: relative;
+		background-color:$COL_white;
+		width:238px;
+		height: 100%;
+		border-right:1px solid color('COL_gs06');
+		//transition 선언은 sortablejs 에서 선언되는 부분이 겹칠 수 있기에 제거해 둠.
+		// 아니면  transition: all 로 선언해야 하는데 그건 비효율적.
+		//transition: left 0.35s ease-out, transform 0.3s ease-out;
+
+		//상세내용 컨테이터
+		.unit_compare{
+			position:relative;
+			width:238px;
+			padding:20px 24px;
+		}
+
+		.info_desc_group{
+			padding: 44px 4px 0;
+			border-top: 1px solid color('COL_gs06');			
+			.txt_list {
+				display:flex;
+				align-items: center;
+				.txt {						
+					padding-left:12px;
+					&:first-child {
+						padding-left:0;
+					}
+				}
+			}
+			&.up {
+				padding-top:34px;
+				.summary_group {
+					.txt_list {
+						display: flex;
+						.txt {
+							position: relative;
+							padding-left:25px;
+							&::before {
+								content:'';
+								position:absolute;
+								top:50%; left:12px;
+								margin-top:-6px;
+								width:1px ; height: 12px;
+								background:color('COL_gs05');
+							}
+							&:first-child {
+								padding-left:0;
+								&::before {
+									display: none;
+								}
+							}
+						}
+					}
+				}
+			}
+			&:nth-child(1){
+				padding:0;
+				border-top:none;
+			}
+			div.txt {
+				margin-top:8px;
+			}
+			.txt {				
+				@include fontT(15,24px);
+				&:first-child{
+					margin-top:0;
+				}
+				&.line2{
+					@include Mix_Ellipsis($line:2);
+					line-height:24px;
+				}
+				.add_info{display: block;}
+				.p_num{
+					display: inline-block;
+					margin-right:2px;
+					@include fontTM(16,23px);
+				}
+			}
+
+			// 옵션
+			&.option_group{ 
+				padding:16px 0 0;
+				.sub_group{
+					margin-top:16px;
+					padding: 16px 4px 0;
+					border-top: 1px solid color('COL_gs06');
+					&:first-child{
+						padding-top:0;
+						margin-top:0;
+						border-top:none;
+					}
+					ul li {
+						margin-top:8px;
+					}
+				}
+				.tit_opt{
+					color: color('COL_gs03');
+					@include fontT(15);
+				}
+				.opt{
+					color: color('COL_gs04');
+					@include fontT(15);
+					&::before{
+						content:'';
+						display:inline-block;
+						width: 16px;
+						height:16px;
+						margin-right:4px;
+						vertical-align: middle;
+						background-color:color('COL_gs10');
+						-webkit-mask: url('../img/icon/icon_chk02.svg') no-repeat 0 0;
+						mask: url('../img/icon/icon_chk02.svg') no-repeat 0 0;					
+					}
+					&.active{
+						color:color('COL_gs02');
+						&::before{
+							background-color:color('COL_secondary2');
+						}
+					}
+				}
+			}	
+
+		}
+		//고정 핀 체크박스
+		.check_pin{
+			// input type=checkbox
+			.chk_pin{
+				&+label{
+					position:relative;
+					display:inline-block;
+					&::before{
+						content:'';
+						display:inline-block;
+						@include Pos($p:absolute, $t:0, $l:0);
+						width:24px;
+						height:24px;
+						background: {
+							image:url(../img/icon/icon_compare_pin_off.svg);
+							size:24px auto;
+							repeat:no-repeat;
+						};
+					}
+				}				
+				&:checked:not(:disabled){
+					& + label::before {
+						background-image:url(../img/icon/icon_compare_pin.svg);
+					}
+				}
+			}
+			.txt{
+				padding-left:28px;
+				color: color('COL_gs02');
+				@include fontTM(16);
+			}
+		}
+		.unit_img{
+			position: relative;
+			margin-top:16px;
+			height:127px;
+			img{
+				width:100%;
+			}
+		}
+		.unit_info{
+			margin-top:16px;
+			.name{
+				height:38px;
+				& >.txt{
+					@include fontHM(15);
+					@include Mix_Ellipsis(2);
+				}
+			}
+
+			.price{
+				display: block;
+				margin-top:16px;
+				.num{
+					@include fontT(15);
+					&>em{
+						margin-right:2px;
+						@include fontHM(30);
+					}
+					//범위가 있는 가격대
+					.range{
+						@include fontHM(26,36px);
+					}
+				}
+			}
+
+			.bg_box{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-top:16px;
+				height:36px;
+				@include fontT(13);
+				.txt {
+					margin-right:4px;
+					color:color('COL_gs03');
+					@include fontT(13);
+				}
+				.ico{
+					display: inline-block;
+					width:10px;
+					height:11px;
+					margin-left:2px;
+					vertical-align: middle;
+				}			
+
+				//기준차량 경우
+				&.fixed{
+					display: none;
+					background-color: $COL_white;
+					color:$COL_black;
+					@include fontT(14);
+					.ico{
+						width:16px;
+						height:16px;
+						margin:0 4px 0 0;
+						background: url(../img/icon/icon_circle_check.svg) 0 50% no-repeat;
+					}
+				}
+				//기준차량대비 down 가격
+				&.m_down{
+					background: color('COL_gs08');
+					color: color('COL_gs03');
+					.d_price{
+						color: color('COL_secondary1');
+					}
+					.ico{					
+						background: url(../img/icon/icon_down_triangle.svg) 100% 50% no-repeat;
+					}
+				}
+				//기준차량대비 up 가격
+				&.m_up{
+					background: color('COL_gs08');
+					color: color('COL_gs03');
+					.d_price{
+						color: color('COL_error');
+					}
+					.ico{						
+						background: url(../img/icon/icon_up_triangle.svg) 100% 50% no-repeat;
+					}
+				}
+			}
+			.loan{
+				margin-top:18px;
+				font-weight:500;
+				&>i{
+					@include fontT(15);
+				}
+			}
+			.compare_rate{
+				margin-top:22px;
+				.num{
+					display: flex;
+					flex-direction: row;
+					flex-wrap: nowrap;
+					align-items: center;
+				}
+				.rate{
+					@include fontTM(16);
+					&>i{ font-weight: 400; }
+				}
+				.discount{
+					margin-left:8px;
+					color: color('COL_gs04');
+					@include fontT(13);					
+				}
+			}
+			.btn_mid{
+				margin-top:16px;
+				min-width:100%;
+			}
+		}
+		//가격정보 없음 상태
+		&.no_price{
+			.unit_info .price>.num>em{
+				color:color('COL_gs04');
+				@include fontT(24);
+			}
+			.bg_box, .loan, .compare_rate{
+				visibility: hidden;
+			}
+		}
+		//일시품절 상태
+		&.soldout{
+		   .unit_img{
+			   position:relative;
+			   img{opacity: 0.5;}
+			}
+		   .flag_soldout{
+			   display: block;
+			   position: absolute;
+			   bottom: 0;
+			   left: 0;
+			   z-index: 1;
+			   width: 100%;
+			   height: 20px;
+			   color: $COL_white;
+			   @include fontT(13);
+			   text-align: center;
+			   background: rgba(0, 0, 0, 0.5);
+		   }
+		}
+		//보유차량 상태
+		&.cur_my_car{
+			.loan, .compare_rate{
+				visibility: hidden;
+			}
+		}
+
+		//현재 빈 엘리먼트 상태 - 비교차량 컨텐츠 없음을 뜻함.
+		//(  prd_item_container.empty  )
+		&.empty{
+			.add_box{
+				display:block;
+			}
+			.btn_close{ display: none; }
+		}
+
+		//기준 차량 상태(  prd_item_container.pin )
+		&.pin{
+			z-index:10;
+			background-color:color('COL_gs08');
+			.bg_box{
+				&.m_down, &.m_up{
+					display: none;
+				}
+			}
+			.bg_box.fixed{
+				display: flex;
+				visibility: visible;
+			}
+		}
+		.add_box{
+			display: none;
+			margin:61px 24px 0;
+			width:190px;
+			height:120px;
+			border:1px color('COL_gs05') dashed;
+
+			&>a{
+				display: inline-block;
+				padding-top:30px;
+				width: 100%; height:100%;
+				text-align:center;
+				color: color('COL_gs03');
+				@include fontT(13);
+				&::before{
+					content:'';
+					display: block;
+					margin:0 auto 5px;
+					width:16px;
+					height:16px;
+					background:url(../img/icon/icon_ui_add03.svg) 0 50% no-repeat;
+				}
+			}
+		}
+		.btn_close{
+			@include Pos($p:absolute, $t:20px, $r:24px);
+			width: 24px; height: 24px;
+			&::before {
+				width: 24px; height:24px;
+				@include Icon_close($COL_black,'24px');
+			} 
+		}
+
+		//맨 하단에 배치되는 요약 박스
+		.summary_group{
+			display:none;
+			.option_list {
+				display: flex;
+				justify-content: space-between;
+				.item {
+					padding:12px 0;
+					background-color:$COL_black;
+					width: calc(50% - 4px);
+					color:$COL_white;
+					text-align: center;
+					.s_tit{
+						@include fontTM(13);
+						text-align: center;
+						&::before{
+							content:'';
+							display: inline-block;
+							width:16px;
+							height:16px;
+							vertical-align: middle;
+							margin-right:4px;
+						}
+						&.check::before{
+							background:url(../img/icon/icon_circle_check_white.svg) 50% 50% no-repeat;
+							background-size:16px;
+						}
+						&.add::before{
+							background:url(../img/icon/icon_circle_add.svg) 50% 50% no-repeat;
+							background-size:16px;
+						}
+					}
+					.s_val{
+						display: block;
+						width:100%;
+						@include fontTM(20);
+						text-align: center;
+					}
+				}
+			}	
+		}
+
+		// up (간단히 보기 - 접힌 상태)
+		.info_desc_group.up{
+			.detail_group {
+				display:none;
+			}
+			
+			.check_pin{
+				.chk_pin{
+					&+label{
+						line-height: 20px;
+						&::before{
+							top:2px;
+							width:16px;
+							height:16px;
+							background:url(../img/icon/icon_compare_pin_off02.svg);
+						}
+					}
+					&:checked:not(:disabled){
+						& + label::before {
+							background:url(../img/icon/icon_compare_pin02.svg) center no-repeat;
+						}
+					}
+				}
+				.txt{
+					padding-left:20px; 
+					@include fontTM(14);
+				}
+			}
+			.unit_info{ 
+				margin-top:8px;
+				.price{
+					margin-top:4px;
+					.num{
+						@include fontT(14);
+						&>em{
+							@include fontT(20);
+						}
+					}
+				}
+
+				.bg_box{
+					margin-top: 2px;
+					height:20px;
+					justify-content: flex-start;
+					background-color: transparent;
+					&.fixed {
+						@include fontT(13);
+					}
+					.txt {
+						display: none;
+					}
+				}
+			}
+			.unit_img, 
+			.loan, 
+			.compare_rate, 
+			.btn_mid, 
+			.sub_group{				
+				display: none;
+			}
+
+			.summary_group{
+				display: block;				
+			}
+		}
+	}
+
+	//table row 를 구성하듯 제목 과 내용 셀 높이값을 같이 해준다.
+	.tit_fix_container .tit_group:nth-child(1), .prd_item_container .info_desc_group:nth-child(1){
+		height:505px;
+		.tit {
+			padding:0;
+		}
+		&.up {
+			height:152px;
+		}
+	}
+	.tit_fix_container .tit_group:nth-child(2), .prd_item_container .info_desc_group:nth-child(2){
+		height:466px;
+		&.up{
+			height:82px;			
+		}
+	}
+	.tit_fix_container .tit_group:nth-child(3), .prd_item_container .info_desc_group:nth-child(3){
+		height:126px;
+		&.up{
+			height:82px;
+		}
+	}
+	.tit_fix_container .tit_group:nth-child(4), .prd_item_container .info_desc_group:nth-child(4){
+		height:286px;
+		&.up{
+			height:82px;
+		}
+	}
+	.tit_fix_container .tit_group:nth-child(5), .prd_item_container .info_desc_group:nth-child(5){
+		height:190px;
+		&.up{
+			height:82px;
+		}
+	}
+	.tit_fix_container .tit_group:nth-child(6), .prd_item_container .info_desc_group:nth-child(6){
+		height:190px;
+		&.up{
+			height:82px;
+		}
+	}
+	.tit_fix_container .tit_group:nth-child(7), .prd_item_container .info_desc_group:nth-child(7){
+		height:254px;
+		&.up{
+			height:82px;
+		}
+	}
+	.tit_fix_container .tit_group:nth-child(8), .prd_item_container .info_desc_group:nth-child(8){
+		height:979px;
+		&.up{
+			height:95px;
+		}
+	}
+
+	.tit_fix_container .tit_group{
+		transition: height 0.3s ease;
+	}
+	.prd_item_container .info_desc_group{
+		transition: height 0.3s ease;
+	}
+
+	//상단 stick 처리 부분
+	.top_sticky_container{
+		//클릭시 상단으로 자동 스크롤 방지
+		[class^=chk_]{
+			display: none;
+		}
+		z-index:11;
+		position: sticky;
+		top:70px;
+		margin-left:1px;
+		transform: translateY(-400px);
+		transition: transform 0.15s, opacity 0.1s;
+		opacity: 0;
+		background-color:$COL_white;
+		box-shadow: 0 5px 5px 0 rgb(0 0 0 / 5%);
+		&.up{
+			opacity: 1;
+			transform:translateY(0)
+		}
+		.sticky_items_wrapper{
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			flex:0;
+			width:1178px;
+			height:160px;
+			overflow: hidden;
+		}
+		.tit{
+			width: 160px;
+			height:160px;
+			padding: 20px 16px;
+			border-right: 1px solid color('COL_gs06');
+			.txt_btn02 {
+				&::after {
+					transform:rotate(180deg);			
+				}
+			}
+		}
+		.info_desc_group{
+			position: relative;
+			width:238px;
+			height:100%;
+			padding:20px 24px;
+			border-right: 1px solid color('COL_gs06');
+
+			.bg_box{
+				.ico{
+					display: inline-block;
+					vertical-align: middle;
+				}
+				.d_price{
+					@include fontT(13);
+				}
+				.txt{display: none;}
+				//기준차량 경우
+				&.fixed{
+					display: none;
+					color:$COL_black;
+					.ico{
+						width:16px;
+						height:16px;
+						margin-right:2px;
+						background: url(../img/icon/icon_circle_check.svg) 0 50% no-repeat;
+					}
+				}
+				//기준차량대비 down 가격
+				&.m_down{
+					color: color('COL_gs03');
+					.d_price{
+						color: color('COL_secondary1');
+					}
+					.ico{
+						display: inline-block;
+						width:10px;
+						height:11px;
+						margin-left:2px;
+						background: url(../img/icon/icon_down_triangle.svg) 100% 50% no-repeat;
+					}
+				}
+				//기준차량대비 up 가격
+				&.m_up{
+					color: color('COL_gs03');
+					.d_price{
+						color: color('COL_error');
+					}
+					.ico{
+						display: inline-block;
+						width:10px;
+						height:11px;
+						margin-left:2px;
+						background: url(../img/icon/icon_up_triangle.svg) 100% 50% no-repeat;
+					}
+				}
+			}
+
+			.add_box{
+				width:100%;
+				//height:120px;
+				border:1px color('COL_gs05') dashed;
+				padding:28px 24px;
+
+				&>a{
+					display: inline-block;
+					width: 100%;
+					@include fontT(13);
+					text-align:center;
+					color:color('COL_gs03');
+					&::before{
+						content:'';
+						display: block;
+						width:16px;
+						height:16px;
+						margin:0 auto 5px auto;
+						background:url(../img/icon/icon_ui_add03.svg) 0 50% no-repeat;
+					}
+				}
+			}
+			//고정 핀 체크박스
+			.check_pin{
+				.chk_pin{
+					&+label{
+						position:relative;
+						display:inline-block;
+						line-height: 20px;
+						&::before{
+							content:'';
+							display:inline-block;
+							@include Pos($p:absolute, $t:2px, $l:0);
+							width:16px;
+							height:16px;
+							background:url(../img/icon/icon_compare_pin_off02.svg) center no-repeat;
+						}						
+					}					
+					&:checked:not(:disabled){
+						& + label::before {
+							background:url(../img/icon/icon_compare_pin02.svg) center no-repeat;
+						}
+					}
+
+					&:disabled:checked, &:disabled{
+						& + label::before{
+							background:url(../img/icon/icon_compare_pin02.svg) center no-repeat;
+						}
+					}
+
+				}
+				.txt{
+					padding-left:20px;
+					color: color('COL_gs02');
+					@include fontTM(14);
+				}
+			}
+			.unit_info {
+				margin-top: 8px;
+				.name {
+					height: 38px;
+					@include Mix_Ellipsis(2);
+					& > .txt {
+						@include fontHM(15);
+					}
+				}
+				.price {
+					margin-top: 4px;
+					.num {
+						display: block;
+						@include fontT(14,26px);
+						& > em {
+							margin-right:2px;
+							@include fontHM(20);
+							color: $COL_black;
+							vertical-align: middle;
+						}
+					}
+				}
+				.bg_box {
+					margin-top:2px;
+					@include fontT(13);
+					&.fixed {
+						color: $COL_black;
+						.ico {
+							background: url(../img/icon/icon_circle_check.svg) 0 50% no-repeat;
+						}
+					}
+				}
+				//월할부금, 신차가격대비, 주문하기 버튼 안보임처리
+				.loan, .compare_rate, .btn_mid.order{
+					display: none;
+				}
+			}
+			//고정핀 현재 기준차량 상태
+			&.check{
+				z-index:10;
+				background-color: color('COL_gs08');
+				.bg_box{
+					&.m_down, &.m_up{
+						display: none;
+					}
+				}
+				.bg_box.fixed{
+					display: block;
+					visibility: visible;
+				}
+			}
+			//현재 보유차량 상태
+			&.cur_my_car{
+				.unit_info .bg_box{
+					visibility: visible;
+				}
+				//pin 고정상태일때는 기준차량 박스를 보여줌.
+				&.check{
+					.unit_info .bg_box{
+						visibility: visible;
+					}
+				}
+			}
+			//현재 가격정보 없는 상태
+			&.no_price{
+				.unit_info .price .num{
+					@include fontTM(18);
+					&>em{
+						@include fontTM(18);
+						color:color('COL_gs04');
+					}
+				}
+				.bg_box{visibility: hidden}
+			}
+		}
+
+		.btn_close {
+			@include Pos($p:absolute, $t:24px, $r:24px);
+			width:16px;
+			height:16px;
+			&::before{
+				content:'';
+				width:16px;
+				height:16px;
+				@include Icon_close($COL_black,'16px');
+			}
+		}
+	}
+	@keyframes fadeOut {
+		0% {
+			opacity:1;
+			transform: translateY(0);
+		}
+
+		50%{
+			opacity: 0.1;
+			transform: scaleY(0.5) translateY(-400px);
+		}
+		100% {
+			opacity: 0;
+			transform: scaleY(0) translateY(-400px);
+			height: 0vh;
+			visibility: hidden;
+		}
+	}
+}
+
+//코치마크
+.coach_wrap .coach_cont {
+	.step .comment.txt1 {
+		top: 88px;
+		left: 844px;
+	}
+	.step .comment.txt2 {
+		top: 368px;
+		left: 892px;
+	}
+	.step .comment.txt3 {
+		top: 368px;
+		left: 290px;
+	}
+}

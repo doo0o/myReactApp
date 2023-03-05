@@ -1,0 +1,1910 @@
+@charset 'utf-8';
+/* 
+	마이페이지
+*/
+@import '../_common/h_function';
+@import '../_common/h_mixins';
+@import '../_layout/h_mycar'; // 차량 등록 레이어
+@import '../_layout/h_address';
+
+@import '../_layout/h_search';
+
+
+
+// FO-MY-MS0001 마이페이지 메인
+.my_main{
+	overflow-x:hidden;
+	background-color:$COL_BG_Light01;
+	.unit_link{
+		display:flex;
+		gap:0 16px;
+		padding:20px 15px 20px;
+		.unit_img{
+			width:100px;
+			height:100px;
+			margin:0;
+			padding:0;
+			//border-radius:4px;
+		}
+	}
+}
+// 메인 헤더
+.my_main_head{
+	padding:10px 15px 0;
+	background-color:$COL_BG_Light01;
+	.m_txt{
+		display:flex;
+		align-items:center;
+		padding:0 6px;
+		color:$COL_Text_Base04;
+		@include Mix_Font('Head-R', 26, 33);
+		em{
+			@include Mix_Font('Head-M', 26, 33);
+		}
+		&::after{
+			content:'';
+			display:inline-block;
+			width:26px;
+			height:26px;
+			margin-left:6px;
+			@include Mix_Mypage_Bg;
+			background-position:-143px 0;
+			vertical-align:middle;
+		}
+	}
+	.m_txt2{
+		margin-top:8px;
+		padding:0 6px;
+		color:$COL_Text_Base03;
+		@include Mix_Font('Txt-R', 15, 23);
+	}
+	//블루멤버스 포인트 & 장바구니, 찜한상품, 최근 본 상품
+	.m_box{
+		margin-top:30px;
+		background-color:$COL_WHITE;
+		//border-radius:6px;
+		box-shadow:0px 0px 5px rgba($COL_Text_Base04,0.015);
+		a{
+			color:$COL_WHITE;
+		}
+		.m_point{
+			display:flex;
+			align-items:center;
+			padding:25px 0;
+			&+.m_list{
+				position:relative;
+				&:before {
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0;
+					left: 20px;
+					right: 20px;
+					height: 1px;
+					background-color:$COL_Line_Light01;
+				}
+			}
+			span{
+				padding-left:20px;
+				color:$COL_Text_Base04;
+				@include Mix_Font('Head-R', 15, 18);
+				&.tit{
+					flex:1;
+				}
+			}
+			a{
+				height:100%;
+				padding-right:20px;
+				&.point{
+					color:$COL_Primary01;
+					@include Mix_Font('Head-R', 22, 28);
+					em{
+						@include Mix_Font_Head_M;
+					}
+					&::after{
+						content:'';
+						display:inline-block;
+						width:8px;
+						height:13px;
+						margin-left:6px;
+						@include Mix_Mypage_Bg;
+						background-position:-172px 0;
+						vertical-align:middle;
+					}
+				}
+				&.join{
+					color:$COL_Text_Base04;
+					@include Mix_Font('Head-R', 14, 18);
+					text-decoration-line:underline;
+					text-underline-position:under;
+					&::after{
+						content:'';
+						display:inline-block;
+						width:8px;
+						height:13px;
+						margin-left:5px;
+						@include Mix_Mypage_Bg;
+						background-position:-184px -17px;
+						vertical-align:middle;
+					}
+				}
+			}
+		}
+		.m_list{
+			display:flex;
+			justify-content:center;
+			align-items:center;
+			li{
+				flex:1;
+				text-align:center;
+				a{
+					display:block;
+					position:relative;
+					height:100%;
+					padding:20px 0;
+					text-align:center;
+					span{
+						display:block;
+						&.num{
+							color:$COL_Secondary01;
+							@include Mix_Font('Head-M', 20, 25);
+						}
+						&.txt{
+							margin-top:5px;
+							color:$COL_Text_Base03;
+							@include Mix_Font('Head-R', 14, 18);
+						}
+					}
+					&::before{
+						content:'';
+						position:absolute;
+						top:50%;
+						left:0;
+						width:1px;
+						height:48px;
+						background-color:$COL_Line_Light01;
+						transform:translateY(-50%);
+					}
+				}
+				&:first-child a::before{
+					display:none;
+				}
+			}
+		}
+	}
+	//보유차량 등록
+	.m_box2{
+		display:inline-block;
+		position:relative;
+		width:100%;
+		margin:15px 0 30px;
+		padding:30px 103px 30px 25px;
+		background-color:$COL_WHITE;
+		border:solid 1px $COL_Line_Light01;
+		//border-radius:6px;
+		box-shadow:0px 0px 5px rgba($COL_Text_Base04, 0.015);
+		.tit{
+			color:$COL_Text_Base04;
+			@include Mix_Font('Head-M', 18, 23);
+		}
+		.txt{
+			margin-top:8px;
+			color:$COL_Text_Base03;
+			@include Mix_Font('Txt-R', 14, 21);
+		}
+		button{
+			position:absolute;
+			top:50%;
+			right:25px;
+			padding:8px 15px;
+			background-color:$COL_WHITE;
+			border:solid 1px $COL_Line_Dark01;
+			color:$COL_Text_Base03;
+			@include Mix_Font('Head-R', 14, 18);
+			//border-radius:17px;
+			transform:translateY(-50%);
+		}
+	}
+	.m_box3{
+		display:inline-block;
+		position:relative;
+		width:100%;
+		padding:20px;
+		background-color:$COL_WHITE;
+		border:solid 1px $COL_Line_Light01;
+		//border-radius:6px;
+		box-shadow:0px 0px 5px rgba($COL_Text_Base04, 0.015);
+		.m_head_box{
+			display:flex;
+			align-items:center;
+			position:relative;
+			padding-bottom:15px;
+			border-bottom:solid 1px $COL_Line_Light01;
+			.tit{
+				flex:1;
+				color:$COL_Text_Base04;
+				@include Mix_Font('Head-M', 18, 23);
+				span::after{
+					content: "";
+					display:inline-block;
+					width:7px;
+					height:12px;
+					margin:-1px 0 0 8px;
+					@include Mix_Mypage_Bg;
+					background-position: -185px -17px;
+					vertical-align:middle;
+				}
+				
+			}
+			.car{
+				padding:7px 10px;
+				background-color:$COL_WHITE;
+				border:solid 1px $COL_Line_Dark01;
+				//border-radius:17px;
+				color:$COL_Text_Base03;
+				@include Mix_Font('Head-R', 13, 16);
+			}
+		}
+	}
+	.my_main_link .unit_mid{
+		padding:5px 0 0;
+		.unit_info{
+			flex:1;
+			padding-top:15px;
+		}
+	}
+}
+//마이페이지 메뉴 리스트
+.my_main_list{
+	margin-top:8px;
+	padding:5px 0 0;
+	background-color:$COL_BG_Light01;
+	border-top:solid 1px $COL_Line_Light02;
+	> li{
+		padding:0 21px;
+		background-color:$COL_WHITE;
+		> a{
+			display:block;
+			position:relative;
+			padding:25px 0;
+			border-bottom:solid 1px $COL_Line_Light01;
+			color:$COL_Text_Base04;
+			@include Mix_Font('Head-M', 16, 20);
+			&::after{
+				content:'';
+				display:block;
+				position:absolute;
+				top:50%;
+				right:0;
+				width:7px;
+				height:12px;
+				@include Mix_Mypage_Bg;
+				background-position:-185px -1px;
+				transform:translateY(-50%);
+			}
+		}
+		&:last-child{
+			border-bottom:0;
+			> a{
+				padding-bottom:40px;
+				&::after{
+					margin-top:-10px;
+				}
+			}
+		}
+		&.last_list{
+			margin-bottom:8px;
+			padding-bottom:30px;
+			border-bottom:solid 1px $COL_Line_Light02;
+			& + li > a{
+				border-top:solid 1px $COL_Line_Light02;
+			}
+		}
+		.my_main_swiper03{
+			width:calc(100% + 42px);
+			margin:-10px -21px 0;
+			background-color:$COL_WHITE;
+		}
+	}
+	.my_main_link{
+		display:inline-block;
+		padding:20px 18px;
+		background-color:$COL_WHITE;
+		border:solid 1px $COL_Line_Light01;
+		//border-radius:6px;
+		box-shadow:0px 0px 5px rgba($COL_Text_Base04, 0.015);
+		.unit_info{
+			position:relative;
+			@include Mix_Unit_Drive($COL_Text_Base02, $COL_Inactive_Text01, 4px);
+			@include Mix_Unit_Price($COL_Text_Base04);
+			.name{
+				.num{
+					display:block;
+					color:$COL_Blue03;
+					@include Mix_Font('Head-M', 12, 16);
+				}
+				.model{
+					color:$COL_Text_Base03;
+					@include Mix_Font('Head-R', 15, 19);
+					@include Mix_Ellipsis(2);
+				}
+			}
+			.drive{
+				overflow:hidden;
+				display:block;
+				height:16px;
+				margin-top:0;
+			}
+			.price{
+				position:absolute;
+				left:0;
+				bottom:0;
+			}
+		}
+		.unit_img img{
+			width:100px;
+			height:100px;
+		}
+		.unit_top{
+			display:flex;
+			align-items:center;
+			position:relative;
+			padding:0 2px;
+			font-size:0;
+			.tit{
+				color:$COL_Text_Base04;
+				@include Mix_Font('Head-M', 16, 20);
+			}
+			.num{
+				position:relative;
+				margin-left:10px;
+				padding-left:10px;
+				color:$COL_Text_Base03;
+				@include Mix_Font('Head-R', 13, 17);
+				&::before{
+					content:'';
+					position:absolute;
+					top:50%;
+					left:0;
+					width:1px;
+					height:12px;
+					background-color:$COL_Line_Dark01;
+					transform:translateY(-50%);
+				}
+			}
+			&::after{
+				content:'';
+				display:block;
+				position:absolute;
+				top:50%;
+				right:2px;
+				width:7px;
+				height:12px;
+				@include Mix_Mypage_Bg;
+				background-position:-185px -1px;
+				transform:translateY(-50%);
+			}
+		}
+		.unit_mid{
+			display:flex;
+			gap:0 16px;
+			padding:18px 0;
+		}
+		.unit_bot{
+			.tit{
+				display:flex;
+				padding:16px 2px;
+				border-top:solid 1px $COL_Line_Light01;
+				color:$COL_Text_Base03;
+				.txt{
+					flex:1;
+					@include Mix_Font('Head-M', 14, 18);
+				}
+				.date{
+					@include Mix_Font('Txt-R', 13, 17);
+				}
+			}
+			.money{
+				position:relative;
+				padding:10px 0 10px 12px;
+				background-color:$COL_BG_Light01;
+				color:$COL_Blue03;
+				@include Mix_Font('Txt-M', 12, 18);
+			}
+		}
+	}
+}
+//메인 SWIPER01
+.my_main_swiper01 {
+	position:relative;
+	width:calc(100% + 30px);
+	margin:15px 0 0 -15px;
+	padding:0 15px 52px;
+	.swiper-wrapper .swiper-slide{
+		width:100%;
+		margin-right:15px;
+		&:last-child{
+			margin-right:0;
+		}
+	}
+	.my_main_link{
+		display:flex;
+		width:100%;
+		padding:5px 0 0 0;
+		border:0;
+		background-color:transparent;
+		//border-radius:6px;
+		box-shadow:none;
+		.unit_info{
+			flex:1;
+			padding-top:18px;
+		}
+		.num{
+			margin-bottom:10px;
+			color:$COL_Blue03;
+			font-size:0;
+			line-height:initial;
+			span{
+				position:relative;
+				@include Mix_Font('Head-M', 15, 19);
+			}
+		}
+		.name{
+			.model{
+				color:$COL_Text_Base04;
+			}
+			.desc{
+				color:$COL_Text_Base03;
+				@include Mix_Font('Txt-R', 13, 20);
+			}
+		}
+		.price{
+			display:block;
+			position:relative;
+			margin-top:3px;
+			&.no{
+				color:$COL_Text_Base02;
+				@include Mix_Font('Head-R', 16, 20);
+			}
+			i.txt{
+				color:$COL_Text_Base03;
+				font-size:14px;
+				&::after{
+					content:'';
+					display:inline-block;
+					width:8px;
+					height:13px;
+					@include Mix_Library_Bg;
+					background-position:-47px 0;
+					vertical-align:middle;
+					margin:0 0 0 5px;
+				}
+			}
+		}
+		.unit_img img{
+			width:120px;
+			height:120px;
+		}
+	}
+	.swiper-pagination{
+		bottom:30px !important;
+		.swiper-pagination-bullet{
+			margin-right:5px;
+			background-color:$COL_Line_Dark01 !important;
+		}
+		.swiper-pagination-bullet-active{
+			background-color:$COL_Secondary01 !important;
+		}
+	}
+}
+//메인 SWIPER02
+.my_main_swiper02{
+	position:relative;
+	padding:0 0 62px 21px;
+	background-color:$COL_WHITE;
+	.swiper-wrapper .swiper-slide{
+		width:93% !important;
+		margin-right:6px;
+		&:last-child{
+			margin-right:0;
+		}
+	}
+	.swiper-pagination{
+		bottom:40px !important;
+		.swiper-pagination-bullet{
+			margin-right:5px;
+			background-color:$COL_Line_Dark01 !important;
+		}
+		.swiper-pagination-bullet-active{
+			background-color:$COL_Secondary01 !important;
+		}
+	}
+}
+//메인 SWIPER03
+.my_main_swiper03{
+	position:relative;
+	width:calc(100% + 30px);
+	margin:0 0 0 -15px;
+	padding:0 15px 22px;
+	.swiper-wrapper .swiper-slide{
+		width:100%;
+		margin-right:15px;
+		&:last-child{
+			margin-right:0;
+		}
+	}
+	.swiper-pagination{
+		bottom:0 !important;
+		.swiper-pagination-bullet{
+			margin-right:5px;
+			background-color:$COL_Line_Dark01 !important;
+		}
+		.swiper-pagination-bullet-active{
+			background-color:$COL_Secondary01 !important;
+		}
+	}
+}
+
+// FO-MY-MS0002 앱 설정
+.app_setting{
+	background:$COL_BG_Light01;
+	ul{
+		padding:21px 15px 40px;
+		li{
+			padding:3px 20px;
+			//border-radius:6px;
+			background:$COL_WHITE;
+			.item{
+				position:relative;
+				padding:22px 0;
+				&:not(:last-of-type){
+					//padding-bottom:27px;
+					border-bottom:1px solid $COL_Line_Light01;
+				}
+				h5{ //타이틀
+					padding-right:60px;
+					color:$COL_Text_Base04;
+					@include Mix_Font('Head-M', 16, 34);
+				}
+				p{ // 텍스트
+					margin-top:8px;
+					padding-right:40px;
+					color:$COL_Inactive_Text01;
+					@include Mix_Font('Txt-R', 13, 20);
+					word-break:keep-all;
+				}
+				.chk_toggle{
+					position:absolute;
+					top:25px;
+					right:0;
+				}
+				.btn_icon01{ //설정하기 삭제하기 버튼
+					position:absolute;
+					top:25px;
+					right:0;
+					//border-radius:15px;
+					font-size:13px;
+				}
+				.version{
+					position:absolute;
+					top:32px;
+					right:0;
+					color:$COL_Inactive_Text01;
+					@include Mix_Font('Txt-M', 15, 18);
+				}
+				.btn_logout{ //로그아웃 화살표 아이콘
+					display:block;
+					position:absolute;
+					top:25px;
+					right:0;
+					width:17px;
+					height:26px;
+					@include Mix_Size_0;
+					&::before{
+						content:'';
+						display:block;
+						width:9px;
+						height:13px;
+						margin-top:5px;
+						@include Mix_Library_Bg;
+						background-position:-136px 0;
+					}
+				}
+			}
+			&:not(:last-of-type){
+				margin-bottom:15px;
+			}
+		}
+	}
+}
+// //FO-MY-MS0002 앱 설정
+
+// FO-MY-MS0003 앱 알림
+.app_alarm{
+	ol{
+		width:100%;
+		padding:42px 21px 80px 20px;
+		background:$COL_BG_Light01;
+		li{
+			overflow:hidden;
+			position:relative;
+			padding-left:43px;
+			//border-radius:6px;
+			&::before{ //리스트 왼쪽 아이콘
+				content:'';
+				display:inline-block;
+				position:absolute;
+				top:0;
+				left:0;
+				width:34px;
+				height:34px;
+				@include Mix_Mypage_Bg;
+			}
+			&:not(:last-of-type){
+				margin-bottom:24px;
+			}
+			&.alarm{ //알림일 때
+				&::before{
+					background-position:0 0;
+				}
+			}
+			&.ad{ //광고일 때
+				&::before{
+					background-position:-39px 0;
+				}
+			}
+			.item{
+				overflow:hidden;
+				margin-bottom:8px;
+				//border-radius:6px;
+				background:$COL_WHITE;
+				box-shadow:0px 0px 5px rgba($COL_Text_Base04, 0.015);
+				.thumb img{
+					width:100%;
+				}
+				.text_box{
+					padding:18px 20px 20px;
+				}
+				.tit{
+					display:block;
+					margin-bottom:4px;
+					color:$COL_Secondary01;
+					@include Mix_Font('Txt-M', 12, 16);
+				}
+				.txt{
+					color:$COL_BLACK;
+					@include Mix_Font('Txt-R', 16, 20);
+					word-break:keep-all;
+				}
+			}
+			.date{
+				display:block;
+				color:$COL_Text_Base02;
+				@include Mix_Font('Txt-R', 12, 16);
+				text-align:right;
+			}
+		}
+	}
+	.noData{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		width:100%;
+		height:100%;
+		text-align:center;
+	}
+}
+// //FO-MY-MS0003 앱 알림
+
+// FO-MY-MS0006 포인트내역
+.mypage_point{
+	background:$COL_BG_Light01;
+	> .tit_box{ //포인트 타이틀 영역
+		margin-bottom:8px;
+		padding:40px 23px;
+		background:$COL_WHITE;
+		border-bottom:1px solid $COL_Line_Light02;
+		.tit{
+			margin-bottom:23px;
+			color:$COL_BLACK;
+			@include Mix_Font('Head-R', 26, 34);
+			span{
+				display:block;
+				&.point{
+					display:inline-block;
+					position:relative;
+					@include Mix_Font_Head_M;
+					&::after{
+						content:'';
+						display:inline-block;
+						position:absolute;
+						width:100%;
+						height:3px;
+						left:0;
+						bottom:0;
+						background:$COL_Blue08;
+					}
+				}
+			}
+		}
+		.txt{
+			color:$COL_Text_Base03;
+			@include Mix_Font('Txt-R', 15, 23);
+		}
+	}
+	.cont_point{
+		padding:0 21px 60px;
+		background:$COL_WHITE;
+		border-top:1px solid $COL_Line_Light02;
+		.sorting_point{ //기간 soring 영역
+			width:100%;
+			padding:25px 0 15px;
+			border-bottom:1px solid $COL_Line_Light01;
+			@include Mix_Clear;
+			span{
+				float:left;
+				margin-top:8px;
+				color:$COL_Text_Base03;
+				@include Mix_Font('Txt-M', 13, 17);
+			}
+			ul{
+				float:right;
+				@include Mix_Clear;
+				li{
+					float:left;
+					margin-left:6px;
+					button{
+						display:inline-block;
+						height:32px;
+						padding:0 16px;
+						background:$COL_BG_Light01;
+						border-radius:100px;
+						color:$COL_Text_Base02;
+						@include Mix_Font('Txt-R', 12, 32);
+						&.on{
+							color:$COL_Text_Base04;
+							@include Mix_Font_Txt_M;
+						}
+					}
+				}
+			}
+		}
+		.point_history{ //포인트 히스토리 list 내역
+			margin-top:35px;
+			li{
+				display:flex;justify-content:space-between;
+				&:not(:last-of-type){
+					margin-bottom:35px;
+				}
+				span{
+					display:block;
+				}
+				.tit_box{
+					.tit{
+						margin-bottom:4px;
+						@include Mix_Font('Head-R', 16, 20);
+					}
+					.txt{
+						color:$COL_Inactive_Text01;
+						@include Mix_Font('Txt-R', 13, 20);
+					}
+				}
+				.txt_box{
+					text-align:right;
+					.tit{
+						margin-bottom:4px;
+						@include Mix_Font('Head-R', 16, 20);
+						em{
+							@include Mix_Font_Head_M;
+						}
+					}
+					.txt{
+						@include Mix_Font('Txt-R', 13, 20);
+					}
+				}
+				&.plus{
+					.txt_box{
+						color:$COL_Blue03;
+					}
+				}
+			}
+		}
+	}
+}
+// //FO-MY-MS0006 포인트내역
+
+// FO-MY-MS0007 보유차량
+.mypage_mycar{
+	margin:0;
+	background:$COL_BG_Light01;
+	.sorting{
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+		margin-top:50px;
+		padding:10px 21px;
+		line-height:32px;
+		background-color:$COL_WHITE;
+		@include Mix_Sort_Line;
+		.all{
+			color:$COL_Text_Base03;
+			i{
+				color:$COL_Secondary01;
+				@include Mix_Font_Txt_M;
+			}
+		}
+	}
+	li{
+		padding:31px 15px 30px;
+		background:$COL_WHITE;
+		&:last-of-type{
+			margin:0!important;
+		}
+		.unit_tit{
+			display:flex;
+			justify-content:space-between;
+			align-items:center;
+			margin-bottom:14px;
+			padding:0 6px;
+			span{
+				@include Mix_Font('Head-M', 18, 24);
+			}
+		}
+		.btn_mid05{
+			margin-top:30px;
+		}
+		.btn_icon01.del{
+			&::before{
+				content:'';
+				display:inline-block;
+				width:8px;
+				height:8px;
+				margin-right:4px;
+				@include Mix_Library_Bg;
+				background-position:-1px -45px;
+				vertical-align:middle;
+			}
+		}
+		.unit_link .unit_info .price{
+			color:$COL_Text_Base02;
+			@include Mix_Font('Head-R', 17, 21);
+		}
+		&.soldout{
+			padding-bottom:60px;
+			[class^="btn_"]{
+				display:none;
+			}
+		}
+	}
+	.noData{
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		width:100%;
+		height:100%;
+		background:$COL_WHITE;
+		text-align:center;
+	}
+	&.plp_list ol .unit_link .unit_info .name span{
+		@include Mix_Font('Head-R', 17, 22);
+	}
+}
+// //FO-MY-MS0007 보유차량
+
+// FO-MY-MS0050 보유차량
+.img_mycar{
+	position:fixed;top:50px;
+	left:0;
+	z-index:401;
+	width:100%;
+	.thumb{
+		display:block;
+		overflow:hidden;
+		position:relative;
+		height:0;
+		padding-bottom:66.67%;
+		img{
+			display:block;
+			position:absolute;
+			top:50%;
+			left:50%;
+			width:100%;
+			height:auto!important;
+			transform:translate(-50%, -50%);
+		}
+	}
+}
+.cont_mycar{
+	overflow:hidden;
+	position:relative;
+	z-index:402;
+	margin-top:224px;
+	padding-bottom:116px;
+	//border-radius:16px 16px 0 0;
+	background:$COL_WHITE;
+	.inbox_type02{
+		> .txt{
+			padding-right:55px;
+		}
+		> .tit{
+			color:$COL_Inactive_Text01;
+		}
+		> em{
+			right:35px !important;
+		}
+		.ico_clear{
+			right:12px;
+		}
+		&.focus{
+			line-height:54px;
+			> .txt{
+				padding-right:42px;
+			}
+		}
+		&+.cpo_error{
+			color:$COL_Text_Base02;
+		}
+	} 
+	> ol{
+		background:$COL_BG_Light01;
+		> li{
+			background:$COL_WHITE;
+			&:not(:last-of-type){
+				margin-bottom:8px;
+				border-bottom:solid 1px $COL_Line_Light02;
+			}
+			&:not(:first-of-type){
+				border-top:solid 1px $COL_Line_Light02;
+			}
+			&.mileage{
+				.tit_box{
+					padding:30px 21px;
+					>span{
+						display:block;
+					}
+					.number{
+						margin-bottom:12px;
+						@include Mix_Font('Head-R', 18, 24);
+					}
+					.name{
+						margin-bottom:5px;
+						@include Mix_Font('Head-R', 22, 28);
+					}
+					.flag{
+						span{
+							color:$COL_Text_Base02;
+							@include Mix_Font('Txt-R', 14, 18);
+							&:not(:first-of-type)::before{
+								content:'';
+								display:inline-block;
+								vertical-align:middle;
+								margin:0 4px;
+								width:1.5px;
+								height:1.5px;
+								background:$COL_Inactive_Text01;
+							}
+						}
+					}
+				}
+				.drive{
+					margin:0 15px;
+					padding:30px 18px;
+					background:$COL_BG_Light01;
+					.btn_mile{
+						position:relative;
+						margin:0 0 8px 2px;
+						padding-right:11px;
+						@include Mix_Font('Head-R', 15, 18);
+						&::before{
+							content:'';
+							display:inline-block;
+							position:absolute;
+							right:0;
+							top:2px;
+							width:8px;
+							height:13px;
+							@include Mix_Library_Bg;
+							background-position:-47px 0;
+						}
+					}
+					.mile_txt{
+						display:flex;
+						justify-content:space-between;
+						align-items:center;
+						dt{
+							span{
+								display:block;
+								&.tit{
+									color:$COL_Text_Base03;
+									@include Mix_Font('Txt-R', 15, 18);
+								}
+								&.txt{
+									margin-top:4px;
+									color:$COL_Secondary01;
+									@include Mix_Font('Txt-R', 13, 17);
+								}
+							}
+						}
+						.km{
+							@include Mix_Font('Txt-R', 16, 20);
+							em{
+								@include Mix_Font('Head-M', 18, 24);
+							}
+						}
+					}
+				}
+				.detail{
+					padding:0 35px 15px;
+					ol{
+						display:none;
+						margin:23px 0 5px;
+						padding:0 0 30px;
+						border-bottom: 1px solid $COL_Line_Light01;
+						li{
+							display:flex;
+							justify-content:space-between;
+							&:not(:last-of-type){
+								margin-bottom:18px;
+							}
+							.tit{
+								color:$COL_Text_Base02;
+								@include Mix_Font('Txt-R', 14, 18);
+							}
+							.txt{
+								color:$COL_Text_Base03;
+								@include Mix_Font('Txt-R', 15, 18);
+							}
+						}
+					}
+					&.more_view.on ol{
+						display: block;
+					}
+					.btn_more {
+						padding: 15px 0 10px;
+					}
+				}
+			}
+			&.value{
+				.tit_box{
+					padding:39px 21px 30px;
+					@include Mix_Font('Txt-R', 26, 34);
+					.tit{
+						@include Mix_Font_Head_R;
+					}
+					.price{
+						@include Mix_Clear;
+						> .txt{
+							//float:left;
+							position:relative;
+							@include Mix_Font_Head_M;
+							&::after{
+								content:'';
+								display:block;
+								position:absolute;
+								bottom:0;
+								left:0;
+								width:100%;
+								height:3px;
+								background:$COL_Blue08;
+							}
+						}
+					}
+					.km{
+						margin-top:17px;
+						color:$COL_Inactive_Text01;
+						@include Mix_Font('Txt-R', 13, 20);
+					}
+				}
+				.drive{
+					margin:0 15px;
+					padding:25px 20px;
+					background:$COL_BG_Light01;
+					li{
+						display:flex;
+						justify-content:space-between;
+						&:not(:last-of-type){
+							margin-bottom:15px;
+						}
+						.tit{
+							@include Mix_Font('Txt-R', 15, 18);
+						}
+						.txt{
+							@include Mix_Font('Txt-R', 15, 18);
+							em{
+								@include Mix_Font('Head-M', 17, 20);
+							}
+						}
+					}
+				}
+				.chart{
+					margin-top:20px;
+				}
+			}
+		}
+	}
+}
+// //FO-MY-MS0050 보유차량
+
+// FO-MY-MS0014 나의리뷰
+.my_review{
+	overflow:hidden;
+	background-color:$COL_BG_Light01;
+	.total{
+		position:relative;
+		margin-bottom:0;
+		padding:10px 21px;
+		@include Mix_Sort_Line;
+		line-height:32px;
+		.review_list_all{
+			color:$COL_Text_Base03;
+			i{
+				color:$COL_Secondary01;
+				@include Mix_Font_Txt_M;
+			}
+		}
+	}
+	.noData{
+		background-color:$COL_WHITE;
+	}
+}
+
+.review_list{
+	position:relative;
+	li{
+		margin-bottom:8px;
+		padding:30px 21px;
+		background-color:$COL_WHITE;
+		border:solid 1px $COL_Line_Light02;
+		border-width:1px 0;
+		&:last-child{
+			margin-bottom:0;
+			padding-bottom:60px;
+		}
+	}
+	.swiper-wrapper{
+		padding:20px 15px 48px;
+	}
+	.swiper-wrapper .swiper-slide{
+		flex-wrap:wrap;
+		width:100%;
+		margin-right:15px;
+		padding:20px 18px;
+		background-color:$COL_WHITE;
+		//border-radius:6px;
+		box-shadow:0px 0px 5px rgba($COL_Text_Base04, 0.015);
+		&:last-of-type{
+			margin-right:30px;
+		}
+	}
+	.swiper-pagination{
+		bottom:28px !important;
+		
+		.swiper-pagination-bullet{
+			margin-right:5px;
+			background-color:$COL_Line_Dark01 !important;
+		}
+		.swiper-pagination-bullet-active{
+			background-color:$COL_Secondary01 !important;
+		}
+	}
+	.review_txt{
+		margin-top:30px;
+	}
+	.review_star{
+		margin-top:0;
+	}
+	.review_bot{
+		margin-top:20px;
+		max-height:63px;
+		height:auto;
+		.txt{
+			overflow:hidden;
+			max-height:63px;
+			height:auto;
+			&+span{
+				display:inline-block;
+				overflow:hidden;
+				position:relative;
+				width:56px;
+				height:56px;
+				img{
+					position:absolute;
+					top:50%;
+					left:50%;
+					height:100%;
+					transform:translate(-50%,-50%);
+				}
+				span{
+					display:block;
+					position:absolute;
+					right:0;
+					bottom:0;
+					z-index:2;
+					width:17px;
+					height:17px;
+					background-color:$COL_BLACK;
+					color:$COL_WHITE;
+					@include Mix_Font('Txt-M', 12, 17);
+					text-align:center;
+				}
+				&:before{
+					content:'';
+					position:absolute;
+					z-index:1;
+					width:100%;
+					height:100%;
+					background-color:rgba($COL_BLACK,0.3);
+				}
+			}
+		}
+	}
+	.btn_mid02{
+		margin-top:18px;
+		border-color:$COL_Line_Dark01;
+		color:$COL_Text_Base03;
+	}
+	&.one .swiper-wrapper{
+		padding:20px 15px 30px;
+	}
+}
+// //FO-MY-MS0014 나의리뷰
+
+// FO-MY-MS0017 나의문의
+.my_question{
+	// overflow:hidden;
+	background-color:$COL_BG_Light01;
+	.total{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position:sticky;
+		top: 50px;
+		margin-bottom:0;
+		padding:10px 21px;
+		@include Mix_Cart_Line;
+		border-top: 0;
+		line-height:32px;
+		z-index: 3;
+		.question_list_all{
+			color:$COL_Text_Base03;
+			i{
+				color:$COL_Secondary01;
+				@include Mix_Font_Txt_M;
+			}
+		}
+	}
+	.q_tog.on::after{
+		transform:translateY(-50%) rotate(180deg);
+	}
+	.q_box{
+		@include Mix_Cart_Line;
+		&:first-child{
+			border-top:0;
+		}
+		&:last-child {
+			margin-bottom: 0;
+			border-bottom: 0;
+		}
+	}
+	.q_tit{
+		display:inline-block;
+		position:relative;
+		width:100%;
+		padding:25px 21px;
+		@include Mix_Font_Head_R;
+		&::after{
+			content:'';
+			display:block;
+			position:absolute;
+			top:50%;
+			right:21px;
+			width:12px;
+			height:8px;
+			margin-top: 4px;
+			@include Mix_Mypage_Bg;
+			background-position:-126px 0px;
+			transform:translateY(-50%) rotate(0deg);
+		}
+		.flag{
+			display:inline-block;
+			height: 21px;
+			padding:0 7px;
+			background-color:$COL_BG_Light01;
+			border:solid 1px $COL_Line_Dark01;
+			//border-radius:12px;
+			@include Mix_Font('Head-R', 12, 20);
+			color:$COL_Text_Base02;
+			&.on{
+				background-color:$COL_Secondary01;
+				border-color:$COL_Secondary01;
+				color:$COL_WHITE;
+				text-shadow: 0px 0px 1px rgba($COL_Text_Base04, 0.6);
+			}
+		}
+		.tit{
+			margin-top:12px;
+			padding-right:41px;
+			color:$COL_Text_Base04;
+			@include Mix_Font('Head-R', 16, 20);
+			@include Mix_Ellipsis(1);
+		}
+		.date{
+			margin-top:4px;
+			color:$COL_Text_Base02;
+			@include Mix_Font('Txt-R', 13, 20);
+		}
+	}
+	.q_cont{
+		display:none;
+		padding-bottom:30px;
+		.qa_txt{
+			display:flex;
+			gap:0 8px;
+			padding:0 21px 15px;
+			color:$COL_Text_Base03;
+			@include Mix_Font('Txt-R', 14, 21);
+			.mark{
+				flex:20px;
+				color:$COL_Text_Base04;
+				@include Mix_Font('Head-M', 16, 20);
+				text-align:right;
+			}
+			.txt{
+				width:100%;
+			}
+			.q_car {
+				display: block;
+				margin-top: 14px;
+				@include Mix_Font('Txt-R', 13, 20);
+				color: $COL_Text_Base02;
+			}
+			.date{
+				display:inline-block;
+				width:100%;
+				margin-top:14px;
+				color:$COL_Text_Base02;
+				@include Mix_Font('Txt-R', 13, 17);
+			}
+			&.on{
+				padding-top:35px;
+				padding-bottom:0;
+				.mark{
+					color:$COL_Secondary01;
+				}
+				.txt{
+					padding:20px 17px;
+					background-color:$COL_BG_Light01;
+					//border-radius:6px;
+				}
+			}
+			&.qa_ing {
+				text-align: center;
+			}
+			&+.qa_txt{
+				margin-top:20px;
+			}
+		}
+		.btn_area{
+			padding:0 21px;
+			font-size:0;
+			text-align:right;
+			li{
+				display:inline-block;
+				position: relative;
+				&:last-child button{
+					padding-right:0;
+				}
+				button{
+					padding:0 10px;
+					@include Mix_Font('Head-R', 14, 18);
+				}
+				&:before{
+					content:'';
+					display:inline-block;
+					position: absolute;
+					left: 0;
+					top: 50%;
+					width:1px;
+					height:12px;
+					transform: translateY(-50%);
+					background-color:$COL_Line_Dark01;
+					vertical-align:middle;
+				}
+				&:first-child {
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.q_img{
+		// overflow:visible;
+		position:relative;
+		height:100%;
+		padding:20px 21px;
+		.swiper-wrapper{
+			.swiper-slide{
+				display:flex;
+				justify-content:center;
+				align-items:center;
+				overflow:hidden;
+				width:100% !important;
+				height:318px;
+				margin-right:21px;
+				background-color:$COL_BG_Light01;
+				&:last-child{
+					margin-right:0;
+				}
+				&.wid img{
+					width:100%;
+					height:auto;
+				}
+				&.hei img{
+					width:auto;
+					height:100%;
+				}
+			}
+		}
+		.swiper-pagination{
+			// bottom:-6px !important;
+		}
+	}
+}
+// //FO-MY-MS0017 나의문의
+
+//FO-MY-MS0019 알림 신청내역
+.alarm_list{
+	overflow-x:hidden;
+	background-color:$COL_BG_Light01;
+	.total{
+		position:relative;
+		padding:10px 21px;
+		@include Mix_Sort_Line;
+		margin-bottom:0;
+		color:$COL_Text_Base03;
+		line-height:32px;
+		em{
+			color:$COL_Secondary01;
+			@include Mix_Font_Txt_M;
+		}
+	}
+	.a_box{
+		padding:24px 15px 0;
+		@include Mix_Cart_Line;
+		.tit{
+			display:flex;
+			align-items:center;
+			position:relative;
+			margin-bottom:20px;
+			padding:0 6px;
+			color:$COL_Inactive_Text01;
+			@include Mix_Font('Txt-B', 16, 20);
+			&::before{
+				content:'';
+				display:block;
+				width:26px;
+				height:26px;
+				margin-right:8px;
+				@include Mix_Mypage_Bg;
+				background-position:-227px 0;
+			}
+			&.on{
+				color:$COL_Text_Base04;
+				&::before{
+					background-position:-197px 0;
+				}
+				em{
+					color:$COL_Secondary01;
+				}
+				&+.a_list{
+					span:last-child{
+						color:$COL_Text_Base03;
+					}
+				}
+			}
+			span{
+				@include Mix_Ellipsis01;
+			}
+			button{
+				position:absolute;
+				top:50%;
+				right:6px;
+				width:12px;
+				height:12px;
+				@include Mix_Mypage_Bg;
+				background-position:-206px -40px;
+				@include Mix_Size_0;
+				transform:translateY(-50%);
+			}
+		}
+		.a_list{
+			padding:25px 20px;
+			background-color:$COL_BG_Light01;
+			li{
+				display:flex;
+				align-items:center;
+				margin-bottom:15px;
+				color:$COL_Text_Base02;
+				@include Mix_Font('Txt-R', 14, 21);
+				span{
+					flex:1;
+					&:last-child{
+						text-align:right;
+					}
+				}
+				&:last-child{
+					margin-bottom:0;
+				}
+			}
+		}
+		.a_txt{
+			padding:20px 0 24px;
+			color:$COL_Text_Base03;
+			@include Mix_Font('Txt-M', 14, 18);
+			text-align:center;
+		}
+		&.last{
+			margin-bottom:0;
+		}
+	}
+	
+	.a_box2{
+		padding:24px 21px 0;
+		@include Mix_Cart_Line;
+		.tit{
+			display:flex;
+			align-items:center;
+			position:relative;
+			margin-bottom:0;
+			color:$COL_Inactive_Text01;
+			@include Mix_Font('Txt-B', 16, 20);
+			&.on{
+				color:$COL_Text_Base04;
+			}
+			&+.a_unit_box{
+				margin-top:15px;
+			}
+			span{
+				padding-right:20px;
+				@include Mix_Ellipsis01;
+			}
+			button{
+				position:absolute;
+				top:50%;
+				right:0;
+				width:12px;
+				height:12px;
+				@include Mix_Mypage_Bg;
+				background-position:-206px -40px;
+				@include Mix_Size_0;
+				transform:translateY(-50%);
+			}
+		}
+		.a_unit_box .a_unit2 .price em{
+			@include Mix_Font_Head_R;
+		}
+		&.last{
+			margin-bottom:0;
+		}
+	}
+	.a_unit{
+		&.soldout{
+			.unit_img{
+				position:relative;
+				opacity:0.5;
+				span{
+					display:inline-block;
+					position:absolute;
+					bottom:0;
+					left:0;
+					width:100%;
+					height:20px;
+					background-color:$COL_Text_Base04;
+					color:$COL_WHITE;
+					@include Mix_Font('Txt-M', 11, 20);
+					text-align:center;
+				}
+			}
+			.unit_info .date{
+				color:$COL_Inactive_Text01;
+			}
+			.price{
+				display:none;
+			}
+		}
+		.unit_img{
+			overflow:hidden;
+			width:120px;
+			height:120px;
+			//border-radius:4px;
+			img{
+				width:100%;
+				height:auto;
+			}
+			span{
+				display:none;
+			}
+		} 
+		.unit_info{
+			@include Mix_Unit_Price($COL_Text_Base04);
+			span{
+				display:block;
+			}
+			.date{
+				margin-top:10px;
+				color:$COL_Text_Base02;
+				@include Mix_Font('Txt-R', 13, 17);
+			}
+			.price{
+				margin-top:2px;
+			}
+		}
+	}
+	.swiper-slide.more{
+		width:120px;
+		height:auto;
+		border:1px solid $COL_Line_Light01;
+		font-size:0;
+		//border-radius:4px;
+		text-align:center;
+		.a_unit{
+			display:flex;
+			align-items:center;
+			justify-content:center;
+			width:100%;
+			height:100%;
+		}
+		div{
+			&::before{
+				content:'';
+				display:inline-block;
+				width:30px;
+				height:30px;
+				margin-bottom:15px;
+				@include Mix_Mypage_Bg;
+				background-position:-257px 1px;
+				vertical-align:bottom;
+			}
+			span{
+				display:block;
+				@include Mix_Font('Head-R', 13, 17);
+				color:$COL_Text_Base03;
+			}
+		}
+	}
+	.a_unit_box{
+		margin:20px 0 30px;
+		.a_unit2{
+			display:flex;
+			gap:0 16px;
+			@include Mix_Unit_Price($COL_Text_Base04);
+			&.soldout{
+				.unit_img{
+					position:relative;
+					opacity:0.5;
+					span{
+						display:inline-block;
+						position:absolute;
+						left:0;
+						bottom:0;
+						width:100%;
+						height:20px;
+						background-color:$COL_Text_Base04;
+						color:$COL_WHITE;
+						@include Mix_Font('Txt-M', 11, 20);
+						text-align:center;
+					}
+				}
+				.unit_info{
+					.top, .name{
+						color:$COL_Inactive_Text01;
+					}
+					.price{
+						display:none;
+					}
+				} 
+			}
+			.unit_img{
+				width:100px;
+				height:100px;
+				span{
+					display:none;
+				}
+			}
+			.unit_info{
+				flex:1;
+				.top{
+					display:flex;
+					margin-bottom:10px;
+					color:$COL_Text_Base02;
+					@include Mix_Font('Txt-R', 13, 17);
+					.txt{
+						position:relative;
+						margin-left:7px;
+						padding-left:7px;
+						&::before{
+							content:'';
+							position:absolute;
+							top:50%;
+							left:0;
+							width:1px;
+							height:12px;
+							background-color:$COL_Line_Dark01;
+							transform:translateY(-50%);
+							vertical-align:middle;
+						}
+					}
+				}
+				.name{
+					margin-bottom:3px;
+					color:$COL_Text_Base04;
+					@include Mix_Font('Txt-R', 15, 18);
+				}
+				.price{
+					display:inline-block;
+					margin:0 0 3px;
+					.line{
+						color:$COL_Inactive_Text01;
+						text-decoration-line:line-through;
+						em, i{	
+							@include Mix_Font('Head-R', 14, 18);
+						}
+					}
+				}
+				.txt{
+					color:$COL_Inactive_Text01;
+					@include Mix_Font('Txt-R', 13, 17);
+					&.on{
+						color:$COL_Secondary01;
+					}
+				}
+			}
+		}
+	}
+	.unit_img img{
+		width:100%;
+		height:auto;
+	}
+}
+// //FO-MY-MS0019 알림 신청내역
+
+//FO-MY-MS0020 입고알림 신청
+.srch_ifbox {
+	.incont02 {
+		margin-top: -5px;
+		padding: 0 22px 27px;
+	}
+	.srch_caution {
+		padding-bottom:8px;
+		background-color:$COL_BG_Light01;
+		border-bottom:1px solid $COL_Line_Light02;
+		.incont {
+			padding: 20px 21px 30px;
+			background-color: $COL_WHITE;
+		}
+		p {
+			@include Mix_Font('Txt-R', 15, 23);
+			color: $COL_Text_Base03;
+		}
+		.notice_03 {
+			margin-top: 12px;
+		}
+		& + .srch_box {
+			border-color:$COL_Line_Light02;
+		}
+	}
+	.tab_box {
+		display: flex;
+		border:1px solid $COL_Line_Light01;
+		li {
+			width: 100%;
+			&:last-child {
+				label:after {
+					display: none;
+				}
+			}
+		}
+		input {
+			position:absolute;
+			width:1px;
+			height:1px;
+			opacity:0;
+			&+label{
+				display: block;
+				position: relative;
+				width: 100%;
+				height: 42px;
+				background-color: $COL_BG_Light01;
+				@include Mix_Font('Head-R', 14, 42);
+				color: $COL_Text_Base02;
+				text-align:center;
+				&:after {
+					content: '';
+					display: block;
+					position: absolute;
+					right: -1px;
+					top: 50%;
+					width: 1px;
+					height: 18px;
+					transform: translateY(-50%);
+					background-color: $COL_Line_Dark01;
+					z-index: 1;
+				}
+			}
+			&:checked+label{
+				color:$COL_WHITE;
+				background-color:$COL_Secondary01;
+				@include Mix_Font('Head-M', 14, 42);
+				z-index: 2;
+				&:after {
+					display: none;
+				}
+			}
+		}
+
+		.tab_anchor {
+			display: block;
+			position: relative;
+			width: 100%;
+			height: 42px;
+			background-color: $COL_BG_Light01;
+			@include Mix_Font('Head-R', 14, 42);
+			color: $COL_Text_Base02;
+			&:before {
+				content: '';
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 50%;
+				width: 1px;
+				height: 18px;
+				transform: translateY(-50%);
+				background-color: $COL_Line_Dark01;
+			}
+			&:first-child {
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+	#rangePrice {
+		height: 52px;
+		margin-top: 0;
+		.cpoRange {
+			&::after{
+				content:'';
+				display:block;
+				position:absolute;
+				top:0;
+				left:-11px;
+				width:calc(100% + 22px);
+				height:2px;
+				background-color:$COL_Line_Light01;
+			}
+		}
+		.max_no:after {
+			content: ' 이상';
+		}
+	}
+	[class^=depth] label {
+		pointer-events: none;
+	}
+	.chk_rad01:checked ~ [class^=depth] > li > label {
+		pointer-events: auto;
+	}
+	.srch_box {
+		&.disabled {
+			.tit {
+				color: rgba($COL_Text_Base04, 0.3);
+			}
+			.btn_open {
+				pointer-events:none;
+			}
+		}
+	}
+	.btn_txt05 {
+		padding-top:20px;
+	}
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>법인 목록</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_login.css">
+</head>
+<body>
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!-- s: h_header : default  -->
+		<div class="h_header_navi01">
+			<button type="button" class="ic_back">뒤로가기</button>
+		</div>
+		<!-- e: h_header : default  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<div class="corp_login">
+			<div class="top">
+				<h1 class="tit">로그인하실 법인을<br>선택해 주세요.</h1>
+				<a href="https://www.hyundai.com/kr/ko/join/corporation-member/corporation-member-admin-join" class="btn_arrow_mid01 icon_link">신규 법인 추가 등록하기</a> <!-- [CPO-6066] 2022.11.16 -->
+			</div>
+			<ul class="corp_list">
+				<li>
+					<input type="radio" name="chk_comm2" id="chk_radio02" class="chk_radio large">
+					<label for="chk_radio02">
+						<strong>현대자동차(주)</strong>
+						<p>사업자 등록 번호 : 101-81-09147</p>
+					</label>					
+				</li>
+				<li>
+					<input type="radio" name="chk_comm2" id="chk_radio03" class="chk_radio large">
+					<label for="chk_radio03">
+						<strong>현대자동차(주)</strong>
+						<p>사업자 등록 번호 : 101-81-09147</p>
+					</label>
+				</li>
+				<li>
+					<input type="radio" name="chk_comm2" id="chk_radio04" class="chk_radio large">
+					<label for="chk_radio04">
+						<strong>현대자동차(주)</strong>
+						<p>사업자 등록 번호 : 101-81-09147</p>
+					</label>
+				</li>
+			</ul>
+		</div>
+		<div class="btn_sticky">
+			<button type="button" class="btn_big01">로그인하기</button>
+		</div>
+		<!-- contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+	<!-- 2023 0210 푸터 삭제 -->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/HMC/m/SHTML/H_inc/common_popup.shtml"-->
+
+</body>
+</html>

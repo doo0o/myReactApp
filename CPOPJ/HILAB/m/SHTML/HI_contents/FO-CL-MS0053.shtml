@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>검색 조건 설정</title>
+	<!--#include file="/HILAB/m/SHTML/HI_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/hi_contents.css">
+</head>
+<body  class="bg_dark">
+<!--#include file="/HILAB/m/SHTML/HI_inc/common_skip.shtml"-->
+<!--#include file="/HILAB/m/SHTML/HI_inc/layout_loading.shtml"-->
+<!-- HI wrap -->
+<div id="HIwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="HIheader">
+		
+		<!--  s: h_header : SEARCH  -->
+		<div class="h_header_search">
+			<!-- input -->
+			<button type="button" id="srchHistory" data-href="back" class="ic_back">뒤로가기</button>
+			<div class="inp_search">
+				<input type="search" id="keySearch" class="txt" placeholder="해시태그를 입력해 주세요" value="" />
+				<button type="button" id="keySearchDel" class="btn_delete">입력값 삭제</button>
+			</div>
+			<!-- //input -->
+		</div>
+		<!--  e: h_header : SEARCH  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="HIcontents">
+		<!-- contents -->
+
+		<!--#include file="/HILAB/m/SHTML/HI_contents/include/srch_recent.shtml"-->
+		<!--#include file="/HILAB/m/SHTML/HI_contents/include/srch_auto.shtml"-->
+		<!-- //contents -->
+
+		<!-- 2023 0210 푸터 / 탭바 삭제 -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+</div>
+<!-- //HI wrap -->
+<script>
+	// 검색하기 화면에서만 호출되는 스크립트
+	$(".inp_search .txt" ).focus(function() {// 검색창 focus In일때 화면
+		SRCH.RecentShow();
+	});
+	$(".inp_search .txt").keyup(function() { 
+		if($(this).val() === '') {
+			SRCH.RecentShow();
+		} else {
+			SRCH.AutoLayertShow();
+		}
+	});
+
+	//최근검색조건
+	var recentSwiper;
+	var recentSwiperFunc = function() {
+		var slides = document.querySelectorAll('.recent_swiper .swiper-slide');
+		if(slides.length > 1) {
+			recentSwiper = new Swiper('.recent_swiper', {
+				slidesPerView:'auto',
+				autoHeight: true,
+				freeMode:false,
+				pagination:{
+					el: '.recent_swiper .swiper-pagination'
+				}
+			});
+		}
+	}
+	recentSwiperFunc();
+</script>
+</body>
+</html>

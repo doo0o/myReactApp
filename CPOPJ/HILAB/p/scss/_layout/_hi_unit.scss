@@ -1,0 +1,354 @@
+.nodata{
+	display:block;
+	padding:96px 0 104px;
+	text-align:center;
+	&::before{
+		margin:0 auto 4px;
+	}
+	.tit{
+		color:$COL_gs03;@include fontT(16);
+	}
+	&.srch{
+		@include Mix_Info_Icon_01(0 0);
+	}
+}
+[class^="unit_"] {
+	.chk_compare {
+		&+label {
+			pointer-events:none;
+			.number {
+				display: none;
+			}
+		}
+	}
+	.unit_info {
+		.tag {
+			font-size: 0;
+			line-height: 0;
+		}
+		.like {
+			color: $COL_gs04;
+			@include fontT(15);
+			em::before {
+				content : "";
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				margin: 3px 4px;
+				vertical-align: top;
+				@include Icon_heart("line", $COL_gs04, $size : "16px");
+			}
+		}
+		.drive {
+			color: $COL_gs03;
+			word-break: keep-all;
+			span:not(:last-child):after {
+				content: '';
+				display: inline-block;
+				width: 1px;
+				height: 12px;
+				background-color: $COL_gs05;
+				vertical-align: middle;
+			}
+		}
+	}
+	&.on {
+		li {
+			a {
+				pointer-events: none;
+				.chk_compare {
+					&+label {
+						pointer-events:auto;
+						cursor:pointer;
+						.number {
+							display: block;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.unit_deal {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	li {
+		position: relative;
+		a {
+			display: block;
+		}
+		.chk_compare + label .number {
+			top: 16px;
+			right: 16px;
+		}
+	}
+	&.col_type01 {
+		gap: 40px 20px;
+		li {
+			flex: 0 calc((100% - 40px)/3);
+			.unit_info {
+				.price {
+					.num {
+						em {
+							@include fontHM(24);
+						}
+						i {
+							@include fontT(17);
+						}
+					}
+				}
+				.name {
+					margin-top: 8px;
+					@include fontH(18);
+				}
+				.drive {
+					margin-top: 8px;
+				}
+			}
+		}
+	}
+	&.col_type02 {
+		gap: 32px 20px;
+		li {
+			flex: 0 calc((100% - 60px)/4);
+			.unit_info {
+				.name {
+					@include fontH(16);
+				}
+			}
+		}
+	}
+	&.col_type03 {
+		gap: 32px 20px;
+		li {
+			flex: 0 calc((100% - 80px)/5);
+			.unit_info {
+				.name {
+					@include fontH(15);
+				}
+				.drive {
+					@include fontT(13);
+					span:not(:last-child):after {
+						margin: 0 0 0 4px;
+					}
+				}
+			}
+		}
+	}
+	img {
+		width: 100%;
+	}
+	.unit_img {
+		position: relative;
+	}
+	.unit_info {
+		margin-top: 16px;
+		.tag {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.price {
+			position: relative;
+			.num {
+				vertical-align: middle;
+				em {
+					@include fontHM(20);
+					vertical-align: middle;
+				}
+				i {
+					margin-left: 4px;
+					@include fontT(15);
+				}
+			}
+			.like {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+		}
+		.name {
+			margin-top: 4px;
+			@include Mix_Ellipsis(2);
+		}
+		.drive {
+			margin-top: 4px;
+			@include fontT(14);
+			span:not(:last-child):after {
+				margin: 0 4px 0 8px;
+			}
+		}
+	}
+}
+.unit_list {
+	li {
+		position: relative;
+		~ li {
+			margin-top: 40px;
+			padding-top: 40px;
+			border-top: 1px solid $COL_gs06;
+		}
+		.chk_compare + label {
+			display: flex;
+			align-items: center;
+			.number {
+				top: 8px;
+				left: 8px;
+			}
+		}
+	}
+	.unit_img {
+		overflow: hidden;
+		position: relative;
+		width: 170px;
+		height: 113px;
+		margin-right: 24px;
+		img{
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100%;
+			height: auto;
+			transform: translate(-50%, -50%);
+		}
+	}
+	.unit_info {
+		position: relative;   
+		flex: 1;
+		.price {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+			.num {
+				vertical-align: middle;
+				em {
+					@include fontHM(20);
+					vertical-align: middle;
+				}
+				i {
+					margin-left: 4px;
+					@include fontT(15);
+				}
+			}
+			.like {
+				display: block;
+				width: 100%;
+				margin-top: 12px;
+				text-align: right;
+			}
+		}
+		.name {
+			max-width: 582px;
+			margin-top: 12px;
+			@include fontT(18);
+			@include Mix_Ellipsis01;
+		}
+		.drive {
+			@include fontT(16);
+			span:not(:last-child):after {
+				margin: 0 8px 0 12px;
+			}
+		}
+	}
+}
+.unit_type {
+	.mid_area{
+		display: flex;
+		align-items: center;
+	}
+	&.type01 {
+		.unit_img{
+			width: 120px;
+			height: 120px;
+			margin-right: 20px;
+		}
+		.name {
+			@include fontH(16);
+		}
+		.drive {
+			span:not(:last-child):after {
+				margin: 0 8px 0 12px;
+			}
+		}
+	}
+	&.type02 {
+		.unit_img{
+			width: 96px;
+			height: 96px;
+			margin-right: 16px;
+		}
+		.name {
+			@include fontH(15);
+		}
+		.drive {
+			span:not(:last-child):after {
+				margin-left: 4px;
+			}
+		}
+	}
+	.unit_img {
+		overflow: hidden;
+		position: relative;
+		img{
+			width: 100%;
+		}
+	}
+	.unit_info {
+		position: relative;
+		flex: 1;
+		div ~ div {
+			margin-top: 8px;
+		}
+		[class^="flag_"]{
+			margin-right: 5px;
+		}
+		.order_num {
+			color: $COL_gs03;
+			@include fontT(15);
+		}
+		.name {
+			@include Mix_Ellipsis01;
+		}
+		.drive {
+			@include fontT(14);
+			color: $COL_gs03;
+		}
+		.price {
+			.txt {
+				@include fontT(14);
+				em {
+					@include fontHM(16);
+				}
+			}
+			.num {
+				vertical-align: middle;
+				em {
+					@include fontHM(20);
+					vertical-align: middle;
+				}
+				i {
+					margin-left: 4px;
+					@include fontT(15);
+				}
+			}
+		}
+	}
+}
+
+// 1줄짜리 주의 문구
+.txt_caution{
+	position:relative;
+	padding-left:8px;
+	color:$COL_gs04;
+	@include fontT(12);
+	&::before{
+		content:'';
+		display:inline-block;
+		position:absolute;left:0;top:8px;
+		width:2px;height:2px;
+		background:$COL_gs04;
+	}
+}

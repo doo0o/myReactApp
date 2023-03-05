@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>현대CPO Trade-In 제안 : 현대차 CPO</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_sale.css">
+</head>
+<body class="bg_color02">
+<!--#include file="/HMC/m/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/m/SHTML/H_inc/layout_loading.shtml"-->
+<!-- cpo wrap -->
+<div id="CPOwrap">
+	<!-- ////////////////////     header   시작     ////////////////////-->
+	<div id="CPOheader">
+		<!--  s: h_header  -->
+		<div class="h_header">
+			<h1 class="tit"><a href="#" class="ic_logo">현대CPO</a></h1>
+			<div class="util">
+				<button type="button" class="menu" data-ref="menuLayer2">내차팔기</button>
+				<div class="menu_layer" id="menuLayer2">
+					<ul>
+						<li><a href="#">내차사기</a></li>
+						<li class="on"><a href="#">내차팔기</a></li>
+					</ul>
+				</div>
+				<ul>
+					<li><button type="button" class="ic_mycar jQ_POP_open" data-popup="FO-TI-MS0017">내차팔기 정보</button></li><!-- jQ_POP_open 팝업 호출 class / data-popup 팝업 id 값 -->
+				</ul>
+			</div>
+		</div>
+		<!--  e: h_header  -->
+	</div>
+	<!-- ////////////////////     header   끝     ////////////////////-->
+	<!-- ////////////////////     contents 시작     ////////////////////-->
+	<div id="CPOcontents">
+		<!-- contents -->
+		<!-- 2023-01-26 CPO-9018 상태바 삭제 -->
+		<div class="tradein_intro">
+			<div class="tit_area">
+				<p class="tit">현대 &amp; 제네시스 인증 중고차에서 Trade-In 하고 현대자동차/제네시스 신차 할인 받으세요!</p>
+				<ul class="navi">
+					<li><button type="button" class="btn_combi01 jQ_POP_open" data-popup="FO-TI-MS0070">Trade-In 서비스 안내</button></li>
+					<li><button type="button" class="btn_combi01 jQ_POP_open" data-popup="FO-MY-MS0069">월별 Trade-In 혜택 안내</button></li>
+				</ul>
+			</div>
+
+			<div class="intro_img">
+				<img src="../../img/tradein_intro.png" alt="브랜드 상관없이 내차팔기하면 현대자동차 신차 구매 시 추가 할인을 받을 수 있어요!">
+			</div>
+
+			<div class="tradein_box">
+				<p class="title">Trade-In은 이렇게 진행돼요.</p>
+	
+				<ol class="sale_car_process">
+					<li>
+						<strong>현대자동차/제네시스 신차 계약</strong>
+						<span>원하시는 영업점에서 신차 구매 상담을 진행해주세요.</span>
+					</li>
+					<li>
+						<strong>고객님의 중고차 판매</strong>
+						<span>Trade-In 원하시는 차량을 선택해 거래를 완료해 주세요.</span>
+					</li>
+					<li>
+						<strong>신차 결제 시 추가할인 적용</strong>
+						<span>신차 인도시 결제를 진행할 때 자동으로 할인이 적용됩니다.</span>
+					</li>
+				</ol>
+			</div>
+		</div>
+				
+		<!-- 05. BUTTON STICKY -->
+		<div class="btn_sticky">
+			<button type="button" class="btn_big03">내차팔기 진행하기</button>
+			<button type="button" class="btn_big01">Trade-In 진행하기</button>
+		</div>
+		<!-- //05. BUTTON STICKY -->
+		
+		<!-- //contents -->
+	</div>
+	<!-- ////////////////////     contents 끝     ////////////////////-->
+</div>
+<!-- //cpo wrap -->
+<!--#include file="/HMC/m/SHTML/H_sale/include/FO-TI-MS0070.shtml"--><!-- Trade-In 서비스 안내 -->
+
+<script>
+	document.addEventListener('DOMContentLoaded', function(){
+		//팝업 샘플
+		switch(MSG.getParam('pop')) {
+			case '1' : 
+				CPO.POPUP_layer_open('FO-TI-MS0070');
+				break;
+			default : break;
+		}
+	});
+</script>
+</body>
+</html>

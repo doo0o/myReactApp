@@ -1,0 +1,244 @@
+// 내차팔리 form 태그 모음
+.file_addphoto[type="file"]{//(1). 필수 등록 사진
+	opacity:0;
+	position:absolute;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+.btn_filedel{
+	display:block;
+	width:20px;
+	height:20px;
+	position:absolute;
+	top:0;
+	right:0;
+	@include Mix_Form_Bg;
+	background-position:-179px -55px;
+	@include Mix_Size_0;
+	z-index:4;
+}
+// 7. 차량 사진 등록				내차팔기 page STEP3-3.	div.sale_photo
+.sale_photo{// 차량 사진 등록
+	padding-top: 21px;
+	.tit{
+		color:$COL_Text_Base04;
+		@include Mix_Font('Head-M', 15, 18);
+		margin-bottom: 15px;
+	}
+	.txt{
+		margin:0 0 15px;
+		color:$COL_Inactive_Text01;
+		@include Mix_Font('Head-R', 12, 16);
+	}
+	.list {
+		[class^="addphoto_"]{//사진 
+			position:relative;
+			overflow:hidden;
+			width:100%;
+			background-size:101% auto !important;
+			border:1px dashed $COL_Gray05;
+			> .btn_addphoto{// 업로드 사진
+				display:block;
+				width:100%;
+				overflow:hidden;
+				position:relative;
+				z-index:3;
+				height:0;
+				padding-bottom:100%;
+				> em{
+					position:absolute;
+					bottom:50%;
+					left:0;
+					display:block;
+					width:100%;
+					transform:translateY(50%);
+					color:$COL_Inactive_Text01;
+					@include Mix_Font('Head-R', 13, 17);
+					text-align:center;
+					&::before{
+						content:'';
+						display:block;
+						width:12px;
+						height:12px;
+						margin:0 auto 4px;
+						@include Mix_Form_Bg;
+						background-position:-179px -38px;
+					}
+				}
+			}
+			&.on{// 사진 등록 된 경우
+				border:1px solid $COL_Gray07;
+				> .btn_addphoto{
+					> em{
+						left:0;
+						width:auto;
+						bottom:-1px;
+						background:rgba($COL_Text_Base04, 0.7);
+						transform:translateY(0);
+						padding:6px 7px;
+						color:$COL_WHITE;
+						font-size:11px;
+						&::before{
+							display:none;
+						}
+					}
+				}
+				> span{// 등록 된 사진 영역
+					width:100%;
+					height:100%;
+					position:absolute;
+					top:0;left:0;
+					img{
+						width:100%;
+						height:100%;
+						object-fit:cover;
+					}
+				}
+			}
+		}
+		.addphoto_1{background:url('../image/sale_car_01.png') no-repeat;}
+		.addphoto_2{background:url('../image/sale_car_02.png') no-repeat;}
+		.addphoto_3{background:url('../image/sale_car_03.png') no-repeat;}
+		.addphoto_4{background:url('../image/sale_car_04.png') no-repeat;}
+		.addphoto_5{background:url('../image/sale_car_05.png') no-repeat;}
+	}
+	> .innerbox_01{//(1). 필수 등록 사진
+		padding:0 21px 50px;
+		> ol{
+			display:flex;
+			flex-wrap:wrap;
+			row-gap:9px;
+			column-gap:10px;
+			align-items:center;
+			margin-top: 10px;
+			li{
+				width:calc(1/3*100% - (1 - 1/3)*10px);
+			}
+		}
+	}
+	> .innerbox_02{//(2). 추가 등록 사진
+		padding:0 21px 30px;
+	}
+}
+
+
+.sale_confirm{
+	.addphoto_list{
+		margin-top:10px;
+		dl.on > dt {padding-right:0;}
+	}
+}
+
+.addphoto_list{// 사진 업로드
+	dl{
+		display:flex;
+		flex-wrap:wrap;
+		position:relative;
+		height: 75px;
+		&.on{
+			> dt{
+				width:100%;
+				span.t01{display:block;}
+				span.t02{display:none;}
+			}
+			> dd{
+				display:none;
+			}
+		}
+		dt{
+			width:75px;
+			height:75px;
+			position: relative;
+			z-index: 1;
+			span.t01{display:none;}
+			span.t02{display:block;}
+			.file_morephoto[type="file"]{// 파일 선택
+				opacity:0;
+				position:absolute;
+				width:1px;
+				height:1px;
+				overflow:hidden;
+				&+label{
+					position:relative;
+					display:block;
+					width:100%;
+					height:100%;
+					background:$COL_BG_Light01;
+					border:1px dashed $COL_Line_Dark01;
+					> span{// 사진 추가하기 & 사진 수량
+						position:absolute;
+						top:50%;
+						left:50%;
+						transform:translate(-50%, -50%);
+						color:$COL_Inactive_Text01;
+						text-align:center;
+						&::before{
+							content:'';
+							display:block;
+							margin:0 auto 5px;
+							@include Mix_Form_Bg;
+						}
+					}
+					span.t01{// 사진 추가하기
+						@include Mix_Font('Head-R', 12, 17);
+						&::before{
+							width:12px;
+							height:12px;
+							background-position:-179px -38px;
+						}
+					}
+					span.t02{// 사진 수량
+						@include Mix_Font('Txt-R', 11, 18);
+						em{
+							color:$COL_Secondary01;
+						}
+						&::before{
+							width:30px;
+							height:30px;
+							margin-bottom:0;
+							background-position:-136px -144px;
+						}
+					}
+				}
+			}
+		}
+		dd{
+			// width:80%;
+			width: 100%;
+			position: absolute;
+			z-index: 0;
+			.list{// 업로드 사진 미리보기
+				display: flex;
+				flex-wrap: wrap;
+				gap: 6px;
+				&:before {
+					content:'';
+					display: block;
+					width: 75px;
+				}
+				li{
+					display:inline-block;
+					overflow:hidden;
+					position:relative;
+					width: 75px;
+					height: 75px;
+					vertical-align:top;
+					img{
+						width:100%;
+						height:100%;
+						object-fit:cover;
+					}
+				}
+			}
+		}
+
+	}
+	.notice_addphoto {
+		margin-top: 12px;
+		@include Mix_Font('Txt-R', 13, 20); 
+		color: $COL_Inactive_Text01;
+	}
+	
+}

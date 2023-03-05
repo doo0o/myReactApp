@@ -1,0 +1,60 @@
+<div class="popup_full" id="FO-TI-PS0073">
+	<div class="p_body">
+		<div class="p_inner s_small">
+			<div class="p_head">
+				<h2 class="tit">Trade-In 안내</h2>
+			</div>
+			<div class="p_wrap"> <!-- 버튼이 있을 경우 aspan_btn 추가-->
+				<!-- contents -->
+				<div class="inner_view pop_sale">
+					<div class="title_area">
+						<p class="tit">잠깐! Trade-In 하지 않고 내차팔기만 진행 하시겠어요?</p>
+						<span class="txt">Trade-In 진행 시, 고객님의 신차 계약과 연동하여 신차 잔금 할인을 받을 수 있어요.</span>
+					</div>
+					<ul class="list_trade">
+						<li>
+							<p class="title">현대 팰리세이드 디젤 2.2 2WD 익스클루시브 (8인승)</p>
+							<ul class="list_info">
+								<li><span class="tit">계약완료일 : </span><span class="txt">2022.12.01(화)</span></li>
+								<li><span class="tit">계약번호 : </span><span class="txt">20211112321564565421</span></li>
+								<li><span class="tit">계약 영업점 : </span><span class="txt">현대자동차 강남대로 지점(02-123-4567)</span></li>
+								<li><span class="tit">담당 카마스터 : </span><span class="txt">김영업 (010-1234-1234)</span></li>
+							</ul>
+							<div class="group_amount">
+								<div class="box_amount">
+									<span class="tit">신차 견적</span><span class="price"><em class="num">3,280</em>만원</span>
+								</div>
+								<div class="box_amount">
+									<span class="tit">추가 할인 예상 금액</span><span class="price"><em class="num">220</em>만원</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<p class="title">현대 팰리세이드 디젤 2.2 2WD 익스클루시브 (8인승)</p>
+							<ul class="list_info">
+								<li><span class="tit">계약완료일 : </span><span class="txt">2022.12.01(화)</span></li>
+								<li><span class="tit">계약번호 : </span><span class="txt">20211112321564565421</span></li>
+								<li><span class="tit">계약 영업점 : </span><span class="txt">현대자동차 강남대로 지점(02-123-4567)</span></li>
+								<li><span class="tit">담당 카마스터 : </span><span class="txt">김영업 (010-1234-1234)</span></li>
+							</ul>
+							<div class="group_amount">
+								<div class="box_amount">
+									<span class="tit">신차 견적</span><span class="price"><em class="num">3,280</em>만원</span>
+								</div>
+								<div class="box_amount">
+									<span class="tit">추가 할인 예상 금액</span><span class="price"><em class="num">220</em>만원</span>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<div class="btn_area full_type">
+						<button type="button" class="btn_big color02">아니요.</button>
+						<button type="button" class="btn_big color01">네, 내차팔기만 할게요.</button>
+					</div>
+				</div>
+				<!-- //contents -->									
+			</div>
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,29 @@
+<!-- FO-TI-MS0033 : 사진 업로드(앞면) - FULL -->
+<div class="CPOpop_bottom" id="FO-TI-MS0033-01">
+	<div class="p_head">
+		<h5 class="tit">사진 업로드</h5>
+	</div>
+	<div class="p_wrap">
+		<!-- 사진 등록시 주의사항 -->
+		<div class="car_sample">
+			<ol>
+				<li>
+					<p class="img"><img src="/GHQ/img/sale_car_01_b.jpg" alt="앞면 사진 등록시 샘플 이미지" /></p>
+					<h6 class="tit">앞면</h6>
+					<p class="txt">차량 앞면과 번호판이 모두 보이도록 촬영해주세요.</p>
+				</li>
+			</ol>
+		</div>
+		<div class="car_sample2">
+			<p class="txt">가격을 산정할 때 영향을 줄 수 있는 사진은 반드시 등록해 주셔야 합니다.</p>
+		</div>
+		<!-- //사진 등록시 주의사항 -->
+
+		<!-- sticky INPUT FILE -->
+		<div class="btn_sticky">
+			<label class="btn_big01 photoAddLabel" for="CarPhotoNeed01">네, 확인 했어요</label><!-- 버튼이 아닌 label로 for는 파일 인풋박스 id 값과 동일하게 -->
+		</div>
+		<!-- //sticky INPUT FILE -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

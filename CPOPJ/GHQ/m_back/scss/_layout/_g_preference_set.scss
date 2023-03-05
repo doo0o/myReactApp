@@ -1,0 +1,362 @@
+@import '../_common/g_function';
+@import '../_common/g_mixins';
+
+.preference_set{
+	height:100vh !important;
+	overflow:hidden;
+	overflow-y:auto;
+
+}
+.pas_set01{// [01] STEP
+	ol{
+		margin-bottom:20px;
+		width:100%;
+		font-size:0;
+		text-align:center;
+		li{
+			display:inline-block;
+			vertical-align:middle;
+			&:not(:first-of-type){
+				&::before{
+					content:'';
+					display:inline-block;
+					width:16px;
+					height:1px;
+					margin:0 6px;
+					background-color:$COL_1E1E;
+					vertical-align:2.5px;
+				}
+			}
+			> span{
+				display:inline-block;
+				width:19px;
+				height:19px;
+				border-radius:100%;
+				background-color:$COL_333;
+				color:$COL_8282;
+				@include Mix_Font('Txt-M', 11, 19); 
+			}
+			> em{
+				display:none;
+			}
+			&.on{
+				> span{
+					background-color:$COL_WHITE;
+					color:$COL_Text_Base04;
+				}
+			}
+			&.end{
+				position:relative;
+				> span{
+					@include Mix_Form_Bg;
+					background-position:-159px -180px;
+					font-size:0;
+				}
+			}
+		}
+	}
+	.tit{
+		margin-bottom:46px;
+		color:$COL_WHITE;
+		@include Mix_Font('Head-L', 18, 24);
+		text-align:center;
+		.sub{
+			margin-top:6px;
+			color:$COL_8282;
+			@include Mix_Font('Txt-R', 12, 20); 
+		}
+	}
+}
+.pas_set02{// [02] 차량 이미지
+	margin-bottom:20px;
+	position: relative;
+	overflow: hidden;
+	touch-action: pan-y;
+	ol{
+		li{
+			flex:0 0 100%;
+			display:block !important;
+		}
+	}
+	.tit{
+		display:block;
+		color:$COL_WHITE;
+		@include Mix_Font('Head-L', 14, 19);
+		text-align:center;
+	}
+	.img{
+		display:block;
+		width:75%;// 대표이미지 기준으로 이미지 여백 고려하여 75% 잡음
+		margin:12px auto 0;
+		img{
+			width:100%;
+		}
+	}
+	.swiper-pagination{
+		.swiper-pagination-bullet{
+			margin:0 3px;
+			background:rgba($COL_WHITE, 0.25)!important;
+		}
+		.swiper-pagination-bullet-active{
+			width:10px!important;
+			height:10px!important;
+			background:transparent!important;
+			border:2px solid $COL_WHITE;
+		}
+	}
+}
+
+.pas_set03{// 가격
+	> .top{
+		position:relative;
+		margin:0 21px 20px;
+		padding-bottom:10px;
+		border-bottom:1px solid $COL_1A1A;
+		color:$COL_WHITE;
+		@include Mix_Font('Head-R', 16, 22);
+		.data{
+			position:absolute;
+			top:50%;
+			right:0;
+			transform: translateY( calc(-50% - 5px) );
+			@include Mix_Font('Txt-R', 12, 20);
+		}
+	}
+}
+.pas_btn{// 버튼
+	position:sticky;
+	bottom:0;
+	left:0;
+	z-index:10;
+	padding:0 21px 20px;
+	background-color:$COL_CPO_BG01;
+	width:100%;
+	.result{
+		border-top:1px solid $COL_1A1A;
+		padding-top:24px;
+		display:flex;
+		flex-flow:row;
+		flex-wrap:wrap;
+		align-items:center;
+		dt{
+			flex:0 0 60%;
+			color:$COL_8282;
+			@include Mix_Font('Txt-R', 12, 19);
+		}
+		dd{
+			flex:0 0 40%;
+			color:$COL_WHITE;
+			@include Mix_Font('Head-L', 20, 27);
+			text-align:right;
+		}
+	}
+	> ul{
+		padding-top:28px;
+		width:100%;
+		display:table;
+		table-layout:fixed;
+		li{
+			display:table-cell;
+			vertical-align:middle;
+			&:not(:first-of-type){
+				margin-left:10px;
+			}
+		}
+	}
+}
+
+.pas_range{
+	margin:0 21px;
+}
+
+.pas_color{
+	margin:20px 0 8px 21px;
+	overflow: hidden;
+	h6.tit{
+		margin-bottom:5px;
+		color:$COL_8282;
+		@include Mix_Font('Txt-R', 12, 20);
+
+	}
+	ol{
+		padding:0 0 12px;
+		position:relative;
+		z-index:1;
+		display:flex;
+		width:100%;
+		text-align:center;
+		white-space:nowrap;
+		column-gap:8px;
+		overflow:hidden;
+		overflow-x:auto;
+		-webkit-overflow-scrolling:touch;
+		-ms-overflow-style:none;
+		scrollbar-width:none;
+		li{
+			display: inline-block;
+			flex:0 0 44px;
+			overflow:hidden;
+			&:last-of-type{
+				margin-right:21px;
+			}
+			label{
+				width:44px;
+				height:44px;
+				img{
+					width:100%;
+					height:100%;
+					object-fit:cover;
+				}
+				span{
+					display:none;
+				}
+			}
+		}
+	}
+}
+
+.pas_option{
+	padding:0 21px 20px;
+	.gear{// 07.연료 GEAR
+		display:flex;
+		flex-flow:row wrap;
+		gap:7px 10px;
+		margin-top:6px;
+		li{
+			width:calc(50% - 5px);
+		}
+	}
+}
+/*가격 슬라이더*/
+.cpo_range{
+	display:block;
+	position:relative;
+	padding:5px 0 30px 0;
+	&::after{
+		content:'';
+		position:absolute;
+		top:5px;
+		left:0;
+		width:100%;
+		height:2px;
+		background-color:$COL_1E1E;
+	}
+	.amountArea{
+		visibility:hidden;
+	}
+	.cpoRange{
+		position:relative;
+		// width:calc(100% - 22px);
+		height:2px;
+		// margin-left:11px;
+		background:$COL_1E1E;
+		.ui-slider-range{
+			position:absolute;
+			top:0;
+			z-index:1;
+			display:block;
+			height:100%;
+			background:$COL_C36F51;
+			border:0;
+		}
+		.ui-slider-handle{
+			z-index:2;cursor:default;-ms-touch-action:none;touch-action:none;outline:none;
+			width:28px;
+			height:28px;
+			@include Mix_Display_Bg;
+			background-color:$COL_C36F51;
+			background-position:-210px -47px;
+			border:2px solid $COL_C36F51;
+			border-radius:100%;
+			position:absolute;
+			top:-14px;
+			-webkit-box-shadow:2px 2px 6px 0px rgba(50, 50, 50, 0.3);
+			-moz-box-shadow:   2px 2px 6px 0px rgba(50, 50, 50, 0.3);
+			box-shadow:        2px 2px 6px 0px rgba(50, 50, 50, 0.3);
+			&:nth-child(2){
+				margin-left: -7px;
+			}
+			&:nth-child(3){
+				margin-left: -21px;
+				transform:rotate(180deg);
+			}
+		}
+		.amountArea{
+			visibility:hidden;
+		}
+		.min_no,
+		.max_no{
+			display:block;
+			width:100px;
+			position:absolute;
+			top:20px;
+			color:$COL_8282;
+			@include Mix_Font('Txt-R', 11, 18);
+		}
+		.min_no{
+			left:-14px;
+			text-align:left;
+		}
+		.max_no{
+			right:-14px;
+			text-align:right;
+		}
+	}
+}
+/* 가격 차트 */
+// #rangePrice{
+// 	margin-top:-10px;
+// }
+.range_chart{
+	width:100%;
+	height:103px;
+	position:relative;
+	overflow:hidden;
+	> ol{
+		display: flex;
+		width:100%;
+		@include Mix_Clear;
+		li{
+			display:flex;
+			// width:5%;
+			height:103px;
+			margin:0 auto;
+			text-indent: -99999px;
+			transition: height 1s;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-end;
+			float:left;
+			&.on{
+				.bar{
+					i{
+						height:100%;
+						margin-top:0;
+						background:$COL_C36F51;
+					}
+				}
+			}
+			.bar{
+				width:2px;
+				i{
+					display:block;
+					width:2px;
+					height:100%;
+					transition: margin 1s;
+					background: $COL_BG_Light03;
+					// margin-top:120px;
+				}
+			}
+
+		}
+	}
+}
+
+@keyframes Ani_Price_Chart{
+	from {
+		max-height:0;
+	}
+	to {
+		max-height:100%;
+	}
+}

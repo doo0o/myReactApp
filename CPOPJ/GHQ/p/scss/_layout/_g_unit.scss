@@ -1,0 +1,997 @@
+.no_data{
+	display:block;
+	padding:64px 0;
+	text-align:center;
+	&::before {
+		margin:0 auto 4px;
+	}
+	&.no {
+		&::before {
+			margin-bottom: 0;
+		}
+		.tit {
+			margin-top: 0;
+		}
+	}
+	.tit{
+		margin-top: 8px;
+		color:$COL_black;
+		@include fontTM(18);
+		+ .txt {
+			margin-top: 8px;
+		}
+	}
+	.tit02{
+		color:color(COL_gs03);@include fontT(16);
+	}
+	.txt{
+		color:color(COL_gs03);
+		@include fontT(14);
+		word-break:keep-all;
+		.key{
+			color:$COL_black;
+			text-decoration:underline;
+		}
+		+ .txt {
+			margin-top: 8px;
+		}
+	}
+	.btn_area{
+		.btn_mid{
+			margin-top:24px;
+		}
+		.btn_big{
+			margin-top:32px;
+		}
+		.btn_small, .btn_xsmall{
+			margin-top:16px;
+		}
+	}
+	// &.type02{
+	// 	&::before{
+	// 		margin-bottom:4px;
+	// 	}
+		
+	// }
+	&.car{
+		@include Mix_Info_Icon_01(0 0);
+	}
+	&.bell{
+		@include Mix_Info_Icon_01(-60px 0);
+	}
+	&.qna{
+		@include Mix_Info_Icon_01(-120px 0);
+	}
+	&.review{
+		@include Mix_Info_Icon_01(-180px 0);
+	}
+	&.promotion{
+		@include Mix_Info_Icon_01(-240px 0);
+	}
+	&.point{
+		@include Mix_Info_Icon_01(-300px 0);
+	}
+	&.payment{
+		@include Mix_Info_Icon_01(-360px 0);
+	}
+	&.addcar{
+		@include Mix_Info_Icon_01(-420px 0);
+	}
+}
+[class^="unit_"] {
+	.compare_wrap & {
+		.chk_compare+ label {
+			pointer-events: none;
+		}
+		.number{
+			display: none;
+		}
+	}
+	.chk_compare {
+		&+label {
+			pointer-events: auto;
+			cursor: pointer;
+			.number{
+				z-index: 1;
+				position:relative;
+				width: 24px;
+				height: 24px;
+				border-radius: 12px;
+				em{
+					display:none;
+					width:24px;height:24px;
+					color:$COL_white;
+					@include fontHM(15,24px);
+					text-align:center;
+				}
+			}
+		}
+		&:checked{
+			& + label{
+				.number{
+					border-color:color(COL_secondary2);
+					background:color(COL_secondary2);
+					box-shadow:none;
+					border: none;
+					&::before{
+						content:none;
+					}
+					em{
+						display:block;
+					}
+				}
+			}
+		}
+		&:disabled{
+			& + label{
+				.number{
+					opacity:0.25;
+				}
+			}
+			&:checked{
+				& + label{
+					.number{
+						border-color:color(COL_gs04);
+						background:color(COL_gs04);
+						opacity:1;
+					}
+				}
+			}
+		}
+	}
+	.unit_info {
+		.tag {
+			font-size: 0;
+			line-height: 0;
+		}
+		.like {
+			color: color(COL_gs04);
+			@include fontT(15,19px);
+			em::before {
+				content : "";
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				margin: 1px 4px 0 0;
+				vertical-align: top;
+				@include Icon_heart("line", color(COL_gs05), $size : "16px");
+			}
+		}
+		.drive {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			color: color(COL_gs03);
+			word-break: keep-all;
+			@include fontT(14);
+			span:nth-child(-n+2):not(:last-child):not(:last-child)::after {
+				content: '';
+				display: inline-block;
+				width: 1px;
+				height: 12px;
+				margin: 0 8px;
+				vertical-align: middle;
+				background-color: color(COL_gs05);
+			}
+			span + .color {
+				margin-top: 8px;
+			}
+			.color {
+				width: 100%;
+			}
+		}
+		.name {
+			@include Mix_Ellipsis(2);
+		}
+		.price {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			.txt + .num {
+				margin-left: 4px;
+			}
+			.num {
+				display: flex;
+				align-items: center;
+				&.no {
+					color: color(COL_gs04);
+				}
+			}
+		}
+		.car_num {
+			color: color(COL_secondary2);
+		}
+	}
+	.on & {
+		li {
+			a {
+				pointer-events: none;
+				.chk_compare {
+					&+label {
+						pointer-events: auto;
+    					cursor: pointer;
+						.number {
+							display: block;
+						}
+					}
+					&:checked{
+						& + label {
+							.flag_big02 {
+								display: block;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.unit_img {
+		align-self: flex-start;
+		.flag_big02 {
+			display: none;
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			text-align: center;
+		}
+		.flag_soldout {
+			display: none;
+		}
+	}
+	.soldout {
+		a {
+			pointer-events: none;
+		}
+		label {
+			cursor: auto;
+		}
+		.unit_img {
+			img {
+				opacity: 0.5;
+			}
+			.flag_big02 {
+				display: none;
+			}
+			.flag_soldout {
+				display: block;
+				position:absolute;
+				bottom:0;
+				left:0;
+				z-index:1;
+				width:100%;
+				height:20px;
+				background: rgba($COL_black, 0.5);
+				color:$COL_white;
+				@include fontT(13);
+				text-align:center;
+			}
+		}
+		.unit_info {
+			color: color(COL_gs03) !important;
+			.price {
+				display: none;
+			}
+		}
+	}
+	a.soldout {pointer-events: none;}
+
+	.txt_btn03 { //삭제버튼
+		position: absolute;
+		bottom: 4px;
+		right: 0;
+		color: color(COL_gs04);
+	}
+	&.align_c { // auto 정렬 중앙정렬로 변경 FO-MY-PS0031_견적/계약 사용예정~
+		.unit_img { 
+			align-self: unset;
+		}
+	}
+}
+.unit_deal {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	> li {
+		position: relative;
+		a {
+			display: block;
+		}
+	}
+	.chk_compare {
+		&+label {
+			.number{
+				position:absolute;
+				border:1px solid rgba(255, 255, 255, .5);
+				background:rgba(0, 0, 0, .15);
+				box-shadow:0px 0px 2px rgba(0, 0, 0, .2);
+				&::before{
+					content:'';
+					display:inline-block;
+					position:absolute;left:3px;top:3px;
+					width:16px;height:16px;
+					background: {
+						image:url(./../img/icon/icon_ui_check03_02.svg);
+						size:16px auto;
+						repeat:no-repeat;
+					}
+					z-index:5;
+				}
+			}
+		}
+		&:disabled{
+			& + label{
+				.number{
+					opacity:0.25;
+				}
+			}
+			&:checked{
+				& + label{
+					.number{
+						border-color:color(COL_gs04);
+						background:color(COL_gs04);
+						opacity:1;
+					}
+				}
+			}
+		}
+	}
+	&.col_type01 {
+		gap: 48px 20px;
+		> li {
+			flex: 0 calc((100% - 40px)/3);
+			.chk_compare {
+				&+label {
+					.number{
+						top: 16px;right: 16px;
+					}
+				}
+			}
+			.unit_img {
+				width: 100%; height:253px;
+			}
+			.unit_info {
+				padding-right: 20px;
+				margin-top: 16px;
+				.price {
+					@include fontH(18);
+					.num {
+						em {
+							@include fontHM(24);
+						}
+						i {
+							@include fontHM(18);
+						}
+						&.no {
+							@include fontHM(22);
+						}
+					}
+				}
+				.name {
+					height: 48px;
+					@include fontH(18);
+				}
+				.name, .drive {
+					margin-top: 8px;
+				}
+			}			
+		}
+	}
+	&.col_type02 { //장바구니/비교하기/마이페이지
+		gap: 32px 20px;
+		> li {
+			flex: 0 calc((100% - 60px)/4);
+			.chk_compare {
+				&+label {
+					.number{
+						top: 8px;right: 8px;
+					}
+				}
+			}
+			.unit_img {
+				width: 100%;
+				height: 127px;
+			}
+			.unit_info {
+				margin-top: 8px;
+				.name {
+					height: 38px;
+					@include fontH(15);
+				}
+				.drive {
+					@include fontT(13);
+					span:nth-child(-n+2):not(:last-child)::after {
+						margin: 2px 4px;
+					}
+				}
+			}
+		}
+	}
+	&.col_type03 { // 5col
+		gap: 32px 20px;
+		> li {
+			flex: 0 calc((100% - 80px)/5);
+			.unit_img {
+				width: 100%;
+				height:147px;
+			}
+			.unit_info {
+				margin-top: 12px;
+				.name {
+					height: 44px;
+					@include fontH(16);
+				}
+			}
+		}
+	}
+	.unit_img {
+		position: relative;
+		overflow: hidden;	
+		img {
+			display: block;
+			width: 100%; height:100%;
+			object-fit: cover;
+		}	
+	}
+	.unit_info {
+		// padding-right: 20px;
+		.tag {
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		.price {
+			position: relative;
+			@include fontH(15);
+			.num {
+				em {
+					@include fontHM(20);
+				}
+				i {
+					@include fontHM(15);
+				}
+				&.no {
+					@include fontHM(18);
+				}
+			}
+			.like {
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+		}
+		.name, .drive {
+			margin-top: 4px;
+		}
+	}
+	.soldout {
+		.unit_info .price {
+			display: block;
+			visibility: hidden;
+		}
+	}
+}
+.unit_list {
+	.chk_compare {
+		&+label{
+			.number{
+				margin-right: 24px;
+				&::before{
+					content:'';
+					display:inline-block;
+					position:absolute;top:0;left:0;
+					width:24px;height:24px;
+					background: {
+						image:url(./../img/icon/icon_chk01.svg);
+						size:24px auto;
+						repeat:no-repeat;
+					};
+				}
+			}
+		}
+		&:checked{
+			& + label {
+				.number::before{
+					background: {
+						image:url(./../img/icon/icon_chk01_check.svg);
+					};
+				}
+			}
+			&:disabled{
+				.number::before{
+					background: {
+						image:url(./../img/icon/icon_chk01_check_disabled.svg);
+					};
+				}
+			}
+		}
+	}
+	> li {
+		position: relative;
+		~ li {
+			margin-top: 32px;
+			padding-top: 32px;
+			border-top: 1px solid color(COL_gs06);
+		}
+		.chk_compare + label {
+			display: flex;
+			align-items: center;
+		}
+	}
+	&:not(.detail) .unit_img {
+		overflow: hidden;
+		position: relative;
+		width: 170px;
+		height: 113px;
+		margin-right: 24px;
+	}
+	.unit_img {
+		img{
+			display: block;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.unit_info {
+		position: relative;   
+		flex: 1;
+		.tag {
+			margin-bottom: 12px;
+		}
+		.price {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			transform: translateY(-50%);
+			@include fontH(15);
+			flex-direction: column;
+			.num {
+				em {
+					@include fontHM(24);
+				}
+				i {
+					@include fontHM(18);
+				}
+			}
+			.like {
+				display: block;
+				width: 100%;
+				margin-top: 12px;
+				text-align: right;
+			}
+		}
+		.name {
+			max-width: 582px;
+			// margin-top: 12px;
+			@include fontH(18);
+			@include Mix_Ellipsis01;
+		}
+		.drive {
+			margin-top: 4px;
+			@include fontT(16);
+			span:nth-child(-n+2):not(:last-child):not(:last-child)::after {
+				margin: 0 12px;
+			}
+		}
+		.car_num {
+			@include fontHM(18);
+		}
+	}
+	&.detail { // 구매,판매관리 상세 unit
+		display: flex;
+		align-items: center;
+		.unit_img {
+			position: relative;
+			width: 96px;
+			height: 96px;
+			margin-right: 16px;
+		}
+	}
+}
+.unit_type {
+	position: relative;
+	.mid_area{
+		display: flex;
+		align-items: center;
+	}
+	&.type01 {
+		.unit_img{
+			width: 120px;
+			height: 120px;
+			margin-right: 20px;
+		}
+		.unit_info {
+			div ~ div {
+				margin-top: 8px;
+			}
+			.name {
+				@include fontH(16);
+			}
+			.price {
+				.txt {
+					@include fontT(15);
+				}
+				.like {
+					display: block;
+					width: 100%;
+					margin-top: 8px;
+				}
+			}
+			.car_num {
+				@include fontHM(16);
+			}
+		}
+	}
+	&.type02 {
+		.unit_img{
+			width: 96px;
+			height: 96px;
+			margin-right: 16px;
+		}
+		.unit_info {
+			div ~ div {
+				margin-top: 4px;
+			}
+			.name {
+				@include fontH(15);
+			}
+			.price {
+				@include fontH(13);
+				.num {
+					em {
+						@include fontHM(16);
+					}
+					i {
+						@include fontHM(13);
+					}
+					&.no {
+						@include fontHM(14);
+					}
+				}
+			}
+			.drive {
+				@include fontT(13);
+				span:nth-child(-n+2):not(:last-child)::after {
+					margin: 0 4px;
+				}
+			}
+		}
+	}
+	&.type03 {
+		.unit_img{
+			width: 200px;
+			height: 200px;
+			margin-right: 32px;
+		}
+		.unit_info {
+			div ~ div {
+				margin-top: 8px;
+			}
+			.name {
+				@include fontH(16);
+			}
+		}
+	}
+	.unit_img {
+		overflow: hidden;
+		position: relative;
+		img{
+			@include Pos($p:absolute,$l:50%,$t:50%);
+			transform: translate(-50%, -50%);
+			display: block;
+			width: 100%; height: auto;
+			object-fit: cover;
+		}
+		.number {
+			position:absolute;top: 8px;right: 8px;
+			width:16px;height:16px;
+			background-color: color(COL_secondary2);
+			border-radius: 50%;
+			text-align: center;
+			color: $COL_white;
+			@include fontH(13, 16px);
+		}
+	}
+	.unit_info {
+		position: relative;
+		flex: 1;
+		[class^="flag_"] {
+			margin-right: 4px;
+		}
+		.order_num {
+			display: flex;
+			align-items: center;
+			color: color(COL_gs03);
+			@include fontT(15);
+			[class^="flag_"] + .num {
+				margin-left:4px;
+			}
+		}
+		.drive {
+			@include fontT(14);
+			color: color(COL_gs03);
+		}
+		.price {
+			@include fontT(15);
+			.txt {
+				@include fontT(13);
+				em {
+					@include fontHM(16);
+				}
+			}
+			.num {
+				em {
+					@include fontHM(20);
+				}
+				i {
+					@include fontHM(15);
+				}
+				&.no {
+					@include fontHM(18);
+				}
+			}
+			+ .car_info02 {
+				margin-top: 20px;
+			}
+		}
+		.tag {
+			margin-bottom: 8px;
+		}
+		.status {
+			margin-top: 4px;
+			@include fontT(13);
+			.tit {
+				color: color(COL_gs02);
+				&.on {
+					color: color(COL_secondary2);
+				}
+			}
+			.date {
+				margin-left: 1px;
+				color: color(COL_gs03);
+				&::before {
+					content: '';
+					display: inline-block;
+					width: 1px;
+					height: 12px;
+					margin-right: 4px;
+					background-color: color(COL_gs05);
+					vertical-align: middle;
+				}
+			}
+		}
+		.car_num {
+			// color: color(COL_secondary2);
+			@include fontHM(15);
+			& + .name {
+				margin-top: 0;
+			}
+		}
+		.car_info01 {
+			display: flex;
+			gap: 20px;
+			margin-top: 12px;
+			li {
+				flex:auto 1;
+			}
+			.tit { 
+				display: block;
+				color: color(COL_gs03);
+				@include fontT(13);
+			}
+			.txt {
+				display: block;
+				max-width: 120px;	
+				word-break: keep-all;
+				color: color(COL_gs02);
+				@include fontT(15);
+			}
+		}
+		.car_info02 {			
+			li {
+				display: flex;
+				gap: 12px;
+				@include fontT(14);
+				~ li {
+					margin-top: 8px;
+				}
+			}
+			.tit {
+				width: 84px;
+				padding-right: 16px;
+				display: block;
+				color: color(COL_gs03);
+			}
+			.txt {
+				color: color(COL_gs02);
+			}
+		}
+	}
+}
+
+// 인기, 관심차량
+.best_cont {	
+	margin-top:80px;
+	.unit_deal {
+		margin-top:24px;
+	}
+}
+
+// vod
+.vod {
+	.key_visual{
+		position: relative;
+		img{
+			display: block;
+			width: 100%; height:100%;
+			object-fit: cover;
+		}
+		.key_title{
+			position: absolute;
+			left: 50%;
+			top: 80px;
+			transform: translateX(-50%);
+			text-align: center;
+			text-shadow: 0px 0px 3px rgb($COL_black ,0.25);
+			@include fontH(18);
+			color: $COL_white;
+			&--day{
+				display: block;
+				@include fontHM(56);
+			}
+		}
+		.key_info{
+			position: absolute;
+			bottom: 40px;
+			left: 40px;
+			
+			&--txt{
+				color: $COL_white;
+				@include fontH(24);
+				text-shadow: 0px 0px 3px rgba($COL_black, 0.7);
+			}
+			&--state{
+				display: flex;
+				margin-bottom: 8px;
+			}
+			&--options {
+				display: flex;
+				margin-top:12px;
+				color:$COL_white;
+				@include fontT(16);
+				text-shadow: 0 0 3px rgba($COL_black, 0.7);
+				.info--option {
+					margin-right: 12px;
+				}
+				.item__ico {
+					display: inline-block;
+					width: 16px; height: 16px;
+					font-size: 0;
+					&--play {
+						margin-right:2px;
+						background-image : url('../img/icon/icon_ui_play03_2.svg');
+					}
+					&--like {
+						margin-right:2px;
+						background-image:url('../img/icon/icon_ui_heart_line03_2.svg');
+					}
+				}
+			}
+		}
+	}
+	.info--timer{
+		display: inline-block;
+		background: {
+			color: rgba($COL_black, 0.6)
+		}
+		padding:1px 8px;
+		height:24px;
+		@include fontT(14,22px);
+		color: $COL_white;
+	}
+	.play_btn{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+
+		button{
+			width: 60px;
+			height: 60px;
+			background: {
+				image :  url(../img/icon/icon_ui_play_vod01.svg);
+				size: 100%;
+				repeat : no-repeat;
+			}
+			font-size: 0;
+		}
+		&.small{
+			button{
+				width: 48px;
+				height: 48px;
+				background-image: url(../img/icon/icon_ui_play_vod02.svg);
+			}
+		}
+	}
+	
+	.alerm_banner{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: color('COL_gs06');
+		box-shadow: 0px 0px 1px rgba($COL_black, 0.15);
+		padding: 12px 24px;
+		.txt{
+			@include fontT(15);
+			color: color('COL_gs02');
+		}
+		.alerm_btn{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			&::before{
+				content: "";
+				display: inline-block;
+				width: 16px;
+				height: 16px;
+				background: {
+					image: url(../img/icon/icon_ui_bell03.svg);
+					size: 100%;
+					repeat: no-repeat;
+				};
+				margin-right: 2px;
+			}
+		}
+	}
+	.commerce_list_sec{
+		margin-top: 48px;
+		.commerce_list{
+			margin-top: 16px;
+			.swiper-pagination01 {
+				margin-top:24px;
+			}
+		}
+		.commerce_list--item{
+			display: flex;
+			align-items: center;
+			.commerce_thum{
+				width: 120px;
+				height: 150px;
+			}
+			.commerce_info{
+				margin-left: 20px;
+				&--date{
+					@include fontTM(16);
+					color:$COL_black;
+				}
+				&--tit{
+					@include fontH(18);
+					margin-top: 4px;
+				}
+				&--remaining{
+					display: flex;
+					align-items: center;
+					@include fontT(15);
+					color: color('COL_gs03');
+					margin-top: 12px;
+					&::before{
+						content: "";
+						display: inline-block;
+						width: 16px;
+						height: 16px;
+						margin-right: 3px;
+						background: {
+							image : url(../img/icon/icon_ui_time03.svg);
+							size : 100%;
+							repeat : no-repeat;
+							position: center;
+						};
+					}
+					
+				}
+				
+			}
+		}
+	}
+}

@@ -1,0 +1,1326 @@
+
+@import '../_common/g_function';
+@import '../_common/g_mixins';
+
+// **********************************************************
+// checkBox 
+// **********************************************************
+input.eng{
+	ime-mode:inactive;
+}
+input.kor{
+	ime-mode:active;
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+[class^="chk_"]{
+	width:1px;height:1px;opacity:0;
+	position:absolute;
+	&+label {
+		color: map-get($COL_Base_04 , "bg_light");
+	}
+	&:disabled+label {
+		color: map-get($COL_Base_01 , "bg_light");
+	} 
+}
+ .chk_type01 {
+ 	&+label{
+ 		position:relative;
+ 		display:inline-block;
+ 		padding-left:30px;
+ 		@include Mix_Font ('Txt-R', 14, 22);
+ 		&::before{
+ 			content:'';
+ 			display:block;
+ 			position:absolute;
+			top:1px;
+			left:0;
+			width: 20px;
+			height: 20px;
+			border:1px solid map-get($COL_Line_02, "bg_light");
+			@include Mix_Form_Bg;
+			background-color: $COL_White; 
+			background-position:0 0;
+		}
+	}
+	&:disabled+label::before{
+		background-color: map-get($COL_Box_02, "bg_light");
+		border:1px solid map-get($COL_Base_05 ,"bg_dark");
+	}
+	&:checked+label::before{
+		border-color: map-get($COL_Highlight , "bg_light");
+		background-color: map-get($COL_Highlight , "bg_light"); 
+		background-position:-56px -2px;
+	}
+	&:checked:disabled+label::before{
+		border-color:  map-get($COL_Line_01 , "bg_light");
+		background-color:  map-get($COL_Line_01 , "bg_light");
+	}
+	&.large{
+		&+label {
+			@include Mix_Font('Txt-M',15, 24);
+			&::before {
+				top:2px;
+			}
+		}
+	}
+	&.small{
+		&+label {
+			@include Mix_Font('Txt-R',13, 21);
+			&::before {
+				top:0;
+			}
+		}
+	}
+	// 배경 블랙일 때 
+	.bg_dark & { // 임시 클래스
+		&+label {
+			color:map-get($COL_Base_04, "bg_dark");
+			&::before {
+				border:1px solid map-get($COL_Base_01, "bg_dark");
+				background-color:$COL_Black;
+			}						
+		}
+		&:checked+label {
+			color:$COL_White;
+		}		
+		&:checked+label::before{
+			border-color: map-get($COL_Highlight , "bg_dark");
+			background-color: map-get($COL_Highlight , "bg_dark"); 
+		}
+		&:disabled+label {
+			color:map-get($COL_Base_02, "bg_dark");
+		}
+		&:disabled+label::before{
+			background-color: map-get($COL_Box_02, "bg_dark");
+			border:1px solid map-get($COL_Line_02 ,"bg_dark");
+		}
+		&:checked:disabled+label::before{
+			border-color: map-get($COL_Line_02 , "bg_dark");
+			background-color: map-get($COL_Box_02 , "bg_dark");
+			background-position:-29px -2px;
+		}
+	}
+}
+
+.chk_type02 {
+	&+label{
+		position:relative;
+		display:inline-block;
+		padding-left:30px;
+		@include Mix_Font ('Txt-R', 14, 22);
+		&::before{
+			content:'';
+			display:block;
+			position:absolute;
+		 top:1px;
+		 left:0;
+		 width: 20px;
+		 height: 20px;
+		 border:1px solid map-get($COL_Line_02, "bg_light");
+		 @include Mix_Form_Bg;
+		 background-color: $COL_White; 
+		 background-position:0 0;
+		}
+	}
+	&:disabled+label::before{
+		background-color: map-get($COL_Box_02, "bg_light");
+		border:1px solid map-get($COL_Base_05 ,"bg_dark");
+	}
+	&:checked+label::before{
+		border-color: map-get($COL_Highlight , "bg_light");
+		background-color: map-get($COL_Highlight , "bg_light"); 
+		background-position:-56px -2px;
+	}
+	&:checked:disabled+label::before{
+		border-color:  map-get($COL_Line_01 , "bg_light");
+		background-color:  map-get($COL_Line_01 , "bg_light");
+	}
+}
+
+// 비교하기 체크박스
+.chk_compare {
+	&+label {
+		position:relative;
+		display: flex;
+		&::before{
+			content:'';
+			display:block;
+			position:absolute;
+			top:0;
+			left:0;
+			z-index:4;
+			width:22px;
+			height:22px;
+			@include Mix_Form_Bg;
+			background-position:-26px -33px;
+		}
+		.num {
+			display:none;
+			position:absolute;
+			top:0;
+			left:0;
+			z-index:5;
+			width:22px;
+			height:22px;
+			color:$COL_White;
+			@include Mix_Font('Txt-M', 13, 22);
+			text-align:center;
+			&.base{
+				&:before{
+					content:'기준';
+					display:block;
+					position:absolute;
+					bottom:-133px;
+					right:-133px;
+					height:20px;
+					padding:0 6px 0 21px;
+					background:rgba($COL_Black, 0.6);
+					color:$COL_White;
+					@include Mix_Font('Txt-R', 11, 20);
+				}
+				&:after{
+					content:'';
+					display:block;
+					position:absolute;
+					left:112px;
+					top:139px;
+					width:12px;
+					height:12px;
+					@include Mix_Display_Bg;
+					background-position:-171px 0;
+				}
+			}
+		}
+		
+	}
+	&:checked + label {
+		&::before{
+			background-image:none;
+		}
+		.num {
+			display:block;
+			background-color:map-get($COL_Highlight,"bg_light");
+		}
+	}	
+	// &:disabled + label {
+	// 	&::before{
+	// 		opacity:0.5;
+	// 	}
+	// 	&.on {
+	// 		&::before{
+	// 			background-image:none;
+	// 		}
+	// 		.num {
+	// 			display:block;
+	// 		}
+	// 	}
+	// }
+	&:disabled {
+		pointer-events: none;
+		&+ label:not(.on) {//선택불가
+			@include Mix_Unit_Soldout(cart);
+			&::before{
+				background-position:-59px -33px;
+			}
+			& +.unit_info {
+				.name .model,
+				.name .desc,
+				.drive, .price ,
+				.alarm_term {
+					color:map-get($COL_Base_01, "bg_light");
+				}
+			}
+		}
+		&+ label.on {//중복차량이라 선택되었지만 off표시
+			&::before{
+				@include Mix_Form_Bg;
+				background-position:-92px -33px;
+			}
+			.num {
+				display:block;
+				color: rgba(255, 255, 255, 0.6);
+				background-color: transparent;
+			}
+		}
+	}
+	.soldout & { //품절일경우
+		pointer-events: none;
+		&+ label::before{
+			background-position:-59px -33px;
+		}
+	}
+}
+
+// radio
+.chk_radio {
+	&+label{
+		position:relative;
+		display:inline-block;
+		padding-left:32px;
+		color:map-get($COL_Base_04, "bg_light");
+		@include Mix_Font ('Txt-R', 14, 22);
+		&::before{
+			content:'';
+			display:block;
+			position:absolute;
+			top:0;
+			left:0;
+			width: 22px;
+			height: 22px;
+			border:1px solid map-get($COL_Line_02, "bg_light");
+			border-radius: 50%;
+			background-color: $COL_White;
+		}
+	}
+	&:disabled {
+		&+label {
+			color:map-get($COL_Base_01, "bg_light");
+		}
+	}
+	&:disabled+label::before{
+		background-color:map-get($COL_Box_02, "bg_light");
+	}
+	&:checked+label::before{
+		border-color: map-get($COL_Highlight, "bg_light");
+		border-width:7px;
+		background-color: transparent;
+	}
+	&:checked:disabled+label::before{
+		border-color: map-get($COL_Line_02, "bg_light");
+	}
+	&.large{
+		&+label {
+			@include Mix_Font('Txt-M',15, 22);
+		}
+	}
+	&.small{
+		&+label {
+			padding-left: 26px;
+			@include Mix_Font('Txt-R', 12, 18);
+			&::before {
+				width: 18px;
+				height: 18px;
+			}
+		}
+		&:checked+label::before {
+			border-width: 6px;
+		}
+	}
+}
+
+.chk_block {
+	&+label{
+		display: block;
+		padding:12px 0;
+		border:1px solid map-get($COL_Line_01 , "bg_light");
+		background:$COL_White;
+		color:map-get($COL_Base_02 , "bg_light");
+		@include Mix_Font('Txt-R', 14, 22);
+		text-align:center;
+	}
+	&:checked+label{
+		color:$COL_Black;
+		border:1px solid $COL_Black;
+	}
+	&:disabled+label{
+		background-color: map-get($COL_Box_01 , "bg_light");
+	}
+
+	// 배경 블랙일 때
+	.bg_dark & {
+		&+label{
+			border:1px solid map-get($COL_Base_01 , "bg_dark");
+			background:$COL_Black;
+			color:map-get($COL_Base_04 , "bg_dark");
+		}
+		&:checked+label{
+			border:1px solid map-get($COL_Highlight ,"bg_dark");
+			color:$COL_White;
+		}	
+	}
+
+}
+
+//chk_block 겉에 싸는 용도로 같이 사용
+.select_info {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px 0px;
+	li {
+		width: 100%;
+	}
+	&.col2 {
+		gap: 8px;
+		li {
+			width: calc(50% - 5px);
+		}
+	}
+}
+
+.chk_color{// 검색하기 'color 체크박스
+	&+label{
+		display:block;
+		width:70px;
+		margin:0 auto;
+		img{
+			width:100%;
+		}
+		span{
+			display:block;
+			margin-top:10px;
+			color:map-get($COL_Base_02, "bg_light");
+			@include Mix_Font('Txt-R', 13, 21);
+			// &:before{
+			// 	content:'';
+			// 	display:inline-block;
+			// 	width:12px;
+			// 	height:10px;
+			// 	margin-right:6px;
+			// }
+		}
+	}
+	&:checked+label{
+		span{
+			padding-right:0;
+			color:map-get($COL_Base_04, "bg_light");
+			&:before{
+				content:'';
+				display:inline-block;
+				width:14px;
+				height:10px;
+				margin-right:4px;
+				@include Mix_Form_Bg;
+				background-position:-158px 0;
+			}
+		}
+		
+	}
+	//어두운배경일때
+	.bg_dark & {
+		&+label span {
+			color:map-get($COL_Base_04, "bg_dark");
+		}
+		&:checked+label {
+			color:$COL_White;
+			span {
+				color:$COL_White;
+				&:before{
+					background-position:-157px -16px;
+				}
+			}			
+		}
+	}
+}
+
+.chk_model {
+	&+label{
+		display:block;
+		margin: 0 6px;
+		padding-bottom: 11px;
+		img{
+			width:100%;
+		}
+		span{
+			display:block;
+			margin-bottom: 5px;
+			padding-right:15px;
+			color:map-get($COL_Base_02, "bg_light");
+			@include Mix_Font('Head-L', 14, 19);
+		}
+	}
+	&:checked+label{
+		padding-bottom: 10px;
+		border-bottom: 1px solid map-get($COL_Highlight, "bg_light" );
+		span{
+			padding-right:0;
+			color:map-get($COL_Base_04, "bg_light");
+		}
+		
+	}
+	//어두운배경일때
+	.bg_dark & {
+		&+label span {
+			color:map-get($COL_Base_04, "bg_dark");
+		}
+		&:checked+label {
+			border-bottom: 1px solid map-get($COL_Highlight, "bg_dark" );
+			span {
+				color:$COL_White;
+			}
+		}
+		
+	}
+}
+
+// **********************************************************
+// Form input 
+// **********************************************************
+//form_list
+.form_list01 {
+	border: 1px solid map-get($COL_Box_02 , "bg_light");
+	background-color: $COL_White;
+	> li:not(:first-child) {
+		border-top: 1px solid map-get($COL_Box_02, "bg_light");
+	}
+	.inbox_type01 {
+		min-height: 72px;
+		// padding: 15px 20px;
+	}
+	.slt_box + .inbox_type02.msg::before {
+		content:"";
+		position:absolute;
+		top:0;
+		left:0;
+		display:block;
+		width: calc(100% - 40px);
+		height: 1px;
+		margin: 0 20px;
+		background-color:map-get($COL_Line_01 , "bg_light");	
+	}
+	.textarea {
+		border: none;
+		&.focus {
+			z-index: 1;
+			height: 192px;
+			margin: -1px;
+			border: 1px solid $COL_Black !important;
+		}
+	}
+}
+.form_list02 {
+	> li:not(:first-child) {
+		margin-top: 10px;
+	}
+	.slt_box {
+		border: 1px solid map-get($COL_Line_01 , "bg_light");
+	}
+}
+.form_list03 {
+	> li {
+		> .box {
+			display: flex;
+			align-items: center;
+			height: 56px;
+			padding: 0 20px;
+			border: 1px solid map-get($COL_Line_01 , "bg_light");
+		}
+	}
+	> li ~ li {
+		margin-top: 10px;
+	}
+	.label {
+		color:map-get($COL_Base_01 , "bg_light");
+		font-size: 14px;
+	}
+	.cont {
+		margin-left: auto;
+		&.slt_box {
+			margin-right: -20px;
+			.sel_value {
+				height: 100%;
+				background: none;
+			}
+		}
+	}
+	input.txt {
+		margin-top: 1px;
+		text-align: right;
+		@include Mix_Font('Head-R', 15, 19);
+		&:focus {
+			outline: none;
+		}
+	}
+	.validation {margin: 6px 6px 0;}
+}
+// 삭제버튼
+[class^="btn_delete"]{
+	display: none;
+	width: 18px;
+	height: 18px;
+	@include Mix_Form_Bg;
+	@include Mix_Size_0;
+	background-position: -81px 0;
+}
+.bg_dark [class^="btn_delete"] {
+	background-position: -104px 0;
+}
+// inbox_type default
+[class^="inbox_type"]{
+	position:relative;
+	width:100%;
+	// border:1px solid transparent;
+	background-color: $COL_White;
+	> .tit{
+		color:map-get($COL_Base_01 , "bg_light");
+		@include Mix_Font('Txt-R', 14, 22);
+		transition:all 0.1s linear;
+	}
+	> .txt{// 인풋 입력박스
+		width:100%;
+		padding-right: 26px;
+		background:transparent;
+		color:$COL_Black;
+		@include Mix_Font('Txt-R', 14, 22);
+		&:disabled{
+			color:map-get($COL_Base_01 , "bg_light");
+			opacity: 1;
+			-webkit-text-fill-color: map-get($COL_Base_01 , "bg_light");;
+			~ span {color:map-get($COL_Base_01 , "bg_light");}
+		}
+		&:focus{
+			outline:none;
+		}
+		&::placeholder{
+			color:map-get($COL_Base_01 , "bg_light");
+		}
+	}
+	&.focus:not(.car){// 인풋 입력박스 focusIN 일때
+		border:1px solid $COL_Black !important;
+	}
+	&.delete_on {
+		[class^="btn_delete"] {
+			display: block;
+		}
+	}
+}
+// inbox_type01 타이틀이 박스 안에 있고, 인풋박스 클릭시 타이틀 위로 올라가는 타입
+.inbox_type01 {
+	min-height: 74px;
+	padding: 15px 20px;
+	&.line {
+		border: 1px solid map-get($COL_Line_01 , "bg_light");
+	}
+	> .tit{
+		position:absolute;
+		top:50%;
+		left:20px;
+		transform:translateY(-50%);
+	}
+	> .txt{// 인풋 입력박스
+		opacity: 0;
+	}
+	> .validation{
+		display: none;
+	}
+	&.focus{// 인풋 입력박스 focusIN 일때
+		> .tit{
+			color:$COL_Black;
+		}
+	}
+	&.focus:not(.line){// form_list타입
+		z-index: 1;
+		margin: -1px;
+		width: calc(100% + 2px);
+	}
+	&.on{
+		> .tit{
+			top:15px;
+			@include Mix_Font('Txt-M', 11, 18);
+			transform:translateY(0);
+			transition:all 0.1s linear;
+		}
+		> .txt{
+			opacity: 1;
+			position: static;
+			padding-top: 20px;
+		}
+		> .slt_box{
+			display:block !important;
+		}
+		.validation{
+			&.error, &.ok{
+				display: block;
+			}
+		}
+	}
+	.btn_delete {
+		position: absolute;
+		top: 36px;
+		right: 20px;
+	}
+	&.email {
+		display: flex ;
+		flex-wrap: wrap;
+		padding-top: 34px;
+		.txt {
+			flex: 1;
+			height: 23px;
+			padding-top: 0;
+			padding-right: 10px;			
+		}
+		.btn_delete {
+			position: static;
+			margin-top: 3px;
+			padding-right: 10px;
+		}
+		> .slt_box {
+			display:none;
+			height: 23px;
+			line-height: 23px;
+			> .sel_value {
+				text-align: right;
+				padding-right: 18px;
+				padding-left: 10px;
+                background-position-x: 100%;
+				&::after{
+					right: 0;
+				}
+			}
+		}
+		.validation {
+			width: 100%;
+		}
+	}
+	&.identity{// 주민등록번호
+		font-size: 0;
+		&.on{
+			&::before{
+				content:"";
+				position:absolute;
+				top:45px;
+				left:50%;
+				display:block;
+				width: 8px;
+				height: 1px;
+				background-color:map-get($COL_Line_02 , "bg_light");
+			}
+			> .txt{
+				display:inline-block;
+				&.delete_on + .btn_delete {
+					display: block;
+				}
+			}
+		} 
+		.txt{
+			width: calc(50% - 4px);
+			padding-left:10px;
+			&.type_id01{
+				margin-right: 8px;
+				padding-left: 0;
+				+ .btn_delete {
+					right: auto;
+					left: calc(50% - 26px);
+				}
+			}
+		}
+	}
+	&.address { //주소
+		&.on{
+			> .add{ 
+				display:block;
+			}
+		}
+		> .add{
+			display:none;
+			padding:21px 95px 0 0;
+			word-break: keep-all;
+			color:map-get($COL_Base_01 , "bg_light");
+			@include Mix_Font('Txt-R', 14, 22);
+		}
+		> .btn_icon_mid01{
+			position:absolute;
+			top:50%;
+			right:20px;
+			transform:translateY(-50%);
+		}
+	}
+	&.cert_input {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		.txt {
+			flex: 1;
+		}
+		.btn_delete {
+			position: static;
+			margin: 15px 10px 0 0;
+			padding-right: 10px;
+		}
+		.validation {
+			width: 100%;
+		}
+	}
+	&.cert {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		.txt {
+			flex: 1;
+		}
+		.btn_delete {
+			position: static;
+			margin: 15px 10px 0 0;
+			padding-right: 10px;
+		}
+		.timer {
+			@include Mix_Font('Txt-R', 14, 23);
+			color: #1D8ABC;
+		}
+		.btn_delete {
+			top: 36px; right: 65px;
+		}
+		&.on .timer {
+			display: block;
+			margin-top: 16px;
+		}
+		.validation {
+			width: 100%;
+		}
+	}
+	&.disabled .ui-datepicker-trigger {
+		pointer-events: none;
+		opacity: 0.5;
+	}
+}
+// inbox_type02 타이틀이 박스 안에 있는 타입
+.inbox_type02 {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 56px;
+	padding: 0 20px;
+	line-height: 56px;
+	.tit {
+		padding-right: 10px;
+	}
+	.txt {
+		flex: 1;
+		padding: 0;
+		z-index:1;
+		&:disabled ~ em {
+			color: map-get($COL_Base_01 , "bg_light");
+		}
+	}
+	&:not(.bg, .msg) {
+		border: 1px solid map-get($COL_Box_02 , "bg_light");
+	}
+	// &.bg {
+	// 	background-color: map-get($COL_Light;
+	// }
+	&.car {
+		border: 1px solid map-get($COL_Highlight , "bg_light");
+		.txt {
+			caret-color: rgba(0,0,0,0.5);
+		}
+	}
+	&:not(.car, .msg) > .txt{// 인풋 입력박스
+		text-align: right;
+		&::placeholder{
+			text-align: right;
+		}
+	}
+	&.small {
+		padding: 0 17px;
+		.tit {
+			font-size: 13px;
+		}
+	}
+	> em{
+		// margin-right: 5px; 인풋과 텍스트 사이 간격 20px 이 맞는데,,, 왜 들어가있을까요
+		color:$COL_Black;
+		@include Mix_Font('Txt-R', 14, 54);
+	}
+	.btn_delete {
+		margin: 0 5px;
+	}
+}
+.validation{
+	// color:map-get($COL_Gray07;
+	@include Mix_Font('Txt-R', 11, 18);
+	&.error{
+		color:map-get($COL_Red , "bg_light");
+	}
+	&.ok{
+		color:$COL_Helpful;
+	}
+}
+// inp_txt default 내차팔기
+[class^="inp_type"] {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	border-bottom: 1px solid map-get($COL_Highlight , "bg_light");
+	.txt {
+		flex: 1;
+		width: 100%;
+		background: transparent;
+		border: 0;
+		outline: 0;
+		color:$COL_Black;
+		&::placeholder{
+			line-height: inherit;
+		}
+	}
+	> em {
+		color: map-get($COL_Line_02 , "bg_light");
+		@include Mix_Font('Head-M', 20, 25);
+	}
+	.btn_ok {
+		display: none;
+		width:38px;
+		height:38px;
+		margin-left: 20px;
+		overflow:hidden;
+		@include Mix_Size_0;
+		@include Mix_Form_Bg;
+		background-position:-35px -90px;
+	}
+	&.delete_on {
+		[class^="btn_delete"], .btn_ok {
+			display: block;
+		}
+		> em {
+			margin-left: 10px;
+			// display: none;
+		}
+	}
+}
+.inp_type01 {
+	padding: 4px 0;
+	.txt {
+		padding: 0 4px;
+		@include Mix_Font('Head-R', 44, 43);
+		caret-color: rgba($COL_Black,0.5);
+		&::placeholder{
+			color: map-get($COL_Line_01 , "bg_light");
+		}
+	}
+}
+.inp_type02 {
+	padding: 10px 0;
+	.txt {
+		@include Mix_Font('Head-M', 30, 30);
+		caret-color: rgba($COL_Black,0.5);
+		&::placeholder{
+			color: map-get($COL_Line_01 , "bg_light");
+		}
+	}
+	.btn_ok {
+		margin-right: 8px;
+		background-position:-59px -131px;
+	}
+}
+.inp_search {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 15px;
+	border-bottom: 1px solid map-get($COL_Highlight , "bg_light");
+	&::after{
+		content:'';
+		display:block;
+		height:24px;
+		width: 24px;
+		margin:0 auto;
+		@include Mix_Layout_Bg;
+		background-position: -48px -25px;
+	}
+	.txt {
+		flex: 1;
+		width: 100%;
+		@include Mix_Font('Txt-R', 15, 52);
+		background: transparent;
+	}
+	&.delete_on {
+		.btn_delete {
+			display: block;
+		}
+	}
+	&.focus, &.delete_on {
+		&::after {
+			display: none;
+		}
+	}
+	&::placeholder{
+		color: map-get($COL_Base_01, 'bg_light');
+	}
+	.bg_dark & {
+		.txt::placeholder {
+			color: map-get($COL_Base_02, 'bg_dark');
+		}
+	}
+}
+// textarea default 높이고정 191px 
+[class^="textarea"] {
+	position:relative;
+	height: 190px;
+	padding:15px 20px 40px;
+	border:1px solid map-get($COL_Line_01 , "bg_light");
+	background-color: $COL_White;
+	&.focus{
+		padding-top: 36px;
+		border:1px solid $COL_Black;
+		textarea {
+			&::placeholder{
+				color: map-get($COL_Base_01 , "bg_light");
+			}
+		}
+		.tit{
+			color:$COL_Black;
+			@include Mix_Font('Txt-M', 11, 18);
+		}
+	}
+	&.on{
+		padding-top: 36px;
+		> .tit{ 
+			display:block;
+			@include Mix_Font('Txt-M', 11, 18);
+		}
+		.txt_check {
+			.first {
+				color:$COL_Black;
+			}
+		}
+	}
+	> .tit{		
+		position:absolute;
+		top:15px;
+		left:20px;
+		color:map-get($COL_Base_01 , "bg_light");
+		@include Mix_Font('Txt-R', 14, 22);
+		transition:all 0.1s linear;
+		z-index: 2;
+	}
+	.txt_check{
+		position:absolute;
+		right:20px;
+		bottom:10px;
+		@include Mix_Font('Txt-R', 12, 19);
+		color: map-get($COL_Base_01 , "bg_light");
+	}
+	textarea{
+		height:100%;
+		@include Mix_Font('Txt-R', 14, 22);
+		&::placeholder{
+			color: transparent;
+		}
+	}
+	.validation{
+		margin-top: 6px;
+	}
+}
+.textarea_car {
+	height: 125px;
+	border:1px solid map-get($COL_Highlight , "bg_light");
+}
+// 달력
+.calendar{
+	.date-picker{
+		position:relative;
+		width:93px;
+		border:0;
+		color:map-get($COL_Base_04 , "bg_light");
+		@include Mix_Font_Head_M;
+		background: transparent url('../img/bg_calendar.png') no-repeat right;
+		background-size: 20px 20px;
+	}
+	> span{
+		margin:0 8px;
+	}
+}
+ 
+// switch 토글
+.chk_toggle{
+	opacity: 1;
+	input[type="checkbox"]{
+		position:absolute;
+		left:-9999px;
+		& + span{
+			display:block;
+			position:relative;
+			width:50px;
+			height:30px;
+			border-radius:15px;
+			background:map-get($COL_Line_01, "bg_light");
+			@include Mix_Size_0;
+			transition:background 0.2s ease-out;
+			&::before{
+				content:'';
+				display:inline-block;
+				position:absolute;
+				top:2px;
+				left:2px;
+				width:26px;
+				height:26px;
+				border-radius:50%;
+				background:$COL_White;
+				transition:left .1s linear;
+				@include Boxshadow(1px, 4px, .2);
+			}
+		}
+		&:checked + span{
+			background:$COL_Black;
+			&::before{
+				left:22px;
+			}
+		}
+	}
+}
+// //마이페이지 체크박스 토글
+
+// //Radio type01
+// .chk_rad01{
+// 	position:absolute;
+// 	width:1px;
+// 	height:1px;
+// 	opacity:0;
+// 	&:checked + label::before{
+// 		background-position:-100px -62px;
+// 	}
+// 	&+label{
+// 		display:inline-block;
+// 		position:relative;
+// 		width:100%;
+// 		padding:4px 0 4px 33px;
+// 		color:map-get($COL_Black;
+// 		@include Mix_Font('Txt-B', 16, 20);
+// 		&::before{
+// 			content:'';
+// 			display:block;
+// 			position:absolute;
+// 			top:0;
+// 			left:0;
+// 			width:26px;
+// 			height:26px;
+// 			@include Mix_Form_Bg;
+// 			background-position:-130px -62px;
+// 			vertical-align:middle;
+// 		}
+// 	}
+// }
+// .chk_rad02{
+// 	position:absolute;
+// 	width:1px;
+// 	height:1px;
+// 	opacity:0;
+// 	&:disabled + label {
+// 		color: map-get($COL_Gray07;
+// 		&::before {
+// 			background-position:-52px -171px;
+// 		}
+// 	}
+// 	&:checked + label::before{
+// 		background-position:-75px -171px;
+// 	}
+// 	&:disabled:checked + label::before {
+// 		background-position:-98px -171px;
+// 	}
+// 	&+label{
+// 		display:inline-block;
+// 		position:relative;
+// 		width:100%;
+// 		padding:0 0 0 26px;
+// 		color:map-get($COL_Gray08;
+// 		@include Mix_Font('Txt-R', 13, 18);
+// 		&::before{
+// 			content:'';
+// 			display:block;
+// 			position:absolute;
+// 			top:0;
+// 			left:0;
+// 			width:18px;
+// 			height:18px;
+// 			@include Mix_Form_Bg;
+// 			background-position:-29px -171px;
+// 			vertical-align:middle;
+// 		}
+// 	}
+// }
+// 인풋박스 radio 버튼 2단 / 
+.form_type03{
+	display:flex;
+	flex-wrap:wrap;
+	li{
+		width: 50%;
+		&:nth-of-type(2) ~ li{
+			margin-top: 15px;
+		}
+	}
+	.row{
+		width: 100%;
+		margin-top: 20px !important;
+	}
+}
+
+// /* 상품목록 plp_sorting */
+// .sorting_layer{
+// 	display:none;
+// 	position:absolute;
+// 	top:25px;
+// 	right:-35px;
+// 	width:130px;
+// 	padding:8px 0;
+// 	border:1px solid map-get($COL_Gray03;
+// 	background:map-get($COL_White;
+// 	box-shadow: 0px 3px 6px rgba(map-get($COL_Black, 0.12);
+// 	ol.plp_sort{// 상품목록, 인기순...  sorting
+// 		li{
+// 			border-top:1px solid map-get($COL_Line_01;
+// 			&:first-of-type{
+// 				border-top:0;
+// 			}
+// 		}
+// 	}
+// }
+
+.addphoto_list{// 사진 업로드
+	dl{
+		display:flex;
+		flex-wrap:nowrap;
+		position:relative;
+		height: 75px;
+		margin-right: -21px;
+		&.on{
+			> dt{
+				width:100%;
+				padding-right:21px;
+				span.t01{display:block;}
+				span.t02{display:none;}
+			}
+			> dd{
+				display:none;
+			}
+		}
+		dt{
+			width:75px;
+			height:100%;
+			span.t01{display:none;}
+			span.t02{display:block;}
+			.file_morephoto[type="file"]{// 파일 선택
+				opacity:0;
+				position:absolute;
+				width:1px;
+				height:1px;
+				overflow:hidden;
+				&+label{
+					position:relative;
+					display:block;
+					width:100%;
+					height:100%;
+					background:map-get($COL_Box_01, 'bg_light');
+					border:1px dashed map-get($COL_Line_01, 'bg_light');
+					> span{ // 사진 추가하기 & 사진 수량
+						position:absolute;
+						top:50%;
+						left:50%;
+						transform:translate(-50%, -50%);
+						color:map-get($COL_Base_02, 'bg_light');
+						text-align:center;
+						&::before{
+							content:'';
+							display:block;
+							margin:0 auto 5px;
+							@include Mix_Form_Bg;
+						}
+					}
+					span.t01{// 사진 추가하기
+						@include Mix_Font('Head-R', 12, 16 );
+						&::before{
+							width:12px;
+							height:12px;
+							background-position:-179px -38px;
+						}
+					}
+					span.t02{// 사진 수량
+						@include Mix_Font('Txt-R', 11, 18);
+						em{
+							color:map-get($COL_Highlight, 'bg_light');
+						}
+						&::before{
+							width:30px;
+							height:30px;
+							margin-bottom:0;
+							background-position:-136px -144px;
+						}
+					}
+				}
+			}
+		}
+		dd{
+			// width:80%;
+			width: calc(100% - 75px);
+			.list{// 업로드 사진 미리보기
+				overflow-x:auto;
+				overflow-y:hidden;
+				white-space:nowrap;
+				li{
+					display:inline-block;
+					overflow:hidden;
+					position:relative;
+					width: 75px;
+					height: 75px;
+					margin-left:6px;
+					img{
+						width:100%;
+						height:100%;
+						object-fit:cover;
+					}
+				}
+			}
+		}
+
+	}
+	.caution {
+		margin-top: 15px;
+	}
+	
+}
+
+//찜하기
+.chk_wish{
+	position:absolute;
+	width:1px;
+	height:1px;
+	&+label{
+		position:relative;
+		display:block;
+		width: 100%;
+		height: 100%;
+		@include Mix_Size_0;
+		&:before{
+			content:'';
+			display:block;
+			position:absolute;
+			top:50%;
+			left:50%;
+			@include Mix_Display_Bg;
+			width:18px;
+			height:18px;
+			transform: translate(-50%, -50%);
+			background-position:-201px -71px;
+		}
+	}
+	&:checked+label:before{
+		background-position:-225px -71px;
+	}
+	//btn_sticky에서 사용
+	&.large {
+		&+label::before {
+			width:24px;
+			height:24px;
+			background-position:-105px -71px;
+		}
+		&:checked+label:before{
+			background-position:-134px -71px;
+		}
+		&:disabled+label:before{
+			opacity:0.9;
+		}
+	}
+	//어디에쓸거냐 디자이너들아~
+	&.small {
+		&+label::before {
+			width:14px;
+			height:14px;
+			background-position:-163px -71px;
+		}
+		&:checked+label:before{
+			background-position:-182px -71px;
+		}
+	}
+}

@@ -1,0 +1,243 @@
+<!-- FO-PD-MS0003 : 할부계산기 - FULL -->
+<div class="CPOpop_full" id="FO-PD-MS0003">
+	<div class="p_head">
+		<h4 class="tit">할부계산기</h4>
+	</div>
+	<div class="p_wrap">
+		<!-- 할부계산기 -->
+
+		<!--01.총 구매 예상 비용-->
+		<h4 class="pdp_cont_tot">
+			<dt>총 구매 예상 비용<span>(보험료 별도)</span></dt>
+			<dd><em>32,760,600</em>원<span>(보험료 별도)</span></dd>
+		</h4>
+		<!--01.총 구매 예상 비용-->
+
+		<div class="pdp_pop">
+			<!--02.차량가격-->
+			<div class="pdp_box01">
+				<h4 class="pdp_tit pdp_tog on">차량가격<span><em>28,560,000</em>원</span></h4> <!--toggle 모드일시 class pdp_tog 추가 / toggle open시 class on 추가-->
+				<div class="pdp_cont">
+					<ol class="pdp_list">
+						<li>
+							<span class="tit">모델</span>
+							<span class="txt">더 뉴 그랜저 2.5 가솔린 캘리그라피</span>
+						</li>
+						<li>
+							<span class="tit">승차인원</span>
+							<span class="txt">5인승</span>
+						</li>
+						<li>
+							<span class="tit">배기량</span>
+							<span class="txt">2000cc 이상</span>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!--//02.차량가격-->
+	
+			<!--03.세금 및 부대비용-->
+			<div class="pdp_box01">
+				<h4 class="pdp_tit pdp_tog on">세금 및 부대비용<span><em>28,560,000</em>원</span></h4> <!--toggle 모드일시 class pdp_tog 추가 / toggle open시 class on 추가-->
+				<div class="pdp_cont">
+					<dl class="pdp_sel2">
+						<dt class="tit">거주지</dt>
+						<dd>
+							<!-- [수정-SELECT] 2022-03-25 --><!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+							<button type="button" class="btn_sel03 jQ_Select" id="SelectADD" data-id="SelectADD01" data-popup="Select-ADD-Layer">서울</button>
+							<!-- Layer -->
+							<div class="CPOpop_bottom select" id="Select-ADD-Layer">
+								<div class="p_head">
+									<h5 class="tit">거주지 선택</h5>
+								</div>
+								<div class="p_wrap">
+									<!-- list -->
+									<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+										<li><input type="radio" class="chk_type09" name="SelectADD_Name" id="SelectADD01"><label for="SelectADD01">서울</label></li>
+										<li><input type="radio" class="chk_type09" name="SelectADD_Name" id="SelectADD02"><label for="SelectADD02">인천</label></li>
+										<li><input type="radio" class="chk_type09" name="SelectADD_Name" id="SelectADD03"><label for="SelectADD03">강원</label></li>
+										<li><input type="radio" class="chk_type09" name="SelectADD_Name" id="SelectADD04"><label for="SelectADD04">경기</label></li>
+									</ol>
+									<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectADD 변경 내용 적용  -->
+										<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectADD">적용하기</button>
+									</div>
+									<!-- //list -->
+								</div>
+								<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+							</div>
+							<!-- [수정-SELECT] 2022-03-25 -->
+						</dd>
+					</dl>
+					<ol class="pdp_list">
+						<li>
+							<span class="tit">등록세</span>
+							<span class="txt2"><em>1,428,000</em>원</span>
+						</li>
+						<li>
+							<span class="tit">취득세</span>
+							<span class="txt2"><em>1,999,200</em>원</span>
+						</li>
+						<li>
+							<span class="tit">공채매입비</span>
+							<span class="txt2"><em>1,713,600</em>원</span>
+						</li>
+						<li>
+							<span class="tit">증지대</span>
+							<span class="txt2"><em>2,000</em>원</span>
+						</li>
+						<li>
+							<span class="tit">인지대</span>
+							<span class="txt2"><em>3,000</em>원</span>
+						</li>
+						<li>
+							<span class="tit">번호판교체비</span>
+							<span class="txt2"><em>20,000</em>원</span>
+						</li>
+						<li>
+							<span class="tit">관리비용</span>
+							<span class="txt2"><em>10,000</em>원</span>
+						</li>
+						<li>
+							<span class="tit">등록신청대행 수수료</span>
+							<span class="txt2"><em>20,000</em>원</span>
+						</li>
+						<li>
+							<span class="tit">배송료</span>
+							<span class="txt2"><em>10,000</em>원</span>
+						</li>
+						<li>
+							<span class="tit">현대보증 보험료</span>
+							<span class="txt2"><em>20,000</em>원</span>
+						</li>
+					</ol>
+				</div>
+			</div>
+			<!--//03.세금 및 부대비용-->
+	
+			<!--04.월 예상 할부금-->
+			<div class="pdp_box01">
+				<h4 class="pdp_tit pdp_tog on">월 예상 할부금<span><em>674,594</em>원</span></h4> <!--toggle 모드일시 class pdp_tog 추가 / toggle open시 class on 추가-->
+				<div class="pdp_cont">
+					<dl class="pdp_txt">
+						<dt>총 할부 신청금액</dt>
+						<dd><em>22,932,420</em>원</dd>
+					</dl>
+					<dl class="pdp_sel_box">
+						<dt>
+							선수금<em>(30% 기준)</em>
+							<button type="button">초기화</button>
+						</dt>
+						<dd>
+							<div class="form_txt normal">
+								<input type="text" placeholder="금액" name="ipt_mail" value="">
+								<button type="button" class="btn_delete" id="id_clear">삭제</button>
+							</div>
+							<p class="txt">판매가격의 30% 이상부터 입력 할 수 있습니다.</p>
+						</dd>
+					</dl>
+					<div class="pdp_sel_box2">
+						<dl>
+							<dt class="tit2">할부기간</dt>
+							<dd class="pdp_sel2">
+								<!-- [수정-SELECT] 2022-03-25 --><!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+								<button type="button" class="btn_sel03 jQ_Select" id="SelectDATE" data-id="SelectDATE02" data-popup="Select-DATE-Layer">36개월</button>
+								<!-- Layer -->
+								<div class="CPOpop_bottom select" id="Select-DATE-Layer">
+									<div class="p_head">
+										<h5 class="tit">할부기간 선택</h5>
+									</div>
+									<div class="p_wrap">
+										<!-- list -->
+										<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+											<li><input type="radio" class="chk_type09" name="SelectDATE_Name" id="SelectDATE01"><label for="SelectDATE01">12개월</label></li>
+											<li><input type="radio" class="chk_type09" name="SelectDATE_Name" id="SelectDATE02"><label for="SelectDATE02">36개월</label></li>
+										</ol>
+										<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectDATE 변경 내용 적용  -->
+											<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectDATE">적용하기</button>
+										</div>
+										<!-- //list -->
+									</div>
+									<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+								</div>
+								<!-- [수정-SELECT] 2022-03-25 -->
+							</dd>
+						</dl>
+						<dl>
+							<dt class="tit2">금리</dt>
+							<dd class="pdp_sel2">
+								<!-- [수정-SELECT] 2022-03-25 --><!-- jQ_Select 클릭 기능 / id='radio name - '_Name' 동일' / data-id='체크된 id 값 넣기' / data-popup='레이어팝업 ID' -->
+								<button type="button" class="btn_sel03 jQ_Select" id="SelectRATE" data-id="SelectRATE02" data-popup="Select-RATE-Layer">5.9%</button>
+								<!-- Layer -->
+								<div class="CPOpop_bottom select" id="Select-RATE-Layer">
+									<div class="p_head">
+										<h5 class="tit">금리 선택</h5>
+									</div>
+									<div class="p_wrap">
+										<!-- list -->
+										<ol class="select_list"><!-- radio name=버튼ID + '_Name' -->
+											<li><input type="radio" class="chk_type09" name="SelectRATE_Name" id="SelectRATE01"><label for="SelectRATE01">2.9%</label></li>
+											<li><input type="radio" class="chk_type09" name="SelectRATE_Name" id="SelectRATE02"><label for="SelectRATE02">5.9%</label></li>
+										</ol>
+										<div class="btn_sticky"><!-- jQ_Select_Save 클릭 기능 / data-id='버튼 ID 동일' // selectRATE 변경 내용 적용  -->
+											<button type="button" class="btn_big01 jQ_Select_Save" data-id="SelectRATE">적용하기</button>
+										</div>
+										<!-- //list -->
+									</div>
+									<button type="button" class="pop_close">닫기</button><!-- 닫기 기능 -->
+								</div>
+								<!-- [수정-SELECT] 2022-03-25 -->
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!--//04.월 예상 할부금-->
+
+			<!-- //할부계산기 -->
+
+		</div>
+
+		<!--05.할부한도 조회-->
+		<div class="notice_02">
+			<h6>할부한도 조회</h6>
+			<dl>
+				<dd class="cont_institute">
+					<p class="desc">개인신용평점에 따라 한도가 다를 수 있으며, 대출기간 및 개인신용평점에 따라 상품이 제한될 수 있습니다. 정확한 금액을 조회해보세요.</p>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="logo">현대캐피탈 디지털 중고차론</dt>
+				<dd>
+					<ol>
+						<li>
+							선수금은 기본 30% 기준으로 설정되어 있습니다.
+						</li>
+						<li>
+							총 비용은 계산 서비스를 통한 대략적인 참고 용도이며, 세제의 변화나 계산방식의 차이에 의해 실제와 다를 수 있습니다.
+						</li>
+						<li>
+							본 구매비용은 비영업용 차량 기준입니다.
+						</li>
+						<li>
+							친환경차량 세금감면이 존재하며 전기차/하이브리드차/플러그인차/수소차에 대해 취득세 감면 및 공채 매입 감면의 혜택이 존재합니다. 단, 감면 금액은 차량에 따라 상이할 수 있습니다.
+						</li>
+						<li>
+							경차 세금감면이 존재합니다. 단, 감면 금액은 차량에 따라 상이할 수 있습니다.
+						</li>
+						<li>
+							정부 정책과 등록 지역에 따라 공채 매입비 할인율이나 세율기준의 차이가 발생할 수 있습니다.
+						</li>
+						<li>
+							월 할부금은 예시이며, 이용 조건 및 고객님의 신용등급에 따라 변경될 수 있습니다.
+						</li>
+						<li>
+							위 금액은 참고자료이며, 정확한 금액은 대출/할부 업체에 문의하세요.
+						</li>
+					</ol>
+				</dd>
+			</dl>
+		</div>
+		<!--//05.할부한도 조회-->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

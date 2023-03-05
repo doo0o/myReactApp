@@ -1,0 +1,38 @@
+<!-- FO-OR-MS0088 : 방문평가사 정보 - BOTTOM -->
+<div class="CPOpop_bottom" id="FO-OR-MS0088">
+	<div class="p_head">
+		<h2 class="tit">방문평가사 정보</h2>
+	</div>
+	<div class="p_wrap"><!-- 전화하기 버튼이 없을 경우 no_btn class 추가-->
+		<div class="appraiser_info">
+			<p class="top_txt">방문평가사가 <em>10월 20일(금) 12:00</em><br>
+				도착 예정입니다.
+			</p>
+			<ul class="list">
+				<li>
+					<span class="tit">방문평가위치</span>
+					<span class="txt">(012345) 서울시 강남구 삼성타운로 337-4 49층 4985호</span>
+				</li>
+				<li>
+					<span class="tit">방문평가 회사</span>
+					<span class="txt">글로비스</span><!-- 2022-08-30 [CPO-3244] 문구변경 -->
+				</li>
+				<li>
+					<span class="tit">방문평가사</span>
+					<span class="txt">김안전</span>
+				</li>
+				<li>
+					<span class="tit">연락처</span>
+					<span class="txt">01012341234</span>
+				</li>
+			</ul>
+		</div>
+		
+		<!-- btn_sticky -->
+		<div class="btn_sticky">
+			<button class="btn_big01">확인</button><!-- 2022-10-12 [CPO-4662] CPO.POPUP_close($(this)); -->
+		</div>
+		<!-- //btn_sticky -->
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/* 
+	에러페이지
+*/
+/*PDP 성능상태 점검기록부 팝업 사고이력 단순수리 정보*/
+/* 제네시스 제외 */
+/* 제네시스 제외 */
+/* 공통 Font 합수 (폰트명 끝부분, font-size, line-height) 
+ex) @include Mix_Font('Head-M', 18, 23); */
+/* 상품유닛 */
+/* button */
+/* 제네시스 body 배경색 */
+/* 제네시스 body 배경색 */
+.error_wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #F8F8F8;
+}
+.error_wrap .logo {
+  display: block;
+  position: absolute;
+  top: 17px;
+  left: 15px;
+  width: 109px;
+  height: 17px;
+  background: url("../img/bg_error.png") no-repeat;
+  background-position: 0 0;
+  background-size: auto 200px;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+.error_wrap .e_cont {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  padding: 0 21px;
+  text-align: center;
+  transform: translateY(-50%);
+}
+.error_wrap .e_cont::before {
+  content: "";
+  display: block;
+  width: 77px;
+  height: 55px;
+  margin: 0 auto;
+  background: url("../img/bg_error.png") no-repeat;
+  background-position: 0 -21px;
+  background-size: auto 200px;
+}
+.error_wrap .e_cont.e_type {
+  margin-top: -28px;
+}
+.error_wrap .e_cont .tit {
+  margin-top: 20px;
+  color: #000000;
+  font-family: "GeneSans_Head-R";
+  font-size: 20px;
+  line-height: 27px;
+  word-break: keep-all;
+}
+.error_wrap .e_cont .txt {
+  margin-top: 10px;
+  color: #666666;
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 23px;
+  word-break: keep-all;
+}
+.error_wrap .e_cont .box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  margin-top: 30px;
+  padding: 25px 20px;
+  background-color: #FFFFFF;
+  font-family: "GeneSans_Txt-R";
+  font-size: 14px;
+  line-height: 23px;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.15);
+}
+.error_wrap .e_cont .box dt {
+  flex: 20%;
+  color: #262626;
+  text-align: left;
+}
+.error_wrap .e_cont .box dd {
+  flex: 80%;
+  color: #000000;
+  text-align: right;
+}
+.error_wrap .e_cont .notice_03 {
+  margin-top: 15px;
+  padding: 0 6px;
+  text-align: left;
+}
+.error_wrap .btn_big01 {
+  position: absolute;
+  bottom: 0;
+}
+/*# sourceMappingURL=maps/g_error.css.map */

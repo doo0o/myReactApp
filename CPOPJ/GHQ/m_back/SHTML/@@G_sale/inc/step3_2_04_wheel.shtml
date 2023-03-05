@@ -1,0 +1,17 @@
+<!-- STEP : 3-2-04 : 휠 스크래치 -->
+<div class="entry_carbase">
+	<div class="top02">
+		<h5 class="tit">스크래치가 있는<br />휠이 있나요?</h5>
+	</div>
+	<!-- 입력 -->
+	<div class="entry">
+		<ol>
+			<li><input type="radio" name="saleWheelChk" id="saleWheelChk01" class="chk_type07" /><label for="saleWheelChk01">1개 있어요</label></li>
+			<li><input type="radio" name="saleWheelChk" id="saleWheelChk02" class="chk_type07" /><label for="saleWheelChk02">2개 있어요</label></li>
+			<li><input type="radio" name="saleWheelChk" id="saleWheelChk03" class="chk_type07" /><label for="saleWheelChk03">3개 있어요</label></li>
+			<li><input type="radio" name="saleWheelChk" id="saleWheelChk04" class="chk_type07" /><label for="saleWheelChk04">4개 있어요</label></li>
+			<li><input type="radio" name="saleWheelChk" id="saleWheelChk05" class="chk_type07" /><label for="saleWheelChk05">아니요, 없어요</label></li>
+		</ol>
+	</div>
+	<!-- //입력 -->
+</div>

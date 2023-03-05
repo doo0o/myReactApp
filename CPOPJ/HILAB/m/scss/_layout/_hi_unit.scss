@@ -1,0 +1,33 @@
+.share {
+	&_items {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+		justify-content: space-between;
+		padding: 5px 39px 34px;
+	}
+	&_item {
+		text-align: center;
+		font-size: 0;
+	}
+	&_btn {
+		display: inline-block;
+		width: 54px; height: 54px;
+		border-radius: 50%;
+		font-size: 0;
+		background: url('../img/icon_sns.png') no-repeat 0 0 / auto 54px;
+		&_kakao {background-color: #FDE402;}
+		&_facebook {
+			background-color: #3B589E;
+			background-position: -54px 0;
+		}
+		&_message {
+			background-color: #8F8F8F;
+			background-position: -108px 0;
+		}
+		&_link {
+			background-color: #8F8F8F;
+			background-position: -162px 0;
+		}
+	}
+}

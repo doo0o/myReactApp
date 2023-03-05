@@ -1,0 +1,126 @@
+// 공통 Font 합수 (폰트명 끝부분, font-size, line-height) 
+//ex) @include Mix_Font('Head-M', 18, 23); */
+@mixin Mix_Font($name, $size, $size2) { 
+	font-family:'HynSans_' + $name;
+	font-size:$size + px;
+	line-height:$size2 + px;
+}
+@mixin Mix_Size_0{font-size:0;line-height:0;text-indent:-9999px;}
+
+@mixin Mix_Clear{
+	zoom:1;
+	&:after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+}
+
+// **********************************************************
+// font family
+// **********************************************************
+
+@mixin Mix_Font_Txt_R{font-family:HynSans_Txt-R;}
+@mixin Mix_Font_Txt_M{font-family:HynSans_Txt-M;}
+@mixin Mix_Font_Txt_B{font-family:HynSans_Txt-B;}
+@mixin Mix_Font_Head_R{font-family:HynSans_Head-R;}
+@mixin Mix_Font_Head_M{font-family:HynSans_Head-M;}
+@mixin Mix_Font_Head_B{font-family:HynSans_Head-B;}
+@mixin Mix_Font_Head_L{font-family:HynSans_Head-L;}
+
+@mixin Mix_Size_0{font-size:0;line-height:0;text-indent:-9999px;}
+
+/* 공통 Font 합수 (폰트명 끝부분, font-size, line-height) 
+ex) @include Mix_Font('Head-M', 18, 23); */
+@mixin Mix_Font($name, $size, $size2) { 
+	font-family:'HynSans_' + $name;
+	font-size:$size + px;
+	line-height:$size2 + px;
+}
+
+@mixin Mix_Clear{
+	zoom:1;
+	&:after{
+		content:'';
+		display:block;
+		clear:both;
+	}
+}
+
+
+// **********************************************************
+// overflow 속성
+// **********************************************************
+@mixin Mix_Overflow_X {
+	overflow:hidden;
+	overflow-x:auto;
+	-webkit-overflow-scrolling:touch;
+}
+@mixin Mix_Overflow_Y {
+	overflow:hidden;
+	overflow-y:auto;
+	-webkit-overflow-scrolling:touch;
+}
+
+// **********************************************************
+// 말줄임
+// **********************************************************
+@mixin Mix_Ellipsis01{
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	overflow:hidden;
+}
+@mixin Mix_Ellipsis($line){
+	display:-webkit-box;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:$line;
+	word-break:break-word;
+}
+
+
+@mixin Mix_Form_Bg{
+	background-image:url('../image/bg_form.png');
+	background-repeat: no-repeat;
+	background-size:200px auto;
+}
+@mixin Mix_Layout_Bg {
+	background-image:url('../image/bg_layout.png');
+	background-repeat: no-repeat;
+	background-size:300px auto;
+}
+@mixin Mix_Display_Bg {
+	background-image:url('../image/bg_display.png');
+	background-repeat: no-repeat;
+	background-size:300px 200px;
+}
+
+@mixin Mix_Library_Bg {
+	background:url('../image/bg_library.png') no-repeat;
+	background-size:300px 200px;
+}
+@mixin Mix_Error_Bg($position) {// 상품상세
+	background:url('../image/bg_error.png?v=2') no-repeat;
+	background-position:$position;
+	background-size:auto 200px;
+}
+
+@mixin Mix_Select_Bg01{
+	background:$COL_White url('../image/bg_select01.png') no-repeat;
+	background-position:calc(100% - 20px) 50%;
+	background-size:12px 8px;
+}
+
+// button
+@mixin Mix_Btn_Only_Icon($position, $width, $height){
+	display:inline-block;
+	@include Mix_Size_0;
+	&::before{
+		content:'';
+		display:block;
+		width:$width;height:$height;margin:0 auto;
+		@include Mix_Display_Bg;
+		background-position: $position;
+	}
+}

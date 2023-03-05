@@ -1,0 +1,148 @@
+<div class="CPOpop_full layer_bg_wrap" id="FO-PD-MS0008">
+	<div class="p_head">
+		<h2 class="tit">옵션상세</h2>
+	</div>
+	<div class="p_wrap">
+		<div class="tab no_btn detail_option">
+			<ul class="tab_list tab_type2 fixed">
+				<li class="on"><button>기본 옵션</button></li>
+				<li><button>선택 옵션</button></li>
+			</ul>
+			<div class="tab_cont">
+				<div class="tab_item on">
+
+					<div class="pdp_head_wrap">
+						<p class="car_num">더 뉴 그랜저 IG 2.5 캘리그래피에는</p>
+						<p class="txt">
+							<em class="under">87개</em>의 기본옵션이<br>
+							장착되어 있어요
+						</p>
+					</div>
+
+					<section class="detail_option_section">
+						<div class="sec_tit">외관</div>
+						<ul class="list_option">
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">루프랙</button></li>
+							<li><button class="jQ_POP_open" disabled data-popup="FO-PD-MS0009">방향지시등 일체형 사이드 미러</button></li>
+							<li><button class="jQ_POP_open" disabled data-popup="FO-PD-MS0009">수동 사이드 미러</button></li>
+							<li><button class="jQ_POP_open" disabled data-popup="FO-PD-MS0009">열선 사이드 미러</button></li>
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">후진각도조절 사이드 미러</button></li>
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">전동접이 사이드 미러</button></li>
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">선루프</button></li>
+						</ul>
+					</section>
+					<section class="detail_option_section">
+						<div class="sec_tit">내장</div>
+						<ul class="list_option">
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">사이드 에어백</button></li>
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">커튼 에어백</button></li>
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">구동력 제어장치(TCS)</button></li>
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">후측방경보시스템(BSD)</button></li>
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">차선이탈경보(LDWS)</button></li>
+						</ul>
+					</section>
+					<section class="detail_option_section">
+						<div class="sec_tit">안전</div>
+						<ul class="list_option">
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">사이드 에어백</button></li>
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">구동력 제어장치(TCS)</button></li>
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">후측방경보시스템(BSD)</button></li>
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">차선이탈경보(LDWS)</button></li>
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">차체자세제어장치(VDC,ESC,ESP)</button></li>
+						</ul>
+					</section>
+					<section class="detail_option_section">
+						<div class="sec_tit">편의/멀티미디어</div>
+						<ul class="list_option">
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">하이패스</button></li>
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">후방룸미러</button></li>
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">가죽시트</button></li>
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">전동시트(운전석)</button></li>
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">전동시트(동승석)</button></li>
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">전동시트(뒷좌석)</button></li>
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">열선시트(앞좌석)</button></li>
+							<li><button class="jQ_POP_open" data-popup="FO-PD-MS0009">열선시트(뒷좌석)</button></li>
+						</ul>
+					</section>
+					<p class="caution bg">옵션의 유무와 작동여부는 육안으로 확인하여 진단합니다. (단, 주행 또는 사고발생시에만 작둉하는 옵션항목에 대해서는 장착유무만 진단합니다)</p>
+
+				</div>
+
+				<div class="tab_item">
+
+					<p class="no_data"><span class="tit">이 차량은 추가된 선택사양이<br>없습니다.</span></p>
+
+					<div class="pdp_head_wrap">
+						<p class="car_num">24더 3215 차량에는</p>
+						<p class="txt">
+							총 <em class="under">435만원</em>에 해당하는<br>
+							선택사양이 적용되어 있어요
+						</p>
+					</div>
+
+					<section class="detail_option_section">
+						<div class="sec_tit">선택사양 목록</div>
+						<ul class="list_option">
+							<li>
+								<button class="jQ_POP_open" disabled data-popup="FO-PD-MS0022" onclick="optionSlideFunc()">
+									파노라마 선루프
+									<span class="sub">신차 출고 시 75만원</span>
+								</button>
+							</li>
+							<li>
+								<button class="jQ_POP_open" data-popup="FO-PD-MS0022" onclick="optionSlideFunc()">
+									드라이빙 어시스턴트 패키지
+									<span class="sub">신차 출고 시 75만원</span>
+								</button>
+							</li>
+							<li>
+								<button class="jQ_POP_open" data-popup="FO-PD-MS0022" onclick="optionSlideFunc()">
+									스마트 패키지
+									<span class="sub">신차 출고 시 75만원</span>
+								</button>
+							</li>
+							<li>
+								<button class="jQ_POP_open" data-popup="FO-PD-MS0022" onclick="optionSlideFunc()">
+									파노라마 선루프
+									<span class="sub">신차 출고 시 75만원</span>
+								</button>
+							</li>
+							<li>
+								<button class="jQ_POP_open" data-popup="FO-PD-MS0022" onclick="optionSlideFunc()">
+									드라이빙 어시스턴트 패키지
+									<span class="sub">신차 출고 시 75만원</span>
+								</button>
+							</li>
+							<li>
+								<button class="jQ_POP_open" data-popup="FO-PD-MS0022" onclick="optionSlideFunc()">
+									스마트 패키지
+									<span class="sub">신차 출고 시 75만원</span>
+								</button>
+							</li>
+							<li>
+								<button class="jQ_POP_open" data-popup="FO-PD-MS0022" onclick="optionSlideFunc()">
+									파노라마 선루프
+									<span class="sub">신차 출고 시 75만원</span>
+								</button>
+							</li>
+						</ul>
+					</section>
+
+					<script>
+						var optionSlide;
+						var optionSlideFunc = () => {
+							optionSlide = new Swiper('#FO-PD-MS0022 .option_slide', {
+								pagination:{
+									el: '#FO-PD-MS0022 .option_slide .swiper-pagination'
+								},
+							})
+						}
+					</script>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<button type="button" class="pop_close">닫기</button>
+</div>

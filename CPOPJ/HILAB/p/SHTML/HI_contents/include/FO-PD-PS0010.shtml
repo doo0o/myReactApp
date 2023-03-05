@@ -1,0 +1,21 @@
+<div class="popup_modal" id="FO-CL-MS0010">
+	<div class="p_body">
+		<div class="p_inner s_share">
+			<div class="p_head">
+				<h2 class="tit">공유하기</h2>
+			</div>
+			<div class="p_wrap">
+				<!-- contents -->
+				<div class="inner_view"> 
+					<ul class="list_share">
+						<li class="kakao"><a href="#">카카오톡</a></li>
+						<li class="facebook"><a href="#">페이스북</a></li>
+						<li class="link"><a href="#">링크</a></li>
+					</ul>																								
+				</div>
+				<!-- //contents -->
+			</div>									
+			<button type="button" class="pop_close">닫기</button>
+		</div>
+	</div>
+</div>

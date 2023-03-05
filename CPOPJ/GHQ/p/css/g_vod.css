@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/* 
+	컬러 사용 법!
+	color('COL_gs02') // bg white 일 때
+	color('COL_gs02' , 'dark") // bg black 일 때
+*/
+/*************************************************************************************
+*                                       폰트                                          *
+**************************************************************************************/
+/**
+	색 또는 크기 가변 ICON
+*/
+/**
+	replace 함수
+*/
+/**
+	Icon Info 01
+*/
+/* Box Bg */
+/* Position */
+.vod .commerce_vod_sec {
+  margin-top: 80px;
+}
+.vod .commerce_vod_sec .form_area {
+  width: 120px;
+}
+.vod .commerce_vod_sec .form_area .com_select_btn {
+  color: #000;
+  padding-right: 38px;
+}
+.vod .commerce_vod_sec .form_area .com_select_item {
+  padding-right: 38px;
+}
+.vod .commerce_vod_sec .vod_list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 48px;
+  margin-top: 12px;
+}
+.vod .commerce_vod_sec .vod_list li {
+  width: 280px;
+}
+.vod .commerce_vod_sec .vod_list li > button {
+  display: block;
+}
+.vod .commerce_vod_sec .vod_list .vod_thum {
+  position: relative;
+  width: 100%;
+  height: 350px;
+}
+.vod .commerce_vod_sec .vod_list .vod_thum img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.vod .commerce_vod_sec .vod_list .vod_thum .info--timer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.vod .commerce_vod_sec .vod_list .vod_info {
+  margin-top: 12px;
+}
+.vod .commerce_vod_sec .vod_list .vod_info--date {
+  font-family: GeneSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 23px;
+  color: #767676;
+}
+.vod .commerce_vod_sec .vod_list .vod_info--tit {
+  font-family: GeneSans_Head, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 4px;
+}
+.vod .commerce_vod_sec .vod_list .vod_info--btn {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+.vod .commerce_vod_sec .vod_list .vod_info--btn > button {
+  display: flex;
+  align-items: center;
+  font-family: GeneSans_Txt, "Malgun Gothic", AppleGothicNeoSD, "Apple SD 산돌고딕 Neo", "Microsoft NeoGothic", "Droid sans", Dotum, 돋움, 굴림, Arial, Verdana, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #767676;
+  margin-right: 12px;
+}
+.vod .commerce_vod_sec .vod_list .vod_info--btn > button:last-child {
+  margin: 0;
+}
+.vod .commerce_vod_sec .vod_list .vod_info--btn > button::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+.vod .commerce_vod_sec .vod_list .vod_info--btn > button.views::before {
+  background-image: url(../img/icon/icon_ui_play03.svg);
+}
+.vod .commerce_vod_sec .vod_list .vod_info--btn > button.like::before {
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8.35355 3.68689L9.54044 2.5H11.7929L13.5 4.20711V7.79289L8 13.2929L2.5 7.79289V4.20711L4.20711 2.5H6.45956L7.64645 3.68689L8 4.04044L8.35355 3.68689Z' stroke='%23000'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+}
+.vod .swiper-button-disabled {
+  display: none;
+}
+.vod .btn_area.col_type {
+  margin-top: 32px;
+}
+/*# sourceMappingURL=maps/g_vod.css.map */

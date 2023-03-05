@@ -1,0 +1,144 @@
+@import '../_common/g_function';
+@import '../_common/g_mixins';
+
+.ipt_mycar{
+	display:block;
+	position:relative;
+	z-index:410;
+	width:100%;
+	input[type="text"]{
+		width:100%;
+		height:66px;
+		padding:18px 15px;
+		border:1px solid $COL_Secondary01;
+		border-radius:6px;
+		@include Mix_Font('Head-M', 24, 66);
+		text-shadow:1px 1px 0px rgba($COL_Text_Base04,0.15);
+		caret-color:$COL_Secondary01;
+		&::placeholder{
+			color:$COL_Inactive_Text01;
+			text-shadow:none;
+		}
+	}
+	.btn_link{
+		display:block;
+		position:absolute;
+		top:15px;
+		right:15px;
+		width:36px;
+		height:36px;
+		border-radius:50%;
+		background:$COL_Secondary01!important;
+		@include Mix_Size_0;
+		&::before{
+			content:'';
+			display:inline-block;
+			position:absolute;
+			top:10px;
+			left:10px;
+			width:14px;
+			height:14px;
+			@include Mix_Form_Bg;
+			background-position:-179px -19px;
+		}
+		&:disabled{
+			background:$COL_BG_Light01!important;
+			&::before{
+				background-position-y:0;
+			}
+		}
+	}
+}
+.ipt_text{
+	position:relative;
+	width:100%;
+	input[type="text"]{
+		width:100%;
+		height:56px;
+		padding:16.5px 38px 16.5px 100px;
+		border:none;
+		@include Mix_Font_Head_M;
+		text-align:right;
+		box-shadow:0px 0px 1px rgba($COL_Text_Base04, 0.15);
+		&:focus{
+			border:1px solid $COL_Secondary01;
+		}
+	}
+	span{
+		position:absolute;
+		top:19px;
+		left:17px;
+		color:$COL_Text_Base03;
+		@include Mix_Font('Txt-R', 14, 18);
+	}
+	.ico_clear{
+		display:block;
+		position:absolute;
+		top:0;
+		right:0;
+		width:38px;
+		height:56px;
+		@include Mix_Size_0;
+		&::before{
+			content:'';
+			display:block;
+			position:absolute;
+			top:19px;
+			right:16px;
+			width:18px;
+			height:18px;
+			@include Mix_Form_Bg;
+			background-position:-122px -30px;
+		}
+	}
+	&.on{
+		.ico_clear{
+			&::before{
+				background-position-x:-145px;
+			}
+		}
+	}
+}
+.lyer_mycar{
+	min-height:100%;
+	padding:30px 21px;
+	background:$COL_BG_Light01;
+	.head{
+		.tit{
+			padding-bottom:12px;
+			@include Mix_Font('Head-L', 24, 32);
+		}
+		span{
+			color:$COL_Text_Base03;
+			@include Mix_Font('Txt-R', 14, 22);
+		}
+	}
+	.cont{
+		margin-top:30px;
+		.cont_tit {
+			@include Mix_Font('Txt-M', 15, 24);
+			color: $COL_Text_Base03;
+		}
+		.entry{
+			position:relative;
+			margin:20px 0 0;
+			padding-bottom:2px;
+			.inp_txt{// 입력
+				width:100%;
+				padding:3px;
+				background:transparent;
+				border:0;
+				outline:0;
+				border-bottom:2px solid $COL_Blue05;
+				margin-top:5px;
+				caret-color:rgba($COL_Text_Base04, 0.5);
+				color:$COL_Text_Base04;
+				@include Mix_Font('Head-R', 44, 55);
+				&::placeholder{
+					line-height: inherit;
+					color:$COL_Line_Light01;
+				}
+			}
+		}
+	}
+}

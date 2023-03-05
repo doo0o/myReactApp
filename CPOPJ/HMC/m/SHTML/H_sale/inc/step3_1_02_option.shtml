@@ -1,0 +1,46 @@
+<!-- STEP : 3-1-02 : 구매옵션 -->
+<div class="entry_carbase" id="saleOpenChkYes">
+	<div class="top02">
+		<p class="tit">구매 당시의 옵션 이외에<br />추가한 옵션이 있나요?</p> <!-- 2022-09-16 CPO-3291 --> 
+		<div class="txt">별도 추가 옵션 안내
+			<!-- tooltip -->
+			<span class="cpo_tooltip">
+				<button type="button" class="open">별도 추가 옵션 안내 확인</button>
+				<div class="cont">
+					<div class="caution">
+						<ul>
+							<li>기본으로 선택한 옵션 외에 본인이 추가로 장착한 옵션을 적어주세요.</li>
+							<li>튜닝한 차량은 판매 불가능합니다. 튜닝이 발견된 경우 반품될 수 있습니다.</li>
+						</ul>
+					</div>
+					<button class="close">툴팁닫기</button>
+				</div>
+			</span>
+			<!-- //tooltip -->
+		</div>
+	</div>
+	<!-- 입력 -->
+
+	<ul class="entry_carmore_options">
+		<li>
+			<input type="radio" name="saleOpeionChk" id="saleOpeionChk01" class="chk_type07" />
+			<label for="saleOpeionChk01">네, 있어요</label>
+			<div class="box_textarea">
+				<div class="textarea">
+					<textarea name="" id="saleOpeionTxt" class="area" placeholder="예: 크롬 휠 타이어, 타이어 인치변경, 카시트 장착" rows="3" cols="21" role="textbox"></textarea>
+					<span class="txt_check"><em class="first">0</em> / <em class="last">1000</em>자</span>
+				</div>
+				<button class="btn_next" onclick="selectStep.step('next');">다음</button>
+			</div>
+		</li>
+		<li>
+			<input type="radio" name="saleOpeionChk" id="saleOpeionChk02" class="chk_type07" />
+			<label for="saleOpeionChk02">아니요, 없어요</label>
+		</li>
+	</ul>
+
+	<!-- //입력 -->
+	<ul class="navi">
+		<li><button type="button" class="btn_combi01_01 jQ_POP_open" data-popup="FO-TI-MS0043">출고 당시 옵션을 확인해보세요</button></li>
+	</ul>
+</div>

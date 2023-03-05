@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>서비스 이용약관</title>
+	<!--#include file="/HMC/m/SHTML/H_inc/common_meta.shtml"-->
+	<link rel="stylesheet" type="text/css" href="../../css/h_info.css"> <!-- 해당 CSS -->
+</head>
+<body>
+<!--#include file="/HMC/p/SHTML/H_inc/common_skip.shtml"-->
+<!--#include file="/HMC/p/SHTML/H_inc/layout_loading.shtml"-->
+<!-- CPOwrap -->
+<div id="CPOwrap">
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_header.shtml"-->
+    <div id="CPOcontents">
+        <div id="layoutWrap" class="info">
+            <!-- container -->
+            <div class="container">
+				<div class="top_wrap">
+					<h1 class="page_tit">개인정보처리방침</h1>
+					<p class="sub_txt">사이트와 이용자간의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.</p>
+					<div class="form_area">
+						<span class="form_txt">이전 개인정보처리방침 선택</span>
+						<span class="com_select hs02" data-ref="select">
+							<button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="info_date" onclick="dropDown();">
+								2019년 02월 13일 ~ 2020년 10월 26일​
+							</button>
+							<span class="com_select_list" data-ref="dropDownList" id="info_date">
+								<span class="com_select_list_inner">
+									<label class="com_select_item"><input type="radio" name="info_date" checked=""> <span>2019년 02월 13일 ~ 2020년 10월 26일​</span></label>
+									<label class="com_select_item"><input type="radio" name="info_date"> <span>2019년 02월 13일 ~ 2020년 10월 26일​</span></label>
+									<label class="com_select_item"><input type="radio" name="info_date"> <span>2019년 02월 13일 ~ 2020년 10월 26일​</span></label>
+									<label class="com_select_item"><input type="radio" name="info_date"> <span>2019년 02월 13일 ~ 2020년 10월 26일​</span></label>
+									<label class="com_select_item"><input type="radio" name="info_date"> <span>2019년 02월 13일 ~ 2020년 10월 26일​</span></label>
+								</span>
+							</span>
+						</span>
+					</div>					
+				</div>
+				<div class="tos_container">
+				</div>
+            </div>
+            <!-- //container -->
+        </div>
+	</div>
+	<!-- //CPOcontents -->
+	<!--#include file="/HMC/p/SHTML/H_inc/layout_footer.shtml"-->
+</div>
+<!-- //CPOwrap -->
+<!--#include file="/HMC/p/SHTML/H_inc/brand_loading.shtml"-->
+</body>
+<script>
+
+</script>
+</html>

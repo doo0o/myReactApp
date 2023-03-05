@@ -1,0 +1,21 @@
+<!-- 02: 인기검색어 -->
+<div class="srch_keyword">
+    <p class="tit">인기 검색어<span><em>2022.11.04</em>기준</span></p>
+    <button type="button" class="btn_open">펼쳐보기</button>
+    <!-- list -->
+    <ol id="srchBest" class="list">
+        <li id="first"><a href="#"><em>1</em>그랜저 IG</a></li>
+        <li><a href="#"><em>2</em>쏘나타</a></li>
+        <li><a href="#"><em>3</em>이벤트</a></li>
+        <li><a href="#"><em>4</em>현대 포터2</a></li>
+        <li><a href="#"><em>5</em>현대 그랜저 IG</a></li>
+        <li><a href="#"><em>6</em>현대 그랜저 HG</a></li>
+        <li><a href="#"><em>7</em>현대 아반떼 AD</a></li>
+        <li><a href="#"><em>8</em>더 뉴 그랜저</a></li>
+        <li><a href="#"><em>9</em>3000만원 이하</a></li>
+        <li><a href="#"><em>10</em>주행거리 짧은 차</a></li>
+    </ol>
+    <div id="srchBest2" class="list"></div><!-- 로딩 시, 인기검색어 list clone -->
+    <!-- //list -->
+</div>
+<!-- //02: 인기검색어 -->

@@ -1,0 +1,210 @@
+// 아이콘 스타일 
+
+@import '../_common/n_function';
+@import '../_common/n_mixins';
+
+/* swiper default */
+.swiper-wrapper{
+	display:flex;
+	position:relative;
+	z-index:1;
+	width:100%;
+	height:100%;
+	.swiper-slide{
+		flex-shrink:0;
+		position:relative;
+		width:100%;
+		height:100%;
+		transition-property:transform;
+		img{
+			width:100%;
+			height:auto;
+		}
+	}
+}
+/* swiper paging */
+.swiper-pagination{
+	position:absolute;
+	bottom:0 !important;
+	left:50% !important;
+	z-index:2;
+	width:auto !important;
+	transform:translate(-50%, 0);
+}
+.swiper-pagination-bullet{
+	float:left;
+	width:6px !important;
+	height:6px !important;
+	margin-right:5px;
+	border-radius:6px;
+	background-color:$COL_Gray03 !important;
+	opacity:1 !important;
+	&:last-child{
+		margin-right:0;
+	}
+}
+.swiper-pagination-bullet-active{
+	width:18px !important;
+	height:6px !important;
+	background-color:$COL_Blue02 !important;
+}
+
+.plp_list{
+	margin:20px 20px 10px;
+	> ol{
+		> li{
+			margin:0 0 15px;
+		}
+
+	}
+
+}
+
+.plp_sorting{
+	position:relative;
+	margin:20px 20px 10px;
+	.tit{
+		color:$COL_Gray08;
+		@include Mix_Font('Head-M', 18, 24);
+		.hidden{
+			display:none;
+		}
+		em, i{
+			color:$COL_Blue02;
+			@include Mix_Font('Head-R', 14, 18);
+		}
+	}
+	> ul{
+		display:flex;
+		align-items:center;
+		position:absolute;
+		top:0;
+		right:0;
+		> li{
+			margin-left:10px;
+			position:relative;
+			z-index:4;
+			&.on{
+				.sorting_layer{
+					display:block;
+				}
+			}
+		}
+	}
+
+	/* 인기순 버튼, 목록 유형 버튼 */
+	.btn_sort{
+		padding:3px 5px;
+		color:$COL_Gray08;
+		@include Mix_Font('Head-R', 14, 18);
+		&::after{
+			content:'';
+			display:inline-block;
+			width:14px;
+			height:14px;
+			margin:0 0 2px 5px;
+			@include Mix_Layout_Bg;
+			background-position:-146px -52px;
+			vertical-align:middle;
+		}
+	}
+}
+
+/* 상품목록 plp_sorting */
+.sorting_layer{
+	display:none;
+	position:absolute;
+	top:25px;
+	right:0;
+	width:130px;
+	padding:8px 0;
+	border:1px solid $COL_Gray03;
+	background:$COL_White;
+	box-shadow: 0px 3px 6px rgba($COL_Gray08, 0.12);
+	ol.plp_sort{// 상품목록, 인기순...  sorting
+		li{
+			border-top:1px solid $COL_Gray02;
+			&:first-of-type{
+				border-top:0;
+			}
+		}
+	}
+}
+
+
+.work_list{
+	padding:0 0 60px;
+	.list{
+		width:100%;
+		padding:0 20px;
+		table{
+			table-layout:fixed;
+			th{
+				padding:10px 0;
+				background-color:$COL_Light;
+				border:1px solid $COL_Gray03;
+				color:$COL_Gray08;
+				@include Mix_Font('Txt-M', 13, 20);
+			}
+			td{
+				padding:10px 0;
+				border:1px solid $COL_Gray03;
+				color:$COL_Gray08;
+				@include Mix_Font('Txt-R', 13, 20);
+				text-align:center;
+			}
+			.total{
+				td{
+					color:$COL_Gray08;
+					@include Mix_Font('Txt-M', 13, 20);
+				}
+			}
+		}
+	}
+	.sorting_day{
+		padding:0 10px;
+		ul{
+			width:100%;
+			display:table;
+			table-layout:fixed;
+			li{
+				display:table-cell;
+				button{
+					width:100%;
+					border-radius:0;
+					border:1px solid #fff;
+				}
+			}
+		}
+	}
+	.sorting{
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+		padding:10px 21px;
+		line-height:32px;
+		background-color:$COL_White;
+		border-width:1px 0;
+		.all{
+			color:$COL_Gray08;
+			i{
+				color:$COL_Blue02;
+				@include Mix_Font('Txt-M', 12, 20);
+			}
+		}
+		.calendar{
+			.date-picker{
+				position:relative;
+				width:100px;
+				border:0;
+				color:$COL_Gray08;
+				@include Mix_Font('Head-M', 12, 20);
+				background: transparent url('../image/bg_calendar.png') no-repeat right;
+				background-size: 20px 20px;
+			}
+			> span{
+				margin:0 8px;
+			}
+		}
+	}
+}

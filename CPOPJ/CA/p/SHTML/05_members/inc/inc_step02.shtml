@@ -1,0 +1,30 @@
+<ul class="form_list type03">
+    <li>
+        <label class="tit">소속매매상사</label>
+        <div class="form_area">
+            <div class="inbox_type02 hs02 disabled" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+                <input type="text" class="txt" title="소속매매상사 입력" value="북수원매매상사" disabled="">
+                <button type="button" class="btn_delete">삭제</button>
+            </div>
+        </div>
+    </li>
+    <li>
+        <label class="tit">성명</label>
+        <div class="form_area">
+            <div class="inbox_type02 hs02" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+                <input type="text" class="txt" title="성명 입력" value="" >
+                <button type="button" class="btn_delete">삭제</button>
+            </div>
+        </div>
+    </li>
+    <li>
+        <label class="tit">아이디</label>
+        <div class="form_area">
+            <div class="inbox_type02 hs02" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()">
+                <input type="text" class="txt" placeholder="" value="" title="아이디 입력">
+                <button type="button" class="btn_delete">삭제</button>
+            </div>
+        </div>
+    </li>
+</ul>
+<!-- //개인정보 입력 -->

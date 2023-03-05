@@ -1,0 +1,1091 @@
+<div class="H_search">
+	<div class="wrap">
+		<div class="box_input">
+			<div class="inp_srch">
+				<input type="text" placeholder="모델명 혹은 키워드를 입력하세요.">
+				<div class="util">
+					<button type="button" class="btn_delete">입력 삭제</button>
+					<button type="button" class="ic_search"></button>
+				</div>
+			</div>
+			<button type="button" class="txt_btn03 s_mid btn_close" onclick="srchlayerClose();">닫기</button>
+		</div>
+		<div class="inner">
+			<div class="layer_select default">
+				<div class="popular_area">
+					<div class="group_popular">
+						<div class="title_area">인기 검색어<span>2022.11.04 기준</span></div>
+						<ul class="list_popular">
+							<li><a href="javascript:;">1.그랜저 IG</a></li>
+							<li><a href="javascript:;">2.쏘나타</a></li>
+							<li><a href="javascript:;">3.이벤트</a></li>
+							<li><a href="javascript:;">4.현대포터2</a></li>
+							<li><a href="javascript:;">5.현대 그랜저 IG</a></li>
+							<li><a href="javascript:;">6.그랜저 HG</a></li>
+							<li><a href="javascript:;">7.그랜저 하이브리드</a></li>
+							<li><a href="javascript:;">8.현대 그랜저 IG</a></li>
+							<li><a href="javascript:;">9.쏘나타</a></li>
+							<li><a href="javascript:;">10.현대 포터2</a></li>
+						</ul>
+					</div>
+					<div class="slide_banner">
+						<div class="swiperBanner2">
+							<ul class="swiper-wrapper">
+								<!-- 20230126 수정 -->
+								<!-- 20230203 a tag 수정 -->
+								<li class="swiper-slide">
+									<a href="javascript:;">
+										<img src="/HMC/p/img/@thumb/@srch_banner04.png" alt="">
+										<div class="text_area">
+											<div class="txt">꿈꿔왔던 완벽한 프리미엄 차량</div>
+											<div class="sub_txt">2021.08.15 – 2021.10.06</div> <!-- 서브텍스트 추가 -->
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;">
+										<img src="/HMC/p/img/@thumb/@srch_banner04.png" alt="">
+										<div class="text_area">
+											<div class="txt">꿈꿔왔던 완벽한 프리미엄 차량</div>
+											<div class="sub_txt">2021.08.15 – 2021.10.06</div> <!-- 서브텍스트 추가 -->
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;">
+										<img src="/HMC/p/img/@thumb/@srch_banner04.png" alt="">
+										<div class="text_area">
+											<div class="txt">꿈꿔왔던 완벽한 프리미엄 차량</div>
+											<div class="sub_txt">2021.08.15 – 2021.10.06</div> <!-- 서브텍스트 추가 -->
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;">
+										<img src="/HMC/p/img/@thumb/@srch_banner04.png" alt="">
+										<div class="text_area">
+											<div class="txt">꿈꿔왔던 완벽한 프리미엄 차량</div>
+											<div class="sub_txt">2021.08.15 – 2021.10.06</div> <!-- 서브텍스트 추가 -->
+										</div>
+									</a>
+								</li>
+								<!-- // 20230203 a tag 수정 -->
+								<!-- // 20230126 수정 -->
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="srch_toggle" data-ref="accordion">
+					<div id="step01" class="item_toggle" role="accordionList">
+						<div class="head" data-target="accordionBtn">
+							<div class="box_text">
+								<span class="tit">모델 선택하기</span>
+								<span class="check" id="chk_model01" data-ref="changeTextTarget">
+									<span class="changeText"></span>
+									<span class="txt">차종 및 상세모델로 원하시는 차량을 검색해 보세요</span>
+								</span>
+							</div>
+							<div class="btn_area">
+								<button type="button">토글 버튼</button>
+							</div>
+						</div>
+						<div class="srch_cont">
+							<div class="srch_inner">
+								<div class="tab_txt02" data-ref="modelTab">
+									<ul class="list" role="tablist">
+										<li class="on"><button type="button" role="tab" aria-selected="true" aria-controls="tabModel01">승용</button></li>
+										<li><button type="button" role="tab" aria-selected="false" aria-controls="tabModel02">SUV</button></li>
+										<li><button type="button" role="tab" aria-selected="false" aria-controls="tabModel03">승합</button></li>
+									</ul>
+									<div class="cont active" id="tabModel01">
+										<div class="select_car">
+											<ul class="list_car">
+												<li class="item">
+													<input type="checkbox" name="chk_model01" id="chk_model_head01_01" class="chk_model">
+													<label for="chk_model_head01_01">
+														<div class="img">
+															<img src="/HMC/p/img/@thumb/@srch_layer191x80.png" alt="상품명으로 뿌려주세요">
+														</div>
+														<div class="txt">그랜저</div>
+													</label>
+												</li>
+												<li class="item">
+													<input type="checkbox" name="chk_model01" id="chk_model_head01_02" class="chk_model">
+													<label for="chk_model_head01_02">
+														<div class="img">
+															<img src="/HMC/p/img/@thumb/@srch_layer191x80.png" alt="상품명으로 뿌려주세요">
+														</div>
+														<div class="txt">쏘나타</div>
+													</label>
+												</li>
+												<li class="item">
+													<input type="checkbox" name="chk_model01" id="chk_model_head01_03" class="chk_model">
+													<label for="chk_model_head01_03">
+														<div class="img">
+															<img src="/HMC/p/img/@thumb/@srch_layer191x80.png" alt="상품명으로 뿌려주세요">
+														</div>
+														<div class="txt">아반떼</div>
+													</label>
+												</li>
+											</ul>
+											<div class="group_select" id="depth01">
+												<div class="select_model on">
+													<div class="title">모델 선택</div>
+													<div class="radio_area">
+														<div class="select_txt"></div>
+														<ul class="group_radio">
+															<li>
+																<input type="checkbox" name="chk_model01" id="chk_model01_01" class="chk_type01 allCheck"><label for="chk_model01_01"><span class="txt">전체 모델</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model01" id="chk_model01_02" class="chk_type01"><label for="chk_model01_02"><span class="txt">더 뉴 그랜저</span><em class="year">19년~</em></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model01" id="chk_model01_03" class="chk_type01"><label for="chk_model01_03"><span class="txt">더 뉴 그랜저 하이브리드</span><em class="year">19년~</em></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model01" id="chk_model01_04" class="chk_type01"><label for="chk_model01_04"><span class="txt">그랜저 IG 하이브리드</span><em class="year">17년~</em></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model01" id="chk_model01_05" class="chk_type01"><label for="chk_model01_05"><span class="txt">그랜저 IG</span><em class="year">16년~19년</em></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model01" id="chk_model01_06" class="chk_type01"><label for="chk_model01_06"><span class="txt">그랜저 HG 하이브리드</span><em class="year">16년~19년</em></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model01" id="chk_model01_07" class="chk_type01"><label for="chk_model01_07"><span class="txt">그랜저 HG</span><em class="year">11년~16년</em></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model01" id="chk_model01_08" class="chk_type01"><label for="chk_model01_08"><span class="txt">더 럭셔리 그랜저</span><em class="year">08년~09년</em></label>
+															</li>
+														</ul>
+													</div>
+													<button type="button" class="btn_toggle_depth">토글 버튼</button>
+												</div>
+											</div>
+											<div class="group_select" id="depth02">
+												<div class="select_model on">
+													<div class="title">등급 선택</div>
+													<div class="radio_area">
+														<div class="select_txt"></div>
+														<ul class="group_radio">
+															<li>
+																<input type="checkbox" name="chk_model01" id="chk_model01_09" class="chk_type01 allCheck"><label for="chk_model01_09"><span class="txt">전체 등급</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model01" id="chk_model01_10" class="chk_type01"><label for="chk_model01_10"><span class="txt">가솔린 2.5</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model01" id="chk_model01_11" class="chk_type01"><label for="chk_model01_11"><span class="txt">가솔린 3.3</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model01" id="chk_model01_12" class="chk_type01"><label for="chk_model01_12"><span class="txt">LPG 3.0</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model01" id="chk_model01_13" class="chk_type01"><label for="chk_model01_13"><span class="txt">LPi 3.0</span></label>
+															</li>
+														</ul>
+													</div>
+													<button type="button" class="btn_toggle_depth">토글 버튼</button>
+												</div>
+											</div>
+											<div class="group_select" id="depth03">
+												<div class="select_model on">
+													<div class="title">트림 선택</div>
+													<div class="radio_area">
+														<div class="select_txt"></div>
+														<ul class="group_radio">
+															<li>
+																<input type="checkbox" name="chk_model01" id="chk_model01_14" class="chk_type01 allCheck"><label for="chk_model01_14"><span class="txt">전체 트림</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model01" id="chk_model01_15" class="chk_type01"><label for="chk_model01_15"><span class="txt">캘리그래피</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model01" id="chk_model01_16" class="chk_type01"><label for="chk_model01_16"><span class="txt">익스클루시브</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model01" id="chk_model01_17" class="chk_type01"><label for="chk_model01_17"><span class="txt">프리미엄 초이스</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model01" id="chk_model01_18" class="chk_type01"><label for="chk_model01_18"><span class="txt">프리미엄</span></label>
+															</li>
+														</ul>
+													</div>
+													<button type="button" class="btn_toggle_depth">토글 버튼</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cont" id="tabModel02">
+										<div class="select_car">
+											<ul class="list_car">
+												<li class="item">
+													<input type="checkbox" name="chk_model02" id="chk_model_head02_01" class="chk_model">
+													<label for="chk_model_head02_01">
+														<div class="img">
+															<img src="/HMC/p/img/@thumb/@srch_layer191x80.png" alt="상품명으로 뿌려주세요">
+														</div>
+														<div class="txt">쏘나타</div>
+													</label>
+												</li>
+												<li class="item">
+													<input type="checkbox" name="chk_model02" id="chk_model_head02_02" class="chk_model">
+													<label for="chk_model_head02_02">
+														<div class="img">
+															<img src="/HMC/p/img/@thumb/@srch_layer191x80.png" alt="상품명으로 뿌려주세요">
+														</div>
+														<div class="txt">아반떼</div>
+													</label>
+												</li>
+												<li class="item">
+													<input type="checkbox" name="chk_model02" id="chk_model_head02_03" class="chk_model">
+													<label for="chk_model_head02_03">
+														<div class="img">
+															<img src="/HMC/p/img/@thumb/@srch_layer191x80.png" alt="상품명으로 뿌려주세요">
+														</div>
+														<div class="txt">그랜저</div>
+													</label>
+												</li>
+											</ul>
+											<div class="group_select" id="depth01">
+												<div class="select_model on">
+													<div class="title">모델 선택</div>
+													<div class="radio_area">
+														<div class="select_txt">더 뉴 그랜저</div>
+														<ul class="group_radio">
+															<li>
+																<input type="checkbox" name="chk_model02" id="chk_model02_01" class="chk_type01 allCheck"><label for="chk_model02_01"><span class="txt">전체 모델</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model02" id="chk_model02_02" class="chk_type01"><label for="chk_model02_02"><span class="txt">더 뉴 그랜저</span><em>19년~</em></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model02" id="chk_model02_03" class="chk_type01"><label for="chk_model02_03"><span class="txt">더 뉴 그랜저 하이브리드</span><em>19년~</em></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model02" id="chk_model02_04" class="chk_type01"><label for="chk_model02_04"><span class="txt">그랜저 IG 하이브리드</span><em>17년~</em></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model02" id="chk_model02_05" class="chk_type01"><label for="chk_model02_05"><span class="txt">그랜저 IG</span><em>16년~19년</em></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model02" id="chk_model02_06" class="chk_type01"><label for="chk_model02_06"><span class="txt">그랜저 HG 하이브리드</span><em>16년~19년</em></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model02" id="chk_model02_07" class="chk_type01"><label for="chk_model02_07"><span class="txt">그랜저 HG</span><em>11년~16년</em></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model02" id="chk_model02_08" class="chk_type01"><label for="chk_model02_08"><span class="txt">더 럭셔리 그랜저</span><em>08년~09년</em></label>
+															</li>
+														</ul>
+													</div>
+													<button type="button" class="btn_toggle_depth">토글 버튼</button>
+												</div>
+											</div>
+											<div class="group_select" id="depth02">
+												<div class="select_model on">
+													<div class="title">등급 선택</div>
+													<div class="radio_area">
+														<div class="select_txt">가솔린 2.5</div>
+														<ul class="group_radio">
+															<li>
+																<input type="checkbox" name="chk_model02" id="chk_model02_09" class="chk_type01 allCheck"><label for="chk_model02_09"><span class="txt">전체 등급</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model02" id="chk_model02_10" class="chk_type01"><label for="chk_model02_10"><span class="txt">가솔린 2.5</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model02" id="chk_model02_11" class="chk_type01"><label for="chk_model02_11"><span class="txt">가솔린 3.3</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model02" id="chk_model02_12" class="chk_type01"><label for="chk_model02_12"><span class="txt">LPG 3.0</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model02" id="chk_model02_13" class="chk_type01"><label for="chk_model02_13"><span class="txt">LPi 3.0</span></label>
+															</li>
+														</ul>
+													</div>
+													<button type="button" class="btn_toggle_depth">토글 버튼</button>
+												</div>
+											</div>
+											<div class="group_select" id="depth03">
+												<div class="select_model on">
+													<div class="title">트림 선택</div>
+													<div class="radio_area">
+														<div class="select_txt">캘리그래피, 프리미엄</div>
+														<ul class="group_radio">
+															<li>
+																<input type="checkbox" name="chk_model02" id="chk_model02_14" class="chk_type01 allCheck"><label for="chk_model02_14"><span class="txt">전체 트림</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model02" id="chk_model02_15" class="chk_type01"><label for="chk_model02_15"><span class="txt">캘리그래피</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model02" id="chk_model02_16" class="chk_type01"><label for="chk_model02_16"><span class="txt">익스클루시브</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model02" id="chk_model02_17" class="chk_type01"><label for="chk_model02_17"><span class="txt">프리미엄 초이스</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model02" id="chk_model02_18" class="chk_type01"><label for="chk_model02_18"><span class="txt">프리미엄</span></label>
+															</li>
+														</ul>
+													</div>
+													<button type="button" class="btn_toggle_depth">토글 버튼</button>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="cont" id="tabModel03">
+										<div class="select_car">
+											<ul class="list_car">
+												<li class="item">
+													<input type="checkbox" name="chk_model03" id="chk_model_head03_01" class="chk_model">
+													<label for="chk_model_head03_01">
+														<div class="img">
+															<img src="/HMC/p/img/@thumb/@srch_layer191x80.png" alt="상품명으로 뿌려주세요">
+														</div>
+														<div class="txt">아반떼</div>
+													</label>
+												</li>
+												<li class="item">
+													<input type="checkbox" name="chk_model03" id="chk_model_head03_02" class="chk_model">
+													<label for="chk_model_head03_02">
+														<div class="img">
+															<img src="/HMC/p/img/@thumb/@srch_layer191x80.png" alt="상품명으로 뿌려주세요">
+														</div>
+														<div class="txt">그랜저</div>
+													</label>
+												</li>
+												<li class="item">
+													<input type="checkbox" name="chk_model03" id="chk_model_head03_03" class="chk_model">
+													<label for="chk_model_head03_03">
+														<div class="img">
+															<img src="/HMC/p/img/@thumb/@srch_layer191x80.png" alt="상품명으로 뿌려주세요">
+														</div>
+														<div class="txt">쏘나타</div>
+													</label>
+												</li>
+											</ul>
+											<div class="group_select" id="depth01">
+												<div class="select_model on">
+													<div class="title">모델 선택</div>
+													<div class="radio_area">
+														<div class="select_txt">더 뉴 그랜저</div>
+														<ul class="group_radio">
+															<li>
+																<input type="checkbox" name="chk_model03" id="chk_model03_01" class="chk_type01 allCheck"><label for="chk_model03_01"><span class="txt">전체 모델</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model03" id="chk_model03_02" class="chk_type01"><label for="chk_model03_02"><span class="txt">더 뉴 그랜저</span><em>19년~</em></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model03" id="chk_model03_03" class="chk_type01"><label for="chk_model03_03"><span class="txt">더 뉴 그랜저 하이브리드</span><em>19년~</em></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model03" id="chk_model03_04" class="chk_type01"><label for="chk_model03_04"><span class="txt">그랜저 IG 하이브리드</span><em>17년~</em></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model03" id="chk_model03_05" class="chk_type01"><label for="chk_model03_05"><span class="txt">그랜저 IG</span><em>16년~19년</em></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model03" id="chk_model03_06" class="chk_type01"><label for="chk_model03_06"><span class="txt">그랜저 HG 하이브리드</span><em>16년~19년</em></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model03" id="chk_model03_07" class="chk_type01"><label for="chk_model03_07"><span class="txt">그랜저 HG</span><em>11년~16년</em></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model03" id="chk_model03_08" class="chk_type01"><label for="chk_model03_08"><span class="txt">더 럭셔리 그랜저</span><em>08년~09년</em></label>
+															</li>
+														</ul>
+													</div>
+													<button type="button" class="btn_toggle_depth">토글 버튼</button>
+												</div>
+											</div>
+											<div class="group_select" id="depth02">
+												<div class="select_model on">
+													<div class="title">등급 선택</div>
+													<div class="radio_area">
+														<div class="select_txt">가솔린 2.5</div>
+														<ul class="group_radio">
+															<li>
+																<input type="checkbox" name="chk_model03" id="chk_model03_09" class="chk_type01 allCheck"><label for="chk_model03_09"><span class="txt">전체 등급</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model03" id="chk_model03_10" class="chk_type01"><label for="chk_model03_10"><span class="txt">가솔린 2.5</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model03" id="chk_model03_11" class="chk_type01"><label for="chk_model03_11"><span class="txt">가솔린 3.3</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model03" id="chk_model03_12" class="chk_type01"><label for="chk_model03_12"><span class="txt">LPG 3.0</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model03" id="chk_model03_13" class="chk_type01"><label for="chk_model03_13"><span class="txt">LPi 3.0</span></label>
+															</li>
+														</ul>
+													</div>
+													<button type="button" class="btn_toggle_depth">토글 버튼</button>
+												</div>
+											</div>
+											<div class="group_select" id="depth03">
+												<div class="select_model on">
+													<div class="title">트림 선택</div>
+													<div class="radio_area">
+														<div class="select_txt">캘리그래피, 프리미엄</div>
+														<ul class="group_radio">
+															<li>
+																<input type="checkbox" name="chk_model03" id="chk_model03_14" class="chk_type01 allCheck"><label for="chk_model03_14"><span class="txt">전체 트림</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model03" id="chk_model03_15" class="chk_type01"><label for="chk_model03_15"><span class="txt">캘리그래피</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model03" id="chk_model03_16" class="chk_type01"><label for="chk_model03_16"><span class="txt">익스클루시브</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model03" id="chk_model03_17" class="chk_type01"><label for="chk_model03_17"><span class="txt">프리미엄 초이스</span></label>
+															</li>
+															<li>
+																<input type="checkbox" name="chk_model03" id="chk_model03_18" class="chk_type01"><label for="chk_model03_18"><span class="txt">프리미엄</span></label>
+															</li>
+														</ul>
+													</div>
+													<button type="button" class="btn_toggle_depth">토글 버튼</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="step02" class="item_toggle" role="accordionList">
+						<div class="head" data-target="accordionBtn">
+							<div class="box_text">
+								<span class="tit">차량 가격 선택하기</span>
+								<span data-ref="rangeTxt" class="check">
+									<span class="txt">찾으시는 차량의 가격을 선택하여 검색할 수 있어요</span>
+									<span class="rangeTxt"></span>
+								</span>
+							</div>
+							<div class="btn_area">
+								<button type="button">토글 버튼</button>
+							</div>
+						</div>
+						<div class="srch_cont">
+							<div class="srch_inner">
+								<div class="range_chart">
+									<ul class="list_chart">
+										<li><div class="bar" style="height:20%"></div></li>
+										<li><div class="bar" style="height:30%"></div></li>
+										<li><div class="bar" style="height:20%"></div></li>
+										<li><div class="bar" style="height:40%"></div></li>
+										<li><div class="bar" style="height:50%"></div></li>
+										<li><div class="bar" style="height:40%"></div></li>
+										<li><div class="bar" style="height:50%"></div></li>
+										<li><div class="bar" style="height:60%"></div></li>
+										<li><div class="bar" style="height:70%"></div></li>
+										<li><div class="bar" style="height:60%"></div></li>
+										<li><div class="bar" style="height:100%"></div></li>
+										<li><div class="bar" style="height:50%"></div></li>
+										<li><div class="bar" style="height:60%"></div></li>
+										<li><div class="bar" style="height:50%"></div></li>
+										<li><div class="bar" style="height:70%"></div></li>
+										<li><div class="bar" style="height:40%"></div></li>
+										<li><div class="bar" style="height:50%"></div></li>
+										<li><div class="bar" style="height:60%"></div></li>
+										<li><div class="bar" style="height:40%"></div></li>
+										<li><div class="bar" style="height:30%"></div></li>
+									</ul>
+								</div>
+								<div id="rangePrice" class="cpo_range">
+									<div class="cpoRange ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+										<div class="ui-slider-range ui-corner-all ui-widget-header"></div>
+										<span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default btn_range_start" style="left:0%;"></span>
+										<span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default btn_range_end" style="left:100%;"></span>
+									</div>
+									<p class="amountArea">
+										<input type="number" id="startPrice" title="최저 가격" data-min="0" data-max="10000" steps="500" value="0">
+										<input type="number" id="endPrice" title="최대 가격" data-min="0" data-max="10000" steps="500" value="10000">
+									</p>
+								</div>
+							</div>
+							<!-- 20230203 nodata 위치 수정 -->
+							<div class="srch_inner nodata">
+								<div class="range_nodata">
+									<p class="tit">찾으시는 조건의 차량이 없습니다.</p>
+									<div class="img">
+										<img src="/HMC/p/img/srch/img_srch_nodata.png" alt="">
+									</div>
+								</div>
+							</div>
+							<!-- // 20230203 nodata 위치 수정 -->
+						</div>
+					</div>
+					<div id="step03" class="item_toggle" role="accordionList">
+						<div class="head" data-target="accordionBtn">
+							<div class="box_text">
+								<span class="tit">세부 조건 선택하기</span>
+								<span data-ref="rangeTxt" class="check">
+									<span class="txt">연식, 주행거리를 선택하여 검색할 수 있어요</span>
+									<span class="rangeTxt"></span>
+								</span>
+							</div>
+							<div class="btn_area">
+								<button type="button">토글 버튼</button>
+							</div>
+						</div>
+						<div class="srch_cont">
+							<div class="srch_inner">
+								<div class="condition_wrap half">
+									<div class="box_condition">
+										<div class="title">연식 선택</div>
+										<div class="cont">
+											<div id="rangeYear" class="cpo_range">
+												<div class="cpoRange ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+													<div class="ui-slider-range ui-corner-all ui-widget-header"></div>
+													<span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default btn_range_start"></span>
+													<span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default btn_range_end"></span>
+												</div>
+												<p class="amountArea">
+													<input type="number" id="startYear" title="시작 연도" data-min="2017" data-max="2021" step="1" value="2017">
+													<input type="number" id="endYear" title="끝 연도" data-min="2017" data-max="2021" step="1" value="2021">
+												</p>
+											</div>
+										</div>
+									</div>
+									<div class="box_condition">
+										<div class="title">주행거리 선택</div>
+										<div class="cont">
+											<div id="rangeMileage" class="cpo_range">
+												<div class="cpoRange ui-slider ui-corner-all ui-slider-horizontal ui-widget ui-widget-content">
+													<div class="ui-slider-range ui-corner-all ui-widget-header"></div>
+													<span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default btn_range_start"></span>
+													<span tabindex="0" class="ui-slider-handle ui-corner-all ui-state-default btn_range_end"></span>
+												</div>
+												<p class="amountArea">
+													<input type="number" id="startMileage" title="최저 주행거리" data-min="0" data-max="110000" value="0">
+													<input type="number" id="endMileage" title="최대 주행거리" data-min="5000" data-max="110000" value="110000">
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btn_area srch_view">
+					<button type="button" class="btn_reset">새로고침</button><button type="button" class="btn_big color01"><em class="all" style="display:inline-block!important;">전체</em><em class="num">1,621</em>대 차량보기</button>
+				</div>
+			</div>
+			<div class="layer_select recent">
+				<div class="srch_recent">
+					<div class="no_data car">
+						<p class="tit02">최근 검색 기록이 없습니다.</p>
+					</div>
+					<div class="group_word">
+						<div class="head">
+							<div class="title">최근 검색어</div>
+							<button type="button" class="txt_btn03 s_small">전체삭제</button>
+						</div>
+						<ul class="list_word">
+							<li>그랜저 IG<button type="button">삭제 버튼</button></li>
+							<li>그랜저 HG<button type="button">삭제 버튼</button></li>
+							<li>그랜저 IG 하이브리드<button type="button">삭제 버튼</button></li>
+							<li>싼타페<button type="button">삭제 버튼</button></li>
+							<li>현대 3000만원대 그랜저<button type="button">삭제 버튼</button></li>
+							<li>그랜저 이벤트<button type="button">삭제 버튼</button></li>
+							<li>그랜저 하이브리드<button type="button">삭제 버튼</button></li>
+							<li>싼타페<button type="button">삭제 버튼</button></li>
+							<li>그랜저 IG 하이브리드<button type="button">삭제 버튼</button></li>
+							<li>싼타페<button type="button">삭제 버튼</button></li>
+						</ul>
+					</div>
+					<div class="group_conditions">
+						<div class="head">
+							<div class="title">최근 검색 조건<span>자동으로 최대 10개까지 등록됩니다.</span></div>
+							<button type="button" class="txt_btn03 s_small">전체삭제</button>
+						</div>
+						<ul class="list_conditions">
+							<li class="item">
+								<div class="model">그랜저 IG 2.4 프리미엄</div>
+								<ul class="info">
+									<li>18~21년</li>
+									<li>1,000km~30,000km</li>
+									<li>2,520만원~3,500만원</li>
+								</ul>
+								<button type="button">삭제 버튼</button>
+							</li>
+							<li class="item">
+								<div class="model">그랜저 IG 2.4 프리미엄 스페셜</div>
+								<ul class="info">
+									<li>18~21년</li>
+									<li>1,000km~30,000km</li>
+									<li>2,520만원~3,500만원</li>
+									<li>2WD</li>
+									<li>화이트</li>
+									<li>블랙</li>
+									<li>소유변경없음</li>
+									<li>7인승</li>
+									<li>LED 헤드램프</li>
+									<li>후방모니터</li>
+									<li>내비게이션</li>
+									<li>전동 트렁크</li>
+								</ul>
+								<button type="button">삭제 버튼</button>
+							</li>
+							<li class="item">
+								<div class="model">더 뉴 그랜저 하이브리드 가솔린 2.4 하이브리드 프리미엄</div>
+								<ul class="info">
+									<li>1,000km~30,000km</li>
+								</ul>
+								<button type="button">삭제 버튼</button>
+							</li>
+							<li class="item">
+								<div class="model">더 뉴 그랜저</div>
+								<button type="button">삭제 버튼</button>
+							</li>
+							<li class="item">
+								<div class="model">더 뉴 그랜저 2.5 익스클루시브</div>
+								<ul class="info">
+									<li>18~21년</li>
+									<li>1,000km~30,000km</li>
+									<li>2,520만원~3,500만원</li>
+									<li>2WD</li>
+									<li>화이트</li>
+									<li>7인승</li>
+									<li>LED 헤드램프</li>
+									<li>후방모니터</li>
+									<li>내비게이션</li>
+									<li>전동 트렁크</li>
+								</ul>
+								<button type="button">삭제 버튼</button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="layer_select auto exhibit"><!-- 기획전 없을 때 slide_exhibit 제거하고 class exhibit 빼시면 됩니다 -->
+				<div class="srch_auto">
+					<div class="list_wrap">
+						<ul class="list_img">
+							<li>
+								<a href="javascript:;">
+									<div class="img">
+										<img src="/HMC/p/img/@thumb/@srch_120x68.png" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="text">
+										<div class="model"><span>그랜저 </span>IG</div>
+										<div class="year">16년~</div>
+										<div class="num"><span>40</span>대</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="img">
+										<img src="/HMC/p/img/@thumb/@srch_120x68.png" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="text">
+										<div class="model"><span>그랜저 </span>IG</div>
+										<div class="year">16년~</div>
+										<div class="num"><span>40</span>대</div>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:;">
+									<div class="img">
+										<img src="/HMC/p/img/@thumb/@srch_120x68.png" alt="상품명으로 뿌려주세요">
+									</div>
+									<div class="text">
+										<div class="model"><span>그랜저 </span>IG</div>
+										<div class="year">16년~</div>
+										<div class="num"><span>40</span>대</div>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<ul class="list_text">
+							<li><a href="javascript:;"><em>그랜저</em> 하이브리드</a></li>
+							<li><a href="javascript:;"><em>그랜저</em> 가솔린 2.4 하이브리드</a></li>
+							<li><a href="javascript:;"><em>그랜저</em> 하이브리드 르블랑</a></li>
+							<li><a href="javascript:;"><em>그랜저</em> 하이브리드 익스클루시브</a></li>
+							<li><a href="javascript:;"><em>그랜저</em> 하이브리드 프리미엄</a></li>
+						</ul>
+						<div class="srch_auto_none">검색 결과가 없습니다.</div>
+					</div>
+					<div class="slide_exhibit">
+						<div class="swiperBanner">
+							<ul class="swiper-wrapper">
+								<li class="swiper-slide">
+									<a href="javascript:;">
+										<div class="img">
+											<img src="/HMC/p/img/@thumb/@srch_banner03.png" alt="">
+										</div>
+										<div class="info">
+											<div class="tit">꿈꿔왔던 완벽한 프리미엄 차량</div>
+											<div class="txt">
+												<span class="start">2021.08.15</span> - <span class="end">2021.10.06</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;">
+										<div class="img">
+											<img src="/HMC/p/img/@thumb/@srch_banner03.png" alt="">
+										</div>
+										<div class="info">
+											<div class="tit">꿈꿔왔던 완벽한 프리미엄 차량</div>
+											<div class="txt">
+												<span class="start">2021.08.15</span> - <span class="end">2021.10.06</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="swiper-slide">
+									<a href="javascript:;">
+										<div class="img">
+											<img src="/HMC/p/img/@thumb/@srch_banner03.png" alt="">
+										</div>
+										<div class="info">
+											<div class="tit">꿈꿔왔던 완벽한 프리미엄 차량</div>
+											<div class="txt">
+												<span class="start">2021.08.15</span> - <span class="end">2021.10.06</span>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	const modelTab = new TabContents('modelTab');
+	
+	// range
+	SRCH.FilterPriceRange('startPrice', 'endPrice', 'rangePrice', 500, '만원'); // 차량 가격 선택
+	SRCH.FilterPriceRange('startYear', 'endYear', 'rangeYear', 1, '년'); // 연식 선택
+	SRCH.FilterPriceRange('startMileage', 'endMileage', 'rangeMileage', 500, 'km'); // 주행거리 선택
+
+	SRCH.FilterPriceChartPc('.H_search','.layer_select', '.range_chart .list_chart', '#rangePrice');
+	// //range
+
+	// 검색창 이벤트
+	const iptSearch = document.querySelector('.inp_srch input');
+	const srchLayer = document.querySelectorAll('.layer_select');
+	const srchLayerDefault = document.querySelector('.layer_select.default');
+	const srchLayerRecent = document.querySelector('.layer_select.recent');
+	const srchLayerAuto = document.querySelector('.layer_select.auto');
+	const btnSrchDel = document.querySelector('.box_input .btn_delete');
+	btnSrchDel.addEventListener('click', function(e){
+		e.preventDefault();
+		e.stopPropagation();
+		iptSearch.value = null;
+		iptSearch.focus();
+		srchLayerDefault.style.cssText = 'display:none;';
+		srchLayerAuto.style.cssText = 'display:none;';
+		this.style.cssText = 'display:none;';
+	});
+	iptSearch.onfocus = iptSearch.onclick = function(e){
+		e.preventDefault();
+		e.stopPropagation();
+		srchLayerDefault.style.cssText = 'display:none;';
+		srchLayerRecent.style.cssText = 'display:block;';
+		srchLayerAuto.style.cssText = 'display:none;';
+		if(iptSearch.value.length > 0){
+			srchLayerDefault.style.cssText = 'display:none;';
+			srchLayerRecent.style.cssText = 'display:none;';
+			srchLayerAuto.style.cssText = 'display:block;';
+		}
+		if(iptSearch.value){
+			srchLayerRecent.style.cssText = 'display:none;';
+			srchLayerAuto.style.cssText = 'display:block;';
+		}
+	};
+	iptSearch.oncut = iptSearch.oncopy = iptSearch.onpaste = iptSearch.oninput = function(){
+		srchLayerRecent.style.cssText = 'display:none;';
+		srchLayerAuto.style.cssText = 'display:block;';
+		if(iptSearch.value.length > 0){
+			btnSrchDel.style.cssText = 'display:block;';
+		}
+	};
+	document.body.addEventListener('click', function(){
+		if(event.target.closest('.layer_select') == null) {
+			srchLayerDefault.style.cssText = 'display:block;';
+			srchLayerRecent.style.cssText = 'display:none;';
+			srchLayerAuto.style.cssText = 'display:none;';
+		}
+	});
+	// //검색창 이벤트
+
+	const popularArea = document.querySelector('.popular_area');
+	const accordion = document.querySelector('[data-ref="accordion"]');
+	const accordionCont = accordion.querySelectorAll('.cont');
+	const accItem = accordion.querySelectorAll('[role="accordionList"]');
+	const btnAcc = accordion.querySelectorAll('[data-target="accordionBtn"]');
+	const accGroup = accordion.querySelectorAll('.group_select');
+	const accGroup02 = accordion.querySelectorAll('.group_select .select_model');
+	const accChk = accordion.querySelectorAll('[class^="chk_"]');
+	const accChkCheck = accordion.querySelectorAll('[class^="chk_"]:checked');
+	const btnSrchView = document.querySelector('.srch_view');
+	const changeTxt = accordion.querySelector('[data-ref="changeTextTarget"]');
+	const srchModelGroup = accordion.querySelectorAll('.select_car');
+	const tabSelect = accordion.querySelector('[data-ref="modelTab"]');
+	const tabSelectList = tabSelect.querySelectorAll('.list li');
+	const rangeTxt = accordion.querySelectorAll('[data-ref="rangeTxt"]');
+
+	// 1뎁스 accordion
+	btnAcc.forEach((btn, idx) => {
+		btn.addEventListener('click', function(e){
+			e.preventDefault();
+			e.stopPropagation();
+			btnSrchView.classList.add('on');
+			popularArea.style.cssText = 'display:none;';
+			accItem.forEach((item) => {
+                item.classList.remove('on');
+            });
+            btn.parentElement.classList.add('on');
+
+			if(accordion.querySelector('.item_toggle.change')){ // 2,3번째 가격, 조건 선택을 1번 이상 눌렀으면
+				accordion.querySelectorAll('.item_toggle.change').forEach((el) => { // change 클래스가 들어간 애들 안에 있는 텍스트 활성화
+					el.querySelector('[data-ref="rangeTxt"] .rangeTxt').style.cssText = 'display:inline-block;';
+				});
+			}
+			if(idx != 0){
+				if(changeTxt.querySelector('.txt').style.display == 'none'){
+					modelTextChange();
+				}
+				accGroup02.forEach((el) => {
+					el.classList.remove('on');
+				});
+				accChk.forEach((chk, idx) => {
+					if(chk.closest('.group_select')){
+						const selectGroup = chk.closest('.group_select');
+						const stepTxtTarget = selectGroup.querySelector('.select_txt');
+						changeText(chk, '.group_select', stepTxtTarget);
+					}
+				});
+				btn.querySelector('[data-ref="rangeTxt"] .txt').style.cssText = 'display:none;';
+				btn.querySelector('[data-ref="rangeTxt"] .rangeTxt').style.cssText = 'display:none;';
+				
+				btn.closest('.item_toggle').classList.add('change'); // 2,3번째 가격, 조건 선택을 1번 이상 눌렀는지 확인용으로 change 클래스 넣어줌
+			} else {
+				btnSrchView.querySelector('.all').style.cssText = 'display:none;';
+				changeTxt.querySelector('.txt').style.cssText = 'display:none;';
+
+				changeTxt.querySelector('.changeText').innerText = '';
+			}
+		});
+		// 1뎁스 화살표 버튼 클릭 시 토글
+		btn.querySelector('.btn_area button').addEventListener('click', function(e){
+			e.preventDefault();
+			e.stopPropagation();
+			btnSrchView.classList.add('on');
+			popularArea.style.cssText = 'display:none;';
+			btn.parentElement.classList.contains('on') ? btn.parentElement.classList.remove('on') : btn.parentElement.classList.add('on');
+			if(idx != 0){
+				if(changeTxt.querySelector('.txt').style.display == 'none'){
+					modelTextChange();
+				}
+				accGroup02.forEach((el) => {
+					el.classList.remove('on');
+				});
+				accChk.forEach((chk, idx) => {
+					if(chk.closest('.group_select')){
+						const selectGroup = chk.closest('.group_select');
+						const stepTxtTarget = selectGroup.querySelector('.select_txt');
+						changeText(chk, '.group_select', stepTxtTarget);
+					}
+				});
+				if(btn.querySelector('.btn_area button').closest('.item_toggle').classList.contains('on')){
+					this.closest('.item_toggle').querySelector('[data-ref="rangeTxt"] .txt').style.cssText = 'display:none;';
+					this.closest('.item_toggle').querySelector('[data-ref="rangeTxt"] .rangeTxt').style.cssText = 'display:none;';
+				} else {
+					this.closest('.item_toggle').querySelector('[data-ref="rangeTxt"] .rangeTxt').style.cssText = 'display:inline-block;';
+				}
+			} else {
+				if(btn.querySelector('.btn_area button').closest('.item_toggle').classList.contains('on')){
+					changeTxt.querySelector('.txt').style.cssText = 'display:none;';
+					changeTxt.querySelector('.changeText').innerText = '';
+				} else {
+					modelTextChange();
+				}
+			}
+		});
+		// 모델 선택하기 텍스트 체인지
+		function modelTextChange(){
+			const checkTxtArr = [];
+			const chkCheck = accordion.querySelectorAll('input[type="checkbox"]:checked');
+			checkTxtArr.push(tabSelect.querySelector('.list li.on button').innerHTML);
+			chkCheck.forEach((el) => {
+				const labelFor = document.querySelector('label[for="' + el.id + '"]').querySelector('.txt').innerHTML;
+				checkTxtArr.push(' ' + labelFor);
+			});
+			changeTxt.querySelector('.changeText').innerText = checkTxtArr;
+		}
+	});
+
+	// 2뎁스 토글
+	srchModelGroup.forEach((el) => {
+		const srchDepthBtn = el.querySelectorAll('.btn_toggle_depth');
+		srchDepthBtn.forEach((btn) => {
+			btn.addEventListener('click', function(){
+				btn.parentElement.classList.contains('on') ? btn.parentElement.classList.remove('on') : btn.parentElement.classList.add('on');
+			});
+		});
+	});
+
+	// tab 클릭하면 인풋 초기화
+	tabSelectList.forEach((tab) => {
+		tab.addEventListener('click', function(){
+			accChk.forEach((chk) => {
+				if(!(chk.classList.contains('allCheck'))){
+					chk.checked = false;
+				}
+			});
+			accGroup.forEach((el) => {
+				el.classList.remove('on');
+			});
+			accGroup02.forEach((el) => {
+				el.classList.remove('on');
+			});
+			changeTxt.querySelector('.txt').style.cssText = 'display:none;';
+		});
+	});
+
+	// 체크박스, 라디오 체크 했을 때
+	accChk.forEach((chk, idx) => {
+		chk.onclick = chk.onchange = function(){
+			const stepWrap = chk.closest('.select_car').querySelectorAll('.group_select');
+			// 모델 그룹 선택 1개 했을 때 모델선택 나옴
+			if(chk.closest('.list_car')){
+				const depth01 = accordion.querySelectorAll('.list_car input[type="checkbox"]:checked');
+				if(depth01.length == 1){
+					chk.closest('.list_car').nextElementSibling.classList.add('on');
+					$(this).parents('.list_car').nextAll().find('.select_model').removeClass('on');
+					$(this).parents('.list_car').next().find('.select_model').addClass('on');
+					$(this).parents('.list_car').next().find('input[type="checkbox"].allCheck').prop('checked', true);
+				} else {
+					chk.closest('.list_car').nextElementSibling.classList.remove('on');
+					$(this).parents('.list_car').nextAll().removeClass('on');
+					$(this).parents('.list_car').nextAll().find('input[type="checkbox"]:checked').prop('checked', false);
+				}
+			}
+			// 모델, 등급, 트림 선택
+			if(chk.closest('.group_select')){
+				if(chk.closest('.group_select')){
+					const selectGroup = chk.closest('.group_select');
+					const selectModelDetail = selectGroup.querySelectorAll('[class^="chk_"]');
+					const selectModelDetailCheck = selectGroup.querySelectorAll('input[type="checkbox"]:checked');
+					const selectModelDetailNotAll = selectGroup.querySelectorAll('input:not(.allCheck)');
+					const selectModelDetailNotAllCheck = selectGroup.querySelectorAll('input:not(.allCheck):checked');
+					const stepTxtTarget = selectGroup.querySelector('.select_txt');
+					changeText(chk, '.group_select', stepTxtTarget);
+					const groupIdx = $(this).parents('.group_select').index();
+					if(selectModelDetailCheck.length == 1){ // 선택된 체크박스가 1개면 하위 레벨 열림
+						if(!(selectGroup.querySelector('.allCheck').checked == true)){ // 전체선택이 클릭 안 돼 있으면
+							if(groupIdx != 3){ // 마지막 뎁스 아니면 하위 뎁스 열림
+								selectGroup.nextElementSibling.classList.add('on');
+								selectGroup.nextElementSibling.querySelector('.select_model').classList.add('on');
+								selectGroup.nextElementSibling.querySelector('.allCheck').checked = true;
+							}
+							if(groupIdx != 1){ // 첫 번째 뎁스 아니면 상위 뎁스 닫힘
+								selectGroup.previousElementSibling.querySelector('.select_model').classList.remove('on');
+							}
+						}
+					} else { // 선택된 체크박스가 1개가 아니면(0 or 2개이상) 하위 레벨 닫힘
+						$(this).parents('.group_select').nextAll().removeClass('on');
+						$(this).parents('.group_select').nextAll().find('input[type="checkbox"]:checked').prop('checked', false);
+					}
+					if(chk.classList.contains('allCheck') == false){ // 클릭 대상이 allCheck가 아니면 해당 체크박스 선택하고 전체선택 체크 해제
+						if(selectModelDetailNotAllCheck.length >= 1){ // 전체선택이 아닌 애들 중에 1개라도 체크 되면 해제
+							chk.closest('.group_select').querySelector('.allCheck').checked = false;
+						}
+					} else { // 전체선택이면 해당 뎁스 전체 체크 해제 전체선택만 체크
+						selectModelDetailNotAll.forEach((el) => {
+							el.checked = false;
+						});
+					}
+					// allCheck가 아닌 애의 length 체크 전체 length에서 allCheck 뺀 값이랑 같으면 모든 체크박스 해제 전체선택만 체크
+					if((selectGroup.querySelectorAll('[class^="chk_"]').length - 1) == selectModelDetailNotAllCheck.length){
+						selectModelDetailNotAll.forEach((el) => {
+							el.checked = false;
+						});
+						selectGroup.querySelector('.allCheck').checked = true;
+						if(groupIdx != 3){
+							selectGroup.nextElementSibling.querySelector('.allCheck').checked = false;
+						}
+					}
+				}
+			}
+		}
+	});
+
+	// 체크된 텍스트 타이틀에 고정
+	function changeText(checkId, findClass, chageTarget){
+		const arr = [];
+		let arrCount = 0;
+		const chkId = checkId.id;
+		const chkIpt = accordion.querySelector("input[id=" + chkId + "]").closest(findClass).querySelectorAll('input[type="checkbox"]');
+		let chkChangeTxt = chageTarget;
+		for (let i = 0; i < chkIpt.length; i++) {
+			if(chkIpt[i].checked == true){
+				const checkedId = chkIpt[i].id;
+				const checkedTxt = document.querySelector('label[for="' + checkedId + '"]').querySelector('.txt').innerHTML;
+				arr[arrCount] = ' ' + checkedTxt;
+				arrCount++;
+			}
+		}
+		chkChangeTxt.innerText = arr;
+	}
+	// //체크된 텍스트 타이틀에 고정
+
+	const slideBanner =  new Swiper('.swiperBanner2',
+		getSwiperOption({
+			target:'.swiperBanner2',
+			loop:true,
+			pagination:true,
+			pagination_cls:'01',
+			navigation:true,
+			addOption: {},
+		})
+	);
+	
+	const slideExhibit =  new Swiper('.slide_exhibit .swiperBanner',
+		getSwiperOption({
+			target : '.slide_exhibit .swiperBanner',
+			loop:true,
+			pagination : true,
+			pagination_cls : "01",
+			navigation : true,
+			addOption : {},
+		})
+	);
+	
+	function srchlayerClose(){
+		const srchLayer = document.querySelector('.H_search');
+		const html = document.querySelector('html');
+		srchLayer.style.cssText = 'display:none;';
+		html.classList.remove('scroll_hidden');
+	};
+
+	// 20230206 추가
+	function srchLayerScroll(){
+		const srchWrap = document.querySelector('.H_search');
+		const srchIpt = document.querySelector('.H_search .box_input');
+		srchWrap.addEventListener('scroll', function(){
+			srchIpt.style.cssText = 'position:absolute;top:' + srchWrap.scrollTop +'px;';
+		});
+	}
+	srchLayerScroll();
+	// //20230206 추가
+</script>

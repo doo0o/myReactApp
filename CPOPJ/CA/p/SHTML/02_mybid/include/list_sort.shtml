@@ -1,0 +1,44 @@
+<div class="list_sort_wrap">
+    <div class="select_sort">
+        <div class="form_area">
+            <span class="com_select hs02 isSelected" data-ref="select">
+                <button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample" onclick="dropDown({reset: false});">
+                    전체
+                </button>
+                <span class="com_select_list" data-ref="dropDownList" id="dropDownExample2">
+                    <span class="com_select_list_inner">
+                        <label class="com_select_item"><input type="radio" name="dropDownExample2"> <span>전체</span></label>
+                        <label class="com_select_item"><input type="radio" name="dropDownExample2"> <span>계약</span></label>
+                        <label class="com_select_item"><input type="radio" name="dropDownExample2"> <span>입금</span></label>
+                        <label class="com_select_item"><input type="radio" name="dropDownExample2"> <span>탁송</span></label>
+                        <label class="com_select_item"><input type="radio" name="dropDownExample2"> <span>명의이전</span></label>
+                    </span>
+                </span>
+            </span>
+        </div>
+        <div class="form_area">
+            <span class="com_select hs02 isSelected" data-ref="select">
+                <button class="com_select_btn" data-ref="dropDownBtn" aria-expanded="false" aria-controls="dropDownExample" onclick="dropDown({reset: false});">
+                    전체
+                </button>
+                <span class="com_select_list" data-ref="dropDownList" id="dropDownExample2">
+                    <span class="com_select_list_inner">
+                        <label class="com_select_item"><input type="radio" name="dropDownExample2"> <span>전체</span></label>
+                        <label class="com_select_item"><input type="radio" name="dropDownExample2"> <span>계약진행</span></label>
+                        <label class="com_select_item"><input type="radio" name="dropDownExample2"> <span>계약완료</span></label>
+                        <label class="com_select_item"><input type="radio" name="dropDownExample2"> <span>계약취소</span></label>
+                    </span>
+                </span>
+            </span>
+        </div>
+        <div class="form_area">
+            <div class="inbox_type02 hs02" onclick="inputFunc()" tabindex="0" onfocus="inputFunc()"><!-- 2023-02-09 inbox_type02 변경 -->
+                <input type="text" class="txt" title="텍스트" placeholder="검색어를 입력하세요" name="" value="">
+                <button type="button" class="btn_delete">삭제</button>
+            </div>
+            <!-- <p class="validation error">에러 메세지</p> -->
+        </div>
+        <button type="submit" class="btn_small color01">검색</button>
+    </div>
+</div>
+<!-- //list_sort_wrap -->
