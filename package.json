@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "gh-pages": "^4.0.0"
+    "gh-pages": "^4.0.0",
+    "gulp": "^4.0.2"
   },
   "homepage": "https://doo0o.github.io/myReactApp/index",
   "deploy": "gh-pages -d build",

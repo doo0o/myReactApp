@@ -1,9 +1,0 @@
-<!-- FO-TI-MS0020 : 차량 상세정보 레이어 - FULL -->
-<div class="CPOpop_full" id="FO-TI-MS0020">
-	<div class="p_wrap">
-		<!-- 차량 상세정보 레이어 -->
-		
-		<!-- //차량 상세정보 레이어 -->
-	</div>
-	<button type="button" class="pop_close">닫기</button>
-</div>

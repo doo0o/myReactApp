@@ -1,9 +1,0 @@
-<svg id="Icon_Notice_Default" xmlns="http://www.w3.org/2000/svg" width="20" height="20.085" viewBox="0 0 20 20.085">
-  <rect id="Guide" width="20" height="20" fill="#fff"/>
-  <g id="Icon">
-    <line id="선_1" data-name="선 1" x1="16" transform="translate(2 16.129)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.8"/>
-    <path id="패스_9" data-name="패스 9" d="M457.645,416.677v-7.564a5.5,5.5,0,0,1,11,0v7.564" transform="translate(-453.145 -400.548)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.8"/>
-    <line id="선_2" data-name="선 2" y2="3.065" transform="translate(10)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.8"/>
-    <line id="선_3" data-name="선 3" x2="6" transform="translate(7.045 19.185)" fill="none" stroke="#000" stroke-miterlimit="10" stroke-width="1.8"/>
-  </g>
-</svg>

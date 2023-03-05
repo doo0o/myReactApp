@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="180" height="260" viewBox="0 0 180 260">
-  <defs>
-    <linearGradient id="linear-gradient" x1="0.065" y1="0.063" x2="0.95" y2="0.979" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#a7a7ae"/>
-      <stop offset="1" stop-color="#95989e"/>
-    </linearGradient>
-  </defs>
-  <rect id="_3X3_D_3Columns_" data-name="3X3_D(3Columns)" width="180" height="260" fill="url(#linear-gradient)"/>
-</svg>

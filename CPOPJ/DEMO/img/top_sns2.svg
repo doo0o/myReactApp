@@ -1,8 +1,0 @@
-<svg id="Icon_Share" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-  <rect id="Guide" width="20" height="20" fill="#fff" opacity="0"/>
-  <g id="Icon" transform="translate(-0.5)">
-    <line id="선_3" data-name="선 3" y2="13" transform="translate(10.5 1.5)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="1.5"/>
-    <path id="패스_3322" data-name="패스 3322" d="M5.346,9.479l5-5,5,5" transform="translate(0.153 -2.979)" fill="none" stroke="#fff" stroke-width="1.5"/>
-    <path id="패스_3323" data-name="패스 3323" d="M.5,21.875v7h16v-7" transform="translate(2 -9.888)" fill="none" stroke="#fff" stroke-width="1.5"/>
-  </g>
-</svg>
